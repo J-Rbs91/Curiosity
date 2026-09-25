@@ -1,13 +1,34 @@
 {
   "protocol_version": 1,
   "concept_id": "systemographie",
-  "candidate_sha256": "2a7f45fe5c8ea6a74609eb812cc5d4502c2094ef000e9a511ad52a0d94596e83",
-  "map_sha256": "529835ccee2a550c51e0bcc3de7bfa1541c30bfddd406a18952d47d562cc26e6",
+  "candidate_sha256": "3bbefedfab3eccccb8a49e9b055ca18deeb2b8261ee85dbeb3e189d73ee2a69e",
+  "map_sha256": "5c121474c656a843674908bfbbf90d3ea05992939d1a530c2e8920ce7f6b07ae",
   "claims": [
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "claim_text": "Essayez, et vous verrez que la comparaison ne se termine pas : il reste toujours un couloir, une habitude, une exception qui n’ont pas été portés sur le schéma, et rien ne dit à quel moment on aurait le droit de s’arrêter.",
+      "claim_text": "La réponse spontanée consiste à comparer le dessin à l’hôpital, trait par trait, jusqu’à ce que tout corresponde.",
+      "supports": [
+        {
+          "id": "SUP-2c74d218237c0e2c",
+          "origin": "validated",
+          "path": "$.review.notes[10]",
+          "access": "n/a",
+          "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
+        },
+        {
+          "id": "SUP-0ac96ed81f7fa2b1",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides."
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "claim_text": "la comparaison ne se termine pas : il reste toujours un couloir, une habitude, une exception qui n’ont pas été portés sur le schéma",
       "supports": [
         {
           "id": "SUP-f78f9da2a277950c",
@@ -17,16 +38,51 @@
           "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
         },
         {
-          "id": "SUP-507e3c79f283c7c4",
+          "id": "SUP-1ebb6291539d2f19",
           "origin": "validated",
-          "path": "$.notes[1]",
+          "path": "$.notes[0]",
           "access": "n/a",
-          "text": "LA CARTE N'EST PAS BÂTIE SUR « LES SYSTÈMES NE SONT PAS DANS LA NATURE » (p. 74). Cette thèse est une position d'épistémologie sans mécanisme, hors du périmètre, et elle ferait doublon avec systeme-concret-systeme-construit, déjà au corpus. C'est cet écart, et lui seul, qui tient les deux cartes distinctes : Roig pose le rapport du système réel au système construit, Le Moigne l'outille."
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-0ac96ed81f7fa2b1",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides."
         }
       ]
     },
     {
-      "claim_id": "C002",
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "claim_text": "rien ne dit à quel moment on aurait le droit de s’arrêter",
+      "supports": [
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-e1ce7ad664f7e7ab",
+          "origin": "validated",
+          "path": "$.hook",
+          "access": "n/a",
+          "text": "Deux vérifications font un modèle : pourquoi une seule peut-elle s'achever ?"
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
       "locator": "lead[1]",
       "claim_text": "Le troisième chapitre de La théorie du système général, que Jean-Louis Le Moigne intitule La systémographie et les systèmes de représentation",
       "supports": [
@@ -45,11 +101,20 @@
           "text": "LOCALISATION — le locator « chapitre 3, p. 71-86 » est exact sur l'exemplaire ouvert. J'ai relevé les titres courants page à page : le chapitre s'ouvre index PDF 94 (folio 71) sur « CHAPITRE 3 […] la systémographie / et les systèmes / de représentation », et se ferme index PDF 109 (folio 86) sur la section « X Relecture » ; la deuxième partie et le chapitre 4 commencent ensuite (index 110 et 112). L'index de l'ouvrage confirme indépendamment la page : « Isomorphisme, 76, 77, 79 » (folio 330, index PDF 349) et « Homomorphisme, 76, 77 » (index PDF 347)."
         },
         {
-          "id": "SUP-face031f77e021e2",
+          "id": "SUP-261c5b21ddb387c2",
           "origin": "validated",
-          "path": "$.authors[0].name",
-          "access": "n/a",
-          "text": "Jean-Louis Le Moigne"
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, édition électronique des Classiques du Réseau Intelligence de la Complexité, MCX-APC, 2006, 360 p. Reprise de la 4e édition de 1994.",
+          "access_corroboration": "dossier-absent"
+        },
+        {
+          "id": "SUP-bd4fdd5a12b31af7",
+          "origin": "validated",
+          "path": "$.sources[0].locator",
+          "access": "full-text",
+          "text": "Chapitre 3, p. 71-86 ; citation p. 79",
+          "access_corroboration": "dossier-absent"
         },
         {
           "id": "SUP-7f53fbbb44f75c84",
@@ -57,11 +122,18 @@
           "path": "$.quotation.locator",
           "access": "n/a",
           "text": "p. 79, chapitre 3"
+        },
+        {
+          "id": "SUP-face031f77e021e2",
+          "origin": "validated",
+          "path": "$.authors[0].name",
+          "access": "n/a",
+          "text": "Jean-Louis Le Moigne"
         }
       ]
     },
     {
-      "claim_id": "C003",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "claim_text": "il décrit un instrument, comme on décrirait un appareil photographique, avec son mode d’emploi",
       "supports": [
@@ -82,7 +154,7 @@
       ]
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "claim_text": "Ce qu’on obtient en s’en servant reçoit du coup un nom à soi.",
       "supports": [
@@ -94,6 +166,13 @@
           "text": "ATTRIBUTION — confirmée, et les deux détails que la note d'attribution avance sont vérifiés à la source. (a) Guillemets : première occurrence du mot au folio 78, sous l'intertitre « Photographie et systémographie », « nous établirons une « systémographie » de l'objet à l'aide de l'appareil « Système Général » » — lu sur l'image, guillemets français bien présents. (b) La note en bas de ce folio 78 est la note 2 : « En intitulant Le macroscope son ouvrage populaire sur l'approche systémique, J. de ROSNAY (1975) proposait un appareil aux qualités apparemment peu différentes de celles que nous attribuons au « systémographe » […] Ce macroscope est hélas assez peu défini et son mode d'emploi n'est guère précisé […] Aussi a-t-il paru préférable d'accuser loyalement l'option différente, plus radicale et par là plus rigoureuse que l'on préconise ici en donnant un autre nom... à un autre outil ! » La fiche restitue exactement cela. Le Moigne signe seul (page de titre, aucune co-signature ; OpenLibrary : by_statement « Jean-Louis Le Moigne. »), et il revendique le terme à son compte dans le liminaire de 2006 : « En campant le concept de modélisation systémique (et son instrumentation par la 'systémographie') ». Aucune source consultée ne fait remonter le mot à un tiers ; j'ai cherché un usage antérieur à 1977 (recherches web ciblées, notice fr.wikipedia.org/wiki/Systémographie qui ne cite aucun antécédent) sans en trouver. Réserve honnête : je n'ai pas ouvert l'édition de 1977 elle-même (voir ci-dessous), donc le rattachement du terme à « chapitre 3 » de la première édition repose sur un faisceau — la « Relecture » du chapitre 3 déclare au folio 86 « on n'a ajouté que des modifications très minimes au texte initial de ce chapitre », et la note 1 du folio 78 date visiblement de 1977 (« Son propos date de 1955, mais il demeure aussi actuel, vingt ans plus tard »). La fiche dit d'ailleurs explicitement quel exemplaire elle a ouvert, ce qui est la bonne façon de porter cette réserve."
         },
         {
+          "id": "SUP-b31477612a1febd1",
+          "origin": "validated",
+          "path": "$.title",
+          "access": "n/a",
+          "text": "La systémographie"
+        },
+        {
           "id": "SUP-81bde008b962bc7a",
           "origin": "validated",
           "path": "$.attribution_note",
@@ -103,66 +182,17 @@
       ]
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "L’instrument n’est pas un appareil de mesure, et ce n’est pas non plus le schéma de l’hôpital : c’est un objet abstrait, construit entièrement d’avance, contre lequel ce schéma sera vérifié.",
+      "claim_text": "L’instrument n’est pas un appareil de mesure, et ce n’est pas non plus le schéma de l’hôpital",
       "supports": [
-        {
-          "id": "SUP-1ebb6291539d2f19",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
-        },
-        {
-          "id": "SUP-f78f9da2a277950c",
-          "origin": "validated",
-          "path": "$.review.notes[11]",
-          "access": "n/a",
-          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
-        },
-        {
-          "id": "SUP-e30f1915747f28d9",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
-        }
-      ]
-    },
-    {
-      "claim_id": "C006",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Le Moigne le nomme le Système Général",
-      "supports": [
-        {
-          "id": "SUP-e30f1915747f28d9",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
-        },
-        {
-          "id": "SUP-1ebb6291539d2f19",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
-        },
         {
           "id": "SUP-8f0fa1e58b07bb99",
           "origin": "validated",
           "path": "$.review.notes[4]",
           "access": "n/a",
           "text": "ATTRIBUTION — confirmée, et les deux détails que la note d'attribution avance sont vérifiés à la source. (a) Guillemets : première occurrence du mot au folio 78, sous l'intertitre « Photographie et systémographie », « nous établirons une « systémographie » de l'objet à l'aide de l'appareil « Système Général » » — lu sur l'image, guillemets français bien présents. (b) La note en bas de ce folio 78 est la note 2 : « En intitulant Le macroscope son ouvrage populaire sur l'approche systémique, J. de ROSNAY (1975) proposait un appareil aux qualités apparemment peu différentes de celles que nous attribuons au « systémographe » […] Ce macroscope est hélas assez peu défini et son mode d'emploi n'est guère précisé […] Aussi a-t-il paru préférable d'accuser loyalement l'option différente, plus radicale et par là plus rigoureuse que l'on préconise ici en donnant un autre nom... à un autre outil ! » La fiche restitue exactement cela. Le Moigne signe seul (page de titre, aucune co-signature ; OpenLibrary : by_statement « Jean-Louis Le Moigne. »), et il revendique le terme à son compte dans le liminaire de 2006 : « En campant le concept de modélisation systémique (et son instrumentation par la 'systémographie') ». Aucune source consultée ne fait remonter le mot à un tiers ; j'ai cherché un usage antérieur à 1977 (recherches web ciblées, notice fr.wikipedia.org/wiki/Systémographie qui ne cite aucun antécédent) sans en trouver. Réserve honnête : je n'ai pas ouvert l'édition de 1977 elle-même (voir ci-dessous), donc le rattachement du terme à « chapitre 3 » de la première édition repose sur un faisceau — la « Relecture » du chapitre 3 déclare au folio 86 « on n'a ajouté que des modifications très minimes au texte initial de ce chapitre », et la note 1 du folio 78 date visiblement de 1977 (« Son propos date de 1955, mais il demeure aussi actuel, vingt ans plus tard »). La fiche dit d'ailleurs explicitement quel exemplaire elle a ouvert, ce qui est la bonne façon de porter cette réserve."
-        }
-      ]
-    },
-    {
-      "claim_id": "C007",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "il tient en une ligne : « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement »",
-      "supports": [
+        },
         {
           "id": "SUP-1ebb6291539d2f19",
           "origin": "validated",
@@ -174,9 +204,51 @@
     },
     {
       "claim_id": "C008",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Rien là-dedans ne parle d’un hôpital, d’une usine ou d’un fleuve en particulier",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "c’est un objet abstrait, construit entièrement d’avance, contre lequel ce schéma sera vérifié",
       "supports": [
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-e30f1915747f28d9",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
+        }
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Le Moigne le nomme le Système Général",
+      "supports": [
+        {
+          "id": "SUP-8f0fa1e58b07bb99",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — confirmée, et les deux détails que la note d'attribution avance sont vérifiés à la source. (a) Guillemets : première occurrence du mot au folio 78, sous l'intertitre « Photographie et systémographie », « nous établirons une « systémographie » de l'objet à l'aide de l'appareil « Système Général » » — lu sur l'image, guillemets français bien présents. (b) La note en bas de ce folio 78 est la note 2 : « En intitulant Le macroscope son ouvrage populaire sur l'approche systémique, J. de ROSNAY (1975) proposait un appareil aux qualités apparemment peu différentes de celles que nous attribuons au « systémographe » […] Ce macroscope est hélas assez peu défini et son mode d'emploi n'est guère précisé […] Aussi a-t-il paru préférable d'accuser loyalement l'option différente, plus radicale et par là plus rigoureuse que l'on préconise ici en donnant un autre nom... à un autre outil ! » La fiche restitue exactement cela. Le Moigne signe seul (page de titre, aucune co-signature ; OpenLibrary : by_statement « Jean-Louis Le Moigne. »), et il revendique le terme à son compte dans le liminaire de 2006 : « En campant le concept de modélisation systémique (et son instrumentation par la 'systémographie') ». Aucune source consultée ne fait remonter le mot à un tiers ; j'ai cherché un usage antérieur à 1977 (recherches web ciblées, notice fr.wikipedia.org/wiki/Systémographie qui ne cite aucun antécédent) sans en trouver. Réserve honnête : je n'ai pas ouvert l'édition de 1977 elle-même (voir ci-dessous), donc le rattachement du terme à « chapitre 3 » de la première édition repose sur un faisceau — la « Relecture » du chapitre 3 déclare au folio 86 « on n'a ajouté que des modifications très minimes au texte initial de ce chapitre », et la note 1 du folio 78 date visiblement de 1977 (« Son propos date de 1955, mais il demeure aussi actuel, vingt ans plus tard »). La fiche dit d'ailleurs explicitement quel exemplaire elle a ouvert, ce qui est la bonne façon de porter cette réserve."
+        },
+        {
+          "id": "SUP-e30f1915747f28d9",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
+        },
         {
           "id": "SUP-1ebb6291539d2f19",
           "origin": "validated",
@@ -187,17 +259,31 @@
       ]
     },
     {
-      "claim_id": "C009",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Ces propriétés ont été décidées, elles n’ont pas été relevées dans le monde : on sait combien il y en a et lesquelles, puisque ce sont les nôtres.",
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "il tient en une ligne : « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement »",
       "supports": [
         {
-          "id": "SUP-f78f9da2a277950c",
+          "id": "SUP-1ebb6291539d2f19",
           "origin": "validated",
-          "path": "$.review.notes[11]",
+          "path": "$.notes[0]",
           "access": "n/a",
-          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
         },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
+        }
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Rien là-dedans ne parle d’un hôpital, d’une usine ou d’un fleuve en particulier",
+      "supports": [
         {
           "id": "SUP-1ebb6291539d2f19",
           "origin": "validated",
@@ -215,7 +301,35 @@
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Ces propriétés ont été décidées, elles n’ont pas été relevées dans le monde : on sait combien il y en a et lesquelles, puisque ce sont les nôtres.",
+      "supports": [
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-507e3c79f283c7c4",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "LA CARTE N'EST PAS BÂTIE SUR « LES SYSTÈMES NE SONT PAS DANS LA NATURE » (p. 74). Cette thèse est une position d'épistémologie sans mécanisme, hors du périmètre, et elle ferait doublon avec systeme-concret-systeme-construit, déjà au corpus. C'est cet écart, et lui seul, qui tient les deux cartes distinctes : Roig pose le rapport du système réel au système construit, Le Moigne l'outille."
+        }
+      ]
+    },
+    {
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Modéliser consiste alors à faire passer l’objet devant cet appareil et à écrire ce qui en sort.",
       "supports": [
@@ -236,7 +350,7 @@
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "ce qui compte devient ce que l’appareil permet",
       "supports": [
@@ -246,11 +360,18 @@
           "path": "$.review.notes[12]",
           "access": "n/a",
           "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
+        },
+        {
+          "id": "SUP-8f0fa1e58b07bb99",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — confirmée, et les deux détails que la note d'attribution avance sont vérifiés à la source. (a) Guillemets : première occurrence du mot au folio 78, sous l'intertitre « Photographie et systémographie », « nous établirons une « systémographie » de l'objet à l'aide de l'appareil « Système Général » » — lu sur l'image, guillemets français bien présents. (b) La note en bas de ce folio 78 est la note 2 : « En intitulant Le macroscope son ouvrage populaire sur l'approche systémique, J. de ROSNAY (1975) proposait un appareil aux qualités apparemment peu différentes de celles que nous attribuons au « systémographe » […] Ce macroscope est hélas assez peu défini et son mode d'emploi n'est guère précisé […] Aussi a-t-il paru préférable d'accuser loyalement l'option différente, plus radicale et par là plus rigoureuse que l'on préconise ici en donnant un autre nom... à un autre outil ! » La fiche restitue exactement cela. Le Moigne signe seul (page de titre, aucune co-signature ; OpenLibrary : by_statement « Jean-Louis Le Moigne. »), et il revendique le terme à son compte dans le liminaire de 2006 : « En campant le concept de modélisation systémique (et son instrumentation par la 'systémographie') ». Aucune source consultée ne fait remonter le mot à un tiers ; j'ai cherché un usage antérieur à 1977 (recherches web ciblées, notice fr.wikipedia.org/wiki/Systémographie qui ne cite aucun antécédent) sans en trouver. Réserve honnête : je n'ai pas ouvert l'édition de 1977 elle-même (voir ci-dessous), donc le rattachement du terme à « chapitre 3 » de la première édition repose sur un faisceau — la « Relecture » du chapitre 3 déclare au folio 86 « on n'a ajouté que des modifications très minimes au texte initial de ce chapitre », et la note 1 du folio 78 date visiblement de 1977 (« Son propos date de 1955, mais il demeure aussi actuel, vingt ans plus tard »). La fiche dit d'ailleurs explicitement quel exemplaire elle a ouvert, ce qui est la bonne façon de porter cette réserve."
         }
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "les caractéristiques d’une représentation, précise le texte, restent « prédéterminables et ne dépendant que de l’appareil utilisé »",
       "supports": [
@@ -260,11 +381,18 @@
           "path": "$.review.notes[12]",
           "access": "n/a",
           "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
+        },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
         }
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "La première des deux vérifications ne porte pas sur le rapport entre le modèle et l’hôpital, mais sur le rapport entre le modèle et l’appareil.",
       "supports": [
@@ -281,62 +409,6 @@
           "path": "$.review.notes[10]",
           "access": "n/a",
           "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
-        }
-      ]
-    },
-    {
-      "claim_id": "C014",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le Moigne demande que le modèle soit isomorphe du Système Général",
-      "supports": [
-        {
-          "id": "SUP-e30f1915747f28d9",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
-        },
-        {
-          "id": "SUP-2c74d218237c0e2c",
-          "origin": "validated",
-          "path": "$.review.notes[10]",
-          "access": "n/a",
-          "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
-        },
-        {
-          "id": "SUP-39e1802955ba1de4",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "CITATION — vérifiée sur la couche texte PyMuPDF puis relue sur image (rendu 2,6×, 1547×2190 px) de la page portant le folio imprimé 79 (index PDF 102), titre courant « SYSTEMOGRAPHIE ET SYSTEMES DE REPRESENTATION » en petites capitales italiques. La page s'ouvre sur : « relativement simple : la représentation que construit l'observateur sera à la fois : / 1/ Isomorphe du Système Général. / 2/ Homomorphe de l'objet à représenter. » Le texte de la fiche est mot pour mot celui-là. La coupe initiale est signalée par […] et elle est justifiée : la phrase commence en bas du folio 78 par « Le mode d'emploi en est », et tous les mots cités se trouvent bien sur le folio 79 annoncé. Aucune traduction en jeu (texte français, `translation: none`). Seul détail typographique que la couche texte aplatit et que l'image restitue : les marqueurs de numérotation « 1/ » et « 2/ » sont en italique dans le livre ; c'est une marque de liste, pas un mot du texte, et son absence dans la fiche ne fait pas écart."
-        }
-      ]
-    },
-    {
-      "claim_id": "C015",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "que chaque propriété de l’un ait son répondant exact dans l’autre, terme pour terme, sans reste d’un côté ni de l’autre",
-      "supports": [
-        {
-          "id": "SUP-f78f9da2a277950c",
-          "origin": "validated",
-          "path": "$.review.notes[11]",
-          "access": "n/a",
-          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
-        }
-      ]
-    },
-    {
-      "claim_id": "C016",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Le texte dit pourquoi cette vérification-là aboutit",
-      "supports": [
-        {
-          "id": "SUP-f78f9da2a277950c",
-          "origin": "validated",
-          "path": "$.review.notes[11]",
-          "access": "n/a",
-          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
         },
         {
           "id": "SUP-1ebb6291539d2f19",
@@ -349,8 +421,43 @@
     },
     {
       "claim_id": "C017",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "« La vérification de l’isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s’assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général »",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Le Moigne demande que le modèle soit isomorphe du Système Général",
+      "supports": [
+        {
+          "id": "SUP-e30f1915747f28d9",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
+        },
+        {
+          "id": "SUP-39e1802955ba1de4",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "CITATION — vérifiée sur la couche texte PyMuPDF puis relue sur image (rendu 2,6×, 1547×2190 px) de la page portant le folio imprimé 79 (index PDF 102), titre courant « SYSTEMOGRAPHIE ET SYSTEMES DE REPRESENTATION » en petites capitales italiques. La page s'ouvre sur : « relativement simple : la représentation que construit l'observateur sera à la fois : / 1/ Isomorphe du Système Général. / 2/ Homomorphe de l'objet à représenter. » Le texte de la fiche est mot pour mot celui-là. La coupe initiale est signalée par […] et elle est justifiée : la phrase commence en bas du folio 78 par « Le mode d'emploi en est », et tous les mots cités se trouvent bien sur le folio 79 annoncé. Aucune traduction en jeu (texte français, `translation: none`). Seul détail typographique que la couche texte aplatit et que l'image restitue : les marqueurs de numérotation « 1/ » et « 2/ » sont en italique dans le livre ; c'est une marque de liste, pas un mot du texte, et son absence dans la fiche ne fait pas écart."
+        },
+        {
+          "id": "SUP-2c74d218237c0e2c",
+          "origin": "validated",
+          "path": "$.review.notes[10]",
+          "access": "n/a",
+          "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
+        },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
+        }
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "que chaque propriété de l’un ait son répondant exact dans l’autre, terme pour terme, sans reste d’un côté ni de l’autre",
       "supports": [
         {
           "id": "SUP-f78f9da2a277950c",
@@ -369,7 +476,63 @@
       ]
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Le texte dit pourquoi cette vérification-là aboutit",
+      "supports": [
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-e1ce7ad664f7e7ab",
+          "origin": "validated",
+          "path": "$.hook",
+          "access": "n/a",
+          "text": "Deux vérifications font un modèle : pourquoi une seule peut-elle s'achever ?"
+        },
+        {
+          "id": "SUP-0ac96ed81f7fa2b1",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides."
+        }
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "« La vérification de l’isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s’assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général »",
+      "supports": [
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
+        },
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "Balayer une par une : l’expression décrit une opération qui a une fin.",
       "supports": [
@@ -390,7 +553,7 @@
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "On peut un jour déclarer l’examen terminé en sachant ce que cela veut dire",
       "supports": [
@@ -400,13 +563,27 @@
           "path": "$.review.notes[11]",
           "access": "n/a",
           "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-e1ce7ad664f7e7ab",
+          "origin": "validated",
+          "path": "$.hook",
+          "access": "n/a",
+          "text": "Deux vérifications font un modèle : pourquoi une seule peut-elle s'achever ?"
+        },
+        {
+          "id": "SUP-0ac96ed81f7fa2b1",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides."
         }
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[2]",
-      "claim_text": "ce contrôle sans mystère n’apprend rien sur l’hôpital",
+      "claim_text": "ce contrôle sans mystère",
       "supports": [
         {
           "id": "SUP-f78f9da2a277950c",
@@ -416,16 +593,44 @@
           "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
         },
         {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[2]",
+      "claim_text": "n’apprend rien sur l’hôpital",
+      "supports": [
+        {
           "id": "SUP-2c74d218237c0e2c",
           "origin": "validated",
           "path": "$.review.notes[10]",
           "access": "n/a",
           "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
+        },
+        {
+          "id": "SUP-e30f1915747f28d9",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
+        },
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
         }
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[3]",
       "claim_text": "La façon dont les deux exigences se répartissent a de quoi surprendre.",
       "supports": [
@@ -439,9 +644,9 @@
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C026",
       "locator": "sections[1].paragraphs[3]",
-      "claim_text": "Le Moigne écrit que « la représentation que construit l’observateur sera à la fois » isomorphe du Système Général, puis homomorphe « de l’objet à représenter »",
+      "claim_text": "Le Moigne écrit que « la représentation que construit l’observateur sera à la fois » isomorphe du Système Général, puis homomorphe « de l’objet à représenter ».",
       "supports": [
         {
           "id": "SUP-e30f1915747f28d9",
@@ -458,26 +663,47 @@
           "text": "CITATION — vérifiée sur la couche texte PyMuPDF puis relue sur image (rendu 2,6×, 1547×2190 px) de la page portant le folio imprimé 79 (index PDF 102), titre courant « SYSTEMOGRAPHIE ET SYSTEMES DE REPRESENTATION » en petites capitales italiques. La page s'ouvre sur : « relativement simple : la représentation que construit l'observateur sera à la fois : / 1/ Isomorphe du Système Général. / 2/ Homomorphe de l'objet à représenter. » Le texte de la fiche est mot pour mot celui-là. La coupe initiale est signalée par […] et elle est justifiée : la phrase commence en bas du folio 78 par « Le mode d'emploi en est », et tous les mots cités se trouvent bien sur le folio 79 annoncé. Aucune traduction en jeu (texte français, `translation: none`). Seul détail typographique que la couche texte aplatit et que l'image restitue : les marqueurs de numérotation « 1/ » et « 2/ » sont en italique dans le livre ; c'est une marque de liste, pas un mot du texte, et son absence dans la fiche ne fait pas écart."
         },
         {
+          "id": "SUP-427fb1df98a1e120",
+          "origin": "validated",
+          "path": "$.review.quotation",
+          "access": "n/a",
+          "text": "verbatim"
+        },
+        {
           "id": "SUP-7f53fbbb44f75c84",
           "origin": "validated",
           "path": "$.quotation.locator",
           "access": "n/a",
           "text": "p. 79, chapitre 3"
+        },
+        {
+          "id": "SUP-0a3d44b96c802840",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Jean-Louis Le Moigne, La théorie du système général. Théorie de la modélisation, édition électronique des Classiques du Réseau Intelligence de la Complexité, 2006, reprise de la quatrième édition de 1994."
         }
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C027",
       "locator": "sections[1].paragraphs[3]",
-      "claim_text": "La correspondance stricte, celle qui ne tolère aucun reste, est donc réclamée du côté de l’objet que nous avons fabriqué",
+      "claim_text": "La correspondance stricte, celle qui ne tolère aucun reste",
       "supports": [
         {
-          "id": "SUP-e30f1915747f28d9",
+          "id": "SUP-f78f9da2a277950c",
           "origin": "validated",
-          "path": "$.quotation.text",
+          "path": "$.review.notes[11]",
           "access": "n/a",
-          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
-        },
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        }
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[3]",
+      "claim_text": "La correspondance stricte, celle qui ne tolère aucun reste, est donc réclamée du côté de l’objet que nous avons fabriqué, et c’est au monde que s’applique l’autre.",
+      "supports": [
         {
           "id": "SUP-f78f9da2a277950c",
           "origin": "validated",
@@ -491,13 +717,20 @@
           "path": "$.review.notes[10]",
           "access": "n/a",
           "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
+        },
+        {
+          "id": "SUP-e30f1915747f28d9",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
         }
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C029",
       "locator": "sections[1].paragraphs[3]",
-      "claim_text": "et c’est au monde que s’applique l’autre",
+      "claim_text": "c’est au monde que s’applique l’autre",
       "supports": [
         {
           "id": "SUP-e30f1915747f28d9",
@@ -516,9 +749,9 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C030",
       "locator": "sections[1].paragraphs[3]",
-      "claim_text": "On aurait spontanément demandé l’inverse",
+      "claim_text": "On aurait spontanément demandé l’inverse.",
       "supports": [
         {
           "id": "SUP-2c74d218237c0e2c",
@@ -530,13 +763,7 @@
       ]
     },
     {
-      "claim_id": "C026",
-      "locator": "sections[1].paragraphs[3]",
-      "claim_text": "de la rigueur envers l’hôpital, de la souplesse envers nos constructions",
-      "supports": []
-    },
-    {
-      "claim_id": "C027",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La seconde vérification ne porte pas sur l’appareil, mais sur l’objet",
       "supports": [
@@ -557,7 +784,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Le Moigne demande que le modèle soit homomorphe « de l’objet à représenter »",
       "supports": [
@@ -581,11 +808,18 @@
           "path": "$.quotation.locator",
           "access": "n/a",
           "text": "p. 79, chapitre 3"
+        },
+        {
+          "id": "SUP-2c74d218237c0e2c",
+          "origin": "validated",
+          "path": "$.review.notes[10]",
+          "access": "n/a",
+          "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
         }
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Cette fois, c’est l’hôpital qui est en jeu.",
       "supports": [
@@ -595,11 +829,18 @@
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
+        },
+        {
+          "id": "SUP-bbb0b55d386d516e",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "SOURCES 3/5 — https://shs.hal.science/halshs-02496706 (HTTP 200) et son PDF https://shs.hal.science/halshs-02496706/document (HTTP 200, 479 137 octets) : Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », DC.type « lecture », Cnam, date 2020/03/03, 19 pages — conforme au libellé « document de cours, CNAM, 2020, 19 p. ». La claim de contenu du libellé est vérifiée : page 8 du document (p. 9 du PDF), « Avec l'analyse systémique, il existe trois phases de modélisation : le cadrage (construction du modèle par isomorphie avec un système général), le développement (documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène) et l'interprétation (simulation d'actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes). » C'est mot pour mot « la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie » qu'annonce la fiche."
         }
       ]
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "C’est pourtant celle-là qui ne se termine jamais",
       "supports": [
@@ -616,14 +857,35 @@
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-0ac96ed81f7fa2b1",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides."
+        },
+        {
+          "id": "SUP-e1ce7ad664f7e7ab",
+          "origin": "validated",
+          "path": "$.hook",
+          "access": "n/a",
+          "text": "Deux vérifications font un modèle : pourquoi une seule peut-elle s'achever ?"
         }
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "« L’homomorphie du modèle et de l’objet sera difficile et a priori jamais parfaitement validée »",
       "supports": [
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
         {
           "id": "SUP-1ebb6291539d2f19",
           "origin": "validated",
@@ -632,16 +894,16 @@
           "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
         },
         {
-          "id": "SUP-f78f9da2a277950c",
+          "id": "SUP-7f53fbbb44f75c84",
           "origin": "validated",
-          "path": "$.review.notes[11]",
+          "path": "$.quotation.locator",
           "access": "n/a",
-          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+          "text": "p. 79, chapitre 3"
         }
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "La raison tient dans la parenthèse qui suit immédiatement",
       "supports": [
@@ -655,7 +917,7 @@
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "« pour qu’elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve ! »",
       "supports": [
@@ -665,11 +927,18 @@
           "path": "$.review.notes[11]",
           "access": "n/a",
           "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
         }
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "L’obstacle n’est donc ni le manque de temps ni le manque de données.",
       "supports": [
@@ -683,7 +952,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Il tient à ce que le livre soutient quelques pages plus tôt, que « les systèmes ne sont pas dans la nature ».",
       "supports": [
@@ -695,25 +964,25 @@
           "text": "LA CARTE N'EST PAS BÂTIE SUR « LES SYSTÈMES NE SONT PAS DANS LA NATURE » (p. 74). Cette thèse est une position d'épistémologie sans mécanisme, hors du périmètre, et elle ferait doublon avec systeme-concret-systeme-construit, déjà au corpus. C'est cet écart, et lui seul, qui tient les deux cartes distinctes : Roig pose le rapport du système réel au système construit, Le Moigne l'outille."
         },
         {
-          "id": "SUP-7f53fbbb44f75c84",
-          "origin": "validated",
-          "path": "$.quotation.locator",
-          "access": "n/a",
-          "text": "p. 79, chapitre 3"
-        },
-        {
           "id": "SUP-f78f9da2a277950c",
           "origin": "validated",
           "path": "$.review.notes[11]",
           "access": "n/a",
           "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
         }
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C040",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "Si le système n’est pas tapi dans l’hôpital en attendant d’être découvert, aucune confrontation ne pourra jamais annoncer que le modèle a fini d’y correspondre : il n’y a rien, en face, dont la liste serait close.",
+      "claim_text": "aucune confrontation ne pourra jamais annoncer que le modèle a fini d’y correspondre : il n’y a rien, en face, dont la liste serait close",
       "supports": [
         {
           "id": "SUP-f78f9da2a277950c",
@@ -728,11 +997,18 @@
           "path": "$.notes[1]",
           "access": "n/a",
           "text": "LA CARTE N'EST PAS BÂTIE SUR « LES SYSTÈMES NE SONT PAS DANS LA NATURE » (p. 74). Cette thèse est une position d'épistémologie sans mécanisme, hors du périmètre, et elle ferait doublon avec systeme-concret-systeme-construit, déjà au corpus. C'est cet écart, et lui seul, qui tient les deux cartes distinctes : Roig pose le rapport du système réel au système construit, Le Moigne l'outille."
+        },
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
         }
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "L’auteur tire lui-même la conséquence, au paragraphe suivant",
       "supports": [
@@ -746,7 +1022,7 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "« Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général »",
       "supports": [
@@ -763,13 +1039,20 @@
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-7f53fbbb44f75c84",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 79, chapitre 3"
         }
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Deux fois « toutes » : des représentations concurrentes satisfont les deux vérifications ensemble",
+      "claim_text": "des représentations concurrentes satisfont les deux vérifications ensemble",
       "supports": [
         {
           "id": "SUP-87d33e34a2f8058a",
@@ -777,13 +1060,27 @@
           "path": "$.review.notes[12]",
           "access": "n/a",
           "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
+        },
+        {
+          "id": "SUP-0ac96ed81f7fa2b1",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Le Moigne : le modèle doit être isomorphe du Système Général, ce qui se vérifie, et homomorphe de l'objet, ce qui ne s'achève jamais. Plusieurs modèles restent valides."
+        },
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
         }
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "et la ressemblance ne peut pas les départager",
+      "claim_text": "la ressemblance ne peut pas les départager",
       "supports": [
         {
           "id": "SUP-a9afd05e47a7cc4d",
@@ -802,7 +1099,7 @@
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Les deux schémas ont bien des finalités, un fonctionnement, une structure, une évolution et un environnement, donc la première vérification passe dans les deux cas",
       "supports": [
@@ -819,14 +1116,49 @@
           "path": "$.review.notes[11]",
           "access": "n/a",
           "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
+        {
+          "id": "SUP-87d33e34a2f8058a",
+          "origin": "validated",
+          "path": "$.review.notes[12]",
+          "access": "n/a",
+          "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
         }
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
-      "claim_text": "et chacun se laisse rapporter à des traits observables de l’établissement, donc la seconde ne rejette ni l’un ni l’autre",
+      "claim_text": "chacun se laisse rapporter à des traits observables de l’établissement",
       "supports": [
+        {
+          "id": "SUP-bbb0b55d386d516e",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "SOURCES 3/5 — https://shs.hal.science/halshs-02496706 (HTTP 200) et son PDF https://shs.hal.science/halshs-02496706/document (HTTP 200, 479 137 octets) : Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », DC.type « lecture », Cnam, date 2020/03/03, 19 pages — conforme au libellé « document de cours, CNAM, 2020, 19 p. ». La claim de contenu du libellé est vérifiée : page 8 du document (p. 9 du PDF), « Avec l'analyse systémique, il existe trois phases de modélisation : le cadrage (construction du modèle par isomorphie avec un système général), le développement (documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène) et l'interprétation (simulation d'actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes). » C'est mot pour mot « la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie » qu'annonce la fiche."
+        },
+        {
+          "id": "SUP-87d33e34a2f8058a",
+          "origin": "validated",
+          "path": "$.review.notes[12]",
+          "access": "n/a",
+          "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
+        }
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "donc la seconde ne rejette ni l’un ni l’autre",
+      "supports": [
+        {
+          "id": "SUP-f78f9da2a277950c",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "PROSE — l'asymétrie n'est ni durcie ni affadie. Le texte, folio 79 : « La vérification de l'isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s'assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général » — le balayage fini d'une liste connue par construction est bien une vérification qui s'achève, ce que le `hook` (« pourquoi une seule peut-elle s'achever ? ») et le `summary` (« ce qui se vérifie ») rendent sans surenchère ; la carte est même en deçà de « facile ». Et : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée (pour qu'elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve !) » — « ce qui ne s'achève jamais » rend « jamais parfaitement validée » sans le durcir, et l'impossibilité est bien de principe chez l'auteur, puisqu'elle tient au refus, constitutif du livre, de placer les systèmes dans la nature. J'ai vérifié cette parenthèse sur l'image : « les systèmes soient dans la nature » y est en italique, marque d'une thèse citée pour être écartée."
+        },
         {
           "id": "SUP-87d33e34a2f8058a",
           "origin": "validated",
@@ -844,7 +1176,42 @@
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Ils n’ont presque aucune case en commun.",
+      "supports": [
+        {
+          "id": "SUP-87d33e34a2f8058a",
+          "origin": "validated",
+          "path": "$.review.notes[12]",
+          "access": "n/a",
+          "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
+        }
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[2]",
+      "claim_text": "puisque la fidélité ne départage pas",
+      "supports": [
+        {
+          "id": "SUP-a9afd05e47a7cc4d",
+          "origin": "validated",
+          "path": "$.notes[9]",
+          "access": "n/a",
+          "text": "LA LIBERTÉ DU MODÉLISATEUR EST BORNÉE, ce que le résumé ne dit pas faute de place : la démarche « peut laisser divaguer l'imagination de l'observateur à sa guise, dès lors qu'il assure en permanence de la validité de ces deux correspondances » (p. 80), et la contrepartie exigée est l'explicitation, « Mais il importe qu'il y soit explicitement, publiquement, loyalement » (p. 81). Ce qui départage les modèles n'est pas leur fidélité mais les objectifs du modélisateur (p. 82)."
+        },
+        {
+          "id": "SUP-87d33e34a2f8058a",
+          "origin": "validated",
+          "path": "$.review.notes[12]",
+          "access": "n/a",
+          "text": "PROSE — la conséquence que la carte tire de l'asymétrie est celle que l'auteur tire lui-même, au paragraphe suivant et avec son propre « donc » : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général. » « Plusieurs modèles restent valides » est exactement ce « toutes […] et toutes […] » : plusieurs modèles satisfont les deux critères à la fois. La carte n'ajoute aucun adjectif que la source ne porte pas — ni « équivalents », ni « arbitraires », ni « incomparables » —, ce qui serait sorti du texte : le folio 79 précise au contraire que les modèles gardent des caractéristiques « prédéterminables et ne dépendant que de l'appareil utilisé ». Verdict `fidele`."
+        }
+      ]
+    },
+    {
+      "claim_id": "C050",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "La page suivante dit autre chose.",
       "supports": [
@@ -856,16 +1223,16 @@
           "text": "LA LIBERTÉ DU MODÉLISATEUR EST BORNÉE, ce que le résumé ne dit pas faute de place : la démarche « peut laisser divaguer l'imagination de l'observateur à sa guise, dès lors qu'il assure en permanence de la validité de ces deux correspondances » (p. 80), et la contrepartie exigée est l'explicitation, « Mais il importe qu'il y soit explicitement, publiquement, loyalement » (p. 81). Ce qui départage les modèles n'est pas leur fidélité mais les objectifs du modélisateur (p. 82)."
         },
         {
-          "id": "SUP-7f53fbbb44f75c84",
+          "id": "SUP-2c74d218237c0e2c",
           "origin": "validated",
-          "path": "$.quotation.locator",
+          "path": "$.review.notes[10]",
           "access": "n/a",
-          "text": "p. 79, chapitre 3"
+          "text": "PROSE — c'est le point que j'ai instruit le plus lentement, parce que la carte affirme quelque chose sur l'asymétrie des deux vérifications. Elle nomme les deux dans le bon sens et dans le bon ordre : le folio 79 pose « 1/ Isomorphe du Système Général. 2/ Homomorphe de l'objet à représenter », et le folio 80 le redit sans ambiguïté (« isomorphie avec le Système Général, homomorphie avec l'objet considéré »). C'est le sens contre-intuitif — on attendrait l'isomorphie du côté de l'objet — et la carte ne l'inverse pas."
         }
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C051",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "La démarche « peut laisser divaguer l’imagination de l’observateur à sa guise, dès lors qu’il assure en permanence de la validité de ces deux correspondances »",
       "supports": [
@@ -879,7 +1246,7 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C052",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "La liberté est entière et la condition est continue : elle ne se solde pas une fois pour toutes au début du travail.",
       "supports": [
@@ -893,9 +1260,9 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C053",
       "locator": "sections[3].paragraphs[3]",
-      "claim_text": "Ce qui a été choisi doit l’être, écrit Le Moigne, « explicitement, publiquement, loyalement »",
+      "claim_text": "La contrepartie est publique.",
       "supports": [
         {
           "id": "SUP-a9afd05e47a7cc4d",
@@ -907,9 +1274,9 @@
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C054",
       "locator": "sections[3].paragraphs[3]",
-      "claim_text": "Et ce qui distingue deux modèles concurrents n’est pas leur degré de ressemblance, ce sont les objectifs de celui qui les construit",
+      "claim_text": "Ce qui a été choisi doit l’être, écrit Le Moigne, « explicitement, publiquement, loyalement ».",
       "supports": [
         {
           "id": "SUP-a9afd05e47a7cc4d",
@@ -921,7 +1288,21 @@
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C055",
+      "locator": "sections[3].paragraphs[3]",
+      "claim_text": "ce qui distingue deux modèles concurrents n’est pas leur degré de ressemblance, ce sont les objectifs de celui qui les construit",
+      "supports": [
+        {
+          "id": "SUP-a9afd05e47a7cc4d",
+          "origin": "validated",
+          "path": "$.notes[9]",
+          "access": "n/a",
+          "text": "LA LIBERTÉ DU MODÉLISATEUR EST BORNÉE, ce que le résumé ne dit pas faute de place : la démarche « peut laisser divaguer l'imagination de l'observateur à sa guise, dès lors qu'il assure en permanence de la validité de ces deux correspondances » (p. 80), et la contrepartie exigée est l'explicitation, « Mais il importe qu'il y soit explicitement, publiquement, loyalement » (p. 81). Ce qui départage les modèles n'est pas leur fidélité mais les objectifs du modélisateur (p. 82)."
+        }
+      ]
+    },
+    {
+      "claim_id": "C056",
       "locator": "sections[3].paragraphs[3]",
       "claim_text": "la question de savoir lequel est le vrai se remplace par celle de savoir à quoi le modèle doit servir",
       "supports": [
@@ -931,11 +1312,18 @@
           "path": "$.notes[9]",
           "access": "n/a",
           "text": "LA LIBERTÉ DU MODÉLISATEUR EST BORNÉE, ce que le résumé ne dit pas faute de place : la démarche « peut laisser divaguer l'imagination de l'observateur à sa guise, dès lors qu'il assure en permanence de la validité de ces deux correspondances » (p. 80), et la contrepartie exigée est l'explicitation, « Mais il importe qu'il y soit explicitement, publiquement, loyalement » (p. 81). Ce qui départage les modèles n'est pas leur fidélité mais les objectifs du modélisateur (p. 82)."
+        },
+        {
+          "id": "SUP-bbb0b55d386d516e",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "SOURCES 3/5 — https://shs.hal.science/halshs-02496706 (HTTP 200) et son PDF https://shs.hal.science/halshs-02496706/document (HTTP 200, 479 137 octets) : Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », DC.type « lecture », Cnam, date 2020/03/03, 19 pages — conforme au libellé « document de cours, CNAM, 2020, 19 p. ». La claim de contenu du libellé est vérifiée : page 8 du document (p. 9 du PDF), « Avec l'analyse systémique, il existe trois phases de modélisation : le cadrage (construction du modèle par isomorphie avec un système général), le développement (documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène) et l'interprétation (simulation d'actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes). » C'est mot pour mot « la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie » qu'annonce la fiche."
         }
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C057",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le mot est forgé",
       "supports": [
@@ -954,6 +1342,13 @@
           "text": "ATTRIBUTION — confirmée, et les deux détails que la note d'attribution avance sont vérifiés à la source. (a) Guillemets : première occurrence du mot au folio 78, sous l'intertitre « Photographie et systémographie », « nous établirons une « systémographie » de l'objet à l'aide de l'appareil « Système Général » » — lu sur l'image, guillemets français bien présents. (b) La note en bas de ce folio 78 est la note 2 : « En intitulant Le macroscope son ouvrage populaire sur l'approche systémique, J. de ROSNAY (1975) proposait un appareil aux qualités apparemment peu différentes de celles que nous attribuons au « systémographe » […] Ce macroscope est hélas assez peu défini et son mode d'emploi n'est guère précisé […] Aussi a-t-il paru préférable d'accuser loyalement l'option différente, plus radicale et par là plus rigoureuse que l'on préconise ici en donnant un autre nom... à un autre outil ! » La fiche restitue exactement cela. Le Moigne signe seul (page de titre, aucune co-signature ; OpenLibrary : by_statement « Jean-Louis Le Moigne. »), et il revendique le terme à son compte dans le liminaire de 2006 : « En campant le concept de modélisation systémique (et son instrumentation par la 'systémographie') ». Aucune source consultée ne fait remonter le mot à un tiers ; j'ai cherché un usage antérieur à 1977 (recherches web ciblées, notice fr.wikipedia.org/wiki/Systémographie qui ne cite aucun antécédent) sans en trouver. Réserve honnête : je n'ai pas ouvert l'édition de 1977 elle-même (voir ci-dessous), donc le rattachement du terme à « chapitre 3 » de la première édition repose sur un faisceau — la « Relecture » du chapitre 3 déclare au folio 86 « on n'a ajouté que des modifications très minimes au texte initial de ce chapitre », et la note 1 du folio 78 date visiblement de 1977 (« Son propos date de 1955, mais il demeure aussi actuel, vingt ans plus tard »). La fiche dit d'ailleurs explicitement quel exemplaire elle a ouvert, ce qui est la bonne façon de porter cette réserve."
         },
         {
+          "id": "SUP-ab62b4f98906b668",
+          "origin": "validated",
+          "path": "$.review.attribution",
+          "access": "n/a",
+          "text": "confirmee"
+        },
+        {
           "id": "SUP-cae423b80dc5704e",
           "origin": "validated",
           "path": "$.notes[5]",
@@ -963,9 +1358,9 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C058",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "et l’auteur s’explique deux fois sur ce refus d’un terme déjà en circulation",
+      "claim_text": "l’auteur s’explique deux fois sur ce refus d’un terme déjà en circulation",
       "supports": [
         {
           "id": "SUP-8f0fa1e58b07bb99",
@@ -991,17 +1386,10 @@
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C059",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le livre paraît en 1977, aux Presses universitaires de France",
       "supports": [
-        {
-          "id": "SUP-81bde008b962bc7a",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Terme forgé par Jean-Louis Le Moigne, qui signe seul La théorie du système général, parue aux Presses universitaires de France en 1977 : il l'introduit au chapitre 3, entre guillemets, et justifie en note d'avoir donné un autre nom à un autre outil que le macroscope de Joël de Rosnay. L'exemplaire ouvert ici est l'édition électronique de 2006, qui reprend la quatrième édition de 1994."
-        },
         {
           "id": "SUP-f252314bbb4b085b",
           "origin": "validated",
@@ -1016,11 +1404,25 @@
           "path": "$.review.notes[6]",
           "access": "n/a",
           "text": "SOURCES 2/5 — https://openlibrary.org/books/OL4343570M.json (HTTP 200) : « La théorie du système général », subtitle « théorie de la modélisation », Jean-Louis Le Moigne, Presses universitaires de France, Paris, 1977, edition_name « 1. éd. », series « Systèmes-décisions : Section Systèmes de gestion », pagination « x, 258 p. », number_of_pages 258, LCCN 78385070, notice issue du MARC de la Library of Congress. Correspondance exacte avec le libellé de la fiche (PUF, coll. « Systèmes-Décisions », 1977, 258 p.), et `consulted: metadata-only` avec « non ouverte » est la déclaration correcte : je n'ai pas non plus pu ouvrir cette édition imprimée."
+        },
+        {
+          "id": "SUP-81bde008b962bc7a",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Terme forgé par Jean-Louis Le Moigne, qui signe seul La théorie du système général, parue aux Presses universitaires de France en 1977 : il l'introduit au chapitre 3, entre guillemets, et justifie en note d'avoir donné un autre nom à un autre outil que le macroscope de Joël de Rosnay. L'exemplaire ouvert ici est l'édition électronique de 2006, qui reprend la quatrième édition de 1994."
+        },
+        {
+          "id": "SUP-7c4bee84ff2bec10",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "L'ÉDITION PUF DE 1977 N'A PAS ÉTÉ OUVERTE et aucune numérisation n'en a été trouvée. Que la systémographie soit bien de cette première édition est établi par une déclaration de l'auteur ajoutée à la deuxième édition, p. 22 : « la primauté que l'on avait introduite, dès la première édition, à la présentation de la systémographie ». Cette phrase est de 1984 : elle atteste l'antériorité, elle n'en est pas la preuve directe. Sa pagination totale est incertaine, 258 p. chez Motulsky et OpenLibrary, 272 p. chez Degenne."
         }
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "deux ans après Le macroscope, l’ouvrage de vulgarisation que Joël de Rosnay publie en 1975",
       "supports": [
@@ -1041,9 +1443,9 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C061",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "et que Le Moigne vise en note de bas de page",
+      "claim_text": "que Le Moigne vise en note de bas de page",
       "supports": [
         {
           "id": "SUP-8f0fa1e58b07bb99",
@@ -1062,7 +1464,7 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C062",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "il y accorde un appareil « aux qualités apparemment peu différentes » du sien",
       "supports": [
@@ -1076,7 +1478,7 @@
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C063",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "l’adverbe portant toute la réserve",
       "supports": [
@@ -1090,7 +1492,7 @@
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C064",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "avant de le trouver « hélas assez peu défini et son mode d’emploi n’est guère précisé »",
       "supports": [
@@ -1104,7 +1506,7 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C065",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "D’où la décision, revendiquée telle quelle : « en donnant un autre nom... à un autre outil ! »",
       "supports": [
@@ -1125,7 +1527,7 @@
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C066",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Le second refus est plus tranchant.",
       "supports": [
@@ -1146,7 +1548,7 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C067",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Les noms courants de son instrument, analyse de système et approche système, sont écartés comme une « ultime tentative de récupération de l’analyse cartésienne »",
       "supports": [
@@ -1160,7 +1562,7 @@
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C068",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Reprendre le mot aurait ramené par l’étiquette ce que l’opération prétend quitter.",
       "supports": [
@@ -1174,7 +1576,7 @@
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C069",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Le nom, lui, n’a pas pris.",
       "supports": [
@@ -1188,7 +1590,7 @@
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C070",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Deux textes qui reviennent sur le travail de Le Moigne, l’un en 2020, l’autre en 2024, ne l’emploient pas une seule fois",
       "supports": [
@@ -1214,20 +1616,6 @@
           "access": "full-text",
           "text": "Christophe Schmitt, « À la rencontre de Jean-Louis Le Moigne : de la théorie du système général à la modélisation et au constructivisme », Projectics, n° 37, 2024, p. 151-160.",
           "access_corroboration": "dossier-absent"
-        }
-      ]
-    },
-    {
-      "claim_id": "C063",
-      "locator": "sections[5].paragraphs[0]",
-      "claim_text": "y compris là où ils portent sur la modélisation elle-même",
-      "supports": [
-        {
-          "id": "SUP-cae423b80dc5704e",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "LE NOM N'A PAS SURVÉCU, LE MÉCANISME OUI. Le mot systémographie est absent de HAL, où l'interrogation exacte rend un seul document sans rapport. Pesqueux (2020) restitue la procédure au mot près sans jamais prononcer le terme, et Schmitt (2024) non plus. Le titre de la carte est celui que l'auteur a donné à son chapitre et à son instrument, ce n'est pas une étiquette reçue."
         },
         {
           "id": "SUP-bbb0b55d386d516e",
@@ -1246,7 +1634,28 @@
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C071",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "y compris là où ils portent sur la modélisation elle-même",
+      "supports": [
+        {
+          "id": "SUP-cae423b80dc5704e",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "LE NOM N'A PAS SURVÉCU, LE MÉCANISME OUI. Le mot systémographie est absent de HAL, où l'interrogation exacte rend un seul document sans rapport. Pesqueux (2020) restitue la procédure au mot près sans jamais prononcer le terme, et Schmitt (2024) non plus. Le titre de la carte est celui que l'auteur a donné à son chapitre et à son instrument, ce n'est pas une étiquette reçue."
+        },
+        {
+          "id": "SUP-bbb0b55d386d516e",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "SOURCES 3/5 — https://shs.hal.science/halshs-02496706 (HTTP 200) et son PDF https://shs.hal.science/halshs-02496706/document (HTTP 200, 479 137 octets) : Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », DC.type « lecture », Cnam, date 2020/03/03, 19 pages — conforme au libellé « document de cours, CNAM, 2020, 19 p. ». La claim de contenu du libellé est vérifiée : page 8 du document (p. 9 du PDF), « Avec l'analyse systémique, il existe trois phases de modélisation : le cadrage (construction du modèle par isomorphie avec un système général), le développement (documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène) et l'interprétation (simulation d'actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes). » C'est mot pour mot « la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie » qu'annonce la fiche."
+        }
+      ]
+    },
+    {
+      "claim_id": "C072",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "La procédure, elle, a circulé au mot près.",
       "supports": [
@@ -1267,7 +1676,7 @@
       ]
     },
     {
-      "claim_id": "C065",
+      "claim_id": "C073",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Un document de cours d’Yvon Pesqueux, au Conservatoire national des arts et métiers, décrit trois phases de modélisation",
       "supports": [
@@ -1285,11 +1694,19 @@
           "access": "full-text",
           "text": "Yvon Pesqueux, « La systémique comme jalon et rhétorique en sciences de gestion », document de cours, CNAM, 2020, 19 p. Restitue la procédure en trois phases, cadrage par isomorphie et documentation par homomorphie.",
           "access_corroboration": "dossier-absent"
+        },
+        {
+          "id": "SUP-6baa0d5b1a45e8d7",
+          "origin": "validated",
+          "path": "$.sources[2].url",
+          "access": "full-text",
+          "text": "https://shs.hal.science/halshs-02496706",
+          "access_corroboration": "dossier-absent"
         }
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C074",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "le « cadrage (construction du modèle par isomorphie avec un système général) »",
       "supports": [
@@ -1303,9 +1720,9 @@
       ]
     },
     {
-      "claim_id": "C067",
+      "claim_id": "C075",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "puis le développement, soit la « documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène »",
+      "claim_text": "la « documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène »",
       "supports": [
         {
           "id": "SUP-bbb0b55d386d516e",
@@ -1317,9 +1734,9 @@
       ]
     },
     {
-      "claim_id": "C068",
+      "claim_id": "C076",
       "locator": "sections[5].paragraphs[1]",
-      "claim_text": "puis l’interprétation, entendue là comme la « simulation d’actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes »",
+      "claim_text": "la « simulation d’actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes »",
       "supports": [
         {
           "id": "SUP-bbb0b55d386d516e",
@@ -1331,7 +1748,7 @@
       ]
     },
     {
-      "claim_id": "C069",
+      "claim_id": "C077",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Ce troisième temps dit à quoi le modèle sert, ce que les deux vérifications ne disaient pas.",
       "supports": [
@@ -1348,11 +1765,25 @@
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "[…] la représentation que construit l’observateur sera à la fois : 1/ Isomorphe du Système Général. 2/ Homomorphe de l’objet à représenter."
+        },
+        {
+          "id": "SUP-1ebb6291539d2f19",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE MÉCANISME EST LA PROCÉDURE EN DEUX VÉRIFICATIONS, ET SON POINT ENSEIGNABLE EST QU'ELLES N'ONT PAS LE MÊME STATUT. La première se décide mécaniquement : le Système Général étant une construction artificielle aux propriétés connues par construction, il suffit de les balayer une à une, « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement » (p. 79). La seconde ne se termine jamais : « L'homomorphie du modèle et de l'objet sera difficile et a priori jamais parfaitement validée » (p. 79). D'où la conséquence que porte la fin du résumé : « Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général » (p. 79)."
+        },
+        {
+          "id": "SUP-a9afd05e47a7cc4d",
+          "origin": "validated",
+          "path": "$.notes[9]",
+          "access": "n/a",
+          "text": "LA LIBERTÉ DU MODÉLISATEUR EST BORNÉE, ce que le résumé ne dit pas faute de place : la démarche « peut laisser divaguer l'imagination de l'observateur à sa guise, dès lors qu'il assure en permanence de la validité de ces deux correspondances » (p. 80), et la contrepartie exigée est l'explicitation, « Mais il importe qu'il y soit explicitement, publiquement, loyalement » (p. 81). Ce qui départage les modèles n'est pas leur fidélité mais les objectifs du modélisateur (p. 82)."
         }
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C078",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "Un lecteur qui ouvrira ce document trouvera cependant, dans ses premières pages, la même paire de termes employée en sens inverse",
       "supports": [
@@ -1366,7 +1797,7 @@
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C079",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "c’est le passage sur les trois phases qui restitue Le Moigne",
       "supports": [
@@ -1387,9 +1818,9 @@
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C080",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "Quant au mot lui-même, il n’a pas entièrement quitté la scène",
+      "claim_text": "il n’a pas entièrement quitté la scène",
       "supports": [
         {
           "id": "SUP-887ddccb2614419d",
@@ -1401,9 +1832,9 @@
       ]
     },
     {
-      "claim_id": "C073",
+      "claim_id": "C081",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "un article de Géry Lecas paru en 2006, « La modélisation systémique : outils méthodologiques pour économistes », reprend la systémographie sous son nom",
+      "claim_text": "un article de Géry Lecas paru en 2006, « La modélisation systémique : outils méthodologiques pour économistes »",
       "supports": [
         {
           "id": "SUP-887ddccb2614419d",
@@ -1415,9 +1846,23 @@
       ]
     },
     {
-      "claim_id": "C074",
+      "claim_id": "C082",
       "locator": "sections[5].paragraphs[2]",
-      "claim_text": "et ce qu’il en fait, ses pages le portent : il faudra les lire",
+      "claim_text": "reprend la systémographie sous son nom",
+      "supports": [
+        {
+          "id": "SUP-887ddccb2614419d",
+          "origin": "validated",
+          "path": "$.notes[6]",
+          "access": "n/a",
+          "text": "LACUNE LA PLUS REGRETTABLE : Géry Lecas, « La modélisation systémique : outils méthodologiques pour économistes », Innovations, 2006/2, n° 24, était la seule source secondaire francophone repérée qui traite la systémographie sous son nom. Cairn a rendu HTTP 403 sur le PDF. Ce qu'elle établit est inconnu, non absent. Le domaine mcxapc.org, où se trouve un texte de l'auteur intitulé « Qu'est-ce qu'un Modèle ? », est refusé par le proxy sortant."
+        }
+      ]
+    },
+    {
+      "claim_id": "C083",
+      "locator": "sections[5].paragraphs[2]",
+      "claim_text": "ce qu’il en fait, ses pages le portent : il faudra les lire",
       "supports": [
         {
           "id": "SUP-887ddccb2614419d",
@@ -1429,6 +1874,6 @@
       ]
     }
   ],
-  "estimated_tokens": 42355,
+  "estimated_tokens": 53758,
   "status": "READY"
 }
