@@ -1,371 +1,301 @@
 {
   "concept_id": "trois-sigmas-arbitrage-de-cout",
-  "candidate_sha256": "1b16ca698a7691100d5bd7b2d773fef4effc8ac48a570b7dc36a48a56cd9fee8",
+  "candidate_sha256": "34596d12d292c27c5753d47aa2f1186da288079eb9bde76682f64523489ede22",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Le resume valide porte la « base des limites » et l'arbitrage entre le cout de chercher une panne inexistante et celui d'en manquer une reelle ; poser qu'une ligne doit etre tracee quelque part et qu'on va voir au dela reste a l'interieur de ces appuis, sans predicat supplementaire."
+      "reason": "Le verbatim de notes[3] et de review.notes[5] nomme exactement les deux erreurs : « looking for trouble when it does not exist » et « overlooking troubles that do exist »."
     },
     {
       "claim_id": "C002",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis autorisent deux erreurs dont chacune coute, rien de plus : ni la geometrie « trop pres de la moyenne / trop loin » (aucun appui ne place les limites a une distance d'une moyenne, ni t comme multiple d'une unite sigma), ni les frequences et durees presentees comme reelles (« sans arret », « on perd des heures », « pendant des semaines », l'installation d'une derive)."
+      "verdict": "SUPPORTED",
+      "reason": "Le résumé porte les deux termes comme deux coûts (« le coût de chercher une panne inexistante et celui d'en manquer une réelle »), et notes[3] les désigne comme les deux termes de la balance."
     },
     {
       "claim_id": "C003",
-      "verdict": "TOO_STRONG",
-      "reason": "La phrase de la p. 276 oppose « the cost of looking for trouble when it does not exist » aux « disadvantages occasioned by overlooking troubles that do exist » sans nommer la monnaie d'aucun des deux ; « l'une en temps perdu, l'autre en pieces mauvaises » specifie le contenu des deux couts au-dela de ce que les appuis portent."
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[2] vérifie les deux images de page 276 et 277 et notes[5] borne la lecture à ces deux pages ; la balance est p. 276 et le choix de t p. 277, donc la décision s'y joue, sans prétention d'exclusivité sur l'ouvrage."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue verifie le locator p. 276-277 sur les deux images de page (feuillet n289 = p. 276, n290 = p. 277) et la note de portee confirme que ce sont ces deux pages qui ont ete ouvertes ; la phrase de balance y est lue (p. 276) et le choix de t y est tranche (p. 277)."
+      "reason": "Claim purement métadonnées : titre, New York, 1931 sont portés par la notice de la fiche et corroborés par l'export MODS du LCCN cité dans review.notes[2], que la règle d'accès autorise pour une référence."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "L'export MODS resolu dans la note de revue donne le titre « Economic control of quality of manufactured product », New York, D. Van Nostrand, 1931 ; le label de source et la reference de citation portent les memes elements. Ce sont des donnees de notice, exactement ce qu'un appui de notice etablit."
+      "reason": "attribution_note et review.notes[4] (page de titre, notice LC à un seul nom) établissent la signature unique de Shewhart."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution constate la page de titre « By W. A. SHEWHART » et la notice LC a un seul nom, usage primary ; la note d'attribution de la fiche dit « seul auteur de l'ouvrage »."
+      "reason": "review.notes[4] cite la page de titre : « Member of the Technical Staff, Bell Telephone Laboratories, Inc. »."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "La page de titre est citee dans la note de revue : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. »"
+      "reason": "quotation (« Experience indicates that t = 3 seems to be an acceptable economic value ») et attribution_note (« posée comme un choix d'expérience, pas comme un théorème ») autorisent le nombre trois choisi sur l'expérience et non calculé ; aucune unité n'est accolée à t."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Le verbatim « Experience indicates that t = 3 seems to be an acceptable economic value » et sa traduction portent le nombre et son fondement d'experience ; la note d'attribution ajoute « posee comme un choix d'experience, pas comme un theoreme », ce qui autorise « non calcule »."
+      "reason": "La phrase de balance des deux coûts (notes[3], review.notes[5], résumé) et « acceptable economic value » de la citation autorisent que le prix des deux erreurs soit ce qui justifie la valeur."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "La citation de la p. 276 met en balance le cout de chercher un ennui inexistant et le desavantage d'en laisser passer un reel, et le resume valide en fait l'arbitrage de Shewhart ; rattacher la justification du nombre au prix de ces deux erreurs suit ces appuis sans les depasser."
+      "reason": "notes[3] et review.notes[5] attribuent la phrase de l'arbitrage à Shewhart lui-même, lue sur l'image de la p. 276 : elle n'est donc pas une reconstruction postérieure."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue declare avoir lu sur l'image de la p. 276 la phrase « We must try to strike a balance… » : l'arbitrage est bien pose par Shewhart a cette page, et non reconstruit apres lui."
+      "reason": "review.notes[5] rattache explicitement « le coût de chercher une panne inexistante et celui d'en manquer une réelle » à cette unique phrase de la p. 276, et notes[3] la décrit comme les deux termes d'une balance."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "La phrase citee oppose un « cost » a des « disadvantages », et le resume valide — dont la note de revue verifie qu'aucun adjectif n'excede la source — parle du « cout de chercher une panne inexistante et celui d'en manquer une reelle » : deux postes de depense est autorise a ce titre."
+      "reason": "Citation reproduite mot pour mot telle qu'elle figure dans notes[3] et review.notes[5], lue sur l'image de la p. 276."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Citation anglaise identique, mot pour mot, a celle que portent la note de la fiche et la note de revue, toutes deux rapportees a la p. 276."
+      "reason": "Traduction fidèle du verbatim fourni, sans ajout : les deux versants (gain par augmentation de P via réduction du coût de la fausse recherche, perte par oubli des ennuis réels) sont conservés."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Rendu francais fidele du verbatim fourni : « advantages to be gained by increasing the value P through reduction in the cost of looking for trouble when it does not exist » et « the disadvantages occasioned by overlooking troubles that do exist » sont restitues sans ajout ni suppression d'un des deux versants."
+      "reason": "notes[0] désigne « la probabilité P associée aux limites »."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche dit exactement « la probabilite P associee aux limites » ; le claim n'en dit pas davantage et ne definit ni ce que P mesure ni comment il se calcule."
+      "reason": "Le verbatim met en balance l'avantage d'augmenter P avec les désavantages des ennuis non détectés, et notes[0] précise que l'arbitrage porte entre deux probabilités d'erreur : le double effet contraire est bien celui des appuis."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Litteralement dans le verbatim : « increasing the value P through reduction in the cost of looking for trouble when it does not exist »."
+      "reason": "Reformulation du même arbitrage à commande unique : P augmenté joue en sens contraire sur les deux erreurs, ce que notes[0] et le verbatim de la balance portent."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "La phrase est construite en balance entre ce que gagne l'augmentation de P et « the disadvantages occasioned by overlooking troubles that do exist » : le contrepoids est bien celui de l'augmentation, et la note de la fiche confirme un arbitrage entre deux probabilites d'erreur."
+      "reason": "« We must try to strike a balance » et l'arbitrage entre deux probabilités d'erreur (notes[0], résumé) autorisent l'absence de réglage améliorant les deux termes et l'existence d'un point de moindre perte."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Le verbatim ne fait varier qu'une quantite, « increasing the value P », et lui attache un avantage et un desavantage ; la note de la fiche parle d'un arbitrage entre deux probabilites d'erreur."
+      "reason": "notes[3] localise la citation « (p. 276) » et review.notes[5] la relit sur cette page ; la mise en balance des deux dépenses y est bien portée."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "« We must try to strike a balance between… » suppose precisement que les deux termes ne s'ameliorent pas ensemble et qu'il y a un point a viser ; le resume valide parle d'arbitrage. Rien n'est ajoute sur la maniere de trouver ce point."
+      "reason": "notes[0] décrit exactement cette voie : tirer la valeur de t d'un niveau de confiance choisi sur une loi supposée connue."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche et la note de revue situent toutes deux la phrase de balance a la p. 276, et c'est bien elle qui met les deux couts en regard."
+      "reason": "notes[2] et review.notes[5] portent « For the most part, however, we never know […] », rendu sans excès par « la plupart du temps », et notes[0] identifie la voie déductive comme celle qu'il écarte."
     },
     {
       "claim_id": "C020",
-      "verdict": "TOO_STRONG",
-      "reason": "La note de la fiche autorise la voie deductive — « tirerait la valeur de t d'un niveau de confiance choisi sur une loi supposee connue » — mais aucun appui ne definit cette loi comme la repartition des valeurs « quand rien d'autre que le hasard n'agit » : cette glose ajoute au dossier un contenu (l'etat ou seul le hasard agit) que rien n'y porte."
+      "verdict": "SUPPORTED",
+      "reason": "Le seul fragment repris, « in sufficient detail to set up such limits », figure mot pour mot dans les deux appuis ; la fonction n'est pas nommée et le référent « cette loi » est celui du résumé (« faute de loi connue »)."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche : « Ce qu'il ecarte, c'est la voie deductive. »"
+      "reason": "Citation reproduite mot pour mot dans notes[2] et review.notes[5], rapportée à la p. 276."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim lu sur l'image de la p. 276 : « For the most part, however, we never know … in sufficient detail to set up such limits » ; le resume valide, dont la note de revue verifie l'appui phrase par phrase, rend ce constat par « Faute de loi connue ». La fonction n'est pas nommee et la restriction suit immediatement."
+      "reason": "Traduction littérale de « the basis for such limits must be, in the last analysis, empirical », conforme au résumé."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Fragment identique mot pour mot dans les deux appuis, note de la fiche et note de revue ; il est cite sans nommer la fonction ni presumer ce qu'elle serait."
+      "reason": "notes[2] constate à la lettre l'italique de « empirical » et celui de « economic » deux lignes plus bas."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Les deux appuis donnent la question puis la reponse consecutives sur la p. 276 ; la reponse tient effectivement en une seule phrase brieve, « Obviously, the basis for such limits must be, in the last analysis, empirical »."
+      "reason": "Conséquence immédiate des appuis : les deux mots mis en italique par l'imprimé sont précisément les deux termes auxquels le résumé et attribution_note réduisent l'argument (empirique et économique)."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique mot pour mot a celle de la note de la fiche, reprise par la note de revue comme lue sur l'image de la p. 276."
+      "reason": "notes[0] pose que ce qui est écarté est la voie déductive et non la probabilité, ce qui autorise la lecture d'un déplacement de justification plutôt que d'un aveu de faiblesse."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Rendu francais fidele de « the basis for such limits must be, in the last analysis, empirical », sans deplacement de la modalite."
+      "reason": "Reprise quasi littérale de notes[0]."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche dit exactement : « Le mot \"empirical\" est en italiques dans l'imprime, comme \"economic\" deux lignes plus bas. »"
+      "reason": "La base empirique (notes[2], résumé) et « Experience indicates » (citation) autorisent le déplacement de la justification vers ce que l'expérience indique."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche pose la formulation fidele « economique et empirique, contre deductive », et le resume valide tient ces deux appuis pour ceux de la carte."
+      "reason": "review.notes[1] situe « la formule P > 1 − 1/t² imprimée juste au-dessus », review.notes[4] l'attribue au théorème de Tchebycheff, et notes[12] confirme la forme stricte reproduite par le claim."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche oppose la base empirique a la voie deductive ecartee, en precisant que la probabilite n'est pas rejetee : il s'agit bien d'un deplacement de la justification, non d'un defaut."
+      "reason": "attribution_note et review.notes[4] constatent que le seul nom propre tiers des p. 276-277, vérifiées page par page, est celui de Tchebychev."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Reprise quasi litterale de la note de la fiche : la voie ecartee « tirerait la valeur de t d'un niveau de confiance choisi sur une loi supposee connue »."
+      "reason": "La formule P > 1 − 1/t², portée telle quelle par notes[12] et review.notes[1], relie bien P et t ; aucune unité n'est attachée à t."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "« Experience indicates that t = 3… » et la note de la fiche sur la voie deductive ecartee autorisent le deplacement de la justification vers l'experience, faute de loi connue."
+      "reason": "notes[12] et review.notes[7] constatent exactement la forme stricte imprimée contre l'énoncé usuel large."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue sur la citation etablit que la formule P > 1 - 1/t2 est « imprimee juste au-dessus » de la phrase citee."
+      "reason": "Les appuis placent « we never know […] in sufficient detail » sur la p. 276 (notes[2], review.notes[5]) et l'inégalité juste au-dessus de la phrase de la p. 277 (review.notes[1], review.notes[4]) : l'ordre est établi."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue d'attribution rapporte le theoreme de Tchebycheff invoque pour cette inegalite, et la note de la fiche dit « Shewhart imprime l'inegalite de Tchebychev »."
+      "reason": "attribution_note et review.notes[4] disent que l'inégalité borne sans fixer la valeur retenue, et la formule fournie laisse t libre, le minorant 1 − 1/t² croissant avec t."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Formule identique, caractere pour caractere, a celle que portent trois appuis : « P > 1 - 1/t2 », avec le meme signe strict."
+      "reason": "review.notes[4] dit l'inégalité « explicitement suivie de » cette phrase, review.notes[1] la situe juste au-dessous de la formule, et le verbatim figure dans quotation.original_text."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue d'attribution, apres verification page par page, dit que sur p. 276-277 « le seul nom propre tiers est celui de Tchebycheff » ; la note d'attribution de la fiche le redit."
+      "reason": "attribution_note : « l'inégalité borne les limites sans fixer la valeur retenue »."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "La formule fournie par les appuis ne fait intervenir que P et t, et la note de la fiche qualifie P de probabilite associee aux limites ; le claim n'en dit pas plus."
+      "reason": "La citation (« Experience indicates ») et attribution_note (« un choix d'expérience, pas un théorème ») autorisent le passage du calcul au constat d'expérience."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche dit exactement : « Shewhart imprime l'inegalite de Tchebychev sous forme stricte, P > 1 - 1/t2, la ou l'enonce usuel est large. »"
+      "reason": "Verbatim identique à quotation.original_text et à la relecture sur image rapportée par review.notes[0]."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Le constat « we never know … in sufficient detail » est lu a la p. 276 et la formule est imprimee juste au-dessus de la phrase de la p. 277 : l'ordre d'exposition est etabli. Le claim n'affirme rien de plus, en particulier pas que l'inegalite vaudrait sans connaitre la loi."
+      "reason": "Reprise exacte de la seconde phrase de quotation.text, dont la note de traduction justifie le rendu."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Les deux appuis disent que l'inegalite « borne sans fixer la valeur » et qu'elle est explicitement suivie de « We are still faced with the choice of t » : le choix de t reste entier, c'est-a-dire qu'aucune valeur n'est exclue par elle."
+      "reason": "L'original fourni porte « an acceptable economic value », où economic qualifie value, et la note de traduction confirme qu'« il s'agit bien de coût » pour la valeur elle-même."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Simple lecture de la formule fournie par l'appui, P > 1 - 1/t2 : la borne inferieure garantie croit avec t. Le claim ne dit pas ce que P mesure ni ne le rattache a une unite sigma."
+      "reason": "« acceptable economic value » plus l'arbitrage de coûts du résumé donnent le prix ; attribution_note et notes[0] donnent le versant négatif, l'inégalité bornant sans fixer la valeur — donc sans garantie."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution : l'inegalite « borne les limites sans fixer la valeur retenue »."
+      "reason": "review.notes[0] relève l'en-tête « DETECTION OF LACK OF CONTROL   277 » sur l'image de page."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue d'attribution dit l'inegalite « explicitement suivie de \"We are still faced with the choice of t\" », et la note sur la citation place la formule juste au-dessus."
+      "reason": "notes[0] qualifie à la lettre d'inexact le raccourci non probabiliste, Shewhart ne rejetant pas la probabilité."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique mot pour mot dans trois appuis, dont la relecture sur l'image du feuillet n290 (p. 277)."
+      "reason": "notes[0] énumère les deux emplois (inégalité de Tchebychev, probabilité P associée aux limites) et le verbatim parle d'augmenter la valeur P."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation exacte de « borne sans fixer la valeur » que portent la note d'attribution et la note de revue."
+      "reason": "notes[0] : « son arbitrage porte entre deux probabilités d'erreur »."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "La note d'attribution dit la regle « posee comme un choix d'experience, pas comme un theoreme », et le verbatim qui suit la formule commence par « Experience indicates »."
+      "reason": "Reprise fidèle de notes[0] sur la voie déductive écartée."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique mot pour mot au texte original de la fiche et a la relecture sur image (« Experience indicates that t = 3 seems to be an acceptable economic value »), signalee sans coupe."
+      "reason": "Formule reprise mot pour mot de notes[0] : « La formulation fidèle est “économique et empirique, contre déductive” »."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Identique a la traduction validee de la fiche, aux seuls glyphes d'apostrophe pres ; la note du traducteur confirme le rendu litteral de « an acceptable economic value »."
+      "reason": "notes[0] écarte « économique et non probabiliste » comme « raccourci inexact à la lettre »."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "Dans le verbatim, « economic » qualifie « value » ; la note du traducteur precise que « c'est bien de cout qu'il s'agit »."
+      "reason": "Conséquence directe de notes[0] : puisque ces pages emploient la probabilité, s'en servir pour refuser tout raisonnement probabiliste les inverse ; rien n'est attribué en propre à Shewhart au-delà de l'appui."
     },
     {
       "claim_id": "C049",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis portent sur « t = 3 », valeur economique acceptable tiree de l'experience et non d'un theoreme ; aucun d'eux n'identifie t = 3 a « trois sigmas » ni ne donne t comme multiple d'une unite sigma, et c'est cette identification qui porte le sujet de la conclusion."
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] porte exactement « 0,27 % de fausses alarmes sous la loi normale », comme taux de fausses alarmes servant de justification dans la littérature d'enseignement, et non comme proportion de points au-delà d'une distance."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "La note de revue sur la citation rapporte l'en-tete lu sur l'image : « DETECTION OF LACK OF CONTROL   277 »."
+      "reason": "notes[1] : justification « que la littérature d'enseignement prête couramment à Shewhart » ; le claim constate cette attribution par les manuels sans attribuer positivement le calcul à ces manuels."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche dit que « economique et non probabiliste » est « un raccourci inexact a la lettre » et que Shewhart ne rejette pas la probabilite."
+      "reason": "Proposition bornée aux deux pages : notes[1] constate l'absence de trouvaille sur les p. 276-277 et notes[5] borne la lecture à ces deux pages ; aucune extension à l'ouvrage entier n'est affirmée."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche enumere exactement ces deux emplois : « il l'emploie (l'inegalite de Tchebychev, la probabilite P associee aux limites) »."
+      "reason": "notes[1] : la justification « supposerait une normalité qu'il vient précisément de déclarer inconnue », ce qui est bien une contradiction avec l'argument de ces pages."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche : « son arbitrage porte entre deux probabilites d'erreur »."
+      "reason": "notes[1] rattache le 0,27 % à une supposition de normalité, donc à une connaissance de la loi de la grandeur suivie ; aucune limite en unités de dispersion n'est introduite."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "Reprise litterale de la note de la fiche sur la voie deductive ecartee."
+      "reason": "notes[2] et review.notes[5] situent sur la p. 276 le constat que la loi n'est pas connue en détail suffisant, et notes[1] dit cette connaissance « précisément » déclarée inconnue juste avant."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Reprise litterale de la note de la fiche, y compris les deux formulations opposees et le qualificatif « inexact »."
+      "reason": "notes[1] présente le 0,27 % comme une justification de la règle prêtée à Shewhart, donc aboutissant au même nombre, et notes[0] plus la citation opposent la voie déductive au choix d'expérience."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "Puisque la note de la fiche etablit que Shewhart emploie la probabilite et arbitre entre deux probabilites d'erreur, invoquer ces pages pour refuser tout raisonnement probabiliste les contredit ; le cadre d'atelier n'ajoute aucun predicat a la source."
+      "reason": "Conditionnel dont la prémisse et la conséquence suivent notes[1] (la justification suppose la normalité) et notes[0] (loi supposée connue) : rien n'y est attribué à Shewhart comme sa propre raison."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "La note de la fiche parle d'une justification « que la litterature d'enseignement prete couramment a Shewhart » : sa circulation dans cette litterature est bien ce qui est affirme."
+      "reason": "Conditionnel symétrique : les appuis établissent que la base est tenue pour empirique précisément parce que la loi n'est pas connue, donc qu'une justification d'expérience ne dépend pas de la normalité ; « s'écarte de la normale » ne réintroduit aucune limite en unités de dispersion."
     },
     {
       "claim_id": "C058",
-      "verdict": "TOO_STRONG",
-      "reason": "L'appui porte « 0,27 % de fausses alarmes sous la loi normale » ; le claim transforme ce taux en une proportion de points tombant « au dela de trois sigmas », enonce geometrique plus fort qui suppose les limites placees a trois unites sigma, ce que nul appui n'etablit."
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[4] porte exactement l'antériorité et la date : le choix de t = 3 posé « d'abord dans le mémorandum du 16 mai 1924 à Bell Telephone Laboratories, puis argumenté ici »."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "L'appui nomme la justification par le taux de fausses alarmes ; le claim la rapporte comme raison avancee par les manuels, sans l'endosser."
-    },
-    {
-      "claim_id": "C060",
-      "verdict": "TOO_STRONG",
-      "reason": "L'appui dit que ce calcul « n'a ete trouve nulle part dans les pages lues » et insiste : « C'est une absence de trouvaille sur les p. 276-277, pas une demonstration d'absence dans l'ouvrage entier. » « Ce calcul est le leur » franchit cette borne en attribuant positivement le calcul aux manuels, donc en le retirant a l'auteur ; seule la seconde moitie, l'attribution courante a Shewhart, est portee."
-    },
-    {
-      "claim_id": "C061",
-      "verdict": "SUPPORTED",
-      "reason": "Negation explicitement bornee aux deux pages, exactement la constatation de l'appui (« absence de trouvaille sur les p. 276-277 »), et la note de portee confirme que ces deux pages sont celles qui ont ete ouvertes et lues."
-    },
-    {
-      "claim_id": "C062",
-      "verdict": "SUPPORTED",
-      "reason": "L'appui dit que cette justification « supposerait une normalite qu'il vient precisement de declarer inconnue » : la contradiction avec l'argument de ces pages est portee, et le conditionnel la maintient dans cette portee."
-    },
-    {
-      "claim_id": "C063",
-      "verdict": "SUPPORTED",
-      "reason": "L'appui attache explicitement le 0,27 % a une supposition de normalite, donc a une loi connue et supposee normale."
-    },
-    {
-      "claim_id": "C064",
-      "verdict": "SUPPORTED",
-      "reason": "Le verbatim de la p. 276 (« we never know … in sufficient detail to set up such limits ») et l'appui « qu'il vient precisement de declarer inconnue » portent exactement ce point."
-    },
-    {
-      "claim_id": "C065",
-      "verdict": "SUPPORTED",
-      "reason": "La note de la fiche identifie la voie ecartee comme deductive, et la note d'attribution dit la regle posee comme un choix d'experience, pas comme un theoreme."
-    },
-    {
-      "claim_id": "C066",
-      "verdict": "SUPPORTED",
-      "reason": "La justification des manuels vise la meme regle et l'appui d'attribution en donne le fondement propre — choix d'experience, pas theoreme — ce qui autorise « une raison qui n'est pas la sienne » sans reposer sur la seule absence."
-    },
-    {
-      "claim_id": "C067",
-      "verdict": "TOO_STRONG",
-      "reason": "La dependance a la normalite est bien portee par l'appui, mais le sujet de la conditionnelle, « trois sigmas », suppose que t = 3 designe trois unites sigma : aucun appui fourni ne porte ce terme ni ce lien, et sigma n'est defini nulle part dans la matiere disponible."
-    },
-    {
-      "claim_id": "C068",
-      "verdict": "SUPPORTED",
-      "reason": "Le resume valide pose que c'est faute de loi connue que la base des limites est tenue pour empirique, et le verbatim fonde t = 3 sur l'experience : une regle ainsi fondee ne depend pas de la connaissance de la loi."
-    },
-    {
-      "claim_id": "C069",
-      "verdict": "TOO_STRONG",
-      "reason": "La premiere moitie suit les appuis, mais « c'est un atelier ou le compte cesse d'y etre qui l'y mettrait » enonce une condition de mise en defaut et rend la validite de la regle relative a un atelier donne ; les appuis retiennent au contraire une valeur generale tiree de l'experience et ne disent rien de ce qui la refuterait."
-    },
-    {
-      "claim_id": "C070",
-      "verdict": "SUPPORTED",
-      "reason": "La note de revue d'attribution situe le choix de t = 3 d'abord dans un memorandum de 1924, donc anterieurement a l'ouvrage de 1931 etabli par la notice."
-    },
-    {
-      "claim_id": "C071",
-      "verdict": "SUPPORTED",
-      "reason": "La note de revue d'attribution donne exactement « le memorandum du 16 mai 1924 a Bell Telephone Laboratories »."
-    },
-    {
-      "claim_id": "C072",
-      "verdict": "SUPPORTED",
-      "reason": "Le meme appui dit « puis argumente ici »."
-    },
-    {
-      "claim_id": "C073",
-      "verdict": "SUPPORTED",
-      "reason": "La note de portee de lecture limite ce qui a ete ouvert aux pages 276 et 277 : le memorandum n'a pas ete consulte, et le claim se borne a le dire."
+      "reason": "notes[5] borne la lecture aux p. 276-277 et notes[9] déclare qu'aucune autre source n'a été ouverte : le claim se contente de constater que le contenu du mémorandum reste à consulter."
     }
   ]
 }
