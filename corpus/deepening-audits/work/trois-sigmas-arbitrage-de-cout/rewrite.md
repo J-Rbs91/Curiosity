@@ -173,3 +173,17 @@ paragraphes sont inchangés, dont celui qui confine la réimpression ASQC 1980 �
    l'enregistrement validé. Aucune auto-validation n'est prononcée : ni `ACCEPT`, ni `FACTCHECK_PASS`.
 
 Toute modification du texte invalide le SHA : l'orchestrateur doit reprendre à `PREPARE`.
+
+---
+
+# Addendum, boucle de correction factuelle 2 sur 2
+
+Cette passe est une correction factuelle, non une réécriture : huit claims `TOO_STRONG`, dont cinq
+tenant à une seule racine (l'identification de `t = 3` à « trois sigmas », que rien dans la matière
+disponible n'appuie, sigma n'y étant défini nulle part). Le compte rendu complet, geste par claim, la
+relecture de résidu et les volumes avant/après sont dans `factcheck-fixes.md`, section
+« Boucle 2 sur 2 ».
+
+Conclusion de cette passe : le concept tient sans l'identification (arbitrage de coût et base
+empirique sont entièrement appuyés), donc pas de `BLOCKED_SOURCE` ; la perte est la traduction du `t`
+en unité, et elle est inscrite dans `limits`.
