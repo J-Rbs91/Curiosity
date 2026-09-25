@@ -36,6 +36,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
 | **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
+| **J.** Le pack résout le dossier par l'identifiant de la carte | 12 répertoires, 208 Ko hors d'atteinte | non pour le correctif, oui pour identifier les onze non réclamés | ouvert le 25 septembre 2026 ; **un cas prouvé, et il a coûté un rejet** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1210,8 +1211,16 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    objets. Le vérificateur est alors fondé à les traiter comme non consultés, alors que l'en-tête
    du fichier déclare la lecture intégrale. **Ce n'est pas un défaut de code : c'est une
    information absente des fichiers**, et elle ne peut pas être ajoutée par déduction.
-3. **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
-   de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
+3. ~~**Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire
+   de preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.~~ **Faux, et
+   corrigé le 25 septembre 2026 : voir le chantier J.** L'inférence enchaîne « aucun répertoire à
+   cet identifiant », « donc aucun dossier », « donc pack complet », et le deuxième pas ne suit pas
+   du premier — **le dossier d'une carte peut vivre sous un autre nom que le sien**.
+   `critere-de-la-retroaction` est le contre-exemple : son propre champ `dossier` désigne
+   `corpus/evidence/retroaction-denaturee/lecture.json`, 13 Ko qui existent, et elle est en
+   `FACTCHECK_FAIL`. Douze répertoires de preuves ne portent le nom d'aucune carte, pour 208 Ko de
+   lectures primaires qu'aucun gate n'a ouvertes. **Une reprise était donc due, et cette ligne l'a
+   fermée pendant six jours.**
 4. ~~**Le contrôle mécanique des citations a le même angle mort.**~~ **Fermé le 20 septembre
    2026.** `corpus:deepen --check` ne comparait une citation qu'à `corpus/validated/<id>.json`.
    Il prend désormais le dossier entier, par la même fonction que le pack de preuve.
@@ -1546,6 +1555,121 @@ cette règle, et deux d'entre eux — ceux du 19 septembre et des lots suivants 
 le dossier en main. Rien ne dit qu'aucun n'a prescrit une conclusion tirée d'une absence ; personne
 ne l'a cherché. **La vérification n'a pas été faite et n'est pas chiffrée ici** : ce serait une
 relecture des dix-sept rapports, et le prochain lot qui en reprend un le verra sur pièce.
+
+---
+
+# J. Le pack résout le dossier par l'identifiant de la carte, et douze lectures sont hors d'atteinte — ouvert le 25 septembre 2026
+
+**Le chantier G a élargi ce que le pack lit dans un répertoire. Il n'a pas touché à la façon dont
+il trouve ce répertoire**, et c'est le second angle mort du même composant. Le pack ramasse
+`corpus/evidence/<conceptId>/`. Si le dossier d'une carte vit sous un autre nom, il n'est pas
+ramassé, `evidence_files` sort vide, et le fact-check se rabat sur le seul enregistrement validé —
+exactement le silence que le chantier G avait été ouvert pour supprimer.
+
+**Douze répertoires de `corpus/evidence/` ne portent le nom d'aucune carte**, aucun état confondu,
+et totalisent **208 Ko de lectures primaires** qu'aucun gate n'a jamais pu ouvrir :
+
+`carte-de-controle`, `controle-maximum`, `croissance-exponentielle-et-doublement`,
+`ironies-de-l-automatisation`, `lahy-korngold-1931`, `limitation-de-l-expansion`,
+`milet-1982-tarde-psychologie-economique`, `pieron-1922`, `retroaction-denaturee`,
+`stock-ne-de-la-disparite-des-rythmes`, `taille-des-entreprises-et-issue-des-greves`,
+`theorie-de-l-accident`.
+
+## Un cas est prouvé par la carte elle-même, et il a coûté un rejet
+
+**`critere-de-la-retroaction` déclare son propre dossier hors de sa portée.** Son champ `dossier`
+vaut `corpus/evidence/retroaction-denaturee/lecture.json`, un fichier de 13 Ko qui existe. La carte
+a été renommée, son répertoire de preuves non, et son champ `dossier` est resté juste — c'est le
+pack qui ne le lit pas, puisqu'il ne lit que l'identifiant.
+
+Le fichier porte la lecture primaire du même article que la carte déclare en `full-text` et pour
+seule source, Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au
+même », *Communication et langages* n° 73 : son attribution motivée, sa citation verbatim, ses
+réserves. **La carte s'est terminée en `FACTCHECK_FAIL` / `rewrite_rejected_factcheck`** le
+18 septembre. Comme pour `regulation-controle-autonome` au chantier G, ce verdict ne dit pas que le
+texte dépasse ses sources : il dit que l'instrument n'a pas ouvert le dossier.
+
+**C'est le seul des douze que la carte réclame elle-même.** Les onze autres ne sont réclamés par
+aucun champ `dossier` du dépôt, et **rien n'établit qu'ils soient le dossier manquant d'une carte
+existante** : un nom comme `carte-de-controle` ou `ironies-de-l-automatisation` est un nom de
+concept plausible, et ce sont peut-être des lectures de sujets repérés, lus, jamais cartés. Cette
+section ne tranche pas, parce que le trancher demande d'ouvrir chaque fichier et de le confronter à
+la carte candidate — et parce que **conclure d'un nom voisin à une identité de dossier est
+précisément le raccourci que le dépôt paie le plus cher**.
+
+## Ce que ce défaut a déjà fait écrire de faux, et c'est dans ce fichier
+
+**Le point 3 de la clôture du chantier G est faux, et il ferme une reprise qui était due** :
+
+> **Les neuf rapports v3 antérieurs ne sont pas invalidés** : ces cartes n'ont aucun répertoire de
+> preuve, donc leur pack était déjà complet. Aucune reprise n'est due de ce côté.
+
+L'inférence est « aucun répertoire à cet identifiant, donc aucun dossier, donc pack complet ». Le
+second pas ne suit pas du premier, et `critere-de-la-retroaction` est le contre-exemple. C'est
+l'invariant **absence de contradiction ≠ preuve** appliqué à l'outillage plutôt qu'à un claim, et
+il s'y trompe de la même façon.
+
+**`FACTCHECK_PROTOCOL.md` §3bis porte le même défaut, sur un exemple qui sert à justifier une
+règle.** Il cite Milet 1982 dans `critique-de-l-homo-oeconomicus` et
+`valeur-comme-fait-psychologique` parmi cinq surdéclarations « établies sur pièce », au motif que
+le dossier « ne connaît pas la source du tout ». Or le dépôt porte **25 Ko de lecture primaire de
+Milet 1982**, dans le répertoire orphelin `milet-1982-tarde-psychologie-economique`. Les deux
+cartes ont bien un `lecture.json` à elles, et il ne parle pas de Milet : la lecture de Milet est
+ailleurs. **La prémisse de l'exemple est fausse.** La règle que §3bis en tire — qualifier plutôt
+que dégrader — n'est pas remise en cause par là, et elle reste soutenue par le reste de sa mesure ;
+ce qui l'est, c'est le décompte des surdéclarations, qui compte comme absences des dossiers
+inatteignables.
+
+**Un troisième cas, non réclamé mais de même forme.**
+`predominance-du-conflit-sur-la-negociation` déclare Sami Dassa, « Conflits ou négociation ? Les
+grèves, leurs résultats et la taille des entreprises », *Sociologie du travail* 1983, en
+`full-text`, n'a aucun dossier ramassable, et la lecture de Dassa — 22 Ko — est dans le répertoire
+orphelin `taille-des-entreprises-et-issue-des-greves`. Cette carte est elle aussi en
+`FACTCHECK_FAIL`. Son champ `dossier` ne réclame rien, donc le lien reste une constatation de
+source commune et non une identité établie.
+
+## Le chiffre d'ensemble, et ce qu'il vaut
+
+**Vingt-cinq des 136 cartes n'ont aucun fichier de dossier ramassable.** Leur fact-check ne peut
+alors reposer que sur l'enregistrement validé, où `quotation`, `summary`, `notes` et `review`
+arrivent en `access: "n/a"` et se pèsent sur leur contenu, tandis que toute déclaration de source
+sort en `access_corroboration: dossier-absent` — donc ne peut plus établir le contenu d'une œuvre,
+par §3bis du protocole de fact-check.
+
+Sur les cartes déjà auditées, le croisement est le suivant :
+
+| | `FACTCHECK_PASS` | échec |
+|---|---:|---:|
+| dossier ramassable | 13 | 3 |
+| aucun dossier ramassable | 5 | 4 |
+
+**L'absence de dossier n'interdit donc pas le gate** — cinq cartes l'ont passé sans, sur leur seule
+citation et leurs notes. Mais elle fournit **quatre des sept échecs**, sur un neuvième du corpus
+audité. Le second groupe compte neuf cartes : c'est un signal, pas une mesure, et il ne se cite pas
+comme un taux.
+
+## Par quel bout prendre ce chantier
+
+Dans cet ordre, et les deux premiers ne demandent aucune recherche documentaire.
+
+1. **Corriger le point 3 du chantier G et le décompte de §3bis.** Fait par cette section pour le
+   premier ; le second demande de reprendre les cinq surdéclarations « établies sur pièce » et de
+   vérifier, pour chacune, qu'aucun répertoire orphelin ne porte sa lecture. Deux des cinq sont
+   déjà tombées.
+2. **`critere-de-la-retroaction`, et elle seule, est réparable sans rien établir de neuf** : sa
+   carte nomme son dossier, le fichier existe, l'article est le même. La réparation est un geste de
+   la **couche carte** — ni le pack ni aucun agent `corpus-deepening-*` ne renomme un répertoire de
+   preuves ni ne réécrit un champ `dossier`. Elle rend la carte éligible à une reprise avec son
+   dossier en main, ce qui est le préalable à tout nouveau verdict sur elle.
+3. **Les onze autres répertoires se confrontent un par un**, en ouvrant le fichier et en cherchant
+   la carte qui déclare la même source. Le résultat est de trois natures et il faut les distinguer :
+   dossier d'une carte renommée, lecture d'un sujet jamais carté, ou lecture d'une source qu'une
+   carte déclare sans que ce soit son dossier. **Seule la première autorise un renommage.**
+4. **Et une question d'outillage, qui vaut mieux que douze réparations à la main** : le pack pourrait
+   ramasser, en plus de `corpus/evidence/<id>/`, le chemin que le champ `dossier` de la carte
+   désigne, quand il en porte un. Cela réglerait le cas prouvé sans rien inférer, puisque c'est la
+   carte qui déclare. Aucun test ne couvre aujourd'hui le cas « le champ `dossier` pointe hors du
+   répertoire de l'identifiant », et c'est par ce test que le correctif commencerait.
 
 ---
 
