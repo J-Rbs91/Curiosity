@@ -1,37 +1,17 @@
 {
   "protocol_version": 1,
   "concept_id": "systemographie",
-  "candidate_sha256": "41354fe790a1be694a45f3f7da08edf16f74b087456e60c20173c0eed86c33b4",
+  "candidate_sha256": "2a7f45fe5c8ea6a74609eb812cc5d4502c2094ef000e9a511ad52a0d94596e83",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 63,
-  "supported": 58,
-  "failed": 5,
+  "claims": 74,
+  "supported": 73,
+  "failed": 1,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C003",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis autorisent la description de l'instrument (« l'appareil « Système Général » », intertitre « Photographie et systémographie », « Le mode d'emploi en est relativement simple »), mais rien dans ces deux appuis n'établit que l'auteur substitue cette question à celle de la ressemblance : la clause « Au lieu de demander si le dessin ressemble assez à la chose » n'est pas portée."
-    },
-    {
-      "claim_id": "C021",
-      "verdict": "TOO_STRONG",
-      "reason": "La répartition (correspondance bijective réclamée du côté du Système Général construit) est bien attestée, mais aucun appui fourni ne caractérise l'homomorphie comme la correspondance « la plus lâche » : les appuis n'en disent que la difficulté et la non-validation, ce qui n'est pas une moindre exigence."
-    },
-    {
-      "claim_id": "C023",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent l'exigence d'homomorphie avec l'objet, mais rien n'y autorise le comparatif « demande moins » : review.notes[11] dit au contraire l'homomorphie « difficile et a priori jamais parfaitement validée », et aucun appui ne compare la force logique des deux exigences."
-    },
-    {
-      "claim_id": "C024",
+      "claim_id": "C026",
       "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni ne définit l'homomorphie : ni le regroupement de plusieurs traits de l'objet en un seul trait du modèle, ni le caractère unidirectionnel de la correspondance ne figurent dans quotation.text ni dans review.notes[11]."
-    },
-    {
-      "claim_id": "C052",
-      "verdict": "UNSUPPORTED",
-      "reason": "notes[8] ne définit pas l'analyse cartésienne, et aucun appui fourni ne dit que la démarche « part d'un modèle entier qu'on ajuste » : la définition du découpage en parties simples comme la caractérisation de la démarche viennent d'ailleurs que du bundle."
+      "reason": "Aucun appui. Et la glose de « l'inverse » attribue par contrecoup la souplesse à l'exigence tournée vers l'objet, caractérisation que rien du bundle n'établit et que review.notes[11] contrarie, l'homomorphie y étant « difficile et a priori jamais parfaitement validée » : c'est le comparatif de rigueur déjà refusé, sous une autre formulation."
     }
   ]
 }
