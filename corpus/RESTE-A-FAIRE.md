@@ -36,7 +36,7 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
 | **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
-| **J.** Le pack résout le dossier par l'identifiant de la carte | 12 répertoires, 208 Ko hors d'atteinte | non pour le correctif, oui pour identifier les onze non réclamés | ouvert le 25 septembre 2026 ; **un cas prouvé, et il a coûté un rejet** |
+| **J.** Le pack résout le dossier par l'identifiant de la carte | 12 répertoires, 186 Ko hors d'atteinte | non pour le correctif, oui pour identifier les onze non réclamés | ouvert le 25 septembre 2026 ; **un cas prouvé, et il a coûté un rejet** |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -1218,7 +1218,7 @@ le dit maintenant, et onze tests le tiennent : **le script n'en avait aucun.**
    du premier — **le dossier d'une carte peut vivre sous un autre nom que le sien**.
    `critere-de-la-retroaction` est le contre-exemple : son propre champ `dossier` désigne
    `corpus/evidence/retroaction-denaturee/lecture.json`, 13 Ko qui existent, et elle est en
-   `FACTCHECK_FAIL`. Douze répertoires de preuves ne portent le nom d'aucune carte, pour 208 Ko de
+   `FACTCHECK_FAIL`. Douze répertoires de preuves ne portent le nom d'aucune carte, pour 186 Ko de
    lectures primaires qu'aucun gate n'a ouvertes. **Une reprise était donc due, et cette ligne l'a
    fermée pendant six jours.**
 4. ~~**Le contrôle mécanique des citations a le même angle mort.**~~ **Fermé le 20 septembre
@@ -1567,7 +1567,7 @@ ramassé, `evidence_files` sort vide, et le fact-check se rabat sur le seul enre
 exactement le silence que le chantier G avait été ouvert pour supprimer.
 
 **Douze répertoires de `corpus/evidence/` ne portent le nom d'aucune carte**, aucun état confondu,
-et totalisent **208 Ko de lectures primaires** qu'aucun gate n'a jamais pu ouvrir :
+et totalisent **186 Ko de lectures primaires** qu'aucun gate n'a jamais pu ouvrir :
 
 `carte-de-controle`, `controle-maximum`, `croissance-exponentielle-et-doublement`,
 `ironies-de-l-automatisation`, `lahy-korngold-1931`, `limitation-de-l-expansion`,
