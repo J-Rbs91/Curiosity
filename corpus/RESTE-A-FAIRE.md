@@ -1773,6 +1773,20 @@ c'est « cet artefact est incomplet », ce que §9 range sous `FACTCHECK_INVALID
 une incomplétude démontrée sur pièce, jamais par le verdict obtenu, et la carte défectueuse se
 conserve à côté de la nouvelle.
 
+**Le remapping a mesuré l'écart, et il est net.** Sur le même texte et le même pack, un mapper
+instruit des deux défauts rend **45 claims dont zéro sans appui**, contre 63 dont vingt. Le claim
+témoin cite désormais `SUP-ebb398acd46edf3d`, l'appui `$.hook` présent dans le pack depuis le début,
+et les seize paragraphes restent tous couverts — l'écart de dix-huit claims était donc bien de la
+matière non vérifiable promue en claims, et non un découpage plus exigeant.
+
+**Une mise en garde d'exploitation, payée en écrivant cette section.** Un artefact ne se mesure pas
+avant que son agent ait rendu. Ce fichier a été lu pendant que le nouveau mapper l'écrivait : la
+mesure a donné l'état antérieur, 63 claims et vingt sans appui, d'où la conclusion — fausse — que
+deux mappers concordaient et que ce chantier était à retirer. Le dépôt connaissait déjà le symptôme
+voisin, « un squelette écrit tôt ne garantit pas un fichier écrit » ; le corollaire manquait :
+**une mesure prise en cours d'écriture est une mesure de la version précédente, et rien ne l'annonce
+comme telle.** Elle se recoupe contre les compteurs que l'agent rend lui-même, ou elle attend.
+
 ## Par quel bout prendre ce chantier
 
 1. **Un contrôle mécanique de complétude du mapping**, et c'est le correctif qui vaut le plus. Pour
