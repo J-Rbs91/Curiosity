@@ -1,0 +1,832 @@
+{
+  "concept_id": "systemographie",
+  "candidate_sha256": "41354fe790a1be694a45f3f7da08edf16f74b087456e60c20173c0eed86c33b4",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 362,
+      "end": 555,
+      "claim_text": "la comparaison ne se termine pas : il reste toujours un couloir, une habitude, une exception qui n’ont pas été portés sur le schéma, et rien ne dit à quel moment on aurait le droit de s’arrêter",
+      "normalized_claim": "La comparaison trait par trait d'un modèle et de l'objet ne peut pas s'achever et aucun critère n'en fixe le terme.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 141,
+      "claim_text": "Le troisième chapitre de La théorie du système général, que Jean-Louis Le Moigne intitule La systémographie et les systèmes de représentation",
+      "normalized_claim": "Le chapitre 3 de La théorie du système général de Le Moigne s'intitule La systémographie et les systèmes de représentation.",
+      "support_ids": [
+        "SUP-64115928f05c5444",
+        "SUP-aa356b050a9a8eb7",
+        "SUP-face031f77e021e2",
+        "SUP-7f53fbbb44f75c84"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 179,
+      "end": 385,
+      "claim_text": "Au lieu de demander si le dessin ressemble assez à la chose, il demande avec quel instrument on l’a obtenu, et il décrit cet instrument comme on décrirait un appareil photographique, avec son mode d’emploi.",
+      "normalized_claim": "Le chapitre déplace la question vers l'instrument de représentation, décrit comme un appareil photographique muni d'un mode d'emploi.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-a2a75d1d8682a06f"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 386,
+      "end": 447,
+      "claim_text": "Ce qu’on obtient en s’en servant reçoit du coup un nom à soi.",
+      "normalized_claim": "Le résultat de l'opération reçoit un nom propre (systémographie).",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-81bde008b962bc7a"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 190,
+      "claim_text": "L’instrument n’est pas un appareil de mesure, et ce n’est pas non plus le schéma de l’hôpital : c’est un objet abstrait, construit entièrement d’avance, contre lequel ce schéma sera vérifié.",
+      "normalized_claim": "L'instrument est un objet abstrait construit d'avance, distinct du modèle, contre lequel le modèle est vérifié.",
+      "support_ids": [
+        "SUP-1ebb6291539d2f19",
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 191,
+      "end": 350,
+      "claim_text": "Le Moigne le nomme le Système Général, et il tient en une ligne : « un objet qui, doté de finalités, fonctionne se structure et évolue dans un environnement ».",
+      "normalized_claim": "Le Moigne nomme cet objet le Système Général et le définit par la formule citée.",
+      "support_ids": [
+        "SUP-1ebb6291539d2f19",
+        "SUP-e30f1915747f28d9"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 79,
+      "claim_text": "Rien là-dedans ne parle d’un hôpital, d’une usine ou d’un fleuve en particulier",
+      "normalized_claim": "La définition du Système Général ne mentionne aucun objet empirique particulier.",
+      "support_ids": [
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 111,
+      "end": 257,
+      "claim_text": "Ces propriétés ont été décidées, elles n’ont pas été relevées dans le monde : on sait combien il y en a et lesquelles, puisque ce sont les nôtres.",
+      "normalized_claim": "Les propriétés du Système Général sont connues par construction et non relevées dans le monde.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-1ebb6291539d2f19",
+        "SUP-507e3c79f283c7c4"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 258,
+      "end": 353,
+      "claim_text": "Modéliser consiste alors à faire passer l’objet devant cet appareil et à écrire ce qui en sort.",
+      "normalized_claim": "Modéliser consiste à établir la représentation de l'objet à l'aide de l'appareil Système Général.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 504,
+      "end": 636,
+      "claim_text": "les caractéristiques d’une représentation, précise le texte, restent « prédéterminables et ne dépendant que de l’appareil utilisé ».",
+      "normalized_claim": "Le texte écrit que les caractéristiques d'une représentation sont prédéterminables et ne dépendent que de l'appareil utilisé.",
+      "support_ids": [
+        "SUP-87d33e34a2f8058a"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 143,
+      "claim_text": "La première des deux vérifications ne porte pas sur le rapport entre le modèle et l’hôpital, mais sur le rapport entre le modèle et l’appareil.",
+      "normalized_claim": "La première des deux vérifications porte sur le rapport du modèle au Système Général, non à l'objet.",
+      "support_ids": [
+        "SUP-e30f1915747f28d9",
+        "SUP-2c74d218237c0e2c",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 144,
+      "end": 209,
+      "claim_text": "Le Moigne demande que le modèle soit isomorphe du Système Général",
+      "normalized_claim": "Le Moigne exige que le modèle soit isomorphe du Système Général.",
+      "support_ids": [
+        "SUP-e30f1915747f28d9",
+        "SUP-2c74d218237c0e2c",
+        "SUP-39e1802955ba1de4"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 212,
+      "end": 332,
+      "claim_text": "que chaque propriété de l’un ait son répondant exact dans l’autre, terme pour terme, sans reste d’un côté ni de l’autre.",
+      "normalized_claim": "L'isomorphie exigée est une correspondance bijective terme à terme sans reste.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 51,
+      "claim_text": "Le texte dit pourquoi cette vérification-là aboutit",
+      "normalized_claim": "Le texte source explique pourquoi la vérification d'isomorphie peut aboutir.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-e1ce7ad664f7e7ab"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 54,
+      "end": 382,
+      "claim_text": "« La vérification de l’isomorphie sera facile puisque le Système Général, construction artificielle, est doté de propriétés connues par construction : en les balayant une par une, il doit être possible de s’assurer que les propriétés dont on dote le modèle sont bien en correspondance bijective avec celles du Système Général ».",
+      "normalized_claim": "Citation verbatim du passage sur la facilité de la vérification d'isomorphie.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 70,
+      "claim_text": "Balayer une par une : l’expression décrit une opération qui a une fin.",
+      "normalized_claim": "L'expression du texte (balayer une par une) désigne une opération finie.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-e1ce7ad664f7e7ab"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 71,
+      "end": 145,
+      "claim_text": "On peut un jour déclarer l’examen terminé en sachant ce que cela veut dire",
+      "normalized_claim": "La vérification d'isomorphie peut être déclarée terminée en un sens défini.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-e1ce7ad664f7e7ab"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 147,
+      "end": 204,
+      "claim_text": "et ce contrôle sans mystère n’apprend rien sur l’hôpital.",
+      "normalized_claim": "La vérification d'isomorphie n'apporte aucune connaissance sur l'objet représenté.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-2c74d218237c0e2c"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 0,
+      "end": 70,
+      "claim_text": "La façon dont les deux exigences se répartissent a de quoi surprendre.",
+      "normalized_claim": "La répartition des deux exigences est contre-intuitive.",
+      "support_ids": [
+        "SUP-2c74d218237c0e2c"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 71,
+      "end": 231,
+      "claim_text": "Le Moigne écrit que « la représentation que construit l’observateur sera à la fois » isomorphe du Système Général, puis homomorphe « de l’objet à représenter ».",
+      "normalized_claim": "Citation verbatim : la représentation sera à la fois isomorphe du Système Général et homomorphe de l'objet à représenter.",
+      "support_ids": [
+        "SUP-e30f1915747f28d9",
+        "SUP-39e1802955ba1de4",
+        "SUP-7f53fbbb44f75c84"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 232,
+      "end": 401,
+      "claim_text": "La correspondance stricte, celle qui ne tolère aucun reste, est donc réclamée du côté de l’objet que nous avons fabriqué, et c’est au monde que s’applique la plus lâche.",
+      "normalized_claim": "L'exigence stricte porte sur l'objet construit et l'exigence lâche sur l'objet du monde.",
+      "support_ids": [
+        "SUP-e30f1915747f28d9",
+        "SUP-2c74d218237c0e2c"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 402,
+      "end": 518,
+      "claim_text": "On aurait spontanément demandé l’inverse : de la rigueur envers l’hôpital, de la souplesse envers nos constructions.",
+      "normalized_claim": "L'attente spontanée serait la répartition inverse des deux exigences.",
+      "support_ids": [
+        "SUP-2c74d218237c0e2c"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 54,
+      "claim_text": "Que le modèle soit homomorphe de l’objet demande moins",
+      "normalized_claim": "L'exigence d'homomorphie avec l'objet est moins forte que celle d'isomorphie.",
+      "support_ids": [
+        "SUP-e30f1915747f28d9",
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 80,
+      "end": 220,
+      "claim_text": "plusieurs traits de l’objet peuvent se retrouver ramassés dans un seul trait du modèle, la correspondance va dans un sens et ne se rend pas.",
+      "normalized_claim": "L'homomorphie autorise que plusieurs traits de l'objet soient ramassés dans un seul trait du modèle, dans un seul sens.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-e30f1915747f28d9"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 48,
+      "claim_text": "C’est pourtant celle-là qui ne se termine jamais",
+      "normalized_claim": "C'est la vérification d'homomorphie qui ne s'achève jamais.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-1ebb6291539d2f19",
+        "SUP-0ac96ed81f7fa2b1"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 51,
+      "end": 148,
+      "claim_text": "« L’homomorphie du modèle et de l’objet sera difficile et a priori jamais parfaitement validée ».",
+      "normalized_claim": "Citation verbatim : l'homomorphie sera difficile et a priori jamais parfaitement validée.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 149,
+      "end": 323,
+      "claim_text": "La raison tient dans la parenthèse qui suit immédiatement : « pour qu’elle le soit, il aurait fallu que les systèmes soient dans la nature et que nous en ayons la preuve ! ».",
+      "normalized_claim": "La parenthèse qui suit immédiatement la phrase donne la raison : il aurait fallu que les systèmes soient dans la nature.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "L’obstacle n’est donc ni le manque de temps ni le manque de données.",
+      "normalized_claim": "L'impossibilité de valider l'homomorphie est de principe et non un manque de temps ou de données.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 69,
+      "end": 178,
+      "claim_text": "Il tient à ce que le livre soutient quelques pages plus tôt, que « les systèmes ne sont pas dans la nature ».",
+      "normalized_claim": "Le livre soutient quelques pages plus tôt que les systèmes ne sont pas dans la nature.",
+      "support_ids": [
+        "SUP-507e3c79f283c7c4",
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 179,
+      "end": 392,
+      "claim_text": "Si le système n’est pas tapi dans l’hôpital en attendant d’être découvert, aucune confrontation ne pourra jamais annoncer que le modèle a fini d’y correspondre : il n’y a rien, en face, dont la liste serait close.",
+      "normalized_claim": "Faute de système dans l'objet, aucune confrontation ne peut déclarer la correspondance achevée.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-507e3c79f283c7c4"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 60,
+      "claim_text": "L’auteur tire lui-même la conséquence, au paragraphe suivant",
+      "normalized_claim": "L'auteur tire lui-même cette conséquence au paragraphe suivant.",
+      "support_ids": [
+        "SUP-87d33e34a2f8058a"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 63,
+      "end": 261,
+      "claim_text": "« Il sera donc a priori toujours possible de concevoir et de construire bien des systémographies différentes du même objet, toutes homomorphes de cet objet et toutes isomorphes du Système Général ».",
+      "normalized_claim": "Citation verbatim de la conséquence : plusieurs systémographies différentes du même objet, toutes homomorphes et toutes isomorphes.",
+      "support_ids": [
+        "SUP-87d33e34a2f8058a",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 262,
+      "end": 407,
+      "claim_text": "Deux fois « toutes » : des représentations concurrentes satisfont les deux vérifications ensemble, et la ressemblance ne peut pas les départager.",
+      "normalized_claim": "Des représentations concurrentes satisfont les deux vérifications à la fois et la ressemblance ne les départage pas.",
+      "support_ids": [
+        "SUP-87d33e34a2f8058a",
+        "SUP-0ac96ed81f7fa2b1",
+        "SUP-a9afd05e47a7cc4d"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 507,
+      "end": 670,
+      "claim_text": "Les deux schémas ont bien des finalités, un fonctionnement, une structure, une évolution et un environnement, donc la première vérification passe dans les deux cas",
+      "normalized_claim": "Un modèle qui porte finalités, fonctionnement, structure, évolution et environnement satisfait la vérification d'isomorphie.",
+      "support_ids": [
+        "SUP-1ebb6291539d2f19",
+        "SUP-e30f1915747f28d9",
+        "SUP-f78f9da2a277950c"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 673,
+      "end": 794,
+      "claim_text": "et chacun se laisse rapporter à des traits observables de l’établissement, donc la seconde ne rejette ni l’un ni l’autre.",
+      "normalized_claim": "La vérification d'homomorphie ne rejette aucun des deux modèles rapportables aux traits perçus de l'objet.",
+      "support_ids": [
+        "SUP-f78f9da2a277950c",
+        "SUP-87d33e34a2f8058a"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 795,
+      "end": 835,
+      "claim_text": "Ils n’ont presque aucune case en commun.",
+      "normalized_claim": "Deux modèles valides du même objet peuvent ne presque rien avoir en commun.",
+      "support_ids": [
+        "SUP-87d33e34a2f8058a"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 93,
+      "end": 126,
+      "claim_text": "La page suivante dit autre chose.",
+      "normalized_claim": "Le texte revient sur ce point à la page suivante (p. 80).",
+      "support_ids": [
+        "SUP-a9afd05e47a7cc4d"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 127,
+      "end": 287,
+      "claim_text": "La démarche « peut laisser divaguer l’imagination de l’observateur à sa guise, dès lors qu’il assure en permanence de la validité de ces deux correspondances ».",
+      "normalized_claim": "Citation verbatim : la démarche peut laisser divaguer l'imagination de l'observateur à sa guise, s'il assure en permanence la validité des deux correspondances.",
+      "support_ids": [
+        "SUP-a9afd05e47a7cc4d"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 288,
+      "end": 404,
+      "claim_text": "La liberté est entière et la condition est continue : elle ne se solde pas une fois pour toutes au début du travail.",
+      "normalized_claim": "La condition des deux correspondances est permanente et non acquise une fois pour toutes.",
+      "support_ids": [
+        "SUP-a9afd05e47a7cc4d"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 0,
+      "end": 124,
+      "claim_text": "La contrepartie est publique. Ce qui a été choisi doit l’être, écrit Le Moigne, « explicitement, publiquement, loyalement ».",
+      "normalized_claim": "Le Moigne exige que le choix soit explicite, public et loyal.",
+      "support_ids": [
+        "SUP-a9afd05e47a7cc4d"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 125,
+      "end": 256,
+      "claim_text": "Et ce qui distingue deux modèles concurrents n’est pas leur degré de ressemblance, ce sont les objectifs de celui qui les construit",
+      "normalized_claim": "Ce qui départage deux modèles concurrents n'est pas la ressemblance mais les objectifs du modélisateur.",
+      "support_ids": [
+        "SUP-a9afd05e47a7cc4d",
+        "SUP-87d33e34a2f8058a"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[3]",
+      "start": 259,
+      "end": 361,
+      "claim_text": "la question de savoir lequel est le vrai se remplace par celle de savoir à quoi le modèle doit servir.",
+      "normalized_claim": "La question de la vérité du modèle est remplacée par celle de son usage.",
+      "support_ids": [
+        "SUP-a9afd05e47a7cc4d"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 95,
+      "claim_text": "Le mot est forgé, et l’auteur s’explique deux fois sur ce refus d’un terme déjà en circulation.",
+      "normalized_claim": "Le terme est forgé par l'auteur, qui justifie deux fois son refus d'un terme existant.",
+      "support_ids": [
+        "SUP-81bde008b962bc7a",
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-8aaf6a6c7fb3f30a"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 96,
+      "end": 157,
+      "claim_text": "Le livre paraît en 1977, aux Presses universitaires de France",
+      "normalized_claim": "La théorie du système général paraît en 1977 aux Presses universitaires de France.",
+      "support_ids": [
+        "SUP-81bde008b962bc7a",
+        "SUP-f252314bbb4b085b",
+        "SUP-2e0ad8646e21e460",
+        "SUP-7c4bee84ff2bec10"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 159,
+      "end": 249,
+      "claim_text": "deux ans après Le macroscope, l’ouvrage de vulgarisation que Joël de Rosnay publie en 1975",
+      "normalized_claim": "Le macroscope, ouvrage de vulgarisation de Joël de Rosnay, paraît en 1975, deux ans avant le livre de Le Moigne.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-81bde008b962bc7a"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 250,
+      "end": 294,
+      "claim_text": "et que Le Moigne vise en note de bas de page",
+      "normalized_claim": "Le Moigne vise Le macroscope dans une note de bas de page.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-81bde008b962bc7a"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 297,
+      "end": 374,
+      "claim_text": "il y accorde un appareil « aux qualités apparemment peu différentes » du sien",
+      "normalized_claim": "Citation verbatim : la note accorde au macroscope un appareil aux qualités apparemment peu différentes.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 376,
+      "end": 410,
+      "claim_text": "l’adverbe portant toute la réserve",
+      "normalized_claim": "L'adverbe 'apparemment' porte la réserve de l'auteur.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 412,
+      "end": 499,
+      "claim_text": "avant de le trouver « hélas assez peu défini et son mode d’emploi n’est guère précisé »",
+      "normalized_claim": "Citation verbatim : le macroscope est hélas assez peu défini et son mode d'emploi n'est guère précisé.",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 501,
+      "end": 596,
+      "claim_text": "D’où la décision, revendiquée telle quelle : « en donnant un autre nom... à un autre outil ! ».",
+      "normalized_claim": "Citation verbatim : en donnant un autre nom... à un autre outil !",
+      "support_ids": [
+        "SUP-8f0fa1e58b07bb99",
+        "SUP-81bde008b962bc7a"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 36,
+      "end": 198,
+      "claim_text": "Les noms courants de son instrument, analyse de système et approche système, sont écartés comme une « ultime tentative de récupération de l’analyse cartésienne ».",
+      "normalized_claim": "Analyse de système et approche système sont écartées comme ultime tentative de récupération de l'analyse cartésienne.",
+      "support_ids": [
+        "SUP-8aaf6a6c7fb3f30a"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 238,
+      "end": 411,
+      "claim_text": "analyser, au sens classique, c’est découper un objet en parties simples pour les examiner séparément, alors que la démarche décrite ici part d’un modèle entier qu’on ajuste.",
+      "normalized_claim": "L'analyse classique découpe l'objet en parties simples, tandis que la démarche décrite part d'un modèle entier.",
+      "support_ids": [
+        "SUP-8aaf6a6c7fb3f30a"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 412,
+      "end": 494,
+      "claim_text": "Reprendre le mot aurait ramené par l’étiquette ce que l’opération prétend quitter.",
+      "normalized_claim": "Garder le mot 'analyse' aurait réintroduit par l'étiquette ce que la démarche refuse.",
+      "support_ids": [
+        "SUP-8aaf6a6c7fb3f30a"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 26,
+      "claim_text": "Le nom, lui, n’a pas pris.",
+      "normalized_claim": "Le terme systémographie ne s'est pas imposé.",
+      "support_ids": [
+        "SUP-cae423b80dc5704e"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 27,
+      "end": 207,
+      "claim_text": "Deux textes qui reviennent sur le travail de Le Moigne, l’un en 2020, l’autre en 2024, ne l’emploient pas une seule fois, y compris là où ils portent sur la modélisation elle-même.",
+      "normalized_claim": "Deux textes de réception, l'un de 2020 et l'autre de 2024, n'emploient jamais le terme, même sur la modélisation.",
+      "support_ids": [
+        "SUP-cae423b80dc5704e",
+        "SUP-a010c9ae020c85b0",
+        "SUP-91068ce48fb12636"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 42,
+      "claim_text": "La procédure, elle, a circulé au mot près.",
+      "normalized_claim": "La procédure, elle, a été reprise au mot près.",
+      "support_ids": [
+        "SUP-cae423b80dc5704e",
+        "SUP-bbb0b55d386d516e"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 43,
+      "end": 163,
+      "claim_text": "Un document de cours d’Yvon Pesqueux, au Conservatoire national des arts et métiers, décrit trois phases de modélisation",
+      "normalized_claim": "Un document de cours d'Yvon Pesqueux au CNAM décrit trois phases de modélisation.",
+      "support_ids": [
+        "SUP-bbb0b55d386d516e",
+        "SUP-a010c9ae020c85b0"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 166,
+      "end": 542,
+      "claim_text": "le « cadrage (construction du modèle par isomorphie avec un système général) », puis le développement, soit la « documentation du modèle par correspondance homomorphique du modèle avec les traits perçus du phénomène », puis l’interprétation, entendue là comme la « simulation d’actions possibles sur le modèle pour anticiper les conséquences éventuelles dans les phénomènes ».",
+      "normalized_claim": "Citation verbatim des trois phases : cadrage par isomorphie, documentation par homomorphie, interprétation par simulation.",
+      "support_ids": [
+        "SUP-bbb0b55d386d516e"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 543,
+      "end": 635,
+      "claim_text": "Ce troisième temps dit à quoi le modèle sert, ce que les deux vérifications ne disaient pas.",
+      "normalized_claim": "La troisième phase indique l'usage du modèle, ce que les deux vérifications ne faisaient pas.",
+      "support_ids": [
+        "SUP-bbb0b55d386d516e",
+        "SUP-1ebb6291539d2f19"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 0,
+      "end": 129,
+      "claim_text": "Un lecteur qui ouvrira ce document trouvera cependant, dans ses premières pages, la même paire de termes employée en sens inverse",
+      "normalized_claim": "Les premières pages du même document emploient isomorphie et homomorphie en sens inverse.",
+      "support_ids": [
+        "SUP-ccc0688fe1b64e42"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 132,
+      "end": 192,
+      "claim_text": "c’est le passage sur les trois phases qui restitue Le Moigne",
+      "normalized_claim": "C'est le passage sur les trois phases qui restitue correctement Le Moigne.",
+      "support_ids": [
+        "SUP-ccc0688fe1b64e42",
+        "SUP-bbb0b55d386d516e"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 258,
+      "end": 409,
+      "claim_text": "un article de Géry Lecas paru en 2006, « La modélisation systémique : outils méthodologiques pour économistes », reprend la systémographie sous son nom",
+      "normalized_claim": "Un article de Géry Lecas de 2006, au titre cité, reprend la systémographie sous son nom.",
+      "support_ids": [
+        "SUP-887ddccb2614419d"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 411,
+      "end": 474,
+      "claim_text": "et ce qu’il en fait, ses pages le portent : il faudra les lire.",
+      "normalized_claim": "Ce que cet article fait du terme est dans ses pages, qui restent à lire.",
+      "support_ids": [
+        "SUP-887ddccb2614419d"
+      ]
+    }
+  ]
+}
