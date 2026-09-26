@@ -1559,7 +1559,7 @@ relecture des dix-sept rapports, et le prochain lot qui en reprend un le verra s
 
 ---
 
-# J. Le pack résout le dossier par l'identifiant de la carte, et douze lectures sont hors d'atteinte — ouvert le 25 septembre 2026
+# J. Le pack résout le dossier par l'identifiant de la carte, et douze lectures sont hors d'atteinte — ouvert le 25 septembre 2026, outillage corrigé le 26
 
 **Le chantier G a élargi ce que le pack lit dans un répertoire. Il n'a pas touché à la façon dont
 il trouve ce répertoire**, et c'est le second angle mort du même composant. Le pack ramasse
@@ -1693,6 +1693,126 @@ Dans cet ordre, et les deux premiers ne demandent aucune recherche documentaire.
    désigne, quand il en porte un. Cela réglerait le cas prouvé sans rien inférer, puisque c'est la
    carte qui déclare. Aucun test ne couvre aujourd'hui le cas « le champ `dossier` pointe hors du
    répertoire de l'identifiant », et c'est par ce test que le correctif commencerait.
+
+## L'outillage est corrigé, et c'est l'option 4 qui a été prise — 26 septembre 2026
+
+Le point 4 ci-dessus est fait, et il a été préféré au point 2 : **la couche carte n'a pas été
+touchée.** Aucun répertoire de preuves n'est renommé, aucun champ `dossier` n'est réécrit. C'est
+`prepare()` qui ramasse désormais, en plus de `corpus/evidence/<id>/`, le répertoire que le champ
+`dossier` de l'enregistrement désigne — quand ce répertoire est sous `corpus/evidence/`.
+
+Ce choix vaut mieux que le renommage pour une raison que la carte disait déjà. Les `notes` de
+`critere-de-la-retroaction` documentent la divergence d'identifiant **comme volontaire**, avec son
+motif et un précédent dans le corpus : renommer le répertoire aurait effacé une décision
+documentée pour satisfaire un outil. C'est l'outil qui avait tort.
+
+**Ce que le correctif rend, mesuré et non supposé.** Sur `critere-de-la-retroaction` : le pack
+passe de 45 appuis, tous tirés de l'enregistrement validé, à **72 appuis dont 27 issus de
+`evidence:retroaction-denaturee/lecture.json`** ; `evidence_files` cesse d'être vide ;
+`dossier_declare` vaut `resolu` ; et la déclaration `full-text` de l'article de Paquette passe de
+`dossier-absent` à **`corrobore`**, ce qui rend à `SOURCE_NOT_CONSULTED` la prise que §3bis lui
+voulait.
+
+**Et sur le reste du corpus, rien.** Confronté aux 136 cartes, le résolveur change la liste des
+fichiers de preuve d'**exactement une** carte. Les 135 autres listes sont identiques, donc les
+identifiants `SUP-...` de leurs packs sont stables et les claim maps déjà archivés restent
+valides — la vérification a été faite avant le commit, pas déduite de la forme du correctif.
+
+**Le périmètre s'arrête à `corpus/evidence/`, et la décision documentaire n'est pas prise.** Les
+neuf cartes qui déclarent un fichier de `corpus/dossiers/` ne gagnent rien : ce schéma mêle à la
+lecture des champs rédigés par un modèle, et `collectSupports` transforme indifféremment toute
+chaîne non vide en appui. Y faire pointer le pack **ferait réussir à tort**, ce qui est le seul
+sens de défaut que ce dépôt refuse. Ce qui change est que le silence cesse : le pack porte
+`dossier_declare` avec son motif, et `--sweep` compte les dossiers non chargés sous
+`dossiers_non_charges`, aujourd'hui neuf, tous des `hors-perimetre` de `corpus/dossiers/`.
+
+## Les onze répertoires confrontés, et pourquoi aucun n'est rattaché ici
+
+Le point 3 est instruit, par un croisement mécanique : identifiant interne de chaque répertoire,
+puis intersection des DOI et ISBN qu'il porte avec ceux de chaque carte. **Trois entrées de la
+liste des douze n'étaient pas des orphelines et sortent du décompte** — `couplage-lache` est le
+dossier de la seule fiche `CANDIDATE`, `incomparabilite-en-aide-multicritere` et `reciprocite`
+sont les dossiers de deux fiches rejetées. Avec `retroaction-denaturee` désormais résolu, **il en
+reste onze**, ce qui est le chiffre que cette section annonçait.
+
+| répertoire | une carte le déclare ? | cartes partageant un identifiant de source |
+|---|---|---|
+| `carte-de-controle` | non | `cause-de-hasard-et-cause-assignable` ◆, `etat-de-controle-statistique`, `tolerance-economique-suppose-le-controle`, `tolerances-qui-ne-s-additionnent-pas`, `trois-sigmas-arbitrage-de-cout` ◆ |
+| `controle-maximum` | non | les mêmes cinq |
+| `croissance-exponentielle-et-doublement` | non | `depassement-et-effondrement`, `etat-d-equilibre-global`, `modele-mondial-et-modes-de-comportement` |
+| `ironies-de-l-automatisation` | non | aucune |
+| `lahy-korngold-1931` | non | aucune |
+| `limitation-de-l-expansion` | non | `cout-de-remonter-l-effectif` |
+| `milet-1982-tarde-psychologie-economique` | non | `critique-de-l-homo-oeconomicus`, `valeur-comme-fait-psychologique` |
+| `pieron-1922` | non | `double-emploi-entre-epreuves` |
+| `stock-ne-de-la-disparite-des-rythmes` | non | `criticite-technique-contre-poids-financier`, `stock-instrument-actif-et-non-residu` |
+| `taille-des-entreprises-et-issue-des-greves` | non | `predominance-du-conflit-sur-la-negociation` ◆ |
+| `theorie-de-l-accident` | non | `analyse-du-travail` |
+
+◆ carte sans aucun dossier ramassable.
+
+**Le fait saillant, et il désigne la reprise.** Trois des onze visent une carte qui n'a **aucun**
+dossier, et le rapprochement ne tient pas à un identifiant commun : il tient à l'œuvre, à
+l'édition et au niveau d'accès, vérifiés en ouvrant les fichiers.
+
+- **`carte-de-controle` (16 Ko) et `controle-maximum` (17 Ko) lisent tous deux Shewhart 1931,
+  *Economic Control of Quality of Manufactured Product*, D. Van Nostrand, en `full-text`** — et
+  `controle-maximum` ouvre en plus l'article de 1930 du *Bell System Technical Journal* en
+  `partial`. C'est exactement la source primaire que `trois-sigmas-arbitrage-de-cout` et
+  `cause-de-hasard-et-cause-assignable` déclarent, même édition, même `LCCN 31032090`, même ISBN
+  de réimpression 1980, même niveau `full-text`. Ces deux cartes n'ont aucun fichier de dossier.
+- **`taille-des-entreprises-et-issue-des-greves` (22 Ko) lit Dassa 1983 en `full-text`**, la
+  source primaire unique de `predominance-du-conflit-sur-la-negociation`, **et** Segrestin 2019,
+  qui est la source secondaire déclarée de la même carte. Cette carte n'a aucun fichier de dossier.
+
+Deux de ces trois cartes se sont terminées en échec — `trois-sigmas` en `rewrite_rejected` après
+un `FACTCHECK_PASS`, `predominance-du-conflit` en `rewrite_rejected_factcheck`. Et le passage du
+25 septembre a conclu sur `trois-sigmas` que « les claims qui restent ne se bornent pas : ils
+demandent une lecture primaire que le dépôt n'a pas ». **Cette conclusion est à réexaminer : le
+dépôt porte 33 Ko de lecture `full-text` de l'œuvre exacte, sous deux noms qui ne sont pas celui
+de la carte.**
+
+**Et pourtant aucun rattachement n'est fait ici, et c'est le point de méthode de cette section.**
+Lire la même œuvre au même niveau ne fait pas d'un répertoire le dossier d'une carte. Les onze
+portent tous un `id` interne égal à leur propre nom, ce qui les donne pour des **sujets lus pour
+eux-mêmes** — la deuxième des trois natures, « lecture d'un sujet jamais carté » — et non pour des
+dossiers de cartes renommées : `carte-de-controle` et `controle-maximum` sont deux concepts
+distincts tirés du même livre, et rien ne dit que l'un d'eux soit la lecture faite *pour*
+`trois-sigmas`. La question qui reste est plus étroite que l'œuvre : **la lecture couvre-t-elle le
+passage que la carte utilise ?** Elle se répond en ouvrant le fichier, pas en comparant des
+identifiants.
+
+Rattacher sur la seule concordance d'œuvre reviendrait exactement à ce que `resolveDossier` refuse
+de faire pour `corpus/dossiers/` : élargir en silence le périmètre de preuve d'une carte avec une
+lecture menée pour autre chose. **Le tableau est une mesure, pas une conclusion.**
+
+## Par quel bout prendre ce chantier, après le 26 septembre
+
+1. **`predominance-du-conflit-sur-la-negociation`, puis `trois-sigmas-arbitrage-de-cout`, puis
+   `cause-de-hasard-et-cause-assignable`.** La première d'abord parce que son cas est le plus net :
+   un seul répertoire candidat, qui porte ses deux sources déclarées, primaire et secondaire, aux
+   niveaux qu'elle annonce. L'œuvre concorde déjà ; **ce qui reste à établir est le passage.**
+   Ouvrir le fichier, confronter ses localisateurs à ceux que la carte et l'approfondissement
+   utilisent, et trancher. Si la lecture les couvre, le geste est d'écrire le chemin dans le champ
+   `dossier` de l'enregistrement — que le résolveur charge **en plus** du répertoire conventionnel
+   — et non de renommer quoi que ce soit. Sinon, la conclusion du 25 septembre tient et il faut
+   l'écrire ainsi, avec le motif.
+
+   Pour les deux cartes Shewhart, un arbitrage précède : **deux répertoires candidats pour une
+   carte, et un seul champ `dossier`** (voir le point 4). Le couple
+   `carte-de-controle` / `controle-maximum` peut n'avoir qu'un membre pertinent par carte, et c'est
+   la lecture qui le dira.
+2. **Les deux cartes Milet**, même geste, même question, et elle est déjà à moitié instruite : le
+   décompte de §3bis du protocole de fact-check les compte en surdéclaration « établie sur pièce »
+   alors que le dépôt porte 25 Ko de lecture de Milet 1982. Voir la note portée à §3bis.
+3. **Les six répertoires restants ne demandent rien d'urgent.** Deux ne partagent d'identifiant
+   avec aucune carte et sont vraisemblablement des sujets écartés ; les quatre autres visent des
+   cartes qui ont déjà leur dossier, donc l'enjeu n'y est pas un échec fabriqué mais un appoint
+   de preuve.
+4. **Une limite du champ `dossier`, à connaître avant de s'appuyer dessus** : c'est une chaîne et
+   non un tableau. Une carte ne peut donc déclarer qu'un seul dossier hors convention. Le
+   résolveur charge ce répertoire entier, ce qui suffit aux onze cas ci-dessus, mais une carte qui
+   aurait besoin de deux répertoires supplémentaires demanderait un changement de schéma.
 
 ---
 
