@@ -1,6 +1,6 @@
 {
   "concept_id": "critere-de-la-retroaction",
-  "candidate_sha256": "10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97",
+  "candidate_sha256": "51377815deeb19ddcae13f09372826b6b76a0b8df3d8d69691a2bc66f684d094",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -59,15 +59,15 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 372,
-      "end": 435,
-      "claim_text": "l’usage courant leur donne le même nom : un retour, un feedback",
+      "start": 324,
+      "end": 436,
+      "claim_text": "Les deux choses lui viennent du même public, et l’usage courant leur donne le même nom : un retour, un feedback.",
+      "normalized_claim": "L'usage courant nomme identiquement (retour, feedback) deux retours de nature differente venus du meme public.",
       "support_ids": [
-        "SUP-28b0ad1ad2e1a6f7",
-        "SUP-9ebf2c3f7a2925c8",
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "L'usage courant nomme feedback / retour aussi bien la reaction percue pendant l'action que le depouillement posterieur."
+        "SUP-fafb0e64fe593e7c",
+        "SUP-d22b454987e4c2f4",
+        "SUP-39bf3807979d713e"
+      ]
     },
     {
       "claim_id": "C002",
@@ -75,12 +75,13 @@
       "start": 437,
       "end": 557,
       "claim_text": "La première a pourtant modifié ce qu’il était en train de faire ; la seconde porte sur une conférence qui n’existe plus.",
+      "normalized_claim": "Le retour percu pendant l'action modifie l'action en cours, alors que le depouillement recu trois semaines plus tard porte sur une action terminee.",
       "support_ids": [
+        "SUP-bcaa6846245431a4",
         "SUP-d9116d421b3c54dc",
         "SUP-3fe284af22f54e21",
-        "SUP-af230d6cc1d8a5eb"
-      ],
-      "normalized_claim": "Seul le retour qui atteint une action encore en cours peut la modifier ; un depouillement posterieur porte sur une action terminee."
+        "SUP-2973d334cfde77d2"
+      ]
     },
     {
       "claim_id": "C003",
@@ -88,13 +89,13 @@
       "start": 0,
       "end": 81,
       "claim_text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval",
+      "normalized_claim": "Guy Paquette enseigne l'information et la communication a l'universite Laval.",
       "support_ids": [
         "SUP-3a1dc864a47cb060",
         "SUP-fa64c2a142ddb899",
         "SUP-625c98df4fa27db2",
         "SUP-d22b454987e4c2f4"
-      ],
-      "normalized_claim": "Guy Paquette est professeur au departement d'Information et de Communication de l'universite Laval."
+      ]
     },
     {
       "claim_id": "C004",
@@ -102,14 +103,14 @@
       "start": 83,
       "end": 108,
       "claim_text": "publie en 1987 un article",
+      "normalized_claim": "Paquette publie un article en 1987.",
       "support_ids": [
         "SUP-183905dbe8c2871b",
-        "SUP-2cd390bfd4ac799a",
         "SUP-03b79034f8fd566c",
+        "SUP-2cd390bfd4ac799a",
         "SUP-f7f4043b65e53c6a",
         "SUP-e5cabc0374854700"
-      ],
-      "normalized_claim": "L'article de Paquette parait en 1987 (Communication et langages, n. 73)."
+      ]
     },
     {
       "claim_id": "C005",
@@ -117,89 +118,94 @@
       "start": 109,
       "end": 167,
       "claim_text": "dont l’objet n’est pas de se plaindre d’un mot mal employé",
+      "normalized_claim": "L'objet de l'article n'est pas la plainte contre un mauvais usage du mot.",
       "support_ids": [
-        "SUP-dccd7d1a26770a77",
-        "SUP-0193991f3102814e",
+        "SUP-421445a4beb428f3",
+        "SUP-af230d6cc1d8a5eb",
         "SUP-667e6f002ec5a50c"
-      ],
-      "normalized_claim": "La denaturation du mot n'est pas l'objet de l'article : son objet est le mecanisme et son critere d'identification."
+      ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
       "start": 169,
-      "end": 351,
-      "claim_text": "Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non.",
+      "end": 277,
+      "claim_text": "Ce qu’il construit est un critère d’identification : deux conditions sans lesquelles il n’y a pas de boucle.",
+      "normalized_claim": "L'article construit un critere d'identification fait de deux conditions necessaires a l'existence d'une boucle.",
       "support_ids": [
-        "SUP-0193991f3102814e",
         "SUP-bcaa6846245431a4",
-        "SUP-af230d6cc1d8a5eb"
-      ],
-      "normalized_claim": "La these de l'article est un critere d'identification a deux conditions."
+        "SUP-af230d6cc1d8a5eb",
+        "SUP-d9116d421b3c54dc",
+        "SUP-2973d334cfde77d2"
+      ]
     },
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "start": 352,
-      "end": 416,
+      "start": 278,
+      "end": 342,
       "claim_text": "Que revient-il au juste ? Et l’action peut-elle encore changer ?",
+      "normalized_claim": "Les deux conditions portent sur la nature de ce qui revient et sur la possibilite de corriger encore l'action.",
       "support_ids": [
         "SUP-bcaa6846245431a4",
-        "SUP-0193991f3102814e",
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Les deux conditions portent sur la nature de ce qui revient (information sur l'effet) et sur la reprenabilite de l'action."
+        "SUP-7fc29eadd96a1c6b",
+        "SUP-d9116d421b3c54dc",
+        "SUP-2973d334cfde77d2",
+        "SUP-3fe284af22f54e21"
+      ]
     },
     {
       "claim_id": "C008",
       "locator": "lead[1]",
-      "start": 417,
-      "end": 539,
-      "claim_text": "Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, un joueur de quilles, une fièvre",
+      "start": 343,
+      "end": 486,
+      "claim_text": "Il mène la démonstration sur un autocuiseur, un réservoir de chasse d’eau, une fièvre, avant de la ramener à ce qui l’occupe, la communication.",
+      "normalized_claim": "La demonstration passe par un autocuiseur, un reservoir de chasse d'eau et une fievre, avant d'etre ramenee a la communication.",
       "support_ids": [
-        "SUP-dccd7d1a26770a77",
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Paquette raisonne sur ces exemples : thermostat, autocuiseur, reservoir de W.-C., joueur de quilles, fievre."
+        "SUP-d9116d421b3c54dc",
+        "SUP-421445a4beb428f3",
+        "SUP-0193991f3102814e",
+        "SUP-8d7e138f3c0d9324"
+      ]
     },
     {
       "claim_id": "C009",
-      "locator": "lead[1]",
-      "start": 541,
-      "end": 596,
-      "claim_text": "avant de la ramener à ce qui l’occupe, la communication",
-      "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-3a06f535f7494fed",
-        "SUP-8d7e138f3c0d9324"
-      ],
-      "normalized_claim": "Le mecanisme est ensuite transpose a la communication, champ auquel la proposition terminologique est destinee."
-    },
-    {
-      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
       "end": 52,
       "claim_text": "Le premier tri porte sur la nature de ce qui revient",
+      "normalized_claim": "La premiere condition porte sur la nature de ce qui revient a la source.",
       "support_ids": [
+        "SUP-bcaa6846245431a4",
         "SUP-28b0ad1ad2e1a6f7",
         "SUP-9ebf2c3f7a2925c8",
-        "SUP-bcaa6846245431a4",
-        "SUP-4538ad85cb4a5b51"
-      ],
-      "normalized_claim": "La premiere condition porte sur ce qui est retourne : de l'information sur l'effet, non l'effet."
+        "SUP-d9116d421b3c54dc",
+        "SUP-2973d334cfde77d2"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 54,
+      "end": 137,
+      "claim_text": "et Paquette le double d’une correction plus dérangeante encore pour l’usage courant",
+      "normalized_claim": "Paquette ajoute a cette premiere correction une seconde correction de l'usage courant.",
+      "support_ids": [
+        "SUP-d9116d421b3c54dc",
+        "SUP-dc2bfdc5f124d828"
+      ]
     },
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "start": 54,
+      "start": 140,
       "end": 192,
-      "claim_text": "et Paquette le double d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour.",
+      "claim_text": "la réaction de celui qui reçoit n’est pas le retour.",
+      "normalized_claim": "La reaction de la cible n'est pas le retour.",
       "support_ids": [
-        "SUP-dc2bfdc5f124d828",
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Seconde correction apportee par Paquette aux usages recus : la reaction de la cible n'est pas le feedback."
+        "SUP-d9116d421b3c54dc",
+        "SUP-dc2bfdc5f124d828"
+      ]
     },
     {
       "claim_id": "C012",
@@ -207,12 +213,12 @@
       "start": 193,
       "end": 345,
       "claim_text": "L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non.",
+      "normalized_claim": "Les reactions de la cible existent independamment de leur perception par la source.",
       "support_ids": [
-        "SUP-dc2bfdc5f124d828",
         "SUP-d9116d421b3c54dc",
+        "SUP-dc2bfdc5f124d828",
         "SUP-2973d334cfde77d2"
-      ],
-      "normalized_claim": "Les evenements chez le recepteur existent independamment de leur perception par la source."
+      ]
     },
     {
       "claim_id": "C013",
@@ -220,74 +226,72 @@
       "start": 346,
       "end": 413,
       "claim_text": "Le retour, lui, réside « dans la connaissance que la source en a ».",
+      "normalized_claim": "Le retour reside dans la connaissance que la source en a (citation).",
       "support_ids": [
-        "SUP-dc2bfdc5f124d828",
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Citation : le feedback reside dans la connaissance que la source a de la reaction."
+        "SUP-d9116d421b3c54dc",
+        "SUP-dc2bfdc5f124d828"
+      ]
     },
     {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
       "start": 0,
-      "end": 120,
-      "claim_text": "Deux personnes qui parlent devant la même salle n’ont donc pas le même retour, puisqu’elles n’y lisent pas la même chose",
+      "end": 97,
+      "claim_text": "Le même public ne donne donc pas forcément le même retour à deux personnes qui parlent devant lui",
+      "normalized_claim": "Un meme public ne produit pas necessairement le meme retour pour deux sources differentes.",
       "support_ids": [
-        "SUP-dc2bfdc5f124d828",
         "SUP-d9116d421b3c54dc",
-        "SUP-2973d334cfde77d2"
-      ],
-      "normalized_claim": "Consequence derivee : le retour depend de ce que chaque source deduit, donc varie d'une source a l'autre."
+        "SUP-dc2bfdc5f124d828"
+      ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
-      "start": 122,
-      "end": 204,
-      "claim_text": "et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout",
+      "start": 99,
+      "end": 182,
+      "claim_text": "et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout.",
+      "normalized_claim": "Une reaction non percue par la source ne corrige rien.",
       "support_ids": [
-        "SUP-dc2bfdc5f124d828",
         "SUP-d9116d421b3c54dc",
-        "SUP-af230d6cc1d8a5eb"
-      ],
-      "normalized_claim": "Consequence derivee : une reaction non percue ne produit aucune correction."
+        "SUP-dc2bfdc5f124d828"
+      ]
     },
     {
       "claim_id": "C016",
       "locator": "sections[0].paragraphs[1]",
-      "start": 206,
-      "end": 283,
+      "start": 183,
+      "end": 260,
       "claim_text": "Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher",
+      "normalized_claim": "Paquette met sur le meme plan des objets heterogenes (mimiques, questions, sondages).",
       "support_ids": [
         "SUP-2973d334cfde77d2",
-        "SUP-af230d6cc1d8a5eb"
-      ],
-      "normalized_claim": "Paquette met sur le meme plan mimiques, questions d'un auditoire et sondages d'opinion."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
-      "start": 286,
-      "end": 487,
-      "claim_text": "ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes »",
+      "start": 263,
+      "end": 465,
+      "claim_text": "ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes ».",
+      "normalized_claim": "Citation de Paquette : ce qui compte est ce que l'on peut deduire des mimiques, des questions d'un auditoire ou des sondages d'opinion, non ce que ces evenements sont en eux-memes.",
       "support_ids": [
         "SUP-2973d334cfde77d2",
-        "SUP-af230d6cc1d8a5eb"
-      ],
-      "normalized_claim": "Citation p. 16 attribuee a Paquette."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C018",
       "locator": "sections[0].paragraphs[1]",
-      "start": 489,
-      "end": 604,
+      "start": 466,
+      "end": 581,
       "claim_text": "Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire.",
+      "normalized_claim": "Un sondage ne constitue pas une boucle par lui-meme : il ne le devient que par ce qu'une source en deduit.",
       "support_ids": [
-        "SUP-af230d6cc1d8a5eb",
         "SUP-2973d334cfde77d2",
-        "SUP-dc2bfdc5f124d828"
-      ],
-      "normalized_claim": "Un sondage n'est pas du feedback en lui-meme ; seul l'est ce que la source en deduit."
+        "SUP-dccd7d1a26770a77",
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C019",
@@ -295,12 +299,12 @@
       "start": 0,
       "end": 66,
       "claim_text": "La seconde question ne porte plus sur le signal mais sur l’action.",
+      "normalized_claim": "La seconde condition porte sur l'action et non sur le signal.",
       "support_ids": [
         "SUP-bcaa6846245431a4",
-        "SUP-3fe284af22f54e21",
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "La seconde condition porte sur l'action et non sur l'information."
+        "SUP-d9116d421b3c54dc",
+        "SUP-3fe284af22f54e21"
+      ]
     },
     {
       "claim_id": "C020",
@@ -308,12 +312,13 @@
       "start": 67,
       "end": 207,
       "claim_text": "Une action qui ne peut pas être reprise ne peut pas être corrigée, et l’information qui la concerne, si juste soit-elle, ne boucle sur rien.",
+      "normalized_claim": "Sans reprise possible de l'action, il n'y a pas de correction et l'information ne boucle pas.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
         "SUP-3fe284af22f54e21",
+        "SUP-bcaa6846245431a4",
         "SUP-2973d334cfde77d2"
-      ],
-      "normalized_claim": "Sans possibilite de reprendre l'action, il n'y a pas de feedback, quelle que soit la qualite de l'information."
+      ]
     },
     {
       "claim_id": "C021",
@@ -321,12 +326,12 @@
       "start": 208,
       "end": 430,
       "claim_text": "L’exemple choisi est brutal : « si l’action ne peut être exécutée qu’une seule fois, par exemple, ouvrir son parachute à 200 m du sol, il ne peut y avoir fonctionnement par feedback puisque l’action ne peut être reprise ».",
+      "normalized_claim": "Paquette illustre la condition par l'exemple du parachute ouvert une seule fois (citation p. 10).",
       "support_ids": [
-        "SUP-3fe284af22f54e21",
         "SUP-d9116d421b3c54dc",
+        "SUP-3fe284af22f54e21",
         "SUP-2973d334cfde77d2"
-      ],
-      "normalized_claim": "Citation du parachute a 200 m, p. 10."
+      ]
     },
     {
       "claim_id": "C022",
@@ -334,12 +339,11 @@
       "start": 0,
       "end": 74,
       "claim_text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour.",
+      "normalized_claim": "Ce critere exclut une large part des retours ainsi nommes dans l'usage courant.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
-        "SUP-af230d6cc1d8a5eb",
-        "SUP-28b0ad1ad2e1a6f7"
-      ],
-      "normalized_claim": "La condition de reprenabilite exclut plusieurs choses couramment appelees retour."
+        "SUP-dccd7d1a26770a77"
+      ]
     },
     {
       "claim_id": "C023",
@@ -347,11 +351,11 @@
       "start": 75,
       "end": 268,
       "claim_text": "Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien.",
+      "normalized_claim": "Applaudissements de fin de spectacle, resultat d'un scrutin et cotes d'ecoute d'une emission diffusee portent sur une action terminee : ils informent sans corriger.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
-        "SUP-af230d6cc1d8a5eb"
-      ],
-      "normalized_claim": "Paquette ecarte cotes d'ecoute, applaudissements de fin de spectacle et resultats d'un scrutin : trop tardifs, ils ne modifient plus l'action."
+        "SUP-dccd7d1a26770a77"
+      ]
     },
     {
       "claim_id": "C024",
@@ -359,23 +363,23 @@
       "start": 269,
       "end": 363,
       "claim_text": "Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser",
+      "normalized_claim": "Paquette precise que la correction n'a pas a etre instantanee.",
       "support_ids": [
         "SUP-2973d334cfde77d2",
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Paquette precise que le reajustement n'est pas necessairement en temps reel."
+      ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
       "start": 366,
-      "end": 478,
-      "claim_text": "un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs »",
+      "end": 479,
+      "claim_text": "un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ».",
+      "normalized_claim": "Citation : le comportement en cours est reajuste, pas necessairement en temps reel, sur la base de ses resultats effectifs.",
       "support_ids": [
         "SUP-2973d334cfde77d2",
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Citation p. 16 sur le reajustement non necessairement en temps reel."
+      ]
     },
     {
       "claim_id": "C026",
@@ -383,12 +387,13 @@
       "start": 480,
       "end": 572,
       "claim_text": "Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate.",
+      "normalized_claim": "L'exigence porte sur l'ouverture de l'action, non sur l'immediatete de la reponse.",
       "support_ids": [
         "SUP-2973d334cfde77d2",
         "SUP-d9116d421b3c54dc",
-        "SUP-3fe284af22f54e21"
-      ],
-      "normalized_claim": "Derivation : la condition porte sur la reprenabilite de l'action, pas sur l'immediatete du retour."
+        "SUP-3fe284af22f54e21",
+        "SUP-bcaa6846245431a4"
+      ]
     },
     {
       "claim_id": "C027",
@@ -396,196 +401,190 @@
       "start": 573,
       "end": 696,
       "claim_text": "Le délai, lui, n’est pas neutre : la boucle exige aussi que le temps de traitement ne rende pas l’information inutilisable.",
+      "normalized_claim": "La boucle exige aussi que le temps de traitement ne rende pas l'information inutilisable.",
       "support_ids": [
-        "SUP-af230d6cc1d8a5eb",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Le delai de traitement est une exigence supplementaire de la boucle : il ne doit pas rendre l'information inutilisable."
+        "SUP-dccd7d1a26770a77",
+        "SUP-421445a4beb428f3"
+      ]
     },
     {
       "claim_id": "C028",
       "locator": "sections[2].paragraphs[0]",
       "start": 0,
-      "end": 138,
-      "claim_text": "Un système qui se règle tout seul ne satisfait pas pour autant ces conditions, et Paquette le montre en comparant deux objets domestiques.",
+      "end": 77,
+      "claim_text": "Un système qui se règle tout seul ne satisfait pas pour autant ces conditions",
+      "normalized_claim": "Toute autoregulation ne satisfait pas les conditions du feedback.",
       "support_ids": [
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Toute autoregulation n'est pas un feedback ; Paquette l'etablit en comparant autocuiseur et reservoir de W.-C."
+      ]
     },
     {
       "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
-      "start": 139,
-      "end": 279,
-      "claim_text": "Un autocuiseur maintient sa pression en laissant échapper l’excès de vapeur : rien, dans ce mécanisme, ne fait baisser la source de chaleur.",
+      "start": 79,
+      "end": 138,
+      "claim_text": "et Paquette le montre en comparant deux objets domestiques.",
+      "normalized_claim": "Paquette etablit ce point en comparant deux objets domestiques.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "L'autocuiseur maintient sa pression par evacuation de l'excedent de vapeur et non par ajustement a la baisse de la source de chaleur."
+        "SUP-421445a4beb428f3"
+      ]
     },
     {
       "claim_id": "C030",
       "locator": "sections[2].paragraphs[0]",
-      "start": 280,
-      "end": 453,
-      "claim_text": "Le réservoir d’une chasse d’eau, lui, travaille bien par boucle, parce qu’un niveau précis peut y être vérifié, recherché, puis l’arrivée d’eau bloquée quand il est atteint.",
+      "start": 139,
+      "end": 279,
+      "claim_text": "Un autocuiseur maintient sa pression en laissant échapper l’excès de vapeur : rien, dans ce mécanisme, ne fait baisser la source de chaleur.",
+      "normalized_claim": "L'autocuiseur maintient sa pression en evacuant l'exces de vapeur, sans ajustement a la baisse de la source de chaleur.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Le reservoir de W.-C. fonctionne par feedback : niveau verifie et recherche, puis arrivee d'eau bloquee."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C031",
       "locator": "sections[2].paragraphs[0]",
-      "start": 454,
-      "end": 516,
-      "claim_text": "Le premier compense l’excès, le second constate et intervient.",
+      "start": 280,
+      "end": 453,
+      "claim_text": "Le réservoir d’une chasse d’eau, lui, travaille bien par boucle, parce qu’un niveau précis peut y être vérifié, recherché, puis l’arrivée d’eau bloquée quand il est atteint.",
+      "normalized_claim": "Le reservoir de chasse d'eau fonctionne par boucle : un niveau precis est verifie, recherche, puis l'arrivee d'eau est bloquee.",
       "support_ids": [
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Derivation : le controle suppose constater et intervenir, ce que l'autocuiseur ne fait pas."
+      ]
     },
     {
       "claim_id": "C032",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 0,
-      "end": 72,
-      "claim_text": "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 454,
+      "end": 516,
+      "claim_text": "Le premier compense l’excès, le second constate et intervient.",
+      "normalized_claim": "L'autocuiseur compense l'exces, le reservoir constate et intervient.",
       "support_ids": [
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Le controle a deux dimensions chez Paquette : constater et intervenir."
+      ]
     },
     {
       "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
-      "start": 74,
-      "end": 180,
-      "claim_text": "et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée.",
+      "start": 0,
+      "end": 72,
+      "claim_text": "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir",
+      "normalized_claim": "Le controle suppose conjointement constater et intervenir.",
       "support_ids": [
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Le controle est indissociable de la finalite : reguler suppose une valeur de reference."
+      ]
     },
     {
       "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
-      "start": 181,
-      "end": 274,
-      "claim_text": "Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat.",
+      "start": 74,
+      "end": 180,
+      "claim_text": "et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée.",
+      "normalized_claim": "Chez Paquette le controle est indissociable de la finalite : on ne regule que par rapport a une valeur de reference.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Dans les machines la valeur de reference est imposee de l'exterieur ; le thermostat sert d'exemple."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
-      "start": 275,
-      "end": 349,
-      "claim_text": "Dans un organisme, elle peut n’être écrite nulle part et rester implicite.",
+      "start": 181,
+      "end": 234,
+      "claim_text": "Dans une machine, cette valeur est imposée du dehors.",
+      "normalized_claim": "Dans les machines la valeur de reference est imposee de l'exterieur.",
       "support_ids": [
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Dans le vivant la valeur de reference peut rester implicite."
+      ]
     },
     {
       "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
-      "start": 350,
-      "end": 523,
-      "claim_text": "Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus.",
+      "start": 235,
+      "end": 309,
+      "claim_text": "Dans un organisme, elle peut n’être écrite nulle part et rester implicite.",
+      "normalized_claim": "Dans le vivant la valeur de reference peut rester implicite.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Trois sous-processus, information, evaluation, re-action, sequentiels dans l'expose mais simultanes et continus."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C037",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 168,
-      "claim_text": "Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 310,
+      "end": 483,
+      "claim_text": "Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus.",
+      "normalized_claim": "Le processus comporte trois sous-processus, s'informer, evaluer, reagir, sequentiels dans l'expose mais simultanes et continus en fonctionnement.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Paquette expose la hierarchisation des boucles et le deplacement des finalites par un niveau superieur."
+        "SUP-421445a4beb428f3"
+      ]
     },
     {
       "claim_id": "C038",
       "locator": "sections[3].paragraphs[0]",
-      "start": 169,
-      "end": 309,
-      "claim_text": "La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée.",
+      "start": 0,
+      "end": 168,
+      "claim_text": "Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur.",
+      "normalized_claim": "Paquette decrit des boucles hierarchisees et emboitees dont les valeurs de reference peuvent etre deplacees par un niveau superieur.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "La fievre est relue comme une modification de la valeur de reference, et non comme un echec de regulation."
+        "SUP-421445a4beb428f3"
+      ]
     },
     {
       "claim_id": "C039",
       "locator": "sections[3].paragraphs[0]",
-      "start": 310,
-      "end": 381,
-      "claim_text": "Le corps ne manque pas sa température habituelle, il en vise une autre.",
+      "start": 169,
+      "end": 309,
+      "claim_text": "La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée.",
+      "normalized_claim": "La thermoregulation sert d'exemple : la fievre se lit comme une modification de la valeur de reference et non comme une regulation qui echoue.",
       "support_ids": [
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Reformulation de la fievre comme nouvelle valeur visee."
+      ]
     },
     {
       "claim_id": "C040",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 48,
-      "end": 248,
-      "claim_text": "Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 310,
+      "end": 381,
+      "claim_text": "Le corps ne manque pas sa température habituelle, il en vise une autre.",
+      "normalized_claim": "Le corps vise en fievre une autre temperature de reference.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Derivation de la hierarchisation : un ecart peut etre l'execution d'un but revise a l'etage superieur."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C041",
       "locator": "sections[3].paragraphs[1]",
-      "start": 249,
-      "end": 365,
-      "claim_text": "Paquette nomme hétérostasie ce déclenchement d’une révision des buts, par opposition au maintien d’un état constant.",
+      "start": 0,
+      "end": 69,
+      "claim_text": "Paquette nomme hétérostasie le déclenchement d’une révision des buts.",
+      "normalized_claim": "Paquette appelle heterostasie le declenchement d'une revision des buts.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Paquette emploie hetorostasie pour le declenchement d'une revision des buts, par contraste avec le maintien d'un etat constant."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C042",
       "locator": "sections[3].paragraphs[1]",
-      "start": 366,
-      "end": 542,
+      "start": 70,
+      "end": 246,
       "claim_text": "On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage.",
+      "normalized_claim": "Glose de l'approfondissement : corriger une action et changer les buts relevent tous deux de boucles, mais a des niveaux differents de la hierarchie.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-dccd7d1a26770a77"
-      ],
-      "normalized_claim": "Interpretation explicite : correction de l'action et revision des buts sont deux etages de boucles."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C043",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
-      "end": 123,
-      "claim_text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article, et il vaut mieux le savoir avant d’y entrer.",
+      "end": 77,
+      "claim_text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article",
+      "normalized_claim": "Le mot rétroaction n'a pas le meme sens partout dans l'article.",
       "support_ids": [
         "SUP-3511dfc3d2a10502"
-      ],
-      "normalized_claim": "Le mot retroaction a dans l'article un sens local etroit (p. 8) distinct de la definition posee plus loin (p. 15-16)."
+      ]
     },
     {
       "claim_id": "C044",
@@ -593,10 +592,10 @@
       "start": 124,
       "end": 378,
       "claim_text": "Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système »",
+      "normalized_claim": "Dans l'expose du mecanisme, rétroaction a un sens etroit : regulation aveugle par connexion directe entre la sortie et l'entree du systeme (citation p. 8).",
       "support_ids": [
         "SUP-3511dfc3d2a10502"
-      ],
-      "normalized_claim": "Citation p. 8 : regulation aveugle par connexion directe sortie-entree."
+      ]
     },
     {
       "claim_id": "C045",
@@ -604,10 +603,10 @@
       "start": 380,
       "end": 470,
       "claim_text": "et ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation.",
+      "normalized_claim": "Ce cas est oppose par Paquette au feedback par retroinformation.",
       "support_ids": [
         "SUP-3511dfc3d2a10502"
-      ],
-      "normalized_claim": "A ce sens local, p. 8 oppose le feedback par retroinformation."
+      ]
     },
     {
       "claim_id": "C046",
@@ -615,12 +614,11 @@
       "start": 0,
       "end": 105,
       "claim_text": "Les définitions qu’il retient arrivent plus loin, une fois le mécanisme transporté dans la communication.",
+      "normalized_claim": "Les definitions retenues arrivent plus loin dans l'article, apres la transposition du mecanisme a la communication.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
-        "SUP-3511dfc3d2a10502",
-        "SUP-3a06f535f7494fed"
-      ],
-      "normalized_claim": "Les definitions terminologiques viennent apres la transposition a la communication (p. 14-16)."
+        "SUP-3511dfc3d2a10502"
+      ]
     },
     {
       "claim_id": "C047",
@@ -628,122 +626,148 @@
       "start": 106,
       "end": 232,
       "claim_text": "Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action »",
+      "normalized_claim": "Citation : deux dimensions caracterisent le processus, celle d'information et celle de correction ou ajustement de l'action.",
       "support_ids": [
         "SUP-2973d334cfde77d2",
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Citation p. 14 : les deux dimensions du processus."
+      ]
     },
     {
       "claim_id": "C048",
       "locator": "sections[4].paragraphs[1]",
       "start": 234,
-      "end": 329,
-      "claim_text": "et il les tient pour « des conditions formelles à l’identification d’un processus de feedback »",
+      "end": 330,
+      "claim_text": "et il les tient pour « des conditions formelles à l’identification d’un processus de feedback ».",
+      "normalized_claim": "Citation : ces dimensions sont tenues pour des conditions formelles a l'identification d'un processus de feedback.",
       "support_ids": [
         "SUP-2973d334cfde77d2",
         "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Citation p. 14 : ces dimensions sont des conditions formelles d'identification du feedback."
+      ]
     },
     {
       "claim_id": "C049",
       "locator": "sections[4].paragraphs[1]",
       "start": 331,
-      "end": 461,
-      "claim_text": "Croisées avec une chronologie, avant, pendant, après l’action, elles séparent des situations que le même mot recouvrait jusque-là.",
+      "end": 392,
+      "claim_text": "Croisées avec une chronologie, avant, pendant, après l’action",
+      "normalized_claim": "Ces deux dimensions sont croisees avec une chronologie avant / pendant / apres l'action.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-28b0ad1ad2e1a6f7"
-      ],
-      "normalized_claim": "Les deux dimensions sont croisees avec une chronologie avant / pendant / apres l'action, ce qui distingue des cas jusque-la confondus."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C050",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 0,
-      "end": 128,
-      "claim_text": "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 394,
+      "end": 461,
+      "claim_text": "elles séparent des situations que le même mot recouvrait jusque-là.",
+      "normalized_claim": "Ce croisement separe des situations que le meme mot recouvrait auparavant.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc"
-      ],
-      "normalized_claim": "Definition de la retroinformation : processus d'obtention et d'analyse des informations sur une situation en cours ou deja terminee."
+        "SUP-d9116d421b3c54dc",
+        "SUP-ba998581dd0a35d9",
+        "SUP-fafb0e64fe593e7c"
+      ]
     },
     {
       "claim_id": "C051",
       "locator": "sections[4].paragraphs[2]",
-      "start": 130,
-      "end": 312,
-      "claim_text": "et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) »",
+      "start": 0,
+      "end": 128,
+      "claim_text": "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée",
+      "normalized_claim": "La retroinformation est le processus d'obtention et d'analyse des informations sur une situation en cours ou deja terminee.",
       "support_ids": [
-        "SUP-2973d334cfde77d2",
-        "SUP-d9116d421b3c54dc",
-        "SUP-3fe284af22f54e21"
-      ],
-      "normalized_claim": "Citation p. 16 : la retroinformation ne fait boucle que si elle sert a modeler l'action."
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C052",
       "locator": "sections[4].paragraphs[2]",
-      "start": 314,
-      "end": 429,
-      "claim_text": "La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée",
+      "start": 130,
+      "end": 313,
+      "claim_text": "et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ».",
+      "normalized_claim": "Citation p. 16 : la retroinformation ne fait boucle de retroaction que lorsqu'elle sert a modeler l'action.",
       "support_ids": [
-        "SUP-d9116d421b3c54dc",
-        "SUP-625c98df4fa27db2",
-        "SUP-d22b454987e4c2f4"
-      ],
-      "normalized_claim": "Preinformation (feedforward) et preaction operent avant le declenchement de l'action."
+        "SUP-2973d334cfde77d2",
+        "SUP-d9116d421b3c54dc"
+      ]
     },
     {
       "claim_id": "C053",
       "locator": "sections[4].paragraphs[2]",
-      "start": 432,
-      "end": 519,
-      "claim_text": "elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable »",
+      "start": 314,
+      "end": 429,
+      "claim_text": "La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée",
+      "normalized_claim": "Preinformation (rapprochee du feedforward) et preaction se situent avant le declenchement de l'action.",
       "support_ids": [
         "SUP-d9116d421b3c54dc",
+        "SUP-625c98df4fa27db2",
         "SUP-d22b454987e4c2f4"
-      ],
-      "normalized_claim": "Citation p. 17 : ces notions ne sont pas incluses dans la definition du feedback."
+      ]
     },
     {
       "claim_id": "C054",
       "locator": "sections[4].paragraphs[2]",
-      "start": 521,
-      "end": 692,
-      "claim_text": "Rétroaction et rétroinformation, il ne les invente pas : ces mots circulaient déjà comme traductions de feedback, et ce qu’il leur donne, ce sont des définitions séparées.",
+      "start": 432,
+      "end": 520,
+      "claim_text": "elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable ».",
+      "normalized_claim": "Citation : preinformation et preaction ne relevent pas du feedback, bien que la parente des concepts soit indeniable.",
       "support_ids": [
-        "SUP-fafb0e64fe593e7c",
-        "SUP-625c98df4fa27db2",
-        "SUP-d22b454987e4c2f4"
-      ],
-      "normalized_claim": "Paquette ne forge pas retroaction ni retroinformation, francisations deja en circulation : il leur assigne des definitions distinctes."
+        "SUP-d9116d421b3c54dc",
+        "SUP-d22b454987e4c2f4",
+        "SUP-625c98df4fa27db2"
+      ]
     },
     {
       "claim_id": "C055",
       "locator": "sections[4].paragraphs[2]",
-      "start": 693,
-      "end": 749,
-      "claim_text": "La préinformation et la préaction, elles, il les ajoute.",
+      "start": 521,
+      "end": 633,
+      "claim_text": "Rétroaction et rétroinformation, il ne les invente pas : ces mots circulaient déjà comme traductions de feedback",
+      "normalized_claim": "Paquette n'invente pas les termes retroaction et retroinformation, deja en circulation comme francisations de feedback.",
       "support_ids": [
         "SUP-fafb0e64fe593e7c",
         "SUP-625c98df4fa27db2",
         "SUP-d22b454987e4c2f4"
-      ],
-      "normalized_claim": "Preinformation et preaction sont ajoutees par Paquette."
+      ]
     },
     {
       "claim_id": "C056",
       "locator": "sections[4].paragraphs[2]",
+      "start": 635,
+      "end": 692,
+      "claim_text": "et ce qu’il leur donne, ce sont des définitions séparées.",
+      "normalized_claim": "Paquette leur assigne des definitions distinctes.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-625c98df4fa27db2",
+        "SUP-d22b454987e4c2f4",
+        "SUP-d9116d421b3c54dc"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 693,
+      "end": 749,
+      "claim_text": "La préinformation et la préaction, elles, il les ajoute.",
+      "normalized_claim": "La preinformation et la preaction sont des notions ajoutees par Paquette.",
+      "support_ids": [
+        "SUP-fafb0e64fe593e7c",
+        "SUP-625c98df4fa27db2",
+        "SUP-d22b454987e4c2f4"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[2]",
       "start": 750,
       "end": 835,
       "claim_text": "Cette terminologie, il la propose aux sciences de la communication et à elles seules.",
+      "normalized_claim": "La proposition terminologique vise les sciences de la communication et elles seules, l'auteur le dit.",
       "support_ids": [
-        "SUP-3a06f535f7494fed",
-        "SUP-8d7e138f3c0d9324"
-      ],
-      "normalized_claim": "La proposition terminologique finale vise les sciences de la communication et rien d'autre, l'auteur le dit."
+        "SUP-8d7e138f3c0d9324",
+        "SUP-0193991f3102814e"
+      ]
     }
   ]
 }

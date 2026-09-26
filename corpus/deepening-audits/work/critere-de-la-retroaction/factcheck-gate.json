@@ -1,42 +1,17 @@
 {
   "protocol_version": 1,
   "concept_id": "critere-de-la-retroaction",
-  "candidate_sha256": "10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97",
+  "candidate_sha256": "51377815deeb19ddcae13f09372826b6b76a0b8df3d8d69691a2bc66f684d094",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 56,
-  "supported": 50,
-  "failed": 6,
+  "claims": 58,
+  "supported": 57,
+  "failed": 1,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C006",
+      "claim_id": "C038",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis donnent une condition necessaire (« il n'y a retroaction que si de l'information sur l'effet revient a la source et que l'action peut encore etre corrigee »). Le claim la convertit en procedure de decision suffisante et universelle : « devant n'importe quelle situation [...] deux questions suffisent a dire s'il y a boucle ou non ». Ni la suffisance ni l'extension a toute situation ne sont etablies, et le dossier lui-meme enumere quatre exigences (information sur l'effet, continuite, action reprenable, delai), dont le texte reprend la quatrieme plus loin."
-    },
-    {
-      "claim_id": "C008",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les appuis attestent l'autocuiseur, le reservoir de W.-C. et la fievre (thermoregulation). Ni « un thermostat » ni « un joueur de quilles » n'apparaissent dans aucun appui resolu : le claim nomme comme supports de la demonstration de l'auteur deux exemples que la preuve ne porte pas."
-    },
-    {
-      "claim_id": "C014",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis etablissent que le retour reside dans la connaissance que la source en a, donc qu'il est indexe a la source. Ils n'etablissent pas la premisse empirique que le claim affirme comme un fait (« elles n'y lisent pas la meme chose »), ni la conclusion categorique « n'ont donc pas le meme retour ». Le support autorise au mieux une possibilite de divergence, pas une necessite."
-    },
-    {
-      "claim_id": "C034",
-      "verdict": "TOO_STRONG",
-      "reason": "La partie generale est soutenue (valeur de reference « imposee de l'exterieur dans les machines »). Mais aucun appui resolu ne mentionne de thermostat : « celui qui pousse le curseur du thermostat » est une scene du redacteur donnee comme l'illustration machinique de l'expose de l'auteur, sans appui."
-    },
-    {
-      "claim_id": "C040",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis portent un cas unique, la fievre relue comme modification de la valeur de reference. Le claim en tire une loi generale de lecture : « tout ecart ressemble a un defaut » puis « le meme ecart devient l'execution d'une consigne venue d'ailleurs ». Passage de l'exemple a la regle generale, non autorise par les appuis."
-    },
-    {
-      "claim_id": "C041",
-      "verdict": "TOO_STRONG",
-      "reason": "« heterostasie declenchant la revision des buts » est bien porte par definition_de_lauteur. En revanche l'opposition « au maintien d'un etat constant » n'apparait dans aucun appui resolu : le claim attribue a l'auteur un contraste conceptuel que la preuve ne porte pas."
+      "reason": "Les appuis fournis attestent que Paquette decrit « la hierarchisation des boucles et le deplacement des finalites » (definition_de_lauteur, p. 11-13 ; reserves[0]), mais ils ne disent ni que les boucles sont emboitees les unes dans les autres, ni que les valeurs de reference sont deplacees par un niveau superieur. Le claim ajoute a l'attribution une architecture causale (l'agent du deplacement) que les appuis de ce claim ne portent pas."
     }
   ]
 }

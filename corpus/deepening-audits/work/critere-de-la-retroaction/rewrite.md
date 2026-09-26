@@ -379,6 +379,12 @@ rédaction, pas de fait.
 
 La modification invalide le SHA. La chaîne déterministe doit repartir de `PREPARE` sur
 `51377815deeb19ddcae13f09372826b6b76a0b8df3d8d69691a2bc66f684d094`. Aucun verdict
-`FACTCHECK_PASS` n'est prononcé ici, aucun artefact de fact-check n'a été modifié à la main, et
-`factcheck-gate.json`, `verification.json`, `claim-map.json` et `factcheck-pack.json` restent ceux
-de `10e489ee…`, donc périmés dès à présent.
+`FACTCHECK_PASS` n'est prononcé ici et aucun artefact de fact-check n'a été modifié à la main.
+
+État des artefacts au moment où ce compte rendu est arrêté : `factcheck-gate.json`,
+`verification.json` et `claim-map.json` décrivent encore `10e489ee…` et sont donc périmés.
+`factcheck-pack.json` a été régénéré par l'orchestrateur sur `51377815…` (72 appuis, un fichier de
+preuve, `dossier_declare` résolu, `status` READY) : il n'a pas été écrit à la main, et il n'y a
+plus de pack décrivant la version jugée ailleurs que dans l'historique git. Un relecteur qui
+comparerait le pack au gate doit donc savoir qu'ils ne portent plus sur le même texte, et
+recommencer la chaîne plutôt que les rapprocher.
