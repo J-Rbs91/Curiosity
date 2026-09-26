@@ -36,8 +36,8 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **G.** Le pack de preuve ne lisait qu'un fichier du dossier | **aucun** | non | **fermé le 21 septembre 2026** — dernière suite portée, la version antérieure se désigne par un SHA de blob |
 | **H.** Un niveau d'accès surdéclaré désarme le gate | 5 cas établis, 13 champs à normaliser | non pour le correctif, oui pour les cas | **détection faite le 22 septembre 2026** ; reste la réparation des fiches, qui est un geste de la couche carte |
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
-| **J.** Le pack résout le dossier par l'identifiant de la carte | 12 répertoires, 186 Ko hors d'atteinte | non pour le correctif, oui pour identifier les onze non réclamés | ouvert le 25 septembre 2026 ; **un cas prouvé, et il a coûté un rejet** |
-| **K.** Une omission du claim mapper fabrique un échec immérité | **aucun** pour le correctif | non | ouvert le 25 septembre 2026 ; **le mapper est le seul maillon que rien ne double** |
+| **J.** Le pack résout le dossier par l'identifiant de la carte | 11 répertoires restants | non pour le correctif, oui pour rattacher les onze | **outillage corrigé le 26 septembre 2026** ; `prepare()` honore le champ `dossier` sous `corpus/evidence/`, et le cas prouvé rend 72 appuis au lieu de 45. Reste la décision documentaire sur `corpus/dossiers/` — neuf cartes — et le rattachement des onze |
+| **K.** Une omission du claim mapper fabrique un échec immérité | **aucun** pour le correctif | non | ouvert le 25 septembre 2026, **aggravé le 26** ; second cas établi, où le claim était pourvu de deux appuis réels sans le bon — et la coupe qui s'en est suivie a fait perdre au texte une matière attestée |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
