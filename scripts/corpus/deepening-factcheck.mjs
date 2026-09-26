@@ -3,7 +3,7 @@ import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
-import { evidenceOrigin, listEvidenceFiles } from "./lib/factcheck-evidence.mjs";
+import { DOSSIER_STATUTS, evidenceOrigin, resolveDossier } from "./lib/factcheck-evidence.mjs";
 import { reconcilierAcces, statutPourChemin, STATUTS } from "./lib/factcheck-access.mjs";
 
 const ROOT = process.cwd();
@@ -57,10 +57,6 @@ function deepeningPath(conceptId) {
 
 function validatedPath(conceptId) {
   return path.join(ROOT, "corpus", "validated", `${conceptId}.json`);
-}
-
-function evidenceDir(conceptId) {
-  return path.join(ROOT, "corpus", "evidence", conceptId);
 }
 
 function jsonPath(parent, key) {
@@ -145,9 +141,10 @@ async function prepare(conceptId) {
   const supports = [];
   collectSupports(validated, { origin: "validated" }, supports);
 
+  const { fichiers, declaration: dossierDeclare } = resolveDossier(validated, { root: ROOT });
   const evidenceFiles = [];
   const evidenceDocuments = [];
-  for (const { name, file } of listEvidenceFiles(evidenceDir(conceptId))) {
+  for (const { name, file } of fichiers) {
     const evidenceRaw = await readFile(file, "utf8");
     evidenceFiles.push({ file: name, sha256: sha256(evidenceRaw) });
     const evidenceDocument = JSON.parse(evidenceRaw);
@@ -180,6 +177,7 @@ async function prepare(conceptId) {
     candidate_sha256: sha256(deepRaw),
     validated_sha256: sha256(validatedRaw),
     evidence_files: evidenceFiles,
+    dossier_declare: dossierDeclare,
     access_reconciliation: accessReconciliation,
     paragraphs: readerParagraphs(deepening),
     supports: uniqueSupports,
@@ -202,6 +200,8 @@ async function prepare(conceptId) {
       budget_tokens: CONTEXT_BUDGET_TOKENS,
       paragraphs: pack.paragraphs.length,
       supports: pack.supports.length,
+      evidence_files: evidenceFiles.length,
+      dossier_declare: dossierDeclare.statut,
       access_reconciliation: accessReconciliation.compteurs,
       artifact: path.relative(ROOT, output),
     }),
@@ -431,12 +431,24 @@ async function sweep() {
 
   const total = Object.fromEntries(Object.values(STATUTS).map((statut) => [statut, 0]));
   const signalees = [];
+  /*
+   * Un dossier déclaré que le pack ne charge pas est le défaut le plus coûteux de la chaîne : il
+   * fait refuser des claims dont la preuve est au dépôt. Le balayage le compte, pour que la
+   * mesure ne se refasse pas à la main.
+   */
+  const dossiersNonCharges = [];
 
   for (const id of ids) {
     const validated = JSON.parse(await readFile(validatedPath(id), "utf8"));
+    const { fichiers, declaration } = resolveDossier(validated, { root: ROOT });
     const documents = [];
-    for (const { file } of listEvidenceFiles(evidenceDir(id))) {
+    for (const { file } of fichiers) {
       documents.push(JSON.parse(await readFile(file, "utf8")));
+    }
+    if (declaration.statut !== DOSSIER_STATUTS.NON_DECLARE
+      && declaration.statut !== DOSSIER_STATUTS.CONVENTIONNEL
+      && declaration.statut !== DOSSIER_STATUTS.RESOLU) {
+      dossiersNonCharges.push({ concept_id: id, ...declaration });
     }
     const reconciliation = reconcilierAcces(validated, documents);
     for (const [statut, nombre] of Object.entries(reconciliation.compteurs)) total[statut] += nombre;
@@ -454,7 +466,13 @@ async function sweep() {
     }
   }
 
-  console.log(JSON.stringify({ cartes: ids.length, declarations: total, signalees }, null, 2));
+  console.log(
+    JSON.stringify(
+      { cartes: ids.length, declarations: total, dossiers_non_charges: dossiersNonCharges, signalees },
+      null,
+      2,
+    ),
+  );
 }
 
 const conceptId = option("only");

@@ -25,8 +25,8 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { CONTENT_DIR, CORPUS_DIR, loadRecords, relative } from "./lib/io.mjs";
-import { dossierBrut } from "./lib/factcheck-evidence.mjs";
+import { CONTENT_DIR, CORPUS_DIR, loadRecords, relative, ROOT } from "./lib/io.mjs";
+import { dossierBrut, resolveDossier } from "./lib/factcheck-evidence.mjs";
 import {
   countWords,
   projectDeepening,
@@ -74,11 +74,15 @@ const validatedIds = new Set(records.map(({ record }) => record.id));
  * source —, et énumérer ces endroits reviendrait à décider d'avance où un rédacteur a le droit
  * de citer. Le répertoire de preuve entre pour la même raison qui a fait corriger le pack de
  * fact-check : voir `dossierBrut`.
+ *
+ * Le périmètre est celui de `resolveDossier`, et c'est le même que celui du pack : deux périmètres
+ * divergents feraient signaler ici une citation que le fact-check tient pour sourcée, ou
+ * l'inverse.
  */
 const dossiers = new Map(
   records.map(({ record }) => [
     record.id,
-    dossierBrut(record, path.join(CORPUS_DIR, "evidence", record.id)),
+    dossierBrut(record, resolveDossier(record, { root: ROOT }).fichiers),
   ])
 );
 
