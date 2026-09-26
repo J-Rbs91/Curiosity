@@ -1,137 +1,47 @@
 {
   "protocol_version": 1,
   "concept_id": "critere-de-la-retroaction",
-  "candidate_sha256": "7d716dc2f14f3dd07e031e3fb10b6a0dce028c9b3bf1bcfe97ed2915c8f571ea",
+  "candidate_sha256": "29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 70,
-  "supported": 45,
-  "failed": 25,
+  "claims": 59,
+  "supported": 52,
+  "failed": 7,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les supports (citation p. 8 et reference bibliographique) n'etablissent pas ce que l'usage courant nomme, ni que les deux situations du lead recoivent le meme nom ; « ce que l'on dit souvent » porte sur la nature de ce qui est fed back, pas sur la denomination."
-    },
-    {
-      "claim_id": "C005",
-      "verdict": "UNSUPPORTED",
-      "reason": "Le hook et le summary etablissent le contenu du critere, pas ce que l'objet de l'article n'est pas ; aucun support fourni ici ne documente l'intention de l'auteur."
-    },
-    {
-      "claim_id": "C008",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu : la liste des objets de demonstration (thermostat, autocuiseur, chasse d'eau, fievre) n'est etablie par aucune preuve du bundle."
-    },
-    {
-      "claim_id": "C014",
-      "verdict": "TOO_STRONG",
-      "reason": "notes[2] autorise seulement que le retour soit relatif a la connaissance de la source, donc qu'il puisse differer ; le claim affirme qu'il differe necessairement et pose comme fait que deux locuteurs « n'y lisent pas la meme chose »."
-    },
-    {
-      "claim_id": "C022",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports etablissent l'exclusion d'un cas (action non reprise) et une meprise courante sur ce qui est fed back ; ils ne quantifient pas la part de l'usage courant ecartee (« une bonne part »)."
-    },
-    {
-      "claim_id": "C026",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu : ni la comparaison de deux objets domestiques, ni son attribution a Paquette ne sont etablies."
-    },
-    {
-      "claim_id": "C027",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la description de l'autocuiseur et de son mecanisme."
-    },
-    {
       "claim_id": "C028",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la description du reservoir de chasse d'eau comme fonctionnement par boucle."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis n'attestent le délai que comme un item d'une énumération de ce qu'exposent les p. 6-13 (reserves[0] : « délai de traitement et instabilité ») ; reserves[7] et review.notes[0] ne portent que sur l'accès aux pages. Rien dans le bundle n'établit que l'article présente l'instabilité comme engendrée par le délai : la juxtaposition de deux items n'autorise pas le lien causal que « l'instabilité qu'il engendre » fait lire."
     },
     {
       "claim_id": "C029",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'opposition « compenser l'exces » / « constater et intervenir »."
+      "verdict": "TOO_STRONG",
+      "reason": "Seul appui de contenu : « délai de traitement » dans l'énumération de reserves[0]. Aucun support n'établit l'énoncé universel « il y a toujours un temps » entre l'action et l'information qui en revient ; definition_de_lauteur dit au contraire les trois sous-processus « simultanés et continus »."
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "verdict": "UNSUPPORTED",
-      "reason": "Les supports posent la distinction information / effet mais ne fournissent aucune raison tiree de la comparaison ; la glose « un effet se produit, il ne se compare a rien » n'est portee par aucun support du claim."
+      "reason": "reserves[0], seul appui, mentionne « délai de traitement » dans une liste de thèmes. Aucun support ne porte de comparaison entre le poids du délai et celui du contenu du signal."
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "verdict": "UNSUPPORTED",
-      "reason": "La citation p. 8 n'introduit ni constat ni valeur recherchee ; le rapport a « ce qui etait recherche » n'est etabli par aucun support resolu."
-    },
-    {
-      "claim_id": "C035",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour le lien controle / finalite chez Paquette."
-    },
-    {
-      "claim_id": "C036",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'origine externe de la valeur de reference dans une machine."
-    },
-    {
-      "claim_id": "C037",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour le caractere implicite de la valeur de reference dans un organisme."
-    },
-    {
-      "claim_id": "C038",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la decomposition en trois moments ni pour leur simultaneite."
-    },
-    {
-      "claim_id": "C039",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'analyse des deux objets domestiques sous cette grille."
-    },
-    {
-      "claim_id": "C040",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'enonce sur la pluralite des boucles."
+      "reason": "Ni reserves[0] (liste de thèmes des p. 6-13) ni reserves[1] (verdict de périmètre) ne décrivent une correction tombant sur une situation déjà changée ni un déréglage par la correction. Le mécanisme énoncé n'est porté par aucun appui du bundle."
     },
     {
       "claim_id": "C041",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour les boucles hierarchisees et le deplacement des valeurs de reference par un niveau superieur."
-    },
-    {
-      "claim_id": "C042",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la thermoregulation et la lecture de la fievre comme valeur de reference modifiee."
-    },
-    {
-      "claim_id": "C043",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'enonce sur la temperature visee et defendue."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent que Paquette décrit une hiérarchisation des boucles (definition_de_lauteur, reserves[0]). Aucun ne porte d'énoncé de fréquence sur les boucles en général : « n'est presque jamais seule » élargit un contenu d'exposition en quasi-universel."
     },
     {
       "claim_id": "C044",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la relecture de l'ecart selon le niveau considere."
+      "verdict": "TOO_STRONG",
+      "reason": "« il en vise une autre » suit de la fièvre relue comme modification de la valeur de référence (definition_de_lauteur), mais « il la défend avec la même obstination » ajoute une comparaison d'intensité de la régulation qu'aucun appui du bundle ne porte."
     },
     {
-      "claim_id": "C045",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour le terme « heterostasie » ni pour son attribution a Paquette."
-    },
-    {
-      "claim_id": "C046",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la distinction entre corriger une action et changer le but, ni pour les etages de boucles."
-    },
-    {
-      "claim_id": "C051",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la definition de la retroinformation comme travail d'obtention et d'analyse d'informations sur une situation en cours ou terminee."
-    },
-    {
-      "claim_id": "C054",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les supports etablissent l'equivalence preinformation / feedforward, l'ajout de preinformation et preaction et leur exclusion de la definition du feedback, mais non qu'elles interviennent avant le declenchement de l'action."
+      "claim_id": "C057",
+      "verdict": "TOO_STRONG",
+      "reason": "attribution_note et attribution.note n'établissent la circulation antérieure que pour deux termes : « Il ne forge ni rétroaction ni rétroinformation, termes déjà en circulation » ; la liste de la p. 5 citée en review.notes[4] ne contient pas préinformation ni préaction. Les mêmes appuis disent au contraire que préinformation et préaction sont des notions « qu'il ajoute », « introduites p. 17 comme des notions ajoutées au schéma ». Étendre « ils circulaient déjà » aux quatre termes va au-delà des appuis et entre en tension avec eux."
     }
   ]
 }
