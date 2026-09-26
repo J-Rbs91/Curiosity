@@ -59,7 +59,9 @@ Avant tout mapping, un script classique construit un `factcheck-pack.json` à pa
 
 - `corpus/deepenings/<conceptId>.json` pour le texte lecteur ;
 - `corpus/validated/<conceptId>.json` comme autorité validée ;
-- tous les fichiers `.json` de `corpus/evidence/<conceptId>/`, à l'exception de `scouting.json`.
+- tous les fichiers `.json` de `corpus/evidence/<conceptId>/`, à l'exception de `scouting.json` ;
+- tous les fichiers `.json` du répertoire que le champ `dossier` de l'enregistrement validé
+  désigne, quand ce répertoire est sous `corpus/evidence/` — voir §3ter.
 
 Le dossier d'une carte est pris pour ce qu'il est : son répertoire entier. La règle antérieure
 ne ramassait que `lecture.json`, ce qui n'est qu'une convention de nommage tardive : neuf cartes
@@ -91,6 +93,37 @@ Le modèle ne fabrique donc jamais `full-text`, `partial` ou `metadata-only`. Il
 qu'un `support_id` déjà présent dans le pack.
 
 Un identifiant inexistant est une erreur mécanique, même si son libellé semble plausible.
+
+## 3ter. Le répertoire d'une carte n'est pas toujours son dossier
+
+Le pack dérivait le chemin des preuves du seul identifiant de la carte. `corpus/validated/<id>.json`
+porte pourtant un champ `dossier`, et **dix enregistrements sur cent trente-six le déclarent
+ailleurs que sous leur identifiant** — le champ n'était lu nulle part dans le script.
+
+Le coût s'est mesuré sur `critere-de-la-retroaction`, dont les `notes` documentent la divergence
+comme volontaire : le dossier garde le nom sous lequel le candidat avait été repéré,
+`corpus/evidence/retroaction-denaturee/`. Son pack sortait avec **zéro fichier de preuve et
+quarante-cinq appuis tous tirés de l'enregistrement**, et le gate refusait vingt et un claims dont
+la matière est dans le fichier jamais ouvert. Après correctif, la même carte rend **72 appuis, un
+fichier de preuve**, et sa déclaration `full-text` passe de `dossier-absent` à `corrobore`.
+
+**Le périmètre s'arrête à `corpus/evidence/`, et c'est délibéré.** Les neuf autres cartes déclarent
+un fichier de `corpus/dossiers/`, dont le schéma est tout autre : il mêle à la lecture des champs
+rédigés par un modèle — `pedagogy.short_explanation`, `pedagogy.hook_question` — et
+`evidence.common_misinterpretations`, qui recense les contresens et les rendrait citables comme
+preuve. `collectSupports` transforme indifféremment toute chaîne non vide en appui : y faire
+pointer le pack **ferait réussir à tort**, contre l'invariant « aucun texte généré par un modèle
+n'est une source ». Le choix des sous-arbres de `corpus/dossiers/` qui constituent une preuve
+consultée est une décision documentaire et non un correctif d'outil ; elle n'est pas prise.
+
+Elle cesse pourtant d'être passée sous silence. Le pack porte `dossier_declare`, qui dit ce qu'il
+a fait du champ — `non-declare`, `conventionnel`, `resolu`, `hors-perimetre` ou `introuvable`,
+avec son motif — et `--sweep` compte les dossiers non chargés sous `dossiers_non_charges`. **Un défaut qui
+se lit dans la sortie du script n'est plus le même défaut qu'un défaut silencieux** : celui-ci
+faisait refuser des claims dont la preuve est au dépôt, sans que rien ne l'annonce.
+
+Le contrôle des citations de `npm run corpus:deepen` passe par le même résolveur. Deux périmètres
+divergents feraient signaler là une citation que le fact-check tient pour sourcée, ou l'inverse.
 
 ## 3bis. Un niveau d'accès déclaré n'est pas un niveau d'accès constaté
 
@@ -135,7 +168,7 @@ des deux niveaux en cas de divergence — n'a aucune prise, et il se tromperait.
   dossier le dit en prose, « Contenu non consulté », ou ne connaît pas la source du tout.
 
   **Deux de ces cinq ne sont pas des absences, et le décompte est à refaire — constaté le
-  25 septembre 2026.** Les deux Milet 1982 ont été comptés « dossier ne connaît pas la source »
+  25 septembre 2026, et toujours vrai après le correctif du 26.** Les deux Milet 1982 ont été comptés « dossier ne connaît pas la source »
   parce que le pack ne ramasse que `corpus/evidence/<conceptId>/`. Le dépôt porte **25 Ko de lecture
   primaire de Milet 1982**, dans le répertoire `milet-1982-tarde-psychologie-economique`, qui ne
   porte le nom d'aucune carte et n'est donc jamais ouvert. Les deux cartes ont bien un
@@ -148,6 +181,16 @@ des deux niveaux en cas de divergence — n'a aucune prise, et il se tromperait.
   est touché est le **décompte** des surdéclarations, et la lecture d'un `absent` : il signifie
   « le pack n'a pas trouvé cette source dans ce qu'il a ramassé », jamais « le dépôt ne l'a pas
   lue ».
+
+  **Le correctif de §3ter ne rattrape pas ce cas, et il faut savoir pourquoi.** Les deux cartes
+  Milet ne déclarent aucun `dossier` : elles ont un `lecture.json` à elles, sur Tarde 1902. Le
+  champ que §3ter honore est vide chez elles, et rien ne rattache la lecture de Milet à leur
+  dossier. Ce qui reste à trancher est documentaire — la lecture d'une source qu'une carte cite
+  est-elle une pièce de son dossier ? — et le geste qui l'exécuterait est connu : déclarer
+  `corpus/evidence/milet-1982-tarde-psychologie-economique/lecture.json` dans leur champ
+  `dossier`, que le résolveur chargerait **en plus** de leur répertoire conventionnel. Le
+  décompte des répertoires concernés est tenu par `--sweep` et par le chantier J de
+  [`../RESTE-A-FAIRE.md`](../RESTE-A-FAIRE.md).
 - **Et l'absence ne se dégrade pas sans casse.** Trois `full-text` ou `partial` que le balayage
   signale sont corrects, et leurs dossiers l'établissent — ailleurs que dans un champ `consulted`.
   `zones-incertitude` nomme Kuty 1997 « LA SOURCE LA PLUS RICHE DU DOSSIER, et de loin », 92 pages
