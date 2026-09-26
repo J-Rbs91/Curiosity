@@ -1,47 +1,42 @@
 {
   "protocol_version": 1,
   "concept_id": "critere-de-la-retroaction",
-  "candidate_sha256": "29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222",
+  "candidate_sha256": "10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 59,
-  "supported": 52,
-  "failed": 7,
+  "claims": 56,
+  "supported": 50,
+  "failed": 6,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C028",
+      "claim_id": "C006",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis n'attestent le délai que comme un item d'une énumération de ce qu'exposent les p. 6-13 (reserves[0] : « délai de traitement et instabilité ») ; reserves[7] et review.notes[0] ne portent que sur l'accès aux pages. Rien dans le bundle n'établit que l'article présente l'instabilité comme engendrée par le délai : la juxtaposition de deux items n'autorise pas le lien causal que « l'instabilité qu'il engendre » fait lire."
+      "reason": "Les appuis fournis donnent une condition necessaire (« il n'y a retroaction que si de l'information sur l'effet revient a la source et que l'action peut encore etre corrigee »). Le claim la convertit en procedure de decision suffisante et universelle : « devant n'importe quelle situation [...] deux questions suffisent a dire s'il y a boucle ou non ». Ni la suffisance ni l'extension a toute situation ne sont etablies, et le dossier lui-meme enumere quatre exigences (information sur l'effet, continuite, action reprenable, delai), dont le texte reprend la quatrieme plus loin."
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C008",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis attestent l'autocuiseur, le reservoir de W.-C. et la fievre (thermoregulation). Ni « un thermostat » ni « un joueur de quilles » n'apparaissent dans aucun appui resolu : le claim nomme comme supports de la demonstration de l'auteur deux exemples que la preuve ne porte pas."
+    },
+    {
+      "claim_id": "C014",
       "verdict": "TOO_STRONG",
-      "reason": "Seul appui de contenu : « délai de traitement » dans l'énumération de reserves[0]. Aucun support n'établit l'énoncé universel « il y a toujours un temps » entre l'action et l'information qui en revient ; definition_de_lauteur dit au contraire les trois sous-processus « simultanés et continus »."
+      "reason": "Les appuis etablissent que le retour reside dans la connaissance que la source en a, donc qu'il est indexe a la source. Ils n'etablissent pas la premisse empirique que le claim affirme comme un fait (« elles n'y lisent pas la meme chose »), ni la conclusion categorique « n'ont donc pas le meme retour ». Le support autorise au mieux une possibilite de divergence, pas une necessite."
     },
     {
-      "claim_id": "C030",
-      "verdict": "UNSUPPORTED",
-      "reason": "reserves[0], seul appui, mentionne « délai de traitement » dans une liste de thèmes. Aucun support ne porte de comparaison entre le poids du délai et celui du contenu du signal."
+      "claim_id": "C034",
+      "verdict": "TOO_STRONG",
+      "reason": "La partie generale est soutenue (valeur de reference « imposee de l'exterieur dans les machines »). Mais aucun appui resolu ne mentionne de thermostat : « celui qui pousse le curseur du thermostat » est une scene du redacteur donnee comme l'illustration machinique de l'expose de l'auteur, sans appui."
     },
     {
-      "claim_id": "C031",
-      "verdict": "UNSUPPORTED",
-      "reason": "Ni reserves[0] (liste de thèmes des p. 6-13) ni reserves[1] (verdict de périmètre) ne décrivent une correction tombant sur une situation déjà changée ni un déréglage par la correction. Le mécanisme énoncé n'est porté par aucun appui du bundle."
+      "claim_id": "C040",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis portent un cas unique, la fievre relue comme modification de la valeur de reference. Le claim en tire une loi generale de lecture : « tout ecart ressemble a un defaut » puis « le meme ecart devient l'execution d'une consigne venue d'ailleurs ». Passage de l'exemple a la regle generale, non autorise par les appuis."
     },
     {
       "claim_id": "C041",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent que Paquette décrit une hiérarchisation des boucles (definition_de_lauteur, reserves[0]). Aucun ne porte d'énoncé de fréquence sur les boucles en général : « n'est presque jamais seule » élargit un contenu d'exposition en quasi-universel."
-    },
-    {
-      "claim_id": "C044",
-      "verdict": "TOO_STRONG",
-      "reason": "« il en vise une autre » suit de la fièvre relue comme modification de la valeur de référence (definition_de_lauteur), mais « il la défend avec la même obstination » ajoute une comparaison d'intensité de la régulation qu'aucun appui du bundle ne porte."
-    },
-    {
-      "claim_id": "C057",
-      "verdict": "TOO_STRONG",
-      "reason": "attribution_note et attribution.note n'établissent la circulation antérieure que pour deux termes : « Il ne forge ni rétroaction ni rétroinformation, termes déjà en circulation » ; la liste de la p. 5 citée en review.notes[4] ne contient pas préinformation ni préaction. Les mêmes appuis disent au contraire que préinformation et préaction sont des notions « qu'il ajoute », « introduites p. 17 comme des notions ajoutées au schéma ». Étendre « ils circulaient déjà » aux quatre termes va au-delà des appuis et entre en tension avec eux."
+      "reason": "« heterostasie declenchant la revision des buts » est bien porte par definition_de_lauteur. En revanche l'opposition « au maintien d'un etat constant » n'apparait dans aucun appui resolu : le claim attribue a l'auteur un contraste conceptuel que la preuve ne porte pas."
     }
   ]
 }

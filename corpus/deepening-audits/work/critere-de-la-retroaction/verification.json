@@ -1,301 +1,286 @@
 {
   "concept_id": "critere-de-la-retroaction",
-  "candidate_sha256": "29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222",
+  "candidate_sha256": "10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "La liste de la p. 5 relevée dans review.notes[4] (« rétroaction, rétroin-formation, réinjection, retour, réponse... ») et la citation de la p. 8 « Contrairement à ce que l'on dit souvent » attestent un usage flottant qui nomme du même mot des retours de natures différentes ; definition_de_lauteur montre que Paquette doit écarter explicitement applaudissements, cotes d'écoute et scrutins, donc qu'ils sont couramment appelés feedback. Le claim n'attribue rien à Paquette et n'utilise pas le chapô éditorial comme sa parole."
+      "reason": "La citation p. 8 (« Contrairement a ce que l'on dit souvent... fed back ») et le resume de lecture, qui apporte « deux corrections aux usages recus » et ecarte cotes d'ecoute, applaudissements et scrutins, etablissent que le terme recu couvre indistinctement des situations que l'auteur separe."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Le claim applique au scénario stipulé par le texte la distinction attestée par summary, notes[1] et review.notes[5] : information pendant l'action encore corrigeable d'un côté, information sur une situation terminée de l'autre. Aucun détail extérieur au scénario n'est présenté comme fait de la source."
+      "reason": "Application du mecanisme reellement porte : la lecture primaire pose la condition d'execution (« sans possibilite de reprendre l'action, il n'y a pas de feedback ») et la note sur le parachute, ce qui autorise la distinction entre un retour qui modifie l'action en cours et une information portant sur une action terminee. Aucun detail n'est attribue a la source."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[4] et attribution.note du dossier citent la note 1, p. 5 : « professeur au département d'Information et de Communication de l'université Laval (Québec) »."
+      "reason": "La note d'attribution du dossier et review.notes[4] citent la note 1, p. 5 : « professeur au departement d'Information et de Communication de l'universite Laval (Quebec) ». Le nom est porte par authors[0].name."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Référence, label de source et review.notes[2] (DOI 10.3406/colan.1987.984 résolu, volume 73, 1987) établissent l'article et son année."
+      "reason": "Claim purement metadonnee : les deux references (fiche et dossier) et la verification Crossref/OAI donnent Communication et langages, n. 73, 3e trimestre 1987, p. 5-18. Les appuis full-text ne sont ici utilises que pour de la notice, ce qu'ils portent effectivement."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "reserves[0] et reserves[2] de la lecture primaire, repris par notes[0], constatent que la critique de l'emprunt dénaturé est le motif et non la thèse, les p. 6-13 exposant frontalement le mécanisme ; la thèse relevée est un critère d'identification."
+      "reason": "notes[0] rapporte que la lecture primaire tient « retroaction-denaturee » et « un concept emprunte et vide » pour le motif de l'article et non sa these, la these etant un critere d'identification ; reserves[1] decrit l'objet comme « ce que la boucle exige du signal et de l'acteur »."
     },
     {
       "claim_id": "C006",
-      "verdict": "SUPPORTED",
-      "reason": "reserves[2] : « La thèse réelle est un critère d'identification » ; summary et hook portent la même chose."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis donnent une condition necessaire (« il n'y a retroaction que si de l'information sur l'effet revient a la source et que l'action peut encore etre corrigee »). Le claim la convertit en procedure de decision suffisante et universelle : « devant n'importe quelle situation [...] deux questions suffisent a dire s'il y a boucle ou non ». Ni la suffisance ni l'extension a toute situation ne sont etablies, et le dossier lui-meme enumere quatre exigences (information sur l'effet, continuite, action reprenable, delai), dont le texte reprend la quatrieme plus loin."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[5] cite la p. 14 : les deux dimensions « doivent être considérées comme des conditions formelles à l'identification d'un processus de feedback » ; les deux conditions elles-mêmes sont énoncées dans l'exposition générale (p. 8 et p. 10), menée sur machines et vivant selon reserves[3]. Le claim parle de « boucle » et n'étend pas la proposition terminologique hors de la communication."
+      "reason": "Reformulation interrogative exacte des deux conditions du summary et de reserves[2] : nature de ce qui revient, et possibilite de corriger encore l'action."
     },
     {
       "claim_id": "C008",
-      "verdict": "SUPPORTED",
-      "reason": "Reformulation interrogative des deux conditions portées par summary, notes[1], la citation p. 8 et review.notes[5]."
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis attestent l'autocuiseur, le reservoir de W.-C. et la fievre (thermoregulation). Ni « un thermostat » ni « un joueur de quilles » n'apparaissent dans aucun appui resolu : le claim nomme comme supports de la demonstration de l'auteur deux exemples que la preuve ne porte pas."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "reserves[0] énumère les objets sur lesquels l'auteur raisonne : « un thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une fièvre, un professeur »."
+      "reason": "definition_de_lauteur : l'auteur « transpose l'ensemble a la communication » ; notes[6] confirme que la proposition terminologique vise les sciences de la communication."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « puis transpose l'ensemble à la communication » ; notes[6] et reserves[3] confirment que la proposition finale vise les sciences de la communication."
+      "reason": "Citation p. 8 verifiee mot pour mot par review.notes[3], et summary : c'est bien l'information sur l'effet, non l'effet, qui revient."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "La citation p. 8 (« ce n'est pas l'effet de l'action qui est fed back […] mais plutôt de l'information sur cet effet »), review.notes[3] et summary portent exactement ce premier tri."
+      "reason": "notes[2] et definition_de_lauteur portent litteralement la correction : « la reaction de la cible n'est pas le feedback, celui-ci reside dans la connaissance que la source en a », et definition_de_lauteur la range parmi les corrections apportees aux usages recus."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "notes[2] et definition_de_lauteur : « la réaction de la cible n'est pas le feedback », donnée comme l'une des « deux corrections apportées aux usages reçus » (p. 8)."
+      "reason": "Consequence directe des appuis : le feedback reside dans la connaissance que la source en a, et review.notes[5] cite p. 16 « et non pas ce que sont ces evenements en eux-memes », qui pose l'existence propre des evenements independamment de ce que la source en deduit. Les exemples ne sont pas attribues a l'auteur."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence directe de « la réaction de la cible n'est pas le feedback, celui-ci réside dans la connaissance que la source en a » (notes[2], p. 8) et de la p. 16 citée en review.notes[5] : « et non pas ce que sont ces événements en eux-mêmes ». Les exemples sont des instanciations du texte lecteur, non attribuées à Paquette."
+      "reason": "Verbatim present dans notes[2] et dans definition_de_lauteur (p. 8)."
     },
     {
       "claim_id": "C014",
-      "verdict": "SUPPORTED",
-      "reason": "Citation portée verbatim par notes[2] et definition_de_lauteur, localisée p. 8 par quotation.locator."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis etablissent que le retour reside dans la connaissance que la source en a, donc qu'il est indexe a la source. Ils n'etablissent pas la premisse empirique que le claim affirme comme un fait (« elles n'y lisent pas la meme chose »), ni la conclusion categorique « n'ont donc pas le meme retour ». Le support autorise au mieux une possibilite de divergence, pas une necessite."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Suit de l'identification du feedback à « la connaissance que la source en a » (p. 8) et de la p. 16 (« ce que l'on peut déduire […] et non pas ce que sont ces événements en eux-mêmes ») : le retour est indexé sur la lecture de la source. Inférence marquée par « donc », sans attribution primaire."
+      "reason": "Suit des appuis : si le retour reside dans la connaissance que la source en a, une reaction non percue n'est pas un retour et ne peut corriger l'action ; reserves[2] rappelle que la correction de l'action fait partie du critere."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence de la même identification p. 8 : sans connaissance par la source, rien ne revient qui puisse corriger."
+      "reason": "review.notes[5] cite p. 16 le regroupement effectif, dans la meme phrase de l'auteur, des mimiques d'un interlocuteur, des questions d'un auditoire et des sondages d'opinion."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "La p. 16 citée en review.notes[5] range dans une même liste mimiques, questions d'un auditoire et sondages d'opinion ; reserves[1] confirme que cotes d'écoute et sondages sont traités explicitement."
+      "reason": "Citation verbatim relevee par review.notes[5] a la p. 16, avec attribution correcte a l'auteur (« ecrit-il »)."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la p. 16 relevée dans review.notes[5] ; l'attribution « écrit-il » correspond au texte de l'article."
+      "reason": "review.notes[5] (p. 16) etablit que ce qui repond a la definition est ce que l'on peut deduire de ces evenements « et non pas ce que sont ces evenements en eux-memes » ; notes[2] ajoute que le retour reside dans la connaissance que la source en a. La formulation reste restrictive (« ne le devient que par ») et n'affirme aucune suffisance."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : « ces données ne sont pas en elles-mêmes du feedback, seul l'est ce que la source peut en déduire ». Le claim n'énonce qu'une condition nécessaire."
+      "reason": "summary et notes[1] separent explicitement la condition portant sur la nature de l'information de la seconde, qui porte sur la possibilite de reprendre l'action."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "summary, notes[1] et la p. 14 citée en review.notes[5] distinguent la dimension d'information de celle de correction ou ajustement de l'action."
+      "reason": "definition_de_lauteur et notes[1] : « sans possibilite de reprendre l'action, il n'y a pas de feedback » ; review.notes[5] situe la condition p. 10 et p. 14."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] et la p. 10 citée en review.notes[5] : sans reprise possible de l'action, pas de fonctionnement par feedback."
+      "reason": "Citation verbatim du passage p. 10, portee a l'identique par notes[1], definition_de_lauteur et review.notes[5]."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la p. 10, portée à l'identique par notes[1] et review.notes[5]."
+      "reason": "definition_de_lauteur ecarte nommement les cotes d'ecoute, les applaudissements de fin de spectacle et les resultats d'un scrutin, usages recus courants ; la quantification reste prudente (« une bonne part »), sans affirmer l'exhaustivite."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur énumère les cas écartés à ce titre (cotes d'écoute, applaudissements de fin de spectacle, résultats d'un scrutin) ; la formule reste hédgée et ne quantifie rien au-delà de ces classes."
+      "reason": "definition_de_lauteur : ces trois exemples « sont ecartes a ce titre : informations sollicitees ou trop tardives, elles ne modifient plus l'action »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « Les cotes d'écoute, les applaudissements de fin de spectacle, les résultats d'un scrutin sont écartés à ce titre : informations sollicitées ou trop tardives, elles ne modifient plus l'action. » Le claim restreint correctement les cotes d'écoute à une émission déjà diffusée."
+      "reason": "review.notes[5] cite p. 16 « reajuste (pas necessairement en temps reel) », precision explicite de l'auteur."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "La parenthèse « (pas nécessairement en temps réel) » de la p. 16, relevée en review.notes[5], est une précision de l'auteur lui-même."
+      "reason": "Verbatim exact du passage p. 16 releve par review.notes[5]."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la p. 16 relevée en review.notes[5]."
+      "reason": "Combinaison exacte des deux appuis : condition de reprise de l'action (p. 10, notes[1]) et parenthese « pas necessairement en temps reel » (p. 16)."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Suit des deux conditions attestées (notes[1], p. 10 et p. 14) et de la parenthèse « pas nécessairement en temps réel » de la p. 16."
+      "reason": "reserves[1] enonce parmi les exigences de la boucle « que le delai ne la rende pas inutilisable ». Le claim reste au meme niveau d'exigence, sans lui attribuer de portee supplementaire."
     },
     {
       "claim_id": "C028",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis n'attestent le délai que comme un item d'une énumération de ce qu'exposent les p. 6-13 (reserves[0] : « délai de traitement et instabilité ») ; reserves[7] et review.notes[0] ne portent que sur l'accès aux pages. Rien dans le bundle n'établit que l'article présente l'instabilité comme engendrée par le délai : la juxtaposition de deux items n'autorise pas le lien causal que « l'instabilité qu'il engendre » fait lire."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « Toute autoregulation n'est pas pour autant un feedback », etabli precisement par la comparaison autocuiseur / reservoir de W.-C."
     },
     {
       "claim_id": "C029",
-      "verdict": "TOO_STRONG",
-      "reason": "Seul appui de contenu : « délai de traitement » dans l'énumération de reserves[0]. Aucun support n'établit l'énoncé universel « il y a toujours un temps » entre l'action et l'information qui en revient ; definition_de_lauteur dit au contraire les trois sous-processus « simultanés et continus »."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : l'autocuiseur maintient sa pression par evacuation de l'exces de vapeur, « et non sur un ajustement a la baisse de la source de chaleur »."
     },
     {
       "claim_id": "C030",
-      "verdict": "UNSUPPORTED",
-      "reason": "reserves[0], seul appui, mentionne « délai de traitement » dans une liste de thèmes. Aucun support ne porte de comparaison entre le poids du délai et celui du contenu du signal."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : le reservoir de W.-C. « fonctionne par feedback parce qu'un niveau precis peut etre verifie et recherche, puis l'arrivee d'eau bloquee »."
     },
     {
       "claim_id": "C031",
-      "verdict": "UNSUPPORTED",
-      "reason": "Ni reserves[0] (liste de thèmes des p. 6-13) ni reserves[1] (verdict de périmètre) ne décrivent une correction tombant sur une situation déjà changée ni un déréglage par la correction. Le mécanisme énoncé n'est porté par aucun appui du bundle."
+      "verdict": "SUPPORTED",
+      "reason": "Recapitulation des deux descriptions de definition_de_lauteur, avec les deux dimensions du controle qu'il nomme, « constater et intervenir »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « Toute autorégulation n'est pas pour autant un feedback », démontré par l'autocuiseur opposé au réservoir de W.-C."
+      "reason": "definition_de_lauteur : « Le controle y a deux dimensions, constater et intervenir »."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : l'autocuiseur « maintient sa pression par évacuation de l'excès de vapeur, et non sur un ajustement à la baisse de la source de chaleur »."
+      "reason": "definition_de_lauteur : le controle est « indissociable de celle de finalite » et « reguler suppose une valeur de reference »."
     },
     {
       "claim_id": "C034",
-      "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : le réservoir « fonctionne par feedback parce qu'un niveau précis peut être vérifié et recherché, puis l'arrivée d'eau bloquée »."
+      "verdict": "TOO_STRONG",
+      "reason": "La partie generale est soutenue (valeur de reference « imposee de l'exterieur dans les machines »). Mais aucun appui resolu ne mentionne de thermostat : « celui qui pousse le curseur du thermostat » est une scene du redacteur donnee comme l'illustration machinique de l'expose de l'auteur, sans appui."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "Récapitule les deux cas attestés en appliquant les deux dimensions du contrôle (« constater et intervenir ») que definition_de_lauteur porte explicitement."
+      "reason": "definition_de_lauteur : valeur de reference « parfois implicite dans le vivant ». Le claim conserve la modalisation (« peut »)."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « Le contrôle y a deux dimensions, constater et intervenir »."
+      "reason": "definition_de_lauteur : « trois sous-processus, l'information, l'evaluation et la re-action, sequentiels mais simultanes et continus (p. 8) »."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : le contrôle est « indissociable de celle de finalité » et « réguler suppose une valeur de référence »."
+      "reason": "definition_de_lauteur : « la hierarchisation des boucles et le deplacement des finalites [...] heterostasie declenchant la revision des buts, p. 11-13 ». La hierarchisation porte la notion de niveau superieur et le claim reste modalise (« peuvent »)."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : valeur de référence « imposée de l'extérieur dans les machines » ; le thermostat figure parmi les objets sur lesquels l'auteur raisonne (reserves[0])."
+      "reason": "definition_de_lauteur : « thermoregulation, fievre relue comme modification de la valeur de reference »."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « parfois implicite dans le vivant » ; la modalisation « peut » ne dépasse pas ce « parfois »."
+      "reason": "Reformulation stricte de « fievre relue comme modification de la valeur de reference » portee par definition_de_lauteur."
     },
     {
       "claim_id": "C040",
-      "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : trois sous-processus « l'information, l'évaluation et la ré-action », « séquentiels mais simultanés et continus » (p. 8)."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis portent un cas unique, la fievre relue comme modification de la valeur de reference. Le claim en tire une loi generale de lecture : « tout ecart ressemble a un defaut » puis « le meme ecart devient l'execution d'une consigne venue d'ailleurs ». Passage de l'exemple a la regle generale, non autorise par les appuis."
     },
     {
       "claim_id": "C041",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent que Paquette décrit une hiérarchisation des boucles (definition_de_lauteur, reserves[0]). Aucun ne porte d'énoncé de fréquence sur les boucles en général : « n'est presque jamais seule » élargit un contenu d'exposition en quasi-universel."
+      "reason": "« heterostasie declenchant la revision des buts » est bien porte par definition_de_lauteur. En revanche l'opposition « au maintien d'un etat constant » n'apparait dans aucun appui resolu : le claim attribue a l'auteur un contraste conceptuel que la preuve ne porte pas."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur donne comme thème joint « la hiérarchisation des boucles et le déplacement des finalités (thermorégulation, fièvre relue comme modification de la valeur de référence, hétérostasie déclenchant la révision des buts, p. 11-13) » ; reserves[0] le confirme. L'emboîtement et la révision des valeurs de référence par un niveau supérieur sont le contenu de cette description jointe."
+      "reason": "Lecture qui suit des appuis fournis : hierarchisation des boucles et deplacement des finalites (definition_de_lauteur) autorisent la distinction entre correction de l'action et revision des buts a des niveaux differents. La formulation reste explicitement interpretative et n'est pas donnee comme parole de l'auteur."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « thermorégulation, fièvre relue comme modification de la valeur de référence »."
+      "reason": "review.notes[6] etablit l'ecart de sens : p. 8 emploie « retroaction » « dans un sens local et plus etroit, oppose a retroinformation », l'equivalence autorisant l'autre emploi n'etant etablie que p. 15-16."
     },
     {
       "claim_id": "C044",
-      "verdict": "TOO_STRONG",
-      "reason": "« il en vise une autre » suit de la fièvre relue comme modification de la valeur de référence (definition_de_lauteur), mais « il la défend avec la même obstination » ajoute une comparaison d'intensité de la régulation qu'aucun appui du bundle ne porte."
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[6] cite p. 8 : « le processus de feedback fonctionne par retroaction, autrement dit la regulation s'accomplit de maniere aveugle [...] par une connexion directe entre la sortie et l'entree du systeme ». Citation et localisation conformes."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Généralisation du cas attesté (fièvre = valeur de référence modifiée, non régulation en échec) et de l'hétérostasie déclenchant la révision des buts, portés par definition_de_lauteur et reserves[0]. Rien n'est présenté comme citation ou attribution directe."
+      "reason": "Meme appui : « on parlera alors de feedback par retroinformation », l'opposition etant explicitement relevee par review.notes[6]."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « hétérostasie déclenchant la révision des buts » ; l'opposition au maintien d'un état constant est celle du même passage, où la thermorégulation maintient et la fièvre déplace la valeur de référence (p. 11-13)."
+      "reason": "definition_de_lauteur : l'auteur « transpose l'ensemble a la communication [...] D'ou ses definitions » ; review.notes[6] situe l'equivalence p. 15-16, donc apres l'expose du mecanisme."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Lecture explicitement donnée comme interprétation, et qui suit des appuis : hiérarchisation des boucles et révision des buts à un autre niveau (definition_de_lauteur, reserves[0])."
+      "reason": "Verbatim p. 14 porte par review.notes[5] et repris par definition_de_lauteur."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] constate que la p. 8 emploie « rétroaction » « dans un sens local et plus étroit, opposé à rétroinformation », l'équivalence autorisant le mot étant établie p. 15-16."
+      "reason": "Verbatim p. 14 porte par review.notes[5] : ces dimensions « doivent etre considerees comme des conditions formelles a l'identification d'un processus de feedback »."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Citation de la p. 8 relevée verbatim en review.notes[6] : « le processus de feedback fonctionne par rétroaction, autrement dit la régulation s'accomplit de manière aveugle […] par une connexion directe entre la sortie et l'entrée du système »."
+      "reason": "definition_de_lauteur : dimensions « croisees avec une chronologie avant, pendant, apres l'action (p. 14, schema p. 15) », « d'ou ses definitions » distinctes ; la citation p. 8 atteste la confusion de l'usage recu."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "Même passage de la p. 8 en review.notes[6] : « on parlera alors de feedback par rétroinformation »."
+      "reason": "definition_de_lauteur : la retroinformation est « le processus d'obtention et d'analyse des informations sur une situation en cours, ou deja terminee »."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] situe l'équivalence p. 15-16 ; definition_de_lauteur : « puis transpose l'ensemble à la communication […] D'où ses définitions » ; le locator de source p. 6-16 est corroboré par le dossier."
+      "reason": "Verbatim p. 16 porte par review.notes[5] ; definition_de_lauteur ajoute que la retroinformation « ne fait boucle que si l'action peut encore etre modelee »."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la p. 14 relevée en review.notes[5], y compris « des conditions formelles à l'identification d'un processus de feedback »."
+      "reason": "definition_de_lauteur : « la preinformation (feedforward) et la preaction operent avant le declenchement de l'action » ; l'attribution a l'auteur est confirmee par review.notes[4] (p. 17)."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : dimensions « croisées avec une chronologie avant, pendant, après l'action (p. 14, schéma p. 15) », d'où les définitions séparées ; reserves[8] confirme que le schéma de la p. 15 porte « la distinction centrale ». Que le même mot couvrait auparavant ces situations est porté par les « deux corrections apportées aux usages reçus » et par les cas écartés."
+      "reason": "definition_de_lauteur et review.notes[4] (p. 17) : elles ne relevent pas du feedback, « bien que la parente des concepts soit indeniable », verbatim."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : la rétroinformation est « le processus d'obtention et d'analyse des informations sur une situation en cours, ou déjà terminée »."
+      "reason": "review.notes[4] cite la p. 5 sur « l'abondance des termes proposes pour sa francisation (retroaction, retroin-formation...) » et conclut « Paquette ne les forge pas, il les redefinit » ; attribution_note et attribution.note disent la meme chose."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la p. 16 relevée en review.notes[5]."
+      "reason": "attribution.note et review.notes[4] : preinformation et preaction sont des notions qu'il ajoute (p. 17)."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : préinformation (feedforward) et préaction « opèrent avant le déclenchement de l'action et ne relèvent pas du feedback bien que la parenté des concepts soit indéniable » ; review.notes[4] cite la p. 17 dans le même sens."
-    },
-    {
-      "claim_id": "C057",
-      "verdict": "TOO_STRONG",
-      "reason": "attribution_note et attribution.note n'établissent la circulation antérieure que pour deux termes : « Il ne forge ni rétroaction ni rétroinformation, termes déjà en circulation » ; la liste de la p. 5 citée en review.notes[4] ne contient pas préinformation ni préaction. Les mêmes appuis disent au contraire que préinformation et préaction sont des notions « qu'il ajoute », « introduites p. 17 comme des notions ajoutées au schéma ». Étendre « ils circulaient déjà » aux quatre termes va au-delà des appuis et entre en tension avec eux."
-    },
-    {
-      "claim_id": "C058",
-      "verdict": "SUPPORTED",
-      "reason": "attribution_note et attribution.note : « il leur assigne des définitions distinctes » ; definition_de_lauteur donne les définitions séparées des quatre termes."
-    },
-    {
-      "claim_id": "C059",
-      "verdict": "SUPPORTED",
-      "reason": "notes[6] et reserves[3] : la proposition terminologique finale « vise les sciences de la communication et rien d'autre, l'auteur le dit »."
+      "reason": "notes[6] : « La proposition terminologique finale (retroaction, retroinformation, preinformation, preaction) vise les sciences de la communication et rien d'autre, l'auteur le dit »."
     }
   ]
 }
