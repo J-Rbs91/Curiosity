@@ -3,9 +3,45 @@
   "concept_id": "critere-de-la-retroaction",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "7d716dc2f14f3dd07e031e3fb10b6a0dce028c9b3bf1bcfe97ed2915c8f571ea",
+  "candidate_sha256": "51377815deeb19ddcae13f09372826b6b76a0b8df3d8d69691a2bc66f684d094",
   "validated_sha256": "2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b",
-  "evidence_sha256": null,
+  "evidence_files": [
+    {
+      "file": "retroaction-denaturee/lecture.json",
+      "sha256": "4cad034111beb5741dd0a6b6c41a99c8c078b7c7d51f9ae2024558235b5a5271"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/retroaction-denaturee/lecture.json",
+    "statut": "resolu",
+    "repertoire": "corpus/evidence/retroaction-denaturee",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18. Armand Colin.",
+        "cles": [
+          "doi:10.3406/colan.1987.984",
+          "url:persee.fr/doc/colan_0336-1500_1987_num_73_1_984"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -13,17 +49,17 @@
     },
     {
       "locator": "lead[1]",
-      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
+      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un critère d’identification : deux conditions sans lesquelles il n’y a pas de boucle. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un autocuiseur, un réservoir de chasse d’eau, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
     },
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Ce qui revient est une information",
-      "text": "Le premier tri porte sur la nature de ce qui revient : de l’information sur l’effet de l’action, et non l’effet lui-même. Paquette double ce tri d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour. L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non. Le retour, lui, réside « dans la connaissance que la source en a »."
+      "text": "Le premier tri porte sur la nature de ce qui revient, et Paquette le double d’une correction plus dérangeante encore pour l’usage courant : la réaction de celui qui reçoit n’est pas le retour. L’ennui d’une salle, l’irritation d’un client, l’hésitation d’un interlocuteur existent par eux-mêmes, que celui qui les provoque s’en aperçoive ou non. Le retour, lui, réside « dans la connaissance que la source en a »."
     },
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Ce qui revient est une information",
-      "text": "Deux personnes qui parlent devant la même salle n’ont donc pas le même retour, puisqu’elles n’y lisent pas la même chose, et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout. Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher : ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes ». Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire."
+      "text": "Le même public ne donne donc pas forcément le même retour à deux personnes qui parlent devant lui, et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout. Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher : ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes ». Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire."
     },
     {
       "locator": "sections[1].paragraphs[0]",
@@ -33,7 +69,7 @@
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Ouvrir son parachute une seule fois",
-      "text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour. Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien. Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ». Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate."
+      "text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour. Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien. Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ». Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate. Le délai, lui, n’est pas neutre : la boucle exige aussi que le temps de traitement ne rende pas l’information inutilisable."
     },
     {
       "locator": "sections[2].paragraphs[0]",
@@ -43,47 +79,32 @@
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Ce qu’un autocuiseur ne fait pas",
-      "text": "Constater et intervenir ne sont pas une troisième exigence qui viendrait s’ajouter aux deux premières : ce sont elles, sous le libellé de l’auteur. Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action », et il les tient pour « des conditions formelles à l’identification d’un processus de feedback ». On voit du même coup pourquoi le premier tri exigeait de l’information et non l’effet : un effet se produit, il ne se compare à rien. Pour qu’il y ait constat, il faut quelque chose qui puisse être rapporté à ce qui était recherché, et une information sur l’effet est exactement cela."
-    },
-    {
-      "locator": "sections[2].paragraphs[2]",
-      "section_title": "Ce qu’un autocuiseur ne fait pas",
-      "text": "Encore faut-il donc que quelque chose soit recherché, et l’idée de contrôle est chez Paquette inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus. Les deux objets domestiques se séparent nettement sous cette grille : le réservoir s’informe d’un niveau, l’évalue au regard de celui qu’on recherche, puis ferme l’arrivée d’eau ; l’autocuiseur évacue un excès, et il n’y a là ni niveau recherché ni geste sur ce qui chauffe."
+      "text": "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir, et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur est imposée du dehors. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus."
     },
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Des boucles emboîtées, des buts qui bougent",
-      "text": "Une boucle n’est presque jamais seule. Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre, et il la défend avec la même obstination."
+      "text": "Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre."
     },
     {
       "locator": "sections[3].paragraphs[1]",
       "section_title": "Des boucles emboîtées, des buts qui bougent",
-      "text": "Cela déplace la question du bon fonctionnement. Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs. Paquette nomme hétérostasie ce déclenchement d’une révision des buts. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
+      "text": "Paquette nomme hétérostasie le déclenchement d’une révision des buts. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
     },
     {
       "locator": "sections[4].paragraphs[0]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article. Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système », et ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation. Les définitions qu’il retient pour finir arrivent plus loin, une fois le mécanisme transporté dans la communication."
+      "text": "Le mot rétroaction ne garde pas le même sens d’un bout à l’autre de l’article, et il vaut mieux le savoir avant d’y entrer. Dans les pages où le mécanisme est exposé, il sert dans une acception étroite et technique : le feedback fonctionne par rétroaction lorsque la régulation s’accomplit de manière aveugle, « par une connexion directe entre la sortie et l’entrée du système », et ce cas se voit alors opposé à ce que Paquette appelle un feedback par rétroinformation."
     },
     {
       "locator": "sections[4].paragraphs[1]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "La rétroinformation y devient le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». Le partage se fait ainsi deux fois, sur ce qui revient et sur le moment où cela revient. La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable »."
+      "text": "Les définitions qu’il retient arrivent plus loin, une fois le mécanisme transporté dans la communication. Deux dimensions caractérisent le processus, écrit-il, « celle d’information et celle de correction ou ajustement de l’action », et il les tient pour « des conditions formelles à l’identification d’un processus de feedback ». Croisées avec une chronologie, avant, pendant, après l’action, elles séparent des situations que le même mot recouvrait jusque-là."
     },
     {
       "locator": "sections[4].paragraphs[2]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "Ces quatre termes n’ont pas le même statut sous sa plume. Rétroaction et rétroinformation circulaient déjà, parmi les candidats nombreux qu’avait produits la francisation de feedback, et il relève lui-même « l’abondance des termes proposés pour sa francisation » : il ne les forge pas, il leur assigne des définitions distinctes. La préinformation et la préaction, en revanche, il les ajoute, et il les donne comme des hypothèses de travail plutôt que comme des prises de position. L’ensemble, il le propose aux sciences de la communication et à elles seules."
-    },
-    {
-      "locator": "sections[5].paragraphs[0]",
-      "section_title": "Le reproche dont l’article part",
-      "text": "Ce test n’est pas né d’un scrupule de vocabulaire. L’article s’ouvre sur un grief que Paquette reprend à Gabriel Veraldi et adresse aux spécialistes de la communication : « l’emprunt abusif de certains concepts à d’autres disciplines, mais surtout leur utilisation dénaturée ». On peut comprendre les deux questions comme sa réponse : un concept venu d’une autre discipline ne se défend pas en revendiquant son nom, il se défend en disant à quoi la chose se reconnaît, et ce qu’il faut cesser d’appeler ainsi."
-    },
-    {
-      "locator": "sections[5].paragraphs[1]",
-      "section_title": "Le reproche dont l’article part",
-      "text": "Reste que, dans l’article, le critère ne s’énonce pas d’abord de la rétroaction. Les deux conditions sont posées du feedback, aux pages 8 et 10, et c’est plus loin, aux pages 15 et 16, que le mot français les reçoit à son tour. Qui s’arrête aux premières pages y trouve le mécanisme entier et un mot qui n’a pas encore le sens qu’il prendra ; les pages qui font la jonction, il faudra les lire."
+      "text": "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable ». Rétroaction et rétroinformation, il ne les invente pas : ces mots circulaient déjà comme traductions de feedback, et ce qu’il leur donne, ce sont des définitions séparées. La préinformation et la préaction, elles, il les ajoute. Cette terminologie, il la propose aux sciences de la communication et à elles seules."
     }
   ],
   "supports": [
@@ -197,35 +218,40 @@
       "origin": "validated",
       "path": "$.sources[0].label",
       "access": "full-text",
-      "text": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18. Armand Colin."
+      "text": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18. Armand Colin.",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ec988b343d66a1a7",
       "origin": "validated",
       "path": "$.sources[0].kind",
       "access": "full-text",
-      "text": "primary"
+      "text": "primary",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-7b6cf69b53be667f",
       "origin": "validated",
       "path": "$.sources[0].locator",
       "access": "full-text",
-      "text": "p. 6-16"
+      "text": "p. 6-16",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-96fe1dbaacb2b2a8",
       "origin": "validated",
       "path": "$.sources[0].doi_isbn",
       "access": "full-text",
-      "text": "10.3406/colan.1987.984"
+      "text": "10.3406/colan.1987.984",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-e22bb18c927de36f",
       "origin": "validated",
       "path": "$.sources[0].url",
       "access": "full-text",
-      "text": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984"
+      "text": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ffc37be1e07d0557",
@@ -401,8 +427,197 @@
       "path": "$.notes[7]",
       "access": "n/a",
       "text": "Aucune source secondaire n'a été identifiée. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence et son DOI par sa notice, mais il n'a pas été ouvert : il n'est donc pas affiché en source, et rien de ce que Paquette en rapporte ne doit être repris comme établi."
+    },
+    {
+      "id": "SUP-b53db34fc34c95cf",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "retroaction-denaturee"
+    },
+    {
+      "id": "SUP-fa64c2a142ddb899",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Guy Paquette"
+    },
+    {
+      "id": "SUP-33b6669bff1362cb",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-625c98df4fa27db2",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Guy Paquette signe seul. Sa note 1, p. 5, le présente comme professeur au département d'Information et de Communication de l'université Laval (Québec) et remercie son collègue Jacques de Guise « pour sa collaboration aux réflexions ayant conduit à cet article » : c'est un remerciement, pas une cosignature. L'article se rattache explicitement à Gabriel Veraldi, « Communication : une science et non une idéologie », Communication et langages, 1969, dont il reprend le reproche fait aux spécialistes de la communication : l'emprunt abusif de concepts venus d'autres disciplines et leur utilisation dénaturée. Paquette ne forge ni rétroaction ni rétroinformation, termes déjà en circulation : il leur assigne des définitions distinctes. Les notions de préinformation (feedforward) et de préaction, qu'il ajoute, sont données par lui comme « des hypothèses de travail » et non comme des prises de position."
+    },
+    {
+      "id": "SUP-9ebf2c3f7a2925c8",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Contrairement à ce que l'on dit souvent, ce n'est pas l'effet de l'action qui est fed back […], mais plutôt de l'information sur cet effet."
+    },
+    {
+      "id": "SUP-2cd390bfd4ac799a",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Guy Paquette, « Feedback, rétroaction, rétroinformation, réponse... du pareil au même », Communication et langages, n° 73, 3e trimestre 1987, p. 5-18."
+    },
+    {
+      "id": "SUP-da0868f7e957ed8d",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 8, section « Fonctionnement du processus », sous-section « L'information »"
+    },
+    {
+      "id": "SUP-a96b6b241d0e1b46",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-7a1481a52ae1835b",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-f7f4043b65e53c6a",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Paquette, G. (1987). Feedback, rétroaction, rétroinformation, réponse... du pareil au même. Communication et langages, n° 73, 3e trimestre 1987, p. 5-18. Armand Colin."
+    },
+    {
+      "id": "SUP-1059caac7e3a0382",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/colan.1987.984"
+    },
+    {
+      "id": "SUP-8a88adaffa65e079",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/colan_0336-1500_1987_num_73_1_984"
+    },
+    {
+      "id": "SUP-3a869b8f82c4d6b3",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Veraldi, G. (1969). Communication : une science et non une idéologie. Communication et langages, n° 3, p. 71-77. Armand Colin. Article auquel Paquette rattache explicitement le sien (sa note 2, p. 5)."
+    },
+    {
+      "id": "SUP-9c03c3d06a130843",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.3406/colan.1969.3751"
+    },
+    {
+      "id": "SUP-b096ed68a66c5031",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://www.persee.fr/doc/colan_0336-1500_1969_num_3_1_3751"
+    },
+    {
+      "id": "SUP-d9116d421b3c54dc",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Paquette repart de la définition qu'il attribue à Wiener : le feedback est « un processus permettant le contrôle d'un système (mécanique, physiologique, social) en l'informant des résultats de son action » (p. 6). Le contrôle y a deux dimensions, constater et intervenir, et il est « indissociable de celle de finalité » : réguler suppose une valeur de référence, imposée de l'extérieur dans les machines, parfois implicite dans le vivant. Toute autorégulation n'est pas pour autant un feedback : l'autocuiseur maintient sa pression par évacuation de l'excès de vapeur, « et non sur un ajustement à la baisse de la source de chaleur », alors que le réservoir d'un W.-C. fonctionne par feedback parce qu'un niveau précis peut être vérifié et recherché, puis l'arrivée d'eau bloquée. Le processus comporte trois sous-processus, « l'information, l'évaluation et la ré-action », séquentiels mais simultanés et continus (p. 8). Deux corrections y sont apportées aux usages reçus : ce n'est pas l'effet de l'action qui est retourné au système mais l'information sur cet effet ; et la réaction de la cible n'est pas le feedback, celui-ci réside « dans la connaissance que la source en a » (p. 8). S'ajoute une condition d'exécution : sans possibilité de reprendre l'action, il n'y a pas de feedback, « si l'action ne peut être exécutée qu'une seule fois, par exemple, ouvrir son parachute à 200 m du sol, il ne peut y avoir fonctionnement par feedback puisque l'action ne peut être reprise » (p. 10). Paquette décrit ensuite la hiérarchisation des boucles et le déplacement des finalités (thermorégulation, fièvre relue comme modification de la valeur de référence, hétérostasie déclenchant la révision des buts, p. 11-13), puis transpose l'ensemble à la communication : deux dimensions, « celle d'information et celle de correction ou ajustement de l'action », posées comme « des conditions formelles à l'identification d'un processus de feedback », croisées avec une chronologie avant, pendant, après l'action (p. 14, schéma p. 15). D'où ses définitions : la rétroaction est le comportement en cours réajusté « sur la base de ses résultats effectifs » ; la rétroinformation est « le processus d'obtention et d'analyse des informations sur une situation en cours, ou déjà terminée », qui ne fait boucle que si l'action peut encore être modelée ; la préinformation (feedforward) et la préaction opèrent avant le déclenchement de l'action et ne relèvent pas du feedback « bien que la parenté des concepts soit indéniable ». Les cotes d'écoute, les applaudissements de fin de spectacle, les résultats d'un scrutin sont écartés à ce titre : informations sollicitées ou trop tardives, elles ne modifient plus l'action."
+    },
+    {
+      "id": "SUP-421445a4beb428f3",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "DÉCISION DE PÉRIMÈTRE : le candidat tient, mais pas par le chemin que la cartographie lui prêtait. Lecture faite des quatorze pages, la critique de l'emprunt dénaturé occupe le premier paragraphe (p. 5) et la conclusion terminologique (p. 14 et 18) ; les pages 6 à 13 sont une exposition directe du mécanisme cybernétique lui-même, avec valeur de référence, finalité, trois sous-processus, feedback négatif et positif, délai de traitement et instabilité, hiérarchisation des boucles et déplacement des finalités. La condition 1 du test d'entrée est donc satisfaite frontalement et non par la voie inhabituelle de la critique d'usage : le texte porte sur le mécanisme pris comme tel. Condition 2 : auteur identifié et documenté par la revue. Condition 3 : enseignable sans réserve, l'auteur raisonne sur un thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une fièvre, un professeur devant quelques centaines d'étudiants. Il n'y a pas d'emploi métaphorique : Paquette passe précisément son article à retirer le mot aux emplois métaphoriques."
+    },
+    {
+      "id": "SUP-dccd7d1a26770a77",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "VERDICT SUR LE DOUBLON AVEC measurement-theory : pas de recouvrement. Les trois fiches vérifiées (loi-de-campbell, mesure-devenue-cible, reactivite-des-classements) portent toutes sur l'effet en retour de la mesure sur le mesuré, corruption de l'indicateur promu objectif, réactivité des évalués. Paquette porte sur ce que la boucle exige du signal et de l'acteur : que l'information porte sur l'effet et non soit l'effet, qu'elle soit continue, que l'action reste reprenable, que le délai ne la rende pas inutilisable. Il traite explicitement les cotes d'écoute et les sondages, et conclut dans le sens inverse de la réactivité : ces données ne sont pas en elles-mêmes du feedback, seul l'est ce que la source peut en déduire tant qu'elle peut encore modifier son action. C'est exactement la frontière écrite dans corpus/perimeter.md, « tant que l'objet du texte est ce que la boucle exige du signal, son délai, son gain, ce qu'il doit discriminer, c'est ici »."
+    },
+    {
+      "id": "SUP-af230d6cc1d8a5eb",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "INTITULÉ DU CANDIDAT À REVOIR. L'identifiant retroaction-denaturee et la formule « un concept emprunté et vidé » décrivent le motif de l'article, pas sa thèse. La thèse réelle est un critère d'identification : il n'y a rétroaction que si de l'information sur l'effet revient à la source et que l'action peut encore être corrigée, d'où la séparation de la rétroaction et de la rétroinformation. Une carte titrée sur la dénaturation ferait passer pour l'objet du texte ce qui n'en est que la circonstance. Je signale le désaccord sans changer l'identifiant, qui m'était imposé."
+    },
+    {
+      "id": "SUP-0193991f3102814e",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "PORTÉE. Le second signal de la cartographie est à nuancer, pas à écarter. La proposition terminologique finale (rétroaction, rétroinformation, préinformation, préaction) vise les sciences de la communication et rien d'autre, l'auteur le dit et son schéma de la p. 15 place « source de la communication » sur l'axe. En revanche l'exposition du mécanisme, p. 6 à 13, n'est pas restreinte à ce champ : elle est menée sur des machines et sur le vivant. Une carte ne doit pas étendre la proposition terminologique hors de la communication ; elle peut s'appuyer sur l'exposition du mécanisme."
+    },
+    {
+      "id": "SUP-3a06f535f7494fed",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "PASSAGE RELEVÉ PAR LA CARTOGRAPHIE, ÉCARTÉ. Relu sur l'image de la page 5 en 1273 px : le texte imprimé porte bien deux tirets cadratins, « La notion de feedback constitue l'un des concepts — en communication — parmi les plus souvent utilisés ». L'OCR n'a rien ajouté. Ce passage est écarté pour deux motifs cumulés : le tiret cadratin est interdit sur toute carte affichée, et même coupé par […] l'énoncé fait 199 caractères, soit au-delà du plafond. Le même paragraphe porte deux autres tirets cadratins, « recherches en — et sur la — communication ». Le texte de Paquette en fait un usage constant, tout emprunt à cet article doit être vérifié sur ce point."
+    },
+    {
+      "id": "SUP-39bf3807979d713e",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "CHAPÔ ÉDITORIAL. La page 5 porte, avant le texte, un encadré en gras qui n'apparaît pas dans la couche OCR servie par l'endpoint page et que j'ai lu sur l'image : « Feedback, feed before, autorégulation, réaction, rétroaction, préaction, préinformation, contrôle... Il faut bien avouer que suivant les auteurs, ou même les pages du même auteur, ces divers termes issus de la pensée cybernétique sont utilisés sans grande cohérence. Le mérite de l'auteur est de nous proposer une terminologie précise […] ». C'est la rédaction de la revue qui parle d'elle-même, à la troisième personne sur l'auteur : ce texte ne doit en aucun cas être cité comme parole de Paquette. Je le consigne parce qu'il est le résumé le plus tentant de l'article et qu'il n'est pas de lui."
+    },
+    {
+      "id": "SUP-0c7da2bbbebb3ae2",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "ERREUR INTERNE À LA SOURCE, À NE PAS REPRODUIRE. Paquette écrit p. 6 que le mot feedback entre dans la terminologie scientifique « sous la plume de N. Wiener en 1950 », alors que sa propre note 4, au bas de la même page, cite « Norbert Wiener, Cybernetics or control and communication in the human and machine, MIT, 1948 ». Les deux ont été relus sur l'image. Le millésime exact est 1948, et le titre réel porte « in the Animal and the Machine » : la note de Paquette est fautive sur ce point aussi. Aucune carte ne doit reprendre « 1950 » ni ce titre."
+    },
+    {
+      "id": "SUP-8d6d4ad72410ccea",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "ACCÈS. Persée ne sert pas de rendition intégrale pour cet article : les liens de téléchargement de la notice ne proposent que BibTeX, RIS et RefWorks, et l'URL docAsPDF annoncée dans les métadonnées citation_pdf_url a répondu 403 depuis cette session. Les quatorze pages ont donc été tirées une à une par l'endpoint /doc/page (p. 5 à 18, HTTP 200), et toutes lues. La citation retenue a été relue caractère à caractère sur l'image de la page 8 en 1273 px, plus haute résolution disponible : elle est conforme, « fed back » y est en italique dans l'imprimé et l'italique n'est pas reporté dans la citation."
+    },
+    {
+      "id": "SUP-ba998581dd0a35d9",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "QUALITÉ DE L'OCR. La couche texte de Persée est fautive par endroits : elle absorbe le texte tourné des gouttières dans le corps des pages 6, 8, 10, 12, 14, 16 et 18, et corrompt des mots isolés (« la hase fonctionnelle » pour la base, « tes senseurs » pour les, « Rolland Garros », « l'apparitio », « une écc.e de tennis »). Aucune des lignes citées ou paraphrasées dans definition_de_lauteur n'a été prise sur une ligne corrompue, et la citation retenue a été vérifiée sur l'image. Le schéma de la p. 15, qui porte la distinction centrale, est une image absente de la couche texte : je l'ai lu sur l'image de la page."
+    },
+    {
+      "id": "SUP-367e1c5252b20274",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "TITRE DE LA REVUE. Persée normalise le titre en « Communication & Langages » dans ses métadonnées, alors que l'imprimé de 1987 et Paquette lui-même écrivent « Communication et langages ». La référence retenue suit l'imprimé."
+    },
+    {
+      "id": "SUP-53f8109ab05f272c",
+      "origin": "evidence:retroaction-denaturee/lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "SOURCE SECONDAIRE : cherchée, non trouvée. Aucun commentaire académique de cet article n'a été identifié. Dialnet en donne une notice d'indexation sans texte ni analyse, ce qui ne constitue pas une source secondaire et n'est donc pas listé. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence, sa pagination et son DOI par sa notice Persée, mais je ne l'ai pas ouvert : son contenu n'est connu ici que par ce que Paquette en rapporte, et rien de ce résumé ne doit être repris comme établi."
     }
   ],
-  "estimated_tokens": 8801,
+  "estimated_tokens": 13486,
   "status": "READY"
 }

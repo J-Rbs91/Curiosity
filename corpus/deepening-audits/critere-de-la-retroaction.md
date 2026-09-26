@@ -3,7 +3,7 @@ concept_id: critere-de-la-retroaction
 deepening_sha256: 29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222
 validated_sha256: 2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b
 protocol_version: 3
-audited_at: 2026-09-18T04:00:00Z
+audited_at: 2026-09-26T04:54:46Z
 initial_verdict: REVISE
 result: rewrite_rejected_factcheck
 factcheck_verdict: FACTCHECK_FAIL
@@ -12,92 +12,83 @@ review_verdict: NOT_RUN
 
 # critere-de-la-retroaction
 
-Le texte affiché au lecteur est **inchangé** : il est celui de `HEAD`.
+Le texte affiché au lecteur est **inchangé**. Restauré par son SHA de blob
+`623582dbf638f033caa87a683c490298c470e512`, vérifié au `sha256sum` :
+`29083f8b…`, et `git diff` contre l'état du lever est vide sur ce fichier.
 
-> **Avertissement sur le statut de ce rejet.** Les champs de l'en-tête sont contraints par le
-> protocole et disent `rewrite_rejected_factcheck`. Ils décrivent mal ce qui s'est passé. Le
-> gate a bien rendu `FACTCHECK_FAIL`, mais **21 des 25 échecs ne sont pas documentaires** : ils
-> sont causés par un défaut de l'outil de fact-check, décrit ci-dessous. Cette carte n'est ni
-> `BLOCKED_SOURCE` — ses sources existent, sont consultées en texte intégral et sont au dépôt —
-> ni une réécriture fautive. Elle est **bloquée par l'instrument**.
+> **Ce rejet n'est pas le même que celui du 18 septembre, et la différence est tout le contenu de
+> ce rapport.** Le précédent disait : l'instrument n'a pas ouvert le dossier. Celui-ci dit : le
+> dossier est ouvert, le texte a été instruit trois fois avec, il est passé de 7 refus à 6 puis à
+> **1 sur 58**, et le plafond de deux boucles l'arrête là.
 
-## Audit pédagogique — `REVISE`
+## Ce que le dossier enfin chargé a rendu
 
-Notes : fidélité 2 · progressivité 3 · densité 3 · clarté 3 · profondeur 3 · exemples 4 ·
-limites 3 · ouverture 2.
+Le correctif de `prepare()` — le pack honore le champ `dossier` de l'enregistrement — a été
+écrit et mesuré avant tout jugement sur ce texte. Sur cette carte :
 
-Architecture saine et montée réelle — signal, action, mécanisme, étages, vocabulaire. Onze
-paragraphes sur treize portent un delta propre, et l'audit relève que l'autocuiseur opposé au
-réservoir de chasse d'eau fait un travail qu'aucune définition ne ferait.
+| | 19 septembre | 26 septembre |
+|---|---:|---:|
+| fichiers de preuve ramassés | 0 | 1 |
+| appuis du pack | 45, tous `validated` | **72, dont 27 du dossier** |
+| `access_corroboration` de l'article de Paquette | `dossier-absent` | **`corrobore`** |
+| `UNSUPPORTED` au gate | **23** | 2, puis 1, puis 0 |
 
-`PASS` était exclu par une faute documentaire précise : une non-invention établie pour deux
-termes était étendue à deux autres que l'enregistrement validé ne couvre pas, ce qui effaçait
-leur statut d'hypothèses de travail.
+**Le rejet de septembre était donc faux sur les claims, et c'est établi et non plausible** : 15
+des 34 appuis cités au premier mapping de cette nuit viennent du fichier que le gate de septembre
+n'avait jamais ouvert, dont `definition_de_lauteur`, qui porte l'essentiel de la matière paginée.
 
-Détail dans `work/critere-de-la-retroaction/audit.md`.
+## Les trois tours, et ce qu'ils disent du dispositif
 
-## La réécriture, et ce qu'elle a réellement corrigé
+| tour | SHA | claims | soutenus | refusés | mots |
+|---|---|---:|---:|---:|---:|
+| 0, texte publié | `29083f8b` | 59 | 52 | **7** | 1 198 |
+| 1, après correction | `10e489ee` | 56 | 50 | **6** | 1 158 |
+| 2, après correction | `51377815` | 58 | 57 | **1** | 1 081 |
 
-Quatre corrections légitimes ont été appliquées puis vérifiées :
+**Aucun refus corrigé n'est revenu.** Les six du tour 1 et le seul du tour 2 sont des claims
+différents des précédents : un mapping frais découpe autrement et découvre ce que le précédent
+n'avait pas porté. **Un `FACTCHECK_FAIL` ne majore donc pas le nombre de défauts d'un texte, il
+le minore** — c'est la leçon de mesure de ce cycle.
 
-- la faute d'attribution, corrigée par **restriction de portée** et non par ajout : un
-  paragraphe sépare désormais les deux statuts que l'ancienne phrase confondait, avec pour seul
-  ajout un verbatim déjà présent dans l'enregistrement ;
-- une nécessité ramenée à une possibilité (`C014`) ;
-- une quantification retirée sans compensation (`C022`) ;
-- une glose donnée explicitement comme interprétation (`C033`).
+Les corrections n'ont utilisé que `REMOVE` et `NARROW`, jamais `REATTRIBUTE` ni
+`MARK_AS_INTERPRETATION`, et **le texte a perdu 117 mots sans en gagner un seul** qui ne soit
+adossé à un appui du pack. La faute que l'audit du 18 septembre avait nommée — une non-invention
+établie pour deux termes étendue à deux autres — a été corrigée au tour 1 et n'a pas reparu.
 
-## Le défaut d'outil
+Le seul refus survivant est `C038` : les appuis attestent que Paquette décrit « la
+hiérarchisation des boucles et le déplacement des finalités », ils ne portent ni l'emboîtement des
+boucles les unes dans les autres, ni un niveau supérieur comme agent du déplacement.
 
-`scripts/corpus/deepening-factcheck.mjs` dérive le chemin des preuves du seul `conceptId` :
+## Le défaut d'instrument trouvé cette nuit, et la perte qu'il a causée
 
-```js
-function evidencePath(conceptId) {
-  return path.join(ROOT, "corpus", "evidence", conceptId, "lecture.json");
-}
-```
+`C008` du tour 1 a été refusé `UNSUPPORTED` au motif que « ni un thermostat ni un joueur de
+quilles n'apparaissent dans aucun appui résolu ». **Le pack contient `SUP-421445a4beb428f3`,
+`$.reserves[0]` de la lecture primaire, qui porte mot pour mot « l'auteur raisonne sur un
+thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une
+fièvre ».** Aucun claim du mapping ne le cite.
 
-Le champ `dossier` de l'enregistrement validé n'est lu nulle part dans le script.
-
-Cette carte déclare `corpus/evidence/retroaction-denaturee/lecture.json`, et ses `notes`
-documentent la divergence d'identifiant comme volontaire — le dossier porte le nom sous lequel
-le candidat avait été repéré. Ce fichier existe, fait 12 866 octets et est `consulted:
-full-text`.
-
-Le pack sort donc avec `evidence_sha256: null` et 45 supports tous d'origine `validated`. Le
-thermostat, l'autocuiseur, le réservoir de chasse d'eau, la fièvre, l'hétérostasie, la
-hiérarchie des boucles, les trois moments et la définition verbatim de la rétroinformation sont
-dans `definition_de_lauteur` et `reserves` de ce dossier, avec pagination — et le gate les a
-déclarés sans preuve.
-
-Le réécrivain a refusé de les supprimer et a vérifié la prémisse au lieu de l'exécuter. C'est ce
-refus qui a fait découvrir le défaut. Supprimer aurait détruit une matière réellement lue sur la
-foi d'une mesure faite sans elle.
-
-**10 des 136 cartes sont concernées**, et les 10 fichiers déclarés existent : celle-ci, plus
-neuf pointant vers `corpus/dossiers/`.
-
-### Pourquoi le correctif évident n'a pas été appliqué
-
-`collectSupports` transforme génériquement toute chaîne non vide en support. Faire pointer la
-fonction vers `corpus/dossiers/*.json`, dont le schéma est tout autre, y ingérerait
-`pedagogy.short_explanation` et `pedagogy.hook_question`, rédigés par un modèle,
-`evidence.common_misinterpretations`, qui rendrait citables comme preuve les contresens qu'elle
-recense, ainsi que `_sortie_de_lot.motif` et `rejection_reason`.
-
-Le défaut actuel est conservateur : il fait échouer à tort. Le correctif naïf serait dangereux :
-il ferait réussir à tort, contre l'invariant « aucun texte généré par un modèle n'est une
-source ». Le choix des sous-arbres de `corpus/dossiers/` qui constituent une preuve consultée
-est une décision documentaire, pas un patch, et elle est laissée à arbitrage humain.
+Le verdict est juste au vu des deux appuis rattachés, et faux au vu du dépôt. La correction du
+tour 2 a donc retiré du texte deux exemples que l'auteur emploie réellement. **C'est une perte
+documentée, pas une correction**, et elle est à réparer quand la carte sera reprise. Chantier K de
+[`../RESTE-A-FAIRE.md`](../RESTE-A-FAIRE.md), second cas.
 
 ## Reprise
 
-La version corrigée est conservée sous
-`work/critere-de-la-retroaction/candidate-blocked-tooling.json`. Elle n'a pas été committée
-comme approfondissement parce que `npm run corpus:deepen` projette sans vérifier aucun
-`FACTCHECK_PASS` : un texte non certifié committé serait publiable par inadvertance.
+Le candidat refusé est conservé sous
+`work/critere-de-la-retroaction/candidate-rejected-57-sur-58.json`, SHA `51377815…`. Il est à
+un claim du `FACTCHECK_PASS` et il porte les onze corrections des deux tours.
 
-Une reprise ne doit pas rejouer l'audit ni la réécriture. Elle doit, dans cet ordre : trancher
-le périmètre de preuve des dossiers, corriger `evidencePath()` pour honorer `validated.dossier`,
-relancer `PREPARE` sur le candidat conservé, et laisser la chaîne juger les 21 claims avec la
-preuve enfin chargée.
+Une reprise ne doit **pas** rejouer l'audit ni les deux corrections. Elle doit, dans cet ordre :
+
+1. borner `C038` à ce que `definition_de_lauteur` porte — la hiérarchisation et le déplacement
+   des finalités, sans emboîtement ni agent ;
+2. **restituer le thermostat et le joueur de quilles**, attestés par `$.reserves[0]` ;
+3. relancer depuis `PREPARE` sur le candidat ainsi repris.
+
+Ce n'est pas une troisième boucle de correction sur le même verdict : le point 2 répare un défaut
+d'instrument, et le point 1 est le seul reliquat documentaire.
+
+**Les artefacts de travail de ce répertoire décrivent `51377815…`, qui n'est plus le texte en
+place.** C'est voulu : ils sont la trace du cycle. Le gate les refusera en `FACTCHECK_INVALID`
+s'ils sont rejoués tels quels, ce qui est le comportement correct — une reprise repart de
+`PREPARE`.

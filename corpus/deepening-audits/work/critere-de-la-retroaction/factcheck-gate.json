@@ -1,137 +1,17 @@
 {
   "protocol_version": 1,
   "concept_id": "critere-de-la-retroaction",
-  "candidate_sha256": "7d716dc2f14f3dd07e031e3fb10b6a0dce028c9b3bf1bcfe97ed2915c8f571ea",
+  "candidate_sha256": "51377815deeb19ddcae13f09372826b6b76a0b8df3d8d69691a2bc66f684d094",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 70,
-  "supported": 45,
-  "failed": 25,
+  "claims": 58,
+  "supported": 57,
+  "failed": 1,
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les supports (citation p. 8 et reference bibliographique) n'etablissent pas ce que l'usage courant nomme, ni que les deux situations du lead recoivent le meme nom ; « ce que l'on dit souvent » porte sur la nature de ce qui est fed back, pas sur la denomination."
-    },
-    {
-      "claim_id": "C005",
-      "verdict": "UNSUPPORTED",
-      "reason": "Le hook et le summary etablissent le contenu du critere, pas ce que l'objet de l'article n'est pas ; aucun support fourni ici ne documente l'intention de l'auteur."
-    },
-    {
-      "claim_id": "C008",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu : la liste des objets de demonstration (thermostat, autocuiseur, chasse d'eau, fievre) n'est etablie par aucune preuve du bundle."
-    },
-    {
-      "claim_id": "C014",
-      "verdict": "TOO_STRONG",
-      "reason": "notes[2] autorise seulement que le retour soit relatif a la connaissance de la source, donc qu'il puisse differer ; le claim affirme qu'il differe necessairement et pose comme fait que deux locuteurs « n'y lisent pas la meme chose »."
-    },
-    {
-      "claim_id": "C022",
-      "verdict": "TOO_STRONG",
-      "reason": "Les supports etablissent l'exclusion d'un cas (action non reprise) et une meprise courante sur ce qui est fed back ; ils ne quantifient pas la part de l'usage courant ecartee (« une bonne part »)."
-    },
-    {
-      "claim_id": "C026",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu : ni la comparaison de deux objets domestiques, ni son attribution a Paquette ne sont etablies."
-    },
-    {
-      "claim_id": "C027",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la description de l'autocuiseur et de son mecanisme."
-    },
-    {
-      "claim_id": "C028",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la description du reservoir de chasse d'eau comme fonctionnement par boucle."
-    },
-    {
-      "claim_id": "C029",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'opposition « compenser l'exces » / « constater et intervenir »."
-    },
-    {
-      "claim_id": "C033",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les supports posent la distinction information / effet mais ne fournissent aucune raison tiree de la comparaison ; la glose « un effet se produit, il ne se compare a rien » n'est portee par aucun support du claim."
-    },
-    {
-      "claim_id": "C034",
-      "verdict": "UNSUPPORTED",
-      "reason": "La citation p. 8 n'introduit ni constat ni valeur recherchee ; le rapport a « ce qui etait recherche » n'est etabli par aucun support resolu."
-    },
-    {
-      "claim_id": "C035",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour le lien controle / finalite chez Paquette."
-    },
-    {
-      "claim_id": "C036",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'origine externe de la valeur de reference dans une machine."
-    },
-    {
-      "claim_id": "C037",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour le caractere implicite de la valeur de reference dans un organisme."
-    },
-    {
       "claim_id": "C038",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la decomposition en trois moments ni pour leur simultaneite."
-    },
-    {
-      "claim_id": "C039",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'analyse des deux objets domestiques sous cette grille."
-    },
-    {
-      "claim_id": "C040",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'enonce sur la pluralite des boucles."
-    },
-    {
-      "claim_id": "C041",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour les boucles hierarchisees et le deplacement des valeurs de reference par un niveau superieur."
-    },
-    {
-      "claim_id": "C042",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la thermoregulation et la lecture de la fievre comme valeur de reference modifiee."
-    },
-    {
-      "claim_id": "C043",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour l'enonce sur la temperature visee et defendue."
-    },
-    {
-      "claim_id": "C044",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la relecture de l'ecart selon le niveau considere."
-    },
-    {
-      "claim_id": "C045",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour le terme « heterostasie » ni pour son attribution a Paquette."
-    },
-    {
-      "claim_id": "C046",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la distinction entre corriger une action et changer le but, ni pour les etages de boucles."
-    },
-    {
-      "claim_id": "C051",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun support resolu pour la definition de la retroinformation comme travail d'obtention et d'analyse d'informations sur une situation en cours ou terminee."
-    },
-    {
-      "claim_id": "C054",
-      "verdict": "UNSUPPORTED",
-      "reason": "Les supports etablissent l'equivalence preinformation / feedforward, l'ajout de preinformation et preaction et leur exclusion de la definition du feedback, mais non qu'elles interviennent avant le declenchement de l'action."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis attestent que Paquette decrit « la hierarchisation des boucles et le deplacement des finalites » (definition_de_lauteur, p. 11-13 ; reserves[0]), mais ils ne disent ni que les boucles sont emboitees les unes dans les autres, ni que les valeurs de reference sont deplacees par un niveau superieur. Le claim ajoute a l'attribution une architecture causale (l'agent du deplacement) que les appuis de ce claim ne portent pas."
     }
   ]
 }
