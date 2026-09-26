@@ -3,7 +3,7 @@
   "concept_id": "critere-de-la-retroaction",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97",
+  "candidate_sha256": "51377815deeb19ddcae13f09372826b6b76a0b8df3d8d69691a2bc66f684d094",
   "validated_sha256": "2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b",
   "evidence_files": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "locator": "lead[1]",
-      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un moyen de trancher : devant n’importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent à dire s’il y a boucle ou non. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, un joueur de quilles, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
+      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un critère d’identification : deux conditions sans lesquelles il n’y a pas de boucle. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un autocuiseur, un réservoir de chasse d’eau, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
     },
     {
       "locator": "sections[0].paragraphs[0]",
@@ -59,7 +59,7 @@
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Ce qui revient est une information",
-      "text": "Deux personnes qui parlent devant la même salle n’ont donc pas le même retour, puisqu’elles n’y lisent pas la même chose, et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout. Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher : ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes ». Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire."
+      "text": "Le même public ne donne donc pas forcément le même retour à deux personnes qui parlent devant lui, et une salle qui s’ennuie sans que personne ne le perçoive ne corrige rien du tout. Paquette range du même côté des objets qu’on n’a pas l’habitude de rapprocher : ce qui compte, écrit-il, c’est « ce que l’on peut déduire des mimiques de son interlocuteur, des questions d’un auditoire ou des sondages d’opinion, et non pas ce que sont ces événements en eux-mêmes ». Un sondage ne fait pas boucle parce qu’il mesure quelque chose ; il ne le devient que par ce qu’une source en tire."
     },
     {
       "locator": "sections[1].paragraphs[0]",
@@ -79,7 +79,7 @@
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Ce qu’un autocuiseur ne fait pas",
-      "text": "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir, et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur vient du dehors, de celui qui pousse le curseur du thermostat. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus."
+      "text": "Contrôler suppose donc ces deux gestes ensemble, constater et intervenir, et l’idée est chez lui inséparable de celle de finalité : on ne régule que par rapport à une valeur visée. Dans une machine, cette valeur est imposée du dehors. Dans un organisme, elle peut n’être écrite nulle part et rester implicite. Le processus lui-même se décompose en trois moments, s’informer, évaluer, réagir, que l’exposé sépare mais que le fonctionnement réel tient ensemble, simultanés et continus."
     },
     {
       "locator": "sections[3].paragraphs[0]",
@@ -89,7 +89,7 @@
     {
       "locator": "sections[3].paragraphs[1]",
       "section_title": "Des boucles emboîtées, des buts qui bougent",
-      "text": "Cela déplace la question du bon fonctionnement. Tant qu’on regarde une boucle seule, tout écart ressemble à un défaut ; dès qu’on admet qu’un niveau supérieur peut réviser les buts, le même écart devient l’exécution d’une consigne venue d’ailleurs. Paquette nomme hétérostasie ce déclenchement d’une révision des buts, par opposition au maintien d’un état constant. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
+      "text": "Paquette nomme hétérostasie le déclenchement d’une révision des buts. On peut comprendre cela comme la différence entre corriger une action et changer ce qu’on cherche : les deux se font par des boucles, mais elles ne se logent pas au même étage."
     },
     {
       "locator": "sections[4].paragraphs[0]",
@@ -618,6 +618,6 @@
       "text": "SOURCE SECONDAIRE : cherchée, non trouvée. Aucun commentaire académique de cet article n'a été identifié. Dialnet en donne une notice d'indexation sans texte ni analyse, ce qui ne constitue pas une source secondaire et n'est donc pas listé. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence, sa pagination et son DOI par sa notice Persée, mais je ne l'ai pas ouvert : son contenu n'est connu ici que par ce que Paquette en rapporte, et rien de ce résumé ne doit être repris comme établi."
     }
   ],
-  "estimated_tokens": 13643,
+  "estimated_tokens": 13486,
   "status": "READY"
 }
