@@ -1816,7 +1816,7 @@ lecture menée pour autre chose. **Le tableau est une mesure, pas une conclusion
 
 ---
 
-# K. Une omission du claim mapper fabrique un échec que le texte ne mérite pas — ouvert le 25 septembre 2026
+# K. Une omission du claim mapper fabrique un échec que le texte ne mérite pas — ouvert le 25 septembre 2026, aggravé le 26
 
 **Le dispositif est fail-closed, et c'est sa qualité. Mais il ne peut pas distinguer un claim
 réellement non soutenu d'un claim dont le mapper a simplement oublié de citer l'appui.** Les deux
@@ -1842,6 +1842,86 @@ l'appui `$.hook`, `access: "n/a"`, dont le texte est « Où appuyer dans un syst
 chose bouge vraiment ? ». Et le motif de refus du tour 2 disait, mot pour mot : *« Le hook n'autorise
 que la question "où appuyer" »*. La correction a donc retiré ce que le gate refusait, gardé ce que le
 gate autorisait, **et le mapping suivant n'a pas cité l'appui que le gate avait lui-même nommé.**
+
+## Un second cas établi, pire que le premier — `critere-de-la-retroaction`, 26 septembre 2026
+
+Le cas de `points-de-levier` laissait une échappatoire de lecture : les vingt claims y arrivaient
+avec `support_ids: []`, donc **un examen du claim map les repérait**. Le nouveau cas n'a pas cette
+consolation. **Le claim était pourvu d'appuis, deux, tous deux réels — et l'appui qui portait
+précisément la matière en cause n'était pas du nombre.**
+
+Le claim C008 du tour 1 porte : « Il mène la démonstration sur un thermostat, un autocuiseur, un
+réservoir de chasse d'eau, un joueur de quilles, une fièvre ». Il cite
+`SUP-dccd7d1a26770a77` et `SUP-d9116d421b3c54dc`. Le vérificateur a rendu `UNSUPPORTED`, avec ce
+motif : « Ni "un thermostat" ni "un joueur de quilles" n'apparaissent dans aucun appui résolu ». Au
+vu des deux appuis qu'il avait, **le verdict est juste**.
+
+Or le pack contient `SUP-421445a4beb428f3`, `$.reserves[0]` de la lecture primaire, dont le texte
+porte mot pour mot :
+
+> Condition 3 : enseignable sans réserve, l'auteur raisonne sur **un thermostat**, un autocuiseur,
+> un réservoir de W.-C., un thermocouple, **un joueur de quilles**, une fièvre, un professeur
+> devant quelques centaines d'étudiants.
+
+Aucun claim du mapping ne cite cet appui. **La matière était dans le pack, nommée, paginée par son
+dossier, et le claim qui l'affirmait a été déclaré sans preuve.**
+
+**Et le dommage n'est pas resté théorique.** La correction de la boucle 2 a retiré le thermostat et
+le joueur de quilles du texte lecteur, sur la foi de ce refus. Le réécrivain a vu l'appui, l'a
+écrit dans son compte rendu, et a choisi de ne pas s'en servir — au dernier tour autorisé, parier
+sur le fait que le `PREPARE` suivant rattacherait cet appui était le pari le plus risqué des deux.
+**Le dispositif a donc fait disparaître d'un texte deux exemples que son auteur emploie
+réellement**, sans qu'aucun verdict soit fautif à son propre niveau : le mapper n'a pas menti, le
+vérificateur a jugé juste sur ce qu'il avait, le gate a compté correctement, et le réécrivain a
+appliqué la seule correction prudente qui lui restait. **C'est le dispositif entier qui a produit
+une perte, par une omission que rien n'était chargé de voir.**
+
+Le même motif atteint C034 au tour 1 — « aucun appui résolu ne mentionne de thermostat » — qui est
+vrai des appuis rattachés et faux du pack. Ce refus-là n'était pas entièrement fabriqué : son
+excédent réel était le geste, « celui qui pousse le curseur du thermostat », que rien n'atteste.
+**Un même motif peut donc être à moitié juste, et c'est le cas le plus difficile à voir.**
+
+## Ce que ce second cas ajoute, et qui change la parade
+
+**1. Un claim pourvu d'appuis n'est pas un claim correctement appuyé.** La parade envisagée le
+25 septembre — relire les claims à `support_ids` vide — ne voit rien ici. Aucun compteur du dépôt ne
+distingue « deux appuis cités » de « les deux bons appuis cités ».
+
+**2. Un motif de refus doit dire de quoi il parle.** Écrire « aucun appui résolu ne mentionne X »
+laisse croire à une absence du dossier, quand seuls les appuis de ce claim ont été regardés. Le
+vérificateur ne voit pas le dossier ; il ne peut donc pas établir qu'il ne contient pas X. La
+formule juste est « les appuis fournis pour ce claim ne mentionnent pas X », et la différence n'est
+pas cosmétique : c'est elle qui aurait fait rouvrir le mapping au lieu de couper le texte. La
+consigne a été portée au prompt du vérificateur dans ce lot.
+
+**3. Le réécrivain est le seul maillon qui voit les deux côtés**, et il n'a pas le droit de
+s'appuyer dessus. Il lit le pack entier et les motifs de refus, donc il est le seul en position de
+constater l'omission — c'est ainsi qu'elle a été trouvée les deux fois, en septembre pour le
+chantier J et ici. Mais son rôle lui interdit de créer l'appui, et le plafond de boucles le pousse
+à couper plutôt qu'à contester. **La règle « vérifier la prémisse plutôt que l'exécuter » n'a de
+valeur que si contester rouvre quelque chose ; sinon elle ne fait qu'ajouter un regret au compte
+rendu.**
+
+## Par quel bout prendre ce chantier, après le 26 septembre
+
+1. **Ce que le script peut faire sans juger de la vérité.** `--bundle` pourrait joindre à chaque
+   claim, **à titre de signal et non de preuve**, la liste des appuis non cités dont le texte
+   contient un terme rare du `claim_text`. Ce n'est pas un verdict et cela n'autorise aucun claim :
+   c'est une question posée au vérificateur — « ces appuis existent, les as-tu écartés ou ne les
+   as-tu pas vus ? ». Le risque à peser est qu'un signal devienne une suggestion et que le
+   vérificateur crédite un claim d'un appui qu'il n'aurait pas retenu seul ; la parade est que le
+   signal soit joint au **bundle du vérificateur** et non au pack du mapper, et qu'il n'entre dans
+   aucun décompte du gate.
+2. **Rendre au vérificateur le droit de renvoyer au mapping.** Un verdict manque au vocabulaire :
+   quelque chose comme `MAPPING_INCOMPLETE`, qui ne dit ni soutenu ni non soutenu mais « ce claim
+   n'a pas les appuis qu'il devrait avoir ». Aujourd'hui, un vérificateur qui soupçonne une
+   omission n'a que `UNSUPPORTED`, qui déclenche une coupe. Un tel verdict devrait faire échouer le
+   gate en `FACTCHECK_INVALID` — donc sans consommer de boucle de correction, puisque ce n'est pas
+   le texte qui est en cause.
+3. **Restituer les deux exemples de `critere-de-la-retroaction`**, thermostat et joueur de quilles,
+   quand la carte sera reprise : ils sont attestés par `$.reserves[0]` et leur retrait est une
+   perte documentée, pas une correction. Ce n'est pas une boucle de correction de plus sur le même
+   verdict, c'est la réparation d'un défaut d'instrument.
 
 ## Les deux défauts sont distincts et il faut les séparer
 
