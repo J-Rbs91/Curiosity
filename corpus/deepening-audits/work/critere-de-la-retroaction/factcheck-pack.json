@@ -3,7 +3,7 @@
   "concept_id": "critere-de-la-retroaction",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222",
+  "candidate_sha256": "10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97",
   "validated_sha256": "2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b",
   "evidence_files": [
     {
@@ -69,12 +69,7 @@
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Ouvrir son parachute une seule fois",
-      "text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour. Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien. Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ». Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate."
-    },
-    {
-      "locator": "sections[1].paragraphs[2]",
-      "section_title": "Ouvrir son parachute une seule fois",
-      "text": "Le délai n’est pas neutre pour autant, et l’article lui consacre un développement, avec l’instabilité qu’il engendre. Entre l’action et l’information qui en revient il y a toujours un temps, et ce temps décide autant que le contenu du signal : il peut faire tomber la correction sur une situation qui a déjà changé, et la correction, alors, dérègle au lieu de rattraper."
+      "text": "Ce critère écarte une bonne part de ce qu’on appelle couramment un retour. Les applaudissements de fin de spectacle, le résultat d’un scrutin, les cotes d’écoute d’une émission déjà diffusée arrivent sur une action terminée : ils informent, ils ne corrigent plus rien. Rien n’oblige pourtant la correction à être instantanée, et Paquette prend soin de le préciser : un comportement peut être « réajusté (pas nécessairement en temps réel) sur la base de ses résultats effectifs ». Ce qui est exigé, c’est que l’action soit encore ouverte, pas que la réponse soit immédiate. Le délai, lui, n’est pas neutre : la boucle exige aussi que le temps de traitement ne rende pas l’information inutilisable."
     },
     {
       "locator": "sections[2].paragraphs[0]",
@@ -89,7 +84,7 @@
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Des boucles emboîtées, des buts qui bougent",
-      "text": "Une boucle n’est presque jamais seule. Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre, et il la défend avec la même obstination."
+      "text": "Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres, dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre."
     },
     {
       "locator": "sections[3].paragraphs[1]",
@@ -109,7 +104,7 @@
     {
       "locator": "sections[4].paragraphs[2]",
       "section_title": "Rétroaction et rétroinformation",
-      "text": "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable ». Ces quatre termes, il ne les invente pas, ils circulaient déjà ; ce qu’il leur donne, ce sont des définitions séparées, et il les propose aux sciences de la communication et à elles seules."
+      "text": "La rétroinformation devient alors le travail d’obtention et d’analyse d’informations sur une situation en cours ou déjà terminée, et elle ne fait boucle qu’à une condition : « Lorsque cette rétroinformation sert à modeler l’action (le message, en communication), nous avons une boucle de rétroaction (feedback) ». La préinformation, qu’il rapproche du feedforward, et la préaction interviennent avant que l’action soit déclenchée : elles ne relèvent pas du feedback, « bien que la parenté des concepts soit indéniable ». Rétroaction et rétroinformation, il ne les invente pas : ces mots circulaient déjà comme traductions de feedback, et ce qu’il leur donne, ce sont des définitions séparées. La préinformation et la préaction, elles, il les ajoute. Cette terminologie, il la propose aux sciences de la communication et à elles seules."
     }
   ],
   "supports": [
@@ -623,6 +618,6 @@
       "text": "SOURCE SECONDAIRE : cherchée, non trouvée. Aucun commentaire académique de cet article n'a été identifié. Dialnet en donne une notice d'indexation sans texte ni analyse, ce qui ne constitue pas une source secondaire et n'est donc pas listé. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence, sa pagination et son DOI par sa notice Persée, mais je ne l'ai pas ouvert : son contenu n'est connu ici que par ce que Paquette en rapporte, et rien de ce résumé ne doit être repris comme établi."
     }
   ],
-  "estimated_tokens": 13745,
+  "estimated_tokens": 13643,
   "status": "READY"
 }

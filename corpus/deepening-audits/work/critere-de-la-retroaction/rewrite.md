@@ -1,211 +1,159 @@
-concept : critere-de-la-retroaction
-mode : REVISE (verdict d'audit REVISE, architecture conservée)
-protocoles lus en entier : PROTOCOLE.md, AUDIT_PROTOCOL.md (v3), audit.md
-matériaux : corpus/validated/critere-de-la-retroaction.json (attribution_note, notes, bloc
-review), l'entrée projetée de la carte, et la version précédente de l'approfondissement.
-Aucune recherche, aucune source nouvelle, aucun fait de mémoire.
+# Correction factuelle minimale : critere-de-la-retroaction
 
-VOLUME
+Date : 2026-09-26
+Mode : FACTCHECK_FIX (aucune réécriture)
+Texte corrigé : `corpus/deepenings/critere-de-la-retroaction.json`
+SHA256 avant correction : `29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222`
+(identique au `candidate_sha256` de `factcheck-gate.json` et de `verification.json` : la
+correction porte bien sur la version jugée)
+SHA256 après correction : `10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97`
 
-- avant : 1 380 mots comptés par le contrôle (1 198 mots lecteur, 182 mots `limits`)
-- après : 1 697 mots comptés par le contrôle (1 465 mots lecteur, 232 mots `limits`)
-- sections : 5 -> 6 ; paragraphes lecteur : 13 -> 14
+Ce compte rendu remplace intégralement le précédent, qui décrivait une version antérieure du
+texte et n'était plus opposable.
 
-L'augmentation lecteur (+267 mots) correspond à quatre matières neuves, toutes déjà présentes
-dans les matériaux autorisés et jusque-là inemployées ou mal branchées : la raison mécanique du
-premier critère, le tranchage du cas de l'autocuiseur par les trois moments, le statut réel des
-quatre termes, le motif d'écriture de l'article et la chronologie du vocabulaire. Deux
-paragraphes ont été supprimés en contrepartie. Aucun mot n'a été ajouté pour tenir un volume.
+Gate : `FACTCHECK_FAIL`, 59 claims, 52 soutenus, 7 refusés. Seuls les sept claims refusés et ce
+que leur retrait rendait incohérent ont été touchés. Aucun des 52 claims soutenus n'a été
+reformulé. `limits` est inchangé et reste interne.
 
-1. FAUTE DOCUMENTAIRE PRINCIPALE, CORRIGÉE PAR RESTRICTION DE PORTÉE
+Gestes employés : `REMOVE`, `NARROW`. Ni `REATTRIBUTE` ni `MARK_AS_INTERPRETATION` n'ont servi :
+aucun des sept refus ne se réparait par un changement d'attribution, et aucun ne se réparait par
+un marquage d'interprétation, faute d'appui sous-jacent (un « on peut comprendre ainsi » posé
+devant une proposition non soutenue ne crée pas l'appui).
 
-Ancien S5.P3, dernière phrase : « Ces quatre termes, il ne les invente pas, ils circulaient
-déjà ; ce qu'il leur donne, ce sont des définitions séparées, et il les propose aux sciences de
-la communication et à elles seules. »
+## Mots
 
-L'enregistrement validé dit deux choses plus étroites, et la seconde était effacée :
-l'attribution réserve la non-invention à « rétroaction » et « rétroinformation », « termes déjà
-en circulation », et donne « la préinformation et la préaction, qu'il ajoute » comme « des
-hypothèses de travail et non comme des prises de position ».
+| | Avant | Après |
+|---|---|---|
+| `lead` + `sections` (texte lecteur) | 1 198 | 1 158 |
 
-La phrase a été remplacée par un paragraphe entier (nouveau S5.P3) qui sépare les deux statuts
-au lieu de les fondre : les deux premiers termes circulaient déjà, avec pour appui le verbatim
-p. 5 relevé par le contrôle, « l'abondance des termes proposés pour sa francisation », et il
-leur assigne des définitions distinctes ; les deux autres sont de lui, et donnés comme des
-hypothèses de travail plutôt que comme des prises de position. La restriction de périmètre aux
-sciences de la communication est conservée, mais elle n'est plus la dernière phrase du texte.
+Solde : moins 40 mots. Les seuls mots ajoutés (une phrase en S2.P2, deux phrases en S5.P3) le
+sont pour porter un énoncé borné à un appui du pack, jamais pour assurer une transition.
 
-Aucune affirmation nouvelle n'a été créée pour réparer : le paragraphe ne dit rien de plus que
-ce que l'attribution validée et la note de contrôle portent déjà. Le seul ajout est un verbatim
-déjà présent dans l'enregistrement, donc vérifiable par le contrôle des citations.
+## Les sept corrections
 
-2. DEUX EXTENSIONS PLUS LÉGÈRES, RETIRÉES
+### C028 `TOO_STRONG` — S2.P3, « l'article lui consacre un développement, avec l'instabilité qu'il engendre »
 
-- Ancien S2.P3 (le délai) supprimé en entier. Sa phrase de contenu, « il peut faire tomber la
-  correction sur une situation qui a déjà changé, et la correction, alors, dérègle au lieu de
-  rattraper », énonçait un mécanisme que les matériaux ne portent que comme intitulé. Elle était
-  en outre le paragraphe au plus faible delta du texte : il annonçait l'importance du délai au
-  lieu de l'expliquer. La frontière est passée dans `limits`, qui nomme désormais l'intitulé
-  disponible, l'affirmation interdite et les pages à lire.
-- S4.P2 : « par opposition au maintien d'un état constant » retiré. L'hétérostasie est laissée à
-  ce que les matériaux enregistrent, le déclenchement d'une révision des buts. Le reste du
-  paragraphe, dont le marquage « On peut comprendre cela comme », est intact.
+Geste : `REMOVE` (avec le paragraphe entier, voir ci-dessous).
+Motif retenu : la juxtaposition de deux items dans l'énumération de `reserves[0]` (« délai de
+traitement et instabilité ») n'autorise aucun lien causal. L'excédent était le lien lui-même,
+c'est-à-dire l'intérêt de la phrase : il ne restait rien à borner.
 
-3. REDONDANCE (ancien S5.P2), RÉSOLUE PAR DÉPLACEMENT ET NON PAR SUPPRESSION
+### C029 `TOO_STRONG` — S2.P3, « Entre l'action et l'information qui en revient il y a toujours un temps »
 
-Le paragraphe répétait le test déjà posé en lead[1] et exposé en S1 et S2, sous le libellé de
-l'auteur, et affirmait un croisement chronologique qu'il ne montrait pas.
+Geste : `REMOVE`.
+Motif retenu : aucun appui ne porte l'énoncé universel, et `definition_de_lauteur` dit au
+contraire les trois sous-processus « simultanés et continus ». Un bornage (« souvent »,
+« fréquemment ») aurait produit une phrase vide et toujours non appuyée.
 
-Les deux verbatim qu'il portait, « celle d'information et celle de correction ou ajustement de
-l'action » et « des conditions formelles à l'identification d'un processus de feedback », sont
-remontés en S3, immédiatement après « Le premier compense l'excès, le second constate et
-intervient ». À cet endroit ils ne répètent plus rien : ils nomment ce que l'exemple vient de
-montrer, et ils suppriment l'effet de troisième condition surprise que l'audit signalait. Sa
-phrase de transition utile (« Les définitions qu'il retient arrivent plus loin, une fois le
-mécanisme transporté dans la communication ») a été recousue à la fin de S5.P1. Le croisement
-chronologique, qui était affirmé sans être montré, est réduit à une phrase placée là où la
-séparation se fait effectivement, en S5.P2.
+### C030 `UNSUPPORTED` — S2.P3, « ce temps décide autant que le contenu du signal »
 
-4. PROMESSE NON TENUE EN S1.P1
+Geste : `REMOVE`.
+Motif retenu : aucun appui ne compare le poids du délai à celui du contenu du signal. Une
+comparaison sans terme de comparaison dans le dossier ne se borne pas, elle se retire.
 
-« Le premier tri porte sur la nature de ce qui revient » annonçait un énoncé qui ne venait
-jamais. Le tri est maintenant énoncé dans la même phrase, en une proposition, puis le paragraphe
-passe immédiatement au durcissement que la carte ne porte pas (le retour réside dans la
-connaissance que la source en a). La formulation reste brève : la carte affiche déjà la citation
-p. 8 et le résumé, et il n'y avait pas lieu de les redire.
+### C031 `UNSUPPORTED` — S2.P3, « il peut faire tomber la correction sur une situation qui a déjà changé, et la correction, alors, dérègle au lieu de rattraper »
 
-La raison mécanique de cette exigence, que l'audit signalait comme disponible et inemployée, est
-livrée en S3.P2, une fois que constater et intervenir ont été montrés : un effet se produit et ne
-se compare à rien, tandis qu'une information sur l'effet peut être rapportée à ce qui était
-recherché. C'est une conséquence dérivée de matière présente, formulée comme telle (« On voit du
-même coup pourquoi ») et non comme une affirmation de l'auteur.
+Geste : `REMOVE`.
+Motif retenu : le mécanisme énoncé n'est porté par aucun appui. C'était la seule phrase de
+contenu du paragraphe, et elle était intégralement inventée.
 
-5. FIN DU TEXTE
+#### Sort du paragraphe S2.P3
 
-L'ancienne dernière phrase était une restriction de périmètre. Une sixième section a été ajoutée,
-« Le reproche dont l'article part », construite sur les deux sorties que l'audit avait repérées
-dans les matériaux :
+Les quatre claims du paragraphe sont refusés et le paragraphe ne contenait aucun autre claim :
+`claim-map.json` ne lui en attribue pas d'autre. Le dossier ne le porte donc pas du tout, et il
+a été supprimé.
 
-- le grief d'où part l'article, tel que Paquette le reprend, avec le verbatim p. 5 relevé par le
-  contrôle. Il est attribué à la reprise qu'en fait Paquette, jamais à Veraldi comme position
-  établie : la note de l'enregistrement interdit de reprendre comme établi ce que Paquette en
-  rapporte, et `limits` continue de porter cette frontière. La lecture du test comme réponse au
-  grief est marquée « On peut comprendre les deux questions comme sa réponse ».
-- la chronologie du vocabulaire, que la réserve de contrôle porte explicitement : les deux
-  conditions sont énoncées du feedback p. 8 et p. 10, le mot français ne les reçoit qu'en p. 15
-  et p. 16. Toutes ces pages sont dans l'enregistrement. La dernière phrase donne une raison
-  précise d'ouvrir l'article, du côté du lecteur (« il faudra les lire »), et paie enfin la
-  négation lancée en lead[1] (« dont l'objet n'est pas de se plaindre d'un mot mal employé »).
+Ce qui restait énonçable a été cherché avant le retrait, puis conservé. `reserves[1]` énumère ce
+que l'article exige de la boucle et y range explicitement « que le délai ne la rende pas
+inutilisable » ; `reserves[0]` atteste par ailleurs que le délai de traitement est un des thèmes
+exposés aux p. 6-13. Une seule phrase a donc été adossée à la fin de S2.P2 :
 
-Cette section ne résume rien de ce qui précède : elle remonte au motif de l'article, qui n'avait
-été nommé nulle part, et elle apprend un fait que rien avant elle ne donnait.
+> Le délai, lui, n'est pas neutre : la boucle exige aussi que le temps de traitement ne rende pas
+> l'information inutilisable.
 
-6. AUTRES CORRECTIONS MINEURES
+Elle n'affirme ni le mécanisme de l'instabilité, ni l'universalité du délai, ni sa prépondérance
+sur le contenu. Elle ne redit pas S2.P2 : ce paragraphe établit que l'immédiateté n'est pas
+requise, la phrase ajoutée pose la borne symétrique, à savoir que le différé n'est pas sans
+limite. C'est exactement l'une des trois issues que l'audit de septembre autorisait pour ce
+passage (« Le délai est soit supprimé, soit réduit à une phrase adossée à ce que le dossier porte
+réellement »), et la progression de la section, jugée saine, est préservée : le critère change de
+porte (l'action), le parachute le rend irréfutable, ce que cela élimine, puis la nuance du
+différé et sa borne. La section passe de trois à deux paragraphes, comme les quatre autres.
 
-- lead[1] : « un joueur de quilles » retiré de l'énumération. L'exemple n'est connu que comme
-  mention, aucun développement n'était licite, et l'annoncer sans jamais y revenir était une
-  promesse non tenue. Les quatre exemples restants reparaissent tous (thermostat en S3.P3,
-  autocuiseur et réservoir en S3, fièvre en S4).
-- S5.P1 : « et il vaut mieux le savoir avant d'y entrer » retiré. La formule supposait une
-  lecture de l'article que le lecteur n'a pas entreprise.
-- S3.P3 : les trois moments, jusque-là livrés en fin d'énumération, servent maintenant à
-  trancher les deux objets domestiques, ce qui était la matière sous-exploitée signalée par
-  l'audit. Rien n'est ajouté sur la mécanique des objets au-delà de ce que la version précédente
-  décrivait déjà.
+### C041 `TOO_STRONG` — S4.P1, « Une boucle n'est presque jamais seule. »
 
-7. CE QUI A ÉTÉ DÉLIBÉRÉMENT LAISSÉ INTACT
+Geste : `REMOVE`.
+Motif retenu : les appuis établissent une hiérarchisation des boucles décrite par Paquette, pas
+un énoncé de fréquence sur les boucles en général. Le retrait ne laisse aucun trou : le contenu
+réellement soutenu de cette phrase était la redite anticipée de C042, resté intact, qui suit
+immédiatement (« Paquette décrit des boucles hiérarchisées, emboîtées les unes dans les autres,
+dont les valeurs de référence peuvent elles-mêmes être déplacées par un niveau supérieur »).
+Borner l'ouverture aurait donc fabriqué une redondance pédagogique pour satisfaire le gate. Le
+paragraphe commence désormais par C042 ; le titre de section reste juste.
 
-- lead[0], mot pour mot. C'est le meilleur passage du texte, il entre par une situation
-  observable et sans un mot savant.
-- S2.P1 (le parachute) et S2.P2 (ce que le critère écarte, et la nuance « pas nécessairement en
-  temps réel »), mot pour mot. La nuance est placée exactement là où elle empêche le contresens.
-- S3.P1 (autocuiseur contre réservoir), mot pour mot : l'exemple noté 4/4, qui fait comprendre
-  ce qu'aucune définition ne donnerait.
-- S4.P1 (boucles emboîtées, fièvre), mot pour mot.
-- S1.P2, mot pour mot, y compris le verbatim p. 16 sur ce qu'on déduit des mimiques : l'audit le
-  signale à surveiller au mapping parce que, dans la source, il répond à la définition de la
-  rétroinformation. Il n'est pas présenté comme la définition du critère général, et le texte y
-  revient en S5 ; aucune raison de le retirer, mais c'est un point à regarder au fact-check.
-- Les trois paragraphes de `limits` déjà conformes, dont le paragraphe Veraldi et le paragraphe
-  Wiener, inchangés.
-- L'ordre des sections 1 à 5 et leurs titres : la montée est réelle, chaque palier est préparé,
-  et rien n'appelait une refonte.
+### C044 `TOO_STRONG` — S4.P1, « et il la défend avec la même obstination »
 
-8. RELECTURE PARAGRAPHE PAR PARAGRAPHE, DELTA FORMULÉ
+Geste : `NARROW` (troncature de la comparaison d'intensité).
+Avant : « Le corps ne manque pas sa température habituelle, il en vise une autre, et il la défend
+avec la même obstination. »
+Après : « Le corps ne manque pas sa température habituelle, il en vise une autre. »
+Motif retenu : « il en vise une autre » suit de la fièvre relue comme modification de la valeur de
+référence (`definition_de_lauteur`) ; la comparaison d'intensité de la régulation n'est portée par
+aucun appui. Elle est le seul excédent, et la phrase sans elle dit encore ce qu'elle avait à dire.
 
-- lead[0] : deux choses que l'usage nomme pareil se distinguent par un trait observable.
-- lead[1] : qui écrit, quand, et que l'article est un test à deux questions, mené sur des objets
-  et sur le vivant avant la communication.
-- S1.P1 : ce qui revient doit être de l'information sur l'effet, et le retour n'est pas la
-  réaction de celui qui reçoit mais la connaissance qu'en a la source.
-- S1.P2 : deux conséquences opérantes, deux orateurs n'ont pas le même retour, un sondage ne
-  fait boucle que par ce qu'une source en tire.
-- S2.P1 : la seconde condition porte sur l'action, non sur le signal, et une action non
-  reprenable ne boucle sur rien.
-- S2.P2 : ce que ce critère élimine, et la distinction entre action encore ouverte et réponse
-  immédiate.
-- S3.P1 : autorégulation et boucle ne sont pas la même chose ; compenser n'est pas constater et
-  intervenir.
-- S3.P2 : ces deux gestes sont les deux conditions formelles de l'auteur, et non une exigence
-  supplémentaire ; d'où la raison pour laquelle c'est de l'information qui doit revenir.
-- S3.P3 : réguler suppose une valeur visée, externe dans la machine, implicite possible dans le
-  vivant, et le processus se décompose en trois moments qui tranchent les deux objets.
-- S4.P1 : changement d'échelle, les valeurs de référence sont elles-mêmes déplaçables, et la
-  fièvre se relit comme une consigne modifiée.
-- S4.P2 : le jugement « ça dysfonctionne » dépend de l'étage d'observation ; corriger une action
-  n'est pas changer ce qu'on cherche.
-- S5.P1 : le mot rétroaction a dans l'article un sens local et étroit, opposé à
-  rétroinformation, et les définitions retenues arrivent plus loin.
-- S5.P2 : la condition qui fait passer de la rétroinformation à la rétroaction, et le rangement
-  de ce qui vient avant l'action.
-- S5.P3 : les quatre termes n'ont pas le même statut, et deux d'entre eux sont donnés comme
-  hypothèses de travail.
-- S6.P1 : le motif d'où part l'article, et ce que le test défend.
-- S6.P2 : le critère s'énonce d'abord du feedback et ne reçoit le mot français que plus loin,
-  ce qui donne une raison précise d'ouvrir les pages.
+### C057 `TOO_STRONG` — S5.P3, « Ces quatre termes, il ne les invente pas, ils circulaient déjà »
 
-Aucun paragraphe sans delta. Aucune séquence de trois paragraphes à delta substantiellement
-identique. Aucune section dont le rôle principal soit de répéter une section antérieure : le
-doublon de l'ancien S5.P2 a disparu par déplacement.
+Geste : `NARROW` (réduction du périmètre de quatre termes à deux, plus restitution du statut des
+deux autres).
+Avant : « Ces quatre termes, il ne les invente pas, ils circulaient déjà ; ce qu'il leur donne, ce
+sont des définitions séparées, et il les propose aux sciences de la communication et à elles
+seules. »
+Après : « Rétroaction et rétroinformation, il ne les invente pas : ces mots circulaient déjà comme
+traductions de feedback, et ce qu'il leur donne, ce sont des définitions séparées. La
+préinformation et la préaction, elles, il les ajoute. Cette terminologie, il la propose aux
+sciences de la communication et à elles seules. »
 
-9. FRONTIÈRE INTERNE
+Motif retenu : `attribution_note` et `attribution.note` limitent la circulation antérieure à deux
+termes (« Il ne forge ni rétroaction ni rétroinformation, termes déjà en circulation ») et disent
+des deux autres qu'il les ajoute ; `review.notes[4]` cite la liste de la p. 5, où ne figurent ni
+préinformation ni préaction, et situe leur introduction p. 17 « comme des notions ajoutées ». Le
+bornage porte donc jusqu'au point où l'appui porte réellement l'énoncé : la non-invention est
+restreinte aux deux termes que les appuis nomment, et l'ajout des deux autres est dit, ce que les
+mêmes appuis portent mot pour mot.
 
-`limits` reste interne. Aucune de ses formulations n'a été remontée en section, aucun bloc
-« ce que les sources ne permettent pas d'établir » n'apparaît, et aucun titre n'y renvoie. Le
-champ a gagné un paragraphe, qui nomme la source, l'état d'accès et l'affirmation interdite :
-l'intitulé sur le délai de traitement et l'instabilité est disponible, le mécanisme ne l'est pas,
-aucune conséquence n'en est tirée dans le texte lecteur. Les frontières Veraldi
-(seulement tel que Paquette le rapporte) et Wiener (date et titre à aller chercher dans le livre)
-sont inchangées.
+Appuis des mots ajoutés :
+- « ces mots circulaient déjà comme traductions de feedback » : `review.notes[4]`, p. 5,
+  « l'abondance des termes proposés pour sa francisation (rétroaction, rétroin-formation,
+  réinjection, retour, réponse, réaction, boucle informationnelle, etc.) ».
+- « La préinformation et la préaction, elles, il les ajoute » : `attribution_note` et
+  `attribution.note` (« qu'il ajoute »), `review.notes[4]` (« introduites p. 17 comme des notions
+  ajoutées au schéma »). Le mot « schéma » n'est pas repris : le texte lecteur n'a pas présenté ce
+  schéma.
+- Les deux claims soutenus voisins, C058 (« ce qu'il leur donne, ce sont des définitions
+  séparées ») et C059 (« il les propose aux sciences de la communication et à elles seules »),
+  sont conservés dans leur substance ; « il les propose » devient « Cette terminologie, il la
+  propose » pour que le référent reste la proposition terminologique finale et non le seul couple
+  préinformation / préaction.
 
-Le texte lecteur reste en deçà de ces frontières : rien n'y est dit du contenu de l'article de
-Veraldi, aucune date d'entrée du mot feedback n'y figure, et le délai n'y apparaît plus.
+## Contrôles faits
 
-10. CONTRÔLE MÉCANIQUE
+- Aucun appui inventé, aucun `SUP-...` fabriqué, aucun fait tiré de la mémoire, aucune citation
+  nouvelle. Toutes les citations du texte sont inchangées.
+- `corpus/evidence/critere-de-la-retroaction/` n'existe pas ; le dossier documentaire de cette
+  carte est `corpus/evidence/retroaction-denaturee/lecture.json`, déjà résolu dans le pack (72
+  appuis) et lu ici par le pack.
+- Aucun contenu de `limits` n'a été remonté dans le texte lecteur ; `limits` n'a pas été modifié.
+  Les frontières qu'il nomme (Veraldi `metadata-only`, date et titre de Wiener, réception dans les
+  sciences de la communication) restent respectées par les corrections.
+- Aucun tiret cadratin ajouté ; guillemets et apostrophes typographiques conformes ; aucun
+  paragraphe ne contient de balisage.
+- Aucun paragraphe restant ne fait le travail d'un autre : la suppression de S2.P3 et de la
+  première phrase de S4.P1 supprime deux redondances plutôt qu'elle n'en crée.
+- `npm run corpus:deepen -- --check --only=critere-de-la-retroaction` : `1 approfondissement(s)
+  contrôlé(s), 1340 mots. Rien projeté.` (contrôle mécanique passé, rien d'écrit ni de projeté).
 
-    npm run corpus:deepen -- --check --only=critere-de-la-retroaction
-    1 approfondissement(s) contrôlé(s), 1697 mots. Rien projeté.
+## Suite
 
-Passé du premier coup, sans avertissement de citation : les onze passages entre guillemets de
-cinq mots ou plus se retrouvent tous dans l'enregistrement validé, y compris le verbatim ajouté,
-« l'abondance des termes proposés pour sa francisation ».
-
-11. SUITE
-
-Le texte a changé, donc son empreinte a changé : le `factcheck-pack.json` présent dans ce
-répertoire de travail porte sur la version précédente et ne vaut plus. L'orchestrateur doit
-reprendre à PREPARE, puis CLAIM MAP, VERIFY et le gate déterministe.
-
-Cette réécriture n'est pas auto-validée. Elle ne rend ni ACCEPT ni FACTCHECK_PASS. Points que la
-revue indépendante devra regarder en priorité :
-
-- le nouveau S5.P3, qui porte la correction d'attribution, et la manière dont il sépare les deux
-  statuts sans rien affirmer de plus ;
-- la dérivation de S3.P2 (« On voit du même coup pourquoi... »), qui est une conséquence du texte
-  et non une affirmation de l'auteur, et dont le marquage doit être jugé suffisant ;
-- S6.P1, où le grief est rapporté comme reprise de Paquette et où la lecture du test comme
-  réponse est marquée ;
-- le verbatim p. 16 conservé en S1.P2, qui dans la source répond à la définition de la
-  rétroinformation ;
-- le volume de `limits`, 232 mots, au-dessus des 200 indicatifs du protocole, pour un champ qui
-  ne s'affiche pas.
+Toute modification du texte invalide le SHA. La chaîne déterministe doit repartir de `PREPARE`
+sur `10e489ee25ac51fbbcbf087ff62d5972a485ca546a6ba321d1c11f11de0e0a97`. Aucun verdict
+`FACTCHECK_PASS` n'est prononcé ici, et aucun artefact de fact-check n'a été modifié à la main.
