@@ -3,92 +3,108 @@ concept_id: critere-de-la-retroaction
 deepening_sha256: 29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222
 validated_sha256: 2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b
 protocol_version: 3
-audited_at: 2026-09-26T04:54:46Z
+audited_at: 2026-09-27T04:27:22Z
 initial_verdict: REVISE
-result: rewrite_rejected_factcheck
-factcheck_verdict: FACTCHECK_FAIL
-review_verdict: NOT_RUN
+result: rewrite_rejected
+factcheck_verdict: FACTCHECK_PASS
+review_verdict: REJECT
+remappings: 0
 ---
 
 # critere-de-la-retroaction
 
-Le texte affiché au lecteur est **inchangé**. Restauré par son SHA de blob
-`623582dbf638f033caa87a683c490298c470e512`, vérifié au `sha256sum` :
-`29083f8b…`, et `git diff` contre l'état du lever est vide sur ce fichier.
+**Le `FACTCHECK_PASS` de cet en-tête ne porte pas sur le texte en place.** Il porte sur le candidat
+`277c278c…`, que la revue a refusé et qui est conservé sous
+`work/critere-de-la-retroaction/candidate-rejected-review-53-sur-53.json`. Le texte lecteur est de
+nouveau `29083f8b…`, restauré par son SHA de blob `623582dbf638f033caa87a683c490298c470e512` et
+vérifié au `sha256sum` — **et c'est le texte que le gate du 26 septembre mesurait à 52 claims
+soutenus sur 59**.
 
-> **Ce rejet n'est pas le même que celui du 18 septembre, et la différence est tout le contenu de
-> ce rapport.** Le précédent disait : l'instrument n'a pas ouvert le dossier. Celui-ci dit : le
-> dossier est ouvert, le texte a été instruit trois fois avec, il est passé de 7 refus à 6 puis à
-> **1 sur 58**, et le plafond de deux boucles l'arrête là.
+Cette carte est donc dans un état que le dépôt n'avait pas encore rencontré : **la version qui
+passe le gate n'est pas publiée, et la version publiée est celle dont on connaît les sept refus.**
+La conséquence est traitée comme une anomalie de protocole, chantier L de
+[`../RESTE-A-FAIRE.md`](../RESTE-A-FAIRE.md).
 
-## Ce que le dossier enfin chargé a rendu
+## Ce que la reprise a fait, et ce qu'elle a obtenu
 
-Le correctif de `prepare()` — le pack honore le champ `dossier` de l'enregistrement — a été
-écrit et mesuré avant tout jugement sur ce texte. Sur cette carte :
+La reprise prescrite par le rapport du 26 septembre a été exécutée à la lettre, sur le candidat
+conservé à 57 sur 58 et non sur le texte publié. Trois gestes, trois lignes de diff :
 
-| | 19 septembre | 26 septembre |
-|---|---:|---:|
-| fichiers de preuve ramassés | 0 | 1 |
-| appuis du pack | 45, tous `validated` | **72, dont 27 du dossier** |
-| `access_corroboration` de l'article de Paquette | `dossier-absent` | **`corrobore`** |
-| `UNSUPPORTED` au gate | **23** | 2, puis 1, puis 0 |
+1. `C038` borné à ce que les appuis portent — « une hiérarchisation des boucles, et un déplacement
+   des finalités » au lieu de boucles « emboîtées les unes dans les autres » dont les valeurs de
+   référence seraient « déplacées par un niveau supérieur » ;
+2. le titre de la même section, qui portait seul le mot « emboîtées » ;
+3. le thermostat et le joueur de quilles restitués dans `lead[1]`, au verbe exact de
+   `$.reserves[0]` : l'auteur « raisonne sur » ces objets.
 
-**Le rejet de septembre était donc faux sur les claims, et c'est établi et non plausible** : 15
-des 34 appuis cités au premier mapping de cette nuit viennent du fichier que le gate de septembre
-n'avait jamais ouvert, dont `definition_de_lauteur`, qui porte l'essentiel de la matière paginée.
+Le gate a rendu **`FACTCHECK_PASS`, 53 claims sur 53**, sans un refus sémantique ni une erreur de
+structure. Les quatre tours, du texte publié à celui-ci :
 
-## Les trois tours, et ce qu'ils disent du dispositif
-
-| tour | SHA | claims | soutenus | refusés | mots |
+| tour | SHA | claims | soutenus | refusés | mots lecteurs |
 |---|---|---:|---:|---:|---:|
 | 0, texte publié | `29083f8b` | 59 | 52 | **7** | 1 198 |
-| 1, après correction | `10e489ee` | 56 | 50 | **6** | 1 158 |
-| 2, après correction | `51377815` | 58 | 57 | **1** | 1 081 |
+| 1 | `10e489ee` | 56 | 50 | **6** | 1 158 |
+| 2 | `51377815` | 58 | 57 | **1** | 1 081 |
+| 3, la reprise | `277c278c` | 53 | **53** | **0** | 1 073 |
 
-**Aucun refus corrigé n'est revenu.** Les six du tour 1 et le seul du tour 2 sont des claims
-différents des précédents : un mapping frais découpe autrement et découvre ce que le précédent
-n'avait pas porté. **Un `FACTCHECK_FAIL` ne majore donc pas le nombre de défauts d'un texte, il
-le minore** — c'est la leçon de mesure de ce cycle.
+**Et le nouveau mapping a cité l'appui que le précédent avait omis.** Le claim sur la liste
+d'objets de `lead[1]` porte `$.reserves[0]`, seul appui du pack qui contienne cette énumération :
+c'est exactement l'omission qui, au tour 1, avait fabriqué un `UNSUPPORTED` et fait couper deux
+exemples vrais. La consigne portée au prompt du mapper et le signal joint au bundle visaient ce
+cas ; ils l'ont tenu.
 
-Les corrections n'ont utilisé que `REMOVE` et `NARROW`, jamais `REATTRIBUTE` ni
-`MARK_AS_INTERPRETATION`, et **le texte a perdu 117 mots sans en gagner un seul** qui ne soit
-adossé à un appui du pack. La faute que l'audit du 18 septembre avait nommée — une non-invention
-établie pour deux termes étendue à deux autres — a été corrigée au tour 1 et n'a pas reparu.
+## Pourquoi la revue a refusé, et le motif est juste
 
-Le seul refus survivant est `C038` : les appuis attestent que Paquette décrit « la
-hiérarchisation des boucles et le déplacement des finalités », ils ne portent ni l'emboîtement des
-boucles les unes dans les autres, ni un niveau supérieur comme agent du déplacement.
+Le refus est pédagogique et n'annule aucun verdict du gate. Il tient en une phrase : **la reprise a
+amélioré la fidélité documentaire et dégradé la profondeur et la progression.**
 
-## Le défaut d'instrument trouvé cette nuit, et la perte qu'il a causée
+- Fidélité documentaire : 2/4 → **4/4**. Deux des cinq défauts majeurs de l'audit sont supprimés,
+  dont celui qui interdisait `PASS` — une non-invention établie pour deux termes et étendue à quatre.
+- Profondeur : 3/4 → **2/4**. La section 4 tombe de 164 à 91 mots et perd le changement d'échelle
+  que l'audit classait deuxième delta du texte. 125 mots retirés au total, tous explicatifs, aucun
+  remplacé. Le texte lecteur tombe à 1 073 mots, sous le plancher de 1 100 que `PROTOCOLE.md` fixe
+  en prose — le contrôle mécanique, qui borne à 1 000 et compte les titres, ne le voit pas.
+- Progression : 3/4 → **2/4**, et le saut est créé par ce cycle, pas hérité. Le bornage de `C038` a
+  retiré l'antécédent « emboîtées les unes dans les autres » sur lequel S4.P2 s'appuyait pour dire
+  « elles ne se logent pas au même étage ». Le paragraphe parle désormais d'étages qu'aucune phrase
+  ne construit. **`rewrite.md` avait signalé ce risque en réserve** ; il s'est réalisé.
 
-`C008` du tour 1 a été refusé `UNSUPPORTED` au motif que « ni un thermostat ni un joueur de
-quilles n'apparaissent dans aucun appui résolu ». **Le pack contient `SUP-421445a4beb428f3`,
-`$.reserves[0]` de la lecture primaire, qui porte mot pour mot « l'auteur raisonne sur un
-thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une
-fièvre ».** Aucun claim du mapping ne le cite.
+Les deux points que la revue avait mandat de vérifier sont tranchés, et sans complaisance :
 
-Le verdict est juste au vu des deux appuis rattachés, et faux au vu du dépôt. La correction du
-tour 2 a donc retiré du texte deux exemples que l'auteur emploie réellement. **C'est une perte
-documentée, pas une correction**, et elle est à réparer quand la carte sera reprise. Chantier K de
-[`../RESTE-A-FAIRE.md`](../RESTE-A-FAIRE.md), second cas.
+1. **la restitution est strictement bornée** à `$.reserves[0]` : verbe de l'appui, liste nue, aucun
+   fonctionnement attribué, ni le thermocouple ni le professeur ajoutés, le curseur du thermostat
+   non rétabli. Aucun dépassement. Effet collatéral relevé : comme la correction du tour 2 avait
+   supprimé le seul endroit où le thermostat *travaillait*, la restitution aggrave la promesse non
+   tenue du lead plutôt qu'elle ne la répare — cinq objets annoncés, trois qui servent ;
+2. **le bornage est juste sur la portée et il a vidé le passage.** Les appuis ne portent que deux
+   substantifs, la reprise n'a gardé que ces deux substantifs. Mais « déplacement des finalités »
+   est instancié par la fièvre, et « hiérarchisation des boucles » ne l'est par rien : le lecteur ne
+   sait plus qu'il y a plus d'une boucle.
+
+Trois des cinq défauts majeurs de l'audit sont intacts au caractère près, et aucune des deux sorties
+d'ouverture qu'il avait nommées n'a été employée.
 
 ## Reprise
 
-Le candidat refusé est conservé sous
-`work/critere-de-la-retroaction/candidate-rejected-57-sur-58.json`, SHA `51377815…`. Il est à
-un claim du `FACTCHECK_PASS` et il porte les onze corrections des deux tours.
+Le mandat est écrit, et il est étroit : **rendre au lecteur ce que le bornage a retiré, à partir de
+la matière que l'audit a inventoriée**, sans revenir sur la portée des claims. Dans l'ordre :
 
-Une reprise ne doit **pas** rejouer l'audit ni les deux corrections. Elle doit, dans cet ordre :
+1. repartir du candidat `277c278c…`, qui porte le `FACTCHECK_PASS` et les deux corrections de ce
+   cycle, et **non** du texte publié ;
+2. réinstancier la hiérarchisation des boucles par un cas que les appuis portent, faute de quoi le
+   passage borné reste incompréhensible ;
+3. reconstruire l'antécédent de S4.P2 ou retirer l'écho « au même étage », qui n'a plus de
+   référent ;
+4. rendre le changement d'échelle de la section 4, que l'audit classait deuxième delta du texte, et
+   remonter au-dessus de 1 100 mots lecteurs **par de la matière du pack**, jamais par du
+   remplissage ;
+5. traiter les trois défauts majeurs restés intacts, S5.P2 et son raccord, la promesse non tenue de
+   S1.P1, et la fin en restriction de périmètre ;
+6. relancer depuis `PREPARE`, le SHA changeant à chaque mot.
 
-1. borner `C038` à ce que `definition_de_lauteur` porte — la hiérarchisation et le déplacement
-   des finalités, sans emboîtement ni agent ;
-2. **restituer le thermostat et le joueur de quilles**, attestés par `$.reserves[0]` ;
-3. relancer depuis `PREPARE` sur le candidat ainsi repris.
+Ce n'est pas une boucle de correction factuelle de plus : le gate ne demande rien. C'est une
+réécriture pédagogique sous contrainte documentaire déjà satisfaite, et c'est la situation la plus
+favorable dans laquelle cette carte se soit trouvée.
 
-Ce n'est pas une troisième boucle de correction sur le même verdict : le point 2 répare un défaut
-d'instrument, et le point 1 est le seul reliquat documentaire.
-
-**Les artefacts de travail de ce répertoire décrivent `51377815…`, qui n'est plus le texte en
-place.** C'est voulu : ils sont la trace du cycle. Le gate les refusera en `FACTCHECK_INVALID`
-s'ils sont rejoués tels quels, ce qui est le comportement correct — une reprise repart de
-`PREPARE`.
+Les artefacts de ce cycle décrivent `277c278c…`. Une reprise repart de `PREPARE` ; rejoués tels
+quels, ils rendraient `FACTCHECK_INVALID`, ce qui est le comportement correct.

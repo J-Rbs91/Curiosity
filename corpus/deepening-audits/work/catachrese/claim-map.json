@@ -1,0 +1,885 @@
+{
+  "concept_id": "catachrese",
+  "candidate_sha256": "70f7395b9ba51c9c1e7e2ba4adc32219547086a4ce62b6a99ce536e27d2365c0",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 0,
+      "end": 76,
+      "claim_text": "Une pièce de monnaie qui sert de tournevis, une chaussure qui plante un clou",
+      "support_ids": [],
+      "normalized_claim": "Des usages détournés existent : monnaie-tournevis, chaussure-marteau."
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 78,
+      "end": 153,
+      "claim_text": "une clef plate qu’on empoigne pour taper au lieu du marteau resté au garage",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-469a972633ca963d"
+      ],
+      "normalized_claim": "L'exemple de la clef employée à frapper à la place d'un marteau est un usage attesté."
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 156,
+      "end": 220,
+      "claim_text": "ces gestes sont si ordinaires qu’on ne les remarque presque plus",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-0ce1aa4ee67bf9a6"
+      ],
+      "normalized_claim": "Ces usages sont fréquents/généraux et passent inaperçus."
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[0]",
+      "start": 222,
+      "end": 310,
+      "claim_text": "L’outil fait un travail pour lequel il n’a pas été prévu, et il le fait à peu près bien.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "L'outil est employé à un usage pour lequel il n'est pas conçu, et il y réussit approximativement."
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "Les ergonomes ont un mot pour ce genre d’usage : la catachrèse.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-0ce1aa4ee67bf9a6"
+      ],
+      "normalized_claim": "La catachrèse est un terme employé en ergonomie pour ce type d’usage."
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 64,
+      "end": 129,
+      "claim_text": "Pierre Rabardel, dont un ouvrage de 1995 lui consacre une section",
+      "support_ids": [
+        "SUP-570b457bf37148ad",
+        "SUP-5992e16523db29d0",
+        "SUP-92d692694b4b01ed",
+        "SUP-edadb1c01d062978",
+        "SUP-d72155d61f169c2d"
+      ],
+      "normalized_claim": "Rabardel consacre à la catachrèse une section d'un ouvrage de 1995."
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 131,
+      "end": 177,
+      "claim_text": "commence par rappeler qu’il ne l’a pas inventé",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-2ad613ff7ba76d49",
+        "SUP-469a972633ca963d"
+      ],
+      "normalized_claim": "Rabardel écrit lui-même qu'il n'a pas inventé le terme."
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 180,
+      "end": 346,
+      "claim_text": "« Le terme de catachrèse est emprunté à la linguistique et à la rhétorique où il désigne l’usage d’un mot au-delà de son acception propre, ou à la place d’un autre. »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-469a972633ca963d"
+      ],
+      "normalized_claim": "Citation verbatim de Rabardel sur l’origine rhétorique du terme."
+    },
+    {
+      "claim_id": "C009",
+      "locator": "lead[1]",
+      "start": 347,
+      "end": 389,
+      "claim_text": "Un mot mis là où aucun mot propre n’existe",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-0ce1aa4ee67bf9a6"
+      ],
+      "normalized_claim": "Glose : la catachrèse rhétorique comble une absence de mot propre."
+    },
+    {
+      "claim_id": "C010",
+      "locator": "lead[1]",
+      "start": 392,
+      "end": 508,
+      "claim_text": "et par extension, écrit-il, un outil mis à la place d’un autre, ou employé à un usage pour lequel il n’est pas conçu",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Rabardel écrit que l'idée a été transposée à l'outillage : outil mis à la place d'un autre ou employé hors de sa conception."
+    },
+    {
+      "claim_id": "C011",
+      "locator": "lead[1]",
+      "start": 510,
+      "end": 585,
+      "claim_text": "Le phénomène non plus n’est pas de lui ; son apport est une interprétation.",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Ni le mot ni le phénomène ne sont de Rabardel ; son apport propre est un retournement d'interprétation."
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 103,
+      "claim_text": "Tout outil est conçu avec une idée de ce à quoi il doit servir et de la façon dont on doit s’en servir.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Tout artefact porte des fonctions et un mode d'emploi prévus par son concepteur."
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 104,
+      "end": 248,
+      "claim_text": "Un tournevis a une forme pensée pour visser, pas pour faire levier ; un marteau a un manche et une masse pensés pour frapper, pas pour dévisser.",
+      "support_ids": [],
+      "normalized_claim": "Exemples de finalités de conception du tournevis et du marteau."
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 249,
+      "end": 334,
+      "claim_text": "Cette idée est inscrite dans l’objet lui-même, et c’est à elle que l’écart se mesure.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "La rationalité prévue est inscrite dans l'artefact et sert d'étalon de l'écart."
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 335,
+      "end": 415,
+      "claim_text": "L’auteur nomme précisément l’étalon dont se sert la lecture qu’il trouve établie",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "Rabardel expose la lecture classique et nomme son étalon."
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 418,
+      "end": 573,
+      "claim_text": "« Il y a détournement au regard d’une rationalité instrumentale théorique, instituée, telle qu’elle est inscrite dans l’artefact, la machine, le système. »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "Citation verbatim."
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 574,
+      "end": 677,
+      "claim_text": "Théorique et instituée, parce qu’elle a été décidée ailleurs, avant l’usage, par qui a dessiné l’objet.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Glose : cette rationalité est celle décidée par les concepteurs avant l’usage."
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 31,
+      "claim_text": "Cette lecture n’est pas neutre.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "La lecture classique porte une charge évaluative."
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 32,
+      "end": 111,
+      "claim_text": "L’écart y prend, dans le domaine technique, « une connotation plutôt négative »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "Rabardel écrit que la notion a, dans le domaine technique, une connotation plutôt négative."
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 114,
+      "end": 245,
+      "claim_text": "ces usages comptent parmi les détournements qui peuvent poser problème, et on les place à l’origine d’un certain nombre d’accidents",
+      "support_ids": [
+        "SUP-f9e9aa3648d2ef04",
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "La source parle de détournements pouvant poser problème et d'usages à l'origine d'un certain nombre d'accidents."
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 247,
+      "end": 302,
+      "claim_text": "Faverge, à qui l’on doit l’exemple canonique de la clef",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-469a972633ca963d"
+      ],
+      "normalized_claim": "L'exemple de la clef employée comme marteau est dû à Faverge."
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 304,
+      "end": 392,
+      "claim_text": "range les catachrèses parmi les sources d’infiabilité momentanée en situation de travail",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-469a972633ca963d",
+        "SUP-6ec231f4a5ab4194"
+      ],
+      "normalized_claim": "Faverge range les catachrèses parmi les sources d'infiabilité momentanée en situation de travail."
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 394,
+      "end": 531,
+      "claim_text": "De là suivent les réponses habituelles : corriger l’usage, l’interdire, ou concevoir des objets qui le rendent matériellement impossible.",
+      "support_ids": [
+        "SUP-862d69e7512c8e95",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "Les réponses ordinaires à ces usages sont la correction, l’interdiction, l’impossibilité matérielle."
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 63,
+      "end": 139,
+      "claim_text": "L’auteur ne l’accorde pas, et il ouvre la question plutôt que de la refermer",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Rabardel conteste que la norme dont on s’écarte aille de soi et pose la question."
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 142,
+      "end": 356,
+      "claim_text": "« sur quelle norme s’appuyer ? Quelle est son origine et sa nature ? D’où tient-elle sa légitimité ? Suffit-il qu’un usage n’ait pas été anticipé, prévu, imaginé ou prescrit pour qu’il constitue un détournement ? »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Citation verbatim des questions de Rabardel sur la norme."
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 357,
+      "end": 504,
+      "claim_text": "Tant que ces questions restent ouvertes, parler de détournement impute une faute à qui n’a peut-être fait que rencontrer un trou dans la prévision.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Conséquence tirée : qualifier de détournement impute une faute tant que la norme n’est pas justifiée."
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 71,
+      "claim_text": "La définition que l’auteur retient ne parle ni de faute ni de bricolage",
+      "support_ids": [
+        "SUP-377db976aabb853b",
+        "SUP-7738e6e44dd87bbf",
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "La définition retenue par Rabardel ne comporte aucun terme de jugement."
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 74,
+      "end": 196,
+      "claim_text": "« La notion de catachrèse est un concept qui désigne l’écart entre le prévu et le réel dans l’utilisation des artefacts. »",
+      "support_ids": [
+        "SUP-377db976aabb853b",
+        "SUP-7738e6e44dd87bbf",
+        "SUP-2ad613ff7ba76d49",
+        "SUP-edadb1c01d062978"
+      ],
+      "normalized_claim": "Citation verbatim de la définition."
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 238,
+      "end": 378,
+      "claim_text": "Le prévu, c’est l’usage que le concepteur a inscrit dans l’objet ; le réel, c’est ce que les gens en font une fois l’objet dans leurs mains.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Glose des deux termes de la définition."
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 379,
+      "end": 466,
+      "claim_text": "La catachrèse n’est pas le mauvais côté de cette différence, elle est cette différence.",
+      "support_ids": [
+        "SUP-377db976aabb853b",
+        "SUP-7738e6e44dd87bbf",
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "La catachrèse désigne l’écart lui-même, non sa version fautive."
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 96,
+      "claim_text": "Or l’ergonomie connaît déjà cet écart sous un autre nom, et c’est là que l’auteur va le chercher",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Rabardel rattache cet écart à une distinction déjà établie en ergonomie."
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 99,
+      "end": 205,
+      "claim_text": "« la différence entre les aspects prescrits du travail et ce qu’il est convenu d’appeler le travail réel »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Citation verbatim."
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 207,
+      "end": 303,
+      "claim_text": "la distance entre ce qu’une consigne demande et ce qu’il faut faire pour que le travail se fasse",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Glose de l’écart prescrit/réel."
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 305,
+      "end": 364,
+      "claim_text": "Il range les catachrèses dans cette même catégorie de faits",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Rabardel écrit que les catachrèses relèvent de cette même catégorie de faits."
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 369,
+      "end": 418,
+      "claim_text": "il en tire une conséquence qui change leur statut",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Rabardel tire de ce rattachement une conséquence sur le statut des catachrèses."
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 421,
+      "end": 535,
+      "claim_text": "« l’existence même d’un terme désignant cet écart met en évidence la généralité, sinon la fréquence du phénomène »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Citation verbatim."
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 537,
+      "end": 611,
+      "claim_text": "Un fait pour lequel une langue a forgé un mot n’est pas un accident isolé.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Glose : l’existence du terme atteste la généralité du phénomène."
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 47,
+      "claim_text": "Reste, écrit l’auteur, à interpréter cet écart.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Rabardel écrit « Reste à en donner une interprétation »."
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 48,
+      "end": 296,
+      "claim_text": "Il refuse de le faire depuis la rationalité inscrite dans l’objet, et propose une lecture « fondée non plus sur la rationalité instrumentale théorique, inscrite originellement dans l’artefact, mais sur la rationalité instrumentale propre du sujet »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-3ac367ed1a69c7ce"
+      ],
+      "normalized_claim": "Rabardel propose une interprétation fondée sur la rationalité propre du sujet, contre celle inscrite dans l’artefact."
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 298,
+      "end": 382,
+      "claim_text": "Le geste n’est pas de rebaptiser l’erreur en trouvaille : c’est de changer d’étalon.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-3ac367ed1a69c7ce"
+      ],
+      "normalized_claim": "Le geste de Rabardel est un changement de référence d’évaluation, non une revalorisation."
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 383,
+      "end": 542,
+      "claim_text": "Rapporté à ce que la machine prévoit, l’usage est un manquement ; rapporté à ce que la personne cherche à obtenir, il est le chemin le plus court vers son but.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Selon l’étalon retenu, le même usage se lit comme manquement ou comme moyen efficace du but du sujet."
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 543,
+      "end": 610,
+      "claim_text": "L’action n’a pas bougé, la référence à laquelle on la juge a bougé.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Ce qui change est l’étalon d’évaluation, non l’action."
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 71,
+      "claim_text": "Ce que l’on aperçoit alors n’est plus une défaillance, c’est un travail",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Dans cette perspective la catachrèse se lit comme une activité du sujet et non comme une défaillance."
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 74,
+      "end": 269,
+      "claim_text": "« La catachrèse peut être, dans cette perspective, considérée comme l’expression d’une activité spécifique du sujet : la production d’instruments et plus généralement des moyens de ses actions. »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Citation verbatim."
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 270,
+      "end": 403,
+      "claim_text": "Se donner les moyens de son action ne s’arrête pas à prendre l’outil qu’on trouve : c’est en obtenir un avec ce qu’on a sous la main.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Glose de « production des moyens de ses actions »."
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 404,
+      "end": 445,
+      "claim_text": "D’où la proposition qui commande la suite",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "Cette proposition commande la section/le chapitre qui suit."
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 448,
+      "end": 579,
+      "claim_text": "« considérer les catachrèses en tant qu’indices du fait que les utilisateurs contribuent à la conception des usages des artefacts »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-f9e9aa3648d2ef04",
+        "SUP-3ac367ed1a69c7ce"
+      ],
+      "normalized_claim": "Citation verbatim de la proposition de Rabardel."
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 60,
+      "claim_text": "C’est cela, et non le mot, qui revient en propre à l’auteur.",
+      "support_ids": [
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Ce qui revient en propre à Rabardel est le retournement d’interprétation, non le terme."
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 61,
+      "end": 231,
+      "claim_text": "L’introduction du terme en ergonomie, il la rapporte à un autre, Winsemius, en 1969, et il la tient lui-même d’un troisième, Faverge, qu’il nomme dans la même parenthèse.",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-469a972633ca963d",
+        "SUP-eb5436fecf43efea",
+        "SUP-ab45b0c48b07d563"
+      ],
+      "normalized_claim": "Rabardel rapporte l’introduction du terme en ergonomie à Winsemius en 1969, « selon Faverge », dans une même parenthèse."
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 232,
+      "end": 307,
+      "claim_text": "L’attribution qu’il transmet est donc de seconde main, et il l’écrit ainsi.",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-6ec231f4a5ab4194",
+        "SUP-4e8dfbc135945089",
+        "SUP-3ac367ed1a69c7ce"
+      ],
+      "normalized_claim": "L’attribution portée par le texte est indirecte/médiate et énoncée comme telle par Rabardel."
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 66,
+      "end": 115,
+      "claim_text": "L’auteur pose en note le critère qui l’en empêche",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Rabardel donne en note un critère d’inclusion restreignant la notion."
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 118,
+      "end": 276,
+      "claim_text": "« Il faut, à notre sens, qu’il y ait attribution de fonctionnalités nouvelles ou différentes pour que l’on puisse caractériser un usage comme catachrétique. »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Citation verbatim du critère."
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 277,
+      "end": 382,
+      "claim_text": "Son contre-exemple est l’automobiliste qui appuie sur la pédale de frein bien au-delà de la force prévue.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Le contre-exemple de Rabardel est l’automobiliste appuyant sur la pédale de frein au-delà de la force prévue."
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 383,
+      "end": 586,
+      "claim_text": "Celui-là sort de ce qui était prévu pour cette pédale, et pourtant il freine, avec l’organe fait pour freiner : aucune fonction nouvelle n’est attribuée à quoi que ce soit, et il n’y a pas de catachrèse.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Cet usage est hors norme sans être catachrétique, faute d’attribution de fonction nouvelle."
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 154,
+      "claim_text": "La clef qui frappe est d’une autre nature : elle n’accentue pas une fonction qu’elle avait déjà, elle en reçoit une qu’elle n’avait pas, celle du marteau.",
+      "support_ids": [
+        "SUP-0ce1aa4ee67bf9a6",
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-469a972633ca963d"
+      ],
+      "normalized_claim": "Dans l’exemple de la clef employée comme marteau, une fonction nouvelle est attribuée à l’objet."
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 155,
+      "end": 254,
+      "claim_text": "C’est cette greffe d’une fonction étrangère que le mot vient nommer, et non l’intensité de l’usage.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Le critère du concept est l’attribution d’une fonction nouvelle, non le degré d’usage."
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 255,
+      "end": 333,
+      "claim_text": "D’où une frontière tracée à l’intérieur même des usages que rien n’a prescrits",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "La distinction opère à l’intérieur des usages informels."
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 336,
+      "end": 462,
+      "claim_text": "« Il faut donc distinguer, au sein des usages informels ceux qui sont catachrétiques de ceux qui sont simplement hors norme. »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49"
+      ],
+      "normalized_claim": "Citation verbatim."
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 463,
+      "end": 531,
+      "claim_text": "Forcer une norme et en inventer une autre ne sont pas le même geste.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Usage hors norme et usage catachrétique sont deux gestes distincts."
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 157,
+      "claim_text": "La catachrèse n’est pas, dans ce livre, le concept principal : elle est le cas le plus repérable d’un mouvement plus large, et l’auteur le nomme sans détour.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Dans l’ouvrage, la catachrèse est subordonnée à un concept plus large que l’auteur nomme."
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 174,
+      "end": 396,
+      "claim_text": "« n’apparaissent, à la lumière de ces faits, que comme un cas particulier d’un phénomène de caractère beaucoup plus général : la production, l’élaboration, l’institution, la transformation de ses instruments par le sujet »",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-51257e0a5dcee3eb"
+      ],
+      "normalized_claim": "Citation verbatim."
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 398,
+      "end": 584,
+      "claim_text": "Ce que l’utilisateur transforme n’est d’ailleurs pas seulement l’objet : c’est aussi sa manière de s’en servir, cette part de l’instrument que l’auteur appelle les schèmes d’utilisation.",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-92d692694b4b01ed"
+      ],
+      "normalized_claim": "Rabardel nomme « schèmes d’utilisation » la partie de l’instrument que l’utilisateur contribue aussi à concevoir."
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 66,
+      "end": 170,
+      "claim_text": "Les trois réponses par lesquelles on traite d’ordinaire ces usages visent toutes à les faire disparaître",
+      "support_ids": [
+        "SUP-862d69e7512c8e95",
+        "SUP-f9e9aa3648d2ef04"
+      ],
+      "normalized_claim": "Les réponses ordinaires à ces usages tendent à les supprimer."
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 173,
+      "end": 353,
+      "claim_text": "les tenir pour des indices oblige d’abord à aller voir ce qu’ils désignent, c’est-à-dire une fonction que l’objet n’offre pas et que quelqu’un a trouvé le moyen d’obtenir sans elle",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-3ac367ed1a69c7ce"
+      ],
+      "normalized_claim": "Traiter les catachrèses comme indices conduit à chercher la fonction manquante qu’elles révèlent."
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 355,
+      "end": 499,
+      "claim_text": "La question posée devant un usage inattendu cesse alors d’être seulement « comment l’empêcher » : elle devient aussi « qu’est-ce qu’il montre ».",
+      "support_ids": [
+        "SUP-2ad613ff7ba76d49",
+        "SUP-3ac367ed1a69c7ce",
+        "SUP-38ce01f54e787c5a"
+      ],
+      "normalized_claim": "Le retournement déplace la question de l’empêchement vers l’interprétation."
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 65,
+      "end": 205,
+      "claim_text": "la section sur la catachrèse ouvre un chapitre qu’il intitule « Quand les sujets développent leurs instruments, les genèses instrumentales »",
+      "support_ids": [
+        "SUP-92d692694b4b01ed",
+        "SUP-edadb1c01d062978",
+        "SUP-4edc1fe887b44daf"
+      ],
+      "normalized_claim": "La section « La notion de catachrèse » se trouve à l’ouverture du chapitre 7 ainsi intitulé."
+    },
+    {
+      "claim_id": "C067",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 243,
+      "end": 292,
+      "claim_text": "Son ouvrage de 1995 est en ligne, déposé par lui.",
+      "support_ids": [
+        "SUP-5992e16523db29d0",
+        "SUP-bccdcf4a24c68359",
+        "SUP-570b457bf37148ad",
+        "SUP-250387271af81596",
+        "SUP-44d5b8bd359e8700"
+      ],
+      "normalized_claim": "L’ouvrage de 1995 est accessible en ligne via un dépôt de l’auteur sur HAL."
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 293,
+      "end": 421,
+      "claim_text": "Ce que le mot est devenu ensuite, qui l’a repris, discuté ou déplacé, se lira dans d’autres textes, et ceux-là restent à ouvrir.",
+      "support_ids": [
+        "SUP-98af92053bf7acc5",
+        "SUP-5c6be469d845bbfb",
+        "SUP-6310bf347265c820",
+        "SUP-6ec231f4a5ab4194"
+      ],
+      "normalized_claim": "La réception du concept après 1995 n’est pas établie par le dossier ; des textes restent non ouverts."
+    }
+  ]
+}

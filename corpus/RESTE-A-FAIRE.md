@@ -2060,6 +2060,72 @@ et « autocuiseur » sont dans un seul. La coupure à un dixième du corpus sép
 
 ---
 
+# L. Un `REJECT` pédagogique republie un texte dont on connaît les refus — ouvert le 27 septembre 2026
+
+**Le dispositif sait maintenant restaurer une carte par son SHA de blob, et c'est ce geste qui pose
+le problème : il restaure un texte que le gate a mesuré, et dont il a compté les claims non
+soutenus.**
+
+Le cas est celui de `critere-de-la-retroaction`, le 27 septembre. La reprise prescrite par le
+rapport de la veille a obtenu **`FACTCHECK_PASS`, 53 claims sur 53**. La revue indépendante a rendu
+**`REJECT`**, pour un motif juste et vérifié sur pièce : le bornage d'un claim avait retiré
+l'antécédent d'un écho resté dans le texte, la section qui portait le deuxième delta du texte
+perdait 73 mots, et le texte lecteur tombait à 1 073 mots, sous le plancher de 1 100 que
+`PROTOCOLE.md` fixe en prose.
+
+Le protocole dit alors de restaurer la version antérieure, et elle a été restaurée. **Or cette
+version antérieure est celle que le gate du 26 septembre mesurait à 52 claims soutenus sur 59.** Le
+dépôt a donc, sciemment, remis en place un texte portant sept refus documentaires pour éviter une
+régression pédagogique de deux points sur deux axes.
+
+## Pourquoi ce n'est pas un défaut de la revue
+
+La revue a bien travaillé, et il faut le dire avant tout le reste : elle a vérifié le SHA du gate,
+récupéré le blob antérieur, compté les mots, retrouvé dans `rewrite.md` la réserve que le
+réécrivain avait lui-même écrite sur l'écho « au même étage », et refusé sans toucher à un fichier.
+Son verdict est le bon **à la question qu'on lui pose**.
+
+Le défaut est dans la question. La revue compare une réécriture à la version antérieure sur la
+progression pédagogique ; **rien dans la chaîne ne compare leurs états documentaires**, et rien ne
+dit ce qu'il faut faire quand les deux comparaisons ne concluent pas dans le même sens.
+
+## Ce que la priorité déclarée du dépôt implique, et que le protocole ne dit pas
+
+L'ordre est écrit et il n'est pas ambigu : **vérité documentaire > densité pédagogique > style >
+quantité de contenu.** Un `REJECT` qui republie sept refus pour récupérer deux points de
+progressivité inverse cet ordre. Ce n'est pas ce que le protocole voulait dire ; c'est ce qu'il dit,
+parce qu'il n'a jamais rencontré le cas.
+
+Et le cas n'est pas rare : il se produira chaque fois qu'une correction documentaire coûte de la
+matière explicative, ce qui est **le cas général** — `REMOVE` et `NARROW` sont les deux corrections
+les plus employées du dépôt, et elles retirent du texte par construction.
+
+## Par quel bout prendre ce chantier
+
+1. **Dire ce qui l'emporte, dans `AUDIT_PROTOCOL.md` §7.** Trois réponses sont défendables et il
+   faut en choisir une : le `REJECT` restaure quand même ; le `REJECT` ne restaure pas un texte dont
+   le gate a compté des refus et laisse la réécriture en place avec son rapport ; ou le `REJECT`
+   devient conditionnel, et un candidat qui améliore la fidélité documentaire sans la dégrader
+   nulle part ne peut être refusé que sur une régression pédagogique **majeure**, définie.
+2. **Donner à la revue l'état documentaire des deux versions.** Elle reçoit le gate de la
+   réécriture ; elle ne reçoit pas celui de la version antérieure, et ne peut donc pas peser ce que
+   la restauration remet en place. Le dépôt a ce chiffre pour toute carte déjà auditée : il est dans
+   son rapport.
+3. **Ne pas régler cela par un troisième cycle.** La tentation est de relancer une réécriture
+   jusqu'à ce que les deux verdicts concordent. C'est le magasinage de verdict du chantier K, déplacé
+   d'un cran : un texte finit toujours par passer si on le refait assez souvent, et ce qui décide
+   alors n'est plus la preuve mais la patience.
+4. **Compter les cas avant de trancher.** Celui-ci est le premier. Deux cartes du corpus sont sorties
+   en `rewrite_rejected` sans passer par le gate — `cinq-dimensions-de-l-emploi` et
+   `trois-sigmas-arbitrage-de-cout` — et leurs rapports diraient si elles ont payé le même prix.
+
+En attendant la décision, le geste est celui du protocole : **restaurer, tracer, et dire dans le
+rapport que le `FACTCHECK_PASS` de l'en-tête ne porte pas sur le texte en place.** C'est ce qu'a
+fait le rapport du 27 septembre, et c'est la raison pour laquelle la première phrase de ce rapport
+est un avertissement.
+
+---
+
 # Ce qui n'est pas un chantier
 
 **Les 31 sujets d'échafaudage jamais instruits** que `corpus:audit` liste en fin de sortie.
