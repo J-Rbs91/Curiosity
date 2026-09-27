@@ -5,17 +5,18 @@ import path from "node:path";
 
 import { DOSSIER_STATUTS, evidenceOrigin, resolveDossier } from "./lib/factcheck-evidence.mjs";
 import { reconcilierAcces, statutPourChemin, STATUTS } from "./lib/factcheck-access.mjs";
+import {
+  classerVerdict,
+  indexerAppuis,
+  lexiqueGenerique,
+  MAPPING_INCOMPLETE,
+  NOTICE_SIGNAL,
+  signalerAppuisNonCites,
+} from "./lib/factcheck-mapping.mjs";
 
 const ROOT = process.cwd();
 const CONTEXT_BUDGET_TOKENS = 300_000;
 const ESTIMATED_CHARS_PER_TOKEN = 3;
-const ALLOWED_VERDICTS = new Set([
-  "SUPPORTED",
-  "TOO_STRONG",
-  "UNSUPPORTED",
-  "CONFLICT",
-  "SOURCE_NOT_CONSULTED",
-]);
 const ALLOWED_MAPPING_STATUS = new Set(["CLAIMS_MAPPED", "NO_VERIFIABLE_CLAIM"]);
 
 function flag(name) {
@@ -170,7 +171,7 @@ async function prepare(conceptId) {
 
   const uniqueSupports = [...new Map(supports.map((support) => [support.id, support])).values()];
   const base = {
-    protocol_version: 1,
+    protocol_version: 2,
     concept_id: conceptId,
     context_budget_tokens: CONTEXT_BUDGET_TOKENS,
     token_estimate_method: `JSON characters / ${ESTIMATED_CHARS_PER_TOKEN} (conservative heuristic, not provider tokenization)`,
@@ -290,6 +291,26 @@ function validateClaimMap(pack, map) {
   return { errors, paragraphByLocator, supportById };
 }
 
+/**
+ * Le texte lecteur de chaque approfondissement publié, un élément par carte. Il sert uniquement à
+ * mesurer quels termes sont généraux dans ce corpus, et jamais comme preuve : aucun texte
+ * d'approfondissement n'est une source, et celui-ci n'entre ni dans le pack ni dans un appui.
+ */
+async function textesLecteurDuCorpus() {
+  const dir = path.join(ROOT, "corpus", "deepenings");
+  const fichiers = (await readdir(dir)).filter((name) => name.endsWith(".json"));
+  const textes = [];
+  for (const name of fichiers) {
+    const document = JSON.parse(await readFile(path.join(dir, name), "utf8"));
+    const paragraphes = [
+      ...(document.lead || []),
+      ...(document.sections || []).flatMap((section) => section.paragraphs || []),
+    ];
+    textes.push(paragraphes.join(" "));
+  }
+  return textes;
+}
+
 async function bundle(conceptId) {
   const dir = workDir(conceptId);
   const packFile = option("pack") || path.join(dir, "factcheck-pack.json");
@@ -304,16 +325,30 @@ async function bundle(conceptId) {
   const { errors, supportById } = validateClaimMap(pack, map);
   if (errors.length) return fail(`claim map invalide:\n- ${errors.join("\n- ")}`);
 
+  /*
+   * Le signal du chantier K. Il est calculé ici et nulle part ailleurs : le pack du mapper ne le
+   * porte pas, sous peine de le faire rattacher par ressemblance lexicale, et le gate ne le compte
+   * pas, sous peine d'en faire un verdict. Voir `lib/factcheck-mapping.mjs`.
+   */
+  const lexique = lexiqueGenerique(await textesLecteurDuCorpus());
+  const index = indexerAppuis(pack.supports, { termesGeneriques: lexique.generiques });
   const verificationBundle = {
-    protocol_version: 1,
+    protocol_version: 2,
     concept_id: conceptId,
     candidate_sha256: pack.candidate_sha256,
     map_sha256: sha256(await readFile(mapFile, "utf8")),
+    signal_notice: NOTICE_SIGNAL,
+    signal_lexique: {
+      cartes_mesurees: lexique.cartes,
+      plafond_cartes_par_terme: lexique.plafond,
+      termes_generiques: lexique.generiques.size,
+    },
     claims: map.claims.map((claim) => ({
       claim_id: claim.claim_id,
       locator: claim.locator,
       claim_text: claim.claim_text,
       supports: claim.support_ids.map((id) => supportById.get(id)),
+      uncited_support_signal: signalerAppuisNonCites(claim, index, supportById),
     })),
   };
 
@@ -321,6 +356,10 @@ async function bundle(conceptId) {
   verificationBundle.estimated_tokens = estimatedTokens;
   verificationBundle.status =
     estimatedTokens <= CONTEXT_BUDGET_TOKENS ? "READY" : "PARTITION_REQUIRED";
+
+  const claimsSansAppui = verificationBundle.claims.filter((claim) => !claim.supports.length).length;
+  const claimsAvecSignal = verificationBundle.claims
+    .filter((claim) => claim.uncited_support_signal.length).length;
 
   const output = option("out") || path.join(dir, "verification-bundle.json");
   await writeJson(output, verificationBundle);
@@ -330,6 +369,8 @@ async function bundle(conceptId) {
       status: verificationBundle.status,
       estimated_tokens: estimatedTokens,
       claims: verificationBundle.claims.length,
+      claims_without_support: claimsSansAppui,
+      claims_with_uncited_support_signal: claimsAvecSignal,
       artifact: path.relative(ROOT, output),
     }),
   );
@@ -369,6 +410,7 @@ async function gate(conceptId) {
   const expectedClaims = new Set((map.claims || []).map((claim) => claim.claim_id));
   const seen = new Set();
   const semanticFailures = [];
+  const mappingIncomplete = [];
 
   for (const result of verification.results || []) {
     if (!expectedClaims.has(result.claim_id)) {
@@ -377,11 +419,19 @@ async function gate(conceptId) {
     }
     if (seen.has(result.claim_id)) structuralErrors.push(`résultat dupliqué: ${result.claim_id}`);
     seen.add(result.claim_id);
-    if (!ALLOWED_VERDICTS.has(result.verdict)) {
+    const classe = classerVerdict(result.verdict);
+    if (classe === "mapping-incomplet") {
+      mappingIncomplete.push(result);
+      structuralErrors.push(
+        `${result.claim_id}: le vérificateur renvoie le claim au mapping (${MAPPING_INCOMPLETE})`,
+      );
+      continue;
+    }
+    if (classe === "inconnu") {
       structuralErrors.push(`verdict invalide pour ${result.claim_id}: ${result.verdict}`);
       continue;
     }
-    if (result.verdict !== "SUPPORTED") semanticFailures.push(result);
+    if (classe === "refus-semantique") semanticFailures.push(result);
   }
 
   for (const claimId of expectedClaims) {
@@ -399,13 +449,14 @@ async function gate(conceptId) {
   }
 
   const report = {
-    protocol_version: 1,
+    protocol_version: 2,
     concept_id: conceptId,
     candidate_sha256: pack.candidate_sha256,
     verdict,
     claims: expectedClaims.size,
-    supported: expectedClaims.size - semanticFailures.length,
+    supported: expectedClaims.size - semanticFailures.length - mappingIncomplete.length,
     failed: semanticFailures.length,
+    mapping_incomplete: mappingIncomplete,
     structural_errors: structuralErrors,
     failures: semanticFailures,
   };

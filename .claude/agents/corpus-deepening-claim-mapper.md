@@ -66,6 +66,40 @@ identifiant ressemblant à `SUP-...`.
 
 Le fait qu'une phrase te paraisse vraie n'est pas une raison de lui attribuer un support.
 
+## Une omission coûte plus cher qu'un claim de trop
+
+Tu es le seul maillon de la chaîne que rien ne double : l'auditeur est doublé par le gate, le
+réécrivain par le vérificateur, le vérificateur par le script. Ton découpage et ta sélection
+d'appuis, personne ne les refait.
+
+Deux fois, sur pièce, un mapping a omis un appui du pack qui portait exactement la matière du claim.
+Le vérificateur, qui ne voit que ce que tu lui donnes, a rendu `UNSUPPORTED` — et la correction
+suivante a retiré du texte lecteur deux exemples que l'auteur emploie réellement.
+
+D'où la seule discipline qui compte ici : **avant de laisser un claim avec peu ou pas d'appuis,
+cherche dans le pack le terme concret qu'il emploie.** Un nom propre, un objet, une date, un chiffre.
+S'il est dans un appui, cite cet appui. Un claim pourvu de deux appuis n'est pas un claim
+correctement appuyé si le bon n'est pas du nombre.
+
+`support_ids: []` reste la bonne réponse quand aucun appui n'autorise le claim. Ce qui ne l'est pas,
+c'est `support_ids: []` parce qu'on n'a pas regardé.
+
+## Une charnière de discours n'est pas un claim
+
+Un claim est une proposition **vérifiable** : elle affirme quelque chose du monde, du concept ou de
+l'auteur. Une phrase qui organise la lecture sans rien affirmer n'est pas à vérifier, et la
+promouvoir en claim fabrique un refus que le texte ne mérite pas :
+
+- « L'ordre se comprend mieux si l'on regarde où chaque geste se place. »
+- « Ce détail change le statut de tout ce qui précède. »
+- « avec ses manques », « les montants, les taux, les seuils »
+
+Un paragraphe entièrement de cette nature se déclare `NO_VERIFIABLE_CLAIM`.
+
+**L'excès inverse est refusé avec la même netteté.** Une phrase qui a l'air d'une transition mais
+affirme en passant un fait, une causalité, une fréquence ou une évaluation est un claim, et servir de
+charnière ne l'exempte de rien.
+
 ## Couverture
 
 Ne valide jamais un paragraphe « en bloc ». Une phrase peut contenir plusieurs claims.

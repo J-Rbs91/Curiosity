@@ -1,6 +1,10 @@
 # Protocole de fact-check des approfondissements
 
-Version : 1
+Version : 2
+
+La version 2 ajoute la parade du chantier K : un signal d'appuis non cités joint au bundle du
+vérificateur, et un verdict `MAPPING_INCOMPLETE` qui renvoie un claim au mapping sans faire couper
+le texte. Les artefacts — pack, bundle, rapport de gate — portent `protocol_version: 2`.
 
 Ce protocole complète `PROTOCOLE.md` et `AUDIT_PROTOCOL.md`.
 
@@ -226,6 +230,23 @@ gate.
 Ainsi, un modèle ne peut pas annoncer qu'il a vérifié une version affaiblie d'une phrase alors
 que le lecteur en verra une autre.
 
+### Une charnière de discours n'est pas un claim, et l'excès inverse est refusé aussi
+
+Un claim est une proposition **vérifiable** : elle affirme quelque chose du monde, du concept ou de
+l'auteur, et une preuve peut l'autoriser ou non. Une phrase qui organise la lecture sans rien
+affirmer — « L'ordre se comprend mieux si l'on regarde où chaque geste se place. », « Ce détail
+change le statut de tout ce qui précède. » — n'est pas à vérifier, et la promouvoir en claim
+fabrique un `UNSUPPORTED` que le texte ne mérite pas. Un paragraphe entièrement de cette nature se
+déclare `NO_VERIFIABLE_CLAIM`.
+
+Le tour 3 de `points-de-levier` a rendu 63 claims dont vingt sans appui, et une bonne part de ces
+vingt étaient de tels fragments, jusqu'à « avec ses manques » et « les montants, les taux, les
+seuils ».
+
+**L'excès inverse est refusé avec la même netteté** : une phrase qui a l'air d'une transition mais
+affirme en passant un fait, une causalité, une fréquence ou une évaluation est un claim, et servir
+de charnière ne l'exempte de rien.
+
 ## 5. Séparation mapping / entailment
 
 Le fact-check est composé de deux rôles indépendants.
@@ -278,6 +299,67 @@ Verdicts sémantiques :
 
 Toute incertitude documentaire se ferme par un verdict autre que `SUPPORTED`.
 
+## 5bis. Le mapper est le seul maillon que rien ne double
+
+L'auditeur est doublé par le gate, le réécrivain par le vérificateur, le vérificateur par le
+script. Le mapper, non : il choisit seul le découpage des claims **et** les appuis rattachés à
+chacun. Le gate est déterministe à mapping donné ; il ne l'est pas à texte donné.
+
+Le coût de cette asymétrie est établi deux fois sur pièce, et il n'est pas théorique.
+
+- `points-de-levier`, tour 3 : vingt claims sur soixante-trois sans aucun `support_id`, dont un que
+  le gate du tour précédent avait lui-même déclaré autorisé par `$.hook`.
+- `critere-de-la-retroaction`, tour 1 : le claim `C008` citait deux appuis réels, et l'appui qui
+  portait la matière — `$.reserves[0]`, « l'auteur raisonne sur un thermostat, un autocuiseur, un
+  réservoir de W.-C., un thermocouple, un joueur de quilles, une fièvre » — n'était pas du nombre.
+  Le vérificateur a rendu `UNSUPPORTED`, **juste au vu des appuis qu'il avait**, et la correction
+  suivante a retiré du texte lecteur deux exemples que l'auteur emploie réellement.
+
+Aucun maillon n'est fautif à son propre niveau. C'est le dispositif entier qui a produit une perte,
+par une omission que rien n'était chargé de voir.
+
+### Le signal `uncited_support_signal`
+
+Le bundle joint désormais à chaque claim la liste des appuis **non cités par le mapping** dont le
+texte porte un terme que le pack ne présente nulle part ailleurs et que le corpus ne tient pas pour
+général. Le calcul est déterministe et documenté dans
+[`../../scripts/corpus/lib/factcheck-mapping.mjs`](../../scripts/corpus/lib/factcheck-mapping.mjs),
+avec la mesure qui a fixé ses deux seuils.
+
+Trois refus protègent ce signal de devenir une suggestion :
+
+1. **il est joint au bundle du vérificateur, jamais au pack du mapper** — un mapper qui recevrait
+   la liste des appuis « proches » de chaque phrase rattacherait par ressemblance lexicale, quand
+   un appui se propose parce qu'il autorise le claim ;
+2. **il ne porte pas le texte des appuis**, seulement leur identifiant, leur origine, leur chemin
+   et les termes partagés : le vérificateur n'a donc pas de quoi créditer un claim par eux, et
+   c'est voulu ;
+3. **il n'entre dans aucun décompte du gate.**
+
+Et il ne garantit rien : un appui peut autoriser un claim sans partager un seul de ses mots. **Un
+signal vide n'atteste pas qu'un mapping est complet.**
+
+### Le verdict `MAPPING_INCOMPLETE`
+
+Le vocabulaire du vérificateur gagne un verdict qui n'est pas sémantique :
+
+`MAPPING_INCOMPLETE` — « ce claim n'a pas les appuis qu'il devrait avoir ».
+
+Il ne dit ni soutenu ni non soutenu. Il vise l'**artefact**, pas le texte, et le gate le range donc
+parmi les incohérences mécaniques : `FACTCHECK_INVALID`, et **aucune boucle de correction
+consommée**, puisque ce n'est pas le texte qui est en cause. La reprise est un nouveau mapping, pas
+une coupe.
+
+Sans ce verdict, un vérificateur qui soupçonne une omission n'avait que `UNSUPPORTED`, qui fait
+couper. Avec lui, la règle « vérifier la prémisse plutôt que l'exécuter » a enfin quelque chose à
+rouvrir.
+
+**Et il ne s'emploie que sur pièce.** Un remapping obtenu parce qu'un verdict déplaît est du
+magasinage de verdict, et ruinerait le dispositif plus sûrement que le défaut qu'il corrige. Ce qui
+justifie `MAPPING_INCOMPLETE` est un appui nommé — par le signal, ou par le motif d'un gate
+antérieur — dont l'absence parmi les appuis du claim est constatable. Le claim map défectueux se
+conserve à côté du nouveau.
+
 ## 6. Gate déterministe
 
 Le verdict global n'est pas écrit librement par un modèle.
@@ -290,7 +372,13 @@ Le script refuse le rapport si au moins une des conditions suivantes est vraie :
 - un `support_id` n'existe pas dans le pack ;
 - un claim n'a pas de verdict de verifier ;
 - un verdict n'appartient pas à l'ensemble autorisé ;
+- **au moins un claim reçoit `MAPPING_INCOMPLETE`** ;
 - au moins un claim reçoit autre chose que `SUPPORTED`.
+
+Les deux dernières conditions ne rendent pas le même verdict, et la différence est le seul intérêt
+de les séparer : un `MAPPING_INCOMPLETE` compte parmi les erreurs de structure, donc rend
+`FACTCHECK_INVALID` et ne consomme aucune boucle ; un refus sémantique rend `FACTCHECK_FAIL` et en
+consomme une. Le rapport de gate porte `mapping_incomplete`, la liste des claims à remapper.
 
 Seulement après ces contrôles le script peut produire `FACTCHECK_PASS`.
 
@@ -307,7 +395,9 @@ Ce protocole empêche notamment un agent de :
   ne soutient nulle part ;
 - vérifier une paraphrase différente du texte réellement publié ;
 - conserver un ancien PASS après modification du texte ;
-- noyer plusieurs cartes dans le même contexte de vérification.
+- noyer plusieurs cartes dans le même contexte de vérification ;
+- faire couper un passage du texte lecteur pour une omission du claim mapper, du moins quand le
+  signal la rend visible et que le vérificateur s'en sert.
 
 Il ne rend pas un LLM infaillible sur la relation logique entre une preuve réelle et un claim.
 Cette partie reste une évaluation sémantique. Le risque est réduit par l'indépendance du verifier,

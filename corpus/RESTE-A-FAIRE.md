@@ -2004,6 +2004,60 @@ comme telle.** Elle se recoupe contre les compteurs que l'agent rend lui-même, 
    au plafond est le verdict le plus coûteux du dispositif, puisqu'il restaure un texte antérieur
    moins bon. Avant de le prononcer, les claims sans appui se relisent un par un contre le pack.
 
+## L'outillage est en place — 27 septembre 2026
+
+Les points 1 et 3 de la liste ci-dessus sont faits, le point 2 de la liste du 26 aussi
+(`MAPPING_INCOMPLETE`), et le protocole passe en **version 2**. Ce qui existe maintenant :
+
+- **`uncited_support_signal`**, joint par `--bundle` à chaque claim : les appuis que le mapping n'a
+  pas cités et dont le texte porte un terme que le pack ne présente nulle part ailleurs et que le
+  corpus ne tient pas pour général. Sans leur texte, et hors de tout décompte du gate.
+- **`MAPPING_INCOMPLETE`**, un verdict de vérificateur qui ne juge pas le texte. Le gate le range
+  parmi les erreurs de structure : `FACTCHECK_INVALID`, **aucune boucle de correction consommée**, et
+  le mapping à refaire.
+- **Deux compteurs de vigilance** dans la sortie de `--bundle` : `claims_without_support` et
+  `claims_with_uncited_support_signal`.
+- **Les deux consignes manquantes**, portées aux prompts du mapper et du vérificateur — les
+  charnières de discours, et « les appuis fournis pour ce claim » au lieu de « aucun appui résolu ».
+  Elles étaient données pour appliquées par le rapport du 26 septembre et n'étaient dans aucun
+  fichier versionné.
+
+**Le calibrage du signal est mesuré, pas supposé, et une variante plus stricte a été écartée sur
+pièce.** Les deux claims témoins du chantier servent de critère :
+
+| réglage | claims signalés, mapping complet | témoin `critere` | témoin `points-de-levier` |
+|---|---:|---|---|
+| terme dans ≤ 5 appuis, 1 terme partagé | 50/58 | vu | vu |
+| terme dans ≤ 3 appuis, 2 termes partagés | 9/58 | vu | **manqué** |
+| terme dans 1 seul appui, 1 terme partagé | 15/58 | vu | vu |
+| le précédent, plus le lexique général du corpus | **1/58** | vu | vu |
+
+La deuxième ligne est la tentation à écarter : la plus silencieuse, et muette précisément sur
+l'omission la mieux établie du dépôt — le claim de `points-de-levier` ne partage avec `$.hook` qu'un
+seul terme, « appuyer ». La dernière ligne est le réglage retenu : sur le mapping défectueux de
+`points-de-levier`, le signal se lève sur 5 claims des 63 et **nomme le témoin** ; sur le mapping
+complet de `critere-de-la-retroaction`, il se lève une fois. Le bundle grossit de 1 %.
+
+Le second filtre a été ajouté parce que le premier ne suffisait pas : sur une carte correctement
+mappée, le signal se levait quinze fois, pour « donne », « devant », « temps », « nomme »,
+« lorsque » — des mots singuliers dans un pack de soixante-douze appuis par accident de tirage. Le
+dépôt sait lesquels sont généraux parce qu'il les emploie partout : comptés sur les 136
+approfondissements, « donne » est dans 112, « temps » dans 74, « devant » dans 57, quand « quilles »
+et « autocuiseur » sont dans un seul. La coupure à un dixième du corpus sépare les deux familles.
+
+### Ce que ce geste ne fait pas, et il faut le dire aussi
+
+- **Il ne rend pas un mapping complet.** Un appui peut autoriser un claim sans partager un seul de
+  ses mots ; un signal vide n'atteste rien. Le maillon reste non redondant.
+- **Il ne mesure pas la variance du découpage** — point 2 de la liste du 25 septembre, toujours
+  ouvert. Trois mappings sur une carte ne sont pas une mesure, et le gate reste déterministe à
+  mapping donné et non à texte donné.
+- **Il ne se substitue pas au point 4** : avant un `rewrite_rejected_factcheck`, les claims sans
+  appui se relisent un par un contre le pack, signal ou pas.
+- **Il ouvre un risque neuf, et sa parade est écrite** : remapper jusqu'à ce que le gate passe serait
+  du magasinage de verdict. `MAPPING_INCOMPLETE` ne se justifie que par une incomplétude constatable
+  sur pièce, le plafond est de deux remappings par pack, et le claim map défectueux se conserve.
+
 ---
 
 # Ce qui n'est pas un chantier
