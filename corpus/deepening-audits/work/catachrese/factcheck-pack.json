@@ -1,0 +1,639 @@
+{
+  "protocol_version": 2,
+  "concept_id": "catachrese",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "70f7395b9ba51c9c1e7e2ba4adc32219547086a4ce62b6a99ce536e27d2365c0",
+  "validated_sha256": "3d46dbba8f42452628d0bfb0bfd735d9ff0130743d080a02242bade0472a51e0",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "41caf0462eeb10497140c66ae8978475b33485a7a9ec12809a9aaeca1a2acf38"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. (version d'auteur déposée sur HAL).",
+        "cles": [
+          "url:hal.science/hal-01017462v1"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. (traduction anglaise déposée par l'auteur).",
+        "cles": [
+          "url:hal.science/hal-01020705v1"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Une pièce de monnaie qui sert de tournevis, une chaussure qui plante un clou, une clef plate qu’on empoigne pour taper au lieu du marteau resté au garage : ces gestes sont si ordinaires qu’on ne les remarque presque plus. L’outil fait un travail pour lequel il n’a pas été prévu, et il le fait à peu près bien. Faut-il y voir une maladresse, un bricolage qu’on tolère faute de mieux, ou quelque chose de plus intéressant sur la façon dont les gens s’approprient les objets qu’on leur donne ?"
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Les ergonomes ont un mot pour ce genre d’usage : la catachrèse. Pierre Rabardel, dont un ouvrage de 1995 lui consacre une section, commence par rappeler qu’il ne l’a pas inventé : « Le terme de catachrèse est emprunté à la linguistique et à la rhétorique où il désigne l’usage d’un mot au-delà de son acception propre, ou à la place d’un autre. » Un mot mis là où aucun mot propre n’existe ; et par extension, écrit-il, un outil mis à la place d’un autre, ou employé à un usage pour lequel il n’est pas conçu. Le phénomène non plus n’est pas de lui ; son apport est une interprétation."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "La norme inscrite dans l’objet, et ce qu’elle coûte",
+      "text": "Tout outil est conçu avec une idée de ce à quoi il doit servir et de la façon dont on doit s’en servir. Un tournevis a une forme pensée pour visser, pas pour faire levier ; un marteau a un manche et une masse pensés pour frapper, pas pour dévisser. Cette idée est inscrite dans l’objet lui-même, et c’est à elle que l’écart se mesure. L’auteur nomme précisément l’étalon dont se sert la lecture qu’il trouve établie : « Il y a détournement au regard d’une rationalité instrumentale théorique, instituée, telle qu’elle est inscrite dans l’artefact, la machine, le système. » Théorique et instituée, parce qu’elle a été décidée ailleurs, avant l’usage, par qui a dessiné l’objet."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "La norme inscrite dans l’objet, et ce qu’elle coûte",
+      "text": "Cette lecture n’est pas neutre. L’écart y prend, dans le domaine technique, « une connotation plutôt négative » : ces usages comptent parmi les détournements qui peuvent poser problème, et on les place à l’origine d’un certain nombre d’accidents. Faverge, à qui l’on doit l’exemple canonique de la clef, range les catachrèses parmi les sources d’infiabilité momentanée en situation de travail. De là suivent les réponses habituelles : corriger l’usage, l’interdire, ou concevoir des objets qui le rendent matériellement impossible."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "La norme inscrite dans l’objet, et ce qu’elle coûte",
+      "text": "Encore faudrait-il que la norme dont on s’écarte aille de soi. L’auteur ne l’accorde pas, et il ouvre la question plutôt que de la refermer : « sur quelle norme s’appuyer ? Quelle est son origine et sa nature ? D’où tient-elle sa légitimité ? Suffit-il qu’un usage n’ait pas été anticipé, prévu, imaginé ou prescrit pour qu’il constitue un détournement ? » Tant que ces questions restent ouvertes, parler de détournement impute une faute à qui n’a peut-être fait que rencontrer un trou dans la prévision."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "L’écart entre le prévu et le réel",
+      "text": "La définition que l’auteur retient ne parle ni de faute ni de bricolage : « La notion de catachrèse est un concept qui désigne l’écart entre le prévu et le réel dans l’utilisation des artefacts. » Deux termes, et rien entre eux qui juge. Le prévu, c’est l’usage que le concepteur a inscrit dans l’objet ; le réel, c’est ce que les gens en font une fois l’objet dans leurs mains. La catachrèse n’est pas le mauvais côté de cette différence, elle est cette différence."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "L’écart entre le prévu et le réel",
+      "text": "Or l’ergonomie connaît déjà cet écart sous un autre nom, et c’est là que l’auteur va le chercher : « la différence entre les aspects prescrits du travail et ce qu’il est convenu d’appeler le travail réel », la distance entre ce qu’une consigne demande et ce qu’il faut faire pour que le travail se fasse. Il range les catachrèses dans cette même catégorie de faits, et il en tire une conséquence qui change leur statut : « l’existence même d’un terme désignant cet écart met en évidence la généralité, sinon la fréquence du phénomène ». Un fait pour lequel une langue a forgé un mot n’est pas un accident isolé."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Le retournement : changer de rationalité",
+      "text": "Reste, écrit l’auteur, à interpréter cet écart. Il refuse de le faire depuis la rationalité inscrite dans l’objet, et propose une lecture « fondée non plus sur la rationalité instrumentale théorique, inscrite originellement dans l’artefact, mais sur la rationalité instrumentale propre du sujet ». Le geste n’est pas de rebaptiser l’erreur en trouvaille : c’est de changer d’étalon. Rapporté à ce que la machine prévoit, l’usage est un manquement ; rapporté à ce que la personne cherche à obtenir, il est le chemin le plus court vers son but. L’action n’a pas bougé, la référence à laquelle on la juge a bougé."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Le retournement : changer de rationalité",
+      "text": "Ce que l’on aperçoit alors n’est plus une défaillance, c’est un travail : « La catachrèse peut être, dans cette perspective, considérée comme l’expression d’une activité spécifique du sujet : la production d’instruments et plus généralement des moyens de ses actions. » Se donner les moyens de son action ne s’arrête pas à prendre l’outil qu’on trouve : c’est en obtenir un avec ce qu’on a sous la main. D’où la proposition qui commande la suite : « considérer les catachrèses en tant qu’indices du fait que les utilisateurs contribuent à la conception des usages des artefacts »."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Le retournement : changer de rationalité",
+      "text": "C’est cela, et non le mot, qui revient en propre à l’auteur. L’introduction du terme en ergonomie, il la rapporte à un autre, Winsemius, en 1969, et il la tient lui-même d’un troisième, Faverge, qu’il nomme dans la même parenthèse. L’attribution qu’il transmet est donc de seconde main, et il l’écrit ainsi."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce qui n’est pas une catachrèse",
+      "text": "Ainsi retourné, le mot pourrait s’étendre à tout usage inattendu. L’auteur pose en note le critère qui l’en empêche : « Il faut, à notre sens, qu’il y ait attribution de fonctionnalités nouvelles ou différentes pour que l’on puisse caractériser un usage comme catachrétique. » Son contre-exemple est l’automobiliste qui appuie sur la pédale de frein bien au-delà de la force prévue. Celui-là sort de ce qui était prévu pour cette pédale, et pourtant il freine, avec l’organe fait pour freiner : aucune fonction nouvelle n’est attribuée à quoi que ce soit, et il n’y a pas de catachrèse."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce qui n’est pas une catachrèse",
+      "text": "La clef qui frappe est d’une autre nature : elle n’accentue pas une fonction qu’elle avait déjà, elle en reçoit une qu’elle n’avait pas, celle du marteau. C’est cette greffe d’une fonction étrangère que le mot vient nommer, et non l’intensité de l’usage. D’où une frontière tracée à l’intérieur même des usages que rien n’a prescrits : « Il faut donc distinguer, au sein des usages informels ceux qui sont catachrétiques de ceux qui sont simplement hors norme. » Forcer une norme et en inventer une autre ne sont pas le même geste."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Un cas particulier, et ce qu’il change",
+      "text": "La catachrèse n’est pas, dans ce livre, le concept principal : elle est le cas le plus repérable d’un mouvement plus large, et l’auteur le nomme sans détour. Les catachrèses « n’apparaissent, à la lumière de ces faits, que comme un cas particulier d’un phénomène de caractère beaucoup plus général : la production, l’élaboration, l’institution, la transformation de ses instruments par le sujet ». Ce que l’utilisateur transforme n’est d’ailleurs pas seulement l’objet : c’est aussi sa manière de s’en servir, cette part de l’instrument que l’auteur appelle les schèmes d’utilisation."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Un cas particulier, et ce qu’il change",
+      "text": "Pour qui conçoit, encadre ou forme, la conséquence est immédiate. Les trois réponses par lesquelles on traite d’ordinaire ces usages visent toutes à les faire disparaître ; les tenir pour des indices oblige d’abord à aller voir ce qu’ils désignent, c’est-à-dire une fonction que l’objet n’offre pas et que quelqu’un a trouvé le moyen d’obtenir sans elle. La question posée devant un usage inattendu cesse alors d’être seulement « comment l’empêcher » : elle devient aussi « qu’est-ce qu’il montre »."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Un cas particulier, et ce qu’il change",
+      "text": "Le retournement admis, il reste à voir ce que l’auteur en fait : la section sur la catachrèse ouvre un chapitre qu’il intitule « Quand les sujets développent leurs instruments, les genèses instrumentales », et c’est là que l’affaire continue. Son ouvrage de 1995 est en ligne, déposé par lui. Ce que le mot est devenu ensuite, qui l’a repris, discuté ou déplacé, se lira dans d’autres textes, et ceux-là restent à ouvrir."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-67e9df8978b457c9",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "catachrese"
+    },
+    {
+      "id": "SUP-2f59b9244d94850c",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "catachrese"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-d56753ad83750534",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Catachrèse"
+    },
+    {
+      "id": "SUP-36523d56ac23c193",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "activite-instrumentee-et-conception"
+    },
+    {
+      "id": "SUP-c4430d192c42f3d8",
+      "origin": "validated",
+      "path": "$.theme_labels[\"activite-instrumentee-et-conception\"]",
+      "access": "n/a",
+      "text": "L'outil et l'activité"
+    },
+    {
+      "id": "SUP-3309f7a75049d355",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Pierre Rabardel"
+    },
+    {
+      "id": "SUP-97596a973c750829",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "rabardel"
+    },
+    {
+      "id": "SUP-3ac367ed1a69c7ce",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Le mot n'est pas de Pierre Rabardel, et c'est lui-même qui l'écrit : il l'emprunte à la linguistique et à la rhétorique, où il désigne l'usage d'un mot au-delà de son acception propre, et rapporte son introduction en ergonomie à Winsemius, en 1969, « selon Faverge ». Jean-Marie Faverge n'apparaît donc que comme usager du terme et fournisseur de l'exemple canonique : la clef employée à frapper à la place d'un marteau. Ce qui revient à Rabardel est le retournement : cesser de lire la catachrèse comme un détournement au regard de la rationalité inscrite dans l'artefact, et y voir l'indice que les utilisateurs contribuent à la conception des usages."
+    },
+    {
+      "id": "SUP-377db976aabb853b",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "La notion de catachrèse est un concept qui désigne l'écart entre le prévu et le réel dans l'utilisation des artefacts."
+    },
+    {
+      "id": "SUP-d72155d61f169c2d",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 (version d'auteur déposée sur HAL)."
+    },
+    {
+      "id": "SUP-4edc1fe887b44daf",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "Chapitre 7, p. 99"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-38ce01f54e787c5a",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Se servir d'un outil pour ce qu'il n'est pas : erreur, ou travail de conception ?"
+    },
+    {
+      "id": "SUP-862d69e7512c8e95",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Utiliser un outil à la place d'un autre passe pour un détournement à corriger. Rabardel y voit l'indice que l'utilisateur participe à la conception des usages."
+    },
+    {
+      "id": "SUP-570b457bf37148ad",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995, 239 p. (version d'auteur déposée sur HAL).",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-29d886c73b8d30b8",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "chap. 7, p. 99",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-d92ba124eed437fb",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "HAL hal-01017462",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-250387271af81596",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://hal.science/hal-01017462v1",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-88fa790b1496e547",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Pierre Rabardel, People and Technology. A cognitive approach to contemporary instruments, Université Paris 8, 2002, 188 p. (traduction anglaise déposée par l'auteur).",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-902a043e1dbf32d2",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "full-text",
+      "text": "« The notion of catachresis »",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-afa83d6a7882fc0f",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "full-text",
+      "text": "HAL hal-01020705",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-1a08bd05a0ee7f29",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "full-text",
+      "text": "https://hal.science/hal-01020705v1",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-6d0236b48129bdf9",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-18"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-8be490c464886a33",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Source 1 — PDF téléchargé par moi depuis https://hal.science/hal-01017462/document (fichier Hommes_et_technologie_Rabardel1995.pdf, 195 pages PDF). Notice HAL vérifiée via l'API (api.archives-ouvertes.fr, q=halId_s:hal-01017462) : Pierre Rabardel, « Les hommes et les technologies; approche cognitive des instruments contemporains », Armand Colin, pp.239, 1995, docType OUV. Concordance BnF (SRU, ark:/12148/cb357510921) : A. Colin (Paris), 1995, coll. U. Psychologie, ISBN 220021569X, 239 p. Le point-virgule du titre affiché sur la fiche est celui du dépôt HAL (la BnF porte deux-points) : cohérent avec la mention « version d'auteur déposée sur HAL »."
+    },
+    {
+      "id": "SUP-0a715860e686d97a",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "PAGINATION — le dépôt porte bien deux paginations concurrentes, et j'ai vérifié laquelle le localisateur désigne. Le sommaire (PDF p. 5) annonce « CHAPITRE 7 ... 109 » et « La notion de catachrèse ... 109 » ; les folios imprimés dans le corps du dépôt sont décalés de 10 : le folio « 99 » figure en tête de la page PDF 106, le folio « 100 » en tête de la page PDF 107. Le localisateur « chap. 7, p. 99 » désigne le folio du corps de la version d'auteur HAL, ce que la source déclare explicitement. Aucun écart : la fiche ne prétend pas donner la pagination Armand Colin."
+    },
+    {
+      "id": "SUP-edadb1c01d062978",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "Citation — ouverte à la page PDF 106 (folio 99), sous le titre de section « La notion de catachrèse », à l'intérieur du « CHAPITRE 7 : QUAND LES SUJETS DÉVELOPPENT LEURS INSTRUMENTS, LES GENÈSES INSTRUMENTALES » qui s'ouvre sur la même page. Texte lu : « La notion de catachr èse est un concept qui désigne l'écart entre le prévu et le réel dans l'utilisation des artefacts. » — l'espace dans « catachr èse » est un défaut d'extraction, non un écart. Phrase complète, sans coupe ; la fiche n'introduit ni […] ni traduction (champ translation.kind = none, langue fr, conforme au texte original français)."
+    },
+    {
+      "id": "SUP-469a972633ca963d",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "Attribution — les trois assertions du champ attribution_note sont dans le texte que j'ai ouvert, page PDF 106-107 (folios 99-100) : (a) « Le terme de catachrèse est emprunté à la linguistique et à la rhétorique où il désigne l'usage d'un mot au-delà de son acception propre, ou à la place d'un autre » ; (b) « Ainsi, Winsemius (qui, selon Faverge, a le premier introduit en ergonomie ce terme en 1969) » ; (c) « Faverge (1970) donne comme exemple de catachrèse l'utilisation d'une clef pour frapper à la place d'un marteau ». La bibliographie du même dépôt porte bien Faverge, J.M. (1970), « L'homme agent d'infiabilité et de fiabilité du processus », et Winsemius, W. (1969), « Task structuren storingen en ongevallen ». La fiche ne revendique donc pas la paternité du mot pour Rabardel et le dit dans les termes mêmes de l'auteur."
+    },
+    {
+      "id": "SUP-f9e9aa3648d2ef04",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "Prose — le retournement affirmé par le summary est verbatim dans le texte, page PDF 107 (folio 100) : « Nous nous proposons donc, dans cette section, de considérer les catachrèses en tant qu'indices du fait que les utilisateurs contribuent à la conception des usages des artefacts ». L'interprétation qu'il déplace est également dans la source : « Les catachrèses sont, classiquement, interprétées en termes de détournement de l'objet par rapport aux fonctions prévues par les concepteurs » et « Il y a détournement au regard d'une rationalité instrumentale théorique, instituée, telle qu'elle est inscrite dans l'artefact ». Le « à corriger » du summary est un resserrement, non un ajout : la source dit « une connotation plutôt négative », des « détournements qui peuvent poser problème » et des usages « à l'origine d'un certain nombre d'accidents ». Le hook pose une question que le texte pose lui-même (« Quel statut faut-il, ou peut-on donner aux catachrèses […] ? »)."
+    },
+    {
+      "id": "SUP-67284bbe5b6f5cd2",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "Source 2 — PDF téléchargé depuis https://hal.science/hal-01020705/document (189 pages PDF). Notice HAL : Pierre Rabardel, « people and technology », université paris 8, pp.188, 2002. Page de titre (PDF p. 2) : « PEOPLE AND TECHNOLOGY / a cognitive approach to contemporary instruments », « Translated by Heidi Wood ». La section « The notion of catachresis » existe bien (sommaire p. 92 ; corps, page PDF où l'on lit « The notion de catachresis is a concept that designates the difference […] »). Le localisateur affiché « The notion of catachresis » résout. Réserve de forme, hors des quatre points : le label de la fiche dit « traduction anglaise déposée par l'auteur » sans nommer la traductrice, Heidi Wood, qui figure sur la page de titre."
+    },
+    {
+      "id": "SUP-07ad472f1d20f7cd",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "Non atteint : je n'ai pas eu accès à l'édition imprimée Armand Colin 1995 (aucun exemplaire numérisé accessible légitimement), donc je ne peux ni confirmer ni infirmer la pagination imprimée du passage — ce qui est sans effet ici, la fiche localisant explicitement dans la version d'auteur HAL. Aucun contrôle d'accès n'a été contourné ; aucune page de défi anti-robot rencontrée."
+    },
+    {
+      "id": "SUP-ab45b0c48b07d563",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "L'attribution du mot a été vérifiée deux fois, dont une par la version anglaise déposée par l'auteur, qui porte au même endroit « The term catachresis is borrowed from linguistics and rhetoric… » et « Thus, Winsemius (who according to Faverge, was the first to introduce this term in ergonomics in 1969) ». Le contrôle avait pour objet d'écarter un artefact de la couche texte du premier fichier : l'attribution s'y retrouve mot pour mot."
+    },
+    {
+      "id": "SUP-4e8dfbc135945089",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Les deux sources auxquelles Rabardel rapporte l'introduction du terme n'ont pas été ouvertes : Winsemius (1969), en néerlandais, introuvable en ligne, et Faverge (1970) dans Ergonomics, non ouvert. L'attribution écrite ici est celle que Rabardel énonce, et elle est doublement médiate."
+    },
+    {
+      "id": "SUP-51257e0a5dcee3eb",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Deux précisions de l'auteur qu'un résumé perdrait facilement. La première est un critère d'inclusion : il faut qu'il y ait attribution de fonctionnalités nouvelles ou différentes pour qu'un usage soit catachrétique — l'automobiliste qui appuie sur la pédale bien au-delà de la force prévue fait un usage hors norme, pas une catachrèse. La seconde subordonne la notion au concept plus large du livre : les catachrèses ne sont qu'un cas particulier de la production de ses instruments par le sujet."
+    },
+    {
+      "id": "SUP-b25a6a5cb4c9e0ce",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "La pagination de l'édition imprimée n'est pas établie et n'est pas supposée : le dépôt est une version d'auteur, dont les folios ne coïncident ni avec son propre sommaire ni avec les 239 pages déclarées pour l'imprimé, et l'écart n'est pas constant. Citer « p. 109 » d'après le sommaire aurait été une supposition."
+    },
+    {
+      "id": "SUP-54988de65a05b202",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "La couche texte du fichier insère des espaces parasites à l'intérieur de certains mots ; la seule normalisation opérée sur la citation est la suppression de l'espace dans « catachr èse ». Les apostrophes sont laissées telles que la phrase les porte."
+    },
+    {
+      "id": "SUP-c59b041a6ee858a0",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "La citation retenue par la fiche « genèse instrumentale », instruite sur le même chapitre, n'est pas reprise ici, et réciproquement."
+    },
+    {
+      "id": "SUP-5c6be469d845bbfb",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Aucune littérature secondaire dédiée à la catachrèse au sens ergonomique n'a été isolée : rien n'est dit ici de la reprise ou de la contestation du concept après 1995."
+    },
+    {
+      "id": "SUP-a16526deb9ac03ca",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "catachrese"
+    },
+    {
+      "id": "SUP-21a75bdeb9230705",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Pierre Rabardel"
+    },
+    {
+      "id": "SUP-f44a945487c27572",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "ASSOCIATED_WITH"
+    },
+    {
+      "id": "SUP-0ce1aa4ee67bf9a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le concept est associé à Pierre Rabardel, qui signe seul l'ouvrage où je l'ai lu — la page de titre du dépôt (PDF p. 2) ne porte que son nom, et la notice HAL du dépôt ne déclare aucun coauteur. Mais Rabardel n'est ni l'inventeur du mot ni celui qui l'a introduit en ergonomie, et c'est lui-même qui l'écrit, deux fois, dans les deux pages où il installe la notion. Premièrement, sur l'origine du terme : la section s'ouvre sur « Le terme de catachrèse est emprunté à la linguistique et à la rhétorique où il désigne l'usage d'un mot au-delà de son acception propre, ou à la place d'un autre. » L'emprunt à la rhétorique est donc documenté par l'auteur, et non reconstitué par un commentateur. Deuxièmement, sur la transposition à l'outillage, Rabardel ne s'attribue rien et ne l'attribue pas non plus à Jean-Marie Faverge, contrairement à ce que la littérature ergonomique française avance couramment : il écrit, à la page suivante et entre parenthèses, « Ainsi, Winsemius (qui, selon Faverge, a le premier introduit en ergonomie ce terme en 1969) ». L'attribution que porte le texte est donc double et indirecte : le terme vient de la rhétorique, son introduction en ergonomie revient à W. Winsemius, et Rabardel le sait par Faverge. Faverge y tient un rôle de relais et d'usager, pas d'inventeur : Rabardel le cite pour un exemple (« l'utilisation d'une clef pour frapper à la place d'un marteau ») et pour avoir rangé les catachrèses parmi les sources d'infiabilité momentanée en situation de travail. Les deux références sont dans la bibliographie de l'ouvrage, telles que Rabardel les écrit : « Winsemius, W. (1969). - Task structuren storingen en ongevallen, Nederland Institüt voor Preventieve Geneeskunde, TNO, Woltres-Noodhoff, Groningen » et « Faverge, J.M. (1970). - L'homme agent d'infiabilité et de fiabilité du processus industriel, Ergonomics, vol. 13, n° 3, pp 301-327 ». Ce que Rabardel apporte en propre, et qui justifie que la carte porte son nom, n'est donc pas le mot mais un retournement d'interprétation : il refuse de ne lire la catachrèse que comme un détournement au regard de la rationalité inscrite dans l'artefact par le concepteur, et propose de la lire comme l'indice que « les utilisateurs contribuent à la conception des usages des artefacts ». Aucun millésime écrit ici n'est déduit : 1995 est l'année de l'ouvrage portée par la notice HAL du dépôt de l'auteur (producedDateY_i 1995, publisher_s « Armand Colin ») ; 1969 et 1970 sont les années que Rabardel lui-même écrit dans son texte et dans sa bibliographie pour Winsemius et Faverge. Je n'ai ouvert ni Winsemius 1969 ni Faverge 1970 (voir reserves) : je rapporte l'attribution telle que le texte de Rabardel la porte, pas telle qu'elle serait vérifiée à la source."
+    },
+    {
+      "id": "SUP-7738e6e44dd87bbf",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "La notion de catachrèse est un concept qui désigne l'écart entre le prévu et le réel dans l'utilisation des artefacts."
+    },
+    {
+      "id": "SUP-44d5b8bd359e8700",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Pierre Rabardel, Les hommes et les technologies ; approche cognitive des instruments contemporains, Paris, Armand Colin, 1995 (239 p. selon la notice HAL). Lu dans la version d'auteur déposée par Rabardel sur HAL, hal-01017462, fichier « Hommes_et_technologie_Rabardel1995.pdf » (195 pages, 692 421 octets, content-type application/pdf, HTTP 200) : https://hal.science/hal-01017462v1"
+    },
+    {
+      "id": "SUP-92d692694b4b01ed",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "Troisième partie, chapitre 7 « Quand les sujets développent leurs instruments, les genèses instrumentales », section « La notion de catachrèse », deuxième paragraphe de la section (première phrase). Dans le PDF déposé sur HAL : page 106 sur 195 du fichier, dont l'en-tête de page rendu porte le folio 99. La correspondance avec la pagination de l'édition Armand Colin n'est pas établie et je ne la suppose pas : le sommaire du fichier lui-même annonce « La notion de catachrèse……109 », soit dix pages de plus que le folio rendu dans le corps du texte, et cet écart n'est pas constant (le sommaire annonce p. 98 une section « Les schèmes d'utilisation » dont le corps du texte porte le folio 90) ; par ailleurs les folios du corps du fichier s'arrêtent vers 188 alors que la notice HAL déclare 239 pages pour l'ouvrage imprimé. Trois paginations divergent donc, et aucune des trois n'a pu être confrontée à un exemplaire Armand Colin. Citer « p. 109 » serait une supposition ; je donne le folio effectivement rendu et le numéro de page du fichier."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-5992e16523db29d0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Rabardel, P. (1995). Les hommes et les technologies ; approche cognitive des instruments contemporains. Paris, Armand Colin, 239 p. Dépôt de l'auteur sur HAL le 2 juillet 2014, docType_s OUV, language_s fr."
+    },
+    {
+      "id": "SUP-5ccc5b866f434831",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "Pas de DOI ; identifiant HAL hal-01017462 (version 1). Aucun ISBN n'est déclaré par la notice HAL et je n'en relève donc aucun."
+    },
+    {
+      "id": "SUP-bccdcf4a24c68359",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://hal.science/hal-01017462v1"
+    },
+    {
+      "id": "SUP-eb5436fecf43efea",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Rabardel, P. (2002). People and Technology. A cognitive approach to contemporary instruments. Université Paris 8, 188 p. — traduction anglaise déposée par l'auteur lui-même sur HAL (hal-01020705), language_s en. Section « The notion of catachresis », PDF p. 99/189 : « The term catachresis is borrowed from linguistics and rhetoric where it refers to the use of a word beyond its accepted meaning, or instead of another word » ; « Thus, Winsemius (who according to Faverge, was the first to introduce this term in ergonomics in 1969) ». Consultée pour contrôler que l'attribution lue en français n'est pas un effet de la couche texte du premier PDF ; elle s'y retrouve mot pour mot."
+    },
+    {
+      "id": "SUP-1d74d54c70a581ef",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "Pas de DOI ; identifiant HAL hal-01020705. PDF vérifié : HTTP 200, application/pdf, 1 015 281 octets."
+    },
+    {
+      "id": "SUP-cd635510b2d60396",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://hal.science/hal-01020705v1"
+    },
+    {
+      "id": "SUP-2ad613ff7ba76d49",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Rabardel introduit la notion en trois temps, tous dans le chapitre 7. D'abord l'origine : « Le terme de catachrèse est emprunté à la linguistique et à la rhétorique où il désigne l'usage d'un mot au-delà de son acception propre, ou à la place d'un autre. Par extension l'idée a été transposée dans le champ de l'outillage pour désigner l'utilisation d'un outil à la place d'un autre ou l'utilisation d'outils pour des usages pour lesquels ils ne sont pas conçus. » Ensuite la définition qu'il en retient pour l'analyse du travail : « La notion de catachrèse est un concept qui désigne l'écart entre le prévu et le réel dans l'utilisation des artefacts. Elle a, dans le domaine technique, une connotation plutôt négative. » Il rattache aussitôt cet écart à celui que l'ergonomie connaît déjà — « la différence entre les aspects prescrits du travail et ce qu'il est convenu d'appeler le travail réel » (il renvoie à Ombredane et Faverge 1955, Wisner 1974, Leplat et Cuny 1977, De Montmollin 1984 et 1986, Laville 1986, Daniellou 1986) — et conclut : « Nous pensons que c'est aussi de cette catégorie de faits et de phénomènes que relèvent les catachrèses. En tout état de cause, l'existence même d'un terme désignant cet écart met en évidence la généralité, sinon la fréquence du phénomène. Reste à en donner une interprétation. » Enfin l'interprétation, qui est son apport propre. Il expose d'abord la lecture qu'il refuse : « Les catachrèses sont, classiquement, interprétées en termes de détournement de l'objet par rapport aux fonctions prévues par les concepteurs […]. Il y a détournement au regard d'une rationalité instrumentale théorique, instituée, telle qu'elle est inscrite dans l'artefact, la machine, le système. » Puis il en propose une autre, « fondée non plus sur la rationalité instrumentale théorique, inscrite originellement dans l'artefact, mais sur la rationalité instrumentale propre du sujet » : « La catachrèse peut être, dans cette perspective, considérée comme l'expression d'une activité spécifique du sujet : la production d'instruments et plus généralement des moyens de ses actions. » D'où la proposition qui commande tout le chapitre : « considérer les catachrèses en tant qu'indices du fait que les utilisateurs contribuent à la conception des usages des artefacts, notamment (mais pas seulement) de cette partie de l'instrument que sont les schèmes d'utilisation ». Deux précisions de l'auteur qui restreignent le concept et qu'un résumé perdrait facilement. La première est un critère d'inclusion, donné en note : « Il faut, à notre sens, qu'il y ait attribution de fonctionnalités nouvelles ou différentes pour que l'on puisse caractériser un usage comme catachrétique » ; l'automobiliste qui appuie sur la pédale de frein bien au-delà de la force prévue fait un « usage hors norme » et non une catachrèse, faute d'attribution de fonction nouvelle — « Il faut donc distinguer, au sein des usages informels ceux qui sont catachrétiques de ceux qui sont simplement hors norme. » La seconde est une mise en perspective qui subordonne la catachrèse au concept plus large du livre : « Les catachrèses n'apparaissent, à la lumière de ces faits, que comme un cas particulier d'un phénomène de caractère beaucoup plus général : la production, l'élaboration, l'institution, la transformation de ses instruments par le sujet. » Rabardel conteste enfin la norme implicite de la lecture par le détournement : « sur quelle norme s'appuyer ? Quelle est son origine et sa nature ? D'où tient-elle sa légitimité ? Suffit-il qu'un usage n'ait pas été anticipé, prévu, imaginé ou prescrit pour qu'il constitue un détournement ? »"
+    },
+    {
+      "id": "SUP-0a0ba97d011a7c6e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Pagination de l'édition Armand Colin non établie, et volontairement non supposée. Le dépôt HAL est une version d'auteur : les folios rendus dans le corps du fichier (99 pour la page qui porte la citation) ne coïncident ni avec le sommaire du fichier lui-même (qui annonce la section p. 109), ni avec les 239 pages que la notice HAL déclare pour l'imprimé alors que les folios du corps s'arrêtent vers 188. L'écart entre sommaire et corps n'est pas constant (+10 pour la section « La notion de catachrèse », +8 pour « Les schèmes d'utilisation »), ce qui interdit de le traiter comme un simple décalage. Aucun exemplaire imprimé n'a pu être consulté pour trancher."
+    },
+    {
+      "id": "SUP-621fdb98fbd36bf0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La couche texte du PDF déposé insère des espaces parasites à l'intérieur de certains mots (« catachr èse », « appr oche », « premièr chapitre ») et mêle apostrophes droites et typographiques d'une phrase à l'autre. La citation retenue est reproduite mot pour mot ; la seule normalisation opérée est la suppression de l'espace parasite dans « catachr èse », et les apostrophes ont été laissées telles que la phrase les porte (droites dans cette phrase-ci, alors que le paragraphe précédent en porte de typographiques). Le contrôle a été fait sur les octets du texte extrait, pas sur un fac-similé."
+    },
+    {
+      "id": "SUP-6ec231f4a5ab4194",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Les deux sources auxquelles Rabardel rapporte l'introduction du terme en ergonomie n'ont pas été ouvertes : Winsemius, W. (1969), Task structuren storingen en ongevallen (TNO, Groningen), qui est en néerlandais et n'a été trouvé en ligne sous aucune forme, et Faverge, J.-M. (1970), « L'homme agent d'infiabilité et de fiabilité du processus industriel », Ergonomics, 13(3), p. 301-327, revue Taylor & Francis non ouverte. L'attribution écrite dans ce dossier est donc celle que Rabardel énonce, et elle est doublement médiate — Rabardel l'attribue à Winsemius « selon Faverge ». Si un passage ultérieur devait établir que Faverge emploie le terme avant 1969, ce dossier ne le contredirait pas : il n'a rien vérifié à la source."
+    },
+    {
+      "id": "SUP-6310bf347265c820",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Le troisième texte du dossier de Rabardel sur ce point, Winter, C.R. de (1970), « Improvisation dans les tâches manuelles », Le Travail Humain, 33, 3-4, p. 267-280 — d'où viennent la distinction entre « grandes » et « petites » catachrèses et les vérifications expérimentales — n'a pas été ouvert non plus : Le Travail Humain n'est diffusé que par Cairn, en 403 depuis cet environnement. C'est la même perte que celle déjà consignée dans la cartographie du domaine."
+    },
+    {
+      "id": "SUP-98af92053bf7acc5",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Risque de recouvrement avec la fiche « genèse instrumentale », instruite en parallèle sur le même ouvrage et sur le même chapitre 7, qui s'ouvre précisément par la question de la catachrèse. La citation retenue ici est celle qui définit la catachrèse et elle seule ; les phrases sur la genèse instrumentale, sur l'instrumentation et l'instrumentalisation (chapitre 8) n'ont pas été relevées. Si l'autre fiche devait retenir la même phrase, c'est elle qui serait hors sujet, pas celle-ci — mais la coordination n'a pas pu être faite."
+    },
+    {
+      "id": "SUP-ae7cbb26d19e1abd",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Aucune littérature secondaire dédiée à la catachrèse au sens ergonomique n'a été isolée. La cartographie du domaine signalait déjà un unique résultat HAL, sans rapport. OpenAlex et scite n'étaient pas disponibles : je ne peux donc rien dire de la reprise ou de la contestation du concept après 1995, et je ne l'invente pas."
+    },
+    {
+      "id": "SUP-e58560cf678b769b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "La traduction anglaise consultée (People and Technology, 2002) est un dépôt de l'auteur : aucun traducteur n'y est nommé dans la notice HAL, et l'éditeur déclaré est l'université Paris 8. Je l'utilise comme contrôle de lecture, pas comme édition de référence, et la citation retenue reste celle du français, langue d'origine."
+    }
+  ],
+  "estimated_tokens": 13488,
+  "status": "READY"
+}
