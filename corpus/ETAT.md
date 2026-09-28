@@ -7,8 +7,8 @@ Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
 `npm run corpus:validate` : **140 enregistrements, 136 validés, 0 erreur, 114 avertissements.**
-`npm run corpus:deepen` : **136 approfondissements pour 136 cartes validées**, 208 294 mots,
-1 532 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:deepen` : **136 approfondissements pour 136 cartes validées**, 208 418 mots,
+1 533 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
 validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
 refermé au passage 09 le 1er septembre ; les passages 10 à 15 l'ont rouvert de quatre, quatre,

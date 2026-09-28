@@ -2363,135 +2363,105 @@ est de conditionner l'attente au **SHA attendu** et non à l'immobilité du fich
 
 ## Passage d'audit — 2026-09-28
 
-Quatrième exécution de la routine d'audit. **Une carte reprise et publiée — la première dont le
-texte lecteur change depuis sa publication —, deux chantiers d'outillage soldés, un troisième
-ouvert avec sa mesure.** `ROUTINE_PASS`.
+Quatrième exécution de la routine d'audit. **Aucune carte publiée, le corpus servi au lecteur est
+identique à l'octet à ce qu'il était au lever, et le résultat qui compte est une découverte de
+protocole : ce passage a refait, sans le savoir, le travail d'une branche ouverte et non
+fusionnée.** `ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
 
-- branche      : `claude/beautiful-feynman-8rprst`, imposée par la session. Le prompt recommande
-  `routine/corpus-YYYY-MM-DD` ; la consigne de branche de la session est plus forte. Poussée par
-  commits successifs.
-- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`. Le plafond est
-  de trois ; une seule a été prise parce que deux chantiers d'outillage devaient passer d'abord,
-  et que le prompt autorise à n'en traiter qu'une quand la recherche est substantielle.
-- sélection    : **la reprise que le passage du 26 septembre avait désignée, avec ses deux gestes
-  déjà écrits.** Elle était à un claim du `FACTCHECK_PASS`.
-- résultats    : **1 publiée.** `rewritten` / `FACTCHECK_PASS` 48 sur 48 / `ACCEPT`.
-- contrôles    : validate 140 / 136 validés / 0 erreur · deepen --check 136 et **208 294 mots** ·
-  **569 tests / 0 échec** (17 nouveaux) · lint 0 · build next sans erreur · projection vérifiée
-  idempotente sur trois exécutions, diff limité à un fichier et à une carte.
-- stale        : les rapports défectueux passent de **11 à 10**.
+- branche      : `claude/beautiful-feynman-8rprst`, imposée par la session.
+- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`.
+- résultats    : **0 publiée.** 1 `rewrite_rejected` — `FACTCHECK_PASS` 48 sur 48, puis `REJECT`
+  après confrontation à la revue de PR #122.
+- contrôles    : validate 140 / 136 validés / 0 erreur · deepen --check 136 et **208 418 mots, le
+  chiffre exact du départ** · **569 tests / 0 échec** (17 nouveaux) · lint 0 · build next sans
+  erreur · `git diff origin/main -- src/content/generated/` **vide** après restauration.
 
-### Le chantier K est livré, et il a servi la nuit même
+### Le fait le plus important de la nuit, et ce n'est pas un résultat de corpus
 
-Les deux points que le 26 septembre avait laissés sont implémentés : le signal `appuis_non_cites`
-joint au bundle du vérificateur, et le verdict `MAPPING_INCOMPLETE` routé vers
-`FACTCHECK_INVALID` — donc **sans consommer de boucle de correction**, puisque ce n'est pas le
-texte qui est en cause.
+**PR #122 était ouverte, non fusionnée, et portait déjà : le chantier K implémenté, la même
+reprise de `critere-de-la-retroaction` avec les deux mêmes gestes, l'ouverture du chantier L, et
+`catachrese` publiée.** Ce passage a travaillé sur `origin/main`, qui ne la porte pas, et a donc
+tout refait en parallèle.
 
-**Le résultat qui vaut le plus est une mesure qui a corrigé la conception avant l'écriture.** La
-règle évidente — « terme présent dans un seul appui du pack » — rend 17 signaux sur les 58 claims
-du dernier mapping de la carte, et ils sont tous du bruit. Un pack de 72 appuis courts rend rare à
-peu près n'importe quel mot. La rareté a donc été reportée sur les 136 dossiers du dépôt, ce qui
-sépare nettement `quilles` (1 dossier) et `thermostat` (5) de `lorsque` (19), `règle` (55) et
-`donne` (131).
+**Une routine qui lit `main` ne voit pas le travail des branches ouvertes**, et le journal d'un
+passage vit sur la branche de ce passage. Trois nuits de suite ont écrit leur journal ; seules
+celles qui ont été fusionnées sont visibles de la suivante. C'est le chantier M.
 
-Deux résultats, et ce sont des tests et non des déductions de la forme du correctif :
+Le coût est mesurable : deux implémentations indépendantes du même chantier K, deux reprises de la
+même carte, deux ouvertures du même chantier L. Le seul gain est involontaire et vaut d'être
+gardé — **on a par accident une mesure de la variance du dispositif sur une même tâche**, et elle
+n'est pas rassurante :
 
-| | valeur |
-|---|---:|
-| signaux sur les 58 claims du mapping corrigé | **0** |
-| signaux sur `C008` rejoué tel qu'il était au tour 1 | **1**, par `thermostat`, `joueur`, `quilles` |
-| claims du bundle modifiés hors signal | **0**, comparaison octet à octet |
-| surcoût de contexte | 74 040 → 74 187 tokens estimés |
+| | passage du 27 | passage du 28 |
+|---|---|---|
+| gate sur la même reprise | `FACTCHECK_PASS` **53 sur 53** | `FACTCHECK_PASS` **48 sur 48** |
+| mots lecteur du candidat | 1 073 | 1 074 |
+| verdict de la revue | **REJECT** | **ACCEPT** |
+| rareté du signal, mesurée sur | le pack, moins un lexique générique | les 136 dossiers du dépôt |
 
-**Et son premier emploi réel est silencieux, ce qui est le bon résultat** : zéro claim signalé sur
-les 48 du mapping frais, et l'appui dont l'omission avait coûté deux exemples est cette fois
-rattaché au claim qui les énumère.
+**Deux revues indépendantes, sur deux textes à un mot près, rendent des verdicts opposés.** C'est
+la mesure de variance que le dépôt réclamait depuis le 26 septembre, obtenue par accident, et sur
+le maillon le plus coûteux de la chaîne.
 
-### La carte passe, et le compte des tours dit quelque chose du dispositif
+### Pourquoi c'est le REJECT qui a été retenu
 
-| tour | claims | soutenus | refusés | mots lecteur |
-|---|---:|---:|---:|---:|
-| 0, publié | 59 | 52 | **7** | 1 198 |
-| 1 | 56 | 50 | **6** | 1 158 |
-| 2 | 58 | 57 | **1** | 1 081 |
-| **3, cette reprise** | **48** | **48** | **0** | **1 074** |
+Pas par ancienneté, et pas par prudence de principe. Par une règle écrite que l'une des deux
+revues invoque et que l'autre a manquée.
 
-Le mapping frais rend **48 claims là où le tour 2 en rendait 58, sur un texte presque identique**.
-C'est la confirmation directe de la leçon du 26 septembre : un découpage frais découpe autrement,
-et le nombre de claims ne mesure pas le texte.
+`PROTOCOLE.md` §5 : « Total visé : 1 300 à 1 700 mots. **En dessous de 1 100, le texte n'a rien
+ajouté.** » Le candidat fait **1 074 mots lecteur**.
 
-Le texte publiable est **124 mots plus court que le texte publié**, sans un mot ajouté qui ne soit
-adossé à un appui. Le reviewer a instruit un par un les cinq appauvrissements visibles et les
-rapporte tous à des énoncés refusés par le gate — dont le mécanisme du délai, que le compte rendu
-du tour 1 qualifie lui-même d'« intégralement inventé ». Aucun axe de notation ne baisse.
+Et **le contrôle mécanique ne pouvait pas le voir** : les bornes dures de `deepenings.mjs` sont
+1 000 et 2 100, et leur commentaire assume l'écart — « le protocole vise 1 300-1 700 ; ces
+bornes-ci laissent respirer ». Le plancher du protocole n'est porté par aucun code. C'est à
+instruire, et c'est le second défaut d'instrument de la nuit.
 
-### Le chantier L, ouvert par un geste que personne n'avait demandé
+Les deux revues ont par ailleurs vu **le même** défaut pédagogique — le bornage de `C038` retire
+l'antécédent de « elles ne se logent pas au même étage » — et l'ont pesé différemment, réserve non
+bloquante d'un côté, motif de refus de l'autre. Sur ce point seul, rien ne départage. La règle
+écrite, si.
 
-Le réécrivain a changé un mot du titre de `sections[3]` — « emboîtées » → « hiérarchisées » —,
-**l'a déclaré comme sortant de sa consigne** et l'a donné comme réversible. Le reviewer l'a
-instruit plutôt que de l'excuser, et l'a gardé : laisser « emboîtées » aurait publié en position
-d'annonce, dans le seul endroit du texte lecteur que le vérificateur ne regarde pas, la
-proposition refusée en `C038` trois lignes plus bas.
+### Ce que le cycle a établi et qui reste vrai
 
-**744 titres de section, 5 147 mots, 2,78 % du texte lecteur du corpus, ne passent par aucun
-claim.** `readerParagraphs()` n'émet de locators que pour `lead[*]` et `sections[*].paragraphs[*]`
-là où `PROTOCOLE.md` soumet explicitement les titres aux mêmes règles et où `DeepeningDetail.tsx`
-les rend dans un `<h2>`.
+- **Le refus est pédagogique et n'annule aucun verdict documentaire.** Les deux gestes sont justes,
+  les deux revues le disent, et les deux gates passent.
+- **Le chantier L est confirmé deux fois, indépendamment, par le même chemin** : un titre de
+  section portant l'excédent que le gate venait de refuser dans le corps. 744 titres, 2,78 % du
+  texte lecteur, aucun locator.
+- **Et le balayage des titres par rareté ne marche pas** : 199 signalements sur 744, presque
+  intégralement du bruit, pour une raison de registre qu'aucun seuil ne corrige. Le seul cas vrai
+  y est signalé pour une raison fausse, `hiérarchisées` contre `hiérarchisation`.
 
-**Et le balayage évident ne marche pas — c'est le second résultat de mesure de la nuit.**
-Appliquer aux 744 titres l'instrument du chantier K rend **199 signalements sur 744**, presque
-intégralement du bruit : `loger`, `prévoir`, `choisir`, `famille`. La raison est structurelle, un
-titre et un dossier ne sont pas écrits dans la même langue, et la fréquence mesurée sur les
-dossiers déclare rare ce qui n'est qu'absent d'un registre. Le seul cas vrai est d'ailleurs
-signalé pour une raison fausse : `hiérarchisées`, absent du dossier **parce qu'il porte
-`hiérarchisation`**, c'est-à-dire la forme retenue par la correction et qui est soutenue.
+### Le point 1 du chantier I est soldé, et lui n'est pas dupliqué
 
-Corollaire pour le chantier K, et il rassure dans le bon sens : le même défaut de morphologie y
-joue **en sens inverse** — une variante n'a aucun porteur dans le pack, donc le signal ne se
-déclenche pas. La morphologie y fait **manquer** un appui, jamais en suggérer un faux.
+`predominance-du-conflit-sur-la-negociation` déclare désormais son dossier. `quotation.text`
+identique à l'octet entre la carte et `corpus/evidence/taille-des-entreprises-et-issue-des-greves/`,
+même `locator`, même auteur, mêmes deux sources. Pack 56 → **96 appuis dont 39 du dossier**, les
+deux `access_corroboration` de `dossier-absent` à **`corrobore`**, et les 56 appuis antérieurs
+survivent tous à l'identique.
 
-### Le point 1 du chantier I est soldé, et il a fallu écrire son critère
-
-`predominance-du-conflit-sur-la-negociation` déclare désormais son dossier. Le 26 septembre
-refusait de rattacher sur la concordance d'œuvre ; la question restante — la lecture couvre-t-elle
-le passage que la carte utilise ? — se répondait en ouvrant le fichier, et la réponse est nette :
-`quotation.text` **identique à l'octet**, même `locator`, même auteur, et les deux
-`sources_ouvertes` du dossier sont les deux sources déclarées de la carte.
-
-Le pack passe de 56 à **96 appuis dont 39 du dossier**, et les deux `access_corroboration` de
-`dossier-absent` à **`corrobore`**. Les 56 appuis antérieurs survivent tous à l'identique.
-
-**Le critère qui en sort ne vaut que confronté au fichier**, et c'est la leçon. Sur quatorze
-répertoires orphelins, **exactement deux sont nommés par une carte**, et les ouvrir les sépare :
-l'un déclare son appartenance, l'autre nomme le répertoire pour dire qu'il est **un autre sujet,
-lu dans les mêmes pages et jamais rédigé**. Un rattachement sur le seul fait qu'une carte nomme un
-répertoire aurait été faux une fois sur deux.
+Le critère qui en sort ne vaut que confronté au fichier : sur quatorze répertoires orphelins,
+**deux sont nommés par une carte**, et les ouvrir les sépare — l'un déclare son appartenance,
+l'autre nomme le répertoire pour dire qu'il est **un autre sujet, jamais rédigé**. Un rattachement
+sur le seul nom aurait été faux une fois sur deux.
 
 ### Ce que ce passage laisse au suivant
 
-1. **`predominance-du-conflit-sur-la-negociation` est maintenant la reprise la mieux dotée du
-   dépôt.** Elle reste `rewrite_rejected_factcheck` depuis le 17 septembre, refusée après deux
-   boucles sur un pack d'où le dossier était absent — exactement la situation où
-   `critere-de-la-retroaction` se trouvait avant cette nuit, et l'enchaînement qui vient de
-   marcher deux fois est le même.
-2. **Le chantier L, dans l'ordre de ses points.** Ne pas réessayer le balayage par rareté : il est
-   fait, mesuré, et il échoue pour une raison de registre qu'aucun seuil ne corrige. La
-   comparaison utile est titre contre corps de sa propre section, et elle demande une
-   normalisation morphologique que le dépôt n'a pas.
-3. **La variance des mappings n'est toujours pas mesurée**, et elle conditionne toute règle plus
-   dure sur la complétude. 48 claims contre 58 sur un texte presque identique en donne un
-   troisième point, sans en faire une mesure.
-4. **Les trois réserves du reviewer sur cette carte**, aucune bloquante et aucune corrigeable dans
-   les limites d'une reprise à deux gestes : le pouvoir d'ouverture reste à 2 sur 4, une rugosité
-   nouvelle en `sections[3]`, et trois défauts hors mandat listés dans son rapport.
+1. **Trancher les deux implémentations du chantier K avant toute autre chose.** Celle de PR #122
+   calcule un lexique générique sur le pack ; celle-ci mesure la rareté sur les 136 dossiers. Les
+   deux visent le même défaut. **Il en faut une, pas deux**, et le choix demande de les comparer
+   sur les mêmes cartes.
+2. **Le chantier M**, la visibilité des branches. Tant qu'il est ouvert, chaque passage risque de
+   refaire le précédent.
+3. **`predominance-du-conflit-sur-la-negociation`** est la reprise la mieux dotée du dépôt, et
+   elle n'est portée par aucune autre branche.
+4. **La reprise de `critere-de-la-retroaction` n'est plus celle du 26 septembre** : les deux gestes
+   sont faits et passent le gate, ce qui bloque est pédagogique et demande d'**ajouter** du texte.
+   Les quatre points sont dans son rapport.
 
-### Une note d'exploitation, qui corrige une des parades écrites
+### Une note d'exploitation, qui corrige une parade écrite
 
 La parade du 26 septembre — « conditionner l'attente au SHA attendu et non à l'immobilité du
 fichier » — **est nécessaire et ne suffit pas.** Le claim mapper a écrit son fichier au bon SHA,
-puis l'a réécrit deux fois avant de rendre. Une attente qui s'était arrêtée au premier SHA correct
-aurait lu un artefact intermédiaire.
-
-La règle complète est donc : **attendre le compte rendu de l'agent**, et se servir du SHA pour
-vérifier ce qu'on a reçu, jamais pour décider que l'agent a fini.
+puis l'a réécrit deux fois avant de rendre. La règle complète : **attendre le compte rendu de
+l'agent**, et se servir du SHA pour vérifier ce qu'on a reçu, jamais pour décider qu'il a fini.

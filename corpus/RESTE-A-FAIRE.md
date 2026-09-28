@@ -2202,6 +2202,71 @@ surface du défaut, il ne la ferme pas.
    pas. C'est ce que le réécrivain a fait ici sans qu'on le lui demande.
 
 
+---
+
+# M. Une routine qui lit `main` ne voit pas le travail des branches ouvertes — ouvert le 28 septembre 2026
+
+**Le passage du 28 septembre a refait, sans le savoir, le travail du passage du 27.** Il a
+réimplémenté le chantier K, refait la même reprise de `critere-de-la-retroaction` avec les deux
+mêmes gestes, et rouvert le chantier L. PR #122 portait déjà les trois, ouverte et non fusionnée.
+
+Le mécanisme est simple et il se reproduira : **le journal d'un passage vit sur la branche de ce
+passage.** Une routine qui part de `origin/main` lit l'état du corpus tel que la dernière fusion
+l'a laissé, et ne voit ni les branches ouvertes, ni leurs journaux, ni les chantiers qu'elles ont
+soldés. Ce n'est pas une faute d'exécution : rien dans le protocole ne demande de regarder
+ailleurs que dans les fichiers.
+
+## Ce que la duplication a coûté, et l'unique chose qu'elle a rapportée
+
+Coût : deux implémentations indépendantes du chantier K, deux reprises de la même carte, deux
+ouvertures du même chantier L, et une nuit de travail sur une carte déjà instruite.
+
+Gain involontaire, et il faut le garder parce qu'il ne se paie pas deux fois : **une mesure de la
+variance du dispositif sur une tâche identique**, que ce dépôt réclamait depuis le 26 septembre
+sans jamais la financer.
+
+| | passage du 27 | passage du 28 |
+|---|---|---|
+| gate sur la même reprise | `FACTCHECK_PASS` **53 sur 53** | `FACTCHECK_PASS` **48 sur 48** |
+| mots lecteur du candidat | 1 073 | 1 074 |
+| verdict de la revue indépendante | **REJECT** | **ACCEPT** |
+
+**Deux revues indépendantes, sur deux textes à un mot près, rendent des verdicts opposés.** Et le
+découpage varie de 53 à 48 claims sur un même texte, ce qui donne un quatrième point à la leçon du
+26 septembre : le nombre de claims ne mesure pas le texte.
+
+Ce n'est pas une mesure de variance au sens strict — deux points, deux chemins un peu différents —
+mais c'est plus que ce que le dépôt avait, et cela porte sur le maillon le plus coûteux de la
+chaîne : celui qui décide si un texte est publié.
+
+## Par quel bout prendre ce chantier
+
+1. **Le geste le moins cher, et il tient en une ligne de protocole** : au point 3 de la routine,
+   « état du repository avant travail », lister les branches ouvertes et leurs PR avant de choisir
+   un lot. Une carte portée par une branche ouverte n'est pas un lot disponible.
+2. **Trancher les deux implémentations du chantier K.** Celle de PR #122 calcule un lexique
+   générique sur le pack lui-même, top 10 % des termes les plus fréquents, et plafonne à cinq
+   appuis signalés ; celle du 28 mesure la rareté sur les 136 dossiers du dépôt et plafonne à
+   trois. Les deux visent le même défaut, aucune n'est évidemment supérieure, et **il en faut une,
+   pas deux**. Le choix se fait en les exécutant sur les mêmes cartes.
+3. **Ne pas généraliser le REJECT en règle.** Ce qui a départagé les deux revues n'est pas leur
+   qualité mais une règle écrite — le plancher de 1 100 mots de `PROTOCOLE.md` §5 — que l'une
+   invoque et que l'autre a manquée. Sur le défaut pédagogique qu'elles avaient toutes deux vu,
+   rien ne les départage.
+
+## Et un défaut d'instrument que cette confrontation a révélé
+
+**Le plancher de 1 100 mots du protocole n'est porté par aucun code.** Les bornes dures de
+`deepenings.mjs` sont `minWords: 1000` et `maxWords: 2100`, et leur commentaire assume l'écart :
+« le protocole vise 1 300-1 700 ; ces bornes-ci laissent respirer sans laisser dériver ».
+
+Un candidat à 1 074 mots passe donc `deepen --check` sans un mot, alors que le protocole dit qu'en
+dessous de 1 100 « le texte n'a rien ajouté ». La règle existe, elle est écrite, et sa violation
+dépend d'un reviewer qui pense à la vérifier — ce qui est exactement la définition d'une règle non
+tenue. À trancher : soit le code porte le plancher du protocole, soit le protocole s'aligne sur
+les bornes du code, mais pas les deux chiffres en même temps.
+
+
 # Ce qui n'est pas un chantier
 
 **Les 31 sujets d'échafaudage jamais instruits** que `corpus:audit` liste en fin de sortie.

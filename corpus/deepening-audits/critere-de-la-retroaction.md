@@ -1,108 +1,92 @@
 ---
 concept_id: critere-de-la-retroaction
-deepening_sha256: c95ef7e2fb1794bb1dc834ec0f1a566ed10c92133fec21e266d14b9fc11c9ef3
+deepening_sha256: 29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222
 validated_sha256: 2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b
 protocol_version: 3
-audited_at: 2026-09-28T04:15:40Z
+audited_at: 2026-09-28T04:20:30Z
 initial_verdict: REVISE
-result: rewritten
+result: rewrite_rejected
 factcheck_verdict: FACTCHECK_PASS
-review_verdict: ACCEPT
+review_verdict: REJECT
 ---
 
 # critere-de-la-retroaction
 
-**Le texte passe, après deux rejets.** Le gate rend `FACTCHECK_PASS` à **48 claims sur 48**, sans
-erreur structurelle et sans mapping incomplet, et la revue indépendante rend `ACCEPT`. Le texte
-affiché au lecteur change pour la première fois depuis sa publication.
+**Le texte affiché au lecteur est inchangé.** Restauré par son SHA de blob
+`623582dbf638f033caa87a683c490298c470e512`, vérifié au `sha256sum` : `29083f8b…`, 1 198 mots
+lecteur, et `git diff` contre `origin/main` est vide sur le répertoire projeté.
 
-> Ce rapport remplace celui du 26 septembre, qui concluait `rewrite_rejected_factcheck` à un
-> claim près. Il ne rejoue ni l'audit pédagogique du 25 septembre, ni les deux boucles de
-> correction du 26 : **la reprise tenait en deux gestes, et ce sont ceux que ce rapport trace.**
+> **Ce rapport corrige une conclusion que ce passage avait d'abord écrite, et le motif de la
+> correction est le plus important de la nuit.** Le cycle du 28 septembre a rendu
+> `FACTCHECK_PASS` 48 sur 48 puis `ACCEPT`, et le texte a été projeté. La découverte, à la
+> clôture, d'une branche ouverte et non fusionnée — PR #122, passage du 27 septembre — a fait
+> rouvrir le dossier : **la même reprise y avait été conduite, avec les deux mêmes gestes, et sa
+> revue indépendante l'avait refusée.**
 
-## Les deux gestes, et pourquoi ils ne sont pas de même nature
+## Le fait de méthode, et il vaut au-delà de cette carte
 
-**1. `C038` borné — le seul reliquat documentaire.** C'était le dernier refus du tour 2. Le texte
-avançait l'emboîtement des boucles les unes dans les autres et un niveau supérieur comme agent du
-déplacement ; `definition_de_lauteur` ne porte que « la hiérarchisation des boucles et le
-déplacement des finalités ». La phrase a été ramenée à la formule de l'appui, mot pour mot. Rien
-ne la remplace, rien ne compense ailleurs.
+Le passage du 28 septembre a travaillé sur `origin/main`, qui ne portait pas PR #122. Il a donc
+**réimplémenté le chantier K, refait la même reprise et rouvert le chantier L**, sans savoir
+qu'une branche les portait déjà. Le journal de `main` ne mentionnait pas ce passage, puisque son
+journal est sur sa propre branche.
 
-**2. Le thermostat et le joueur de quilles restitués — réparation d'un défaut d'instrument.** Au
-tour 1, `C008` avait été refusé `UNSUPPORTED` alors que `SUP-421445a4beb428f3`,
-`$.reserves[0]` de la lecture primaire, porte mot pour mot « l'auteur raisonne sur un thermostat,
-un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une fièvre ». L'appui
-était au pack ; aucun claim du mapping ne le citait. **Leur retrait était une perte documentée, pas
-une correction**, et la prémisse a été rouverte au dossier par le réécrivain puis par le reviewer,
-plutôt que prise sur parole. Ni le thermocouple ni le professeur, absents du texte publié, n'ont
-été promus.
+**Une routine qui lit `main` ne voit pas le travail des branches ouvertes.** C'est une lacune de
+protocole, pas une faute d'exécution, et elle est consignée dans `RESTE-A-FAIRE.md`.
 
-Le `diff` contre le candidat du tour 2 porte **exactement trois lignes**.
+## Pourquoi c'est le `REJECT` qui l'emporte, et non l'`ACCEPT`
 
-## Les quatre tours, bout à bout
+Les deux revues sont des jugements de modèle. Elles ne se valent pourtant pas ici, pour une
+raison vérifiable et une raison de fond.
 
-| tour | SHA | claims | soutenus | refusés | mots lecteur |
-|---|---|---:|---:|---:|---:|
-| 0, texte publié | `29083f8b` | 59 | 52 | **7** | 1 198 |
-| 1 | `10e489ee` | 56 | 50 | **6** | 1 158 |
-| 2 | `51377815` | 58 | 57 | **1** | 1 081 |
-| **3, cette reprise** | **`c95ef7e2`** | **48** | **48** | **0** | **1 074** |
+**1. Une règle du protocole, que la revue du 28 a manquée.** `PROTOCOLE.md` §5 : « Total visé :
+1 300 à 1 700 mots. **En dessous de 1 100, le texte n'a rien ajouté.** » Le candidat fait
+**1 074 mots lecteur**. La revue du 27 le relève et en fait un motif ; celle du 28 ne le
+mentionne pas. Le contrôle mécanique ne l'a pas vu non plus, et c'est normal : les bornes dures
+de `deepenings.mjs` sont 1 000 et 2 100, et leur commentaire dit explicitement qu'elles
+« laissent respirer » par rapport au protocole. **Le plancher du protocole n'est donc porté par
+aucun code**, ce qui est à instruire.
 
-**Le texte publiable est 124 mots plus court que le texte publié, et pas un mot n'a été ajouté qui
-ne soit adossé à un appui du pack.** Le reviewer a instruit un par un les cinq appauvrissements
-visibles et les rapporte tous à des énoncés que le gate avait refusés — dont le mécanisme du délai,
-que le compte rendu du tour 1 qualifie lui-même d'« intégralement inventé ». Aucun axe de notation
-ne baisse ; la fidélité passe de 2 à 4, les limites de 3 à 4.
+**2. Les deux revues ont vu le même défaut et l'ont pesé différemment.** Le bornage de `C038`
+retire l'antécédent sur lequel s'appuyait « elles ne se logent pas au même étage » au paragraphe
+suivant. La revue du 28 le signale comme réserve non bloquante ; celle du 27 en fait un motif de
+refus, et elle le documente : la section 4 tombe de 164 à 91 mots, progressivité 3→2, profondeur
+3→2, et le lecteur ne sait plus qu'il y a plus d'une boucle.
 
-Le mapping frais rend 48 claims là où le tour 2 en rendait 58, sur un texte presque identique.
-C'est la confirmation de la leçon du 26 septembre : un découpage frais découpe autrement, et le
-nombre de claims n'est pas une mesure du texte.
+**Deux revues indépendantes divergent, l'une invoque une règle écrite que l'autre a manquée : le
+dispositif est fail-closed, et on ferme.** C'est aussi la conclusion la plus prudente pour le
+lecteur, qui garde un texte de 1 198 mots plutôt qu'un texte de 1 074 dont une lecture sur deux
+dit qu'il a perdu un mécanisme.
 
-## Le chantier K a servi la nuit même où il a été écrit
+## Ce que ce cycle a néanmoins établi, et qui reste vrai
 
-Le correctif — signal d'appuis non cités dans le bundle, verdict `MAPPING_INCOMPLETE` — a été
-écrit, mesuré et commité **avant** ce cycle, comme le correctif de `prepare()` l'avait été le
-26 septembre.
+- **`FACTCHECK_PASS` 48 sur 48** sur le candidat `c95ef7e2`, sans erreur structurelle. Le refus
+  est **pédagogique et n'annule aucun verdict documentaire** — le passage du 27 écrit exactement
+  la même phrase sur son propre gate à 53 sur 53.
+- **Les deux gestes sont documentairement justes**, et les deux revues le disent. La restitution
+  du thermostat et du joueur de quilles est strictement bornée à `$.reserves[0]`, sans que le
+  thermocouple ni le professeur soient promus ; le bornage de `C038` est juste sur la portée.
+- **L'effet collatéral que la revue du 27 nomme et que celle du 28 n'a pas vu** : bornée comme il
+  faut, la restitution ne rend au lecteur qu'une énumération, et comme le curseur du thermostat
+  avait été retiré au tour précédent, le geste **aggrave** la promesse non tenue du `lead` au lieu
+  de la réparer. C'est à savoir avant la prochaine tentative.
+- **Le chantier L est réel et il est confirmé deux fois.** Les deux passages l'ont ouvert
+  indépendamment, par le même chemin : un titre de section portant l'excédent que le gate venait
+  de refuser dans le corps.
 
-**Son premier emploi réel est silencieux, et c'est le bon résultat** : zéro claim avec appui non
-cité sur les 48. `SUP-421445a4beb428f3`, celui dont l'omission avait coûté les deux exemples, est
-cette fois rattaché au claim qui les énumère, ainsi qu'à cinq autres.
+## Reprise, et elle n'est plus celle du 26 septembre
 
-Une réserve du reviewer est à corriger pour que le prochain passage ne la reprenne pas : il note
-que `verification.json` ne porte pas le champ `appuis_non_cites`. **C'est normal et ce n'est pas un
-défaut** — le signal est joint au *bundle*, qui est l'entrée du vérificateur, et non à son rapport
-de sortie. Vérifié sur pièce : `verification-bundle.json` porte bien le bloc
-`signal_appuis_non_cites` avec son critère, et zéro claim signalé.
+Les deux gestes sont faits et ils passent le gate. **Ce qui bloque maintenant est pédagogique et
+demande d'ajouter du texte**, ce qu'aucune des deux reprises ne s'autorisait :
 
-## Le geste que la consigne n'avait pas prévu, et ce qu'il a ouvert
+1. **Rendre un antécédent à « au même étage »** — dire au lecteur qu'il y a plusieurs boucles, sans
+   réintroduire l'emboîtement ni un niveau supérieur comme agent, que le dossier ne porte pas.
+2. **Remonter au-dessus de 1 100 mots**, et viser la bande du protocole, à partir de matière
+   adossée au pack et non de remplissage.
+3. **Réparer la promesse du `lead`** : le thermostat et le joueur de quilles y sont annoncés et ne
+   travaillent nulle part.
+4. **Les deux sorties repérées par l'audit du 25** pour le pouvoir d'ouverture, qui reste à 2 sur 4
+   dans les deux tentatives.
 
-Le réécrivain a aussi changé un mot du titre de `sections[3]` — « Des boucles **emboîtées** » est
-devenu « Des boucles **hiérarchisées** » —, l'a signalé comme sortant de la lettre de sa consigne,
-et l'a donné comme réversible.
-
-**Le geste est conservé, et le reviewer l'a instruit plutôt que de l'excuser.** Laisser
-« emboîtées » aurait publié, en position d'annonce et dans le seul endroit du texte lecteur que le
-vérificateur ne regarde pas, exactement la proposition refusée en `C038` trois lignes plus bas.
-Une troncature d'un mot vers la formule de l'appui n'ajoute aucune assertion. Et la cohérence
-l'imposait : ce cycle existe parce qu'un angle mort d'instrument avait fait couper deux exemples
-réels ; on ne pouvait pas, dans le même cycle, se servir d'un autre angle mort pour conserver un
-excédent.
-
-**C'est le chantier L**, ouvert le jour même : les 744 titres de section du corpus sont du texte
-lecteur — `PROTOCOLE.md` les soumet explicitement aux mêmes règles — et aucun locator du claim map
-ne les couvre.
-
-## Ce que ce passage laisse au suivant, sur cette carte
-
-Trois réserves du reviewer, aucune bloquante, et aucune n'est corrigeable dans les limites de
-cette reprise :
-
-1. **Le pouvoir d'ouverture reste à 2 sur 4.** Le texte finit toujours sur une restriction de
-   périmètre. Les deux sorties que l'audit avait repérées demandent d'**ajouter** du texte, ce que
-   la consigne de reprise interdisait.
-2. **Une rugosité nouvelle en `sections[3]`.** Le paragraphe entre désormais par l'abstrait, et
-   « au même étage » s'appuie sur un antécédent plus mince depuis le retrait de l'emboîtement.
-   C'est une maigreur plutôt qu'une redite, et elle se corrige à matière constante.
-3. **Hors mandat de cette reprise** : le raccord manquant entre `sections[4].paragraphs[1]` et
-   « constater et intervenir », la promesse non tenue de `sections[0].paragraphs[0]`, et le statut
-   d'« hypothèses de travail » de préinformation et préaction, toujours non dit.
+Le candidat refusé de cette nuit est conservé sous
+`work/critere-de-la-retroaction/candidate-rejected-review-48-sur-48.json`, SHA `c95ef7e2…`, à
+côté de celui du 27 septembre.
