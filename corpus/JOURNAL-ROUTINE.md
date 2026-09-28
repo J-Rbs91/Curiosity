@@ -2358,3 +2358,140 @@ La parade documentée marche. Mais une deuxième s'ajoute : **une attente mesur�
 de modification d'un fichier ne distingue pas « l'agent a fini » de « l'agent n'a pas commencé ».**
 Un premier guet a rendu « stable » un artefact qui était encore celui du cycle précédent. La parade
 est de conditionner l'attente au **SHA attendu** et non à l'immobilité du fichier.
+
+---
+
+## Passage d'audit — 2026-09-28
+
+Quatrième exécution de la routine d'audit. **Une carte reprise et publiée — la première dont le
+texte lecteur change depuis sa publication —, deux chantiers d'outillage soldés, un troisième
+ouvert avec sa mesure.** `ROUTINE_PASS`.
+
+- branche      : `claude/beautiful-feynman-8rprst`, imposée par la session. Le prompt recommande
+  `routine/corpus-YYYY-MM-DD` ; la consigne de branche de la session est plus forte. Poussée par
+  commits successifs.
+- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`. Le plafond est
+  de trois ; une seule a été prise parce que deux chantiers d'outillage devaient passer d'abord,
+  et que le prompt autorise à n'en traiter qu'une quand la recherche est substantielle.
+- sélection    : **la reprise que le passage du 26 septembre avait désignée, avec ses deux gestes
+  déjà écrits.** Elle était à un claim du `FACTCHECK_PASS`.
+- résultats    : **1 publiée.** `rewritten` / `FACTCHECK_PASS` 48 sur 48 / `ACCEPT`.
+- contrôles    : validate 140 / 136 validés / 0 erreur · deepen --check 136 et **208 294 mots** ·
+  **569 tests / 0 échec** (17 nouveaux) · lint 0 · build next sans erreur · projection vérifiée
+  idempotente sur trois exécutions, diff limité à un fichier et à une carte.
+- stale        : les rapports défectueux passent de **11 à 10**.
+
+### Le chantier K est livré, et il a servi la nuit même
+
+Les deux points que le 26 septembre avait laissés sont implémentés : le signal `appuis_non_cites`
+joint au bundle du vérificateur, et le verdict `MAPPING_INCOMPLETE` routé vers
+`FACTCHECK_INVALID` — donc **sans consommer de boucle de correction**, puisque ce n'est pas le
+texte qui est en cause.
+
+**Le résultat qui vaut le plus est une mesure qui a corrigé la conception avant l'écriture.** La
+règle évidente — « terme présent dans un seul appui du pack » — rend 17 signaux sur les 58 claims
+du dernier mapping de la carte, et ils sont tous du bruit. Un pack de 72 appuis courts rend rare à
+peu près n'importe quel mot. La rareté a donc été reportée sur les 136 dossiers du dépôt, ce qui
+sépare nettement `quilles` (1 dossier) et `thermostat` (5) de `lorsque` (19), `règle` (55) et
+`donne` (131).
+
+Deux résultats, et ce sont des tests et non des déductions de la forme du correctif :
+
+| | valeur |
+|---|---:|
+| signaux sur les 58 claims du mapping corrigé | **0** |
+| signaux sur `C008` rejoué tel qu'il était au tour 1 | **1**, par `thermostat`, `joueur`, `quilles` |
+| claims du bundle modifiés hors signal | **0**, comparaison octet à octet |
+| surcoût de contexte | 74 040 → 74 187 tokens estimés |
+
+**Et son premier emploi réel est silencieux, ce qui est le bon résultat** : zéro claim signalé sur
+les 48 du mapping frais, et l'appui dont l'omission avait coûté deux exemples est cette fois
+rattaché au claim qui les énumère.
+
+### La carte passe, et le compte des tours dit quelque chose du dispositif
+
+| tour | claims | soutenus | refusés | mots lecteur |
+|---|---:|---:|---:|---:|
+| 0, publié | 59 | 52 | **7** | 1 198 |
+| 1 | 56 | 50 | **6** | 1 158 |
+| 2 | 58 | 57 | **1** | 1 081 |
+| **3, cette reprise** | **48** | **48** | **0** | **1 074** |
+
+Le mapping frais rend **48 claims là où le tour 2 en rendait 58, sur un texte presque identique**.
+C'est la confirmation directe de la leçon du 26 septembre : un découpage frais découpe autrement,
+et le nombre de claims ne mesure pas le texte.
+
+Le texte publiable est **124 mots plus court que le texte publié**, sans un mot ajouté qui ne soit
+adossé à un appui. Le reviewer a instruit un par un les cinq appauvrissements visibles et les
+rapporte tous à des énoncés refusés par le gate — dont le mécanisme du délai, que le compte rendu
+du tour 1 qualifie lui-même d'« intégralement inventé ». Aucun axe de notation ne baisse.
+
+### Le chantier L, ouvert par un geste que personne n'avait demandé
+
+Le réécrivain a changé un mot du titre de `sections[3]` — « emboîtées » → « hiérarchisées » —,
+**l'a déclaré comme sortant de sa consigne** et l'a donné comme réversible. Le reviewer l'a
+instruit plutôt que de l'excuser, et l'a gardé : laisser « emboîtées » aurait publié en position
+d'annonce, dans le seul endroit du texte lecteur que le vérificateur ne regarde pas, la
+proposition refusée en `C038` trois lignes plus bas.
+
+**744 titres de section, 5 147 mots, 2,78 % du texte lecteur du corpus, ne passent par aucun
+claim.** `readerParagraphs()` n'émet de locators que pour `lead[*]` et `sections[*].paragraphs[*]`
+là où `PROTOCOLE.md` soumet explicitement les titres aux mêmes règles et où `DeepeningDetail.tsx`
+les rend dans un `<h2>`.
+
+**Et le balayage évident ne marche pas — c'est le second résultat de mesure de la nuit.**
+Appliquer aux 744 titres l'instrument du chantier K rend **199 signalements sur 744**, presque
+intégralement du bruit : `loger`, `prévoir`, `choisir`, `famille`. La raison est structurelle, un
+titre et un dossier ne sont pas écrits dans la même langue, et la fréquence mesurée sur les
+dossiers déclare rare ce qui n'est qu'absent d'un registre. Le seul cas vrai est d'ailleurs
+signalé pour une raison fausse : `hiérarchisées`, absent du dossier **parce qu'il porte
+`hiérarchisation`**, c'est-à-dire la forme retenue par la correction et qui est soutenue.
+
+Corollaire pour le chantier K, et il rassure dans le bon sens : le même défaut de morphologie y
+joue **en sens inverse** — une variante n'a aucun porteur dans le pack, donc le signal ne se
+déclenche pas. La morphologie y fait **manquer** un appui, jamais en suggérer un faux.
+
+### Le point 1 du chantier I est soldé, et il a fallu écrire son critère
+
+`predominance-du-conflit-sur-la-negociation` déclare désormais son dossier. Le 26 septembre
+refusait de rattacher sur la concordance d'œuvre ; la question restante — la lecture couvre-t-elle
+le passage que la carte utilise ? — se répondait en ouvrant le fichier, et la réponse est nette :
+`quotation.text` **identique à l'octet**, même `locator`, même auteur, et les deux
+`sources_ouvertes` du dossier sont les deux sources déclarées de la carte.
+
+Le pack passe de 56 à **96 appuis dont 39 du dossier**, et les deux `access_corroboration` de
+`dossier-absent` à **`corrobore`**. Les 56 appuis antérieurs survivent tous à l'identique.
+
+**Le critère qui en sort ne vaut que confronté au fichier**, et c'est la leçon. Sur quatorze
+répertoires orphelins, **exactement deux sont nommés par une carte**, et les ouvrir les sépare :
+l'un déclare son appartenance, l'autre nomme le répertoire pour dire qu'il est **un autre sujet,
+lu dans les mêmes pages et jamais rédigé**. Un rattachement sur le seul fait qu'une carte nomme un
+répertoire aurait été faux une fois sur deux.
+
+### Ce que ce passage laisse au suivant
+
+1. **`predominance-du-conflit-sur-la-negociation` est maintenant la reprise la mieux dotée du
+   dépôt.** Elle reste `rewrite_rejected_factcheck` depuis le 17 septembre, refusée après deux
+   boucles sur un pack d'où le dossier était absent — exactement la situation où
+   `critere-de-la-retroaction` se trouvait avant cette nuit, et l'enchaînement qui vient de
+   marcher deux fois est le même.
+2. **Le chantier L, dans l'ordre de ses points.** Ne pas réessayer le balayage par rareté : il est
+   fait, mesuré, et il échoue pour une raison de registre qu'aucun seuil ne corrige. La
+   comparaison utile est titre contre corps de sa propre section, et elle demande une
+   normalisation morphologique que le dépôt n'a pas.
+3. **La variance des mappings n'est toujours pas mesurée**, et elle conditionne toute règle plus
+   dure sur la complétude. 48 claims contre 58 sur un texte presque identique en donne un
+   troisième point, sans en faire une mesure.
+4. **Les trois réserves du reviewer sur cette carte**, aucune bloquante et aucune corrigeable dans
+   les limites d'une reprise à deux gestes : le pouvoir d'ouverture reste à 2 sur 4, une rugosité
+   nouvelle en `sections[3]`, et trois défauts hors mandat listés dans son rapport.
+
+### Une note d'exploitation, qui corrige une des parades écrites
+
+La parade du 26 septembre — « conditionner l'attente au SHA attendu et non à l'immobilité du
+fichier » — **est nécessaire et ne suffit pas.** Le claim mapper a écrit son fichier au bon SHA,
+puis l'a réécrit deux fois avant de rendre. Une attente qui s'était arrêtée au premier SHA correct
+aurait lu un artefact intermédiaire.
+
+La règle complète est donc : **attendre le compte rendu de l'agent**, et se servir du SHA pour
+vérifier ce qu'on a reçu, jamais pour décider que l'agent a fini.

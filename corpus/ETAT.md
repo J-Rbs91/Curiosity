@@ -6,15 +6,15 @@ existe pour qu'une reprise reparte des fichiers, et non de la mémoire de quelqu
 Ce fichier dit ce que le corpus **est**. Ce qui lui **manque**, et par quel bout le prendre,
 est dans [`corpus/RESTE-A-FAIRE.md`](RESTE-A-FAIRE.md).
 
-`npm run corpus:validate` : **140 enregistrements, 136 validés, 0 erreur, 100 avertissements.**
-`npm run corpus:deepen` : **136 approfondissements pour 136 cartes validées**, 203 687 mots,
-1 498 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
+`npm run corpus:validate` : **140 enregistrements, 136 validés, 0 erreur, 114 avertissements.**
+`npm run corpus:deepen` : **136 approfondissements pour 136 cartes validées**, 208 294 mots,
+1 532 en moyenne. Fin de sortie : **rien**. Il n'y a plus aucune carte validée sans
 approfondissement, et **les onze domaines sont entièrement servis**. L'écart entre ce qui est
 validé et ce qui est servi, ouvert le 23 août et remonté à trente-quatre cartes le 28, a été
 refermé au passage 09 le 1er septembre ; les passages 10 à 15 l'ont rouvert de quatre, quatre,
 cinq, huit, huit et sept cartes et refermé la même nuit chaque fois, la phase 3 se terminant par
 les approfondissements des cartes qu'elle crée.
-`npm test` : **482 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
+`npm test` : **569 tests, 0 échec.** `npm run lint` et `npm run corpus:build` : sans erreur.
 La projection a été vérifiée **idempotente** sur deux exécutions successives, et
 `git diff --exit-code src/content/generated/` est propre après reprojection.
 
