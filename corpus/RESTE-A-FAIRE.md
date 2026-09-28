@@ -1786,6 +1786,50 @@ Rattacher sur la seule concordance d'œuvre reviendrait exactement à ce que `re
 de faire pour `corpus/dossiers/` : élargir en silence le périmètre de preuve d'une carte avec une
 lecture menée pour autre chose. **Le tableau est une mesure, pas une conclusion.**
 
+## Le point 1 est soldé le 28 septembre 2026, et le critère qu'il a fallu écrire
+
+`predominance-du-conflit-sur-la-negociation` **déclare désormais son dossier**, et c'est le geste
+que ce chantier prescrivait : écrire le chemin dans le champ `dossier` de l'enregistrement, ne
+renommer aucun répertoire, ne toucher à aucune `note`.
+
+**Ce qui a tranché n'est pas la concordance d'œuvre, c'est le fichier.** Le `quotation.text` de la
+carte et celui de `corpus/evidence/taille-des-entreprises-et-issue-des-greves/lecture.json` sont
+**identiques à l'octet**, même `locator` p. 43, même auteur, et les deux `sources_ouvertes` du
+dossier sont les deux sources déclarées de la carte. Le passage que la carte affiche est lu, et
+relu sur l'image de la page. C'est exactement la question étroite que le 26 septembre avait
+laissée ouverte, et elle se répondait bien en ouvrant le fichier.
+
+**Un critère est sorti du balayage, et il ne vaut que confronté au fichier.** Sur les quatorze
+répertoires orphelins d'aujourd'hui — deux d'entre eux revendiqués par `corpus/candidates/` et
+`corpus/rejected/` —, **exactement deux sont nommés par une carte dans son propre
+enregistrement**. Les ouvrir les sépare :
+
+| répertoire | carte qui le nomme | ce que la carte en dit | verdict |
+|---|---|---|---|
+| `taille-des-entreprises-et-issue-des-greves` | `predominance-du-conflit-sur-la-negociation` | « Le dossier a été ouvert sous […] Le répertoire `corpus/evidence/` garde son nom d'origine. » | **rattaché** |
+| `limitation-de-l-expansion` | `cout-de-remonter-l-effectif` | « Second dossier tiré des mêmes pages et **non écrit** » | **reste orphelin** |
+
+La seconde ligne est celle qui donne sa valeur au critère : la carte nomme le répertoire pour dire
+qu'il est **un autre sujet**, lu dans les mêmes pages et jamais rédigé. Un rattachement sur le
+seul fait qu'une carte nomme un répertoire aurait donc été faux une fois sur deux. **« Une carte
+nomme le répertoire » est un filtre, pas un verdict** ; le verdict se rend en lisant ce qu'elle en
+dit.
+
+Effet mesuré sur le pack de `predominance-du-conflit-sur-la-negociation` : fichiers de preuve
+0 → 1, appuis 56 → **96 dont 39 du dossier**, `dossier_declare` `non-declare` → `resolu`, et les
+`access_corroboration` de ses deux sources `dossier-absent` → **`corrobore`**. Les 56 appuis
+antérieurs **survivent tous à l'identique** — les empreintes dérivent de
+`origine\0chemin\0valeur`, dont aucun des trois ne change — et les 135 autres cartes ne sont pas
+touchées.
+
+La carte n'est pas reprise pour autant : elle reste `rewrite_rejected_factcheck` depuis le
+17 septembre, refusée après deux boucles sur un pack d'où le dossier était absent. **Sa reprise
+est désormais la mieux dotée du dépôt**, et c'est le même enchaînement que `prepare()` avait
+ouvert pour `critere-de-la-retroaction`.
+
+Restent donc les deux cartes Shewhart, les deux cartes Milet et les points 2 à 4 ci-dessous,
+inchangés.
+
 ## Par quel bout prendre ce chantier, après le 26 septembre
 
 1. **`predominance-du-conflit-sur-la-negociation`, puis `trois-sigmas-arbitrage-de-cout`, puis
@@ -1901,6 +1945,69 @@ chantier J et ici. Mais son rôle lui interdit de créer l'appui, et le plafond 
 à couper plutôt qu'à contester. **La règle « vérifier la prémisse plutôt que l'exécuter » n'a de
 valeur que si contester rouvre quelque chose ; sinon elle ne fait qu'ajouter un regret au compte
 rendu.**
+
+## Ce qui a été fait le 28 septembre 2026 : les deux premiers points sont livrés
+
+**Les points 1 et 2 ci-dessous sont implémentés, mesurés et en place.** Ce qui suit les décrit
+tels qu'ils ont été écrits, et non tels qu'ils étaient proposés ; le point 3 est traité par la
+reprise de la carte, tracée dans son rapport.
+
+**1. Le signal `appuis_non_cites`.** `--bundle` joint à un claim les appuis du pack qu'il ne cite
+pas alors qu'ils sont le seul endroit du pack où figure un terme rare de son énoncé. Les trois
+garde-fous que ce chantier exigeait sont tenus : le signal est joint au bundle du vérificateur et
+jamais au pack du mappeur, il n'entre dans aucun décompte du gate, et il n'autorise aucun claim.
+
+**La rareté se mesure sur le dépôt et non sur le pack, et c'est une mesure qui l'a imposé.** La
+règle évidente — « terme présent dans un seul appui du pack » — rend **17 signaux sur les 58
+claims** du dernier mapping de `critere-de-la-retroaction`, et ils sont tous du bruit : `donne`,
+`temps`, `changer`, `règle`, `second`, `exige`, `nomme`, `lorsque`. Un pack de 72 appuis courts
+rend rare à peu près n'importe quel mot. La fréquence documentaire sur les 136 dossiers sépare les
+deux familles sans ambiguïté :
+
+| terme | dossiers sur 136 |
+|---|---:|
+| `quilles` | 1 |
+| `thermostat` | 5 |
+| `lorsque` | 19 |
+| `changer` | 22 |
+| `règle` | 55 |
+| `donne` | 131 |
+
+Le seuil retenu est une fraction — 6 % des dossiers, 8 sur 136 — et non un nombre, pour qu'il
+garde son sens quand le corpus grossit. Il sépare deux bornes mesurées, et le résultat est un
+test et non une déduction : **zéro signal sur les 58 claims du mapping corrigé** (le comportement
+attendu, ce mapping citant bien `reserves[0]`), et **le cas historique retrouvé** — `C008` rejoué
+tel qu'il était au tour 1, avec le seul appui qu'il citait alors, désigne
+`SUP-421445a4beb428f3` par `thermostat`, `joueur` et `quilles`. Le premier signal de bruit
+n'apparaît qu'à 20 dossiers sur 136.
+
+Le surcoût de contexte est négligeable : le bundle de cette carte passe de 74 040 à 74 187 tokens
+estimés, et les 58 claims sont identiques octet à octet hors signal.
+
+**2. Le verdict `MAPPING_INCOMPLETE`.** Seul usage prévu du signal. Le gate en fait un
+`FACTCHECK_INVALID` et non un `FACTCHECK_FAIL`, **donc sans consommer de boucle de correction** :
+ce n'est pas le texte qui est en cause, et le réécrivain n'a pas à être saisi d'un défaut qu'il ne
+peut corriger qu'en coupant. La reprise repart de CLAIM MAP et non de PREPARE, puisque le texte
+n'est pas touché et que son SHA ne bouge pas. Le rapport du gate compte `failed` et
+`mapping_incomplete` séparément et porte les claims à reprendre sous `mapping_a_reprendre`.
+
+**3. La consigne de motif est portée au prompt du vérificateur et au protocole.** « Aucun appui
+résolu ne mentionne X » se lit comme une absence du dossier, que le vérificateur ne voit pas et ne
+peut donc pas établir. La formule juste est « les appuis fournis pour ce claim ne mentionnent
+pas X ».
+
+Dix-sept tests couvrent l'ensemble, dont six qui **exécutent le gate pour de vrai, code de sortie
+compris**, plutôt qu'une copie de sa logique qui pourrait diverger en silence.
+
+### Ce que ce correctif ne fait pas, et qu'il faut savoir
+
+- **Il ne voit que les termes rares.** Un appui omis dont l'énoncé ne partage avec le claim que du
+  vocabulaire courant reste invisible. Le signal réduit la surface du défaut, il ne la ferme pas.
+- **Il ne mesure pas la variance des mappings.** Le point 2 de la liste ci-dessous — remapper deux
+  fois quelques cartes et comparer — reste entier, et il conditionne toute règle plus dure.
+- **Le seuil n'est étalonné que sur une carte.** Zéro bruit sur 58 claims est un bon signe, ce
+  n'est pas une mesure de corpus. Le premier lot qui déclenchera un `MAPPING_INCOMPLETE` en dira
+  plus que ce paragraphe.
 
 ## Par quel bout prendre ce chantier, après le 26 septembre
 
