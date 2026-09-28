@@ -1,9 +1,9 @@
 {
-  "protocol_version": 1,
+  "protocol_version": 2,
   "concept_id": "critere-de-la-retroaction",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "c95ef7e2fb1794bb1dc834ec0f1a566ed10c92133fec21e266d14b9fc11c9ef3",
+  "candidate_sha256": "277c278c669208b898fd46236032003c40f8db6832d74021cf743ae59e94e3f3",
   "validated_sha256": "2af4e7f914e71b588ed756e81666c56a88b9354c38ac15d7a350a4c21a00ac8b",
   "evidence_files": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "locator": "lead[1]",
-      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un critère d’identification : deux conditions sans lesquelles il n’y a pas de boucle. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il mène la démonstration sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, un joueur de quilles, une fièvre, avant de la ramener à ce qui l’occupe, la communication."
+      "text": "Guy Paquette, qui enseigne l’information et la communication à l’université Laval, publie en 1987 un article dont l’objet n’est pas de se plaindre d’un mot mal employé. Ce qu’il construit est un critère d’identification : deux conditions sans lesquelles il n’y a pas de boucle. Que revient-il au juste ? Et l’action peut-elle encore changer ? Il raisonne sur un thermostat, un autocuiseur, un réservoir de chasse d’eau, un joueur de quilles, une fièvre, avant de ramener la démonstration à ce qui l’occupe, la communication."
     },
     {
       "locator": "sections[0].paragraphs[0]",
@@ -84,7 +84,7 @@
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Des boucles hiérarchisées, des buts qui bougent",
-      "text": "Paquette décrit une hiérarchisation des boucles et un déplacement des finalités. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre."
+      "text": "Paquette décrit une hiérarchisation des boucles, et un déplacement des finalités. La thermorégulation lui sert de cas : une fièvre ne se lit pas comme une régulation qui échoue, mais comme une valeur de référence modifiée. Le corps ne manque pas sa température habituelle, il en vise une autre."
     },
     {
       "locator": "sections[3].paragraphs[1]",
@@ -618,6 +618,6 @@
       "text": "SOURCE SECONDAIRE : cherchée, non trouvée. Aucun commentaire académique de cet article n'a été identifié. Dialnet en donne une notice d'indexation sans texte ni analyse, ce qui ne constitue pas une source secondaire et n'est donc pas listé. L'article de Veraldi de 1969, auquel Paquette se rattache, est confirmé dans son existence, sa pagination et son DOI par sa notice Persée, mais je ne l'ai pas ouvert : son contenu n'est connu ici que par ce que Paquette en rapporte, et rien de ce résumé ne doit être repris comme établi."
     }
   ],
-  "estimated_tokens": 13472,
+  "estimated_tokens": 13473,
   "status": "READY"
 }

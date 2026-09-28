@@ -1,125 +1,100 @@
 concept : critere-de-la-retroaction
-verdict : ACCEPT
+verdict : REJECT
 factcheck_sha_match : PASS
 baseline_blob_sha : 623582dbf638f033caa87a683c490298c470e512
 
-GATE (vérifié avant toute lecture pédagogique)
+GATE PRÉALABLE
 
-- `sha256sum corpus/deepenings/critere-de-la-retroaction.json` =
-  `c95ef7e2fb1794bb1dc834ec0f1a566ed10c92133fec21e266d14b9fc11c9ef3`.
-- `factcheck-gate.json` : `verdict: FACTCHECK_PASS`, 48 claims, 48 soutenus, 0 refusé,
-  `mapping_incomplete: 0`, `structural_errors` vide, `candidate_sha256` identique au SHA ci-dessus.
-- `verification.json` porte le même `candidate_sha256` et 48 résultats, tous `SUPPORTED`.
-  `claim-map.json` porte le même SHA et 48 claims sur 13 locators.
-- Le gate décrit donc bien le texte en place, et non `51377815…` comme le disaient les artefacts
-  au moment où `reprise-rewrite.md` a été arrêté : la chaîne a été relancée depuis `PREPARE`
-  après la reprise, comme ce compte rendu le demandait.
+- sha256 actuel de `corpus/deepenings/critere-de-la-retroaction.json` :
+  `277c278c669208b898fd46236032003c40f8db6832d74021cf743ae59e94e3f3`
+- `factcheck-gate.json` : `verdict: FACTCHECK_PASS`, `candidate_sha256` identique, 53/53
+  soutenus, 0 refus, `mapping_incomplete` et `structural_errors` vides.
+- blob antérieur : lisible, JSON d'approfondissement, `conceptId` = `critere-de-la-retroaction`,
+  sha256 `29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222`, 1 198 mots lecteurs
+  hors titres. Concorde avec l'en-tête du rapport du 26 septembre.
 
-Version antérieure : blob `623582db…`, lu par `git cat-file -p`. JSON d'approfondissement valide,
-`conceptId` = `critere-de-la-retroaction`, sha256 `29083f8bb2bfc0602f2f6db3c5f3d2594ebc8efe766d4a9187f1d73a3a595222`,
-conforme au `deepening_sha256` du rapport final du 26 septembre. C'est le texte publié (tour 0),
-celui qu'a examiné `audit.md`. Le diff couvre donc tout le cycle : les onze corrections
-factuelles des tours 1 et 2, puis les deux gestes de la reprise du 28.
+Le gate est valide. Le rejet qui suit est pédagogique, il n'annule aucun verdict du gate.
 
-Volume lecteur : 1 198 mots avant, 1 074 après (moins 124). 14 paragraphes avant, 13 après.
+VOLUME
+
+lead 195 -> 179 mots. Sections : 178/234/165/164/262 -> 175/192/158/91/278.
+Texte lecteur 1 198 -> 1 073 mots, soit 125 mots perdus, dont 73 sur la seule section 4.
+Le texte passe sous le plancher de 1 100 mots de `PROTOCOLE.md` §5.
 
 COMPARAISON
 axe                            avant   après   preuve
-fidélité documentaire          2/4     4/4     avant : gate à 7 refus sur 59, et surtout S5.P3 « Ces quatre termes, il ne les invente pas » contredisant `attribution_note`, qui réserve la non-invention à rétroaction et rétroinformation. après : 48/48 soutenus ; le périmètre est borné aux deux termes et l'ajout des deux autres est dit (« La préinformation et la préaction, elles, il les ajoute ») ; `limits` identique au caractère près et non remonté ; Veraldi `metadata-only` toujours hors du texte lecteur.
-progressivité pédagogique      3/4     3/4     les deux réserves de l'audit sont intactes dans les deux versions : « faire boucle » sert de critère dès lead[1] avant que s2 dise ce qu'une boucle exige, et s4.p1 formule les deux dimensions après que s2.p0 les a employées sous « constater et intervenir ». Gain : disparition du paragraphe le plus faible (baseline s1.p2, le délai). Rugosité nouvelle : s3.p0 s'ouvre désormais sur un énoncé abstrait (« Paquette décrit une hiérarchisation des boucles et un déplacement des finalités ») là où la baseline entrait par « Une boucle n'est presque jamais seule », et « au même étage » (s3.p1) s'appuie sur un antécédent plus mince. Contenue : « déplacement des finalités » enchaîne directement sur la « valeur visée » de s2.p1, et la fièvre instancie aussitôt.
-densité / non-redondance       3/4     3/4     avant : 11 deltas propres sur 14 paragraphes, S2.P3 annonçant l'importance du délai sans l'expliquer, S5.P2 redondant. après : 12 sur 13 ; S2.P3 supprimé et réduit à une borne symétrique utile (« que le temps de traitement ne rende pas l'information inutilisable ») ; s4.p1 reste le seul paragraphe à delta partiel. Aucune séquence de trois paragraphes à delta substantiellement identique, aucune section dont le rôle principal soit de répéter une autre. Répétition supprimée non recréée ailleurs : recherché spécifiquement sur le couple hiérarchie / étage (s3.p0 vs s3.p1) et sur le couple deux conditions (lead[1] vs s4.p1) ; le premier est resserré par le bornage, le second est inchangé et déjà connu.
-clarté                         3/4     3/4     lead[0] intact, le meilleur passage du texte. lead[1] passe de « un moyen de trancher, devant n'importe quelle situation » à « un critère d'identification : deux conditions sans lesquelles il n'y a pas de boucle » : registre un peu plus abstrait, immédiatement racheté par les deux questions en mots courants qui suivent sans changement. Gain net en s4.p2, que l'audit reprochait d'empiler quatre termes en 113 mots : ils y sont désormais groupés deux par deux selon leur statut. Pertes : la scène du curseur (s2.p1) et la glose contrastive de l'hétérostasie ; l'hétérostasie reste glosée par sa définition (« le déclenchement d'une révision des buts »), donc aucun terme savant n'arrive non expliqué.
-profondeur explicative         3/4     3/4     tout ce qui a été retranché depuis la baseline est un énoncé que le gate a refusé, et je l'ai instruit pièce par pièce contre `rewrite.md` : le mécanisme du délai (C028-C031, « intégralement inventée » de l'aveu du correcteur), la généralisation de l'écart-défaut (C040), l'obstination du corps (C044), le curseur (C034), l'emboîtement et l'agent du déplacement (C038). Aucune de ces pertes n'est une profondeur soutenue : une profondeur obtenue par invention ne se porte pas au crédit du texte (AUDIT_PROTOCOL §5-6). La profondeur appuyée est inchangée, et elle gagne en s4.p2 un mécanisme documentaire neuf, la manière dont la terminologie a été assemblée, deux termes repris et deux ajoutés. Réserve honnête : s3 est désormais la section la plus mince du texte (2 paragraphes, ~85 mots) et se tient au plafond documentaire que l'audit avait nommé.
-valeur des exemples            4/4     4/4     l'autocuiseur contre le réservoir (s2.p0), le parachute (s1.p0) et la fièvre (s3.p0) travaillent tous, inchangés. La restitution du thermostat et du joueur de quilles au `lead` rétablit la liste du texte publié. Dette pédagogique constatée et assumée : deux des cinq objets annoncés ne reparaissent jamais (le thermostat n'a plus son curseur depuis C034). Ce n'est pas une régression imputable à la reprise : `audit.md` tranche explicitement le point sous LIMITES DOCUMENTAIRES, « La mention en lead[1] est licite ; un développement ne le serait pas ». La phrase caractérise l'article, elle ne promet pas un plan. Aucun exemple séduisant sans fonction n'a été ajouté : la reprise n'ajoute aucun exemple.
-limites / nuances              3/4     4/4     avant : « pas nécessairement en temps réel » bien placé, mais le statut des deux termes ajoutés perdu et remplacé par une affirmation plus forte. après : la fausse affirmation est retirée et l'ajout est dit ; la nuance du différé reçoit sa borne symétrique. Réserve maintenue : le statut d'« hypothèses de travail » de préinformation et préaction, que l'enregistrement validé porte, n'est toujours pas énoncé. La faute est réparée, la nuance n'est que partiellement restituée.
-pouvoir d'ouverture            2/4     2/4     inchangé, et c'est le défaut de l'audit qui survit entièrement : le texte finit toujours sur une restriction de périmètre (« Cette terminologie, il la propose aux sciences de la communication et à elles seules »). Les deux sorties que l'audit avait repérées dans les matériaux, le motif de l'emprunt dénaturé et l'arrivée tardive du mot rétroaction, exigent d'ajouter du texte, ce que `reprise.md` interdit nommément. Chantier ouvert, hors mandat de ce cycle.
+fidélité documentaire          2/4     4/4     la sur-attribution qui interdisait `PASS` est levée : « Ces quatre termes, il ne les invente pas » devient « Rétroaction et rétroinformation, il ne les invente pas […] La préinformation et la préaction, elles, il les ajoute ». `C038`, `C040`, `C041`, `C034` et le mécanisme du délai, tous TOO_STRONG, sont sortis. Gate 53/53.
+progressivité pédagogique      3/4     2/4     S4.P1 annonce « une hiérarchisation des boucles » et ne l'explique plus : rien ne dit au lecteur qu'il y a plusieurs boucles ni quels sont les étages. S4.P2 conserve « elles ne se logent pas au même étage » sans antécédent, alors que `rewrite.md` justifiait expressément de le garder par « S4.P0, qui établit l'emboîtement » (l. 348-350) et signalait déjà l'écho comme réserve (l. 352-355). Le bornage de la reprise a retiré cet antécédent : le saut est créé, pas hérité. Les deux réserves de progression de l'audit (« faire boucle » utilisé avant S3 ; les deux dimensions de S5.P2 après leur usage en S3.P1) sont intactes.
+densité / non-redondance       3/4     3/4     gain réel : S2.P3, le paragraphe à delta faible qui annonçait l'importance du délai sans l'expliquer, disparaît, réduit à une clause bornée. Perte compensatoire nulle : S5.P2, que l'audit qualifiait de « largement REDONDANT AVEC lead[1] + S1 + S2 », est inchangé au caractère près, et le raccord prescrit avec « constater et intervenir » de S3.P1 n'a pas été fait. Aucune séquence de trois paragraphes à delta identique, avant comme après.
+clarté                         3/4     3/4     S5.P3 gagne en lisibilité, ses quatre termes étant désormais séparés en deux phrases. Mais lead[1] recule du registre opératoire au registre savant : « un moyen de trancher : devant n'importe quelle situation où quelque chose revient vers celui qui a agi, deux questions suffisent » devient « un critère d'identification : deux conditions sans lesquelles il n'y a pas de boucle », dans le passage que le protocole désigne comme le plus important du texte. Et « hiérarchisation des boucles » entre en S4 sans être expliqué.
+profondeur explicative         3/4     2/4     quatre mécanismes perdus sans remplacement : le changement d'échelle de S4 (« Une boucle n'est presque jamais seule », les valeurs révisables, puis « tout écart ressemble à un défaut » tant qu'on regarde une boucle seule), que l'audit classait comme le second delta le plus fort du texte et que sa trajectoire cible ordonnait de conserver ; la raison en S1.P2 (« puisqu'elles n'y lisent pas la même chose ») ; l'ancrage concret de la valeur de référence en S3.P2 (« de celui qui pousse le curseur du thermostat ») ; le mécanisme du délai, ramené à « le temps de traitement ne rende pas l'information inutilisable ». Section 4 : 164 -> 91 mots.
+valeur des exemples            4/4     3/4     le parachute, l'autocuiseur contre le réservoir et la fièvre sont intacts. Mais les deux orateurs devant la même salle sont affaiblis en « ne donne donc pas forcément le même retour », sans la raison ; et la promesse de lead[1] est désormais tenue pour trois objets sur cinq : le thermostat, dont le curseur était le seul emploi, et le joueur de quilles ne font plus rien nulle part. L'audit signalait cette promesse comme « partiellement non tenue » ; elle l'est maintenant entièrement pour les deux objets restitués.
+limites / nuances              3/4     3/4     gain : le lecteur peut enfin distinguer les deux termes que Paquette n'invente pas de ceux qu'il ajoute. Non corrigé : leur statut d'hypothèses de travail, que l'enregistrement validé porte explicitement et que l'audit signalait comme perdu, reste absent. « pas nécessairement en temps réel » et le double sens de rétroaction sont conservés.
+pouvoir d'ouverture            2/4     2/4     l'audit écrivait : « la dernière phrase du texte ne peut pas être une restriction de périmètre », et nommait deux sorties disponibles (le reproche d'emprunt dénaturé, l'équivalence tardive du vocabulaire). Aucune n'est employée, et la restriction, jusque-là fondue dans une phrase composée, est maintenant la dernière phrase autonome du texte : « Cette terminologie, il la propose aux sciences de la communication et à elles seules. »
 
-LE GESTE HORS CONSIGNE : LE TITRE DE sections[3]
+VÉRIFICATION DES DEUX POINTS DEMANDÉS
 
-Instruit moi-même, et non pris sur parole. Constats :
+1. Restitution du thermostat et du joueur de quilles, portée. Conforme, et strictement bornée à
+   `$.reserves[0]` (`SUP-421445a4beb428f3`). Le verbe est celui de l'appui (« raisonne sur »),
+   les deux objets entrent en liste nue, aucun fonctionnement ne leur est attribué, le
+   thermocouple et le professeur devant quelques centaines d'étudiants ne sont pas ajoutés, et le
+   curseur du thermostat retiré par `C034` n'est pas rétabli. Aucun dépassement. Effet collatéral
+   à noter : bornée comme il faut, la restitution ne rend au lecteur qu'une énumération, et comme
+   `C034` a supprimé le seul endroit où le thermostat travaillait, le geste aggrave la promesse
+   non tenue du lead au lieu de la réparer.
 
-1. Les 13 locators de `claim-map.json` s'arrêtent à `lead[*]` et `sections[*].paragraphs[*]` :
-   aucun ne vise un titre. Le réécrivain dit vrai, le gate est aveugle à cet endroit.
-2. `definition_de_lauteur` du dossier écrit « Paquette décrit ensuite la hiérarchisation des
-   boucles et le déplacement des finalités ». Ni « emboîtées les unes dans les autres », ni un
-   niveau supérieur comme agent n'y figurent. L'excédent refusé en `C038` est bien celui que le
-   mot « emboîtées » portait en tête de section.
-3. Le mot substitué est celui de l'appui. La substitution ne crée aucune assertion : elle en
-   retranche une.
-
-Jugement : **le geste est acceptable, et il était le bon.** `PROTOCOLE.md` §1 établit que le
-titre fait partie du texte lecteur et est soumis aux mêmes règles (« ni dans un titre »), et
-`AUDIT_PROTOCOL.md` §3.A note la fidélité documentaire du texte lecteur, titres compris. Laisser
-« emboîtées » aurait publié en position d'annonce, et dans le seul endroit du texte lecteur que le
-vérificateur ne regarde pas, exactement la proposition que le gate venait de refuser dans le
-paragraphe situé trois lignes plus bas. Les interdictions de `reprise.md` visent les ajouts
-(« ajouter un exemple, une transition ou une nuance ») et le retour sur les onze corrections :
-une troncature d'un mot vers la formule de l'appui n'est ni l'un ni l'autre. Le coût est nul,
-zéro mot, aucune assertion neuve, progression inchangée, titre toujours substantiel et à 47
-caractères. Et la cohérence l'impose : ce cycle existe parce qu'un angle mort d'instrument a fait
-retirer deux exemples réels (`C008`) ; on ne peut pas, dans le même cycle, se servir d'un autre
-angle mort pour conserver un excédent. Le geste a de surcroît été déclaré en avance, localisé et
-donné comme réversible, ce qui est le comportement attendu de qui sort de la lettre d'une
-consigne.
-
-PRÉMISSES DU RÉÉCRIVAIN VÉRIFIÉES AU DOSSIER
-
-- Geste 2 : `corpus/evidence/retroaction-denaturee/lecture.json`, `$.reserves[0]`, condition 3,
-  porte bien « l'auteur raisonne sur un thermostat, un autocuiseur, un réservoir de W.-C., un
-  thermocouple, un joueur de quilles, une fièvre, un professeur devant quelques centaines
-  d'étudiants ». La prémisse de `reprise.md` est exacte, la restitution est fondée. Le thermocouple
-  et le professeur, attestés par la même phrase, n'ont pas été promus : correct, ils n'étaient pas
-  au texte publié.
-- Geste 1 : `definition_de_lauteur` porte la formule retenue mot pour mot. Le `NARROW` n'a rien
-  substitué et n'a compensé nulle part : la phrase passe de 25 à 12 mots et le texte est plus court
-  après (1 074 contre 1 081 au candidat du tour 2, contre 1 198 au texte publié).
+2. Bornage de `C038`, compréhensibilité. Le bornage est juste sur la portée : les deux appuis ne
+   portent que deux substantifs, et la reprise n'a gardé que ces deux substantifs. Mais il a vidé
+   le passage. « Déplacement des finalités » est bien instancié par la fièvre à la phrase
+   suivante, comme `reprise.md` l'argumente ; « hiérarchisation des boucles » ne l'est par rien,
+   et le lecteur ne sait plus qu'il y a plus d'une boucle. Surtout, la reprise a retiré
+   l'antécédent sur lequel `rewrite.md` s'appuyait pour conserver l'« étage » de S4.P2. Le
+   paragraphe suivant parle donc d'étages qu'aucune phrase ne construit. Ajouté au retrait de
+   S4.P2.1-2 par `C040`, la section qui portait le changement d'échelle tombe à 91 mots et à une
+   annonce abstraite suivie d'un cas.
 
 défauts initiaux corrigés :
-- La faute documentaire qui interdisait `PASS` à l'audit : S5.P3 étendait à quatre termes une
-  non-invention que l'enregistrement validé réserve à deux. Corrigée, et la distinction restituée
-  vaut en outre comme delta neuf pour le lecteur.
-- S2.P3, « le paragraphe le plus proche de l'annonce sans contenu, et aussi le plus exposé
-  documentairement ». Supprimé, et remplacé par la seule phrase que le dossier portait, ce qui est
-  précisément l'une des trois issues que la trajectoire cible autorisait.
-- Le dernier reliquat documentaire du cycle, `C038`, borné à l'appui, et son excédent nettoyé
-  jusque dans le titre que le gate ne voit pas.
-- La perte documentée du tour 2 (thermostat, joueur de quilles), réparée sur prémisse vérifiée.
+- S5.P3, sur-attribution de la non-invention à quatre termes : corrigée, et le lecteur y gagne une
+  distinction qu'il ne pouvait pas faire. C'est la faute qui interdisait `PASS` à l'audit.
+- S2.P3, paragraphe à delta faible et documentairement le plus exposé : supprimé, par l'une des
+  trois voies que l'audit autorisait explicitement.
 
-défauts initiaux non corrigés (hors mandat de cette reprise, à reporter) :
-- s4.p1 reformule encore le test déjà posé en lead[1] sans le raccord à « constater et intervenir »
-  de s2.p1, qui le rendrait neuf.
-- s0.p0 promet toujours « le premier tri porte sur la nature de ce qui revient » sans l'énoncer.
-- La fin du texte s'épuise toujours en délimitation de périmètre : pouvoir d'ouverture à 2/4.
-- Le statut d'« hypothèses de travail » de préinformation et préaction reste non dit.
+défauts initiaux non corrigés :
+- S5.P2 redondant, et le raccord avec « constater et intervenir » qui l'aurait rendu neuf : pas
+  fait, paragraphe inchangé.
+- S1.P1 promet « le premier tri porte sur la nature de ce qui revient » et ne l'énonce toujours
+  pas : paragraphe inchangé.
+- la fin s'épuise toujours en délimitation de périmètre, et davantage qu'avant.
+- le statut d'hypothèses de travail de préinformation et préaction reste perdu pour le lecteur.
 
 régressions détectées :
-- Aucune régression imputable à la reprise ni au cycle. Les cinq appauvrissements visibles du texte
-  lecteur (mécanisme du délai, généralisation de l'écart-défaut, obstination du corps, curseur du
-  thermostat, emboîtement) sont tous des énoncés que le gate a refusés, instruits un par un contre
-  `rewrite.md` : retrancher une fabrication n'est pas perdre une information solide.
-- Rugosité résiduelle, signalée sans valeur de rejet : s3.p0 entre désormais par l'abstrait et
-  « au même étage » (s3.p1) s'appuie sur un antécédent plus mince depuis le retrait de
-  l'emboîtement. Le réécrivain du tour 2 avait lui-même signalé cet écho ; il est devenu, après le
-  bornage, une maigreur plutôt qu'une redite. Matière à un prochain cycle, à matière constante.
-- Aucune remontée de `limits` dans le texte lecteur : les trois éléments sont identiques au
-  caractère près à ceux de la baseline et aucune de leurs formulations ne reparaît en section.
-- Aucune transition fluide masquant un saut : les deux gestes retranchent ou restituent à
-  l'intérieur de phrases existantes, aucune transition n'a été écrite.
-- Observation d'instrument, sans effet ici : `verification.json` ne porte pas le champ
-  `appuis_non_cites` annoncé par `reprise.md`. L'angle mort qu'il devait couvrir ne peut pas mordre
-  sur ce texte, puisqu'il suppose un claim refusé et qu'il n'en reste aucun.
+- saut logique créé en S4 : « au même étage » sans étage construit, « hiérarchisation des
+  boucles » sans hiérarchie montrée.
+- profondeur baissée par soustraction seule : 125 mots retirés, tous des passages explicatifs,
+  aucun remplacé, alors que l'audit avait nommé la matière disponible pour compenser (les trois
+  sous-processus, le raccord constater / intervenir, le motif de l'emprunt dénaturé, l'équivalence
+  tardive du vocabulaire). Rien de cette matière n'a été employé.
+- lead[1] passe du registre opératoire au registre savant dans le passage le plus important du
+  texte.
+- S1.P2 perd sa raison, S3.P2 perd son ancrage concret.
+- texte lecteur sous le plancher de 1 100 mots du protocole.
 
-raison de la décision : ACCEPT. Le gate préalable est bon sur le SHA exact du fichier en place,
-vérifié à trois artefacts concordants. Le défaut majeur qui interdisait `PASS` à l'audit du 25
-septembre, la sur-attribution de S5.P3, est effectivement supprimé, et un second, le paragraphe
-S2.P3, l'est aussi. La fidélité documentaire passe de 2/4 à 4/4, les limites utiles de 3/4 à 4/4,
-et aucun des six autres axes ne baisse. Aucune séquence de trois paragraphes à delta identique,
-aucune section principalement redondante, progression au moins aussi claire, profondeur appuyée
-non dégradée : les six exigences minimales de l'ACCEPT sont tenues. Le texte est plus court de 124
-mots et reste dans le volume du protocole, mais ce n'est pas ce qui fonde la décision : ce qui la
-fonde est que chaque mot retiré était un mot non porté, et que ce qui a été ajouté au dernier tour
-l'a été sur une prémisse que j'ai rouverte moi-même au dossier. Le geste sur le titre de
-`sections[3]`, bien que hors de la lettre de la consigne, en applique l'esprit au seul endroit du
-texte lecteur que l'instrument ne contrôle pas ; il ne disqualifie pas la réécriture, il la
-complète. Le pouvoir d'ouverture reste à 2/4 et les trois autres défauts pédagogiques de l'audit
-survivent : ils sont hors du mandat de cette reprise et doivent rester inscrits comme chantier.
+raison de la décision : REJECT. Le gate est valide et la fidélité documentaire progresse
+franchement, de 2/4 à 4/4 : deux des cinq défauts majeurs du diagnostic, dont celui qui
+interdisait `PASS`, sont réellement supprimés. Cela satisfait le minimum « au moins un défaut
+majeur effectivement supprimé », mais deux exigences d'`ACCEPT` échouent. La profondeur
+explicative est dégradée : le changement d'échelle de la section 4, que l'audit classait deuxième
+delta du texte et que sa trajectoire cible ordonnait de conserver, a disparu, avec la raison de
+S1.P2, l'ancrage de S3.P2 et le mécanisme du délai, et rien n'a pris leur place. La progression
+n'est pas aussi claire qu'avant : le bornage de `C038` a supprimé l'antécédent de l'« étage » de
+S4.P2, que `rewrite.md` avait expressément conservé sur la foi de cet antécédent, créant un saut
+que la version publiée n'avait pas. Les corrections documentaires prises une à une sont
+défendables et souvent nécessaires ; ce cycle les a toutes faites et n'a fait aucun des
+rebranchements pédagogiques pour lesquels le `REVISE` avait été rendu. Trois des cinq défauts
+majeurs sont intacts au caractère près, le texte a perdu 125 mots d'explication et passe sous le
+plancher du protocole. C'est exactement la baisse de profondeur obtenue par raccourcissement que
+la revue doit refuser. La version antérieure, `623582db…`, doit être restaurée, et la reprise
+reconduite avec pour mandat de rendre au lecteur ce que le bornage a retiré, à partir de la
+matière que l'audit a inventoriée.
+
+note de méthode : aucun fichier du corpus n'a été modifié ; seul ce compte rendu a été écrit.

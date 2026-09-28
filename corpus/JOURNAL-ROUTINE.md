@@ -5,6 +5,371 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-09-28
+
+Cinquième exécution. **Aucune carte publiée, le corpus servi au lecteur est inchangé, et le
+résultat qui compte est un fait de protocole : ce passage a refait, sans le savoir, le travail du
+27 septembre.** `ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
+
+- branche      : `claude/beautiful-feynman-8rprst`, imposée par la session. PR #123.
+- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`.
+- résultats    : **0 publiée.** La carte était **déjà instruite et refusée la veille**, ce que ce
+  passage ignorait.
+- contrôles    : validate 140 / 136 validés / 0 erreur · deepen --check 136 · lint 0 · `next build`
+  sans erreur · projection identique à `main` après restauration.
+
+### Le fait de la nuit : une routine qui lit `main` ne voit pas les branches ouvertes
+
+Ce passage est parti de `origin/main`, qui ne portait pas encore PR #122. Il a donc **réimplémenté
+le chantier K, refait la même reprise de `critere-de-la-retroaction` avec les deux mêmes gestes, et
+rouvert le chantier L** — tout cela en parallèle d'une branche qui les portait déjà.
+
+Le mécanisme est simple et il se reproduira : **le journal d'un passage vit sur la branche de ce
+passage.** Rien dans le protocole ne demande de regarder ailleurs que dans les fichiers de `main`.
+C'est le chantier M, et son geste de parade tient en une ligne : lister les branches ouvertes et
+leurs PR au point 3 de la routine, avant de choisir un lot.
+
+**Le travail dupliqué a été écarté à la fusion, au profit de celui de #122** : implémentation du
+chantier K, artefacts de cycle, rapport de carte, protocole et prompts d'agents. C'est la version
+fusionnée qui vit, et c'était la conclusion écrite d'avance dans la description de #123.
+
+### Ce que la duplication a rapporté, et qui ne se paie pas deux fois
+
+**Une mesure de la variance du dispositif sur une tâche identique**, que le dépôt réclamait depuis
+le 26 septembre sans jamais la financer.
+
+| | passage du 27 | passage du 28 |
+|---|---|---|
+| gate sur la même reprise | `FACTCHECK_PASS` **53 sur 53** | `FACTCHECK_PASS` **48 sur 48** |
+| mots lecteur du candidat | 1 073 | 1 074 |
+| verdict de la revue indépendante | **REJECT** | **ACCEPT** |
+
+**Deux revues indépendantes, sur deux textes à un mot près, rendent des verdicts opposés** — sur le
+maillon qui décide si un texte est publié. Et le découpage varie de 53 à 48 claims sur un même
+texte, ce qui donne un quatrième point à la leçon du 26 septembre : le nombre de claims ne mesure
+pas le texte.
+
+### Pourquoi le REJECT l'emporte, et ce que cela a révélé
+
+Pas par ancienneté. Par une règle écrite que l'une des deux revues invoque et que l'autre a
+manquée : `PROTOCOLE.md` §5, « en dessous de 1 100, le texte n'a rien ajouté ». Le candidat fait
+1 074 mots lecteur.
+
+**Et le contrôle mécanique ne pouvait pas le voir.** Les bornes dures de `deepenings.mjs` sont
+`minWords: 1000` et `maxWords: 2100`, et leur commentaire assume l'écart — « le protocole vise
+1 300-1 700 ; ces bornes-ci laissent respirer ». **Le plancher du protocole n'est porté par aucun
+code**, et sa violation dépend d'un reviewer qui pense à le vérifier. C'est à trancher : soit le
+code porte le plancher, soit le protocole s'aligne, mais pas les deux chiffres.
+
+### Le point 1 du chantier I est soldé, et lui n'est pas dupliqué
+
+`predominance-du-conflit-sur-la-negociation` déclare désormais son dossier. Établi sur pièce :
+`quotation.text` **identique à l'octet** entre la carte et
+`corpus/evidence/taille-des-entreprises-et-issue-des-greves/`, même `locator` p. 43, même auteur,
+et les deux `sources_ouvertes` du dossier sont ses deux sources déclarées.
+
+Pack **56 → 96 appuis dont 39 du dossier**, les deux `access_corroboration` de `dossier-absent` à
+**`corrobore`**, et les 56 appuis antérieurs survivent tous à l'identique.
+
+Le critère qui en sort ne vaut que confronté au fichier : sur quatorze répertoires orphelins,
+**deux sont nommés par une carte**, et les ouvrir les sépare — l'un déclare son appartenance,
+l'autre nomme le répertoire pour dire qu'il est **un autre sujet, jamais rédigé**. Un rattachement
+sur le seul nom aurait été faux une fois sur deux.
+
+### Et le balayage des titres par rareté ne marche pas — mesuré
+
+Chantier L, point 1. Appliquer l'instrument du chantier K aux 744 titres de section rend **199
+signalements sur 744**, presque intégralement du bruit : `loger`, `prévoir`, `choisir`, `famille`.
+
+La raison est structurelle et vaut d'être retenue : **un titre et un dossier ne sont pas écrits
+dans la même langue.** Les dossiers sont une prose bibliographique dense, les titres une langue
+vive. Une fréquence mesurée sur les dossiers déclare rare ce qui n'est qu'absent d'un registre.
+
+Et le seul cas vrai y est signalé **pour une raison fausse** : `hiérarchisées`, absent du dossier
+parce qu'il porte `hiérarchisation` — la forme que la correction a retenue et qui est soutenue.
+Sans normalisation morphologique, l'instrument signale un terme correct. La voie la plus évidente
+du chantier L est donc fermée, avec son motif.
+
+### Une note d'exploitation, qui corrige une parade écrite
+
+La parade du 26 septembre — « conditionner l'attente au SHA attendu et non à l'immobilité du
+fichier » — **est nécessaire et ne suffit pas.** Le claim mapper a écrit son fichier au bon SHA,
+puis l'a réécrit deux fois avant de rendre. La règle complète : **attendre le compte rendu de
+l'agent**, et se servir du SHA pour vérifier ce qu'on a reçu, jamais pour décider qu'il a fini.
+
+## Passage d'audit — 2026-09-27
+
+Quatrième exécution. **Deux cartes instruites, une publiée, une refusée — et l'instrument du
+chantier K est en place, mesuré sur les deux cas qui l'avaient motivé.** `ROUTINE_PASS`.
+
+- branche      : `claude/beautiful-feynman-1yrc32`, imposée par la session. Le prompt recommande `routine/corpus-YYYY-MM-DD` ; la consigne de branche de la session est plus forte et interdit de pousser ailleurs. Poussée par commits successifs.
+- lot          : **2 cartes** — `critere-de-la-retroaction` (reprise prescrite par le rapport de la veille) et `catachrese` (jamais auditée). Aucune `SKIPPED_DIRTY`. Le lot s'arrête à deux parce que chacune a demandé un cycle complet, et non pour économiser.
+- sélection    : la première était la **reprise la mieux spécifiée du dépôt**, à un claim du `FACTCHECK_PASS` avec trois gestes écrits. La seconde par mesure, parmi les **108 approfondissements jamais audités** : la plus haute part de séquences de cinq mots répétées, 1,48 %, avec un dossier de 14 Ko et deux sources primaires `full-text`.
+- résultats    : **1 publiée** (`catachrese`, `FACTCHECK_PASS` 68/68 puis `ACCEPT`) · **1 `rewrite_rejected`** (`critere-de-la-retroaction`, `FACTCHECK_PASS` 53/53 puis `REJECT` pédagogique, restaurée par son SHA de blob).
+- contrôles    : validate 140 / 0 erreur · deepen --check 136 · **575 tests / 0 échec** (+23) · lint 0 · `next build` · projection **un seul approfondissement changé sur 136**, `concepts.generated.ts` intact, vérifiée idempotente sur deux passes.
+
+### L'instrument du chantier K, et son calibrage est mesuré
+
+Deux gestes, séparés à dessein, et le protocole de fact-check passe en **version 2**.
+
+**`uncited_support_signal`**, joint par `--bundle` à chaque claim : les appuis que le mapping n'a pas
+cités et dont le texte porte un terme que le pack ne présente nulle part ailleurs **et** que le
+corpus ne tient pas pour général. Sans leur texte, hors du pack du mapper, hors de tout décompte du
+gate. **`MAPPING_INCOMPLETE`**, un verdict qui ne juge pas le texte : le gate le range parmi les
+erreurs de structure, donc `FACTCHECK_INVALID` et **aucune boucle de correction consommée**.
+
+**Le calibrage a été réglé sur les deux claims témoins du chantier, et une variante plus stricte a
+été écartée sur pièce** — deux termes partagés au lieu d'un rendrait le signal muet sur l'omission la
+mieux établie du dépôt, celle de `points-de-levier`, dont le claim ne partage avec `$.hook` que le
+mot « appuyer ». Le second filtre, le lexique général du corpus, a été ajouté parce que le premier ne
+suffisait pas : sur une carte correctement mappée, le signal se levait 15 fois sur 58 claims, pour
+« donne », « devant », « temps ». Résultat final : **1 claim signalé sur 58 là où le mapping est
+complet, 5 sur 63 là où il ne l'est pas, et le témoin nommé dans les deux cas.**
+
+**Et l'instrument a servi la nuit même.** Le mapping frais de `critere-de-la-retroaction` cite
+`$.reserves[0]`, l'appui que le mapping du tour 1 avait omis et dont l'omission avait fait couper
+deux exemples vrais. Sur `catachrese`, le vérificateur a examiné quatre signaux et les a **écartés**
+comme coïncidences lexicales : c'est le comportement attendu d'un signal, il pose une question, il ne
+prescrit rien.
+
+### Deux consignes données pour appliquées et qui n'étaient dans aucun fichier
+
+Le rapport du 26 septembre disait la consigne du vérificateur « portée au prompt ». **Elle n'y était
+pas**, ni celle du mapper sur les charnières de discours. Les deux sont maintenant versionnées, et la
+première a immédiatement tenu : les douze motifs de refus de `catachrese` disent tous « les appuis
+fournis pour ce claim », jamais « aucun appui résolu ». C'est cette différence qui fait rouvrir un
+mapping au lieu de couper un texte.
+
+**Un troisième défaut du même genre, trouvé en le cherchant** : le pack honore le champ `dossier`
+depuis le 26 septembre, mais l'auditeur et le réécrivain, qui lisent le dossier par eux-mêmes,
+dérivaient encore son chemin de l'identifiant de la carte. Dix enregistrements sur 136 le déclarent
+ailleurs. Corrigé dans les deux prompts.
+
+### Le chantier L, et c'est le résultat le plus dérangeant de la nuit
+
+`critere-de-la-retroaction` a obtenu **`FACTCHECK_PASS` 53 sur 53** — la carte était sortie du cycle
+de la veille refusée au plafond de boucles, à un claim près. La revue indépendante a rendu `REJECT`,
+pour un motif juste et vérifié : le bornage du claim survivant avait retiré l'antécédent d'un écho
+resté dans le texte, la section qui portait le deuxième delta perdait 73 mots, et le texte tombait
+sous le plancher de 1 100 mots que `PROTOCOLE.md` fixe en prose.
+
+Le protocole dit de restaurer, et le texte a été restauré. **Or la version restaurée est celle que le
+gate mesurait à 52 claims soutenus sur 59.** Le dépôt a remis en place sept refus documentaires pour
+récupérer deux points sur deux axes pédagogiques, ce qui **inverse sa propre priorité déclarée** —
+vérité documentaire avant densité pédagogique. Le protocole ne dit rien de ce cas parce qu'il ne
+l'avait jamais rencontré, et il se reproduira chaque fois qu'une correction documentaire coûte de la
+matière explicative, c'est-à-dire dans le cas général : `REMOVE` et `NARROW` retirent du texte par
+construction.
+
+Chantier L ouvert, avec quatre bouts par lesquels le prendre et un refus écrit : ne pas régler cela
+par un troisième cycle, qui serait du magasinage de verdict déplacé d'un cran.
+
+### Ce que `catachrese` a démontré, et qui vaut pour les 107 autres
+
+Le soupçon portait sur la redondance. **Le dossier a fait tomber deux affirmations fausses que la
+mesure ne cherchait pas**, dont une qui atteignait le lecteur : un contre-exemple nommait la
+« pédale d'accélérateur » là où la lecture primaire porte « pédale de frein », et deux passages
+créditaient Rabardel d'un rôle que `attribution_note` contredit explicitement.
+
+**Les `notes` de l'enregistrement validé disaient seulement « la pédale ».** Elles ne contredisaient
+rien. Un audit mené sur le seul enregistrement n'aurait pas vu la faute, et c'est la démonstration que
+l'asymétrie corrigée par `PROTOCOLE.md` §3 — donner le dossier au rédacteur — coûtait quelque chose de
+réel.
+
+Cela ne dit pas que les 107 autres cartes jamais auditées portent des fautes. Cela dit que **la
+première examinée en portait deux, et qu'aucun contrôle en place ne les aurait signalées.**
+
+### Ce que ce passage laisse au suivant
+
+1. **`critere-de-la-retroaction` a un mandat étroit et écrit** : repartir du candidat `277c278c…`, qui
+   porte le `FACTCHECK_PASS`, et rendre au lecteur ce que le bornage a retiré — réinstancier la
+   hiérarchisation des boucles, reconstruire l'antécédent de l'écho, remonter au-dessus de 1 100 mots
+   par de la matière du pack. Ce n'est pas une boucle factuelle : le gate ne demande rien.
+2. **Le chantier L demande une décision, pas un cycle de plus.** Trois réponses sont défendables et
+   `AUDIT_PROTOCOL.md` §7 doit en choisir une.
+3. **La variance du découpage du mapper n'est toujours pas mesurée** — point 2 de la liste du
+   25 septembre. Le gate reste déterministe à mapping donné et non à texte donné, et le signal ne
+   change rien à cela.
+4. **107 cartes jamais auditées**, et la mesure de sélection de cette nuit est reproductible :
+   `corpus/deepening-audits/` dit qui a un rapport, la part de 5-grammes répétés dit où chercher la
+   redondance, et la taille du dossier dit si l'audit pourra conclure autrement que par
+   `BLOCKED_SOURCE`. Prochains candidats par ce critère : `loi-de-campbell` (1,25 %, dossier 12 Ko),
+   `bruit-comme-principe-d-auto-organisation` (1,16 %, 22 Ko), `valeur-comme-fait-psychologique`
+   (0,91 %, 9 Ko).
+5. **24 cartes sur 136 n'ont aucun fichier de preuve que le pack puisse charger.** Parmi les 28
+   auditées à ce jour, les échecs de fact-check se concentrent là — 5 sur 11, contre 4 sur 17 pour
+   celles qui ont un dossier. L'échantillon est trop petit pour conclure, et six cartes sans dossier
+   ont pourtant obtenu `FACTCHECK_PASS` : un texte assez étroit peut être entièrement couvert par les
+   champs de l'enregistrement. À reprendre quand le nombre d'auditées aura doublé.
+
+### Une mise en garde d'exploitation, la troisième du même genre
+
+Le journal du 26 septembre disait qu'une mesure prise en cours d'écriture est une mesure de la
+version précédente. **Le corollaire opérationnel a été appliqué cette nuit et il marche** : aucun
+artefact n'a été lu avant que son agent ait rendu son compte rendu, et les six agents du lot ont
+tous été attendus. Le coût est du temps d'horloge, et il est moins cher qu'une conclusion fausse.
+
+### Et une incohérence de ce fichier même, corrigée ici
+
+**L'entrée du 26 septembre était écrite à la fin du fichier**, après les quinze passages
+d'instruction, quand la première ligne de ce journal dit « la plus récente en tête ». Une entrée
+qu'on ne trouve pas est une entrée qui n'existe pas pour la nuit suivante : celle-ci a failli
+renuméroter son passage à partir du 25. Elle est remise à sa place chronologique, sans un mot changé.
+
+## Passage d'audit — 2026-09-26
+
+Troisième exécution de la routine d'audit. **Une carte instruite, aucune publiée, et le défaut
+d'outillage que les deux passages précédents avaient nommé est corrigé.** Le corpus servi au
+lecteur est identique à l'octet près à ce qu'il était au lever.
+`ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
+
+- branche      : `claude/beautiful-feynman-nnw61g`, imposée par la session. Le prompt recommande `routine/corpus-YYYY-MM-DD` ; la consigne de branche de la session est plus forte. Poussée par commits successifs.
+- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`. Le plafond est de trois ; une seule a été prise parce que le chantier d'outillage qui la débloquait devait passer d'abord, et que le prompt autorise à n'en traiter qu'une quand la recherche est substantielle.
+- sélection    : **la reprise que le passage du 25 septembre avait désignée comme la moins chère et la mieux motivée du dépôt**, et la seule dont le rejet antérieur était démontré faux.
+- résultats    : **0 publiée.** 1 `rewrite_rejected_factcheck`, à **1 claim sur 58** du `FACTCHECK_PASS`.
+- contrôles    : validate 140 / 136 validés / 0 erreur · `deepen --check` 136 et **208 418 mots, le chiffre exact du départ** · **552 tests / 0 échec** (9 nouveaux) · lint 0 · projection en phase et vérifiée idempotente sur deux passes.
+- état final   : le deepening est revenu à son SHA de blob de départ, vérifié au `sha256sum`, et `git diff` contre l'état du lever est vide sur ce fichier.
+
+### Le chantier J est corrigé, et c'est le résultat qui vaut le plus
+
+Le pack de preuve dérivait le chemin du dossier du seul identifiant de la carte, alors que
+`corpus/validated/<id>.json` porte un champ `dossier` que **dix cartes sur cent trente-six
+déclarent ailleurs**. Le champ n'était lu nulle part. `prepare()` l'honore désormais, quand le
+chemin déclaré est sous `corpus/evidence/`.
+
+**L'option prise est celle que le dépôt s'était écrite à lui-même**, le point 4 du chantier, et non
+le point 2 : la couche carte n'est pas touchée, aucun répertoire renommé, aucun champ réécrit. Les
+`notes` de la carte documentaient la divergence d'identifiant **comme volontaire** — renommer
+aurait effacé une décision documentée pour satisfaire un outil qui avait tort.
+
+Mesures, et non déductions de la forme du correctif :
+
+| | avant | après |
+|---|---:|---:|
+| fichiers de preuve ramassés sur cette carte | 0 | 1 |
+| appuis du pack | 45, tous `validated` | **72, dont 27 du dossier** |
+| `access_corroboration` de sa source primaire | `dossier-absent` | **`corrobore`** |
+| cartes dont la liste de preuves change, sur 136 | — | **exactement 1** |
+
+La dernière ligne est celle qui autorisait le commit : les 135 autres listes sont identiques, donc
+les identifiants `SUP-...` de leurs packs sont stables et leurs claim maps archivés restent
+valides.
+
+**Le périmètre s'arrête avant `corpus/dossiers/`, et c'est un refus délibéré.** Les neuf autres
+cartes y pointent, et ce schéma mêle à la lecture des champs rédigés par un modèle. Les charger
+**ferait réussir à tort**, ce qui est le seul sens de défaut que ce dépôt n'accepte pas. La
+décision documentaire n'est pas prise ; elle cesse seulement d'être silencieuse — le pack porte
+`dossier_declare` avec son motif, et `--sweep` compte les dossiers non chargés.
+
+### Ce que le rejet de septembre valait, maintenant qu'on peut le mesurer
+
+**Il était faux sur les claims, et c'est établi, pas plausible.** Le gate du 19 septembre comptait
+**23 `UNSUPPORTED`** sur un pack de 45 appuis d'où le dossier était absent. Avec les 27 appuis de
+la lecture primaire chargés, le premier tour de cette nuit en compte **2**. Quinze des 34 appuis
+cités viennent du fichier que le gate de septembre n'avait jamais ouvert.
+
+### Les trois tours, et une leçon de mesure qui vaut pour tout le corpus audité
+
+| tour | claims | soutenus | refusés | mots |
+|---|---:|---:|---:|---:|
+| 0, texte publié | 59 | 52 | **7** | 1 198 |
+| 1 | 56 | 50 | **6** | 1 158 |
+| 2 | 58 | 57 | **1** | 1 081 |
+
+**Aucun refus corrigé n'est revenu, et pourtant le nombre de refus n'a pas chuté d'un coup.** Les
+six du tour 1 et le seul du tour 2 sont des claims *différents* des précédents : un mapping frais
+découpe autrement et découvre ce que le précédent n'avait pas porté. D'où la leçon, qui n'était pas
+sue : **un `FACTCHECK_FAIL` ne majore pas le nombre de défauts d'un texte, il le minore.** Un
+`FACTCHECK_PASS` obtenu en un tour ne dit pas qu'un texte est sans défaut ; il dit qu'un découpage
+n'en a pas trouvé.
+
+Corollaire d'exploitation : **le plafond de deux boucles est compté en tours de correction, pas en
+défauts restants.** Un texte qui révèle ses défauts par couches consomme ses deux boucles sur les
+deux premières et se fait refuser sur la troisième, quelle que soit sa qualité réelle. C'est le
+deuxième cas de suite — `systemographie` refusée à 82 sur 83, celle-ci à 57 sur 58 — et la question
+que le passage du 25 septembre avait posée sur ce plafond est maintenant posée deux fois, avec des
+chiffres.
+
+### Le défaut d'instrument trouvé cette nuit, et la perte qu'il a causée
+
+`C008` du tour 1 a été refusé `UNSUPPORTED` au motif que « ni un thermostat ni un joueur de quilles
+n'apparaissent dans aucun appui résolu ». **Le pack contenait `SUP-421445a4beb428f3`,
+`$.reserves[0]` de la lecture primaire, qui porte mot pour mot « l'auteur raisonne sur un
+thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une
+fièvre ».** Aucun claim du mapping ne le citait.
+
+**C'est le chantier K, et ce second cas est pire que le premier.** Sur `points-de-levier`, les
+claims omis arrivaient avec `support_ids: []` — un examen du claim map les repérait. Ici le claim
+était pourvu de deux appuis, tous deux réels, et le bon n'était pas du nombre. **Aucun compteur du
+dépôt ne distingue « deux appuis cités » de « les deux bons appuis cités ».**
+
+Et le dommage n'est pas resté théorique : la correction du tour 2 a retiré du texte deux exemples
+que Paquette emploie réellement. **Aucun maillon n'est fautif à son propre niveau** — le mapper n'a
+pas menti, le vérificateur a jugé juste sur ce qu'il avait, le gate a compté correctement, le
+réécrivain a appliqué la seule correction prudente qui lui restait, et il a même écrit l'appui dans
+son compte rendu avant de renoncer à s'en servir. C'est le dispositif entier qui a produit une
+perte, par une omission que rien n'était chargé de voir.
+
+**Une consigne en est sortie et elle est déjà appliquée** : un motif de refus doit dire de quoi il
+parle. « Aucun appui résolu ne mentionne X » laisse croire à une absence du dossier quand seuls les
+appuis de ce claim ont été regardés ; le vérificateur ne voit pas le dossier et ne peut donc pas
+établir qu'il ne contient pas X. La formule juste est « les appuis fournis pour ce claim ne
+mentionnent pas X », et la différence n'est pas cosmétique : c'est elle qui aurait fait rouvrir le
+mapping au lieu de couper le texte.
+
+### Ce que ce passage a décidé de ne pas faire, et pourquoi
+
+**Le candidat conservé en septembre n'a pas été repris.** Il ne correspondait à aucun artefact —
+son SHA était `1cc2efda…` là où le pack qui l'avait jugé portait `7d716dc2…` — et il était **22 %
+plus long que le texte publié**, 1 467 mots contre 1 198, pour une correction décrite comme une
+restriction de portée. Le cycle a porté sur le texte publié, parce que la question à instruire est
+d'abord « ce que le lecteur voit est-il couvert ? » et non « ce candidat est-il meilleur ? ». Les
+trois tours ont fini **117 mots plus court** que le texte publié, sans un mot ajouté qui ne soit
+adossé au pack.
+
+**Les onze répertoires orphelins n'ont pas été rattachés**, bien que la mesure en désigne trois qui
+visent une carte sans aucun dossier. Le rapprochement est fort — `carte-de-controle` et
+`controle-maximum` lisent Shewhart 1931 en `full-text`, l'édition et le LCCN exacts de
+`trois-sigmas-arbitrage-de-cout` et `cause-de-hasard-et-cause-assignable` ;
+`taille-des-entreprises-et-issue-des-greves` lit les deux sources déclarées de
+`predominance-du-conflit-sur-la-negociation`. Mais **lire la même œuvre au même niveau ne fait pas
+d'un répertoire le dossier d'une carte** : les onze portent un `id` interne égal à leur nom, ce qui
+les donne pour des sujets lus pour eux-mêmes. La question qui reste est plus étroite que l'œuvre —
+la lecture couvre-t-elle le passage que la carte utilise ? — et elle se répond en ouvrant le
+fichier. Rattacher sur la concordance d'œuvre serait exactement ce que le résolveur refuse de faire
+pour `corpus/dossiers/`.
+
+### Ce que ce passage laisse au suivant
+
+1. **`critere-de-la-retroaction` est à un claim de passer**, et sa reprise tient en trois gestes
+   écrits dans son rapport : borner `C038`, restituer le thermostat et le joueur de quilles, puis
+   repartir de `PREPARE`. Le candidat à 57 sur 58 est conservé.
+2. **`predominance-du-conflit-sur-la-negociation` est la reprise la mieux motivée du dépôt** :
+   un seul répertoire candidat, qui porte ses deux sources déclarées aux niveaux qu'elle annonce.
+   L'œuvre concorde ; il reste à établir le passage. Et la conclusion du 25 septembre sur
+   `trois-sigmas` — « ils demandent une lecture primaire que le dépôt n'a pas » — est à réexaminer :
+   le dépôt porte 33 Ko de lecture `full-text` de l'œuvre exacte, sous deux noms qui ne sont pas
+   celui de la carte.
+3. **Le plafond de boucles, pour la deuxième fois.** Deux cartes de suite refusées à un claim près.
+   Le comptage en tours plutôt qu'en défauts restants est maintenant documenté avec des chiffres.
+4. **Chantier K, deux pistes écrites avec leur risque** : un signal d'appuis non cités joint au
+   bundle du vérificateur — jamais au pack du mapper, jamais compté par le gate —, et un verdict
+   `MAPPING_INCOMPLETE` qui ferait échouer le gate en `FACTCHECK_INVALID`, donc **sans consommer de
+   boucle de correction**, puisque ce n'est pas le texte qui est en cause.
+5. **Le champ `dossier` est une chaîne, pas un tableau.** Une carte ne peut déclarer qu'un seul
+   dossier hors convention. Le résolveur charge ce répertoire entier, ce qui suffit aux onze cas
+   connus, mais les deux cartes Shewhart demanderaient un arbitrage ou un changement de schéma.
+
+### Une mise en garde d'exploitation, qui confirme celle du 25 septembre
+
+**Les six agents de ce lot ont tous attendu avant d'écrire**, et il a fallu le demander deux fois.
+La parade documentée marche. Mais une deuxième s'ajoute : **une attente mesurée sur la seule date
+de modification d'un fichier ne distingue pas « l'agent a fini » de « l'agent n'a pas commencé ».**
+Un premier guet a rendu « stable » un artefact qui était encore celui du cycle précédent. La parade
+est de conditionner l'attente au **SHA attendu** et non à l'immobilité du fichier.
+
+---
+
 ## Passage d'audit — 2026-09-25
 
 Deuxième exécution de la routine d'audit. **Trois cartes instruites, aucune publiée, et deux
@@ -2204,264 +2569,3 @@ septième fois.
 - **Elle n'a produit elle-même aucune connaissance.** Chaque carte est passée par un lecteur
   primaire, un rédacteur et un contrôleur aveugle qui ne recevait que le dossier du script. Aucun
   agent n'a contrôlé son propre travail.
-
----
-
-## Passage d'audit — 2026-09-26
-
-Troisième exécution de la routine d'audit. **Une carte instruite, aucune publiée, et le défaut
-d'outillage que les deux passages précédents avaient nommé est corrigé.** Le corpus servi au
-lecteur est identique à l'octet près à ce qu'il était au lever.
-`ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
-
-- branche      : `claude/beautiful-feynman-nnw61g`, imposée par la session. Le prompt recommande `routine/corpus-YYYY-MM-DD` ; la consigne de branche de la session est plus forte. Poussée par commits successifs.
-- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`. Le plafond est de trois ; une seule a été prise parce que le chantier d'outillage qui la débloquait devait passer d'abord, et que le prompt autorise à n'en traiter qu'une quand la recherche est substantielle.
-- sélection    : **la reprise que le passage du 25 septembre avait désignée comme la moins chère et la mieux motivée du dépôt**, et la seule dont le rejet antérieur était démontré faux.
-- résultats    : **0 publiée.** 1 `rewrite_rejected_factcheck`, à **1 claim sur 58** du `FACTCHECK_PASS`.
-- contrôles    : validate 140 / 136 validés / 0 erreur · `deepen --check` 136 et **208 418 mots, le chiffre exact du départ** · **552 tests / 0 échec** (9 nouveaux) · lint 0 · projection en phase et vérifiée idempotente sur deux passes.
-- état final   : le deepening est revenu à son SHA de blob de départ, vérifié au `sha256sum`, et `git diff` contre l'état du lever est vide sur ce fichier.
-
-### Le chantier J est corrigé, et c'est le résultat qui vaut le plus
-
-Le pack de preuve dérivait le chemin du dossier du seul identifiant de la carte, alors que
-`corpus/validated/<id>.json` porte un champ `dossier` que **dix cartes sur cent trente-six
-déclarent ailleurs**. Le champ n'était lu nulle part. `prepare()` l'honore désormais, quand le
-chemin déclaré est sous `corpus/evidence/`.
-
-**L'option prise est celle que le dépôt s'était écrite à lui-même**, le point 4 du chantier, et non
-le point 2 : la couche carte n'est pas touchée, aucun répertoire renommé, aucun champ réécrit. Les
-`notes` de la carte documentaient la divergence d'identifiant **comme volontaire** — renommer
-aurait effacé une décision documentée pour satisfaire un outil qui avait tort.
-
-Mesures, et non déductions de la forme du correctif :
-
-| | avant | après |
-|---|---:|---:|
-| fichiers de preuve ramassés sur cette carte | 0 | 1 |
-| appuis du pack | 45, tous `validated` | **72, dont 27 du dossier** |
-| `access_corroboration` de sa source primaire | `dossier-absent` | **`corrobore`** |
-| cartes dont la liste de preuves change, sur 136 | — | **exactement 1** |
-
-La dernière ligne est celle qui autorisait le commit : les 135 autres listes sont identiques, donc
-les identifiants `SUP-...` de leurs packs sont stables et leurs claim maps archivés restent
-valides.
-
-**Le périmètre s'arrête avant `corpus/dossiers/`, et c'est un refus délibéré.** Les neuf autres
-cartes y pointent, et ce schéma mêle à la lecture des champs rédigés par un modèle. Les charger
-**ferait réussir à tort**, ce qui est le seul sens de défaut que ce dépôt n'accepte pas. La
-décision documentaire n'est pas prise ; elle cesse seulement d'être silencieuse — le pack porte
-`dossier_declare` avec son motif, et `--sweep` compte les dossiers non chargés.
-
-### Ce que le rejet de septembre valait, maintenant qu'on peut le mesurer
-
-**Il était faux sur les claims, et c'est établi, pas plausible.** Le gate du 19 septembre comptait
-**23 `UNSUPPORTED`** sur un pack de 45 appuis d'où le dossier était absent. Avec les 27 appuis de
-la lecture primaire chargés, le premier tour de cette nuit en compte **2**. Quinze des 34 appuis
-cités viennent du fichier que le gate de septembre n'avait jamais ouvert.
-
-### Les trois tours, et une leçon de mesure qui vaut pour tout le corpus audité
-
-| tour | claims | soutenus | refusés | mots |
-|---|---:|---:|---:|---:|
-| 0, texte publié | 59 | 52 | **7** | 1 198 |
-| 1 | 56 | 50 | **6** | 1 158 |
-| 2 | 58 | 57 | **1** | 1 081 |
-
-**Aucun refus corrigé n'est revenu, et pourtant le nombre de refus n'a pas chuté d'un coup.** Les
-six du tour 1 et le seul du tour 2 sont des claims *différents* des précédents : un mapping frais
-découpe autrement et découvre ce que le précédent n'avait pas porté. D'où la leçon, qui n'était pas
-sue : **un `FACTCHECK_FAIL` ne majore pas le nombre de défauts d'un texte, il le minore.** Un
-`FACTCHECK_PASS` obtenu en un tour ne dit pas qu'un texte est sans défaut ; il dit qu'un découpage
-n'en a pas trouvé.
-
-Corollaire d'exploitation : **le plafond de deux boucles est compté en tours de correction, pas en
-défauts restants.** Un texte qui révèle ses défauts par couches consomme ses deux boucles sur les
-deux premières et se fait refuser sur la troisième, quelle que soit sa qualité réelle. C'est le
-deuxième cas de suite — `systemographie` refusée à 82 sur 83, celle-ci à 57 sur 58 — et la question
-que le passage du 25 septembre avait posée sur ce plafond est maintenant posée deux fois, avec des
-chiffres.
-
-### Le défaut d'instrument trouvé cette nuit, et la perte qu'il a causée
-
-`C008` du tour 1 a été refusé `UNSUPPORTED` au motif que « ni un thermostat ni un joueur de quilles
-n'apparaissent dans aucun appui résolu ». **Le pack contenait `SUP-421445a4beb428f3`,
-`$.reserves[0]` de la lecture primaire, qui porte mot pour mot « l'auteur raisonne sur un
-thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un joueur de quilles, une
-fièvre ».** Aucun claim du mapping ne le citait.
-
-**C'est le chantier K, et ce second cas est pire que le premier.** Sur `points-de-levier`, les
-claims omis arrivaient avec `support_ids: []` — un examen du claim map les repérait. Ici le claim
-était pourvu de deux appuis, tous deux réels, et le bon n'était pas du nombre. **Aucun compteur du
-dépôt ne distingue « deux appuis cités » de « les deux bons appuis cités ».**
-
-Et le dommage n'est pas resté théorique : la correction du tour 2 a retiré du texte deux exemples
-que Paquette emploie réellement. **Aucun maillon n'est fautif à son propre niveau** — le mapper n'a
-pas menti, le vérificateur a jugé juste sur ce qu'il avait, le gate a compté correctement, le
-réécrivain a appliqué la seule correction prudente qui lui restait, et il a même écrit l'appui dans
-son compte rendu avant de renoncer à s'en servir. C'est le dispositif entier qui a produit une
-perte, par une omission que rien n'était chargé de voir.
-
-**Une consigne en est sortie et elle est déjà appliquée** : un motif de refus doit dire de quoi il
-parle. « Aucun appui résolu ne mentionne X » laisse croire à une absence du dossier quand seuls les
-appuis de ce claim ont été regardés ; le vérificateur ne voit pas le dossier et ne peut donc pas
-établir qu'il ne contient pas X. La formule juste est « les appuis fournis pour ce claim ne
-mentionnent pas X », et la différence n'est pas cosmétique : c'est elle qui aurait fait rouvrir le
-mapping au lieu de couper le texte.
-
-### Ce que ce passage a décidé de ne pas faire, et pourquoi
-
-**Le candidat conservé en septembre n'a pas été repris.** Il ne correspondait à aucun artefact —
-son SHA était `1cc2efda…` là où le pack qui l'avait jugé portait `7d716dc2…` — et il était **22 %
-plus long que le texte publié**, 1 467 mots contre 1 198, pour une correction décrite comme une
-restriction de portée. Le cycle a porté sur le texte publié, parce que la question à instruire est
-d'abord « ce que le lecteur voit est-il couvert ? » et non « ce candidat est-il meilleur ? ». Les
-trois tours ont fini **117 mots plus court** que le texte publié, sans un mot ajouté qui ne soit
-adossé au pack.
-
-**Les onze répertoires orphelins n'ont pas été rattachés**, bien que la mesure en désigne trois qui
-visent une carte sans aucun dossier. Le rapprochement est fort — `carte-de-controle` et
-`controle-maximum` lisent Shewhart 1931 en `full-text`, l'édition et le LCCN exacts de
-`trois-sigmas-arbitrage-de-cout` et `cause-de-hasard-et-cause-assignable` ;
-`taille-des-entreprises-et-issue-des-greves` lit les deux sources déclarées de
-`predominance-du-conflit-sur-la-negociation`. Mais **lire la même œuvre au même niveau ne fait pas
-d'un répertoire le dossier d'une carte** : les onze portent un `id` interne égal à leur nom, ce qui
-les donne pour des sujets lus pour eux-mêmes. La question qui reste est plus étroite que l'œuvre —
-la lecture couvre-t-elle le passage que la carte utilise ? — et elle se répond en ouvrant le
-fichier. Rattacher sur la concordance d'œuvre serait exactement ce que le résolveur refuse de faire
-pour `corpus/dossiers/`.
-
-### Ce que ce passage laisse au suivant
-
-1. **`critere-de-la-retroaction` est à un claim de passer**, et sa reprise tient en trois gestes
-   écrits dans son rapport : borner `C038`, restituer le thermostat et le joueur de quilles, puis
-   repartir de `PREPARE`. Le candidat à 57 sur 58 est conservé.
-2. **`predominance-du-conflit-sur-la-negociation` est la reprise la mieux motivée du dépôt** :
-   un seul répertoire candidat, qui porte ses deux sources déclarées aux niveaux qu'elle annonce.
-   L'œuvre concorde ; il reste à établir le passage. Et la conclusion du 25 septembre sur
-   `trois-sigmas` — « ils demandent une lecture primaire que le dépôt n'a pas » — est à réexaminer :
-   le dépôt porte 33 Ko de lecture `full-text` de l'œuvre exacte, sous deux noms qui ne sont pas
-   celui de la carte.
-3. **Le plafond de boucles, pour la deuxième fois.** Deux cartes de suite refusées à un claim près.
-   Le comptage en tours plutôt qu'en défauts restants est maintenant documenté avec des chiffres.
-4. **Chantier K, deux pistes écrites avec leur risque** : un signal d'appuis non cités joint au
-   bundle du vérificateur — jamais au pack du mapper, jamais compté par le gate —, et un verdict
-   `MAPPING_INCOMPLETE` qui ferait échouer le gate en `FACTCHECK_INVALID`, donc **sans consommer de
-   boucle de correction**, puisque ce n'est pas le texte qui est en cause.
-5. **Le champ `dossier` est une chaîne, pas un tableau.** Une carte ne peut déclarer qu'un seul
-   dossier hors convention. Le résolveur charge ce répertoire entier, ce qui suffit aux onze cas
-   connus, mais les deux cartes Shewhart demanderaient un arbitrage ou un changement de schéma.
-
-### Une mise en garde d'exploitation, qui confirme celle du 25 septembre
-
-**Les six agents de ce lot ont tous attendu avant d'écrire**, et il a fallu le demander deux fois.
-La parade documentée marche. Mais une deuxième s'ajoute : **une attente mesurée sur la seule date
-de modification d'un fichier ne distingue pas « l'agent a fini » de « l'agent n'a pas commencé ».**
-Un premier guet a rendu « stable » un artefact qui était encore celui du cycle précédent. La parade
-est de conditionner l'attente au **SHA attendu** et non à l'immobilité du fichier.
-
----
-
-## Passage d'audit — 2026-09-28
-
-Quatrième exécution de la routine d'audit. **Aucune carte publiée, le corpus servi au lecteur est
-identique à l'octet à ce qu'il était au lever, et le résultat qui compte est une découverte de
-protocole : ce passage a refait, sans le savoir, le travail d'une branche ouverte et non
-fusionnée.** `ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
-
-- branche      : `claude/beautiful-feynman-8rprst`, imposée par la session.
-- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`.
-- résultats    : **0 publiée.** 1 `rewrite_rejected` — `FACTCHECK_PASS` 48 sur 48, puis `REJECT`
-  après confrontation à la revue de PR #122.
-- contrôles    : validate 140 / 136 validés / 0 erreur · deepen --check 136 et **208 418 mots, le
-  chiffre exact du départ** · **569 tests / 0 échec** (17 nouveaux) · lint 0 · build next sans
-  erreur · `git diff origin/main -- src/content/generated/` **vide** après restauration.
-
-### Le fait le plus important de la nuit, et ce n'est pas un résultat de corpus
-
-**PR #122 était ouverte, non fusionnée, et portait déjà : le chantier K implémenté, la même
-reprise de `critere-de-la-retroaction` avec les deux mêmes gestes, l'ouverture du chantier L, et
-`catachrese` publiée.** Ce passage a travaillé sur `origin/main`, qui ne la porte pas, et a donc
-tout refait en parallèle.
-
-**Une routine qui lit `main` ne voit pas le travail des branches ouvertes**, et le journal d'un
-passage vit sur la branche de ce passage. Trois nuits de suite ont écrit leur journal ; seules
-celles qui ont été fusionnées sont visibles de la suivante. C'est le chantier M.
-
-Le coût est mesurable : deux implémentations indépendantes du même chantier K, deux reprises de la
-même carte, deux ouvertures du même chantier L. Le seul gain est involontaire et vaut d'être
-gardé — **on a par accident une mesure de la variance du dispositif sur une même tâche**, et elle
-n'est pas rassurante :
-
-| | passage du 27 | passage du 28 |
-|---|---|---|
-| gate sur la même reprise | `FACTCHECK_PASS` **53 sur 53** | `FACTCHECK_PASS` **48 sur 48** |
-| mots lecteur du candidat | 1 073 | 1 074 |
-| verdict de la revue | **REJECT** | **ACCEPT** |
-| rareté du signal, mesurée sur | le pack, moins un lexique générique | les 136 dossiers du dépôt |
-
-**Deux revues indépendantes, sur deux textes à un mot près, rendent des verdicts opposés.** C'est
-la mesure de variance que le dépôt réclamait depuis le 26 septembre, obtenue par accident, et sur
-le maillon le plus coûteux de la chaîne.
-
-### Pourquoi c'est le REJECT qui a été retenu
-
-Pas par ancienneté, et pas par prudence de principe. Par une règle écrite que l'une des deux
-revues invoque et que l'autre a manquée.
-
-`PROTOCOLE.md` §5 : « Total visé : 1 300 à 1 700 mots. **En dessous de 1 100, le texte n'a rien
-ajouté.** » Le candidat fait **1 074 mots lecteur**.
-
-Et **le contrôle mécanique ne pouvait pas le voir** : les bornes dures de `deepenings.mjs` sont
-1 000 et 2 100, et leur commentaire assume l'écart — « le protocole vise 1 300-1 700 ; ces
-bornes-ci laissent respirer ». Le plancher du protocole n'est porté par aucun code. C'est à
-instruire, et c'est le second défaut d'instrument de la nuit.
-
-Les deux revues ont par ailleurs vu **le même** défaut pédagogique — le bornage de `C038` retire
-l'antécédent de « elles ne se logent pas au même étage » — et l'ont pesé différemment, réserve non
-bloquante d'un côté, motif de refus de l'autre. Sur ce point seul, rien ne départage. La règle
-écrite, si.
-
-### Ce que le cycle a établi et qui reste vrai
-
-- **Le refus est pédagogique et n'annule aucun verdict documentaire.** Les deux gestes sont justes,
-  les deux revues le disent, et les deux gates passent.
-- **Le chantier L est confirmé deux fois, indépendamment, par le même chemin** : un titre de
-  section portant l'excédent que le gate venait de refuser dans le corps. 744 titres, 2,78 % du
-  texte lecteur, aucun locator.
-- **Et le balayage des titres par rareté ne marche pas** : 199 signalements sur 744, presque
-  intégralement du bruit, pour une raison de registre qu'aucun seuil ne corrige. Le seul cas vrai
-  y est signalé pour une raison fausse, `hiérarchisées` contre `hiérarchisation`.
-
-### Le point 1 du chantier I est soldé, et lui n'est pas dupliqué
-
-`predominance-du-conflit-sur-la-negociation` déclare désormais son dossier. `quotation.text`
-identique à l'octet entre la carte et `corpus/evidence/taille-des-entreprises-et-issue-des-greves/`,
-même `locator`, même auteur, mêmes deux sources. Pack 56 → **96 appuis dont 39 du dossier**, les
-deux `access_corroboration` de `dossier-absent` à **`corrobore`**, et les 56 appuis antérieurs
-survivent tous à l'identique.
-
-Le critère qui en sort ne vaut que confronté au fichier : sur quatorze répertoires orphelins,
-**deux sont nommés par une carte**, et les ouvrir les sépare — l'un déclare son appartenance,
-l'autre nomme le répertoire pour dire qu'il est **un autre sujet, jamais rédigé**. Un rattachement
-sur le seul nom aurait été faux une fois sur deux.
-
-### Ce que ce passage laisse au suivant
-
-1. **Trancher les deux implémentations du chantier K avant toute autre chose.** Celle de PR #122
-   calcule un lexique générique sur le pack ; celle-ci mesure la rareté sur les 136 dossiers. Les
-   deux visent le même défaut. **Il en faut une, pas deux**, et le choix demande de les comparer
-   sur les mêmes cartes.
-2. **Le chantier M**, la visibilité des branches. Tant qu'il est ouvert, chaque passage risque de
-   refaire le précédent.
-3. **`predominance-du-conflit-sur-la-negociation`** est la reprise la mieux dotée du dépôt, et
-   elle n'est portée par aucune autre branche.
-4. **La reprise de `critere-de-la-retroaction` n'est plus celle du 26 septembre** : les deux gestes
-   sont faits et passent le gate, ce qui bloque est pédagogique et demande d'**ajouter** du texte.
-   Les quatre points sont dans son rapport.
-
-### Une note d'exploitation, qui corrige une parade écrite
-
-La parade du 26 septembre — « conditionner l'attente au SHA attendu et non à l'immobilité du
-fichier » — **est nécessaire et ne suffit pas.** Le claim mapper a écrit son fichier au bon SHA,
-puis l'a réécrit deux fois avant de rendre. La règle complète : **attendre le compte rendu de
-l'agent**, et se servir du SHA pour vérifier ce qu'on a reçu, jamais pour décider qu'il a fini.

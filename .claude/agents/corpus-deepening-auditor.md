@@ -32,6 +32,15 @@ fichiers ne sont pas normalisés — `lecture.json`, mais aussi `evidence.primar
 `evidence.reception.json`, `reception.json` — et c’est le répertoire qui fait foi, jamais une
 convention de nommage.
 
+**Le répertoire du dossier n'est pas toujours celui de l'identifiant.** `corpus/validated/<conceptId>.json`
+porte un champ `dossier` ; **dix enregistrements sur cent trente-six le déclarent ailleurs** que sous
+leur identifiant, parce que le dossier garde le nom sous lequel le candidat avait été repéré. Lis ce
+champ avant de lister quoi que ce soit : s'il désigne un fichier, c'est **son répertoire entier**
+qu'il faut ouvrir, en plus de `corpus/evidence/<conceptId>/` s'il existe aussi. Le pack de preuve du
+fact-check fait exactement cela depuis le 26 septembre 2026 ; dériver le chemin du seul identifiant a
+coûté un rejet à `critere-de-la-retroaction`, dont le gate refusait vingt et un claims dont la
+matière était dans un fichier que rien n'avait ouvert.
+
 **C’est ce dossier, et non l’enregistrement validé, qui te permet de trancher l’axe A.**
 L’enregistrement validé est un résumé : il peut ne pas contredire une affirmation fausse. Une
 incohérence que tu ne peux pas trancher sur le seul enregistrement — un niveau d’accès qui

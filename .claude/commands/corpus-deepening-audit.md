@@ -189,6 +189,10 @@ Il écrit :
 Si ce bundle dépasse 300k estimés, partitionne la vérification en sous-bundles de claims. La
 validation finale doit néanmoins couvrir tous les claims du map original.
 
+La sortie du bundle porte deux compteurs de vigilance, `claims_without_support` et
+`claims_with_uncited_support_signal`. Ils n'entrent dans aucun verdict. Un `claims_without_support`
+élevé au regard du nombre de claims est un mapping à relire avant de lancer la vérification.
+
 ## 8. VERIFY indépendant
 
 Lance un **nouvel agent frais** `corpus-deepening-entailment-verifier`.
@@ -201,11 +205,8 @@ Verdicts claim par claim :
 
 `SUPPORTED | TOO_STRONG | UNSUPPORTED | CONFLICT | SOURCE_NOT_CONSULTED | MAPPING_INCOMPLETE`
 
-Les cinq premiers portent sur le texte. `MAPPING_INCOMPLETE` porte sur le mapping : « ce claim
-n'a pas les appuis qu'il devrait avoir ». Il est motivé par le champ `appuis_non_cites` que le
-bundle joint à un claim quand un appui du pack porte, seul, un terme rare de son énoncé sans lui
-être rattaché. Ce champ est un **signal et jamais une preuve** : il n'autorise aucun claim, le
-vérificateur n'a pas le droit d'en tirer un `SUPPORTED`, et il n'entre dans aucun décompte.
+Le dernier ne juge pas le texte : il dit qu'un claim n'a pas les appuis qu'il devrait avoir. Voir
+« INVALID par mapping incomplet » plus bas.
 
 Il ne produit jamais lui-même `FACTCHECK_PASS`.
 
@@ -226,23 +227,6 @@ Verdicts du script :
 - `FACTCHECK_FAIL` : structure valide, au moins un claim non soutenu ;
 - `FACTCHECK_INVALID` : incohérence mécanique, artefact obsolète ou incomplet.
 
-### INVALID par mapping incomplet
-
-`mapping_incomplete > 0` dans le rapport du gate n'est pas un défaut du texte, et **ne consomme
-pas de boucle de correction**. Ne saisis pas le réécrivain.
-
-Reprends à l'**étape 6** avec un `corpus-deepening-claim-mapper` frais, en lui nommant les claims
-de `mapping_a_reprendre` — leurs identifiants et leurs locators, pas le contenu du rapport —, puis
-enchaîne BUNDLE, VERIFY et GATE. Le texte n'est pas touché, donc le SHA ne bouge pas et le pack
-reste valide : la reprise part de CLAIM MAP et non de PREPARE.
-
-Ce chemin existe parce que son absence a coûté du contenu vrai : le 26 septembre 2026, sur
-`critere-de-la-retroaction`, un claim dont l'appui était au pack mais non rattaché a été refusé
-`UNSUPPORTED`, et la correction a retiré du texte deux exemples que l'auteur emploie réellement.
-
-Si le même claim revient `MAPPING_INCOMPLETE` après une reprise de mapping, ne boucle pas : le
-signal est alors contesté par un mappeur frais, et c'est une anomalie à tracer, pas à corriger.
-
 ### FAIL après réécriture
 
 Retourne au réécrivain avec le **chemin** du rapport gate et des artefacts, pas leur contenu collé
@@ -254,6 +238,23 @@ Puis recommence **depuis PREPARE**, car toute modification invalide le SHA.
 Maximum deux boucles de correction factuelle. Au-delà, restaure uniquement le deepening de la
 carte, **par le SHA de blob relevé à l'étape 2** (voir « Restaurer une carte » ci-dessous), et
 marque `rewrite_rejected_factcheck`.
+
+### INVALID par mapping incomplet
+
+Le gate rend `FACTCHECK_INVALID` et son rapport porte `mapping_incomplete` non vide. **Ce n'est pas
+une boucle de correction, et le texte ne se touche pas** : le défaut est dans l'artefact.
+
+Relance un `corpus-deepening-claim-mapper` frais sur le même pack, sans modifier le deepening — le
+SHA ne change pas, le pack reste valide. Conserve le claim map défectueux à côté du nouveau, sous un
+nom qui dit pourquoi, puis reprends au BUNDLE.
+
+Deux remappings au maximum sur un même pack. Au-delà, le défaut n'est pas le mapping : trace
+l'anomalie et traite le gate comme un `FAIL`.
+
+**Ce chemin ne sert jamais à obtenir un verdict plus favorable.** Un remapping se justifie par une
+incomplétude constatable — un appui nommé qui manque au claim —, jamais par le verdict obtenu.
+Remapper jusqu'à ce que le gate passe est du magasinage de verdict, et ruinerait le dispositif plus
+sûrement que le défaut qu'il corrige.
 
 ### FAIL sur texte inchangé
 
@@ -311,6 +312,7 @@ audited_at: <ISO-8601 UTC>
 initial_verdict: PASS | REVISE | REWRITE | BLOCKED_SOURCE
 result: unchanged | rewritten | rewrite_rejected | rewrite_rejected_factcheck | blocked_source
 factcheck_verdict: FACTCHECK_PASS | FACTCHECK_FAIL | FACTCHECK_INVALID | NOT_RUN_BLOCKED_SOURCE
+remappings: <n>
 review_verdict: NOT_RUN | ACCEPT | REJECT
 ---
 ```

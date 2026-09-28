@@ -47,6 +47,15 @@ réécrire à partir du résumé d'un texte qu'un lecteur primaire a lu en entie
 `known_ambiguities` ou `contresens` y avertit de ce que le texte n'énonce pas : ces réserves te
 lient exactement comme `limits`.
 
+**Le répertoire du dossier n'est pas toujours celui de l'identifiant.** `corpus/validated/<conceptId>.json`
+porte un champ `dossier` ; **dix enregistrements sur cent trente-six le déclarent ailleurs** que sous
+leur identifiant, parce que le dossier garde le nom sous lequel le candidat avait été repéré. Lis ce
+champ avant de lister quoi que ce soit : s'il désigne un fichier, c'est **son répertoire entier**
+qu'il faut ouvrir, en plus de `corpus/evidence/<conceptId>/` s'il existe aussi. Le pack de preuve du
+fact-check fait exactement cela depuis le 26 septembre 2026 ; dériver le chemin du seul identifiant a
+coûté un rejet à `critere-de-la-retroaction`, dont le gate refusait vingt et un claims dont la
+matière était dans un fichier que rien n'avait ouvert.
+
 **Aucune recherche web.** Tu ne complètes jamais le dossier par tes connaissances générales.
 
 Respecte strictement `consulted`. Une source `metadata-only` ne devient pas exploitable parce
