@@ -22,11 +22,11 @@ résultat qui compte est un fait de protocole : ce passage a refait, sans le sav
 
 Ce passage est parti de `origin/main`, qui ne portait pas encore PR #122. Il a donc **réimplémenté
 le chantier K, refait la même reprise de `critere-de-la-retroaction` avec les deux mêmes gestes, et
-rouvert le chantier L** — tout cela en parallèle d'une branche qui les portait déjà.
+rouvert le chantier des titres** — tout cela en parallèle d'une branche qui les portait déjà.
 
 Le mécanisme est simple et il se reproduira : **le journal d'un passage vit sur la branche de ce
 passage.** Rien dans le protocole ne demande de regarder ailleurs que dans les fichiers de `main`.
-C'est le chantier M, et son geste de parade tient en une ligne : lister les branches ouvertes et
+C'est le chantier N, et son geste de parade tient en une ligne : lister les branches ouvertes et
 leurs PR au point 3 de la routine, avant de choisir un lot.
 
 **Le travail dupliqué a été écarté à la fusion, au profit de celui de #122** : implémentation du
@@ -78,7 +78,7 @@ sur le seul nom aurait été faux une fois sur deux.
 
 ### Et le balayage des titres par rareté ne marche pas — mesuré
 
-Chantier L, point 1. Appliquer l'instrument du chantier K aux 744 titres de section rend **199
+Chantier M, point 1. Appliquer l'instrument du chantier K aux 744 titres de section rend **199
 signalements sur 744**, presque intégralement du bruit : `loger`, `prévoir`, `choisir`, `famille`.
 
 La raison est structurelle et vaut d'être retenue : **un titre et un dossier ne sont pas écrits
@@ -88,7 +88,7 @@ vive. Une fréquence mesurée sur les dossiers déclare rare ce qui n'est qu'abs
 Et le seul cas vrai y est signalé **pour une raison fausse** : `hiérarchisées`, absent du dossier
 parce qu'il porte `hiérarchisation` — la forme que la correction a retenue et qui est soutenue.
 Sans normalisation morphologique, l'instrument signale un terme correct. La voie la plus évidente
-du chantier L est donc fermée, avec son motif.
+du chantier M est donc fermée, avec son motif.
 
 ### Une note d'exploitation, qui corrige une parade écrite
 

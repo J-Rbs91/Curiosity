@@ -1946,23 +1946,24 @@ chantier J et ici. Mais son rôle lui interdit de créer l'appui, et le plafond 
 valeur que si contester rouvre quelque chose ; sinon elle ne fait qu'ajouter un regret au compte
 rendu.**
 
-## Ce qui a été fait le 28 septembre 2026 : les deux premiers points sont livrés
+## Une seconde implémentation, écrite le 28 septembre et écartée à la fusion
 
-**Les points 1 et 2 ci-dessous sont implémentés, mesurés et en place.** Ce qui suit les décrit
-tels qu'ils ont été écrits, et non tels qu'ils étaient proposés ; le point 3 est traité par la
-reprise de la carte, tracée dans son rapport.
+Le passage du 28 septembre a implémenté ce chantier une seconde fois, sans savoir que PR #122 le
+portait déjà — voir le chantier N. **C'est l'implémentation du 27 qui vit** ; celle du 28 a été
+écartée à la fusion, et il n'en reste que la mesure ci-dessous, qui porte sur une question de
+calibrage que l'implémentation retenue tranche autrement.
 
-**1. Le signal `appuis_non_cites`.** `--bundle` joint à un claim les appuis du pack qu'il ne cite
-pas alors qu'ils sont le seul endroit du pack où figure un terme rare de son énoncé. Les trois
-garde-fous que ce chantier exigeait sont tenus : le signal est joint au bundle du vérificateur et
-jamais au pack du mappeur, il n'entre dans aucun décompte du gate, et il n'autorise aucun claim.
+**La rareté peut se mesurer sur le pack ou sur le dépôt, et les deux ont été essayées.**
+L'implémentation retenue calcule un lexique générique sur le pack lui-même — les 10 % de termes les
+plus fréquents — et écarte ces termes. Celle du 28 mesurait la fréquence documentaire sur les 136
+dossiers du dépôt.
 
-**La rareté se mesure sur le dépôt et non sur le pack, et c'est une mesure qui l'a imposé.** La
-règle évidente — « terme présent dans un seul appui du pack » — rend **17 signaux sur les 58
-claims** du dernier mapping de `critere-de-la-retroaction`, et ils sont tous du bruit : `donne`,
-`temps`, `changer`, `règle`, `second`, `exige`, `nomme`, `lorsque`. Un pack de 72 appuis courts
-rend rare à peu près n'importe quel mot. La fréquence documentaire sur les 136 dossiers sépare les
-deux familles sans ambiguïté :
+Ce qui a motivé ce détour est une mesure, et elle reste vraie quel que soit l'instrument retenu :
+**la rareté dans le pack, prise seule, ne dit rien.** Sur les 58 claims du dernier mapping de
+`critere-de-la-retroaction`, la règle « terme présent dans un seul appui du pack » rend **17
+signaux, tous du bruit** : `donne`, `temps`, `changer`, `règle`, `second`, `exige`, `nomme`,
+`lorsque`. Un pack de 72 appuis courts rend rare à peu près n'importe quel mot. La fréquence
+documentaire sur les 136 dossiers sépare les deux familles sans ambiguïté :
 
 | terme | dossiers sur 136 |
 |---|---:|
@@ -1973,41 +1974,9 @@ deux familles sans ambiguïté :
 | `règle` | 55 |
 | `donne` | 131 |
 
-Le seuil retenu est une fraction — 6 % des dossiers, 8 sur 136 — et non un nombre, pour qu'il
-garde son sens quand le corpus grossit. Il sépare deux bornes mesurées, et le résultat est un
-test et non une déduction : **zéro signal sur les 58 claims du mapping corrigé** (le comportement
-attendu, ce mapping citant bien `reserves[0]`), et **le cas historique retrouvé** — `C008` rejoué
-tel qu'il était au tour 1, avec le seul appui qu'il citait alors, désigne
-`SUP-421445a4beb428f3` par `thermostat`, `joueur` et `quilles`. Le premier signal de bruit
-n'apparaît qu'à 20 dossiers sur 136.
-
-Le surcoût de contexte est négligeable : le bundle de cette carte passe de 74 040 à 74 187 tokens
-estimés, et les 58 claims sont identiques octet à octet hors signal.
-
-**2. Le verdict `MAPPING_INCOMPLETE`.** Seul usage prévu du signal. Le gate en fait un
-`FACTCHECK_INVALID` et non un `FACTCHECK_FAIL`, **donc sans consommer de boucle de correction** :
-ce n'est pas le texte qui est en cause, et le réécrivain n'a pas à être saisi d'un défaut qu'il ne
-peut corriger qu'en coupant. La reprise repart de CLAIM MAP et non de PREPARE, puisque le texte
-n'est pas touché et que son SHA ne bouge pas. Le rapport du gate compte `failed` et
-`mapping_incomplete` séparément et porte les claims à reprendre sous `mapping_a_reprendre`.
-
-**3. La consigne de motif est portée au prompt du vérificateur et au protocole.** « Aucun appui
-résolu ne mentionne X » se lit comme une absence du dossier, que le vérificateur ne voit pas et ne
-peut donc pas établir. La formule juste est « les appuis fournis pour ce claim ne mentionnent
-pas X ».
-
-Dix-sept tests couvrent l'ensemble, dont six qui **exécutent le gate pour de vrai, code de sortie
-compris**, plutôt qu'une copie de sa logique qui pourrait diverger en silence.
-
-### Ce que ce correctif ne fait pas, et qu'il faut savoir
-
-- **Il ne voit que les termes rares.** Un appui omis dont l'énoncé ne partage avec le claim que du
-  vocabulaire courant reste invisible. Le signal réduit la surface du défaut, il ne la ferme pas.
-- **Il ne mesure pas la variance des mappings.** Le point 2 de la liste ci-dessous — remapper deux
-  fois quelques cartes et comparer — reste entier, et il conditionne toute règle plus dure.
-- **Le seuil n'est étalonné que sur une carte.** Zéro bruit sur 58 claims est un bon signe, ce
-  n'est pas une mesure de corpus. Le premier lot qui déclenchera un `MAPPING_INCOMPLETE` en dira
-  plus que ce paragraphe.
+Le lexique générique de l'implémentation retenue vise le même effet par un autre chemin. **Rien
+n'établit lequel des deux discrimine le mieux** : les comparer demanderait de les exécuter sur les
+mêmes cartes, et personne ne l'a fait. À savoir si le signal se met un jour à bruiter.
 
 ## Par quel bout prendre ce chantier, après le 26 septembre
 
@@ -2235,7 +2204,7 @@ est un avertissement.
 
 ---
 
-# L. Les titres de section sont du texte lecteur, et le fact-check ne les voit pas — ouvert le 28 septembre 2026
+# M. Les titres de section sont du texte lecteur, et le fact-check ne les voit pas — ouvert le 28 septembre 2026
 
 **744 titres de section, 5 147 mots, 2,78 % du texte lecteur du corpus, ne passent par aucun
 claim.** Le dispositif entier — claim map, bundle, vérificateur, gate — ne les voit pas, et rien
@@ -2324,7 +2293,7 @@ surface du défaut, il ne la ferme pas.
 
 ---
 
-# M. Une routine qui lit `main` ne voit pas le travail des branches ouvertes — ouvert le 28 septembre 2026
+# N. Une routine qui lit `main` ne voit pas le travail des branches ouvertes — ouvert le 28 septembre 2026
 
 **Le passage du 28 septembre a refait, sans le savoir, le travail du passage du 27.** Il a
 réimplémenté le chantier K, refait la même reprise de `critere-de-la-retroaction` avec les deux
