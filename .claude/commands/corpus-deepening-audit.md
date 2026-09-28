@@ -189,6 +189,10 @@ Il écrit :
 Si ce bundle dépasse 300k estimés, partitionne la vérification en sous-bundles de claims. La
 validation finale doit néanmoins couvrir tous les claims du map original.
 
+La sortie du bundle porte deux compteurs de vigilance, `claims_without_support` et
+`claims_with_uncited_support_signal`. Ils n'entrent dans aucun verdict. Un `claims_without_support`
+élevé au regard du nombre de claims est un mapping à relire avant de lancer la vérification.
+
 ## 8. VERIFY indépendant
 
 Lance un **nouvel agent frais** `corpus-deepening-entailment-verifier`.
@@ -199,7 +203,10 @@ Il lit uniquement le bundle de sa carte, jamais le texte libre ou un verdict du 
 
 Verdicts claim par claim :
 
-`SUPPORTED | TOO_STRONG | UNSUPPORTED | CONFLICT | SOURCE_NOT_CONSULTED`
+`SUPPORTED | TOO_STRONG | UNSUPPORTED | CONFLICT | SOURCE_NOT_CONSULTED | MAPPING_INCOMPLETE`
+
+Le dernier ne juge pas le texte : il dit qu'un claim n'a pas les appuis qu'il devrait avoir. Voir
+« INVALID par mapping incomplet » plus bas.
 
 Il ne produit jamais lui-même `FACTCHECK_PASS`.
 
@@ -231,6 +238,23 @@ Puis recommence **depuis PREPARE**, car toute modification invalide le SHA.
 Maximum deux boucles de correction factuelle. Au-delà, restaure uniquement le deepening de la
 carte, **par le SHA de blob relevé à l'étape 2** (voir « Restaurer une carte » ci-dessous), et
 marque `rewrite_rejected_factcheck`.
+
+### INVALID par mapping incomplet
+
+Le gate rend `FACTCHECK_INVALID` et son rapport porte `mapping_incomplete` non vide. **Ce n'est pas
+une boucle de correction, et le texte ne se touche pas** : le défaut est dans l'artefact.
+
+Relance un `corpus-deepening-claim-mapper` frais sur le même pack, sans modifier le deepening — le
+SHA ne change pas, le pack reste valide. Conserve le claim map défectueux à côté du nouveau, sous un
+nom qui dit pourquoi, puis reprends au BUNDLE.
+
+Deux remappings au maximum sur un même pack. Au-delà, le défaut n'est pas le mapping : trace
+l'anomalie et traite le gate comme un `FAIL`.
+
+**Ce chemin ne sert jamais à obtenir un verdict plus favorable.** Un remapping se justifie par une
+incomplétude constatable — un appui nommé qui manque au claim —, jamais par le verdict obtenu.
+Remapper jusqu'à ce que le gate passe est du magasinage de verdict, et ruinerait le dispositif plus
+sûrement que le défaut qu'il corrige.
 
 ### FAIL sur texte inchangé
 
@@ -288,6 +312,7 @@ audited_at: <ISO-8601 UTC>
 initial_verdict: PASS | REVISE | REWRITE | BLOCKED_SOURCE
 result: unchanged | rewritten | rewrite_rejected | rewrite_rejected_factcheck | blocked_source
 factcheck_verdict: FACTCHECK_PASS | FACTCHECK_FAIL | FACTCHECK_INVALID | NOT_RUN_BLOCKED_SOURCE
+remappings: <n>
 review_verdict: NOT_RUN | ACCEPT | REJECT
 ---
 ```
@@ -318,6 +343,7 @@ BLOCKED_SOURCE       : n
 FACTCHECK_PASS       : n
 FACTCHECK_FAIL       : n
 FACTCHECK_INVALID    : n
+MAPPING_INCOMPLETE   : n
 ACCEPT               : n
 REJECT               : n
 SKIPPED_DIRTY        : n

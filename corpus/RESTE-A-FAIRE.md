@@ -2004,6 +2004,126 @@ comme telle.** Elle se recoupe contre les compteurs que l'agent rend lui-même, 
    au plafond est le verdict le plus coûteux du dispositif, puisqu'il restaure un texte antérieur
    moins bon. Avant de le prononcer, les claims sans appui se relisent un par un contre le pack.
 
+## L'outillage est en place — 27 septembre 2026
+
+Les points 1 et 3 de la liste ci-dessus sont faits, le point 2 de la liste du 26 aussi
+(`MAPPING_INCOMPLETE`), et le protocole passe en **version 2**. Ce qui existe maintenant :
+
+- **`uncited_support_signal`**, joint par `--bundle` à chaque claim : les appuis que le mapping n'a
+  pas cités et dont le texte porte un terme que le pack ne présente nulle part ailleurs et que le
+  corpus ne tient pas pour général. Sans leur texte, et hors de tout décompte du gate.
+- **`MAPPING_INCOMPLETE`**, un verdict de vérificateur qui ne juge pas le texte. Le gate le range
+  parmi les erreurs de structure : `FACTCHECK_INVALID`, **aucune boucle de correction consommée**, et
+  le mapping à refaire.
+- **Deux compteurs de vigilance** dans la sortie de `--bundle` : `claims_without_support` et
+  `claims_with_uncited_support_signal`.
+- **Les deux consignes manquantes**, portées aux prompts du mapper et du vérificateur — les
+  charnières de discours, et « les appuis fournis pour ce claim » au lieu de « aucun appui résolu ».
+  Elles étaient données pour appliquées par le rapport du 26 septembre et n'étaient dans aucun
+  fichier versionné.
+
+**Le calibrage du signal est mesuré, pas supposé, et une variante plus stricte a été écartée sur
+pièce.** Les deux claims témoins du chantier servent de critère :
+
+| réglage | claims signalés, mapping complet | témoin `critere` | témoin `points-de-levier` |
+|---|---:|---|---|
+| terme dans ≤ 5 appuis, 1 terme partagé | 50/58 | vu | vu |
+| terme dans ≤ 3 appuis, 2 termes partagés | 9/58 | vu | **manqué** |
+| terme dans 1 seul appui, 1 terme partagé | 15/58 | vu | vu |
+| le précédent, plus le lexique général du corpus | **1/58** | vu | vu |
+
+La deuxième ligne est la tentation à écarter : la plus silencieuse, et muette précisément sur
+l'omission la mieux établie du dépôt — le claim de `points-de-levier` ne partage avec `$.hook` qu'un
+seul terme, « appuyer ». La dernière ligne est le réglage retenu : sur le mapping défectueux de
+`points-de-levier`, le signal se lève sur 5 claims des 63 et **nomme le témoin** ; sur le mapping
+complet de `critere-de-la-retroaction`, il se lève une fois. Le bundle grossit de 1 %.
+
+Le second filtre a été ajouté parce que le premier ne suffisait pas : sur une carte correctement
+mappée, le signal se levait quinze fois, pour « donne », « devant », « temps », « nomme »,
+« lorsque » — des mots singuliers dans un pack de soixante-douze appuis par accident de tirage. Le
+dépôt sait lesquels sont généraux parce qu'il les emploie partout : comptés sur les 136
+approfondissements, « donne » est dans 112, « temps » dans 74, « devant » dans 57, quand « quilles »
+et « autocuiseur » sont dans un seul. La coupure à un dixième du corpus sépare les deux familles.
+
+### Ce que ce geste ne fait pas, et il faut le dire aussi
+
+- **Il ne rend pas un mapping complet.** Un appui peut autoriser un claim sans partager un seul de
+  ses mots ; un signal vide n'atteste rien. Le maillon reste non redondant.
+- **Il ne mesure pas la variance du découpage** — point 2 de la liste du 25 septembre, toujours
+  ouvert. Trois mappings sur une carte ne sont pas une mesure, et le gate reste déterministe à
+  mapping donné et non à texte donné.
+- **Il ne se substitue pas au point 4** : avant un `rewrite_rejected_factcheck`, les claims sans
+  appui se relisent un par un contre le pack, signal ou pas.
+- **Il ouvre un risque neuf, et sa parade est écrite** : remapper jusqu'à ce que le gate passe serait
+  du magasinage de verdict. `MAPPING_INCOMPLETE` ne se justifie que par une incomplétude constatable
+  sur pièce, le plafond est de deux remappings par pack, et le claim map défectueux se conserve.
+
+---
+
+# L. Un `REJECT` pédagogique republie un texte dont on connaît les refus — ouvert le 27 septembre 2026
+
+**Le dispositif sait maintenant restaurer une carte par son SHA de blob, et c'est ce geste qui pose
+le problème : il restaure un texte que le gate a mesuré, et dont il a compté les claims non
+soutenus.**
+
+Le cas est celui de `critere-de-la-retroaction`, le 27 septembre. La reprise prescrite par le
+rapport de la veille a obtenu **`FACTCHECK_PASS`, 53 claims sur 53**. La revue indépendante a rendu
+**`REJECT`**, pour un motif juste et vérifié sur pièce : le bornage d'un claim avait retiré
+l'antécédent d'un écho resté dans le texte, la section qui portait le deuxième delta du texte
+perdait 73 mots, et le texte lecteur tombait à 1 073 mots, sous le plancher de 1 100 que
+`PROTOCOLE.md` fixe en prose.
+
+Le protocole dit alors de restaurer la version antérieure, et elle a été restaurée. **Or cette
+version antérieure est celle que le gate du 26 septembre mesurait à 52 claims soutenus sur 59.** Le
+dépôt a donc, sciemment, remis en place un texte portant sept refus documentaires pour éviter une
+régression pédagogique de deux points sur deux axes.
+
+## Pourquoi ce n'est pas un défaut de la revue
+
+La revue a bien travaillé, et il faut le dire avant tout le reste : elle a vérifié le SHA du gate,
+récupéré le blob antérieur, compté les mots, retrouvé dans `rewrite.md` la réserve que le
+réécrivain avait lui-même écrite sur l'écho « au même étage », et refusé sans toucher à un fichier.
+Son verdict est le bon **à la question qu'on lui pose**.
+
+Le défaut est dans la question. La revue compare une réécriture à la version antérieure sur la
+progression pédagogique ; **rien dans la chaîne ne compare leurs états documentaires**, et rien ne
+dit ce qu'il faut faire quand les deux comparaisons ne concluent pas dans le même sens.
+
+## Ce que la priorité déclarée du dépôt implique, et que le protocole ne dit pas
+
+L'ordre est écrit et il n'est pas ambigu : **vérité documentaire > densité pédagogique > style >
+quantité de contenu.** Un `REJECT` qui republie sept refus pour récupérer deux points de
+progressivité inverse cet ordre. Ce n'est pas ce que le protocole voulait dire ; c'est ce qu'il dit,
+parce qu'il n'a jamais rencontré le cas.
+
+Et le cas n'est pas rare : il se produira chaque fois qu'une correction documentaire coûte de la
+matière explicative, ce qui est **le cas général** — `REMOVE` et `NARROW` sont les deux corrections
+les plus employées du dépôt, et elles retirent du texte par construction.
+
+## Par quel bout prendre ce chantier
+
+1. **Dire ce qui l'emporte, dans `AUDIT_PROTOCOL.md` §7.** Trois réponses sont défendables et il
+   faut en choisir une : le `REJECT` restaure quand même ; le `REJECT` ne restaure pas un texte dont
+   le gate a compté des refus et laisse la réécriture en place avec son rapport ; ou le `REJECT`
+   devient conditionnel, et un candidat qui améliore la fidélité documentaire sans la dégrader
+   nulle part ne peut être refusé que sur une régression pédagogique **majeure**, définie.
+2. **Donner à la revue l'état documentaire des deux versions.** Elle reçoit le gate de la
+   réécriture ; elle ne reçoit pas celui de la version antérieure, et ne peut donc pas peser ce que
+   la restauration remet en place. Le dépôt a ce chiffre pour toute carte déjà auditée : il est dans
+   son rapport.
+3. **Ne pas régler cela par un troisième cycle.** La tentation est de relancer une réécriture
+   jusqu'à ce que les deux verdicts concordent. C'est le magasinage de verdict du chantier K, déplacé
+   d'un cran : un texte finit toujours par passer si on le refait assez souvent, et ce qui décide
+   alors n'est plus la preuve mais la patience.
+4. **Compter les cas avant de trancher.** Celui-ci est le premier. Deux cartes du corpus sont sorties
+   en `rewrite_rejected` sans passer par le gate — `cinq-dimensions-de-l-emploi` et
+   `trois-sigmas-arbitrage-de-cout` — et leurs rapports diraient si elles ont payé le même prix.
+
+En attendant la décision, le geste est celui du protocole : **restaurer, tracer, et dire dans le
+rapport que le `FACTCHECK_PASS` de l'en-tête ne porte pas sur le texte en place.** C'est ce qu'a
+fait le rapport du 27 septembre, et c'est la raison pour laquelle la première phrase de ce rapport
+est un avertissement.
+
 ---
 
 # Ce qui n'est pas un chantier
