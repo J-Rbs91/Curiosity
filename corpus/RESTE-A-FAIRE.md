@@ -2113,6 +2113,95 @@ comme telle.** Elle se recoupe contre les compteurs que l'agent rend lui-même, 
 
 ---
 
+---
+
+# L. Les titres de section sont du texte lecteur, et le fact-check ne les voit pas — ouvert le 28 septembre 2026
+
+**744 titres de section, 5 147 mots, 2,78 % du texte lecteur du corpus, ne passent par aucun
+claim.** Le dispositif entier — claim map, bundle, vérificateur, gate — ne les voit pas, et rien
+ne le disait.
+
+Le mécanisme est en deux lignes, et il est vérifiable :
+
+- `readerParagraphs()` de `scripts/corpus/deepening-factcheck.mjs` n'émet des locators que pour
+  `lead[i]` et `sections[i].paragraphs[j]` ;
+- `DeepeningDetail.tsx` rend `section.title` dans un `<h2>`, en tête de chaque section.
+
+Un titre est donc affiché au lecteur, en position d'annonce et en gros caractères, **sans aucun
+appui**. Le claim mapper ne peut pas l'ancrer, faute de locator ; le gate ne peut pas le refuser,
+faute de claim ; un `FACTCHECK_PASS` ne se prononce pas dessus, et ne l'a jamais dit.
+
+## Comment il a été trouvé, et pourquoi le cas est bon
+
+Par la reprise de `critere-de-la-retroaction`, le 28 septembre. Le gate venait de refuser
+`C038` parce que l'emboîtement des boucles n'est porté par aucun appui, et le réécrivain a retiré
+le mot du paragraphe. **Le titre de la même section portait « Des boucles emboîtées ».**
+
+Le réécrivain l'a vu et l'a corrigé de sa propre initiative, en signalant que cela sortait de la
+lettre de sa consigne et que le gate ne l'exigeait pas. Il avait raison sur les deux points, et
+c'est le signalement qui a ouvert ce chantier.
+
+**Le cas est le pire possible de ce point de vue** : l'affirmation refusée survivait à sa propre
+correction, en position plus visible que là où elle avait été refusée. Si personne n'avait
+regardé, le texte serait sorti avec un `FACTCHECK_PASS` et un titre affirmant exactement ce que le
+gate venait de rejeter.
+
+**Ce qui n'est pas établi :** on ne sait pas combien des 744 titres affirment quelque chose que
+leur dossier ne porte pas. Un seul a été examiné, et il a été trouvé en corrigeant autre chose. La
+mesure ci-dessus dit la **surface** non couverte, pas le nombre de défauts.
+
+## Le balayage a été fait le jour même, et il ne marche pas — c'est le résultat qui vaut
+
+Le geste le moins cher semblait évident : appliquer aux 744 titres l'instrument du chantier K —
+pour chaque titre, les termes rares dans le dépôt que le dossier de sa carte ne porte pas. Il a
+été écrit et exécuté. **Il rend 199 titres signalés sur 744, soit 26,7 %, et c'est du bruit
+presque intégralement.**
+
+Vingt termes signalés pris à la suite : `loger`, `prévoir`, `tromper`, `rigide`, `jours`, `aider`,
+`regarder`, `choisir`, `famille`, `manières`, `savent`, `veulent`, `gagne`, `payer`, `demander`,
+`sortir`, `former`, `calme`, `sentir`, `tourner`. Aucun n'est rare ; tous sont du français
+courant.
+
+**La raison est structurelle et vaut d'être retenue : un titre et un dossier ne sont pas écrits
+dans la même langue.** Les dossiers sont une prose bibliographique dense, les titres une langue
+vive et concrète, faite pour donner envie de lire. La fréquence documentaire mesurée sur les
+dossiers est donc une mauvaise référence pour la prose éditoriale : elle déclare rare ce qui n'est
+qu'absent d'un registre. Le signal du chantier K reste juste là où il est employé — entre un
+`claim_text` et des appuis, deux textes du même registre — et se disqualifie ici.
+
+**Et le seul cas vrai est signalé pour une raison fausse, ce qui achève la démonstration.** Le
+titre « Des boucles hiérarchisées » est bien dans la liste, mais sur le terme `hiérarchisées`, que
+le dossier ne porte pas **parce qu'il porte `hiérarchisation`**. C'est-à-dire exactement la forme
+que la correction de `C038` a retenue, et qui est soutenue. Sans normalisation morphologique,
+l'instrument signale un terme correct.
+
+Conséquence pour le chantier K, et elle rassure dans le bon sens : le même défaut de morphologie y
+joue **en sens inverse**. Une variante d'un terme d'appui n'a aucun porteur dans le pack, donc le
+signal ne se déclenche pas : la morphologie y fait **manquer** un appui, jamais en suggérer un
+faux. C'est la direction sûre, et elle confirme la limite déjà écrite — le signal réduit la
+surface du défaut, il ne la ferme pas.
+
+## Par quel bout prendre ce chantier
+
+1. **Ne pas réessayer le balayage par rareté.** Il a été fait, mesuré et il échoue, pour une raison
+   de registre qui ne se corrige pas par un seuil. Une reprise qui voudrait mesurer avant de
+   corriger a besoin d'un autre instrument : la comparaison utile n'est pas titre contre dossier
+   mais **titre contre corps de sa propre section**, deux textes du même registre, et elle demande
+   une normalisation morphologique que le dépôt n'a pas.
+2. **Puis émettre les locators.** Ajouter `sections[i].title` à `readerParagraphs()` est une ligne,
+   mais elle **invalide tous les claim maps archivés** : le gate refuse en `FACTCHECK_INVALID` tout
+   mapping qui oublie un paragraphe déclaré, et les 28 cartes auditées en portent un. Le coût est
+   donc un remapping du corpus audité, pas une ligne.
+3. **Et arbitrer ce qu'on exige d'un titre.** Un titre n'est pas une phrase : « Ouvrir son
+   parachute une seule fois » n'affirme rien qu'on puisse soutenir ou refuser, et lui demander un
+   appui ferait échouer des titres corrects. La règle plausible est plus étroite — **un titre ne
+   peut pas porter un terme que le corps de sa section n'a pas le droit de porter** — et c'est
+   exactement ce qu'il faut vérifier au point 1 avant d'en faire une règle.
+4. **En attendant, la consigne au réécrivain est gratuite et suffit à ce cas** : quand une
+   correction retire un terme d'un paragraphe, vérifier que le titre de la section ne le porte
+   pas. C'est ce que le réécrivain a fait ici sans qu'on le lui demande.
+
+
 # Ce qui n'est pas un chantier
 
 **Les 31 sujets d'échafaudage jamais instruits** que `corpus:audit` liste en fin de sortie.
