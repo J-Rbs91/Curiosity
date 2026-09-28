@@ -5,10 +5,20 @@ import path from "node:path";
 
 import { DOSSIER_STATUTS, evidenceOrigin, resolveDossier } from "./lib/factcheck-evidence.mjs";
 import { reconcilierAcces, statutPourChemin, STATUTS } from "./lib/factcheck-access.mjs";
+import {
+  appuisNonCites,
+  frequenceDocumentaire,
+  RARETE_FRACTION_MAX,
+} from "./lib/factcheck-mapping.mjs";
 
 const ROOT = process.cwd();
 const CONTEXT_BUDGET_TOKENS = 300_000;
 const ESTIMATED_CHARS_PER_TOKEN = 3;
+/**
+ * Les verdicts qui portent sur le **texte** : ils disent ce que les appuis fournis autorisent, et
+ * tout ce qui n'est pas `SUPPORTED` fait échouer le gate en `FACTCHECK_FAIL`, donc consomme une
+ * boucle de correction.
+ */
 const ALLOWED_VERDICTS = new Set([
   "SUPPORTED",
   "TOO_STRONG",
@@ -16,6 +26,18 @@ const ALLOWED_VERDICTS = new Set([
   "CONFLICT",
   "SOURCE_NOT_CONSULTED",
 ]);
+
+/**
+ * `MAPPING_INCOMPLETE` ne porte pas sur le texte mais sur le **mapping** : « ce claim n'a pas les
+ * appuis qu'il devrait avoir ». Il manquait au vocabulaire, et son absence a coûté du contenu
+ * vrai — un vérificateur qui soupçonnait une omission n'avait que `UNSUPPORTED`, qui déclenche
+ * une coupe dans le texte.
+ *
+ * Il est donc traité comme une **invalidité de la chaîne** et non comme un défaut du texte :
+ * il fait rendre `FACTCHECK_INVALID`, ce qui renvoie au mapping **sans consommer de boucle de
+ * correction**, puisque ce n'est pas le texte qui est en cause.
+ */
+const MAPPING_INCOMPLETE = "MAPPING_INCOMPLETE";
 const ALLOWED_MAPPING_STATUS = new Set(["CLAIMS_MAPPED", "NO_VERIFIABLE_CLAIM"]);
 
 function flag(name) {
@@ -304,17 +326,40 @@ async function bundle(conceptId) {
   const { errors, supportById } = validateClaimMap(pack, map);
   if (errors.length) return fail(`claim map invalide:\n- ${errors.join("\n- ")}`);
 
+  /*
+   * Le signal d'appuis non cités — chantier K. Il est calculé ici, et ici seulement : le pack du
+   * mappeur ne doit jamais le porter, sous peine de lui suggérer les appuis qu'il est justement
+   * chargé de trouver. Il n'entre dans aucun décompte du gate.
+   */
+  const reference = frequenceDocumentaire({ root: ROOT });
+  let claimsSignales = 0;
+
   const verificationBundle = {
     protocol_version: 1,
     concept_id: conceptId,
     candidate_sha256: pack.candidate_sha256,
     map_sha256: sha256(await readFile(mapFile, "utf8")),
-    claims: map.claims.map((claim) => ({
-      claim_id: claim.claim_id,
-      locator: claim.locator,
-      claim_text: claim.claim_text,
-      supports: claim.support_ids.map((id) => supportById.get(id)),
-    })),
+    signal_appuis_non_cites: {
+      role:
+        "signal, jamais preuve : ces appuis ne sont pas rattachés au claim par le mapping. Ils "
+        + "n'autorisent aucun claim et ne peuvent pas fonder un SUPPORTED. Le seul verdict qu'ils "
+        + "peuvent motiver est MAPPING_INCOMPLETE, qui renvoie au mapping sans toucher au texte.",
+      critere:
+        `terme de l'énoncé présent dans un seul appui du pack, et rare dans le dépôt (au plus `
+        + `${Math.floor(reference.documents * RARETE_FRACTION_MAX)} dossiers sur ${reference.documents})`,
+      documents_de_reference: reference.documents,
+    },
+    claims: map.claims.map((claim) => {
+      const signales = appuisNonCites(claim, pack.supports, reference);
+      if (signales.length) claimsSignales += 1;
+      return {
+        claim_id: claim.claim_id,
+        locator: claim.locator,
+        claim_text: claim.claim_text,
+        supports: claim.support_ids.map((id) => supportById.get(id)),
+        ...(signales.length ? { appuis_non_cites: signales } : {}),
+      };
+    }),
   };
 
   const estimatedTokens = estimateTokens(verificationBundle);
@@ -330,6 +375,7 @@ async function bundle(conceptId) {
       status: verificationBundle.status,
       estimated_tokens: estimatedTokens,
       claims: verificationBundle.claims.length,
+      claims_avec_appui_non_cite: claimsSignales,
       artifact: path.relative(ROOT, output),
     }),
   );
@@ -369,6 +415,7 @@ async function gate(conceptId) {
   const expectedClaims = new Set((map.claims || []).map((claim) => claim.claim_id));
   const seen = new Set();
   const semanticFailures = [];
+  const mappingIncomplete = [];
 
   for (const result of verification.results || []) {
     if (!expectedClaims.has(result.claim_id)) {
@@ -377,6 +424,16 @@ async function gate(conceptId) {
     }
     if (seen.has(result.claim_id)) structuralErrors.push(`résultat dupliqué: ${result.claim_id}`);
     seen.add(result.claim_id);
+    /*
+     * `MAPPING_INCOMPLETE` est relevé avant les verdicts de texte, et il n'est pas un échec
+     * sémantique : le claim n'est ni soutenu ni non soutenu, il n'a pas été instruit avec les
+     * appuis qu'il devait avoir. Le compter parmi les `failures` le ferait corriger dans le
+     * texte, c'est-à-dire exactement la perte que ce verdict existe pour éviter.
+     */
+    if (result.verdict === MAPPING_INCOMPLETE) {
+      mappingIncomplete.push(result);
+      continue;
+    }
     if (!ALLOWED_VERDICTS.has(result.verdict)) {
       structuralErrors.push(`verdict invalide pour ${result.claim_id}: ${result.verdict}`);
       continue;
@@ -390,7 +447,7 @@ async function gate(conceptId) {
 
   let verdict = "FACTCHECK_PASS";
   let exitCode = 0;
-  if (structuralErrors.length) {
+  if (structuralErrors.length || mappingIncomplete.length) {
     verdict = "FACTCHECK_INVALID";
     exitCode = 2;
   } else if (semanticFailures.length) {
@@ -404,10 +461,12 @@ async function gate(conceptId) {
     candidate_sha256: pack.candidate_sha256,
     verdict,
     claims: expectedClaims.size,
-    supported: expectedClaims.size - semanticFailures.length,
+    supported: expectedClaims.size - semanticFailures.length - mappingIncomplete.length,
     failed: semanticFailures.length,
+    mapping_incomplete: mappingIncomplete.length,
     structural_errors: structuralErrors,
     failures: semanticFailures,
+    mapping_a_reprendre: mappingIncomplete,
   };
 
   const output = option("out") || path.join(dir, "factcheck-gate.json");

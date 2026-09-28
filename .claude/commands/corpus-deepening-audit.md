@@ -199,7 +199,13 @@ Il lit uniquement le bundle de sa carte, jamais le texte libre ou un verdict du 
 
 Verdicts claim par claim :
 
-`SUPPORTED | TOO_STRONG | UNSUPPORTED | CONFLICT | SOURCE_NOT_CONSULTED`
+`SUPPORTED | TOO_STRONG | UNSUPPORTED | CONFLICT | SOURCE_NOT_CONSULTED | MAPPING_INCOMPLETE`
+
+Les cinq premiers portent sur le texte. `MAPPING_INCOMPLETE` porte sur le mapping : « ce claim
+n'a pas les appuis qu'il devrait avoir ». Il est motivé par le champ `appuis_non_cites` que le
+bundle joint à un claim quand un appui du pack porte, seul, un terme rare de son énoncé sans lui
+être rattaché. Ce champ est un **signal et jamais une preuve** : il n'autorise aucun claim, le
+vérificateur n'a pas le droit d'en tirer un `SUPPORTED`, et il n'entre dans aucun décompte.
 
 Il ne produit jamais lui-même `FACTCHECK_PASS`.
 
@@ -219,6 +225,23 @@ Verdicts du script :
 - `FACTCHECK_PASS` : tous les claims sont mécaniquement valides et sémantiquement `SUPPORTED` ;
 - `FACTCHECK_FAIL` : structure valide, au moins un claim non soutenu ;
 - `FACTCHECK_INVALID` : incohérence mécanique, artefact obsolète ou incomplet.
+
+### INVALID par mapping incomplet
+
+`mapping_incomplete > 0` dans le rapport du gate n'est pas un défaut du texte, et **ne consomme
+pas de boucle de correction**. Ne saisis pas le réécrivain.
+
+Reprends à l'**étape 6** avec un `corpus-deepening-claim-mapper` frais, en lui nommant les claims
+de `mapping_a_reprendre` — leurs identifiants et leurs locators, pas le contenu du rapport —, puis
+enchaîne BUNDLE, VERIFY et GATE. Le texte n'est pas touché, donc le SHA ne bouge pas et le pack
+reste valide : la reprise part de CLAIM MAP et non de PREPARE.
+
+Ce chemin existe parce que son absence a coûté du contenu vrai : le 26 septembre 2026, sur
+`critere-de-la-retroaction`, un claim dont l'appui était au pack mais non rattaché a été refusé
+`UNSUPPORTED`, et la correction a retiré du texte deux exemples que l'auteur emploie réellement.
+
+Si le même claim revient `MAPPING_INCOMPLETE` après une reprise de mapping, ne boucle pas : le
+signal est alors contesté par un mappeur frais, et c'est une anomalie à tracer, pas à corriger.
 
 ### FAIL après réécriture
 
@@ -318,6 +341,7 @@ BLOCKED_SOURCE       : n
 FACTCHECK_PASS       : n
 FACTCHECK_FAIL       : n
 FACTCHECK_INVALID    : n
+MAPPING_INCOMPLETE   : n
 ACCEPT               : n
 REJECT               : n
 SKIPPED_DIRTY        : n

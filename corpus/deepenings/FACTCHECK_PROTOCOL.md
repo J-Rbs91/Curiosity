@@ -278,6 +278,51 @@ Verdicts sémantiques :
 
 Toute incertitude documentaire se ferme par un verdict autre que `SUPPORTED`.
 
+### B bis. Le mapping incomplet, et pourquoi il n'est pas un verdict sémantique
+
+Les cinq verdicts ci-dessus portent sur le **texte** : ils disent ce que les appuis fournis
+autorisent, et tout ce qui n'est pas `SUPPORTED` fait borner ou couper une phrase. Il manquait un
+verdict pour un cas qui n'est pas du même ordre — **le claim n'a pas les appuis qu'il devrait
+avoir** —, et cette absence a coûté du contenu vrai.
+
+Le 26 septembre 2026, sur `critere-de-la-retroaction`, `C008` a été refusé `UNSUPPORTED` au motif
+que « ni un thermostat ni un joueur de quilles n'apparaissent dans aucun appui résolu ». Le pack
+contenait `SUP-421445a4beb428f3`, `$.reserves[0]` de la lecture primaire, qui porte mot pour mot
+« l'auteur raisonne sur un thermostat, un autocuiseur, un réservoir de W.-C., un thermocouple, un
+joueur de quilles, une fièvre ». Aucun claim du mapping ne le citait. Le verdict était juste au vu
+des deux appuis rattachés et faux au vu du dépôt : la correction a retiré du texte deux exemples
+que l'auteur emploie réellement. **Aucun maillon n'était fautif à son propre niveau** ; c'est le
+dispositif entier qui a produit une perte, par une omission que rien n'était chargé de voir.
+
+D'où deux ajouts, qui vont ensemble.
+
+**1. Le signal `appuis_non_cites`.** `--bundle` joint à un claim, quand il y a lieu, les appuis du
+pack que le mapping ne lui a pas rattachés alors qu'ils sont le seul endroit du pack où figure un
+terme rare de son énoncé. La rareté se mesure sur les 136 dossiers du dépôt et non sur le pack :
+un pack de 72 appuis courts rend rare à peu près n'importe quel mot, et la règle « unique dans le
+pack » rendait 17 signaux sur 58 claims, tous sur des mots-outils.
+
+Le signal n'est **pas** une preuve, et trois garde-fous le tiennent :
+
+- il est joint au **bundle du vérificateur** et jamais au pack du mappeur — sinon il lui
+  suggérerait les appuis qu'il est justement chargé de trouver ;
+- il n'entre dans **aucun décompte du gate** ;
+- il **n'autorise aucun claim** : le vérificateur n'a pas le droit de s'en servir pour rendre
+  `SUPPORTED`.
+
+La question qu'il pose est étroite : « cet appui existe et ne t'a pas été donné pour ce claim —
+l'as-tu écarté, ou ne l'as-tu pas vu ? »
+
+**2. Le verdict `MAPPING_INCOMPLETE`.** C'est le seul usage prévu du signal. Il ne dit ni soutenu
+ni non soutenu ; il renvoie au mapping. Le gate en fait un `FACTCHECK_INVALID` et non un
+`FACTCHECK_FAIL`, **donc sans consommer de boucle de correction** : ce n'est pas le texte qui est
+en cause, et le réécrivain n'a pas à être saisi d'un défaut qu'il ne peut corriger qu'en coupant.
+
+**3. Un motif de refus dit de quoi il parle.** Le vérificateur ne voit pas le dossier, seulement
+les appuis qu'on lui donne ; il ne peut donc jamais établir qu'un terme en est absent. « Aucun
+appui résolu ne mentionne X » se lit comme une absence du dossier — c'est cette lecture qui a fait
+couper le texte. La formule juste est « les appuis fournis pour ce claim ne mentionnent pas X ».
+
 ## 6. Gate déterministe
 
 Le verdict global n'est pas écrit librement par un modèle.
@@ -290,9 +335,16 @@ Le script refuse le rapport si au moins une des conditions suivantes est vraie :
 - un `support_id` n'existe pas dans le pack ;
 - un claim n'a pas de verdict de verifier ;
 - un verdict n'appartient pas à l'ensemble autorisé ;
+- au moins un claim reçoit `MAPPING_INCOMPLETE` ;
 - au moins un claim reçoit autre chose que `SUPPORTED`.
 
 Seulement après ces contrôles le script peut produire `FACTCHECK_PASS`.
+
+Les deux avant-dernières conditions ne rendent pas le même verdict, et la distinction est le sens
+même de `MAPPING_INCOMPLETE` : un mapping incomplet rend `FACTCHECK_INVALID`, qui renvoie à
+l'étape CLAIM MAP sans toucher au texte ni consommer de boucle ; un verdict sémantique rend
+`FACTCHECK_FAIL`, qui saisit le réécrivain. Le rapport du gate compte les deux séparément —
+`failed` et `mapping_incomplete` — et porte les claims à reprendre sous `mapping_a_reprendre`.
 
 Une modification du texte, même minime, change le SHA et invalide automatiquement l'ancien
 fact-check.
