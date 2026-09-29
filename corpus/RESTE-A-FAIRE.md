@@ -38,6 +38,9 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
 | **J.** Le pack résout le dossier par l'identifiant de la carte | 11 répertoires restants | non pour le correctif, oui pour rattacher les onze | **outillage corrigé le 26 septembre 2026** ; `prepare()` honore le champ `dossier` sous `corpus/evidence/`, et le cas prouvé rend 72 appuis au lieu de 45. Reste la décision documentaire sur `corpus/dossiers/` — neuf cartes — et le rattachement des onze |
 | **K.** Une omission du claim mapper fabrique un échec immérité | **aucun** pour le correctif | non | ouvert le 25 septembre 2026, **aggravé le 26** ; second cas établi, où le claim était pourvu de deux appuis réels sans le bon — et la coupe qui s'en est suivie a fait perdre au texte une matière attestée |
+| **L.** Un `REJECT` pédagogique republie un texte dont on connaît les refus | **aucun** pour le constat, une décision de protocole pour la suite | non | ouvert le 27 septembre 2026 ; `critere-de-la-retroaction` a vu restaurer une version que le gate mesurait à 52 claims soutenus sur 59, pour éviter une régression pédagogique |
+| **M.** Les titres de section sont du texte lecteur, et le fact-check ne les voit pas | 744 titres hors couverture ; le nombre de défauts n'est pas mesuré | non | ouvert le 28 septembre 2026, **confirmé le 29** — deuxième cas établi, et le premier trouvé par la consigne au réécrivain plutôt que par accident. Le balayage par rareté a été mesuré et il échoue |
+| **N.** Une routine qui lit `main` ne voit pas le travail des branches ouvertes | **aucun** | non | ouvert le 28 septembre 2026 ; **la parade a servi le 29** — PR #123 était ouverte, ses deux cartes ont été écartées du lot avant tout travail |
 | **O.** Le répertoire de travail est partagé entre agents monoconcept | une ligne par prompt d'agent | non | ouvert le 29 septembre 2026 ; un mapper a lu la preuve d'une autre carte, son travail a été écarté. La parade a été appliquée à la main et a tenu |
 | **P.** `MAPPING_INCOMPLETE` est inatteignable quand le signal est muet | une ligne au prompt du mapper pour la parade ; le reste est un instrument à écrire | non | ouvert le 29 septembre 2026 ; explique aussi la perte du 26 septembre sur `C008`. La parade des citations a marché du premier coup |
 | **Q.** Le partitionnement d'un bundle a un coût | **aucun** pour la parade d'exploitation | non | ouvert le 29 septembre 2026 ; un instrument a été écrit contre, mesuré, et jeté. On ne partitionne plus que sur dépassement réel |
@@ -1789,6 +1792,50 @@ Rattacher sur la seule concordance d'œuvre reviendrait exactement à ce que `re
 de faire pour `corpus/dossiers/` : élargir en silence le périmètre de preuve d'une carte avec une
 lecture menée pour autre chose. **Le tableau est une mesure, pas une conclusion.**
 
+## Le point 1 est soldé le 28 septembre 2026, et le critère qu'il a fallu écrire
+
+`predominance-du-conflit-sur-la-negociation` **déclare désormais son dossier**, et c'est le geste
+que ce chantier prescrivait : écrire le chemin dans le champ `dossier` de l'enregistrement, ne
+renommer aucun répertoire, ne toucher à aucune `note`.
+
+**Ce qui a tranché n'est pas la concordance d'œuvre, c'est le fichier.** Le `quotation.text` de la
+carte et celui de `corpus/evidence/taille-des-entreprises-et-issue-des-greves/lecture.json` sont
+**identiques à l'octet**, même `locator` p. 43, même auteur, et les deux `sources_ouvertes` du
+dossier sont les deux sources déclarées de la carte. Le passage que la carte affiche est lu, et
+relu sur l'image de la page. C'est exactement la question étroite que le 26 septembre avait
+laissée ouverte, et elle se répondait bien en ouvrant le fichier.
+
+**Un critère est sorti du balayage, et il ne vaut que confronté au fichier.** Sur les quatorze
+répertoires orphelins d'aujourd'hui — deux d'entre eux revendiqués par `corpus/candidates/` et
+`corpus/rejected/` —, **exactement deux sont nommés par une carte dans son propre
+enregistrement**. Les ouvrir les sépare :
+
+| répertoire | carte qui le nomme | ce que la carte en dit | verdict |
+|---|---|---|---|
+| `taille-des-entreprises-et-issue-des-greves` | `predominance-du-conflit-sur-la-negociation` | « Le dossier a été ouvert sous […] Le répertoire `corpus/evidence/` garde son nom d'origine. » | **rattaché** |
+| `limitation-de-l-expansion` | `cout-de-remonter-l-effectif` | « Second dossier tiré des mêmes pages et **non écrit** » | **reste orphelin** |
+
+La seconde ligne est celle qui donne sa valeur au critère : la carte nomme le répertoire pour dire
+qu'il est **un autre sujet**, lu dans les mêmes pages et jamais rédigé. Un rattachement sur le
+seul fait qu'une carte nomme un répertoire aurait donc été faux une fois sur deux. **« Une carte
+nomme le répertoire » est un filtre, pas un verdict** ; le verdict se rend en lisant ce qu'elle en
+dit.
+
+Effet mesuré sur le pack de `predominance-du-conflit-sur-la-negociation` : fichiers de preuve
+0 → 1, appuis 56 → **96 dont 39 du dossier**, `dossier_declare` `non-declare` → `resolu`, et les
+`access_corroboration` de ses deux sources `dossier-absent` → **`corrobore`**. Les 56 appuis
+antérieurs **survivent tous à l'identique** — les empreintes dérivent de
+`origine\0chemin\0valeur`, dont aucun des trois ne change — et les 135 autres cartes ne sont pas
+touchées.
+
+La carte n'est pas reprise pour autant : elle reste `rewrite_rejected_factcheck` depuis le
+17 septembre, refusée après deux boucles sur un pack d'où le dossier était absent. **Sa reprise
+est désormais la mieux dotée du dépôt**, et c'est le même enchaînement que `prepare()` avait
+ouvert pour `critere-de-la-retroaction`.
+
+Restent donc les deux cartes Shewhart, les deux cartes Milet et les points 2 à 4 ci-dessous,
+inchangés.
+
 ## Par quel bout prendre ce chantier, après le 26 septembre
 
 1. **`predominance-du-conflit-sur-la-negociation`, puis `trois-sigmas-arbitrage-de-cout`, puis
@@ -1904,6 +1951,38 @@ chantier J et ici. Mais son rôle lui interdit de créer l'appui, et le plafond 
 à couper plutôt qu'à contester. **La règle « vérifier la prémisse plutôt que l'exécuter » n'a de
 valeur que si contester rouvre quelque chose ; sinon elle ne fait qu'ajouter un regret au compte
 rendu.**
+
+## Une seconde implémentation, écrite le 28 septembre et écartée à la fusion
+
+Le passage du 28 septembre a implémenté ce chantier une seconde fois, sans savoir que PR #122 le
+portait déjà — voir le chantier N. **C'est l'implémentation du 27 qui vit** ; celle du 28 a été
+écartée à la fusion, et il n'en reste que la mesure ci-dessous, qui porte sur une question de
+calibrage que l'implémentation retenue tranche autrement.
+
+**La rareté peut se mesurer sur le pack ou sur le dépôt, et les deux ont été essayées.**
+L'implémentation retenue calcule un lexique générique sur le pack lui-même — les 10 % de termes les
+plus fréquents — et écarte ces termes. Celle du 28 mesurait la fréquence documentaire sur les 136
+dossiers du dépôt.
+
+Ce qui a motivé ce détour est une mesure, et elle reste vraie quel que soit l'instrument retenu :
+**la rareté dans le pack, prise seule, ne dit rien.** Sur les 58 claims du dernier mapping de
+`critere-de-la-retroaction`, la règle « terme présent dans un seul appui du pack » rend **17
+signaux, tous du bruit** : `donne`, `temps`, `changer`, `règle`, `second`, `exige`, `nomme`,
+`lorsque`. Un pack de 72 appuis courts rend rare à peu près n'importe quel mot. La fréquence
+documentaire sur les 136 dossiers sépare les deux familles sans ambiguïté :
+
+| terme | dossiers sur 136 |
+|---|---:|
+| `quilles` | 1 |
+| `thermostat` | 5 |
+| `lorsque` | 19 |
+| `changer` | 22 |
+| `règle` | 55 |
+| `donne` | 131 |
+
+Le lexique générique de l'implémentation retenue vise le même effet par un autre chemin. **Rien
+n'établit lequel des deux discrimine le mieux** : les comparer demanderait de les exécuter sur les
+mêmes cartes, et personne ne l'a fait. À savoir si le signal se met un jour à bruiter.
 
 ## Par quel bout prendre ce chantier, après le 26 septembre
 
@@ -2130,6 +2209,157 @@ est un avertissement.
 ---
 
 ---
+
+# M. Les titres de section sont du texte lecteur, et le fact-check ne les voit pas — ouvert le 28 septembre 2026
+
+**744 titres de section, 5 147 mots, 2,78 % du texte lecteur du corpus, ne passent par aucun
+claim.** Le dispositif entier — claim map, bundle, vérificateur, gate — ne les voit pas, et rien
+ne le disait.
+
+Le mécanisme est en deux lignes, et il est vérifiable :
+
+- `readerParagraphs()` de `scripts/corpus/deepening-factcheck.mjs` n'émet des locators que pour
+  `lead[i]` et `sections[i].paragraphs[j]` ;
+- `DeepeningDetail.tsx` rend `section.title` dans un `<h2>`, en tête de chaque section.
+
+Un titre est donc affiché au lecteur, en position d'annonce et en gros caractères, **sans aucun
+appui**. Le claim mapper ne peut pas l'ancrer, faute de locator ; le gate ne peut pas le refuser,
+faute de claim ; un `FACTCHECK_PASS` ne se prononce pas dessus, et ne l'a jamais dit.
+
+## Comment il a été trouvé, et pourquoi le cas est bon
+
+Par la reprise de `critere-de-la-retroaction`, le 28 septembre. Le gate venait de refuser
+`C038` parce que l'emboîtement des boucles n'est porté par aucun appui, et le réécrivain a retiré
+le mot du paragraphe. **Le titre de la même section portait « Des boucles emboîtées ».**
+
+Le réécrivain l'a vu et l'a corrigé de sa propre initiative, en signalant que cela sortait de la
+lettre de sa consigne et que le gate ne l'exigeait pas. Il avait raison sur les deux points, et
+c'est le signalement qui a ouvert ce chantier.
+
+**Le cas est le pire possible de ce point de vue** : l'affirmation refusée survivait à sa propre
+correction, en position plus visible que là où elle avait été refusée. Si personne n'avait
+regardé, le texte serait sorti avec un `FACTCHECK_PASS` et un titre affirmant exactement ce que le
+gate venait de rejeter.
+
+**Ce qui n'est pas établi :** on ne sait pas combien des 744 titres affirment quelque chose que
+leur dossier ne porte pas. Un seul a été examiné, et il a été trouvé en corrigeant autre chose. La
+mesure ci-dessus dit la **surface** non couverte, pas le nombre de défauts.
+
+## Le balayage a été fait le jour même, et il ne marche pas — c'est le résultat qui vaut
+
+Le geste le moins cher semblait évident : appliquer aux 744 titres l'instrument du chantier K —
+pour chaque titre, les termes rares dans le dépôt que le dossier de sa carte ne porte pas. Il a
+été écrit et exécuté. **Il rend 199 titres signalés sur 744, soit 26,7 %, et c'est du bruit
+presque intégralement.**
+
+Vingt termes signalés pris à la suite : `loger`, `prévoir`, `tromper`, `rigide`, `jours`, `aider`,
+`regarder`, `choisir`, `famille`, `manières`, `savent`, `veulent`, `gagne`, `payer`, `demander`,
+`sortir`, `former`, `calme`, `sentir`, `tourner`. Aucun n'est rare ; tous sont du français
+courant.
+
+**La raison est structurelle et vaut d'être retenue : un titre et un dossier ne sont pas écrits
+dans la même langue.** Les dossiers sont une prose bibliographique dense, les titres une langue
+vive et concrète, faite pour donner envie de lire. La fréquence documentaire mesurée sur les
+dossiers est donc une mauvaise référence pour la prose éditoriale : elle déclare rare ce qui n'est
+qu'absent d'un registre. Le signal du chantier K reste juste là où il est employé — entre un
+`claim_text` et des appuis, deux textes du même registre — et se disqualifie ici.
+
+**Et le seul cas vrai est signalé pour une raison fausse, ce qui achève la démonstration.** Le
+titre « Des boucles hiérarchisées » est bien dans la liste, mais sur le terme `hiérarchisées`, que
+le dossier ne porte pas **parce qu'il porte `hiérarchisation`**. C'est-à-dire exactement la forme
+que la correction de `C038` a retenue, et qui est soutenue. Sans normalisation morphologique,
+l'instrument signale un terme correct.
+
+Conséquence pour le chantier K, et elle rassure dans le bon sens : le même défaut de morphologie y
+joue **en sens inverse**. Une variante d'un terme d'appui n'a aucun porteur dans le pack, donc le
+signal ne se déclenche pas : la morphologie y fait **manquer** un appui, jamais en suggérer un
+faux. C'est la direction sûre, et elle confirme la limite déjà écrite — le signal réduit la
+surface du défaut, il ne la ferme pas.
+
+## Par quel bout prendre ce chantier
+
+1. **Ne pas réessayer le balayage par rareté.** Il a été fait, mesuré et il échoue, pour une raison
+   de registre qui ne se corrige pas par un seuil. Une reprise qui voudrait mesurer avant de
+   corriger a besoin d'un autre instrument : la comparaison utile n'est pas titre contre dossier
+   mais **titre contre corps de sa propre section**, deux textes du même registre, et elle demande
+   une normalisation morphologique que le dépôt n'a pas.
+2. **Puis émettre les locators.** Ajouter `sections[i].title` à `readerParagraphs()` est une ligne,
+   mais elle **invalide tous les claim maps archivés** : le gate refuse en `FACTCHECK_INVALID` tout
+   mapping qui oublie un paragraphe déclaré, et les 28 cartes auditées en portent un. Le coût est
+   donc un remapping du corpus audité, pas une ligne.
+3. **Et arbitrer ce qu'on exige d'un titre.** Un titre n'est pas une phrase : « Ouvrir son
+   parachute une seule fois » n'affirme rien qu'on puisse soutenir ou refuser, et lui demander un
+   appui ferait échouer des titres corrects. La règle plausible est plus étroite — **un titre ne
+   peut pas porter un terme que le corps de sa section n'a pas le droit de porter** — et c'est
+   exactement ce qu'il faut vérifier au point 1 avant d'en faire une règle.
+4. **En attendant, la consigne au réécrivain est gratuite et suffit à ce cas** : quand une
+   correction retire un terme d'un paragraphe, vérifier que le titre de la section ne le porte
+   pas. C'est ce que le réécrivain a fait ici sans qu'on le lui demande.
+
+
+---
+
+# N. Une routine qui lit `main` ne voit pas le travail des branches ouvertes — ouvert le 28 septembre 2026
+
+**Le passage du 28 septembre a refait, sans le savoir, le travail du passage du 27.** Il a
+réimplémenté le chantier K, refait la même reprise de `critere-de-la-retroaction` avec les deux
+mêmes gestes, et rouvert le chantier L. PR #122 portait déjà les trois, ouverte et non fusionnée.
+
+Le mécanisme est simple et il se reproduira : **le journal d'un passage vit sur la branche de ce
+passage.** Une routine qui part de `origin/main` lit l'état du corpus tel que la dernière fusion
+l'a laissé, et ne voit ni les branches ouvertes, ni leurs journaux, ni les chantiers qu'elles ont
+soldés. Ce n'est pas une faute d'exécution : rien dans le protocole ne demande de regarder
+ailleurs que dans les fichiers.
+
+## Ce que la duplication a coûté, et l'unique chose qu'elle a rapportée
+
+Coût : deux implémentations indépendantes du chantier K, deux reprises de la même carte, deux
+ouvertures du même chantier L, et une nuit de travail sur une carte déjà instruite.
+
+Gain involontaire, et il faut le garder parce qu'il ne se paie pas deux fois : **une mesure de la
+variance du dispositif sur une tâche identique**, que ce dépôt réclamait depuis le 26 septembre
+sans jamais la financer.
+
+| | passage du 27 | passage du 28 |
+|---|---|---|
+| gate sur la même reprise | `FACTCHECK_PASS` **53 sur 53** | `FACTCHECK_PASS` **48 sur 48** |
+| mots lecteur du candidat | 1 073 | 1 074 |
+| verdict de la revue indépendante | **REJECT** | **ACCEPT** |
+
+**Deux revues indépendantes, sur deux textes à un mot près, rendent des verdicts opposés.** Et le
+découpage varie de 53 à 48 claims sur un même texte, ce qui donne un quatrième point à la leçon du
+26 septembre : le nombre de claims ne mesure pas le texte.
+
+Ce n'est pas une mesure de variance au sens strict — deux points, deux chemins un peu différents —
+mais c'est plus que ce que le dépôt avait, et cela porte sur le maillon le plus coûteux de la
+chaîne : celui qui décide si un texte est publié.
+
+## Par quel bout prendre ce chantier
+
+1. **Le geste le moins cher, et il tient en une ligne de protocole** : au point 3 de la routine,
+   « état du repository avant travail », lister les branches ouvertes et leurs PR avant de choisir
+   un lot. Une carte portée par une branche ouverte n'est pas un lot disponible.
+2. **Trancher les deux implémentations du chantier K.** Celle de PR #122 calcule un lexique
+   générique sur le pack lui-même, top 10 % des termes les plus fréquents, et plafonne à cinq
+   appuis signalés ; celle du 28 mesure la rareté sur les 136 dossiers du dépôt et plafonne à
+   trois. Les deux visent le même défaut, aucune n'est évidemment supérieure, et **il en faut une,
+   pas deux**. Le choix se fait en les exécutant sur les mêmes cartes.
+3. **Ne pas généraliser le REJECT en règle.** Ce qui a départagé les deux revues n'est pas leur
+   qualité mais une règle écrite — le plancher de 1 100 mots de `PROTOCOLE.md` §5 — que l'une
+   invoque et que l'autre a manquée. Sur le défaut pédagogique qu'elles avaient toutes deux vu,
+   rien ne les départage.
+
+## Et un défaut d'instrument que cette confrontation a révélé
+
+**Le plancher de 1 100 mots du protocole n'est porté par aucun code.** Les bornes dures de
+`deepenings.mjs` sont `minWords: 1000` et `maxWords: 2100`, et leur commentaire assume l'écart :
+« le protocole vise 1 300-1 700 ; ces bornes-ci laissent respirer sans laisser dériver ».
+
+Un candidat à 1 074 mots passe donc `deepen --check` sans un mot, alors que le protocole dit qu'en
+dessous de 1 100 « le texte n'a rien ajouté ». La règle existe, elle est écrite, et sa violation
+dépend d'un reviewer qui pense à la vérifier — ce qui est exactement la définition d'une règle non
+tenue. À trancher : soit le code porte le plancher du protocole, soit le protocole s'aligne sur
+les bornes du code, mais pas les deux chiffres en même temps.
 
 # O. Le répertoire de travail est partagé entre agents monoconcept — ouvert le 29 septembre 2026
 
