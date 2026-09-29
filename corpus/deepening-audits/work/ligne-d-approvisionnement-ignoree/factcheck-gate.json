@@ -1,28 +1,12 @@
 {
   "protocol_version": 2,
   "concept_id": "ligne-d-approvisionnement-ignoree",
-  "candidate_sha256": "3ad3ef1641ef6f06cdf48cb7f7f8570db07aaa36057dfd18dd8a2e1ddbf1da9d",
-  "verdict": "FACTCHECK_FAIL",
-  "claims": 68,
-  "supported": 65,
-  "failed": 3,
+  "candidate_sha256": "1de5c31ae823e4dac13cbea25e09e2e681eb5caeaabeda52bba2e4ae87335f35",
+  "verdict": "FACTCHECK_PASS",
+  "claims": 57,
+  "supported": 57,
+  "failed": 0,
   "mapping_incomplete": [],
   "structural_errors": [],
-  "failures": [
-    {
-      "claim_id": "C004",
-      "verdict": "CONFLICT",
-      "reason": "Les appuis fournis pour ce claim localisent la meme scene du restaurant, dans le meme document de travail de 1987, a deux endroits differents : SUP-4881606b2e4d059c ecrit « l'exemple du restaurant, p. 9 », SUP-771365f96132d2be ecrit « Puis le restaurant, p. 6 et 7 ». Aucun appui fourni ne reconcilie les deux, et le claim presente « page 9 » comme etabli. L'auteur (SUP-813045a5b04433b2) et la date de 1987 (SUP-2a15b578f7cdfdb3, SUP-37e0313d8463f985, SUP-68217b545f96a020) sont, eux, soutenus."
-    },
-    {
-      "claim_id": "C015",
-      "verdict": "TOO_STRONG",
-      "reason": "Le seul appui fourni porte « Often there are lags between the initiation of a control action and its effect » (SUP-771365f96132d2be). Le claim lit « presque toujours », qui releve la frequence au-dessus de ce que l'appui autorise."
-    },
-    {
-      "claim_id": "C023",
-      "verdict": "CONFLICT",
-      "reason": "Le verbatim est bien porte par les appuis fournis, mais ils le localisent a deux endroits : SUP-07eb5c6aab4e585a le lit « sur l'image de la p. 10 » (p. 10-11), tandis que SUP-485b84a6b1a5bdb7 et SUP-0dff2bd362a88987 le donnent p. 13 du meme document de travail. Aucun appui fourni pour ce claim ne tranche entre les deux, et le claim affiche « (p. 10) » comme acquis."
-    }
-  ]
+  "failures": []
 }
