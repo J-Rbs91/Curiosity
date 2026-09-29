@@ -119,6 +119,35 @@ if (tooBig.length) {
   );
 }
 
+// Un tour anterieur a pu partitionner en plus de parts que celui-ci. Ses verdicts
+// restent alors sur le disque sous un index que ce tour n'ecrase pas, et le
+// recollement les ramasserait : le cas s'est produit le 29 septembre 2026, ou un
+// `verification.part3.json` d'un decoupage a 62 claims survivait a un
+// repartitionnement en deux, sur un SHA qui n'etait meme plus le bon. Le
+// recollement l'a refuse, ce qui est son role ; le refuser ici est moins cher.
+// On ne supprime rien : des verdicts sont une trace, et c'est a l'operateur de
+// les archiver sous le nom de leur tour.
+const verdictsOrphelins = (await fs.readdir(dir))
+  .filter((name) => /^verification\.part(\d+)\.json$/.test(name))
+  .filter((name) => Number(name.match(/\d+/)[0]) > groups.length);
+if (verdictsOrphelins.length) {
+  fail(
+    `ce tour compte ${groups.length} partition(s), mais le repertoire porte encore des verdicts ` +
+      `d'un decoupage plus large : ${verdictsOrphelins.join(", ")}. Archive-les sous le nom de ` +
+      `leur tour avant de repartitionner, sinon le recollement les ramassera.`,
+  );
+}
+
+// Les bundles de partition sont derives et regenerables : ceux qui depassent le
+// nouveau compte sont, eux, supprimes, pour qu'aucun agent ne lise une partition
+// qui n'appartient plus a ce tour.
+for (const name of await fs.readdir(dir)) {
+  const correspondance = name.match(/^verification-bundle\.part(\d+)\.json$/);
+  if (correspondance && Number(correspondance[1]) > groups.length) {
+    await fs.rm(path.join(dir, name));
+  }
+}
+
 for (const part of groups) {
   const { _pending, ...rest } = part;
   await fs.writeFile(path.join(dir, `verification-bundle.part${rest.partition.index}.json`), _pending);

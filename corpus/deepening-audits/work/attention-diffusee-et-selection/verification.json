@@ -1,322 +1,371 @@
 {
   "protocol_version": 2,
   "concept_id": "attention-diffusee-et-selection",
-  "candidate_sha256": "fd224ce2fe0c7760e8056eafd3f3399899f0fe5da1c200d6af93380be47e3c16",
+  "candidate_sha256": "dc10ed36667348996f1eeac277f7851c79ac800f2baa1e54ee535bb4afd52da0",
   "partitions": [
     "corpus/deepening-audits/work/attention-diffusee-et-selection/verification.part1.json",
-    "corpus/deepening-audits/work/attention-diffusee-et-selection/verification.part2.json",
-    "corpus/deepening-audits/work/attention-diffusee-et-selection/verification.part3.json"
+    "corpus/deepening-audits/work/attention-diffusee-et-selection/verification.part2.json"
   ],
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "La reference validee situe l'article de Lahy en 1924 sur les machinistes de la Societe des Transports en commun de la region parisienne, et la lecture primaire donne p. 118 « Le sujet est commodement assis sur un siege de machiniste d'autobus » : siege d'autobus parisien et milieu des annees 1920 sont exactement ce que les appuis portent, dans un cadre pose comme imagine."
+      "reason": "Les appuis fournis portent le siege de machiniste d'autobus (p. 118, « Le sujet est commodement assis sur un siege de machiniste d'autobus »), la compagnie parisienne (S.T.C.R.P., region parisienne) et l'annee 1924 du tome 25 de L'annee psychologique. « Milieu des annees 1920 » ne depasse pas cette datation, et la phrase est une mise en scene qui ne presente rien d'autre comme un fait."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire cite Lahy p. 117 : le machiniste « doit repondre a des excitations visuelles ou auditives par des reactions motrices exactes et promptes », excitations qui « se presentent inopinement », et p. 170 l'attention diffusee est « celle qui porte sur plusieurs objets a la fois ». La simultaneite, le caractere inopine, la denomination « machiniste » et le melange visuel/auditif sont couverts ; la liste de trois exemples ne fait qu'illustrer ces categories sans rien affirmer de plus."
+      "reason": "Lahy, p. 117 cite dans les appuis : le machiniste « doit repondre a des excitations visuelles ou auditives par des reactions motrices exactes et promptes », excitations qui « se presentent inopinement » ; le resume et la glose p. 170 donnent « plusieurs objets a la fois ». « A la meme seconde » et « qui ne se sont pas annoncees » restent dans ces termes."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Reprise fidele de la phrase de Lahy citee dans la lecture primaire : les excitations « se presentent inopinement ou par series irregulieres, se succedant parfois de facon rapide ou n'apparaissant qu'isolement pendant une periode calme », et « pendant toute la duree du travail, la rue, avec ses spectacles mobiles, forme comme un fond a la fois uniforme et varie ». Aucun renforcement de portee."
+      "reason": "Les appuis fournis etablissent des excitations visuelles et auditives surgissant inopinement sur le fond mobile et sonore de la rue, et la source secondaire decrit lumieres et klaxons. Le detail de position releve de la scene explicitement imaginee ; il n'ajoute ni portee ni attribution a l'auteur."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Consequence qui suit les appuis fournis : le resume valide porte que cette attention « qui porte sur plusieurs objets a la fois [...] manque presque toujours au machiniste fautif d'un accident grave », et la lecture primaire rapporte le cas B., qui « fixe son attention sur un taxi qui le provoque », « brule un arret obligatoire » et heurte un tramway. Que nulle sollicitation ne merite a elle seule qu'on s'y absorbe reste a l'interieur de ce que ces appuis autorisent, et la phrase n'est pas presentee comme une parole de Lahy."
+      "reason": "Paraphrase serree de la p. 117 citee dans les appuis : excitations « inopinement ou par series irregulieres, se succedant parfois de facon rapide ou n'apparaissant qu'isolement pendant une periode calme », et « pendant toute la duree du travail, la rue, avec ses spectacles mobiles, forme comme un fond »."
     },
     {
       "claim_id": "C005",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim autorisent seulement un contraste : Lahy dit que le machiniste « utilise une forme particuliere de l'attention » et glose l'attention diffusee comme « celle qui porte sur plusieurs objets a la fois ». Ils ne portent aucune definition de ce qu'on appelle ordinairement l'attention, et en particulier rien qui etablisse que l'attention ordinaire soit un resserrement dans lequel « on oublie le reste ». Le cas B. est la defaillance d'un machiniste depourvu de l'aptitude, non une definition generale de l'attention. Le claim transforme un contraste implicite en definition generale."
+      "verdict": "SUPPORTED",
+      "reason": "Suit des appuis fournis : l'aptitude requise « porte sur plusieurs objets a la fois », et le cas B., qui fixe son attention sur un taxi, montre que « une absence d'attention diffusee a ete cause d'une catastrophe ». La phrase n'est pas attribuee a l'auteur comme enonce direct."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Enonce restreint a la situation (« Sur ce siege ») et adosse aux appuis fournis : la lecture primaire rapporte le cas B., qui fixe son attention sur un taxi, brule un arret obligatoire et heurte un tramway, et le verbatim retenu « une absence d'attention diffusee a ete cause d'une catastrophe » ; le resume valide dit que cette attention manque presque toujours au machiniste « fautif d'un accident grave ». La qualification de faute professionnelle ne depasse pas le « fautif » des appuis."
+      "reason": "Les appuis fournis portent que l'attention diffusee « manque presque toujours au machiniste qui se rend fautif d'un accident grave » et, pour le cas B., que la fixation de l'attention sur un seul objet a conduit a bruler un arret obligatoire. Le tour conditionnel n'ajoute ni frequence ni certitude a ce que les appuis autorisent."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire donne, immediatement apres le bapteme, « Il importe de la mesurer chez les candidats », et la glose p. 170 « celle qui porte sur plusieurs objets a la fois » ; elle porte aussi « Cette inferiorite psychologique ne pouvait pas apparaitre a ses inspecteurs » et l'expression « l'aptitude a l'attention diffusee ». Nommer l'aptitude inverse pour pouvoir la chercher chez un candidat qu'on ne verra pas conduire est exactement ce que ces appuis autorisent."
+      "reason": "Les appuis fournis donnent la glose « celle qui porte sur plusieurs objets a la fois », le bapteme de l'aptitude et la phrase qui en motive la mesure, « Il importe de la mesurer chez les candidats » : la mesure porte sur des candidats a l'embauche, avant toute observation du travail reel."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Appuis convergents : nom d'auteur « J.-M. Lahy », reference 1924, tome 25, p. 106-172 ; la note d'attribution validee et celle de la lecture primaire disent qu'il rend compte des travaux du laboratoire de psychotechnique « qu'il dirige » pour la Societe des Transports en commun de la region parisienne ; la source ouverte donne 67 pages, ce qui autorise « long article »."
+      "reason": "Appuis concordants : auteur J.-M. Lahy seul, article de 1924 dans L'annee psychologique t. 25, p. 106-172 (67 pages), et note d'attribution selon laquelle il « rend compte des travaux du laboratoire de psychotechnique qu'il dirige pour la Societe des Transports en commun de la region parisienne »."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "La citation du claim est mot pour mot celle que la lecture primaire releve p. 117 et que la note de revue a verifiee sur l'image de la page (titre courant lu, phrase entiere reproduite) ; le locator de citation validee porte « p. 117 ». La description « une tache avant de nommer une faculte » decrit exactement l'ordre de la phrase citee."
+      "reason": "Le locator de citation porte p. 117 et la lecture primaire situe le bapteme p. 117 ; la phrase citee decrit bien la tache (reconnaitre, classer, juger, repondre) avant de nommer la « forme particuliere de l'attention »."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire enchaine, apres la phrase de bapteme : « Il importe de la mesurer chez les candidats. » L'ordre des phrases et le verbatim sont portes par l'appui."
+      "reason": "Citation verbatim : les appuis fournis donnent la phrase entiere, verifiee sur l'image de la page 117, mot pour mot telle que le texte lecteur la reproduit, avec sa reference."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire situe le bapteme « dans la section « 2° Mesure de l'attention diffusee », sous-section « A. L'attention diffusee », p. 117 » ; la note de revue et les notes validees reprennent ce titre de section imprime."
+      "reason": "La lecture primaire enchaine exactement, apres la phrase de bapteme : « Il importe de la mesurer chez les candidats. » La citation et son rang dans le texte sont donc portes par les appuis."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "La phrase citee par la lecture primaire et verifiee sur image porte bien quatre verbes successifs — reconnaitre, classer, juger, repondre « par des gestes adaptes » —, ce qui autorise aussi le constat qu'il ne s'agit pas d'une veille passive."
+      "reason": "Les appuis fournis donnent le titre de section imprime, « 2° Mesure de l'attention diffusee », et la sous-section « A. L'attention diffusee » p. 117, ou se trouve le bapteme."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Suit directement la phrase de p. 117 portee par les deux appuis : reconnaitre puis classer et juger, puis « y repondre par des gestes adaptes » ; le tri s'acheve donc bien par un geste."
+      "reason": "Les quatre verbes sont dans la citation portee par les appuis : « Pour reconnaitre [...] pour les classer, les juger, y repondre par des gestes adaptes ». La glose « pas une veille passive » ne fait que lire ces verbes."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "La glose de Lahy relevee p. 170 dans la lecture primaire — « celle qui porte sur plusieurs objets a la fois » — et le resume valide portent l'etalement sur plusieurs objets ; le meme appui distingue par ailleurs la distraction (le film, « simplement une distraction » qui fait baisser le rendement) de l'aptitude mesuree, dont la cote est le rapport des reactions justes aux excitations. La mise en garde lexicale reste dans ce que les appuis autorisent."
+      "reason": "Consequence directe de la meme citation : le classement et le jugement s'achevent « par des gestes adaptes ». Aucune portee ajoutee."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire porte : « Il note par ailleurs, p. 111, que ce test « a beaucoup de similitude avec l'epreuve des temps de reaction de choix » ». Page et verbatim identiques."
+      "reason": "La glose de l'auteur citee dans les appuis dit « celle qui porte sur plusieurs objets a la fois » ; le resume la reprend. Les appuis n'attachent a l'adjectif aucun affaiblissement, et la precision du texte lecteur reste dans ce qu'ils portent."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Suit l'appui fourni : similitude declaree avec l'epreuve des temps de reaction de choix, six conventions associant excitations et reactions, exigence de « reactions motrices exactes et promptes », cote etablie sur le rapport des reactions justes aux excitations. Un choix rapide entre des reponses est bien ce que l'epreuve eprouve, et la formulation n'est pas donnee pour une parole de Lahy."
+      "reason": "La lecture primaire rapporte explicitement, p. 111, que ce test « a beaucoup de similitude avec l'epreuve des temps de reaction de choix » : citation et pagination sont portees mot pour mot."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis decrivent les sous-sections qui suivent le bapteme comme purement techniques — « B. Le test d'attention diffusee, la technique et l'outillage » p. 118-123, « C. Organisation du test », « D. Apprentissage », « E. Calcul des resultats » — et la lecture primaire detaille salle, appareils, selecteur, moteur et cylindre pour p. 118-128, Lahy annoncant p. 106 « un expose quasi technique »."
+      "reason": "Suit de l'appui fourni : la mesure « se fait par la comparaison du nombre d'excitations avec le nombre, la rapidite et la qualite des reactions motrices que nous leur avons conventionnellement associees », et l'auteur rapproche lui-meme l'epreuve des temps de reaction de choix."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Lahy p. 118, cite par la lecture primaire : « une chambre noire de 9 metres de long sur 6 metres de large », « Le sujet est commodement assis sur un siege de machiniste d'autobus », « En face et a 6 metres de lui est un ecran » ; les notes validees reprennent chambre noire et siege de machiniste."
+      "reason": "Les appuis enumerent le contenu des pages suivantes par leurs sous-titres imprimes — technique et outillage, organisation, apprentissage, calcul des resultats — et en detaillent le dispositif ; rien dans ce qu'ils portent n'est une discussion de la notion."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Lahy p. 119, cite par la lecture primaire : « 9 lampes de couleur : 3 rouges, 3 vertes et 3 blanches sont distribuees autour de l'ecran », et pour l'auditif « deux vibreurs magnetiques, timbre de bois et timbre de metal » ; les notes validees portent « neuf lampes de couleur et deux vibreurs »."
+      "reason": "P. 118 citee dans les appuis : chambre noire, « Le sujet est commodement assis sur un siege de machiniste d'autobus », « En face et a 6 metres de lui est un ecran »."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire detaille p. 119-120 les trois organes de reaction — index droit sur un bouton, pied droit, pied gauche — et « Chaque organe ferme un double circuit : un signal de Desprez qui ecrit sur le cylindre enregistreur » ; les notes validees resument « reactions a l'index droit et aux deux pieds inscrites sur cylindre »."
+      "reason": "P. 119 citee dans les appuis : « 9 lampes de couleur : 3 rouges, 3 vertes et 3 blanches sont distribuees autour de l'ecran » et deux vibreurs magnetiques pour les excitations auditives."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "La lecture primaire porte « Nous donnons 90 excitations en 4 min. 30 » et, pour le contacteur, 90 plots « inegalement espaces « de facon a creer le rythme irregulier » ». Le nombre et l'inegalite des intervalles sont portes, et la finalite enoncee reprend celle de l'appui sans la durcir."
+      "reason": "Les appuis portent les trois organes de reaction (index droit, pied droit, pied gauche) et l'inscription par signaux de Desprez sur le cylindre enregistreur ; la note validee resume « reactions a l'index droit et aux deux pieds inscrites sur cylindre »."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur cite verbatim « nous faisons defiler environ 300 metres de film ou se succedent des scenes breves », « sans titres et sans cohesion », et « Les images cinematographiques n'entrent pas directement dans les mesures [...] elles constituent simplement une distraction ». Les trois elements du claim - longueur, scenes breves sans cohesion, film hors note et donne comme distraction - sont portes mot pour mot."
+      "reason": "L'appui fourni donne « Nous donnons 90 excitations en 4 min. 30 » et les 90 plots « inegalement espaces de facon a creer le rythme irregulier ». La finalite enoncee par le texte lecteur ne va pas au-dela."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "La citation est exacte dans $.definition_de_lauteur : « L'experience nous a montre que le but que nous poursuivions [...] etait atteint, car la valeur du rendement de divers sujets s'est trouvee diminuee lorsque le film a ete introduit dans la technique. » Le meme appui etablit que le film n'a rien de vraisemblable (scenes sans titres ni cohesion : acrobates, batailles d'animaux, assassinat, incendie), de sorte que la justification retenue par le claim - un effet mesure - est celle que la source produit."
+      "reason": "L'appui porte « environ 300 metres de film », des « scenes breves », « sans titres et sans cohesion », et « Les images cinematographiques n'entrent pas directement dans les mesures [...] elles constituent simplement une distraction ». La cote etant le rapport des reactions justes aux excitations, le film n'entre pas dans la note."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis enumerent ce que la cotation releve : « 1 Les erreurs ; 2 Les durees », les omissions, substitutions et additions, et « L'exactitude relative qui nous sert a apprecier la valeur du sujet dans ce test nous est donnee par le rapport du nombre des reactions justes au nombre des excitations » ; regularite et homogeneite sont declarees non encore utilisees. Aucune grandeur d'intensite ne figure dans cette enumeration."
+      "reason": "Citation verbatim de l'appui, et l'appui lui-meme fonde la justification sur l'experience : « L'experience nous a montre que le but [...] etait atteint, car la valeur du rendement de divers sujets s'est trouvee diminuee lorsque le film a ete introduit dans la technique. »"
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim presente dans $.definition_de_lauteur et dans $.notes[2] : la cote est « le rapport du nombre des reactions justes au nombre des excitations » (p. 127). Le claim n'ajoute rien a ce rapport."
+      "reason": "Les appuis detaillent la cotation p. 127 — erreurs (omissions, substitutions, additions), durees, « rapport du nombre des reactions justes au nombre des excitations » — et ne portent aucune mesure d'intensite ; la negation du texte lecteur porte sur ce dispositif decrit et pas au-dela."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Consequence qui suit les appuis fournis sans attribution primaire : Lahy ecrit « Il importe de la mesurer chez les candidats. Cette mesure se fait par la comparaison du nombre d'excitations avec le nombre, la rapidite et la qualite des reactions motrices », et la cote est un rapport de denombrements ; le resume valide dit que cette attention « se mesure et se classe en rangs ». La formulation reste celle du commentaire, non une parole prêtée a l'auteur."
+      "reason": "Citation verbatim de la cotation p. 127 portee par les appuis, reprise par la note validee : « la cote est le rapport du nombre des reactions justes au nombre des excitations »."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur porte les deux temps : « excitations visuelles seules, 90 excitations, 4 min 30 ; puis visuelles et auditives combinees », et un apprentissage prealable regle - test reduit repete jusqu'a execution sans faute, serie de 8 epreuves, passage au test au-dela de 9 essais infructueux - qui precede l'epreuve notee. « Nul n'est note au premier contact » ne depasse pas ce dispositif."
+      "reason": "Consequence qui suit des appuis fournis (« Il importe de la mesurer chez les candidats. Cette mesure se fait par la comparaison du nombre d'excitations avec le nombre [...] des reactions motrices », puis la cote en rapport de comptages), formulee dans la voix du commentaire et non comme un enonce de l'auteur."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Les deux citations sont exactes p. 158 dans $.definition_de_lauteur : le rendement brut « prend une signification differente selon les tests consideres » et « la place qu'occupe le sujet parmi ceux a qui on veut le comparer est une expression commune a tous les tests », principe de conversion qui fonde le passage a une echelle de deciles. La glose « ne dit rien tout seul » reste dans ce que l'appui etablit : le rapport brut n'est pas employe tel quel."
+      "reason": "L'appui porte l'epreuve en deux temps, « excitations visuelles seules, 90 excitations, 4 min 30 ; puis visuelles et auditives combinees », et les planches p. 128 portent les deux intitules correspondants."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Le titre imprime « Valeurs du classement (1.000 candidats machinistes de 20 a 35 ans) » est cite verbatim dans $.definition_de_lauteur, $.reserves[0] et $.notes[1], avec l'echelle de 50 degres decoupee en deciles. Le claim retient 1.000 et non 2.000, conformement a ce que les reserves etablissent."
+      "reason": "La sous-section « D. Apprentissage du test d'attention diffusee » portee par les appuis precede le test note : test reduit repete jusqu'a execution sans faute, serie de 8 epreuves « plus que suffisante », passage au test apres les essais. L'appropriation de la convention precede donc la notation."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Suit le principe cite p. 158 - c'est la place parmi les sujets compares qui est l'expression commune a tous les tests - et le resume valide « se mesure et se classe en rangs ». Le claim ne nie pas l'appreciation verbale, que le paragraphe suivant traite ; il porte sur la nature relationnelle du verdict, que les appuis etablissent."
+      "reason": "L'appui donne le motif de l'auteur p. 158 : le rendement brut « prend une signification differente selon les tests consideres », alors que la place du sujet « est une expression commune a tous les tests » ; le texte lecteur enonce ce motif et cite la suite."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Les trois fragments cites figurent verbatim dans $.definition_de_lauteur (p. 162-163) : « tres bien, bien, passable, mal ou tres mal », « habituellement employes pour des appreciations subjectives », « determines par le decile dans lequel se place chaque sujet dans chaque test »."
+      "reason": "Les deux fragments sont verbatim dans l'appui fourni, p. 158."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Glose directe de la phrase citee au meme paragraphe : les termes sont ceux de l'appreciation subjective usuelle, mais « sont chez nous determines par le decile ». Aucun ajout de portee."
+      "reason": "L'appui porte l'echelle de 50 degres « decoupee en deciles » et le titre imprime du Tableau II p. 161, « Valeurs du classement (1.000 candidats machinistes de 20 a 35 ans) » ; les reserves et la note validee confirment le chiffre de 1.000 et ecartent tout bareme de 2.000."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur porte p. 171-172 « il suffira de rendre notre regle plus rigide [...] nous rejetterons de nos services un plus grand nombre de sujets aptes a conduire un vehicule. C'est donc le marche de la main-d'oeuvre qui doit regler la rigueur de notre loi de selection », et $.notes[7] confirme que l'auteur fait dependre le seuil d'elimination du marche et non de la science."
+      "reason": "Suit des appuis : la place occupee dans la comparaison est « une expression commune a tous les tests », d'ou le classement en deciles, et le resume dit que cette attention « se mesure et se classe en rangs »."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "La double entree dans le classement general est portee par $.review.notes[7] (« les pages 159, 162 et 165 ou deux valeurs d'attention diffusee entrent dans le classement general ») et par $.notes[8] (« L'attention diffusee n'y est qu'une entree sur cinq »). La citation p. 157 « au dela d'une certaine valeur, l'infériorite dans un test ne peut pas etre compensee par une superiorite dans un autre » est exacte dans $.definition_de_lauteur, qui porte aussi la limite inverse."
+      "reason": "L'appui porte la traduction des deciles en mots, p. 162-163, qui est bien un retour du chiffre au langage ordinaire."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[6] : « Les 300 sujets ne sont pas des examens de selection : ce sont des machinistes compromis dans un accident, responsables ou non, examines apres coup. » Corrobore par $.definition_de_lauteur, qui cite « tous les machinistes qui, responsables ou non, sont compromis dans un accident [...] Nous venons d'examiner ainsi 300 sujets »."
+      "reason": "Les trois fragments cites sont verbatim dans l'appui fourni, p. 162-163."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la p. 170 presente a l'identique dans $.definition_de_lauteur et dans $.review.notes[7], et reprise par le resume valide. La localisation p. 170 est celle que les appuis donnent."
+      "reason": "Reformulation stricte de la citation portee par l'appui : termes « habituellement employes pour des appreciations subjectives », mais « chez nous determines par le decile dans lequel se place chaque sujet dans chaque test »."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[6] : « sans aucune proportion chiffree, Lahy ecrivant \\u00ab presque toujours \\u00bb ». Le claim ne dit rien de plus que cette absence de proportion."
+      "reason": "La citation « C'est donc le marché de la main-d'œuvre qui doit régler la rigueur de notre loi de sélection. » est verbatim dans $.definition_de_lauteur (p. 171-172), avec le passage qui précède : rendre la règle plus rigide rejette « un plus grand nombre de sujets aptes ». $.notes[7] confirme que le seuil d'élimination dépend du marché et non de la science. Aucun élargissement."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[6] : « sans groupe temoin mentionne ». Le claim se borne a expliciter ce qu'est un groupe de comparaison et ne tire aucune conclusion supplementaire."
+      "reason": "$.review.notes[7] atteste que deux valeurs d'attention diffusée entrent dans le classement général (p. 159, 162, 165) ; $.notes[8] qu'elle n'y est qu'une entrée sur cinq dans une règle qui agrège plusieurs tests ; $.definition_de_lauteur porte la limite de compensation p. 157. La formulation garde la portée des appuis."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Suit les appuis fournis : l'examen est retrospectif et sans groupe temoin mentionne ($.notes[6]), et le classement bas des fautifs est etabli par $.definition_de_lauteur (« manque presque toujours au machiniste qui se rend fautif d'un accident grave », B. « se classe parmi les derniers »). La limite enoncee - ne pas pouvoir dire combien de mal classes n'ont pas eu d'accident - decoule de l'absence de groupe de comparaison, et le claim la formule comme limite du dispositif, non comme un aveu de l'auteur."
+      "reason": "Citation verbatim de la p. 157 relevée dans $.definition_de_lauteur : « Nous avons constaté que, au delà d'une certaine valeur, l'infériorité dans un test ne peut pas être compensée par une supériorité dans un autre. » La réserve « au delà d'une certaine valeur » est conservée."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[6] : « Le sujet B. est donne par Lahy lui-meme comme \\u00ab un cas typique \\u00bb, c'est-a-dire une illustration et non une demonstration », et $.definition_de_lauteur cite « Voici un cas typique. » La citation et son attribution sont exactes ; le reste de la phrase organise la lecture sans rien affirmer de plus."
+      "reason": "Les appuis fournis établissent le changement de population dans les dernières pages : $.definition_de_lauteur donne p. 170 « une population distincte de celle du barème », machinistes compromis dans un accident ; $.quotation.locator situe le passage p. 170, partie III ; $.notes[6] rappelle que ces sujets ne sont pas des examens de sélection."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur porte le recit dans les memes termes : B. « conduit depuis 17 ans », « passe pour un bon machiniste », fixe son attention sur un taxi qui le provoque, « brule un arret obligatoire » et heurte un tramway."
+      "reason": "$.definition_de_lauteur cite p. 170 : « examiner tous les machinistes qui, responsables ou non, sont compromis dans un accident. […] Nous venons d'examiner ainsi 300 sujets » ; $.notes[6] précise « examinés après coup ». Chaque élément du claim est porté."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "La fixation sur un objet unique est portee par $.definition_de_lauteur (B. « fixe son attention sur un taxi qui le provoque ») et l'imputation par $.quotation.text (« une absence d'attention diffusee a ete cause d'une catastrophe »). Le contraste avec l'usage ordinaire suit le bapteme cite : Lahy doit nommer une « forme particuliere de l'attention », glosee « celle qui porte sur plusieurs objets a la fois ». La remarque sur l'usage courant est donnee comme commentaire, non comme parole de l'auteur."
+      "reason": "La phrase citée est verbatim dans $.definition_de_lauteur et $.review.notes[7], localisée p. 170, et $.quotation.locator confirme la page. $.reserves[2] et $.summary reprennent la même formulation avec la glose intacte. La citation n'est ni coupée ni durcie."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Le verbatim « se classe parmi les derniers sur 2.000 sujets » est cite mot pour mot par $.definition_de_lauteur (cas B., p. 170) ; $.reserves[0] et $.notes[1] confirment que cette chaine figure bien p. 170 comme population de rangement du sujet. Le texte lecteur cite la formule sans la convertir en bareme, ce que les deux reserves interdisaient."
+      "reason": "$.notes[6] établit exactement cela : « sans aucune proportion chiffrée, Lahy écrivant “presque toujours” ». Le claim ne conclut rien au-delà de cette absence."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "La phrase citee est le verbatim exact qui clot le recit du cas B. dans $.definition_de_lauteur (« Cette inferiorite psychologique ne pouvait pas apparaitre a ses inspecteurs. Il a fallu l'accident pour la deceler. »), et $.review.notes[7] l'identifie comme la fin de la p. 170 portant l'accroche de la carte, que $.hook reprend. La qualification « la plus lourde de l'article » est une emphase editoriale dont les appuis donnent la base, sans ajout factuel."
+      "reason": "$.notes[6] porte « sans groupe témoin mentionné » ; la glose « machinistes sans accident examinés dans les mêmes conditions » définit le groupe témoin sans rien ajouter au dossier."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur rapporte le titre courant de la p. 169, « Correlation du classement de chaque test isole avec le classement professionnel », et la formule de Spearman appliquee au « rang occupe par chaque sujet dans la serie des 50 candidats » ; $.review.notes[4] confirme que la p. 169 donne les correlations de rang par test ; $.notes[5] nomme l'appreciation hierarchique comme terme compare. Aucun elargissement de portee."
+      "reason": "Conséquence qui suit des appuis fournis : $.notes[6] établit l'examen après coup d'accidentés, sans groupe témoin ni proportion, et $.definition_de_lauteur le classement bas du sujet B. Le claim reste au conditionnel logique (« il ne peut pas dire à lui seul ») et n'attribue rien à Lahy."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[5] et $.definition_de_lauteur donnent les memes chiffres, + 0,21 pour les excitations visuelles seules et + 0,15 pour les visuelles et auditives combinees (p. 169), et disent tous deux que ces deux valeurs sont les plus basses des cinq."
+      "reason": "« un cas typique » est la formule de Lahy, relevée dans $.definition_de_lauteur (« Voici un cas typique. ») et qualifiée par $.notes[6] d'illustration et non de démonstration. Le claim ne la promeut pas en preuve."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[5] etablit l'imputation aux evaluateurs et non au test, avec le verbatim exact « nos informateurs ne font pas suffisamment intervenir l'aptitude a l'attention diffusee » (p. 170), que $.definition_de_lauteur reproduit dans son contexte ; $.review.notes[7] double la citation. Le sens de lecture decrit est celui des appuis, sans renversement."
+      "reason": "Tous les détails figurent dans le récit du cas B. relevé par $.definition_de_lauteur : « conduit depuis 17 ans », « passe pour un bon machiniste », fixe son attention sur un taxi qui le provoque, « brûle un arrêt obligatoire » et heurte un tramway. « s'absorbe dans » rend « fixe son attention sur » sans durcissement."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur porte le verbatim exact, p. 169-170, « elles sont toutes positives, ce qui prouve que nos tests mettent bien en oeuvre des fonctions psycho-motrices necessaires a l'exercice de la profession de machiniste », precede de « Les plus faibles valeurs obtenues dans nos tests ne doivent pas etre ecartees, car elles sont toutes positives » : la defense des coefficients bas par leur signe est litteralement dans l'appui."
+      "reason": "Suit des appuis fournis : $.definition_de_lauteur donne la glose de Lahy (« celle qui porte sur plusieurs objets à la fois »), l'attention de B. fixée sur le seul taxi, et $.quotation.text « une absence d'attention diffusée a été cause d'une catastrophe ». Le resserrement sur un objet unique est la lecture littérale de ces appuis, sans ajout causal."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Consequence derivee qui suit les appuis fournis : $.definition_de_lauteur donne les deux branches chez Lahy lui-meme (l'imputation de la faiblesse aux informateurs et l'argument du signe positif), et $.notes[5] avertit precisement que la correlation basse ne vaut pas validation si l'on prend l'appreciation hierarchique pour etalon. La formulation est conditionnelle et n'attribue rien de plus a l'auteur."
+      "reason": "Citation verbatim relevée dans $.definition_de_lauteur et $.reserves[0] : « B. se classe parmi les derniers sur 2.000 sujets ». Le texte se borne à citer le rangement et n'affirme aucun barème de 2.000 sujets, ce que $.reserves[0] et $.notes[1] interdisaient précisément."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur rapporte, sous « la prudence de l'auteur », que le classement professionnel qui sert d'etalon est dit « a quelque degre subjectif » p. 168 : citation et pagination exactes ; $.notes[7] range cette prudence parmi ce que la carte ne doit pas effacer."
+      "reason": "Citation verbatim et finale du cas dans $.definition_de_lauteur ; $.reserves[5] atteste la relecture sur image de sa ponctuation ; $.review.notes[7] désigne cette même fin de p. 170 comme ce qui porte l'accroche de la carte, et $.hook en est tiré. L'appréciation de poids reste dans ce que les appuis autorisent."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[7] dit que l'auteur juge ses propres coefficients « trop bas » pour un emploi isole des tests et tient les lois tirees de phenomenes biologiques pour depourvues de rigueur absolue ; $.definition_de_lauteur donne les deux verbatims, p. 170 (« peuvent paraitre trop bas... Bien que nous soyons de cet avis ») et p. 171 (les lois « n'ont jamais une rigueur absolue »)."
+      "reason": "$.definition_de_lauteur relève le titre courant p. 169 « Corrélation du classement de chaque test isolé avec le classement professionnel » et la formule de Spearman appliquée au rang de chaque sujet ; $.review.notes[4] confirme des corrélations de rang par test p. 169 ; $.notes[5] parle d'appréciation hiérarchique. La discordance interne signalée par $.reserves[3] et $.notes[4] porte sur d'autres points et ne contredit pas le claim. Le signal ne nomme qu'un appui sur la nomination du texte par Passalacqua, sans rapport avec la p. 169 : terme partagé fortuit."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Les trois appuis de reception situent la naissance du dispositif hors de l'universite : conseil d'administration de la STCRP autorisant le laboratoire le 25 avril 1923 dans des locaux d'exploitation (sources_secondaires[1]), « premier laboratoire d'entreprise de ce type en France », etudes conduites « sous la responsabilite » du directeur general de l'exploitation (sources_secondaires[3]), commande remise a Lahy par la S.T.C.R.P. (sources_secondaires[0]). La negation ne depasse pas ce cadre."
+      "reason": "$.notes[5] et $.definition_de_lauteur donnent les deux coefficients imprimés p. 169, + 0,21 et + 0,15, et le constat qu'ils sont les plus bas des cinq valeurs listées."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[0] (Turbiaux) porte le constat d'accidents avec le chiffre « (18.000) » et la commande remise a Lahy par la S.T.C.R.P. ; sources_secondaires[1] est bien une histoire d'entreprise « fondee sur les archives de la STCRP et de la RATP » et donne la deliberation du conseil d'administration avec le verbatim exact « avec une certitude a peu pres absolue, les candidats auxquels il serait dangereux de confier une voiture » ; $.notes[9] confirme que ces corpus sont verses pour la commande industrielle. Le claim maintient l'attribution aux travaux d'histoire."
+      "reason": "$.notes[5] pose que les corrélations de l'attention diffusée sont les plus basses et que Lahy impute cette faiblesse aux évaluateurs, ce qui suppose l'apparence de faiblesse du test. Le claim reste sur l'apparence (« lue vite… ressemble à ») sans affirmer un démenti."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[1] indique explicitement un « second mobile a cote de la securite », « abaisser la consommation d'electricite du reseau de tramways par le developpement d'une conduite plus sobre » (p. 98). Le claim n'ajoute rien."
+      "reason": "$.notes[5] porte l'imputation aux évaluateurs et la citation verbatim « nos informateurs ne font pas suffisamment intervenir l'aptitude à l'attention diffusée » (p. 170), reprise à l'identique dans $.definition_de_lauteur."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[0] (p. 975 : ingenieur en chef Gaston Guyot adjoint par la S.T.C.R.P., « capable de les construire »), sources_secondaires[3] (Guyot « mis, par la Societe, a la disposition de J.-M. Lahy pour... realiser l'outillage necessaire ») et $.review.notes[2] convergent ; $.notes[9] parle de « l'outilleur Guyot ». La glose « l'instrument est fabrique par l'employeur qui recrute » suit directement, la STCRP etant la compagnie qui selectionne ses machinistes."
+      "reason": "Citation verbatim de la p. 169 dans $.definition_de_lauteur : « elles sont toutes positives, ce qui prouve que nos tests mettent bien en œuvre des fonctions psycho-motrices nécessaires à l'exercice de la profession de machiniste ». L'argument du signe est bien celui que Lahy oppose à l'objection du hasard."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "$.review.notes[6] atteste sur la piece, au locator p. 105 de Passalacqua, « la perennite du dispositif a la S.T.C.R.P., les visites psychotechniques periodiques » et conclut que les localisations tiennent : des visites periodiques portent sur des agents en service, ce qui autorise la prolongation de l'examen au-dela du recrutement. L'appui signale SUP-293e9256735b6898 partage le seul mot « examen », employe la a propos de l'examen des candidats, et son absence ne prive le claim d'aucune matiere : pas de remapping justifie."
+      "reason": "Conséquence qui suit des appuis fournis : $.notes[5] montre que le même coefficient bas se lit dans les deux sens selon l'imputation, et $.definition_de_lauteur que l'étalon lui-même (le classement professionnel) est dit subjectif p. 168. Aucune attribution à l'auteur."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[1] porte, p. 105, les deux verbatims exacts : les syndicats « lui reprochent de produire un discours normatif » et voient dans la psychotechnique « un outil instrumentalisee par la direction pour produire des licenciements de masse » ; $.review.notes[6] situe cette critique syndicale p. 105 et $.notes[9] la compte parmi ce que le corps etablit. L'attribution aux syndicats est celle de la source."
+      "reason": "Explicite la bascule que $.notes[5] décrit (« torsion facile à lire à l'envers »), adossée à $.review.notes[7] et $.definition_de_lauteur (« Cette infériorité psychologique ne pouvait pas apparaître à ses inspecteurs »). Formulé comme deux lectures possibles, non comme une thèse de Lahy."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[1] porte le verbatim « En 1926, le nombre d'accidents s'avere inferieur de 16,5 % chez les machinistes selectionnes par tests psychotechniques » (p. 100), sources_secondaires[0] le meme chiffre p. 975, et $.notes[9] le retient comme chiffre de reception etabli par ces corps."
+      "reason": "$.definition_de_lauteur relève p. 168 : le classement professionnel « qui lui sert d'étalon » est « à quelque degré subjectif ». Citation et page exactes ; $.notes[7] va dans le même sens."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[1] joint elle-meme la mise en garde p. 101, « Ces bons resultats meritent toutefois d'etre contextualises », la crise des annees 1930 ayant fait baisser la circulation et donc les accidents ; $.notes[9] mentionne « le chiffre de reception des 16,5 % d'accidents en moins et sa mise en garde ». Le claim n'etend pas la reserve jusqu'a une retractation. L'appui signale SUP-f5ec5ae993c4bcd7 ($.review.notes[2]) ne partage que le verbe « assortit » et traite de la cosignature Fessard/Guyot : coincidence lexicale, pas une omission."
+      "reason": "$.notes[7] porte mot pour mot les deux éléments — coefficients jugés « trop bas » pour un emploi isolé, lois biologiques sans rigueur absolue — et $.definition_de_lauteur en donne les citations p. 170 et p. 171."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur etablit les deux termes de la synthese : la conversion des deciles en mots p. 162-163, « ces termes, qui sont habituellement employes pour des appreciations subjectives, sont chez nous determines par le decile », et l'impression de la hierarchie p. 170 (« ne pouvait pas apparaitre a ses inspecteurs », « nos informateurs ») ; $.review.notes[7] autorise le rendu de ces evaluateurs par la hierarchie ; $.notes[7] et la p. 171-172 rattachent le seuil d'elimination au marche de la main-d'oeuvre, donc a l'entreprise. Le decile a la place de l'impression, avec les memes mots, est litteralement dans l'appui."
+      "reason": "Les appuis fournis établissent une naissance en laboratoire d'entreprise : $.sources_secondaires[3] parle du « premier laboratoire d'entreprise de ce type en France », créé sous la responsabilité du directeur général de l'exploitation de la STCRP ; $.sources_secondaires[1] donne l'autorisation par le conseil d'administration ; $.sources_secondaires[0] la commande de la STCRP à Lahy ; $.attribution_note et $.attribution.note rattachent l'article au laboratoire d'entreprise qu'il dirige."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "Claim negatif sur l'article, autorise par ce que les appuis montrent : $.definition_de_lauteur donne le passage p. 171-172 ou l'arbitrage est renvoye au marche de la main-d'oeuvre et ou l'elimination plus precise se paie du rejet de sujets aptes, sans verdict de valeur ; $.notes[7] souligne le refus de la « litterature enthousiaste » et l'absence de rigueur absolue. Aucun appui ne montre l'article tranchant entre les deux lectures."
+      "reason": "$.sources_secondaires[0] (Turbiaux, p. 974) donne verbatim « Constatant l'importance des accidents dans le cadre de ses activités (18.000), la S.T.C.R.P. confie à J.M. Lahy un nouveau domaine de recherches » ; $.sources_secondaires[1] est présentée comme une histoire d'entreprise fondée sur les archives de la STCRP et de la RATP ; $.notes[9] confirme que ces sources sont versées pour la commande industrielle. Le chiffre est attribué aux travaux d'histoire, non affirmé en propre."
     },
     {
       "claim_id": "C062",
       "verdict": "SUPPORTED",
-      "reason": "sources_secondaires[2] (necrologie) atteste que le laboratoire de la STCRP fut « le premier d'une serie » de laboratoires industriels diriges par Lahy, la liste imprimee nommant les Chemins de fer du Nord et la Compagnie des tramways de Marseille ; sources_secondaires[3] confirme le « premier laboratoire d'entreprise de ce type en France »."
+      "reason": "Citation verbatim de Passalacqua p. 98 dans $.sources_secondaires[1], y compris l'autorisation du conseil d'administration ; la citation de la source est identifiée par $.sources_secondaires[1].citation. Aucune requalification."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_secondaires[1] porte explicitement « un second mobile à côté de la sécurité, “abaisser la consommation d'électricité du réseau de tramways par le développement d'une conduite plus sobre” (p. 98) »."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_secondaires[0] (Turbiaux p. 975) : la STCRP avait adjoint à Lahy l'un de ses ingénieurs en chef, Gaston Guyot, « capable de les construire » ; $.sources_secondaires[3] : Guyot, ingénieur à la STCRP, mis à disposition pour « réaliser l'outillage nécessaire » ; $.review.notes[2] le confirme. La glose « fabriqué par l'employeur qui recrute » ne fait que nommer l'appartenance de l'ingénieur à la compagnie."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "$.review.notes[6] atteste, sur la pièce même (PDF HAL), que la p. 105 de Passalacqua porte « la pérennité du dispositif à la S.T.C.R.P., les visites psychotechniques périodiques » ; des visites périodiques visent par construction le personnel en place. Le claim n'ajoute ni fréquence ni effet."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux citations sont verbatim dans $.sources_secondaires[1] (p. 105) et la localisation est confirmée par $.review.notes[6]. La critique est bien attribuée aux syndicats et non reprise à son compte."
+    },
+    {
+      "claim_id": "C067",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_secondaires[1] donne verbatim Passalacqua p. 100 : « En 1926, le nombre d'accidents s'avère inférieur de 16,5 % chez les machinistes sélectionnés par tests psychotechniques » ; $.sources_secondaires[0] porte le même chiffre p. 975. Le claim reprend la formulation de l'historien, dont la suite immédiate du texte porte l'attribution et la réserve."
+    },
+    {
+      "claim_id": "C068",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_secondaires[1] porte la mise en garde de l'auteur p. 101 : « Ces bons résultats méritent toutefois d'être contextualisés », la crise des années 1930 ayant fait baisser la circulation et donc les accidents. L'appui signalé SUP-f5ec5ae993c4bcd7 ($.review.notes[2]) ne partage que le mot « assortit » dans un contexte de cosignature, sans rapport avec ce claim : pas de mapping à rouvrir."
+    },
+    {
+      "claim_id": "C069",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux actes sont portés par $.definition_de_lauteur — la cotation en exactitude relative et déciles d'un côté, la règle d'élimination réglée par le marché de l'autre — et $.notes[7] souligne que le seuil ne relève pas de la science. Le vocabulaire commun de l'aptitude est celui du thème $.theme_labels et des « sujets aptes à conduire » de la p. 171-172. Formulation prudente, sans causalité ajoutée."
+    },
+    {
+      "claim_id": "C070",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur établit les deux termes du contraste : les déciles et leur traduction en mots (« ces termes, qui sont habituellement employés pour des appréciations subjectives, sont chez nous déterminés par le décile », p. 162-163), et l'élimination réglée par le marché et les nécessités du service (p. 171-172) ; $.review.notes[7] et $.hook portent l'impression d'inspecteur que l'accident seul a démentie. La dérivation reste celle du rédacteur et n'est pas prêtée à Lahy."
+    },
+    {
+      "claim_id": "C071",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur montre que Lahy pose les deux branches de l'arbitrage sans trancher — élimination plus précise contre rejet de sujets aptes — et renvoie le point optimum au marché ; $.notes[7] résume cette prudence. Le claim énonce une absence de tranchage que ces appuis portent."
+    },
+    {
+      "claim_id": "C072",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_secondaires[2] (nécrologie, p. 664, locator confirmé) atteste que le laboratoire de la STCRP « n'était pas isolé mais le premier d'une série », avec la liste où figurent les Chemins de fer du Nord et la Compagnie des tramways de Marseille ; $.sources_secondaires[3] confirme l'antériorité du laboratoire STCRP. Les deux exemples cités sont dans la liste."
     }
   ]
 }
