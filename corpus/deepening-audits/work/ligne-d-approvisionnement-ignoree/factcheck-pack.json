@@ -3,7 +3,7 @@
   "concept_id": "ligne-d-approvisionnement-ignoree",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "3ad3ef1641ef6f06cdf48cb7f7f8570db07aaa36057dfd18dd8a2e1ddbf1da9d",
+  "candidate_sha256": "1de5c31ae823e4dac13cbea25e09e2e681eb5caeaabeda52bba2e4ae87335f35",
   "validated_sha256": "45b2e003551f795019482f57115ba307fee2000abcef0f2faf288756d7819130",
   "evidence_files": [
     {
@@ -86,7 +86,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Vous commandez un plat au restaurant. Il ne vient pas. Le serveur repasse, vous commandez à nouveau ; il repasse encore, vous commandez une troisième fois, puisque rien n’est arrivé. La règle regarde la table et corrige ce qui manque, et elle conduit droit à l’absurde : « Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners. » C’est John D. Sterman qui pose cette scène, à la page 9 d’une étude écrite en 1987, avant d’en venir aux entrepôts."
+      "text": "Vous commandez un plat au restaurant. Il ne vient pas. Le serveur repasse, vous commandez à nouveau ; il repasse encore, vous commandez une troisième fois, puisque rien n’est arrivé. La règle regarde la table et corrige ce qui manque, et elle conduit droit à l’absurde : « Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners. » C’est John D. Sterman qui pose cette scène, dans une étude écrite en 1987, avant d’en venir aux entrepôts."
     },
     {
       "locator": "lead[1]",
@@ -100,12 +100,12 @@
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Ce qui est en route, et où cela se trouve",
-      "text": "Un stock ne s’attrape pas directement : on ne l’influence qu’en modifiant ce qui y entre et ce qui en sort, et un délai sépare presque toujours le geste de son effet. Celui qui décide a donc trois choses à faire et non deux : remplacer les pertes attendues, réduire l’écart au stock voulu, et entretenir une ligne d’approvisionnement suffisante. Les deux premières portent sur ce qui se voit, la troisième sur ce qui n’est visible nulle part. Avec un marteau et un clou, rien ne se perd et rien n’est différé : la troisième tâche disparaît. Dès qu’un délai apparaît, une règle qui ne mesure pas les commandes passées et non servies est prédisposée à l’instabilité (p. 7)."
+      "text": "Un stock ne s’attrape pas directement : on ne l’influence qu’en modifiant ce qui y entre et ce qui en sort, et un délai sépare souvent le geste de son effet. Celui qui décide a donc trois choses à faire et non deux : remplacer les pertes attendues, réduire l’écart au stock voulu, et entretenir une ligne d’approvisionnement suffisante. Les deux premières portent sur ce qui se voit, la troisième sur ce qui n’est visible nulle part. Avec un marteau et un clou, rien ne se perd et rien n’est différé : la troisième tâche disparaît. Dès qu’un délai apparaît, une règle qui ne mesure pas les commandes passées et non servies est prédisposée à l’instabilité (p. 7)."
     },
     {
       "locator": "sections[1].paragraphs[0]",
       "section_title": "Un plateau de jeu, quarante-quatre joueurs",
-      "text": "L’expérience se joue sur un plateau. Sterman fait jouer le jeu de la bière, une simulation de rôles reproduisant un système industriel de production et de distribution, dont il ne revendique pas la paternité : mis au point au MIT pour initier des étudiants en gestion à la dynamique économique, l’exercice est déjà ancien quand il écrit, « In use for nearly three decades, the game has been played all over the world » (p. 10). Onze équipes de quatre s’y installent, un détaillant, un grossiste, un distributeur et une usine : quarante-quatre joueurs qui passent chacun, semaine après semaine, une commande à leur fournisseur."
+      "text": "L’expérience se joue sur un plateau. Sterman fait jouer le jeu de la bière, une simulation de rôles reproduisant un système industriel de production et de distribution, dont il ne revendique pas la paternité : mis au point au MIT pour initier des étudiants en gestion à la dynamique économique, l’exercice est déjà ancien quand il écrit, « In use for nearly three decades, the game has been played all over the world ». Onze équipes de quatre s’y installent, un détaillant, un grossiste, un distributeur et une usine : quarante-quatre joueurs qui passent chacun, semaine après semaine, une commande à leur fournisseur."
     },
     {
       "locator": "sections[1].paragraphs[1]",
@@ -1053,6 +1053,6 @@
       "text": "CE QUI N'A PAS ÉTÉ ATTEINT, EN CLAIR. Le chapitre EOLSS complet, trente pages, est payant (19 dollars sur eolss.net) et n'a pas été acheté : les vingt et une pages manquantes restent inconnues, et je ne sais donc pas laquelle des phrases du chapitre vient de l'article de 1989 et laquelle de Business Dynamics. L'article de Management Science de 1989 n'a pas été ouvert. Business Dynamics n'a pas été ouvert. La pagination du chapitre dans le volume imprimé n'est pas vérifiée : la liste de publications de Sterman la donne deux fois et de deux façons contradictoires, une entrée écrivant « 1-30 » et une autre « 84-112 », et je n'ai pas le volume pour trancher ; aucune des deux n'est reportée dans les sources. Enfin OpenAlex et Semantic Scholar n'ont pas été interrogés, la note de session les donnant en échec (budget insuffisant et 429), et Crossref plus Unpaywall ont suffi pour tout ce qui est affirmé ici."
     }
   ],
-  "estimated_tokens": 26742,
+  "estimated_tokens": 26733,
   "status": "READY"
 }

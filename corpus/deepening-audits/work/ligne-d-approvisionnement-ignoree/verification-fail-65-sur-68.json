@@ -1,0 +1,346 @@
+{
+  "concept_id": "ligne-d-approvisionnement-ignoree",
+  "candidate_sha256": "3ad3ef1641ef6f06cdf48cb7f7f8570db07aaa36057dfd18dd8a2e1ddbf1da9d",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be restitue la scene du restaurant (la meme regle ferait commander un repas chaque fois que le serveur passe, l'ecart subsistant tant que le premier plat n'est pas servi) et SUP-4881606b2e4d059c en porte le verbatim ; la reprise narrative n'ajoute ni portee ni causalite."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "Les appuis fournis donnent la regle qui ne regarde que l'ecart entre l'etat desire et l'etat reel et son issue absurde, « Soon your table would be piled high with redundant dinners »."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim identique, ellipse comprise, a celui que porte SUP-4881606b2e4d059c."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "CONFLICT",
+      "reason": "Les appuis fournis pour ce claim localisent la meme scene du restaurant, dans le meme document de travail de 1987, a deux endroits differents : SUP-4881606b2e4d059c ecrit « l'exemple du restaurant, p. 9 », SUP-771365f96132d2be ecrit « Puis le restaurant, p. 6 et 7 ». Aucun appui fourni ne reconcilie les deux, et le claim presente « page 9 » comme etabli. L'auteur (SUP-813045a5b04433b2) et la date de 1987 (SUP-2a15b578f7cdfdb3, SUP-37e0313d8463f985, SUP-68217b545f96a020) sont, eux, soutenus."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be enchaine l'exemple du restaurant sur l'enonce general puis sur l'experience de gestion de stock, et SUP-72578f3bfef64df5 / SUP-fd23bbc93c0f84e6 situent cette partie experimentale plus loin dans le texte : la transition n'affirme rien de plus."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte la tache generique de regulation d'un stock, les delais entre l'action et son effet, les roles detaillant/grossiste/distributeur/usine et une echelle en semaines (periode moyenne de 21 semaines, pic qui remonte de la semaine 16 a la semaine 20, sujet qui commande trois semaines avant que rien n'arrive)."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "« the supply line SL of units which have been ordered but not yet received » et les lags entre l'action et son effet, dans SUP-771365f96132d2be, autorisent exactement l'intervalle decrit ; SUP-2323bd3ed5b16b49 dit la meme chose en resume."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte « Whether managers account for the supply line is an empirical question in any particular situation » et le parametre qui mesure la fraction de ligne d'approvisionnement prise en compte ; le claim reste une alternative, sans generaliser."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be nomme la supply line dans le texte de Sterman ; SUP-ca8d246408e17a26 et SUP-38e2851d11069ff8 declarent que « ligne d'approvisionnement » est le rendu francais interne, ce que le claim presente bien comme une glose et non comme un mot de l'auteur."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-af9b9d482316fa8a donne la composition p. 16 : « the sum of orders in the mail delays, the backlog of the subject's supplier (if any), and the beer in the shipping delays », soit les trois elements enumeres, a la page indiquee."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "Consequence immediate des trois lieux enumeres par SUP-af9b9d482316fa8a : aucun d'eux n'est le stock detenu par le decideur."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be qualifie la ligne d'approvisionnement de « second stock, celui qu'on ne voit pas », ce qui pose par contraste la visibilite du stock detenu ; SUP-af9b9d482316fa8a distingue de meme le stock de ses composantes dispersees. L'illustration ajoutee n'augmente ni la portee ni la certitude."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "La dispersion en trois lieux (SUP-af9b9d482316fa8a) et la ligne d'approvisionnement « repartie entre concurrents et mal connue de chacun » (SUP-771365f96132d2be) autorisent le lien, enonce en forme faible (« rend son omission facile »)."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "Restitution exacte de « Stocks cannot be controlled directly but rather must be influenced by changes in their inflow and outflow rates » dans SUP-771365f96132d2be."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul appui fourni porte « Often there are lags between the initiation of a control action and its effect » (SUP-771365f96132d2be). Le claim lit « presque toujours », qui releve la frequence au-dessus de ce que l'appui autorise."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte les trois taches et pas deux, avec leur enumeration : remplacer les pertes attendues, reduire l'ecart au stock voulu, entretenir une ligne d'approvisionnement suffisante."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "Suit des appuis fournis : la ligne d'approvisionnement est « le second stock, celui qu'on ne voit pas » (SUP-771365f96132d2be) et se repartit en trois lieux hors du stock detenu (SUP-af9b9d482316fa8a)."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte l'exemple du clou, « ou la regle teste, frappe, teste suffit parce qu'il n'y a ni perte ni delai » : la troisieme tache, entretenir la ligne d'approvisionnement, n'a plus d'objet. Le signal nomme SUP-b435c2458ecd8f29 ($.review.notes[15]) sur le seul terme « disparait », ce qui ne suffit pas a rendre probable une omission de rattachement quand l'appui cite autorise deja le claim."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux appuis fournis portent l'enonce de la p. 7, « A stock management heuristic which fails to measure and respond to the supply line of unfilled orders is predisposed to instability », a la page indiquee ; la condition ajoutee (« des qu'un delai apparait ») restreint la portee au lieu de l'elargir."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-272534ea5ff5d074 et SUP-402e1b480ec4bbad disent tous deux « 44 sujets dans un jeu de plateau »."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-07eb5c6aab4e585a et SUP-485b84a6b1a5bdb7 portent « The \"Beer Distribution Game\" is a role-playing simulation of an industrial production and distribution system », et SUP-771365f96132d2be que les equipes jouent ce jeu. Le signal nomme SUP-1f527a78e7bee507 sur le terme « jouer », appui deja cite au claim voisin et sans matiere manquante ici."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "Les appuis fournis disent tous que Sterman ne revendique pas le jeu, le decrit comme developpe au MIT « to introduce students of management to the concepts of economic dynamics », et en usage depuis pres de trois decennies quand il ecrit."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "CONFLICT",
+      "reason": "Le verbatim est bien porte par les appuis fournis, mais ils le localisent a deux endroits : SUP-07eb5c6aab4e585a le lit « sur l'image de la p. 10 » (p. 10-11), tandis que SUP-485b84a6b1a5bdb7 et SUP-0dff2bd362a88987 le donnent p. 13 du meme document de travail. Aucun appui fourni pour ce claim ne tranche entre les deux, et le claim affiche « (p. 10) » comme acquis."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte « Onze equipes de quatre, detaillant, grossiste, distributeur et usine... ; 44 sujets » et la cadence hebdomadaire des commandes ; SUP-272534ea5ff5d074 confirme les 44 sujets."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte « The trials are all characterized by instability and oscillation », la periode moyenne de 21 semaines et « The amplitude of the excursion in orders increases steadily as one moves from customer to retailer to factory »."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "Chiffres et page repris tels quels de SUP-771365f96132d2be : « Customer orders increase from 4 to 8 cases per week; ... the order rate averages a peak of 32 cases, an amplification factor of 700% », document de travail p. 15."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte « The average team cost is ten times greater than the benchmark. » (p. 14). Le signal nomme SUP-a6b5a937d1d49062 ($.sources_ouvertes[2].citation) sur le seul terme « repere », terme incident dans une notice de source : rien n'indique qu'un appui de matiere manque ici."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte « the customer order rate, the only external disturbance, does not oscillate and is in fact virtually constant » ainsi que la hausse unique de 4 a 8 caisses."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux appuis fournis portent « The oscillation is endogenously produced by the interaction of the subjects' decisions with the feedback structure of the system » et la page 15 ; la glose « structure de stocks et de delais » reste dans ce que SUP-771365f96132d2be decrit du systeme (stock, ligne d'approvisionnement, delais d'acquisition). Le signal nomme SUP-f20395e9f7521c63 sur « delais », sans que le claim en depende."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-1f527a78e7bee507 porte « la regle de decision estimee sur les joueurs », SUP-72578f3bfef64df5 situe l'estimation p. 17-20, et SUP-771365f96132d2be donne les valeurs estimees sujet par sujet : la methode decrite ne depasse pas ces appuis."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be definit bêta comme « la fraction de la ligne d'approvisionnement dont le sujet tient compte » et SUP-b9a122eefe924d5e atteste la lecture de la notation β sur image."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim et page identiques a ce que porte SUP-af9b9d482316fa8a (« il le dit comme tel, p. 17 »)."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-af9b9d482316fa8a ecrit que Sterman « mesure une ponderation » et que « l'oubli n'est chez lui que le cas limite d'un parametre » : le claim n'en dit pas davantage."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "« The average value of [β] is just .34 » dans SUP-af9b9d482316fa8a, moyenne reprise par SUP-473c8a19437d2ce4 et SUP-771365f96132d2be."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture directe de bêta = 0,34 comme fraction de la ligne d'approvisionnement prise en compte (SUP-af9b9d482316fa8a, SUP-771365f96132d2be), dont la suite « The result is overordering » est aussi portee ; le claim reste au joueur moyen."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "« only five subjects (11%) accounted for more than two-thirds of the supply line », p. 21, dans SUP-af9b9d482316fa8a et SUP-9a8e1b626f3728bf ; les 44 sujets viennent de SUP-771365f96132d2be."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be donne « La simulation donne l'optimum a bêta egal 1 (p. 20) » et SUP-473c8a19437d2ce4 « l'optimum simule de 1 »."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte « Few ever suggest that their own decisions were the cause of the behavior they experienced » : le claim n'affirme rien de plus que cette non-perception."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "Reprise exacte de SUP-771365f96132d2be : « Invariably the majority of subjects judge that customer demand was oscillatory », « Few ever suggest... », p. 22 et 23."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte la consequence pratique dans les termes memes de l'auteur : « draws normative efforts away from the high leverage point in the system (the stock management policy) and towards efforts to anticipate and react to external shocks »."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "Les quatre appuis fournis localisent le verbatim au folio 23 du document de travail de 1987, SUP-a14d328802be4851 et SUP-2afa5fec58c9742a attestant la relecture sur l'image de cette page."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "Traduction identique mot pour mot a SUP-6c785b804c6b93ff et SUP-36c19ee7ddf6acf1, adossee a l'original « Even a perfect forecast will not prevent a manager who ignores the supply line from overordering » et declaree fidele par SUP-a14d328802be4851."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-af9b9d482316fa8a etablit que le parametre porte sur les commandes passees et non recues ; la consequence tiree (une meilleure prevision n'y change rien) ne depasse pas cette definition et n'ajoute aucune attribution."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "Les appuis fournis opposent les deux usines sous la meme regle estimee : Grizzly bêta nul, « highly destabilizing », et Suds bêta 1,05, facteur d'amplification de 85 %."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be (« l'usine Grizzly, p. 21 : bêta nul ») et SUP-80322650ccfe9b44 (« cas Grizzly, β = 0 ») portent exactement cela. Le signal nomme SUP-473c8a19437d2ce4 sur « estime », mais cet appui parle du parametre estime de Suds, deja cite ailleurs : aucune matiere ne manque ici."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "Deroule identique a SUP-771365f96132d2be, jusqu'au verbatim « ultimately swelling inventory above desired levels by nearly a factor of three »."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim et page portes par SUP-80322650ccfe9b44."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be (« amplifie de 290 pour cent la commande recue ») et SUP-80322650ccfe9b44 (« amplification de 290 % ») autorisent le chiffre et sa glose."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-473c8a19437d2ce4 porte « L'usine Suds, dont le parametre estime vaut 1,05, c'est-a-dire qui compte sa ligne d'approvisionnement en entier », et SUP-b9a122eefe924d5e atteste la lecture de β=1.05 sur image contre l'OCR."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "« recoit un choc plus fort que l'usine Grizzly et le renvoie plus faible » dans SUP-473c8a19437d2ce4 et SUP-771365f96132d2be."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-80322650ccfe9b44 porte le passage entier, « orders peak and fall before the backlog reaches its maximum since the subject realizes that sufficient orders to correct the problem are already in the pipeline » ; la glose du backlog en commandes recues et non servies ne l'excede pas."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "« the amplification factor is 85%, meaning the parameters which characterize the factory attenuate demand shocks rather than exacerbating them » (p. 22), porte par SUP-80322650ccfe9b44 et SUP-473c8a19437d2ce4."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-402e1b480ec4bbad (« ce n'est pas une fatalite individuelle... Une carte qui presenterait le resultat comme une incapacite humaine generale retournerait le sens du texte ») et SUP-473c8a19437d2ce4 (« CE N'EST PAS UNE FATALITE ») autorisent exactement ce refus de generaliser."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte le verbatim et sa page : « Whether managers account for the supply line is an empirical question in any particular situation », meme page que l'enonce general de la p. 7. Le signal nomme SUP-af9b9d482316fa8a sur « decideurs », appui abondamment cite ailleurs dans ce mapping et qui n'apporte pas de matiere manquante a un claim deja porte par un verbatim."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be porte la phrase de la p. 26, « The same heuristic may produce stable behavior in one setting and oscillation in another solely as a function of the feedback structure in which that [rule is embedded] » ; le claim garde le modal « peut »."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-771365f96132d2be conclut lui-meme « ce qui deplace la cause de l'individu vers la structure », et SUP-402e1b480ec4bbad refuse la lecture en fatalite individuelle ; le claim reste en partage de cause (« pas tout entiere »). Le signal nomme SUP-f20395e9f7521c63 sur « delais », sans que la matiere du claim en depende."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-272534ea5ff5d074 et SUP-402e1b480ec4bbad disent que Sterman ecrit lui-meme contre la lecture de l'oubli, et SUP-af9b9d482316fa8a la donne comme ce qui circule du texte."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim et page identiques dans SUP-272534ea5ff5d074, SUP-402e1b480ec4bbad et SUP-771365f96132d2be."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-272534ea5ff5d074 porte le probleme d'agregation et SUP-af9b9d482316fa8a que l'oubli n'est que le cas limite du parametre, « If β = 0, orders placed are forgotten until they arrive ». Le signal nomme SUP-88de382baa44eea8 sur le seul terme « basse », incident."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-402e1b480ec4bbad porte « Le defaut porte sur une ligne d'approvisionnement agregee, repartie entre concurrents et mal connue de chacun » et, juste avant, « It is not credible that individual managers forget that they have goods on order » : les deux membres du claim y sont."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "Restitution du verbatim porte par SUP-771365f96132d2be : « ...focussed not only on the decision processes of individual firms but also on the availability, timeliness, salience, and perceived accuracy of supply line information »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "Consequence qui suit des appuis fournis (disponibilite, fraicheur, saillance et precision percue de l'information, plus le probleme d'agregation) ; formulee comme synthese du texte, sans etre attribuee a l'auteur."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "« Verification of the supply line hypothesis requires further empirical work » (p. 25), porte par les trois appuis fournis."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-272534ea5ff5d074 et SUP-402e1b480ec4bbad portent les 44 sujets et la concordance avec la production industrielle americaine de 1947 a 1987 ; SUP-771365f96132d2be y ajoute « cycle amplitude and coherency grow as one moves from retail sales to materials » et les pages 23 et 24."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "Evaluation adossee a SUP-402e1b480ec4bbad (« ce n'est pas une loi de l'economie ») et a SUP-272534ea5ff5d074 (ce qui est etabli tient a 44 sujets et a une concordance de forme)."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "La question posee reprend le programme de recherche que SUP-771365f96132d2be attribue a Sterman (disponibilite, fraicheur, saillance, precision percue) et le refus de l'explication par l'oubli (SUP-272534ea5ff5d074, SUP-402e1b480ec4bbad) ; elle reste interrogative."
+    },
+    {
+      "claim_id": "C067",
+      "verdict": "SUPPORTED",
+      "reason": "Claim de pure metadonnee, ce que les appuis metadata-only autorisent : titre, editeur, 2000 (treize ans apres 1987) et 1008 pages dans SUP-a1ab560b223077f6, SUP-2274a127567eddd8 et SUP-4b8d6bf42e9af98c, notice recoupee par SUP-b334244932ff3a59."
+    },
+    {
+      "claim_id": "C068",
+      "verdict": "SUPPORTED",
+      "reason": "Les appuis fournis disent precisement que l'ouvrage n'a pas ete ouvert (SUP-7381416b0f549181 « Ouvrage entier, non ouvert », SUP-4b8d6bf42e9af98c « NON OUVERT », SUP-75d50597d2c44f7a) : le claim n'affirme rien du contenu du livre."
+    }
+  ]
+}
