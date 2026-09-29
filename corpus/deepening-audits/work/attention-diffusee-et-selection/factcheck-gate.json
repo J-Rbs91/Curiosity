@@ -1,0 +1,36 @@
+{
+  "protocol_version": 2,
+  "concept_id": "attention-diffusee-et-selection",
+  "candidate_sha256": "fd224ce2fe0c7760e8056eafd3f3399899f0fe5da1c200d6af93380be47e3c16",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 79,
+  "supported": 75,
+  "failed": 3,
+  "mapping_incomplete": [
+    {
+      "claim_id": "C052",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Le seul appui fourni, $.notes[6], porte l'absence de groupe temoin, donc la seconde moitie du claim. Le premier volet — « il peut montrer que les fautifs se classent bas » — n'est porte par aucun appui fourni ici, alors que le signal nomme l'appui non cite SUP-c453e2a9ce403534, evidence:lecture.json $.definition_de_lauteur (terme partage « classes »), appui rattache a tous les claims voisins du meme paragraphe (C047, C049, C051, C053) et qui restitue justement le classement de B. « parmi les derniers sur 2.000 sujets ». L'artefact est incomplet pour ce claim ; il faut refaire le mapping avant de conclure sur le texte."
+    }
+  ],
+  "structural_errors": [
+    "C052: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
+  "failures": [
+    {
+      "claim_id": "C029",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim donnent au contraire la vraisemblance comme raison de la presence du film : la distraction « rapproche l'etat psychologique du candidat de celui d'un conducteur sur sa voiture ». L'effet mesure (« la valeur du rendement ... s'est trouvee diminuee ») y sert a constater que « le but que nous poursuivions ... etait atteint », donc a verifier la vraisemblance, non a s'y substituer. Le claim exclut une justification que l'appui enonce explicitement."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui $.definition_de_lauteur porte que le rendement brut « prend une signification differente selon les tests consideres ». Les appuis fournis disent donc que sa signification est relative au test, non qu'elle est nulle : le passage de « signification differente » a « ne dit rien tout seul » renforce la portee au-dela de ce que les appuis autorisent."
+    },
+    {
+      "claim_id": "C072",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim n'établissent que la localisation d'un contenu : la note de revue dit que la p. 105 de Passalacqua porte « la pérennité du dispositif à la S.T.C.R.P., les visites psychotechniques périodiques et la critique syndicale », et le second appui ne restitue de cette page que la réception syndicale. Ni l'un ni l'autre ne dit qui ces visites visaient, ni que l'examen se poursuivait après l'embauche pour les agents déjà en place : « pérennité du dispositif » est la persistance de l'installation, pas l'extension de l'examen aux titulaires. Le claim ajoute donc une portée que les appuis fournis ne portent pas."
+    }
+  ]
+}
