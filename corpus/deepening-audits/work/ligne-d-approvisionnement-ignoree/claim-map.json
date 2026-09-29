@@ -1,0 +1,809 @@
+{
+  "concept_id": "ligne-d-approvisionnement-ignoree",
+  "candidate_sha256": "1de5c31ae823e4dac13cbea25e09e2e681eb5caeaabeda52bba2e4ae87335f35",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 55,
+      "end": 182,
+      "claim_text": "Le serveur repasse, vous commandez à nouveau ; il repasse encore, vous commandez une troisième fois, puisque rien n’est arrivé.",
+      "normalized_claim": "La scène du restaurant de Sterman : on recommande un repas à chaque passage du serveur tant que rien n'est arrivé.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-4881606b2e4d059c"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 183,
+      "end": 411,
+      "claim_text": "La règle regarde la table et corrige ce qui manque, et elle conduit droit à l’absurde : « Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners. »",
+      "normalized_claim": "Verbatim anglais de l'exemple du restaurant, et lecture selon laquelle la règle d'ajustement au seul écart visible mène à l'absurde.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-4881606b2e4d059c",
+        "SUP-68217b545f96a020"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 412,
+      "end": 518,
+      "claim_text": "C’est John D. Sterman qui pose cette scène, dans une étude écrite en 1987, avant d’en venir aux entrepôts.",
+      "normalized_claim": "L'exemple est de Sterman, dans un texte de 1987, et il précède le traitement des stocks industriels.",
+      "support_ids": [
+        "SUP-813045a5b04433b2",
+        "SUP-1f527a78e7bee507",
+        "SUP-2a15b578f7cdfdb3",
+        "SUP-37e0313d8463f985",
+        "SUP-68217b545f96a020",
+        "SUP-771365f96132d2be",
+        "SUP-76ce0c59485556f5"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 144,
+      "claim_text": "Un magasin, un atelier, une usine sont dans la même position, à ceci près que le délai n’est pas de quelques minutes mais de plusieurs semaines.",
+      "normalized_claim": "Dans le cas industriel, le délai d'acquisition se compte en semaines.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-f20395e9f7521c63"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 145,
+      "end": 335,
+      "claim_text": "Entre la commande passée et la marchandise reçue, il existe un intervalle pendant lequel le stock reste bas alors même que ce qu’il faut pour le remplir existe déjà, quelque part, en chemin.",
+      "normalized_claim": "Définition de la quantité commandée et non encore reçue, et du délai qui maintient le stock bas.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-ca8d246408e17a26",
+        "SUP-261ead7808ea25a6"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 336,
+      "end": 454,
+      "claim_text": "Toute la question tient à savoir si celui qui décide compte ce qui roule, ou seulement ce qu’il voit sur ses étagères.",
+      "normalized_claim": "Sterman pose en question ouverte le fait que le décideur tienne ou non compte de la ligne d'approvisionnement.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-2323bd3ed5b16b49"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 296,
+      "claim_text": "Sterman donne à cette quantité en chemin un nom, supply line, la ligne d’approvisionnement, et une composition précise (p. 16) : les commandes qui voyagent encore vers le fournisseur, celles que ce fournisseur a reçues et n’a pas encore servies, et la marchandise expédiée mais pas encore livrée.",
+      "normalized_claim": "Nom du concept, rendu français interne, et composition en trois termes donnée p. 16.",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-771365f96132d2be",
+        "SUP-ca8d246408e17a26",
+        "SUP-38e2851d11069ff8",
+        "SUP-c4213471e90be1d6"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 297,
+      "end": 339,
+      "claim_text": "Trois endroits, dont aucun n’est chez soi.",
+      "normalized_claim": "Les trois composantes de la ligne d'approvisionnement sont toutes hors des étagères du décideur.",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 340,
+      "end": 429,
+      "claim_text": "Le stock, lui, se voit d’un coup d’œil : il est sur les étagères, un inventaire le donne.",
+      "normalized_claim": "Le stock est directement observable, contrairement à la ligne d'approvisionnement.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 430,
+      "end": 528,
+      "claim_text": "Ce qui roule ne se trouve nulle part en un seul morceau, et c’est ce qui rend son omission facile.",
+      "normalized_claim": "La ligne d'approvisionnement est dispersée en trois lieux et n'est pas visible d'un seul endroit, d'où sa non-prise en compte.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-af9b9d482316fa8a"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 157,
+      "claim_text": "Un stock ne s’attrape pas directement : on ne l’influence qu’en modifiant ce qui y entre et ce qui en sort, et un délai sépare souvent le geste de son effet.",
+      "normalized_claim": "Un stock ne se contrôle qu'via ses flux d'entrée et de sortie, et des délais séparent l'action de son effet.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 158,
+      "end": 336,
+      "claim_text": "Celui qui décide a donc trois choses à faire et non deux : remplacer les pertes attendues, réduire l’écart au stock voulu, et entretenir une ligne d’approvisionnement suffisante.",
+      "normalized_claim": "Les trois termes de l'heuristique de gestion de stock énumérés par Sterman.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 337,
+      "end": 433,
+      "claim_text": "Les deux premières portent sur ce qui se voit, la troisième sur ce qui n’est visible nulle part.",
+      "normalized_claim": "La troisième tâche porte sur une grandeur non observable directement.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-af9b9d482316fa8a"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 434,
+      "end": 531,
+      "claim_text": "Avec un marteau et un clou, rien ne se perd et rien n’est différé : la troisième tâche disparaît.",
+      "normalized_claim": "L'exemple du clou : ni perte ni délai, donc pas de ligne d'approvisionnement à entretenir.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 532,
+      "end": 662,
+      "claim_text": "Dès qu’un délai apparaît, une règle qui ne mesure pas les commandes passées et non servies est prédisposée à l’instabilité (p. 7).",
+      "normalized_claim": "Énoncé de la p. 7 sur l'heuristique qui ne mesure pas la ligne d'approvisionnement.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-9a8e1b626f3728bf"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 36,
+      "claim_text": "L’expérience se joue sur un plateau.",
+      "normalized_claim": "Le dispositif expérimental est un jeu de plateau.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-272534ea5ff5d074",
+        "SUP-402e1b480ec4bbad"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 37,
+      "end": 418,
+      "claim_text": "Sterman fait jouer le jeu de la bière, une simulation de rôles reproduisant un système industriel de production et de distribution, dont il ne revendique pas la paternité : mis au point au MIT pour initier des étudiants en gestion à la dynamique économique, l’exercice est déjà ancien quand il écrit, « In use for nearly three decades, the game has been played all over the world »",
+      "normalized_claim": "Description du jeu de la bière et non-revendication de sa paternité par Sterman, avec le verbatim sur son ancienneté.",
+      "support_ids": [
+        "SUP-1f527a78e7bee507",
+        "SUP-a0d9c873a927abee",
+        "SUP-07eb5c6aab4e585a",
+        "SUP-771365f96132d2be",
+        "SUP-0dff2bd362a88987",
+        "SUP-485b84a6b1a5bdb7"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 420,
+      "end": 618,
+      "claim_text": "Onze équipes de quatre s’y installent, un détaillant, un grossiste, un distributeur et une usine : quarante-quatre joueurs qui passent chacun, semaine après semaine, une commande à leur fournisseur.",
+      "normalized_claim": "Onze équipes de quatre rôles, 44 sujets, une commande par semaine et par joueur.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-272534ea5ff5d074",
+        "SUP-402e1b480ec4bbad"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 174,
+      "claim_text": "Les onze parties se ressemblent : toutes oscillent, avec une période moyenne de vingt et une semaines, et l’ampleur des variations grandit à mesure qu’on s’éloigne du client.",
+      "normalized_claim": "Oscillation dans toutes les parties, période moyenne de 21 semaines, amplitude croissante du client vers l'usine.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-9a8e1b626f3728bf"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 175,
+      "end": 368,
+      "claim_text": "Le client fait monter sa demande de quatre à huit caisses par semaine, et le débit des commandes culmine en moyenne à trente-deux caisses à l’usine, un facteur d’amplification de 700 % (p. 15).",
+      "normalized_claim": "Chiffres de la p. 15 : 4 à 8 caisses, pic moyen de 32 caisses à l'usine, amplification de 700 %.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 369,
+      "end": 449,
+      "claim_text": "Le coût moyen d’une équipe vaut dix fois celui du repère de comparaison (p. 14).",
+      "normalized_claim": "Coût moyen d'équipe dix fois supérieur au benchmark, p. 14.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 45,
+      "end": 173,
+      "claim_text": "la demande du client, seule perturbation venue de l’extérieur, monte une fois puis ne bouge plus, elle est en pratique constante",
+      "normalized_claim": "La demande du client est la seule perturbation externe et elle est pratiquement constante.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 175,
+      "end": 356,
+      "claim_text": "L’oscillation n’entre donc pas dans le système, elle y est produite, par la rencontre des décisions des joueurs avec la structure de stocks et de délais où elles s’exercent (p. 15).",
+      "normalized_claim": "L'oscillation est produite de façon endogène par l'interaction des décisions avec la structure de rétroaction.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-9a8e1b626f3728bf",
+        "SUP-f20395e9f7521c63"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 213,
+      "claim_text": "Plutôt que de demander aux joueurs pourquoi ils ont commandé, Sterman écrit une règle de décision générale, puis cherche pour chacun les paramètres qui reproduisent au plus près ses commandes réelles (p. 17 à 20).",
+      "normalized_claim": "Méthode : une règle de décision générale dont les paramètres sont estimés sur les commandes de chaque joueur, p. 17-20.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-1f527a78e7bee507",
+        "SUP-72578f3bfef64df5",
+        "SUP-b435c2458ecd8f29"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 214,
+      "end": 468,
+      "claim_text": "L’un de ces paramètres, qu’il note β, mesure la part de ce qui est en route dont le joueur tient compte : « If β = 1, the subjects fully recognize the supply line and do not double order. If β = 0, orders placed are forgotten until they arrive » (p. 17).",
+      "normalized_claim": "β est la fraction de la ligne d'approvisionnement prise en compte, avec le verbatim de la p. 17.",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-771365f96132d2be",
+        "SUP-b9a122eefe924d5e"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 469,
+      "end": 573,
+      "claim_text": "Entre ces deux bouts, tous les degrés existent : ignorer n’est pas un oui ou un non, c’est une fraction.",
+      "normalized_claim": "Le paramètre est une pondération continue, l'oubli n'en étant que le cas limite.",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-771365f96132d2be",
+        "SUP-272534ea5ff5d074"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 36,
+      "claim_text": "Cette fraction vaut 0,34 en moyenne.",
+      "normalized_claim": "Valeur moyenne de β : 0,34.",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-473c8a19437d2ce4",
+        "SUP-771365f96132d2be",
+        "SUP-9a8e1b626f3728bf"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 37,
+      "end": 138,
+      "claim_text": "Un joueur ordinaire ne défalque qu’un tiers environ de ce qu’il a déjà demandé et recommande le reste",
+      "normalized_claim": "Conséquence de β moyen de 0,34 : environ un tiers de la ligne d'approvisionnement est décompté, le reste est recommandé.",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-771365f96132d2be",
+        "SUP-473c8a19437d2ce4",
+        "SUP-9a8e1b626f3728bf"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 141,
+      "end": 248,
+      "claim_text": "ils sont cinq sur quarante-quatre, soit 11 %, à tenir compte de plus des deux tiers de ce qui roule (p. 21)",
+      "normalized_claim": "Cinq sujets sur 44, soit 11 %, prennent en compte plus des deux tiers de la ligne d'approvisionnement (p. 21).",
+      "support_ids": [
+        "SUP-af9b9d482316fa8a",
+        "SUP-771365f96132d2be",
+        "SUP-9a8e1b626f3728bf"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 250,
+      "end": 331,
+      "claim_text": "quand la meilleure valeur dans les simulations est de 1, le compte entier (p. 20)",
+      "normalized_claim": "L'optimum simulé du paramètre est 1, soit la prise en compte entière (p. 20).",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-473c8a19437d2ce4"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 37,
+      "claim_text": "Les joueurs, eux, ne voient pas cela.",
+      "normalized_claim": "Les sujets n'attribuent pas la dynamique à leurs propres décisions.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 38,
+      "end": 240,
+      "claim_text": "Interrogés en fin de partie, la majorité juge invariablement que la demande du client oscillait, et presque aucun n’avance que ses propres décisions ont causé le comportement qu’il a vécu (p. 22 et 23).",
+      "normalized_claim": "Résultats d'enquête p. 22-23 : majorité jugeant la demande oscillante, quasi personne n'invoquant ses propres décisions.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 241,
+      "end": 430,
+      "claim_text": "Sterman en souligne la conséquence pratique : l’effort quitte le point où le levier est le plus fort, la règle de gestion du stock, pour aller vers l’anticipation des chocs venus du dehors.",
+      "normalized_claim": "Conséquence normative tirée par Sterman : l'effort se détourne du point de levier, la politique de gestion de stock, vers l'anticipation des chocs externes.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[3]",
+      "start": 0,
+      "end": 175,
+      "claim_text": "C’est de là que tombe la phrase écrite page 23 : « Même une prévision parfaite n’empêchera pas un gestionnaire qui ignore la ligne d’approvisionnement de commander en excès. »",
+      "normalized_claim": "Citation traduite, localisée p. 23, et sa place dans l'argument.",
+      "support_ids": [
+        "SUP-6c785b804c6b93ff",
+        "SUP-f840714eae8991fb",
+        "SUP-a1983314c9e410fb",
+        "SUP-2a15b578f7cdfdb3",
+        "SUP-36c19ee7ddf6acf1",
+        "SUP-86aea3e50748e259",
+        "SUP-f1cae2cf4c7261bf",
+        "SUP-a14d328802be4851",
+        "SUP-2afa5fec58c9742a",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[3]",
+      "start": 176,
+      "end": 367,
+      "claim_text": "Le paramètre en cause ne porte pas sur ce que le marché va demander, mais sur ce que le joueur a lui-même déjà envoyé : mieux voir l’avenir laisse entière une erreur qui porte sur le présent.",
+      "normalized_claim": "Le défaut mesuré porte sur la ligne d'approvisionnement déjà commandée, non sur la prévision de la demande.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-af9b9d482316fa8a",
+        "SUP-6c785b804c6b93ff",
+        "SUP-a1983314c9e410fb"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 89,
+      "claim_text": "Deux équipes montrent que la même règle, à deux valeurs différentes, produit deux mondes.",
+      "normalized_claim": "Deux cas, Grizzly et Suds, mêmes formes de règle et valeurs de paramètre opposées, avec des comportements opposés.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-80322650ccfe9b44",
+        "SUP-473c8a19437d2ce4"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 90,
+      "end": 393,
+      "claim_text": "À l’usine Grizzly, le paramètre estimé est nul : le joueur commande les deux tiers de son écart pendant trois semaines sans que rien n’arrive, puis coupe tout quand le stock remonte ; mais ce qui était parti continue d’arriver, et le stock finit par dépasser le niveau voulu de presque un facteur trois.",
+      "normalized_claim": "Déroulé du cas Grizzly, p. 21 : β nul, deux tiers de l'écart commandés trois semaines, coupure, arrivées ultérieures, stock dépassant la cible de près d'un facteur trois.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-80322650ccfe9b44"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 394,
+      "end": 585,
+      "claim_text": "« By ignoring the supply line the factory’s ordering policy is highly destabilizing » (p. 21) : son facteur d’amplification atteint 290 %, près de trois fois la variation qu’elle avait reçue.",
+      "normalized_claim": "Verbatim de la p. 21 sur la politique déstabilisante de Grizzly et son amplification de 290 %.",
+      "support_ids": [
+        "SUP-80322650ccfe9b44",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 97,
+      "claim_text": "L’usine Suds compte ce qui est en route en entier, et même un peu plus : son paramètre vaut 1,05.",
+      "normalized_claim": "Le paramètre estimé de l'usine Suds vaut 1,05, soit la ligne d'approvisionnement comptée en entier.",
+      "support_ids": [
+        "SUP-473c8a19437d2ce4",
+        "SUP-771365f96132d2be",
+        "SUP-b9a122eefe924d5e"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 98,
+      "end": 166,
+      "claim_text": "Elle subit un choc plus fort que Grizzly et le transmet plus faible.",
+      "normalized_claim": "Suds reçoit un choc plus fort que Grizzly et le renvoie plus faible.",
+      "support_ids": [
+        "SUP-473c8a19437d2ce4",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 167,
+      "end": 386,
+      "claim_text": "Ses commandes montent puis redescendent avant que son retard accumulé, les commandes reçues et non servies, n’atteigne son maximum, parce que le joueur voit que les commandes qui combleront le manque sont déjà en route.",
+      "normalized_claim": "Mécanisme de la p. 22 : pic et reflux des commandes avant le maximum du backlog, parce que le sujet voit les commandes déjà en route.",
+      "support_ids": [
+        "SUP-80322650ccfe9b44",
+        "SUP-4881606b2e4d059c",
+        "SUP-771365f96132d2be",
+        "SUP-af9b9d482316fa8a"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 387,
+      "end": 496,
+      "claim_text": "Son facteur d’amplification tombe à 85 % : elle atténue les chocs de demande au lieu de les aggraver (p. 22).",
+      "normalized_claim": "Facteur d'amplification de 85 % pour Suds, atténuation au lieu d'aggravation, p. 22.",
+      "support_ids": [
+        "SUP-80322650ccfe9b44",
+        "SUP-473c8a19437d2ce4",
+        "SUP-771365f96132d2be",
+        "SUP-2323bd3ed5b16b49"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 0,
+      "end": 71,
+      "claim_text": "Ce contraste ne se retourne pourtant pas en sentence sur les personnes.",
+      "normalized_claim": "Le résultat n'est pas une incapacité individuelle générale.",
+      "support_ids": [
+        "SUP-402e1b480ec4bbad",
+        "SUP-473c8a19437d2ce4",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 72,
+      "end": 231,
+      "claim_text": "Savoir si les décideurs tiennent compte de leur ligne d’approvisionnement est, écrit Sterman, une question empirique dans chaque situation particulière (p. 7).",
+      "normalized_claim": "Verbatim de la p. 7 posant la question comme empirique dans chaque situation.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 232,
+      "end": 435,
+      "claim_text": "Et page 26 : un même mode de décision peut produire un comportement stable dans un cadre et une oscillation dans un autre, uniquement en fonction de la structure de rétroaction dans laquelle il est pris.",
+      "normalized_claim": "Énoncé de la p. 26 : même heuristique, comportements différents selon la structure de rétroaction.",
+      "support_ids": [
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 436,
+      "end": 577,
+      "claim_text": "La cause n’est donc pas tout entière chez celui qui commande : elle est aussi dans l’agencement de stocks et de délais où sa règle travaille.",
+      "normalized_claim": "La cause se déplace de l'individu vers la structure de stocks et de délais.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-f20395e9f7521c63",
+        "SUP-402e1b480ec4bbad"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 129,
+      "claim_text": "Une lecture court sur ce genre de résultat, et Sterman l’écarte lui-même : les gestionnaires oublieraient ce qu’ils ont commandé.",
+      "normalized_claim": "La lecture par l'oubli des gestionnaires est écartée par Sterman lui-même.",
+      "support_ids": [
+        "SUP-272534ea5ff5d074",
+        "SUP-402e1b480ec4bbad",
+        "SUP-af9b9d482316fa8a"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 130,
+      "end": 291,
+      "claim_text": "Il répond, page 25 : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation. »",
+      "normalized_claim": "Verbatim de la p. 25 récusant l'oubli et désignant l'agrégation.",
+      "support_ids": [
+        "SUP-272534ea5ff5d074",
+        "SUP-402e1b480ec4bbad",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 292,
+      "end": 424,
+      "claim_text": "Le problème, dit-il, est un problème d’agrégation, et l’oubli n’est chez lui que la borne basse du paramètre, le cas où β vaut zéro.",
+      "normalized_claim": "Le problème est d'agrégation, et l'oubli correspond au cas limite β = 0.",
+      "support_ids": [
+        "SUP-272534ea5ff5d074",
+        "SUP-af9b9d482316fa8a",
+        "SUP-402e1b480ec4bbad",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 40,
+      "end": 217,
+      "claim_text": "La ligne d’approvisionnement qui compte pour une entreprise réelle n’est pas la sienne seule : elle est répartie entre concurrents, et chacun ne connaît bien que sa propre part.",
+      "normalized_claim": "La ligne d'approvisionnement agrégée est répartie entre concurrents et mal connue de chacun.",
+      "support_ids": [
+        "SUP-402e1b480ec4bbad",
+        "SUP-771365f96132d2be",
+        "SUP-272534ea5ff5d074"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 218,
+      "end": 467,
+      "claim_text": "Aussi la vérification demandera-t-elle, écrit Sterman, des travaux portant non seulement sur les processus de décision des entreprises, mais aussi sur la disponibilité de cette information, sa fraîcheur, sa saillance et la précision qu’on lui prête.",
+      "normalized_claim": "Programme de vérification annoncé p. 25 : décisions des firmes, mais aussi disponibilité, fraîcheur, saillance et précision perçue de l'information.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-272534ea5ff5d074"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 468,
+      "end": 565,
+      "claim_text": "Ce qu’on prêtait à un caractère devient une information qu’une organisation rend visible, ou non.",
+      "normalized_claim": "Le défaut se reformule en question d'information disponible plutôt qu'en trait individuel.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-402e1b480ec4bbad",
+        "SUP-272534ea5ff5d074"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 136,
+      "claim_text": "Sa prudence porte enfin sur son propre résultat : la vérification de l’hypothèse, écrit-il page 25, demande d’autres travaux empiriques.",
+      "normalized_claim": "Verbatim de la p. 25 : la vérification de l'hypothèse demande d'autres travaux empiriques.",
+      "support_ids": [
+        "SUP-272534ea5ff5d074",
+        "SUP-402e1b480ec4bbad",
+        "SUP-771365f96132d2be"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 137,
+      "end": 406,
+      "claim_text": "Ce qui est acquis tient à quarante-quatre joueurs autour d’un plateau, plus une concordance de forme avec la production industrielle américaine de 1947 à 1987, dont les cycles gagnent en amplitude à mesure qu’on va des ventes de détail vers les matériaux (p. 23 et 24).",
+      "normalized_claim": "Base empirique : 44 sujets et la corroboration sur la production américaine 1947-1987, amplitude croissante du détail vers les matériaux, p. 23-24.",
+      "support_ids": [
+        "SUP-272534ea5ff5d074",
+        "SUP-771365f96132d2be",
+        "SUP-402e1b480ec4bbad"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 407,
+      "end": 459,
+      "claim_text": "C’est peu pour une loi, beaucoup pour une hypothèse.",
+      "normalized_claim": "Le résultat n'a pas le statut d'une loi mais celui d'une hypothèse.",
+      "support_ids": [
+        "SUP-272534ea5ff5d074",
+        "SUP-771365f96132d2be",
+        "SUP-402e1b480ec4bbad"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 0,
+      "end": 157,
+      "claim_text": "La question qu’il laisse ouverte n’est donc pas psychologique : là où cette information est disponible, à jour et tenue pour fiable, le défaut se réduit-il ?",
+      "normalized_claim": "La question ouverte porte sur la disponibilité, la fraîcheur et la fiabilité perçue de l'information, non sur la psychologie.",
+      "support_ids": [
+        "SUP-771365f96132d2be",
+        "SUP-272534ea5ff5d074",
+        "SUP-402e1b480ec4bbad"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 158,
+      "end": 352,
+      "claim_text": "Treize ans plus tard, il publie mille pages sur la modélisation des systèmes complexes, Business Dynamics ; ce que ce livre fait de la ligne d’approvisionnement, il faudra l’ouvrir pour le voir.",
+      "normalized_claim": "Business Dynamics (2000), environ mille pages, sur la modélisation des systèmes complexes, non ouvert par le dossier.",
+      "support_ids": [
+        "SUP-a1ab560b223077f6",
+        "SUP-7381416b0f549181",
+        "SUP-2274a127567eddd8",
+        "SUP-4b8d6bf42e9af98c",
+        "SUP-b334244932ff3a59"
+      ]
+    }
+  ]
+}

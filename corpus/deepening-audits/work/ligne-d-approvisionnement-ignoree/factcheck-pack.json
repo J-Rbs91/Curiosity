@@ -1,0 +1,1058 @@
+{
+  "protocol_version": 2,
+  "concept_id": "ligne-d-approvisionnement-ignoree",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "1de5c31ae823e4dac13cbea25e09e2e681eb5caeaabeda52bba2e4ae87335f35",
+  "validated_sha256": "45b2e003551f795019482f57115ba307fee2000abcef0f2faf288756d7819130",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "b8bc7dc16c5c063d6946e3162d455bbde53d565d956f7a055e4b46de66466478"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/ligne-d-approvisionnement-ignoree/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "John D. Sterman, Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment, MIT Sloan School of Management, document de travail 1933-87 (D-3919), septembre 1987, 42 p.",
+        "cles": [
+          "url:dspace.mit.edu/handle/1721.1/2184"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "partial",
+        "label": "John D. Sterman, « Supply Chain Dynamics, the \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making », dans Y. Barlas (dir.), System Dynamics, vol. 1, Encyclopedia of Life Support Systems, UNESCO et EOLSS, 2005.",
+        "cles": [
+          "isbn:9781848261372",
+          "url:eolss.net/sample-chapters/c15/e6-63-01-02.pdf"
+        ],
+        "dossier": "partial",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "metadata-only",
+        "label": "John D. Sterman, « Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment », Management Science, vol. 35, n° 3, mars 1989, p. 321-339. Version publiée de 1989, non ouverte.",
+        "cles": [
+          "doi:10.1287/mnsc.35.3.321",
+          "url:doi.org/10.1287/mnsc.35.3.321"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[3]",
+        "declare": "metadata-only",
+        "label": "John D. Sterman, Business Dynamics: Systems Thinking and Modeling for a Complex World, Boston, Irwin/McGraw-Hill, 2000, 1008 p. Second ayant droit nommé par la mention de permission de l'extrait EOLSS. Non ouvert.",
+        "cles": [
+          "isbn:007238915x",
+          "url:openlibrary.org/books/ol7303312m"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[4]",
+        "declare": "full-text",
+        "label": "Vincent Giard et Mustapha Sali, « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète », Revue française de gestion industrielle, vol. 31, n° 2, 2012.",
+        "cles": [
+          "url:hal.science/hal-01508406v1"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 5,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Vous commandez un plat au restaurant. Il ne vient pas. Le serveur repasse, vous commandez à nouveau ; il repasse encore, vous commandez une troisième fois, puisque rien n’est arrivé. La règle regarde la table et corrige ce qui manque, et elle conduit droit à l’absurde : « Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners. » C’est John D. Sterman qui pose cette scène, dans une étude écrite en 1987, avant d’en venir aux entrepôts."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Un magasin, un atelier, une usine sont dans la même position, à ceci près que le délai n’est pas de quelques minutes mais de plusieurs semaines. Entre la commande passée et la marchandise reçue, il existe un intervalle pendant lequel le stock reste bas alors même que ce qu’il faut pour le remplir existe déjà, quelque part, en chemin. Toute la question tient à savoir si celui qui décide compte ce qui roule, ou seulement ce qu’il voit sur ses étagères."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce qui est en route, et où cela se trouve",
+      "text": "Sterman donne à cette quantité en chemin un nom, supply line, la ligne d’approvisionnement, et une composition précise (p. 16) : les commandes qui voyagent encore vers le fournisseur, celles que ce fournisseur a reçues et n’a pas encore servies, et la marchandise expédiée mais pas encore livrée. Trois endroits, dont aucun n’est chez soi. Le stock, lui, se voit d’un coup d’œil : il est sur les étagères, un inventaire le donne. Ce qui roule ne se trouve nulle part en un seul morceau, et c’est ce qui rend son omission facile."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce qui est en route, et où cela se trouve",
+      "text": "Un stock ne s’attrape pas directement : on ne l’influence qu’en modifiant ce qui y entre et ce qui en sort, et un délai sépare souvent le geste de son effet. Celui qui décide a donc trois choses à faire et non deux : remplacer les pertes attendues, réduire l’écart au stock voulu, et entretenir une ligne d’approvisionnement suffisante. Les deux premières portent sur ce qui se voit, la troisième sur ce qui n’est visible nulle part. Avec un marteau et un clou, rien ne se perd et rien n’est différé : la troisième tâche disparaît. Dès qu’un délai apparaît, une règle qui ne mesure pas les commandes passées et non servies est prédisposée à l’instabilité (p. 7)."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Un plateau de jeu, quarante-quatre joueurs",
+      "text": "L’expérience se joue sur un plateau. Sterman fait jouer le jeu de la bière, une simulation de rôles reproduisant un système industriel de production et de distribution, dont il ne revendique pas la paternité : mis au point au MIT pour initier des étudiants en gestion à la dynamique économique, l’exercice est déjà ancien quand il écrit, « In use for nearly three decades, the game has been played all over the world ». Onze équipes de quatre s’y installent, un détaillant, un grossiste, un distributeur et une usine : quarante-quatre joueurs qui passent chacun, semaine après semaine, une commande à leur fournisseur."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Un plateau de jeu, quarante-quatre joueurs",
+      "text": "Les onze parties se ressemblent : toutes oscillent, avec une période moyenne de vingt et une semaines, et l’ampleur des variations grandit à mesure qu’on s’éloigne du client. Le client fait monter sa demande de quatre à huit caisses par semaine, et le débit des commandes culmine en moyenne à trente-deux caisses à l’usine, un facteur d’amplification de 700 % (p. 15). Le coût moyen d’une équipe vaut dix fois celui du repère de comparaison (p. 14)."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Un plateau de jeu, quarante-quatre joueurs",
+      "text": "Reste le fait qui rend tout cela déroutant : la demande du client, seule perturbation venue de l’extérieur, monte une fois puis ne bouge plus, elle est en pratique constante. L’oscillation n’entre donc pas dans le système, elle y est produite, par la rencontre des décisions des joueurs avec la structure de stocks et de délais où elles s’exercent (p. 15)."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Un nombre entre zéro et un",
+      "text": "Plutôt que de demander aux joueurs pourquoi ils ont commandé, Sterman écrit une règle de décision générale, puis cherche pour chacun les paramètres qui reproduisent au plus près ses commandes réelles (p. 17 à 20). L’un de ces paramètres, qu’il note β, mesure la part de ce qui est en route dont le joueur tient compte : « If β = 1, the subjects fully recognize the supply line and do not double order. If β = 0, orders placed are forgotten until they arrive » (p. 17). Entre ces deux bouts, tous les degrés existent : ignorer n’est pas un oui ou un non, c’est une fraction."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Un nombre entre zéro et un",
+      "text": "Cette fraction vaut 0,34 en moyenne. Un joueur ordinaire ne défalque qu’un tiers environ de ce qu’il a déjà demandé et recommande le reste ; ils sont cinq sur quarante-quatre, soit 11 %, à tenir compte de plus des deux tiers de ce qui roule (p. 21), quand la meilleure valeur dans les simulations est de 1, le compte entier (p. 20)."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Un nombre entre zéro et un",
+      "text": "Les joueurs, eux, ne voient pas cela. Interrogés en fin de partie, la majorité juge invariablement que la demande du client oscillait, et presque aucun n’avance que ses propres décisions ont causé le comportement qu’il a vécu (p. 22 et 23). Sterman en souligne la conséquence pratique : l’effort quitte le point où le levier est le plus fort, la règle de gestion du stock, pour aller vers l’anticipation des chocs venus du dehors."
+    },
+    {
+      "locator": "sections[2].paragraphs[3]",
+      "section_title": "Un nombre entre zéro et un",
+      "text": "C’est de là que tombe la phrase écrite page 23 : « Même une prévision parfaite n’empêchera pas un gestionnaire qui ignore la ligne d’approvisionnement de commander en excès. » Le paramètre en cause ne porte pas sur ce que le marché va demander, mais sur ce que le joueur a lui-même déjà envoyé : mieux voir l’avenir laisse entière une erreur qui porte sur le présent."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Grizzly et Suds, deux issues du même choc",
+      "text": "Deux équipes montrent que la même règle, à deux valeurs différentes, produit deux mondes. À l’usine Grizzly, le paramètre estimé est nul : le joueur commande les deux tiers de son écart pendant trois semaines sans que rien n’arrive, puis coupe tout quand le stock remonte ; mais ce qui était parti continue d’arriver, et le stock finit par dépasser le niveau voulu de presque un facteur trois. « By ignoring the supply line the factory’s ordering policy is highly destabilizing » (p. 21) : son facteur d’amplification atteint 290 %, près de trois fois la variation qu’elle avait reçue."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Grizzly et Suds, deux issues du même choc",
+      "text": "L’usine Suds compte ce qui est en route en entier, et même un peu plus : son paramètre vaut 1,05. Elle subit un choc plus fort que Grizzly et le transmet plus faible. Ses commandes montent puis redescendent avant que son retard accumulé, les commandes reçues et non servies, n’atteigne son maximum, parce que le joueur voit que les commandes qui combleront le manque sont déjà en route. Son facteur d’amplification tombe à 85 % : elle atténue les chocs de demande au lieu de les aggraver (p. 22)."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Grizzly et Suds, deux issues du même choc",
+      "text": "Ce contraste ne se retourne pourtant pas en sentence sur les personnes. Savoir si les décideurs tiennent compte de leur ligne d’approvisionnement est, écrit Sterman, une question empirique dans chaque situation particulière (p. 7). Et page 26 : un même mode de décision peut produire un comportement stable dans un cadre et une oscillation dans un autre, uniquement en fonction de la structure de rétroaction dans laquelle il est pris. La cause n’est donc pas tout entière chez celui qui commande : elle est aussi dans l’agencement de stocks et de délais où sa règle travaille."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Non pas l’oubli, mais l’agrégation",
+      "text": "Une lecture court sur ce genre de résultat, et Sterman l’écarte lui-même : les gestionnaires oublieraient ce qu’ils ont commandé. Il répond, page 25 : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation. » Le problème, dit-il, est un problème d’agrégation, et l’oubli n’est chez lui que la borne basse du paramètre, le cas où β vaut zéro."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Non pas l’oubli, mais l’agrégation",
+      "text": "Ce mot dit où se déplace la difficulté. La ligne d’approvisionnement qui compte pour une entreprise réelle n’est pas la sienne seule : elle est répartie entre concurrents, et chacun ne connaît bien que sa propre part. Aussi la vérification demandera-t-elle, écrit Sterman, des travaux portant non seulement sur les processus de décision des entreprises, mais aussi sur la disponibilité de cette information, sa fraîcheur, sa saillance et la précision qu’on lui prête. Ce qu’on prêtait à un caractère devient une information qu’une organisation rend visible, ou non."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Non pas l’oubli, mais l’agrégation",
+      "text": "Sa prudence porte enfin sur son propre résultat : la vérification de l’hypothèse, écrit-il page 25, demande d’autres travaux empiriques. Ce qui est acquis tient à quarante-quatre joueurs autour d’un plateau, plus une concordance de forme avec la production industrielle américaine de 1947 à 1987, dont les cycles gagnent en amplitude à mesure qu’on va des ventes de détail vers les matériaux (p. 23 et 24). C’est peu pour une loi, beaucoup pour une hypothèse."
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "section_title": "Non pas l’oubli, mais l’agrégation",
+      "text": "La question qu’il laisse ouverte n’est donc pas psychologique : là où cette information est disponible, à jour et tenue pour fiable, le défaut se réduit-il ? Treize ans plus tard, il publie mille pages sur la modélisation des systèmes complexes, Business Dynamics ; ce que ce livre fait de la ligne d’approvisionnement, il faudra l’ouvrir pour le voir."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-568fcf9307bb7b4d",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "ligne-d-approvisionnement-ignoree"
+    },
+    {
+      "id": "SUP-227ed10bad1374f2",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "ligne-d-approvisionnement-ignoree"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-2d27607797c40752",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "La ligne d'approvisionnement ignorée"
+    },
+    {
+      "id": "SUP-2c47d11e00048682",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "ce-qui-s-accumule"
+    },
+    {
+      "id": "SUP-6d0dff71ab4c8c7f",
+      "origin": "validated",
+      "path": "$.theme_labels[\"ce-qui-s-accumule\"]",
+      "access": "n/a",
+      "text": "Ce qui s'accumule et ce qui s'écoule"
+    },
+    {
+      "id": "SUP-813045a5b04433b2",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "John D. Sterman"
+    },
+    {
+      "id": "SUP-1f527a78e7bee507",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Expérience de John D. Sterman, qui signe seul ce document de travail de 1987. Le jeu de la bière qu'il y fait jouer n'est pas de lui et il ne le revendique pas : il le décrit comme une simulation développée au MIT et en usage depuis près de trois décennies quand il écrit. Ce qui lui revient est l'expérience, la règle de décision estimée sur les joueurs et l'interprétation qu'il en donne."
+    },
+    {
+      "id": "SUP-261ead7808ea25a6",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Pourquoi commander encore, quand ce qu'il faut est déjà en route ?"
+    },
+    {
+      "id": "SUP-2323bd3ed5b16b49",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Sterman : qui règle un stock sans compter les commandes passées et non reçues commande en excès. Une usine qui les comptait a atténué le choc au lieu de l'amplifier."
+    },
+    {
+      "id": "SUP-6c785b804c6b93ff",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Même une prévision parfaite n'empêchera pas un gestionnaire qui ignore la ligne d'approvisionnement de commander en excès."
+    },
+    {
+      "id": "SUP-2a15b578f7cdfdb3",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "John D. Sterman, Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment, MIT Sloan School of Management, document de travail 1933-87, septembre 1987."
+    },
+    {
+      "id": "SUP-f840714eae8991fb",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 23"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-a1983314c9e410fb",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Even a perfect forecast will not prevent a manager who ignores the supply line from overordering."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-c4213471e90be1d6",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, 5 septembre 2026). Aucune traduction française publiée de ce document de travail, ni de l'article de Management Science de 1989 dont il est la version préalable, n'a été identifiée. « Supply line » est rendu littéralement par « ligne d'approvisionnement », rendu qui n'est appuyé sur aucun usage francophone attesté : voir les notes. « Manager » est rendu par « gestionnaire », qui est le rôle tenu dans l'expérience, et « overordering » par « commander en excès » plutôt que par « surcommander », qui n'est pas usuel en français de gestion."
+    },
+    {
+      "id": "SUP-37e0313d8463f985",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "John D. Sterman, Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment, MIT Sloan School of Management, document de travail 1933-87 (D-3919), septembre 1987, 42 p.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-fd23bbc93c0f84e6",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 23 ; expérience p. 13-23",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-66fdf4e8b5e1d6b8",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "hdl:1721.1/2184",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-b322a9ccf5844078",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://dspace.mit.edu/handle/1721.1/2184",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-e0f4128f32a3e867",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "partial",
+      "text": "John D. Sterman, « Supply Chain Dynamics, the \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making », dans Y. Barlas (dir.), System Dynamics, vol. 1, Encyclopedia of Life Support Systems, UNESCO et EOLSS, 2005.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "partial",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-440420411c8021e9",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "partial",
+      "text": "Extrait de 9 p. sur 30, sans folio",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c0eba327b06eebe3",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "partial",
+      "text": "eISBN 978-1-84826-137-2",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-b2aac7b06f97acca",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "partial",
+      "text": "http://www.eolss.net/sample-chapters/c15/e6-63-01-02.pdf",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c4c8097c50740dbb",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "John D. Sterman, « Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment », Management Science, vol. 35, n° 3, mars 1989, p. 321-339. Version publiée de 1989, non ouverte.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-a6fd9e97844d1036",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "p. 321-339",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-5913075e6b580ff1",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1287/mnsc.35.3.321",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-480300985f9a56bd",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1287/mnsc.35.3.321",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-a1ab560b223077f6",
+      "origin": "validated",
+      "path": "$.sources[3].label",
+      "access": "metadata-only",
+      "text": "John D. Sterman, Business Dynamics: Systems Thinking and Modeling for a Complex World, Boston, Irwin/McGraw-Hill, 2000, 1008 p. Second ayant droit nommé par la mention de permission de l'extrait EOLSS. Non ouvert.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-29d6a7cf27fbe81b",
+      "origin": "validated",
+      "path": "$.sources[3].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-7381416b0f549181",
+      "origin": "validated",
+      "path": "$.sources[3].locator",
+      "access": "metadata-only",
+      "text": "Ouvrage entier, non ouvert",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-2274a127567eddd8",
+      "origin": "validated",
+      "path": "$.sources[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "ISBN 0-07-238915-X",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-70f977be7b3e3f53",
+      "origin": "validated",
+      "path": "$.sources[3].url",
+      "access": "metadata-only",
+      "text": "https://openlibrary.org/books/OL7303312M",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8f808a6cdeba9d40",
+      "origin": "validated",
+      "path": "$.sources[4].label",
+      "access": "full-text",
+      "text": "Vincent Giard et Mustapha Sali, « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète », Revue française de gestion industrielle, vol. 31, n° 2, 2012.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8d3221d5a4a28e99",
+      "origin": "validated",
+      "path": "$.sources[4].kind",
+      "access": "full-text",
+      "text": "francophone-reception",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-6267a1bd23d874de",
+      "origin": "validated",
+      "path": "$.sources[4].doi_isbn",
+      "access": "full-text",
+      "text": "HAL hal-01508406",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-785ee2dde64d9df6",
+      "origin": "validated",
+      "path": "$.sources[4].url",
+      "access": "full-text",
+      "text": "https://hal.science/hal-01508406v1",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-ada31e8a0670f1ce",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-09-05"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-9f7466f9a2d4d1f7",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "PIÈCE OUVERTE — J'ai téléchargé moi-même le document de travail depuis DSpace@MIT : page d'item https://dspace.mit.edu/handle/1721.1/2184 (429 aux deux premières tentatives, 200 en rejouant avec un en-tête de navigateur), bitstream https://dspace.mit.edu/bitstreams/273fb631-34df-4a15-a553-7114e8866f25/download (SWP-1933-18213539.pdf, 2,9 Mo, 45 pages d'image). J'ai rendu les pages en images avec PyMuPDF (110-160 dpi) et je les ai lues à l'écran ; la couche texte n'a servi qu'à repérer les passages. Concordance folio/index PDF vérifiée sur trois ancrages indépendants : index 12 = « 10 », index 24 = « 22 », index 32 = « 30 » (début des References, ce qui recoupe la notice DSpace « Bibliography: p. 30-33 »). Dernier feuillet = p. 42, ce qui valide le « 42 p. » de la fiche."
+    },
+    {
+      "id": "SUP-a14d328802be4851",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — Lue sur l'image de la page qui porte l'en-tête imprimé « D-3919 » et le folio « 23 » (index PDF 25), dernière phrase du paragraphe qui précède le titre « Discussion and Conclusions » : « Even a perfect forecast will not prevent a manager who ignores the supply line from overordering. » C'est mot pour mot le champ original_text, à l'endroit annoncé (p. 23), et sur l'exemplaire exact que la fiche désigne — le document de travail 1933-87 / D-3919 de septembre 1987, non la version Management Science de 1989 ni la refonte EOLSS, dont j'ai constaté qu'elles reformulent les mêmes paragraphes (l'extrait EOLSS écrit par exemple « Without such a feedback orders would be placed even after the supply line contained sufficient orders… » là où le document de 1987 écrit « The supply line adjustment thus avoids overordering (as in the restaurant example)… »). Phrase entière, aucune coupe, donc aucun […] à signaler. La traduction est déclarée (interne, non publiée, traducteur et date nommés) et elle est fidèle : « Même une prévision parfaite n'empêchera pas un gestionnaire qui ignore la ligne d'approvisionnement de commander en excès. »"
+    },
+    {
+      "id": "SUP-76ce0c59485556f5",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION 1/2 — Page de titre lue sur l'image (index PDF 1) : « D-3919 / Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment / John D. Sterman / Associate Professor / Sloan School of Management / Massachusetts Institute of Technology / Cambridge, MA 02139 / September 1987 », suivie de « The comments of John Carroll, James Hines, and Don Kleinmuntz are gratefully acknowledged. Dan Ryu provided invaluable research assistance. » Auteur unique : la fiche a raison d'écrire « qui signe seul ce document de travail de 1987 ». Le titre du document de travail porte « Decisionmaking » en un mot, celui de l'article de 1989 « Decision Making » en deux ; la fiche distingue correctement les deux formes dans les deux références."
+    },
+    {
+      "id": "SUP-07eb5c6aab4e585a",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION 2/2 — Sur le point sensible (le dispositif expérimental circule très largement attribué à tort), la fiche ne prête pas le jeu de la bière à Sterman et c'est exact sur pièce. Image de la p. 10 : sous le titre de section « A Stock Management Experiment », le texte ouvre par « The \"Beer Distribution Game\" is a role-playing simulation of an industrial production and distribution system developed at MIT to introduce students of management to the concepts of economic dynamics and computer simulation. In use for nearly three decades, the game has been played all over the world… » (p. 10-11). Sterman ne revendique donc pas la paternité du jeu et l'attribue au MIT, exactement comme la fiche le dit. Corroboration indépendante ouverte de mon côté : Ignacio J. Martinez-Moyano, « History of the Beer Game », System Dynamics Review, 2024, DOI 10.1002/sdr.1767 — Wiley m'a renvoyé HTTP 403, mais la copie déposée par l'auteur sur OSTI est ouverte (https://www.osti.gov/servlets/purl/2371560, 32 p., lue). Elle établit que l'exercice naît des travaux de Forrester chez General Electric en 1956-57, se construit par étapes au MIT (Jarmain 1963 pour la maquette d'un secteur, Miller 1962, Fey 1965, Goodman 1973 pour le contexte « bière », Senge pour le débriefing) et que « one can argue that the game was formally established in 1984 only after Professor John Sterman explicitly combined for the first time the beer production-distribution context with the concept of gaming calling it the \"Beer Distribution Game\" (Sterman, 1984) ». Ce qui revient à Sterman est donc le nom, les instructions de conduite, et — ce que la fiche lui attribue — l'expérience de 1987, la règle de décision estimée sur les joueurs et son interprétation. Ces trois-là sont bien dans le document : règle générique éq. (10)-(14) p. 17, estimation par recherche sur grille p. 18, paramètres estimés Table 4 p. 40."
+    },
+    {
+      "id": "SUP-af9b9d482316fa8a",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "PROSE 1/3, le point « oublient-ils ? » — Vérifié sur le texte plutôt que sur ce qui en circule. Sterman n'écrit pas que les gestionnaires oublient ce qu'ils ont commandé : il mesure une pondération. P. 21 : « The average value of [β] is just .34; only five subjects (11%) accounted for more than two-thirds of the supply line. » P. 20 : « Inspection of the results shows that most subjects failed to account adequately for the supply line. » L'oubli n'est chez lui que le cas limite d'un paramètre, et il le dit comme tel, p. 17 : « If β = 1, the subjects fully recognize the supply line and do not double order. If β = 0, orders placed are forgotten until they arrive. » Le résumé de la carte ne commet pas le contresens : il énonce une conditionnelle (« qui règle un stock sans compter les commandes passées et non reçues commande en excès »), qui est la forme même de la phrase citée (« a manager who ignores the supply line »), et non un constat général sur les décideurs. La définition retenue par le résumé (« les commandes passées et non reçues ») est celle du texte, p. 16 : la supply line = « the sum of orders in the mail delays, the backlog of the subject's supplier (if any), and the beer in the shipping delays »."
+    },
+    {
+      "id": "SUP-80322650ccfe9b44",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE 2/3, le point « loi ou cas ? » — Le texte porte explicitement un cas où le phénomène ne se produit pas, et la carte le porte aussi, ce qui l'empêche d'énoncer une loi. Lu sur l'image de la p. 22 : « Because the Suds factory accounted for the supply line orders peak and fall *before* the backlog reaches its maximum since the subject realizes that sufficient orders to correct the problem are already in the pipeline. The Suds factory actually stabilizes the system: the amplification factor is 85%, meaning the parameters which characterize the factory attenuate demand shocks rather than exacerbating them. » La seconde phrase du résumé (« Une usine qui les comptait a atténué le choc au lieu de l'amplifier ») est la restitution exacte de ce passage, y compris l'opposition atténuer/amplifier. Contre-épreuve p. 21, cas Grizzly, β = 0 : « By ignoring the supply line the factory's ordering policy is highly destabilizing », amplification de 290 %. La carte tient donc les deux cas, comme le texte."
+    },
+    {
+      "id": "SUP-4881606b2e4d059c",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "PROSE 3/3 — L'accroche (« Pourquoi commander encore, quand ce qu'il faut est déjà en route ? ») est portée deux fois : par l'exemple du restaurant, p. 9 (« Using this rule one would order another meal each time the waiter passed by… Soon your table would be piled high with redundant dinners ») et par la p. 22 déjà citée (« sufficient orders to correct the problem are already in the pipeline »). Ni l'accroche ni le résumé n'ajoutent d'adjectif de généralité, de portée ou d'intention que les sources ne portent pas. Rien à reprendre."
+    },
+    {
+      "id": "SUP-3b70167b5035110f",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "SOURCES 1/5 — Document de travail : hdl:1721.1/2184 mène bien à l'item DSpace annoncé (Sloan Working Papers, « Series/Report no. Working paper (Sloan School of Management) ; 1933-87 », « Description: \"D-3919.\" », date 1987). Auteur, cote WP-1933-87, cote D-3919, mois, éditeur et extension (42 p.) vérifiés sur les images. Le locator principal, p. 23, est exact."
+    },
+    {
+      "id": "SUP-31212fe709bb35d2",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "SOURCES 2/5 — Extrait EOLSS : http://www.eolss.net/sample-chapters/c15/e6-63-01-02.pdf répond 200 (redirigé en https), 9 pages, sans folio, métadonnées PDF « John D. Sterman / SYSTEM DYNAMICS ». La dernière page de texte porte « TO ACCESS ALL THE 30 PAGES OF THIS CHAPTER, Visit: … », ce qui valide « extrait de 9 p. sur 30 ». La notice éditeur https://www.eolss.net/ebooklib/bookinfo/system-dynamics.aspx confirme « Edited by Yaman Barlas », chapitre 3 « Supply Chain Dynamics, the \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making — John D. Sterman, Pages: 30, Volume: 1 », et « Volume 1 — Pages: 400 — eISBN: 978-1-84826-137-2 » : l'eISBN affiché par la fiche est bien celui du volume 1, celui où se trouve le chapitre. La mention de permission en tête de l'extrait est celle que la fiche invoque, et elle nomme deux ayants droit : « Reproduced by permission from: [Sterman J., \"Modeling Managerial Behavior…\", Management Science, volume 35, number 3, March 1989, 321-339] Copyright 1989, The Institute of Management Sciences… [Sterman J., Business Dynamics, McGraw-Hill, New York, 2000.] Copyright 2000, McGraw-Hill Companies, USA. » L'autorisation est donc constatée sur la page qui héberge, et non déduite."
+    },
+    {
+      "id": "SUP-9d9aab0cf005b750",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "SOURCES 3/5 — DOI 10.1287/mnsc.35.3.321 interrogé sur api.crossref.org : « Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment », auteur unique John D. Sterman (Sloan School of Management, MIT), Management Science, vol. 35, n° 3, p. 321-339, published-print 1989-03, éditeur INFORMS. Les sept éléments affichés par la fiche correspondent exactement. La fiche déclare « metadata-only » et « non ouverte » : c'est aussi ma situation, je n'ai pas ouvert le texte intégral chez INFORMS."
+    },
+    {
+      "id": "SUP-b334244932ff3a59",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "SOURCES 4/5 — Business Dynamics : https://openlibrary.org/books/OL7303312M répond et donne, pour l'ISBN 007238915X exactement, « Business Dynamics — Systems Thinking and Modeling for a Complex World with CD-ROM », McGraw-Hill/Irwin, 2000, 1008 p. Le titre, l'année, l'éditeur, l'ISBN et la pagination affichés par la fiche s'y retrouvent tous. La fiche déclare l'ouvrage non ouvert, et je ne l'ai pas ouvert non plus."
+    },
+    {
+      "id": "SUP-00fefb5c567ef848",
+      "origin": "validated",
+      "path": "$.review.notes[11]",
+      "access": "n/a",
+      "text": "SOURCES 5/5 — Réception francophone : l'API HAL (api.archives-ouvertes.fr, requête halId_s:hal-01508406) rend « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète », Vincent Giard et Mustapha Sali, Revue française de gestion industrielle, 2012, 31 (2), uri https://hal.science/hal-01508406v1. Les six éléments affichés par la fiche correspondent exactement. Le résumé HAL confirme l'objet annoncé (revue de littérature sur l'effet coup de fouet et le partage d'information dans la chaîne logistique)."
+    },
+    {
+      "id": "SUP-ff85a5cd229a0465",
+      "origin": "validated",
+      "path": "$.review.notes[12]",
+      "access": "n/a",
+      "text": "NON ATTEINT, avec ce que j'ai demandé et comment cela a échoué. (a) Texte intégral de Giard et Sali : quatre tentatives sur https://hal.science/hal-01508406/document, /hal-01508406v1/document, /hal-01508406/file/publi1720.pdf et /hal-01508406v1/file/publi1720.pdf — les quatre renvoient 200 mais servent la page de défi anti-robot Anubis (« Making sure you're not a bot! ») au lieu du PDF ; miroirs essayés sans succès (lamsade.dauphine.fr/~giard/publi1720.pdf : 404 ; basepub.dauphine.psl.eu : CONNECT refusé par le proxy). C'est un mur d'accès, pas un silence : je n'ai donc pas pu contrôler sur pièce la part de la note de traduction qui affirme qu'aucun usage francophone n'atteste « ligne d'approvisionnement » pour supply line. Cette affirmation est une note de traduction, elle ne conditionne ni le verbatim ni la déclaration de traduction, qui sont l'un et l'autre en règle. (b) Année de l'extrait EOLSS : la fiche écrit 2005 ; ni la page du volume, ni la fiche de chapitre (eolss.net/ebooklib/sc_cart.aspx?File=E6-63-01-02), ni le PDF d'extrait n'affichent d'année de publication — EOLSS date ses volumes par eISBN et non par millésime. Je n'ai donc ni confirmé ni infirmé ce 2005 : je ne sais rien, et un échec de résolution n'est pas une réfutation. (c) Article de Management Science 1989 en texte intégral : non ouvert (péage INFORMS), comme la fiche l'annonce. (d) Les outils mcp__documentary__* n'étaient pas exposés à cette session ; les résolutions ont été refaites à la main sur api.crossref.org, openlibrary.org, api.archives-ouvertes.fr et lccn.loc.gov. OpenAlex et Semantic Scholar n'ont pas été interrogés."
+    },
+    {
+      "id": "SUP-72578f3bfef64df5",
+      "origin": "validated",
+      "path": "$.review.notes[13]",
+      "access": "n/a",
+      "text": "Locator secondaire de la source primaire : la fiche écrit « expérience p. 13-23 ». Sur l'image de la p. 10, le titre de section « A Stock Management Experiment » est imprimé au bas de la page et la section court jusqu'au titre « Discussion and Conclusions », p. 23 ; la partie expérimentale s'étend donc p. 10-23, et les p. 10-12 (description du plateau, coûts, « Experimental Protocol ») tombent hors de la fourchette affichée. Ce n'est pas un défaut de résolution : tout ce que la carte affirme (échantillon p. 13, résultats p. 14, estimation p. 17-20, cas Grizzly p. 21, cas Suds p. 22, citation p. 23) tombe à l'intérieur de p. 13-23. Si l'on veut la borne exacte de la section, écrire « expérience p. 10-23 »."
+    },
+    {
+      "id": "SUP-e43e8ab25b2b5d7b",
+      "origin": "validated",
+      "path": "$.review.notes[14]",
+      "access": "n/a",
+      "text": "Lieu d'édition de Business Dynamics : la fiche écrit « New York ». La notice MARC de la Bibliothèque du Congrès (https://lccn.loc.gov/99056030/marcxml, LCCN 99056030) donne « 260 $a Boston : $b Irwin/McGraw-Hill, $c c2000 », « 300 $a xxvi, 982 p. » pour l'ISBN 0072311355 ; OpenLibrary donne également publish_place « Boston » au niveau œuvre. Le « New York » de la fiche n'est pas inventé : il reprend mot pour mot la mention de permission de l'extrait EOLSS qu'elle cite (« Business Dynamics, McGraw-Hill, New York, 2000 »), et correspond à l'adresse sociale de McGraw-Hill. L'éditeur, l'année, l'ISBN et la pagination annoncés résolvent tous ; seule la ville varie selon la notice. Homogénéisation possible : « Boston, Irwin/McGraw-Hill, 2000 », ou conserver New York en signalant que c'est la forme donnée par la mention de permission."
+    },
+    {
+      "id": "SUP-b435c2458ecd8f29",
+      "origin": "validated",
+      "path": "$.review.notes[15]",
+      "access": "n/a",
+      "text": "Piège de couche texte sur ce PDF, pour qui recontrôlerait par extraction plutôt que par image : l'OCR/couche texte rend les lettres grecques par des caractères parasites (β devient « [3 », « 1 » ou disparaît ; α_SL devient « aSL » ou « -xs »), ce qui rend illisibles les valeurs de paramètres p. 17-22 si l'on ne va pas voir la page. Les phrases en prose, elles, sortent proprement et j'ai vérifié les trois passages porteurs (p. 10, p. 22, p. 23) sur l'image."
+    },
+    {
+      "id": "SUP-1b45a307a44df0ca",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/ligne-d-approvisionnement-ignoree/lecture.json"
+    },
+    {
+      "id": "SUP-2afa5fec58c9742a",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "LE VERBATIM SE LOCALISE SUR LE DOCUMENT DE TRAVAIL DE 1987, ET SUR LUI SEUL. Il a été relu sur l'image du folio 23, qui porte « D-3919 » en haut à gauche et « 23 » en haut à droite, à la fin du paragraphe qui précède « Discussion and Conclusions ». Il n'est ni dans l'extrait EOLSS, qui ne porte aucun folio, ni dans l'article de Management Science de 1989, qui est fermé et n'a pas été ouvert. Les deux états du texte diffèrent mot pour mot sur le même paragraphe : le document de travail écrit p. 8 « the larger the quantity on order must be » là où l'extrait EOLSS écrit « the larger the supply line must be ». Aucun verbatim ne se déplace de l'un à l'autre."
+    },
+    {
+      "id": "SUP-ccd7d3918325aed1",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "L'EXTRAIT EOLSS EST UN COMPOSITE AUTORISÉ DE DEUX SOURCES, l'article de 1989 et Business Dynamics (2000), et rien dans ses neuf pages ne dit quelle phrase vient de laquelle. Le chapitre complet, trente pages, est payant et n'a pas été acheté. C'est une raison de plus de ne rien y localiser."
+    },
+    {
+      "id": "SUP-38e2851d11069ff8",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "LE RENDU FRANÇAIS DE « SUPPLY LINE » EST DE NOTRE FAIT. La couche francophone a été cherchée : HAL sur « ligne d'approvisionnement » avec Sterman rend zéro notice, « jeu de la bière » avec Sterman zéro, theses.fr zéro. Giard et Sali (2012), lue en entier, fixe le vocabulaire français du phénomène, effet coup de fouet et jeu de la bière, et ne cite Sterman à aucun endroit de ses quelque cinquante références. Aucun usage francophone attesté n'appuie donc « ligne d'approvisionnement » ; l'anglais fait seul foi."
+    },
+    {
+      "id": "SUP-272534ea5ff5d074",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "CE QUE STERMAN NE DIT PAS, ET QU'IL ÉCRIT LUI-MÊME CONTRE. Il ne dit pas que les gestionnaires oublient leurs commandes : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation » (p. 25). Il ne tient pas non plus l'hypothèse pour vérifiée hors du laboratoire : « Verification of the supply line hypothesis requires further empirical work » (p. 25). Ce qui est établi l'est sur 44 sujets dans un jeu de plateau, plus une concordance de forme avec la production industrielle américaine de 1947 à 1987."
+    },
+    {
+      "id": "SUP-473c8a19437d2ce4",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "CE N'EST PAS UNE FATALITÉ, et la seconde phrase du résumé porte cela. L'usine Suds, dont le paramètre estimé vaut 1,05, c'est-à-dire qui compte sa ligne d'approvisionnement en entier, reçoit un choc plus fort que l'usine Grizzly et le renvoie plus faible : « the amplification factor is 85%, meaning the parameters which characterize the factory attenuate demand shocks rather than exacerbating them » (p. 22). La moyenne des sujets est de 0,34, et l'optimum simulé de 1 (p. 20 et 21)."
+    },
+    {
+      "id": "SUP-a0d9c873a927abee",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "ATTRIBUTION DU JEU LUI-MÊME : plusieurs pages web font de Sterman le créateur du jeu de la bière. Le texte dit le contraire, p. 13 : « developed at MIT to introduce students of management to the concepts of economic dynamics and computer simulation. In use for nearly three decades ». Qui l'a créé n'a pas été établi ici et la carte n'en dit rien."
+    },
+    {
+      "id": "SUP-3e9cda4e833a5b72",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "PIÈCE VOISINE À NE PAS CONFONDRE : Sterman, Misperceptions of Feedback in Dynamic Decisionmaking, document de travail Sloan 1899-87, publié en 1989 dans Organizational Behavior and Human Decision Processes. Deux articles de Sterman de 1989 portent presque le même titre ; celui du jeu de la bière est celui de Management Science."
+    },
+    {
+      "id": "SUP-c9bc3a6da0c1bc72",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "LICENCE : le document de travail est servi sans authentification par le dépôt institutionnel du MIT, collection « Sloan Working Papers », mais sa notice ne porte aucun champ de droits. Accès public constaté, licence explicite non constatée. L'adresse eolss.net est autorisée par la mention de permission imprimée en première page de l'extrait."
+    },
+    {
+      "id": "SUP-2eef3b96b775cd86",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "CORRECTION DE LIBELLÉ (5 septembre 2026) : le libellé de la source Business Dynamics (Sterman, 2000) donnait « New York » comme lieu d'édition, repris de la mention de permission imprimée sur l'extrait EOLSS. Le contrôle aveugle a relevé que le MARC de la Bibliothèque du Congrès (LCCN 99056030) porte « 260 $a Boston : $b Irwin/McGraw-Hill », confirmé par OpenLibrary au niveau de l'œuvre. Le libellé porte désormais « Boston »."
+    },
+    {
+      "id": "SUP-22da2bec6313f78f",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "ligne-d-approvisionnement-ignoree"
+    },
+    {
+      "id": "SUP-ef64a73bc21a362a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "John D. Sterman"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-0dff2bd362a88987",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Signature unique. La couverture du document de travail, relue sur image, porte « D-3919 / MODELING MANAGERIAL BEHAVIOR: MISPERCEPTIONS OF FEEDBACK IN A DYNAMIC DECISIONMAKING EXPERIMENT / by / John D. Sterman / WP-1933-87 », et Crossref rend le même auteur seul, affilié à la Sloan School of Management, pour l'article de Management Science de mars 1989 qui en est la version publiée. Ce qui revient à Sterman est l'expérience, la règle de décision estimée sur les joueurs et les mauvaises perceptions de la rétroaction qu'il en tire ; le jeu de la bière lui-même n'est pas de lui, et il ne le revendique pas : il écrit p. 13 que ce jeu est une simulation « developed at MIT to introduce students of management to the concepts of economic dynamics and computer simulation », et qu'il est « In use for nearly three decades », donc en usage bien avant ce travail."
+    },
+    {
+      "id": "SUP-36c19ee7ddf6acf1",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Même une prévision parfaite n'empêchera pas un gestionnaire qui ignore la ligne d'approvisionnement de commander en excès."
+    },
+    {
+      "id": "SUP-e2130c7cce956049",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "John D. Sterman, Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment, MIT Sloan School of Management, document de travail 1933-87, septembre 1987."
+    },
+    {
+      "id": "SUP-86aea3e50748e259",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 23"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-f1cae2cf4c7261bf",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Even a perfect forecast will not prevent a manager who ignores the supply line from overordering."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-ca8d246408e17a26",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent corpus-primary-reader, chaîne Curiosity, 5 septembre 2026). Aucune coupe : la phrase anglaise est traduite en entier, et le français tient en 122 caractères. Aucune traduction française publiée de ce document de travail, ni de l'article de Management Science de 1989 dont il est la version préalable, n'a été identifiée. Trois choix de mot se déclarent. « Supply line » est rendu littéralement par « ligne d'approvisionnement » : Sterman la définit p. 4 comme « the supply line SL of units which have been ordered but not yet received », et aucune traduction française établie de ce terme n'a été trouvée dans la littérature francophone ouverte consultée, qui parle d'effet coup de fouet et de jeu de la bière sans citer ce texte. « Manager » est rendu par « gestionnaire », qui est le rôle tenu dans l'expérience et le mot que Sterman emploie tout au long pour celui qui tient le stock. « Overordering » est rendu par « commander en excès » plutôt que par « surcommander », qui n'est pas usuel en français de gestion. L'anglais est dans original_text et fait seul foi."
+    },
+    {
+      "id": "SUP-c723ec0f5a83ada0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "partial",
+      "text": "Sterman, J. D. (2005). « Supply Chain Dynamics, the \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making ». Dans Y. Barlas (dir.), System Dynamics, vol. 1, Encyclopedia of Life Support Systems, Paris, UNESCO Publishing et EOLSS Publishers. EXTRAIT DE DÉMONSTRATION OUVERT ET LU EN ENTIER : PDF de 9 pages, 350 424 octets, md5 dcf09f90b31710bd28572d972003ee03, servi par eolss.net en HTTP 200. C'EST L'EXTRAIT, PAS LE CHAPITRE : la page 8 du fichier porte un pavé vert imprimé « TO ACCESS ALL THE 30 PAGES OF THIS CHAPTER, Visit: http://www.eolss.net/Eolss-sampleAllChapter.aspx », et l'extrait s'interrompt là, au milieu de la section 2. Il contient le titre, le sommaire des neuf sections, le résumé, la section 1 (Introduction), la section 2 (The Stock Management Problem) jusqu'à la formalisation de l'heuristique, la figure 1, le tableau 1, puis la bibliographie et la notice biographique. Les sections 3 à 9, c'est-à-dire le comportement de la structure, l'expérience du jeu de la bière, les résultats, l'estimation, le test et les mauvaises perceptions de la rétroaction, N'Y SONT PAS. MENTION DE PERMISSION RELUE SUR L'IMAGE DE LA PREMIÈRE PAGE, mot pour mot et en entier, y compris sa seconde ligne que le brief ne mentionnait pas : « Reproduced by permission from: [Sterman J., \"Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment\", Management Science, volume 35, number 3, March 1989, 321-339] Copyright 1989, The Institute of Management Sciences, currently the Institute for Operations Research and the Management Sciences, 901 Elkridge Landing Road, Suite 400, Linthicum, MD 21090 USA. [Sterman J., Business Dynamics, McGraw-Hill, New York, 2000.] Copyright 2000, McGraw-Hill Companies, USA. » Le chapitre est donc un composite autorisé de DEUX sources et non d'une seule, et rien dans l'extrait ne dit quelle phrase vient de laquelle."
+    },
+    {
+      "id": "SUP-1fcc66dc898ae31f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "partial",
+      "text": "Volume 1 du recueil System Dynamics, éd. Yaman Barlas : eISBN 978-1-84826-137-2, ISBN 978-1-84826-587-5, 400 p. La fiche eolss.net/ebooklib/bookinfo/system-dynamics.aspx, ouverte et lue, range le chapitre en troisième position du volume 1, « Supply Chain Dynamics, the \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making - John D. Sterman, Price : US$19.00, Pages : 30, Volume : 1 ». Aucun DOI. Le chapitre complet est payant."
+    },
+    {
+      "id": "SUP-b91d7c00eadb74e4",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "partial",
+      "text": "http://www.eolss.net/sample-chapters/c15/e6-63-01-02.pdf"
+    },
+    {
+      "id": "SUP-68217b545f96a020",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Sterman, J. D. (septembre 1987). Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decisionmaking Experiment. Cambridge, MA : Sloan School of Management, Massachusetts Institute of Technology, document de travail 1933-87, référence interne D-3919, 42 p. OUVERT ET LU EN ENTIER, ET C'EST LA PIÈCE QUI PORTE LA CITATION : PDF de 45 feuillets, 3 040 773 octets, md5 f3654ebb49aaaa965b0a30522c80eba7, servi sans authentification par le dépôt institutionnel du MIT, collection « Sloan Working Papers » (handle 1721.1/1792), notice 1721.1/2184. C'est la version préalable de l'article de Management Science de mars 1989, et non cet article : la comparaison mot à mot avec l'extrait EOLSS montre que le texte a été réécrit entre les deux états (voir reserves). Le document porte une pagination imprimée propre, folios 1 à 42, lisibles en tête de page à droite ou à gauche selon la page. Notice DSpace relevée en direct : dc.date.issued 1987, dc.description « D-3919 », « Bibliography: p. 30-33 », dc.format.extent « 42 p. », dc.identifier.other « #1933-87 », dc.relation.ispartofseries « Working paper (Sloan School of Management) ; 1933-87 », dc.type « Working Paper ». Aucun champ dc.rights, aucun paquet LICENSE : accès public constaté, licence non constatée, le déposant étant l'institution qui publie la série."
+    },
+    {
+      "id": "SUP-7314b2b671b3e9b5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "hdl:1721.1/2184"
+    },
+    {
+      "id": "SUP-206ec0e076a266b0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://dspace.mit.edu/handle/1721.1/2184"
+    },
+    {
+      "id": "SUP-a6b5a937d1d49062",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Sterman, J. D. (mars 1989). « Modeling Managerial Behavior: Misperceptions of Feedback in a Dynamic Decision Making Experiment ». Management Science, 35(3), 321-339. NON OUVERT. C'est l'article publié, celui que l'extrait EOLSS déclare reproduire, et il est fermé : Unpaywall interrogé cette nuit rend is_oa false, oa_status « closed », oa_locations vide. La liste de publications tenue par Sterman lui-même sur le site du MIT Sloan ne propose pour cet article qu'un lien « Access paper through MIT Libraries » pointant sur www-jstor-org.libproxy.mit.edu, c'est-à-dire un accès authentifié. Aucun verbatim de ce dossier ne se localise sur cet article, et aucune de ses pages n'a été vue. Il figure ici comme repère d'édition et rien de plus. Notice Crossref concordante et sans écart : titre, Management Science, vol. 35, n° 3, p. 321-339, published-print 1989-03, éditeur INFORMS, ISSN 0025-1909 et 1526-5501, auteur unique John D. Sterman, Sloan School of Management."
+    },
+    {
+      "id": "SUP-03a86d10fce4bf8a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1287/mnsc.35.3.321"
+    },
+    {
+      "id": "SUP-67255aa139b32426",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1287/mnsc.35.3.321"
+    },
+    {
+      "id": "SUP-ea77b6e46aaf870d",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "partial",
+      "text": "Sterman, J. D. (mai 1987). Misperceptions of Feedback in Dynamic Decisionmaking. Cambridge, MA : Sloan School of Management, MIT, document de travail 1899-87, référence interne D-3876-1, 44 feuillets. OUVERT, LU PARTIELLEMENT. Pièce voisine et distincte, version préalable de Sterman, « Misperceptions of Feedback in Dynamic Decision Making », Organizational Behavior and Human Decision Processes, 43(3), juin 1989, p. 301-335 (notice Crossref vérifiée : DOI 10.1016/0749-5978(89)90041-1, auteur unique). Servie ouvertement par le même dépôt. Elle est signalée ici pour empêcher une confusion qui se présentera : deux articles de Sterman de 1989 portent presque le même titre, et celui du jeu de la bière est celui de Management Science, pas celui d'OBHDP. Seules la couverture, la page de titre et le résumé ont été lus."
+    },
+    {
+      "id": "SUP-4784c8a355796c9d",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "partial",
+      "text": "hdl:1721.1/2173"
+    },
+    {
+      "id": "SUP-27844aab25f2b1a2",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "partial",
+      "text": "https://dspace.mit.edu/bitstream/handle/1721.1/2173/SWP-1899-18213553.pdf?sequence=1"
+    },
+    {
+      "id": "SUP-c1179dcd3081881a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "full-text",
+      "text": "Giard, V. et Sali, M. (2012). « L'effet coup de fouet dans la chaîne logistique : une littérature contingente et incomplète ». Revue française de gestion industrielle, 31(2). OUVERT ET LU (20 pages, dépôt HAL hal-01508406, fichier publi1720.pdf, 1 061 148 octets, libre accès). COUCHE FRANCOPHONE, ET CE QU'ELLE ÉTABLIT ICI EST AUTANT UN SILENCE QU'UN APPORT. Apport : elle fixe la terminologie française du phénomène, « L'effet coup de fouet (ECF) ou BullWhip Effect (BWE) correspond à l'amplification croissante de la variabilité de la demande en remontant le long de la chaîne logistique », et elle emploie « le jeu de la bière » comme nom français du dispositif expérimental. Silence : sur une cinquantaine d'articles dépouillés, Sterman n'est cité nulle part. La généalogie qu'elle donne au phénomène remonte à Forrester 1958 puis à Lee, Padmanabhan et Whang 1997. La réception francophone de l'effet coup de fouet ne passe donc pas par le texte instruit ici."
+    },
+    {
+      "id": "SUP-cc7546aacf9641a5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].doi_isbn",
+      "access": "full-text",
+      "text": "HAL hal-01508406"
+    },
+    {
+      "id": "SUP-56f25f7ab9529cb1",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "full-text",
+      "text": "https://hal.science/hal-01508406v1"
+    },
+    {
+      "id": "SUP-4b8d6bf42e9af98c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].citation",
+      "access": "metadata-only",
+      "text": "Sterman, J. D. (2000). Business Dynamics: Systems Thinking and Modeling for a Complex World. New York : Irwin/McGraw-Hill. NON OUVERT. Second ayant droit nommé par la mention de permission de l'extrait EOLSS, et donc seconde source possible de ses phrases. Le brief de session porte que l'exemplaire d'Internet Archive est access-restricted-item true et ne s'emprunte pas ; aucune tentative d'emprunt n'a été faite et aucune page n'a été vue. Notice Open Library relevée en direct (édition OL7303312M) : Business Dynamics, McGraw-Hill/Irwin, 23 février 2000, 1 008 p., ISBN 0-07-238915-X et 978-0-07-238915-9. Conséquence pour ce dossier : aucune phrase de l'extrait EOLSS ne peut être attribuée avec certitude à l'article de 1989 plutôt qu'à ce livre, ce qui est une raison de plus de ne pas y localiser de verbatim."
+    },
+    {
+      "id": "SUP-4a958f843b4f0525",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].doi_isbn",
+      "access": "metadata-only",
+      "text": "ISBN 0-07-238915-X (9780072389159)"
+    },
+    {
+      "id": "SUP-8b4291630f107a92",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].url",
+      "access": "metadata-only",
+      "text": "https://openlibrary.org/books/OL7303312M"
+    },
+    {
+      "id": "SUP-f9dd65492a5fb38b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[6].citation",
+      "access": "metadata-only",
+      "text": "Boujguenna, W. et Thiel, D. (2009). « La dynamique des systèmes comme outil d'aide à la décision d'approvisionnement des points de vente automobile ». Revue française de gestion industrielle, 28(4). NON OUVERT. Notice HAL hal-02158670 relevée en direct, langue française, sans texte intégral déposé : l'adresse hal.science/hal-02158670/document renvoie un HTTP 404. Signalée parce que c'est la seule pièce de dynamique des systèmes en français, sur un problème d'approvisionnement, rencontrée par les requêtes de cette session ; rien de son contenu n'est affirmé ici."
+    },
+    {
+      "id": "SUP-5c6855f68ad2f938",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[6].doi_isbn",
+      "access": "metadata-only",
+      "text": "HAL hal-02158670"
+    },
+    {
+      "id": "SUP-9a0b20991298de2e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[6].url",
+      "access": "metadata-only",
+      "text": "https://hal.science/hal-02158670v1"
+    },
+    {
+      "id": "SUP-771365f96132d2be",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "LE PROBLÈME, POSÉ EN GÉNÉRAL. Sterman appelle stock management la tâche qui consiste à tenir une grandeur près d'une cible qu'on ne peut pas atteindre directement. Extrait EOLSS, p. 3 du fichier, section 2 : « One of the most common dynamic decision-making tasks is the regulation of a stock or system state. In such a task, the manager seeks to maintain a quantity at a particular target level, or at least within an acceptable range. Stocks cannot be controlled directly but rather must be influenced by changes in their inflow and outflow rates. » Et aussitôt la cause de tout ce qui suit : « Often there are lags between the initiation of a control action and its effect, and/or lags between a change in the stock and the perception of that change by the decision maker. » LA LIGNE D'APPROVISIONNEMENT. C'est le second stock, celui qu'on ne voit pas. Document de travail, p. 4 : « The acquisition rate will depend on the supply line SL of units which have been ordered but not yet received, and the average acquisition lag. » Le décideur doit donc, selon Sterman, faire trois choses et pas deux (extrait EOLSS, p. 4 du fichier) : « (1) replace expected losses from the stock; (2) reduce the discrepancy between the desired and actual stock; and (3) maintain an adequate supply line of unfilled orders. » LES DEUX EXEMPLES QUI FONT COMPRENDRE POURQUOI LA TROISIÈME EST LA DIFFICILE, ET ILS SONT DANS LE DOCUMENT DE TRAVAIL, PAS DANS L'EXTRAIT. Le clou, p. 6, où la règle « teste, frappe, teste » suffit parce qu'il n'y a ni perte ni délai. Puis le restaurant, p. 6 et 7 : appliquée au dîner, la même règle ferait commander un repas chaque fois que le serveur passe, puisque l'écart entre l'estomac désiré et l'estomac réel subsiste tant que le premier plat n'est pas servi, et « Soon your table would be piled high with redundant dinners. » D'où l'énoncé général, p. 7 : « A stock management heuristic which fails to measure and respond to the supply line of unfilled orders is predisposed to instability. » Sterman refuse d'en faire une loi et pose la question en empirique, même page : « Whether managers account for the supply line is an empirical question in any particular situation. » Il ajoute l'exemple de la plaque électrique, où la chaleur déjà dans les résistances continue de cuire après l'extinction. CE QUE L'EXPÉRIENCE ÉTABLIT. Onze équipes de quatre, détaillant, grossiste, distributeur et usine, jouent le jeu de la bière ; 44 sujets. Trois régularités, document de travail p. 15. Oscillation : « The trials are all characterized by instability and oscillation », période moyenne 21 semaines. Amplification : « The amplitude of the excursion in orders increases steadily as one moves from customer to retailer to factory », la variance des commandes de l'usine valant en moyenne 5,5 fois celle du détaillant, et « Customer orders increase from 4 to 8 cases per week; by the time the disturbance has propagated to the factory the order rate averages a peak of 32 cases, an amplification factor of 700%. » Décalage de phase : le pic remonte de la semaine 16 chez le détaillant à la semaine 20 à l'usine. Et le fait qui rend le tout contre-intuitif, même page : « The pervasiveness and qualitative similarity of the oscillations is particularly noteworthy since the customer order rate, the only external disturbance, does not oscillate and is in fact virtually constant. The oscillation is endogenously produced by the interaction of the subjects' decisions with the feedback structure of the system. » LE COÛT : « The average team cost is ten times greater than the benchmark. » (p. 14). LA CAUSE, MESURÉE. Le paramètre bêta est la fraction de la ligne d'approvisionnement dont le sujet tient compte ; bêta égal à 1 signifie qu'il la compte en entier. La simulation donne l'optimum à bêta égal 1 (p. 20). Ce que les sujets font, p. 20 et 21 : « Inspection of the results shows that most subjects failed to account adequately for the supply line », puis « The average value of bêta is just .34; only five subjects (11%) accounted for more than two-thirds of the supply line. The result is overordering and instability. » Le mécanisme est déroulé sur un cas, l'usine Grizzly, p. 21 : bêta nul, le sujet commande les deux tiers de l'écart pendant trois semaines avant que rien n'arrive, coupe ses commandes quand le stock remonte, « But the orders already in the pipeline continue to arrive, ultimately swelling inventory above desired levels by nearly a factor of three », et sa politique amplifie de 290 pour cent la commande reçue. LE CONTRE-EXEMPLE, QUI INTERDIT DE LIRE CELA COMME UNE FATALITÉ, p. 22 : l'usine Suds, dont le bêta vaut 1,05, reçoit un choc plus fort que Grizzly et le renvoie plus faible, « the amplification factor is 85%, meaning the parameters which characterize the factory attenuate demand shocks rather than exacerbating them ». CE QUE LES SUJETS CROIENT, p. 22 et 23. Interrogés à la fin sur la demande du client, « Invariably the majority of subjects judge that customer demand was oscillatory », alors qu'elle était pratiquement constante ; « Few ever suggest that their own decisions were the cause of the behavior they experienced. » Sterman nomme cela une conception « open-loop » de l'origine des dynamiques, et en tire la conséquence pratique : cette attribution « draws normative efforts away from the high leverage point in the system (the stock management policy) and towards efforts to anticipate and react to external shocks », puis la phrase que la carte cite. CE QUE STERMAN NE CONCLUT PAS, ET IL EST EXPLICITE. p. 25 : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation », la ligne d'approvisionnement agrégée étant répartie entre concurrents et mal connue de chacun. Et, même page : « Verification of the supply line hypothesis requires further empirical work focussed not only on the decision processes of individual firms but also on the availability, timeliness, salience, and perceived accuracy of supply line information. » Enfin, p. 26 : « The same heuristic may produce stable behavior in one setting and oscillation in another solely as a function of the feedback structure in which that [rule is embedded] », ce qui déplace la cause de l'individu vers la structure. CORROBORATION SUR DONNÉES RÉELLES, p. 23 et 24 et figure 6 : la production américaine de biens de consommation, de biens intermédiaires et de matériaux de 1947 à 1987, détendancée, montre les trois mêmes traits, « cycle amplitude and coherency grow as one moves from retail sales to materials, and the expected phase lags are apparent as well »."
+    },
+    {
+      "id": "SUP-5853a54fceb1d599",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "L'EXTRAIT DE NEUF PAGES NE SUFFIT PAS À ÉTABLIR CE CONCEPT, ET C'EST LE PREMIER RÉSULTAT DE CETTE LECTURE. Le PDF servi par eolss.net est bien de neuf pages et bien de Sterman, mais c'est l'extrait de démonstration d'un chapitre de trente pages, et il s'arrête au milieu de la section 2 sur un pavé imprimé « TO ACCESS ALL THE 30 PAGES OF THIS CHAPTER ». Les sections 3 à 9, qui contiennent le comportement de la structure, l'expérience, les résultats, l'estimation économétrique, le test et les mauvaises perceptions de la rétroaction, n'y sont pas. Ce que l'extrait établit vraiment, en toutes lettres et argumenté : la structure générique stock plus ligne d'approvisionnement, les trois termes de l'heuristique d'ancrage et d'ajustement, et l'énoncé théorique de la p. 8 du fichier, « Without such a feedback orders would be placed even after the supply line contained sufficient orders to correct stock shortfalls, producing overshoot and instability. » Ce que l'extrait ne fait qu'ANNONCER, dans son résumé et son introduction, sans en montrer une seule donnée : que les sujets n'ont pas tenu compte des actions déjà engagées, qu'ils étaient insensibles aux rétroactions de leurs décisions, et qu'ils ont attribué à l'extérieur une dynamique qu'ils produisaient. Le mot « amplification » n'apparaît nulle part dans les neuf pages, vérifié par recherche sur la couche texte des neuf pages : l'extrait n'établit rien du tout sur l'amplification le long de la chaîne, qui était pourtant l'un des quatre points demandés."
+    },
+    {
+      "id": "SUP-d68eb04d11926975",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "CE QUE J'AI FAIT PLUTÔT QUE DE M'ARRÊTER LÀ, ET COMMENT. Avant d'écrire que la question restait ouverte, j'ai cherché le texte entier. L'article de Management Science de 1989 est bien fermé, je le confirme par Unpaywall (is_oa false, oa_status closed) et par la liste de publications de Sterman lui-même, qui n'en propose qu'un lien libproxy vers JSTOR. Mais cette même liste, ouverte sur mitmgmtfaculty.mit.edu/jsterman/online-publications/, m'a conduit au dépôt institutionnel du MIT, où une recherche par l'API DSpace a rendu la notice 1721.1/2184 : le document de travail Sloan 1933-87, septembre 1987, 42 pages, qui est la version préalable du même article, servi publiquement et sans authentification. Je l'ai téléchargé en entier (md5 f3654ebb49aaaa965b0a30522c80eba7, empreinte confirmée par la notice DSpace) et lu. Toute la matière que l'extrait annonçait sans la montrer y est. La question a donc été répondue, pas rétrécie ; c'est sur cette pièce que le concept est établi et que le verbatim est localisé."
+    },
+    {
+      "id": "SUP-80df8df2434be8a0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "LA CITATION N'EST PAS DANS L'EXTRAIT EOLSS, ET ELLE NE DOIT PAS Y ÊTRE LOCALISÉE. Elle se lit sur le document de travail de 1987, folio 23. La règle que ce dépôt a payée le 22 août sur la réédition Forrester s'applique ici doublement : d'une part l'article de 1989 n'a pas été ouvert, d'autre part l'extrait de 2005 n'est PAS le texte de 1987, et je l'ai vérifié en comparant les passages communs. Deux écarts relevés mot à mot sur le même paragraphe. Document de travail, p. 8 : « The longer the expected delay in acquiring goods or the larger the throughput desired, the larger the quantity on order must be. » Extrait EOLSS, p. 8 du fichier : « The longer the expected delay in acquiring goods or the larger the throughput desired, the larger the supply line must be. » Et, quelques lignes plus loin, le document de travail écrit « The supply line adjustment thus avoids overordering (as in the restaurant example) and also compensates for changes in the acquisition lag », là où l'extrait EOLSS écrit « Without such a feedback orders would be placed even after the supply line contained sufficient orders to correct stock shortfalls, producing overshoot and instability. The supply line adjustment also compensates for changes in the acquisition lag. » Le texte a été réécrit entre les deux états. Aucun verbatim ne se déplace de l'un à l'autre."
+    },
+    {
+      "id": "SUP-88de382baa44eea8",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "PAGINATION DE L'EXTRAIT EOLSS, PUISQUE LA QUESTION ÉTAIT POSÉE : L'EXTRAIT NE PORTE AUCUN FOLIO. Vérifié en extrayant séparément la bande haute et la bande basse des neuf pages, puis relu sur image. L'en-tête porte, identique sur toutes les pages en portrait, « SYSTEM DYNAMICS - Vol. I - Supply Chain Dynamics, The \"Beer Distribution Game\" and Misperceptions in Dynamic Decision Making - John D. Sterman » ; le pied porte « ©Encyclopedia of Life Support Systems (EOLSS) ». Rien d'autre. Il ne reprend donc ni les folios 321 à 339 de l'article de 1989, ni une pagination propre. Les pages 5 et 6 sont en paysage, sans en-tête ni pied. Toute localisation sur cette pièce ne peut être qu'un numéro de page du fichier, ce que ce dossier écrit toujours sous la forme explicite « p. N du fichier », jamais comme un folio. Le document de travail de 1987, lui, porte bien une pagination imprimée, folios 1 à 42 relus sur image, et c'est pour cela que le verbatim y est localisable proprement."
+    },
+    {
+      "id": "SUP-b9a122eefe924d5e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "TOUTES LES CITATIONS DE CE DOSSIER ONT ÉTÉ RELUES SUR L'IMAGE DE LA PAGE, ET L'OCR NE SUFFISAIT EFFECTIVEMENT PAS. pdftoppm n'est pas installé sur cette machine ; les images ont été rendues avec PyMuPDF, à 170 ppp pour l'extrait EOLSS (pages 1, 2, 3 et 8) et à 200 ppp pour le document de travail (folios 15, 20, 21 et 23, plus la couverture), puis regardées à l'écran. La phrase citée a été lue sur l'image du folio 23, qui porte « D-3919 » en haut à gauche et « 23 » en haut à droite, à la fin du paragraphe qui précède le titre « Discussion and Conclusions ». La relecture sur image a corrigé deux fautes de la couche texte, sur le folio 21 précisément : l'OCR y rend le bêta de l'usine Suds « =-1.05 » au lieu de « β=1.05 », et le bêta du distributeur Grizzly « 1.25 » au lieu de « β=.25 ». Une lecture faite sur l'OCR seul aurait donc écrit un signe négatif là où il y a un signe égal, c'est-à-dire l'inverse du sens."
+    },
+    {
+      "id": "SUP-9a8e1b626f3728bf",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "PASSAGES CONCURRENTS ÉCARTÉS, ET POURQUOI. Quatre autres phrases disent ce concept, toutes lues sur image. (1) Document de travail, p. 7 : « A stock management heuristic which fails to measure and respond to the supply line of unfilled orders is predisposed to instability. » C'est l'énoncé théorique le plus complet, et il définit le terme au passage ; écarté parce qu'aucune traduction française honnête ne le ramène sous 150 caractères, la plus courte que j'aie obtenue en faisant 152, et parce que « heuristique » demande une glose que la carte n'a pas la place de porter. (2) P. 20 : « Inspection of the results shows that most subjects failed to account adequately for the supply line. » C'est le résultat expérimental énoncé nu, 128 caractères en français ; écarté de peu, parce qu'il dit ce que les sujets n'ont pas fait sans dire ce qu'il en coûte, et qu'un lecteur qui ne connaît pas le concept n'y voit pas de conséquence. C'est le meilleur second choix si la carte est cadrée sur le constat plutôt que sur le mécanisme. (3) P. 15 : « The oscillation is endogenously produced by the interaction of the subjects' decisions with the feedback structure of the system. » Excellente, 132 caractères en français, mais elle porte l'oscillation et non la ligne d'approvisionnement : c'est la citation d'une autre carte, pas de celle-ci. (4) P. 21 : « The average value of β is just .34; only five subjects (11%) accounted for more than two-thirds of the supply line. The result is overordering and instability. » Écartée parce qu'elle repose sur un paramètre grec que la carte ne peut pas expliquer, et parce qu'une coupe qui garderait la seule dernière phrase la laisserait sans sujet."
+    },
+    {
+      "id": "SUP-402e1b480ec4bbad",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "CE QUE LA CARTE NE DOIT PAS FAIRE DIRE À CE TEXTE, ET STERMAN L'ÉCRIT LUI-MÊME. Premièrement, il ne dit pas que les gestionnaires oublient leurs commandes. P. 25 : « It is not credible that individual managers forget that they have goods on order. The problem in the real economy is one of aggregation. » Le défaut porte sur une ligne d'approvisionnement agrégée, répartie entre concurrents et mal connue de chacun. Deuxièmement, il ne tient pas l'hypothèse pour vérifiée hors du laboratoire : même page, « Verification of the supply line hypothesis requires further empirical work ». Ce qui est établi l'est sur 44 sujets dans un jeu de plateau, plus une concordance de forme avec la production industrielle américaine de 1947 à 1987 ; ce n'est pas une loi de l'économie. Troisièmement, ce n'est pas une fatalité individuelle : l'usine Suds, p. 22, tient compte de sa ligne d'approvisionnement et atténue le choc au lieu de l'amplifier. Une carte qui présenterait le résultat comme une incapacité humaine générale retournerait le sens du texte."
+    },
+    {
+      "id": "SUP-f20395e9f7521c63",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "FRONTIÈRE AVEC OPERATIONS-MANAGEMENT, TRANCHÉE ET MOTIVÉE. Le périmètre écrit que « pourquoi le système se comporte-t-il ainsi ? » relève de systems-thinking et « combien faut-il en tenir ? » d'operations-management. La question de ce texte est la première : Sterman cherche pourquoi une chaîne oscille alors que la demande ne bouge pas, et il répond par la structure de stocks et de délais et par ce que le décideur n'en perçoit pas. Le concept se distingue des deux cartes voisines déjà validées. absorber-les-fluctuations-de-commandes (Holt, Modigliani et Simon 1955) répartit une fluctuation entre stock, heures et effectif selon les coûts de l'usine : c'est un arbitrage de coût, donc un « combien ». attente-du-poste-aval (Bellman 1955) décompose le temps total en travail du poste aval plus attente du poste aval : c'est un problème d'ordonnancement, donc un « dans quel ordre ». Aucune des deux ne porte sur ce que le décideur ne perçoit pas, ni sur le comportement engendré dans la durée. RÉSERVE HONNÊTE SUR CETTE FRONTIÈRE : un passage de l'extrait EOLSS, p. 8 du fichier, tombe franchement de l'autre côté, « if a retailer wishes to receive 1000 widgets per week from the supplier and delivery requires six weeks, the retailer must have 6000 widgets on order ». C'est un dimensionnement, et une carte bâtie sur cette phrase relèverait d'operations-management. La carte proposée ici n'est pas bâtie dessus."
+    },
+    {
+      "id": "SUP-fc1d4ea3e95a26e5",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "COUCHE FRANCOPHONE : CHERCHÉE, ET LE RÉSULTAT EST UN SILENCE DOCUMENTÉ. Requêtes passées cette nuit : HAL sur « effet coup de fouet » (5 notices), sur « ligne d'approvisionnement » avec Sterman (0), sur « jeu de la bière » avec Sterman (0), sur « dynamique des systèmes » avec Sterman (1 notice, sans rapport) ; theses.fr sur « jeu de la bière » (0 résultat, API interrogée en direct) ; Cairn non tenté, la note de session le donnant fermé derrière un défi DataDome. La seule pièce savante francophone ouverte et pertinente trouvée est Giard et Sali 2012, lue en entier : elle fixe le vocabulaire français du phénomène, effet coup de fouet et jeu de la bière, et ne cite Sterman à aucun endroit de ses quelque cinquante références. La généalogie francophone du phénomène passe par Forrester 1958 et par Lee, Padmanabhan et Whang 1997. Conséquence pour la traduction : le rendu français de « supply line » n'est appuyé sur aucun usage francophone attesté, il est de mon fait, et il est déclaré comme tel dans le champ translator."
+    },
+    {
+      "id": "SUP-485b84a6b1a5bdb7",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "ATTRIBUTION DU JEU LUI-MÊME, PARCE QUE L'ERREUR CIRCULE. Plusieurs pages web rencontrées pendant cette session écrivent que le jeu de la bière a été créé par Sterman dans les années 1960. C'est faux, et le texte le dit contre elles : p. 13, « The \"Beer Distribution Game\" is a role-playing simulation of an industrial production and distribution system developed at MIT to introduce students of management to the concepts of economic dynamics and computer simulation. In use for nearly three decades, the game has been played all over the world by thousands of people ». Sterman, qui écrit en 1987, situe donc le jeu à la fin des années 1950. Ce qu'il revendique est l'expérience, la règle estimée et l'interprétation, pas le dispositif. Je n'ai pas cherché à établir qui a créé le jeu et je n'affirme rien là-dessus."
+    },
+    {
+      "id": "SUP-9313639919eda1a9",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "AUTORISATION D'AYANT DROIT, LES DEUX PIÈCES. Pour l'extrait EOLSS : l'autorisation est écrite sur la pièce elle-même, en première page, sous la forme « Reproduced by permission from: » suivie des deux références et des deux mentions de copyright, INFORMS pour l'article de 1989 et McGraw-Hill pour Business Dynamics. C'est cette mention, et elle seule, qui autorise l'adresse eolss.net à figurer sur une carte. Pour le document de travail de 1987 : il est servi par le dépôt institutionnel du MIT, collection « Sloan Working Papers », sans authentification et sans restriction d'emprunt, et le déposant est l'institution qui publie la série. Mais sa notice ne porte aucun champ dc.rights, aucun paquet LICENSE, aucune licence Creative Commons. Accès public constaté et déposant identifié ; licence explicite non constatée."
+    },
+    {
+      "id": "SUP-75d50597d2c44f7a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[11]",
+      "access": "n/a",
+      "text": "CE QUI N'A PAS ÉTÉ ATTEINT, EN CLAIR. Le chapitre EOLSS complet, trente pages, est payant (19 dollars sur eolss.net) et n'a pas été acheté : les vingt et une pages manquantes restent inconnues, et je ne sais donc pas laquelle des phrases du chapitre vient de l'article de 1989 et laquelle de Business Dynamics. L'article de Management Science de 1989 n'a pas été ouvert. Business Dynamics n'a pas été ouvert. La pagination du chapitre dans le volume imprimé n'est pas vérifiée : la liste de publications de Sterman la donne deux fois et de deux façons contradictoires, une entrée écrivant « 1-30 » et une autre « 84-112 », et je n'ai pas le volume pour trancher ; aucune des deux n'est reportée dans les sources. Enfin OpenAlex et Semantic Scholar n'ont pas été interrogés, la note de session les donnant en échec (budget insuffisant et 429), et Crossref plus Unpaywall ont suffi pour tout ce qui est affirmé ici."
+    }
+  ],
+  "estimated_tokens": 26733,
+  "status": "READY"
+}

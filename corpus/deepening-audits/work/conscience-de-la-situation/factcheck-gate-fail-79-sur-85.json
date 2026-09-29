@@ -1,0 +1,43 @@
+{
+  "protocol_version": 2,
+  "concept_id": "conscience-de-la-situation",
+  "candidate_sha256": "8824c35fe002c1465156153849bf3bcd40cb8dcf2f2045c0be121cbb9f6b3e6e",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 85,
+  "supported": 79,
+  "failed": 6,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim ne portent rien sur la question posée après un incident ni sur sa fréquence : ils portent la séparation d'avec la décision et la thèse du rapport sur la majorité des accidents graves. Le « presque toujours » d'une habitude d'enquête n'y est pas établi."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis autorisent que toute décision du pilote repose sur son modèle mental de la situation et qu'un pilote très expérimenté PEUT décider mal si sa conscience de la situation est incomplète ou inexacte. Ils n'autorisent ni la régularité générale (« déçoit souvent »), ni l'extension du cas des pilotes à « la personne » quelconque."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis portent un cas d'aviation (« Soon preoccupied with the problem, the captain failed to recognize a developing low-fuel condition ») et l'existence d'une thèse francophone sur la conscience de la situation des conducteurs. Ils n'autorisent pas l'affirmation d'une expérience universelle au volant (« Chacun connaît cela ») : aucun appui fourni ne porte sur ce que vit un conducteur ordinaire."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim énumèrent « airspeed, position, altitude, route, direction of flight, etc., as well as weather, air traffic control (ATC) clearances, emergency information, and other pertinent elements ». Ils n'y font pas figurer l'activité de l'équipage : « ce que fait l'équipage » ajoute un élément que les appuis fournis ne portent pas."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis ne désignent pas la communication de 1988 comme le lieu où la définition a d'abord été posée : l'un d'eux relève qu'en 1994 la phrase est rapportée à « Endsley (1987; 1988) », donc au rapport Northrop NOR DOC 87-83 autant qu'à la communication de 1988, et un autre refuse expressément de conclure quoi que ce soit « sur le verbatim exact de la définition dans son texte d'origine », le texte de 1988 n'ayant pas été ouvert. Le claim augmente la certitude et l'antériorité que les appuis autorisent."
+    },
+    {
+      "claim_id": "C079",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim attribuent au rapport « cinq mises en garde méthodologiques » à la page imprimée 4, dont la deuxième et la troisième sont celles que le texte lecteur reprend. Ils n'autorisent donc pas le décompte « deux mises en garde » présenté comme celui du texte lui-même."
+    }
+  ]
+}

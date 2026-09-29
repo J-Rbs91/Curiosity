@@ -46,3 +46,7 @@ next-env.d.ts
 
 # corpus : dossiers remis au contrôleur aveugle, régénérables (npm run corpus:brief)
 corpus/review/*.brief.json
+
+# corpus : partitions de bundle, derivees de verification-bundle.json par
+# scripts/corpus/factcheck-partition.mjs, regenerables a l'identique
+corpus/deepening-audits/work/*/verification-bundle.part*.json
