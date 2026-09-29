@@ -5,6 +5,98 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-09-28
+
+Cinquième exécution. **Aucune carte publiée, le corpus servi au lecteur est inchangé, et le
+résultat qui compte est un fait de protocole : ce passage a refait, sans le savoir, le travail du
+27 septembre.** `ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
+
+- branche      : `claude/beautiful-feynman-8rprst`, imposée par la session. PR #123.
+- lot          : **1 carte** — `critere-de-la-retroaction`. Aucune `SKIPPED_DIRTY`.
+- résultats    : **0 publiée.** La carte était **déjà instruite et refusée la veille**, ce que ce
+  passage ignorait.
+- contrôles    : validate 140 / 136 validés / 0 erreur · deepen --check 136 · lint 0 · `next build`
+  sans erreur · projection identique à `main` après restauration.
+
+### Le fait de la nuit : une routine qui lit `main` ne voit pas les branches ouvertes
+
+Ce passage est parti de `origin/main`, qui ne portait pas encore PR #122. Il a donc **réimplémenté
+le chantier K, refait la même reprise de `critere-de-la-retroaction` avec les deux mêmes gestes, et
+rouvert le chantier des titres** — tout cela en parallèle d'une branche qui les portait déjà.
+
+Le mécanisme est simple et il se reproduira : **le journal d'un passage vit sur la branche de ce
+passage.** Rien dans le protocole ne demande de regarder ailleurs que dans les fichiers de `main`.
+C'est le chantier N, et son geste de parade tient en une ligne : lister les branches ouvertes et
+leurs PR au point 3 de la routine, avant de choisir un lot.
+
+**Le travail dupliqué a été écarté à la fusion, au profit de celui de #122** : implémentation du
+chantier K, artefacts de cycle, rapport de carte, protocole et prompts d'agents. C'est la version
+fusionnée qui vit, et c'était la conclusion écrite d'avance dans la description de #123.
+
+### Ce que la duplication a rapporté, et qui ne se paie pas deux fois
+
+**Une mesure de la variance du dispositif sur une tâche identique**, que le dépôt réclamait depuis
+le 26 septembre sans jamais la financer.
+
+| | passage du 27 | passage du 28 |
+|---|---|---|
+| gate sur la même reprise | `FACTCHECK_PASS` **53 sur 53** | `FACTCHECK_PASS` **48 sur 48** |
+| mots lecteur du candidat | 1 073 | 1 074 |
+| verdict de la revue indépendante | **REJECT** | **ACCEPT** |
+
+**Deux revues indépendantes, sur deux textes à un mot près, rendent des verdicts opposés** — sur le
+maillon qui décide si un texte est publié. Et le découpage varie de 53 à 48 claims sur un même
+texte, ce qui donne un quatrième point à la leçon du 26 septembre : le nombre de claims ne mesure
+pas le texte.
+
+### Pourquoi le REJECT l'emporte, et ce que cela a révélé
+
+Pas par ancienneté. Par une règle écrite que l'une des deux revues invoque et que l'autre a
+manquée : `PROTOCOLE.md` §5, « en dessous de 1 100, le texte n'a rien ajouté ». Le candidat fait
+1 074 mots lecteur.
+
+**Et le contrôle mécanique ne pouvait pas le voir.** Les bornes dures de `deepenings.mjs` sont
+`minWords: 1000` et `maxWords: 2100`, et leur commentaire assume l'écart — « le protocole vise
+1 300-1 700 ; ces bornes-ci laissent respirer ». **Le plancher du protocole n'est porté par aucun
+code**, et sa violation dépend d'un reviewer qui pense à le vérifier. C'est à trancher : soit le
+code porte le plancher, soit le protocole s'aligne, mais pas les deux chiffres.
+
+### Le point 1 du chantier I est soldé, et lui n'est pas dupliqué
+
+`predominance-du-conflit-sur-la-negociation` déclare désormais son dossier. Établi sur pièce :
+`quotation.text` **identique à l'octet** entre la carte et
+`corpus/evidence/taille-des-entreprises-et-issue-des-greves/`, même `locator` p. 43, même auteur,
+et les deux `sources_ouvertes` du dossier sont ses deux sources déclarées.
+
+Pack **56 → 96 appuis dont 39 du dossier**, les deux `access_corroboration` de `dossier-absent` à
+**`corrobore`**, et les 56 appuis antérieurs survivent tous à l'identique.
+
+Le critère qui en sort ne vaut que confronté au fichier : sur quatorze répertoires orphelins,
+**deux sont nommés par une carte**, et les ouvrir les sépare — l'un déclare son appartenance,
+l'autre nomme le répertoire pour dire qu'il est **un autre sujet, jamais rédigé**. Un rattachement
+sur le seul nom aurait été faux une fois sur deux.
+
+### Et le balayage des titres par rareté ne marche pas — mesuré
+
+Chantier M, point 1. Appliquer l'instrument du chantier K aux 744 titres de section rend **199
+signalements sur 744**, presque intégralement du bruit : `loger`, `prévoir`, `choisir`, `famille`.
+
+La raison est structurelle et vaut d'être retenue : **un titre et un dossier ne sont pas écrits
+dans la même langue.** Les dossiers sont une prose bibliographique dense, les titres une langue
+vive. Une fréquence mesurée sur les dossiers déclare rare ce qui n'est qu'absent d'un registre.
+
+Et le seul cas vrai y est signalé **pour une raison fausse** : `hiérarchisées`, absent du dossier
+parce qu'il porte `hiérarchisation` — la forme que la correction a retenue et qui est soutenue.
+Sans normalisation morphologique, l'instrument signale un terme correct. La voie la plus évidente
+du chantier M est donc fermée, avec son motif.
+
+### Une note d'exploitation, qui corrige une parade écrite
+
+La parade du 26 septembre — « conditionner l'attente au SHA attendu et non à l'immobilité du
+fichier » — **est nécessaire et ne suffit pas.** Le claim mapper a écrit son fichier au bon SHA,
+puis l'a réécrit deux fois avant de rendre. La règle complète : **attendre le compte rendu de
+l'agent**, et se servir du SHA pour vérifier ce qu'on a reçu, jamais pour décider qu'il a fini.
+
 ## Passage d'audit — 2026-09-27
 
 Quatrième exécution. **Deux cartes instruites, une publiée, une refusée — et l'instrument du
