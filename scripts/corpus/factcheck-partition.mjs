@@ -64,7 +64,10 @@ try {
   fail(`bundle illisible: ${bundleFile}\n${error.message}`);
 }
 
-const { claims, estimated_tokens: bundleTokens, status, ...head } = bundle;
+const { claims, estimated_tokens: bundleTokens, ...head } = bundle;
+// `status` du bundle entier ne vaut pas pour une partition : chacune recalcule
+// le sien sur sa propre taille.
+delete head.status;
 if (!Array.isArray(claims) || !claims.length) fail("le bundle ne porte aucun claim");
 
 const requested = Number(option("parts") || 0);
