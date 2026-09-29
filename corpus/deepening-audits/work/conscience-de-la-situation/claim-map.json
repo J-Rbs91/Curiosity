@@ -1,7 +1,6 @@
 {
-  "protocol_version": 2,
   "concept_id": "conscience-de-la-situation",
-  "candidate_sha256": "8824c35fe002c1465156153849bf3bcd40cb8dcf2f2045c0be121cbb9f6b3e6e",
+  "candidate_sha256": "9b635f706151c3e7042a210a18d87b90a99874bd65dba836846065ce7c06e7ca",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -88,22 +87,10 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 0,
-      "end": 134,
-      "claim_text": "Quand une manœuvre tourne mal, la première question posée est presque toujours la même : pourquoi cette décision plutôt qu’une autre ?",
-      "normalized_claim": "Apres une manoeuvre qui tourne mal, la premiere question posee est presque toujours celle du choix de la decision.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-209d2682100cb7e9"
-      ]
-    },
-    {
-      "claim_id": "C002",
-      "locator": "lead[0]",
-      "start": 135,
-      "end": 263,
-      "claim_text": "La réponse déçoit souvent, parce que la décision était cohérente avec ce que la personne croyait de sa situation à ce moment-là.",
-      "normalized_claim": "La decision etait coherente avec la representation que la personne avait de sa situation.",
+      "start": 77,
+      "end": 183,
+      "claim_text": "Chez un pilote, la décision peut avoir été cohérente avec ce qu’il croyait de sa situation à ce moment-là.",
+      "normalized_claim": "Une decision de pilote peut etre coherente avec sa representation de la situation.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-209d2682100cb7e9",
@@ -111,142 +98,162 @@
       ]
     },
     {
-      "claim_id": "C003",
+      "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 264,
-      "end": 381,
-      "claim_text": "Ce qui manquait était en amont : un paramètre qu’elle ne regardait plus, une évolution qu’elle n’avait pas vue venir.",
-      "normalized_claim": "Le defaut se situe en amont de la decision : un parametre non suivi, une evolution non anticipee.",
+      "start": 184,
+      "end": 297,
+      "claim_text": "Ce qui manquait était en amont : un paramètre qu’il ne regardait plus, une évolution qu’il n’avait pas vue venir.",
+      "normalized_claim": "Le defaut se situe en amont de la decision : element perdu de vue (niveau 1) ou evolution non projetee (niveau 3).",
       "support_ids": [
         "SUP-80ce875f4d793761",
-        "SUP-91d6e9a6cd57ce6d"
+        "SUP-209d2682100cb7e9",
+        "SUP-91d6e9a6cd57ce6d",
+        "SUP-7c2eae4057e1aa86"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 134,
+      "claim_text": "Mica R. Endsley travaillait sur les cockpits, où les pilotes ont leur manière à eux de dire la chose : rester en avance sur son avion.",
+      "normalized_claim": "Endsley travaille sur le poste de pilotage, et les pilotes disent << staying ahead of the airplane >>.",
+      "support_ids": [
+        "SUP-80ce875f4d793761",
+        "SUP-cdac81cbb789dba3",
+        "SUP-86db8361951e7619",
+        "SUP-1d13871a160ba55c"
       ]
     },
     {
       "claim_id": "C004",
-      "locator": "lead[0]",
-      "start": 382,
-      "end": 517,
-      "claim_text": "Chacun connaît cela au volant : on s’absorbe dans un problème, et pendant ce temps quelque chose d’autre change sans qu’on le remarque.",
-      "normalized_claim": "Au volant, l absorption dans un probleme fait manquer un changement survenu ailleurs.",
+      "locator": "lead[1]",
+      "start": 135,
+      "end": 222,
+      "claim_text": "Ce qu’elle y ajoute n’est pas le mot, c’est une définition et le modèle qui la soutient",
+      "normalized_claim": "L'apport d'Endsley est la definition et le modele, non le terme.",
       "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-91d6e9a6cd57ce6d",
-        "SUP-dec785f9420f07f7"
+        "SUP-5bf333c75ede9aa3",
+        "SUP-57cd9c8876e3d9df",
+        "SUP-c88e2bc707cceaa2",
+        "SUP-98e6f60ca4b677d7",
+        "SUP-d5538116f10fbcae"
       ]
     },
     {
       "claim_id": "C005",
       "locator": "lead[1]",
-      "start": 0,
-      "end": 44,
-      "claim_text": "Mica R. Endsley travaillait sur les cockpits",
-      "normalized_claim": "Endsley travaillait sur les cockpits.",
+      "start": 225,
+      "end": 390,
+      "claim_text": "cette image se découpe en trois opérations qui ne se valent pas, et elle s’examine à part, avant la décision, au lieu qu’on juge seulement le choix qui en est sorti.",
+      "normalized_claim": "Trois phases hierarchisees, et separation d'avec la decision qu'elles precedent.",
       "support_ids": [
-        "SUP-cdac81cbb789dba3",
-        "SUP-1d13871a160ba55c",
-        "SUP-86db8361951e7619",
-        "SUP-80ce875f4d793761"
+        "SUP-80ce875f4d793761",
+        "SUP-209d2682100cb7e9",
+        "SUP-52a4f6bd08f41acd",
+        "SUP-98e6f60ca4b677d7"
       ]
     },
     {
       "claim_id": "C006",
-      "locator": "lead[1]",
-      "start": 49,
-      "end": 134,
-      "claim_text": "les pilotes ont leur manière à eux de dire la chose : rester en avance sur son avion.",
-      "normalized_claim": "Les pilotes disent la chose ainsi : rester en avance sur son avion.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 208,
+      "claim_text": "Le geste théorique tient dans une phrase du rapport que Mica R. Endsley signe en 1998 avec quatre collègues du MIT : « Situation awareness forms the critical input to, but is separate from, decision making. »",
+      "normalized_claim": "Le rapport de 1998, signe d'Endsley et de quatre collegues du MIT, porte cette phrase.",
       "support_ids": [
-        "SUP-80ce875f4d793761"
+        "SUP-209d2682100cb7e9",
+        "SUP-80ce875f4d793761",
+        "SUP-57cd9c8876e3d9df",
+        "SUP-9ae6ef8e7bf56acd",
+        "SUP-86db8361951e7619",
+        "SUP-5b9d2c39fd3247dc",
+        "SUP-692b233d7c53ee01",
+        "SUP-1d13871a160ba55c"
       ]
     },
     {
       "claim_id": "C007",
-      "locator": "lead[1]",
-      "start": 135,
-      "end": 222,
-      "claim_text": "Ce qu’elle y ajoute n’est pas le mot, c’est une définition et le modèle qui la soutient",
-      "normalized_claim": "Ce qu Endsley ajoute n est pas le terme mais une definition et son modele.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 209,
+      "end": 324,
+      "claim_text": "La conscience de la situation alimente la décision, elle en est l’entrée décisive, et pourtant elle s’en distingue.",
+      "normalized_claim": "Traduction du verbatim : entree critique de la decision mais distincte d'elle.",
       "support_ids": [
-        "SUP-57cd9c8876e3d9df",
-        "SUP-5bf333c75ede9aa3",
-        "SUP-98e6f60ca4b677d7",
-        "SUP-c88e2bc707cceaa2"
+        "SUP-209d2682100cb7e9",
+        "SUP-80ce875f4d793761",
+        "SUP-52a4f6bd08f41acd"
       ]
     },
     {
       "claim_id": "C008",
-      "locator": "lead[1]",
-      "start": 225,
-      "end": 288,
-      "claim_text": "cette image se découpe en trois opérations qui ne se valent pas",
-      "normalized_claim": "L image de la situation se decoupe en trois operations hierarchisees.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 325,
+      "end": 380,
+      "claim_text": "Suivent les deux cas qui obligent à les tenir séparées.",
+      "normalized_claim": "Le rapport enchaine sur deux cas qui motivent la separation.",
       "support_ids": [
         "SUP-80ce875f4d793761",
-        "SUP-52a4f6bd08f41acd"
+        "SUP-209d2682100cb7e9"
       ]
     },
     {
       "claim_id": "C009",
-      "locator": "lead[1]",
-      "start": 293,
-      "end": 390,
-      "claim_text": "elle s’examine à part, avant la décision, au lieu qu’on juge seulement le choix qui en est sorti.",
-      "normalized_claim": "La conscience de la situation s examine separement, en amont de la decision.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 381,
+      "end": 516,
+      "claim_text": "Un pilote parmi les mieux formés et les plus expérimentés peut décider mal si sa conscience de la situation est incomplète ou inexacte.",
+      "normalized_claim": "Premier cas du rapport.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-209d2682100cb7e9",
-        "SUP-692b233d7c53ee01",
-        "SUP-52a4f6bd08f41acd"
+        "SUP-692b233d7c53ee01"
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
-      "start": 0,
-      "end": 114,
-      "claim_text": "Le geste théorique tient dans une phrase du rapport que Mica R. Endsley signe en 1998 avec quatre collègues du MIT",
-      "normalized_claim": "Le rapport de 1998 est signe par Endsley et quatre collegues du MIT.",
+      "start": 517,
+      "end": 631,
+      "claim_text": "À l’inverse, un pilote inexpérimenté peut comprendre exactement ce qui se passe sans savoir quelle action prendre.",
+      "normalized_claim": "Second cas du rapport.",
       "support_ids": [
-        "SUP-ee5ce7b374b0844c",
-        "SUP-86db8361951e7619",
-        "SUP-1d13871a160ba55c",
-        "SUP-57cd9c8876e3d9df"
+        "SUP-80ce875f4d793761",
+        "SUP-209d2682100cb7e9"
       ]
     },
     {
       "claim_id": "C011",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 119,
-      "end": 206,
-      "claim_text": "Situation awareness forms the critical input to, but is separate from, decision making.",
-      "normalized_claim": "Verbatim du rapport de 1998 sur la separation d avec la decision.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 80,
+      "claim_text": "La conséquence est pratique : elle décide de ce qu’on cherche après un incident.",
+      "normalized_claim": "Consequence derivee de la separation : l'enquete ne cherche pas la meme chose.",
       "support_ids": [
-        "SUP-209d2682100cb7e9",
-        "SUP-692b233d7c53ee01",
-        "SUP-80ce875f4d793761"
+        "SUP-80ce875f4d793761",
+        "SUP-209d2682100cb7e9"
       ]
     },
     {
       "claim_id": "C012",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 209,
-      "end": 324,
-      "claim_text": "La conscience de la situation alimente la décision, elle en est l’entrée décisive, et pourtant elle s’en distingue.",
-      "normalized_claim": "La conscience de la situation est l entree critique de la decision tout en s en distinguant.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 81,
+      "end": 259,
+      "claim_text": "Dans le premier cas, le répertoire d’actions était là et c’est l’image de la situation qui était fausse ; dans le second, l’image était juste et c’est le répertoire qui manquait.",
+      "normalized_claim": "Reformulation des deux cas du rapport.",
       "support_ids": [
+        "SUP-80ce875f4d793761",
         "SUP-209d2682100cb7e9",
-        "SUP-692b233d7c53ee01",
-        "SUP-80ce875f4d793761"
+        "SUP-692b233d7c53ee01"
       ]
     },
     {
       "claim_id": "C013",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 325,
-      "end": 380,
-      "claim_text": "Suivent les deux cas qui obligent à les tenir séparées.",
-      "normalized_claim": "Le rapport fait suivre cette phrase de deux cas justifiant la separation.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 260,
+      "end": 338,
+      "claim_text": "Deux causes, deux remèdes, que le seul examen du choix final ne distingue pas.",
+      "normalized_claim": "Derive : c'est pourquoi le rapport veut la SA examinee separement de la decision et de la performance.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-209d2682100cb7e9"
@@ -254,746 +261,583 @@
     },
     {
       "claim_id": "C014",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 381,
-      "end": 516,
-      "claim_text": "Un pilote parmi les mieux formés et les plus expérimentés peut décider mal si sa conscience de la situation est incomplète ou inexacte.",
-      "normalized_claim": "Un pilote tres bien forme et experimente peut decider mal si sa SA est incomplete ou inexacte.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-692b233d7c53ee01",
-        "SUP-209d2682100cb7e9"
-      ]
-    },
-    {
-      "claim_id": "C015",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 530,
-      "end": 631,
-      "claim_text": "un pilote inexpérimenté peut comprendre exactement ce qui se passe sans savoir quelle action prendre.",
-      "normalized_claim": "Un pilote inexperimente peut comprendre la situation sans savoir quoi faire.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-209d2682100cb7e9"
-      ]
-    },
-    {
-      "claim_id": "C016",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 0,
-      "end": 80,
-      "claim_text": "La conséquence est pratique : elle décide de ce qu’on cherche après un incident.",
-      "normalized_claim": "La distinction determine ce que l on cherche apres un incident.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-209d2682100cb7e9"
-      ]
-    },
-    {
-      "claim_id": "C017",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 81,
-      "end": 259,
-      "claim_text": "Dans le premier cas, le répertoire d’actions était là et c’est l’image de la situation qui était fausse ; dans le second, l’image était juste et c’est le répertoire qui manquait.",
-      "normalized_claim": "Premier cas : repertoire present, image fausse ; second cas : image juste, repertoire absent.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-209d2682100cb7e9"
-      ]
-    },
-    {
-      "claim_id": "C018",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 260,
-      "end": 338,
-      "claim_text": "Deux causes, deux remèdes, que le seul examen du choix final ne distingue pas.",
-      "normalized_claim": "L examen du seul choix final ne distingue pas ces deux causes.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-209d2682100cb7e9"
-      ]
-    },
-    {
-      "claim_id": "C019",
       "locator": "sections[0].paragraphs[1]",
       "start": 339,
       "end": 606,
       "claim_text": "Et les auteurs tiennent le premier cas pour le plus fréquent : dans la majorité des accidents graves, écrivent-ils, les pilotes ne peinent ni à déterminer l’action correcte ni à l’exécuter, mais « are deficient in fully understanding the situation that they are in ».",
-      "normalized_claim": "Les auteurs tiennent le premier cas pour le plus frequent, verbatim a l appui.",
+      "normalized_claim": "These du rapport p. 3, verbatim inclus.",
       "support_ids": [
-        "SUP-80ce875f4d793761"
+        "SUP-80ce875f4d793761",
+        "SUP-7c2eae4057e1aa86"
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C015",
       "locator": "sections[1].paragraphs[0]",
       "start": 24,
-      "end": 109,
-      "claim_text": "celle que le rapport de 1998 tient pour la définition la plus généralement applicable",
-      "normalized_claim": "Le rapport de 1998 tient cette phrase pour la definition la plus generalement applicable.",
-      "support_ids": [
-        "SUP-9ae6ef8e7bf56acd",
-        "SUP-fc034d085b584c36",
-        "SUP-80ce875f4d793761",
-        "SUP-c14ede2fbb7d6d70"
-      ]
-    },
-    {
-      "claim_id": "C021",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 114,
-      "end": 312,
-      "claim_text": "Situation awareness is the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future.",
-      "normalized_claim": "Verbatim de la definition canonique.",
+      "end": 314,
+      "claim_text": "celle que le rapport de 1998 tient pour la définition la plus généralement applicable : « Situation awareness is the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future. »",
+      "normalized_claim": "Le rapport de 1998 presente cette phrase comme la definition la plus generalement applicable.",
       "support_ids": [
         "SUP-a1bd9ccd98b4f2a5",
         "SUP-80ce875f4d793761",
+        "SUP-fc034d085b584c36",
+        "SUP-9ae6ef8e7bf56acd",
         "SUP-c14ede2fbb7d6d70"
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[0]",
       "start": 315,
       "end": 384,
       "claim_text": "Percevoir, comprendre, projeter, dans un volume de temps et d’espace.",
-      "normalized_claim": "Les trois operations et le volume de temps et d espace.",
+      "normalized_claim": "Glose francaise des trois operations et du volume de temps et d'espace.",
       "support_ids": [
         "SUP-a1bd9ccd98b4f2a5",
         "SUP-80ce875f4d793761",
-        "SUP-798b74924b3610f8"
+        "SUP-798b74924b3610f8",
+        "SUP-52a4f6bd08f41acd"
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "start": 385,
       "end": 453,
       "claim_text": "Le texte déploie ensuite cette phrase en trois phases hiérarchisées.",
-      "normalized_claim": "Le rapport deploie la definition en trois phases hierarchisees.",
+      "normalized_claim": "Le rapport annonce trois phases hierarchiques pour developper la definition.",
       "support_ids": [
         "SUP-80ce875f4d793761",
-        "SUP-52a4f6bd08f41acd"
+        "SUP-98e6f60ca4b677d7"
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
-      "end": 41,
-      "claim_text": "Le premier niveau est celui des éléments.",
-      "normalized_claim": "Le niveau 1 porte sur les elements de l environnement.",
+      "end": 174,
+      "claim_text": "Le premier niveau est celui des éléments. « The first step in achieving SA involves perceiving the status, attributes, and dynamics of relevant elements in the environment. »",
+      "normalized_claim": "Intitule et verbatim du niveau 1.",
       "support_ids": [
         "SUP-80ce875f4d793761",
+        "SUP-79ccffc8152672e0",
         "SUP-52a4f6bd08f41acd"
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[1]",
-      "start": 44,
-      "end": 172,
-      "claim_text": "The first step in achieving SA involves perceiving the status, attributes, and dynamics of relevant elements in the environment.",
-      "normalized_claim": "Verbatim du niveau 1.",
+      "start": 175,
+      "end": 326,
+      "claim_text": "Percevoir ne veut pas dire apercevoir : il s’agit de relever l’état d’un élément, ses propriétés et sa dynamique, c’est-à-dire dans quel sens il bouge.",
+      "normalized_claim": "Glose de status / attributes / dynamics.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-79ccffc8152672e0"
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[1]",
-      "start": 175,
-      "end": 326,
-      "claim_text": "Percevoir ne veut pas dire apercevoir : il s’agit de relever l’état d’un élément, ses propriétés et sa dynamique, c’est-à-dire dans quel sens il bouge.",
-      "normalized_claim": "Percevoir signifie relever l etat, les proprietes et la dynamique d un element.",
+      "start": 327,
+      "end": 455,
+      "claim_text": "Pour un pilote, ce sont la vitesse, la position, l’altitude, la route, mais aussi la météo et les clairances du contrôle aérien.",
+      "normalized_claim": "Liste d'elements du niveau 1 donnee par le rapport.",
+      "support_ids": [
+        "SUP-80ce875f4d793761"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "Le deuxième niveau ne s’obtient pas en additionnant le premier.",
+      "normalized_claim": "Le niveau 2 va au-dela de la simple conscience des elements presents.",
+      "support_ids": [
+        "SUP-80ce875f4d793761"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 64,
+      "end": 156,
+      "claim_text": "Il demande de faire tenir ensemble des éléments épars et de les rapporter aux buts du moment",
+      "normalized_claim": "Synthese d'elements disjoints rapportee aux buts du pilote.",
+      "support_ids": [
+        "SUP-80ce875f4d793761"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 159,
+      "end": 282,
+      "claim_text": "la même altitude ne signifie pas la même chose selon qu’on monte vers un niveau de croisière ou qu’on approche d’un relief.",
+      "normalized_claim": "Illustration de la signification d'un element selon les buts.",
+      "support_ids": [
+        "SUP-80ce875f4d793761"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 283,
+      "end": 468,
+      "claim_text": "Le rapport y place la différence entre le débutant et l’expérimenté : le premier peut percevoir tout ce que perçoit le second, et rester en deçà dès qu’il s’agit d’intégrer ces données.",
+      "normalized_claim": "Passage novice/experimente du rapport, p. 2.",
+      "support_ids": [
+        "SUP-80ce875f4d793761"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 0,
+      "end": 208,
+      "claim_text": "Le troisième niveau est l’anticipation à court terme, et il est appelé le plus élevé parce qu’il suppose les deux autres : on ne projette qu’à partir d’une dynamique connue et d’une compréhension déjà formée.",
+      "normalized_claim": "Niveau 3 : projection a court terme, troisieme et plus haut niveau, obtenu par les niveaux 1 et 2.",
+      "support_ids": [
+        "SUP-80ce875f4d793761"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 209,
+      "end": 270,
+      "claim_text": "Il donne en échange quelque chose d’irremplaçable : du temps.",
+      "normalized_claim": "Le rapport dit que cette capacite donne la connaissance et le temps de decider.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
       "claim_id": "C027",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 327,
-      "end": 479,
-      "claim_text": "Pour un pilote, ce sont la vitesse, la position, l’altitude, la route, mais aussi la météo, les clairances du contrôle aérien et ce que fait l’équipage.",
-      "normalized_claim": "Liste des elements pour un pilote : vitesse, position, altitude, route, meteo, clairances ATC, equipage.",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 271,
+      "end": 401,
+      "claim_text": "Prévoir qu’une cellule orageuse va devenir gênante laisse celui de chercher un itinéraire ; la découvrir gênante ne le laisse pas.",
+      "normalized_claim": "Exemple de la cellule orageuse et du deroutement, donne sur place par le rapport.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
       "claim_id": "C028",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 0,
-      "end": 63,
-      "claim_text": "Le deuxième niveau ne s’obtient pas en additionnant le premier.",
-      "normalized_claim": "Le niveau 2 ne s obtient pas par simple addition du niveau 1.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-52a4f6bd08f41acd"
-      ]
-    },
-    {
-      "claim_id": "C029",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 64,
-      "end": 156,
-      "claim_text": "Il demande de faire tenir ensemble des éléments épars et de les rapporter aux buts du moment",
-      "normalized_claim": "Le niveau 2 synthetise des elements disjoints et les rapporte aux buts.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C030",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 159,
-      "end": 282,
-      "claim_text": "la même altitude ne signifie pas la même chose selon qu’on monte vers un niveau de croisière ou qu’on approche d’un relief.",
-      "normalized_claim": "Illustration : la meme altitude ne signifie pas la meme chose selon le but.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C031",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 283,
-      "end": 468,
-      "claim_text": "Le rapport y place la différence entre le débutant et l’expérimenté : le premier peut percevoir tout ce que perçoit le second, et rester en deçà dès qu’il s’agit d’intégrer ces données.",
-      "normalized_claim": "Le rapport situe la la difference debutant / experimente.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 0,
-      "end": 120,
-      "claim_text": "Le troisième niveau est l’anticipation à court terme, et il est appelé le plus élevé parce qu’il suppose les deux autres",
-      "normalized_claim": "Le niveau 3 est l anticipation a court terme et le plus eleve car il suppose les deux autres.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C033",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 123,
-      "end": 208,
-      "claim_text": "on ne projette qu’à partir d’une dynamique connue et d’une compréhension déjà formée.",
-      "normalized_claim": "La projection suppose la connaissance de la dynamique et la comprehension.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C034",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 209,
-      "end": 270,
-      "claim_text": "Il donne en échange quelque chose d’irremplaçable : du temps.",
-      "normalized_claim": "Le niveau 3 donne du temps.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C035",
-      "locator": "sections[1].paragraphs[3]",
-      "start": 271,
-      "end": 401,
-      "claim_text": "Prévoir qu’une cellule orageuse va devenir gênante laisse celui de chercher un itinéraire ; la découvrir gênante ne le laisse pas.",
-      "normalized_claim": "Exemple de la cellule orageuse et du deroutement.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C036",
       "locator": "sections[2].paragraphs[0]",
       "start": 0,
       "end": 110,
       "claim_text": "Le mot conscience laisse croire à un état qu’on aurait ou qu’on n’aurait pas, comme on est éveillé ou endormi.",
-      "normalized_claim": "Le mot conscience suggere a tort un etat binaire.",
+      "normalized_claim": "Evaluation : le mot suggere un etat binaire, ce que la vulgarisation retient.",
       "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-91d6e9a6cd57ce6d"
+        "SUP-91d6e9a6cd57ce6d",
+        "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "start": 111,
-      "end": 211,
-      "claim_text": "Le rapport dit le contraire : elle n’est pas acquise instantanément, elle se construit dans le temps",
-      "normalized_claim": "Le rapport dit qu elle n est pas acquise instantanement mais se construit dans le temps.",
-      "support_ids": [
-        "SUP-80ce875f4d793761",
-        "SUP-91d6e9a6cd57ce6d"
-      ]
-    },
-    {
-      "claim_id": "C038",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 216,
       "end": 265,
-      "claim_text": "l’instant présent n’en donne jamais qu’une coupe.",
-      "normalized_claim": "L instant present n en donne qu une coupe.",
+      "claim_text": "Le rapport dit le contraire : elle n’est pas acquise instantanément, elle se construit dans le temps, et l’instant présent n’en donne jamais qu’une coupe.",
+      "normalized_claim": "Attribut temporel : not acquired instantaneously, built up over time.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-91d6e9a6cd57ce6d"
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[0]",
       "start": 266,
-      "end": 388,
-      "claim_text": "Elle est bornée aussi par l’espace et par les buts, et c’est là ce que dit le volume de temps et d’espace de la définition",
-      "normalized_claim": "Elle est bornee par l espace et les buts, ce que dit le volume de temps et d espace.",
+      "end": 511,
+      "claim_text": "Elle est bornée aussi par l’espace et par les buts, et c’est là ce que dit le volume de temps et d’espace de la définition : seul un sous-ensemble de ce qui existe autour de soi compte à chaque instant, et c’est la tâche en cours qui le découpe.",
+      "normalized_claim": "Specification spatiale et par les buts des sous-ensembles pertinents, selon les taches en cours.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-a1bd9ccd98b4f2a5"
       ]
     },
     {
-      "claim_id": "C040",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 391,
-      "end": 511,
-      "claim_text": "seul un sous-ensemble de ce qui existe autour de soi compte à chaque instant, et c’est la tâche en cours qui le découpe.",
-      "normalized_claim": "Seul un sous-ensemble de l environnement compte, decoupe par la tache en cours.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C041",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[1]",
       "start": 0,
       "end": 71,
       "claim_text": "Suit le point le plus enseignable du texte, et le plus facile à perdre.",
-      "normalized_claim": "Le passage qui suit est le plus enseignable du rapport.",
+      "normalized_claim": "Evaluation : le dossier tient ce passage pour le plus enseignable du rapport.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-91d6e9a6cd57ce6d"
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[1]",
       "start": 72,
       "end": 203,
       "claim_text": "Tous les éléments n’ont pas la même importance à tout moment, mais aucun ne devient jamais sans importance : il devient secondaire.",
-      "normalized_claim": "Aucun element ne devient sans importance, seulement secondaire.",
+      "normalized_claim": "Verbatim du rapport : elements never become irrelevant or unimportant, just secondary.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-91d6e9a6cd57ce6d"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
       "start": 204,
       "end": 314,
       "claim_text": "Il faut donc en conserver assez sur les éléments secondaires pour savoir qu’ils ne sont pas devenus primaires.",
-      "normalized_claim": "Il faut garder assez de SA sur les elements secondaires pour savoir qu ils ne sont pas devenus primaires.",
+      "normalized_claim": "Verbatim : at least some SA on secondary elements to know they have not become primary.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-91d6e9a6cd57ce6d"
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
       "start": 315,
       "end": 427,
       "claim_text": "Exigence bien plus lourde qu’une simple hiérarchie d’attention : elle interdit de fermer complètement une porte.",
-      "normalized_claim": "Cette exigence depasse une hierarchie d attention : elle interdit de fermer entierement un canal.",
+      "normalized_claim": "Derive : at least some SA on all elements is required at all times.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-91d6e9a6cd57ce6d"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[2]",
       "start": 0,
       "end": 168,
       "claim_text": "Le rapport attache un cas à cette règle : ce sont souvent, écrit-il, les éléments jugés secondaires qui causent des erreurs graves quand on les perd entièrement de vue.",
-      "normalized_claim": "Le rapport ecrit que les elements juges secondaires causent souvent des erreurs graves quand la SA sur eux est totalement perdue.",
+      "normalized_claim": "Verbatim : many times it is those elements deemed secondary that cause serious errors when SA on them is totally lost.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[2]",
       "start": 169,
-      "end": 304,
-      "claim_text": "En décembre 1978, un équipage de DC-8 qui prépare son atterrissage à Portland, en Oregon, rencontre un problème de train d’atterrissage",
-      "normalized_claim": "Decembre 1978, equipage de DC-8 en approche de Portland (Oregon), probleme de train.",
-      "support_ids": [
-        "SUP-80ce875f4d793761"
-      ]
-    },
-    {
-      "claim_id": "C047",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 307,
       "end": 407,
-      "claim_text": "pour se donner le temps de le diagnostiquer, il choisit d’attendre en circuit à l’est de l’aéroport.",
-      "normalized_claim": "L equipage choisit un circuit d attente a l est de l aeroport pour diagnostiquer.",
+      "claim_text": "En décembre 1978, un équipage de DC-8 qui prépare son atterrissage à Portland, en Oregon, rencontre un problème de train d’atterrissage ; pour se donner le temps de le diagnostiquer, il choisit d’attendre en circuit à l’est de l’aéroport.",
+      "normalized_claim": "Cas de Portland, decembre 1978, rapporte par le rapport.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[2]",
       "start": 408,
       "end": 554,
       "claim_text": "Absorbé par la panne, le commandant de bord ne reconnaît pas la situation de carburant bas qui s’installe, malgré les indications de son équipage.",
-      "normalized_claim": "Le commandant ne reconnait pas la situation de carburant bas malgre les indications de l equipage.",
+      "normalized_claim": "Le commandant, preoccupe, ne reconnait pas la condition de carburant bas malgre les indications de son equipage.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[2]",
       "start": 555,
       "end": 611,
       "claim_text": "L’appareil tombe en panne sèche et s’écrase : dix morts.",
-      "normalized_claim": "Panne seche, crash, dix morts.",
+      "normalized_claim": "Ran out of fuel and crashed, killing 10 people.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[2]",
       "start": 612,
       "end": 781,
       "claim_text": "Chaque maillon était raisonnable, la mise en attente comprise ; ce qui a manqué est le peu d’attention qui aurait signalé qu’un élément confortable avait changé de rang.",
-      "normalized_claim": "Lecture du cas : chaque etape etait raisonnable, ce qui a manque est la SA residuelle sur un element devenu primaire.",
+      "normalized_claim": "Lecture du cas par la regle du secondaire devenu primaire.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-91d6e9a6cd57ce6d"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C040",
       "locator": "sections[3].paragraphs[0]",
-      "start": 0,
+      "start": 77,
       "end": 246,
-      "claim_text": "Cette définition a une particularité qui ne se voit qu’en ouvrant le texte : dans le rapport de 1998, elle n’est pas énoncée mais citée, entre guillemets, précédée de « the most generally applicable definition is that provided by Endsley (1988) »",
-      "normalized_claim": "Dans le rapport de 1998 la definition est citee entre guillemets et attribuee a Endsley (1988).",
+      "claim_text": "dans le rapport de 1998, elle n’est pas énoncée mais citée, entre guillemets, précédée de « the most generally applicable definition is that provided by Endsley (1988) »",
+      "normalized_claim": "La definition est une citation rapportee, entre guillemets, precedee de cet appel de reference.",
       "support_ids": [
-        "SUP-c14ede2fbb7d6d70",
         "SUP-fc034d085b584c36",
+        "SUP-c14ede2fbb7d6d70",
         "SUP-80ce875f4d793761",
-        "SUP-9ae6ef8e7bf56acd"
+        "SUP-9ae6ef8e7bf56acd",
+        "SUP-57cd9c8876e3d9df"
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
       "start": 251,
-      "end": 359,
-      "claim_text": "la bibliographie renvoie à une communication de 1988 signée d’Endsley seule, quand le rapport en porte cinq.",
-      "normalized_claim": "La bibliographie renvoie a une communication de 1988 signee d Endsley seule, alors que le rapport porte cinq signatures.",
+      "end": 358,
+      "claim_text": "la bibliographie renvoie à une communication de 1988 signée d’Endsley seule, quand le rapport en porte cinq",
+      "normalized_claim": "La bibliographie du rapport identifie Endsley 1988, signee d'elle seule ; le rapport porte cinq signatures.",
       "support_ids": [
         "SUP-9ae6ef8e7bf56acd",
-        "SUP-57cd9c8876e3d9df",
         "SUP-98e6f60ca4b677d7",
-        "SUP-aa37c0574351d4d6"
+        "SUP-57cd9c8876e3d9df",
+        "SUP-aa37c0574351d4d6",
+        "SUP-1b6dd65738f62dd0",
+        "SUP-5bf333c75ede9aa3"
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[0]",
       "start": 360,
-      "end": 510,
-      "claim_text": "Le même paragraphe figure déjà dans un rapport fédéral de décembre 1994 qu’elle signe avec Mark D. Rodgers, où le mot controller remplace le mot pilot",
-      "normalized_claim": "Le meme paragraphe figure dans un rapport federal de decembre 1994 cosigne avec Mark D. Rodgers, avec controller au lieu de pilot.",
-      "support_ids": [
-        "SUP-69df7ea2d1ba5d34",
-        "SUP-8b17a642d631160c",
-        "SUP-d11536e3dc6ce866",
-        "SUP-57cd9c8876e3d9df"
-      ]
-    },
-    {
-      "claim_id": "C054",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 513,
       "end": 594,
-      "claim_text": "là encore entre guillemets, renvoyé cette fois à deux textes, de 1987 et de 1988.",
-      "normalized_claim": "Dans le rapport de 1994 la phrase est encore entre guillemets et renvoyee a deux textes, 1987 et 1988.",
+      "claim_text": "Le même paragraphe figure déjà dans un rapport fédéral de décembre 1994 qu’elle signe avec Mark D. Rodgers, où le mot controller remplace le mot pilot : là encore entre guillemets, renvoyé cette fois à deux textes, de 1987 et de 1988.",
+      "normalized_claim": "DOT/FAA/AM-94/27, decembre 1994, Endsley & Rodgers : meme paragraphe, controller au lieu de pilot, attribue a Endsley (1987; 1988).",
       "support_ids": [
         "SUP-69df7ea2d1ba5d34",
         "SUP-8b17a642d631160c",
-        "SUP-57cd9c8876e3d9df"
+        "SUP-57cd9c8876e3d9df",
+        "SUP-d11536e3dc6ce866"
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
       "start": 595,
       "end": 643,
       "claim_text": "Elle se cite donc elle-même depuis 1994 au moins",
-      "normalized_claim": "Endsley se cite elle-meme depuis 1994 au moins.",
+      "normalized_claim": "Conclusion du dossier : Endsley se cite elle-meme, entre guillemets, depuis 1994 au moins.",
       "support_ids": [
         "SUP-69df7ea2d1ba5d34",
-        "SUP-8b17a642d631160c",
-        "SUP-57cd9c8876e3d9df"
+        "SUP-57cd9c8876e3d9df",
+        "SUP-8b17a642d631160c"
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
       "start": 646,
-      "end": 769,
-      "claim_text": "pour lire la définition dans les termes où elle a d’abord été posée, c’est cette communication de 1988 qu’il faudra ouvrir.",
-      "normalized_claim": "Pour lire la definition a sa source il faut ouvrir la communication de 1988.",
+      "end": 750,
+      "claim_text": "dans quels termes ces textes de 1987 et de 1988 posent la définition, il faudra les ouvrir pour le voir.",
+      "normalized_claim": "Les textes de 1987 et 1988 n'ont pas ete ouverts ; rien n'est conclu de leur formulation.",
       "support_ids": [
         "SUP-84bd2da819f0cb3d",
         "SUP-1b6dd65738f62dd0",
-        "SUP-aa37c0574351d4d6",
-        "SUP-69df7ea2d1ba5d34"
+        "SUP-183e1bc0fc4be22f",
+        "SUP-69df7ea2d1ba5d34",
+        "SUP-c14ede2fbb7d6d70"
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "start": 0,
       "end": 49,
       "claim_text": "Le terme, lui, est plus ancien que la définition.",
-      "normalized_claim": "Le terme est anterieur a la definition.",
+      "normalized_claim": "Anteriorite du terme sur la definition.",
       "support_ids": [
-        "SUP-57cd9c8876e3d9df",
+        "SUP-5bf333c75ede9aa3",
         "SUP-c88e2bc707cceaa2",
-        "SUP-1f0ac5f981b34a1a",
+        "SUP-57cd9c8876e3d9df",
+        "SUP-d5538116f10fbcae"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 50,
+      "end": 289,
+      "claim_text": "Béatrice Bailly, dont la thèse acclimate la notion en français chez les conducteurs, le fait remonter à la médecine aéronautique et rappelle qu’« A l’origine, ce terme était plus employé par les pilotes que par la communauté scientifique »",
+      "normalized_claim": "These de Bailly 2004 sur les conducteurs : origine en medecine aeronautique, verbatim p. 9.",
+      "support_ids": [
+        "SUP-d5538116f10fbcae",
+        "SUP-c88e2bc707cceaa2",
+        "SUP-2ad1fb5f4d8d6579",
+        "SUP-0d96fe239c943f7d",
+        "SUP-dec785f9420f07f7",
+        "SUP-ab47abd462ca886f"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 292,
+      "end": 415,
+      "claim_text": "en 1986, la 57th Fighter Weapons Wing de l’US Air Force en faisait le facteur le plus important d’efficacité d’une mission.",
+      "normalized_claim": "1986, 57th Fighter Weapons Wing : facteur le plus important d'efficacite d'une mission, d'apres Bailly p. 9.",
+      "support_ids": [
+        "SUP-d5538116f10fbcae",
+        "SUP-c88e2bc707cceaa2",
+        "SUP-57cd9c8876e3d9df",
+        "SUP-dec785f9420f07f7"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 416,
+      "end": 549,
+      "claim_text": "Le découpage en trois niveaux arrive donc sur un mot déjà installé : c’est lui, et non le mot, qu’on peut porter au crédit d’Endsley.",
+      "normalized_claim": "Ce qui revient a Endsley est la definition en trois niveaux, pas l'invention du terme.",
+      "support_ids": [
+        "SUP-5bf333c75ede9aa3",
+        "SUP-57cd9c8876e3d9df",
+        "SUP-d5538116f10fbcae",
+        "SUP-98e6f60ca4b677d7"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 54,
+      "claim_text": "La contestation vient de l’intérieur de la discipline.",
+      "normalized_claim": "Les objections sont formulees par des chercheurs du domaine.",
+      "support_ids": [
+        "SUP-bf34cc37ee59c96b",
+        "SUP-f3e088accf76cc23",
+        "SUP-5bf333c75ede9aa3",
+        "SUP-9bb7ffcc55bd814e"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 55,
+      "end": 419,
+      "claim_text": "Une méta-revue publiée en 2026 par Laura Louise Moens et ses collègues, dans la revue même qui avait accueilli Endsley en 1995, rappelle que les chercheurs relèvent depuis longtemps que la conscience de la situation est « a theoretically challenged construct, lacking a universally accepted operational definition and exhibiting ill-defined conceptual boundaries »",
+      "normalized_claim": "Moens et coll. 2026 dans Human Factors, revue qui publia Endsley en 1995 : verbatim de la section Theoretical Foundations.",
+      "support_ids": [
+        "SUP-f3e088accf76cc23",
+        "SUP-bf34cc37ee59c96b",
+        "SUP-baf9c54c74547524",
+        "SUP-9fcf09331a02725c",
+        "SUP-5ba2a1c55caf0c57",
+        "SUP-9bb7ffcc55bd814e",
+        "SUP-0338934c70fe564f"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 422,
+      "end": 536,
+      "claim_text": "un construit théoriquement fragile, sans définition opérationnelle admise de tous et aux frontières mal découpées.",
+      "normalized_claim": "Traduction du verbatim.",
+      "support_ids": [
+        "SUP-f3e088accf76cc23",
+        "SUP-bf34cc37ee59c96b"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 48,
+      "claim_text": "L’objection atteint aussi les niveaux eux-mêmes.",
+      "normalized_claim": "La critique porte aussi sur les trois niveaux.",
+      "support_ids": [
+        "SUP-f3e088accf76cc23",
+        "SUP-2ad1fb5f4d8d6579"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 49,
+      "end": 281,
+      "claim_text": "Les mêmes auteurs rapportent qu’on reproche à la perception, à la compréhension et à la projection de simplifier à l’excès « the intertwined and adaptive processes involved in maintaining SA », des processus entremêlés et adaptatifs",
+      "normalized_claim": "Moens et coll. rapportent la critique de sursimplification, verbatim et traduction.",
+      "support_ids": [
+        "SUP-f3e088accf76cc23",
+        "SUP-bf34cc37ee59c96b"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 283,
+      "end": 441,
+      "claim_text": "et ils nomment ce qu’on propose à la place : le cycle perceptif de Smith et Hancock, et une approche systémique appelée conscience de la situation distribuée.",
+      "normalized_claim": "Les deux familles d'alternatives exposees par Moens et coll. : cycle perceptif de Smith & Hancock, conscience de la situation distribuee.",
+      "support_ids": [
+        "SUP-f3e088accf76cc23"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 442,
+      "end": 548,
+      "claim_text": "Chez Adams, Tenney et Pew, que rapporte Béatrice Bailly, c’est la rigidité de la hiérarchie qui est visée.",
+      "normalized_claim": "Bailly p. 27 rapporte la critique de rigidite d'Adams, Tenney & Pew.",
+      "support_ids": [
+        "SUP-2ad1fb5f4d8d6579",
+        "SUP-ab47abd462ca886f",
+        "SUP-dec785f9420f07f7"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 59,
+      "end": 294,
+      "claim_text": "Norman R. Hertz et Michael T. Hertz reprennent un argument de circularité : comment sait-on que la conscience de la situation a été perdue ? Parce que l’opérateur a mal réagi. Pourquoi a-t-il mal réagi ? Parce qu’elle avait été perdue.",
+      "normalized_claim": "Hertz & Hertz 2013 p. 105 reformulent l'argument de circularite.",
+      "support_ids": [
+        "SUP-4ddc6bd5e0bd6356",
+        "SUP-7e45b5c172121651",
+        "SUP-167654acf8d6e3ac",
+        "SUP-b00667c43da8f910",
+        "SUP-e2093c77e6121197",
+        "SUP-941299eae0df7d1f"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 295,
+      "end": 381,
+      "claim_text": "Expliquer une erreur par la perte de ce que l’erreur sert à constater n’explique rien.",
+      "normalized_claim": "Glose de la circularite : l'explication est vide.",
+      "support_ids": [
+        "SUP-4ddc6bd5e0bd6356",
+        "SUP-7e45b5c172121651",
+        "SUP-6d3b48d842a4381a",
         "SUP-5bf333c75ede9aa3"
       ]
     },
     {
       "claim_id": "C058",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 50,
-      "end": 133,
-      "claim_text": "Béatrice Bailly, dont la thèse acclimate la notion en français chez les conducteurs",
-      "normalized_claim": "La these de Beatrice Bailly acclimate la notion en francais chez les conducteurs.",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 382,
+      "end": 554,
+      "claim_text": "Ils rappellent aussi que « Situation awareness is a hypothetical construct that cannot be measured directly » : on ne l’observe pas, on l’infère de ce que fait l’opérateur.",
+      "normalized_claim": "Verbatim de Hertz & Hertz sur le construit hypothetique non mesurable directement, et sa glose.",
       "support_ids": [
-        "SUP-0d96fe239c943f7d",
-        "SUP-dec785f9420f07f7",
-        "SUP-2ad1fb5f4d8d6579",
-        "SUP-ab47abd462ca886f"
+        "SUP-9bb7ffcc55bd814e",
+        "SUP-4ddc6bd5e0bd6356",
+        "SUP-e2093c77e6121197",
+        "SUP-941299eae0df7d1f"
       ]
     },
     {
       "claim_id": "C059",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 135,
-      "end": 289,
-      "claim_text": "le fait remonter à la médecine aéronautique et rappelle qu’« A l’origine, ce terme était plus employé par les pilotes que par la communauté scientifique »",
-      "normalized_claim": "Bailly fait remonter le terme a la medecine aeronautique, verbatim a l appui.",
-      "support_ids": [
-        "SUP-1f0ac5f981b34a1a",
-        "SUP-c88e2bc707cceaa2",
-        "SUP-2ad1fb5f4d8d6579"
-      ]
-    },
-    {
-      "claim_id": "C060",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 292,
-      "end": 415,
-      "claim_text": "en 1986, la 57th Fighter Weapons Wing de l’US Air Force en faisait le facteur le plus important d’efficacité d’une mission.",
-      "normalized_claim": "En 1986 la 57th Fighter Weapons Wing en faisait le facteur le plus important d efficacite d une mission.",
-      "support_ids": [
-        "SUP-1f0ac5f981b34a1a",
-        "SUP-c88e2bc707cceaa2",
-        "SUP-57cd9c8876e3d9df"
-      ]
-    },
-    {
-      "claim_id": "C061",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 416,
-      "end": 549,
-      "claim_text": "Le découpage en trois niveaux arrive donc sur un mot déjà installé : c’est lui, et non le mot, qu’on peut porter au crédit d’Endsley.",
-      "normalized_claim": "C est le decoupage en trois niveaux, non le terme, qui revient a Endsley.",
-      "support_ids": [
-        "SUP-57cd9c8876e3d9df",
-        "SUP-5bf333c75ede9aa3",
-        "SUP-98e6f60ca4b677d7"
-      ]
-    },
-    {
-      "claim_id": "C062",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 0,
-      "end": 54,
-      "claim_text": "La contestation vient de l’intérieur de la discipline.",
-      "normalized_claim": "La contestation est interne a la discipline.",
-      "support_ids": [
-        "SUP-f3e088accf76cc23",
-        "SUP-bf34cc37ee59c96b",
-        "SUP-9bb7ffcc55bd814e"
-      ]
-    },
-    {
-      "claim_id": "C063",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 55,
-      "end": 181,
-      "claim_text": "Une méta-revue publiée en 2026 par Laura Louise Moens et ses collègues, dans la revue même qui avait accueilli Endsley en 1995",
-      "normalized_claim": "Meta-revue de 2026 par Moens et coll., dans la revue qui avait publie Endsley en 1995.",
-      "support_ids": [
-        "SUP-9fcf09331a02725c",
-        "SUP-baf9c54c74547524",
-        "SUP-5ba2a1c55caf0c57",
-        "SUP-bf34cc37ee59c96b",
-        "SUP-f3e088accf76cc23"
-      ]
-    },
-    {
-      "claim_id": "C064",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 183,
-      "end": 419,
-      "claim_text": "rappelle que les chercheurs relèvent depuis longtemps que la conscience de la situation est « a theoretically challenged construct, lacking a universally accepted operational definition and exhibiting ill-defined conceptual boundaries »",
-      "normalized_claim": "Verbatim de Moens et coll. sur le construit theoriquement fragile.",
-      "support_ids": [
-        "SUP-f3e088accf76cc23",
-        "SUP-bf34cc37ee59c96b",
-        "SUP-9bb7ffcc55bd814e"
-      ]
-    },
-    {
-      "claim_id": "C065",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 422,
-      "end": 536,
-      "claim_text": "un construit théoriquement fragile, sans définition opérationnelle admise de tous et aux frontières mal découpées.",
-      "normalized_claim": "Traduction du verbatim precedent.",
-      "support_ids": [
-        "SUP-f3e088accf76cc23",
-        "SUP-bf34cc37ee59c96b",
-        "SUP-9bb7ffcc55bd814e"
-      ]
-    },
-    {
-      "claim_id": "C066",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 0,
-      "end": 48,
-      "claim_text": "L’objection atteint aussi les niveaux eux-mêmes.",
-      "normalized_claim": "L objection porte aussi sur les trois niveaux.",
-      "support_ids": [
-        "SUP-f3e088accf76cc23",
-        "SUP-2ad1fb5f4d8d6579"
-      ]
-    },
-    {
-      "claim_id": "C067",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 49,
-      "end": 281,
-      "claim_text": "Les mêmes auteurs rapportent qu’on reproche à la perception, à la compréhension et à la projection de simplifier à l’excès « the intertwined and adaptive processes involved in maintaining SA », des processus entremêlés et adaptatifs",
-      "normalized_claim": "Moens et coll. rapportent le reproche de simplification excessive des processus entremeles et adaptatifs.",
-      "support_ids": [
-        "SUP-f3e088accf76cc23"
-      ]
-    },
-    {
-      "claim_id": "C068",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 286,
-      "end": 441,
-      "claim_text": "ils nomment ce qu’on propose à la place : le cycle perceptif de Smith et Hancock, et une approche systémique appelée conscience de la situation distribuée.",
-      "normalized_claim": "Les alternatives nommees : cycle perceptif de Smith et Hancock, conscience de la situation distribuee.",
-      "support_ids": [
-        "SUP-f3e088accf76cc23"
-      ]
-    },
-    {
-      "claim_id": "C069",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 442,
-      "end": 548,
-      "claim_text": "Chez Adams, Tenney et Pew, que rapporte Béatrice Bailly, c’est la rigidité de la hiérarchie qui est visée.",
-      "normalized_claim": "Adams, Tenney et Pew, rapportes par Bailly, visent la rigidite de la hierarchie.",
-      "support_ids": [
-        "SUP-2ad1fb5f4d8d6579",
-        "SUP-dec785f9420f07f7",
-        "SUP-ab47abd462ca886f"
-      ]
-    },
-    {
-      "claim_id": "C070",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 59,
-      "end": 294,
-      "claim_text": "Norman R. Hertz et Michael T. Hertz reprennent un argument de circularité : comment sait-on que la conscience de la situation a été perdue ? Parce que l’opérateur a mal réagi. Pourquoi a-t-il mal réagi ? Parce qu’elle avait été perdue.",
-      "normalized_claim": "Hertz et Hertz reprennent l argument de circularite, restitue ici.",
-      "support_ids": [
-        "SUP-4ddc6bd5e0bd6356",
-        "SUP-7e45b5c172121651",
-        "SUP-167654acf8d6e3ac",
-        "SUP-e2093c77e6121197",
-        "SUP-b00667c43da8f910"
-      ]
-    },
-    {
-      "claim_id": "C071",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 295,
-      "end": 381,
-      "claim_text": "Expliquer une erreur par la perte de ce que l’erreur sert à constater n’explique rien.",
-      "normalized_claim": "Portee de l argument : la perte de SA n explique pas l erreur qui sert a la constater.",
-      "support_ids": [
-        "SUP-4ddc6bd5e0bd6356",
-        "SUP-7e45b5c172121651",
-        "SUP-6d3b48d842a4381a"
-      ]
-    },
-    {
-      "claim_id": "C072",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 409,
-      "end": 491,
-      "claim_text": "Situation awareness is a hypothetical construct that cannot be measured directly »",
-      "normalized_claim": "Verbatim : la SA est un construit hypothetique non mesurable directement.",
-      "support_ids": [
-        "SUP-9bb7ffcc55bd814e",
-        "SUP-4ddc6bd5e0bd6356"
-      ]
-    },
-    {
-      "claim_id": "C073",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 494,
-      "end": 554,
-      "claim_text": "on ne l’observe pas, on l’infère de ce que fait l’opérateur.",
-      "normalized_claim": "Elle s infere du comportement de l operateur.",
-      "support_ids": [
-        "SUP-9bb7ffcc55bd814e",
-        "SUP-4ddc6bd5e0bd6356"
-      ]
-    },
-    {
-      "claim_id": "C074",
       "locator": "sections[4].paragraphs[3]",
       "start": 0,
       "end": 160,
       "claim_text": "Et pourtant le modèle domine : la même méta-revue reconnaît qu’« Endsley’s (1995b) three-level model remains the most influential theoretical framework of SA ».",
-      "normalized_claim": "La meme meta-revue reconnait que le modele en trois niveaux reste le plus influent.",
+      "normalized_claim": "Moens et coll. reconnaissent la domination du modele en trois niveaux, verbatim.",
       "support_ids": [
         "SUP-f3e088accf76cc23",
         "SUP-98e6f60ca4b677d7",
@@ -1001,12 +845,12 @@
       ]
     },
     {
-      "claim_id": "C075",
+      "claim_id": "C060",
       "locator": "sections[4].paragraphs[3]",
       "start": 161,
       "end": 336,
       "claim_text": "Les auteurs de la méta-revue en tirent une conclusion de vocabulaire : mieux vaut voir là un méta-construit dépendant du contexte qu’un phénomène unique et précisément défini.",
-      "normalized_claim": "Conclusion de Moens et coll. : meta-construit dependant du contexte plutot que phenomene unique.",
+      "normalized_claim": "Conclusion de Moens et coll. : meta-construit dependant du contexte.",
       "support_ids": [
         "SUP-f3e088accf76cc23",
         "SUP-bf34cc37ee59c96b",
@@ -1014,125 +858,132 @@
       ]
     },
     {
-      "claim_id": "C076",
+      "claim_id": "C061",
       "locator": "sections[5].paragraphs[0]",
       "start": 0,
       "end": 198,
       "claim_text": "Le rapport de 1998 consacre l’essentiel de ses quatre-vingt-douze pages à tout autre chose qu’à la théorie : une analyse de tâche dirigée par les buts, menée auprès de pilotes de ligne expérimentés.",
-      "normalized_claim": "Le rapport consacre l essentiel de ses 92 pages a une analyse de tache dirigee par les buts aupres de pilotes de ligne experimentes.",
+      "normalized_claim": "80 des 92 pages : analyse de tache dirigee par les buts aupres de pilotes de ligne experimentes.",
       "support_ids": [
         "SUP-3a922dea0eec27e3",
         "SUP-80ce875f4d793761",
-        "SUP-1d13871a160ba55c",
-        "SUP-86db8361951e7619"
+        "SUP-86db8361951e7619",
+        "SUP-ee5ce7b374b0844c",
+        "SUP-1d13871a160ba55c"
       ]
     },
     {
-      "claim_id": "C077",
+      "claim_id": "C062",
       "locator": "sections[5].paragraphs[0]",
       "start": 199,
       "end": 347,
       "claim_text": "On y dégage leurs buts, leurs sous-buts, les décisions qui s’y rattachent, et pour chacune l’information nécessaire, rangée selon les trois niveaux.",
-      "normalized_claim": "Buts, sous-buts, decisions et exigences informationnelles rangees par niveau.",
+      "normalized_claim": "Buts, sous-buts, decisions et exigences informationnelles par niveau 1, 2, 3.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-3a922dea0eec27e3"
       ]
     },
     {
-      "claim_id": "C078",
+      "claim_id": "C063",
       "locator": "sections[5].paragraphs[0]",
       "start": 348,
       "end": 457,
       "claim_text": "Le produit est un inventaire de ce qu’il faut savoir pour piloter, destiné à la conception et à la formation.",
-      "normalized_claim": "Le produit est un inventaire destine a la conception et a la formation.",
+      "normalized_claim": "Les exigences relevees sont destinees a la conception des systemes et a la formation.",
       "support_ids": [
+        "SUP-80ce875f4d793761",
         "SUP-fa83f95603fe8361",
-        "SUP-80ce875f4d793761"
+        "SUP-3a922dea0eec27e3"
       ]
     },
     {
-      "claim_id": "C079",
+      "claim_id": "C064",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
-      "end": 43,
-      "claim_text": "Le texte pose lui-même deux mises en garde.",
-      "normalized_claim": "Le texte pose lui-meme des mises en garde methodologiques.",
+      "end": 64,
+      "claim_text": "Le texte pose lui-même plusieurs mises en garde méthodologiques.",
+      "normalized_claim": "Le rapport enonce cinq mises en garde methodologiques, page imprimee 4.",
       "support_ids": [
         "SUP-80ce875f4d793761",
         "SUP-3a922dea0eec27e3"
       ]
     },
     {
-      "claim_id": "C080",
+      "claim_id": "C065",
       "locator": "sections[5].paragraphs[1]",
-      "start": 58,
-      "end": 347,
-      "claim_text": "ces listes décrivent ce que les pilotes voudraient idéalement savoir, alors qu’ils travaillent couramment avec moins, et l’analyse vaut donc comme « a design goal, not necessarily a description of an existing system », un objectif de conception et non la description d’un système existant.",
-      "normalized_claim": "Premiere mise en garde : un objectif de conception, non la description d un systeme existant.",
+      "start": 73,
+      "end": 361,
+      "claim_text": "ces listes décrivent ce que les pilotes voudraient idéalement savoir, alors qu’ils travaillent couramment avec moins, et l’analyse vaut donc comme « a design goal, not necessarily a description of an existing system », un objectif de conception et non la description d’un système existant",
+      "normalized_claim": "Troisieme caveat du rapport, verbatim et traduction.",
       "support_ids": [
         "SUP-80ce875f4d793761",
-        "SUP-3a922dea0eec27e3"
+        "SUP-3a922dea0eec27e3",
+        "SUP-fa83f95603fe8361"
       ]
     },
     {
-      "claim_id": "C081",
+      "claim_id": "C066",
       "locator": "sections[5].paragraphs[1]",
-      "start": 361,
-      "end": 491,
-      "claim_text": "elle part des buts et se veut « as technology-free as possible », la manière dont l’information est obtenue n’y étant pas traitée.",
-      "normalized_claim": "Seconde mise en garde : analyse aussi independante que possible de la technique.",
+      "start": 375,
+      "end": 504,
+      "claim_text": "elle part des buts et se veut « as technology-free as possible », la manière dont l’information est obtenue n’y étant pas traitée",
+      "normalized_claim": "Deuxieme caveat : analyse fondee sur les buts, aussi independante que possible de la technique.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C082",
+      "claim_id": "C067",
       "locator": "sections[5].paragraphs[1]",
-      "start": 492,
-      "end": 568,
+      "start": 506,
+      "end": 582,
       "claim_text": "L’inventaire dit ce qu’il faut savoir, jamais par quel instrument le savoir.",
-      "normalized_claim": "L inventaire dit quoi savoir, jamais par quel instrument.",
+      "normalized_claim": "Glose du caveat technology-free.",
       "support_ids": [
         "SUP-80ce875f4d793761"
       ]
     },
     {
-      "claim_id": "C083",
+      "claim_id": "C068",
       "locator": "sections[5].paragraphs[2]",
       "start": 0,
       "end": 216,
       "claim_text": "Ces deux réserves changent ce qu’on peut attendre du modèle : on peut alors comprendre les trois niveaux comme une grille de questions à poser sur une situation, plutôt que comme un état mesurable logé dans une tête.",
-      "normalized_claim": "Lecture derivee : les trois niveaux comme grille de questions plutot qu etat mesurable.",
+      "normalized_claim": "Derive des deux caveats, et du refus du construit mesurable directement.",
       "support_ids": [
         "SUP-80ce875f4d793761",
+        "SUP-fa83f95603fe8361",
         "SUP-8409914bb88c3454",
-        "SUP-9bb7ffcc55bd814e"
+        "SUP-4ddc6bd5e0bd6356",
+        "SUP-9bb7ffcc55bd814e",
+        "SUP-3a922dea0eec27e3"
       ]
     },
     {
-      "claim_id": "C084",
+      "claim_id": "C069",
       "locator": "sections[5].paragraphs[2]",
       "start": 217,
       "end": 366,
       "claim_text": "La mesure, ce rapport ne l’aborde pas : il annonce fournir une base au développement de mesures pour l’aviation commerciale, sans en proposer aucune.",
-      "normalized_claim": "Le rapport n aborde pas la mesure et annonce seulement fournir une base a son developpement.",
+      "normalized_claim": "Le rapport ne nomme jamais SAGAT et renvoie la mesure a plus tard : basis for the development of SA measures for commercial flight.",
       "support_ids": [
         "SUP-8409914bb88c3454",
         "SUP-c87702c9cc5189bc"
       ]
     },
     {
-      "claim_id": "C085",
+      "claim_id": "C070",
       "locator": "sections[5].paragraphs[2]",
       "start": 367,
       "end": 543,
       "claim_text": "Ce que quatorze revues systématiques rassemblées par Laura Louise Moens et ses collègues concluent des instruments qui prétendent l’évaluer, il faudra aller le lire chez elles.",
-      "normalized_claim": "Les quatorze revues systematiques rassemblees par Moens et coll. concluent sur les instruments de mesure.",
+      "normalized_claim": "Moens et coll. rassemblent quatorze revues systematiques sur la mesure de la conscience de la situation.",
       "support_ids": [
-        "SUP-baf9c54c74547524",
         "SUP-9fcf09331a02725c",
-        "SUP-5ba2a1c55caf0c57"
+        "SUP-baf9c54c74547524",
+        "SUP-5ba2a1c55caf0c57",
+        "SUP-f3e088accf76cc23"
       ]
     }
   ]
