@@ -5,6 +5,176 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-09-29
+
+Sixième exécution. **Trois cartes jamais auditées instruites, trois publiées — et le premier passage
+du dépôt qui boucle un lot entier.** `ROUTINE_PASS`.
+
+- branche      : `claude/beautiful-feynman-s3ux27`, imposée par la session.
+- lot          : **3 cartes** — `attention-diffusee-et-selection`, `conscience-de-la-situation`,
+  `ligne-d-approvisionnement-ignoree`. Aucune `SKIPPED_DIRTY`.
+- résultats    : **3 publiées.** `REVISE` sur les trois, `FACTCHECK_PASS` sur les trois, `ACCEPT`
+  sur les trois.
+- contrôles    : validate 140 / 136 validés / 0 erreur / 114 avertissements · deepen --check 136 ·
+  `npm test` **575 sur 575** · lint 0 · `next build` sans erreur · projection rejouée idempotente.
+- corpus       : 208 545 → **209 118 mots**, moyenne 1 533 → **1 538**.
+
+**La parade du chantier N a été appliquée et elle a servi** : PR #123 était ouverte et non
+fusionnée, et les deux cartes qu'elle porte ont été écartées de la sélection avant tout travail.
+
+### Ce que les trois cartes portaient, et ce qu'il faut ne pas surcompter
+
+Deux défauts de fidélité réels, et un troisième qui n'en était pas un.
+
+| carte | défaut | nature |
+|---|---|---|
+| `ligne-d-approvisionnement-ignoree` | concluait que l'amplification « n'est pas inscrite dans les délais ni dans la forme de la chaîne » | **la page 26 de sa propre source contredit cette phrase** |
+| `attention-diffusee-et-selection` | la mise en garde sur les 16,5 % rendue à la réception syndicale | **elle appartient à l'historien qui rapporte le chiffre** |
+| `conscience-de-la-situation` | « Imaginons une équipe absorbée par une panne… » | **pas une faute documentaire** — voir ci-dessous |
+
+**Le troisième cas est une correction à mon propre compte rendu, et elle compte.** Le réécrivain a
+parlé d'un « exemple inventé » dans le texte publié, et je l'ai repris tel quel, y compris dans la
+notification envoyée en cours de passage. Vérification faite sur le blob antérieur, c'est faux : la
+scène s'annonçait comme hypothétique, ne présentait aucun fait comme réel et n'attribuait rien à
+personne. Son défaut était pédagogique — elle rejouait le `lead`. Son remplacement par l'approche de
+Portland de décembre 1978, vérifiée mot à mot contre la lecture primaire, est le meilleur gain
+pédagogique du lot, pas une réparation de fidélité. **Une illustration déclarée hypothétique n'est
+pas un fait fabriqué**, et le décompte des défauts documentaires de ce passage ne doit pas l'inclure.
+
+Trois autres corrections de portée sont entrées sur `conscience-de-la-situation`, toutes dans le sens
+du retrait : une sur-attribution du `lead` créditant l'autrice d'avoir donné « un nom et une
+structure » quand les sources n'autorisent que la définition en trois niveaux, deux affirmations de
+fréquence sans appui, et une analyse d'accidents prêtée à un article de théorie.
+
+### Le fait de la nuit : `MAPPING_INCOMPLETE` est structurellement inatteignable quand le signal est muet
+
+Le gate a refusé `C046` de `conscience-de-la-situation`, une citation entre guillemets attribuée à
+Bailly, parce qu'aucun appui fourni ne la portait. **C'était exact quant aux appuis fournis et faux
+quant au dépôt** : le verbatim est dans l'enregistrement validé, `$.review.notes[2]`, avec sa page,
+et le pack le ramasse sous `SUP-1f0ac5f981b34a1a`. Cet appui n'était attaché à **aucun** claim, et le
+`uncited_support_signal` de `C046` était **vide**.
+
+Le mécanisme, et il n'est pas propre à ce cas :
+
+> **Le vérificateur ne reçoit que les appuis que le mapper a rattachés, plus le signal.** Il ne peut
+> pas savoir qu'un appui existe ailleurs dans le pack. Quand le signal est muet, son verdict est donc
+> structurellement forcé vers `UNSUPPORTED`, qui fait couper le texte — `MAPPING_INCOMPLETE` lui est
+> inatteignable.
+
+Et le signal est muet précisément quand l'appui omis ne partage aucun terme rare : ici « pilotes »,
+« origine », « communauté scientifique » sont présents ailleurs dans le pack. Le protocole l'écrivait
+en principe — « un signal vide n'atteste pas qu'un mapping est complet » — sans qu'un cas l'ait
+montré. **En voici un, et il porte une citation.** C'est aussi l'explication de la perte du
+26 septembre sur `C008` de `critere-de-la-retroaction`.
+
+**Écart de protocole assumé.** La voie du remapping a été prise sur un gate dont le verdict était
+`FAIL` et non `INVALID`, parce que le défaut était dans l'artefact et que la boucle de correction
+aurait supprimé une matière attestée avec sa pagination. Le verdict du gate reste au dossier. La
+justification exigée — « un appui nommé dont l'absence parmi les appuis du claim est constatable » —
+était remplie, l'identifiant écrit avant la décision. **Le mapper frais, à qui rien n'avait été dit,
+a rattaché l'appui de lui-même** : l'omission est confirmée, et la citation est restée.
+
+Il a généralisé le geste sans qu'on le lui demande, et c'est la parade que ce cas suggère, sans
+aucun code : **pour chaque citation entre guillemets, chercher activement dans le pack l'appui qui
+porte ce verbatim et le rattacher.** Une citation est le seul énoncé dont on sait d'avance qu'un
+appui exact doit exister quelque part. Quatre appuis de cette carte étaient seuls porteurs de leur
+citation ; les quatre auraient été refusés de la même manière.
+
+### Le partitionnement a un coût, et il a été payé
+
+`attention-diffusee-et-selection` a rendu un bundle à 288 360 tokens estimés, donc `READY`, à 4 % du
+plafond. Je l'ai partitionné quand même, par prudence contre le context rot. **Cette prudence a
+acheté une incohérence** : `C005` en partition 1 et `C042` en partition 2 portaient la même
+proposition, et deux vérificateurs différents ont rendu `TOO_STRONG` d'un côté, `SUPPORTED` de
+l'autre. Aucun n'était en position de voir la redite, et le gate ne compare pas les claims entre eux.
+Le réécrivain l'a trouvée en corrigeant autre chose.
+
+Sa propre explication du mécanisme était fausse — il l'imputait au champ `normalized_claim`, que le
+bundle ne transporte pas, vérification faite — et l'erreur a été reprise par le reviewer. Elle est
+corrigée dans les deux artefacts.
+
+**Conséquence tenue pour la suite du lot** : on ne partitionne que sur dépassement réel, et le moins
+possible. Les deux autres cartes ont été vérifiées d'un bloc, et le vérificateur de
+`conscience-de-la-situation` a fait ce que cette position permet — il a comparé ses propositions
+redoublées et leur a donné le même verdict.
+
+### Un instrument écrit contre ce défaut, mesuré, et jeté
+
+L'idée était de joindre au recollement un contrôle signalant les paires de claims dont les textes se
+recouvrent fortement et dont les verdicts divergent. Il a été écrit, puis essayé sur le cas même qui
+l'avait motivé :
+
+| | |
+|---|---|
+| `C005` | « Ce qu'on appelle ordinairement l'attention est un resserrement : on fixe une chose, on oublie le reste. » |
+| `C042` | « sa faute est un resserrement sur un seul objet, c'est-à-dire ce qu'on appelle d'ordinaire être attentif. » |
+| jetons communs | **3** — « appelle », « est », « resserrement » |
+| recouvrement de Jaccard | **0,167**, pour un seuil de 0,60 |
+
+**Il ne détecte pas le cas pour lequel il a été écrit.** Deux phrases peuvent affirmer la même
+proposition avec un vocabulaire presque disjoint — c'est justement ce qui rend la redite difficile à
+voir. Descendre le seuil à 0,167 signalerait presque toutes les paires du texte : même échec que le
+balayage des titres par rareté du 28 septembre, et pour une raison voisine, la ressemblance lexicale
+ne mesure pas l'identité propositionnelle. **Le contrôle a été retiré plutôt que livré** : un
+instrument qui échoue sur son propre cas fondateur ferait croire le trou bouché.
+
+### Le chantier M confirmé, et cette fois par la consigne
+
+Le point 4 du chantier M prescrit au réécrivain de vérifier le titre quand une correction retire un
+terme d'un paragraphe. **La consigne a été donnée aux trois réécrivains et elle a payé du premier
+coup** : sur `conscience-de-la-situation`, le titre « Une phrase citée partout, jamais à sa source »
+portait **les deux** excédents que la correction retirait du corps — l'universalité de fréquence et
+l'antériorité du terme. Les laisser aurait replacé les deux affirmations dans l'angle mort du gate,
+en position d'annonce. C'est le deuxième cas établi du chantier, et **le premier trouvé par la
+consigne plutôt que par accident**.
+
+### Deux outils entrés au dépôt, et un incident d'exploitation
+
+**Le dépôt détectait `PARTITION_REQUIRED` sans savoir le résoudre.** C'est le premier bundle du dépôt
+à franchir le plafond de 300 000 tokens, et la lacune se découvre en le franchissant : le protocole
+exige la partition et interdit la troncature, aucun outil ne la faisait. `factcheck-partition.mjs` et
+`factcheck-merge-verification.mjs` sont écrits ; le premier ne découpe que la liste des claims et
+refuse avant d'écrire, le second prouve la couverture contre le claim map et non contre les
+partitions. Les fichiers de partition sont dérivés et rejoignent `.gitignore`.
+
+Le recollement a **refusé une fois, à raison** : un `verification.part3.json` d'un découpage à 62
+claims survivait à un repartitionnement en deux, sur un SHA qui n'était plus le bon. Le piège est
+fermé un cran plus tôt, le partitionneur refusant désormais de repartitionner tant que des verdicts
+d'un découpage plus large traînent. **Ce refus-là a été essayé avant d'être livré**, contrairement à
+l'instrument jeté ci-dessus.
+
+**Et le répertoire scratchpad est partagé entre agents monoconcept.** Un mapper a signalé avoir relu
+par erreur un dump d'appuis d'une autre carte. Le fait est plus large que son signalement : la racine
+portait les dumps de trois cartes à la fois sous des noms génériques — `supports.txt`, `sup.txt`,
+`claims.txt`, `lecture.txt`, `validated.txt`, `base.json`, `old.json`, `build.py`, `gen.py`. Aucun
+`support_id` étranger n'est entré, ce qu'un contrôle établit ; **aucun contrôle ne peut établir que le
+découpage n'a pas été influencé**, et l'isolation est ce que cette étape existe pour garantir. Le
+mapping a été écarté et refait dans un répertoire propre à la carte. C'est le chantier O.
+
+La leçon du 29 août — « un lot lancé en parallèle doit préfixer ses fichiers de travail par
+l'identifiant de sa carte » — vit dans `RESTE-A-FAIRE.md` et **dans aucun prompt d'agent**, donc elle
+ne s'applique pas. Et le cas d'aujourd'hui est plus grave que celui qui l'a produite : en août des
+rédacteurs écrasaient leurs scripts, ici un agent monoconcept a lu la preuve d'une autre carte, à la
+couche fact-check.
+
+### Ce que les cycles ont coûté, et une mesure sur le mapper
+
+| carte | cycle | claims |
+|---|---|---:|
+| `ligne-d-approvisionnement-ignoree` | REVISE → FAIL 65/68 → correction → **PASS 57/57** → ACCEPT | 68 → 57 |
+| `conscience-de-la-situation` | REVISE → FAIL 79/85 → correction → FAIL 69/70 → remapping → **PASS 81/81** → ACCEPT | 85 → 70 → 81 |
+| `attention-diffusee-et-selection` | REVISE → INVALID → remapping → FAIL 61/62 → correction → mapping écarté → remapping → **PASS 72/72** → ACCEPT | 79 → 62 → 71 → 72 |
+
+**Deux mappings indépendants du même texte, au même SHA, ne refusent pas les mêmes phrases.** Sur
+`attention-diffusee`, le découpage à 79 claims rendait 3 refus et 1 renvoi au mapping ; celui à 62
+claims en rendait 1, et ce n'était aucun des trois — il refusait une phrase que le premier n'avait pas
+isolée comme claim. Les trois premiers refus tenaient à des claims mal dotés que le découpage plus
+large a pourvus. **Le nombre de claims ne mesure pas le texte, et un `FACTCHECK_PASS` ne se prononce
+que sur le découpage qui l'a obtenu.** Cinquième point de la leçon du 26 septembre, et le plus net :
+un mapping qui rate une phrase la rend invisible au gate, comme un mapping qui rate un appui la
+faisait couper à tort. Le second défaut est documenté depuis le chantier K ; le premier ne l'était
+pas.
+
 ## Passage d'audit — 2026-09-27
 
 Quatrième exécution. **Deux cartes instruites, une publiée, une refusée — et l'instrument du

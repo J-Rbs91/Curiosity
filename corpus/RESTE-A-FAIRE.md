@@ -38,6 +38,9 @@ script ne peut pas dire : quel travail est possible aujourd'hui, ce qu'il coûte
 | **I.** L'auditeur prenait une absence du dossier pour une preuve | **aucun** | non | **fermé le 22 septembre 2026**, par le réécrivain qui a refusé la prescription |
 | **J.** Le pack résout le dossier par l'identifiant de la carte | 11 répertoires restants | non pour le correctif, oui pour rattacher les onze | **outillage corrigé le 26 septembre 2026** ; `prepare()` honore le champ `dossier` sous `corpus/evidence/`, et le cas prouvé rend 72 appuis au lieu de 45. Reste la décision documentaire sur `corpus/dossiers/` — neuf cartes — et le rattachement des onze |
 | **K.** Une omission du claim mapper fabrique un échec immérité | **aucun** pour le correctif | non | ouvert le 25 septembre 2026, **aggravé le 26** ; second cas établi, où le claim était pourvu de deux appuis réels sans le bon — et la coupe qui s'en est suivie a fait perdre au texte une matière attestée |
+| **O.** Le répertoire de travail est partagé entre agents monoconcept | une ligne par prompt d'agent | non | ouvert le 29 septembre 2026 ; un mapper a lu la preuve d'une autre carte, son travail a été écarté. La parade a été appliquée à la main et a tenu |
+| **P.** `MAPPING_INCOMPLETE` est inatteignable quand le signal est muet | une ligne au prompt du mapper pour la parade ; le reste est un instrument à écrire | non | ouvert le 29 septembre 2026 ; explique aussi la perte du 26 septembre sur `C008`. La parade des citations a marché du premier coup |
+| **Q.** Le partitionnement d'un bundle a un coût | **aucun** pour la parade d'exploitation | non | ouvert le 29 septembre 2026 ; un instrument a été écrit contre, mesuré, et jeté. On ne partitionne plus que sur dépassement réel |
 
 **Le chantier A est fermé.** Il s'était vidé le 21 août, rouvert et creusé pendant cinq lots
 d'ouverture consécutifs jusqu'à trente-quatre cartes le 28 août, puis refermé en trois nuits :
@@ -2125,6 +2128,173 @@ fait le rapport du 27 septembre, et c'est la raison pour laquelle la première p
 est un avertissement.
 
 ---
+
+---
+
+# O. Le répertoire de travail est partagé entre agents monoconcept — ouvert le 29 septembre 2026
+
+**Un `corpus-deepening-claim-mapper` a relu par erreur le dump d'appuis d'une autre carte**, au début
+de son travail, et l'a signalé de lui-même. Son mapping a été écarté et refait.
+
+Le fait est plus large que son signalement. La racine du répertoire scratchpad de la session portait,
+au même moment, les fichiers de trois cartes sous des noms qui ne disent pas de quelle carte ils
+parlent :
+
+| fichier | carte |
+|---|---|
+| `supports.txt`, `sup.txt`, `claims.txt` | `conscience-de-la-situation` |
+| `adas-supports-v2.txt`, `claims1.txt` | `attention-diffusee-et-selection` |
+| `lecture.txt`, `validated.txt` | `ligne-d-approvisionnement-ignoree` |
+| `build.py`, `gen.py`, `mk.py`, `write.py`, `base.json`, `old.json`, `new.json` | indéterminable |
+
+`FACTCHECK_PROTOCOL.md` §1 est explicite : « aucun fact-checker ne reçoit le texte, les diagnostics
+ou les preuves d'une autre carte ». Trois agents monoconcept écrivaient dans le même espace.
+
+## Ce qu'un contrôle établit, et ce qu'aucun ne peut établir
+
+Le contrôle mécanique a établi qu'**aucun `support_id` étranger n'était entré** dans le claim map :
+les 71 claims ne citaient que des appuis du pack de leur carte, et `validateClaimMap` passait à zéro
+erreur.
+
+**Aucun contrôle ne peut établir que le découpage des claims n'a pas été influencé par la lecture.**
+Or l'isolation des contextes est précisément ce que cette étape existe pour garantir, et le
+dispositif est fail-closed : un artefact dont l'isolation n'est pas certifiable ne se rattrape pas
+par un contrôle qui regarde autre chose. Le mapping a donc été écarté, conservé sous
+`claim-map-isolation-non-certifiable.json`, et refait dans un répertoire propre à la carte.
+
+## Ce n'est pas une première, et la leçon existante ne s'applique pas
+
+Le passage 06 du 29 août 2026 a établi que « le répertoire de travail temporaire est partagé entre
+agents parallèles » et conclu qu'« un lot lancé en parallèle doit préfixer ses fichiers de travail
+par l'identifiant de sa carte ». **Cette leçon vit ici et dans aucun prompt d'agent**, donc elle ne
+s'applique pas : rien ne la transmet à un agent qui ouvre un shell.
+
+Et le cas de septembre est plus grave que celui qui l'a produite. En août, des rédacteurs écrasaient
+mutuellement leurs **scripts**, sans perte constatée. Ici, un agent monoconcept a lu **la preuve
+d'une autre carte**, à la couche fact-check, celle dont l'isolation est l'argument central.
+
+## Par quel bout prendre ce chantier
+
+1. **Le geste le moins cher, et il tient en une ligne par prompt d'agent** : assigner à chaque agent
+   un sous-répertoire de travail nommé par son `conceptId`, et lui interdire la racine. La parade a
+   été appliquée à la main pour les trois remappings de ce passage, et les agents l'ont tenue — leurs
+   comptes rendus le confirment fichier par fichier. Elle appartient aux prompts de
+   `.claude/agents/corpus-deepening-*.md`, pas à ce fichier, sans quoi elle ne s'appliquera pas plus
+   que celle d'août.
+2. **Puis décider si l'orchestrateur doit le créer.** Un répertoire créé par l'orchestrateur avant de
+   lancer l'agent est plus sûr qu'une consigne, mais il suppose que l'agent l'utilise. Les deux se
+   cumulent bien.
+3. **Ne pas compter sur un contrôle a posteriori.** Ce qui est vérifiable — l'absence de
+   `support_id` étranger — n'est pas ce qui est en cause. Il n'existe pas de contrôle du découpage.
+
+---
+
+# P. `MAPPING_INCOMPLETE` est inatteignable quand le signal est muet — ouvert le 29 septembre 2026
+
+**Le verdict qui existe pour empêcher qu'une omission du mapper fasse couper le texte est
+structurellement hors de portée du vérificateur dans le cas le plus courant.**
+
+Le mécanisme tient en trois lignes :
+
+- le vérificateur ne reçoit, pour chaque claim, que **les appuis que le mapper a rattachés**, plus le
+  `uncited_support_signal` ;
+- il ne peut donc pas savoir qu'un appui porteur existe ailleurs dans le pack ;
+- quand le signal est muet, son verdict est **forcé vers `UNSUPPORTED`**, qui fait couper.
+
+`MAPPING_INCOMPLETE` n'est atteignable que si le signal nomme l'appui. Et le signal ne retient que
+les termes rares : il est muet dès que l'appui omis ne partage aucun terme rare avec le claim.
+
+## Le cas qui l'établit, et il porte une citation
+
+`conscience-de-la-situation`, `C046`. Le gate refuse la citation attribuée à Bailly, « A l'origine,
+ce terme était plus employé par les pilotes que par la communauté scientifique », au motif qu'aucun
+appui fourni ne la porte.
+
+Exact quant aux appuis fournis. **Faux quant au dépôt** : le verbatim est dans
+`corpus/validated/conscience-de-la-situation.json`, `$.review.notes[2]`, avec sa page — p. 9
+imprimée, PDF p. 16 — et le pack le ramasse sous `SUP-1f0ac5f981b34a1a`. Cet appui n'était attaché à
+**aucun** claim du mapping, et le signal de `C046` était **vide**, parce que « pilotes », « origine »
+et « communauté scientifique » sont présents ailleurs dans le pack.
+
+Le protocole l'écrivait déjà en principe — « un signal vide n'atteste pas qu'un mapping est
+complet » — sans qu'un cas l'ait montré. **C'est aussi l'explication de la perte du 26 septembre** sur
+`C008` de `critere-de-la-retroaction`, où la coupe a fait perdre au texte deux exemples attestés.
+
+## Ce que le passage a fait, et l'écart qu'il assume
+
+La voie du remapping a été prise sur un gate dont le verdict était `FACTCHECK_FAIL` et non
+`FACTCHECK_INVALID`. Le verdict du gate reste au dossier ; l'écart est écrit et motivé : le défaut
+était dans l'artefact, et la boucle de correction aurait supprimé du texte lecteur une matière
+attestée avec sa pagination.
+
+La justification que le protocole exige — « un appui nommé dont l'absence parmi les appuis du claim
+est constatable » — était remplie, et l'identifiant de l'appui écrit **avant** la décision, non après.
+Le mapper frais n'a reçu aucune indication sur le claim ni sur l'appui : **il l'a rattaché de
+lui-même**, ce qui confirme l'omission sans qu'aucun magasinage de verdict ait eu lieu.
+
+## Par quel bout prendre ce chantier
+
+1. **La parade sans code, et elle a marché du premier coup** : demander au mapper, pour chaque
+   citation entre guillemets de son découpage, de chercher activement dans le pack l'appui qui porte
+   ce verbatim et de le rattacher. **Une citation est le seul énoncé dont on sait d'avance qu'un appui
+   exact doit exister quelque part** — sans quoi elle n'aurait pas dû être écrite. Le mapper de ce
+   passage a couvert ainsi les douze paires de guillemets du texte, dont **quatre dont l'appui était
+   seul porteur** : les quatre auraient été refusées de la même manière. Cette consigne appartient au
+   prompt de `.claude/agents/corpus-deepening-claim-mapper.md`.
+2. **Puis rendre le cas mécaniquement détectable.** Un appui du pack qui porte un verbatim présent
+   entre guillemets dans le texte lecteur et qui n'est rattaché à aucun claim est un signalement
+   déterministe, sans jugement de vérité et sans seuil à calibrer — la comparaison est une égalité de
+   chaîne, pas une ressemblance. C'est le seul des instruments envisagés par ce dépôt qui ne repose
+   pas sur une mesure lexicale approchée, et à ce titre le plus prometteur.
+3. **Ne pas élargir le signal de rareté pour couvrir ce cas.** Il est muet ici pour une raison de
+   fond, non de seuil : l'appui omis ne partage aucun terme rare. Baisser le seuil rendrait le signal
+   bruyant sans le rendre juste, ce que deux mesures de ce dépôt ont déjà montré — le balayage des
+   titres du 28 septembre et le contrôle de redite du 29.
+
+---
+
+# Q. Le partitionnement d'un bundle a un coût, et il n'était pas documenté — ouvert le 29 septembre 2026
+
+**Partitionner un bundle répartit les claims entre plusieurs vérificateurs, et aucun n'est alors en
+position de voir qu'une même proposition est affirmée à deux endroits du texte.**
+
+Le cas, mesuré sur `attention-diffusee-et-selection` : `C005` en partition 1 et `C042` en partition 2
+portaient la même proposition — que ce qu'on appelle ordinairement l'attention est un resserrement,
+proposition que le dossier ne porte pas. **Deux vérificateurs, deux verdicts opposés** : `TOO_STRONG`
+d'un côté, `SUPPORTED` de l'autre. Le gate ne compare pas les claims entre eux, et la phrase refusée
+survivait donc ailleurs dans le même texte. Le réécrivain l'a trouvée en corrigeant autre chose.
+
+**Le bundle n'avait pas à être partitionné** : il sortait à 288 360 tokens estimés, donc `READY`, à
+4 % du plafond. Le partitionnement était une prudence contre le context rot, et cette prudence a
+acheté une incohérence. Le plafond de 300 000 protège d'un risque ; le partitionnement en crée un
+autre, et le second n'était écrit nulle part.
+
+## Un instrument a été écrit contre ce défaut, mesuré, et jeté
+
+Joindre au recollement un contrôle signalant les paires de claims dont les textes se recouvrent
+fortement et dont les verdicts divergent. Essayé sur le cas même qui l'avait motivé :
+
+| | jetons communs | Jaccard |
+|---|---:|---:|
+| `C005` contre `C042` | 3 — « appelle », « est », « resserrement » | **0,167** pour un seuil de 0,60 |
+
+**Il ne détecte pas son propre cas fondateur.** Deux phrases peuvent affirmer la même proposition
+avec un vocabulaire presque disjoint, et c'est ce qui rend la redite difficile à voir. Le contrôle a
+été retiré plutôt que livré.
+
+## Par quel bout prendre ce chantier
+
+1. **La parade d'exploitation, appliquée dès ce passage** : ne partitionner que sur dépassement réel,
+   et en aussi peu de parts que possible. Les deux autres cartes du lot ont été vérifiées d'un bloc,
+   et le vérificateur de `conscience-de-la-situation` a comparé ses propositions redoublées et leur a
+   donné le même verdict — exactement ce que la position d'un bundle entier permet.
+2. **Et avertir chaque vérificateur partitionné qu'il ne tient qu'une partie du texte.** Gratuit, et
+   déjà fait dans les prompts de ce passage.
+3. **Ne pas chercher la redite par ressemblance lexicale.** Mesuré, et le résultat est négatif. Si le
+   cas doit être fermé mécaniquement, c'est par un autre chemin que la similarité de surface.
+4. **Un détail d'exploitation, déjà fermé** : repartitionner en moins de parts qu'un tour précédent
+   laissait des verdicts orphelins que le recollement ramassait. `factcheck-partition.mjs` refuse
+   désormais tant qu'ils n'ont pas été archivés.
 
 # Ce qui n'est pas un chantier
 
