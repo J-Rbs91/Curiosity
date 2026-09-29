@@ -3,7 +3,7 @@
   "concept_id": "conscience-de-la-situation",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "8824c35fe002c1465156153849bf3bcd40cb8dcf2f2045c0be121cbb9f6b3e6e",
+  "candidate_sha256": "9b635f706151c3e7042a210a18d87b90a99874bd65dba836846065ce7c06e7ca",
   "validated_sha256": "da4a5367c2963f4a946c68acc85496682f42f63925f6bfa4c01e5c235a72eee3",
   "evidence_files": [
     {
@@ -86,7 +86,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Quand une manœuvre tourne mal, la première question posée est presque toujours la même : pourquoi cette décision plutôt qu’une autre ? La réponse déçoit souvent, parce que la décision était cohérente avec ce que la personne croyait de sa situation à ce moment-là. Ce qui manquait était en amont : un paramètre qu’elle ne regardait plus, une évolution qu’elle n’avait pas vue venir. Chacun connaît cela au volant : on s’absorbe dans un problème, et pendant ce temps quelque chose d’autre change sans qu’on le remarque."
+      "text": "Quand une manœuvre tourne mal, pourquoi cette décision plutôt qu’une autre ? Chez un pilote, la décision peut avoir été cohérente avec ce qu’il croyait de sa situation à ce moment-là. Ce qui manquait était en amont : un paramètre qu’il ne regardait plus, une évolution qu’il n’avait pas vue venir."
     },
     {
       "locator": "lead[1]",
@@ -110,7 +110,7 @@
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Trois niveaux qui ne se valent pas",
-      "text": "Le premier niveau est celui des éléments. « The first step in achieving SA involves perceiving the status, attributes, and dynamics of relevant elements in the environment. » Percevoir ne veut pas dire apercevoir : il s’agit de relever l’état d’un élément, ses propriétés et sa dynamique, c’est-à-dire dans quel sens il bouge. Pour un pilote, ce sont la vitesse, la position, l’altitude, la route, mais aussi la météo, les clairances du contrôle aérien et ce que fait l’équipage."
+      "text": "Le premier niveau est celui des éléments. « The first step in achieving SA involves perceiving the status, attributes, and dynamics of relevant elements in the environment. » Percevoir ne veut pas dire apercevoir : il s’agit de relever l’état d’un élément, ses propriétés et sa dynamique, c’est-à-dire dans quel sens il bouge. Pour un pilote, ce sont la vitesse, la position, l’altitude, la route, mais aussi la météo et les clairances du contrôle aérien."
     },
     {
       "locator": "sections[1].paragraphs[2]",
@@ -139,12 +139,12 @@
     },
     {
       "locator": "sections[3].paragraphs[0]",
-      "section_title": "Une phrase citée partout, jamais à sa source",
-      "text": "Cette définition a une particularité qui ne se voit qu’en ouvrant le texte : dans le rapport de 1998, elle n’est pas énoncée mais citée, entre guillemets, précédée de « the most generally applicable definition is that provided by Endsley (1988) », et la bibliographie renvoie à une communication de 1988 signée d’Endsley seule, quand le rapport en porte cinq. Le même paragraphe figure déjà dans un rapport fédéral de décembre 1994 qu’elle signe avec Mark D. Rodgers, où le mot controller remplace le mot pilot : là encore entre guillemets, renvoyé cette fois à deux textes, de 1987 et de 1988. Elle se cite donc elle-même depuis 1994 au moins ; pour lire la définition dans les termes où elle a d’abord été posée, c’est cette communication de 1988 qu’il faudra ouvrir."
+      "section_title": "Une définition citée, et un mot plus ancien",
+      "text": "Cette définition a une particularité qui ne se voit qu’en ouvrant le texte : dans le rapport de 1998, elle n’est pas énoncée mais citée, entre guillemets, précédée de « the most generally applicable definition is that provided by Endsley (1988) », et la bibliographie renvoie à une communication de 1988 signée d’Endsley seule, quand le rapport en porte cinq. Le même paragraphe figure déjà dans un rapport fédéral de décembre 1994 qu’elle signe avec Mark D. Rodgers, où le mot controller remplace le mot pilot : là encore entre guillemets, renvoyé cette fois à deux textes, de 1987 et de 1988. Elle se cite donc elle-même depuis 1994 au moins ; dans quels termes ces textes de 1987 et de 1988 posent la définition, il faudra les ouvrir pour le voir."
     },
     {
       "locator": "sections[3].paragraphs[1]",
-      "section_title": "Une phrase citée partout, jamais à sa source",
+      "section_title": "Une définition citée, et un mot plus ancien",
       "text": "Le terme, lui, est plus ancien que la définition. Béatrice Bailly, dont la thèse acclimate la notion en français chez les conducteurs, le fait remonter à la médecine aéronautique et rappelle qu’« A l’origine, ce terme était plus employé par les pilotes que par la communauté scientifique » ; en 1986, la 57th Fighter Weapons Wing de l’US Air Force en faisait le facteur le plus important d’efficacité d’une mission. Le découpage en trois niveaux arrive donc sur un mot déjà installé : c’est lui, et non le mot, qu’on peut porter au crédit d’Endsley."
     },
     {
@@ -169,17 +169,17 @@
     },
     {
       "locator": "sections[5].paragraphs[0]",
-      "section_title": "Ce que le rapport de 1998 cherchait vraiment",
+      "section_title": "Ce que le rapport de 1998 cherchait",
       "text": "Le rapport de 1998 consacre l’essentiel de ses quatre-vingt-douze pages à tout autre chose qu’à la théorie : une analyse de tâche dirigée par les buts, menée auprès de pilotes de ligne expérimentés. On y dégage leurs buts, leurs sous-buts, les décisions qui s’y rattachent, et pour chacune l’information nécessaire, rangée selon les trois niveaux. Le produit est un inventaire de ce qu’il faut savoir pour piloter, destiné à la conception et à la formation."
     },
     {
       "locator": "sections[5].paragraphs[1]",
-      "section_title": "Ce que le rapport de 1998 cherchait vraiment",
-      "text": "Le texte pose lui-même deux mises en garde. La première : ces listes décrivent ce que les pilotes voudraient idéalement savoir, alors qu’ils travaillent couramment avec moins, et l’analyse vaut donc comme « a design goal, not necessarily a description of an existing system », un objectif de conception et non la description d’un système existant. La seconde : elle part des buts et se veut « as technology-free as possible », la manière dont l’information est obtenue n’y étant pas traitée. L’inventaire dit ce qu’il faut savoir, jamais par quel instrument le savoir."
+      "section_title": "Ce que le rapport de 1998 cherchait",
+      "text": "Le texte pose lui-même plusieurs mises en garde méthodologiques. L’une : ces listes décrivent ce que les pilotes voudraient idéalement savoir, alors qu’ils travaillent couramment avec moins, et l’analyse vaut donc comme « a design goal, not necessarily a description of an existing system », un objectif de conception et non la description d’un système existant. Une autre : elle part des buts et se veut « as technology-free as possible », la manière dont l’information est obtenue n’y étant pas traitée. L’inventaire dit ce qu’il faut savoir, jamais par quel instrument le savoir."
     },
     {
       "locator": "sections[5].paragraphs[2]",
-      "section_title": "Ce que le rapport de 1998 cherchait vraiment",
+      "section_title": "Ce que le rapport de 1998 cherchait",
       "text": "Ces deux réserves changent ce qu’on peut attendre du modèle : on peut alors comprendre les trois niveaux comme une grille de questions à poser sur une situation, plutôt que comme un état mesurable logé dans une tête. La mesure, ce rapport ne l’aborde pas : il annonce fournir une base au développement de mesures pour l’aviation commerciale, sans en proposer aucune. Ce que quatorze revues systématiques rassemblées par Laura Louise Moens et ses collègues concluent des instruments qui prétendent l’évaluer, il faudra aller le lire chez elles."
     }
   ],
@@ -1055,6 +1055,6 @@
       "text": "Une précision de périmètre, vérifiée sur le texte et non supposée. Le rapport est bien dans human-factors par le test du périmètre : son objet est ce que le pilote perçoit, comprend et anticipe, et l'usage annoncé est la conception des systèmes et la formation, « These requirements can be used as input to system/equipment design, training, and research and evaluation efforts », page imprimée 3. Il ne parle ni de mode opératoire ni de compromis, les mots n'y sont pas, et le mot regulation n'y apparaît que trois fois, toujours au sens des règlements aériens (« Are we in compliance with departure regulations? »), jamais au sens de la régulation de l'activité. Le point de frontière à surveiller est ailleurs, du côté de measurement-theory, puisque le rapport produit une liste d'exigences informationnelles destinée à servir de référence de conception ; mais il prévient lui-même qu'elle décrit un idéal et non un état de fait (page imprimée 4, caveat 3). Ce n'est pas un indicateur, la frontière tient."
     }
   ],
-  "estimated_tokens": 27826,
+  "estimated_tokens": 27733,
   "status": "READY"
 }
