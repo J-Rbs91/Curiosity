@@ -1,18 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "activite-empechee",
-  "candidate_sha256": "6afe9af50fca6c4408c572ad3cea82c37d1ca21d9963a58d38502e8f2908c196",
+  "candidate_sha256": "4cd3f2788d5eeb95170df879e8a62663e1b054828919369c8f1553196a61f00c",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 60,
-  "supported": 59,
+  "claims": 65,
+  "supported": 64,
   "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C059",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim ne portent aucune donnée de réception : $.notes[5] dit au contraire qu'« aucun relevé de réception n'a pu être fait » et que « la différence revendiquée avec la psychodynamique du travail n'est pas documentée ici », et $.reserves[8] traite d'un autre recouvrement (genre et style). Ils autorisent au plus qu'une différence soit revendiquée — ce qu'énonce C060 —, pas la fréquence d'une confusion (« couramment confondue »). Claims voisins mais propositions distinctes, d'où des verdicts différents."
+      "claim_id": "C011",
+      "verdict": "CONFLICT",
+      "reason": "Les appuis fournis pour ce claim contredisent l'identification du terme de l'auteur au seul « reste » : $.quotation.text et $.summary posent que le réel de l'activité est le volume dont l'activité réalisée est la surface, et $.definition_de_lauteur cite « l'activité réalisée [...] n'a pas le monopole du réel de l'activité » et « le réel de l'activité est aussi ce qui ne se fait pas ». Le réalisé est donc compris dans le réel, et non exclu de lui ; prêter à l'auteur (« il l'appelle ») le nom de ce qui reste hors du visible excède ce que les appuis autorisent — ce que la phrase suivante du texte (C012) dément d'ailleurs elle-même."
     }
   ]
 }
