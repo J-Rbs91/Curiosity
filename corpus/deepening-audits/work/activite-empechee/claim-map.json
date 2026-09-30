@@ -1,6 +1,6 @@
 {
   "concept_id": "activite-empechee",
-  "candidate_sha256": "fb234eae55110b076c61c45a92b805317aeddf7707a10497bd58dbd98f6681ac",
+  "candidate_sha256": "6afe9af50fca6c4408c572ad3cea82c37d1ca21d9963a58d38502e8f2908c196",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -63,33 +63,43 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "start": 220,
-      "end": 558,
-      "claim_text": "Mais cette liste laisse forcément de côté autre chose : le message commencé trois fois avant d’être abandonné, la méthode essayée puis écartée parce qu’elle ne fonctionnait pas, ce que vous vouliez faire avant qu’une réunion imprévue ne redistribue toute votre journée, ce que vous avez fait à contrecœur parce qu’il fallait bien avancer.",
-      "normalized_claim": "La liste des tâches accomplies laisse de côté les tentatives abandonnées, les méthodes écartées, ce qu'on voulait faire, ce qu'on a fait à contrecœur.",
+      "start": 76,
+      "end": 219,
+      "claim_text": "Vous répondrez sans doute par une liste : les tâches terminées, les dossiers envoyés, les personnes reçues, tout ce qui s’est vu et qui compte.",
+      "normalized_claim": "Rendre compte de sa journée de travail prend spontanément la forme d'une liste de ce qui s'est vu et accompli.",
       "support_ids": [
+        "SUP-8f1ac29be28c521b",
         "SUP-94d565db4258c7c6",
-        "SUP-ef71b0d2b7494085",
-        "SUP-8f1ac29be28c521b"
+        "SUP-5c9780b6b74f9950"
       ]
     },
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 559,
-      "end": 719,
-      "claim_text": "Rien de tout cela n’apparaît dans le compte rendu qu’on ferait de votre journée, et pourtant cela a occupé une bonne partie de ce que vous avez vécu au travail.",
-      "normalized_claim": "Ce reste n'apparaît pas dans le compte rendu d'une journée et occupe pourtant une bonne partie du vécu de travail.",
+      "start": 220,
+      "end": 558,
+      "claim_text": "Mais cette liste laisse forcément de côté autre chose : le message commencé trois fois avant d’être abandonné, la méthode essayée puis écartée parce qu’elle ne fonctionnait pas, ce que vous vouliez faire avant qu’une réunion imprévue ne redistribue toute votre journée, ce que vous avez fait à contrecœur parce qu’il fallait bien avancer.",
+      "normalized_claim": "Le compte des tâches accomplies laisse nécessairement hors champ les tentatives abandonnées, les manières écartées, l'intention déplacée et ce qu'on fait sans le vouloir.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
-        "SUP-5c9780b6b74f9950",
-        "SUP-8f1ac29be28c521b",
-        "SUP-c98d6b242ef735ab",
-        "SUP-c47f3f20944d14c0"
+        "SUP-1ec99fe961831e90"
       ]
     },
     {
       "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 559,
+      "end": 719,
+      "claim_text": "Rien de tout cela n’apparaît dans le compte rendu qu’on ferait de votre journée, et pourtant cela a occupé une bonne partie de ce que vous avez vécu au travail.",
+      "normalized_claim": "Ce reste n'entre pas dans le compte rendu du travail alors qu'il occupe une part importante du vécu.",
+      "support_ids": [
+        "SUP-c98d6b242ef735ab",
+        "SUP-94d565db4258c7c6",
+        "SUP-5c9780b6b74f9950"
+      ]
+    },
+    {
+      "claim_id": "C004",
       "locator": "lead[1]",
       "start": 0,
       "end": 59,
@@ -99,80 +109,62 @@
         "SUP-aa871c541e8015da",
         "SUP-621d311eefe59c5b",
         "SUP-646a0cf1ccea31e7",
-        "SUP-94d565db4258c7c6",
-        "SUP-68eb2797a0e6397a",
-        "SUP-f8d3c87c1f9c523b"
-      ]
-    },
-    {
-      "claim_id": "C004",
-      "locator": "lead[1]",
-      "start": 64,
-      "end": 172,
-      "claim_text": "il affirme surtout que ce n’est pas un détail : c’est la plus grande partie de ce qui s’est réellement passé",
-      "normalized_claim": "Clot soutient que ce reste est la plus grande partie de ce qui s'est réellement passé.",
-      "support_ids": [
-        "SUP-94d565db4258c7c6",
-        "SUP-5c9780b6b74f9950",
-        "SUP-c98d6b242ef735ab",
-        "SUP-c47f3f20944d14c0"
+        "SUP-a72ebb522906ea69",
+        "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C005",
       "locator": "lead[1]",
-      "start": 174,
-      "end": 324,
-      "claim_text": "Dans un texte de 2004, il écrit que « le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface ».",
-      "normalized_claim": "Citation : dans un texte de 2004, Clot écrit « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface ».",
+      "start": 64,
+      "end": 172,
+      "claim_text": "il affirme surtout que ce n’est pas un détail : c’est la plus grande partie de ce qui s’est réellement passé",
+      "normalized_claim": "Clot tient ce reste pour la plus grande partie de ce qui s'est passé, non pour un détail.",
       "support_ids": [
         "SUP-c98d6b242ef735ab",
         "SUP-c47f3f20944d14c0",
-        "SUP-8fe17ba937051708",
-        "SUP-14f182557881499d",
-        "SUP-6ef118ab36c053f3",
-        "SUP-3aa5fd34c47a1030",
         "SUP-94d565db4258c7c6",
-        "SUP-427fb1df98a1e120",
-        "SUP-8afd7962ac923a25",
-        "SUP-d62f98c5782804a2",
-        "SUP-88e6753c74a91209",
-        "SUP-e748c1756104fe33"
+        "SUP-5c9780b6b74f9950"
       ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
-      "start": 325,
-      "end": 442,
-      "claim_text": "Ce qu’on a fait, ce qui se voit et se raconte, n’est donc que la partie émergée de ce qu’on a traversé pour le faire.",
-      "normalized_claim": "Ce qui se voit et se raconte n'est que la partie émergée de l'activité.",
+      "start": 174,
+      "end": 324,
+      "claim_text": "Dans un texte de 2004, il écrit que « le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface ».",
+      "normalized_claim": "Verbatim attribué à un texte de Clot de 2004.",
       "support_ids": [
         "SUP-c98d6b242ef735ab",
         "SUP-c47f3f20944d14c0",
-        "SUP-5c9780b6b74f9950",
-        "SUP-94d565db4258c7c6"
+        "SUP-8fe17ba937051708",
+        "SUP-e748c1756104fe33",
+        "SUP-14f182557881499d",
+        "SUP-427fb1df98a1e120",
+        "SUP-3aa5fd34c47a1030",
+        "SUP-4679703635e97ece"
       ]
     },
     {
       "claim_id": "C007",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 0,
-      "end": 85,
-      "claim_text": "L’image mérite d’être prise au sérieux, parce qu’elle inverse une hypothèse courante.",
-      "normalized_claim": "L'image volume/surface inverse une hypothèse courante sur le travail.",
+      "locator": "lead[1]",
+      "start": 325,
+      "end": 442,
+      "claim_text": "Ce qu’on a fait, ce qui se voit et se raconte, n’est donc que la partie émergée de ce qu’on a traversé pour le faire.",
+      "normalized_claim": "Glose de l'image volume/surface : le réalisé est la face exposée du réel.",
       "support_ids": [
+        "SUP-c98d6b242ef735ab",
         "SUP-94d565db4258c7c6",
-        "SUP-220f157f8f801cf4"
+        "SUP-5c9780b6b74f9950"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
-      "start": 86,
-      "end": 209,
-      "claim_text": "On tend à penser qu’un travail se résume à ce qui en reste visible : un objet produit, une tâche cochée, un message envoyé.",
-      "normalized_claim": "On a l'habitude de réduire le travail à ce qui en reste visible.",
+      "start": 49,
+      "end": 84,
+      "claim_text": "elle inverse une hypothèse courante",
+      "normalized_claim": "La formule inverse une hypothèse courante sur le travail.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
         "SUP-220f157f8f801cf4"
@@ -181,202 +173,191 @@
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
-      "start": 210,
-      "end": 271,
-      "claim_text": "Cette partie visible, l’auteur l’appelle l’activité réalisée.",
-      "normalized_claim": "L'auteur appelle « activité réalisée » la partie visible du travail.",
+      "start": 86,
+      "end": 209,
+      "claim_text": "On tend à penser qu’un travail se résume à ce qui en reste visible : un objet produit, une tâche cochée, un message envoyé.",
+      "normalized_claim": "L'hypothèse courante réduit le travail à ses traces visibles.",
       "support_ids": [
-        "SUP-c98d6b242ef735ab",
-        "SUP-c47f3f20944d14c0",
         "SUP-94d565db4258c7c6",
-        "SUP-5c9780b6b74f9950"
+        "SUP-220f157f8f801cf4"
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
-      "start": 272,
-      "end": 379,
-      "claim_text": "Le reste, tout ce qui a été mobilisé sans laisser de trace équivalente, il l’appelle le réel de l’activité.",
-      "normalized_claim": "L'auteur appelle « le réel de l'activité » tout ce qui a été mobilisé sans laisser de trace équivalente.",
+      "start": 210,
+      "end": 271,
+      "claim_text": "Cette partie visible, l’auteur l’appelle l’activité réalisée.",
+      "normalized_claim": "Clot nomme « activité réalisée » la part visible.",
       "support_ids": [
         "SUP-c98d6b242ef735ab",
         "SUP-c47f3f20944d14c0",
-        "SUP-94d565db4258c7c6",
-        "SUP-5c9780b6b74f9950",
-        "SUP-a72ebb522906ea69"
+        "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "start": 380,
-      "end": 514,
-      "claim_text": "Et sa formule ne met pas les deux côte à côte : elle emboîte le premier dans le second, comme une surface est comprise dans un volume.",
-      "normalized_claim": "La formule emboîte l'activité réalisée dans le réel de l'activité, comme une surface dans un volume.",
+      "start": 272,
+      "end": 379,
+      "claim_text": "Le reste, tout ce qui a été mobilisé sans laisser de trace équivalente, il l’appelle le réel de l’activité.",
+      "normalized_claim": "Clot nomme « le réel de l'activité » le reste.",
       "support_ids": [
         "SUP-c98d6b242ef735ab",
         "SUP-c47f3f20944d14c0",
         "SUP-94d565db4258c7c6",
-        "SUP-5c9780b6b74f9950"
+        "SUP-a72ebb522906ea69"
       ]
     },
     {
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
-      "start": 515,
-      "end": 605,
-      "claim_text": "Ce qui s’est fait n’est pas à côté de ce qui ne s’est pas fait, il en est la face exposée.",
-      "normalized_claim": "Le réalisé est la face exposée du réel de l'activité, non son voisin.",
+      "start": 380,
+      "end": 514,
+      "claim_text": "Et sa formule ne met pas les deux côte à côte : elle emboîte le premier dans le second, comme une surface est comprise dans un volume.",
+      "normalized_claim": "La formule emboîte le réalisé dans le réel, sur le modèle surface/volume.",
       "support_ids": [
         "SUP-c98d6b242ef735ab",
         "SUP-c47f3f20944d14c0",
+        "SUP-94d565db4258c7c6"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 515,
+      "end": 605,
+      "claim_text": "Ce qui s’est fait n’est pas à côté de ce qui ne s’est pas fait, il en est la face exposée.",
+      "normalized_claim": "Conséquence de l'emboîtement : le réalisé est la face exposée du réel.",
+      "support_ids": [
+        "SUP-c98d6b242ef735ab",
         "SUP-94d565db4258c7c6",
         "SUP-5c9780b6b74f9950"
       ]
     },
     {
-      "claim_id": "C013",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 0,
-      "end": 77,
-      "claim_text": "Cette phrase ne commence pas le texte de 2004 où elle se lit, elle le termine",
-      "normalized_claim": "La phrase citée ne commence pas le texte de 2004 : elle le termine.",
-      "support_ids": [
-        "SUP-94d565db4258c7c6",
-        "SUP-77622698d6fb65a2",
-        "SUP-8148965eb5587897",
-        "SUP-6ef118ab36c053f3"
-      ]
-    },
-    {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "start": 80,
-      "end": 283,
-      "claim_text": "elle conclut une démonstration menée sur deux terrains, une comédienne de la Comédie-Française cherchant comment tenir un chandelier brûlant, et un échange entre un facteur titulaire et un jeune rouleur.",
-      "normalized_claim": "Elle conclut une démonstration menée sur deux terrains : une comédienne de la Comédie-Française et un chandelier brûlant, un échange entre un facteur titulaire et un jeune rouleur.",
+      "start": 0,
+      "end": 119,
+      "claim_text": "Cette phrase ne commence pas le texte de 2004 où elle se lit : elle arrive tout à la fin, dernière phrase de sa section",
+      "normalized_claim": "Localisation de la phrase citée : fin du texte de 2004, dernière phrase de sa section.",
       "support_ids": [
-        "SUP-94d565db4258c7c6",
-        "SUP-4679703635e97ece"
+        "SUP-77622698d6fb65a2",
+        "SUP-6ef118ab36c053f3",
+        "SUP-8148965eb5587897",
+        "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
-      "start": 284,
-      "end": 559,
-      "claim_text": "Ce qui la commande est un déplacement annoncé quelques lignes plus haut : la manière d’étudier le travail que l’auteur appelle la clinique de l’activité ne cherche pas l’activité telle qu’elle se donne à voir, mais « la structure de son développement possible ou impossible »",
-      "normalized_claim": "Citation : la clinique de l'activité vise « la structure de son développement possible ou impossible » plutôt que l'activité observable, déplacement annoncé quelques lignes plus haut.",
+      "start": 121,
+      "end": 321,
+      "claim_text": "et conclut une démonstration menée sur deux terrains, une comédienne de la Comédie-Française cherchant comment tenir un chandelier brûlant, et un échange entre un facteur titulaire et un jeune rouleur",
+      "normalized_claim": "La phrase conclut une démonstration sur deux terrains : la comédienne de la Comédie-Française et le chandelier, l'échange facteur titulaire / jeune rouleur.",
+      "support_ids": [
+        "SUP-94d565db4258c7c6"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 323,
+      "end": 394,
+      "claim_text": "Ce qui la commande est un déplacement annoncé quelques lignes plus haut",
+      "normalized_claim": "Ce qui précède la phrase, quelques lignes plus haut, la commande.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
         "SUP-4679703635e97ece"
       ]
     },
     {
-      "claim_id": "C016",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 561,
-      "end": 660,
-      "claim_text": "et se donne pour objet « moins l’activité que le développement de l’activité et ses empêchements ».",
-      "normalized_claim": "Citation : l'objet est « moins l'activité que le développement de l'activité et ses empêchements ».",
-      "support_ids": [
-        "SUP-94d565db4258c7c6",
-        "SUP-4679703635e97ece",
-        "SUP-f75445b1ff5df394",
-        "SUP-8b0ef8c76d45389f"
-      ]
-    },
-    {
       "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
-      "start": 661,
-      "end": 713,
-      "claim_text": "Ce qui n’a pas eu lieu cesse alors d’être hors sujet",
-      "normalized_claim": "Ce qui n'a pas eu lieu entre dans l'objet de l'analyse.",
+      "start": 397,
+      "end": 698,
+      "claim_text": "la manière d’étudier le travail que l’auteur appelle la clinique de l’activité ne cherche pas l’activité telle qu’elle se donne à voir, mais « la structure de son développement possible ou impossible », et se donne pour objet « moins l’activité que le développement de l’activité et ses empêchements »",
+      "normalized_claim": "Deux verbatims de 2004 sur l'objet de la clinique de l'activité.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
-        "SUP-ef71b0d2b7494085",
-        "SUP-220f157f8f801cf4"
+        "SUP-4679703635e97ece"
       ]
     },
     {
       "claim_id": "C018",
       "locator": "sections[0].paragraphs[1]",
-      "start": 718,
-      "end": 790,
-      "claim_text": "l’expérimentation « vise à donner du volume à cette activité réalisée ».",
-      "normalized_claim": "Citation : l'expérimentation « vise à donner du volume à cette activité réalisée ».",
+      "start": 700,
+      "end": 752,
+      "claim_text": "Ce qui n’a pas eu lieu cesse alors d’être hors sujet",
+      "normalized_claim": "Conséquence : ce qui n'a pas eu lieu entre dans l'objet de recherche.",
+      "support_ids": [
+        "SUP-94d565db4258c7c6",
+        "SUP-4679703635e97ece"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 757,
+      "end": 828,
+      "claim_text": "l’expérimentation « vise à donner du volume à cette activité réalisée »",
+      "normalized_claim": "Verbatim de 2004 sur la visée de l'expérimentation.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
         "SUP-220f157f8f801cf4"
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[0]",
       "start": 0,
       "end": 143,
       "claim_text": "Dire qu’il y a un volume ne dit pas encore de quoi il est fait, et le texte de 2004 ne le dit pas : il pose l’écart sans en faire l’inventaire.",
-      "normalized_claim": "Le texte de 2004 pose l'écart sans énumérer ce que le volume contient.",
+      "normalized_claim": "Le texte de 2004 pose l'écart mais n'énumère pas ce que le volume contient.",
       "support_ids": [
-        "SUP-94d565db4258c7c6",
         "SUP-8b0ef8c76d45389f",
         "SUP-f75445b1ff5df394",
-        "SUP-a2b965c80c470e1d"
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 144,
-      "end": 197,
-      "claim_text": "C’est vingt ans plus tard que l’auteur ouvre la liste",
-      "normalized_claim": "L'énumération se lit dans un texte du même auteur paru vingt ans après celui de 2004.",
-      "support_ids": [
         "SUP-a2b965c80c470e1d",
-        "SUP-537f7ce75d1dcea5",
-        "SUP-1ec99fe961831e90",
-        "SUP-8fe17ba937051708",
-        "SUP-8b0ef8c76d45389f",
-        "SUP-8afd7962ac923a25"
+        "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C021",
       "locator": "sections[1].paragraphs[0]",
-      "start": 200,
-      "end": 431,
-      "claim_text": "« le réel de l’activité est aussi ce qui ne se fait pas, ce qu’on ne peut pas faire, ce qu’on cherche à faire sans y parvenir – les échecs –, ce qu’on aurait voulu ou pu faire, ce qu’on pense ou qu’on rêve pouvoir faire ailleurs. »",
-      "normalized_claim": "Citation (2024) de l'énumération de ce que contient le réel de l'activité.",
+      "start": 144,
+      "end": 197,
+      "claim_text": "C’est vingt ans plus tard que l’auteur ouvre la liste",
+      "normalized_claim": "L'énumération se lit dans un texte du même auteur paru vingt ans après 2004.",
       "support_ids": [
-        "SUP-94d565db4258c7c6",
-        "SUP-ef71b0d2b7494085",
-        "SUP-5690f943879007ce",
-        "SUP-08c2d43fe6f4b8c5",
+        "SUP-1ec99fe961831e90",
+        "SUP-537f7ce75d1dcea5",
         "SUP-0ffe75ced5f8a319",
-        "SUP-1ec99fe961831e90"
+        "SUP-8b0ef8c76d45389f",
+        "SUP-a2b965c80c470e1d"
       ]
     },
     {
       "claim_id": "C022",
       "locator": "sections[1].paragraphs[0]",
-      "start": 432,
-      "end": 611,
-      "claim_text": "Chaque membre désigne autre chose : l’abstention, l’impossibilité, la tentative qui échoue, la manière de faire qu’on aurait préférée, l’activité qu’on se figure mener autre part.",
-      "normalized_claim": "Glose des cinq membres de l'énumération : abstention, impossibilité, échec, préférence, activité rêvée ailleurs.",
+      "start": 200,
+      "end": 431,
+      "claim_text": "« le réel de l’activité est aussi ce qui ne se fait pas, ce qu’on ne peut pas faire, ce qu’on cherche à faire sans y parvenir – les échecs –, ce qu’on aurait voulu ou pu faire, ce qu’on pense ou qu’on rêve pouvoir faire ailleurs. »",
+      "normalized_claim": "Verbatim de l'énumération de 2024.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
-        "SUP-ef71b0d2b7494085"
+        "SUP-ef71b0d2b7494085",
+        "SUP-5690f943879007ce",
+        "SUP-08c2d43fe6f4b8c5"
       ]
     },
     {
       "claim_id": "C023",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 28,
-      "claim_text": "La phrase ne s’arrête pas là",
-      "normalized_claim": "La phrase citée se poursuit au-delà de l'énumération précédente.",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 432,
+      "end": 611,
+      "claim_text": "Chaque membre désigne autre chose : l’abstention, l’impossibilité, la tentative qui échoue, la manière de faire qu’on aurait préférée, l’activité qu’on se figure mener autre part.",
+      "normalized_claim": "Glose des cinq membres de l'énumération.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -384,21 +365,22 @@
     {
       "claim_id": "C024",
       "locator": "sections[1].paragraphs[1]",
-      "start": 70,
-      "end": 247,
-      "claim_text": "« Il faut y ajouter – paradoxe fréquent – ce qu’on fait pour ne pas faire ce qui est à faire, ou encore ce qu’on fait sans vouloir le faire. Sans compter ce qui est à refaire. »",
-      "normalized_claim": "Citation (2024) : ce qu'on fait pour ne pas faire ce qui est à faire, ce qu'on fait sans vouloir le faire, ce qui est à refaire.",
+      "start": 0,
+      "end": 28,
+      "claim_text": "La phrase ne s’arrête pas là",
+      "normalized_claim": "L'énumération de 2024 se poursuit après le membre « ailleurs ».",
       "support_ids": [
-        "SUP-94d565db4258c7c6"
+        "SUP-94d565db4258c7c6",
+        "SUP-ef71b0d2b7494085"
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
-      "start": 248,
-      "end": 434,
-      "claim_text": "Le volume ne contient donc pas seulement de l’inaccompli : il contient aussi des actions accomplies et visibles, dont l’intérêt tient à ce qu’elles évitent ou à ce qu’elles contredisent.",
-      "normalized_claim": "Le volume contient aussi des actions accomplies et visibles, définies par ce qu'elles évitent ou contredisent.",
+      "start": 70,
+      "end": 247,
+      "claim_text": "« Il faut y ajouter – paradoxe fréquent – ce qu’on fait pour ne pas faire ce qui est à faire, ou encore ce qu’on fait sans vouloir le faire. Sans compter ce qui est à refaire. »",
+      "normalized_claim": "Verbatim de la suite de l'énumération de 2024.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -406,10 +388,10 @@
     {
       "claim_id": "C026",
       "locator": "sections[1].paragraphs[1]",
-      "start": 435,
-      "end": 515,
-      "claim_text": "Un empêchement ne se repère pas forcément comme un blanc dans l’emploi du temps.",
-      "normalized_claim": "Un empêchement ne se repère pas nécessairement comme une absence d'action.",
+      "start": 248,
+      "end": 434,
+      "claim_text": "Le volume ne contient donc pas seulement de l’inaccompli : il contient aussi des actions accomplies et visibles, dont l’intérêt tient à ce qu’elles évitent ou à ce qu’elles contredisent.",
+      "normalized_claim": "Le réel de l'activité inclut des actions accomplies, définies par ce qu'elles évitent ou contredisent.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -417,10 +399,10 @@
     {
       "claim_id": "C027",
       "locator": "sections[1].paragraphs[1]",
-      "start": 516,
-      "end": 583,
-      "claim_text": "La liste, elle, avance par ajouts et ne se referme sur aucun compte",
-      "normalized_claim": "L'énumération de l'auteur procède par ajouts successifs et ne se clôt pas.",
+      "start": 435,
+      "end": 515,
+      "claim_text": "Un empêchement ne se repère pas forcément comme un blanc dans l’emploi du temps.",
+      "normalized_claim": "Un empêchement peut prendre la forme d'une action visible.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -428,33 +410,45 @@
     {
       "claim_id": "C028",
       "locator": "sections[1].paragraphs[1]",
-      "start": 588,
-      "end": 756,
-      "claim_text": "la règle que l’auteur en tire est nette : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l’analyse. »",
-      "normalized_claim": "Citation (2024) : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. »",
-      "support_ids": [
-        "SUP-94d565db4258c7c6",
-        "SUP-ef71b0d2b7494085"
-      ]
-    },
-    {
-      "claim_id": "C029",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 77,
-      "end": 198,
-      "claim_text": "La réponse de l’auteur ne porte pas sur les circonstances du travail mais sur ce qui se passe dans l’instant où l’on agit",
-      "normalized_claim": "La réponse de l'auteur porte sur l'instant de l'action et non sur les circonstances du travail.",
+      "start": 516,
+      "end": 583,
+      "claim_text": "La liste, elle, avance par ajouts et ne se referme sur aucun compte",
+      "normalized_claim": "Forme de l'énumération : ajouts successifs, sans clôture.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
     },
     {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 588,
+      "end": 756,
+      "claim_text": "la règle que l’auteur en tire est nette : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l’analyse. »",
+      "normalized_claim": "Verbatim de la règle d'analyse tirée par Clot en 2024.",
+      "support_ids": [
+        "SUP-94d565db4258c7c6",
+        "SUP-485dab252c277bc9",
+        "SUP-b240192fa21354b5"
+      ]
+    },
+    {
       "claim_id": "C030",
       "locator": "sections[2].paragraphs[0]",
-      "start": 203,
-      "end": 310,
+      "start": 77,
+      "end": 151,
+      "claim_text": "La réponse de l’auteur tient à ce qui se passe dans l’instant où l’on agit",
+      "normalized_claim": "La justification de Clot porte sur l'instant de l'action.",
+      "support_ids": [
+        "SUP-94d565db4258c7c6"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 156,
+      "end": 263,
       "claim_text": "il ne la présente pas comme sienne : il rapporte à Vygotski l’idée qui soutient toute la notion, et le cite",
-      "normalized_claim": "L'auteur rapporte à Vygotski l'idée qui soutient la notion et le cite.",
+      "normalized_claim": "Clot attribue à Vygotski l'idée qui soutient la notion et le cite.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
         "SUP-646a0cf1ccea31e7",
@@ -464,35 +458,24 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[0]",
-      "start": 313,
-      "end": 711,
+      "start": 266,
+      "end": 664,
       "claim_text": "« chaque minute, l’homme est plein de possibilités non réalisées, et ce qui se réalise n’est jamais que l’activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n’ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n’ayant que plus de force pour exercer dans l’activité du sujet une influence contre laquelle il peut rester sans défense. »",
-      "normalized_claim": "Citation de Vygotski reprise par l'auteur : possibilités non réalisées, point de collision, résidus incontrôlés.",
+      "normalized_claim": "Verbatim de Vygotski tel que Clot le cite.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
         "SUP-646a0cf1ccea31e7"
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
       "start": 32,
       "end": 224,
       "claim_text": "Si une seule activité l’emporte au point de collision, ne pas faire quelque chose n’est pas un événement négatif : c’est l’issue d’un affrontement, et les activités battues ne s’évaporent pas.",
-      "normalized_claim": "Ne pas faire est l'issue d'un conflit entre activités possibles, et les activités battues subsistent.",
-      "support_ids": [
-        "SUP-94d565db4258c7c6"
-      ]
-    },
-    {
-      "claim_id": "C033",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 225,
-      "end": 295,
-      "claim_text": "Elles restent là, d’autant plus agissantes qu’elles ont été refoulées.",
-      "normalized_claim": "Les activités non réalisées agissent d'autant plus qu'elles ont été refoulées.",
+      "normalized_claim": "Conséquence de la citation : le non-fait est l'issue d'un conflit, et les activités vaincues subsistent.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -500,10 +483,10 @@
     {
       "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
-      "start": 296,
-      "end": 420,
-      "claim_text": "Une activité empêchée n’est pas une activité absente, c’est une activité qui continue d’agir sur celui qui ne l’a pas faite.",
-      "normalized_claim": "Une activité empêchée continue d'agir sur celui qui ne l'a pas faite.",
+      "start": 225,
+      "end": 295,
+      "claim_text": "Elles restent là, d’autant plus agissantes qu’elles ont été refoulées.",
+      "normalized_claim": "Les activités refoulées agissent d'autant plus.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -511,21 +494,21 @@
     {
       "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
-      "start": 421,
-      "end": 607,
-      "claim_text": "L’empêchement n’est donc pas seulement extérieur : il ne se réduit pas à l’obstacle ou au moyen qui manque, il se joue aussi entre des manières de faire qui se disputent le même instant.",
-      "normalized_claim": "L'empêchement n'est pas seulement extérieur : il se joue entre manières de faire concurrentes.",
+      "start": 296,
+      "end": 420,
+      "claim_text": "Une activité empêchée n’est pas une activité absente, c’est une activité qui continue d’agir sur celui qui ne l’a pas faite.",
+      "normalized_claim": "Formulation reprise de la glose du lecteur primaire.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C036",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 65,
-      "end": 128,
-      "claim_text": "cette liste ne réduit pas les échecs à un manque de compétence.",
-      "normalized_claim": "L'énumération ne réduit pas les échecs à un défaut de compétence.",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 421,
+      "end": 607,
+      "claim_text": "L’empêchement n’est donc pas seulement extérieur : il ne se réduit pas à l’obstacle ou au moyen qui manque, il se joue aussi entre des manières de faire qui se disputent le même instant.",
+      "normalized_claim": "L'empêchement se joue aussi entre activités possibles concurrentes, pas seulement par obstacle externe.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -533,32 +516,33 @@
     {
       "claim_id": "C037",
       "locator": "sections[3].paragraphs[0]",
-      "start": 129,
-      "end": 325,
-      "claim_text": "Quelqu’un de très compétent peut tout autant chercher à faire quelque chose sans y parvenir, parce que les moyens manquent, parce que le temps manque, parce qu’une autre urgence est passée devant.",
-      "normalized_claim": "Un travailleur compétent peut échouer faute de moyens, de temps, ou par une autre urgence.",
+      "start": 65,
+      "end": 127,
+      "claim_text": "cette liste ne réduit pas les échecs à un manque de compétence",
+      "normalized_claim": "L'énumération n'impute pas les échecs à un défaut de compétence.",
       "support_ids": [
-        "SUP-94d565db4258c7c6"
+        "SUP-94d565db4258c7c6",
+        "SUP-8b0ef8c76d45389f"
       ]
     },
     {
       "claim_id": "C038",
       "locator": "sections[3].paragraphs[0]",
-      "start": 326,
-      "end": 499,
-      "claim_text": "Le réel de l’activité n’est pas le tiroir où l’on rangerait les ratés d’un travail mal fait : c’est une part ordinaire de tout travail, aussi bien mené soit-il par ailleurs.",
-      "normalized_claim": "Le réel de l'activité est une part ordinaire de tout travail, non le rebut d'un travail mal fait.",
+      "start": 129,
+      "end": 325,
+      "claim_text": "Quelqu’un de très compétent peut tout autant chercher à faire quelque chose sans y parvenir, parce que les moyens manquent, parce que le temps manque, parce qu’une autre urgence est passée devant.",
+      "normalized_claim": "La tentative qui échoue est indépendante du niveau de compétence.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C039",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 0,
-      "end": 146,
-      "claim_text": "Ce qui se joue dans l’empêchement n’est donc pas la qualité d’un résultat, c’est la santé de celui qui travaille, et l’auteur l’écrit sans détour.",
-      "normalized_claim": "Ce qui se joue dans l'empêchement est la santé de celui qui travaille et non la qualité du résultat, et l'auteur l'écrit.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 326,
+      "end": 499,
+      "claim_text": "Le réel de l’activité n’est pas le tiroir où l’on rangerait les ratés d’un travail mal fait : c’est une part ordinaire de tout travail, aussi bien mené soit-il par ailleurs.",
+      "normalized_claim": "Le réel de l'activité est une part ordinaire de tout travail, non un registre de ratés.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -566,10 +550,10 @@
     {
       "claim_id": "C040",
       "locator": "sections[3].paragraphs[1]",
-      "start": 147,
-      "end": 501,
-      "claim_text": "L’activité, telle qu’il la définit, « affranchit le sujet – en risquant toujours l’échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d’en être empêchée. C’est bien sûr souvent le cas et c’est la source même de la dégradation de la santé au travail jusqu’aux formes graves de psychopathologie du travail ».",
-      "normalized_claim": "Citation : l'activité affranchit le sujet à moins d'en être empêchée, source de la dégradation de la santé au travail.",
+      "start": 0,
+      "end": 146,
+      "claim_text": "Ce qui se joue dans l’empêchement n’est donc pas la qualité d’un résultat, c’est la santé de celui qui travaille, et l’auteur l’écrit sans détour.",
+      "normalized_claim": "Chez Clot l'empêchement est un problème de santé, non de performance.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -577,10 +561,10 @@
     {
       "claim_id": "C041",
       "locator": "sections[3].paragraphs[1]",
-      "start": 502,
-      "end": 567,
-      "claim_text": "Ce qui se trouve atteint porte chez lui un nom, le pouvoir d’agir",
-      "normalized_claim": "Ce qui est atteint s'appelle chez l'auteur le pouvoir d'agir.",
+      "start": 147,
+      "end": 501,
+      "claim_text": "L’activité, telle qu’il la définit, « affranchit le sujet – en risquant toujours l’échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d’en être empêchée. C’est bien sûr souvent le cas et c’est la source même de la dégradation de la santé au travail jusqu’aux formes graves de psychopathologie du travail ».",
+      "normalized_claim": "Verbatim de la définition de l'activité et du lien empêchement / dégradation de la santé.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -588,10 +572,10 @@
     {
       "claim_id": "C042",
       "locator": "sections[3].paragraphs[1]",
-      "start": 570,
+      "start": 502,
       "end": 714,
-      "claim_text": "il « peut se trouver et se trouve fréquemment amputé aujourd’hui, jusqu’à entamer la vitalité subjective inhérente à l’activité ainsi définie ».",
-      "normalized_claim": "Citation : le pouvoir d'agir « peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective ».",
+      "claim_text": "Ce qui se trouve atteint porte chez lui un nom, le pouvoir d’agir : il « peut se trouver et se trouve fréquemment amputé aujourd’hui, jusqu’à entamer la vitalité subjective inhérente à l’activité ainsi définie ».",
+      "normalized_claim": "Le pouvoir d'agir est ce qui est atteint ; verbatim sur son amputation fréquente.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -600,9 +584,9 @@
       "claim_id": "C043",
       "locator": "sections[3].paragraphs[2]",
       "start": 0,
-      "end": 47,
-      "claim_text": "Et nul ne peut s’y soustraire en faisant le tri",
-      "normalized_claim": "On ne peut pas trier entre réel et réalisé de son activité.",
+      "end": 152,
+      "claim_text": "Et nul ne peut s’y soustraire en faisant le tri : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. »",
+      "normalized_claim": "Verbatim : impossibilité de trier entre réel et réalisé.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -610,139 +594,136 @@
     {
       "claim_id": "C044",
       "locator": "sections[3].paragraphs[2]",
-      "start": 50,
-      "end": 152,
-      "claim_text": "« Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. »",
-      "normalized_claim": "Citation : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. »",
+      "start": 153,
+      "end": 261,
+      "claim_text": "On ne garde pas de sa journée ce qui s’est fait en laissant le reste à la porte ; les deux entrent ensemble.",
+      "normalized_claim": "Glose de l'impossibilité de trier.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C045",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 153,
-      "end": 264,
-      "claim_text": "On ne garde pas de sa journée la seule part réussie en laissant l’autre à la porte ; les deux entrent ensemble.",
-      "normalized_claim": "La part réussie et la part empêchée d'une journée ne se séparent pas.",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 132,
+      "claim_text": "L’idée circule sous une étiquette plus courte qu’elle : activité empêchée, au singulier, comme s’il s’agissait d’une catégorie fixe.",
+      "normalized_claim": "Le singulier « activité empêchée » est un libellé de réception qui circule.",
       "support_ids": [
-        "SUP-94d565db4258c7c6"
+        "SUP-485dab252c277bc9",
+        "SUP-7664cc9022028257",
+        "SUP-b240192fa21354b5",
+        "SUP-f75445b1ff5df394"
       ]
     },
     {
       "claim_id": "C046",
       "locator": "sections[4].paragraphs[0]",
-      "start": 0,
-      "end": 132,
-      "claim_text": "L’idée circule sous une étiquette plus courte qu’elle : activité empêchée, au singulier, comme s’il s’agissait d’une catégorie fixe.",
-      "normalized_claim": "L'idée circule sous le libellé figé « activité empêchée » au singulier.",
+      "start": 133,
+      "end": 175,
+      "claim_text": "L’auteur écrit plutôt un pluriel adjectivé",
+      "normalized_claim": "Clot écrit « les activités suspendues, contrariées ou empêchées », au pluriel et adjectivé.",
       "support_ids": [
         "SUP-485dab252c277bc9",
         "SUP-b240192fa21354b5",
-        "SUP-d111dea4d5b00b68"
+        "SUP-94d565db4258c7c6"
       ]
     },
     {
       "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
-      "start": 133,
-      "end": 175,
-      "claim_text": "L’auteur écrit plutôt un pluriel adjectivé",
-      "normalized_claim": "L'auteur écrit un pluriel adjectivé plutôt que le substantif singulier.",
-      "support_ids": [
-        "SUP-485dab252c277bc9",
-        "SUP-b240192fa21354b5"
-      ]
-    },
-    {
-      "claim_id": "C048",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 177,
-      "end": 271,
-      "claim_text": "et un texte de 2018 qu’il cosigne tient cette formulation pour « conceptuellement stabilisée »",
-      "normalized_claim": "Un texte de 2018 cosigné par l'auteur tient la formulation pour « conceptuellement stabilisée ».",
+      "start": 180,
+      "end": 450,
+      "claim_text": "un texte de 2018 qu’il cosigne tient cette formulation pour « conceptuellement stabilisée » : « le réel de l’activité n’est pas que l’activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l’analyse »",
+      "normalized_claim": "Verbatim de la note 2 du texte cosigné de 2018 et de sa déclaration de stabilité conceptuelle.",
       "support_ids": [
         "SUP-2812cb300ba840d4",
         "SUP-ef71b0d2b7494085",
         "SUP-646a0cf1ccea31e7",
         "SUP-68d4db836b6eae69",
-        "SUP-ee84a7679c83f32b",
-        "SUP-8afd7962ac923a25"
-      ]
-    },
-    {
-      "claim_id": "C049",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 274,
-      "end": 451,
-      "claim_text": "« le réel de l’activité n’est pas que l’activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l’analyse ».",
-      "normalized_claim": "Citation (2018, note 2) : les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l'analyse.",
-      "support_ids": [
-        "SUP-ef71b0d2b7494085",
-        "SUP-2812cb300ba840d4",
         "SUP-ee84a7679c83f32b"
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[0]",
       "start": 452,
       "end": 565,
       "claim_text": "Le singulier range sous un mot unique ce que l’auteur écrit avec plusieurs, et c’est cette variété qu’il aplatit.",
-      "normalized_claim": "Le singulier aplatit la variété des formulations plurielles de l'auteur.",
+      "normalized_claim": "Le singulier aplatit la variété des adjectifs employés par l'auteur.",
       "support_ids": [
         "SUP-485dab252c277bc9",
         "SUP-b240192fa21354b5"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[0]",
       "start": 566,
       "end": 717,
       "claim_text": "Le substantif n’est pas pour autant étranger à son œuvre : un article de 2011 qu’il cosigne l’emploie, en le renvoyant à l’un de ses livres antérieurs.",
-      "normalized_claim": "Un article de 2011 cosigné par l'auteur emploie le substantif en le renvoyant à un livre antérieur de lui.",
+      "normalized_claim": "Un article de 2011 cosigné par Clot emploie « activité empêchée » en le renvoyant à (Clot, 1999).",
       "support_ids": [
         "SUP-89739a4b2497d763",
-        "SUP-485dab252c277bc9",
-        "SUP-50debe19e4c3984d",
-        "SUP-fec32274272c7775"
+        "SUP-485dab252c277bc9"
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[0]",
       "start": 718,
       "end": 812,
       "claim_text": "Où il paraît pour la première fois sous sa plume n’est pas établi par les sources disponibles.",
-      "normalized_claim": "La première occurrence du substantif sous la plume de l'auteur n'est pas établie.",
+      "normalized_claim": "Non-établissement : la première occurrence du substantif dans l'œuvre n'a pas pu être établie.",
       "support_ids": [
         "SUP-485dab252c277bc9",
         "SUP-b240192fa21354b5",
         "SUP-7e13bdcd1acebe5c",
-        "SUP-fec32274272c7775",
-        "SUP-a5ceced6e934d294"
+        "SUP-fec32274272c7775"
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C051",
       "locator": "sections[5].paragraphs[0]",
       "start": 60,
-      "end": 216,
-      "claim_text": "L’ergonomie a l’habitude de distinguer ce qui est demandé de ce qui est effectivement fait, et l’auteur rappelle cette manière de dire avant de s’en écarter",
-      "normalized_claim": "L'ergonomie distingue le prescrit du fait, et l'auteur rappelle cette manière de dire avant de s'en écarter.",
+      "end": 150,
+      "claim_text": "L’ergonomie a l’habitude de distinguer ce qui est demandé de ce qui est effectivement fait",
+      "normalized_claim": "La tradition ergonomique distingue la tâche prescrite de l'activité effective.",
       "support_ids": [
         "SUP-94d565db4258c7c6",
         "SUP-220f157f8f801cf4"
       ]
     },
     {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 155,
+      "end": 375,
+      "claim_text": "l’auteur rappelle cette manière de dire avant de s’en écarter : « La tâche est ce qui est à faire, l’activité ce qui se fait, a-t-on pris l’habitude de dire », l’activité étant alors « déclenchée et guidée par la tâche »",
+      "normalized_claim": "Deux verbatims par lesquels Clot rappelle le partage tâche/activité avant de s'en écarter.",
+      "support_ids": [
+        "SUP-94d565db4258c7c6",
+        "SUP-220f157f8f801cf4"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 377,
+      "end": 461,
+      "claim_text": "Ses deux termes restent du côté de ce qui a eu lieu : la consigne, puis l’exécution.",
+      "normalized_claim": "Les deux termes du partage ergonomique portent tous deux sur ce qui a eu lieu.",
+      "support_ids": [
+        "SUP-94d565db4258c7c6"
+      ]
+    },
+    {
       "claim_id": "C054",
       "locator": "sections[5].paragraphs[0]",
-      "start": 219,
-      "end": 313,
-      "claim_text": "« La tâche est ce qui est à faire, l’activité ce qui se fait, a-t-on pris l’habitude de dire »",
-      "normalized_claim": "Citation : « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ».",
+      "start": 462,
+      "end": 535,
+      "claim_text": "Le réel de l’activité désigne précisément ce que ce partage laisse tomber",
+      "normalized_claim": "Le réel de l'activité est ce que la formule tâche/activité laisse tomber.",
       "support_ids": [
         "SUP-94d565db4258c7c6"
       ]
@@ -750,67 +731,35 @@
     {
       "claim_id": "C055",
       "locator": "sections[5].paragraphs[0]",
-      "start": 315,
-      "end": 376,
-      "claim_text": "l’activité étant alors « déclenchée et guidée par la tâche ».",
-      "normalized_claim": "Citation : l'activité est « déclenchée et guidée par la tâche ».",
+      "start": 540,
+      "end": 647,
+      "claim_text": "écrire activité réelle à sa place, c’est revenir sans le voir à la surface dont l’auteur cherchait à sortir",
+      "normalized_claim": "Substituer « activité réelle » ramène à la surface contre laquelle le concept est construit.",
       "support_ids": [
-        "SUP-94d565db4258c7c6"
+        "SUP-220f157f8f801cf4",
+        "SUP-94d565db4258c7c6",
+        "SUP-c98d6b242ef735ab"
       ]
     },
     {
       "claim_id": "C056",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 377,
-      "end": 461,
-      "claim_text": "Ses deux termes restent du côté de ce qui a eu lieu : la consigne, puis l’exécution.",
-      "normalized_claim": "Tâche et activité relèvent tous deux de ce qui a eu lieu.",
-      "support_ids": [
-        "SUP-94d565db4258c7c6"
-      ]
-    },
-    {
-      "claim_id": "C057",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 462,
-      "end": 535,
-      "claim_text": "Le réel de l’activité désigne précisément ce que ce partage laisse tomber",
-      "normalized_claim": "Le réel de l'activité désigne ce que le partage tâche/activité laisse tomber.",
-      "support_ids": [
-        "SUP-94d565db4258c7c6"
-      ]
-    },
-    {
-      "claim_id": "C058",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 537,
-      "end": 648,
-      "claim_text": "et écrire activité réelle à sa place, c’est revenir sans le voir à la surface dont l’auteur cherchait à sortir.",
-      "normalized_claim": "Écrire « activité réelle » revient à la surface dont l'auteur voulait sortir.",
-      "support_ids": [
-        "SUP-220f157f8f801cf4",
-        "SUP-94d565db4258c7c6"
-      ]
-    },
-    {
-      "claim_id": "C059",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 98,
       "claim_text": "La différence n’est pas terminologique : elle change ce qu’une observation a le droit de conclure.",
-      "normalized_claim": "La distinction change ce qu'une observation peut conclure.",
+      "normalized_claim": "La distinction a une portée méthodologique sur ce qu'une observation peut conclure.",
       "support_ids": [
         "SUP-89739a4b2497d763",
         "SUP-94d565db4258c7c6"
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C057",
       "locator": "sections[5].paragraphs[1]",
       "start": 99,
       "end": 349,
       "claim_text": "Un article de 2011 cosigné par l’auteur le dit en une ligne : « la clinique de l’activité distingue l’activité réalisée du réel de l’activité (Clot, 2008). Elle ne limite donc pas les possibilités du professionnel observé à ce qu’on lui voit faire ».",
-      "normalized_claim": "Citation (2011) : la clinique de l'activité distingue l'activité réalisée du réel de l'activité et ne limite pas les possibilités du professionnel observé à ce qu'on lui voit faire.",
+      "normalized_claim": "Verbatim de l'article cosigné de 2011.",
       "support_ids": [
         "SUP-89739a4b2497d763",
         "SUP-50debe19e4c3984d",
@@ -818,39 +767,38 @@
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[1]",
       "start": 350,
-      "end": 512,
-      "claim_text": "Deux personnes qui obtiennent le même résultat n’ont donc pas traversé le même travail, et un regard qui ne retient que le résultat les tiendra pour équivalentes.",
-      "normalized_claim": "Un même résultat ne signale pas un même travail traversé ; un regard limité au résultat les égalise.",
+      "end": 522,
+      "claim_text": "Deux personnes qui obtiennent le même résultat n’ont donc pas forcément traversé le même travail, et un regard qui ne retient que le résultat les tiendra pour équivalentes.",
+      "normalized_claim": "Conséquence : un même résultat ne garantit pas un même travail traversé.",
       "support_ids": [
         "SUP-89739a4b2497d763",
         "SUP-94d565db4258c7c6"
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C059",
       "locator": "sections[5].paragraphs[1]",
-      "start": 550,
-      "end": 711,
-      "claim_text": "la notion est couramment confondue avec une autre approche de la souffrance au travail, la psychodynamique du travail, dont l’auteur revendique de se distinguer.",
-      "normalized_claim": "La notion est couramment confondue avec la psychodynamique du travail, dont l'auteur revendique de se distinguer.",
+      "start": 560,
+      "end": 629,
+      "claim_text": "la notion est couramment confondue avec la psychodynamique du travail",
+      "normalized_claim": "La notion se confond souvent avec la psychodynamique du travail.",
       "support_ids": [
-        "SUP-d111dea4d5b00b68",
-        "SUP-938045cf22f3a05d",
-        "SUP-0021ed7d439ebe18"
+        "SUP-7664cc9022028257",
+        "SUP-938045cf22f3a05d"
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C060",
       "locator": "sections[5].paragraphs[1]",
-      "start": 712,
-      "end": 780,
-      "claim_text": "Ce en quoi elle consiste se lira dans les textes de part et d’autre.",
-      "normalized_claim": "Le contenu de cette distinction se lit dans les textes des deux approches.",
+      "start": 631,
+      "end": 738,
+      "claim_text": "Une différence entre les deux est revendiquée ; les sources disponibles ne permettent pas de dire laquelle.",
+      "normalized_claim": "Non-établissement : la différence est revendiquée mais non documentée par les sources ouvertes.",
       "support_ids": [
-        "SUP-d111dea4d5b00b68",
+        "SUP-7664cc9022028257",
         "SUP-938045cf22f3a05d",
         "SUP-0021ed7d439ebe18"
       ]
