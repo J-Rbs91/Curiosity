@@ -1,0 +1,31 @@
+{
+  "protocol_version": 2,
+  "concept_id": "amenagement-onereux-du-monde-exterieur",
+  "candidate_sha256": "d8b11544e367d3a55a0868ec78168ba4c7b3ce5e8c791838f694172327e6e903",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 74,
+  "supported": 71,
+  "failed": 2,
+  "mapping_incomplete": [
+    {
+      "claim_id": "C005",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Les deux appuis fournis pour ce claim ne portent ni le regret ni la justification apres coup, et le signal nomme un appui non cite dont le terme partage est precisement << justifie >> : SUP-42969029c34cdb55, origine validated, chemin $.notes[10]. Il est probable que l'enumeration devait etre rattachee aussi a cet appui ; le claim retourne au mapping sans se prononcer sur sa verite."
+    }
+  ],
+  "structural_errors": [
+    "C005: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
+  "failures": [
+    {
+      "claim_id": "C053",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim n'ecrivent que << P.L. Reynaud >>, identifie comme l'economiste, et signalent meme une homonymie a menager avec le sociologue J.D. Reynaud ; ils n'etablissent pas le prenom << Pierre-Louis >>. L'adresse bibliographique - La Psychologie Economique, Marcel Riviere, 1954, collection de bilans - est en revanche portee telle quelle."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis n'etablissent ce critere que comme le raisonnement d'Albou - il reconnait l'anteriorite de publication de Reynaud tout en lui deniant d'avoir defini la discipline - et precisent que la querelle est documentee du seul cote d'Albou, non tranchee, la position de Reynaud n'ayant pas ete ouverte. Enoncee sans attribution comme regle generale (<< ne fonde donc pas une discipline >>), la proposition passe d'un verdict situe a une loi, et endosse le critere par lequel Albou ecarte un ouvrage que le dossier dit n'avoir pas lu. Le signal (SUP-6537817c0d926de7) ne partage que << fonde >>, au sens du calcul qui fonde la decision, et n'autoriserait pas davantage cette generalisation : le defaut est dans la formulation, non dans le rattachement."
+    }
+  ]
+}
