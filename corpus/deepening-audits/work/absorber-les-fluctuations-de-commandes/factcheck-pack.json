@@ -3,7 +3,7 @@
   "concept_id": "absorber-les-fluctuations-de-commandes",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "5b8115f95133cd5cbe7460fcace4b310f673109197a23d500c73196fb7407c79",
+  "candidate_sha256": "8a13029a91e75f0d847edeee80b0c03509b0d66788300f0a6954e7d483b64954",
   "validated_sha256": "058f93386a64ce32e51bc01a39535ff1f70d9803772fe4f6493bb38958b34ffc",
   "evidence_files": [],
   "dossier_declare": {
@@ -49,7 +49,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Et cette variation ne se supprime pas. Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes. C’est la même variation qu’ils ont tous deux à encaisser."
+      "text": "Les commandes qu’un atelier reçoit varient, et fortement. Cette variation ne se supprime pas. Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes. C’est la même variation qu’ils ont tous deux à encaisser."
     },
     {
       "locator": "lead[1]",
@@ -63,7 +63,7 @@
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Ce qui fluctue, et où le loger",
-      "text": "Le rapport examine trois manières de le loger, chacune comme une voie pure poussée à son terme. Un atelier peut produire à cadence constante, quoi qu’il arrive, et laisser le stock encaisser la différence : on fabrique d’avance pour la pointe, on vide les entrepôts quand elle arrive. Il peut au contraire garder le même personnel et allonger les journées quand les commandes montent, par des heures supplémentaires. Il peut enfin caler l’effectif sur les commandes, en embauchant puis en licenciant au fil des saisons."
+      "text": "Le rapport examine trois manières de le loger, chacune comme une voie pure poussée à son terme. Un atelier peut produire à cadence constante, quoi qu’il arrive, et laisser le stock encaisser la différence : on fabrique d’avance pour la pointe, on vide les entrepôts quand elle arrive. Il peut au contraire garder le même personnel et allonger les journées quand les commandes montent, par des heures supplémentaires. Il peut enfin caler l’effectif sur les commandes, en embauchant et en licenciant."
     },
     {
       "locator": "sections[0].paragraphs[2]",
@@ -72,18 +72,18 @@
     },
     {
       "locator": "sections[1].paragraphs[0]",
-      "section_title": "Une phrase qui recommande, et ce qui la soutient",
+      "section_title": "Une phrase qui conseille, et ne démontre pas encore",
       "text": "À la page 8, au terme de cet inventaire, les auteurs écrivent : « In general, none of the pure alternatives discussed above will prove best, but rather some carefully weighted combination of them. » Aucune voie pure ne se révélera la meilleure, mais plutôt une combinaison soigneusement pondérée. Vient alors la phrase qui donne sa forme au conseil : une fluctuation de commandes doit être absorbée pour partie par le stock, pour partie par les heures supplémentaires, pour partie par l’embauche et le licenciement."
     },
     {
       "locator": "sections[1].paragraphs[1]",
-      "section_title": "Une phrase qui recommande, et ce qui la soutient",
+      "section_title": "Une phrase qui conseille, et ne démontre pas encore",
       "text": "Deux détails de cette phrase fixent son statut. Son verbe est « should », celui du conseil : c’est une règle d’action, non le compte rendu de ce que font les usines. Et elle est tenue par un « in general » qui l’empêche de se lire comme une loi. La différence n’est pas de style : une règle d’action peut être suivie ou non ; un constat, lui, serait démenti dès qu’une usine ferait autrement."
     },
     {
       "locator": "sections[1].paragraphs[2]",
-      "section_title": "Une phrase qui recommande, et ce qui la soutient",
-      "text": "À cet endroit, la recommandation n’est pas encore démontrée. Elle clôt un examen des coûts, et ce qui la justifie vient après : les auteurs construisent une fonction de coût, une formule qui met un prix sur chaque combinaison possible de stock, d’heures et d’effectif, puis cherchent celle qui rend ce prix le plus bas. La phrase de la page 8 annonce ce que la suite a pour tâche d’établir."
+      "section_title": "Une phrase qui conseille, et ne démontre pas encore",
+      "text": "À cet endroit, la recommandation n’est pas encore démontrée : elle clôt un examen des coûts, et la démonstration ne vient qu’ensuite, par une fonction de coût. La phrase de la page 8 annonce ce que la suite a pour tâche d’établir."
     },
     {
       "locator": "sections[2].paragraphs[0]",
@@ -108,7 +108,7 @@
     {
       "locator": "sections[3].paragraphs[1]",
       "section_title": "Là où le rapport place l’erreur de prévision",
-      "text": "On peut lire dans cet enchaînement une conséquence que la page 8 ne porte pas seule. Répartir une fluctuation suppose de savoir qu’elle vient : fabriquer d’avance pour une pointe ou embaucher avant une montée, ce sont des décisions prises sur des commandes anticipées, donc sur des nombres dont on sait qu’ils seront faux de quelque chose. Et si les décisions se prennent en séquence, le dosage n’est pas arrêté une fois pour l’année : il se reprend à chaque période."
+      "text": "On peut lire dans cet enchaînement une conséquence que la page 8 ne porte pas seule. Répartir une fluctuation suppose de savoir qu’elle vient : fabriquer d’avance pour une pointe ou embaucher avant une montée, ce sont des décisions prises sur des commandes prévues. Et si les décisions se prennent en séquence, le dosage ne se fixe pas en une seule fois : il se reprend à chaque période."
     },
     {
       "locator": "sections[4].paragraphs[0]",
@@ -548,6 +548,6 @@
       "text": "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : le label de la source primaire écrivait « 42 p. » et écrit désormais « 42 p. hors appendice ». Le scan s'arrête bien au folio 42, mais la table des matières annonce « APPENDIX: Derivation of the Conditions for Minimum Costs 43 » et la dernière page dit « a technical appendix is attached ». Le mémorandum d'origine dépasse donc 42 pages : la collation affichée décrit l'exemplaire numérisé, non la pièce complète. Ni le locator ni la citation ne sont touchés."
     }
   ],
-  "estimated_tokens": 9559,
+  "estimated_tokens": 9448,
   "status": "READY"
 }
