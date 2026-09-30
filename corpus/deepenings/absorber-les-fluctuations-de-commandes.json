@@ -2,7 +2,7 @@
   "$schema": "../schema/deepening.schema.json",
   "conceptId": "absorber-les-fluctuations-de-commandes",
   "lead": [
-    "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Personne, à l’intérieur, n’a le moyen de demander aux clients d’étaler leurs achats. Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes. Rien n’oblige à les choisir ensemble, et c’est pourtant la même variation qu’ils ont tous deux à encaisser.",
+    "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Et cette variation ne se supprime pas. Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes. C’est la même variation qu’ils ont tous deux à encaisser.",
     "En mai 1955, trois chercheurs de la Graduate School of Industrial Administration du Carnegie Institute of Technology, Charles C. Holt, Franco Modigliani et Herbert A. Simon, font paraître un mémorandum de recherche qui les prend ensemble : son chapitre II pose en un seul énoncé le problème de décision, programmer la cadence et l’effectif. Le titre annonce déjà la forme de la réponse, « A Linear Decision Rule for Production and Employment Scheduling » : ce sera une règle de décision, et elle sera dite linéaire. Une note de la page de titre partage le travail, « This paper was written by Mr. Holt, but it rests on research done by all three authors. », et rattache la recherche à un projet financé par l’Office of Naval Research."
   ],
   "sections": [
@@ -45,17 +45,17 @@
       ]
     },
     {
-      "title": "L’appendice où le calcul se fait",
+      "title": "L’appendice annoncé au folio 43",
       "paragraphs": [
-        "Le titre du mémorandum annonce une règle de décision, et la page 8 n’en donne que la forme : absorber en partie ici, en partie là, selon les coûts. Le calcul qui produit le partage est renvoyé plus loin, et la table des matières l’annonce au folio 43 sous un titre sans ambiguïté : « APPENDIX: Derivation of the Conditions for Minimum Costs », la dérivation des conditions du coût minimum. Ce sont ces pages qui démontrent ce que la page 8 se contente de recommander, et c’est là qu’il faudra aller voir pourquoi une combinaison pondérée vaut mieux qu’une voie pure.",
+        "Le titre du mémorandum annonce une règle de décision, et la page 8 n’en donne que la forme : absorber en partie ici, en partie là, selon les coûts. Le calcul qui produit le partage est renvoyé plus loin, et la table des matières l’annonce au folio 43 sous un titre sans ambiguïté : « APPENDIX: Derivation of the Conditions for Minimum Costs », la dérivation des conditions du coût minimum. Ce que cette dérivation établit, ces pages seules le diront.",
         "Une autre porte reste ouverte : un article de même titre a paru en octobre 1955 dans Management Science, sous les trois mêmes noms, sur une trentaine de pages. Et la question que pose le titre attend toujours : par quel calcul, au juste, une cadence et un effectif sortent-ils de commandes qui varient ?"
       ]
     }
   ],
   "limits": [
-    "Aucun dossier de preuve n’existe pour ce concept ; la déclaration full-text de la source primaire n’est corroborée par aucune lecture déposée ailleurs. La matière opposable se réduit aux verbatim relevés en notes et au contrôle : page de titre et sa note, page 8, table des matières paginée du chapitre II, page 40.",
+    "Aucun dossier de preuve n’existe pour ce concept ; la déclaration full-text de la source primaire n’est corroborée par aucune lecture déposée ailleurs. La matière opposable se réduit aux verbatim relevés en notes et au contrôle : page de titre et sa note, page 8, table des matières paginée du chapitre II, page 40. Une fluctuation non supprimable est tout ce qui est établi du régime des commandes : ni ses causes ni les moyens d’agir sur la demande des clients ne sont documentés.",
     "Les pages 5 à 7 ne sont documentées que par la mention qu’elles détaillent les coûts propres à chacune des trois alternatives pures. Aucune énumération de composantes de coût n’est autorisée, ni immobilisation, ni prime d’heures supplémentaires, ni frais de recrutement.",
     "Les pages 8 et 9 ne sont connues que par leurs titres et leur pagination. Leur contenu n’est pas disponible, et leur absence des relevés n’établit pas le silence du mémorandum : rien ne s’en conclut. La conséquence tirée sur la prévision est donnée comme une lecture de l’enchaînement des sections, non comme une thèse des auteurs.",
-    "L’appendice annoncé au folio 43, « APPENDIX: Derivation of the Conditions for Minimum Costs », manque à l’exemplaire numérisé arrêté au folio 42 : ce que « linéaire » fait dans le modèle ne peut pas être expliqué. L’article de Management Science d’octobre 1955 est atteint par sa seule notice : aucune phrase sur son contenu. Le livre de 1960 dit HMMS n’est pas une source de ce travail."
+    "L’appendice annoncé au folio 43, « APPENDIX: Derivation of the Conditions for Minimum Costs », manque à l’exemplaire numérisé arrêté au folio 42, et son contenu n’est connu que par son titre : rien ne peut lui attribuer la démonstration de la page 8, ni y situer la justification de la combinaison pondérée, ni expliquer ce que « linéaire » fait dans le modèle. L’article de Management Science d’octobre 1955 est atteint par sa seule notice : aucune phrase sur son contenu. Le livre de 1960 dit HMMS n’est pas une source de ce travail."
   ]
 }
