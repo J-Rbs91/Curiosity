@@ -1,0 +1,33 @@
+{
+  "protocol_version": 2,
+  "concept_id": "absorber-les-fluctuations-de-commandes",
+  "candidate_sha256": "1dc7016d477aedc5c71f05f9338d6eb862aa8d77fa4512e7c4ec7d64f5501588",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 61,
+  "supported": 57,
+  "failed": 4,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C002",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul appui fourni, $.hook, pose une fluctuation « qu'on ne peut pas supprimer » ; il ne dit rien du pourquoi. Le claim ajoute un mecanisme et une impossibilite absolue interne — « Personne, a l'interieur, n'a le moyen de demander aux clients d'etaler leurs achats » — c'est-a-dire une affirmation sur la relation aux clients et sur les moyens de l'atelier que les appuis fournis pour ce claim ne portent pas."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui ne m'est fourni pour ce claim. L'affirmation « Rien n'oblige a les choisir ensemble » porte sur une absence de contrainte et n'est etablie par rien de ce qui m'est transmis ; l'absence de contradiction ne vaut pas preuve."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim etablissent que la demonstration « vient ensuite, par la fonction de cout » ($.notes[0]) et que la table des matieres annonce au folio 43 une « Derivation of the Conditions for Minimum Costs » ($.notes[10]). Ils n'etablissent pas que ce sont ces pages-la qui demontrent la recommandation de la p. 8 : « ensuite » couvre aussi le corps du rapport, et $.notes[5] indique que l'annexe est absente de l'exemplaire numerise, donc que son contenu n'est atteste par rien d'autre que son titre. Le claim affirme comme un fait la fonction demonstrative de pages dont aucun appui fourni ne dit le contenu."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "TOO_STRONG",
+      "reason": "Meme proposition que C059 — la justification de la combinaison ponderee serait dans ces pages —, donc meme verdict. review.notes[2] etablit bien l'enonce « none of the pure alternatives ... will prove best, but rather some carefully weighted combination », et $.notes[0] que sa demonstration vient plus loin ; aucun appui fourni ne localise cette demonstration dans l'annexe du folio 43, dont le contenu n'est connu que par son titre."
+    }
+  ]
+}
