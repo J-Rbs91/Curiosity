@@ -1,33 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "absorber-les-fluctuations-de-commandes",
-  "candidate_sha256": "5b8115f95133cd5cbe7460fcace4b310f673109197a23d500c73196fb7407c79",
+  "candidate_sha256": "8a13029a91e75f0d847edeee80b0c03509b0d66788300f0a6954e7d483b64954",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 57,
-  "supported": 53,
-  "failed": 4,
+  "claims": 61,
+  "supported": 60,
+  "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
+      "claim_id": "C049",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent, par la p. 5 relevee dans review.notes[6], « orders (or more precisely, ordered shipments) are subject to substantial fluctuation », et le hook porte l'impossibilite de supprimer la fluctuation. Ils n'etablissent ni l'echelle annuelle ni l'alternance mois par mois (« un mois elles s'entassent, le mois suivant elles se font rares ») : la frequence du phenomene est ajoutee."
-    },
-    {
-      "claim_id": "C017",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent « partly by hiring and layoffs » (quotation.original_text, quotation.text, note du traducteur) et l'existence de trois alternatives pures (review.notes[6]). Ils n'etablissent aucun rythme saisonnier des fluctuations : « au fil des saisons » ajoute une periodicite que ces appuis ne portent pas."
-    },
-    {
-      "claim_id": "C030",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent que « la demonstration vient ensuite, par la fonction de cout » (notes[0]) et que la table des matieres annonce « APPENDIX: Derivation of the Conditions for Minimum Costs » au folio 43 (notes[10], review.notes[9]). Ils ne portent pas la structure de cette fonction : une formule qui mettrait un prix sur chaque combinaison possible de stock, d'heures et d'effectif est une description du modele que ces appuis n'etablissent pas, et notes[5] rappelle que l'appendice est absent de l'exemplaire numerise."
-    },
-    {
-      "claim_id": "C045",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent le titre de section lu a la table des matieres et au bas de la p. 8, « Errors in Forecasting Orders » (review.notes[3]), et les trois canaux d'absorption (quotation.original_text). Ils n'etablissent pas ce que la section dit de ces erreurs : « des nombres dont on sait qu'ils seront faux de quelque chose » ajoute une certitude sur l'erreur de prevision qu'un titre de section ne porte pas."
+      "reason": "« à chaque période » est une périodicité. Le seul appui fourni pour ce claim est $.review.notes[3], qui relève un libellé de table des matières, « The Time Sequence of Decisions 9 », et sa place : un libellé n'atteste que lui-même et n'autorise ni la reprise du dosage à chaque période, ni son rythme. Les appuis fournis pour ce claim ne portent pas cette périodicité ; C048, qui se borne à « pas en une seule fois » et cite en outre $.notes[1], est une autre proposition et reste soutenu."
     }
   ]
 }

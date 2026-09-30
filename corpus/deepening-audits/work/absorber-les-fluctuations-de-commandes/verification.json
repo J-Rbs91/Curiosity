@@ -1,291 +1,311 @@
 {
   "concept_id": "absorber-les-fluctuations-de-commandes",
-  "candidate_sha256": "5b8115f95133cd5cbe7460fcace4b310f673109197a23d500c73196fb7407c79",
+  "candidate_sha256": "8a13029a91e75f0d847edeee80b0c03509b0d66788300f0a6954e7d483b64954",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent, par la p. 5 relevee dans review.notes[6], « orders (or more precisely, ordered shipments) are subject to substantial fluctuation », et le hook porte l'impossibilite de supprimer la fluctuation. Ils n'etablissent ni l'echelle annuelle ni l'alternance mois par mois (« un mois elles s'entassent, le mois suivant elles se font rares ») : la frequence du phenomene est ajoutee."
+      "verdict": "SUPPORTED",
+      "reason": "Le relevé $.review.notes[6] donne le verbatim de la p. 5 « orders (or more precisely, ordered shipments) are subject to substantial fluctuation » : la variation et son ampleur (« substantial » -> « fortement ») sont portées telles quelles, sans ajout de fréquence ni de portée."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Le hook porte « une fluctuation de commandes qu'on ne peut pas supprimer », et review.notes[6] relie cette accroche a la p. 5, ou la question posee est celle de l'absorption et non de la suppression. Le claim n'excede pas ces appuis."
+      "reason": "$.hook, relevé de l'enregistrement, pose la fluctuation « qu'on ne peut pas supprimer » ; le claim n'énonce rien de plus. Même proposition que C013, même verdict."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] reproduit la table des matieres lue : « II. THE DECISION PROBLEM: SCHEDULING PRODUCTION RATE AND WORK FORCE ». Les deux grandeurs a programmer — cadence de production et effectif — sont exactement les deux nombres du claim."
+      "reason": "$.review.notes[3] relève en table des matières le libellé « II. THE DECISION PROBLEM: SCHEDULING PRODUCTION RATE AND WORK FORCE » : les deux grandeurs à programmer, cadence et effectif, sont dans le libellé même. Le claim ne dit rien du contenu de la section, ni d'une périodicité. Même proposition que C006, même verdict."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[2] donne le verbatim de la p. 8 ou une meme fluctuation de commandes est absorbee « partly by inventory, partly by overtime, and partly by hiring and layoffs », et le summary la repartit entre stock, heures et effectif : une seule et meme variation est bien ce que les deux leviers ont a encaisser."
+      "reason": "Conséquence qui suit les appuis fournis : le libellé de chapitre relevé en $.review.notes[3] nomme les deux décisions, et $.quotation.original_text énonce qu'une seule et même fluctuation de commandes se répartit entre stock, heures supplémentaires et embauches/licenciements. Aucune causalité ni quantité ajoutée."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[1] reproduit la page de titre lue : les trois noms, « May 1955 », « Graduate School of Industrial Administration / Carnegie Institute of Technology » et le numero de memorandum. L'attribution_note et notes[3] confirment la signature a trois noms."
+      "reason": "$.review.notes[1] relève la page de titre lue mot à mot (les trois noms, « May 1955 », « Graduate School of Industrial Administration / Carnegie Institute of Technology », « O. N. R. RESEARCH MEMORANDUM NO. 30 ») et la confirme par Crossref ; $.attribution_note et $.authors[*] disent la même chose. Claim de métadonnées : il ne repose pas sur la déclaration d'accès de $.sources[0]."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] porte le titre du chapitre II tel qu'il est imprime a la table des matieres, « THE DECISION PROBLEM: SCHEDULING PRODUCTION RATE AND WORK FORCE » : un seul enonce, qui pose le probleme de decision comme la programmation de la cadence et de l'effectif."
+      "reason": "Le libellé « II. THE DECISION PROBLEM: SCHEDULING PRODUCTION RATE AND WORK FORCE » est relevé en $.review.notes[3] ; le claim se tient à ce libellé et à sa place, sans rien avancer sur le contenu de la section. Même proposition que C003."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[1] releve le titre sur la page de titre, « A LINEAR DECISION RULE FOR PRODUCTION AND EMPLOYMENT SCHEDULING », repris a l'identique par sources[0].label et quotation.reference. Le claim ne fait que lire ce titre : une regle de decision, dite lineaire."
+      "reason": "Le titre exact est relevé sur la page de titre en $.review.notes[1] et repris en $.quotation.reference ; « ce sera une règle de décision, et elle sera dite linéaire » ne fait que lire ce libellé. Métadonnée, pas de contenu établi par la déclaration full-text. Même proposition que C056."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "notes[4] et review.notes[1] donnent tous deux le verbatim de la note de la page de titre, « This paper was written by Mr. Holt, but it rests on research done by all three authors. », et notes[3] confirme la cosignature."
+      "reason": "$.notes[4] cite la note appelée sur la page de titre mot pour mot, et $.review.notes[1] atteste l'avoir lue sur cette page ; le claim reproduit la phrase et son emplacement."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "notes[4] cite la meme note : « Research undertaken for the project Planning and Control of Industrial Operations, under a grant from the Office of Naval Research. » Le rattachement a un projet finance par l'ONR est exactement ce que porte l'appui."
+      "reason": "$.notes[4] porte « Research undertaken for the project Planning and Control of Industrial Operations, under a grant from the Office of Naval Research » : le rattachement et le financement sont exactement ceux du relevé."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] cite la p. 5 mot pour mot : « orders (or more precisely, ordered shipments) are subject to substantial fluctuation ». Page et verbatim correspondent."
+      "reason": "$.review.notes[6] localise le verbatim à la p. 5 et le reproduit ; le claim cite la même portion et la même page."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "La suite du meme verbatim de la p. 5 dans review.notes[6] — « and the question arises as to how these fluctuations should be \"absorbed\" » — porte exactement la reformulation du claim, guillemets inclus."
+      "reason": "La suite du même verbatim relevé en $.review.notes[6] est « and the question arises as to how these fluctuations should be \"absorbed\" » : le claim s'y tient. Le signal ne nomme que $.quotation.text, traduction française de la phrase de la p. 8, dont le terme « absorbées » est une coïncidence lexicale : la matière de ce claim est celle de la p. 5 et elle est fournie."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] porte la precision du texte lui-meme, « orders (or more precisely, ordered shipments) » : la distinction entre le carnet de commandes et les expeditions commandees est celle de la source, et la glose du terme reste dans sa lettre."
+      "reason": "« or more precisely, ordered shipments », relevé en $.review.notes[6], porte le déplacement du carnet de commandes vers les expéditions commandées ; la glose « ce qui doit sortir de l'usine, et à quelle date » explicite le terme du verbatim sans avancer aucune précision de date, de fréquence ni de quantité."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Le verbe de la p. 5 releve par review.notes[6] est « absorbed », non « supprimer », et quotation.original_text dit ou l'ecart se loge : « partly by inventory, partly by overtime, and partly by hiring and layoffs ». Le hook porte l'impossibilite de supprimer."
+      "reason": "Le verbe du verbatim relevé est « absorbed », non « eliminated », et $.hook dit la fluctuation non supprimable : l'écart qui « se loge quelque part » est exactement la lecture des appuis. Même proposition que C002, même verdict."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] atteste que les p. 5-7 « detaillent les couts propres a chacune des trois alternatives pures », et review.notes[2] porte le verbatim « none of the pure alternatives discussed above ». Trois voies pures examinees : rien de plus n'est affirme."
+      "reason": "$.review.notes[6] atteste que les p. 5-7 « détaillent les coûts propres à chacune des trois alternatives pures » et $.review.notes[2] relève p. 8 « none of the pure alternatives discussed above » ; les trois voies et leur caractère pur sont donc portés."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "La voie pure de l'absorption par le stock est portee par quotation.original_text (« absorbed partly by inventory ») et par les trois alternatives pures de review.notes[6] ; produire a cadence constante et laisser le stock encaisser est la teneur de cette alternative pure, et le claim reste au mode du possible (« peut »)."
+      "reason": "Voie pure du stock : $.quotation.original_text et $.quotation.text nomment le stock comme canal d'absorption, $.review.notes[6] atteste l'examen des trois alternatives pures p. 5-7. Le claim reste modal (« peut ») et décrit le mécanisme de cette voie pure sans l'attribuer à des usines réelles ni en faire une règle."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "quotation.original_text porte « partly by overtime », que la note du traducteur rend par « heures supplementaires » et que quotation.text affiche ; garder le meme personnel est ce qui distingue cette voie pure de celle des embauches et licenciements, enumerees a part dans le meme appui. Le claim reste au mode du possible."
+      "reason": "Voie pure des heures supplémentaires, nommée dans $.quotation.original_text et $.quotation.text (« partly by overtime ») et examinée p. 5-7 selon $.review.notes[6] ; énoncé modal, sans ajout de fréquence ni d'ampleur."
     },
     {
       "claim_id": "C017",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent « partly by hiring and layoffs » (quotation.original_text, quotation.text, note du traducteur) et l'existence de trois alternatives pures (review.notes[6]). Ils n'etablissent aucun rythme saisonnier des fluctuations : « au fil des saisons » ajoute une periodicite que ces appuis ne portent pas."
+      "verdict": "SUPPORTED",
+      "reason": "Voie pure de l'effectif, nommée dans les deux formes de la citation (« hiring and layoffs ») et examinée p. 5-7 selon $.review.notes[6] ; énoncé modal."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] atteste que les p. 5-7 detaillent « les couts propres a chacune des trois alternatives pures » : chacune des trois a donc un cout."
+      "reason": "$.review.notes[6] atteste que les p. 5-7 détaillent « les coûts propres à chacune des trois alternatives pures » : qu'aucune des trois ne soit gratuite n'ajoute rien à ce relevé."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] situe le detail des couts aux p. 5-7 pour chacune des trois alternatives pures, et review.notes[3] donne le titre de section lu a la table des matieres, « The Costs of Responding to Fluctuations in Orders 5 », la section suivante commencant au folio 8."
+      "reason": "Pagination et objet repris mot pour mot du relevé $.review.notes[6] : « les p. 5-7, qui détaillent les coûts propres à chacune des trois alternatives pures »."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Le titre de section releve par review.notes[3], « The Costs of Responding to Fluctuations in Orders », et les couts « propres a chacune des trois alternatives pures » de review.notes[6] presentent ces couts comme le prix de trois manieres de repondre a une meme variation ; le titre de la carte (« le coût se déplace ») va dans le meme sens. Rien n'y est presente comme anomalie."
+      "reason": "Le libellé « The Costs of Responding to Fluctuations in Orders » et sa place (p. 5, section close p. 8) sont relevés en $.review.notes[3] ; le claim n'atteste que ce libellé, pas le contenu de la section."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "quotation.original_text n'ouvre que trois canaux d'absorption, le hook pose que la fluctuation ne se supprime pas, et le summary la fait se repartir entre stock, heures et effectif : refuser un canal ne diminue donc pas la variation, il la reporte sur les deux autres. La consequence suit les appuis fournis, et l'atelier de l'illustration n'est pas presente comme un cas reel."
+      "reason": "« coûts propres à chacune des trois alternatives pures » ($.review.notes[6]) porte que ces coûts sont inhérents à chaque manière de répondre, donc ni anomalie ni gaspillage, et $.title (« le coût se déplace ») va dans le même sens ; aucune évaluation nouvelle n'est introduite."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[2] donne la phrase lue sur l'image de la page portant l'en-tete « Page 8. », deuxieme paragraphe, mot pour mot ; review.notes[3] situe ce passage a la fin de la section des couts."
+      "reason": "Système fermé des trois canaux ($.quotation.original_text, $.quotation.text) plus la fluctuation non supprimable ($.hook) : que la variation ne diminue pas et passe aux autres canaux suit les appuis fournis, sans causalité ajoutée."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Rendu francais de la phrase que review.notes[2] porte en anglais ; review.notes[7] a examine precisement cette formulation (« aucune voie pure ne convient ») et la juge non disqualifiante des lors que la reserve « in general » reste visible — ce que la citation anglaise du meme paragraphe (C022) et l'enonce explicite de C026 assurent ici."
+      "reason": "$.review.notes[2] atteste la phrase lue sur l'image portant l'en-tête « Page 8. », deuxième paragraphe, mot pour mot ; $.review.notes[3] situe la citation à la fin de la section des coûts, ce que « au terme de cet inventaire » reprend. $.quotation.locator confirme « p. 8 »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Rendu fidele de quotation.original_text, dont review.notes[2] atteste le verbatim sur la p. 8 : le « doit » conserve « should », la tripartition « pour partie / pour partie / pour partie » conserve « partly by » repete, et notes[2] confirme que la phrase est entiere sur le folio 8."
+      "reason": "Rendu français de la phrase anglaise que le claim C023 vient de citer intégralement, « In general » compris : la réserve reste sous les yeux du lecteur, et $.review.notes[7] a examiné précisément cette omission en la jugeant couverte par la citation affichée. $.summary porte « aucune voie pure ne convient ». Même situation que C025, même verdict."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] dit exactement cela : « Le passage cite est une prescription (« should be absorbed »), non un resultat demontre a cet endroit du texte », et review.notes[7] distingue l'enonce normatif de la description empirique."
+      "reason": "Traduction fidèle de la seconde phrase relevée en $.review.notes[2] et reproduite en $.quotation.original_text / $.quotation.text, « doit être absorbée » conservant le should prescriptif ; le « in general » est explicitement restitué au lecteur par C027. Même situation que C024, même verdict."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "quotation.original_text et review.notes[2] portent le « in general » dans la phrase meme, et notes[0] precise que la carte ne la donne pas pour une loi."
+      "reason": "$.notes[0] qualifie le passage de prescription (« should be absorbed »), non de résultat démontré, et $.review.notes[7] oppose l'énoncé normatif à une description empirique : le claim ne dit rien de plus."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Consequence de la distinction que notes[0] et review.notes[7] posent entre prescription et compte rendu ; le claim n'attribue rien de plus aux auteurs et ne porte sur aucun fait d'usine."
+      "reason": "Le « in general » figure dans $.quotation.original_text, et $.notes[0] comme $.review.notes[7] disent que la carte ne donne pas le passage pour une loi : la réserve est portée telle quelle, sans renforcement de certitude."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] : « non un resultat demontre a cet endroit du texte : la demonstration vient ensuite »."
+      "reason": "Distinction prescriptif/descriptif tirée de $.notes[0] et $.review.notes[7] ; le claim n'affirme rien sur des usines réelles et reste au niveau de la distinction que les appuis posent."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] situe la citation « a la fin de la section \"The Costs of Responding to Fluctuations in Orders\" », et review.notes[6] atteste que cette section detaille les couts des trois alternatives."
+      "reason": "$.notes[0] : « non un résultat démontré à cet endroit du texte : la démonstration vient ensuite, par la fonction de coût » ; $.review.notes[3] situe la citation à la clôture de la section des coûts. Quasi verbatim."
     },
     {
       "claim_id": "C030",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent que « la demonstration vient ensuite, par la fonction de cout » (notes[0]) et que la table des matieres annonce « APPENDIX: Derivation of the Conditions for Minimum Costs » au folio 43 (notes[10], review.notes[9]). Ils ne portent pas la structure de cette fonction : une formule qui mettrait un prix sur chaque combinaison possible de stock, d'heures et d'effectif est une description du modele que ces appuis n'etablissent pas, et notes[5] rappelle que l'appendice est absent de l'exemplaire numerise."
+      "verdict": "SUPPORTED",
+      "reason": "Même proposition que C029, portée par $.notes[0] (« la démonstration vient ensuite ») et par $.notes[10], qui relève l'annonce en table des matières de l'appendice de dérivation ; même verdict que C029."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] porte que le passage cite n'est pas encore demontre a cet endroit et que la demonstration vient ensuite ; quotation.locator situe la phrase p. 8."
+      "reason": "La clause finale est reproduite mot pour mot dans $.quotation.original_text et dans $.notes[1], et $.review.notes[2] atteste la phrase complète lue p. 8 ; $.notes[1] établit aussi que cette clause porte une matière que le résumé reprend, ce qui autorise l'accent mis sur elle. Le signal ne nomme que $.notes[8] sur le mot « clause » : la clause dont parle ce claim est déjà fournie par $.notes[1] et par la citation, rien ne manque visiblement ici."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "La clause finale est portee mot pour mot par quotation.original_text et par le verbatim de la p. 8 dans review.notes[2] ; notes[1] atteste qu'elle est justement ce que la coupe d'affichage retire et que le resume reprend, donc qu'elle compte."
+      "reason": "Traduction exacte de la clause de $.quotation.original_text, confirmée par $.summary et par $.review.notes[6] (« la dépendance aux coûts locaux »)."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Rendu francais de « and the best allocation among these parts will depend upon the costs in each particular factory », porte par quotation.original_text et repris par le summary et par notes[1]."
+      "reason": "« will depend upon the costs in each particular factory » plus la prudence de la p. 40 relevée en $.notes[6] (« rash of the authors to generalize these conclusions to industry generally ») portent l'absence de bon dosage valable pour l'industrie ; $.notes[1] porte que le partage ne se fixe pas une fois pour toutes, donc qu'il change avec les coûts."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "La dependance aux couts propres a chaque usine (quotation.original_text, summary) exclut un dosage valable en general, et notes[6] porte le refus explicite de la p. 40 de generaliser « to industry generally » ; notes[1] porte que le partage ne se fixe pas une fois pour toutes."
+      "reason": "Conséquence d'une illustration déclarée hypothétique, dont la prémisse n'affirme aucun fait sur le monde : la clause « the best allocation among these parts will depend upon the costs in each particular factory » et $.summary autorisent que la même pointe se loge ailleurs selon les coûts de chaque usine, et les trois canaux nommés par la citation autorisent l'instanciation."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "Consequence directe de « the best allocation among these parts will depend upon the costs in each particular factory » (quotation.original_text, summary, notes[1]) : des couts differents donnent des partages differents. Les deux ateliers sont une illustration annoncee comme hypothetique et n'affirment aucun fait sur le monde."
+      "reason": "Si le meilleur partage dépend des coûts de chaque usine ($.quotation.original_text, $.summary), deux usines aux coûts différents peuvent l'une et l'autre avoir bien calculé : rien n'est ajouté à la clause."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Si le meilleur partage depend des couts de chaque usine (quotation.original_text, summary), deux partages differents peuvent l'un et l'autre etre le bon pour leur usine ; le claim ne dit rien de plus."
+      "reason": "Lecture directe de la clause : la règle nomme la grandeur dont dépend le partage, pas le partage. Même proposition que C042, même verdict."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Suit de la clause de dependance aux couts portee par quotation.original_text et le summary, et du statut de regle d'action que notes[0] etablit : la regle designe les grandeurs dont le partage depend, non un dosage."
+      "reason": "$.notes[1] : « Le chapitre II ajoute que le dosage dépend aussi de la fréquence et de la sévérité des fluctuations », et la même note explique que cette nuance n'a pas tenu dans les plafonds d'affichage, ce qui porte « moins visible » ; $.review.notes[3] situe la phrase dans le chapitre II. Le signal ne nomme que $.review.notes[6] sur « dépendance », qui parle de la dépendance aux coûts locaux déjà fournie ailleurs : coïncidence lexicale, aucun appui ne manque visiblement."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] porte exactement l'ajout : « Le chapitre II ajoute que le dosage depend aussi de la frequence et de la severite des fluctuations », et sources[0].locator situe la phrase au chapitre II."
+      "reason": "Reprise exacte de $.notes[1] : le dosage dépend aussi de la fréquence et de la sévérité des fluctuations. Aucune quantification ajoutée."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] porte la dependance a la frequence et a la severite des fluctuations ; la glose du claim (une pointe rare et moderee ne se traite pas comme une oscillation forte et repetee) n'ajoute rien a ces deux grandeurs."
+      "reason": "Instanciation de la dépendance à la fréquence et à la sévérité relevée en $.notes[1] ; le claim dit seulement que deux régimes ne se traitent pas de même, sans fixer de seuil, de fréquence chiffrée ni de traitement."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] porte mot pour mot que le dosage « ne se fixe donc pas une fois pour toutes, y compris dans une seule et meme usine » ; la seconde proposition reste au mode du possible (« peut cesser de convenir »)."
+      "reason": "Quasi verbatim de $.notes[1] : « ne se fixe donc pas une fois pour toutes, y compris dans une seule et même usine »."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "Meme proposition que C037, portee par les memes appuis : la dependance aux couts (quotation.original_text), a la frequence et a la severite (notes[1]), et le statut de regle d'action (notes[0])."
+      "reason": "Énoncé modal (« peut cesser de convenir ») qui suit $.notes[1] : le dosage dépendant de la fréquence et de la sévérité, il ne se fixe pas une fois pour toutes. « une année » y est la marque d'un moment, non une périodicité affirmée : aucune cadence de révision n'est avancée."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] porte precisement cela : la citation « tombe a la fin de la section \"The Costs of Responding to Fluctuations in Orders\", juste avant le titre \"Errors in Forecasting Orders\" que j'ai lu au bas de la meme image de p. 8 »."
+      "reason": "La clause de $.quotation.original_text et la seconde dépendance de $.notes[1] portent qu'une règle nomme les grandeurs dont dépend le compte, et $.notes[0] qu'elle n'est pas un résultat chiffré à cet endroit. Même proposition que C036, même verdict."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] reproduit la table des matieres : « The Time Sequence of Decisions 9 / III. ... 10 », et conclut que le chapitre II couvre les p. 3 a 9."
+      "reason": "$.review.notes[3] : la citation « tombe à la fin de la section \"The Costs of Responding to Fluctuations in Orders\" » ; $.quotation.locator porte « p. 8 »."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] atteste que le titre « Errors in Forecasting Orders » est lu au bas de la meme page 8, juste apres la citation : la prevision vient immediatement apres."
+      "reason": "$.review.notes[3] atteste le titre « Errors in Forecasting Orders » lu au bas de la même image de p. 8, et la table des matières le donne p. 8. Le claim ne dit que le libellé de cette section et sa place, non ce qu'elle contient."
     },
     {
       "claim_id": "C045",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim portent le titre de section lu a la table des matieres et au bas de la p. 8, « Errors in Forecasting Orders » (review.notes[3]), et les trois canaux d'absorption (quotation.original_text). Ils n'etablissent pas ce que la section dit de ces erreurs : « des nombres dont on sait qu'ils seront faux de quelque chose » ajoute une certitude sur l'erreur de prevision qu'un titre de section ne porte pas."
+      "verdict": "SUPPORTED",
+      "reason": "Table des matières relevée en $.review.notes[3] : « The Time Sequence of Decisions 9 / III. ... 10 », et « Le chapitre II couvre donc les p. 3 à 9 ». Le claim se borne à ces libellés et à cette pagination."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] porte le titre « The Time Sequence of Decisions » lu a la table des matieres — les decisions se prennent bien en sequence —, et notes[1] porte que le partage ne se fixe pas une fois pour toutes ; le claim est de surcroit formule conditionnellement."
+      "reason": "Fait de position seul : $.review.notes[3] atteste que le titre « Errors in Forecasting Orders » se lit au bas de la p. 8, juste après la phrase citée. Le claim n'avance rien sur le contenu de cette section."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "notes[6] porte mot pour mot : « Tout le chiffrage du rapport porte sur une seule usine, un fabricant de peinture non nomme, sur 1949-1954 »."
+      "reason": "Les canaux anticipateurs sont nommés par $.quotation.original_text (stock, embauches) et la section « Errors in Forecasting Orders » est relevée en $.review.notes[3] : que fabriquer d'avance ou embaucher avant une montée se décide sur des commandes prévues suit les appuis fournis, sans avancer aucune ampleur d'erreur ni aucune fréquence de prévision."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation du meme appui notes[6] : un seul cas, une seule usine non nommee. La glose (une industrie, un carnet de commandes, une organisation du travail) n'ajoute aucun fait."
+      "reason": "Le conséquent est porté mot pour mot par $.notes[1] (« ne se fixe donc pas une fois pour toutes ») et l'antécédent est posé au conditionnel, sur le seul libellé « The Time Sequence of Decisions » relevé en $.review.notes[3]. À distinguer de C049, qui n'affirme pas la même chose : ici aucune périodicité n'est avancée."
     },
     {
       "claim_id": "C049",
-      "verdict": "SUPPORTED",
-      "reason": "La dependance aux couts propres a chaque usine est une clause de la phrase citee elle-meme (quotation.original_text), reprise par le summary et par notes[1] : c'est bien une propriete de la regle."
+      "verdict": "TOO_STRONG",
+      "reason": "« à chaque période » est une périodicité. Le seul appui fourni pour ce claim est $.review.notes[3], qui relève un libellé de table des matières, « The Time Sequence of Decisions 9 », et sa place : un libellé n'atteste que lui-même et n'autorise ni la reprise du dosage à chaque période, ni son rythme. Les appuis fournis pour ce claim ne portent pas cette périodicité ; C048, qui se borne à « pas en une seule fois » et cite en outre $.notes[1], est une autre proposition et reste soutenu."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "notes[6] porte la reserve des auteurs eux-memes, citee de la p. 40, et conclut qu'« aucune generalisation ne se prend sur cette piece »."
+      "reason": "Reprise exacte de $.notes[6] : « Tout le chiffrage du rapport porte sur une seule usine, un fabricant de peinture non nommé, sur 1949-1954. » Dates et unicité de l'usine sont celles du relevé."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "notes[6] porte la page et le verbatim : p. 40, « rash of the authors to generalize these conclusions to industry generally ». La traduction proposee n'en excede pas le sens."
+      "reason": "« Tout le chiffrage ... porte sur une seule usine » ($.notes[6]) porte l'unicité du cas ; l'énumération qui suit explicite ce qu'une seule usine implique, sans ajouter de fait nouveau."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "notes[6] interdit de generaliser les conclusions chiffrees de cette usine, et la phrase de la p. 8 portee par quotation.original_text est elle-meme un enonce general a trois canaux dont l'allocation depend des couts locaux, repris par le summary. Le claim distingue exactement ces deux plans et ne generalise aucun dosage."
+      "reason": "Distinction portée par les deux appuis fournis : la dépendance aux coûts vient de la clause de $.quotation.original_text, l'étendue de la preuve de $.notes[6] (une usine, 1949-1954, prudence de la p. 40). Le signal ne nomme que $.review.notes[6], qui redit la dépendance aux coûts locaux déjà fournie par la citation : coïncidence lexicale, aucun appui ne manque visiblement."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "Le titre est porte par review.notes[1] et sources[0].label ; que la p. 8 n'en donne que la forme est porte par notes[0] (prescription non encore demontree a cet endroit) et par quotation.original_text (absorber en partie par chacun des trois canaux, selon les couts de l'usine)."
+      "reason": "$.notes[6] relève la phrase de la p. 40 par laquelle les auteurs refusent de généraliser : la prudence attribuée aux auteurs est bien la leur, et rien de plus n'est avancé."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "notes[10] et review.notes[9] portent que la table des matieres annonce « APPENDIX: Derivation of the Conditions for Minimum Costs 43 », et notes[5] que l'annexe annoncee au folio 43 n'est pas dans l'exemplaire numerise : le calcul est bien renvoye plus loin, sous ce titre."
+      "reason": "Verbatim et page repris de $.notes[6] (« Le rapport écrit p. 40 qu'il serait \"rash of the authors to generalize these conclusions to industry generally\" ») ; la traduction française donnée ne renforce pas l'énoncé."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "notes[5] porte que l'annexe annoncee p. 43 est absente de l'exemplaire numerise, qui s'arrete au folio 42, et notes[10] que le memorandum d'origine depasse donc 42 pages : ce que la derivation etablit n'est pas atteste par les appuis fournis, ce que le claim dit exactement."
+      "reason": "Le claim refuse explicitement de faire voyager le dosage, ce que $.notes[6] et la p. 40 imposent, et ne retient que la manière de poser le problème : trois canaux ouverts ensemble et coûts locaux à connaître, portés par $.quotation.original_text, $.summary et $.review.notes[6], la citation étant elle-même énoncée « in general » par les auteurs. Aucune conclusion chiffrée n'est généralisée."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "Claim de metadonnees, que des appuis metadata-only peuvent porter : sources[1].label, locator et doi_isbn donnent Management Science, vol. 2, n° 1, octobre 1955, p. 1-30, sous les trois memes noms et le meme titre, et review.notes[5] confirme chacun de ces elements par Crossref et par la resolution du DOI."
+      "reason": "Le titre est relevé mot pour mot sur la page de titre en $.review.notes[1] ; claim de libellé, qui ne fait pas établir de contenu par la déclaration full-text de $.sources[0].label. Même proposition que C007, même verdict."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "notes[7] porte que l'article de Management Science n'a pas ete ouvert, et notes[5] que l'annexe qui derive les conditions du cout minimum est absente de l'exemplaire numerise : les deux endroits ou la reponse se trouverait ne sont pas attestes par les appuis fournis."
+      "reason": "La forme énoncée p. 8 est celle de $.quotation.original_text, et $.notes[0] porte que la démonstration n'est pas faite à cet endroit : le restrictif « n'en donne que la forme » est exactement ce que les appuis autorisent."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[10] et $.review.notes[9] relèvent l'annonce en table des matières « APPENDIX: Derivation of the Conditions for Minimum Costs 43 », $.notes[5] la même annonce au folio 43 : le claim ne dit que ce libellé, sa place et le renvoi qui s'en déduit, non ce que l'appendice contient. Le signal ne nomme que $.review.notes[8] sur « renvoyé », terme dont la matière ici est déjà fournie par les trois appuis cités."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[5] porte que l'annexe annoncée p. 43 est absente de l'exemplaire numérisé, qui s'arrête au folio 42 : le claim énonce cette limite et se garde de dire ce que la dérivation établirait. Le signal ne nomme que $.notes[10], qui porte la même ligne de table des matières et est fourni au claim voisin C058 : rien ne manque visiblement ici."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "Claim purement bibliographique : $.review.notes[5] atteste la vérification Crossref (Management Science, vol. 2, n° 1, p. 1-30, published-print 1955-10, les trois mêmes auteurs) et $.sources[1].* portent le même libellé, la même pagination — « une trentaine de pages » pour p. 1-30. Aucun contenu de l'article n'est avancé, de sorte que le niveau metadata-only suffit."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux appuis fournis énoncent précisément la limite que le claim retient : $.notes[5] porte que l'annexe de dérivation est absente de l'exemplaire numérisé et $.notes[7] que l'article de Management Science n'a pas été ouvert. Le claim reste une question laissée ouverte et n'affirme aucun résultat ni aucune absence de résultat dans la source."
     }
   ]
 }
