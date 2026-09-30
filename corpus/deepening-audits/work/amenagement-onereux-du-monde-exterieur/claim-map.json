@@ -90,7 +90,7 @@
       "start": 0,
       "end": 131,
       "claim_text": "Pour qu’il y ait de l’eau au robinet, il a fallu capter une source, poser des conduites, entretenir un réseau, et quelqu’un a payé.",
-      "normalized_claim": "L'eau au robinet suppose un amenagement materiel prealable qui a coute a quelqu'un.",
+      "normalized_claim": "Illustration de la these du concept : rendre l'eau disponible suppose une activite d'amenagement et un cout paye.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-b216c97c1c7010f5"
@@ -102,7 +102,7 @@
       "start": 132,
       "end": 250,
       "claim_text": "Pour qu’un logement soit chaud en janvier, il faut y consacrer une part de ce dont on dispose, qui n’ira pas ailleurs.",
-      "normalized_claim": "Chauffer un logement consomme une part des moyens disponibles, qui est par la meme soustraite a d'autres emplois.",
+      "normalized_claim": "Illustration du cout d'opportunite : consacrer des moyens rares a une fin les retire d'une autre.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-b216c97c1c7010f5"
@@ -114,12 +114,12 @@
       "start": 251,
       "end": 394,
       "claim_text": "Rien de ce qui rend le monde habitable ne se donne de soi-même : chaque arrangement se paie, en travail, en argent, et surtout en renoncements.",
-      "normalized_claim": "Tout amenagement du monde exterieur est oneureux, et son cout principal est fait de renonciations.",
+      "normalized_claim": "L'amenagement du monde exterieur est onereux, et son cout se paie notamment en renonciations.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-b216c97c1c7010f5",
         "SUP-ff20c5b9723b5968",
-        "SUP-8a56d60eb2e9f607"
+        "SUP-1c3e396b4e6ab161"
       ]
     },
     {
@@ -128,11 +128,10 @@
       "start": 0,
       "end": 53,
       "claim_text": "Ce prix laisse des traces qui ne sont pas comptables.",
-      "normalized_claim": "Le caractere onereux de l'amenagement produit des effets humains, non reductibles a des grandeurs comptables.",
+      "normalized_claim": "Le caractere onereux de l'amenagement fait naitre des problemes humains, non seulement des couts chiffres.",
       "support_ids": [
-        "SUP-6537817c0d926de7",
         "SUP-8a56d60eb2e9f607",
-        "SUP-ff20c5b9723b5968"
+        "SUP-6537817c0d926de7"
       ]
     },
     {
@@ -141,7 +140,7 @@
       "start": 54,
       "end": 237,
       "claim_text": "On hésite avant d’engager la dépense, on arbitre entre deux besoins également réels, on se dispute en famille sur ce qui vient d’abord, on regrette ensuite, on se justifie après coup.",
-      "normalized_claim": "Les problemes humains nes de l'amenagement onereux prennent la forme d'hesitations, d'arbitrages entre besoins, de conflits entre personnes et de justifications.",
+      "normalized_claim": "Illustrations des problemes humains de hierarchisation, de sacrifice et de renonciation.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-8a56d60eb2e9f607"
@@ -151,76 +150,50 @@
       "claim_id": "C006",
       "locator": "lead[1]",
       "start": 256,
-      "end": 315,
-      "claim_text": "En 1962, dans le Bulletin de psychologie, Paul Albou répond",
-      "normalized_claim": "Paul Albou publie en 1962 dans le Bulletin de psychologie le texte ou il repond a cette question.",
+      "end": 423,
+      "claim_text": "En 1962, dans le Bulletin de psychologie, Paul Albou répond que ces problèmes ne sont ni un reste ni un supplément d’âme : ils forment l’objet propre d’une discipline.",
+      "normalized_claim": "Albou, dans le Bulletin de psychologie en 1962, fait de ces problemes humains l'objet meme de la psychologie economique.",
       "support_ids": [
-        "SUP-106be97e1b8eeed9",
+        "SUP-8a56d60eb2e9f607",
         "SUP-c6b75871447c3764",
+        "SUP-106be97e1b8eeed9",
         "SUP-42311570cf2f8644",
-        "SUP-26ec11331c86e70c"
+        "SUP-26ec11331c86e70c",
+        "SUP-a87c0c1c2d52bfff",
+        "SUP-fc295ad0a690c67a",
+        "SUP-88688234168814aa"
       ]
     },
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "start": 320,
-      "end": 422,
-      "claim_text": "ces problèmes ne sont ni un reste ni un supplément d’âme : ils forment l’objet propre d’une discipline",
-      "normalized_claim": "Albou fait de ces problemes humains l'objet meme de la psychologie economique.",
+      "start": 424,
+      "end": 556,
+      "claim_text": "« La Psychologie économique porte sur les problèmes humains qui naissent à l’occasion de l’aménagement onéreux du monde extérieur. »",
+      "normalized_claim": "Citation verbatim de la phrase d'Albou, p. 11 colonne de droite.",
       "support_ids": [
         "SUP-8a56d60eb2e9f607",
         "SUP-bbf5309a8c7059d8",
-        "SUP-a87c0c1c2d52bfff",
         "SUP-88688234168814aa",
-        "SUP-fc295ad0a690c67a",
-        "SUP-ff20c5b9723b5968"
+        "SUP-dd246b21b2bb2aba",
+        "SUP-a87c0c1c2d52bfff",
+        "SUP-c6b75871447c3764"
       ]
     },
     {
       "claim_id": "C008",
-      "locator": "lead[1]",
-      "start": 424,
-      "end": 556,
-      "claim_text": "« La Psychologie économique porte sur les problèmes humains qui naissent à l’occasion de l’aménagement onéreux du monde extérieur. »",
-      "normalized_claim": "Citation verbatim de la phrase d'Albou, page 11.",
-      "support_ids": [
-        "SUP-8a56d60eb2e9f607",
-        "SUP-bbf5309a8c7059d8",
-        "SUP-88688234168814aa",
-        "SUP-c6b75871447c3764",
-        "SUP-dd246b21b2bb2aba",
-        "SUP-a87c0c1c2d52bfff"
-      ]
-    },
-    {
-      "claim_id": "C009",
-      "locator": "lead[1]",
-      "start": 557,
-      "end": 616,
-      "claim_text": "Tout le poids de la phrase est dans ses cinq derniers mots.",
-      "normalized_claim": "Le syntagme final, amenagement onereux du monde exterieur, porte l'essentiel de l'enonce.",
-      "support_ids": [
-        "SUP-310931502d01c1eb",
-        "SUP-1c3e396b4e6ab161",
-        "SUP-fc295ad0a690c67a"
-      ]
-    },
-    {
-      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
       "end": 77,
       "claim_text": "Le mot de cet énoncé qui reçoit le commentaire le plus fourni est l’adjectif.",
-      "normalized_claim": "Parmi les termes de la definition, c'est le qualificatif onereux qu'Albou commente le plus longuement.",
+      "normalized_claim": "Dans le commentaire d'Albou, le qualificatif onereux recoit le developpement le plus etendu (trois problemes, p. 12).",
       "support_ids": [
         "SUP-6537817c0d926de7",
-        "SUP-b216c97c1c7010f5",
-        "SUP-69edbd05444923f8"
+        "SUP-b216c97c1c7010f5"
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "start": 78,
       "end": 244,
@@ -228,57 +201,81 @@
       "normalized_claim": "Verbatim d'Albou page 12 sur le qualificatif onereux.",
       "support_ids": [
         "SUP-b216c97c1c7010f5",
-        "SUP-6537817c0d926de7",
-        "SUP-d7fc9dc6cdb76b43"
+        "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 245,
       "end": 300,
       "claim_text": "Il ne s’agit donc pas du prix inscrit sur une étiquette",
-      "normalized_claim": "Le mot onereux ne designe pas un prix monetaire affiche.",
+      "normalized_claim": "Onereux ne designe pas un prix affiche mais l'equilibre des fins et des moyens.",
       "support_ids": [
         "SUP-b216c97c1c7010f5",
         "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "start": 303,
       "end": 434,
       "claim_text": "« Il renvoie à l’idée d’équilibre des fins et des moyens, par l’intermédiaire de trois problèmes », la rareté, le choix et le coût.",
-      "normalized_claim": "Verbatim d'Albou, et les trois problemes sont la rarete, le choix et le cout.",
+      "normalized_claim": "Verbatim d'Albou p. 12 et enumeration des trois problemes : rarete, choix, cout.",
       "support_ids": [
         "SUP-b216c97c1c7010f5",
         "SUP-6537817c0d926de7",
-        "SUP-ff20c5b9723b5968",
         "SUP-fc295ad0a690c67a"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 118,
+      "claim_text": "La rareté d’abord, qu’Albou adosse à la définition de l’économie donnée par Lionel Robbins, cité en note à cette page.",
+      "normalized_claim": "Albou adosse le probleme de la rarete a la definition de Robbins, cite en note page 12.",
+      "support_ids": [
+        "SUP-6537817c0d926de7",
+        "SUP-39b58a2b62769eba",
+        "SUP-76c8223379811c0f",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674",
+        "SUP-69edbd05444923f8"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 119,
+      "end": 185,
+      "claim_text": "Ses exemples sont l’eau potable et l’air pur, devenus des valeurs.",
+      "normalized_claim": "Les exemples d'Albou pour la rarete sont l'eau potable et l'air pur devenus des valeurs.",
+      "support_ids": [
+        "SUP-6537817c0d926de7",
+        "SUP-69edbd05444923f8"
       ]
     },
     {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[1]",
-      "start": 0,
-      "end": 118,
-      "claim_text": "La rareté d’abord, qu’Albou adosse à la définition de l’économie donnée par Lionel Robbins, cité en note à cette page.",
-      "normalized_claim": "Albou appuie le probleme de la rarete sur la definition de l'economie par Robbins, cite en note page 12.",
+      "start": 237,
+      "end": 359,
+      "claim_text": "la rareté n’est pas une propriété que l’air posséderait ou non, c’est un rapport entre ce qu’on veut et ce dont on dispose",
+      "normalized_claim": "Derivation : la rarete est relationnelle (fins / moyens rares), au sens de la definition de Robbins reprise par Albou.",
       "support_ids": [
         "SUP-6537817c0d926de7",
-        "SUP-76c8223379811c0f",
-        "SUP-39b58a2b62769eba",
-        "SUP-69edbd05444923f8"
+        "SUP-b216c97c1c7010f5"
       ]
     },
     {
       "claim_id": "C015",
       "locator": "sections[0].paragraphs[1]",
-      "start": 119,
-      "end": 185,
-      "claim_text": "Ses exemples sont l’eau potable et l’air pur, devenus des valeurs.",
-      "normalized_claim": "Albou illustre la rarete par l'eau potable et l'air pur devenus des valeurs.",
+      "start": 361,
+      "end": 411,
+      "claim_text": "et un bien dont personne ne manquait peut y entrer",
+      "normalized_claim": "Derivation des exemples : l'air pur, jadis non rare, est devenu une valeur.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
@@ -286,42 +283,17 @@
     },
     {
       "claim_id": "C016",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 237,
-      "end": 359,
-      "claim_text": "la rareté n’est pas une propriété que l’air posséderait ou non, c’est un rapport entre ce qu’on veut et ce dont on dispose",
-      "normalized_claim": "La rarete est relationnelle : un rapport entre fins et moyens, non une propriete intrinseque du bien.",
-      "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-b216c97c1c7010f5"
-      ]
-    },
-    {
-      "claim_id": "C017",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 361,
-      "end": 411,
-      "claim_text": "et un bien dont personne ne manquait peut y entrer",
-      "normalized_claim": "Un bien jusque-la non rare peut devenir rare, comme l'air pur devenu valeur.",
-      "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-69edbd05444923f8"
-      ]
-    },
-    {
-      "claim_id": "C018",
       "locator": "sections[0].paragraphs[2]",
       "start": 18,
       "end": 101,
       "claim_text": "Les moyens étant rares, il faut hiérarchiser les objectifs et en sacrifier certains",
-      "normalized_claim": "Chez Albou, la rarete des moyens impose de hierarchiser les objectifs et d'en sacrifier.",
+      "normalized_claim": "Probleme du choix chez Albou : hierarchiser les objectifs et en sacrifier certains.",
       "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-b216c97c1c7010f5"
+        "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C017",
       "locator": "sections[0].paragraphs[2]",
       "start": 104,
       "end": 186,
@@ -333,33 +305,33 @@
       ]
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C018",
       "locator": "sections[0].paragraphs[2]",
       "start": 188,
       "end": 247,
       "claim_text": "et Albou renvoie en note au determinatio negatio de Spinoza",
-      "normalized_claim": "Albou renvoie en note au determinatio negatio de Spinoza a cet endroit.",
+      "normalized_claim": "Albou renvoie en note au determinatio negatio de Spinoza.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8",
-        "SUP-76c8223379811c0f",
-        "SUP-39b58a2b62769eba"
+        "SUP-39b58a2b62769eba",
+        "SUP-76c8223379811c0f"
       ]
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C019",
       "locator": "sections[0].paragraphs[2]",
       "start": 316,
       "end": 493,
       "claim_text": "il faut évaluer l’importance relative de ces renonciations, cette évaluation conduit à un calcul économique reposant sur des hypothèses, et c’est ce calcul qui fonde la décision",
-      "normalized_claim": "Le probleme du cout : evaluer l'importance relative des renonciations conduit a un calcul economique hypothetique qui fonde la decision.",
+      "normalized_claim": "Probleme du cout : evaluation des renonciations, calcul economique sur hypotheses, fondement de la decision.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
       ]
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C020",
       "locator": "sections[0].paragraphs[2]",
       "start": 495,
       "end": 590,
@@ -371,7 +343,7 @@
       ]
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C021",
       "locator": "sections[0].paragraphs[3]",
       "start": 0,
       "end": 46,
@@ -383,36 +355,36 @@
       ]
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C022",
       "locator": "sections[0].paragraphs[3]",
       "start": 49,
       "end": 189,
       "claim_text": "Albou s’en ressert page 67 pour délimiter la psychologie de la vente, étude des relations qui s’instituent à l’occasion d’un échange onéreux",
-      "normalized_claim": "Page 67, Albou definit la psychologie de la vente comme l'etude des relations qui s'instituent a l'occasion d'un echange onereux.",
+      "normalized_claim": "Page 67, Albou definit la psychologie de la vente comme etude des relations s'instituant a l'occasion d'un echange onereux.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C023",
       "locator": "sections[0].paragraphs[3]",
       "start": 194,
       "end": 246,
       "claim_text": "il parle page 72 de psychologie de l’échange onéreux",
-      "normalized_claim": "Page 72, Albou emploie l'expression psychologie de l'echange onereux.",
+      "normalized_claim": "Page 72, Albou parle de psychologie de l'echange onereux.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
       ]
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C024",
       "locator": "sections[0].paragraphs[3]",
       "start": 248,
       "end": 327,
       "claim_text": "Le même opérateur cadre la discipline entière et découpe l’un de ses chantiers.",
-      "normalized_claim": "Le qualificatif onereux sert a la fois a definir la discipline et a delimiter l'un de ses domaines.",
+      "normalized_claim": "Derivation : onereux sert a la fois dans la definition de la discipline et dans celle d'un de ses domaines.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8",
@@ -420,12 +392,34 @@
       ]
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[0]",
       "start": 69,
       "end": 121,
       "claim_text": "Albou range sous aménagement trois idées distinctes.",
       "normalized_claim": "Le mot amenagement introduit chez Albou trois idees distinctes.",
+      "support_ids": [
+        "SUP-6537817c0d926de7"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 122,
+      "end": 236,
+      "claim_text": "La première est celle d’activité : la transformation économique du monde est la conséquence des actions de l’homme",
+      "normalized_claim": "Premiere idee : l'activite, la transformation economique du monde etant consequence des actions de l'homme.",
+      "support_ids": [
+        "SUP-6537817c0d926de7"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 238,
+      "end": 329,
+      "claim_text": "et c’est de cette idée, non d’une thèse sur l’économie, qu’il rapproche la praxis chez Marx",
+      "normalized_claim": "C'est la notion d'activite qu'Albou dit proche de la praxis chez Marx.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
@@ -434,10 +428,10 @@
     {
       "claim_id": "C028",
       "locator": "sections[1].paragraphs[0]",
-      "start": 122,
-      "end": 236,
-      "claim_text": "La première est celle d’activité : la transformation économique du monde est la conséquence des actions de l’homme",
-      "normalized_claim": "Premiere idee : l'activite, la transformation economique du monde etant consequence des actions humaines.",
+      "start": 331,
+      "end": 420,
+      "claim_text": "Cette activité est individuelle ou sociale, celle d’une personne comme celle d’un groupe.",
+      "normalized_claim": "L'activite est dite individuelle ou sociale.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-fc295ad0a690c67a"
@@ -445,30 +439,6 @@
     },
     {
       "claim_id": "C029",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 238,
-      "end": 329,
-      "claim_text": "et c’est de cette idée, non d’une thèse sur l’économie, qu’il rapproche la praxis chez Marx",
-      "normalized_claim": "C'est de la notion d'activite qu'Albou rapproche la praxis chez Marx.",
-      "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-69edbd05444923f8"
-      ]
-    },
-    {
-      "claim_id": "C030",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 331,
-      "end": 420,
-      "claim_text": "Cette activité est individuelle ou sociale, celle d’une personne comme celle d’un groupe.",
-      "normalized_claim": "L'activite d'amenagement est individuelle ou sociale.",
-      "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-fc295ad0a690c67a"
-      ]
-    },
-    {
-      "claim_id": "C031",
       "locator": "sections[1].paragraphs[0]",
       "start": 421,
       "end": 682,
@@ -480,251 +450,247 @@
       ]
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C030",
       "locator": "sections[1].paragraphs[0]",
       "start": 683,
       "end": 798,
       "claim_text": "Cela implique qu’il y a là une structure à décrire, et pas seulement des réactions aux circonstances à enregistrer.",
-      "normalized_claim": "De la notion de scheme suit qu'il y a une structure du comportement economique a decrire.",
+      "normalized_claim": "Derivation du modele d'action : le comportement economique presente une structure descriptible.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C031",
       "locator": "sections[1].paragraphs[1]",
       "start": 0,
       "end": 210,
       "claim_text": "La troisième idée est celle de finalité : aménager, c’est agencer en vue d’un but, tenter d’atteindre, consciemment ou non, certains objectifs, par exemple la satisfaction des besoins individuels ou collectifs.",
-      "normalized_claim": "Troisieme idee : la finalite, amenager etant agencer en vue d'un but, consciemment ou non, par exemple la satisfaction des besoins individuels ou collectifs.",
+      "normalized_claim": "Troisieme idee : la finalite, avec le 'consciemment ou non' et l'exemple de la satisfaction des besoins individuels ou collectifs.",
       "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-69edbd05444923f8"
+        "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C032",
       "locator": "sections[1].paragraphs[1]",
-      "start": 211,
-      "end": 347,
-      "claim_text": "Elle règle ce que le premier mot laissait en suspens, puisqu’un équilibre des fins et des moyens suppose des fins, et ce sont celles-là.",
-      "normalized_claim": "Les fins qu'appelle l'idee d'equilibre des fins et des moyens sont les objectifs de la finalite.",
+      "start": 265,
+      "end": 346,
+      "claim_text": "puisqu’un équilibre des fins et des moyens suppose des fins, et ce sont celles-là",
+      "normalized_claim": "Derivation : les fins de l'equilibre fins/moyens que porte 'onereux' sont les objectifs de la finalite.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-b216c97c1c7010f5"
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C033",
       "locator": "sections[1].paragraphs[1]",
       "start": 348,
-      "end": 441,
-      "claim_text": "Le « consciemment ou non » a son poids : une finalité n’est pas forcément un projet délibéré.",
-      "normalized_claim": "La clause consciemment ou non signifie que la finalite n'est pas necessairement deliberee.",
+      "end": 440,
+      "claim_text": "Le « consciemment ou non » a son poids : une finalité n’est pas forcément un projet délibéré",
+      "normalized_claim": "Glose du 'consciemment ou non' d'Albou : la finalite peut ne pas etre un projet delibere.",
       "support_ids": [
         "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[0]",
       "start": 62,
       "end": 270,
       "claim_text": "Il n’est pas seulement composé d’objets matériels, ni même d’individus : il est aussi institutionnel et culturel, il se compose de symboles, de normes et de valeurs, et c’est aussi et surtout un monde social.",
-      "normalized_claim": "Le monde exterieur chez Albou est aussi institutionnel et culturel, fait de symboles, de normes et de valeurs, et surtout social.",
+      "normalized_claim": "Le monde exterieur chez Albou : non seulement objets et individus, mais institutionnel et culturel, symboles, normes, valeurs, et surtout social.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[0]",
       "start": 271,
       "end": 383,
       "claim_text": "Ce qu’on aménage, ce sont des ressources, mais également des règles, des attentes et des rapports avec d’autres.",
-      "normalized_claim": "L'amenagement porte aussi sur des regles, des attentes et des rapports sociaux.",
+      "normalized_claim": "Reformulation : l'amenagement porte aussi sur des normes et des rapports sociaux.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-69edbd05444923f8"
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
       "start": 0,
       "end": 156,
       "claim_text": "La phrase citée plus haut n’est du reste que le premier des caractères par lesquels Albou commente une définition plus longue, imprimée en capitales page 11",
-      "normalized_claim": "La phrase citee est le premier caractere d'une definition plus longue imprimee en capitales page 11.",
+      "normalized_claim": "La phrase citee est le premier des caracteres commentant la definition integrale imprimee en capitales p. 11.",
       "support_ids": [
+        "SUP-5f6713ea0e31e558",
         "SUP-c6b75871447c3764",
         "SUP-eaa964db5ea08091",
-        "SUP-5f6713ea0e31e558",
+        "SUP-b216c97c1c7010f5",
         "SUP-6537817c0d926de7",
         "SUP-a87c0c1c2d52bfff"
       ]
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[1]",
-      "start": 158,
+      "start": 161,
       "end": 439,
-      "claim_text": "et qu’il rappellera vingt ans plus tard en ces termes : « la Psychologie économique est l’étude, par les méthodes de la psychologie sociale, des problèmes humains qui naissent de l’interaction des individus et des groupes, à l’occasion de l’aménagement onéreux du monde extérieur »",
-      "normalized_claim": "Albou rappelle en 1982, note 8 de la page 199, la definition complete dans ces termes.",
+      "claim_text": "qu’il rappellera vingt ans plus tard en ces termes : « la Psychologie économique est l’étude, par les méthodes de la psychologie sociale, des problèmes humains qui naissent de l’interaction des individus et des groupes, à l’occasion de l’aménagement onéreux du monde extérieur »",
+      "normalized_claim": "Verbatim de la definition rappelee par Albou en 1982, p. 199 note 8.",
       "support_ids": [
         "SUP-3a1d24f727c762fb",
-        "SUP-ac444c2ff1ff432a",
         "SUP-7eb5ee1041aed6cf",
+        "SUP-ac444c2ff1ff432a",
         "SUP-7f4f65ddd6ccfec7",
         "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[1]",
       "start": 441,
       "end": 571,
       "claim_text": "Deux clauses y figurent dès 1962 que la phrase courte ne portait pas : une méthode, et l’interaction des individus et des groupes.",
-      "normalized_claim": "La definition de 1962 porte deux clauses absentes de la phrase courte : les methodes de la psychologie sociale et l'interaction des individus et des groupes.",
+      "normalized_claim": "La definition de 1962 comporte la clause de methode et l'interaction des individus et des groupes, absentes de la phrase courte.",
       "support_ids": [
         "SUP-6537817c0d926de7",
-        "SUP-b216c97c1c7010f5",
         "SUP-fc295ad0a690c67a",
-        "SUP-8a56d60eb2e9f607"
+        "SUP-8a56d60eb2e9f607",
+        "SUP-3a1d24f727c762fb"
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[2]",
       "start": 0,
       "end": 68,
       "claim_text": "Le terme le plus discret de cet énoncé est celui qui exclut le plus.",
-      "normalized_claim": "C'est l'expression problemes humains qui opere les exclusions les plus fortes dans la definition.",
+      "normalized_claim": "L'expression 'problemes humains' opere les exclusions les plus fortes de la definition.",
       "support_ids": [
         "SUP-6537817c0d926de7",
         "SUP-fc295ad0a690c67a"
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C040",
       "locator": "sections[2].paragraphs[2]",
       "start": 69,
       "end": 291,
       "claim_text": "En commentant « problèmes humains », Albou écarte deux malentendus : la psychologie économique n’est pas une technologie de l’action sociale, et elle ne s’intéresse pas aux données techniques de la transformation du monde.",
-      "normalized_claim": "En commentant problemes humains, Albou ecarte deux malentendus : technologie de l'action sociale, et donnees techniques de la transformation du monde.",
+      "normalized_claim": "Albou ecarte deux malentendus : ni technologie de l'action sociale, ni interet pour les donnees techniques de la transformation du monde.",
       "support_ids": [
         "SUP-6537817c0d926de7",
-        "SUP-fc295ad0a690c67a",
-        "SUP-8a56d60eb2e9f607"
+        "SUP-fc295ad0a690c67a"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C041",
       "locator": "sections[2].paragraphs[2]",
       "start": 292,
       "end": 390,
       "claim_text": "Capter une source, poser des conduites : la partie technique de l’opération n’est pas son affaire.",
-      "normalized_claim": "Les donnees techniques de l'amenagement ne relevent pas de la psychologie economique.",
+      "normalized_claim": "Illustration de l'exclusion des donnees techniques.",
       "support_ids": [
         "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C042",
       "locator": "sections[2].paragraphs[2]",
       "start": 391,
       "end": 568,
       "claim_text": "Ce qui l’est, ce sont les problèmes humains qu’elle fait naître, et ils sont pour lui des problèmes sociaux : ils naissent entre des personnes, non dans la tête d’un homme seul.",
-      "normalized_claim": "Son objet est les problemes humains nes de l'amenagement, et ce sont pour Albou des problemes sociaux.",
+      "normalized_claim": "Ces problemes humains sont pour Albou des problemes sociaux, nes de l'interaction des individus et des groupes.",
       "support_ids": [
         "SUP-6537817c0d926de7",
-        "SUP-8a56d60eb2e9f607",
-        "SUP-fc295ad0a690c67a",
-        "SUP-ff20c5b9723b5968"
+        "SUP-3a1d24f727c762fb",
+        "SUP-fc295ad0a690c67a"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
       "start": 44,
       "end": 236,
       "claim_text": "En 1962, Albou écrit que les chercheurs français préfèrent rattacher le développement de la psychologie économique non à celui de la science économique, mais à celui de la psychologie sociale.",
-      "normalized_claim": "Albou ecrit page 11 que les chercheurs francais lient le developpement de la psychologie economique a celui de la psychologie sociale plutot qu'a celui de la science economique.",
+      "normalized_claim": "Albou ecrit page 11 que les chercheurs francais preferent lier le developpement de la psychologie economique a celui de la psychologie sociale.",
       "support_ids": [
         "SUP-643e669cf24353f9",
         "SUP-363862370442923c"
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
       "start": 237,
       "end": 402,
       "claim_text": "Définir la discipline « par les méthodes de la psychologie sociale » n’était donc pas une précaution de vocabulaire : c’était prendre parti, dans la définition même.",
-      "normalized_claim": "La clause de methode inscrite dans la definition de 1962 est une prise de parti et non une formule neutre.",
+      "normalized_claim": "La clause de methode de la definition de 1962 prend parti pour la psychologie sociale.",
       "support_ids": [
-        "SUP-643e669cf24353f9",
-        "SUP-363862370442923c",
+        "SUP-3a1d24f727c762fb",
         "SUP-6537817c0d926de7",
-        "SUP-3a1d24f727c762fb"
+        "SUP-643e669cf24353f9",
+        "SUP-363862370442923c"
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "start": 0,
       "end": 179,
       "claim_text": "Vingt ans plus tard, le même auteur rappelle cette définition pour s’en écarter : il juge qu’elle faisait, « peut-être par réaction, la part trop belle à la psychologie sociale ».",
-      "normalized_claim": "En 1982, Albou rappelle sa definition de 1962 en jugeant qu'elle faisait, peut-etre par reaction, la part trop belle a la psychologie sociale.",
+      "normalized_claim": "En 1982, Albou juge que sa definition de 1962 faisait 'peut-etre par reaction, la part trop belle a la psychologie sociale'.",
       "support_ids": [
         "SUP-3a1d24f727c762fb",
-        "SUP-ac444c2ff1ff432a",
         "SUP-7eb5ee1041aed6cf",
-        "SUP-7f4f65ddd6ccfec7",
-        "SUP-4da6643e81b2ff46"
+        "SUP-ac444c2ff1ff432a",
+        "SUP-7f4f65ddd6ccfec7"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
       "start": 180,
       "end": 380,
       "claim_text": "Ce qui fondait alors la discipline est devenu ce qu’il tient à corriger, et la définition complète ne donne donc pas sa position, mais sa position de 1962, sur le point précis qu’il a lui-même révisé.",
-      "normalized_claim": "La definition complete vaut pour la position de 1962 sur le rapport a la psychologie sociale, point que l'auteur a lui-meme revise en 1982.",
+      "normalized_claim": "Derivation : la definition complete porte la position de 1962 sur un point que l'auteur a revise en 1982.",
       "support_ids": [
-        "SUP-643e669cf24353f9",
-        "SUP-363862370442923c",
         "SUP-3a1d24f727c762fb",
-        "SUP-4da6643e81b2ff46"
+        "SUP-643e669cf24353f9",
+        "SUP-363862370442923c"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
       "start": 66,
       "end": 116,
       "claim_text": "le chapitre qui s’y consacre s’appelle Définitions",
-      "normalized_claim": "Le chapitre III de l'article de 1962 est intitule Definitions.",
+      "normalized_claim": "Le chapitre III de l'article de 1962 s'intitule Definitions.",
       "support_ids": [
+        "SUP-5f6713ea0e31e558",
         "SUP-c6b75871447c3764",
-        "SUP-eaa964db5ea08091",
-        "SUP-5f6713ea0e31e558"
+        "SUP-eaa964db5ea08091"
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[0]",
       "start": 118,
       "end": 184,
       "claim_text": "Albou y en présente deux : l’une dite classique, celle de Wärneryd",
-      "normalized_claim": "Albou oppose sa definition a une definition dite classique, celle de Warneryd.",
+      "normalized_claim": "Albou oppose sa definition a la definition dite classique de Warneryd.",
       "support_ids": [
         "SUP-6537817c0d926de7"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[0]",
       "start": 186,
       "end": 338,
@@ -734,17 +700,18 @@
         "SUP-89b9f5aeeae2d81c",
         "SUP-67f6f93a8c8a1076",
         "SUP-88a3f40c9a9ff296",
+        "SUP-83aa7294716cb48e",
         "SUP-4da6643e81b2ff46",
         "SUP-80372f9f0e3f2674"
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[0]",
       "start": 340,
       "end": 472,
       "claim_text": "C’est à cette opposition que la sienne doit le titre sous lequel elle se lit : la conception française de la psychologie économique.",
-      "normalized_claim": "La definition d'Albou est imprimee sous l'intitule La conception francaise de la Psychologie Economique, par opposition a la definition classique.",
+      "normalized_claim": "La definition d'Albou se lit sous l'intitule '§2. La conception francaise de la Psychologie Economique'.",
       "support_ids": [
         "SUP-c6b75871447c3764",
         "SUP-eaa964db5ea08091",
@@ -753,19 +720,19 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
       "end": 165,
       "claim_text": "Le cas qui l’occupe vraiment est celui de Pierre-Louis Reynaud, dont La Psychologie Economique avait paru chez Marcel Rivière en 1954, dans une collection de bilans.",
-      "normalized_claim": "L'ouvrage de P.L. Reynaud, La Psychologie Economique, a paru chez Marcel Riviere en 1954 dans la collection Bilans de la Connaissance Economique, et c'est le cas que discute Albou.",
+      "normalized_claim": "P.L. Reynaud, La Psychologie Economique, Paris, Marcel Riviere, collection Bilans de la Connaissance Economique, 1954, cite en note page 7.",
       "support_ids": [
         "SUP-7e378f05c712eb3e",
         "SUP-c78b97178d62d402"
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[1]",
       "start": 166,
       "end": 203,
@@ -777,19 +744,19 @@
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[1]",
       "start": 206,
       "end": 329,
       "claim_text": "il écrit page 7 que ce petit livre n’est qu’un essai historique et bibliographique, le bilan d’un demi-siècle de recherches",
-      "normalized_claim": "Page 7, Albou ecrit que ce petit livre n'est qu'un essai historique et bibliographique, bilan d'un demi-siecle de recherches.",
+      "normalized_claim": "Page 7, Albou qualifie l'ouvrage de Reynaud d'essai historique et bibliographique, bilan d'un demi-siecle de recherches.",
       "support_ids": [
         "SUP-7e378f05c712eb3e",
         "SUP-c78b97178d62d402"
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[1]",
       "start": 331,
       "end": 419,
@@ -801,12 +768,36 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C055",
       "locator": "sections[4].paragraphs[1]",
       "start": 420,
       "end": 587,
       "claim_text": "Page 10, il précise son reproche : l’histoire de la psychologie économique ne doit pas s’écrire, contrairement aux efforts de Reynaud, du point de vue de l’économiste.",
-      "normalized_claim": "Page 10, Albou ecrit que l'histoire de la psychologie economique ne doit pas se faire, contrairement aux efforts de Reynaud, du point de vue de l'economiste.",
+      "normalized_claim": "Page 10, Albou ecrit que l'histoire de la discipline ne doit pas se faire, contrairement aux efforts de Reynaud, du point de vue de l'economiste.",
+      "support_ids": [
+        "SUP-7e378f05c712eb3e",
+        "SUP-c78b97178d62d402"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 588,
+      "end": 713,
+      "claim_text": "Ce verdict est le sien, et c’est le seul qu’on entende ici : ce que Reynaud dit de la discipline, ses pages seules le diront.",
+      "normalized_claim": "Le dossier ne contient rien de la position de Reynaud, qui n'a pas ete ouverte : seul le jugement d'Albou est atteste.",
+      "support_ids": [
+        "SUP-7e378f05c712eb3e",
+        "SUP-c78b97178d62d402"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 142,
+      "claim_text": "Publier le premier sur un sujet ne fonde donc pas une discipline : il faut encore énoncer ce dont elle se charge, et depuis quel point de vue.",
+      "normalized_claim": "Derivation du cas Reynaud : l'anteriorite de publication ne vaut pas fondation, faute de definition et de point de vue enonces.",
       "support_ids": [
         "SUP-7e378f05c712eb3e",
         "SUP-c78b97178d62d402"
@@ -814,235 +805,223 @@
     },
     {
       "claim_id": "C058",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 588,
-      "end": 713,
-      "claim_text": "Ce verdict est le sien, et c’est le seul qu’on entende ici : ce que Reynaud dit de la discipline, ses pages seules le diront.",
-      "normalized_claim": "Le dossier ne contient rien de la position de Reynaud lui-meme : seul le jugement d'Albou est atteste.",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 143,
+      "end": 186,
+      "claim_text": "C’est le travail de la phrase de la page 11",
+      "normalized_claim": "La definition qui enonce l'objet de la discipline se lit page 11.",
       "support_ids": [
-        "SUP-7e378f05c712eb3e",
-        "SUP-c78b97178d62d402",
-        "SUP-9bea10291e2c3597"
+        "SUP-6537817c0d926de7",
+        "SUP-dd246b21b2bb2aba",
+        "SUP-88688234168814aa",
+        "SUP-8a56d60eb2e9f607"
       ]
     },
     {
       "claim_id": "C059",
       "locator": "sections[4].paragraphs[2]",
-      "start": 0,
-      "end": 142,
-      "claim_text": "Publier le premier sur un sujet ne fonde donc pas une discipline : il faut encore énoncer ce dont elle se charge, et depuis quel point de vue.",
-      "normalized_claim": "Ce que la querelle Albou / Reynaud montre : l'anteriorite de publication ne suffit pas, il faut avoir defini la discipline et son point de vue.",
+      "start": 191,
+      "end": 321,
+      "claim_text": "Albou continue de l’appeler « notre définition de 1962 » au moment même où il la juge trop généreuse envers la psychologie sociale",
+      "normalized_claim": "En 1982, Albou revendique 'notre definition de 1962' dans la phrase meme ou il lui reproche la part trop belle faite a la psychologie sociale.",
       "support_ids": [
-        "SUP-7e378f05c712eb3e",
-        "SUP-c78b97178d62d402"
+        "SUP-3a1d24f727c762fb",
+        "SUP-83aa7294716cb48e",
+        "SUP-4da6643e81b2ff46",
+        "SUP-9bea10291e2c3597",
+        "SUP-7f4f65ddd6ccfec7"
       ]
     },
     {
       "claim_id": "C060",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 143,
-      "end": 186,
-      "claim_text": "C’est le travail de la phrase de la page 11",
-      "normalized_claim": "C'est la definition de la page 11 qui accomplit cet enonce de l'objet et du point de vue.",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 66,
+      "end": 98,
+      "claim_text": "Albou ne les attribue à personne",
+      "normalized_claim": "Albou n'attribue la formule a personne.",
       "support_ids": [
-        "SUP-6537817c0d926de7",
-        "SUP-dd246b21b2bb2aba",
-        "SUP-a87c0c1c2d52bfff",
-        "SUP-4da6643e81b2ff46"
+        "SUP-39b58a2b62769eba",
+        "SUP-76c8223379811c0f",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674"
       ]
     },
     {
       "claim_id": "C061",
-      "locator": "sections[4].paragraphs[2]",
-      "start": 188,
-      "end": 321,
-      "claim_text": "et Albou continue de l’appeler « notre définition de 1962 » au moment même où il la juge trop généreuse envers la psychologie sociale",
-      "normalized_claim": "En 1982, dans la phrase meme ou il lui reproche la part trop belle faite a la psychologie sociale, Albou l'appelle notre definition de 1962.",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 101,
+      "end": 193,
+      "claim_text": "la page 11 ne comporte ni note ni appel de note, la définition y est imprimée sans référence",
+      "normalized_claim": "Constat sur la piece : la page 11 ne porte ni note ni appel de note, la definition en capitales y est sans reference.",
       "support_ids": [
-        "SUP-3a1d24f727c762fb",
-        "SUP-4da6643e81b2ff46",
-        "SUP-7f4f65ddd6ccfec7",
-        "SUP-9bea10291e2c3597"
+        "SUP-39b58a2b62769eba",
+        "SUP-76c8223379811c0f",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674"
       ]
     },
     {
       "claim_id": "C062",
       "locator": "sections[5].paragraphs[0]",
-      "start": 66,
-      "end": 98,
-      "claim_text": "Albou ne les attribue à personne",
-      "normalized_claim": "Albou n'attribue la formule a personne dans l'article de 1962.",
+      "start": 198,
+      "end": 294,
+      "claim_text": "la seule dette d’économiste inscrite à cet endroit est celle de Robbins, cité à la page suivante",
+      "normalized_claim": "La seule dette d'economiste inscrite a cet endroit est celle de Robbins, cite en note page 12.",
       "support_ids": [
-        "SUP-39b58a2b62769eba",
-        "SUP-76c8223379811c0f",
         "SUP-83aa7294716cb48e",
-        "SUP-4da6643e81b2ff46",
-        "SUP-80372f9f0e3f2674"
+        "SUP-80372f9f0e3f2674",
+        "SUP-39b58a2b62769eba",
+        "SUP-76c8223379811c0f"
       ]
     },
     {
       "claim_id": "C063",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 101,
-      "end": 193,
-      "claim_text": "la page 11 ne comporte ni note ni appel de note, la définition y est imprimée sans référence",
-      "normalized_claim": "La page 11 ne porte ni note de bas de page ni appel de note, et la definition y est donnee sans reference.",
-      "support_ids": [
-        "SUP-39b58a2b62769eba",
-        "SUP-76c8223379811c0f",
-        "SUP-83aa7294716cb48e"
-      ]
-    },
-    {
-      "claim_id": "C064",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 195,
-      "end": 294,
-      "claim_text": "et la seule dette d’économiste inscrite à cet endroit est celle de Robbins, cité à la page suivante",
-      "normalized_claim": "La seule dette d'economiste inscrite a cet endroit est celle de Robbins, cite en note page 12.",
-      "support_ids": [
-        "SUP-83aa7294716cb48e",
-        "SUP-76c8223379811c0f",
-        "SUP-39b58a2b62769eba",
-        "SUP-80372f9f0e3f2674"
-      ]
-    },
-    {
-      "claim_id": "C065",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 109,
       "claim_text": "Or la même expression se lit dans une définition de l’économie politique couramment attribuée à Raymond Barre",
-      "normalized_claim": "La meme formule figure dans une definition de l'economie politique couramment attribuee a Raymond Barre.",
+      "normalized_claim": "Le meme syntagme se lit dans une definition de l'economie politique couramment attribuee a Raymond Barre.",
       "support_ids": [
         "SUP-83aa7294716cb48e",
-        "SUP-4da6643e81b2ff46",
         "SUP-80372f9f0e3f2674",
+        "SUP-4da6643e81b2ff46",
+        "SUP-9f71ddad115c9f41",
         "SUP-f6cef867507a4a09",
         "SUP-79a80192d55c337e"
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C064",
       "locator": "sections[5].paragraphs[1]",
       "start": 111,
       "end": 230,
       "claim_text": "dont le premier tome d’Economie politique paraît aux Presses Universitaires de France en 1955, sept ans avant l’article",
-      "normalized_claim": "Le tome I de l'Economie politique de Barre parait aux PUF en 1955, sept ans avant l'article de 1962.",
+      "normalized_claim": "Economie politique, tome I, PUF, 1955 : sept ans avant l'article de 1962, adresse bibliographique lue sur le compte rendu de 1956.",
       "support_ids": [
-        "SUP-83aa7294716cb48e",
         "SUP-9f71ddad115c9f41",
-        "SUP-f3b9660b96d79201"
+        "SUP-f3b9660b96d79201",
+        "SUP-afc2c756c4fa3d2f",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674",
+        "SUP-9bea10291e2c3597",
+        "SUP-4da6643e81b2ff46"
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 232,
+      "end": 362,
+      "claim_text": "Cette attribution circule dans des documents d’enseignement et des ouvrages de compilation, dont aucun ne donne de page chez Barre",
+      "normalized_claim": "L'attribution a Barre repose sur de l'enseignement et de la compilation, aucune de ces sources ne donnant de page dans Barre.",
+      "support_ids": [
+        "SUP-f6cef867507a4a09",
+        "SUP-79a80192d55c337e",
+        "SUP-9f71ddad115c9f41",
+        "SUP-83aa7294716cb48e",
+        "SUP-8a9e391196045e33",
+        "SUP-41097278fd2501b9"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 367,
+      "end": 471,
+      "claim_text": "elle n’est pas unanime : des recueils de citations portent la même formule au crédit de François Perroux",
+      "normalized_claim": "Des recueils de citations donnent la meme formule a Francois Perroux : l'attribution n'est pas unanime.",
+      "support_ids": [
+        "SUP-6df7dfd89daaf98e",
+        "SUP-4f9349f4e5de0b8e",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674",
+        "SUP-4da6643e81b2ff46"
       ]
     },
     {
       "claim_id": "C067",
       "locator": "sections[5].paragraphs[1]",
-      "start": 232,
-      "end": 362,
-      "claim_text": "Cette attribution circule dans des documents d’enseignement et des ouvrages de compilation, dont aucun ne donne de page chez Barre",
-      "normalized_claim": "L'attribution a Barre ne repose que sur des documents d'enseignement et de compilation, dont aucun ne donne de page dans Barre.",
-      "support_ids": [
-        "SUP-f6cef867507a4a09",
-        "SUP-79a80192d55c337e",
-        "SUP-8a9e391196045e33",
-        "SUP-83aa7294716cb48e"
-      ]
-    },
-    {
-      "claim_id": "C068",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 364,
-      "end": 471,
-      "claim_text": "et elle n’est pas unanime : des recueils de citations portent la même formule au crédit de François Perroux",
-      "normalized_claim": "L'attribution n'est pas unanime : des recueils de citations donnent la meme formule a Francois Perroux.",
-      "support_ids": [
-        "SUP-6df7dfd89daaf98e",
-        "SUP-4f9349f4e5de0b8e",
-        "SUP-83aa7294716cb48e",
-        "SUP-4da6643e81b2ff46"
-      ]
-    },
-    {
-      "claim_id": "C069",
-      "locator": "sections[5].paragraphs[1]",
       "start": 473,
       "end": 556,
       "claim_text": "Une attribution répétée n’est pas une attestation, et rien de tout cela ne tranche.",
-      "normalized_claim": "La repetition de l'attribution ne vaut pas attestation, et le dossier ne tranche pas l'origine de la formule.",
+      "normalized_claim": "Le dossier refuse de conclure : une attribution repetee n'est pas une attestation, et le texte de Barre n'a pas ete ouvert.",
       "support_ids": [
         "SUP-f6cef867507a4a09",
         "SUP-79a80192d55c337e",
         "SUP-ed98ef125d4c86b9",
         "SUP-5cd004804e7d8730",
-        "SUP-05523cb87b0f0a4f"
+        "SUP-05523cb87b0f0a4f",
+        "SUP-83aa7294716cb48e"
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C068",
       "locator": "sections[5].paragraphs[2]",
       "start": 0,
       "end": 204,
       "claim_text": "Dans les revues de sciences humaines aujourd’hui numérisées, l’expression ne se rencontre guère qu’à la suite d’Albou : ses propres articles, et des comptes rendus d’ouvrages qui reprennent sa définition.",
-      "normalized_claim": "Dans Persee et Erudit, les occurrences de l'expression viennent toutes d'Albou ou de comptes rendus reprenant sa definition.",
+      "normalized_claim": "Argument de corpus : dans Persee et Erudit, les occurrences de la formule viennent toutes d'Albou ou de comptes rendus reprenant sa definition.",
+      "support_ids": [
+        "SUP-621c4841388fc72a",
+        "SUP-66f4c9a637e31ff7",
+        "SUP-83aa7294716cb48e"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 205,
+      "end": 420,
+      "claim_text": "Il serait pourtant imprudent d’y voir une preuve : les manuels d’économie publiés par les Presses Universitaires de France ne figurent pas dans ces collections, et ce qu’ils portent ne pouvait donc pas y apparaître.",
+      "normalized_claim": "Limite de l'argument de corpus : Persee n'indexe pas les manuels des PUF, l'absence de Barre n'y prouve donc rien.",
       "support_ids": [
         "SUP-621c4841388fc72a",
         "SUP-66f4c9a637e31ff7"
       ]
     },
     {
-      "claim_id": "C071",
-      "locator": "sections[5].paragraphs[2]",
-      "start": 205,
-      "end": 420,
-      "claim_text": "Il serait pourtant imprudent d’y voir une preuve : les manuels d’économie publiés par les Presses Universitaires de France ne figurent pas dans ces collections, et ce qu’ils portent ne pouvait donc pas y apparaître.",
-      "normalized_claim": "Persee n'indexe pas les manuels des PUF, donc l'absence de Barre dans ces corpus ne prouve rien sur Barre.",
+      "claim_id": "C070",
+      "locator": "sections[5].paragraphs[3]",
+      "start": 68,
+      "end": 127,
+      "claim_text": "dans les sciences humaines, cette formule circule par Albou",
+      "normalized_claim": "Ce que l'argument etablit : dans les sciences humaines, la formule circule par Albou.",
       "support_ids": [
         "SUP-621c4841388fc72a",
-        "SUP-66f4c9a637e31ff7"
+        "SUP-66f4c9a637e31ff7",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674"
+      ]
+    },
+    {
+      "claim_id": "C071",
+      "locator": "sections[5].paragraphs[3]",
+      "start": 132,
+      "end": 171,
+      "claim_text": "la définition bâtie sur elle est de lui",
+      "normalized_claim": "Ce qui revient a Albou de facon etablie : la definition de la psychologie economique batie sur cette formule.",
+      "support_ids": [
+        "SUP-4da6643e81b2ff46",
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674",
+        "SUP-89b9f5aeeae2d81c"
       ]
     },
     {
       "claim_id": "C072",
       "locator": "sections[5].paragraphs[3]",
-      "start": 68,
-      "end": 127,
-      "claim_text": "dans les sciences humaines, cette formule circule par Albou",
-      "normalized_claim": "Ce qui est etabli : dans les sciences humaines, la formule circule par Albou.",
-      "support_ids": [
-        "SUP-621c4841388fc72a",
-        "SUP-66f4c9a637e31ff7",
-        "SUP-83aa7294716cb48e",
-        "SUP-4da6643e81b2ff46"
-      ]
-    },
-    {
-      "claim_id": "C073",
-      "locator": "sections[5].paragraphs[3]",
-      "start": 129,
-      "end": 171,
-      "claim_text": "et la définition bâtie sur elle est de lui",
-      "normalized_claim": "La definition de la psychologie economique batie sur cette formule est d'Albou.",
-      "support_ids": [
-        "SUP-4da6643e81b2ff46",
-        "SUP-83aa7294716cb48e",
-        "SUP-89b9f5aeeae2d81c",
-        "SUP-80372f9f0e3f2674"
-      ]
-    },
-    {
-      "claim_id": "C074",
-      "locator": "sections[5].paragraphs[3]",
       "start": 173,
       "end": 346,
       "claim_text": "L’antériorité, elle, se décidera sur l’imprimé : dans le tome I de l’Economie politique de 1955, collection Thémis, on lira en quels termes l’économie politique s’y définit.",
-      "normalized_claim": "L'anteriorite reste a decider sur le texte imprime du tome I de l'Economie politique de 1955, collection Themis, qui n'a pas ete ouvert.",
+      "normalized_claim": "Le texte de Barre n'a pas ete ouvert ; l'anteriorite reste a decider sur le tome I de 1955, collection Themis.",
       "support_ids": [
-        "SUP-5cd004804e7d8730",
         "SUP-05523cb87b0f0a4f",
-        "SUP-83aa7294716cb48e",
+        "SUP-5cd004804e7d8730",
+        "SUP-9f71ddad115c9f41",
         "SUP-f3b9660b96d79201",
-        "SUP-9f71ddad115c9f41"
+        "SUP-83aa7294716cb48e",
+        "SUP-80372f9f0e3f2674",
+        "SUP-9bea10291e2c3597"
       ]
     }
   ]
