@@ -223,3 +223,167 @@ Ce compte rendu ne vaut ni `ACCEPT` ni `FACTCHECK_PASS`.
    porte la granularité « section » ; `review.notes[1]` ne porte que la pagination.
 4. S3.P2 conserve la formulation « pas seulement … aussi » que `C035` a validée. Si un mapping futur
    la juge redondante avec S3.P1, c'est S3.P1 qu'il faut regarder : il ne porte plus d'exclusion.
+
+---
+
+# Tour 2 (boucle de correction n° 2 sur 2)
+
+concept : activite-empechee
+mode    : FACTCHECK_FIX
+date    : 2026-09-30
+gate appliqué : corpus/deepening-audits/work/activite-empechee/factcheck-gate.json
+                (FACTCHECK_FAIL, 60 claims, 59 soutenus, **1 refusé** : C059, TOO_STRONG)
+SHA de la version refusée : 6afe9af50fca6c4408c572ad3cea82c37d1ca21d9963a58d38502e8f2908c196
+SHA après correction       : 4cd3f2788d5eeb95170df879e8a62663e1b054828919369c8f1553196a61f00c
+
+## Matière relue avant de toucher au texte
+
+- `factcheck-gate.json` du tour 2 : autorité sur l'échec, un seul motif.
+- `verification.json` : le verdict de C059 **et** ceux de ses voisins qui bornent la correction,
+  C045, C056, C057, C058, C060, tous `SUPPORTED`.
+- `verification-bundle.json` / `factcheck-pack.json` : résolution des trois appuis en cause,
+  `SUP-7664cc9022028257` = `evidence:lecture.json $.reserves[8]`,
+  `SUP-938045cf22f3a05d` = `validated $.notes[5]`,
+  `SUP-0021ed7d439ebe18` = `evidence:lecture.json $.reserves[6]`.
+- `claim-map.json` : `claim_text` et offsets exacts de C059 (`sections[5].paragraphs[1]`, 560-629).
+- `corpus/validated/activite-empechee.json` : champ `dossier` **null**, donc répertoire
+  conventionnel seul ; `corpus/evidence/activite-empechee/` listé, **un seul fichier**,
+  `lecture.json`, relu en entier (`reserves[0..8]` compris).
+- `FACTCHECK_PROTOCOL.md` (§4 charnière, §5 verdicts, §6 gate), et ma propre trace du tour 1.
+
+Aucune recherche web. Aucun appui nouveau, aucun `SUP-...` inventé, aucun artefact de fact-check
+modifié à la main. Aucun fichier portant un autre conceptId ouvert (chantier O).
+
+## Le geste unique : C059 — REMOVE
+
+Texte refusé, `sections[5].paragraphs[1]`, dernières phrases :
+
+> Reste une frontière plus difficile : la notion est couramment confondue avec la psychodynamique
+> du travail. Une différence entre les deux est revendiquée ; les sources disponibles ne permettent
+> pas de dire laquelle.
+
+Texte corrigé :
+
+> Une dernière frontière reste ouverte : une différence avec la psychodynamique du travail est
+> revendiquée ; les sources disponibles ne permettent pas de dire laquelle.
+
+Ce qui est retiré, et rien d'autre : la **fréquence** (« couramment ») et le verbe de confusion qui
+la portait. Aucune fréquence de remplacement n'est écrite : ni « souvent », ni « parfois », ni « il
+arrive que ». Quand aucune fréquence n'est portée, il n'en faut aucune.
+
+Pourquoi REMOVE et non NARROW. `reserves[7]` du dossier écrit bien « se confond souvent avec la
+psychodynamique du travail de Christophe Dejours », mais le même objet déclare d'où il le tient :
+« la cartographie du domaine, pas d'une mesure », scite non connecté et OpenAlex en échec de quota.
+Une fréquence de réception n'y est donc pas portée, seulement rapportée d'un relevé qui n'a pas eu
+lieu. Il n'existe aucun affaiblissement de « couramment » qui resterait une fréquence et deviendrait
+soutenu : la proposition entière est hors des appuis, elle se retire.
+
+Ce que la correction **conserve**, parce que le gate l'a soutenu au claim voisin C060 et que
+`$.notes[5]` le porte mot pour mot (« la différence revendiquée avec la psychodynamique du travail
+n'est pas documentée ici ») : qu'une différence est revendiquée, et que les sources disponibles ne
+disent pas laquelle.
+
+Le pronom « les deux » de C060 devenait sans antécédent dès que la phrase qui nommait la
+psychodynamique du travail disparaissait. Le nom est donc rentré dans la phrase de C060, dont la
+proposition est inchangée et dont la seconde moitié est recopiée au mot : « les sources disponibles
+ne permettent pas de dire laquelle ». Ce déplacement **resserre** l'appui plutôt qu'il ne l'élargit,
+`$.notes[5]` nommant lui-même la psychodynamique du travail dans la même phrase que la
+revendication. Ni C060 ni C045 n'ont été rouverts autrement.
+
+La charnière « Reste une frontière plus difficile » est remplacée par « Une dernière frontière reste
+ouverte », qui n'affirme plus de degré de difficulté et n'annonce plus qu'une confusion. Elle
+n'affirme que le non-règlement, que la phrase suivante porte.
+
+## Troisième passage sur la même frontière, et ce qui en reste autorisé
+
+| ce qui a été retiré | tour |
+|---|---|
+| la caractérisation de la différence (ce qu'elle sépare) | 1 |
+| l'agent qui la revendique (Dejours nommé, lecture « de part et d'autre ») | 1 |
+| la **fréquence** de la confusion (« couramment ») | 2 |
+| reste autorisé : une différence revendiquée, et son contenu non établi | — |
+
+## Règle 3 (chantier M, point 4) : titre et `lead`
+
+Vérifié explicitement, parce qu'un titre n'est **ni un locator du pack ni compté dans le volume** :
+les treize locators du pack sont `lead[0..1]` et les paragraphes, aucun titre. Une fréquence placée
+en titre échapperait donc au gate et au compte de mots à la fois.
+
+- Titre de la section touchée, `sections[5].title` = « Le réel de l'activité n'est pas l'activité
+  réelle » : il énonce une **non-identité de deux termes**, pas une fréquence et pas une confusion de
+  réception. Il est ancré par `sections[5].paragraphs[0]`, dont les claims sont soutenus, et par
+  `limits[3]` (« ne jamais écrire "activité réelle" pour "réel de l'activité" »). **Inchangé.**
+- Les cinq autres titres relus un par un : aucun ne porte de fréquence de réception. « Un mot plus
+  rigide que celui de l'auteur » (`sections[4]`) qualifie le libellé, ce que C045 soutient sur
+  `reserves[5]`, `notes[0]` et `notes[1]`. **Inchangés.**
+- `lead[0]` et `lead[1]` : aucune mention de réception, de circulation, de confusion ni de
+  psychodynamique du travail. **Intacts au mot** (208 mots avant, 208 après).
+
+Balayage de contrôle du texte lecteur sur `couramment|souvent|parfois|fréquem|largement|habitude|
+confond|généralement|toujours|la plupart` : cinq occurrences restantes, toutes hors réception et
+toutes dans des claims soutenus. Trois sont **à l'intérieur de verbatims de l'auteur** (« en
+risquant toujours l'échec », « c'est bien sûr souvent le cas », « se trouve fréquemment amputé ») et
+portent sur l'empêchement et le pouvoir d'agir, pas sur la diffusion de la notion. Deux sont
+« l'habitude » de `sections[5].paragraphs[0]`, adossées au « a-t-on pris l'habitude de dire » que
+l'auteur écrit lui-même.
+
+## Ajout à `limits` (interne, jamais affiché)
+
+`limits[3]` portait déjà l'interdit de caractériser la différence et de l'attribuer. Il ne nommait
+pas l'interdit de la **quantifier**, et c'est exactement la faille par laquelle « couramment » est
+passé. Phrases ajoutées :
+
+> La confusion elle-même ne se quantifie pas : « couramment », « souvent », « parfois » sont refusés
+> au même titre, et le « se confond souvent » de reserves[7] ne les autorise pas : il rapporte la
+> cartographie du domaine, que le dossier déclare lui-même « pas d'une mesure ». Cette frontière a
+> coûté deux tours de gate, caractérisation et agent au premier, fréquence au second ; il n'en reste
+> d'autorisé qu'une différence revendiquée et le non-établissement de son contenu.
+
+L'ajout nomme l'appui exact qui tente le prochain réécrivain (`reserves[7]`) et dit pourquoi il ne
+suffit pas : c'est l'information qui manquait, la seule interdiction générique ne l'ayant pas arrêté.
+Aucun contenu de `limits` n'est remonté dans le texte lecteur ; aucune rubrique du genre « ce que les
+sources ne permettent pas d'établir » n'existe dans les sections.
+
+## Delta du seul paragraphe touché
+
+`sections[5].paragraphs[1]` : ce que la distinction change pour une observation — deux résultats
+identiques ne garantissent pas deux mêmes travaux traversés — puis une frontière qui reste ouverte.
+Le delta est celui du tour 1, et la coupe ne le touche pas : la fréquence retirée n'apprenait rien
+que la phrase suivante n'apprend mieux. Aucun paragraphe n'est devenu redondant, aucune section n'a
+été ajoutée, supprimée ni déplacée, aucun ordre n'a changé, aucune citation n'a été touchée.
+
+## Contrôle mécanique
+
+    npm run corpus:deepen -- --check --only=activite-empechee
+    1 approfondissement(s) contrôlé(s), 2006 mots. Rien projeté.
+
+PASS. Un premier passage avait été refusé pour un tiret cadratin introduit dans `limits[3]`
+(« interdit sur tout champ affiché ») ; le tiret est remplacé par une virgule, et le contrôle passe.
+Aucun avertissement de citation.
+
+## Compte de mots
+
+| | avant (version refusée) | après |
+|---|---|---|
+| `lead` | 208 | 208 |
+| sections (paragraphes) | 1 354 | 1 346 |
+| **texte lecteur** | **1 562** | **1 554** |
+| `limits` (interne) | 370 | 452 |
+| total compté par le script | 1 932 | 2 006 |
+
+Le texte lecteur perd 8 mots ; `limits`, interne, en gagne 82. Total sous la borne dure de 2 100.
+Les titres (42 mots) n'entrent dans aucun de ces comptes, le script ne les additionnant pas.
+
+## Suite attendue
+
+La modification invalide le SHA `6afe9af5…`. Le cycle reprend à `PREPARE` : nouveau pack, nouveau
+mapping, nouvelle vérification. Les offsets de tous les claims de `sections[5].paragraphs[1]`
+changent ; les douze autres paragraphes sont inchangés au caractère.
+
+Point d'attention pour le prochain mapping : la dernière phrase du texte réunit désormais en une
+seule proposition ce que C060 portait, nom de la psychodynamique du travail compris. Ses appuis sont
+`$.notes[5]` (`SUP-938045cf22f3a05d`), `$.reserves[7]` et `$.reserves[6]`
+(`SUP-0021ed7d439ebe18`) ; `$.reserves[8]`, que le mapping du tour 2 avait rattaché à C059, traite du
+genre et du style et n'a rien à voir avec cette frontière.
+
+Ce compte rendu ne vaut ni `ACCEPT` ni `FACTCHECK_PASS`.
