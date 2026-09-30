@@ -1,33 +1,33 @@
 {
   "protocol_version": 2,
   "concept_id": "absorber-les-fluctuations-de-commandes",
-  "candidate_sha256": "1dc7016d477aedc5c71f05f9338d6eb862aa8d77fa4512e7c4ec7d64f5501588",
+  "candidate_sha256": "5b8115f95133cd5cbe7460fcace4b310f673109197a23d500c73196fb7407c79",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 61,
-  "supported": 57,
+  "claims": 57,
+  "supported": 53,
   "failed": 4,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C002",
+      "claim_id": "C001",
       "verdict": "TOO_STRONG",
-      "reason": "Le seul appui fourni, $.hook, pose une fluctuation « qu'on ne peut pas supprimer » ; il ne dit rien du pourquoi. Le claim ajoute un mecanisme et une impossibilite absolue interne — « Personne, a l'interieur, n'a le moyen de demander aux clients d'etaler leurs achats » — c'est-a-dire une affirmation sur la relation aux clients et sur les moyens de l'atelier que les appuis fournis pour ce claim ne portent pas."
+      "reason": "Les appuis fournis pour ce claim portent, par la p. 5 relevee dans review.notes[6], « orders (or more precisely, ordered shipments) are subject to substantial fluctuation », et le hook porte l'impossibilite de supprimer la fluctuation. Ils n'etablissent ni l'echelle annuelle ni l'alternance mois par mois (« un mois elles s'entassent, le mois suivant elles se font rares ») : la frequence du phenomene est ajoutee."
     },
     {
-      "claim_id": "C004",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui ne m'est fourni pour ce claim. L'affirmation « Rien n'oblige a les choisir ensemble » porte sur une absence de contrainte et n'est etablie par rien de ce qui m'est transmis ; l'absence de contradiction ne vaut pas preuve."
+      "claim_id": "C017",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim portent « partly by hiring and layoffs » (quotation.original_text, quotation.text, note du traducteur) et l'existence de trois alternatives pures (review.notes[6]). Ils n'etablissent aucun rythme saisonnier des fluctuations : « au fil des saisons » ajoute une periodicite que ces appuis ne portent pas."
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C030",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim etablissent que la demonstration « vient ensuite, par la fonction de cout » ($.notes[0]) et que la table des matieres annonce au folio 43 une « Derivation of the Conditions for Minimum Costs » ($.notes[10]). Ils n'etablissent pas que ce sont ces pages-la qui demontrent la recommandation de la p. 8 : « ensuite » couvre aussi le corps du rapport, et $.notes[5] indique que l'annexe est absente de l'exemplaire numerise, donc que son contenu n'est atteste par rien d'autre que son titre. Le claim affirme comme un fait la fonction demonstrative de pages dont aucun appui fourni ne dit le contenu."
+      "reason": "Les appuis fournis pour ce claim portent que « la demonstration vient ensuite, par la fonction de cout » (notes[0]) et que la table des matieres annonce « APPENDIX: Derivation of the Conditions for Minimum Costs » au folio 43 (notes[10], review.notes[9]). Ils ne portent pas la structure de cette fonction : une formule qui mettrait un prix sur chaque combinaison possible de stock, d'heures et d'effectif est une description du modele que ces appuis n'etablissent pas, et notes[5] rappelle que l'appendice est absent de l'exemplaire numerise."
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C045",
       "verdict": "TOO_STRONG",
-      "reason": "Meme proposition que C059 — la justification de la combinaison ponderee serait dans ces pages —, donc meme verdict. review.notes[2] etablit bien l'enonce « none of the pure alternatives ... will prove best, but rather some carefully weighted combination », et $.notes[0] que sa demonstration vient plus loin ; aucun appui fourni ne localise cette demonstration dans l'annexe du folio 43, dont le contenu n'est connu que par son titre."
+      "reason": "Les appuis fournis pour ce claim portent le titre de section lu a la table des matieres et au bas de la p. 8, « Errors in Forecasting Orders » (review.notes[3]), et les trois canaux d'absorption (quotation.original_text). Ils n'etablissent pas ce que la section dit de ces erreurs : « des nombres dont on sait qu'ils seront faux de quelque chose » ajoute une certitude sur l'erreur de prevision qu'un titre de section ne porte pas."
     }
   ]
 }
