@@ -50,3 +50,13 @@ corpus/review/*.brief.json
 # corpus : partitions de bundle, derivees de verification-bundle.json par
 # scripts/corpus/factcheck-partition.mjs, regenerables a l'identique
 corpus/deepening-audits/work/*/verification-bundle.part*.json
+
+# corpus : scripts de travail deposes par les agents dans le repertoire d'une carte.
+# Les artefacts du protocole (audit.md, rewrite.md, factcheck-pack.json, claim-map.json,
+# verification-bundle.json, verification.json, factcheck-gate.json, review.md) sont suivis ;
+# l'outillage jetable qui les produit ne l'est pas, et il doit porter le conceptId de sa
+# carte pour que deux agents paralleles ne s'ecrasent pas (chantier O).
+corpus/deepening-audits/work/*/*.py
+corpus/deepening-audits/work/*/*.mjs
+corpus/deepening-audits/work/*/*.js
+corpus/deepening-audits/work/*/*.sh

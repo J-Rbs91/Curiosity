@@ -5,6 +5,213 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-09-30
+
+Septième exécution. **Une carte publiée sur trois, deux refusées au plafond de boucles — et le
+passage qui apprend le plus sur le dispositif lui-même.** `ROUTINE_PASS_WITH_BLOCKED_SOURCES`.
+
+- branche      : `claude/beautiful-feynman-j6y9pf`, imposée par la session.
+- lot          : **3 cartes** jamais auditées — `absorber-les-fluctuations-de-commandes`,
+  `activite-empechee`, `amenagement-onereux-du-monde-exterieur`. Aucune `SKIPPED_DIRTY`.
+- résultats    : **1 publiée.** `REVISE` sur les trois. `FACTCHECK_PASS` + `ACCEPT` sur
+  `amenagement` ; `rewrite_rejected_factcheck` sur les deux autres, restaurées et vérifiées.
+- contrôles    : validate 140 / 136 validés / 0 erreur / 114 avertissements · deepen --check 136 ·
+  `npm test` **575 sur 575** · lint 0 · `next build` sans erreur · projection ne touchant qu'une carte.
+- corpus       : 209 118 → **209 296 mots** (une seule carte modifiée).
+
+La parade du chantier N a été appliquée avant toute sélection : seule PR #125 était ouverte
+(dependabot, aucun fichier du corpus), donc aucune carte n'était verrouillée.
+
+### Le fait de la nuit : le signal d'appuis non cités a deux modes de défaillance, et le second est neuf
+
+Le 29 septembre établissait qu'un signal **muet** force le verdict vers `UNSUPPORTED` et fait couper un
+texte dont la preuve est au dépôt. Ce passage établit l'exact miroir : un signal **qui parle sur une
+coïncidence lexicale** fait rendre `MAPPING_INCOMPLETE`, donc `FACTCHECK_INVALID`, et renvoie à
+l'artefact un claim dont le mapping était complet.
+
+Le cas : `amenagement`, C005, phrase se terminant par « on se justifie après coup ». Le signal nommait
+`SUP-42969029c34cdb55`, c'est-à-dire `$.notes[10]` — **une note de méthode sur l'étendue réellement
+consultée et l'état de la couche OCR**, dont le mot « justifie » porte sur « justifie le full-text
+déclaré ». Aucun rapport avec le texte lecteur.
+
+La preuve que le mapping était complet est indépendante : un mapper frais, à qui rien n'avait été dit du
+claim ni du signal, a reproduit **le texte identique et les deux mêmes appuis**, et n'a rattaché cet
+appui à aucun de ses 72 claims. Le claim est `SUPPORTED` au tour 3, sur ses appuis d'origine.
+
+Un remapping dépensé pour rien. **Parade sans code : lire le contenu de l'appui nommé avant de
+remapper.** C'est une lecture, elle est gratuite.
+
+Les deux modes ont une seule cause, et c'est la troisième fois que le dépôt s'y heurte après le balayage
+des titres par rareté du 28 septembre et le détecteur de redites de Jaccard écrit puis jeté le 29 :
+**la ressemblance lexicale ne mesure pas le port de proposition.**
+
+### Ce qui a fait tomber les deux cartes, et une erreur qui est la mienne
+
+`absorber` : trois gates, 57/61 puis 53/57 puis **60 sur 61**. Le claim fatal, `C049`, « il se reprend à
+chaque période », **n'existait pas avant le tour 2** : il y a été écrit par précaution, hors des claims
+refusés, sur la phrase d'un claim que le gate avait soutenu, pour retirer une échelle annuelle refusée
+ailleurs. Le geste a échangé une précision non portée contre une autre, la périodicité n'ayant pour
+appui qu'un libellé de table des matières.
+
+**Le réécrivain avait signalé cet écart à la minimalité honnêtement, et je l'avais approuvé.** C'est moi
+qui tenais le compte des tours restants. La leçon est contre-intuitive et elle doit vivre dans un
+prompt, pas seulement ici : **dans une boucle de correction, la minimalité n'est pas une politesse
+procédurale, c'est une protection.** Toucher une phrase soutenue pour la mettre à l'abri ajoute une
+surface que le tour suivant peut refuser.
+
+`activite-empechee` : trois gates, 57/63 puis 59/60 puis **64 sur 65**. Trajectoire d'une réparation qui
+marche, et aucun refus du tour 3 sur une phrase corrigée. Le claim fatal, `C011`, ancre une phrase
+**présente au mot près dans le texte d'origine**, que la réécriture n'avait pas touchée — vérifié sur le
+blob. Son verdict est `CONFLICT` : les appuis ne sont pas muets, ils disent l'inverse.
+
+### Le défaut du plafond de boucles, établi sur pièce
+
+La restauration d'`activite-empechee` **remet en place la phrase jugée `CONFLICT`**, puisqu'elle est
+d'origine, et perd les sept corrections des deux tours — dont un autre `CONFLICT`, deux
+sur-attributions, une localisation fausse, une alternative exclusive, une fréquence de réception sans
+relevé.
+
+> Sur cette carte, le corpus est **strictement moins bon après le passage** qu'il ne l'aurait été si la
+> réécriture avait été conservée avec son seul défaut connu.
+
+Le dispositif fail-closed suppose que le texte d'origine est le refuge sûr. Ici l'origine porte la
+faute, et le refuge est le lieu du défaut. La règle n'a pas été outrepassée. Elle gagnerait à distinguer
+ce cas, et le test ne demande aucun jugement : **chercher le `claim_text` du claim fatal dans le blob de
+référence.** S'il y est, la restauration ne répare rien et défait beaucoup.
+
+### 22 cartes déclarent une consultation forte sans aucun dossier, et le balayage ne peut pas les voir
+
+`sweep()` de `deepening-factcheck.mjs` saute `DOSSIER_ABSENT` avant de construire sa liste :
+
+    if (declaration.statut === STATUTS.CORROBORE
+     || declaration.statut === STATUTS.DOSSIER_ABSENT) continue;
+
+Le compteur voit 49 déclarations `dossier-absent`, la liste n'en montre aucune. **22 cartes déclarent
+`full-text` ou `partial` sans aucun dossier**, ni champ `dossier`, ni répertoire conventionnel — donc
+sans qu'aucune lecture ne soit attestée. `absorber` est l'une d'elles, et c'est pourquoi son auditeur a
+dû établir l'absence à la main.
+
+Distinct, et celui-là est bien reporté : `systemographie` déclare
+`corpus/dossiers/systemographie.json`, qui n'existe pas.
+
+**Association à ne pas surcompter** : sur les 32 cartes déjà auditées, 5 des 11 en échec sont sans
+dossier (45 %) contre 4 des 21 sans échec (19 %). Effectifs petits, rien n'est testé, et le mécanisme
+que j'avais supposé est **faux** : les trois gates d'`absorber` ont rendu **zéro
+`SOURCE_NOT_CONSULTED`**, les appuis de contenu venant des relevés de l'enregistrement à `access: n/a`.
+**L'absence de dossier ne prive pas les claims d'appui : elle borne ce que la carte peut affirmer.**
+C'est contre cette borne que les trois tours d'`absorber` ont buté, et c'est pourquoi cette carte est à
+**instruire** et non à réécrire — le mémorandum est référencé `DTIC_AD0089515` et lu nulle part.
+
+### Le chantier M a produit quatre cas dans ce seul lot
+
+Avant ce passage : deux cas en plusieurs semaines. Ici **quatre**, sur deux cartes — deux titres
+d'`absorber`, un titre et une phrase d'annonce du `lead` d'`amenagement`. Chacun portait précisément
+l'excédent qu'un claim venait de se faire refuser dans le corps, et l'un contredisait un claim soutenu.
+
+Les quatre ont été trouvés **par la consigne**, donnée à tous les réécrivains, et elle a payé quatre
+fois sur quatre. Le défaut n'est donc pas rare, il était invisible.
+
+**Et le mécanisme est maintenant énoncé exactement** : les locators du pack sont `lead[*]` et les
+paragraphes, **jamais les titres** ; `countWords()` n'additionne pas les titres non plus. Un titre est
+dans un angle mort double — aucun claim ne l'ancre donc le gate ne peut rien lui refuser, aucun compteur
+ne le voit.
+
+### Le `limits` compté dans la borne dure devient une vraie menace, à un tour près
+
+`countWords()` additionne `lead` + paragraphes + **`limits`**, et `controlerBloc(limits, …)` pousse
+`limits` dans les paragraphes que la **borne dure** mesure (`minWords: 1000`, `maxWords: 2100`). Or le
+protocole d'audit écrit que le texte lecteur est `lead` + `sections`, et `readingMinutes()` exclut
+`limits`. Trois définitions du même objet, dont deux se contredisent.
+
+Sur les 136 approfondissements : total annoncé **209 296**, texte lecteur réel **≈ 181 000**, écart
+**13,5 %**. Moyenne annoncée 1 539, moyenne lecteur ≈ 1 330. **Le chiffre de chaque entrée de ce journal
+le porte.** Et 59 cartes sur 136 sont sous la cible de 1 300 en texte lecteur seul, quand la moyenne
+annoncée laisse croire le corpus au-dessus.
+
+Aucune carte ne franchit la borne dure — mais `activite-empechee` est à **94 mots** du plafond avec un
+texte lecteur de 1 554, parce que son `limits` est passé de 249 à 452 mots en trois tours pendant que
+son texte lecteur perdait 8 mots. Le mécanisme est auto-aggravant : **un audit qui fait bien son travail
+fait grossir `limits`**, et `limits` compte. La première carte à franchir le plafond ne sera pas la plus
+bavarde, ce sera **la mieux instruite**.
+
+Effet déjà observable : le réécrivain d'`amenagement` a cru dépasser la fourchette visée à « 1 785 » et
+a écrit avoir refusé de « payer l'écart en retirant une des nuances exigées ». Son texte lecteur faisait
+1 590, dans la fourchette. **Le défaut de mesure exerce une pression à la coupe au moment précis où un
+audit demande d'ajouter.** Celui-ci a résisté et l'a dit ; rien ne garantit que le prochain résiste.
+
+### Le chantier O s'est reproduit, en pire, et l'intégrité a été vérifiée
+
+Le 29 septembre, un mapper avait **lu** le dump d'une autre carte. Aujourd'hui un script de travail
+déposé sous `<scratchpad>/build.py` a été **écrasé** par un agent travaillant sur un autre concept :
+écriture croisée, plus grave, le premier agent ayant pu continuer avec un outil qui n'était plus le sien.
+
+L'agent l'a signalé et demandé le contrôle des deux autres cartes. Fait : les 136 fichiers sont du JSON
+valide à `conceptId` cohérent, `deepen --check` passe, et le balayage de termes étrangers sur le lot
+rend deux occurrences **toutes deux fausses** — « Simon » dans « Simonet, Caroly & Clot 2011 », source
+réelle de la carte, et « empêche » comme verbe ordinaire. **La collision n'a touché qu'un script.**
+
+La cause est inchangée : la consigne de préfixer les fichiers de travail vit dans `RESTE-A-FAIRE.md` et
+**dans aucun prompt d'agent**. Je l'ai passée à la main à tous les agents du lot, et les scripts sont
+désormais nommés correctement — mais c'est un contournement, pas une correction. Une règle d'ignore
+couvre leur versionnement (`work/*/*.py|mjs|js|sh`), aucune des 32 cartes déjà traitées n'en versionnant.
+
+### Deux observations mineures, au dossier
+
+**Le normaliseur de citations ne replie pas tous les tirets Unicode.** `unsourcedQuotations()` replie
+U+2013 et U+2014, pas U+2011 ni U+2010 ni U+2212 : une citation exacte écrite avec U+2011 ressort comme
+non sourcée. Rencontré sur deux citations d'`activite-empechee`. **La direction est la bonne** — le
+contrôle sur-signale au lieu de laisser passer, il est fail-closed. C'est du bruit, pas un trou.
+
+**Aucun test n'interdit le rendu de `limits`.** L'invariant tient par construction et par deux
+commentaires de `DeepeningDetail.tsx`. Les tests existants entrent au contraire *dans* `limits`, donc
+aucun ne verrait une régression qui commencerait à l'afficher.
+
+**Et une contradiction interne d'une fiche, consignée non tranchée** : `review.notes[4]`
+d'`amenagement` attribue une recension à Henri Guitton là où `notes[9]` et `sources_ouvertes[2]`
+donnent le même compte rendu, même revue, même pagination, même URL, à Pierre Dieterlen. Aucun claim ne
+nomme le recenseur, l'antériorité de sept ans n'est pas en cause, et `limits` porte l'état exact des
+trois champs pour qu'un passage futur lève le point sur l'image de la page.
+
+### Le mapping décide de ce que le gate peut voir, cinquième et sixième observations
+
+Sur `absorber`, le tour 2 a refusé **quatre phrases que le mapping du tour 1 n'avait pas isolées** :
+elles étaient dans le texte, personne ne les avait découpées, elles étaient invisibles. Sur
+`activite-empechee`, le tour 2 puis le tour 3 ont chacun refusé une phrase que les découpages
+précédents n'avaient pas isolée — dont `C011`, présente depuis l'origine.
+
+> Un `FACTCHECK_PASS` ne se prononce que sur le découpage qui l'a obtenu. **Une phrase qu'un mapping
+> n'isole pas n'est pas une phrase épargnée, c'est une phrase que personne ne contrôle.**
+
+C'est pourquoi les mappings de ce lot ont reçu la consigne de découper tout ce que le texte affirme, et
+non ce dont ils pensaient qu'il tiendrait.
+
+### Une pratique tenue tout au long, et elle a payé
+
+**Les indices des réécrivains n'ont jamais été transmis aux mappers frais.** Deux comptes rendus
+offraient des « points d'attention pour le prochain mapping » nommant les appuis à rattacher ; ils ont
+été retenus, parce qu'un mapping qui reproduit les choix qu'on lui dicte ne vérifie plus rien. Seule la
+consigne générale a été donnée.
+
+**Le mapper d'`activite-empechee` a retrouvé de lui-même** l'appui en question — `$.quotation.locator`,
+seul à porter « dernière phrase de la section ». Et celui d'`amenagement` a **corrigé son réécrivain** :
+le texte porte 11 citations et non 6, et la chaîne verbatim passe par cinq appuis que le compte rendu ne
+listait pas.
+
+### Par quel bout reprendre
+
+1. **Les 22 cartes sans dossier sont à instruire, pas à réécrire.** Aucune réécriture ne crée un appui,
+   et 13 d'entre elles n'ont jamais été auditées : elles buteront sur la même borne. Commencer par
+   `absorber` et `regle-lineaire-de-decision`, qui partagent la même source jamais lue.
+2. **Faire remonter trois consignes de ce journal vers les prompts d'agents**, où elles s'appliqueraient :
+   la minimalité stricte en boucle de correction, le préfixage des fichiers de travail (chantier O), et
+   la lecture de l'appui nommé avant tout remapping.
+3. **Décider du sort de `limits` dans les compteurs.** Le séparer du texte lecteur corrigerait d'un coup
+   le chiffre du journal, la pression à la coupe et la menace de plafond. C'est une modification produit,
+   laissée à décision humaine.
+4. `activite-empechee` garde ses sept corrections au dossier dans `work/…/factcheck-fixes.md` : le
+   prochain passage n'a pas à les retrouver, et il doit d'abord traiter `C011`, qui est un contresens du
+   **texte publié**.
+
 ## Passage d'audit — 2026-09-29
 
 Sixième exécution. **Trois cartes jamais auditées instruites, trois publiées — et le premier passage

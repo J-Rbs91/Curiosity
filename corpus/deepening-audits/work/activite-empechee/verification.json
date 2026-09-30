@@ -1,0 +1,331 @@
+{
+  "concept_id": "activite-empechee",
+  "candidate_sha256": "4cd3f2788d5eeb95170df879e8a62663e1b054828919369c8f1553196a61f00c",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "Illustration de la partie visible du travail, sans attribution à l'auteur : la citation ($.quotation.text) pose l'activité réalisée comme surface observable et la glose ($.definition_de_lauteur) la donne comme ce que « le psychologue du travail peut observer ». Rien n'est augmenté."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "Les quatre exemples correspondent aux items que l'énumération de 2024, reproduite dans $.definition_de_lauteur et citée en $.review.notes[3] (§ 6), range dans le réel : ce qu'on cherche à faire sans y parvenir, ce qu'on aurait voulu ou pu faire, ce qu'on fait sans vouloir le faire. Aucun ajout de portée."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "Les appuis fournis établissent que le réalisé est la surface et que le réel est « beaucoup moins observable » ; un compte rendu de journée est un relevé du réalisé. Le claim porte sur les expériences énumérées en tant que telles, il n'affirme rien du dépôt ni de la fréquence."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "« une bonne partie » reste en deçà de ce qu'autorisent la métaphore volume/surface ($.quotation.text, $.summary) et « Le réel déborde le réalisé » ($.review.notes[3], § 5)."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "L'auteur est nommé par $.authors[0].name et $.attribution.authors[0].name ; $.attribution.note le situe dans l'équipe de psychologie du travail du Cnam. Qu'il nomme ce reste est porté par la glose (« les activités suspendues, contrariées ou empêchées »). Le claim ne dit pas quel nom, à la différence de C011."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "« n'est jamais que la surface » d'un volume ($.quotation.text, $.summary) et « Le réel déborde le réalisé » ($.review.notes[3]) autorisent que le non-réalisé soit la plus grande part ; l'affirmation est bien de l'auteur, la formule citée étant de sa plume."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.quotation.text (validated et dossier) ; millésime et référence par $.quotation.reference et $.sources[0].label (full-text, corroboré) ; relecture du § 29 consignée en $.review.notes[0]."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "Reformulation de la métaphore surface/volume par « partie émergée », sans attribution directe à l'auteur et sans augmentation de portée."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "La glose rapporte que Clot expose, pour la déplacer, la formule habituelle « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire » et que le concept est construit contre elle ; $.review.notes[5] situe le terme concurrent dans la tradition ergonomique. Le claim est hedgé (« On tend à penser ») et n'avance aucune mesure."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "« l'activité réalisée » est le terme de l'auteur ($.quotation.text ; $.review.notes[5] : « les deux termes de l'auteur »), et la glose la donne comme la part observable."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "CONFLICT",
+      "reason": "Les appuis fournis pour ce claim contredisent l'identification du terme de l'auteur au seul « reste » : $.quotation.text et $.summary posent que le réel de l'activité est le volume dont l'activité réalisée est la surface, et $.definition_de_lauteur cite « l'activité réalisée [...] n'a pas le monopole du réel de l'activité » et « le réel de l'activité est aussi ce qui ne se fait pas ». Le réalisé est donc compris dans le réel, et non exclu de lui ; prêter à l'auteur (« il l'appelle ») le nom de ce qui reste hors du visible excède ce que les appuis autorisent — ce que la phrase suivante du texte (C012) dément d'ailleurs elle-même."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "L'emboîtement surface/volume est exactement ce que porte $.quotation.text, repris par $.summary et $.review.notes[5]. Ce claim n'affirme pas la même proposition que C011 : il énonce l'inclusion, que C011 défait."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence de la métaphore d'emboîtement portée par $.quotation.text et la glose ; contrairement à C011, le claim ne redéfinit pas le terme technique de l'auteur, il décrit la continuité entre le fait et le non-fait."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "$.quotation.locator du dossier : « c'est la dernière phrase de la page, et la dernière phrase de la section », § 29 ; $.review.notes[1] confirme la pagination ; la glose dit « la notion arrive tout à la fin »."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "Relevé explicite de $.definition_de_lauteur sur le contenu du texte de 2004 (comédienne de la Comédie-Française et chandelier, facteur titulaire et jeune rouleur), texte lu intégralement selon $.sources_ouvertes[0].citation. Le claim rapporte un contenu constaté, il ne prête aucune phrase à l'auteur."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "La glose dit « Ce qui précède commande cette phrase » ; les passages en cause sont p. 30-31 selon $.sources_ouvertes[0].citation, soit la même page que la citation d'après $.review.notes[1]."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "Segment cité verbatim dans $.definition_de_lauteur ; la formulation non citée (« ne cherche pas l'activité telle qu'elle se donne à voir ») reprend l'énoncé propre de la glose, « L'objet de la clinique de l'activité n'est pas l'activité observable », et n'est pas mise entre guillemets ni prêtée à la plume de l'auteur."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim présent dans $.definition_de_lauteur et localisé p. 31 par $.sources_ouvertes[0].citation ; $.notes[0] et $.reserves[0] rappellent que ce « empêchements » porte sur l'objet de la recherche, ce que le claim respecte."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "La note 2 de 2018 citée par $.sources_ouvertes[2].citation et $.review.notes[3] (« doivent être admises dans l'analyse ») autorise exactement cela."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim de $.definition_de_lauteur, confirmé par $.review.notes[5] (2004, § 30)."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé d'absence borné au texte de 2004, lu intégralement ($.sources_ouvertes[0].citation) ; la glose dit « il n'énumère pas ce que ce volume contient », $.reserves[0] et $.notes[0] le redisent."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "$.attribution_note : l'énumération « se lit dans un texte du même auteur paru vingt ans plus tard » ; $.sources[1].label et .locator (full-text, corroboré) et $.sources_ouvertes[1].citation datent et attribuent le texte de 2024 à Clot seul."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur et $.review.notes[3] (§ 6). Le texte écrit bien « est aussi » et non la variante de reprise « c'est aussi » écartée par $.notes[4] et $.reserves[4]."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "Glose item par item de l'énumération citée ; chaque équivalence suit un membre de la phrase, sans généralisation ni causalité ajoutée."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "La suite de la phrase figure dans $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence directe des deux membres cités (« ce qu'on fait pour ne pas faire ce qui est à faire », « ce qu'on fait sans vouloir le faire ») : ce sont des actions accomplies. Présenté comme une déduction, non comme une phrase de l'auteur."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé hedgé (« pas forcément ») qui suit de C027 et des mêmes membres de l'énumération."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Observation sur la forme de la phrase citée, entièrement lisible dans $.definition_de_lauteur (« est aussi… », « Il faut y ajouter… », « Sans compter… »)."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "Verbatim de $.definition_de_lauteur, qui l'introduit par « Il en tire la règle d'analyse ». Le signal nomme SUP-2812cb300ba840d4 ($.sources_ouvertes[2].citation) sur le seul terme « nette », adjectif évaluatif : coïncidence lexicale, la matière citée est intégralement portée par l'appui cité, pas de mapping incomplet."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "La glose rattache l'empêchement au conflit d'activités possibles concurrentes et cite « chaque minute […] au point de collision » ; $.attribution.note le redit."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur (« il le fait porter par Vygotski »), $.attribution.note et $.attribution_note (« rapporte ailleurs à Vygotski l'idée qui la soutient »), $.review.notes[4] (« renvoi explicite à Vygotski », 2024 § 5)."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur, qui la présente comme portée par Clot au compte de Vygotski — attribution que le texte lecteur respecte en C032."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "Suit du passage cité : « ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision », « Celles qui n'ont pas vaincu […] forment des résidus incontrôlés »."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "« plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force » autorise « d'autant plus agissantes qu'elles ont été refoulées » ; aucune loi quantitative n'est ajoutée au-delà du lien porté par la phrase citée."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur énonce exactement cela (« L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite »). Le texte lecteur le reprend impersonnellement, sans le prêter à la plume de l'auteur : la glose vaut pour ce qu'elle énonce."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "La glose dit « l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise » ; « des manières de faire qui se disputent le même instant » ne dépasse pas le point de collision cité."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé négatif borné à l'énumération, dont aucun membre ne parle de compétence, et appuyé par la glose : l'empêchement est « chez lui un problème de santé et non de performance »."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "Modal (« peut »), et chaque motif reste dans ce que portent les appuis : l'empêchement extérieur que la glose présuppose (« pas seulement extérieur »), les « dépendances de la situation concrète », et l'activité concurrente qui l'emporte au point de collision. Aucune fréquence n'est avancée."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "La généralité est portée par « n'est jamais que la surface » ($.quotation.text, $.summary) et par « Le réel déborde le réalisé. Cela est vrai en général » ($.review.notes[3], § 5)."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "La glose pose que l'empêchement est « un problème de santé et non de performance » et cite l'énoncé de l'auteur reproduit en C042, qui dit sans détour la dégradation de la santé. Le contraste avec la performance n'est pas mis entre guillemets ni présenté comme une phrase de l'auteur."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur, qui l'attribue à l'auteur. La fréquence (« souvent le cas ») est celle de la phrase citée, rapportée comme telle."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "« C'est ce pouvoir d'agir qui… » est cité dans $.definition_de_lauteur ; le terme est bien celui de l'auteur."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur ; « fréquemment » est dans la phrase de l'auteur et reste entre guillemets, le texte lecteur n'en tire aucune fréquence à son compte."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "Repris de « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier », cité dans $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "Paraphrase fidèle de l'impossibilité de trier, sans ajout de portée."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "Le claim n'avance aucune mesure ni aucune fréquence : il dit seulement que l'idée circule sous ce libellé plus court et plus figé. C'est ce que qualifient $.reserves[5] et $.notes[0] (« un libellé de réception »), et $.notes[1]/$.reserves[5] pour « plus figé que ce que l'auteur écrit ». La cartographie rapportée par $.reserves[7], qui se déclare « pas d'une mesure », n'est pas mobilisée pour une ampleur — et le texte n'en avance pas."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[1] et $.reserves[5] : « Clot écrit “les activités suspendues, contrariées ou empêchées”, au pluriel et adjectivé »."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_ouvertes[2].citation et $.review.notes[3] donnent la note 2 de Bonnefond & Clot 2018 (« Cette formulation est pour nous conceptuellement stabilisée ») ; cosignature et locator par $.sources[2].label et .locator (full-text, corroboré)."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.sources_ouvertes[2].citation et $.review.notes[3] ; seule la référence interne « (Clot, 2008) » est laissée hors guillemets, sans altération du sens."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "Reformulation de « plus figé que ce que l'auteur écrit » ($.notes[1], $.reserves[5]) face au pluriel adjectivé ; aucune affirmation d'ampleur."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_ouvertes[3].citation (PDF lu directement) atteste que Simonet, Caroly & Clot 2011 emploie « d'activité empêchée » en le renvoyant à (Clot, 1999), et $.reserves[5] qualifie ce renvoi de « ce livre », antérieur. Le signal nomme SUP-646a0cf1ccea31e7 ($.attribution.note) sur le terme « livres » : coïncidence lexicale, la matière du claim est déjà portée par les appuis cités, pas de mapping incomplet."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé de non-établissement, exactement celui de $.reserves[5] (« Je n'ai pas pu établir où, dans son œuvre, le substantif apparaît pour la première fois ») et de $.notes[1] ; il ne conclut pas d'une absence de trace à une absence de fait. Le signal nomme SUP-646a0cf1ccea31e7 sur le seul mot « plume » : coïncidence lexicale, pas de mapping incomplet."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : le concept est construit contre une manière de définir l'activité « que Clot expose avant de la déplacer », avec renvoi à Leplat et Hoc 1983 ; $.review.notes[5] rattache le terme concurrent à « la tradition ergonomique »."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "Suit des deux termes cités (« ce qui est à faire » / « ce qui se fait ») et de la conclusion de la glose selon laquelle le réel de l'activité est ce que cette formule laisse tomber."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé propre de $.definition_de_lauteur : « Le réel de l'activité est précisément ce que cette dernière formule laisse tomber. » Le claim porte sur ce que le partage tâche/activité omet, il ne redéfinit pas le terme de l'auteur comme le seul reste du visible — d'où un verdict différent de C011, qui n'affirme pas la même proposition."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "$.review.notes[5] : « Clot construit précisément le réel de l'activité contre l'activité réelle de la tradition ergonomique » ; la glose donne l'activité réelle comme « ce qui se fait », c'est-à-dire la surface de $.quotation.text."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources_ouvertes[3].citation, PDF lu directement, cite l'usage opératoire : « Elle ne limite donc pas les possibilités du professionnel observé à ce qu'on lui voit faire », soit ce qu'une observation peut conclure."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "Année, cosignature et lecture directe attestées par $.sources_ouvertes[3].citation, .doi_isbn et .url."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "Citation vérifiée mot pour mot contre $.sources_ouvertes[3].citation."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence hedgée (« pas forcément ») de la phrase citée de 2011 et de la métaphore volume/surface ; aucune attribution primaire n'est suggérée."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "Énoncé de non-établissement conforme à $.reserves[7] (« je n'ai ouvert aucun texte de Dejours et ne peux donc pas documenter la différence […], seulement signaler qu'elle existe et qu'elle est revendiquée »), $.notes[5] et $.reserves[6]. Le claim reprend la revendication sans la fréquence de confusion que la cartographie, qui se déclare « pas d'une mesure », ne peut autoriser."
+    }
+  ]
+}
