@@ -1,0 +1,43 @@
+{
+  "protocol_version": 2,
+  "concept_id": "activite-empechee",
+  "candidate_sha256": "fb234eae55110b076c61c45a92b805317aeddf7707a10497bd58dbd98f6681ac",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 63,
+  "supported": 57,
+  "failed": 6,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C013",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim disent que la phrase termine une page et une section, non le texte : $.quotation.locator (lecture.json) porte « la derniere phrase de la page, et la derniere phrase de la section », et review.notes[1] la situe p. 31 imprimee d'un article pagine p. 23-33 (PDF p. 10 sur 12). La glose dit « arrive tout a la fin », ce qui n'autorise pas « elle le termine » ; du reste, le paragraphe 30 que le texte lecteur cite lui-meme (C018) vient apres elle."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis disent « l'empechement n'est pas seulement exterieur », et l'appui cite porte aussi « des dependances de la situation concrete ... a moins d'en etre empechee » : ils ajoutent le conflit interne aux circonstances, ils ne les excluent pas. Le claim en fait une alternative exclusive (« ne porte pas sur les circonstances du travail mais sur »), ce que les appuis n'autorisent pas — et que C035, juge SUPPORTED, formule correctement en « pas seulement exterieur ... aussi »."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui fourni interdit de trier « entre le reel et le realise » ; le claim substitue a ce couple celui de la « part reussie » et de « l'autre », ce qui ajoute une qualification evaluative que les appuis fournis pour ce claim ne portent pas — et que le texte lecteur vient lui-meme d'ecarter en disant que le reel n'est pas le tiroir des rates (C038). Le realise n'est pas le reussi dans les appuis."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis autorisent que l'observation ne permette pas de conclure a l'identite du travail (« Elle ne limite donc pas les possibilites du professionnel observe a ce qu'on lui voit faire »), non que deux resultats identiques impliquent des travaux differents : le claim convertit une impossibilite de conclure en une difference necessaire (« n'ont donc pas traverse le meme travail »). La seconde moitie, elle, est portee."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "TOO_STRONG",
+      "reason": "reserves[7] ne va pas au-dela de : le libelle « se confond souvent avec la psychodynamique du travail de Christophe Dejours », la difference « existe » et « est revendiquee », et « je n'ai ouvert aucun texte de Dejours et ne peux donc pas documenter la difference ». Les appuis fournis pour ce claim ne caracterisent donc nulle part la psychodynamique du travail comme « une autre approche de la souffrance au travail », et ne nomment pas qui revendique la difference : l'attribuer a l'auteur ajoute un agent que ces appuis ne portent pas."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "CONFLICT",
+      "reason": "Les trois appuis fournis pour ce claim enoncent le contraire de ce qu'il presuppose : aucun texte de Dejours n'a ete ouvert, les revues Le Travail Humain et Travailler ou se trouvent les textes decisifs de Clot sont en HTTP 403 (Cairn), « cette perte est structurelle pour ce domaine ... elle n'est pas levee ici », et « la difference revendiquee avec la psychodynamique du travail n'est pas documentee ici ». Le claim renvoie le lecteur a une lecture « dans les textes de part et d'autre » que les appuis declarent impossible en l'etat."
+    }
+  ]
+}
