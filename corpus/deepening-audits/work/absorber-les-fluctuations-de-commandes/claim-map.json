@@ -1,0 +1,798 @@
+{
+  "concept_id": "absorber-les-fluctuations-de-commandes",
+  "candidate_sha256": "1dc7016d477aedc5c71f05f9338d6eb862aa8d77fa4512e7c4ec7d64f5501588",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 0,
+      "end": 136,
+      "claim_text": "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares.",
+      "normalized_claim": "Les commandes d'un atelier varient fortement d'un mois a l'autre.",
+      "support_ids": [
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 137,
+      "end": 221,
+      "claim_text": "Personne, à l’intérieur, n’a le moyen de demander aux clients d’étaler leurs achats.",
+      "normalized_claim": "La fluctuation ne peut pas etre supprimee de l'interieur de l'atelier.",
+      "support_ids": [
+        "SUP-bbbd302ca2eb0391"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 222,
+      "end": 346,
+      "claim_text": "Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes.",
+      "normalized_claim": "Le probleme de decision tient en deux grandeurs : cadence de production et effectif.",
+      "support_ids": [
+        "SUP-588882811ef38628",
+        "SUP-27f8b469a43c0ba9"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[0]",
+      "start": 347,
+      "end": 383,
+      "claim_text": "Rien n’oblige à les choisir ensemble",
+      "normalized_claim": "Rien n'impose de decider conjointement cadence et effectif.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[0]",
+      "start": 388,
+      "end": 454,
+      "claim_text": "c’est pourtant la même variation qu’ils ont tous deux à encaisser.",
+      "normalized_claim": "Les deux grandeurs ont a absorber la meme variation de commandes.",
+      "support_ids": [
+        "SUP-588882811ef38628",
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 214,
+      "claim_text": "En mai 1955, trois chercheurs de la Graduate School of Industrial Administration du Carnegie Institute of Technology, Charles C. Holt, Franco Modigliani et Herbert A. Simon, font paraître un mémorandum de recherche",
+      "normalized_claim": "Datation, institution, auteurs et nature de la piece.",
+      "support_ids": [
+        "SUP-520aa152c328d13e",
+        "SUP-acee35c055fa7236",
+        "SUP-27f8b469a43c0ba9",
+        "SUP-6bc16595dace4c82"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 240,
+      "end": 339,
+      "claim_text": "son chapitre II pose en un seul énoncé le problème de décision, programmer la cadence et l’effectif",
+      "normalized_claim": "Le chapitre II pose le probleme de decision comme un seul enonce portant sur la cadence et l'effectif.",
+      "support_ids": [
+        "SUP-588882811ef38628"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 341,
+      "end": 515,
+      "claim_text": "Le titre annonce déjà la forme de la réponse, « A Linear Decision Rule for Production and Employment Scheduling » : ce sera une règle de décision, et elle sera dite linéaire.",
+      "normalized_claim": "Verbatim du titre du memorandum.",
+      "support_ids": [
+        "SUP-520aa152c328d13e",
+        "SUP-27f8b469a43c0ba9"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "lead[1]",
+      "start": 516,
+      "end": 656,
+      "claim_text": "Une note de la page de titre partage le travail, « This paper was written by Mr. Holt, but it rests on research done by all three authors. »",
+      "normalized_claim": "Verbatim de la note de bas de page de titre.",
+      "support_ids": [
+        "SUP-520aa152c328d13e",
+        "SUP-872e368ec68dafec"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "lead[1]",
+      "start": 661,
+      "end": 734,
+      "claim_text": "rattache la recherche à un projet financé par l’Office of Naval Research.",
+      "normalized_claim": "La note rattache la recherche a un projet finance par l'ONR.",
+      "support_ids": [
+        "SUP-872e368ec68dafec"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 145,
+      "claim_text": "À la page 5, le rapport pose sa question en ces termes : « orders (or more precisely, ordered shipments) are subject to substantial fluctuation »",
+      "normalized_claim": "Verbatim de la question posee p. 5.",
+      "support_ids": [
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 150,
+      "end": 231,
+      "claim_text": "la question devient de savoir comment ces fluctuations doivent être « absorbées »",
+      "normalized_claim": "La question du rapport est celle de l'absorption des fluctuations.",
+      "support_ids": [
+        "SUP-a73871381f6e830f",
+        "SUP-8b3acbbe906319e1"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 233,
+      "end": 378,
+      "claim_text": "Ce qui varie n’est donc pas exactement le carnet de commandes, mais les expéditions commandées : ce qui doit sortir de l’usine, et à quelle date.",
+      "normalized_claim": "Ce qui fluctue est les expeditions commandees, non le carnet.",
+      "support_ids": [
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 379,
+      "end": 421,
+      "claim_text": "Et le verbe retenu n’est pas « supprimer »",
+      "normalized_claim": "Le verbe du rapport est 'absorber', pas 'supprimer'.",
+      "support_ids": [
+        "SUP-a73871381f6e830f",
+        "SUP-bbbd302ca2eb0391"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 424,
+      "end": 527,
+      "claim_text": "l’écart entre ce qui est demandé et ce que l’atelier produit ne disparaît pas, il se loge quelque part.",
+      "normalized_claim": "L'ecart ne disparait pas, il est absorbe quelque part.",
+      "support_ids": [
+        "SUP-a73871381f6e830f",
+        "SUP-2e47c0d038685c24"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 95,
+      "claim_text": "Le rapport examine trois manières de le loger, chacune comme une voie pure poussée à son terme.",
+      "normalized_claim": "Le rapport examine trois alternatives pures.",
+      "support_ids": [
+        "SUP-1199b040005151f8",
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 96,
+      "end": 284,
+      "claim_text": "Un atelier peut produire à cadence constante, quoi qu’il arrive, et laisser le stock encaisser la différence : on fabrique d’avance pour la pointe, on vide les entrepôts quand elle arrive.",
+      "normalized_claim": "Voie pure du stock.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 285,
+      "end": 416,
+      "claim_text": "Il peut au contraire garder le même personnel et allonger les journées quand les commandes montent, par des heures supplémentaires.",
+      "normalized_claim": "Voie pure des heures supplementaires.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-6a639d9a0f5f4455"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 417,
+      "end": 519,
+      "claim_text": "Il peut enfin caler l’effectif sur les commandes, en embauchant puis en licenciant au fil des saisons.",
+      "normalized_claim": "Voie pure de l'embauche et du licenciement.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-6a639d9a0f5f4455"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 32,
+      "claim_text": "Aucune des trois n’est gratuite.",
+      "normalized_claim": "Chacune des trois voies a un cout.",
+      "support_ids": [
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 33,
+      "end": 233,
+      "claim_text": "De la page 5 à la page 7, le rapport détaille les coûts propres à chacune de ces alternatives pures, dans une section dont le titre dit l’objet : « The Costs of Responding to Fluctuations in Orders ».",
+      "normalized_claim": "Pagination de la section des couts et verbatim de son titre.",
+      "support_ids": [
+        "SUP-a73871381f6e830f",
+        "SUP-588882811ef38628"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 291,
+      "end": 387,
+      "claim_text": "ni anomalies ni gaspillage, ils sont le tarif de trois manières de répondre à la même variation.",
+      "normalized_claim": "Ces couts sont le tarif de trois manieres de repondre.",
+      "support_ids": [
+        "SUP-a73871381f6e830f",
+        "SUP-3fd9a19957353c22"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 496,
+      "end": 565,
+      "claim_text": "la variation n’en diminue pas, elle passe aux heures ou à l’embauche.",
+      "normalized_claim": "Refuser un canal deplace la variation vers les autres.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-1199b040005151f8"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 198,
+      "claim_text": "À la page 8, au terme de cet inventaire, les auteurs écrivent : « In general, none of the pure alternatives discussed above will prove best, but rather some carefully weighted combination of them. »",
+      "normalized_claim": "Verbatim de la premiere phrase de la p. 8.",
+      "support_ids": [
+        "SUP-1199b040005151f8",
+        "SUP-c429598c62b93d9e",
+        "SUP-06b7ef4956e12797"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 199,
+      "end": 296,
+      "claim_text": "Aucune voie pure ne se révélera la meilleure, mais plutôt une combinaison soigneusement pondérée.",
+      "normalized_claim": "Traduction de la phrase sur les voies pures.",
+      "support_ids": [
+        "SUP-1199b040005151f8",
+        "SUP-9f61da4264495607",
+        "SUP-076c4eafc266a870"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 351,
+      "end": 515,
+      "claim_text": "une fluctuation de commandes doit être absorbée pour partie par le stock, pour partie par les heures supplémentaires, pour partie par l’embauche et le licenciement.",
+      "normalized_claim": "Tripartition prescrite : stock, heures, embauche/licenciement.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-8b3acbbe906319e1",
+        "SUP-1199b040005151f8",
+        "SUP-06b7ef4956e12797"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 48,
+      "end": 165,
+      "claim_text": "Son verbe est « should », celui du conseil : c’est une règle d’action, non le compte rendu de ce que font les usines.",
+      "normalized_claim": "Le verbe est 'should' : enonce normatif, non descriptif.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-4c8b2543ffd5bc92",
+        "SUP-076c4eafc266a870"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 166,
+      "end": 245,
+      "claim_text": "Et elle est tenue par un « in general » qui l’empêche de se lire comme une loi.",
+      "normalized_claim": "La clause 'in general' empeche la lecture en loi.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-076c4eafc266a870",
+        "SUP-4c8b2543ffd5bc92"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 281,
+      "end": 392,
+      "claim_text": "une règle d’action peut être suivie ou non ; un constat, lui, serait démenti dès qu’une usine ferait autrement.",
+      "normalized_claim": "Difference logique entre regle d'action et constat.",
+      "support_ids": [
+        "SUP-4c8b2543ffd5bc92",
+        "SUP-076c4eafc266a870"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 60,
+      "claim_text": "À cet endroit, la recommandation n’est pas encore démontrée.",
+      "normalized_claim": "A la p. 8 la prescription n'est pas encore demontree.",
+      "support_ids": [
+        "SUP-4c8b2543ffd5bc92"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 61,
+      "end": 90,
+      "claim_text": "Elle clôt un examen des coûts",
+      "normalized_claim": "La phrase clot la section des couts.",
+      "support_ids": [
+        "SUP-588882811ef38628"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 95,
+      "end": 319,
+      "claim_text": "ce qui la justifie vient après : les auteurs construisent une fonction de coût, une formule qui met un prix sur chaque combinaison possible de stock, d’heures et d’effectif, puis cherchent celle qui rend ce prix le plus bas.",
+      "normalized_claim": "La justification est une fonction de cout minimisee.",
+      "support_ids": [
+        "SUP-4c8b2543ffd5bc92",
+        "SUP-093604669e3d8286"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 320,
+      "end": 390,
+      "claim_text": "La phrase de la page 8 annonce ce que la suite a pour tâche d’établir.",
+      "normalized_claim": "La p. 8 annonce ce que la suite etablit.",
+      "support_ids": [
+        "SUP-4c8b2543ffd5bc92"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 46,
+      "claim_text": "La phrase ne s’arrête pas à cette énumération.",
+      "normalized_claim": "La phrase de la p. 8 continue apres l'enumeration.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-b6229767d8a29bc7"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 47,
+      "end": 211,
+      "claim_text": "Elle se termine par une clause qui compte autant que le reste : « and the best allocation among these parts will depend upon the costs in each particular factory ».",
+      "normalized_claim": "Verbatim de la clause finale.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-1199b040005151f8",
+        "SUP-b6229767d8a29bc7"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 212,
+      "end": 290,
+      "claim_text": "Le meilleur partage entre ces parts dépendra des coûts propres à chaque usine.",
+      "normalized_claim": "Traduction de la clause de dependance aux couts.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-9f61da4264495607"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 291,
+      "end": 451,
+      "claim_text": "Il n’existe donc pas de bon dosage en général, valable pour l’industrie : il se calcule sur les prix que chaque usine constate chez elle, et il change avec eux.",
+      "normalized_claim": "Pas de dosage general : il se calcule sur les couts locaux.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-9f61da4264495607",
+        "SUP-a73871381f6e830f"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 175,
+      "end": 312,
+      "claim_text": "La même pointe de commandes n’ira pas se loger au même endroit : le premier fabriquera d’avance et embauchera, le second fera des heures.",
+      "normalized_claim": "Consequence, dans l'exemple hypothetique, de la dependance aux couts.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-1199b040005151f8"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 313,
+      "end": 351,
+      "claim_text": "Ni l’un ni l’autre n’aura mal calculé.",
+      "normalized_claim": "Deux dosages opposes peuvent etre tous deux corrects.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 352,
+      "end": 500,
+      "claim_text": "C’est ce que veut dire une règle dont la réponse dépend des coûts : elle ne désigne pas un dosage, elle désigne les prix à regarder pour le trouver.",
+      "normalized_claim": "La regle designe les prix a regarder, non un dosage.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-9f61da4264495607"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 80,
+      "claim_text": "Le chapitre où cette phrase figure ajoute une seconde dépendance, moins visible.",
+      "normalized_claim": "Le chapitre ajoute une seconde dependance.",
+      "support_ids": [
+        "SUP-b6229767d8a29bc7"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 81,
+      "end": 241,
+      "claim_text": "Le bon dosage tient aussi à la fréquence et à la sévérité des fluctuations : une pointe rare et modérée ne se traite pas comme une oscillation forte et répétée.",
+      "normalized_claim": "Le dosage depend aussi de la frequence et de la severite des fluctuations.",
+      "support_ids": [
+        "SUP-b6229767d8a29bc7"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 242,
+      "end": 416,
+      "claim_text": "Le partage ne se fixe donc pas une fois pour toutes, y compris dans une seule usine : ce qui convenait une année peut cesser de convenir quand le régime des commandes change.",
+      "normalized_claim": "Le partage ne se fixe pas une fois pour toutes, meme dans une seule usine.",
+      "support_ids": [
+        "SUP-b6229767d8a29bc7"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 417,
+      "end": 561,
+      "claim_text": "C’est aussi ce qui sépare une règle d’une recette : elle ne dit pas combien mettre dans chaque case, mais de quelles grandeurs le compte dépend.",
+      "normalized_claim": "La regle enonce de quelles grandeurs le dosage depend.",
+      "support_ids": [
+        "SUP-b6229767d8a29bc7",
+        "SUP-2e47c0d038685c24"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 61,
+      "end": 105,
+      "claim_text": "Elle ferme la section des coûts, à la page 8",
+      "normalized_claim": "La recommandation ferme la section des couts, p. 8.",
+      "support_ids": [
+        "SUP-588882811ef38628",
+        "SUP-c429598c62b93d9e"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 110,
+      "end": 255,
+      "claim_text": "celle qui commence aussitôt après, au bas de cette même page, porte sur les erreurs de prévision des commandes : « Errors in Forecasting Orders »",
+      "normalized_claim": "La section suivante porte sur les erreurs de prevision, verbatim du titre.",
+      "support_ids": [
+        "SUP-588882811ef38628"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 257,
+      "end": 412,
+      "claim_text": "Le chapitre se referme à la page 9 sur la séquence temporelle des décisions, « The Time Sequence of Decisions », et le chapitre suivant ouvre à la page 10.",
+      "normalized_claim": "Verbatim et pagination de la derniere section du chapitre II et debut du chapitre III.",
+      "support_ids": [
+        "SUP-588882811ef38628"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 413,
+      "end": 516,
+      "claim_text": "La prévision n’arrive donc pas comme une objection tardive : elle vient immédiatement après le conseil.",
+      "normalized_claim": "La prevision vient immediatement apres la recommandation.",
+      "support_ids": [
+        "SUP-588882811ef38628"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 85,
+      "end": 339,
+      "claim_text": "Répartir une fluctuation suppose de savoir qu’elle vient : fabriquer d’avance pour une pointe ou embaucher avant une montée, ce sont des décisions prises sur des commandes anticipées, donc sur des nombres dont on sait qu’ils seront faux de quelque chose.",
+      "normalized_claim": "Repartir suppose des commandes anticipees, donc des previsions erronees.",
+      "support_ids": [
+        "SUP-588882811ef38628",
+        "SUP-2e47c0d038685c24"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 340,
+      "end": 467,
+      "claim_text": "Et si les décisions se prennent en séquence, le dosage n’est pas arrêté une fois pour l’année : il se reprend à chaque période.",
+      "normalized_claim": "Les decisions en sequence impliquent une reprise periodique du dosage.",
+      "support_ids": [
+        "SUP-588882811ef38628",
+        "SUP-b6229767d8a29bc7"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 42,
+      "end": 158,
+      "claim_text": "Tout son chiffrage porte sur une usine réelle, un fabricant de peinture qui n’est pas nommé, observé de 1949 à 1954.",
+      "normalized_claim": "Le chiffrage porte sur un fabricant de peinture non nomme, 1949-1954.",
+      "support_ids": [
+        "SUP-bb98d30aac2161c9"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 159,
+      "end": 287,
+      "claim_text": "C’est de là que viennent les nombres, et c’est un seul cas : une industrie, un carnet de commandes, une organisation du travail.",
+      "normalized_claim": "Les nombres viennent d'un seul cas.",
+      "support_ids": [
+        "SUP-bb98d30aac2161c9"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 288,
+      "end": 399,
+      "claim_text": "La dépendance aux coûts locaux était une propriété de la règle ; ce qui se joue ici est l’étendue de sa preuve.",
+      "normalized_claim": "Distinction entre propriete de la regle et etendue de la preuve.",
+      "support_ids": [
+        "SUP-2e47c0d038685c24",
+        "SUP-bb98d30aac2161c9"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 57,
+      "claim_text": "Les auteurs sont eux-mêmes prudents sur ce qu’on en tire.",
+      "normalized_claim": "Les auteurs limitent eux-memes la generalisation.",
+      "support_ids": [
+        "SUP-bb98d30aac2161c9"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 58,
+      "end": 245,
+      "claim_text": "À la page 40, ils écrivent qu’il serait « rash of the authors to generalize these conclusions to industry generally », imprudent de leur part de généraliser ces conclusions à l’industrie.",
+      "normalized_claim": "Verbatim de la reserve de la p. 40.",
+      "support_ids": [
+        "SUP-bb98d30aac2161c9"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 246,
+      "end": 481,
+      "claim_text": "Ce qui voyage au-delà de cette usine n’est donc pas le dosage trouvé pour elle, mais la manière de poser le problème : trois voies ouvertes ensemble, des coûts locaux à connaître, un partage à calculer plutôt qu’une doctrine à choisir.",
+      "normalized_claim": "Ce qui se generalise est la maniere de poser le probleme.",
+      "support_ids": [
+        "SUP-bb98d30aac2161c9",
+        "SUP-2e47c0d038685c24",
+        "SUP-9f61da4264495607"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 147,
+      "claim_text": "Le titre du mémorandum annonce une règle de décision, et la page 8 n’en donne que la forme : absorber en partie ici, en partie là, selon les coûts.",
+      "normalized_claim": "Le titre annonce une regle ; la p. 8 n'en donne que la forme.",
+      "support_ids": [
+        "SUP-27f8b469a43c0ba9",
+        "SUP-2e47c0d038685c24",
+        "SUP-4c8b2543ffd5bc92"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 148,
+      "end": 389,
+      "claim_text": "Le calcul qui produit le partage est renvoyé plus loin, et la table des matières l’annonce au folio 43 sous un titre sans ambiguïté : « APPENDIX: Derivation of the Conditions for Minimum Costs », la dérivation des conditions du coût minimum.",
+      "normalized_claim": "Verbatim du titre d'appendice annonce au folio 43 par la table des matieres.",
+      "support_ids": [
+        "SUP-093604669e3d8286",
+        "SUP-bd2dcffa29909484",
+        "SUP-84268dbb28c3f375"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 390,
+      "end": 466,
+      "claim_text": "Ce sont ces pages qui démontrent ce que la page 8 se contente de recommander",
+      "normalized_claim": "L'appendice porte la demonstration que la p. 8 recommande.",
+      "support_ids": [
+        "SUP-4c8b2543ffd5bc92",
+        "SUP-093604669e3d8286"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 471,
+      "end": 566,
+      "claim_text": "c’est là qu’il faudra aller voir pourquoi une combinaison pondérée vaut mieux qu’une voie pure.",
+      "normalized_claim": "La superiorite de la combinaison ponderee est etablie dans l'appendice.",
+      "support_ids": [
+        "SUP-1199b040005151f8",
+        "SUP-4c8b2543ffd5bc92"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 32,
+      "end": 159,
+      "claim_text": "un article de même titre a paru en octobre 1955 dans Management Science, sous les trois mêmes noms, sur une trentaine de pages.",
+      "normalized_claim": "Reference de l'article Management Science d'octobre 1955.",
+      "support_ids": [
+        "SUP-9e037b0db689681f",
+        "SUP-21aec336eb1a51f7",
+        "SUP-5c21a5a15dafa231"
+      ]
+    }
+  ]
+}
