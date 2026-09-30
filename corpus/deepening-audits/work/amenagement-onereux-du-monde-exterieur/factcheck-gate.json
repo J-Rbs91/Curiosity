@@ -2,30 +2,27 @@
   "protocol_version": 2,
   "concept_id": "amenagement-onereux-du-monde-exterieur",
   "candidate_sha256": "d8b11544e367d3a55a0868ec78168ba4c7b3ce5e8c791838f694172327e6e903",
-  "verdict": "FACTCHECK_INVALID",
-  "claims": 74,
-  "supported": 71,
-  "failed": 2,
-  "mapping_incomplete": [
-    {
-      "claim_id": "C005",
-      "verdict": "MAPPING_INCOMPLETE",
-      "reason": "Les deux appuis fournis pour ce claim ne portent ni le regret ni la justification apres coup, et le signal nomme un appui non cite dont le terme partage est precisement << justifie >> : SUP-42969029c34cdb55, origine validated, chemin $.notes[10]. Il est probable que l'enumeration devait etre rattachee aussi a cet appui ; le claim retourne au mapping sans se prononcer sur sa verite."
-    }
-  ],
-  "structural_errors": [
-    "C005: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
-  ],
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 72,
+  "supported": 69,
+  "failed": 3,
+  "mapping_incomplete": [],
+  "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C053",
+      "claim_id": "C008",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim n'ecrivent que << P.L. Reynaud >>, identifie comme l'economiste, et signalent meme une homonymie a menager avec le sociologue J.D. Reynaud ; ils n'etablissent pas le prenom << Pierre-Louis >>. L'adresse bibliographique - La Psychologie Economique, Marcel Riviere, 1954, collection de bilans - est en revanche portee telle quelle."
+      "reason": "Les appuis fournis etablissent que le qualificatif oneureux recoit un commentaire developpe en trois problemes (page 12), mais aucun ne compare l'ampleur des commentaires : definition_de_lauteur developpe le mot amenagement en trois notions d'une ampleur comparable. Le superlatif « le commentaire le plus fourni » excede donc ce que ces appuis autorisent."
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C051",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis n'etablissent ce critere que comme le raisonnement d'Albou - il reconnait l'anteriorite de publication de Reynaud tout en lui deniant d'avoir defini la discipline - et precisent que la querelle est documentee du seul cote d'Albou, non tranchee, la position de Reynaud n'ayant pas ete ouverte. Enoncee sans attribution comme regle generale (<< ne fonde donc pas une discipline >>), la proposition passe d'un verdict situe a une loi, et endosse le critere par lequel Albou ecarte un ouvrage que le dossier dit n'avoir pas lu. Le signal (SUP-6537817c0d926de7) ne partage que << fonde >>, au sens du calcul qui fonde la decision, et n'autoriserait pas davantage cette generalisation : le defaut est dans la formulation, non dans le rattachement."
+      "reason": "Les appuis fournis (notes[16] ; reserves[9]) etablissent l'ouvrage, l'editeur Marcel Riviere, l'annee 1954 et la collection de bilans, mais ils n'ecrivent jamais que « P.L. Reynaud » : le prenom developpe « Pierre-Louis » est une precision d'identite que ces appuis ne portent pas, alors que notes[16] signale precisement un risque d'homonymie entre P.L. et J.D. Reynaud."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (notes[16] ; reserves[9]) etablissent la position situee d'Albou en 1962 : il reconnait l'anteriorite de publication de Reynaud, lui denie d'avoir defini la discipline et lui reproche le point de vue de l'economiste. Le claim erige cette position polemique en regle generale enoncee dans la voix de la carte, alors que le claim precedent rappelle que la position de Reynaud n'a pas ete ouverte : passage de l'observation situee a la loi generale."
     }
   ]
 }

@@ -5,372 +5,362 @@
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "L'illustration instancie l'operateur onereux sans rien attribuer de plus a l'auteur : les appuis fournis portent l'eau potable comme exemple d'un bien devenu valeur par rarete, la transformation economique du monde comme consequence des actions de l'homme, les donnees techniques de cette transformation, et le probleme du cout."
+      "reason": "Les appuis fournis (definition_de_lauteur ; review.notes[6]) etablissent qu'Albou tient l'amenagement du monde exterieur pour oneureux, avec la raretede l'eau potable pour exemple propre : la phrase instancie cette proposition attestee sans rien attribuer a l'auteur ni durcir sa portee."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent le probleme du choix - les moyens etant rares, il faut hierarchiser et sacrifier - et la relation aux moyens rares a usages alternatifs de Robbins ; << une part qui n'ira pas ailleurs >> n'excede pas cela."
+      "reason": "Instanciation exacte des trois problemes que les appuis portent : moyens rares, hierarchisation des objectifs, appauvrissement par elimination de ce qui n'est pas choisi. Aucune attribution ni causalite ajoutee."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation du qualificatif onereux tel que les appuis le portent : la realisation des objectifs est loin d'etre aisee, equilibre des fins et des moyens par rarete, choix et cout, et evaluation de l'importance relative des renonciations. Aucune attribution ajoutee."
+      "reason": "Les appuis portent l'amenagement comme consequence des actions de l'homme, le qualificatif oneureux comme ce qui rappelle que la realisation des objectifs est loin d'etre aisee, et le cout comme evaluation des renonciations. La generalite de la phrase reste celle de la definition d'Albou."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent la citation - les problemes humains naissent a l'occasion de l'amenagement onereux - et le fait que la discipline ne s'interesse pas aux donnees techniques : << traces qui ne sont pas comptables >> reste a ce niveau."
+      "reason": "quotation.text pose que les problemes humains naissent a l'occasion de l'amenagement oneureux, et definition_de_lauteur que ces problemes humains sont des problemes sociaux, distincts des donnees techniques : la phrase n'en dit pas plus."
     },
     {
       "claim_id": "C005",
-      "verdict": "MAPPING_INCOMPLETE",
-      "reason": "Les deux appuis fournis pour ce claim ne portent ni le regret ni la justification apres coup, et le signal nomme un appui non cite dont le terme partage est precisement << justifie >> : SUP-42969029c34cdb55, origine validated, chemin $.notes[10]. Il est probable que l'enumeration devait etre rattachee aussi a cet appui ; le claim retourne au mapping sans se prononcer sur sa verite."
+      "verdict": "SUPPORTED",
+      "reason": "Les deux appuis fournis autorisent chaque terme de l'enumeration : le probleme du choix (hierarchiser, sacrifier, appauvrissement par elimination), le cout, et le caractere social des problemes humains nes a l'occasion de l'amenagement oneureux. L'appui signale ($.notes[10]) n'est pas requis : la matiere du claim est dans les appuis fournis."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Metadonnees etablies : Albou, Bulletin de psychologie, tome XVI, n 211, 1962 (source declaree full-text, corroboree par le dossier) et resolution Crossref concordante."
+      "reason": "Annee, revue et pagination sont portees par quotation.reference, sources[0].label et review.notes[5] ; l'objet de la discipline vient de l'intitule imprime releve par review.notes[0] et notes[18], ELLE ECLAIRE L'OBJET MEME DE LA PSYCHOLOGIE ECONOMIQUE."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent l'intitule imprime sous lequel la citation se lit, ELLE ECLAIRE L'OBJET MEME DE LA PSYCHOLOGIE ECONOMIQUE, et le resume qui donne ces problemes pour l'objet de la discipline."
+      "reason": "Citation verbatim : review.notes[0] atteste la lecture mot pour mot sur l'image de la page 11, et quotation.text donne la meme chaine, locators concordants."
     },
     {
       "claim_id": "C008",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim : le meme texte figure en quotation.text et est relu mot pour mot sur l'image de la page 11, colonne de droite, sans coupe ni retouche."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis etablissent que le qualificatif oneureux recoit un commentaire developpe en trois problemes (page 12), mais aucun ne compare l'ampleur des commentaires : definition_de_lauteur developpe le mot amenagement en trois notions d'une ampleur comparable. Le superlatif « le commentaire le plus fourni » excede donc ce que ces appuis autorisent."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Emphase editoriale que les appuis fournis autorisent : le titre de la carte et l'accroche placent l'amenagement onereux du monde exterieur au centre, et la note des mots porteurs designe ce syntagme comme la matiere de la phrase. Aucune assertion sur l'origine de la formule."
+      "reason": "review.notes[6] cite verbatim la page 12 d'Albou, « Le qualificatif « onéreux » rappelle que la realisation des objectifs que l'homme poursuit en tant qu'agent economique est loin d'etre aisee »."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis restituent le commentaire terme a terme des pages 11-12 (source full-text corroboree) et le commentaire du qualificatif onereux y est le plus developpe : trois problemes, avec Robbins, Spinoza et le calcul economique. Comparaison lisible sur les appuis, sans ajout de portee."
+      "reason": "Glose negative qui suit les appuis : oneureux y renvoie a l'equilibre des fins et des moyens par rarete, choix et cout, et non a un prix affiche."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la page 12 rapportee par l'appui de revue, sur une source full-text corroboree pour p. 11-12."
+      "reason": "Citation et enumeration verbatim de review.notes[6], confirmees par notes[18]."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Glose negative conforme aux appuis fournis : onereux renvoie a l'equilibre des fins et des moyens et au probleme du cout comme evaluation des renonciations, non a un prix affiche."
+      "reason": "definition_de_lauteur adosse la rarete a la definition de Robbins ; notes[7], reserves[0] et notes[0] situent la citation de Robbins en note page 12, la page commentee."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la page 12 et enumeration des trois problemes - rarete, choix, cout - telle que les appuis la portent."
+      "reason": "definition_de_lauteur nomme les exemples de l'eau potable et de l'air pur devenus des valeurs, notes[17] les reprend."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis disent qu'Albou adosse la rarete a la definition de Robbins et que la page 12 ne renvoie qu'a Robbins, Spinoza et Sartre, Robbins etant cite en note a cette page."
+      "reason": "Suit la definition de Robbins portee par l'appui (relation entre fins et moyens rares) et l'exemple de l'air pur devenu une valeur ; formule dans la voix de la carte, sans attribution primaire."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis nomment les exemples de l'eau potable et de l'air pur devenus des valeurs dans le commentaire de la rarete."
+      "reason": "Modalise par « peut » et autorise par l'exemple de l'air pur devenu une valeur, porte par les deux appuis."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Suit des appuis fournis : la rarete y est un rapport entre les fins et les moyens rares a usages alternatifs, et l'air pur y est dit << devenu >> une valeur, donc non porteur d'une propriete intrinseque."
+      "reason": "Reprise quasi litterale de definition_de_lauteur sur le probleme du choix."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Formulation modale prudente, autorisee par l'exemple de l'air pur devenu une valeur que les appuis fournis portent."
+      "reason": "definition_de_lauteur : « tout choix suppose un appauvrissement par elimination de ce qui n'est pas choisi »."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim de l'appui : les moyens etant rares, il faut hierarchiser les objectifs, en sacrifier certains."
+      "reason": "definition_de_lauteur et notes[17] portent le renvoi en note au determinatio negatio de Spinoza ; notes[7] confirme que la page 12 renvoie a Spinoza."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent << tout choix suppose un appauvrissement par elimination de ce qui n'est pas choisi >> ; rapporter cet appauvrissement a celui qui choisit reste au niveau de l'appui, qui fait deja de l'agent celui qui sacrifie."
+      "reason": "Reprise litterale du probleme du cout dans definition_de_lauteur, y compris « calcul qui fonde la decision »."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis disent qu'Albou renvoie en note au determinatio negatio de Spinoza, et que la page 12 renvoie a Spinoza."
+      "reason": "definition_de_lauteur : « les problemes de decision etant selon lui parmi les plus importants qu'etudie la discipline ». Attribution correctement marquee."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Reprise fidele du probleme du cout tel que l'appui le formule : evaluer l'importance relative des renonciations, calcul economique reposant sur des hypotheses, calcul qui fonde la decision."
+      "reason": "definition_de_lauteur : « L'operateur oneureux n'est pas un ornement local », etabli par le reemploi pages 67 et 72."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Attribution correctement marquee (<< selon Albou >>) et conforme a l'appui : les problemes de decision sont selon lui parmi les plus importants qu'etudie la discipline."
+      "reason": "definition_de_lauteur et notes[17] portent le reemploi page 67 pour la psychologie de la vente comme etude des relations qui s'instituent a l'occasion d'un echange oneureux."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "L'appui fourni dit exactement que l'operateur onereux n'est pas un ornement, et l'etablit par ses reemplois."
+      "reason": "definition_de_lauteur et notes[17] portent « psychologie de l'echange oneureux » page 72."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent le reemploi page 67 pour la psychologie de la vente comme etude des relations qui s'instituent a l'occasion d'un echange onereux."
+      "reason": "Consequence directe des appuis : le meme qualificatif figure dans la definition generale (quotation.text) et delimite la psychologie de la vente page 67."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent la mention, page 72, de la psychologie de l'echange onereux."
+      "reason": "definition_de_lauteur : « Le mot amenagement introduit ensuite trois idees distinctes »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Suit des appuis fournis : le meme operateur figure dans la definition de la discipline (p. 11) et dans la delimitation de la psychologie de la vente (p. 67)."
+      "reason": "definition_de_lauteur : notion d'activite, la transformation economique du monde etant la consequence des actions de l'homme."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de l'appui : le mot amenagement introduit trois idees distinctes."
+      "reason": "definition_de_lauteur rattache la praxis de Marx a la seule notion d'activite ; la restriction du claim suit cet appui, notes[17] la confirme."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de l'appui : notion d'activite, la transformation economique du monde etant la consequence des actions de l'homme."
+      "reason": "definition_de_lauteur : « La notion d'activite, individuelle ou sociale » ; notes[18] la reprend. « personne » / « groupe » glose individuelle / sociale sans ajout."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis rattachent le rapprochement avec la praxis de Marx a la seule notion d'activite ; la restriction du claim ne fait qu'expliciter ce perimetre, sans en faire une these d'Albou sur l'economie."
+      "reason": "Reprise litterale de la notion de modele d'action dans definition_de_lauteur ; « manieres de faire reconnaissables » glose schemes sans elargir."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de l'appui : activite individuelle ou sociale ; << d'une personne comme d'un groupe >> est la glose de ces deux termes."
+      "reason": "Implication explicitement marquee et autorisee par l'appui : le comportement economique n'y est pas desordonne mais definit certains schemes."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim de l'appui, y compris plan, programme et schemes ; << manieres de faire reconnaissables >> glose schemes sans elargir."
+      "reason": "Reprise litterale de la notion de finalite dans definition_de_lauteur."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Consequence marquee comme telle et qui suit de l'appui : un comportement qui n'est pas desordonne mais definit des schemes selon un plan est une structure a decrire."
+      "reason": "Rapprochement autorise : les appuis portent l'equilibre des fins et des moyens et, pour la finalite, les objectifs poursuivis."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de l'appui, y compris << consciemment ou non >> et l'exemple de la satisfaction des besoins individuels ou collectifs."
+      "reason": "definition_de_lauteur porte « tenter d'atteindre, consciemment ou non, certains objectifs » : la glose ne fait que lire cette clause. L'appui signale ($.reserves[1]) traite des routes d'acces au texte de Barre et ne porte rien sur ce point."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Articulation qui suit des appuis fournis : onereux y renvoie a l'idee d'equilibre des fins et des moyens, et la notion de finalite y fournit les fins - agencer en vue d'un but, atteindre certains objectifs. Le signal (SUP-ed98ef125d4c86b9, $.notes[1]) ne partage que le mot << laissait >>, dans un passage sur l'origine du syntagme sans rapport avec la finalite : il ne rend pas ce claim mal rattache."
+      "reason": "Reprise litterale de definition_de_lauteur sur le monde exterieur institutionnel et culturel, compose de symboles, normes et valeurs, et surtout monde social ; notes[17] la confirme."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "L'appui fourni porte << tenter d'atteindre, consciemment ou non, certains objectifs >> ; la consequence tiree est exactement celle-la. Le signal (SUP-05523cb87b0f0a4f, $.reserves[1]) ne partage que << projet >>, employe au sens d'un quota d'API : coincidence lexicale."
+      "reason": "Paraphrase de la meme enumeration (normes, symboles, valeurs, monde social) ; aucune portee, causalite ni frequence ajoutee."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de l'appui sur le monde exterieur : institutionnel et culturel, symboles, normes et valeurs, et aussi et surtout un monde social."
+      "reason": "review.notes[1] etablit la definition integrale en capitales suivie des « caracteres principaux » dont le premier porte la phrase citee ; quotation.reference dit « premier caractere de la definition » et definition_de_lauteur la capitale de la page 11. L'appui signale (review.notes[0]) n'ajoute rien qui manque ici."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Glose en langue courante des normes, valeurs et du monde social que les appuis fournis portent ; aucune extension de portee ni attribution nouvelle."
+      "reason": "review.notes[3] cite verbatim la note 8 de la page 199 (1982) dans ces termes exacts ; sources[1].label et locator, et sources_ouvertes[1], situent la reprise."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis etablissent chacun des elements : premier caractere de la definition, chapitre III Definitions, paragraphe 2, definition integrale en capitales page 11 suivie des caracteres principaux. Le signal (SUP-88688234168814aa, $.review.notes[0]) est redondant avec ces appuis, non manquant."
+      "reason": "definition_de_lauteur et notes[18] etablissent que la definition de 1962 en capitales porte deja « par les methodes de la psychologie sociale » et « interaction des individus et des groupes », que quotation.text ne porte pas."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la note 8 de la page 199 de l'article de 1982, relue sur l'image, source declaree full-text et corroboree ; l'ecart de vingt ans est celui de 1962 a 1982."
+      "reason": "Dans les appuis fournis, le seul terme dont le commentaire procede par exclusion est « problemes humains » (deux malentendus ecartes), les autres etant expansifs : la comparaison reste a l'interieur de ce que definition_de_lauteur et notes[18] presentent."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent la definition de 1962 en capitales avec la methode et l'interaction des individus et des groupes, et la phrase courte citee qui ne porte ni l'une ni l'autre."
+      "reason": "Reprise litterale de definition_de_lauteur : ni technologie de l'action sociale, ni interet pour les donnees techniques de la transformation du monde."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "Evaluation editoriale que les appuis fournis autorisent : dans le commentaire restitue des pages 11-12, seul celui de << problemes humains >> procede par exclusions - ni technologie de l'action sociale, ni donnees techniques."
+      "reason": "Instancie l'exclusion des donnees techniques portee par definition_de_lauteur."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de l'appui : ni technologie de l'action sociale, ni interet pour les donnees techniques de la transformation du monde."
+      "reason": "definition_de_lauteur : ces problemes humains sont des problemes sociaux ; la definition citee par review.notes[3] et notes[18] les fait naitre de l'interaction des individus et des groupes."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Instancie les << donnees techniques de la transformation du monde >> que l'appui fourni exclut expressement du champ de la discipline."
+      "reason": "notes[15] et reserves[8] portent, sur la piece, qu'Albou ecrit page 11 que les chercheurs francais preferent lier le developpement de la psychologie economique a celui de la psychologie sociale et non de la science economique."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis disent que ces problemes humains sont des problemes sociaux et que la definition les fait naitre de l'interaction des individus et des groupes."
+      "reason": "Consequence autorisee : notes[15] et reserves[8] disent que la definition de 1962 lie la discipline a la psychologie sociale, position que review.notes[3] montre Albou reviser en 1982 comme « part trop belle a la psychologie sociale »."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim des appuis fournis, qui rapportent cette phrase a la page 11 de l'article de 1962."
+      "reason": "review.notes[3] cite verbatim la page 199 : « Notre definition de 1962 faisant, peut-etre par reaction, la part trop belle a la psychologie sociale »."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Suit des appuis fournis : la definition passe par les methodes de la psychologie sociale, Albou y rattache expressement le choix des chercheurs francais, et il qualifie lui-meme en 1982 ce trait de << peut-etre par reaction >>. Prendre parti est au niveau de ce que les appuis portent."
+      "reason": "Formulation bornee a ce que portent notes[15] et reserves[8] : un ecart de formulation entre deux etats dates du meme auteur, aucune anteriorite tranchee ; review.notes[3] porte la revision."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de la page 199 relue sur l'image : << Notre definition de 1962 faisant, peut-etre par reaction, la part trop belle a la psychologie sociale >>, avec le rappel de la definition en note 8."
+      "reason": "review.notes[1] et les references de citation nomment le chapitre III « DEFINITIONS »."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis consignent l'ecart entre les deux etats dates du meme auteur et bornent la portee a 1962 sur le point precis qu'il revise ; le claim garde cette borne et ne tranche aucune anteriorite."
+      "reason": "definition_de_lauteur : Albou oppose sa definition a la definition dite classique de Warneryd, soit deux definitions presentees."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis nomment le chapitre III << DEFINITIONS >>, verifie sur l'image."
+      "reason": "review.notes[2] cite verbatim la clause, notes[8] et reserves[6] etablissent sur l'image qu'elle se lit page 10 et non page 11. L'appui signale (review.notes[5]) porte sur la resolution des DOI et n'est pas requis ici."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "L'appui fourni porte l'opposition entre la definition dite classique de Warneryd et celle qu'Albou propose."
+      "reason": "Le titre du §2 est porte par quotation.reference, sources_ouvertes et review.notes[1] ; l'opposition a la definition dite classique est portee par definition_de_lauteur. Le lien reste une lecture de ces deux appuis, sans attribution primaire nouvelle."
     },
     {
       "claim_id": "C051",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim relevee page 10, colonne de droite, et correction de page expressement etablie par les appuis fournis. Le signal (SUP-26ec11331c86e70c, $.review.notes[5]) ne partage que << annoncee >>, employe a propos de la pagination resolue par Crossref : coincidence lexicale."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (notes[16] ; reserves[9]) etablissent l'ouvrage, l'editeur Marcel Riviere, l'annee 1954 et la collection de bilans, mais ils n'ecrivent jamais que « P.L. Reynaud » : le prenom developpe « Pierre-Louis » est une precision d'identite que ces appuis ne portent pas, alors que notes[16] signale precisement un risque d'homonymie entre P.L. et J.D. Reynaud."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Lecture qui suit des appuis fournis : le chapitre oppose la definition dite classique de Warneryd a celle d'Albou, laquelle se lit sous le titre imprime << La conception francaise de la Psychologie Economique >>, et la page 10 l'annonce comme celle qu'acceptent les chercheurs francais."
+      "reason": "notes[16] et reserves[9] : « Albou reconnait donc en 1962 l'anteriorite de publication de Reynaud »."
     },
     {
       "claim_id": "C053",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim n'ecrivent que << P.L. Reynaud >>, identifie comme l'economiste, et signalent meme une homonymie a menager avec le sociologue J.D. Reynaud ; ils n'etablissent pas le prenom << Pierre-Louis >>. L'adresse bibliographique - La Psychologie Economique, Marcel Riviere, 1954, collection de bilans - est en revanche portee telle quelle."
+      "verdict": "SUPPORTED",
+      "reason": "notes[16] et reserves[9] portent la phrase de la page 7, essai historique et bibliographique, bilan d'un demi-siecle de recherches."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis disent qu'Albou reconnait en 1962 l'anteriorite de publication de Reynaud tout en lui deniant d'avoir defini la discipline."
+      "reason": "Citation verbatim relue sur l'image de la page 7 selon notes[16] et reserves[9]."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim des appuis fournis, page 7 : essai historique et bibliographique, bilan d'un demi-siecle de recherches."
+      "reason": "notes[16] et reserves[9] : page 10, l'histoire de la discipline ne doit pas se faire, contrairement aux efforts de P.L. Reynaud, du point de vue de l'economiste."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim relue sur l'image de la page 7 selon les appuis fournis."
+      "reason": "Exactement la borne posee par notes[16] et reserves[9] : la piece ne contient rien de la position de Reynaud, qui n'a pas ete ouverte, et aucune carte ne doit en tirer une anteriorite."
     },
     {
       "claim_id": "C057",
-      "verdict": "SUPPORTED",
-      "reason": "Quasi verbatim des appuis fournis pour la page 10, avec l'attribution maintenue a Albou."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (notes[16] ; reserves[9]) etablissent la position situee d'Albou en 1962 : il reconnait l'anteriorite de publication de Reynaud, lui denie d'avoir defini la discipline et lui reproche le point de vue de l'economiste. Le claim erige cette position polemique en regle generale enoncee dans la voix de la carte, alors que le claim precedent rappelle que la position de Reynaud n'a pas ete ouverte : passage de l'observation situee a la loi generale."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis disent expressement que la piece ne contient rien de la position de Reynaud, non ouverte, et qu'aucune carte ne doit en tirer une anteriorite : le claim garde cette borne."
+      "reason": "review.notes[0] porte l'intitule imprime sous lequel la phrase se lit, ELLE ECLAIRE L'OBJET MEME DE LA PSYCHOLOGIE ECONOMIQUE, et quotation.text la phrase elle-meme."
     },
     {
       "claim_id": "C059",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis n'etablissent ce critere que comme le raisonnement d'Albou - il reconnait l'anteriorite de publication de Reynaud tout en lui deniant d'avoir defini la discipline - et precisent que la querelle est documentee du seul cote d'Albou, non tranchee, la position de Reynaud n'ayant pas ete ouverte. Enoncee sans attribution comme regle generale (<< ne fonde donc pas une discipline >>), la proposition passe d'un verdict situe a une loi, et endosse le critere par lequel Albou ecarte un ouvrage que le dossier dit n'avoir pas lu. Le signal (SUP-6537817c0d926de7) ne partage que << fonde >>, au sens du calcul qui fonde la decision, et n'autoriserait pas davantage cette generalisation : le defaut est dans la formulation, non dans le rattachement."
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[3] porte, sur la meme page 199, « notre definition de 1962 » et le jugement de la « part trop belle a la psychologie sociale » ; notes[0], attribution_note et notes[9] confirment la revendication."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis placent a la page 11, sous l'intitule sur l'objet meme de la discipline, la phrase qui enonce ce dont la psychologie economique se charge."
+      "reason": "notes[7] : « Albou n'attribue la formule a personne » ; notes[0] et attribution.note : « Il ne credite personne »."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "Les deux elements se lisent dans la meme page 199 selon les appuis fournis : << notre definition de 1962 >> en note 8 et le reproche de la part trop belle faite a la psychologie sociale."
+      "reason": "notes[7] et reserves[0] : la page 11, relue sur l'image, ne comporte aucune note de bas de page ni appel de note, et la definition en capitales y est donnee sans reference. L'appui signale (review.notes[0]) ne manque pas a la demonstration."
     },
     {
       "claim_id": "C062",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis affirment, sur la piece, qu'Albou n'attribue la formule a personne et ne credite personne ; le claim ne va pas au-dela de ce constat de page."
+      "reason": "notes[0] et attribution.note : « la seule dette d'economiste inscrite a cet endroit est celle de Robbins, cite en note page 12 »."
     },
     {
       "claim_id": "C063",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim des appuis fournis : la page 11, relue sur l'image, ne comporte ni note ni appel de note, et la definition en capitales y est donnee sans reference. Le signal (SUP-88688234168814aa, $.review.notes[0]) est redondant avec ces appuis, non manquant."
+      "reason": "notes[0], attribution.note, attribution_note et review.notes[4] portent exactement cette formulation bornee : le meme syntagme se lit dans une definition de l'economie politique couramment attribuee a Barre. Le claim n'en fait pas une origine etablie."
     },
     {
       "claim_id": "C064",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim des appuis fournis : la seule dette d'economiste inscrite a cet endroit est celle de Robbins, cite en note page 12, soit la page suivante."
+      "reason": "review.notes[4] lit la notice bibliographique sur l'image de la recension de 1956 (PUF, 1955, Themis) et valide le « sept ans » ; sources_ouvertes[2] porte la meme adresse."
     },
     {
       "claim_id": "C065",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis portent cette formulation prudente : la meme formule se lit dans une definition de l'economie politique couramment attribuee a Raymond Barre. Le claim conserve le << couramment attribuee >> et n'affirme pas que Barre en soit l'auteur."
+      "reason": "notes[3] et reserves[2] : un cours depose sur HAL et des ouvrages de compilation portent l'attribution, et « aucune de ces sources ne donne de page dans Barre »."
     },
     {
       "claim_id": "C066",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis donnent l'adresse bibliographique lue sur l'image de la recension de 1956 - PUF, 1955, collection Themis - et concluent que l'ecart de sept ans avec l'article de 1962 est juste."
+      "reason": "notes[4] et reserves[3] : des recueils de citations donnent la formule courte a Francois Perroux, l'attribution n'est pas unanime."
     },
     {
       "claim_id": "C067",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis disent que l'attribution ne repose que sur l'enseignement et la compilation, cours depose sur HAL et ouvrages recents, et qu'aucune de ces sources ne donne de page dans Barre."
+      "reason": "notes[3] porte litteralement « Une attribution repetee n'est pas une attestation » ; notes[1], notes[2] et reserves[1] etablissent que le texte de Barre n'a pas ete ouvert et que rien ne tranche. Claim correctement borne."
     },
     {
       "claim_id": "C068",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis consignent que l'attribution n'est pas unanime et que des recueils de citations donnent la formule a Francois Perroux ; le claim n'en tire aucune conclusion d'origine."
+      "reason": "notes[5] et reserves[4] donnent le releve de Persee et d'Erudit, toutes occurrences venant d'Albou ou de comptes rendus la citant ; notes[0] porte « le corpus de Persee n'en connaissant, hors son article, que des reprises de sa definition »."
     },
     {
       "claim_id": "C069",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim des appuis fournis - une attribution repetee n'est pas une attestation - et conforme au refus expres de conclure dans les deux sens, le texte de Barre n'ayant pas pu etre ouvert."
+      "reason": "Reprise de la limite que notes[5] et reserves[4] posent eux-memes : Persee n'indexe pas les manuels des PUF, et l'absence de Barre n'y prouve rien. Le claim conclut a l'absence de preuve, non a une absence de fait."
     },
     {
       "claim_id": "C070",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis rapportent le depouillement plein texte de Persee et d'Erudit : toutes les occurrences viennent d'Albou, ses articles et des comptes rendus qui reprennent sa definition, aucune attribuee a Barre ni a Perroux. Le << ne se rencontre guere que >> garde la mesure du constat."
+      "reason": "notes[5] et reserves[4] enoncent exactement cette conclusion etroite ; notes[0] et attribution.note la portent aussi."
     },
     {
       "claim_id": "C071",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de la limite que les appuis fournis posent : Persee n'indexe pas les manuels des Presses universitaires de France, et l'absence de Barre n'y prouve rien. Le claim refuse expressement de tirer une preuve d'une absence de trace."
+      "reason": "attribution_note, notes[0] et attribution.note : « la definition de la psychologie economique batie sur cette formule est de lui » ; review.notes[2] porte la revendication dans le texte meme."
     },
     {
       "claim_id": "C072",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de la conclusion etroite des appuis fournis : dans les sciences humaines, cette formule circule par Albou."
-    },
-    {
-      "claim_id": "C073",
-      "verdict": "SUPPORTED",
-      "reason": "Verbatim des appuis fournis : ce qui revient a Albou de facon etablie est le transfert, la definition batie sur cette formule est de lui, qu'il revendique page 11 (<< d'ou la definition que nous proposons >>) et encore en 1982."
-    },
-    {
-      "claim_id": "C074",
-      "verdict": "SUPPORTED",
-      "reason": "Les appuis fournis etablissent l'existence et l'adresse du tome I de 1955, collection Themis, et consignent que le texte de Barre n'a pas pu etre ouvert : le claim laisse l'anteriorite ouverte et designe la piece qui la trancherait, sans rien affirmer de son contenu."
+      "reason": "Formule comme programme et non comme conclusion, conformement a notes[2] et reserves[1] (texte de Barre non ouvert) ; l'adresse du tome I de 1955, collection Themis, est portee par review.notes[4] et sources_ouvertes[2]."
     }
   ]
 }
