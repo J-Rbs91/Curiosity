@@ -3,7 +3,7 @@
   "concept_id": "absorber-les-fluctuations-de-commandes",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "1dc7016d477aedc5c71f05f9338d6eb862aa8d77fa4512e7c4ec7d64f5501588",
+  "candidate_sha256": "5b8115f95133cd5cbe7460fcace4b310f673109197a23d500c73196fb7407c79",
   "validated_sha256": "058f93386a64ce32e51bc01a39535ff1f70d9803772fe4f6493bb38958b34ffc",
   "evidence_files": [],
   "dossier_declare": {
@@ -49,7 +49,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Personne, à l’intérieur, n’a le moyen de demander aux clients d’étaler leurs achats. Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes. Rien n’oblige à les choisir ensemble, et c’est pourtant la même variation qu’ils ont tous deux à encaisser."
+      "text": "Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles s’entassent, le mois suivant elles se font rares. Et cette variation ne se supprime pas. Ce qui reste à décider tient alors en deux nombres : à quelle cadence faire tourner l’atelier, et avec combien de personnes. C’est la même variation qu’ils ont tous deux à encaisser."
     },
     {
       "locator": "lead[1]",
@@ -122,12 +122,12 @@
     },
     {
       "locator": "sections[5].paragraphs[0]",
-      "section_title": "L’appendice où le calcul se fait",
-      "text": "Le titre du mémorandum annonce une règle de décision, et la page 8 n’en donne que la forme : absorber en partie ici, en partie là, selon les coûts. Le calcul qui produit le partage est renvoyé plus loin, et la table des matières l’annonce au folio 43 sous un titre sans ambiguïté : « APPENDIX: Derivation of the Conditions for Minimum Costs », la dérivation des conditions du coût minimum. Ce sont ces pages qui démontrent ce que la page 8 se contente de recommander, et c’est là qu’il faudra aller voir pourquoi une combinaison pondérée vaut mieux qu’une voie pure."
+      "section_title": "L’appendice annoncé au folio 43",
+      "text": "Le titre du mémorandum annonce une règle de décision, et la page 8 n’en donne que la forme : absorber en partie ici, en partie là, selon les coûts. Le calcul qui produit le partage est renvoyé plus loin, et la table des matières l’annonce au folio 43 sous un titre sans ambiguïté : « APPENDIX: Derivation of the Conditions for Minimum Costs », la dérivation des conditions du coût minimum. Ce que cette dérivation établit, ces pages seules le diront."
     },
     {
       "locator": "sections[5].paragraphs[1]",
-      "section_title": "L’appendice où le calcul se fait",
+      "section_title": "L’appendice annoncé au folio 43",
       "text": "Une autre porte reste ouverte : un article de même titre a paru en octobre 1955 dans Management Science, sous les trois mêmes noms, sur une trentaine de pages. Et la question que pose le titre attend toujours : par quel calcul, au juste, une cadence et un effectif sortent-ils de commandes qui varient ?"
     }
   ],
@@ -548,6 +548,6 @@
       "text": "Correction appliquée au tour d'édition du 25 août 2026, sur remarque hors mandat du contrôle : le label de la source primaire écrivait « 42 p. » et écrit désormais « 42 p. hors appendice ». Le scan s'arrête bien au folio 42, mais la table des matières annonce « APPENDIX: Derivation of the Conditions for Minimum Costs 43 » et la dernière page dit « a technical appendix is attached ». Le mémorandum d'origine dépasse donc 42 pages : la collation affichée décrit l'exemplaire numérisé, non la pièce complète. Ni le locator ni la citation ne sont touchés."
     }
   ],
-  "estimated_tokens": 9630,
+  "estimated_tokens": 9559,
   "status": "READY"
 }
