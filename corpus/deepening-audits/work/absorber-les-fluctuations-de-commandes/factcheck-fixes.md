@@ -122,3 +122,174 @@ Le texte lecteur reste dans la fourchette 1 300-1 700 ; le `lead` dans 120-200.
 
 Aucune auto-validation : ni `FACTCHECK_PASS` ni `ACCEPT` n'est déclaré ici. Le texte doit
 repasser par `PREPARE`, un nouveau mapping et le gate.
+
+---
+
+# Correction factuelle n°2 — absorber-les-fluctuations-de-commandes
+
+Mode : FACTCHECK_FIX. Dernière boucle autorisée. Gate d'entrée : `FACTCHECK_FAIL`, 57 claims,
+53 soutenus, 4 refusés (C001, C017, C030, C045), tous en `TOO_STRONG`, aucune erreur structurelle,
+`mapping_incomplete` vide.
+
+SHA contrôlé par ce gate : `5b8115f95133cd5cbe7460fcace4b310f673109197a23d500c73196fb7407c79`.
+Le texte est modifié : ce SHA est mort, la reprise repart de `PREPARE`.
+
+Les quatre claims refusés ne sont pas ceux du tour 1 (C002, C004, C059, C060). Un mapping
+indépendant a redécoupé le texte ; les quatre corrections du tour 1 ont tenu et n'ont pas été
+rouvertes. Les 53 claims soutenus n'ont pas été réécrits.
+
+## Matière opposable (inchangée)
+
+Aucun dossier de preuve : `corpus/evidence/absorber-les-fluctuations-de-commandes/` n'existe pas, et
+`corpus/validated/absorber-les-fluctuations-de-commandes.json` ne porte pas de champ `dossier`
+(revérifié : `dossier` est absent, il n'y a donc aucun répertoire à résoudre hors convention).
+Matière : `hook`, `summary`, `quotation`, `notes`, `review.notes`, libellés de sources. Aucune
+recherche, aucun fait de mémoire, aucun `SUP-...` invoqué, aucune citation nouvelle.
+
+Les quatre défauts sont d'une seule espèce : une précision ajoutée que les appuis ne portent pas.
+Dans les quatre cas le geste est un retrait, et rien n'est écrit à la place.
+
+## Les quatre gestes
+
+### C001 — NARROW (fréquence et échelle de temps)
+
+`lead[0]`. Appuis fournis : `$.review.notes[6]` (p. 5, « orders (or more precisely, ordered
+shipments) are subject to substantial fluctuation ») et `$.hook`. Motif du gate : ni l'échelle
+annuelle ni l'alternance mois par mois ne sont portées.
+
+- avant : « Les commandes d’un atelier ne tombent pas au même rythme toute l’année : un mois elles
+  s’entassent, le mois suivant elles se font rares. Et cette variation ne se supprime pas. »
+- après : « Les commandes qu’un atelier reçoit varient, et fortement. Cette variation ne se
+  supprime pas. »
+
+Ce qui reste est exactement ce que portent les deux appuis : une fluctuation substantielle
+(« substantial »), et son caractère non supprimable. L'année, le mois, l'alternance : retirés, non
+remplacés par une autre périodicité. Le « Et » initial de la phrase suivante tombe, la première
+phrase étant devenue brève.
+
+### C017 — NARROW (périodicité saisonnière)
+
+`sections[0].paragraphs[1]`. Appuis : `quotation.original_text` et `quotation.text`
+(« partly by hiring and layoffs »), la note du traducteur, `$.review.notes[6]`. Aucun rythme
+saisonnier n'y figure.
+
+- avant : « en embauchant puis en licenciant au fil des saisons. »
+- après : « en embauchant et en licenciant. »
+
+« au fil des saisons » est retiré sans substitut. Le « puis », qui posait un ordre entre les deux
+gestes là où l'anglais donne un couple (« hiring and layoffs »), devient « et ».
+
+### C030 — NARROW (portée de la formule)
+
+`sections[1].paragraphs[2]`. Appuis : `$.notes[0]` (« la démonstration vient ensuite, par la
+fonction de coût »), `$.notes[10]` et `$.review.notes[9]` (l'appendice annoncé au folio 43).
+Aucun n'établit la structure de la fonction, et `$.notes[5]` rappelle que l'appendice manque à
+l'exemplaire numérisé.
+
+- avant : « À cet endroit, la recommandation n’est pas encore démontrée. Elle clôt un examen des
+  coûts, et ce qui la justifie vient après : les auteurs construisent une fonction de coût, une
+  formule qui met un prix sur chaque combinaison possible de stock, d’heures et d’effectif, puis
+  cherchent celle qui rend ce prix le plus bas. »
+- après : « À cet endroit, la recommandation n’est pas encore démontrée : elle clôt un examen des
+  coûts, et la démonstration ne vient qu’ensuite, par une fonction de coût. »
+
+La proposition restante est celle de `$.notes[0]`, presque mot pour mot. Les variables de la
+fonction, la quantification sur « chaque combinaison possible » et la minimisation comme opération
+attribuée aux auteurs sont retirées ; aucune autre description du modèle ne les remplace. Le point
+devenu deux-points fond l'ancienne première phrase dans la suivante : le paragraphe, raccourci de
+vingt-cinq mots, disait sinon trois fois la même chose. La dernière phrase (« La phrase de la page 8
+annonce ce que la suite a pour tâche d’établir. ») est conservée telle quelle.
+
+### C045 — NARROW (certitude de l'erreur de prévision)
+
+`sections[3].paragraphs[1]`. Appuis : `$.review.notes[3]` (titre « Errors in Forecasting Orders »,
+table des matières et bas de p. 8) et `quotation.original_text`. Un titre de section ne porte pas ce
+que la section dit des erreurs.
+
+- avant : « ce sont des décisions prises sur des commandes anticipées, donc sur des nombres dont on
+  sait qu’ils seront faux de quelque chose. »
+- après : « ce sont des décisions prises sur des commandes prévues. »
+
+Le « on sait qu’ils seront faux » est retiré : ni l'ampleur de l'erreur, ni la certitude qu'il y en
+ait une, ne sont portées. « anticipées » devient « prévues », qui rattache la phrase au titre
+réellement relevé sans rien affirmer de l'erreur. Le paragraphe garde son marquage d'interprétation,
+inchangé et en tête : « On peut lire dans cet enchaînement une conséquence que la page 8 ne porte
+pas seule. »
+
+## Règle 4 — positions d'annonce, et un excédent adjacent
+
+**Titre de `sections[1]`.** « Une phrase qui recommande, et ce qui la soutient » promettait, en
+position de titre et donc hors de portée du gate, un soutien que la section, une fois C030 corrigé,
+ne décrit plus : elle établit au contraire qu'à cet endroit la recommandation n'est pas démontrée.
+Devenu « Une phrase qui conseille, et ne démontre pas encore » (51 caractères), qui ne dit que
+`$.notes[0]`. Les cinq autres titres sont relus et inchangés ; celui de `sections[3]`, « Là où le
+rapport place l’erreur de prévision », ne dit que la localisation, seule chose établie.
+
+**`lead` relu en entier.** `lead[0]` ne porte plus que : une fluctuation forte des commandes (p. 5),
+son caractère non supprimable (`$.hook`), les deux grandeurs à décider (titre du chapitre II relevé
+à la table des matières) et la variation commune aux deux. `lead[1]` est inchangé : page de titre,
+titre du mémorandum, note de bas de page citée mot pour mot, projet ONR. Aucun excédent de portée,
+aucune fréquence, aucune périodicité ne subsiste dans le `lead`.
+
+**Un excédent adjacent, retiré par précaution et déclaré comme tel.** Dans le paragraphe même que
+C045 ancre, la phrase suivante portait « le dosage n’est pas arrêté une fois pour l’année ». Ce
+fragment appartenait à C046, que le vérificateur a rendu `SUPPORTED` ; mais il réaffirme
+exactement l'échelle annuelle que le gate vient de refuser à C001. Retiré, sans substitut de
+périodicité : « le dosage ne se fixe pas en une seule fois : il se reprend à chaque période. » C'est
+un retrait de deux mots, il ne peut rien affaiblir, et il évite qu'un nouveau découpage ne refuse au
+tour suivant ce que le précédent avait laissé passer. Aucun autre claim soutenu n'est touché :
+« Imaginons deux ateliers voisins, dans la même saison » (`sections[2]`) est un exemple
+explicitement hypothétique, et « ce qui convenait une année » (`sections[2]`) illustre le changement
+de régime documenté par `$.notes[1]` sans rien affirmer d'un rythme annuel ; les deux restent en
+place.
+
+## `limits`
+
+Trois frontières internes précisées, puisque la correction vient de les éprouver, et formulées en
+nommant la source, son état d'accès et l'affirmation interdite :
+
+- `limits[0]` : ni la fréquence ni l'échelle de temps de la fluctuation ne sont documentées
+  (frontière franchie par C001 et par le fragment de C046) ;
+- `limits[2]` : le titre relevé au bas de la p. 8 n'autorise rien sur l'ampleur de l'erreur de
+  prévision ni sur sa certitude (frontière franchie par C045) ;
+- `limits[3]` : de la fonction de coût, seule son intervention après la p. 8 est documentée, ni ses
+  variables ni sa forme (frontière franchie par C030).
+
+`limits` reste interne, aucun de ses contenus n'est remonté dans `lead` ou `sections`. Le champ
+totalise 329 mots, au-dessus de la fourchette indicative de 100-200 : la longueur vient des
+frontières accumulées aux deux tours, chacune nommant une source et une affirmation précises, et le
+contrôle mécanique ne la refuse pas.
+
+## Delta d'apprentissage des passages touchés
+
+- `lead[0]` : la variation des commandes, son irréductibilité, les deux grandeurs à décider. Perd
+  une périodicité inventée, garde ses quatre paliers.
+- `sections[0].paragraphs[1]` : les trois voies pures. Perd un rythme saisonnier ; la troisième voie
+  reste distincte des deux autres, ce qui est son seul travail.
+- `sections[1].paragraphs[2]` : le statut de la recommandation à cet endroit du texte, non démontrée
+  et renvoyée à un calcul ultérieur. Le delta est le décalage entre la recommandation et sa preuve,
+  non le contenu de la preuve. La section 6 garde seule la charge de localiser ce calcul.
+- `sections[3].paragraphs[1]` : la lecture que l'enchaînement des sections autorise. Le delta est
+  que répartir engage des commandes encore à venir, et que les décisions se reprennent. Ce que le
+  rapport dit de l'erreur elle-même n'est plus affirmé.
+
+## Comptes
+
+| | avant (tour 2) | après (tour 2) |
+|---|---|---|
+| mots lecteur (`lead` + `sections`) | 1 444 | 1 383 |
+| dont `lead` | 191 | 174 |
+| `limits` (interne, hors compte lecteur) | 277 | 329 |
+| sections | 6 | 6 |
+
+Compte établi sur `lead` + `sections` par découpage sur les blancs. Le texte lecteur reste dans la
+fourchette 1 300-1 700, le `lead` dans 120-200.
+
+## Contrôle
+
+`npm run corpus:deepen -- --check --only=absorber-les-fluctuations-de-commandes` : PASS
+(« 1 approfondissement(s) contrôlé(s), 1712 mots. Rien projeté. »). Aucun tiret cadratin, aucun
+terme de dispositif, aucune citation nouvelle, six titres sous 60 caractères.
+
+Aucune auto-validation : ni `FACTCHECK_PASS` ni `ACCEPT` n'est déclaré ici. Le texte doit repasser
+par `PREPARE`, un nouveau mapping et le gate.
