@@ -1,6 +1,6 @@
 {
   "concept_id": "cinq-dimensions-de-l-emploi",
-  "candidate_sha256": "b6080da250d17a9b40eec07012f8b6586447f53b467776195775cb933f8274aa",
+  "candidate_sha256": "d9874a585394b9ca8aac1eaeb4b913fb8a2eb11519a0ae7de50314e74256ba86",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -19,6 +19,10 @@
       "mapping_status": "CLAIMS_MAPPED"
     },
     {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
       "locator": "sections[1].paragraphs[0]",
       "mapping_status": "CLAIMS_MAPPED"
     },
@@ -27,15 +31,19 @@
       "mapping_status": "CLAIMS_MAPPED"
     },
     {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
       "locator": "sections[2].paragraphs[0]",
       "mapping_status": "CLAIMS_MAPPED"
     },
     {
       "locator": "sections[2].paragraphs[1]",
-      "mapping_status": "CLAIMS_MAPPED"
-    },
-    {
-      "locator": "sections[2].paragraphs[2]",
       "mapping_status": "CLAIMS_MAPPED"
     },
     {
@@ -63,501 +71,819 @@
     {
       "claim_id": "C001",
       "locator": "lead[1]",
-      "start": 131,
-      "end": 241,
-      "claim_text": "C’est ce que tentent J. Richard Hackman et Greg R. Oldham dans un rapport technique déposé à Yale en mai 1974.",
-      "normalized_claim": "Hackman et Oldham signent un rapport technique à Yale en mai 1974.",
+      "start": 0,
+      "end": 115,
+      "claim_text": "Encore faut-il dire ce qui, dans un poste, produit cet écart, et le dire assez précisément pour pouvoir le mesurer.",
+      "normalized_claim": "Ce sont des caractéristiques du poste qui produisent l'écart, et l'enjeu est de les dire assez précisément pour les mesurer.",
       "support_ids": [
-        "SUP-3c6ab3fc8c2e70c6",
-        "SUP-dffac9bc8f76cdd0",
-        "SUP-c604a94416e464a0",
+        "SUP-8349b9530e887f0d",
         "SUP-46db82f6ac3e7439",
-        "SUP-154202aa820424f9"
+        "SUP-e0e146e10c75d708"
       ]
     },
     {
       "claim_id": "C002",
       "locator": "lead[1]",
-      "start": 242,
-      "end": 307,
-      "claim_text": "Ils y avancent une liste courte, cinq caractéristiques du travail",
-      "normalized_claim": "Le rapport avance une liste de cinq caractéristiques de l’emploi.",
+      "start": 116,
+      "end": 173,
+      "claim_text": "C’est ce que tentent J. Richard Hackman et Greg R. Oldham",
+      "normalized_claim": "Hackman et Oldham sont les auteurs de cette tentative.",
       "support_ids": [
-        "SUP-b619e9e8d1f0d59b",
-        "SUP-63488c91bf5046e7",
-        "SUP-d28e363f1c0538c5",
-        "SUP-618caaed36d65ce3"
+        "SUP-c604a94416e464a0",
+        "SUP-cc844847b96e5a7c",
+        "SUP-3c6ab3fc8c2e70c6",
+        "SUP-dffac9bc8f76cdd0",
+        "SUP-4ea2e8d571f59bbb",
+        "SUP-3d98a76e79b4ca6f",
+        "SUP-05bcca9c899e0b91"
       ]
     },
     {
       "claim_id": "C003",
       "locator": "lead[1]",
-      "start": 327,
-      "end": 438,
-      "claim_text": "ces cinq caractéristiques, écrivent-ils, créent chez la personne qui occupe le poste trois états psychologiques",
-      "normalized_claim": "Les auteurs écrivent que les cinq dimensions créent trois états psychologiques chez le titulaire du poste.",
+      "start": 174,
+      "end": 225,
+      "claim_text": "dans un rapport technique déposé à Yale en mai 1974",
+      "normalized_claim": "Le texte est un rapport technique de Yale daté de mai 1974.",
       "support_ids": [
-        "SUP-b619e9e8d1f0d59b",
-        "SUP-63488c91bf5046e7",
-        "SUP-d28e363f1c0538c5"
+        "SUP-c604a94416e464a0",
+        "SUP-cc844847b96e5a7c",
+        "SUP-46db82f6ac3e7439",
+        "SUP-e0e146e10c75d708",
+        "SUP-b23fb4f49e936147"
       ]
     },
     {
       "claim_id": "C004",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 0,
-      "end": 183,
-      "claim_text": "Ces cinq caractéristiques portent des noms anglais qu’il vaut mieux garder tels quels : Skill Variety, Task Identity, Task Significance, Autonomy, et « Feedback from the Job Itself ».",
-      "normalized_claim": "Les cinq dimensions centrales sont nommées en anglais Skill Variety, Task Identity, Task Significance, Autonomy et Feedback from the Job Itself.",
+      "locator": "lead[1]",
+      "start": 227,
+      "end": 292,
+      "claim_text": "Ils y avancent une liste courte, cinq caractéristiques du travail",
+      "normalized_claim": "Le rapport propose cinq dimensions de l'emploi.",
       "support_ids": [
-        "SUP-e08d9dc03a8a31ea",
-        "SUP-4066e0b256f9411e",
-        "SUP-ada711576952723d",
+        "SUP-b619e9e8d1f0d59b",
+        "SUP-63488c91bf5046e7",
+        "SUP-788e89760d5f11ee",
+        "SUP-2e4f0b4fb617e86d",
+        "SUP-8349b9530e887f0d",
         "SUP-d28e363f1c0538c5"
       ]
     },
     {
       "claim_id": "C005",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 184,
-      "end": 362,
-      "claim_text": "En français : la variété des compétences que le poste met en jeu, l’identité de la tâche, sa signification, l’autonomie, et le retour d’information que donne le travail lui-même.",
-      "normalized_claim": "Rendu français des cinq dimensions.",
+      "locator": "lead[1]",
+      "start": 294,
+      "end": 447,
+      "claim_text": "et surtout un chemin : entre ces caractéristiques et ce qu’on attend du travail, ils placent quelque chose qui se passe chez la personne qui l’accomplit.",
+      "normalized_claim": "Les auteurs placent des états psychologiques de la personne entre les dimensions et les résultats ; ce chemin est l'apport principal.",
       "support_ids": [
-        "SUP-d28e363f1c0538c5",
-        "SUP-4066e0b256f9411e",
-        "SUP-e08d9dc03a8a31ea",
-        "SUP-cf9ad832152ec475"
+        "SUP-8349b9530e887f0d",
+        "SUP-5f05de32126d76fa",
+        "SUP-7f8cdae16f90ce57"
       ]
     },
     {
       "claim_id": "C006",
       "locator": "sections[0].paragraphs[0]",
-      "start": 428,
-      "end": 505,
-      "claim_text": "savoir le soir même si le travail tient, c’est le retour que donne le travail",
-      "normalized_claim": "La cinquième dimension est le retour d’information donné par le travail lui-même.",
+      "start": 0,
+      "end": 201,
+      "claim_text": "Les cinq caractéristiques portent, dans le rapport, des noms anglais qu’il vaut mieux garder tels quels : Skill Variety, Task Identity, Task Significance, Autonomy, et « Feedback from the Job Itself ».",
+      "normalized_claim": "Noms anglais des cinq dimensions dans le rapport.",
       "support_ids": [
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d",
         "SUP-4066e0b256f9411e"
       ]
     },
     {
       "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
-      "start": 644,
-      "end": 683,
-      "claim_text": "le rapport donne ses définitions page 5",
-      "normalized_claim": "Le rapport définit les cinq dimensions à la page 5.",
+      "start": 202,
+      "end": 253,
+      "claim_text": "Chacune est définie, en une phrase, comme un degré.",
+      "normalized_claim": "Chaque dimension est définie en une phrase commençant par « The degree to which ».",
       "support_ids": [
-        "SUP-ada711576952723d",
-        "SUP-618caaed36d65ce3",
-        "SUP-50cddc913082a5a5"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d",
+        "SUP-ada711576952723d"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
-      "start": 685,
-      "end": 807,
-      "claim_text": "et ce sont des phrases entières, de la plus brève, celle de l’identité de la tâche, à la plus longue, celle de l’autonomie",
-      "normalized_claim": "La définition la plus courte est celle de Task Identity, la plus longue celle d’Autonomy.",
+      "start": 254,
+      "end": 390,
+      "claim_text": "La variété des compétences : combien le travail exige d’activités différentes, qui mobilisent des compétences et des talents différents.",
+      "normalized_claim": "Définition de Skill Variety.",
       "support_ids": [
-        "SUP-ada711576952723d"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C009",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 41,
-      "end": 80,
-      "claim_text": "Le rapport est d’abord un questionnaire",
-      "normalized_claim": "Le Technical Report No. 4 est d’abord un questionnaire.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 391,
+      "end": 511,
+      "claim_text": "L’identité de la tâche : combien il demande d’achever un tout identifiable, du début à la fin, avec un résultat visible.",
+      "normalized_claim": "Définition de Task Identity.",
       "support_ids": [
-        "SUP-a269172ea0335b83",
-        "SUP-46db82f6ac3e7439"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C010",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 85,
-      "end": 282,
-      "claim_text": "son titre dit à quoi il sert : « An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects », un instrument pour diagnostiquer des postes et évaluer des projets de refonte",
-      "normalized_claim": "Le sous-titre exact du rapport est celui-là, et il annonce un instrument de diagnostic et d’évaluation de refontes de postes.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 512,
+      "end": 638,
+      "claim_text": "La signification : l’impact substantiel qu’il a sur la vie ou le travail d’autres personnes, dans l’organisation ou au dehors.",
+      "normalized_claim": "Définition de Task Significance.",
       "support_ids": [
-        "SUP-46db82f6ac3e7439",
-        "SUP-b23fb4f49e936147"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C011",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 284,
-      "end": 423,
-      "claim_text": "Une liste courte, nommée et notée, permet de dire d’un poste ce qui lui manque, de le modifier, puis de reprendre la mesure et de comparer.",
-      "normalized_claim": "Usage diagnostique déduit de la fonction annoncée de l’instrument.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 639,
+      "end": 771,
+      "claim_text": "L’autonomie : la liberté, l’indépendance et la latitude laissées pour organiser son travail dans le temps et choisir ses procédures.",
+      "normalized_claim": "Définition d'Autonomy.",
       "support_ids": [
-        "SUP-46db82f6ac3e7439",
-        "SUP-a269172ea0335b83"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C012",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 210,
-      "claim_text": "Cette relation, le rapport l’énonce en une phrase, à sa quatrième page : « La théorie pose que les trois états psychologiques critiques sont créés par la présence de cinq dimensions « centrales » de l’emploi. »",
-      "normalized_claim": "Citation traduite de la phrase de la page 4 du rapport.",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 772,
+      "end": 911,
+      "claim_text": "Le retour d’information, enfin : combien l’exécution même du travail renseigne directement et clairement sur l’efficacité de ce qu’on fait.",
+      "normalized_claim": "Définition de Feedback from the Job Itself.",
       "support_ids": [
-        "SUP-b619e9e8d1f0d59b",
-        "SUP-63488c91bf5046e7",
-        "SUP-43cb5037f47995be",
-        "SUP-154202aa820424f9",
-        "SUP-f695abe6794b1f61",
-        "SUP-cf9ad832152ec475"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d",
+        "SUP-4066e0b256f9411e"
       ]
     },
     {
       "claim_id": "C013",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 259,
-      "end": 404,
-      "claim_text": "Ce que ces cinq caractéristiques créent, à en croire cette phrase, ce sont des états : quelque chose que la personne qui occupe le poste éprouve.",
-      "normalized_claim": "Glose : les états psychologiques sont éprouvés par le titulaire du poste.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 50,
+      "end": 114,
+      "claim_text": "Monter un appareil entier, on y reconnaît l’identité de la tâche",
+      "normalized_claim": "Achever un tout identifiable relève de Task Identity.",
       "support_ids": [
-        "SUP-b619e9e8d1f0d59b",
-        "SUP-63488c91bf5046e7"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C014",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 405,
-      "end": 475,
-      "claim_text": "Les auteurs les disent critiques, et ils en comptent exactement trois.",
-      "normalized_claim": "Les états sont qualifiés de critiques et sont au nombre de trois.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 117,
+      "end": 166,
+      "claim_text": "décider de l’ordre de ses opérations, l’autonomie",
+      "normalized_claim": "Organiser ses opérations relève d'Autonomy.",
       "support_ids": [
-        "SUP-b619e9e8d1f0d59b",
-        "SUP-63488c91bf5046e7",
-        "SUP-d28e363f1c0538c5"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C015",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 135,
-      "claim_text": "L’un de ces trois états est nommé sur la même page : « Experienced Meaningfulness of the Work », l’expérience que le travail a du sens.",
-      "normalized_claim": "L’état Experienced Meaningfulness of the Work est nommé page 4.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 169,
+      "end": 238,
+      "claim_text": "voir l’objet partir vers quelqu’un qui s’en servira, la signification",
+      "normalized_claim": "L'impact sur autrui relève de Task Significance.",
       "support_ids": [
-        "SUP-ada711576952723d"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C016",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 136,
-      "end": 358,
-      "claim_text": "Et il n’est pas alimenté indifféremment par les cinq caractéristiques : « Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. »",
-      "normalized_claim": "Citation verbatim reliant cet état à trois des cinq dimensions.",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 240,
+      "end": 355,
+      "claim_text": "Savoir si ce qu’on a fait tient relève du retour d’information, pourvu que ce soit le travail lui-même qui le dise.",
+      "normalized_claim": "Le feedback retenu est celui donné par le travail lui-même.",
       "support_ids": [
-        "SUP-ada711576952723d",
-        "SUP-50cddc913082a5a5"
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d",
+        "SUP-4066e0b256f9411e"
       ]
     },
     {
       "claim_id": "C017",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 359,
-      "end": 542,
-      "claim_text": "Trois des cinq poussent donc dans le même sens, ce qui explique que la variété, l’identité et la signification de la tâche se tiennent ensemble plutôt que de compter chacune pour soi.",
-      "normalized_claim": "Conséquence tirée : ces trois dimensions se rattachent au même état psychologique.",
-      "support_ids": [
-        "SUP-ada711576952723d",
-        "SUP-e08d9dc03a8a31ea"
-      ]
-    },
-    {
-      "claim_id": "C018",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 543,
-      "end": 625,
-      "claim_text": "Quant aux deux autres états, la phrase citée plus haut les compte sans les nommer.",
-      "normalized_claim": "La phrase de la page 4 compte trois états sans nommer les deux autres.",
-      "support_ids": [
-        "SUP-b619e9e8d1f0d59b",
-        "SUP-63488c91bf5046e7"
-      ]
-    },
-    {
-      "claim_id": "C019",
-      "locator": "sections[2].paragraphs[0]",
+      "locator": "sections[0].paragraphs[2]",
       "start": 0,
-      "end": 124,
-      "claim_text": "Dans cette phrase, le mot rendu par « centrales » est mis entre guillemets par les auteurs eux-mêmes, qui écrivent « core ».",
-      "normalized_claim": "Le mot core est entre guillemets dans l’original et les guillemets sont conservés en traduction.",
+      "end": 39,
+      "claim_text": "Le rapport est d’abord un questionnaire",
+      "normalized_claim": "Le rapport présente avant tout un instrument de mesure (le JDS).",
       "support_ids": [
-        "SUP-63488c91bf5046e7",
-        "SUP-cf9ad832152ec475",
-        "SUP-f695abe6794b1f61"
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 182,
-      "end": 248,
-      "claim_text": "le rapport mesure plus de choses qu’il n’en compte comme centrales",
-      "normalized_claim": "Le rapport mesure davantage de dimensions qu’il n’en retient dans le noyau.",
-      "support_ids": [
-        "SUP-618caaed36d65ce3"
-      ]
-    },
-    {
-      "claim_id": "C021",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 250,
-      "end": 346,
-      "claim_text": "Deux dimensions supplémentaires sont relevées à la page suivante et explicitement mises de côté.",
-      "normalized_claim": "Deux dimensions supplémentaires sont mesurées p. 5 et explicitement exclues du noyau.",
-      "support_ids": [
-        "SUP-618caaed36d65ce3"
-      ]
-    },
-    {
-      "claim_id": "C022",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 347,
-      "end": 515,
-      "claim_text": "La première est le retour d’information donné par des tiers plutôt que par le travail lui-même, nommée Feedback from Agents ; la seconde est nommée Dealing with Others.",
-      "normalized_claim": "Les deux dimensions exclues sont Feedback from Agents et Dealing with Others.",
-      "support_ids": [
-        "SUP-618caaed36d65ce3",
-        "SUP-4066e0b256f9411e"
-      ]
-    },
-    {
-      "claim_id": "C023",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 0,
-      "end": 158,
-      "claim_text": "La raison de l’exclusion est donnée pour la première, et elle vaut critère : « This dimension is not, strictly speaking, a characteristic of the job itself ».",
-      "normalized_claim": "Citation verbatim du motif d’exclusion de Feedback from Agents.",
-      "support_ids": [
-        "SUP-618caaed36d65ce3"
-      ]
-    },
-    {
-      "claim_id": "C024",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 159,
-      "end": 233,
-      "claim_text": "Ce n’est pas, à strictement parler, une caractéristique du poste lui-même.",
-      "normalized_claim": "Traduction de la phrase citée.",
-      "support_ids": [
-        "SUP-618caaed36d65ce3",
+        "SUP-46db82f6ac3e7439",
+        "SUP-e0e146e10c75d708",
+        "SUP-c8165ae3eab6039f",
+        "SUP-a269172ea0335b83",
         "SUP-cf9ad832152ec475"
       ]
     },
     {
-      "claim_id": "C025",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 328,
-      "end": 397,
-      "claim_text": "ce qui entre dans le noyau doit tenir au travail, non à son entourage",
-      "normalized_claim": "Critère d’appartenance au noyau déduit du motif d’exclusion.",
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 44,
+      "end": 241,
+      "claim_text": "son titre dit à quoi il sert : « An Instrument for the Diagnosis of Jobs and the Evaluation of Job Redesign Projects », un instrument pour diagnostiquer des postes et évaluer des projets de refonte",
+      "normalized_claim": "Titre exact du rapport et sa traduction.",
       "support_ids": [
-        "SUP-618caaed36d65ce3",
-        "SUP-4066e0b256f9411e"
+        "SUP-46db82f6ac3e7439",
+        "SUP-e0e146e10c75d708",
+        "SUP-c8165ae3eab6039f",
+        "SUP-b23fb4f49e936147"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 243,
+      "end": 382,
+      "claim_text": "Une liste courte, nommée et notée, permet de dire d’un poste ce qui lui manque, de le modifier, puis de reprendre la mesure et de comparer.",
+      "normalized_claim": "Usage de l'instrument : diagnostic, refonte, re-mesure.",
+      "support_ids": [
+        "SUP-46db82f6ac3e7439",
+        "SUP-e0e146e10c75d708",
+        "SUP-c8165ae3eab6039f"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 88,
+      "claim_text": "Ce qui se passe chez la personne, le rapport le nomme « états psychologiques critiques »",
+      "normalized_claim": "Le rapport nomme ces états « critical psychological states ».",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-b619e9e8d1f0d59b",
+        "SUP-63488c91bf5046e7",
+        "SUP-788e89760d5f11ee",
+        "SUP-2e4f0b4fb617e86d"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 93,
+      "end": 163,
+      "claim_text": "sa figure 1 les place entre les cinq caractéristiques et les résultats",
+      "normalized_claim": "La figure 1 place les états entre dimensions et résultats.",
+      "support_ids": [
+        "SUP-7f8cdae16f90ce57",
+        "SUP-5f05de32126d76fa",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 165,
+      "end": 286,
+      "claim_text": "Le premier est l’expérience que le travail a du sens : le vivre comme ayant du sens, de la valeur, comme valant la peine.",
+      "normalized_claim": "Définition d'Experienced Meaningfulness.",
+      "support_ids": [
+        "SUP-5f05de32126d76fa",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 287,
+      "end": 413,
+      "claim_text": "Le deuxième est la responsabilité ressentie à l’égard des résultats : se sentir personnellement comptable de ce qu’on produit.",
+      "normalized_claim": "Définition d'Experienced Responsibility.",
+      "support_ids": [
+        "SUP-5f05de32126d76fa",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 414,
+      "end": 547,
+      "claim_text": "Le troisième est la connaissance des résultats : savoir et comprendre, de façon continue, avec quelle efficacité on fait son travail.",
+      "normalized_claim": "Définition de Knowledge of Results.",
+      "support_ids": [
+        "SUP-5f05de32126d76fa",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 548,
+      "end": 759,
+      "claim_text": "Au bout de la chaîne, la figure range quatre résultats : une forte motivation interne au travail, une qualité de travail élevée, une forte satisfaction, un faible absentéisme et une faible rotation du personnel.",
+      "normalized_claim": "La figure 1 liste quatre résultats.",
+      "support_ids": [
+        "SUP-7f8cdae16f90ce57",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
       "claim_id": "C026",
-      "locator": "sections[2].paragraphs[2]",
-      "start": 73,
-      "end": 180,
-      "claim_text": "Le retour qui figure parmi les cinq est celui que le travail donne de lui-même, dans le geste où on le fait",
-      "normalized_claim": "La cinquième dimension est le retour donné par le travail lui-même, non par des tiers.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 75,
+      "claim_text": "Les cinq caractéristiques ne nourrissent pas indifféremment les trois états",
+      "normalized_claim": "Les dimensions alimentent des états différents.",
       "support_ids": [
-        "SUP-4066e0b256f9411e",
-        "SUP-618caaed36d65ce3"
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57"
       ]
     },
     {
       "claim_id": "C027",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 265,
-      "claim_text": "La théorie dont cette liste sort s’appuie sur des travaux antérieurs, et le rapport l’écrit lui-même dès sa deuxième page : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
-      "normalized_claim": "Citation verbatim de la page 2 rattachant la théorie à Turner & Lawrence 1965 et Hackman & Lawler 1971.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 78,
+      "end": 228,
+      "claim_text": "« Experienced Meaningfulness of the Work is enhanced primarily by three of the Core Dimensions: Skill Variety, Task Identity, and Task Significance. »",
+      "normalized_claim": "Citation verbatim du folio 4.",
       "support_ids": [
-        "SUP-5604d2fd43d62ed6",
-        "SUP-05bcca9c899e0b91",
-        "SUP-c604a94416e464a0"
+        "SUP-8349b9530e887f0d",
+        "SUP-d87165f73d379987",
+        "SUP-ada711576952723d",
+        "SUP-424eb6a1844bbff3",
+        "SUP-50cddc913082a5a5"
       ]
     },
     {
       "claim_id": "C028",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 266,
-      "end": 350,
-      "claim_text": "L’un des deux antécédents est donc le travail antérieur de l’un des deux signataires",
-      "normalized_claim": "Hackman & Lawler 1971 est un travail antérieur d’un coauteur du rapport de 1974.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 229,
+      "end": 290,
+      "claim_text": "La responsabilité ressentie, elle, est accrue par l’autonomie",
+      "normalized_claim": "Autonomy accroît la responsabilité ressentie.",
       "support_ids": [
-        "SUP-5604d2fd43d62ed6"
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57"
       ]
     },
     {
       "claim_id": "C029",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 353,
-      "end": 494,
-      "claim_text": "Hackman, à Yale, prolonge ici, avec Oldham, rattaché à l’université de l’Illinois, quelque chose qu’il avait commencé avec un autre coauteur.",
-      "normalized_claim": "Rattachements institutionnels des deux signataires et continuité avec Hackman & Lawler 1971.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 295,
+      "end": 352,
+      "claim_text": "la connaissance des résultats par le retour d’information",
+      "normalized_claim": "Feedback accroît la connaissance des résultats.",
       "support_ids": [
-        "SUP-c604a94416e464a0",
-        "SUP-05bcca9c899e0b91",
-        "SUP-b5fc4958359caa39",
-        "SUP-5604d2fd43d62ed6"
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57",
+        "SUP-4066e0b256f9411e"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 0,
-      "end": 64,
-      "claim_text": "La note 1, page 39, donne le détail des deux listes antérieures.",
-      "normalized_claim": "Le détail des deux listes antérieures figure en note 1, p. 39.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 354,
+      "end": 369,
+      "claim_text": "Trois, une, une",
+      "normalized_claim": "Correspondance trois/une/une.",
       "support_ids": [
-        "SUP-5604d2fd43d62ed6"
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57"
       ]
     },
     {
       "claim_id": "C031",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 65,
-      "end": 231,
-      "claim_text": "Turner et Lawrence mesuraient six attributs de la tâche : variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility.",
-      "normalized_claim": "Liste des six task attributes de Turner & Lawrence 1965.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 372,
+      "end": 478,
+      "claim_text": "la variété, l’identité et la signification se tiennent ensemble parce qu’elles poussent vers le même état.",
+      "normalized_claim": "Les trois premières dimensions sont regroupées parce qu'elles alimentent le même état.",
       "support_ids": [
-        "SUP-5604d2fd43d62ed6"
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57",
+        "SUP-e08d9dc03a8a31ea"
       ]
     },
     {
       "claim_id": "C032",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 232,
-      "end": 386,
-      "claim_text": "Hackman et Lawler en mesuraient six aussi, découpés autrement : variety, autonomy, task identity, feedback, friendship opportunities, dealing with others.",
-      "normalized_claim": "Liste des six job dimensions de Hackman & Lawler 1971.",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 142,
+      "claim_text": "Le rapport ajoute une condition : « All three of the Critical Psychological States must be present for the positive outcomes to be realized. »",
+      "normalized_claim": "Citation verbatim du folio 4.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-d87165f73d379987"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 143,
+      "end": 221,
+      "claim_text": "Les trois états doivent être présents ensemble pour que les résultats suivent.",
+      "normalized_claim": "Paraphrase de la condition.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-d87165f73d379987"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 356,
+      "end": 501,
+      "claim_text": "la connaissance des résultats y fait défaut, et cela implique, selon cette condition, que les trois autres caractéristiques ne la remplacent pas.",
+      "normalized_claim": "Sans feedback, pas de connaissance des résultats, et les autres dimensions ne compensent pas ce manque.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-d87165f73d379987",
+        "SUP-7f8cdae16f90ce57"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 0,
+      "end": 51,
+      "claim_text": "Une seconde condition porte, elle, sur la personne.",
+      "normalized_claim": "La théorie pose une condition individuelle.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 52,
+      "end": 144,
+      "claim_text": "La théorie, écrivent les auteurs, n’est pas censée « marcher » aussi bien pour tout le monde",
+      "normalized_claim": "Citation paraphrasée du folio 4.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 147,
+      "end": 285,
+      "claim_text": "qui tient fortement à se sentir accomplir quelque chose et grandir devrait répondre très positivement à un poste à fort potentiel motivant",
+      "normalized_claim": "Paraphrase folio 4.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 288,
+      "end": 373,
+      "claim_text": "qui n’y tient pas peut le trouver anxiogène et s’y sentir inconfortablement « étiré »",
+      "normalized_claim": "Paraphrase folio 4.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-424eb6a1844bbff3"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 375,
+      "end": 482,
+      "claim_text": "Ce besoin de croissance, growth need strength, figure dans le schéma comme modérateur des autres relations.",
+      "normalized_claim": "GNS modérateur dans la figure 1.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57",
+        "SUP-6b9864dc4adc5dc5"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[1].paragraphs[3]",
+      "start": 539,
+      "end": 627,
+      "claim_text": "dès qu’elles ne le sont plus, la réponse au même poste peut différer de l’une à l’autre.",
+      "normalized_claim": "Des personnes différant en GNS peuvent répondre différemment au même poste.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-6b9864dc4adc5dc5"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 104,
+      "claim_text": "Dans la phrase qui annonce les cinq, le mot « core » est mis entre guillemets par les auteurs eux-mêmes.",
+      "normalized_claim": "Guillemets autour de core dans l'original.",
+      "support_ids": [
+        "SUP-63488c91bf5046e7",
+        "SUP-2e4f0b4fb617e86d",
+        "SUP-f695abe6794b1f61",
+        "SUP-cf9ad832152ec475",
+        "SUP-c3563b30fb2f514f"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 105,
+      "end": 159,
+      "claim_text": "Il désigne un noyau, c’est-à-dire le résultat d’un tri",
+      "normalized_claim": "Core désigne un noyau sélectionné.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 162,
+      "end": 229,
+      "claim_text": "le rapport mesure plus de choses qu’il n’en compte comme centrales.",
+      "normalized_claim": "Le rapport mesure des dimensions hors noyau.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 230,
+      "end": 326,
+      "claim_text": "Deux dimensions supplémentaires sont relevées à la page suivante et explicitement mises de côté.",
+      "normalized_claim": "Deux dimensions supplémentaires p. 5 (phrase de cadrage p. 4), explicitement exclues.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d",
+        "SUP-43cb5037f47995be",
+        "SUP-b1f6e5d14b34504a"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 327,
+      "end": 450,
+      "claim_text": "La première est le retour d’information donné par des tiers plutôt que par le travail lui-même, nommée Feedback from Agents",
+      "normalized_claim": "Feedback from Agents = retour par des tiers.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-4066e0b256f9411e",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 453,
+      "end": 495,
+      "claim_text": "la seconde est nommée Dealing with Others.",
+      "normalized_claim": "Seconde dimension exclue.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 135,
+      "claim_text": "La raison de l’exclusion est donnée pour la première : « This dimension is not, strictly speaking, a characteristic of the job itself »",
+      "normalized_claim": "Citation du motif d'exclusion.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 137,
+      "end": 210,
+      "claim_text": "Ce n’est pas, à strictement parler, une caractéristique du poste lui-même",
+      "normalized_claim": "Traduction du motif.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 213,
+      "end": 305,
+      "claim_text": "un chef qui commente le travail peut changer demain sans que le poste ait bougé d’une ligne.",
+      "normalized_claim": "Glose : le feedback de tiers dépend de personnes, pas du poste.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 306,
+      "end": 381,
+      "claim_text": "Le retour qui figure parmi les cinq est celui que donne le travail lui-même",
+      "normalized_claim": "La cinquième dimension est Feedback from the Job Itself.",
+      "support_ids": [
+        "SUP-4066e0b256f9411e",
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 384,
+      "end": 458,
+      "claim_text": "la soudure dont on voit si elle a pris, l’essai qui passe ou ne passe pas.",
+      "normalized_claim": "Exemples illustratifs de feedback par le travail.",
+      "support_ids": [
+        "SUP-d9e6dd4357ec58a1"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 459,
+      "end": 528,
+      "claim_text": "C’est lui qui, dans la chaîne, accroît la connaissance des résultats.",
+      "normalized_claim": "Feedback accroît Knowledge of Results.",
+      "support_ids": [
+        "SUP-8349b9530e887f0d",
+        "SUP-7f8cdae16f90ce57",
+        "SUP-4066e0b256f9411e"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 529,
+      "end": 652,
+      "claim_text": "Compter sept dimensions centrales plutôt que cinq reviendrait à remettre ensemble ce que le rapport a pris soin de séparer.",
+      "normalized_claim": "Sept serait une erreur.",
+      "support_ids": [
+        "SUP-618caaed36d65ce3",
+        "SUP-8349b9530e887f0d"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "La théorie dont cette liste sort s’appuie sur des travaux antérieurs",
+      "normalized_claim": "La théorie repose sur des travaux antérieurs.",
+      "support_ids": [
+        "SUP-c604a94416e464a0",
+        "SUP-cc844847b96e5a7c",
+        "SUP-5604d2fd43d62ed6",
+        "SUP-05bcca9c899e0b91"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 73,
+      "end": 265,
+      "claim_text": "le rapport l’écrit lui-même dès sa deuxième page : « The theory which gave rise to the present instrument is based on earlier work by Turner & Lawrence (1965) and by Hackman & Lawler (1971). »",
+      "normalized_claim": "Citation verbatim folio 2.",
+      "support_ids": [
+        "SUP-5604d2fd43d62ed6",
+        "SUP-05bcca9c899e0b91",
+        "SUP-cc844847b96e5a7c",
+        "SUP-c604a94416e464a0"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 266,
+      "end": 351,
+      "claim_text": "L’un des deux antécédents est donc le travail antérieur de l’un des deux signataires.",
+      "normalized_claim": "Hackman & Lawler 1971 est de Hackman, coauteur.",
       "support_ids": [
         "SUP-5604d2fd43d62ed6",
         "SUP-05bcca9c899e0b91"
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C057",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 64,
+      "claim_text": "La note 1, page 39, donne le détail des deux listes antérieures.",
+      "normalized_claim": "Note 1 p. 39 détaille les listes.",
+      "support_ids": [
+        "SUP-5604d2fd43d62ed6"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 65,
+      "end": 231,
+      "claim_text": "Turner et Lawrence mesuraient six attributs de la tâche : variety, required interaction, autonomy, optional interaction, knowledge and skill required, responsibility.",
+      "normalized_claim": "Liste Turner & Lawrence.",
+      "support_ids": [
+        "SUP-5604d2fd43d62ed6"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 232,
+      "end": 386,
+      "claim_text": "Hackman et Lawler en mesuraient six aussi, découpés autrement : variety, autonomy, task identity, feedback, friendship opportunities, dealing with others.",
+      "normalized_claim": "Liste Hackman & Lawler.",
+      "support_ids": [
+        "SUP-5604d2fd43d62ed6",
+        "SUP-05bcca9c899e0b91"
+      ]
+    },
+    {
+      "claim_id": "C060",
       "locator": "sections[3].paragraphs[1]",
       "start": 387,
       "end": 440,
       "claim_text": "Passer à cinq n’est donc pas un élagage arithmétique.",
-      "normalized_claim": "Le passage de six à cinq n’est pas une simple soustraction.",
+      "normalized_claim": "La liste de cinq n'est pas une simple réduction des listes antérieures.",
       "support_ids": [
         "SUP-5604d2fd43d62ed6",
-        "SUP-05bcca9c899e0b91",
-        "SUP-618caaed36d65ce3"
+        "SUP-05bcca9c899e0b91"
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C061",
       "locator": "sections[3].paragraphs[2]",
       "start": 0,
-      "end": 55,
-      "claim_text": "Mis côte à côte, ces douze noms rendent le tri visible.",
-      "normalized_claim": "Les deux listes antérieures totalisent douze entrées.",
+      "end": 101,
+      "claim_text": "La signification de la tâche, Task Significance, ne figurait dans aucune des deux listes précédentes.",
+      "normalized_claim": "Task Significance absente des deux listes.",
+      "support_ids": [
+        "SUP-5604d2fd43d62ed6",
+        "SUP-05bcca9c899e0b91"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 102,
+      "end": 340,
+      "claim_text": "À l’inverse, quatre des douze noms antérieurs portent sur les rapports avec d’autres personnes : required interaction et optional interaction chez Turner et Lawrence, friendship opportunities et dealing with others chez Hackman et Lawler.",
+      "normalized_claim": "Quatre noms relationnels.",
       "support_ids": [
         "SUP-5604d2fd43d62ed6"
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C063",
       "locator": "sections[3].paragraphs[2]",
-      "start": 56,
-      "end": 267,
-      "claim_text": "Quatre d’entre eux portent sur les rapports avec d’autres personnes : required interaction et optional interaction chez Turner et Lawrence, friendship opportunities et dealing with others chez Hackman et Lawler.",
-      "normalized_claim": "Quatre des douze entrées portent sur les relations interpersonnelles.",
+      "start": 341,
+      "end": 376,
+      "claim_text": "Aucun n’entre dans le noyau de 1974",
+      "normalized_claim": "Aucun nom relationnel parmi les cinq.",
       "support_ids": [
-        "SUP-5604d2fd43d62ed6"
+        "SUP-5604d2fd43d62ed6",
+        "SUP-d9e6dd4357ec58a1",
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C064",
       "locator": "sections[3].paragraphs[2]",
-      "start": 268,
-      "end": 367,
-      "claim_text": "Aucun n’entre dans le noyau de 1974, Dealing with Others y étant encore mesurée mais rangée dehors.",
-      "normalized_claim": "Aucune de ces quatre entrées n’appartient au noyau de 1974 ; Dealing with Others est mesurée mais exclue.",
+      "start": 378,
+      "end": 440,
+      "claim_text": "Dealing with Others y étant encore mesurée mais rangée dehors.",
+      "normalized_claim": "Dealing with Others mesurée mais exclue.",
       "support_ids": [
         "SUP-618caaed36d65ce3",
-        "SUP-d28e363f1c0538c5",
-        "SUP-5604d2fd43d62ed6"
+        "SUP-8349b9530e887f0d"
       ]
     },
     {
-      "claim_id": "C037",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 368,
-      "end": 486,
-      "claim_text": "À l’inverse, la signification de la tâche, Task Significance, qui ne figurait dans aucune des deux listes, y apparaît.",
-      "normalized_claim": "Task Significance est absente des deux listes antérieures et apparaît en 1974.",
-      "support_ids": [
-        "SUP-05bcca9c899e0b91",
-        "SUP-5604d2fd43d62ed6"
-      ]
-    },
-    {
-      "claim_id": "C038",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 487,
-      "end": 682,
-      "claim_text": "Le changement ne porte donc pas sur le nombre d’entrées : ce qui tenait à l’entourage d’un poste, et qui comptait pour un tiers des attributs mesurés jusque-là, se retrouve en 1974 hors du noyau.",
-      "normalized_claim": "Le tri de 1974 écarte du noyau les attributs relationnels, un tiers des entrées antérieures.",
-      "support_ids": [
-        "SUP-5604d2fd43d62ed6",
-        "SUP-618caaed36d65ce3"
-      ]
-    },
-    {
-      "claim_id": "C039",
+      "claim_id": "C065",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
-      "end": 283,
-      "claim_text": "La théorie que cet instrument applique est exposée ailleurs, et les auteurs le disent deux fois, à leur deuxième page et à leur quatrième : pour l’exposé détaillé de cette théorie et pour son test, ils renvoient à un autre de leurs rapports techniques, le numéro 6, de la même année.",
-      "normalized_claim": "Le rapport renvoie deux fois (p. 2 et p. 4) au Technical Report No. 6 (1974) pour l’exposé et le test de la théorie.",
-      "support_ids": [
-        "SUP-dcf9218752b68452",
-        "SUP-257678c7beb2e19c"
-      ]
-    },
-    {
-      "claim_id": "C040",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 284,
-      "end": 384,
-      "claim_text": "Ce qui manque ici n’est donc pas un détail de méthode : c’est ce qui mettrait la théorie à l’épreuve",
-      "normalized_claim": "Ce qui est absent de ce rapport est le test de la théorie.",
-      "support_ids": [
-        "SUP-dcf9218752b68452",
-        "SUP-257678c7beb2e19c"
-      ]
-    },
-    {
-      "claim_id": "C041",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 0,
-      "end": 129,
-      "claim_text": "Sur cette même quatrième page figure aussi une formule, appelée motivating potential score, qui assemble les dimensions du noyau.",
-      "normalized_claim": "Le motivating potential score est imprimé p. 4 et combine les dimensions centrales.",
+      "end": 96,
+      "claim_text": "Sur sa quatrième page, le rapport imprime aussi une formule, appelée motivating potential score.",
+      "normalized_claim": "MPS imprimé p. 4.",
       "support_ids": [
         "SUP-a269172ea0335b83",
         "SUP-4066e0b256f9411e",
@@ -565,27 +891,99 @@
       ]
     },
     {
-      "claim_id": "C042",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 130,
-      "end": 300,
-      "claim_text": "C’est le geste qu’on attend d’un outil de diagnostic : ramener un poste à une note, pour pouvoir comparer deux postes, ou le même poste avant et après une transformation.",
-      "normalized_claim": "Fonction comparative attribuée à la note, déduite de la vocation diagnostique de l’instrument.",
+      "claim_id": "C066",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 97,
+      "end": 313,
+      "claim_text": "Pour l’exposé détaillé de cette formule comme de la théorie, et pour le test de celle-ci, les auteurs renvoient deux fois, à leur deuxième page et à leur quatrième, à un autre de leurs textes, daté lui aussi de 1974.",
+      "normalized_claim": "Renvoi double (folios 2 et 4) à Hackman & Oldham 1974 pour la théorie, le MPS et le test.",
       "support_ids": [
-        "SUP-46db82f6ac3e7439",
-        "SUP-a269172ea0335b83"
+        "SUP-257678c7beb2e19c",
+        "SUP-42e7d43d4190da60",
+        "SUP-dcf9218752b68452",
+        "SUP-cc844847b96e5a7c"
       ]
     },
     {
-      "claim_id": "C043",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 301,
-      "end": 409,
-      "claim_text": "Ce que vaut cette note, la page ne le dit pas davantage : c’est encore vers l’autre rapport qu’elle renvoie.",
-      "normalized_claim": "La page 4 renvoie à l’autre rapport pour le motivating potential score.",
+      "claim_id": "C067",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 158,
+      "end": 185,
+      "claim_text": "et pour le test de celle-ci",
+      "normalized_claim": "Le texte de renvoi porte aussi le test de la théorie.",
+      "support_ids": [
+        "SUP-dcf9218752b68452"
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 314,
+      "end": 414,
+      "claim_text": "Ce qui manque ici n’est donc pas un détail de méthode : c’est ce qui mettrait la théorie à l’épreuve",
+      "normalized_claim": "Ce rapport ne teste pas la théorie.",
+      "support_ids": [
+        "SUP-dcf9218752b68452",
+        "SUP-6b9864dc4adc5dc5"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 416,
+      "end": 452,
+      "claim_text": "et c’est ce texte qu’il faudra lire.",
+      "normalized_claim": "Le texte de renvoi est celui à lire pour la théorie.",
       "support_ids": [
         "SUP-257678c7beb2e19c",
         "SUP-dcf9218752b68452"
+      ]
+    },
+    {
+      "claim_id": "C070",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 122,
+      "claim_text": "Le questionnaire mesure les réactions affectives des personnes à leur travail comme les résultats personnels de la théorie",
+      "normalized_claim": "Réactions affectives = personal outcomes.",
+      "support_ids": [
+        "SUP-6b9864dc4adc5dc5"
+      ]
+    },
+    {
+      "claim_id": "C071",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 131,
+      "end": 263,
+      "claim_text": "précisent les auteurs, l’instrument ne mesure ni la productivité réelle, ni la façon dont les salariés perçoivent leur productivité.",
+      "normalized_claim": "Parenthèse folio 6.",
+      "support_ids": [
+        "SUP-6b9864dc4adc5dc5"
+      ]
+    },
+    {
+      "claim_id": "C072",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 264,
+      "end": 348,
+      "claim_text": "Or la chaîne de la figure s’achève, entre autres, sur une qualité de travail élevée.",
+      "normalized_claim": "High Quality Work Performance dans la figure 1.",
+      "support_ids": [
+        "SUP-7f8cdae16f90ce57",
+        "SUP-8349b9530e887f0d",
+        "SUP-e08d9dc03a8a31ea"
+      ]
+    },
+    {
+      "claim_id": "C073",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 349,
+      "end": 500,
+      "claim_text": "Cela implique qu’un diagnostic tiré de ce questionnaire porte sur le poste et sur ce qu’en éprouvent ceux qui l’occupent, non sur ce qu’ils produisent.",
+      "normalized_claim": "Le diagnostic JDS porte sur le poste et les réactions, pas la production.",
+      "support_ids": [
+        "SUP-6b9864dc4adc5dc5",
+        "SUP-46db82f6ac3e7439"
       ]
     }
   ]
