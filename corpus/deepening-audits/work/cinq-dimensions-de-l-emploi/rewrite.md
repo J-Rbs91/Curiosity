@@ -1,207 +1,176 @@
-concept : cinq-dimensions-de-l-emploi
-mode : REVISE (audit `REVISE`, protocol_version 3)
-source unique : Hackman & Oldham, Technical Report No. 4, Yale, mai 1974, `consulted: full-text`
-aucune source `metadata-only` : aucune matière n'a été empruntée hors de l'enregistrement validé
+# Réécriture : cinq-dimensions-de-l-emploi
 
----
+mode : REVISE (audit protocole 4, `audit.md`, verdict REVISE)
+version de départ : HEAD, sha256 7c000e18…d8b9 (= `candidate_sha256` du pack)
+version produite : sha256 227a01159dd20f4cf2953992c26ac08be8700fe8dcaad9b840ccc56eda22e748
+Ce SHA invalide tout fact-check antérieur : le cycle doit repartir à `PREPARE`.
 
-## VOLUMES
+Lu : PROTOCOLE.md, AUDIT_PROTOCOL.md, FACTCHECK_PROTOCOL.md, deepening HEAD, validated (pas de champ
+`dossier`, pack : `non-declare`), `corpus/evidence/cinq-dimensions-de-l-emploi/` listé (seul
+`lecture.json`, lu en entier), pack, audit, review.md du cycle précédent, claim-map et verification
+du cycle précédent (pour reprendre les formulations déjà `SUPPORTED`), factcheck-fixes.md (pour ne pas
+réintroduire les formulations refusées C001, C014, C040, C058…).
+
+Rappel d'accès : la source déclarée `full-text` dans la fiche est `absent` côté dossier (pack) ; tout
+le contenu nouveau est donc financé par `lecture.json` (`access: n/a`, verbatim relus à l'image) et
+par `notes`/`review`, jamais par `sources[0]` seul.
+
+## Volumes (texte lecteur = lead + sections, mots séparés par espaces)
 
 | | avant | après |
 |---|---|---|
-| texte lecteur (lead + sections) | 1 238 mots, 13 paragraphes | 1 502 mots, 15 paragraphes |
-| lead | 198 | 198 (inchangé) |
-| S1 « Ce que la liste contient » | 215 | 302 |
-| S2 « Le détour par ce que la personne éprouve » | 276 | 304 |
-| S3 « Ce qui est mesuré mais tenu hors du noyau » | 232 | 253 |
-| S4 « Ce que 1965 et 1971 mesuraient déjà » | 220 | 264 |
-| S5 « L'instrument, et la théorie qu'il applique » | 141 | 181 |
-| `limits` (interne) | 204 mots, 4 paragraphes | 219 mots, 4 paragraphes |
-| total compté par le contrôle | 1 446 | 1 721 |
+| lead | 107 + 91 = 198 | 109 + 77 = 186 |
+| S1 | 104 / 111 | 141 / 60 / 69 |
+| S2 | 110 / 94 / 72 | 127 / 71 / 82 / 106 |
+| S3 | 83 / 71 / 78 | 83 / 115 |
+| S4 | 72 / 68 / 80 | 62 / 62 / 66 |
+| S5 | 71 / 70 | 86 / 79 |
+| **total** | **1 282** | **1 395 (+8,8 %)** |
+| limits (interne) | 208 | 238 |
 
-Architecture conservée : cinq sections, mêmes titres, mêmes rôles. Aucune section ajoutée ni
-supprimée. Le texte lecteur entre dans la cible 1 300-1 700 de `PROTOCOLE.md` §5, qu'il manquait
-par le bas.
+Dans le plafond de l'audit (+10 %, ~1 400). Une première version à 1 479 mots (+15 %) a été
+ramenée à 1 395 par retraits, pas par compression des ajouts financés.
 
----
+## Ajouts et supports qui les financent
 
-## CE QUI A CHANGÉ, ET POURQUOI
+1. **S1.P1, définitions des cinq dimensions** (rendues en substance, pas recopiées) :
+   SUP-d9e6dd4357ec58a1 (lecture `reserves[1]`, verbatim folio 5), SUP-8349b9530e887f0d. « défini
+   comme un degré » : les cinq définitions commencent par « The degree to which » (même support).
+2. **S1.P2, rattachement de trois contrastes du lead** (identité / autonomie / signification) et du
+   retour d'information *par la source du retour*, non par son délai : SUP-d9e6dd4357ec58a1,
+   SUP-4066e0b256f9411e. Skill Variety non forcée ; « le soir même » non présenté comme vitesse.
+3. **S2.P1, trois états nommés et définis, place dans la figure, quatre résultats** :
+   SUP-5f05de32126d76fa (définitions et « mediating »), SUP-7f8cdae16f90ce57 (Figure 1, trois
+   colonnes, quatre résultats), SUP-8349b9530e887f0d (folio 2, liste des outcomes).
+4. **S2.P2, câblage trois-une-une** : SUP-8349b9530e887f0d (« Experienced Responsibility… is
+   increased when a job has high Autonomy. Knowledge of Results is increased when a job is high on
+   Feedback »), SUP-7f8cdae16f90ce57, citation déjà au texte via SUP-ada711576952723d.
+5. **S2.P3, conjonction obligatoire des trois états** (citation verbatim + traduction) :
+   SUP-8349b9530e887f0d, SUP-d87165f73d379987. L'exemple « Imaginons un poste… » est stipulé et
+   marqué « cela implique, selon cette condition » ; il ne chiffre aucune compensation.
+6. **S2.P4, growth need strength** (deux profils, « work » entre guillemets d'auteur, « stretched »,
+   modérateur des autres relations) : SUP-8349b9530e887f0d, SUP-6b9864dc4adc5dc5 (« predicted to
+   affect how positively an employee will respond »), SUP-7f8cdae16f90ce57. Dernière phrase
+   (la réponse au même poste peut différer) : SUP-6b9864dc4adc5dc5. « malléable » retiré pour le
+   budget.
+7. **S3.P2, phrase « C'est lui qui, dans la chaîne, accroît la connaissance des résultats »** :
+   SUP-8349b9530e887f0d, SUP-4066e0b256f9411e (Feedback = Feedback from the Job Itself).
+8. **S4.P3, quatre des douze noms relationnels, aucun dans le noyau** (gain du candidat b6080 que la
+   revue demandait de garder, déjà `SUPPORTED` C035-C036) : SUP-5604d2fd43d62ed6,
+   SUP-618caaed36d65ce3.
+9. **S5.P2, l'instrument ne mesure pas la productivité réelle**, juxtaposé à la qualité de travail
+   de la figure, conséquence marquée « Cela implique » : SUP-6b9864dc4adc5dc5 (verbatim
+   parenthèse), SUP-7f8cdae16f90ce57. L'absentéisme n'est pas mentionné (inférence de la lecture).
+10. **S5.P1, le renvoi couvre aussi la formule** : SUP-257678c7beb2e19c, SUP-42e7d43d4190da60,
+    SUP-dcf9218752b68452 (test). Ni titre, ni numéro, ni revue du texte de 1974.
 
-### 1. S1.P1 encaisse enfin le lead (défaut majeur n° 1 de l'audit)
+## Retraits (qui paient les ajouts)
 
-Avant : cinq étiquettes anglaises, leur rendu français, et un avertissement de prudence. Le
-lecteur sortait de la section capable de réciter cinq noms et incapable d'en reconnaître un seul.
+- lead[0] : « Dire que la première est plus motivée que la seconde n'explique rien » (C001
+  UNSUPPORTED au cycle précédent). La thèse « ce qui les sépare n'est pas dans les deux personnes,
+  il est dans les deux postes » est **conservée** (régression n° 1 de la revue), mais rendue
+  interne à la vignette : les deux personnes sont désormais stipulées semblables (« que rien ne
+  distingue au départ », « qu'on a supposées semblables »), ce qui en fait une conséquence de
+  l'exemple, non une thèse sur la motivation individuelle. S2.P4 y revient quand la stipulation
+  tombe (growth need strength).
+- lead[1] : « avant et après une transformation » (redite avec S1.P3) ; la négation d'effet direct
+  et « c'est cela qui ferait le reste » remplacées par une formule positive de médiation
+  (SUP-5f05de32126d76fa).
+- S1.P1 : la promesse vide (« ce sont ces phrases qui fixent… le sens ordinaire… n'en est pas la
+  mesure ») remplacée par les définitions elles-mêmes.
+- S1.P2 : « Cette liste n'est pas faite pour décrire ce qui rend un travail agréable. Elle est faite
+  pour être mesurée » (C014 UNSUPPORTED) et « C'est cet usage qui explique la forme de la liste… »
+  (C012 retiré au cycle précédent).
+- S2.P1 : principe de médiation redit et glosé (« un poste ne fait rien par lui-même… effort et
+  soin ») ; description à deux colonnes de la figure.
+- S2.P2 : « Des trois états, un seul est nommé » (contredit par le dossier, défaut majeur n° 1).
+- S2.P3 ancien : « peut donc réussir ici et ne rien donner là » (défaut majeur n° 2), remplacé par
+  les deux conditions documentées.
+- S3 : « elle vaut critère », « ce qui entre dans le noyau doit tenir au travail », « mesuré et
+  écarté » redit ; S3.P2 et S3.P3 fusionnés ; « immédiatement » retiré de l'exemple de la soudure
+  (immédiateté refusée en C040).
+- S4.P1 : « La liste n'est pas née en 1974 » remplacé par la formulation C027 déjà soutenue ;
+  « Hackman prolonge ici… » retiré (redite de la phrase précédente).
+- S4.P2 : « Une note de bas de page, vers la fin du rapport » → « La note 1, page 39 » (C030).
+- S4.P3 : « Ce qui est neuf tient… au critère qui décide de l'appartenance » (surgénéralisation,
+  redite de S3) ; « En comparant les trois listes… » (charnière).
+- S5 : « Ce rapport est un instrument… » (redite de S1) ; « C'est le geste qu'on attend d'un outil
+  de diagnostic… avant et après » (généralité non sourcée, troisième occurrence) ; « ce qu'elle
+  suppose et ce qu'elle écrase » (C058 UNSUPPORTED) : la tension finale est désormais portée par
+  l'écart documenté entre la qualité de travail visée et la productivité non mesurée.
 
-Après : les cinq noms sont conservés, puis quatre d'entre eux sont rendus aux traits déjà décrits
-chez les deux personnes du lead (monter un appareil entier = identité de la tâche ; décider de
-l'ordre = autonomie ; voir l'objet partir vers quelqu'un qui s'en servira = signification ;
-savoir le soir même = retour donné par le travail). Le statut du rapprochement est marqué dans la
-phrase qui suit : « Ce rapprochement sert à les repérer, il ne dit pas comment les auteurs les
-définissent ». Aucune définition d'auteur n'est prétendue : la matière du lead est celle du
-rédacteur, et l'exemple était déjà déclaré hypothétique par « Imaginons ».
+## Delta par paragraphe
 
-La variété des compétences n'est volontairement pas rattachée : le lead ne la met pas en scène,
-et lui fabriquer un correspondant aurait été une invention.
+- lead[0] : la cause de l'écart est cherchée dans le poste, deux personnes semblables étant posées.
+- lead[1] : qui, où, quand ; liste courte ; quelque chose chez la personne est intercalé.
+- S1.P1 : les cinq noms et ce que chacun veut dire selon les auteurs.
+- S1.P2 : le lecteur reconnaît trois dimensions (et la source du retour) dans la scène.
+- S1.P3 : la liste sert à diagnostiquer et évaluer une refonte (titre).
+- S2.P1 : les trois états nommés, définis, et les quatre résultats au bout.
+- S2.P2 : quelle dimension nourrit quel état (3-1-1).
+- S2.P3 : les trois états doivent être réunis ; une dimension forte ne comble pas un état absent.
+- S2.P4 : la chaîne ne vaut pas également pour tous ; le modérateur ; retour sur la stipulation du lead.
+- S3.P1 : « core » = tri ; deux dimensions mesurées hors noyau.
+- S3.P2 : la raison donnée pour Feedback from Agents ; le sens exact du cinquième terme et l'état
+  qu'il nourrit ; contresens « sept ».
+- S4.P1 : antécédents déclarés, dont un de Hackman.
+- S4.P2 : contenu des deux listes antérieures.
+- S4.P3 : ce qui entre (Task Significance), ce qui reste dehors (les quatre noms relationnels).
+- S5.P1 : la formule et la théorie sont exposées et testées ailleurs ; texte à lire.
+- S5.P2 : l'instrument ne mesure pas la productivité, alors que la chaîne vise la qualité.
 
-### 2. La généralisation sur les définitions est rétrogradée (signal documentaire n° 2)
+Aucune section ne répète principalement une section antérieure ; le « avant/après » n'apparaît plus
+qu'une fois (S1.P3).
 
-Avant : « Chacune reçoit, dans le rapport, une définition écrite d'une seule phrase ». Les `notes`
-(« CITATION, CHOIX ET RENONCEMENT ») établissent les longueurs de deux définitions seulement, la
-plus courte (Task Identity, 171 signes) et la plus longue (Autonomy, 200), et l'existence d'un
-« bloc de définitions p. 5 ».
+## Prescriptions écartées (comme l'audit) ou non suivies
 
-Après : « le rapport donne ses définitions page 5, et ce sont des phrases entières, de la plus
-brève, celle de l'identité de la tâche, à la plus longue, celle de l'autonomie ». La portée est
-exactement celle du dossier : deux bornes attestées, aucun compte de cinq.
+- formule du MPS, raison d'exclusion de Dealing with Others, délai du feedback, absentéisme, titre/
+  numéro/revue du texte de 1974, validation empirique : non écrits, faute de support.
+- « malléable » (growth need strength) : finançable (SUP-6b9864dc4adc5dc5) mais retiré pour tenir
+  le budget de volume.
 
-### 3. La Figure 1 disparaît du texte lecteur (défaut majeur n° 4, franchissement de `limits`)
+## `limits` (interne, non affiché)
 
-Avant, S2.P1 racontait la figure (« range d'un côté les cinq caractéristiques, sous le titre Core
-Job Dimensions, et de l'autre les résultats attendus… ») alors que les `notes` (« CE QUE LA PIÈCE
-NE PORTE PAS ») déclarent qu'elle n'a pas été relue à l'image et que la propre `limits[3]` du
-fichier l'interdisait. Le dossier se contredisait (bloc `review`, note PROSE, contre `notes`), et
-le texte tranchait du côté permissif.
+Réécrit au regard de `lecture.json` : `limits[0]` ancien (un seul état nommé) et `limits[3]` ancien
+(figure qui « se regarde ») supprimés comme périmés ; `limits[1]` corrigé (le modérateur est énoncé
+au folio 4, seuls son mécanisme et la démonstration relèvent de l'autre texte) ; ajout des frontières
+« pas de délai dans la définition de Feedback », « Skill Variety sans équivalent dans la scène »,
+« raison d'exclusion de Dealing with Others inconnue », « absentéisme : inférence ». Aucun contenu
+de `limits` n'est remonté dans le texte lecteur.
 
-Après : la phrase est supprimée. Le détour ne manque pas, parce que la phrase de cadrage de la
-p. 4 fait le même travail en mieux, et avec une autorité supérieure. La frontière interne est
-reformulée en conséquence, du côté de l'état d'accès : « De la Figure 1, p. 3, rien n'est
-rapportable : son image reste à regarder. »
+## Points de vigilance pour le mapping (non une auto-validation)
 
-### 4. La citation de la carte est donnée à lire, en tête de S2 (matière sous-exploitée)
+- lead[0], dernière phrase : la thèse est désormais conditionnée par la stipulation de la vignette ;
+  au mapper de juger si elle relève de `NO_VERIFIABLE_CLAIM` partiel ou d'un claim ancré sur
+  SUP-8349b9530e887f0d / SUP-46db82f6ac3e7439.
+- S2.P1 « sa figure 1 les place entre » : SUP-5f05de32126d76fa (« shown in Figure 1 as mediating »)
+  et SUP-7f8cdae16f90ce57 ; la note `notes[8]` de la fiche (« Figure 1 non relue à l'image ») décrit
+  une lecture antérieure, la lecture postérieure l'a relue.
 
-La phrase la plus autorisée du concept, `quotation.text` p. 4, n'était nulle part : « La théorie
-pose que les trois états psychologiques critiques sont créés par la présence de cinq dimensions
-« centrales » de l'emploi. » Elle ouvre désormais S2 et noue d'un seul geste les trois éléments
-que S2 et S3 séparaient : les trois états, les cinq dimensions, et les guillemets de « centrales »
-que S3 reprend aussitôt en signalant que les auteurs écrivent « core ». La traduction est celle
-de l'enregistrement, mot pour mot ; aucune retouche.
+## Contrôle mécanique
 
-S3.P1 s'articule maintenant sur cette phrase (« Dans cette phrase, le mot rendu par… ») au lieu de
-renvoyer à une « phrase qui annonce les cinq » que le lecteur n'avait jamais vue.
+`npm run corpus:deepen -- --check --only=cinq-dimensions-de-l-emploi`
+→ « 1 approfondissement(s) contrôlé(s), 1633 mots. Rien projeté. » : PASS.
 
-### 5. Le trou après « trois états » est comblé sans importation
-
-Avant : un seul état nommé, et rien pour les deux autres. Une première version de cette réécriture
-disait « c'est là qu'on verra par quoi passent l'autonomie et le retour d'information » : c'était
-une importation de connaissance générale, le dossier ne nommant pas les deux autres états et ne
-disant rien de ce qui les alimente. Corrigé avant contrôle en : « Les deux autres états, la phrase
-les annonce sans les nommer : il faudra ouvrir le rapport pour savoir lesquels, et ce qui les
-alimente. » Forme lecteur (futur, pas conditionnel), et aucune affirmation sur un contenu non lu.
-
-### 6. S3.P3 ramené à son seul travail neuf (défaut majeur n° 2)
-
-Supprimées : « Le retour que donnent les personnes, lui, est mesuré et écarté » (troisième énoncé
-de l'exclusion) et la phrase « Compter sept dimensions centrales plutôt que cinq… » (quatrième).
-Conservés : les deux micro-exemples, seule matière qui travaillait.
-
-Ajouté à la place, et c'est un delta neuf : le retour porté par le travail est immédiat et contenu
-dans ce qu'on a sous les mains, ce dont la seconde personne du lead est précisément privée. Le
-capital du lead est ainsi dépensé une seconde fois, sur un autre point que S1. La garde
-documentaire « CINQ, ET NON SEPT » reste tenue par S3.P1 et S3.P2, qui posent l'exclusion et son
-critère.
-
-### 7. S4.P3 applique le critère au lieu de le redire (matière sous-exploitée)
-
-Ajouté : le compte que le texte ne faisait pas. Sur les douze entrées des deux listes antérieures
-données par la note 1, p. 39, quatre portent sur les rapports avec d'autres personnes (required
-interaction, optional interaction, friendship opportunities, dealing with others), et aucune
-n'entre dans le noyau de 1974. C'est une opération sur des listes déjà citées, pas un fait
-nouveau.
-
-Supprimée en échange : l'incise finale « être une propriété du travail, et non de ce qui
-l'entoure », qui répétait S3.P2 ; le compte la démontre désormais au lieu de l'énoncer.
-
-Ajouté aussi, depuis `attribution_note` et la page de titre vérifiée par le bloc `review` :
-le rattachement institutionnel des deux signataires, Hackman à Yale, Oldham à l'université de
-l'Illinois, jamais utilisé jusqu'ici.
-
-### 8. S5 entre directement sur le renvoi (défaut majeur n° 3)
-
-Supprimée : « Ce rapport est un instrument, et il ne prétend pas être autre chose », acquis de
-S1.P2.
-
-Ajouté : ce que le lecteur gagnerait précisément à ouvrir l'autre rapport, que l'ancienne version
-ne disait jamais. Non pas un détail de méthode, mais la démonstration que la chaîne tient. Le
-renvoi est nommé tel que TR4 le déclare (`review`, « HORS MANDAT » : folios 2 et 4 ; `notes`,
-« CE QUE LA PIÈCE NE PORTE PAS » : Technical Report No. 6, 1974), et rien n'est dit de son
-contenu au-delà. Le motivating potential score et la question de sortie sont conservés, avec un
-renvoi final vers le même texte, lui aussi déclaré par la p. 4.
-
----
-
-## DELTA DE CHAQUE PARAGRAPHE, APRÈS RÉÉCRITURE
-
-- lead[0] : la cause de l'écart est dans le poste, pas dans la personne ; quatre contrastes
-  concrets sont posés sans être nommés.
-- lead[1] : la question exige une réponse mesurable avant/après ; origine datée et signée ; forme
-  indirecte du modèle annoncée.
-- S1.P1 : le lecteur peut nommer les cinq et en reconnaître quatre dans une situation, tout en
-  sachant que ce repérage n'est pas la définition des auteurs. (Delta nominal + delta de
-  reconnaissance : c'est l'ajout principal.)
-- S1.P2 : la forme de la liste s'explique par son usage, diagnostiquer et remesurer.
-- S2.P1 : la chaîne n'est pas directe ; trois états sont intercalés, et c'est la phrase même du
-  rapport qui l'établit.
-- S2.P2 : le câblage est asymétrique, trois des cinq alimentent un même état ; les deux autres
-  états sont annoncés sans être nommés.
-- S2.P3 : conséquence d'application, un même aménagement peut réussir ici et échouer là.
-- S3.P1 : « core » est un tri, deux dimensions mesurées sont tenues dehors.
-- S3.P2 : le critère du tri, verbatim, rendu manipulable par le chef qui change sans que le poste
-  bouge.
-- S3.P3 : ce qu'est un retour porté par le travail, son immédiateté, et son absence dans le second
-  poste du lead.
-- S4.P1 : filiation déclarée par le rapport, l'un des antécédents est le travail d'un des
-  signataires, et les deux signataires viennent de deux institutions.
-- S4.P2 : les deux listes antérieures en entier, 6 + 6 → 5 n'est pas une soustraction.
-- S4.P3 : le critère à l'œuvre, compté : un tiers des attributs antérieurs sort du noyau, une
-  dimension nouvelle y entre.
-- S5.P1 : ce texte n'est pas celui de la démonstration, et ce qui manque est nommé.
-- S5.P2 : la note unique, pourquoi un outil de diagnostic en a besoin, et ce qu'elle recompose.
-
-Aucun paragraphe sans delta. Aucune séquence de deux paragraphes au delta substantiellement
-identique. Aucune section dont la fonction principale répète une section antérieure.
+Aucune auto-validation : ni `ACCEPT`, ni `FACTCHECK_PASS`.
 
 ---
 
-## FRONTIÈRE INTERNE
+# Correction FACTCHECK_FIX (gate du SHA 227a0115…e748 : 65 claims, 63 SUPPORTED, 2 en échec)
 
-`limits` reste interne, ramené à quatre paragraphes, chacun nommant une source, son état d'accès
-et l'affirmation qu'il interdit :
+Version produite : sha256 d9874a585394b9ca8aac1eaeb4b913fb8a2eb11519a0ae7de50314e74256ba86.
+Ce SHA invalide le fact-check précédent : le cycle doit repartir à `PREPARE`.
 
-1. un seul des trois états est établi, par la phrase de la p. 4 ; aucune phrase ne complète la
-   triade ;
-2. les définitions de la p. 5 ne sont disponibles en verbatim pour aucune des cinq dimensions,
-   seules deux longueurs sont connues ;
-3. le Technical Report No. 6 n'est ouvert nulle part : rien sur la valeur du motivating potential
-   score ni sur le growth need strength ;
-4. Turner & Lawrence et Hackman & Lawler connus par la seule note 1, p. 39 (avec la divergence
-   `review` quatre / `notes` six, tranchée en faveur de la note 1) ; Figure 1, p. 3, non
-   rapportable ; le rapport ne date que lui-même.
+| Claim | Verdict | Opération | Avant → après |
+|---|---|---|---|
+| C001 (lead[0]) | UNSUPPORTED | NARROW (réduit à la stipulation) | « Dans cette scène, ce qui les sépare n’est pas dans les deux personnes, qu’on a supposées semblables : il est dans les deux postes. » → « Dans cette scène, on a supposé les deux personnes semblables : seuls leurs postes diffèrent. » L'exclusive (la différence « est dans les postes », « pas dans les personnes ») disparaît ; ne reste que ce que la vignette pose elle-même (mêmes salaire, bâtiment, « rien ne distingue au départ », deux postes décrits différemment). Pas de retour à l'exclusive refusée lors de la boucle 1 (ancien C002). |
+| C059 (sections[4].paragraphs[0]) | TOO_STRONG | NARROW | « le rapport assemble aussi les dimensions du noyau dans une formule, appelée motivating potential score » → « le rapport imprime aussi une formule, appelée motivating potential score ». « Imprimé p. 4 » : SUP-a269172ea0335b83 (`notes[3]`) ; nom de la formule : SUP-4066e0b256f9411e, SUP-257678c7beb2e19c. Le verbe « assembler les dimensions » sort. |
 
-Aucun de ces contenus n'est remonté dans `lead` ou `sections` comme bloc visible. Les limites
-utiles au lecteur restent là où elles évitent un contresens : le sens ordinaire récusé en S1.P1,
-la conditionnalité du redesign en S2.P3, la frontière du noyau en S3, ce qu'une note unique
-recompose en S5.P2.
+Aucune affirmation nouvelle, aucun `SUP-...` ajouté ni modifié, artefacts de fact-check non touchés.
+`limits` inchangé.
 
----
+Volumes texte lecteur (mots séparés par espaces) : 1 395 → 1 380 (lead[0] −10, S5.P1 −5).
+Total compté par le contrôle (limits inclus) : 1 619 mots.
 
-## POINTS À SIGNALER À LA CHAÎNE CLAIM MAP → VERIFY
-
-- La divergence `review` (Hackman & Lawler : quatre dimensions) contre `notes` (note 1 p. 39 : six)
-  subsiste au dossier. S4.P2 suit la rectification explicite des `notes`. Le verifier rencontrera
-  les deux supports.
-- Le `CONFLICT` potentiel sur la Figure 1 est éteint : plus aucune phrase du texte lecteur ne
-  porte sur elle.
-- La citation française de S2.P1 est `quotation.text` mot pour mot ; la citation anglaise de
-  S2.P2, le verbatim des `notes` ; celles de S1.P2, S3.P2 et S4.P1 sont inchangées et déjà
-  attestées.
-- Toute modification du texte invalide le SHA : l'orchestrateur reprend à `PREPARE`.
-
----
-
-## CONTRÔLE MÉCANIQUE
-
-    npm run corpus:deepen -- --check --only=cinq-dimensions-de-l-emploi
-    1 approfondissement(s) contrôlé(s), 1721 mots. Rien projeté.
-
-PASS, sans avertissement de citation absente. Pas d'auto-validation : ni `ACCEPT`, ni
-`FACTCHECK_PASS`.
+Contrôle mécanique : `npm run corpus:deepen -- --check --only=cinq-dimensions-de-l-emploi` → PASS
+(« 1 approfondissement(s) contrôlé(s), 1619 mots. Rien projeté. »).

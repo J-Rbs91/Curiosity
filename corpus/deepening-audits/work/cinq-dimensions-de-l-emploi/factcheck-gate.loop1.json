@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "cinq-dimensions-de-l-emploi",
+  "candidate_sha256": "227a01159dd20f4cf2953992c26ac08be8700fe8dcaad9b840ccc56eda22e748",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 65,
+  "supported": 63,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui n'est fourni pour ce claim ; il tire une conclusion (la différence tient aux postes) qui n'est pas purement stipulée et qu'aucun support fourni n'autorise."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis ($.notes[3], $.notes[5], $.review.notes[8]) attestent une formule nommée motivating potential score, p. 4, qui abrège la cinquième dimension en « Feedback ». Ils ne disent pas que cette formule assemble les dimensions du noyau."
+    }
+  ]
+}
