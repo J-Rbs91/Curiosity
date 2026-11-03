@@ -1,184 +1,147 @@
 # Réécriture : points-de-levier
 
-mode : REVISE (suite de l'audit `corpus/deepening-audits/work/points-de-levier/audit.md`, verdict
-REVISE, fidélité documentaire 1/4)
+mode : REWRITE (audit `corpus/deepening-audits/work/points-de-levier/audit.md`, verdict REWRITE)
 
-## Matière réellement disponible, vérifiée par listage
+check mécanique : `npm run corpus:deepen -- --check --only=points-de-levier` PASS (« 1 approfondissement(s)
+contrôlé(s), 1733 mots », limits compris). Aucune citation signalée.
 
-`ls corpus/evidence/points-de-levier` : le répertoire n'existe pas. Vérifié directement, et vérifié
-aussi qu'aucun répertoire de `corpus/evidence/` ne porte un nom voisin (levier, meadows, leverage).
-La matière autorisée tient donc entièrement dans `corpus/validated/points-de-levier.json` :
-`summary`, `attribution_note`, `quotation` (texte français, `original_text`, `locator: p. 2`),
-`notes[0..4]`, `review`, et les trois objets `sources`.
+SHA de la nouvelle version : `b013ce9c929ab0ccabc589cfa0f96d3c617e361e91e985c7fbf6a11fe81dd683`.
+L'ancien pack (`c0c7e157…`) est invalidé : l'orchestrateur doit recommencer à `PREPARE`.
 
-Conséquence appliquée partout : le `full-text` déclaré du rapport de 1999 reste valide comme
-déclaration, mais il descend d'un objet source qu'aucun dossier ne corrobore. Par
-`FACTCHECK_PROTOCOL.md` §3bis et §5, un appui de ce genre sortira en `access_corroboration:
-dossier-absent` et n'établira qu'une référence, une pagination, une date. Tout ce que le texte
-lecteur dit du contenu du rapport a donc été ramené sur `quotation`, `summary` et `notes`, qui
-arrivent en `access: "n/a"` et se pèsent sur leur contenu.
+## Matière lue
 
-Aucune recherche extérieure, aucun apport de connaissance générale sur le rapport.
+- `corpus/validated/points-de-levier.json` : pas de champ `dossier` ; répertoire conventionnel.
+- `corpus/evidence/points-de-levier/` listé : un seul fichier, `lecture.json` (pas de `scouting.json`).
+  Rapport 1999 `full-text`, Abson 2017 et Fischer & Riechers 2019 `metadata-only` ; 67 extraits
+  verbatim ; six `reserves`, traitées comme des limites.
+- `factcheck-pack.json` (SHA candidat = ancienne version, vérifié).
+- Aucune recherche extérieure.
 
-## Retraits (matière absente de la documentation autorisée)
+## Volume du texte lecteur (lead + sections)
 
-1. **lead[1], couleur biographique** : « a passé sa vie à observer des gens intelligents pousser
-   très fort sur des endroits qui ne bougent pas ». Rien dans `attribution_note` ni ailleurs.
-   Retiré.
-2. **lead[1], réception** : « Cette liste est devenue l'un des textes les plus repris du domaine ».
-   Aucune donnée de réception disponible, et les deux sources de réception sont `metadata-only`.
-   Retiré.
-3. **S1.P3 en entier, l'énumération des barreaux intermédiaires** : « la taille des réserves, la
-   structure des flux, la longueur des délais, la force des boucles qui stabilisent, le gain des
-   boucles qui emballent, la circulation de l'information, les règles, le pouvoir de changer les
-   règles, les buts poursuivis, l'idée partagée d'où ces buts sortent ». Huit désignations et un
-   ordre que la documentation ne porte nulle part. C'était le paragraphe porteur le plus exposé du
-   texte. Supprimé, et l'interdiction inscrite dans `limits[1]`.
-4. **S1.P2, généralisation empirique** : « Ce sont les points sur lesquels se concentre l'essentiel
-   du débat public et de la négociation interne ». Retiré. Remplacé non par une autre affirmation de
-   même portée mais par un cas nommé et verbatim, déjà présent dans `notes[4]` (dette publique,
-   paramètres budgétaires, p. 5-6).
-5. **S1.P4, deux dérives dans l'image de plomberie** : « le temps que met le bouchon à faire
-   effet » (le seul support disponible dit « une vanne ») et « La règle, c'est ce qui décide qu'on
-   ouvre ou qu'on ferme » puis « Le but, c'est la raison pour laquelle on veut de l'eau », deux
-   contenus inventés placés sous le crédit de « Meadows l'emploie elle-même ». L'image est ramenée
-   aux trois correspondances que `notes[4]` donne, et à elles seules : robinet/paramètre,
-   niveau de la baignoire/stock, vanne/délai.
-6. **S2.P3 en entier** (redondance relevée par l'audit, sur S1.P2 + S2.P2) : « Il en résulte une
-   répartition de l'effort systématiquement mal placée… ». Supprimé.
-7. **S3.P2, l'anecdote Forrester** : « Elle tient de Forrester une observation qu'elle rapporte :
-   quand il identifiait un point de levier dans une entreprise, il découvrait presque toujours que
-   tout le monde s'en occupait déjà, et le poussait dans la mauvaise direction. » Attribution en
-   chaîne, sans aucun appui. Supprimée ; la distinction lieu/sens est reconstruite sur la citation
-   elle-même, qui la porte.
-8. **S3.P3 en entier** : « une fois le point de levier établi, il est probable que personne ne le
-   croie ». Sans appui. Supprimé.
-9. **S3.P4 en entier** : « une boucle produit dans le temps l'inverse de ce qu'elle semble faire
-   dans l'instant ». Loi générale sur les boucles, sans appui, sans marquage de statut, et appuyée
-   sur un terme que le texte ne construisait pas. Supprimé.
-10. **S4.P1, trois ajouts narratifs** : « au milieu d'une réunion », « après discussion avec des
-    collègues et des militants », « Meadows la présente elle-même comme un travail en cours ».
-    `notes[1]` donne le paperboard, les neuf entrées, la page 2, la page 3, les douze entrées et la
-    correction par l'autrice ; rien d'autre. Retirés.
-11. **S4.P3 en entier** : « elle ne dit pas comment trouver […] et Meadows est claire sur le fait
-    que sa liste ne le remplace pas ». Limite fondée sur une absence, plus une position attribuée à
-    l'autrice. Supprimé ; la même énergie est passée dans l'ouverture de S5, qui nomme ce que le
-    rapport contient de repérable plutôt que ce qu'il ne dirait pas.
-12. **S5.P3 en entier**, le « test de direction » (redondance relevée par l'audit, sur S3.P2).
-    Supprimé. **S5.P2** (« test de proportion ») est fondu dans S5.P1, comme un cas du test de
-    position.
-13. **Titre de S2** : « Pourquoi les leviers forts restent inutilisés » énonçait un fait empirique
-    que rien n'établit. Remplacé par « Puissance d'un côté, coût de l'autre », qui nomme le sujet de
-    la section (deux échelles superposées) sans rien affirmer du monde.
-14. **limits**, trois énoncés retirés : « Chacun occupe dans le rapport plusieurs pages, avec ses
-    exemples, ses exceptions » (non soutenu, le rapport fait 21 p. pour 12 niveaux) ; « Meadows ne
-    le prétend pas » (position attribuée) ; le renvoi à l'ouvrage de 1972 sur les limites de la
-    croissance, avec sa date, qui n'est pas dans les sources de cette carte.
+Compteur local (mots = suites de lettres, apostrophes et traits d'union) :
 
-## Bornages (affirmation conservée, portée ramenée à l'appui)
+| | avant | après |
+|---|---|---|
+| lead | 133 | 126 |
+| sections | 955 | 1 270 |
+| **total** | **1 088** | **1 396** |
 
-- **Le mécanisme de l'ordre** (S2.P1) ne court plus sur une chaîne de quatre barreaux dont trois ne
-  sont pas documentés. Il est reconstruit sur les deux seules extrémités nommées, paramètre et
-  paradigme, et il s'ouvre par « On peut comprendre cet ordre », marquage d'interprétation au sens
-  de `PROTOCOLE.md` §4. « D'un cran à l'autre » est devenu « De l'un à l'autre » : la première
-  formule présupposait une connaissance des crans intermédiaires.
-- **Le coût politique** (S2.P2) était énoncé comme un fait de comportement collectif. Il est donné
-  comme seconde lecture de la même échelle, et la phrase de clôture ne dit plus ce sur quoi « la
-  discussion porte » mais ce que l'image de Meadows met en rapport.
-- **La hiérarchie des erreurs** (S3.P2) est explicitement dérivée : « Si l'on suit l'échelle, la
-  seconde est la plus coûteuse des deux ». Conséquence marquée, plus attribution.
-- **Le barreau du haut** est donné par son verbatim, « The power to transcend paradigms », glosé en
-  traduction et non en doctrine.
-- **L'existence de dix niveaux intermédiaires** est dite par arithmétique (douze moins deux) sans
-  qu'aucun ne soit nommé.
-- **La version de Whole Earth** n'est plus évoquée que par son existence et sa date, ce que
-  `notes[2]` autorise (la page 2 du rapport de 1999 la signale).
+(L'audit comptait l'ancienne version à 1 120 avec un autre compteur ; à ce compteur la nouvelle
+version tombe vers 1 430-1 440, en haut de la cible 1 250-1 400 de l'audit.) Croissance nette
+d'environ +28 % : elle vient **par substitution**. Environ 600 mots sans appui ont été retirés (S2
+entière, S3.P4, S5 entière, phrases du lead[1], S1.P3/P4, S4.P2/P3) et remplacés par des paliers
+dont chaque phrase est tirée d'un extrait verbatim. J'ai coupé trois fois pour descendre de 1 726 à
+1 396 ; le risque de la croissance reste réel et il est signalé au gate (corrélation de l'audit).
 
-## Delta de chaque paragraphe de la version rendue
+## Retraits (non financés ou contredits par le rapport)
 
-- lead[0] : la question pratique n'est pas « agir ou non » mais « où appuyer », et un effort égal ne
-  produit pas un effet égal. Entrée concrète, sans vocabulaire de discipline.
-- lead[1] : qui est l'autrice, d'où vient sa formation, ce qu'est l'objet (douze places ordonnées du
-  plus faible au plus puissant, du réglage d'un paramètre au changement de paradigme) et qu'un
-  avertissement l'accompagne. Appuis : `attribution_note`, `summary`, `quotation`.
-- S1.P1 : le contenu réel de la liste est son ordre, verbatim « in increasing order of
-  effectiveness », et la numérotation est inversée par rapport à l'intuition. Appuis : `notes[3]`.
-- S1.P2 : les deux extrémités nommées dans les termes de l'autrice, et la mesure de l'échelle par
-  l'écart entre elles. Appuis : `notes[1]`, `summary`.
-- S1.P3 : l'échelle devient tenable en tête par une image que l'autrice file d'un bout à l'autre,
-  avec ses trois correspondances documentées. Appui : `notes[4]`.
-- S2.P1 : pourquoi l'ordre monte, par la position dans l'installation et non par la force. Lecture
-  marquée, sur les deux extrémités seules.
-- S2.P2 : la même échelle lue comme un coût, et un cas nommé où les deux registres se voient en deux
-  formules de l'autrice. Appuis : `notes[4]`, p. 5-6.
-- S3.P1 : l'avertissement dans les mots de l'autrice, avec la fin que la citation élide. Appuis :
-  `quotation.text`, `notes[0]`, `locator: p. 2`.
-- S3.P2 : deux erreurs séparées, le lieu et le sens, et laquelle coûte le plus si l'on suit
-  l'échelle. Dérivé de la citation.
-- S3.P3 : ce que « systematically » ajoute, à savoir que l'échec n'est pas une occasion manquée mais
-  une aggravation des problèmes visés. Lecture du verbatim anglais.
-- S4.P1 : la genèse en deux états, neuf entrées page 2 sur un paperboard, douze page 3, l'autrice se
-  corrigeant elle-même. Appui : `notes[1]`.
-- S4.P2 : ce que cette genèse fait au statut de l'échelle, proposition retravaillée et non résultat
-  mesuré. Conséquence, et elle règle le défaut d'axe G relevé par l'audit.
-- S4.P3 : agir en bas reste parfois la seule action disponible ; ce qui est interdit est la
-  confusion des registres. Nuance, formulée comme conséquence.
-- S5.P1 : un geste utilisable, situer une action sur l'échelle, avec le cas où l'écart entre
-  diagnostic et remède devient visible. Fusion des deux anciens « tests ».
-- S5.P2 : un usage social, nommer le niveau d'un débat pour le déplacer sans mettre personne en
-  cause.
-- S5.P3 : l'ouverture, désormais adossée à du repérable : le rapport de décembre 1999, vingt et une
-  pages, porte les deux états de la liste page 2 et page 3, et sa page 2 renvoie à la version courte
-  de Whole Earth, hiver 1997. Deux lectures à faire, énoncées comme ce que ces textes détiennent
-  (`PROTOCOLE.md` §1).
+- lead[1] : « a passé sa vie à observer… » (biographie) ; « l'un des textes les plus repris du
+  domaine » (barré par `SUP-84acdf041d07a3e5`).
+- S1.P1 « chacun en connaît » (C007 du gate antérieur).
+- S1.P3 : entrée fausse « le pouvoir de changer les règles » remplacée par le n° 4 réel
+  (`SUP-a169d25e5e6fbc96`).
+- S1.P4 : baignoire inversée (« on sent immédiatement… », « bouchon », « la règle décide »,
+  « la raison pour laquelle on veut de l'eau »).
+- S2 entière : « logique simple », « il ne menace personne » (contredit par `SUP-ef6279ab526086e2`,
+  `SUP-64bcbfebed301d75`), « parce qu'ils sont accessibles ».
+- S3.P4 : mécanisme inventé (boucle qui fait dans le temps l'inverse de l'instant).
+- S3.P3 « que peu de textes de méthode reconnaissent ».
+- S4.P1 « une phrase jetée » ; S4.P2 « vaut mieux que rien » (C036) ; S4.P3 « Meadows est claire
+  sur le fait que sa liste ne le remplace pas » (barré par `SUP-1454538799f2a945`).
+- S5 entière (quatre « tests » / usages du rédacteur, sans appui, dont une redondance avec S3.P2).
+- limits[3] (Limits to Growth 1972) : aucun support dans le pack ; retiré.
 
-Aucun paragraphe sans delta. Aucune section ne refait le travail d'une précédente : les deux groupes
-redondants signalés (S2.P3, S5.P3 ancien) sont supprimés, et S5.P2 ancien est fondu.
+## Nouvelle trajectoire et deltas, paragraphe par paragraphe, avec supports
 
-## Frontière interne
+**lead[0]** (conservé, resserré) : la question « où appuyer », gestes de portée inégale. « la raison
+même pour laquelle l'ensemble existe » devient « le but que l'ensemble poursuit », « presque jamais
+faut-il agir » est retiré. Supports : `SUP-ebb398acd46edf3d` (hook), `SUP-a169d25e5e6fbc96` (ordre
+d'efficacité, buts), `SUP-5402cf481a060cd4` (résistance), `SUP-a63a2642d8b852de` (un seul acteur au
+sommet).
 
-`limits` reste interne, en cinq paragraphes, et nomme pour chaque source son état d'accès et
-l'affirmation qu'il interdit : le rapport déclaré lu mais non reproduit et la liste close de ce qui
-est disponible sur son contenu ; l'interdiction d'énumérer les niveaux 2 à 11 ; les deux articles
-atteints par leur notice et l'interdiction de parler de réception ; la version de Whole Earth connue
-par une mention ; l'absence de toute observation attribuable à Forrester, et la relecture non
-aveugle du 22 août 2026. Les deux dépassements retirés de cette version (huit barreaux, anecdote
-Forrester) y sont consignés nommément, pour qu'une reprise ultérieure ne les réintroduise pas.
+**lead[1]** : définition de l'auteur (ajout), liste de douze, avertissement.
+`SUP-7225770a44d11547`, `SUP-e7d18f493fc9bcee`, `SUP-7262836278f47a70`, `SUP-a169d25e5e6fbc96`,
+`SUP-3a36c7316132dc8f`, `SUP-52c992afba49b58c`.
 
-Rien de `limits` n'est remonté comme bloc visible. Le texte lecteur est `lead` + `sections`.
+**S1 Une échelle qui se lit de bas en haut**
+- P1 : sens de l'ordre et échelle exacte (n° 4 corrigé). `SUP-a169d25e5e6fbc96`,
+  `SUP-8c80540dcb2e6c7c`.
+- P2 (ajout) : la baignoire de Meadows : stock, flux, temps d'accumulation, deux boucles
+  correctrices vers un but. `SUP-3ffaa707ee114434` (image de plomberie sur toute l'échelle),
+  `SUP-0848de8c3867605b`, `SUP-5ea1e91179a4b4d4`, `SUP-45ba50b7769e8088`, `SUP-92bceffd56f1b8ed`.
+- P3 (ajout) : la leçon, le but et les boucles ne se voient pas, d'où le contre-intuitif.
+  `SUP-b3263903ec60b7fe`, `SUP-655dfcede1c2acdf` (« à la page suivante » : p. 4 puis p. 5).
+  « Ce qui règle le niveau est donc justement ce qu'on ne voit pas » combine
+  `SUP-92bceffd56f1b8ed` et `SUP-b3263903ec60b7fe`.
 
-## Volume
+**S2 Le bas de l'échelle : les réglages** (ajout, remplace S1.P2 et S2 de l'ancienne version)
+- P1 : définition du paramètre ; dette publique ; le trou se creuse quel que soit le parti.
+  `SUP-55531336999abd7e`, `SUP-ef6279ab526086e2`, `SUP-3ffaa707ee114434`.
+- P2 : « least leverage », 90-95-99 %, Titanic ; importance à court terme et pour qui est dans le
+  flux, batailles féroces, mais comportement rarement changé ; relance / frein.
+  `SUP-3ad405d655d49237`, `SUP-64bcbfebed301d75`, `SUP-1cb2a360fe47c52d`.
+- P3 : exception des plages critiques, et leur rareté. `SUP-f9d8def49ae3267f`,
+  `SUP-71b8abf2fc83138f`.
 
-- avant : 1 120 mots de texte lecteur, 171 mots de `limits`, 1 291 au compteur du script, 20
-  paragraphes lecteur.
-- après : 1 102 mots de texte lecteur, 360 mots de `limits`, 1 462 au compteur du script, 16
-  paragraphes lecteur.
+**S3 Un rang qui tient aussi à la difficulté de changer** (ajout)
+- P1 : délais qui font dépasser, puis dépassement et effondrement ; haut placés s'ils étaient
+  modifiables. `SUP-037181d89d0fbcbe`, `SUP-1c2091036ee7af6d`, `SUP-5bd5758b923ca76e`. La première
+  phrase (« On pourrait croire… ») est une hypothèse de lecteur, non attribuée. J'ai **retiré** le lien
+  « c'est pourquoi les taux de croissance figurent plus haut » (`SUP-2eaaf37eb57acab7`) : l'extrait ne
+  montre pas à quoi renvoie son « That's why ».
+- P2 : structure physique rarement levier, levier dans la conception. `SUP-00cbb4a2f594de25`.
+  Tampons écartés pour le volume.
+- P3 : information au sixième rang : compteur (rapporté, « the story goes »), nouvelle boucle,
+  moins cher que l'infrastructure, au bon endroit (nappe). `SUP-a169d25e5e6fbc96`,
+  `SUP-81014e24a6b284f3`, `SUP-3421b0f99f5dee77`, `SUP-c15fd96c15a922a1`, `SUP-97f584c40df141b1`,
+  `SUP-7d34709858340251`. TRI non employé (même démonstration).
 
-Le texte lecteur est plus court de quatre paragraphes et à peu près stable en mots : environ 250 mots
-non soutenus ont été retirés, et la place a été reprise par de la matière qui existe réellement dans
-la documentation (le cas de la dette publique, la lecture de « systematically », le statut de
-l'échelle tiré de la double version, l'ouverture sur les deux états du rapport). L'augmentation de
-`limits` est interne et n'atteint pas le lecteur.
+**S4 Le haut de l'échelle : règles, buts, paradigmes** (ajout)
+- P1 : règles (portée, limites, degrés de liberté), « Power over the rules is real power », regarder
+  qui a du pouvoir sur elles. `SUP-4716e963a1064909`, `SUP-3256fcc2ee6897d1`,
+  `SUP-3a6f0b4b80bb8030`. Auto-organisation non développée (matière mince, enumérée en S1).
+- P2 : but lu dans ce que fait le système ; changer les acteurs, faible sauf au sommet (renvoi au
+  lead[0]). `SUP-a169d25e5e6fbc96` (rang), `SUP-885bf54038df7e06`, `SUP-a63a2642d8b852de`.
+- P3 : paradigme, source de tout ; l'objection de Meadows et sa réponse ; résistance des sociétés.
+  `SUP-39f012bbb6fd24cd`, `SUP-a6476543e39989ab`, `SUP-00df101d1f99a8f0`, `SUP-8f3721217a84eded`.
 
-## Contrôle mécanique
+**S5 L'avertissement : à l'envers, et sans être cru** (conservé, ancienne S3 sans P4)
+- P1 : citation et sa fin ; renvoi à la baignoire. `SUP-52c992afba49b58c`,
+  `SUP-2c77089b1d953778`, `SUP-81e9a94544297295`, `SUP-b3263903ec60b7fe`, `SUP-655dfcede1c2acdf`.
+- P2 : Forrester rapporté par Meadows (« à maintes reprises » = « Time after time », remplace
+  « presque toujours »). `SUP-2f9d07ce780e7e37`, `SUP-ba7f2648749c378a`, `SUP-10af1c6c0695c906`.
+- P3 : incrédulité. `SUP-da88ef4e1f868844`.
 
-`npm run corpus:deepen -- --check --only=points-de-levier`
+**S6 Une liste en chantier** (ancienne S4.P1 corrigée, plus ajouts)
+- P1 : paperboard en réunion, neuf entrées, « not exactly tightly reasoned », révision, deux
+  versions dans le texte, « work in progress ». `SUP-86bcdfa76c2fc546`, `SUP-10af1c6c0695c906`,
+  `SUP-a07cb81899bc2053`, `SUP-a193a2898b0534b1`, `SUP-2d9cb5d014d223bd`, `SUP-ce493a26d6814629`.
+- P2 : « tentative », « slithery », exceptions ; pas de formule. `SUP-01cbdf81a02ad20e`,
+  `SUP-6e552c0e46adf9d7` (sans aller au-delà, réserve `SUP-1454538799f2a945`).
+- P3 (ouverture) : transcender les paradigmes, arrêté à « aucun paradigme n'est « vrai » »
+  (extrait tronqué, rien sur la suite) ; « There are no cheap tickets to mastery » à la dernière
+  page (p. 19 = dernière page imprimée selon `sources_ouvertes[0].citation` de `lecture.json`,
+  pagination 1 à 19). `SUP-0acb3a5eec8634ca`, `SUP-b202cb822f50ec5c`, plus l'appui
+  `evidence:lecture.json $.sources_ouvertes[0].citation` du pack pour « dernière page ».
 
-```
-1 approfondissement(s) contrôlé(s), 1462 mots. Rien projeté.
-```
+## Contrôles
 
-Aucun avertissement de citation : les cinq passages entre guillemets de cinq mots ou plus se
-retrouvent verbatim dans la documentation (« in increasing order of effectiveness » et « The power to
-transcend paradigms » dans `notes`, la citation française dans `quotation.text`, « systematically
-worsening whatever problems we are trying to solve » dans `notes[0]`, « a negative bathtub, a money
-hole » dans `notes[4]`).
+1. Chaque paragraphe a un delta distinct (ci-dessus). Pas de conclusion récapitulative.
+2. Redondances de l'audit supprimées (S2.P3/S1.P2, S5.P3/S3.P2). Le renvoi S5.P1 à la baignoire est
+   une phrase, pas une reprise.
+3. Aucune section ne répète une précédente.
+4. Frontières : aucune phrase sur Abson / Fischer & Riechers, sur Whole Earth 1997, sur la réception,
+   sur une méthode de repérage ; Forrester toujours rapporté ; 30 % rapporté comme histoire.
+5. `limits` réécrit (quatre paragraphes, sources, accès et interdits nommés) ; rien n'en est remonté
+   au texte lecteur.
+6-7. Check PASS ; aucun tiret cadratin ; guillemets avec U+202F ; apostrophe typographique.
 
-## Suite
+## Points à signaler au cycle suivant
 
-Le texte a changé, donc le SHA a changé : tout fact-check antérieur est invalidé et le cycle doit
-repartir à `PREPARE`. Aucune auto-validation, aucun `FACTCHECK_PASS` déclaré ici.
-
-Pour mémoire, et hors mandat d'une réécriture : rendre au texte les douze niveaux un par un suppose
-de constituer `corpus/evidence/points-de-levier/` avec le relevé de la page 3 du rapport. C'est un
-geste de la couche carte.
+- La croissance (+28 % au compteur local) dépasse la zone où l'audit observe des PASS ; elle est
+  prescrite par l'audit (REWRITE, cible 1 250-1 400) et chaque phrase ajoutée nomme ses supports.
+  Si le gate échoue, la coupe naturelle est S3.P2 et la dernière phrase de S4.P3.
+- Glissements de traduction à surveiller : « boucles qui entraînent » (driving positive feedback
+  loops), « leviers haut placés » (high leverage points, p. 14, référent « They » supposé être les
+  règles d'après l'ordre des extraits), « elles y résistent » (resist challenges to their paradigm).

@@ -1,13 +1,23 @@
 {
-  "protocol_version": 1,
+  "protocol_version": 2,
   "concept_id": "points-de-levier",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "4c89c66e7b2dd72b22ab84502f0968d9a8642831d56e24b21b432e23e631c516",
+  "candidate_sha256": "b013ce9c929ab0ccabc589cfa0f96d3c617e361e91e985c7fbf6a11fe81dd683",
   "validated_sha256": "d5a90397ec6aa8710dcd79f51ff950cab72dd811ec9f99a6b08816308ef15db6",
-  "evidence_files": [],
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "f494be7ae68b44c88a7d4f2e70d0c8b4d2a14d74099514d973e57969b1f108b1"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
   "access_reconciliation": {
-    "dossier_declare_des_niveaux": false,
+    "dossier_declare_des_niveaux": true,
     "declarations": [
       {
         "chemin": "$.sources[0]",
@@ -16,8 +26,8 @@
         "cles": [
           "url:donellameadows.org/wp-content/userfiles/leverage_points.pdf"
         ],
-        "dossier": null,
-        "statut": "dossier-absent"
+        "dossier": "full-text",
+        "statut": "corrobore"
       },
       {
         "chemin": "$.sources[1]",
@@ -27,8 +37,8 @@
           "doi:10.1007/s13280-016-0800-y",
           "url:doi.org/10.1007/s13280-016-0800-y"
         ],
-        "dossier": null,
-        "statut": "dossier-absent"
+        "dossier": "metadata-only",
+        "statut": "corrobore"
       },
       {
         "chemin": "$.sources[2]",
@@ -38,98 +48,118 @@
           "doi:10.1002/pan3.13",
           "url:doi.org/10.1002/pan3.13"
         ],
-        "dossier": null,
-        "statut": "dossier-absent"
+        "dossier": "metadata-only",
+        "statut": "corrobore"
       }
     ],
     "compteurs": {
-      "corrobore": 0,
+      "corrobore": 3,
       "contredit": 0,
       "non-declare": 0,
       "absent": 0,
       "hors-vocabulaire": 0,
       "dossier-hors-vocabulaire": 0,
-      "dossier-absent": 3
+      "dossier-absent": 0
     }
   },
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Devant un ensemble qui fonctionne mal, la question pratique est « où appuyer ». On peut changer un montant, un délai, ou la raison même pour laquelle l’ensemble existe. Ces gestes n’ont pas la même portée : la différence tient à l’endroit choisi."
+      "text": "Devant un ensemble qui fonctionne mal, la question pratique est « où appuyer ». On peut changer un montant, un délai, une règle, la personne qui décide, ou le but que l’ensemble poursuit. Ces gestes ne demandent ni le même effort ni la même autorité, et ils n’ont surtout pas la même portée."
     },
     {
       "locator": "lead[1]",
-      "text": "Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester, a écrit la liste de ces endroits : douze places où intervenir dans un ensemble, rangées du levier le plus faible au plus puissant, du réglage d’un paramètre au changement de paradigme. Et elle l’a assortie d’un avertissement qui compte autant que la liste : ces endroits ne sont pas intuitifs."
+      "text": "Donella H. Meadows, formée à la dynamique des systèmes auprès de Jay W. Forrester, appelle points de levier les endroits d’un système complexe (une entreprise, une économie, un corps vivant, une ville, un écosystème) où « a small shift in one thing can produce big changes in everything ». Elle en a dressé une liste de douze, rangés du plus faible au plus puissant, et l’a assortie d’un avertissement : ces endroits, on les actionne d’ordinaire à l’envers."
     },
     {
       "locator": "sections[0].paragraphs[0]",
-      "section_title": "Un classement, et non un catalogue",
-      "text": "Ce qui fait la valeur de la liste n’est pas qu’elle recense des façons d’agir : chacun en connaît. C’est qu’elle les ordonne, « in increasing order of effectiveness », du levier le plus faible au plus fort. Le numéro 12 est donc le moins puissant et le numéro 1 le plus puissant, ce qui est l’inverse de ce qu’une liste numérotée suggère au premier regard."
+      "section_title": "Une échelle qui se lit de bas en haut",
+      "text": "La liste est donnée « in increasing order of effectiveness » : le numéro 12 est le levier le plus faible et le numéro 1 le plus fort, l’inverse de ce qu’une liste numérotée suggère au premier regard. Tout en bas, « Constants, parameters, numbers ». Puis, en montant : la taille des réserves tampons, la structure physique des stocks et des flux, la longueur des délais, la force des boucles qui corrigent, le gain des boucles qui entraînent, la structure des flux d’information, les règles, le pouvoir d’ajouter, de changer, de faire évoluer ou d’auto-organiser la structure, les buts du système, le paradigme d’où il sort, et enfin « The power to transcend paradigms »."
     },
     {
       "locator": "sections[0].paragraphs[1]",
-      "section_title": "Un classement, et non un catalogue",
-      "text": "Le barreau du bas s’appelle « Constants, parameters, numbers », des constantes, des paramètres, des nombres : les montants, les taux, les seuils. Le barreau du haut s’appelle « The power to transcend paradigms », le pouvoir de passer outre les cadres de pensée eux-mêmes. Dix autres endroits sont numérotés entre ces deux-là, et c’est déjà l’écart entre les deux bouts qui donne la mesure de l’échelle : d’un côté un réglage, de l’autre ce depuis quoi tout a été pensé."
+      "section_title": "Une échelle qui se lit de bas en haut",
+      "text": "Meadows file toute l’échelle avec une image de plomberie, celle d’une baignoire. Ce qui compte dans un système est un stock, comme l’eau derrière un barrage ou l’argent en banque. Des flux entrants le font monter, des flux sortants le font baisser, et il faut du temps pour qu’ils s’y accumulent, comme pour remplir ou vider la baignoire. Deux boucles correctrices, l’une sur l’arrivée d’eau, l’autre sur la sortie, permettent d’amener le niveau au but qu’on s’est fixé."
     },
     {
       "locator": "sections[0].paragraphs[2]",
-      "section_title": "Un classement, et non un catalogue",
-      "text": "Une image aide à tenir cette échelle en tête, et Meadows la file d’un bout à l’autre : celle de la plomberie. Un paramètre, c’est le réglage d’un robinet. Un stock, c’est le niveau de la baignoire. Un délai, c’est le temps que met une vanne à faire effet. Trois objets de la même salle de bains, et trois choses très différentes à toucher."
+      "section_title": "Une échelle qui se lit de bas en haut",
+      "text": "Puis elle fait remarquer : « Notice that the goal and the feedback connections are not visible in the system. » Ce qui règle le niveau est donc justement ce qu’on ne voit pas. Elle en tire la conclusion à la page suivante : « That’s why leverage points are not intuitive. »"
     },
     {
       "locator": "sections[1].paragraphs[0]",
-      "section_title": "Ce que régler un robinet ne change pas",
-      "text": "L’ordre se comprend mieux si l’on regarde où chaque geste se place. Régler un robinet, c’est agir à l’intérieur d’une installation qu’on laisse telle quelle : le réglage suppose la plomberie et ne la change pas."
+      "section_title": "Le bas de l’échelle : les réglages",
+      "text": "Dans le jargon des systèmes, un paramètre est le nombre qui détermine « how much of a discrepancy turns which faucet how fast ». Meadows prend le cas de la dette publique, qu’elle décrit comme « a negative bathtub, a money hole » : les recettes fiscales la font remonter, les dépenses la font baisser, et le Congrès et le Président passent l’essentiel de leur temps à débattre des innombrables paramètres qui ouvrent et ferment ces robinets. Et pourtant, quel que soit le parti au pouvoir, le trou continue de se creuser, seulement à des rythmes différents."
     },
     {
       "locator": "sections[1].paragraphs[1]",
-      "section_title": "Ce que régler un robinet ne change pas",
-      "text": "Meadows en donne un exemple qui se retient : la dette publique décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image dit à elle seule le rapport de taille entre le trou et le robinet."
+      "section_title": "Le bas de l’échelle : les réglages",
+      "text": "Meadows les tient pour « the points of least leverage ». Probablement 90, non, 95, non, 99 % de notre attention, écrit-elle, va aux paramètres : autant ranger les transats sur le pont du Titanic. Ce n’est pas qu’ils soient sans importance : ils peuvent compter, surtout à court terme et pour la personne qui se tient directement dans le flux, et l’on se livre pour eux des batailles féroces. Mais ils changent rarement les comportements : ils relancent rarement un système enlisé, et ne freinent pas celui qui croît hors de contrôle."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Le bas de l’échelle : les réglages",
+      "text": "Il y a une exception : un paramètre devient un levier quand il entre dans une plage qui déclenche l’un des niveaux situés plus haut sur la liste. Mais ces valeurs critiques sont bien moins fréquentes qu’on ne semble le croire. La plupart du temps, conclut-elle, les chiffres ne valent pas la sueur qu’on y met."
     },
     {
       "locator": "sections[2].paragraphs[0]",
-      "section_title": "L’avertissement qui accompagne la liste",
-      "text": "L’avertissement tient en deux phrases, et il porte sur l’intuition plutôt que sur la technique : « Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ». La fin de la phrase dit ce que produit ce renversement : « systematically worsening whatever problems we are trying to solve »."
+      "section_title": "Un rang qui tient aussi à la difficulté de changer",
+      "text": "On pourrait croire que chaque niveau gagne son rang parce qu’il agit plus profondément. Meadows en place pourtant certains en fonction de la difficulté qu’il y a à les changer, à commencer par les délais. Si l’on ne reçoit sur l’état d’un système qu’une information en retard, on dépasse le but, puis on reste en deçà ; dans un système qui comporte un seuil au-delà duquel les dommages deviennent irréversibles, des délais trop longs provoquent dépassement et effondrement. Elle écrit qu’elle classerait la longueur des délais parmi les leviers forts, si les délais étaient souvent faciles à changer."
     },
     {
       "locator": "sections[2].paragraphs[1]",
-      "section_title": "L’avertissement qui accompagne la liste",
-      "text": "Deux erreurs se trouvent ainsi séparées. La première est de se tromper d’endroit. La seconde est de trouver le bon endroit et de pousser dans le mauvais sens."
+      "section_title": "Un rang qui tient aussi à la difficulté de changer",
+      "text": "La structure physique est de même cruciale, mais rarement un levier, parce qu’il est rarement simple de la changer. Le levier, écrit-elle, est dans une bonne conception au départ."
     },
     {
       "locator": "sections[2].paragraphs[2]",
-      "section_title": "L’avertissement qui accompagne la liste",
-      "text": "Le mot « systematically » compte autant que le reste. Ce n’est pas un accident occasionnel, et ce n’est pas une occasion manquée : ce que l’on aggrave, ce sont les problèmes mêmes qu’on cherchait à résoudre."
+      "section_title": "Un rang qui tient aussi à la difficulté de changer",
+      "text": "L’information, au sixième rang, offre le cas inverse. Meadows rapporte une histoire, introduite par « the story goes » : dans un lotissement de maisons identiques, le compteur électrique était tantôt à la cave, tantôt dans l’entrée, sous les yeux des habitants ; sans autre changement, la consommation y était inférieure de 30 %. Ce n’est ni un réglage de paramètre ni le renforcement d’une boucle existante, écrit-elle : « It’s a new loop », qui porte l’information là où elle n’allait pas. Rétablir une information manquante est d’ordinaire bien plus facile et moins cher que de reconstruire une infrastructure, à condition de la rétablir au bon endroit : informer tous les usagers d’une nappe phréatique que son niveau baisse pourrait déclencher une course au fond."
     },
     {
       "locator": "sections[3].paragraphs[0]",
-      "section_title": "Une liste que son autrice a corrigée",
-      "text": "L’échelle n’est pas venue achevée. Une première liste, de neuf entrées, figure à la page 2 du rapport : c’est celle que Meadows dit avoir écrite sur un paperboard, et elle la corrige elle-même deux pages plus loin. La version révisée, celle qui compte les douze entrées, se lit à la page 3, et la première reste sous les yeux du lecteur avec ses manques."
+      "section_title": "Le haut de l’échelle : règles, buts, paradigmes",
+      "text": "Les règles d’un système en fixent la portée, les limites, les degrés de liberté. Ce sont des leviers haut placés, et « Power over the rules is real power. » Pour comprendre les dysfonctionnements les plus profonds d’un système, conseille Meadows, il faut regarder les règles, et qui a du pouvoir sur elles."
     },
     {
       "locator": "sections[3].paragraphs[1]",
-      "section_title": "Une liste que son autrice a corrigée",
-      "text": "Ce détail change le statut de tout ce qui précède. L’ordre des douze est une proposition retravaillée par celle qui l’a écrite, et dont le brouillon reste lisible à côté. C’est une raison de s’en servir comme d’un instrument de lecture, et une raison de ne pas le traiter comme une loi."
+      "section_title": "Le haut de l’échelle : règles, buts, paradigmes",
+      "text": "Plus haut encore se trouve le but du système. Il ne s’entend pas au sens d’une intention humaine : le but d’un système entier se déduit moins de ce que quiconque en dit que de ce que le système fait. Changer les acteurs, l’un des gestes évoqués au début, est pour Meadows une intervention de bas niveau tant qu’ils s’insèrent dans le même vieux système ; l’exception est au sommet, où un seul acteur peut avoir le pouvoir de changer le but."
     },
     {
       "locator": "sections[3].paragraphs[2]",
-      "section_title": "Une liste que son autrice a corrigée",
-      "text": "Ce n’est pas non plus une hiérarchie à appliquer. Ce que l’échelle interdit, c’est de confondre un réglage de paramètre avec un changement de trajectoire, puis de s’étonner que la situation n’ait pas bougé."
+      "section_title": "Le haut de l’échelle : règles, buts, paradigmes",
+      "text": "Au deuxième rang vient le paradigme : les grandes hypothèses partagées d’une société, si évidentes que personne n’a besoin de les énoncer, sur la manière dont le monde fonctionne. « Paradigms are the sources of systems » : d’eux viennent les buts, les flux d’information, les rétroactions, les stocks et tout le reste. Meadows se fait elle-même l’objection : le paradigme est plus difficile à changer que tout le reste, il devrait donc être tout en bas de la liste. Sa réponse est que rien dans un changement de paradigme n’est nécessairement physique, ni coûteux, ni même lent. Les sociétés entières, ajoute-t-elle, sont une autre affaire : elles y résistent plus qu’à toute autre chose."
     },
     {
       "locator": "sections[4].paragraphs[0]",
-      "section_title": "Ce que l’on gagne à s’en servir",
-      "text": "Le premier usage est un test de position. Devant une action proposée, on peut demander à quel niveau elle intervient : règle-t-elle un nombre, ou touche-t-elle à ce qui produit ce nombre ? La réponse ne juge pas l’action, elle indique ce qu’on peut raisonnablement en attendre. Et quand une difficulté est présentée comme profonde alors que toutes les mesures envisagées se tiennent dans le bas de l’échelle, l’écart entre le diagnostic et le remède devient visible sans qu’il faille discuter chaque mesure séparément."
+      "section_title": "L’avertissement : à l’envers, et sans être cru",
+      "text": "La liste est assortie d’une mise en garde : « Les points de levier ne sont pas intuitifs. Ou s’ils le sont, nous les utilisons intuitivement à l’envers […] ». La fin de la phrase dit ce que produit ce renversement : « systematically worsening whatever problems we are trying to solve ». La baignoire en a déjà donné une raison : le but et les boucles ne se voient pas."
     },
     {
       "locator": "sections[4].paragraphs[1]",
-      "section_title": "Ce que l’on gagne à s’en servir",
-      "text": "Le second usage est moins technique et peut-être plus utile : l’échelle donne un vocabulaire à ceux qui sentent qu’un débat porte à côté sans pouvoir dire pourquoi."
+      "section_title": "L’avertissement : à l’envers, et sans être cru",
+      "text": "Meadows rapporte aussi, en le citant, une observation de Forrester. À maintes reprises, après avoir repéré par l’analyse un point de levier dans une entreprise, il découvrait en s’y rendant que ce point recevait déjà beaucoup d’attention, et que tout le monde s’efforçait de le pousser dans la mauvaise direction. Trouver le bon endroit ne suffit donc pas : il reste à savoir de quel côté pousser."
     },
     {
       "locator": "sections[4].paragraphs[2]",
-      "section_title": "Ce que l’on gagne à s’en servir",
-      "text": "Quant à l’échelle elle-même, elle se lit mieux là où elle a été écrite. Le rapport de décembre 1999, vingt et une pages publiées par The Sustainability Institute, porte ses deux états côte à côte : les neuf entrées de la page 2, les douze de la page 3. Et cette page 2 signale qu’une version plus courte avait paru dans la revue Whole Earth à l’hiver 1997."
+      "section_title": "L’avertissement : à l’envers, et sans être cru",
+      "text": "Et la découverte ne règle pas tout. À cause de ce caractère contre-intuitif, écrit-elle, quand on découvre les points de levier d’un système, « hardly anybody will believe us »."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Une liste en chantier",
+      "text": "Meadows raconte avoir écrit une première version en réunion, sur un paperboard, en neuf entrées. Elle reconnaît que cette liste « was not exactly tightly reasoned » : les questions d’analystes des systèmes et de militants l’ont conduite à ajouter et retirer des entrées, changer l’ordre, ajouter des réserves, jusqu’à la version en douze ; les deux figurent dans son texte. Elle la présente comme « a work in progress », une invitation à penser plus largement aux manières de faire changer les systèmes, et non comme une recette sûre."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Une liste en chantier",
+      "text": "Même révisée, la liste reste à ses yeux « tentative », et son ordre « slithery » : chaque entrée a des exceptions qui peuvent la faire monter ou descendre. Les analystes qu’elle connaît, ajoute-t-elle, n’ont trouvé aucune formule rapide ou facile pour repérer ces points."
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "Une liste en chantier",
+      "text": "Au-dessus même du paradigme, elle place un dernier levier : rester non attaché dans l’arène des paradigmes, garder sa souplesse, comprendre qu’aucun paradigme n’est « vrai ». Et à la dernière page, elle écrit : « There are no cheap tickets to mastery. »"
     }
   ],
   "supports": [
@@ -209,7 +239,7 @@
       "path": "$.sources[0].label",
       "access": "full-text",
       "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999, 21 p.",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ec988b343d66a1a7",
@@ -217,7 +247,7 @@
       "path": "$.sources[0].kind",
       "access": "full-text",
       "text": "primary",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ed5866055d7c7b91",
@@ -225,7 +255,7 @@
       "path": "$.sources[0].url",
       "access": "full-text",
       "text": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-f4d0b7d4a75e24e8",
@@ -233,7 +263,7 @@
       "path": "$.sources[1].label",
       "access": "metadata-only",
       "text": "David J. Abson et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39.",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-17f3663cb3d0deae",
@@ -241,7 +271,7 @@
       "path": "$.sources[1].kind",
       "access": "metadata-only",
       "text": "secondary-academic",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-9966efdac5f7c333",
@@ -249,7 +279,7 @@
       "path": "$.sources[1].locator",
       "access": "metadata-only",
       "text": "p. 30-39",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-5210af61d86f482c",
@@ -257,7 +287,7 @@
       "path": "$.sources[1].doi_isbn",
       "access": "metadata-only",
       "text": "10.1007/s13280-016-0800-y",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-009c0c2a58675731",
@@ -265,7 +295,7 @@
       "path": "$.sources[1].url",
       "access": "metadata-only",
       "text": "https://doi.org/10.1007/s13280-016-0800-y",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-91116cc808fba85b",
@@ -273,7 +303,7 @@
       "path": "$.sources[2].label",
       "access": "metadata-only",
       "text": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120.",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-03318d9406525ead",
@@ -281,7 +311,7 @@
       "path": "$.sources[2].kind",
       "access": "metadata-only",
       "text": "secondary-academic",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-f8b599d1b4139dc4",
@@ -289,7 +319,7 @@
       "path": "$.sources[2].locator",
       "access": "metadata-only",
       "text": "p. 115-120",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-d462fd1ba253a81a",
@@ -297,7 +327,7 @@
       "path": "$.sources[2].doi_isbn",
       "access": "metadata-only",
       "text": "10.1002/pan3.13",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-f2341bf547a1ad7f",
@@ -305,7 +335,7 @@
       "path": "$.sources[2].url",
       "access": "metadata-only",
       "text": "https://doi.org/10.1002/pan3.13",
-      "access_corroboration": "dossier-absent"
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-3da51495dfe3ad8e",
@@ -460,8 +490,673 @@
       "path": "$.notes[4]",
       "access": "n/a",
       "text": "Meadows file toute l’échelle avec une image de plomberie : un paramètre est le réglage d’un robinet, un stock est le niveau de la baignoire, un délai est le temps que met une vanne à faire effet. La dette publique y est décrite comme « a negative bathtub, a money hole », et les paramètres budgétaires comme « adjustments to faucets » (p. 5-6). L’image n’est pas sur la carte ; elle est ce qui rend l’échelle tenable en tête."
+    },
+    {
+      "id": "SUP-ae49aded815fbf20",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "points-de-levier"
+    },
+    {
+      "id": "SUP-b626850ebe31c0ab",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Donella H. Meadows"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-10af1c6c0695c906",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "La page de titre porte « by Donella Meadows » et la première page du texte « by Donella H. Meadows ». Le copyright est celui de l'institution : « © The Sustainability Institute, 1999. A shorter version of this paper appeared in Whole Earth, winter 1997. » Le texte attribue lui-même le mot « Counterintuitive » à Forrester (p. 2) et rapporte comme sienne la liste écrite sur un tableau de réunion (p. 2). Ce qui est attribué à Forrester dans ce dossier l'est donc par Meadows, et non par un texte de Forrester que personne n'a ouvert ici."
+    },
+    {
+      "id": "SUP-c9a7470063381cd6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Les points de levier ne sont pas intuitifs. Ou s'ils le sont, nous les utilisons intuitivement à l'envers […]"
+    },
+    {
+      "id": "SUP-a906d11589b7d78f",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, The Sustainability Institute, 1999."
+    },
+    {
+      "id": "SUP-1a7f5f780877ee09",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 2"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-0737373741370080",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-f4d8ea8f7420d4fe",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce rapport n'a été cherchée ni identifiée."
+    },
+    {
+      "id": "SUP-a502f3933b42e581",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Donella H. Meadows, Leverage Points: Places to Intervene in a System, Hartland (Vermont), The Sustainability Institute, décembre 1999 (en-tête de page « Sustainability Institute, December, 1999 »), 21 pages de fichier, pagination imprimée de 1 à 19. Fichier téléchargé le 3 novembre 2026 depuis donellameadows.org, SHA-256 af460626a5e2c2e739b53bf5c854abbf02033c773ae9560fdfee809edce25fbe. Lu intégralement, les 21 pages, sur la couche texte native du PDF (pdftotext), qui est une couche d'origine et non un OCR de scan ; les pages n'ont pas été relues sur image. Les extraits de la rubrique `extraits_lus` sont chacun relevés par programme dans cette couche et vérifiés présents mot pour mot après normalisation des espaces et des sauts de ligne. Pagination des localisateurs : celle imprimée en pied de page (page 1 = troisième page du fichier)."
+    },
+    {
+      "id": "SUP-ceafdb0f69163de2",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf"
+    },
+    {
+      "id": "SUP-f40853f34d0fc655",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "David J. Abson, Joern Fischer, Julia Leventon, Jens Newig, Thomas Schomerus, Ulli Vilsmaier et al., « Leverage points for sustainability transformation », Ambio, vol. 46, n° 1, 2017, p. 30-39. Notice Crossref seule, interrogée le 3 novembre 2026 : titre, auteurs, revue, volume, numéro et pagination concordent avec la fiche ; l'article n'a pas été ouvert."
+    },
+    {
+      "id": "SUP-06984e57635fd7bb",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1007/s13280-016-0800-y"
+    },
+    {
+      "id": "SUP-b142546cf8a7717e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.1007/s13280-016-0800-y"
+    },
+    {
+      "id": "SUP-86778904db8639a5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Joern Fischer et Maraja Riechers, « A leverage points perspective on sustainability », People and Nature, vol. 1, n° 1, 2019, p. 115-120. Notice Crossref seule, interrogée le 3 novembre 2026 : titre, auteurs, revue, volume, numéro et pagination concordent avec la fiche ; l'article n'a pas été ouvert."
+    },
+    {
+      "id": "SUP-7d580f78ef0d3a95",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1002/pan3.13"
+    },
+    {
+      "id": "SUP-16271723daffa269",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.1002/pan3.13"
+    },
+    {
+      "id": "SUP-7262836278f47a70",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Meadows ouvre le rapport en définissant le terme, p. 1 : « These are places within a complex system (a corporation, an economy, a living body, a city, an ecosystem) where a small shift in one thing can produce big changes in everything. » Elle présente sa liste comme une chose évolutive, p. 3 : « So, what you are about to read is a work in progress. It’s not a simple, sure-fire recipe for finding leverage points. Rather, it’s an invitation to think more broadly about the many ways there might be to get systems to change. » La liste révisée est donnée p. 3, en douze entrées « in increasing order of effectiveness » : le numéro 12 est le plus faible et le numéro 1 le plus fort. Les extraits ci-dessous la reprennent entrée par entrée avec l'explication que Meadows en donne."
+    },
+    {
+      "id": "SUP-74ea7a4a3d511f3f",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.note",
+      "access": "full-text",
+      "text": "Chaque entrée est un passage contigu du rapport de décembre 1999, précédé de sa page imprimée. Les marques d'appel de note du texte (chiffres collés à un mot) sont conservées. Les extraits ne sont pas une analyse : aucune phrase ne leur a été ajoutée."
+    },
+    {
+      "id": "SUP-e7d18f493fc9bcee",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[0]",
+      "access": "full-text",
+      "text": "p. 1 : « These are places within a complex system (a corporation, an economy, a living body, a city, an ecosystem) where a small shift in one thing can produce big changes in everything. »"
+    },
+    {
+      "id": "SUP-2f9d07ce780e7e37",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[1]",
+      "access": "full-text",
+      "text": "p. 1 : « “People know intuitively where leverage points are,” he says. “Time after time I’ve done an analysis of a company, and I’ve figured out a leverage point—in inventory policy, maybe, or in the relationship between sales force and productive force, or in personnel policy. Then I’ve gone to the company and discovered that there’s already a lot of attention to that point. Everyone is trying very hard to push it in the wrong direction!” »"
+    },
+    {
+      "id": "SUP-c64eb8434b407090",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[2]",
+      "access": "full-text",
+      "text": "p. 1 : « Forrester made a computer model and came out with a clear leverage point: Growth. »"
+    },
+    {
+      "id": "SUP-5acb1cee3a00e887",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[3]",
+      "access": "full-text",
+      "text": "p. 2 : « Counterintuitive. That’s Forrester’s word to describe complex systems. Leverage points are not intuitive. Or if they are, we intuitively use them backward, systematically worsening whatever problems we are trying to solve. »"
+    },
+    {
+      "id": "SUP-6e552c0e46adf9d7",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[4]",
+      "access": "full-text",
+      "text": "p. 2 : « The systems analysts I know have come up with no quick or easy formulas for finding leverage points. »"
+    },
+    {
+      "id": "SUP-da88ef4e1f868844",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[5]",
+      "access": "full-text",
+      "text": "p. 2 : « because of counterintuitiveness, when we do discover the system’s leverage points, hardly anybody will believe us. »"
+    },
+    {
+      "id": "SUP-86bcdfa76c2fc546",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[6]",
+      "access": "full-text",
+      "text": "p. 2 : « I got up, marched to the flip chart, tossed over to a clean page, and wrote: »"
+    },
+    {
+      "id": "SUP-a07cb81899bc2053",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[7]",
+      "access": "full-text",
+      "text": "p. 2 : « Places to Intervene in a System (in increasing order of effectiveness) 9. Constants, parameters, numbers (subsidies, taxes, standards) 8. Regulating negative feedback loops 7. Driving positive feedback loops 6. Material flows and nodes of material intersection 5. Information flows 4. The rules of the system (incentives, punishments, constraints) 3. The distribution of power over the rules of the system 2. The goals of the system 1. The mindset or paradigm out of which the system—its goals, power structure, rules, its culture—arises. »"
+    },
+    {
+      "id": "SUP-a193a2898b0534b1",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[8]",
+      "access": "full-text",
+      "text": "p. 3 : « As with most of the stuff that comes to me in boil-over mode, this list was not exactly tightly reasoned. As I began to share it with others, especially with systems analysts who had their own lists, and with activists who wanted to put the list to immediate use, questions and comments came back that caused me to rethink, add and delete items, change the order, add caveats. »"
+    },
+    {
+      "id": "SUP-ce493a26d6814629",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[9]",
+      "access": "full-text",
+      "text": "p. 3 : « So, what you are about to read is a work in progress. It’s not a simple, sure-fire recipe for finding leverage points. Rather, it’s an invitation to think more broadly about the many ways there might be to get systems to change. »"
+    },
+    {
+      "id": "SUP-a169d25e5e6fbc96",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[10]",
+      "access": "full-text",
+      "text": "p. 3 : « Places to Intervene in a System (in increasing order of effectiveness) 12. Constants, parameters, numbers (such as subsidies, taxes, standards) 11. The sizes of buffers and other stabilizing stocks, relative to their flows. 10. The structure of material stocks and flows (such as transport networks, population age structures) 9. The lengths of delays, relative to the rate of system change 8. The strength of negative feedback loops, relative to the impacts they are trying to correct against 7. The gain around driving positive feedback loops 6. The structure of information flows (who does and does not have access to what kinds of information) 5. The rules of the system (such as incentives, punishments, constraints) 4. The power to add, change, evolve, or selforganize system structure 3. The goals of the system 2. The mindset or paradigm out of which the system—its goals, structure,rules, delays, parameters—arises 1. The power to transcend paradigms »"
+    },
+    {
+      "id": "SUP-0848de8c3867605b",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[11]",
+      "access": "full-text",
+      "text": "p. 4 : « The “state of the system” is whatever standing stock is of importance: amount of water behind the dam, amount of harvest– able wood in the forest, number of people in the population, amount of money in the bank, whatever. »"
+    },
+    {
+      "id": "SUP-5ea1e91179a4b4d4",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[12]",
+      "access": "full-text",
+      "text": "p. 4 : « There are usually inflows that increase the stock and outflows that decrease it. »"
+    },
+    {
+      "id": "SUP-45ba50b7769e8088",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[13]",
+      "access": "full-text",
+      "text": "p. 4 : « it takes time for flows to accumulate in stocks, just as it takes time for water to fill up or drain out of the tub. Policy changes take time to accumulate their effects. »"
+    },
+    {
+      "id": "SUP-92bceffd56f1b8ed",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[14]",
+      "access": "full-text",
+      "text": "p. 4 : « Those are two negative feedback loops, or correcting loops, one controlling the inflow, one controlling the outflow, either or both of which you can use to bring the water level to your goal. »"
+    },
+    {
+      "id": "SUP-b3263903ec60b7fe",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[15]",
+      "access": "full-text",
+      "text": "p. 4 : « Notice that the goal and the feedback connections are not visible in the system. »"
+    },
+    {
+      "id": "SUP-655dfcede1c2acdf",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[16]",
+      "access": "full-text",
+      "text": "p. 5 : « That’s why leverage points are not intuitive. »"
+    },
+    {
+      "id": "SUP-55531336999abd7e",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[17]",
+      "access": "full-text",
+      "text": "p. 5 : « “Parameters” in systems jargon are the numbers that determine how much of a discrepancy turns which faucet how fast. »"
+    },
+    {
+      "id": "SUP-ef6279ab526086e2",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[18]",
+      "access": "full-text",
+      "text": "p. 5 : « Consider the national debt. It’s a negative bathtub, a money hole. The annual rate at which it sinks is called the deficit. Tax income makes it rise, government expenditures make it fall. Congress and the President spend most of their time arguing about the many, many parameters that open and close tax faucets and spending drains. Since those faucets and drains are connected to us, the voters, these are politically charged parameters. But, despite all the fireworks, and no matter which party is in charge, the money hole keeps getting deeper, just at different rates »"
+    },
+    {
+      "id": "SUP-3ad405d655d49237",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[19]",
+      "access": "full-text",
+      "text": "p. 6 : « Parameters are the points of least leverage on my list of interventions. Diddling with the details, arranging the deck chairs on the Titanic. Probably 90—no 95—no 99 percent of our attention goes to parameters, but there’s not a lot of leverage in them. »"
+    },
+    {
+      "id": "SUP-64bcbfebed301d75",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[20]",
+      "access": "full-text",
+      "text": "p. 6 : « Not that parameters aren’t important. They can be, especially in the short term and to the individual who’s standing directly in the flow. People care deeply about parameters and fight fierce battles over them. But they rarely change behavior. »"
+    },
+    {
+      "id": "SUP-1cb2a360fe47c52d",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[21]",
+      "access": "full-text",
+      "text": "p. 6 : « If the system is chronically stagnant, parameter changes rarely kick-start it. If it’s wildly variable, they don’t usually stabilize it. If it’s growing out of control, they don’t brake it. »"
+    },
+    {
+      "id": "SUP-f9d8def49ae3267f",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[22]",
+      "access": "full-text",
+      "text": "p. 6 : « Parameters become leverage points when they go into ranges that kick off one of the items later on this list. »"
+    },
+    {
+      "id": "SUP-71b8abf2fc83138f",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[23]",
+      "access": "full-text",
+      "text": "p. 6 : « These critical numbers are not nearly as common as people seem to think they are. Most systems have evolved or are designed to stay far out of critical parameter ranges. Mostly, the numbers are not worth the sweat put into them. »"
+    },
+    {
+      "id": "SUP-543531bbc6d198bf",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[24]",
+      "access": "full-text",
+      "text": "p. 7 : « stocks that are big, relative to their flows, are more stable than small ones. »"
+    },
+    {
+      "id": "SUP-1038537805616f0f",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[25]",
+      "access": "full-text",
+      "text": "p. 7 : « Often you can stabilize a system by increasing the capacity of a buffer.4 But if a buffer is too big, the system becomes inflexible. It reacts too slowly. And big buffers of some sorts, such as water reservoirs or inventories, cost a lot to build or maintain. »"
+    },
+    {
+      "id": "SUP-e630e93572303ddb",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[26]",
+      "access": "full-text",
+      "text": "p. 7 : « So I have put buffers at the less influential end of the list of leverage points. »"
+    },
+    {
+      "id": "SUP-beb6fbe773beb6c4",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[27]",
+      "access": "full-text",
+      "text": "p. 7 : « The plumbing structure, the stocks and flows and their physical arrangement, can have an enormous effect on how the system operates. »"
+    },
+    {
+      "id": "SUP-00cbb4a2f594de25",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[28]",
+      "access": "full-text",
+      "text": "p. 8 : « Physical structure is crucial in a system, but rarely a leverage point, because changing it is rarely simple. The leverage point is in proper design in the first place. After the structure is built, the leverage is in understanding its limitations and bottlenecks »"
+    },
+    {
+      "id": "SUP-037181d89d0fbcbe",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[29]",
+      "access": "full-text",
+      "text": "p. 8 : « Delays in feedback loops are common causes of oscillations. If you’re trying to adjust a system state to your goal, but you only receive delayed information about what the system state is, you will overshoot and undershoot. »"
+    },
+    {
+      "id": "SUP-ddf6b93e733c9841",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[30]",
+      "access": "full-text",
+      "text": "p. 8 : « A delay in a feedback process is critical relative to rates of change in the system state that the feedback loop is trying to control. »"
+    },
+    {
+      "id": "SUP-1c2091036ee7af6d",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[31]",
+      "access": "full-text",
+      "text": "p. 9 : « Delays that are too long cause damped, sustained, or exploding oscillations, depending on how much too long. At the extreme, they cause chaos. Overlong delays in a system with a threshold, a danger point, a range past which irreversible damage can occur, cause overshoot and collapse. »"
+    },
+    {
+      "id": "SUP-5bd5758b923ca76e",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[32]",
+      "access": "full-text",
+      "text": "p. 9 : « I would list delay length as a high leverage point, except for the fact that delays are not often easily changeable. »"
+    },
+    {
+      "id": "SUP-2eaaf37eb57acab7",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[33]",
+      "access": "full-text",
+      "text": "p. 9 : « That’s why growth rates are higher up on the leverage-point list than delay times. »"
+    },
+    {
+      "id": "SUP-1d81f05ae3bb9d0d",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[34]",
+      "access": "full-text",
+      "text": "p. 9 : « Negative feedback loops are ubiquitous in systems. Nature evolves them and humans invent them as controls to keep important system states within safe bounds. »"
+    },
+    {
+      "id": "SUP-ceb03577112356c5",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[35]",
+      "access": "full-text",
+      "text": "p. 9 : « Any negative feedback loop needs a goal (the thermostat setting), a monitoring and signaling device to detect excursions from the goal (the thermostat), and a response mechanism »"
+    },
+    {
+      "id": "SUP-674564388b57eb35",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[36]",
+      "access": "full-text",
+      "text": "p. 10 : « One of the big mistakes we make is to strip away these “emergency” response mechanisms because they aren’t used often and they appear to be costly. In the short term, we see no effect from doing this. In the long term, we drastically narrow the range of conditions over which the system can survive. »"
+    },
+    {
+      "id": "SUP-2e20eede42b079dc",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[37]",
+      "access": "full-text",
+      "text": "p. 10 : « The more the price—the central piece of information signaling both producers and consumers—is kept clear, unambiguous, timely, and truthful, the more smoothly markets will operate. »"
+    },
+    {
+      "id": "SUP-9e9f96aaf51a1bd7",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[38]",
+      "access": "full-text",
+      "text": "p. 11 : « A negative feedback loop is self-correcting; a positive feedback loop is self-reinforcing. The more it works, the more it gains power to work some more. »"
+    },
+    {
+      "id": "SUP-1ae345c6e78ee6f5",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[39]",
+      "access": "full-text",
+      "text": "p. 11 : « Positive feedback loops are sources of growth, explosion, erosion, and collapse in systems. A system with an unchecked positive loop ultimately will destroy itself. That’s why there are so few of them. Usually a negative loop will kick in sooner or later. »"
+    },
+    {
+      "id": "SUP-6d75aa70f0d55eb5",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[40]",
+      "access": "full-text",
+      "text": "p. 11 : « Reducing the gain around a positive loop—slowing the growth—is usually a more powerful leverage point in systems than strengthening negative loops, and much preferable to letting the positive loop run. »"
+    },
+    {
+      "id": "SUP-e769b7a85dafa79b",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[41]",
+      "access": "full-text",
+      "text": "p. 12 : « Systems folks call them “success to the successful” loops. Rich people collect interest; poor people pay it. »"
+    },
+    {
+      "id": "SUP-81014e24a6b284f3",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[42]",
+      "access": "full-text",
+      "text": "p. 12 : « There was this subdivision of identical houses, the story goes, except that for some reason the electric meter in some of the houses was installed in the basement and in others it was installed in the front hall, where the residents could see it constantly, going round faster or slower as they used more or less electricity. With no other change, with identical prices, electricity consumption was 30 percent lower in the houses where the meter was in the front hall. »"
+    },
+    {
+      "id": "SUP-c15fd96c15a922a1",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[43]",
+      "access": "full-text",
+      "text": "p. 13 : « It’s not a parameter adjustment, not a strengthening or weakening of an existing loop. It’s a new loop, delivering information to a place where it wasn’t going before and therefore causing people to behave differently. »"
+    },
+    {
+      "id": "SUP-b21d6c36a3400662",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[44]",
+      "access": "full-text",
+      "text": "p. 13 : « A more recent example is the Toxic Release Inventory, the U.S. government’s requirement, instituted in 1986, that every factory releasing hazardous air pollutants report those emissions publicly every year. Suddenly every community could find out precisely what was coming out of the smokestacks in town. There was no law against those emissions, no fines, no determination of “safe” levels, just information. But by 1990, emissions dropped 40 percent. »"
+    },
+    {
+      "id": "SUP-97f584c40df141b1",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[45]",
+      "access": "full-text",
+      "text": "p. 13 : « Missing feedback is one of the most common causes of system malfunction. Adding or restoring information can be a powerful intervention, usually much easier and cheaper than rebuilding physical infrastructure. »"
+    },
+    {
+      "id": "SUP-7d34709858340251",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[46]",
+      "access": "full-text",
+      "text": "p. 13 : « It’s important that the missing feedback be restored to the right place and in compelling form. To take another tragedy of the commons, it’s not enough to inform all the users of an aquifer that the groundwater level is dropping. That could initiate a race to the bottom. »"
+    },
+    {
+      "id": "SUP-4716e963a1064909",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[47]",
+      "access": "full-text",
+      "text": "p. 13 : « The rules of the system define its scope, its boundaries, its degrees of freedom. »"
+    },
+    {
+      "id": "SUP-3256fcc2ee6897d1",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[48]",
+      "access": "full-text",
+      "text": "p. 14 : « They are high leverage points. Power over the rules is real power. »"
+    },
+    {
+      "id": "SUP-3a6f0b4b80bb8030",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[49]",
+      "access": "full-text",
+      "text": "p. 14 : « If you want to understand the deepest malfunctions of systems, pay attention to the rules, and to who has power over them. »"
+    },
+    {
+      "id": "SUP-83125ff2fbd00822",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[50]",
+      "access": "full-text",
+      "text": "p. 14 : « Self-organization means changing any aspect of a system lower on this list: adding completely new physical structures, such as brains or wings or computers; »"
+    },
+    {
+      "id": "SUP-f986199036eb0399",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[51]",
+      "access": "full-text",
+      "text": "p. 15 : « The ability to self-organize is the strongest form of system resilience. A system that can evolve can survive almost any change, by changing itself. »"
+    },
+    {
+      "id": "SUP-dc51960c711c35b7",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[52]",
+      "access": "full-text",
+      "text": "p. 15 : « Self-organization is basically the combination of an evolutionary raw material—a highly variable stock of information from which to select possible patterns—and a means for experimentation, for selecting and testing new patterns. »"
+    },
+    {
+      "id": "SUP-a49a30f55519f55f",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[53]",
+      "access": "full-text",
+      "text": "p. 16 : « The goal of a system is a leverage point superior to the self-organizing ability of a system. »"
+    },
+    {
+      "id": "SUP-5ec6451bfb71af20",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[54]",
+      "access": "full-text",
+      "text": "p. 16 : « most negative feedback loops within systems have their own goals: to keep the bathwater at the right level, to keep the room temperature comfortable »"
+    },
+    {
+      "id": "SUP-885bf54038df7e06",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[55]",
+      "access": "full-text",
+      "text": "p. 16 : « Whole system goals are not what we think of as goals in the human-motivational sense. They are not so much deducible from what anyone says as from what the system does. »"
+    },
+    {
+      "id": "SUP-a63a2642d8b852de",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[56]",
+      "access": "full-text",
+      "text": "p. 17 : « I said earlier that changing the players in the system is a low-level intervention, as long as the players fit into the same old system. The exception to that rule is at the top, where a single player can have the power to change the system’s goal. »"
+    },
+    {
+      "id": "SUP-39f012bbb6fd24cd",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[57]",
+      "access": "full-text",
+      "text": "p. 17 : « The shared idea in the minds of society, the great big unstated assumptions—unstated because unnecessary to state; everyone already knows them—constitute that society’s paradigm, or deepest set of beliefs about how the world works. »"
+    },
+    {
+      "id": "SUP-a6476543e39989ab",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[58]",
+      "access": "full-text",
+      "text": "p. 18 : « Paradigms are the sources of systems. From them, from shared social agreements about the nature of reality, come system goals and information flows, feedbacks, stocks, flows and everything else about systems. »"
+    },
+    {
+      "id": "SUP-00df101d1f99a8f0",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[59]",
+      "access": "full-text",
+      "text": "p. 18 : « You could say paradigms are harder to change than anything else about a system, and therefore this item should be lowest on the list, not second-to-highest. But there’s nothing necessarily physical or expensive or even slow in the process of paradigm change. »"
+    },
+    {
+      "id": "SUP-8f3721217a84eded",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[60]",
+      "access": "full-text",
+      "text": "p. 18 : « Whole societies are another matter. They resist challenges to their paradigm harder than they resist anything else. »"
+    },
+    {
+      "id": "SUP-e16ba0582605f88b",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[61]",
+      "access": "full-text",
+      "text": "p. 18 : « In a nutshell, you keep pointing at the anomalies and failures in the old paradigm, you keep speaking louder and with assurance from the new one, you insert people with the new paradigm in places of public visibility and power. You don’t waste time with reactionaries; rather you work with active change agents and with the vast middle ground of people who are open-minded. »"
+    },
+    {
+      "id": "SUP-13587a8916b70bcb",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[62]",
+      "access": "full-text",
+      "text": "p. 18 : « Systems folks would say you change paradigms by modeling a system on a computer, which takes you outside the system and forces you to see it whole. »"
+    },
+    {
+      "id": "SUP-0acb3a5eec8634ca",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[63]",
+      "access": "full-text",
+      "text": "p. 19 : « There is yet one leverage point that is even higher than changing a paradigm. That is to keep oneself unattached in the arena of paradigms, to stay flexible, to realize that no paradigm is “true,” that every one, including the one that sweetly shapes your own worldview, »"
+    },
+    {
+      "id": "SUP-01cbdf81a02ad20e",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[64]",
+      "access": "full-text",
+      "text": "p. 19 : « It is tentative and its order is slithery. Every item has exceptions that can move it up or down the order of leverage. »"
+    },
+    {
+      "id": "SUP-5402cf481a060cd4",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[65]",
+      "access": "full-text",
+      "text": "p. 19 : « The higher the leverage point, the more the system will resist changing it »"
+    },
+    {
+      "id": "SUP-b202cb822f50ec5c",
+      "origin": "evidence:lecture.json",
+      "path": "$.extraits_lus.passages[66]",
+      "access": "full-text",
+      "text": "p. 19 : « There are no cheap tickets to mastery. »"
+    },
+    {
+      "id": "SUP-2fc6818e79a553a0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Le fichier lu est le rapport de décembre 1999. Sa page de titre signale qu'une version plus courte avait paru dans Whole Earth à l'hiver 1997 ; cette première publication n'a pas été ouverte, et ce dossier ne dit rien de son contenu ni de ses entrées."
+    },
+    {
+      "id": "SUP-84acdf041d07a3e5",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Les deux articles secondaires (Abson et al., 2017 ; Fischer et Riechers, 2019) ne sont connus que par leur notice Crossref. Ils n'attestent ici ni la manière dont la littérature a repris la liste de Meadows, ni ce qu'elle en a retenu ou contesté."
+    },
+    {
+      "id": "SUP-ba7f2648749c378a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Ce dossier ne contient aucun texte de Forrester. Tout ce qui est rapporté de lui (le mot « Counterintuitive », le modèle du monde, l'étude de dynamique urbaine de 1969, l'observation sur les entreprises, la remarque sur l'équité fiscale) l'est par Meadows, qui le présente comme tel."
+    },
+    {
+      "id": "SUP-1454538799f2a945",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Le rapport ne donne aucune méthode pour établir, dans un système donné, à quel niveau se situe une intervention : p. 2, Meadows écrit que les analystes qu'elle connaît « have come up with no quick or easy formulas for finding leverage points ». Le dossier consigne cette phrase ; il n'établit rien sur ce que d'autres textes proposeraient."
+    },
+    {
+      "id": "SUP-3421b0f99f5dee77",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Les chiffres du texte (30 % de consommation d'électricité en moins avec le compteur dans l'entrée, p. 12 ; 40 % de baisse des émissions déclarées entre 1986 et 1990 et 90 % pour une entreprise, p. 13) sont rapportés par Meadows sans référence ni note ; l'histoire du compteur est introduite par « the story goes ». Ils sont la matière du rapport, pas des résultats vérifiés ici."
+    },
+    {
+      "id": "SUP-a047a1762e4f2d4d",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Le rapport mêle des raisonnements, des exemples et des jugements personnels (par exemple sur le commerce mondial, p. 14 et suivantes, ou sur Ronald Reagan, p. 17). Ce dossier ne les consigne que pour ce qu'ils sont : des propos de Meadows."
     }
   ],
-  "estimated_tokens": 5560,
+  "estimated_tokens": 17809,
   "status": "READY"
 }
