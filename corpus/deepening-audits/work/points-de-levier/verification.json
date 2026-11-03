@@ -1,231 +1,411 @@
 {
   "concept_id": "points-de-levier",
-  "candidate_sha256": "4c89c66e7b2dd72b22ab84502f0968d9a8642831d56e24b21b432e23e631c516",
+  "candidate_sha256": "b013ce9c929ab0ccabc589cfa0f96d3c617e361e91e985c7fbf6a11fe81dd683",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Le hook porte exactement la question « où appuyer dans un système pour que quelque chose bouge vraiment » ; le cadrage « un ensemble qui fonctionne mal » reste à l'intérieur de cette question et n'attribue rien de plus à la source."
+      "reason": "Cadrage éditorial non attribué ; $.hook pose la question « où appuyer dans un système » ; aucune donnée ni attribution ajoutée."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Le résumé établit une échelle d'endroits d'intervention allant du réglage d'un paramètre au changement de paradigme, et notes[4] place explicitement paramètre et délai sur cette échelle ; les trois exemples restent dans l'amplitude autorisée."
+      "reason": "passages[10] liste paramètres (montants), délais, règles, buts ; passages[56] « changing the players »."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] établit un ordre d'efficacité croissante, donc des portées différentes selon l'endroit ; aucune causalité ni fréquence n'est ajoutée."
+      "reason": "Dérivation fondée : passages[32] et [28] (délais et structure difficiles à changer), [48] « Power over the rules is real power », [56] seul un acteur au sommet peut changer le but."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Reprise littérale de l'attribution_note, confirmée par authors[0].name et review.attribution."
+      "reason": "passages[10] « in increasing order of effectiveness » ; $.summary."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "Le compte de douze, les deux bouts de l'échelle et le sens de l'ordre (du plus faible au plus fort) sont portés mot pour mot par le résumé, notes[1] et notes[3]."
+      "reason": "$.attribution_note porte mot pour mot la formation auprès de Forrester."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "La quotation porte « Les points de levier ne sont pas intuitifs » et le résumé présente l'avertissement à côté de la classification, ce qui autorise aussi le rapprochement de poids entre liste et avertissement."
+      "reason": "passages[0] et $.definition_de_lauteur : citation et énumération exactes, p. 1."
     },
     {
       "claim_id": "C007",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent que la valeur de la liste tient à son ordre d'efficacité, mais aucun ne porte l'assertion universelle « chacun en connaît » : c'est une généralité sur ce que tout le monde sait, hors de la portée de notes[3] et du résumé."
+      "verdict": "SUPPORTED",
+      "reason": "passages[10] douze entrées, $.notes[3] et $.definition_de_lauteur : 12 le plus faible, 1 le plus fort."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Citation exacte de « in increasing order of effectiveness » et du sens de l'ordre, tous deux dans notes[3]."
+      "reason": "passages[3] « we intuitively use them backward, systematically worsening… » et $.summary « on les actionne d'ordinaire à l'envers »."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] dit exactement que 12 est le plus faible, 1 le plus fort, et que c'est l'inverse de ce que lit un lecteur pressé d'une liste numérotée."
+      "reason": "passages[10], $.notes[3], $.definition_de_lauteur."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] nomme « Constants, parameters, numbers » comme départ de l'échelle et notes[3] situe ce départ au barreau le plus faible ; « montants, taux, seuils » n'est qu'une glose du sens ordinaire des trois mots cités."
+      "reason": "$.notes[3] : « l'inverse de ce qu'un lecteur pressé lit dans une liste numérotée » ; remarque éditoriale non attribuée."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] donne « The power to transcend paradigms » comme terme haut de la liste ; la traduction proposée reste fidèle et n'ajoute aucune portée."
+      "reason": "passages[10] entrée 12 « Constants, parameters, numbers »."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Déduction arithmétique immédiate : douze endroits (résumé) dont les deux bouts sont nommés (notes[1]) laissent dix places intermédiaires ; rien d'autre n'est affirmé."
+      "reason": "passages[10] : énumération 11 à 1 fidèlement rendue. Le signal $.summary (« paradigme ») n'apporte rien qui manque à ce claim."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "L'écart entre les deux bouts nommés — réglage d'un paramètre, changement de paradigme — est exactement ce que portent le résumé et notes[1] ; la glose « ce depuis quoi tout a été pensé » reste une traduction de paradigme."
+      "reason": "$.notes[4] « Meadows file toute l'échelle avec une image de plomberie » ; passages[13] la baignoire (tub)."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "notes[4] dit que Meadows file toute l'échelle avec une image de plomberie et que cette image est ce qui rend l'échelle tenable en tête."
+      "reason": "passages[11] « whatever standing stock is of importance: amount of water behind the dam … money in the bank »."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Repris mot pour mot de notes[4] : « un paramètre est le réglage d'un robinet »."
+      "reason": "passages[12] « inflows that increase the stock and outflows that decrease it »."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Repris mot pour mot de notes[4] : « un stock est le niveau de la baignoire »."
+      "reason": "passages[13] « it takes time for flows to accumulate in stocks, just as … the tub ». Le signal $.notes[4] n'est pas nécessaire."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Repris mot pour mot de notes[4] : « un délai est le temps que met une vanne à faire effet »."
+      "reason": "passages[14] deux boucles correctrices, entrée et sortie, pour amener le niveau au but."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Les trois termes de l'image sont ceux de notes[4], et leur différence de nature comme de portée suit l'ordre d'efficacité de notes[3] ; la formule reste descriptive."
+      "reason": "passages[15] citation exacte, p. 4."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence interne à l'image fournie par notes[4] — régler un robinet suppose l'installation sans la modifier — cohérente avec le statut de levier le plus faible donné au paramètre par notes[3] ; aucune attribution primaire nouvelle."
+      "reason": "Conséquence dérivée de passages[14] (les boucles règlent le niveau) et [15] (but et boucles non visibles)."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Les deux citations anglaises et la pagination p. 5-6 sont portées telles quelles par notes[4], attribuées à Meadows comme dans l'appui."
+      "reason": "passages[16] p. 5, après passages[15] p. 4 : citation exacte et page suivante."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "La disproportion entre « a money hole » et « adjustments to faucets » est contenue dans les termes mêmes que notes[4] rapporte ; le claim ne va pas au-delà de ce que l'image dit."
+      "reason": "passages[17] citation exacte."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "quotation.original_text est bien constitué de deux phrases et porte sur l'intuition ; la caractérisation « plutôt que sur la technique » décrit l'objet de la citation sans en élargir la portée."
+      "reason": "passages[18] et $.notes[4] : « a negative bathtub, a money hole »."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Reproduction exacte de quotation.text, élision comprise, avec review.quotation à « verbatim » et référence, locator et statut de traduction présents dans les appuis."
+      "reason": "passages[18] « Tax income makes it rise, government expenditures make it fall »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] et quotation.original_text portent littéralement la fin de phrase citée et son rôle : ce que produit l'usage à l'envers."
+      "reason": "passages[18] « Congress and the President spend most of their time arguing about the many, many parameters that open and close tax faucets »."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "La citation distingue elle-même deux cas — points non intuitifs, ou intuitifs mais utilisés à l'envers — ; le claim constate cette séparation sans affirmer aucune habitude ni fréquence."
+      "reason": "passages[18] « no matter which party is in charge, the money hole keeps getting deeper, just at different rates »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Lecture serrée de la citation : « not intuitive » (mauvais endroit) et « we intuitively use them backward » (bon endroit, mauvais sens), sans quantification ni attribution ajoutée."
+      "reason": "passages[19] citation exacte."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "L'adverbe figure dans quotation.original_text et notes[0] signale explicitement qu'on ne pouvait le supprimer sans le dire, ce qui autorise l'insistance sur son poids."
+      "reason": "passages[19] « Probably 90—no 95—no 99 percent of our attention goes to parameters ». Le signal $.notes[4] n'est pas nécessaire."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "« systematically worsening whatever problems we are trying to solve » est verbatim dans l'appui : l'aggravation des problèmes visés et son caractère non occasionnel sont portés par l'adverbe cité, non ajoutés par le texte."
+      "reason": "passages[19] « arranging the deck chairs on the Titanic »."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] établit une première liste de neuf entrées corrigée deux pages plus loin, donc une échelle non achevée d'emblée."
+      "reason": "passages[20] « They can be, especially in the short term and to the individual who's standing directly in the flow » ; modalité « peuvent » conservée."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] dit exactement : « Une première liste, de neuf entrées, figure p. 2 »."
+      "reason": "passages[20] « fight fierce battles over them »."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Reprise littérale de notes[1] : paperboard et correction par Meadows elle-même deux pages plus loin."
+      "reason": "passages[20] « But they rarely change behavior »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] situe la version révisée p. 3 et l'identifie comme la liste comptée par le résumé, lequel en donne douze."
+      "reason": "passages[21] « rarely kick-start it … If it's growing out of control, they don't brake it »."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "La première liste figure p. 2 du même rapport que la révisée p. 3 (notes[1]) : elle reste donc imprimée sous les yeux du lecteur, et ses neuf entrées contre douze justifient « ses manques »."
+      "reason": "passages[22] citation rendue fidèlement. Le signal passages[56] (« exception ») concerne les acteurs, pas ce claim."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] établit une liste révisée par son autrice avec l'état antérieur conservé une page avant ; « brouillon » traduit la liste de paperboard que Meadows corrige elle-même."
+      "reason": "passages[23] « not nearly as common as people seem to think »."
     },
     {
       "claim_id": "C035",
-      "verdict": "TOO_STRONG",
-      "reason": "notes[1] n'établit que l'autorévision, ce qui autorise « ne pas le traiter comme une loi » mais non la conclusion positive « une raison de s'en servir comme d'un instrument de lecture » : la révisabilité n'est pas une raison d'usage, et aucun appui joint ne porte cet emploi."
+      "verdict": "SUPPORTED",
+      "reason": "passages[23] « Mostly, the numbers are not worth the sweat put into them »."
     },
     {
       "claim_id": "C036",
-      "verdict": "UNSUPPORTED",
-      "reason": "Ni notes[1] (autorévision) ni notes[3] (ordre d'efficacité) ne disent quoi que ce soit du caractère applicable ou non de l'échelle ; l'assertion négative « pas une hiérarchie à appliquer » est tirée du silence des appuis, ce qui n'est pas une preuve."
+      "verdict": "SUPPORTED",
+      "reason": "passages[32] délais, [25]-[26] tampons placés bas pour coût et rigidité, [28] structure physique : classement lié à la difficulté de changer."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "L'ordre d'efficacité croissante (notes[3]) et l'amplitude paramètre/paradigme (résumé) autorisent à dire que l'échelle sépare un réglage de paramètre d'une intervention de haut niveau ; aucune fréquence ni habitude n'est affirmée."
+      "reason": "passages[29] « you only receive delayed information … you will overshoot and undershoot »."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "La question de niveau est exactement celle du hook et de l'échelle décrite par le résumé et notes[3] ; la formulation est modale (« on peut demander ») et ne porte aucune fréquence."
+      "reason": "passages[31] « Overlong delays in a system with a threshold … cause overshoot and collapse »."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] établit un ordre d'efficacité : situer une action y indique ce qu'on peut en attendre, et non la valeur de l'action ; l'énoncé reste hedgé par « raisonnablement »."
+      "reason": "passages[32] « I would list delay length as a high leverage point, except … not often easily changeable »."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Énoncé conditionnel qui n'exploite que la comparabilité des niveaux établie par notes[3] et le résumé : un écart de niveau entre diagnostic et mesures se lit sans examiner chaque mesure ; aucune assertion de fréquence."
+      "reason": "passages[28] citation rendue fidèlement."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "Le résumé établit une classification nommée d'endroits d'intervention, donc un vocabulaire de niveaux, et le hook comme le theme_label portent la question « où peser vraiment » ; la clause sur ceux qui sentent un débat à côté ne quantifie rien et n'attribue rien à la source."
+      "reason": "passages[28] « The leverage point is in proper design in the first place »."
     },
     {
       "claim_id": "C042",
-      "verdict": "SOURCE_NOT_CONSULTED",
-      "reason": "Les deux seuls appuis sont des déclarations de sources[0] en access_corroboration « dossier-absent », qui valent comme notices (référence, éditeur, pagination) ; elles n'établissent pas une assertion sur la lecture de l'œuvre — « elle se lit mieux là où elle a été écrite »."
+      "verdict": "SUPPORTED",
+      "reason": "passages[10] information au rang 6 ; passages[45] « usually much easier and cheaper than rebuilding physical infrastructure » : cas inverse."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "Date, nombre de pages et éditeur sont précisément ce qu'une notice peut soutenir, et notes[2] redit indépendamment « le rapport lu est celui de décembre 1999, édité par The Sustainability Institute »."
+      "reason": "passages[42] « the story goes » ; $.reserves[4]."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] place les neuf entrées p. 2 et la version révisée p. 3 du même rapport, et identifie cette dernière comme la liste comptée par le résumé ; la coexistence des deux états est donc portée par l'appui."
+      "reason": "passages[42] cave / entrée, « where the residents could see it constantly ». Le signal $.reserves[4] n'est pas nécessaire au contenu."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "notes[2] dit exactement que la page 2 signale une version plus courte parue dans Whole Earth à l'hiver 1997, et le claim n'ajoute rien sur cette version non ouverte."
+      "reason": "passages[42] « With no other change … 30 percent lower » ; présenté dans le cadre de l'histoire rapportée (C043), conformément à $.reserves[4]."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "passages[43] citation et paraphrase exactes."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "passages[45] « usually much easier and cheaper than rebuilding physical infrastructure »."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "passages[46] « restored to the right place »."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "passages[46] « That could initiate a race to the bottom » ; modalité conservée. Le signal $.reserves[4] (« baisse ») est sans rapport."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "passages[47] citation rendue exactement."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "passages[48] citation exacte."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "passages[49] « pay attention to the rules, and to who has power over them »."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "passages[10] buts au rang 3, au-dessus des règles (5) ; passages[53]."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "passages[55] rendu fidèlement."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "passages[56] « changing the players … low-level intervention, as long as the players fit into the same old system »."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "passages[56] « a single player can have the power to change the system's goal » ; « peut » conservé."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "passages[10] paradigme au rang 2. Le signal $.summary n'apporte rien de manquant."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "passages[57] « great big unstated assumptions—unstated because unnecessary to state … how the world works »."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "passages[58] citation et énumération exactes."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "passages[59] « You could say paradigms are harder to change … should be lowest on the list »."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "passages[59] « nothing necessarily physical or expensive or even slow »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "passages[60] « They resist challenges to their paradigm harder than they resist anything else »."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "$.quotation.text verbatim et passages[3]."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "$.quotation.original_text et passages[3] : fin de phrase exacte ; $.notes[0]."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "passages[15] but et boucles invisibles, passages[16] « That's why leverage points are not intuitive »."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "passages[1] « he says », $.reserves[2] : observation de Forrester rapportée par Meadows."
+    },
+    {
+      "claim_id": "C067",
+      "verdict": "SUPPORTED",
+      "reason": "passages[1] « Time after time … there's already a lot of attention to that point »."
+    },
+    {
+      "claim_id": "C068",
+      "verdict": "SUPPORTED",
+      "reason": "passages[1] « Everyone is trying very hard to push it in the wrong direction! »."
+    },
+    {
+      "claim_id": "C069",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence dérivée de passages[1] et [3] (bon point poussé dans le mauvais sens)."
+    },
+    {
+      "claim_id": "C070",
+      "verdict": "SUPPORTED",
+      "reason": "Transition dérivée de passages[5] (même découvert, on n'est pas cru)."
+    },
+    {
+      "claim_id": "C071",
+      "verdict": "SUPPORTED",
+      "reason": "passages[5] citation exacte."
+    },
+    {
+      "claim_id": "C072",
+      "verdict": "SUPPORTED",
+      "reason": "passages[6] « flip chart », [7] liste en neuf entrées, $.attribution.note « tableau de réunion », $.notes[1]."
+    },
+    {
+      "claim_id": "C073",
+      "verdict": "SUPPORTED",
+      "reason": "passages[8] citation exacte."
+    },
+    {
+      "claim_id": "C074",
+      "verdict": "SUPPORTED",
+      "reason": "passages[8] « systems analysts … activists … add and delete items, change the order, add caveats » ; passages[10] douze entrées. Le signal $.reserves[3] n'est pas nécessaire."
+    },
+    {
+      "claim_id": "C075",
+      "verdict": "SUPPORTED",
+      "reason": "passages[7] et [10] : les deux listes figurent."
+    },
+    {
+      "claim_id": "C076",
+      "verdict": "SUPPORTED",
+      "reason": "passages[9] « a work in progress … not a simple, sure-fire recipe … an invitation to think more broadly »."
+    },
+    {
+      "claim_id": "C077",
+      "verdict": "SUPPORTED",
+      "reason": "passages[64] « It is tentative and its order is slithery »."
+    },
+    {
+      "claim_id": "C078",
+      "verdict": "SUPPORTED",
+      "reason": "passages[64] « Every item has exceptions that can move it up or down »."
+    },
+    {
+      "claim_id": "C079",
+      "verdict": "SUPPORTED",
+      "reason": "passages[4] et $.reserves[3] « no quick or easy formulas for finding leverage points »."
+    },
+    {
+      "claim_id": "C080",
+      "verdict": "SUPPORTED",
+      "reason": "passages[63] « keep oneself unattached in the arena of paradigms, to stay flexible, to realize that no paradigm is “true” » ; passages[10] rang 1."
+    },
+    {
+      "claim_id": "C081",
+      "verdict": "SUPPORTED",
+      "reason": "passages[66] p. 19 ; $.sources_ouvertes[0].citation : pagination imprimée de 1 à 19."
     }
   ]
 }
