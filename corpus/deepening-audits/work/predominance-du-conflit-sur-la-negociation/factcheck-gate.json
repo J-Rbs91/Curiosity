@@ -1,17 +1,26 @@
 {
-  "protocol_version": 1,
+  "protocol_version": 2,
   "concept_id": "predominance-du-conflit-sur-la-negociation",
-  "candidate_sha256": "0424bdeb6da0ad559c887ec218cb6f555e9422ff6ea7b4bfec290064e6318edb",
-  "verdict": "FACTCHECK_FAIL",
-  "claims": 67,
-  "supported": 66,
+  "candidate_sha256": "dda22c7221b346f9847935f819d5270e2f2ef055a7e86be3f922bbc01de4b9f2",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 58,
+  "supported": 56,
   "failed": 1,
-  "structural_errors": [],
+  "mapping_incomplete": [
+    {
+      "claim_id": "C011",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Les appuis fournis pour ce claim établissent le renvoi en note 2 de la page 32 à Adam et Reynaud, PUF, 1978, p. 127, mais pas que la page 32 soit la première page de l'article. L'appui qui porte la pagination de l'article, SUP-dae0ffc0f7fc581c ($.sources[0].label, « p. 32-44 », origine validated), figure dans ce même bundle et manque visiblement à ce claim ; SUP-2d27288511f2293d ($.attribution_note, nom « en tête de la page 32, au-dessus du titre ») aussi. Rattachement à refaire, pas de coupe."
+    }
+  ],
+  "structural_errors": [
+    "C011: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
   "failures": [
     {
-      "claim_id": "C060",
+      "claim_id": "C030",
       "verdict": "TOO_STRONG",
-      "reason": "SUP-1f7e4d8dbe956dc0 dit « résultats informels ou différés, donc non notés dans les fiches » ; le texte lecteur les dit « notés nulle part », ce qui étend l'absence d'enregistrement au-delà des fiches d'inspection, seul support documentaire attesté."
+      "reason": "La citation et la page 34 sont portées par notes[2] et reserves[6], mais les appuis fournis pour ce claim ne disent pas que cette précision vient « avant tout le reste ». Ils n'ont que l'« immédiatement » de la phrase citée et la page 34 ; or l'article commence p. 32 et la thèse est annoncée p. 33. « D'emblée » ou « dès la page 34 » tiendrait."
     }
   ]
 }

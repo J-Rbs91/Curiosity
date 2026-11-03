@@ -1,15 +1,62 @@
 {
-  "protocol_version": 1,
+  "protocol_version": 2,
   "concept_id": "predominance-du-conflit-sur-la-negociation",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "0424bdeb6da0ad559c887ec218cb6f555e9422ff6ea7b4bfec290064e6318edb",
-  "validated_sha256": "ef689403da299b3576602256d577d2193d5e26afad57b71d0ff972972bd04e79",
-  "evidence_sha256": null,
+  "candidate_sha256": "dda22c7221b346f9847935f819d5270e2f2ef055a7e86be3f922bbc01de4b9f2",
+  "validated_sha256": "80d1342b6ae835bf0ad0c1047510ee5c24123731f38889b72f13a4b70846ecef",
+  "evidence_files": [
+    {
+      "file": "taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "sha256": "f95097df04f2ac43110133d7987a21ec132a61c22ee3593fc11af6a158d97fc8"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/taille-des-entreprises-et-issue-des-greves/lecture.json",
+    "statut": "resolu",
+    "repertoire": "corpus/evidence/taille-des-entreprises-et-issue-des-greves",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44.",
+        "cles": [
+          "doi:10.3406/sotra.1983.1912",
+          "url:persee.fr/doc/sotra_0038-0296_1983_num_25_1_1912"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Denis Segrestin, « Jean-Daniel Reynaud (1926-2019). Un itinéraire scientifique », Sociologie du travail, vol. 61, n° 2, 2019.",
+        "cles": [
+          "doi:10.4000/sdt.18092",
+          "url:journals.openedition.org/sdt/18092"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Discuter, dans une entreprise, cela prend des formes visibles : des délégués, des réunions inscrites au calendrier, des accords signés. Ces pratiques ne sont pas également répandues selon la taille : c’est dans les grandes entreprises qu’elles sont le plus développées, et un petit atelier en est bien moins pourvu. L’idée qui vient alors est simple, et presque tout le monde l’a eue : là où la discussion est organisée, un arrêt de travail devrait peser moins, puisque l’essentiel se règle autour d’une table."
+      "text": "Les pratiques contractuelles ne sont pas également répandues selon la taille des entreprises : c’est dans les grandes qu’elles sont le plus développées. L’idée qui vient alors est simple, et Dassa la rapporte à ce qu’« on pensait » : là où la discussion est organisée, un arrêt de travail devrait peser moins, puisque l’essentiel se règle autour d’une table."
     },
     {
       "locator": "lead[1]",
@@ -18,12 +65,12 @@
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Une formule retournée, et retournée encore",
-      "text": "Dans la sociologie du travail française des années 1970, une phrase circule : « Le conflit est la poursuite de la négociation par d’autres moyens. » Elle est construite par inversion d’une formule de Clausewitz. Dassa la renvoie, en note de sa première page, à la page 127 d’un ouvrage de Gérard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, paru en 1978 ; un article de Denis Segrestin consacré à l’itinéraire scientifique de Reynaud confirme qu’elle est bien de ce dernier."
+      "text": "Il y a d’abord une phrase : « Le conflit est la poursuite de la négociation par d’autres moyens. » Elle est construite par inversion d’une formule de Clausewitz. Dassa la renvoie, en note de sa première page, à la page 127 d’un ouvrage de Gérard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, paru en 1978 ; un article de Denis Segrestin consacré à l’itinéraire scientifique de Reynaud confirme qu’elle est bien de ce dernier."
     },
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Une formule retournée, et retournée encore",
-      "text": "Ce que la phrase soutient est fort. Elle ne dit pas que la grève et la discussion se succèdent, l’une après l’autre, comme la guerre puis le traité : elle dit qu’elles sont le même processus vu à deux moments, et qu’un arrêt de travail est un coup joué dans une partie qui reste une partie de négociation. Segrestin décrit cette conception où conflits et négociations forment « un seul et même sujet »."
+      "text": "La phrase ne dit pas que la grève et la discussion se succèdent : elle dit qu’un arrêt de travail est un coup joué dans une partie qui reste une partie de négociation. Segrestin décrit cette conception où conflits et négociations forment « un seul et même sujet »."
     },
     {
       "locator": "sections[0].paragraphs[2]",
@@ -38,27 +85,27 @@
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Un jour d’un côté, cinq de l’autre",
-      "text": "L’écart, page 40, vaut un jour dans les petites entreprises, 4,8 jours dans les moyennes et 5,2 jours dans les grandes. Il est maximal là où on l’attendait minimal. Dassa commente : « Cela montre bien, contre toute attente, que la sensibilité au rapport de forces est principalement le fait des grandes entreprises. » Dans les grandes, tenir cinq jours de plus est ce qui sépare l’échec du résultat ; dans les petites, page 41, « on relève une quasi indépendance entre durée des grèves et résultats obtenus »."
+      "text": "L’écart, page 40, vaut un jour dans les petites entreprises, 4,8 jours dans les moyennes et 5,2 jours dans les grandes. Il est maximal là où on l’attendait minimal. Dassa commente : « Cela montre bien, contre toute attente, que la sensibilité au rapport de forces est principalement le fait des grandes entreprises. » Dans les petites, page 41, « on relève une quasi indépendance entre durée des grèves et résultats obtenus »."
     },
     {
       "locator": "sections[1].paragraphs[2]",
       "section_title": "Un jour d’un côté, cinq de l’autre",
-      "text": "La conclusion est tirée page 43 sans détour : « Les grandes entreprises sont plus sensibles que les petites au rapport des forces ». Elle donne page 41 la formule qui porte l’idée : « Nous pensons avoir montré ainsi, et surtout pour les grandes entreprises, la prédominance du conflit sur la négociation. » L’incise borne la thèse : la démonstration vaut surtout au pôle des grandes entreprises, elle n’est pas donnée comme une loi générale du travail. À l’autre pôle, elle laisse une question que ces chiffres ne referment pas : si durer ne change presque rien dans un petit atelier, on ne sait toujours pas ce qui y décide du sort d’une grève."
+      "text": "La conclusion est tirée page 43 sans détour : « Les grandes entreprises sont plus sensibles que les petites au rapport des forces ». L’auteur en avait donné page 41 la formule qui porte l’idée : « Nous pensons avoir montré ainsi, et surtout pour les grandes entreprises, la prédominance du conflit sur la négociation. » L’incise situe la démonstration : elle vaut surtout au pôle des grandes entreprises."
     },
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "Des entreprises qui ont toutes connu une grève",
-      "text": "Une comparaison de ce genre ne vaut que si l’on sait sur quoi elle porte, et Dassa le précise avant tout le reste, page 34 : « Il faut immédiatement préciser que nous travaillons sur des entreprises qui ont connu des grèves. » Rien de ce qui suit ne concerne donc les entreprises en général : tout se dit à l’intérieur du monde, restreint, de celles où un arrêt de travail a effectivement eu lieu en 1976."
+      "text": "Dassa précise avant tout le reste, page 34 : « Il faut immédiatement préciser que nous travaillons sur des entreprises qui ont connu des grèves. » Rien de ce qui suit ne concerne donc les entreprises en général : tout se dit à l’intérieur du monde, restreint, de celles où un arrêt de travail a effectivement eu lieu en 1976."
     },
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Des entreprises qui ont toutes connu une grève",
-      "text": "La précaution n’est pas de pure forme, car ce monde-là n’est pas peuplé de la même façon selon la taille. Vues du dedans, ce sont les petites entreprises qui apparaissent les plus combatives ; vues du dehors, elles font rarement grève, de l’ordre de 3 pour cent, contre 30 pour cent dans les entreprises d’au moins 1 000 travailleurs. Cette combativité constatée, avertit Dassa, « ne veut pas dire que les travailleurs de toutes les petites entreprises sont plus combatifs que ceux des grandes entreprises » : elle ne renseigne que sur les rares ateliers où un arrêt a eu lieu."
+      "text": "Ce monde-là n’est pas peuplé de la même façon selon la taille. Vues du dedans, ce sont les petites entreprises qui apparaissent les plus combatives ; vues du dehors, elles font rarement grève, de l’ordre de 3 pour cent, contre 30 pour cent dans les entreprises d’au moins 1 000 travailleurs. Cette combativité constatée, avertit Dassa, « ne veut pas dire que les travailleurs de toutes les petites entreprises sont plus combatifs que ceux des grandes entreprises » : elle ne renseigne que sur les rares ateliers où un arrêt a eu lieu."
     },
     {
       "locator": "sections[2].paragraphs[2]",
       "section_title": "Des entreprises qui ont toutes connu une grève",
-      "text": "Le champ est borné par ailleurs. L’agriculture et les administrations publiques en sont exclues, ainsi que les longs conflits sur l’emploi qui suivent une liquidation judiciaire, les grèves répétitives interrompues plus de quarante-huit heures et les grèves généralisées. Ces exclusions décident de ce que les durées veulent dire : un arrêt qui se prolonge parce que l’entreprise ferme, ou une grève qui la déborde, ne se compare pas à un arrêt ordinaire. Les durées mises côte à côte sont donc de même nature, celles d’une seule année."
+      "text": "L’agriculture et les administrations publiques sont exclues du champ, ainsi que les longs conflits sur l’emploi qui suivent une liquidation judiciaire, les grèves répétitives interrompues plus de quarante-huit heures et les grèves généralisées."
     },
     {
       "locator": "sections[3].paragraphs[0]",
@@ -77,13 +124,13 @@
     },
     {
       "locator": "sections[4].paragraphs[0]",
-      "section_title": "Les grèves qui n’ont pas eu lieu",
-      "text": "Un comptage ne voit que ce qu’il enregistre, et Dassa le dit en note de sa page 36. Une reprise du travail contre promesses a été rangée du côté des conflits avec résultats, alors que la part des résultats informels ou différés, ceux qui ne sont notés nulle part, « varie peut-être suivant la dimension des entreprises ». Et tout ce qui s’obtient sans grève échappe entièrement au comptage : cette négociation à froid est peut-être plus fréquente dans les grandes entreprises, « mais cela reste à établir ». Les deux réserves sont de l’auteur, et il ne les lève pas."
+      "section_title": "Ce que le comptage ne voit pas, et ce qu’il établit",
+      "text": "Un comptage ne voit que ce qu’il enregistre, et Dassa le dit en note de sa page 36. Une reprise du travail contre promesses a été rangée du côté des conflits avec résultats, alors que la part des résultats informels ou différés, ceux que ces relevés n’enregistrent pas, « varie peut-être suivant la dimension des entreprises ». Et tout ce qui s’obtient sans grève échappe entièrement au comptage : cette négociation à froid est peut-être plus fréquente dans les grandes entreprises, « mais cela reste à établir ». Les deux réserves sont de l’auteur, et il ne les lève pas."
     },
     {
       "locator": "sections[4].paragraphs[1]",
-      "section_title": "Les grèves qui n’ont pas eu lieu",
-      "text": "Reste ce qui, dans tout cela, lui revient en propre. L’opposition du conflit et de la négociation traversait déjà le débat qu’il cite, et il ne l’invente pas ; ce qu’il ajoute est une démonstration chiffrée où la taille des entreprises sert d’opérateur, et la phrase par laquelle il la resserre page 43 : « C’est dans les grandes entreprises plus que dans les petites que la pression des travailleurs est indispensable pour obtenir des résultats. » Elle vaut pour une année, 1976, et pour des entreprises où une grève a eu lieu. Ce qu’elle devient hors de ces bornes demande d’autres chiffres que ceux-là."
+      "section_title": "Ce que le comptage ne voit pas, et ce qu’il établit",
+      "text": "Reste à dire ce qui revient en propre à Dassa : l’opposition du conflit et de la négociation traversait déjà le débat qu’il cite, et il ne l’invente pas ; ce qu’il ajoute est une démonstration chiffrée où la taille des entreprises sert d’opérateur, et la phrase par laquelle il la resserre page 43 : « C’est dans les grandes entreprises plus que dans les petites que la pression des travailleurs est indispensable pour obtenir des résultats. » Elle vaut pour une année, 1976, et pour des entreprises où une grève a eu lieu. Ce qu’elle devient hors de ces bornes demande d’autres chiffres que ceux-là."
     }
   ],
   "supports": [
@@ -211,63 +258,72 @@
       "origin": "validated",
       "path": "$.sources[0].label",
       "access": "full-text",
-      "text": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44."
+      "text": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44.",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ec988b343d66a1a7",
       "origin": "validated",
       "path": "$.sources[0].kind",
       "access": "full-text",
-      "text": "primary"
+      "text": "primary",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-cf846b143e96fa43",
       "origin": "validated",
       "path": "$.sources[0].locator",
       "access": "full-text",
-      "text": "p. 32-44, ici p. 33, 39, 41 et 43-44"
+      "text": "p. 32-44, ici p. 33, 39, 41 et 43-44",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-d5b452d107ff0c4f",
       "origin": "validated",
       "path": "$.sources[0].doi_isbn",
       "access": "full-text",
-      "text": "10.3406/sotra.1983.1912"
+      "text": "10.3406/sotra.1983.1912",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-c033021fab17a636",
       "origin": "validated",
       "path": "$.sources[0].url",
       "access": "full-text",
-      "text": "https://www.persee.fr/doc/sotra_0038-0296_1983_num_25_1_1912"
+      "text": "https://www.persee.fr/doc/sotra_0038-0296_1983_num_25_1_1912",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ae94839d835b8c36",
       "origin": "validated",
       "path": "$.sources[1].label",
       "access": "full-text",
-      "text": "Denis Segrestin, « Jean-Daniel Reynaud (1926-2019). Un itinéraire scientifique », Sociologie du travail, vol. 61, n° 2, 2019."
+      "text": "Denis Segrestin, « Jean-Daniel Reynaud (1926-2019). Un itinéraire scientifique », Sociologie du travail, vol. 61, n° 2, 2019.",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-17f3663cb3d0deae",
       "origin": "validated",
       "path": "$.sources[1].kind",
       "access": "full-text",
-      "text": "secondary-academic"
+      "text": "secondary-academic",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-36d026620b648ad8",
       "origin": "validated",
       "path": "$.sources[1].doi_isbn",
       "access": "full-text",
-      "text": "10.4000/sdt.18092"
+      "text": "10.4000/sdt.18092",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-7d70ccd20b40e9d3",
       "origin": "validated",
       "path": "$.sources[1].url",
       "access": "full-text",
-      "text": "https://journals.openedition.org/sdt/18092"
+      "text": "https://journals.openedition.org/sdt/18092",
+      "access_corroboration": "corrobore"
     },
     {
       "id": "SUP-ffc37be1e07d0557",
@@ -403,6 +459,13 @@
       "text": "OUTILLAGE — Le serveur MCP documentary n'était pas exposé : aucun verify_reference. Les deux DOI ont été résolus par appel direct à api.crossref.org, avec réponse HTTP 200 et notice complète dans les deux cas ; il ne s'agit donc pas d'un « conclusive: false »."
     },
     {
+      "id": "SUP-51e9889554bb6f2b",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/taille-des-entreprises-et-issue-des-greves/lecture.json"
+    },
+    {
       "id": "SUP-5361fd127a91562d",
       "origin": "validated",
       "path": "$.notes[0]",
@@ -478,8 +541,281 @@
       "path": "$.notes[10]",
       "access": "n/a",
       "text": "La formule que Dassa combat, « Le conflit est la poursuite de la négociation par d'autres moyens », est renvoyée par lui, note 2 de la page 32, à Gérard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, PUF, 1978, p. 127. Cet ouvrage n'a pas été ouvert ; l'attribution de la formule à Reynaud est confirmée par la source secondaire, pas par le livre de 1978."
+    },
+    {
+      "id": "SUP-bd8637455c4f9950",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "taille-des-entreprises-et-issue-des-greves"
+    },
+    {
+      "id": "SUP-3550819cb20e0f47",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Sami Dassa"
+    },
+    {
+      "id": "SUP-0728d86436abd50c",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-0e65d8de4e37ac7e",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Article signe du seul Sami Dassa : son nom figure seul en tete de la page 32, au-dessus du titre, et la signature de fin, page 44, porte SAMI DASSA suivi du rattachement CNRS-CNAM, Laboratoire de Sociologie du Travail et des Relations Proportionnelles. La derniere ligne de ce rattachement porte, sur l'imprime lui-meme et non par accident de numerisation, Proportionnelles la ou le laboratoire s'appelle Relations Professionnelles : c'est une coquille de l'imprime, relue sur l'image de la page 44, et elle est signalee ici parce qu'elle ne doit pas etre recopiee comme un nom d'institution. Une note d'auteur au bas de la page 32 remercie les collegues qui ont enrichi l'article, en particulier Odile Benoit-Guilbot et Annette Jobert : c'est un remerciement, il n'emporte pas coecriture. L'annee 1983 est celle que porte le pied de la page 32, Sociologie du travail, n 1-1983, et l'en-tete de la meme page, SOCIOLOGIE DU TRAVAIL N 1/83 ; elle est donc lue sur la piece et non deduite de la notice. Les donnees exploitees sont les fiches de conflits du travail redigees par les Inspecteurs du Travail pour l'annee 1976, et l'auteur renvoie page 33 a ses propres travaux anterieurs sur ce materiau, Les greves de 1976, CNAM, 1978, et un article de Travail et emploi, n 7, 1981 : c'est la meme main, l'anteriorite ne change pas la signature."
+    },
+    {
+      "id": "SUP-fb924553f115b814",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[0]",
+      "access": "n/a",
+      "text": "p. 32"
+    },
+    {
+      "id": "SUP-ce093cb9a3f8927c",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[1]",
+      "access": "n/a",
+      "text": "p. 33"
+    },
+    {
+      "id": "SUP-dd8b28a63d202287",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[2]",
+      "access": "n/a",
+      "text": "p. 34"
+    },
+    {
+      "id": "SUP-a180d2af8671337f",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[3]",
+      "access": "n/a",
+      "text": "p. 39"
+    },
+    {
+      "id": "SUP-2f6f9329f558b66a",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[4]",
+      "access": "n/a",
+      "text": "p. 41"
+    },
+    {
+      "id": "SUP-40a18c3ac16d10a3",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[5]",
+      "access": "n/a",
+      "text": "p. 43"
+    },
+    {
+      "id": "SUP-bbf815f69c90b4a9",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.attribution._verifie_sur_image[6]",
+      "access": "n/a",
+      "text": "p. 44"
+    },
+    {
+      "id": "SUP-6f012614b43a11ec",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "C’est dans les grandes entreprises plus que dans les petites que la pression des travailleurs est indispensable pour obtenir des résultats."
+    },
+    {
+      "id": "SUP-6f3460449835bcfd",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44, ici p. 43, section IV, Conclusions, deuxième phrase de la troisième des trois informations énumérées. Persée, article sotra_0038-0296_1983_num_25_1_1912."
+    },
+    {
+      "id": "SUP-a3cf21ba5dfc2d04",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 43"
+    },
+    {
+      "id": "SUP-150ddee6c686832b",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-792a97f6c43dcea1",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-2024849e4f3ef6a6",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.quotation._verifie_sur_image",
+      "access": "n/a",
+      "text": "p. 43, image renderPage 1000 px, https://www.persee.fr/renderPage/sotra_0038-0296_1983_num_25_1_1912/sotra_0038-0296_1983_num_25_1_T1_0043_0000_1000.jpg, relue mot a mot"
+    },
+    {
+      "id": "SUP-12a10fb7710f2c9d",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Sami Dassa, « Conflits ou négociation ? Les grèves, leurs résultats et la taille des entreprises », Sociologie du travail, 25e année, n° 1, 1983, p. 32-44."
+    },
+    {
+      "id": "SUP-a60ce31fdea947a2",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "ISSN 0038-0296"
+    },
+    {
+      "id": "SUP-2d055586085ac608",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/sotra_0038-0296_1983_num_25_1_1912"
+    },
+    {
+      "id": "SUP-e2342f3def135801",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Denis Segrestin, « Jean-Daniel Reynaud (1926-2019). Un itinéraire scientifique », Sociologie du travail, vol. 61, n° 2, 2019, en libre accès sur OpenEdition Journals."
+    },
+    {
+      "id": "SUP-ab59eeebb4e2a5e4",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "10.4000/sdt.18092"
+    },
+    {
+      "id": "SUP-aaed333aff0773cd",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://journals.openedition.org/sdt/18092"
+    },
+    {
+      "id": "SUP-41012dca6a97020d",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "La these de Dassa est une these de preseance, et elle est transposable au-dela de son terrain : entre le conflit et la negociation, c'est le conflit qui commande, y compris et surtout la ou l'appareil de negociation est le plus developpe. Il pose l'alternative des la page 32 sous la forme de deux formules symetriques, celle qui reduit la negociation au conflit, « La negociation est la poursuite du conflit par d'autres moyens », et celle qui reduit le conflit a la negociation, « Le conflit est la poursuite de la negociation par d'autres moyens », cette derniere renvoyee en note a Gerard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, PUF, 1978, p. 127. Le partage entre les deux, ecrit-il, a un correlat verifiable : « Un correlat du choix de l'une ou l'autre de ces orientations se situe dans l'explication que l'on donne du resultat des conflits. » Si la negociation est hegemonique, le resultat des greves s'explique par le systeme d'organisation des rapports sociaux, « C'est l'appareil de traitement des conflits qui explique les resultats obtenus » ; si le conflit est hegemonique, le resultat depend « du rapport des forces etabli par les protagonistes ». Sa position propre est annoncee page 33 : « Nous voulons demontrer qu'une fois instaure par le conflit, le systeme de negociation reste tributaire du conflit. Les resultats que la negociation permet d'obtenir sont, a notre sens, fonction du rapport des forces dans l'entreprise. Ceci n'est pas pose comme une norme, mais comme la description de ce qui est. » Il ajoute que « la negociation n'eteint pas le conflit ; elle en facilite, au contraire, l'expression ouverte », et que « de meme que dans l'histoire la greve a precede le syndicat, de meme c'est le conflit qui genere la negociation et non l'inverse ». L'operateur de la demonstration est la taille de l'entreprise, prise non comme une variable descriptive mais, dit la note 2 de la page 34, parce que « la dimension des entreprises connote ici des differences dans le domaine des rapports sociaux de travail, en particulier dans le rapport entre conflit et negociation » : la grande entreprise est le lieu ou l'appareil de negociation est le mieux installe, elle sert donc de cas crucial. Le dispositif est une exploitation des fiches de conflits du travail redigees par les Inspecteurs du Travail pour 1976, sur trois classes de taille, moins de 200 travailleurs, 200 a 999, 1 000 et plus, et il compare a duree egale et a taux de grevistes egal la proportion de conflits ayant completement echoue. Les resultats vont a rebours de l'attente : « la proportion de greves qui echouent completement est nettement plus forte dans les grandes entreprises » (p. 36), fait que Dassa qualifie lui-meme d'« information la plus inattendue » puisque « pour beaucoup de sociologues du travail, les petits patrons sont reputes non negociateurs ». Le mecanisme se lit dans les ecarts conditionnels : a taux de grevistes egal les echecs sont plus frequents dans les grandes entreprises (p. 38), et, page 39, en italique dans le texte, « Du point de vue des resultats comme du point de vue de la mobilisation la grande entreprise est donc un handicap ». Surtout, l'ecart de duree entre les conflits qui echouent et ceux qui aboutissent, qui mesure la sensibilite du resultat a la pression, est de 1 jour dans les petites entreprises contre 4,8 jours dans les moyennes et 5,2 jours dans les grandes (p. 40) : « Cela montre bien, contre toute attente, que la sensibilite au rapport de forces est principalement le fait des grandes entreprises. » D'ou la conclusion de la page 41 : « Nous pensons avoir montre ainsi, et surtout pour les grandes entreprises, la predominance du conflit sur la negociation. C'est le conflit et sa duree qui expliquent la negociation et les resultats obtenus. » Il ajoute le test qui aurait pu le refuter : « Si les grandes entreprises se distinguaient par une particuliere propension a negocier, les greves avec resultats y seraient plus courtes que les greves sans resultats et plus courtes aussi que ces memes greves dans les petites entreprises. Or, sur ces deux points, ce sont bien les tendances en sens inverse qui sont etablies ici. » Les trois enonces conclusifs de la page 43 resument l'acquis : la mobilisation est plus forte et plus durable dans les petites entreprises, les resultats y sont plus frequents et les accords de fin de conflit plus efficaces, et « les grandes entreprises sont plus sensibles que les petites au rapport des forces mesure en termes de participation a la greve et de duree du conflit ». La formule generale suit : « Si, en termes ideologiques et moraux, la negociation est preferable au conflit, le dialogue a la force, en termes sociologiques, c'est encore le rapport des forces qui semble presider a l'ouverture des discussions sociales et a leur efficacite. » Et la page 44 fixe la portee critique de l'ensemble : les tableaux 6, 7 et 8 montrent que la sensibilite au rapport des forces est « particulierement nette dans les grandes entreprises, la ou precisement on pensait que l'appareil de negociation et l'institutionnalisation du conflit se substituait a ce rapport des forces », d'ou « la necessite de ne pas confondre la relation professionnelle en termes de conflit, negociation avec le rapport social de production en termes de domination, subordination ». Le mecanisme transposable est donc celui-ci, et il ne se confond pas avec le terrain : l'existence d'un appareil de negociation ne cree pas de capacite autonome a produire des resultats ; elle deplace seulement le seuil de pression a partir duquel un resultat s'obtient, et elle le releve. Ce que Dassa etablit que Michelle Durand n'etablit pas. Dassa cite Durand des sa page 33, mais son ouvrage de 1977, Les conflits du travail, CRESST, et non l'article de 1979 de Sociologie du travail : il lui emprunte le constat que « ce sont les grandes entreprises qui ont le plus de greves, bien qu'elles soient le lieu d'un plus grand developpement des pratiques contractuelles diverses », et il en fait le point de depart de sa propre demonstration. Les deux textes ne portent ni sur le meme objet ni sur la meme variation. Durand porte sur le contenu des revendications et decompose la greve en trois fonctions sociales coexistantes, bargaining, affrontement, opposition politique, dont elle fait varier le poids relatif selon la conjoncture nationale, deux fonctions se revelant relativement stables et le bargaining seul sensible a la conjoncture : son unite est le theme revendicatif, son plan est temporel, sa question est ce que la greve fait. Dassa porte sur l'issue des conflits et fait varier la taille de l'entreprise, c'est-a-dire le degre d'equipement institutionnel du lieu ou la greve se produit : son unite est le conflit, son plan est structurel, sa question est ce qui decide du resultat. Le resultat de Dassa n'est pas contenu dans celui de Durand, et il est plus fort en un point precis : la ou Durand etablit que la part negociable des revendications varie avec la conjoncture, Dassa etablit que la negociation elle-meme, la ou elle est le mieux outillee, reste commandee par la duree et l'ampleur de la greve, et que cette dependance y est plus forte, non plus faible, qu'ailleurs. Il n'y a donc pas doublon de fond : Durand relativise la negociabilite dans le temps, Dassa retire a l'appareil de negociation son autonomie causale dans l'espace des entreprises."
+    },
+    {
+      "id": "SUP-65115bebfd367749",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Le titre est tranche sur l'imprime, et l'imprime contredit la notice. La page 32, relue sur son image, porte en trois lignes : « Conflits ou negociation ? Les greves, leurs resultats et la taille des entreprises. », avec Conflits au pluriel. La notice Persee et les moteurs de recherche donnent « Conflit ou negociation ? Les greves, leurs resultats et la taille des entreprises », au singulier. Le depouillement de l'article ajoute un troisieme etat : les titres courants des pages impaires, verifies sur les images des pages 33, 39, 41 et 43, portent tous « Conflit ou negociation ? » au singulier. L'imprime est donc lui-meme discordant, page de titre au pluriel contre titres courants au singulier, et la notice a suivi les titres courants. Le titre retenu ici est celui de la page de titre, au pluriel, seul endroit ou l'article se nomme en entier."
+    },
+    {
+      "id": "SUP-079a7df5bab7b8dd",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "L'article a ete lu en entier, pages 32 a 44, par l'endpoint OCR de Persee page par page, ce qui justifie le consulted full-text de la source primaire. Sept pages ont ete relues sur leur image en 1000 px : 32 pour le titre, la signature d'ouverture et les notes, 33 pour l'annonce de these, 34 pour la construction de l'echantillon et les notes de methode, 39 pour la phrase en italique sur le handicap, 41 pour la conclusion intermediaire et le tableau 6, 43 pour la citation retenue et les trois enonces conclusifs, 44 pour la conclusion generale et la signature de fin. Les pages 35, 36, 37, 38, 40 et 42 n'ont ete lues que par l'OCR. Toutes les formules donnees entre guillemets dans la definition de l'auteur proviennent de pages relues sur image, a une exception signalee a la reserve suivante."
+    },
+    {
+      "id": "SUP-93fa2abb5f4a3db2",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Deux formules citees dans la definition de l'auteur viennent de pages non relues sur image et sont donc rapportees sous cette reserve : celles des pages 36 et 38 sur la frequence des echecs dans les grandes entreprises. Elles sont concordantes avec ce que les pages 39, 41 et 43, elles relues sur image, etablissent, mais leur graphie exacte n'est pas verifiee. Aucune n'est proposee comme citation d'affichage."
+    },
+    {
+      "id": "SUP-c65482c9b90d099d",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "La relecture sur image n'a pas ete formelle : elle a corrige l'OCR. Page 39, l'OCR de Persee rend « Du point de vue des resultais » la ou l'imprime porte resultats, et page 40 il rend « 4, 8 jours » et « 5, 2 jours » avec une espace parasite apres la virgule decimale. Page 44, inversement, l'imprime porte lui-meme des coquilles que l'OCR reproduit fidelement, trarail pour travail et sup pour sur, et le rattachement d'auteur porte Relations Proportionnelles pour Relations Professionnelles. L'OCR coupe en outre les mots en fin de ligne avec un caractere parasite. Aucune citation n'a donc ete arretee sur l'OCR seul."
+    },
+    {
+      "id": "SUP-5f8bb0b97dd3f817",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Deux passages porteurs de these ont ete releves et ecartes au profit de la citation retenue. Le premier, page 39 et en italique dans l'imprime, « Du point de vue des resultats comme du point de vue de la mobilisation la grande entreprise est donc un handicap. », tient en 112 caracteres et porte la marque d'insistance de l'auteur ; il a ete ecarte parce que, sorti de son contexte, handicap se lit spontanement comme un handicap pour l'entreprise alors que Dassa parle du point de vue des grevistes, et qu'une carte ne fournit pas ce contexte. Il reste le meilleur remplacant. Le second, page 41, « C'est le conflit et sa duree qui expliquent la negociation et les resultats obtenus. », tient en 84 caracteres et enonce la these generale, mais il ne dit rien de la taille des entreprises, qui est l'objet de cette fiche. Le passage le plus complet, page 33, « Nous voulons demontrer qu'une fois instaure par le conflit, le systeme de negociation reste tributaire du conflit. », 114 caracteres, a ete ecarte pour la meme raison : il donne la these sans son operateur."
+    },
+    {
+      "id": "SUP-a9c446489975e275",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Le chapeau en italique de la page 32, qui annonce que l'auteur « entend demontrer que, contrairement au sens commun, les petites entreprises negocient plus rapidement que les grandes sous la pression des grevistes » et qu'il « etaye ainsi la these de preeminence du conflit sur la negociation », est le resume le plus net de l'article, et il a ete deliberement ecarte comme source de citation : rien sur la page ne permet de decider s'il est de la main de l'auteur ou de la redaction de la revue, et le mot preeminence n'y est pas celui que l'auteur emploie dans son corps de texte, ou il ecrit predominance, page 41. Il porte de surcroit une coquille de l'imprime, etaye sans accent. Il est signale ici parce qu'il concorde avec la these etablie sur le corps, non parce qu'il l'attesterait."
+    },
+    {
+      "id": "SUP-16ba211a5720bca6",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "La reserve de methode que Dassa pose lui-meme, page 34, doit accompagner tout usage de la fiche et n'est pas une reserve du lecteur mais de l'auteur : « Il faut immediatement preciser que nous travaillons sur des entreprises qui ont connu des greves. » La comparaison ne porte donc que sur des entreprises en greve, et Dassa avertit explicitement que la plus grande combativite constatee dans les petites entreprises « ne veut pas dire que les travailleurs de toutes les petites entreprises sont plus combatifs que ceux des grandes entreprises », la frequence des greves restant tres inferieure dans les petites, de l'ordre de 3 pour cent contre 30 pour cent dans les entreprises d'au moins 1 000 travailleurs. Le champ exclut par ailleurs, note 1 de la page 34, l'agriculture et les administrations publiques, les conflits longs sur l'emploi apres liquidation judiciaire, les greves repetitives interrompues plus de 48 heures et les greves generalisees."
+    },
+    {
+      "id": "SUP-da8da851198830bd",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Une limite que l'auteur reconnait en note et qui touche directement au resultat central : note 1 de la page 36, Dassa admet que seuls les conflits se terminant sans resultat ont ete comptes comme echecs, les reprises du travail avec promesses etant codees comme conflits avec resultats, et il emet l'hypothese que « la proportion de resultats informels ou differes, donc non notes dans les fiches, varie peut-etre suivant la dimension des entreprises ». Note 2 de la meme page, il ajoute que la frequence de negociation a froid, sans greve, est peut-etre plus elevee dans les grandes entreprises, « mais cela reste a etablir ». L'ecart d'echec entre grandes et petites entreprises pourrait donc en partie tenir a l'instrument. Dassa le dit, il ne le leve pas."
+    },
+    {
+      "id": "SUP-65f5774a842f9a41",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Les tableaux 1 a 8, aux pages 35, 37, 38, 39, 40, 41 et 42, ne sont pas rendus par l'endpoint OCR, qui n'en donne que la legende. Les seuls chiffres repris ici sont ceux que l'auteur reprend dans son texte courant, plus ceux du tableau 6 lus sur l'image de la page 41. L'appareil statistique n'est donc pas verifie ligne a ligne, seul le raisonnement l'est."
+    },
+    {
+      "id": "SUP-c16dea0215c78e51",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Le risque de doublon de fond avec la fiche fonctions-sociales-de-la-greve de Michelle Durand a ete examine sur le texte et ecarte ; l'argument est expose en clair a la fin de la definition de l'auteur. Il faut ajouter que Dassa cite Durand, mais pas l'article de 1979 : sa reference, note 2 de la page 33 relue sur image, est Michelle Durand, Les conflits du travail, Universite de Paris Sud, CRESST, 1977, p. 9. Le rapport entre les deux textes est donc etabli par filiation d'un constat, pas par discussion de la typologie des trois fonctions, dont Dassa ne parle nulle part dans cet article."
+    },
+    {
+      "id": "SUP-e06fcbf86da29f7e",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "La question de savoir si l'article est une monographie sans these transposable a ete posee et tranchee sur le texte : l'article n'est pas une monographie, il ne porte sur aucune entreprise en particulier, et sa these est enoncee avant les donnees, page 33, sous forme d'une proposition a demontrer, puis conclue page 41 dans les memes termes. Les tableaux servent un test explicite, formule page 41 sous une forme falsifiable. La fiche est donc dans le perimetre."
+    },
+    {
+      "id": "SUP-9ebf6d673e191fc1",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[11]",
+      "access": "n/a",
+      "text": "La reference a Gerard Adam et Jean-Daniel Reynaud, Conflits du travail et changement social, PUF, 1978, p. 127, relevee en note 2 de la page 32 et relue sur image, sert ici a situer la position que Dassa combat et n'a pas ete instruite pour elle-meme. La formule que Dassa lui prete, « Le conflit est la poursuite de la negociation par d'autres moyens », n'a pas ete verifiee sur l'ouvrage de 1978, qui n'a pas ete ouvert ; elle est en revanche confirmee comme formule de Reynaud par la source secondaire ci-dessous."
+    },
+    {
+      "id": "SUP-4c884765058ef85d",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[12]",
+      "access": "n/a",
+      "text": "Source secondaire, et ce qu'elle vaut. Denis Segrestin, « Jean-Daniel Reynaud (1926-2019). Un itineraire scientifique », Sociologie du travail, vol. 61, n 2, 2019, est en libre acces integral sur OpenEdition Journals, DOI 10.4000/sdt.18092. Son corps a ete ouvert et lu, non son seul titre. Ce qu'il apporte a ce dossier est precis et limite : il confirme que la formule inversee de Clausewitz, « le conflit est la poursuite de la negociation par d'autres moyens », est bien de Reynaud, et il expose la conception que Dassa combat, celle ou conflits et negociations forment « un seul et meme sujet », le conflit valant comme « une forme exacerbee de negociation », adossee a la theorie de la regulation conjointe. Reserve a porter avec elle : ce texte est une notice biographique et scientifique consacree a Reynaud, il ne mentionne pas Dassa ni l'article de 1983, il n'atteste donc rien de la reception de celui-ci ; et il a ete lu a travers le rendu HTML d'OpenEdition, non sur une image de page, de sorte que la graphie exacte des fragments cites de Segrestin n'est pas verifiee au meme niveau que celle de Dassa."
+    },
+    {
+      "id": "SUP-115ad9d2ea9a1fb2",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[13]",
+      "access": "n/a",
+      "text": "Aucune source secondaire portant sur l'article de Dassa lui-meme n'a ete trouvee en acces ouvert, et voici ou la recherche a porte, dans la limite de budget fixee. Deux recherches par mots-cles ont ete lancees, l'une sur Dassa, greves et taille des entreprises, l'autre sur la litterature des fiches de conflits du travail. La piste la plus prometteuse etait Etienne Penissat, « Mesure des conflits, conflits de mesure. Retour sur l'histoire des outils de quantification des greves », Politix, n 86, 2009, p. 51-72, qui porte precisement sur le materiau statistique employe par Dassa. Elle a echoue par trois voies : la page Cairn, shs.cairn.info/revue-politix-2009-2-page-51, renvoie un HTTP 403 ; le depot HAL hal-01708004 est une notice sans fichier, le telechargement de hal.science/hal-01708004/document renvoyant un HTTP 404 ; le depot lillois lilloa.univ-lille.fr/handle/20.500.12210/15349 renvoie un HTTP 404. Ce texte n'est donc pas verse au dossier, meme en metadata-only, faute d'avoir pu en lire une seule ligne de corps. La reception de l'article de Dassa, sa place dans l'oeuvre de l'auteur et le devenir de son resultat sur la taille des entreprises ne sont donc appuyes sur rien d'autre que le texte lui-meme."
+    },
+    {
+      "id": "SUP-f61a6b8448324f8d",
+      "origin": "evidence:taille-des-entreprises-et-issue-des-greves/lecture.json",
+      "path": "$.reserves[14]",
+      "access": "n/a",
+      "text": "Le PDF complet de Persee, docAsPDF, renvoie un HTTP 403, protection altcha, et n'a pas ete contourne. L'article a ete atteint par l'endpoint OCR page par page et par les images renderPage en 1000 px, tous deux en acces ouvert. Plusieurs transferts ont ete coupes par le proxy d'agent, connection reset by peer et un HTTP 500 isole, et ont ete relances jusqu'a obtention de l'image complete ; aucune de ces coupures n'a ete interpretee comme une absence de texte."
     }
   ],
-  "estimated_tokens": 10169,
+  "estimated_tokens": 19500,
   "status": "READY"
 }
