@@ -1,0 +1,18 @@
+{
+  "protocol_version": 2,
+  "concept_id": "loi-de-campbell",
+  "candidate_sha256": "6cdde147936271a2d60400a07d6ccf35d1e22e81794538ea8592e55da70e9aa5",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 61,
+  "supported": 60,
+  "failed": 1,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C015",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (SUP-44e43baae10fe353 ($.definition_de_lauteur), $.review.notes[1]) portent « the more apt it will be to distort and corrupt », « plus il sera enclin à distordre et à corrompre » : une tendance graduée. Le claim, privé du comparatif, écrit « il finit par déformer et corrompre », ce qui transforme une propension en aboutissement (glissement possibilité vers fait)."
+    }
+  ]
+}
