@@ -1,0 +1,697 @@
+{
+  "protocol_version": 2,
+  "concept_id": "valeur-comme-fait-psychologique",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "d9f4b21ad9c9ed1adc544066cbbf702234977d363f756553aa874b2fa12fca01",
+  "validated_sha256": "e8289e2bb9e5bf456d53020f95f5b529f836950515d158033e5474fddb6ce8f6",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "ec0f8b3c03a17ae1b6437b6738bbeecb54346bb56437f1163a973edaf5b286c9"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p.",
+        "cles": [
+          "url:archive.org/details/psychologiecono03tardgoog"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », Bulletin de psychologie, tome XXXV, n° 357, 1982, p. 907-913.",
+        "cles": [
+          "doi:10.3406/bupsy.1982.12030",
+          "url:persee.fr/doc/bupsy_0007-4403_1982_num_35_357_12030"
+        ],
+        "dossier": null,
+        "statut": "absent"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 1,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons qu’une action cotée en Bourse perde un tiers de son prix dans la matinée, sans que rien ait bougé dans l’usine qu’elle représente : les mêmes machines, les mêmes stocks, les mêmes ouvriers à leur poste. Ce qui a changé tient tout entier dans ce que quelques milliers de personnes croient désormais de cette usine, et dans ce qu’elles en attendent. Où se trouvait donc, la veille au soir, le tiers de prix qui a disparu ?"
+    },
+    {
+      "locator": "lead[1]",
+      "text": "L’objection vient aussitôt : si la valeur loge dans les têtes, l’économie perd ce qui faisait sa force, la possibilité de compter. Gabriel Tarde, dans le cours qu’il professe au Collège de France au tournant du siècle, répond exactement l’inverse. Ce qui se passe dans les têtes se compte, à condition de savoir quoi compter : non plus des choses, mais des personnes, ce qu’elles pèsent les unes par rapport aux autres, et la force avec laquelle elles tiennent à ce qu’elles croient."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Une qualité que nous attribuons aux choses",
+      "text": "Le premier geste consiste à retirer la valeur de l’objet. De la Valeur, Tarde écrit page 63 : « Elle est une qualité que nous attribuons aux choses, comme la couleur, mais qui, en réalité, comme la couleur, n’existe qu’en nous, d’une vie toute subjective »."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Une qualité que nous attribuons aux choses",
+      "text": "La comparaison avec la couleur déloge la valeur de l’objet : rien dans le bois d’une table ne porte son prix, comme rien dans ce bois ne porte sa couleur. Mais Tarde n’en fait pas un caprice de chacun. La phrase qui suit précise que la valeur « consiste dans l’accord des jugements collectifs que nous portons sur l’aptitude des objets à être plus ou moins, et par un plus ou moins grand nombre de personnes, crus, désirés ou goûtés ». Ce qui n’existe qu’en nous existe donc entre nous : c’est un accord, et le « plus ou moins grand nombre » qui s’y glisse annonce déjà la première de ses mesures."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Une qualité que nous attribuons aux choses",
+      "text": "Le déplacement change la question qu’on pose devant un prix qui bouge. Si la valeur est logée dans la chose au même titre que son poids, une variation sans transformation de la chose est une anomalie. Si la valeur est ce que nous attribuons, la variation est le phénomène lui-même, et c’est du côté de ceux qui attribuent qu’il faut aller voir."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "La croyance et le désir",
+      "text": "Retirée des choses, la valeur doit bien se loger quelque part. Tarde la ramène à deux états, et à deux seulement : croire et désirer. Ce sont, aux pages 63 et 64, les deux quantités élémentaires de l’âme ; la valeur qui s’en compose est donc elle-même une quantité."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "La croyance et le désir",
+      "text": "Elle se divise en valeur-vérité, valeur-utilité et valeur-beauté, qui correspondent à ces deux états. Ce qu’une vérité vaut tient à ce qu’on y croit ; ce qu’un bien utile vaut tient à ce qu’on le désire. On peut lire dans cet élargissement autre chose qu’un classement : faire entrer la vérité et la beauté dans une théorie de la valeur, c’est dire que le marché n’est pas le seul lieu où quelque chose vaut."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Le nombre, le poids social, l’intensité",
+      "text": "Reste à compter, et Tarde dit page 64 avec quoi. Pour la valeur d’une vérité : « le plus ou moins grand nombre, le plus ou moins grand poids social […] des personnes qui s’accordent à l’admettre, et le plus ou moins d’intensité de leur croyance en elle ». Pour celle d’un objet utile, la même série revient, terme pour terme : « le plus ou moins grand nombre de gens qui le désirent […] le plus ou moins grand poids social […] et le plus ou moins d’intensité du désir qu’elles en éprouvent »."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Le nombre, le poids social, l’intensité",
+      "text": "Trois mesures, donc, et ce sont trois facteurs qui varient séparément. Le nombre se compte par têtes. Le poids social dit que les têtes ne pèsent pas toutes autant. L’intensité dit qu’on tient plus ou moins fort à une même croyance ou à un même désir."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Le nombre, le poids social, l’intensité",
+      "text": "Cela implique qu’une même hausse puisse recouvrir trois histoires distinctes. Plus de gens y croient ; ou les mêmes y croient, mais ce sont désormais des gens qu’on écoute ; ou personne n’a changé d’avis, sauf que chacun tient au sien beaucoup plus fermement. Le prix affiché confond les trois."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "La Bourse et le baromètre",
+      "text": "Le chapitre où Tarde retrace l’histoire de sa discipline porte un reproche précis aux fondateurs de l’économie politique : avoir traité le crédit, le service et le travail « comme des objets, des objets réels et matériels », des grandeurs qui tomberaient sous la loi du nombre et de la mesure comme un sac de grain tombe sous la balance."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "La Bourse et le baromètre",
+      "text": "La conséquence vient page 109, et il la donne par un exemple : « les hausses et les baisses des valeurs de Bourse, à la différence des oscillations du baromètre, ne sauraient s’expliquer le moins du monde sans la considération de leurs causes psychologiques ». Il les nomme dans la foulée : « accès d’espérance ou de découragement du public », « propagation d’une bonne ou d’une mauvaise nouvelle à sensation dans l’esprit des spéculateurs »."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "La Bourse et le baromètre",
+      "text": "L’aiguille d’un baromètre monte et descend elle aussi, et l’on peut en tenir la courbe sans rien savoir de personne : ce qui la fait bouger est dans l’air, indifférent à ce qu’on en pense. La courbe de Bourse a la même allure et n’a pas la même nature."
+    },
+    {
+      "locator": "sections[3].paragraphs[3]",
+      "section_title": "La Bourse et le baromètre",
+      "text": "D’où le programme, énoncé page 110 en cinq mots : « faire du verso le recto ». Autrement dit, demander à l’esprit humain l’explication du matériel social, au lieu de traiter crédit, service et travail en objets matériels. La monnaie elle-même, précise Tarde dans la phrase de la page 109, n’est que le signe de la valeur."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que Tarde accorde aux écoles autrichiennes",
+      "text": "Une théorie qui fait de la valeur une affaire de désir n’est pas isolée en 1902, et Tarde ne feint pas de l’ignorer. Page 142, il reconnaît d’éventuelles coïncidences entre ses vues et celles des écoles allemandes et autrichiennes."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que Tarde accorde aux écoles autrichiennes",
+      "text": "La démarcation qu’il maintient passe par deux critères. Ces écoles, écrit-il, font jouer au désir un rôle considérable, mais non à la croyance, qui est pourtant chez lui l’un des deux états dont la valeur se compose. Elles ne tiennent pas compte, ensuite, du caractère quantitatif du désir ni de son identité de nature d’un individu à un autre, seule chose, selon lui, qui permette de traiter les désirs des masses comme des quantités mesurables indirectement par la statistique."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Ce que Tarde accorde aux écoles autrichiennes",
+      "text": "Le second critère répond à l’objection du début. Pour que ce qui se passe dans les têtes se compte à l’échelle d’une foule, il faut, selon Tarde, que le désir soit une quantité, et qu’il soit de même nature chez l’un et chez l’autre. La distinction est la sienne et décrit ses voisins tels qu’il les lit. Elle indique où il situe sa propre originalité : non dans le rôle donné au désir, que ces écoles lui donnaient aussi, mais dans le fait de compter la croyance à côté de lui et de tenir l’un et l’autre pour des quantités."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Ce que Jean Milet revendique, et jusqu’où",
+      "text": "En 1982, dans le Bulletin de psychologie, Jean Milet consacre à Tarde un article dont le titre annonce beaucoup : « Le créateur de la psychologie économique ». Il y dégage de la Psychologie économique quatre thèses majeures, dont « une nouvelle théorie de la valeur », et expose page 910 les expressions de la Valeur."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Ce que Jean Milet revendique, et jusqu’où",
+      "text": "L’article dit pourtant autre chose que son titre, et c’est Milet qui le dit. Page 909, il écrit que « l’idée de fonder l’économie sur la psychologie, et non plus sur les facteurs matériels, était dans l’air à cette époque » ; il nomme Schmoller, Wagner et Menger, chefs d’écoles qui « arborent le titre de psychologie économique » avant Tarde, puis Bagehot, Royce, Baldwin, et Giddings plus tard. Ce qu’il revendique tient dans une phrase adversative : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s’appuyant intégralement sur les analyses de la psychologie sociale ». Sa conclusion, page 913, ne dit plus créateur, mais « un initiateur »."
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "Ce que Jean Milet revendique, et jusqu’où",
+      "text": "Milet n’écrit pas en arbitre. Spécialiste de Tarde, il plaide pour son auteur, dans la revue qui servait alors d’organe à la psychologie économique française, et son argumentation s’appuie trois fois sur son propre ouvrage de 1970. Il est partie dans la querelle de paternité, et c’est pourtant lui qui en restreint l’enjeu : ce qui se dispute n’est pas l’idée d’asseoir l’économie sur la psychologie, mais le fait d’en avoir tiré une théorie entière."
+    },
+    {
+      "locator": "sections[5].paragraphs[3]",
+      "section_title": "Ce que Jean Milet revendique, et jusqu’où",
+      "text": "Tarde, lui, date lui-même les germes de sa doctrine. Une note de sa page 142 renvoie à deux livraisons de la Revue philosophique, en septembre et octobre 1881, sous le titre « la Psychologie en économie politique », où il dit avoir posé en substance, pour la première fois, ce que son cours développe vingt ans plus tard. En quels termes la thèse s’y énonçait, il faudra lire ces pages pour le savoir."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-af6350f39b2e5ace",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "valeur-comme-fait-psychologique"
+    },
+    {
+      "id": "SUP-3769e680ee669b71",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "valeur-comme-fait-psychologique"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-07f26029a78ca0e5",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "La valeur comme fait psychologique"
+    },
+    {
+      "id": "SUP-721dfcf5220da682",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "psychologie-economique"
+    },
+    {
+      "id": "SUP-b0b01bf8221b265b",
+      "origin": "validated",
+      "path": "$.theme_labels[\"psychologie-economique\"]",
+      "access": "n/a",
+      "text": "Psychologie économique"
+    },
+    {
+      "id": "SUP-0c28cf5151187363",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Gabriel Tarde"
+    },
+    {
+      "id": "SUP-56aedfb6ac01288f",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : G. Tarde, de l'Institut, professeur au Collège de France. Il écrit en tête de l'avant-propos que le livre est la substance de son cours du Collège de France de 1900-1901, et précise page 142 qu'il y développe des germes posés dans la Revue philosophique en septembre et octobre 1881, sous le titre « la Psychologie en économie politique »."
+    },
+    {
+      "id": "SUP-856c8c74a8061199",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] la valeur […] n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs […]"
+    },
+    {
+      "id": "SUP-35023adcc0feb311",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+    },
+    {
+      "id": "SUP-ccdb270ef2234c0e",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "t. I, p. 109"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-340129ef761bfef3",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "La valeur est-elle une qualité des choses, ou un fait de croyance et de désir ?"
+    },
+    {
+      "id": "SUP-c55052e76410220f",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "La valeur n'est rien qu'une combinaison de croyances et de désirs, quantité que mesurent le nombre de ceux qui croient ou désirent, leur poids social et leur intensité."
+    },
+    {
+      "id": "SUP-728b34176e1adb71",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-3e16037e699b3082",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "t. I, p. 63-64, 108-110 et 142",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-5fd4e190cb28fd40",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/psychologiecono03tardgoog",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-303ba2680bf7faca",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », Bulletin de psychologie, tome XXXV, n° 357, 1982, p. 907-913.",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-0dccf5a797896acf",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "francophone-reception",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-8b058221854c90c4",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "full-text",
+      "text": "p. 909-910",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-f6dfaa62300017bb",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/bupsy.1982.12030",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-c967540a040a9cb9",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_35_357_12030",
+      "access_corroboration": "absent"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-74d02404fdcb782d",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-09-02"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-6ce4073d85c1c90a",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — ouvert l'IMAGE de la page : https://iiif.archive.org/iiif/psychologiecono03tardgoog$125/full/1400,/0/default.jpg (feuillet 125 = p. 109 imprimée, en-tête « COUP D'ŒIL HISTORIQUE 109 »). L'imprimé porte : « Il n'en est pas moins vrai que la valeur, dont la monnaie n'est que le signe, n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs, d'idées et de volontés, et que les hausses et les baisses des valeurs de Bourse… » La fiche donne « […] la valeur […] n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs […] » : les trois coupes (l'amorce de phrase, l'incise « dont la monnaie n'est que le signe », la suite « d'idées et de volontés ») sont toutes signalées par […], rien n'est modifié entre elles. Texte français original, aucune traduction : la déclaration « translation: none » est juste. Localisation exacte : p. 109, chapitre IV de la partie préliminaire."
+    },
+    {
+      "id": "SUP-8454ccc0de30b45b",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "SOURCE PRIMAIRE — item Internet Archive psychologiecono03tardgoog vérifié par ses métadonnées (https://archive.org/metadata/psychologiecono03tardgoog) : Psychologie économique, Gabriel de Tarde, F. Alcan, 1902, volume 1, 406 images, scan Google/University of Michigan. Page de titre lue dans le texte océrisé (feuillets liminaires) : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR… 1902 ». Dernière page numérotée du volume : « TABLE DES MATIERES 383 » — la mention « 383 p. » est exacte. Table des matières : « PARTIE PRÉLIMINAIRE — Chapitre IV. — Coup d'œil historique 107 » : le chapitre et sa partie sont bien ceux annoncés."
+    },
+    {
+      "id": "SUP-1cf87929d82f9688",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — les trois éléments de la note ont été vérifiés dans le volume lui-même. (a) Un seul nom sur la page de titre, avec la qualité exacte citée. (b) Avant-propos, première ligne : « Ce livre est la substance d'un cours professé au Collège de France en 1900-1901. » (c) Note de bas de page de la p. 142 (en-tête de page « 142 PSYCHOLOGIE ÉCONOMIQUE », dernière page du chapitre IV avant « LIVRE PREMIER » p. 143) : « Celles que j'ai à exposer sont le développement de germes posés en substance, pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 […] sous le titre de la Psychologie en économie politique. » La doctrine (la valeur comme combinaison de croyances et de désirs, quantifiable) est énoncée en propre par Tarde, p. 63-64 et 109 ; la fiche ne lui prête aucune priorité sur les marginalistes, et Tarde lui-même reconnaît p. 142 d'éventuelles « coïncidences » avec les écoles autrichiennes et allemandes. Attribution confirmée."
+    },
+    {
+      "id": "SUP-e928f3aa75d047aa",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "PROSE — hook et summary sont couverts par la p. 63-64, lue sur l'IMAGE (https://iiif.archive.org/iiif/psychologiecono03tardgoog$80/full/1400,/0/default.jpg, en-tête « 64 PSYCHOLOGIE ÉCONOMIQUE »). P. 63 : « La Valeur […] est une qualité que nous attribuons aux choses, comme la couleur, mais qui, en réalité, comme la couleur, n'existe qu'en nous, d'une vie toute subjective […] méritent le nom de quantités » — c'est exactement l'alternative du hook. P. 64 : « le plus ou moins grand nombre, le plus ou moins grand poids social […] des personnes qui s'accordent à l'admettre, et le plus ou moins d'intensité de leur croyance en elle », puis, pour l'utilité, « le plus ou moins grand nombre de gens qui le désirent […] le plus ou moins grand poids social […] et le plus ou moins d'intensité du désir qu'elles en éprouvent » — les trois mesures du summary (nombre, poids social, intensité) sont mot pour mot dans le texte. Rien n'y déborde."
+    },
+    {
+      "id": "SUP-b47dab870d216dee",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCE DE RÉCEPTION — DOI 10.3406/bupsy.1982.12030 résolu par api.crossref.org (le serveur MCP documentary étant hors service, verify_reference n'a pas été appelé) : Jean Milet, Bulletin de psychologie, vol. 35, n° 357, 1982, p. 907-913 — auteur, revue, tome, numéro, année et pagination conformes à la fiche. Page Persée ouverte (https://www.persee.fr/doc/bupsy_0007-4403_1982_num_35_357_12030) : le titre de catalogue omet l'article (« … : créateur de la psychologie économique »), mais le titre IMPRIMÉ en tête de la p. 907 porte bien « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », soit la forme retenue par la fiche. Le locator p. 909-910 est juste : p. 909 (récupérée par ?pageId=F_909) traite de l'article de 1881 dans la Revue philosophique, et p. 910 (?pageId=F_910) cite précisément le passage retenu par la fiche."
+    },
+    {
+      "id": "SUP-313c7dc003978a13",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "NON ATTEINT — le PDF Persée (https://www.persee.fr/docAsPDF/bupsy_0007-4403_1982_num_35_357_12030.pdf) répond HTTP 403 (page HTML de refus) ; je n'ai donc pas vu l'image des pages de Milet, seulement leur texte océrisé servi par Persée page par page. Sans conséquence ici : aucune citation de la fiche ne provient de Milet."
+    },
+    {
+      "id": "SUP-46235408add2cd74",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "HORS PÉRIMÈTRE, sans effet sur le verdict — la locution « fait psychologique » n'apparaît pas dans le tome I (recherche plein texte IA : 0 occurrence) ; le titre de la carte est donc une formule éditoriale, non une expression de Tarde. Par ailleurs Milet date l'article fondateur de « Tome XII, sept. 1881 » là où Tarde écrit « septembre et octobre 1881 » : la fiche suit Tarde, ce qui est le bon choix."
+    },
+    {
+      "id": "SUP-9da3c72071a9c20f",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande son usage et ne doit pas être résumée en la vidant. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un spécialiste de Tarde qui plaide pour son auteur : il renvoie trois fois, en notes 1, 2 et 3 des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de démonstration de l'article. Il paraît dans la revue qui servait alors d'organe à la psychologie économique française. L'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Milet récuse lui-même la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », il nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et il ajoute Bagehot, Royce, Baldwin et plus tard Giddings. Ce qu'il revendique, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Sa conclusion, page 913, ne dit plus créateur mais « un initiateur ». Conséquence appliquée ici : une carte qui écrirait que Tarde est le fondateur, le créateur ou le père de la psychologie économique sur la foi de Milet écrirait un faux, que Milet dément à la page 909 de l'article dont le titre semble l'autoriser. Ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution de cette carte ne l'écrivent, et toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction. Le titre de l'article figure dans le label parce qu'une notice bibliographique se donne telle qu'elle est imprimée, non parce que la carte en reprend la thèse."
+    },
+    {
+      "id": "SUP-0bc5e38f6d64205c",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Ce que la source secondaire porte, et ce qu'elle ne porte pas. Milet a été ouvert en entier, ses sept pages 907 à 913 lues une à une sur l'image de page servie par Persée, et il est retenu ici parce qu'il dégage page 909 quatre thèses majeures de la Psychologie économique, dont « une nouvelle théorie de la valeur », et qu'il expose page 910 les expressions de la Valeur. Le dossier secondaire déclare en revanche que son lecteur n'a ouvert aucune des sources primaires citées par Milet : les citations de Tarde qui y figurent sont de seconde main et n'ont pas été portées sur cette carte. La citation affichée vient de la lecture primaire, relue sur l'image du feuillet de l'imprimé de 1902."
+    },
+    {
+      "id": "SUP-5ee58891585dddc0",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Divergence entre les deux dossiers, non tranchée et non portée à la carte : la lecture primaire relève sur l'imprimé, t. I, p. 63-64, que la valeur se divise en trois espèces, valeur-vérité, valeur-utilité et valeur-beauté, correspondant aux deux quantités élémentaires de l'âme, la croyance et le désir ; le dossier Milet rapporte, page 910, « les quatre expressions de la Valeur » en n'en nommant que trois, les mêmes. Aucune des deux pièces n'a été rouverte pour arbitrer, et le résumé ne mentionne pas la division."
+    },
+    {
+      "id": "SUP-dd6c740be25f8561",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Tomaison établie sur l'image de la page de titre imprimée, et non sur la notice : l'item psychologiecono03tardgoog porte TOME PREMIER, ce que confirme la signature de volume au bas de la page 65, « TARDE. Psych. écon. I. 5 ». La notice Internet Archive de l'item psychologieecono0001gabr annonce « volume 1 » alors que sa page de titre porte TOME SECOND : cette notice est fausse et ne doit pas être réutilisée. Sur les sept items repérés, trois portent le tome premier (psychologiecono00tardgoog, 03tardgoog, 05tardgoog) et quatre le tome second."
+    },
+    {
+      "id": "SUP-d3e66ddc121a573f",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Pages ouvertes en image : page de titre, p. 63, p. 64, p. 65, p. 109, p. 114, p. 115, p. 116, p. 142. Lues en couche texte de bout en bout : chapitre II de la partie préliminaire, « La valeur et les sciences sociales » (p. 63 à 96), et chapitre IV, « Coup d'œil historique » (p. 107 à 142). Non ouvert : la totalité du tome second, sauf deux sondages dans le livre « L'opposition économique » ; le chapitre premier de la partie préliminaire, « Considérations générales et lois sociales » (p. 1 à 62) ; le chapitre III, « Discussion du plan » (p. 97 à 106) ; et, dans le livre premier, les chapitres sur les besoins, les travaux, la monnaie et le capital (p. 202 à 383). Le champ consulted de la source primaire est repris tel quel de la lecture primaire, qui l'a déclaré full-text sur l'exemplaire du tome premier."
+    },
+    {
+      "id": "SUP-3dcf07ad4bdf86ae",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "La couche OCR du tome premier fait 836 129 octets et se juge exploitable pour le repérage seulement : elle rend TOME PREMIER en « TOMK PREMIER », vérité en « veinté », désir en « dédr ». Toutes les phrases citées ou données entre guillemets par la lecture primaire ont été relues sur l'image du feuillet entier, appelée sous la forme .../page/nN.jpg sans suffixe de dérivé, précisément pour éviter le rognage de la marge gauche. Tout collationnement ultérieur doit passer par ces images et non par l'OCR."
+    },
+    {
+      "id": "SUP-5922e555fdf7fbd8",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "La ligature est celle de l'imprimé et doit être conservée telle quelle dans la référence : le titre du chapitre IV est « Coup d'œil historique », avec le œ lié. C'est un des endroits où la couche OCR est fautive, et une recomposition en « oeil » ferait échouer une recherche par titre exact sur la référence affichée."
+    },
+    {
+      "id": "SUP-5086eccf795c69b4",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Teneur entière de la phrase citée et détail des coupes. La citation retenue commence en cours de phrase, d'où l'appel de coupe initial. La phrase entière est : « Il n'en est pas moins vrai que la valeur, dont la monnaie n'est que le signe, n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs, d'idées et de volontés, et que les hausses et les baisses des valeurs de Bourse, à la différence des oscillations du baromètre, ne sauraient s'expliquer le moins du monde sans la considération de leurs causes psychologiques, accès d'espérance ou de découragement du public, propagation d'une bonne ou d'une mauvaise nouvelle à sensation dans l'esprit des spéculateurs. » Les trois coupes signalées portent sur l'incise « dont la monnaie n'est que le signe », sur la fin de l'énumération, « d'idées et de volontés », et sur la seconde moitié de la phrase, celle des hausses et des baisses de Bourse. Aucune des trois ne renverse ni ne renforce l'affirmation retenue."
+    },
+    {
+      "id": "SUP-493cadfbc4489cb9",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Citation écartée, et pourquoi : le passage le plus célèbre du chapitre II, « Elle est une qualité que nous attribuons aux choses, comme la couleur, mais qui, en réalité, comme la couleur, n'existe qu'en nous, d'une vie toute subjective » (t. I, p. 63), fait 159 caractères, et son sujet est le pronom « Elle », dont l'antécédent, « La Valeur », se trouve dans la phrase précédente. Le ramener sous 150 caractères imposait soit de laisser sur la carte un pronom sans antécédent, soit de greffer le sujet d'une phrase sur le verbe de la suivante, c'est-à-dire de fabriquer une phrase que Tarde n'a pas écrite. La phrase de la page 109 énonce la même thèse avec son sujet exprimé : elle a été retenue à sa place. C'est cette page 63 qui autorise le mot « qualité » de l'accroche."
+    },
+    {
+      "id": "SUP-646c04db2a44865f",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Accès constaté sur la pièce, et non déduit de l'âge du texte : les métadonnées Internet Archive de psychologiecono03tardgoog et psychologiecono02tardgoog les placent dans la collection americana avec possible-copyright-status NOT_IN_COPYRIGHT, sans champ access-restricted-item ni statut de prêt numérique. Les images de feuillet et la couche texte se téléchargent sans authentification et sans franchir aucun contrôle."
+    },
+    {
+      "id": "SUP-6d84e1a5ee5d6a1e",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Le tome second (https://archive.org/details/psychologiecono02tardgoog, ouvert en couche texte et par sondages seulement, consulted partial dans la lecture primaire) n'est pas porté en source : le concept est établi en entier dans le tome premier, et la carte n'affiche que ce qui permet d'y remonter. Route Les Classiques des sciences sociales (UQAC), DOI 10.1522/cla.tag.psy pour le tome premier et 10.1522/cla.tag.psy2 pour le tome second, repérée par la lecture primaire mais non testée : elle n'est pas affichée comme source puisqu'elle n'a pas été résolue, et elle reste la route à essayer pour qui voudra lire le tome second."
+    },
+    {
+      "id": "SUP-7fef92860e004c2e",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "La note d'attribution affichée condense la note de la lecture primaire au lieu de la recopier intégralement, et c'est le seul écart de recopie de cette fiche. La note de dossier transcrit la page de titre en entier : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR, ANCIENNE LIBRAIRIE GERMER BAILLIÈRE ET Cie, 108, BOULEVARD SAINT-GERMAIN, 108. 1902. » Porter cela à l'écran aurait affiché au lecteur l'adresse de l'éditeur, qui est exactement le défaut dont ce corpus a déjà payé le prix. La version affichée ne contient aucun fait qui ne soit dans la note de dossier, et les deux dates, le cours de 1900-1901 et l'article de la Revue philosophique de septembre et octobre 1881, sont écrites de la main de Tarde dans le volume et relues sur l'image, non reconstituées depuis une base."
+    },
+    {
+      "id": "SUP-5136efe5dbd66340",
+      "origin": "validated",
+      "path": "$.notes[12]",
+      "access": "n/a",
+      "text": "Le résumé n'épuise pas le concept. Ne sont pas portés à la carte : la division de la valeur en valeur-vérité, valeur-utilité et valeur-beauté et sa correspondance avec les deux quantités élémentaires de l'âme (t. I, p. 63-64) ; le reproche fait aux fondateurs de l'économie politique d'avoir traité crédit, service et travail « comme des objets, des objets réels et matériels » tombant sous la loi du nombre et de la mesure (t. I, p. 108-109) ; le programme énoncé page 110, « faire du verso le recto » ; et la démarcation d'avec les écoles allemandes et autrichiennes, qui selon Tarde font jouer au désir mais non à la croyance un rôle considérable (t. I, p. 142)."
+    },
+    {
+      "id": "SUP-62f6ea0ee3023e0d",
+      "origin": "validated",
+      "path": "$.notes[13]",
+      "access": "n/a",
+      "text": "Champ domain non renseigné : le thème psychologie-economique est déclaré dans src/content/themes.ts, et la carte en hérite son domaine. Le champ n'existe que pour le cas où aucun thème de la fiche n'est connu de l'application."
+    },
+    {
+      "id": "SUP-3a0d9e7cc1d54d94",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "valeur-comme-fait-psychologique"
+    },
+    {
+      "id": "SUP-756c0ae133818972",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Gabriel Tarde"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-4535327e4b4a2d2a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR, ANCIENNE LIBRAIRIE GERMER BAILLIÈRE ET Cie, 108, BOULEVARD SAINT-GERMAIN, 108. 1902. » Tarde écrit en tête de l'avant-propos que le livre est la substance d'un cours professé au Collège de France en 1900-1901, et il précise en note à la fin de sa revue historique, page 142, que ce qu'il expose développe des germes posés « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Ces deux dates sont écrites de sa main dans le volume et ont été relues sur l'image, elles ne sont pas reconstituées depuis une base."
+    },
+    {
+      "id": "SUP-4e7451bca0bb271a",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] la valeur […] n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs […]"
+    },
+    {
+      "id": "SUP-78cdc1d6a76c4edb",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+    },
+    {
+      "id": "SUP-8d71736b547107f9",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "t. I, p. 109"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-f2632e816ceadf10",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p. Exemplaire de l'University of Michigan numérisé par Google et versé sans restriction : collection americana, possible-copyright-status NOT_IN_COPYRIGHT, aucun champ access-restricted-item, aucun statut de prêt numérique."
+    },
+    {
+      "id": "SUP-469754fa9139b9b3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/psychologiecono03tardgoog"
+    },
+    {
+      "id": "SUP-187db5df44467274",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "partial",
+      "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome second. Exemplaire de l'University of Michigan numérisé par Google, mêmes conditions d'accès. Ouvert seulement en couche texte, et par sondages."
+    },
+    {
+      "id": "SUP-68ac5cc0dbc3321a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "partial",
+      "text": "https://archive.org/details/psychologiecono02tardgoog"
+    },
+    {
+      "id": "SUP-b6d52c0cfbc2ee3a",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Tarde reproche aux fondateurs de l'économie politique de s'être attachés au côté matériel et extérieur des choses, et d'avoir traité des abstractions comme crédit, service ou travail « comme des objets, des objets réels et matériels, analogues aux objets traités par le chimiste et le physicien, et, comme eux, tombant sous la loi du nombre et de la mesure » (t. I, p. 108-109). Contre cela il pose que la valeur, dont la monnaie n'est que le signe, n'est rien qu'une combinaison de choses toutes subjectives, croyances et désirs, idées et volontés, et que les hausses et les baisses des valeurs de Bourse, à la différence des oscillations du baromètre, ne s'expliquent pas sans leurs causes psychologiques : accès d'espérance ou de découragement du public, propagation d'une bonne ou d'une mauvaise nouvelle à sensation dans l'esprit des spéculateurs (t. I, p. 109). Le chapitre II de la partie préliminaire donne à cette thèse sa forme générale : « Elle est une qualité que nous attribuons aux choses, comme la couleur, mais qui, en réalité, comme la couleur, n'existe qu'en nous, d'une vie toute subjective. Elle consiste dans l'accord des jugements collectifs que nous portons sur l'aptitude des objets à être plus ou moins, et par un plus ou moins grand nombre de personnes, crus, désirés ou goûtés » (t. I, p. 63). La valeur est donc une quantité, qui se divise en valeur-vérité, valeur-utilité et valeur-beauté, lesquelles correspondent aux deux quantités élémentaires de l'âme, la croyance et le désir. Elle se mesure par trois facteurs qui varient séparément : le nombre des personnes qui croient ou désirent, leur poids social, et l'intensité de leur croyance ou de leur désir (t. I, p. 64). D'où le programme, énoncé page 110 : « faire du verso le recto », c'est-à-dire demander à l'esprit humain l'explication du matériel social. Tarde distingue enfin sa thèse de celle des écoles allemandes et autrichiennes qui, dit-il, font jouer au désir mais non à la croyance un rôle considérable, et ne tiennent pas compte du caractère quantitatif du désir ni de son identité de nature d'un individu à un autre, seule chose qui permette de traiter les désirs des masses comme des quantités mesurables indirectement par la statistique (t. I, p. 142)."
+    },
+    {
+      "id": "SUP-fbd08e43f5396f42",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Accès constaté sur la pièce, et non déduit de l'âge du texte : les métadonnées Internet Archive de psychologiecono03tardgoog et psychologiecono02tardgoog les placent dans la collection americana avec possible-copyright-status NOT_IN_COPYRIGHT, sans champ access-restricted-item ni statut de prêt numérique. Les images de feuillet et la couche texte se téléchargent sans authentification et sans franchir aucun contrôle."
+    },
+    {
+      "id": "SUP-477f1d6a5c06f32b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Tomaison établie sur l'image de la page de titre imprimée, et non sur la notice : l'item psychologiecono03tardgoog porte TOME PREMIER, ce que confirme la signature de volume au bas de la page 65, « TARDE. Psych. écon. I. 5 ». La notice Internet Archive de l'item psychologieecono0001gabr, elle, annonce « volume 1 » alors que sa page de titre porte TOME SECOND : cette notice est fausse et ne doit pas être réutilisée. Sur les sept items repérés, trois portent le tome premier (psychologiecono00tardgoog, 03tardgoog, 05tardgoog) et quatre le tome second."
+    },
+    {
+      "id": "SUP-dc2fa926d025cc3d",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "La couche OCR du tome premier fait 836 129 octets et se juge exploitable pour le repérage seulement : elle rend TOME PREMIER en « TOMK PREMIER », vérité en « veinté », désir en « dédr ». Toutes les phrases citées ou données entre guillemets ici ont été relues sur l'image du feuillet entier, appelée sous la forme .../page/nN.jpg sans suffixe de dérivé, précisément pour éviter le rognage de la marge gauche."
+    },
+    {
+      "id": "SUP-1df04d2b7257efd0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Pages ouvertes en image : page de titre, p. 63, p. 64, p. 65, p. 109, p. 114, p. 115, p. 116, p. 142. Lues en couche texte de bout en bout : chapitre II de la partie préliminaire, « La valeur et les sciences sociales » (p. 63 à 96), et chapitre IV, « Coup d'œil historique » (p. 107 à 142)."
+    },
+    {
+      "id": "SUP-dc2f733d419ff02e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Non ouvert : la totalité du tome second, sauf deux sondages dans le livre « L'opposition économique » ; le chapitre premier de la partie préliminaire, « Considérations générales et lois sociales » (p. 1 à 62) ; le chapitre III, « Discussion du plan » (p. 97 à 106) ; et, dans le livre premier, les chapitres sur les besoins, les travaux, la monnaie et le capital (p. 202 à 383)."
+    },
+    {
+      "id": "SUP-e6abb8f56dcf3c60",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Citation écartée, et pourquoi : le passage le plus célèbre du chapitre II, « Elle est une qualité que nous attribuons aux choses, comme la couleur, mais qui, en réalité, comme la couleur, n'existe qu'en nous, d'une vie toute subjective » (t. I, p. 63), fait 159 caractères, et son sujet est le pronom « Elle », dont l'antécédent, « La Valeur », se trouve dans la phrase précédente. Le ramener sous 150 caractères imposait soit de laisser sur la carte un pronom sans antécédent, soit de greffer le sujet d'une phrase sur le verbe de la suivante, c'est-à-dire de fabriquer une phrase que Tarde n'a pas écrite. La phrase de la page 109 énonce la même thèse avec son sujet exprimé : elle a été retenue à sa place."
+    },
+    {
+      "id": "SUP-ab1133c521cee57e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "La citation retenue commence en cours de phrase, d'où l'appel de coupe initial. La phrase entière est : « Il n'en est pas moins vrai que la valeur, dont la monnaie n'est que le signe, n'est rien, absolument rien, si ce n'est une combinaison de choses toutes subjectives, de croyances et de désirs, d'idées et de volontés, et que les hausses et les baisses des valeurs de Bourse, à la différence des oscillations du baromètre, ne sauraient s'expliquer le moins du monde sans la considération de leurs causes psychologiques, accès d'espérance ou de découragement du public, propagation d'une bonne ou d'une mauvaise nouvelle à sensation dans l'esprit des spéculateurs. » Les trois coupes signalées portent sur l'incise « dont la monnaie n'est que le signe », sur la fin de l'énumération, et sur la seconde moitié de la phrase."
+    },
+    {
+      "id": "SUP-9e27c9c797cc1809",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Route Les Classiques des sciences sociales (UQAC), DOI 10.1522/cla.tag.psy pour le tome premier et 10.1522/cla.tag.psy2 pour le tome second, repérée mais non testée : elle n'a pas été nécessaire, l'exemplaire imprimé de 1902 étant ouvert en image. Elle reste la route à essayer pour qui voudra lire le tome second."
+    }
+  ],
+  "estimated_tokens": 14928,
+  "status": "READY"
+}
