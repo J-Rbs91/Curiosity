@@ -3,7 +3,7 @@
   "concept_id": "conception-ecologique-interface",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "2a1286bf0c59c4a9e4fa3e82c5c0f8dd39d39af599445000878c33373479de42",
+  "candidate_sha256": "b5fedc432f21db4e5148f31c3afdc89c7e2bae41fad8533b031a8163c516a899",
   "validated_sha256": "20dcf07528c46ac0e80f8eaf320bb796a7a2d781816b67d15e76b58f27bd7e04",
   "evidence_files": [
     {
@@ -55,11 +55,11 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine."
+      "text": "Imaginons quelqu’un qui refait chaque jour le même trajet sans délibérer : ses mains suivent la route. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine."
     },
     {
       "locator": "lead[1]",
-      "text": "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera. S’il présente tout sous forme de chiffres à interpréter, il oblige à réfléchir même lorsque la situation ne le demande pas, et ce qui aurait pu se faire d’un geste devient lent et fatigant. S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu. C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite."
+      "text": "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera. S’il présente tout sous forme de chiffres à interpréter, ce qui aurait pu se faire d’un geste tend à devenir plus lent et plus coûteux en effort. S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu. C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite."
     },
     {
       "locator": "sections[0].paragraphs[0]",
@@ -79,17 +79,17 @@
     {
       "locator": "sections[1].paragraphs[0]",
       "section_title": "Un but déduit de deux constats",
-      "text": "Dans le corps de l’article, le but du cadre arrive comme la conclusion de deux constats, énoncés dans le même paragraphe. Le premier : les niveaux inférieurs de contrôle cognitif s’exécutent plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs. Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, même quand l’interface n’est pas conçue pour cela. D’où le but général que les auteurs assignent à la conception d’interface : « […] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l’exige la tâche, tout en apportant le soutien approprié aux trois niveaux. »"
+      "text": "Dans le corps de l’article, le but du cadre arrive comme la conclusion de deux constats, énoncés dans le même paragraphe. Le premier : les niveaux inférieurs de contrôle cognitif tendent à s’exécuter plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs. Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, même quand l’interface n’est pas conçue pour cela. D’où le but général que les auteurs assignent à la conception d’interface : « […] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l’exige la tâche, tout en apportant le soutien approprié aux trois niveaux. »"
     },
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Un but déduit de deux constats",
-      "text": "Ce but a deux volets, et le résumé de l’article les énonce comme tels : d’abord ne pas forcer le traitement à un niveau plus élevé que la tâche ne l’exige, ensuite soutenir chacun des trois niveaux. Le premier tire la leçon des deux constats. Puisque les niveaux bas coûtent moins et que les gens y recourent même sans appui, cela implique qu’une interface qui oblige à raisonner quand la tâche n’en demande pas tant impose un effort dont on aurait pu se passer. La formule dit « ne pas forcer », et non « interdire ». Le second volet empêche de lire le premier comme un éloge du réflexe : le soutien est dû aux trois niveaux, celui des connaissances compris."
+      "text": "Ce but a deux volets, et le résumé de l’article les énonce comme tels : d’abord ne pas forcer le traitement à un niveau plus élevé que la tâche ne l’exige, ensuite soutenir chacun des trois niveaux. Le premier tire la leçon des deux constats. Puisque les niveaux bas tendent à coûter moins et que les gens y recourent même sans appui, une interface qui oblige à raisonner quand la tâche n’en demande pas tant risque d’imposer un effort dont on aurait pu se passer. La formule dit « ne pas forcer », et non « interdire ». Le second volet empêche de lire le premier comme un éloge du réflexe : le soutien est dû aux trois niveaux, celui des connaissances compris."
     },
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "Un indice valide, pris hors de ses conditions",
-      "text": "L’exemple le plus concret de l’article vient de l’accident de Three Mile Island. Les opérateurs avaient pris le niveau du pressuriseur comme indice de l’inventaire primaire. Cet indice n’est valide qu’à l’intérieur de certaines conditions aux limites, et ce qui manquait aux opérateurs, écrivent les auteurs, c’est d’en avoir conscience."
+      "text": "L’exemple le plus concret de l’article est le piège procédural de Three Mile Island. Les opérateurs avaient pris le niveau du pressuriseur comme indice de l’inventaire primaire. Cet indice n’est valide qu’à l’intérieur de certaines conditions aux limites, et ce qui manquait aux opérateurs, écrivent les auteurs, c’est d’en avoir conscience."
     },
     {
       "locator": "sections[2].paragraphs[1]",
@@ -826,6 +826,6 @@
       "text": "Outils. Les outils mcp__documentary__ n'étaient pas exposés dans cette session, donc Zotero est resté inaccessible : c'est un silence d'outil, pas un constat d'absence. OpenAlex et Semantic Scholar, déclarés en échec de quota par la mission, n'ont pas été sollicités. Ont fonctionné et ont servi : le téléchargement direct du PDF sur backend.orbit.dtu.dk (HTTP 200, application/pdf, 220 733 octets, taille recontrôlée à l'octet), Crossref, Unpaywall, HAL, et la page de notice orbit.dtu.dk qui répond 200 après une redirection 301, contrairement au 403 signalé par la cartographie."
     }
   ],
-  "estimated_tokens": 18416,
+  "estimated_tokens": 18386,
   "status": "READY"
 }
