@@ -1,18 +1,38 @@
 {
   "protocol_version": 2,
   "concept_id": "effet-de-cadrage",
-  "candidate_sha256": "f7a43cea2bbe99c937f71b59e189670923ba9cbd5e7ba01a9c20b20140d57e1b",
+  "candidate_sha256": "6638d5abd83e2ba4fe2542aa5231b53cd66d9db4f28f0c853128028609089a7e",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 61,
-  "supported": 60,
-  "failed": 1,
+  "claims": 67,
+  "supported": 62,
+  "failed": 5,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C042",
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; la phrase affirme un comportement universel (« personne n'accepterait ») et n'est pas une vignette purement stipulée."
+    },
+    {
+      "claim_id": "C003",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim (SUP-07e1) établissent l'absence d'atténuation pour un seul problème (McNeil et al., 1982 : médecins expérimentés et étudiants en gestion formés aux statistiques face à des patients). Le claim en tire une règle générale sur la compétence et l'effet de cadrage. C'est le glissement d'un exemple vers une règle générale."
+      "reason": "Les appuis fournis pour ce claim portent que l'effet ne se dissipe pas quand on l'explique et mentionnent des hypothèses de sauvetage habituelles (élimination par l'apprentissage), mais n'établissent pas qu'on tienne communément pour acquis qu'une préférence dépendant de la phrase serait corrigée « aussitôt qu'on nous la montrerait »."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent que le chapitre met en difficulté l'invariance et que l'effet persiste après explication ; ils ne portent pas la hiérarchie « plus encore que la première ». validated $.notes[2] et definition_de_lauteur situent au contraire la définition dans la défaillance de l'invariance, la persistance n'étant qu'une caractérisation."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui fourni porte un comparatif probabiliste (« more likely to prevent errors [...] than errors that arise from misperception ») ; le claim en tire une prédiction catégorique (« n'y suffira pas »), glissement de la probabilité à la certitude."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "TOO_STRONG",
+      "reason": "review.notes[12] porte que les « frames » de Goffman (1974) relèvent d'une autre lignée et ne se confondent pas avec le cadrage décisionnel ; l'appui fourni pour ce claim ne situe pas cette lignée « en sciences sociales » ni ne dit que le mot y « voyage ». Le signal (reserves[9], terme « cadres ») vise les deux cadres du problème épidémique, sans rapport avec Goffman."
     }
   ]
 }

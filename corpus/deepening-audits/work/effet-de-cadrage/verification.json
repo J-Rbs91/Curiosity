@@ -1,311 +1,341 @@
 {
   "concept_id": "effet-de-cadrage",
-  "candidate_sha256": "f7a43cea2bbe99c937f71b59e189670923ba9cbd5e7ba01a9c20b20140d57e1b",
+  "candidate_sha256": "6638d5abd83e2ba4fe2542aa5231b53cd66d9db4f28f0c853128028609089a7e",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "SUPPORTED",
-      "reason": "Vignette au conditionnel, sans détail présenté comme réel, qui illustre l'invariance ; SUP-07e1 : principe « so basic that it is tacitly assumed », « celle que personne ne conteste »."
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; la phrase affirme un comportement universel (« personne n'accepterait ») et n'est pas une vignette purement stipulée."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : préférence « independent of their description », principe tacitement supposé ; le claim reformule cette présupposition tacite."
+      "reason": "definition_de_lauteur : l'invariance est celle que personne ne conteste, si élémentaire qu'elle est « tacitly assumed in the characterization of options »."
     },
     {
       "claim_id": "C003",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 présente comme point le plus important que l'effet « ne se dissipe pas quand on l'explique » et réfute les hypothèses habituelles de correction (apprentissage, marché) : la croyance visée est bien celle que le chapitre conteste."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim portent que l'effet ne se dissipe pas quand on l'explique et mentionnent des hypothèses de sauvetage habituelles (élimination par l'apprentissage), mais n'établissent pas qu'on tienne communément pour acquis qu'une préférence dépendant de la phrase serait corrigée « aussitôt qu'on nous la montrerait »."
     },
     {
       "claim_id": "C004",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 désigne la persistance après explication comme « le point le plus important pour ne pas ramener l'effet de cadrage à une simple erreur » ; SUP-5e5713/a6f021 portent la phrase p. 175. Hiérarchie présentée comme lecture, non comme parole des auteurs."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent que le chapitre met en difficulté l'invariance et que l'effet persiste après explication ; ils ne portent pas la hiérarchie « plus encore que la première ». validated $.notes[2] et definition_de_lauteur situent au contraire la définition dans la défaillance de l'invariance, la persistance n'étant qu'une caractérisation."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 et SUP-f03563 : problèmes 5 et 6 « essentially identical », ne différant que par le cadrage en vies sauvées ou perdues."
+      "reason": "definition_de_lauteur et reserves[9] : « essentially identical. They differ only in that the former is framed in terms of the number of lives saved [...] whereas the latter [...] lives lost » ; c'est sur ces deux versions que porte la persistance rapportée p. 175."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : 72 % choisissent le programme sûr dans une version, 78 % le programme risqué dans l'autre ; SUP-6431a9 : 72 %/28 % contre 22 %/78 %."
+      "reason": "definition_de_lauteur (72 % programme sûr / 78 % programme risqué) et review.notes[11] (72/28 contre 22/78)."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 et SUP-5e5713 : les deux versions présentées et discutées avec les mêmes répondants, qui souhaitent rester averses / preneurs de risque ; l'effet « ne se dissipe pas quand on l'explique »."
+      "reason": "definition_de_lauteur : versions présentées et discutées avec les mêmes répondants, « Many respondents expressed a wish to remain risk averse [...] » ; « il ne se dissipe pas quand on l'explique »."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Citation identique à SUP-a6f021/254e54 (traduction) et SUP-21124b/253c45 (original) ; SUP-5e5713 confirme qu'elle figure dans le chapitre, p. 175, attribuée aux auteurs."
+      "reason": "quotation.text et original_text identiques à la citation ; locator p. 175 ; review.notes[0] vérifie la phrase dans le texte intégral."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « Cas de la maladie asiatique », épidémie censée tuer 600 personnes, deux programmes."
+      "reason": "definition_de_lauteur : « Cas de la maladie asiatique [...] une épidémie censée tuer 600 personnes, deux programmes »."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : version en vies sauvées, programme sûr qui sauve 200 personnes, l'autre est le programme risqué ; SUP-f03563 confirme le cadrage en vies sauvées."
+      "reason": "definition_de_lauteur : version en vies sauvées, programme sûr qui sauve 200 personnes, l'alternative étant le choix risqué (aversion pour le risque) ; review.notes[10] confirme le cadrage en vies sauvées."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : version en vies perdues, programme risqué contre mort certaine de 400 personnes, « mêmes conséquences dans les deux versions »."
+      "reason": "definition_de_lauteur : version en vies perdues, programme risqué plutôt que la mort certaine de 400 personnes."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Dérivation arithmétique sur 600 personnes, adossée à SUP-07e1/f03563 (« essentially identical »). Le terme signalé (« issue », SUP-bc0c7550aafcc800, $.review.notes[7]) est banal et ne rend pas probable un rattachement manquant."
+      "reason": "Conséquence arithmétique (600 − 200 = 400) cohérente avec « mêmes conséquences dans les deux versions » et « essentially identical » (definition_de_lauteur, reserves[9]). Le signal (review.notes[7], terme « issue ») n'indique pas d'appui manquant."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : 72 % choisissent le programme sûr ; SUP-6431a9 : 72 %/28 %."
+      "reason": "definition_de_lauteur : 72 % sûr en vies sauvées, 78 % risqué en vies perdues ; review.notes[11]."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "SUP-6431a9 : 22 %/78 % ; SUP-07e1 : 78 % choisissent le programme risqué plutôt que la mort certaine de 400 personnes."
+      "reason": "definition_de_lauteur (72 % programme sûr) et review.notes[11] (« 72 %/28 % »)."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « problèmes 5 et 6, p. 175 » ; SUP-a02e5b : problèmes 5 et 6."
+      "reason": "review.notes[11] (« 22 %/78 % ») et definition_de_lauteur (78 % programme risqué plutôt que la mort certaine de 400)."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente mot pour mot dans SUP-07e1 et SUP-f03563 (p. 175)."
+      "reason": "definition_de_lauteur et reserves[9] : « problèmes 5 et 6 », « Problems 5 and 6 »."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1/f03563 : « They differ only in that the former is framed in terms of the number of lives saved (relative to an expected loss of 600 lives if no action is taken), whereas the latter is framed in terms of the number of lives lost »."
+      "reason": "Citation verbatim dans definition_de_lauteur et reserves[9], p. 175."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 et SUP-784e43 : c'est l'invariance qui est violée."
+      "reason": "Citation verbatim dans definition_de_lauteur et reserves[9] : lives saved « relative to an expected loss of 600 lives if no action is taken » / lives lost."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente dans SUP-07e1 (p. 168-169) et SUP-6431a9 ; traduction fidèle."
+      "reason": "summary : « c'est l'invariance qui est violée » ; definition_de_lauteur : l'effet est la défaillance de l'invariance."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « the preference between options should be independent of their description » ; la première moitié est une conséquence directe de cette formulation."
+      "reason": "Citation verbatim dans definition_de_lauteur et review.notes[11] ; traduction fidèle."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : quatre hypothèses de fond sous la théorie de l'utilité espérée ; « L'invariance est celle que personne ne conteste »."
+      "reason": "definition_de_lauteur : « the preference between options should be independent of their description » ; la première moitié est une glose directe de ce contenu purement formel."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente dans SUP-07e1 (p. 169) avec « si élémentaire » ; paraphrase fidèle."
+      "reason": "definition_de_lauteur : quatre hypothèses de fond sous la théorie de l'utilité espérée ; « L'invariance est celle que personne ne conteste »."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence directe de la définition portée par SUP-07e1 (« different representations of the same choice problem ») et SUP-784e43 (« d'un même problème de choix »)."
+      "reason": "Citation verbatim dans definition_de_lauteur (p. 169) ; traduction fidèle."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence directe de SUP-07e1 (l'effet s'établit sur des paires extensionnellement identiques) et SUP-784e43 (« identiques dans leurs conséquences »)."
+      "reason": "Conséquence dérivée de la définition (summary : présentations « identiques dans leurs conséquences » ; definition_de_lauteur : paires extensionnellement identiques), sans attribution aux auteurs."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "SUP-f03563/07e1 : problèmes « essentially identical », qui ne diffèrent que par le cadrage en vies sauvées ou perdues."
+      "reason": "definition_de_lauteur et reserves[9] : « They differ only in that [...] framed in terms of the number of lives saved [...] lives lost »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente mot pour mot dans SUP-07e1 (p. 171), présentée par la lecture comme « la formulation générale » ; aussi dans SUP-6431a9 et SUP-f03563."
+      "reason": "Citation verbatim (p. 171) dans definition_de_lauteur, review.notes[11] et reserves[9]."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Glose de « cannot be defended on normative grounds » (SUP-07e1) ; la seconde moitié est appuyée par la persistance après discussion (SUP-07e1, p. 175). Le terme signalé (« justifie », SUP-5c9ff92aef04c9ab, $.review.notes[6]) est trop courant pour rendre probable un appui manquant."
+      "reason": "Glose de « cannot be defended on normative grounds » ; la seconde moitié suit de la persistance rapportée dans definition_de_lauteur (répondants qui veulent garder leurs choix). Le signal (review.notes[6], terme « justifie ») n'indique pas d'appui manquant."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : citation « invariance and dominance » ; problème 2 sur des décisions concurrentes où la dominance est violée."
+      "reason": "definition_de_lauteur : « Cas des décisions concurrentes (problème 2) » ; la citation p. 171 nomme invariance puis dominance."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : 73 % des répondants choisissent une combinaison de deux paris dominée par celle qu'ils rejettent."
+      "reason": "definition_de_lauteur : « 73 % des répondants choisissent une combinaison de deux paris qui est dominée par celle qu'ils rejettent »."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : dominance « qui devient invisible dès que les deux décisions sont présentées séparément ». Le claim reproduit la formulation de la lecture."
+      "reason": "definition_de_lauteur : « dominance qui devient invisible dès que les deux décisions sont présentées séparément »."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « Le mécanisme est donné par la théorie des perspectives, dont le chapitre rappelle l'architecture (p. 172-174) »."
+      "reason": "definition_de_lauteur : « Le mécanisme est donné par la théorie des perspectives, dont le chapitre rappelle l'architecture »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : phase de cadrage et d'édition, « frames the effective acts, contingencies, and outcomes », puis phase d'évaluation."
+      "reason": "definition_de_lauteur : deux phases ; « preliminary analysis of the decision problem, which frames the effective acts, contingencies, and outcomes », puis évaluation."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : conséquences évaluées non en états de richesse mais en écarts positifs ou négatifs par rapport à un point de référence neutre."
+      "reason": "definition_de_lauteur : écarts positifs ou négatifs par rapport à un point de référence neutre, non états de richesse."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : fonction de valeur en S, concave dans les gains, convexe dans les pertes, plus raide du côté des pertes (aversion aux pertes, p. 173)."
+      "reason": "definition_de_lauteur : fonction de valeur en S, concave dans les gains, convexe dans les pertes, plus raide du côté des pertes (aversion aux pertes)."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : le cadrage relève de la première phase, l'analyse préliminaire."
+      "reason": "definition_de_lauteur : la première phase est « phase de cadrage et d'édition » qui « frames » le problème."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente dans SUP-07e1 (p. 175) ; traduction fidèle."
+      "reason": "Citation verbatim (p. 175) dans definition_de_lauteur ; traduction fidèle."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Suit de SUP-07e1 et SUP-f03563 : point de référence déplacé par l'étiquetage, cadrage « relative to an expected loss of 600 lives », concavité dans les gains, 72 % choisissent le programme sûr (« aversion pour le risque »)."
+      "reason": "Dérivation directe des appuis : point de référence « relative to an expected loss of 600 lives », déplacé par l'étiquetage, valeur concave dans les gains, et 72 % choisissent le programme sûr (aversion pour le risque)."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : version en vies perdues, 78 % choisissent le programme risqué (« goût du risque »), convexité dans les pertes."
+      "reason": "definition_de_lauteur : version en vies perdues, 78 % choisissent le programme risqué (goût du risque), valeur convexe dans les pertes."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « Framing is controlled by the manner in which the choice problem is presented as well as by norms, habits, and expectancies of the decision maker » (p. 172) ; « pas seulement affaire de mots de l'énoncé »."
+      "reason": "definition_de_lauteur : « Le cadrage n'est donc pas seulement affaire de mots de l'énoncé »."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « On several occasions we presented both versions to the same respondents and discussed with them the inconsistent preferences evoked by the two frames »."
+      "reason": "Citation verbatim (p. 172) dans definition_de_lauteur ; traduction fidèle."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1/5e5713 : « Many respondents expressed a wish to remain risk averse in the 'lives saved' version and risk seeking in the 'lives lost' version, although they also expressed a wish for their answers to be consistent »."
+      "reason": "definition_de_lauteur : « On several occasions we presented both versions to the same respondents and discussed with them the inconsistent preferences »."
     },
     {
       "claim_id": "C042",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim (SUP-07e1) établissent l'absence d'atténuation pour un seul problème (McNeil et al., 1982 : médecins expérimentés et étudiants en gestion formés aux statistiques face à des patients). Le claim en tire une règle générale sur la compétence et l'effet de cadrage. C'est le glissement d'un exemple vers une règle générale."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[0] : « Many respondents expressed a wish to remain risk averse in the 'lives saved' version and risk seeking in the 'lives lost' version »."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « Cas médical (McNeil et al., 1982, problème 1, p. 170) »."
+      "reason": "Citation verbatim dans definition_de_lauteur et review.notes[0] ; traduction fidèle."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : statistiques de survie au cancer du poumon présentées en taux de survie ou de mortalité, de 18 % à 44 % de répondants favorables à la radiothérapie."
+      "reason": "definition_de_lauteur : « Cas médical (McNeil et al., 1982, problème 1, p. 170) »."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente mot pour mot dans SUP-07e1 (p. 170)."
+      "reason": "definition_de_lauteur : mêmes statistiques de survie au cancer du poumon présentées en taux de survie ou de mortalité."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : l'appareil perceptif et l'appareil linguistique produisent spontanément des représentations canoniques ; le cercle blanc vu de biais dans une lumière faible reste blanc et circulaire."
+      "reason": "definition_de_lauteur : proportion favorable à la radiothérapie de 18 % à 44 %."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente mot pour mot dans SUP-07e1 (p. 171-172)."
+      "reason": "Citation verbatim (p. 170) dans definition_de_lauteur."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "SUP-def865 : p. 187, « The example of visual illusion is instructive » ; SUP-601c82/d3b82e : les auteurs renvoient plus loin, p. 187, à une illusion visuelle."
+      "reason": "definition_de_lauteur : « l'appareil perceptif et l'appareil linguistique en produisent spontanément » (représentation canonique)."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "SUP-def865 : renvoi à la figure 9.3, illusion de Müller-Lyer reproduite p. 179-180 dans le chapitre ; SUP-601c82/d3b82e : illusion visuelle « qu'ils reproduisent en figure dans le chapitre même ». La réserve de SUP-eb2c7c sur la numérotation des figures ne contredit pas le claim, qui ne nomme pas de figure."
+      "reason": "definition_de_lauteur : « un cercle blanc vu de biais dans une lumière faible reste blanc et circulaire »."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "Glose interprétative de la citation (SUP-a6f021/21124b) appuyée par SUP-601c82/d3b82e (« C'est bien l'attirance qui persiste, pas la validité ») et par SUP-07e1 (répondants qui souhaitent être cohérents mais gardent leurs préférences). Le claim ne l'attribue pas aux auteurs."
+      "reason": "Citation verbatim dans definition_de_lauteur."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente dans SUP-07e1 (p. 187)."
+      "reason": "review.notes[3] : le renvoi p. 187 existe, « The example of visual illusion is instructive » ; reserves[8] confirme que la comparaison est reprise ailleurs."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « more likely to prevent errors that arise from insufficient attention and effort than errors that arise from misperception or faulty intuition ». La paraphrase conserve le comparatif."
+      "reason": "review.notes[3] : renvoi à la figure 9.3, illusion de Müller-Lyer « reproduite p. 179-180 dans le chapitre même » ; reserves[8] et translator note concordent."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence conditionnelle, non attribuée, qui suit de SUP-07e1 : les incitations agissent par l'attention, et l'effet persiste même après une discussion explicite avec les répondants (p. 175)."
+      "reason": "Implication directe de la citation (persistance de l'attrait qui rapproche des illusions visuelles « plus que des erreurs de calcul ») ; validated notes[2] : elle dit ce qui distingue l'effet d'une erreur de calcul."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "SUP-6772ab, SUP-0a6a95, SUP-bdde98, SUP-7ba08f : « Les auteurs ne revendiquent pas la paternité entière de la notion »."
+      "reason": "translator note : répondants à qui les versions ont été présentées et expliquées, toujours attirés tout en souhaitant être cohérents, « C'est bien l'attirance qui persiste, pas la validité » ; review.notes[0]."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 184 portée mot pour mot par SUP-0a6a95/bdde98/7ba08f ; attribution conservée (« selon eux »), conformément à la réserve de SUP-bdde98 ; la traduction de « cancellation » par « annulation » est conforme."
+      "reason": "Citation verbatim (p. 187) dans definition_de_lauteur."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0a6a95 : « ce qui leur revient est d'en avoir fait un effet mesuré et systématique, opposé à l'axiome d'invariance »."
+      "reason": "definition_de_lauteur : « more likely to prevent errors that arise from insufficient attention and effort than errors that arise from misperception or faulty intuition » ; le comparatif est conservé (« plus à même »)."
     },
     {
       "claim_id": "C057",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-037e8f : le cadrage au sens décisionnel « ne se confond pas avec les \"frames\" de Goffman (1974), qui relèvent d'une autre lignée ». Le terme signalé (« cadres », SUP-f0356379f9617547, $.reserves[9]) n'a pas de rapport avec Goffman."
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui fourni porte un comparatif probabiliste (« more likely to prevent errors [...] than errors that arise from misperception ») ; le claim en tire une prédiction catégorique (« n'y suffira pas »), glissement de la probabilité à la certitude."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 : « framing effects that control the representation of options » ; SUP-784e43 : présentations d'un même problème de choix."
+      "reason": "attribution_note, attribution.note et reserves[7] : les auteurs ne revendiquent pas la paternité entière de la notion."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 (p. 185) : « Because framing effects ... are ubiqitous, no adequate descriptive theory can ignore these phenomena ... because invariance ... is normatively indispensable, no adequate prescriptive theory should permit its violation »."
+      "reason": "Citation p. 184 rapportée dans attribution.note, reserves[7], review.notes[4] ; le claim garde l'attribution « selon eux »."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "Citation présente mot pour mot dans SUP-07e1 (p. 185)."
+      "reason": "Citation verbatim dans attribution.note, reserves[7], review.notes[4] ; traduction fidèle. Le signal (definition_de_lauteur, terme « annulation ») ne porte que la traduction de « cancellation », déjà autorisée par la citation fournie ; pas d'appui manquant probable."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "SUP-07e1 (p. 186) : « We have identified several common rules of framing, and we have demonstrated their effects on choice, but we have not provided a formal theory of framing ». Le terme signalé (« identifie », SUP-def865c60178c11a, $.review.notes[3]) porte sur la traduction, sans rapport avec le claim."
+      "reason": "attribution.note : « ce qui leur revient est d'en avoir fait un effet mesuré et systématique, opposé à l'axiome d'invariance » ; formulation non attribuée aux auteurs."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "TOO_STRONG",
+      "reason": "review.notes[12] porte que les « frames » de Goffman (1974) relèvent d'une autre lignée et ne se confondent pas avec le cadrage décisionnel ; l'appui fourni pour ce claim ne situe pas cette lignée « en sciences sociales » ni ne dit que le mot y « voyage ». Le signal (reserves[9], terme « cadres ») vise les deux cadres du problème épidémique, sans rapport avec Goffman."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « different representations of the same choice problem », « framing effects that control the representation of options » ; summary."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 185 dans definition_de_lauteur : « ubiqitous, no adequate descriptive theory can ignore these phenomena »."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 185 dans definition_de_lauteur : « invariance [...] is normatively indispensable, no adequate prescriptive theory should permit its violation »."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim (p. 185) dans definition_de_lauteur."
+    },
+    {
+      "claim_id": "C067",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 186 dans definition_de_lauteur : « We have identified several common rules of framing [...] demonstrated their effects on choice, but we have not provided a formal theory of framing ». Le signal (review.notes[3], terme « identifie ») n'indique pas d'appui manquant."
     }
   ]
 }
