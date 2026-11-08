@@ -1,0 +1,841 @@
+{
+  "protocol_version": 2,
+  "concept_id": "conception-ecologique-interface",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "cea330fd9b77d40e9a4994f53b2341912437514d8d4955f635f2faa424df1dcc",
+  "validated_sha256": "20dcf07528c46ac0e80f8eaf320bb796a7a2d781816b67d15e76b58f27bd7e04",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "0f26fe2bfaea2844a21e188cd243ed21ca922f26ab1866e80004ebea86d87d71"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/conception-ecologique-interface/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Kim J. Vicente et Jens Rasmussen, « Ecological Interface Design: Theoretical Foundations », IEEE Transactions on Systems, Man, and Cybernetics, vol. 22, n° 4, 1992, p. 589-606. Lu sur le post-print déposé par DTU Orbit.",
+        "cles": [
+          "doi:10.1109/21.156574",
+          "url:backend.orbit.dtu.dk/ws/files/158017888/smc.pdf"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "Jens Rasmussen et Kim J. Vicente, « Coping with human errors through system design: implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, n° 5, 1989, p. 517-534.",
+        "cles": [
+          "doi:10.1016/0020-7373(89",
+          "url:doi.org/10.1016/0020-7373(89)90014-x"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes. Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là. Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là. Trois façons d’agir dans la même journée, sur la même machine."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera. S’il présente tout sous forme de chiffres à interpréter, il oblige à réfléchir même lorsque la situation ne le demande pas, et ce qui aurait pu se faire d’un geste devient lent et fatigant. S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu. C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Trois façons de faire face à une même situation",
+      "text": "Ces trois régimes portent un nom dans les travaux de Jens Rasmussen, où ils forment trois niveaux de contrôle cognitif, c’est-à-dire trois façons dont une personne prend en charge la situation devant elle. L’article de 1992 les reprend tels quels : le comportement fondé sur l’habileté, celui qui est fondé sur des règles, et celui qui est fondé sur des connaissances. Le premier est le geste ajusté en continu, sans mots ni délibération. Le deuxième reconnaît une situation déjà rencontrée et applique la conduite apprise pour elle. Le troisième n’a plus de conduite disponible : il faut se représenter le fonctionnement de l’installation et en déduire quoi faire."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Trois façons de faire face à une même situation",
+      "text": "Ce qui décide du niveau engagé n’est pas la difficulté de la tâche prise en elle-même, mais la façon dont l’information reçue est interprétée. Un même relevé peut être pris comme une grandeur physique sur laquelle la main s’ajuste, comme un indice qui déclenche une procédure, ou comme un élément à intégrer dans un raisonnement sur l’état du procédé. Ces trois lectures s’excluent l’une l’autre à un instant donné, et la manière dont l’information est présentée pèse sur celle qui aura lieu."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Trois façons de faire face à une même situation",
+      "text": "Cette taxonomie n’est pas un résultat de l’article de 1992. Vicente et Rasmussen l’adoptent comme point de départ, avec une seconde construction théorique qui porte sur la représentation des contraintes du travail, et disent prendre ces deux constructions pour axiomes afin d’en déduire des conséquences pour la conception. La taxonomie avait été publiée par Rasmussen en 1983, et c’est cette version-là que l’article de 1992 cite."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Pourquoi le niveau le plus bas coûte le moins",
+      "text": "Deux constats précèdent immédiatement l’énoncé du but, dans le même paragraphe. Le premier : les niveaux inférieurs de contrôle cognitif s’exécutent plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs. Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, et ils le font même quand l’interface n’est pas conçue pour cela."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Pourquoi le niveau le plus bas coûte le moins",
+      "text": "Le second constat est le plus embarrassant pour un concepteur. Il ne dit pas qu’il serait souhaitable de laisser travailler par réflexe : il dit que cela se produira de toute façon. Un écran qui n’offre aucun appui au geste direct n’empêche pas l’opérateur de se chercher malgré tout un repère rapide ; il le laisse seulement le fabriquer lui-même, dans son coin, sans que rien ne vienne dire jusqu’où ce repère est fiable."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Pourquoi le niveau le plus bas coûte le moins",
+      "text": "Les deux moitiés du but tiennent donc ensemble, et la seconde est celle qu’on perd le plus facilement de vue. Alléger le travail courant en donnant des appuis immédiats ne suffit pas si rien, dans le même écran, ne permet de reprendre la main quand l’appui devient trompeur. La difficulté n’est pas de choisir le bon niveau une fois pour toutes : c’est de servir les trois avec le même dispositif."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "L’indice qui marche presque toujours",
+      "text": "L’exemple le plus concret de l’article vient de l’accident de Three Mile Island. Les opérateurs suivaient le niveau du pressuriseur et le prenaient pour un indice de la quantité d’eau présente dans le circuit primaire. Cet indice est bon dans les conditions ordinaires. Ce qui leur manquait, écrivent les auteurs, c’est la conscience des conditions aux limites à l’intérieur desquelles il reste valide."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "L’indice qui marche presque toujours",
+      "text": "L’argument n’est pas que l’indice était mauvais, ni que les opérateurs auraient dû s’en méfier davantage. C’est que rien, dans ce qu’ils avaient sous les yeux, ne leur montrait où cet indice cessait de correspondre à ce qu’ils croyaient y lire. Une conduite apprise avait été appliquée hors de son domaine de validité, et l’installation, telle qu’elle se donnait à voir, n’avait aucun moyen de le signaler."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "L’indice qui marche presque toujours",
+      "text": "De là la conséquence que les auteurs en tirent pour la conception : l’écran devrait donner à percevoir les contraintes fondamentales qui gouvernent le procédé, et non seulement les valeurs par lesquelles on a pris l’habitude de les deviner. Un piège de ce genre ne se corrige pas en demandant plus d’attention : il se corrige en rendant visible ce qui manquait."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Montrer les contraintes plutôt que les valeurs",
+      "text": "La hiérarchie d’abstraction est le second point de départ que les deux auteurs adoptent sans le démontrer. Ils la proposent comme une manière de représenter les contraintes d’un domaine de travail qui soit psychologiquement pertinente, c’est-à-dire utilisable par quelqu’un qui doit tenir devant un événement que personne n’avait prévu. Une représentation de ce genre, une fois affichée, tient lieu de modèle mental extérieur : plutôt que de demander à l’opérateur de reconstituer de mémoire le fonctionnement de l’installation, l’écran en porte la structure."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Montrer les contraintes plutôt que les valeurs",
+      "text": "Le cadre se décline ensuite en trois principes, un par niveau, et c’est là son contenu opératoire. Pour le niveau de l’habileté, l’opérateur doit pouvoir agir directement sur l’affichage, et la structure de l’information affichée doit correspondre à celle de ses mouvements. Pour le niveau des règles, l’interface doit établir une correspondance constante, terme à terme, entre les contraintes du domaine de travail et les indices qu’elle donne à voir. Pour le niveau des connaissances, le domaine de travail doit être représenté sous la forme d’une hiérarchie d’abstraction."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Montrer les contraintes plutôt que les valeurs",
+      "text": "Pris isolément, le deuxième de ces principes se laisserait facilement prendre pour le cadre entier, et il ne l’est pas. La correspondance entre contraintes et indices règle le cas de la situation reconnue ; elle ne dit rien de ce qu’il faut fournir au geste, ni de ce qu’il faut fournir au raisonnement lorsque plus aucune règle ne s’applique. Ce que la formulation de 1992 tient ensemble, c’est que ces trois exigences portent sur une seule et même interface."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que le mot « écologique » désigne ici",
+      "text": "L’adjectif ne renvoie ni à l’environnement naturel ni à la consommation d’énergie. Les auteurs le justifient par la relation entre l’opérateur et son environnement de travail : les deux ne se décrivent pas séparément, puisque ce qu’une personne peut faire dépend de ce que le milieu technique lui présente, et que ce que ce milieu présente dépend de la façon dont il a été conçu. C’est cette dualité qu’ils invoquent pour expliquer le choix du mot."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que le mot « écologique » désigne ici",
+      "text": "L’expression, elle, est antérieure à l’article de 1992, et ses auteurs ne s’en cachent pas : elle figure déjà dans deux travaux qu’ils cosignent et qu’ils citent, un rapport de 1988 et un article de 1989, et le texte de 1992 renvoie lui-même au second comme au lieu où le cadre a été proposé pour la première fois. Ce qu’ils revendiquent en 1992 est délimité avec précision : « the specific theoretical formulation presented here is a new one ». La formulation théorique, donc, et rien de plus."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-8da0c0ebf880db37",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "conception-ecologique-interface"
+    },
+    {
+      "id": "SUP-0b6feb38204fc949",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "conception-ecologique-interface"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-227e8f1ebf78ad31",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Conception écologique d'interface"
+    },
+    {
+      "id": "SUP-217727eccd95e6a2",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "automatisation-et-conception-cognitive"
+    },
+    {
+      "id": "SUP-470fcece91862514",
+      "origin": "validated",
+      "path": "$.theme_labels[\"automatisation-et-conception-cognitive\"]",
+      "access": "n/a",
+      "text": "Ce que la machine retire, ce qu'elle devrait rendre"
+    },
+    {
+      "id": "SUP-3eca1453a82acbbe",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Kim J. Vicente"
+    },
+    {
+      "id": "SUP-f5e220b094bfaddc",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "vicente"
+    },
+    {
+      "id": "SUP-667c1d37fc3d84d4",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "Jens Rasmussen"
+    },
+    {
+      "id": "SUP-734476195025ed06",
+      "origin": "validated",
+      "path": "$.authors[1].app_author_id",
+      "access": "n/a",
+      "text": "rasmussen"
+    },
+    {
+      "id": "SUP-07ad40f5466e8990",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
+    },
+    {
+      "id": "SUP-8fe22997ace6d596",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
+    },
+    {
+      "id": "SUP-7790569b40640377",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Kim J. Vicente et Jens Rasmussen, « Ecological Interface Design: Theoretical Foundations », IEEE Transactions on Systems, Man, and Cybernetics, 22(4), 1992, p. 589-606. DOI 10.1109/21.156574. Lu sur le post-print DTU Orbit."
+    },
+    {
+      "id": "SUP-b1d91a6cf43a2847",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "section IV.E, p. 21 du post-print"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-4bea364a82466170",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-14bfbe03167888ba",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction de travail faite pour ce corpus lors de la lecture primaire du 18 août 2026, non publiée et non revue par un tiers."
+    },
+    {
+      "id": "SUP-54e92d14b65e2f23",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Une interface peut-elle laisser agir par réflexe sans interdire de raisonner ?"
+    },
+    {
+      "id": "SUP-6d72e523de3d0268",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Concevoir l'interface de façon à ne pas forcer le contrôle cognitif à un niveau plus élevé que la tâche ne l'exige, tout en soutenant chacun des trois niveaux."
+    },
+    {
+      "id": "SUP-55ead6ba4dfe0888",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Kim J. Vicente et Jens Rasmussen, « Ecological Interface Design: Theoretical Foundations », IEEE Transactions on Systems, Man, and Cybernetics, vol. 22, n° 4, 1992, p. 589-606. Lu sur le post-print déposé par DTU Orbit.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-fa34d25626e38521",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "Section IV.E, p. 21 du post-print",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-43c25617a4d4bd87",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.1109/21.156574",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8ea38dcd0a4a484f",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://backend.orbit.dtu.dk/ws/files/158017888/SMC.PDF",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-02561161dccacf81",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "Jens Rasmussen et Kim J. Vicente, « Coping with human errors through system design: implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, n° 5, 1989, p. 517-534.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-2145f56719eaee69",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1016/0020-7373(89)90014-x",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-9ab3d36e54ef26c8",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1016/0020-7373(89)90014-x",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-c942055e70f9489a",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-19"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-e8511c461cdf65de",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "SOURCE 1 ouverte en plein texte : curl -sSL https://backend.orbit.dtu.dk/ws/files/158017888/SMC.PDF → HTTP 200, application/pdf, 220733 octets, 44 pages (post-print DTU Orbit). La page de couverture Orbit (folio fichier 1) porte « Document Version: Peer reviewed version », le DOI 10.1109/21.156574 et la citation APA « Vicente, K. J., & Rasmussen, J. (1992) […] 22(4), 589-606 » : le libellé « post-print déposé par DTU Orbit » est exact."
+    },
+    {
+      "id": "SUP-3de544823741416b",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — signature lue SUR le document, pas sur une notice : folio fichier 2 porte « Kim J. Vicente and Jens Rasmussen » sous le titre, avec les affiliations en note (Georgia Tech / DTU-Risø). Cosignature dans les deux sens : ni escamotée, ni inventée. Crossref (api.crossref.org/works/10.1109/21.156574) rend les mêmes deux auteurs, IEEE Trans. SMC, vol. 22, n° 4, 1992, p. 589-606."
+    },
+    {
+      "id": "SUP-724bfd5a50430a02",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la carte ne prête pas aux auteurs la paternité du terme, et elle a raison de ne pas le faire : la bibliographie du texte porte [108] « K. J. Vicente and J. Rasmussen, \"A theoretical framework for ecological interface design,\" Riso-M-2736, […] 1988 » (folio fichier 43) et [88] « J. Rasmussen and K. J. Vicente, \"Coping with human error through system design: Implications for ecological interface design,\" IJMMS, vol. 31, pp. 517-534 » (folio fichier 42), tous deux cosignés et antérieurs. Le corps du texte dit lui-même « The EID framework was first proposed in [88] » (section I.C). La revendication de nouveauté est bien restreinte à la formulation théorique : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 1 1 1] and especially [32, 33]), the specific theoretical formulation presented here is a new one » — lu verbatim au folio fichier 23, soit p. 22 du post-print."
+    },
+    {
+      "id": "SUP-07022ccd72043532",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — vérification du renvoi à la taxonomie SRK : la section IV s'ouvre sur « taxonomy [79] has become a widely accepted framework », et [79] est bien « J. Rasmussen, \"Skills rules, knowledge: Signals, signs, and symbols…\", IEEE Trans. SMC-13, pp. 257-267, 1983 ». J'ai passé toute la bibliographie au crible des millésimes 1981 (grep sur « 198 ?1 ») : les seules entrées de 1981 sont Hollnagel [39], Norman [67], Rasmussen ET Lind [86] (Riso-M-2293, « Coping with complexity »), Simon [98] et l'USNRC. Aucun rapport de 1981 signé Rasmussen seul n'est cité, ce qui confirme la mise au point de la note."
+    },
+    {
+      "id": "SUP-69b537010a66c7c5",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "CITATION — passage retrouvé à l'endroit exact annoncé. Folio fichier 22, sous-titre « E. Implications for Interface Design », à l'intérieur de la section « IV. MULTIPLE LEVELS OF COGNITIVE CONTROL » (relevé des titres de section : I p.60, II p.181, III p.258, IV p.573, V p.958 du texte extrait) : donc bien IV.E. Texte lu : « […] to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » L'`original_text` de la fiche est identique mot pour mot à partir de « not to force », et le […] initial signale correctement la troncature de l'amorce « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as »."
+    },
+    {
+      "id": "SUP-613739785613ca47",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "CITATION — correspondance folio fichier / pagination du post-print établie avant de juger le locator : le bandeau de tête du folio fichier 22 porte « 21 », celui du folio 23 porte « 22 », celui du folio 42 porte « 41 » ; la règle est printed = fichier − 1 (la couverture Orbit n'est pas paginée). « p. 21 du post-print » est donc juste. pdfpage.py sur ce folio répond « Aucune image sur cette page » : la couche est du texte natif et non un OCR image, la lecture n'est pas un artefact de rendu. (Le PDF porte ailleurs des scories de reconnaissance — « fi-amework », « ne intent », « [1081] » — mais aucune ne touche la phrase citée.)"
+    },
+    {
+      "id": "SUP-2b9d2b6d33439e45",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "CITATION — la traduction est déclarée (`translation.kind: in-house`, traducteur et date indiqués, non revue par un tiers) et l'original anglais est affiché à côté. Le français « ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux » rend fidèlement la phrase source dans les deux sens, sans durcissement ni affaiblissement."
+    },
+    {
+      "id": "SUP-9dc407d8986bbf0f",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "SOURCES — référence 2 : verify_reference sur 10.1016/0020-7373(89)90014-x rend `conclusive: true`, `resolved: true`, `mismatches: []` — « Jens Rasmussen et Kim J. Vicente », International Journal of Man-Machine Studies, 1989, et Crossref confirme vol. 31, n° 5, p. 517-534. L'ordre des signatures affiché par la fiche (Rasmussen puis Vicente) est celui du document, inversé par rapport à l'article de 1992 : la fiche ne les a pas uniformisés, c'est correct. curl sur https://doi.org/10.1016/0020-7373(89)90014-x → HTTP 302 vers linkinghub.elsevier.com/retrieve/pii/002073738990014X. `consulted: metadata-only` est déclaré et conforme : je n'ai pas ouvert le plein texte de 1989, l'accès Elsevier étant fermé, et je n'en tire donc aucune conclusion de contenu."
+    },
+    {
+      "id": "SUP-1e095db7e6b750d8",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "PROSE — l'accroche « Une interface peut-elle laisser agir par réflexe sans interdire de raisonner ? » et le résumé sont adossés à l'énoncé du but que le texte formule deux fois : au résumé (folio fichier 2) « The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control », et en IV.E dans les termes cités. Contrôle dans les deux sens : le résumé ne durcit rien (il conserve le double volant, ne transforme pas « ne pas forcer » en « interdire ») et ne rétrécit pas le concept au seul niveau réflexe, puisqu'il porte explicitement le soutien « à chacun des trois niveaux ». Le point d'interrogation de l'accroche n'affirme rien que la source ne porte."
+    },
+    {
+      "id": "SUP-d3e21175d1cb2be6",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "Hors des quatre points, pour information : la note d'attribution avance qu'« aucune occurrence » du libellé français n'a été trouvée. Le libellé exact « Conception écologique d'interface » ne ressort effectivement pas de mes recherches, mais une variante francophone de l'expression circule, avec un autre ordre des mots — Emmeline Isaïa, « La conception d'interface écologique, un outil de médiation des connaissances pour la création d'outils numériques », HAL hal-04490480 (2023), et « Médiation de compétences lexicales et conception d'interface écologique », HAL hal-04181000 (2023). Cela n'entame pas l'attribution du concept, qui reste celle de Vicente et Rasmussen, mais nuance la portée de la formule « aucune occurrence ». Ce n'est pas un motif de renvoi."
+    },
+    {
+      "id": "SUP-89e81db70a3e0049",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "Non atteint, et déclaré comme tel : la version éditeur IEEE Xplore de l'article de 1992 (pagination imprimée 589-606) est derrière un mur d'abonnement, que je n'ai pas cherché à contourner ; je n'ai donc pas pu confronter la pagination de la revue à celle du post-print, ce qui est sans effet ici puisque la fiche cite explicitement le post-print et localise dedans. Le plein texte de l'article de 1989 (Elsevier) est également resté fermé. OpenAlex répond pour le DOI de 1992 mais corrompt le prénom du second auteur (« Justin D. Rasmussen ») : notice écartée au profit de Crossref et de la page de titre du document, qui portent « Jens Rasmussen »."
+    },
+    {
+      "id": "SUP-3ba0806637d6a1c4",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/conception-ecologique-interface/lecture.json"
+    },
+    {
+      "id": "SUP-b03453f50cf524c9",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Les deux prémisses qui précèdent immédiatement la phrase citée, dans le même paragraphe : les niveaux inférieurs de contrôle cognitif s'exécutent plus vite, plus efficacement et avec moins d'effort que les niveaux supérieurs ; et les gens préfèrent nettement accomplir les tâches en s'appuyant sur les niveaux inférieurs, même quand l'interface n'est pas conçue pour cela."
+    },
+    {
+      "id": "SUP-273495f4f0bd6dff",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes : la hiérarchie d'abstraction, comme forme psychologiquement pertinente de représentation des contraintes d'un domaine de travail, et la taxonomie skill-rule-knowledge, comme description des mécanismes de traitement de l'information."
+    },
+    {
+      "id": "SUP-49dd60be4950876d",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements non familiers et non anticipés, pour lesquels l'opérateur ne dispose d'aucune solution intégrée et doit en improviser une."
+    },
+    {
+      "id": "SUP-fbf61ff21ef6ceac",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Les trois principes prescriptifs de la section V, un par niveau, sont le contenu opératoire du concept mais n'ont pas été retenus en citation : le premier et le troisième dépassent le plafond, et le deuxième, qui tiendrait, a été écarté pour une raison de fond, car pris seul il réduirait le cadre à une règle de correspondance entre contraintes et indices alors que le concept est de tenir les trois niveaux ensemble."
+    },
+    {
+      "id": "SUP-6afdb74093aacfa1",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Ces trois principes portent dans le fichier des corruptions de reconnaissance de caractères qui ont dû être redressées (« disl2lay », « ome-to-one », « sul2l2ort ») : ils ne doivent pas être repris comme citation affichée sans être relus sur une composition non corrompue, ce que le post-print ne permet pas."
+    },
+    {
+      "id": "SUP-eb3399f7f6b3a071",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "L'exemple le plus concret du texte est le piège procédural de Three Mile Island : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, sans avoir conscience des conditions aux limites où cet indice reste valide."
+    },
+    {
+      "id": "SUP-c2fa90274a2d79f4",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Pagination : le fichier ouvert est le post-print et ne porte pas les folios de la revue. La seule pagination IEEE disponible est l'intervalle 589-606, qui ne situe aucun passage. Personne ne doit convertir le folio du post-print en page IEEE : la correspondance n'a pas été vérifiée et ne peut pas l'être sur ce fichier."
+    },
+    {
+      "id": "SUP-71f4dfaf9501a700",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "La version publiée par IEEE est fermée et n'a pas été ouverte : on ne peut ni confirmer ni infirmer que le texte du post-print est mot pour mot celui de la revue."
+    },
+    {
+      "id": "SUP-9b1dc28911db7d59",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Deux qualifications contradictoires du même dépôt, non tranchées : la page de couverture du fichier écrit « Peer reviewed version », la notice Unpaywall « submittedVersion ». Les remerciements du post-print remercient les relecteurs anonymes, ce qui est un indice et non une preuve."
+    },
+    {
+      "id": "SUP-af06b16029d7f4df",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Les deux antériorités du terme n'ont pas été ouvertes : le rapport Risø-M-2736 de 1988, introuvable en dépôt ouvert, et l'article de 1989, connu par sa seule notice. On peut donc écrire que le terme est du binôme, pas qu'il est forgé en 1992, ni dater sa première occurrence sur un document lu."
+    },
+    {
+      "id": "SUP-ddeebe0043848ff6",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Point à reporter sur la carte voisine : l'article de 1992 nomme la taxonomie « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par sa seule référence de 1983. Si les deux cartes se citent, la dépendance s'écrit ainsi, jamais par le millésime 1981."
+    },
+    {
+      "id": "SUP-33c5e85d97c8f07a",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "Nuance apportée au tour de contrôle : le libellé exact « conception écologique d'interface » ne ressort d'aucune recherche, mais la forme « conception d'interface écologique » circule en français, notamment chez Emmeline Isaïa (HAL hal-04490480 et hal-04181000, 2023). Cela n'entame pas l'attribution du concept, qui reste celle de Vicente et Rasmussen."
+    },
+    {
+      "id": "SUP-6dcbf32489375fab",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "conception-ecologique-interface"
+    },
+    {
+      "id": "SUP-c1daa1ac318d84d8",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Kim J. Vicente"
+    },
+    {
+      "id": "SUP-31ce779ace0e3646",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "Jens Rasmussen"
+    },
+    {
+      "id": "SUP-ee91fd4a67198c4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-6955e3cfdf0ba50d",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le texte est signé de deux auteurs, dans cet ordre : « Kim J. Vicente and Jens Rasmussen », ligne de signature imprimée sous le titre, page 2 du fichier ouvert (page de titre du post-print, non foliotée). La note de bas de page appelée sur cette même ligne donne les deux affiliations au moment de la rédaction : Vicente au Center for Human-Machine Systems Research, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta ; Rasmussen à la Technical University of Denmark et au Cognitive Systems Group, Risø National Laboratory, Roskilde. La notice Crossref du DOI 10.1109/21.156574 donne les mêmes deux noms dans le même ordre (K.J. Vicente, puis J. Rasmussen) et la page de dépôt DTU Orbit également. Le millésime 1992 est celui imprimé sur la page de couverture du dépôt (« Publication date: 1992 ») et celui du champ issued de Crossref : je ne l'ai pas relevé sur une signature datée à l'intérieur du texte, qui n'en porte pas. Le sigle EID est bien posé par les deux auteurs comme leur : ils écrivent au résumé « The framework, called ecological interface design (EID), is proposed » puis, en introduction, « This paper describes a novel theoretical framework », et ils justifient eux-mêmes le choix de l'adjectif à la page 6 du post-print : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" ». Un point que le repérage n'avait pas vu et qui interdit de dire que le terme est forgé dans ce texte-ci : l'expression existe déjà, quatre et trois ans plus tôt, dans deux textes cosignés du même binôme et cités par cet article même. Référence [108] de sa bibliographie : K. J. Vicente et J. Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, Department of Information Technology, Risø National Laboratory, Roskilde, 1988. Référence [88] : J. Rasmussen et K. J. Vicente, « Coping with human error through system design: Implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, p. 517-534 (l'année manque dans la bibliographie de l'article, la notice Crossref du DOI 10.1016/0020-7373(89)90014-x la donne à novembre 1989 et confirme les deux mêmes signatures, Rasmussen puis Vicente). Ces deux antériorités sont relevées dans la bibliographie de l'article de 1992 et dans Crossref, pas sur les documents eux-mêmes, que je n'ai pas ouverts. L'article de 1992 dit lui-même ce qu'il revendique et ce qu'il ne revendique pas, page 22 du post-print : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 111] and especially [32, 33]), the specific theoretical formulation presented here is a new one. » Ce qui est donc à porter au crédit des deux auteurs par cette carte, c'est la formulation théorique de 1992, cosignée, et le terme qui est le leur depuis 1988, cosigné lui aussi. COAUTHORED, jamais Vicente seul, jamais Rasmussen seul."
+    },
+    {
+      "id": "SUP-38d7db562a3cc9a1",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
+    },
+    {
+      "id": "SUP-994d598bd03ac155",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Kim J. Vicente et Jens Rasmussen, « Ecological Interface Design: Theoretical Foundations », IEEE Transactions on Systems, Man, and Cybernetics, 22(4), 1992, p. 589-606. DOI 10.1109/21.156574. Lu sur le post-print DTU Orbit."
+    },
+    {
+      "id": "SUP-8ec6fc1408815773",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "section IV.E, p. 21 du post-print"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-4adf4f2c4a37bad6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-91ee5a2a16800916",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction de travail faite pour ce corpus lors de la lecture primaire du 18 août 2026, non publiée et non revue par un tiers."
+    },
+    {
+      "id": "SUP-def36fe6ddab6681",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Vicente, K. J. & Rasmussen, J. (1992). Ecological Interface Design: Theoretical Foundations. IEEE Transactions on Systems, Man and Cybernetics, 22(4), 589-606. Version ouverte et lue : post-print déposé sur DTU Orbit (Technical University of Denmark), fichier SMC.PDF, 44 pages, 220 733 octets, content-type application/pdf, HTTP 200. Page de couverture du dépôt : « Document Version: Peer reviewed version ». Le fichier porte sa propre pagination, 1 à 43, et aucune pagination IEEE."
+    },
+    {
+      "id": "SUP-2e79c103309daa3f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.1109/21.156574"
+    },
+    {
+      "id": "SUP-412ec5c94538dd1a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://backend.orbit.dtu.dk/ws/files/158017888/SMC.PDF"
+    },
+    {
+      "id": "SUP-af76a83846c7516f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Notice Crossref du DOI 10.1109/21.156574, interrogée en direct. Donne le titre, les deux auteurs dans l'ordre K.J. Vicente puis J. Rasmussen, le volume 22, le numéro 4, l'intervalle de pages 589-606 et l'année 1992. C'est la seule pagination IEEE dont je dispose : un intervalle d'article, pas la page d'un passage."
+    },
+    {
+      "id": "SUP-4c9cc042a8b133b3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1109/21.156574"
+    },
+    {
+      "id": "SUP-08ade9b55d1576a1",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.1109/21.156574"
+    },
+    {
+      "id": "SUP-79ca36ff82131951",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "partial",
+      "text": "Page de notice du dépôt institutionnel DTU Orbit pour cet article, HTTP 301 puis 200 après redirection. Confirme les deux signatures et reproduit le résumé de l'article en clair, ce qui donne un second rendu indépendant du résumé, utile pour contrôler la couche texte du PDF. Ne porte aucune indication de pagination IEEE."
+    },
+    {
+      "id": "SUP-b100cc6138f0375a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "partial",
+      "text": "10.1109/21.156574"
+    },
+    {
+      "id": "SUP-b41a311e051fc3ec",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "partial",
+      "text": "https://orbit.dtu.dk/en/publications/ecological-interface-design-theoretical-foundations/"
+    },
+    {
+      "id": "SUP-fc78e8849a7af17d",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Rasmussen, J. & Vicente, K. J. (1989). Coping with human errors through system design: implications for ecological interface design. International Journal of Man-Machine Studies, 31(5), 517-534. Notice Crossref seule, texte non ouvert. Relevée parce que l'expression « ecological interface design » y figure déjà en titre, sous les deux mêmes signatures, trois ans avant l'article de 1992 qui la cite en référence [88]."
+    },
+    {
+      "id": "SUP-c8d4f7b402efc66d",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1016/0020-7373(89)90014-x"
+    },
+    {
+      "id": "SUP-7ca6d1378a2e45fa",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.1016/0020-7373(89)90014-x"
+    },
+    {
+      "id": "SUP-93dbeddae3472d52",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "metadata-only",
+      "text": "Interrogation HAL, deux requêtes, pour chercher une réception ou une traduction francophone : « ecological interface design » rend 23 notices, toutes des applications ultérieures rédigées en anglais, aucune traduction de l'article de 1992 ; « conception écologique d'interface » rend 0 notice. Le libellé français de cette carte est donc un libellé de notre fait, pas un terme attesté en français."
+    },
+    {
+      "id": "SUP-7935ed476e2fbc51",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "metadata-only",
+      "text": "https://api.archives-ouvertes.fr/search/?q=%22ecological+interface+design%22"
+    },
+    {
+      "id": "SUP-de8641bed2c16302",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+    },
+    {
+      "id": "SUP-525c973d7e6f9f4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Pagination IEEE : elle n'est pas établie et je n'en écris aucune. Le fichier ouvert est le post-print déposé sur DTU Orbit, et il ne porte pas les folios de la revue. Ce que le fichier porte, vérifié page par page : une page de couverture de dépôt non foliotée (page 1 du fichier), une page de titre non foliotée (page 2 du fichier), puis une pagination propre au tapuscrit qui commence à 2 sur la page 3 du fichier et court jusqu'à 43 sur la page 44, dernière page. La règle de conversion à l'intérieur du fichier est donc : folio imprimé = numéro de page du fichier moins un. Aucune occurrence des nombres 589 ou 590 dans le corps du document, aucun titre courant de revue, aucune mention IEEE ailleurs que dans la citation APA de la page de couverture du dépôt et dans les références bibliographiques citant d'autres articles. La seule pagination IEEE dont je dispose est l'intervalle 589-606 donné par Crossref et par la couverture du dépôt : c'est un intervalle d'article, il ne permet pas de situer un passage. Le locator de la carte désigne donc la section nommée et le folio du post-print, et personne ne doit convertir ce folio en page IEEE : la correspondance n'a pas été vérifiée et ne peut pas l'être sur ce fichier."
+    },
+    {
+      "id": "SUP-ae3d9a24cba2913b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La version publiée par IEEE est fermée. Je ne l'ai pas ouverte et je n'ai pas cherché à la forcer : aucune requête sur ieeexplore.ieee.org, aucun contournement. Unpaywall ne connaît qu'un seul emplacement ouvert pour ce DOI, celui de DTU Orbit que j'ai lu. Tant que la mise en page de l'éditeur n'a pas été consultée, on ne peut ni confirmer ni infirmer que le texte du post-print est mot pour mot celui de la revue, et la citation retenue est donnée pour ce qu'elle est : verbatim sur le post-print."
+    },
+    {
+      "id": "SUP-ab17e5af2d0068df",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Deux qualifications contradictoires du même dépôt, que je ne tranche pas. La page de couverture du fichier écrit « Document Version: Peer reviewed version », c'est-à-dire la version acceptée après relecture. La notice Unpaywall du même fichier écrit « version: submittedVersion », c'est-à-dire le manuscrit soumis. Dans les deux cas ce n'est pas la mise en page de l'éditeur, ce qui suffit pour la règle de pagination ci-dessus, mais l'écart entre les deux étiquettes est réel et non résolu. Un indice interne penche pour la version acceptée : les remerciements, page 36 du post-print, remercient « the anonymous reviewers for providing thorough and thoughtful critiques of the original manuscript », ce qui suppose une relecture déjà faite au moment où le texte a été fixé. Cet indice n'est pas une preuve."
+    },
+    {
+      "id": "SUP-c1ba3f28a362a8df",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "La couche texte du PDF est visiblement issue d'une reconnaissance de caractères et elle est corrompue par endroits : on lit « E]ID » et « EDD » pour « EID » (p. 6 du post-print), « disl2lay » pour « display » et « ne intent » pour « The intent » (p. 22), « sldlled » pour « skilled » (p. 23), et les folios s'extraient en deux chiffres séparés. Le fichier ne contient aucune image de page, donc aucun contrôle visuel du fac-similé n'est possible et l'extraction est le seul rendu disponible. Le passage retenu ne porte aucun de ces artefacts, ni coupure de mot en fin de ligne, et il a été relu en mode brut et en mode mise en page avec le même résultat. Il est de plus corroboré de l'intérieur par la formulation parallèle du résumé, « not to force processing to a higher level than the demands of the task require », qui est lisible sur deux rendus indépendants, le PDF et la page de notice DTU Orbit en HTML. Je le donne donc pour verbatim sur le document ouvert, en signalant que le document ouvert n'est pas la composition de l'éditeur. Une conséquence à ne pas laisser passer : les trois principes prescriptifs que je reproduis dans definition_de_lauteur portent eux, dans le fichier, ces corruptions, et je les ai redressées pour qu'ils restent lisibles. Le fichier écrit « act directly on the disl2lay. and the structure », « a consistent ome-to-one mapping » et « will sul2l2ort knowledge-based problem solving » ; j'ai rétabli display, one-to-one et support. Ces trois énoncés ne doivent donc pas être repris comme citation affichée sans être relus sur une composition non corrompue, ce que le post-print ne permet pas."
+    },
+    {
+      "id": "SUP-90ff3d57cea6a669",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Ce que ce texte dit de la taxonomie skill-rule-knowledge, à reporter exactement sur la carte voisine qui l'instruit. Il la nomme « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par ses seules références : [79] Rasmussen, J. (1983), IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267, qui est la référence renvoyée au lecteur non familier de la taxonomie et la seule appelée là où le texte la présente ; [77] Rasmussen, J. (1986), Information Processing and Human-Machine Interaction, North Holland ; [75] Rasmussen, J. (1990), chapitre dans Mental Models and Human-Computer Interaction 1. Point décisif et vérifié par recherche dans tout le fichier : le rapport Risø-M-2304 de 1981 n'est cité nulle part, la chaîne de caractères 2304 est absente du document. Les seules références de Rasmussen datées de 1981 dans cette bibliographie sont [86] Rasmussen et Lind, « Coping with complexity », Risø-M-2293, sur un autre objet. Autrement dit : l'article de 1992 s'appuie sur la taxonomie telle qu'elle a été publiée en 1983, pas sur le rapport de 1981. Si les deux cartes se citent l'une l'autre, la dépendance doit s'écrire ainsi et non par le millésime 1981, que ce texte-ci n'atteste pas."
+    },
+    {
+      "id": "SUP-cff51776e3d76d43",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Antériorités du terme non ouvertes. Le rapport Risø-M-2736 de 1988, cosigné Vicente et Rasmussen et intitulé « A theoretical framework for ecological interface design », n'est connu de moi que par la référence [108] de l'article. Je ne l'ai pas trouvé en dépôt ouvert : une recherche web ciblée n'a rendu aucun exemplaire, et le portail orbit.dtu.dk ne m'a rendu que la notice de l'article de 1992. L'article de l'International Journal of Man-Machine Studies de 1989, référence [88], n'est connu que par sa notice Crossref. La conséquence pour la carte : on peut écrire que le terme est du binôme, on ne peut pas écrire qu'il est forgé dans le texte de 1992, et on ne peut pas dater sa première occurrence sur un document lu."
+    },
+    {
+      "id": "SUP-8dab964cad4e71a1",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Choix de la citation. Le passage relevé par la cartographie était la phrase du résumé, « The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control » : elle nomme la filiation mais n'énonce aucun mécanisme, et c'est un résumé. Je lui ai préféré la conclusion déductive de la section IV.E. Cette phrase entière fait 297 caractères en anglais et ne tient pas sous 150 une fois traduite : la coupe porte sur l'amorce « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as », qui nomme le sujet mais n'ajoute rien au mécanisme, et elle est signalée par les points de suspension entre crochets. La phrase complète figure dans le champ definition_de_lauteur. Les trois principes prescriptifs de la section V ont été examinés un par un et écartés, mais pas tous pour la même raison, et il faut le dire précisément. Le premier, celui du niveau habileté, fait 216 caractères en anglais, et le troisième, celui du niveau connaissance, 157 : ni l'un ni l'autre ne tient sous 150, même en traduction resserrée. Le deuxième, celui du niveau règle, fait 124 caractères en anglais et tiendrait sous 150 en français, autour de 145 : celui-là a donc été écarté pour une raison de fond et non de longueur. Pris seul, il donnerait à lire la conception écologique d'interface comme une règle de correspondance entre contraintes et indices, alors que le concept est de tenir les trois niveaux ensemble dans une même interface, ce que la phrase retenue dit et que lui ne dit pas. Si le rédacteur de la carte veut malgré tout un énoncé prescriptif, il devra le prendre dans definition_de_lauteur, le signaler comme un principe sur trois, et tenir compte de la réserve sur les corruptions de la couche texte."
+    },
+    {
+      "id": "SUP-96295e5ca09a1873",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "La citation est une traduction de mon fait, faite dans cette session et jamais publiée. Aucune traduction française publiée de cet article n'a été identifiée, et le terme français lui-même n'est pas attesté : HAL rend zéro notice pour « conception écologique d'interface ». Le texte anglais d'origine est conservé dans original_text avec exactement la même coupe que la traduction, pour que rien de ce que j'ai écrit ne puisse passer pour la parole des auteurs."
+    },
+    {
+      "id": "SUP-9c73f32ddca24325",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Outils. Les outils mcp__documentary__ n'étaient pas exposés dans cette session, donc Zotero est resté inaccessible : c'est un silence d'outil, pas un constat d'absence. OpenAlex et Semantic Scholar, déclarés en échec de quota par la mission, n'ont pas été sollicités. Ont fonctionné et ont servi : le téléchargement direct du PDF sur backend.orbit.dtu.dk (HTTP 200, application/pdf, 220 733 octets, taille recontrôlée à l'octet), Crossref, Unpaywall, HAL, et la page de notice orbit.dtu.dk qui répond 200 après une redirection 301, contrairement au 403 signalé par la cartographie."
+    }
+  ],
+  "estimated_tokens": 18633,
+  "status": "READY"
+}
