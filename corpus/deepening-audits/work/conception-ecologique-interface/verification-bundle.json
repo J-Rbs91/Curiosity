@@ -1,8 +1,8 @@
 {
   "protocol_version": 2,
   "concept_id": "conception-ecologique-interface",
-  "candidate_sha256": "2a1286bf0c59c4a9e4fa3e82c5c0f8dd39d39af599445000878c33373479de42",
-  "map_sha256": "c9007670b5e59080fa7de28c1decf3261dfa883b3e0eaf1d00ce1621e8fde573",
+  "candidate_sha256": "b5fedc432f21db4e5148f31c3afdc89c7e2bae41fad8533b031a8163c516a899",
+  "map_sha256": "2ae4bd0e9bbf4892ee0a91878642776ebc332c7aad23bc41358a5e9112edb209",
   "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
   "signal_lexique": {
     "cartes_mesurees": 136,
@@ -12,27 +12,6 @@
   "claims": [
     {
       "claim_id": "C001",
-      "locator": "lead[0]",
-      "claim_text": "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes.",
-      "supports": [],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C002",
-      "locator": "lead[0]",
-      "claim_text": "Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là.",
-      "supports": [],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C003",
-      "locator": "lead[0]",
-      "claim_text": "Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là.",
-      "supports": [],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C004",
       "locator": "lead[0]",
       "claim_text": "Trois façons d’agir dans la même journée, sur la même machine.",
       "supports": [
@@ -47,7 +26,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C002",
       "locator": "lead[1]",
       "claim_text": "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera.",
       "supports": [
@@ -69,54 +48,68 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C003",
       "locator": "lead[1]",
-      "claim_text": "S’il présente tout sous forme de chiffres à interpréter, il oblige à réfléchir même lorsque la situation ne le demande pas, et ce qui aurait pu se faire d’un geste devient lent et fatigant.",
+      "claim_text": "S’il présente tout sous forme de chiffres à interpréter, ce qui aurait pu se faire d’un geste tend à devenir plus lent et plus coûteux en effort.",
       "supports": [
+        {
+          "id": "SUP-de8641bed2c16302",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
         {
           "id": "SUP-b03453f50cf524c9",
           "origin": "validated",
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "Les deux prémisses qui précèdent immédiatement la phrase citée, dans le même paragraphe : les niveaux inférieurs de contrôle cognitif s'exécutent plus vite, plus efficacement et avec moins d'effort que les niveaux supérieurs ; et les gens préfèrent nettement accomplir les tâches en s'appuyant sur les niveaux inférieurs, même quand l'interface n'est pas conçue pour cela."
-        },
-        {
-          "id": "SUP-de8641bed2c16302",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C004",
       "locator": "lead[1]",
       "claim_text": "S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu.",
       "supports": [
         {
-          "id": "SUP-49dd60be4950876d",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements non familiers et non anticipés, pour lesquels l'opérateur ne dispose d'aucune solution intégrée et doit en improviser une."
-        },
-        {
           "id": "SUP-de8641bed2c16302",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-273495f4f0bd6dff",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes : la hiérarchie d'abstraction, comme forme psychologiquement pertinente de représentation des contraintes d'un domaine de travail, et la taxonomie skill-rule-knowledge, comme description des mécanismes de traitement de l'information."
+        },
+        {
+          "id": "SUP-49dd60be4950876d",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements non familiers et non anticipés, pour lesquels l'opérateur ne dispose d'aucune solution intégrée et doit en improviser une."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "claim_text": "C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite.",
       "supports": [
+        {
+          "id": "SUP-de8641bed2c16302",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
         {
           "id": "SUP-49dd60be4950876d",
           "origin": "validated",
@@ -125,11 +118,11 @@
           "text": "Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements non familiers et non anticipés, pour lesquels l'opérateur ne dispose d'aucune solution intégrée et doit en improviser une."
         },
         {
-          "id": "SUP-de8641bed2c16302",
+          "id": "SUP-6955e3cfdf0ba50d",
           "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
+          "path": "$.attribution.note",
           "access": "n/a",
-          "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+          "text": "Le texte est signé de deux auteurs, dans cet ordre : « Kim J. Vicente and Jens Rasmussen », ligne de signature imprimée sous le titre, page 2 du fichier ouvert (page de titre du post-print, non foliotée). La note de bas de page appelée sur cette même ligne donne les deux affiliations au moment de la rédaction : Vicente au Center for Human-Machine Systems Research, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta ; Rasmussen à la Technical University of Denmark et au Cognitive Systems Group, Risø National Laboratory, Roskilde. La notice Crossref du DOI 10.1109/21.156574 donne les mêmes deux noms dans le même ordre (K.J. Vicente, puis J. Rasmussen) et la page de dépôt DTU Orbit également. Le millésime 1992 est celui imprimé sur la page de couverture du dépôt (« Publication date: 1992 ») et celui du champ issued de Crossref : je ne l'ai pas relevé sur une signature datée à l'intérieur du texte, qui n'en porte pas. Le sigle EID est bien posé par les deux auteurs comme leur : ils écrivent au résumé « The framework, called ecological interface design (EID), is proposed » puis, en introduction, « This paper describes a novel theoretical framework », et ils justifient eux-mêmes le choix de l'adjectif à la page 6 du post-print : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" ». Un point que le repérage n'avait pas vu et qui interdit de dire que le terme est forgé dans ce texte-ci : l'expression existe déjà, quatre et trois ans plus tôt, dans deux textes cosignés du même binôme et cités par cet article même. Référence [108] de sa bibliographie : K. J. Vicente et J. Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, Department of Information Technology, Risø National Laboratory, Roskilde, 1988. Référence [88] : J. Rasmussen et K. J. Vicente, « Coping with human error through system design: Implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, p. 517-534 (l'année manque dans la bibliographie de l'article, la notice Crossref du DOI 10.1016/0020-7373(89)90014-x la donne à novembre 1989 et confirme les deux mêmes signatures, Rasmussen puis Vicente). Ces deux antériorités sont relevées dans la bibliographie de l'article de 1992 et dans Crossref, pas sur les documents eux-mêmes, que je n'ai pas ouverts. L'article de 1992 dit lui-même ce qu'il revendique et ce qu'il ne revendique pas, page 22 du post-print : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 111] and especially [32, 33]), the specific theoretical formulation presented here is a new one. » Ce qui est donc à porter au crédit des deux auteurs par cette carte, c'est la formulation théorique de 1992, cosignée, et le terme qui est le leur depuis 1988, cosigné lui aussi. COAUTHORED, jamais Vicente seul, jamais Rasmussen seul."
         }
       ],
       "uncited_support_signal": [
@@ -144,7 +137,7 @@
       ]
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C006",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Ces trois régimes portent un nom dans les travaux de Jens Rasmussen : le comportement fondé sur l’habileté, celui qui est fondé sur des règles, et celui qui est fondé sur des connaissances.",
       "supports": [
@@ -161,13 +154,6 @@
           "path": "$.reserves[4]",
           "access": "n/a",
           "text": "Ce que ce texte dit de la taxonomie skill-rule-knowledge, à reporter exactement sur la carte voisine qui l'instruit. Il la nomme « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par ses seules références : [79] Rasmussen, J. (1983), IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267, qui est la référence renvoyée au lecteur non familier de la taxonomie et la seule appelée là où le texte la présente ; [77] Rasmussen, J. (1986), Information Processing and Human-Machine Interaction, North Holland ; [75] Rasmussen, J. (1990), chapitre dans Mental Models and Human-Computer Interaction 1. Point décisif et vérifié par recherche dans tout le fichier : le rapport Risø-M-2304 de 1981 n'est cité nulle part, la chaîne de caractères 2304 est absente du document. Les seules références de Rasmussen datées de 1981 dans cette bibliographie sont [86] Rasmussen et Lind, « Coping with complexity », Risø-M-2293, sur un autre objet. Autrement dit : l'article de 1992 s'appuie sur la taxonomie telle qu'elle a été publiée en 1983, pas sur le rapport de 1981. Si les deux cartes se citent l'une l'autre, la dépendance doit s'écrire ainsi et non par le millésime 1981, que ce texte-ci n'atteste pas."
-        },
-        {
-          "id": "SUP-ddeebe0043848ff6",
-          "origin": "validated",
-          "path": "$.notes[10]",
-          "access": "n/a",
-          "text": "Point à reporter sur la carte voisine : l'article de 1992 nomme la taxonomie « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par sa seule référence de 1983. Si les deux cartes se citent, la dépendance s'écrit ainsi, jamais par le millésime 1981."
         }
       ],
       "uncited_support_signal": [
@@ -190,7 +176,7 @@
       ]
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Le trajet machinal relève du premier, le voyant reconnu du deuxième, le bruit inconnu du troisième.",
       "supports": [
@@ -205,7 +191,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Ce sont trois niveaux de contrôle cognitif, que l’on peut voir comme un système de commande hiérarchique : les connaissances en haut, les règles au milieu, l’habileté en bas.",
       "supports": [
@@ -237,7 +223,7 @@
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Ce qui décide du niveau engagé, selon cette taxonomie, c’est la façon dont l’information est interprétée.",
       "supports": [
@@ -252,7 +238,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Elle peut l’être de trois manières qui s’excluent l’une l’autre, comme signal, comme signe ou comme symbole, et chacune active respectivement l’habileté, les règles ou les connaissances.",
       "supports": [
@@ -284,9 +270,9 @@
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "un même relevé peut être une grandeur sur laquelle la main s’ajuste, un indice qui déclenche une procédure, ou un élément à intégrer dans un raisonnement sur l’état de l’installation.",
+      "claim_text": "On peut se le représenter ainsi : un même relevé peut être une grandeur sur laquelle la main s’ajuste, un indice qui déclenche une procédure, ou un élément à intégrer dans un raisonnement sur l’état de l’installation.",
       "supports": [
         {
           "id": "SUP-de8641bed2c16302",
@@ -299,7 +285,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Si c’est l’interprétation qui décide, la manière dont l’information est présentée n’est pas neutre : c’est par là qu’une interface peut peser sur le niveau engagé.",
       "supports": [
@@ -314,7 +300,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "Cette taxonomie, l’article de 1992 la prend comme point de départ.",
       "supports": [
@@ -336,7 +322,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "Vicente et Rasmussen disent l’adopter comme axiome, avec une seconde construction, la hiérarchie d’abstraction, qu’ils proposent comme une forme psychologiquement pertinente de représentation des contraintes d’un domaine de travail, qui permette aux opérateurs de faire face aux événements imprévus.",
       "supports": [
@@ -358,7 +344,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "De ces deux axiomes, ils entendent déduire des conséquences pour la conception.",
       "supports": [
@@ -373,7 +359,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[2]",
       "claim_text": "La taxonomie, elle, avait été publiée par Rasmussen en 1983.",
       "supports": [
@@ -392,18 +378,18 @@
           "text": "Ce que ce texte dit de la taxonomie skill-rule-knowledge, à reporter exactement sur la carte voisine qui l'instruit. Il la nomme « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par ses seules références : [79] Rasmussen, J. (1983), IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267, qui est la référence renvoyée au lecteur non familier de la taxonomie et la seule appelée là où le texte la présente ; [77] Rasmussen, J. (1986), Information Processing and Human-Machine Interaction, North Holland ; [75] Rasmussen, J. (1990), chapitre dans Mental Models and Human-Computer Interaction 1. Point décisif et vérifié par recherche dans tout le fichier : le rapport Risø-M-2304 de 1981 n'est cité nulle part, la chaîne de caractères 2304 est absente du document. Les seules références de Rasmussen datées de 1981 dans cette bibliographie sont [86] Rasmussen et Lind, « Coping with complexity », Risø-M-2293, sur un autre objet. Autrement dit : l'article de 1992 s'appuie sur la taxonomie telle qu'elle a été publiée en 1983, pas sur le rapport de 1981. Si les deux cartes se citent l'une l'autre, la dépendance doit s'écrire ainsi et non par le millésime 1981, que ce texte-ci n'atteste pas."
         },
         {
-          "id": "SUP-ddeebe0043848ff6",
-          "origin": "validated",
-          "path": "$.notes[10]",
-          "access": "n/a",
-          "text": "Point à reporter sur la carte voisine : l'article de 1992 nomme la taxonomie « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par sa seule référence de 1983. Si les deux cartes se citent, la dépendance s'écrit ainsi, jamais par le millésime 1981."
-        },
-        {
           "id": "SUP-07022ccd72043532",
           "origin": "validated",
           "path": "$.review.notes[3]",
           "access": "n/a",
           "text": "ATTRIBUTION — vérification du renvoi à la taxonomie SRK : la section IV s'ouvre sur « taxonomy [79] has become a widely accepted framework », et [79] est bien « J. Rasmussen, \"Skills rules, knowledge: Signals, signs, and symbols…\", IEEE Trans. SMC-13, pp. 257-267, 1983 ». J'ai passé toute la bibliographie au crible des millésimes 1981 (grep sur « 198 ?1 ») : les seules entrées de 1981 sont Hollnagel [39], Norman [67], Rasmussen ET Lind [86] (Riso-M-2293, « Coping with complexity »), Simon [98] et l'USNRC. Aucun rapport de 1981 signé Rasmussen seul n'est cité, ce qui confirme la mise au point de la note."
+        },
+        {
+          "id": "SUP-ddeebe0043848ff6",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Point à reporter sur la carte voisine : l'article de 1992 nomme la taxonomie « the skills, rules, knowledge (SRK) taxonomy » et « Rasmussen's taxonomy of cognitive control », et il la date par sa seule référence de 1983. Si les deux cartes se citent, la dépendance s'écrit ainsi, jamais par le millésime 1981."
         },
         {
           "id": "SUP-07ad40f5466e8990",
@@ -416,7 +402,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Dans le corps de l’article, le but du cadre arrive comme la conclusion de deux constats, énoncés dans le même paragraphe.",
       "supports": [
@@ -438,9 +424,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Le premier : les niveaux inférieurs de contrôle cognitif s’exécutent plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs.",
+      "claim_text": "Le premier : les niveaux inférieurs de contrôle cognitif tendent à s’exécuter plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs.",
       "supports": [
         {
           "id": "SUP-de8641bed2c16302",
@@ -460,7 +446,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, même quand l’interface n’est pas conçue pour cela.",
       "supports": [
@@ -482,27 +468,13 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "D’où le but général que les auteurs assignent à la conception d’interface : « […] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l’exige la tâche, tout en apportant le soutien approprié aux trois niveaux. »",
       "supports": [
         {
-          "id": "SUP-de8641bed2c16302",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
-        },
-        {
           "id": "SUP-8fe22997ace6d596",
           "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
-        },
-        {
-          "id": "SUP-38d7db562a3cc9a1",
-          "origin": "evidence:lecture.json",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
@@ -515,11 +487,25 @@
           "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
         },
         {
+          "id": "SUP-38d7db562a3cc9a1",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
+        },
+        {
           "id": "SUP-4adf4f2c4a37bad6",
           "origin": "evidence:lecture.json",
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
+        },
+        {
+          "id": "SUP-de8641bed2c16302",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
         },
         {
           "id": "SUP-69b537010a66c7c5",
@@ -539,7 +525,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Ce but a deux volets, et le résumé de l’article les énonce comme tels : d’abord ne pas forcer le traitement à un niveau plus élevé que la tâche ne l’exige, ensuite soutenir chacun des trois niveaux.",
       "supports": [
@@ -556,13 +542,6 @@
           "path": "$.review.notes[8]",
           "access": "n/a",
           "text": "PROSE — l'accroche « Une interface peut-elle laisser agir par réflexe sans interdire de raisonner ? » et le résumé sont adossés à l'énoncé du but que le texte formule deux fois : au résumé (folio fichier 2) « The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control », et en IV.E dans les termes cités. Contrôle dans les deux sens : le résumé ne durcit rien (il conserve le double volant, ne transforme pas « ne pas forcer » en « interdire ») et ne rétrécit pas le concept au seul niveau réflexe, puisqu'il porte explicitement le soutien « à chacun des trois niveaux ». Le point d'interrogation de l'accroche n'affirme rien que la source ne porte."
-        },
-        {
-          "id": "SUP-6d72e523de3d0268",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Concevoir l'interface de façon à ne pas forcer le contrôle cognitif à un niveau plus élevé que la tâche ne l'exige, tout en soutenant chacun des trois niveaux."
         }
       ],
       "uncited_support_signal": [
@@ -577,7 +556,7 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Le premier tire la leçon des deux constats.",
       "supports": [
@@ -599,9 +578,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Puisque les niveaux bas coûtent moins et que les gens y recourent même sans appui, cela implique qu’une interface qui oblige à raisonner quand la tâche n’en demande pas tant impose un effort dont on aurait pu se passer.",
+      "claim_text": "Puisque les niveaux bas tendent à coûter moins et que les gens y recourent même sans appui, une interface qui oblige à raisonner quand la tâche n’en demande pas tant risque d’imposer un effort dont on aurait pu se passer.",
       "supports": [
         {
           "id": "SUP-de8641bed2c16302",
@@ -621,7 +600,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C024",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "La formule dit « ne pas forcer », et non « interdire ».",
       "supports": [
@@ -664,44 +643,23 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Le second volet empêche de lire le premier comme un éloge du réflexe : le soutien est dû aux trois niveaux, celui des connaissances compris.",
       "supports": [
-        {
-          "id": "SUP-8fe22997ace6d596",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
-        },
-        {
-          "id": "SUP-38d7db562a3cc9a1",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
-        },
-        {
-          "id": "SUP-4bea364a82466170",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
-        },
-        {
-          "id": "SUP-4adf4f2c4a37bad6",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
-        },
         {
           "id": "SUP-de8641bed2c16302",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-8fe22997ace6d596",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
         },
         {
           "id": "SUP-1e095db7e6b750d8",
@@ -723,9 +681,9 @@
       ]
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C026",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "L’exemple le plus concret de l’article vient de l’accident de Three Mile Island.",
+      "claim_text": "L’exemple le plus concret de l’article est le piège procédural de Three Mile Island.",
       "supports": [
         {
           "id": "SUP-de8641bed2c16302",
@@ -745,7 +703,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C027",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Les opérateurs avaient pris le niveau du pressuriseur comme indice de l’inventaire primaire.",
       "supports": [
@@ -767,7 +725,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Cet indice n’est valide qu’à l’intérieur de certaines conditions aux limites, et ce qui manquait aux opérateurs, écrivent les auteurs, c’est d’en avoir conscience.",
       "supports": [
@@ -789,7 +747,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "On peut y reconnaître le niveau des règles pris en défaut : un indice reconnu appelle une conduite apprise, et la reconnaissance elle-même ne dit pas si les conditions où cette conduite vaut sont réunies.",
       "supports": [
@@ -811,7 +769,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "La conséquence que les auteurs en tirent porte sur l’interface : elle aurait dû fournir aux opérateurs une information perceptive qui reflète les contraintes fondamentales gouvernant le procédé.",
       "supports": [
@@ -826,7 +784,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Le cadre se décline en trois principes, un par niveau, et c’est là son contenu opératoire.",
       "supports": [
@@ -843,12 +801,19 @@
           "path": "$.notes[3]",
           "access": "n/a",
           "text": "Les trois principes prescriptifs de la section V, un par niveau, sont le contenu opératoire du concept mais n'ont pas été retenus en citation : le premier et le troisième dépassent le plafond, et le deuxième, qui tiendrait, a été écarté pour une raison de fond, car pris seul il réduirait le cadre à une règle de correspondance entre contraintes et indices alors que le concept est de tenir les trois niveaux ensemble."
+        },
+        {
+          "id": "SUP-8dab964cad4e71a1",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[6]",
+          "access": "n/a",
+          "text": "Choix de la citation. Le passage relevé par la cartographie était la phrase du résumé, « The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control » : elle nomme la filiation mais n'énonce aucun mécanisme, et c'est un résumé. Je lui ai préféré la conclusion déductive de la section IV.E. Cette phrase entière fait 297 caractères en anglais et ne tient pas sous 150 une fois traduite : la coupe porte sur l'amorce « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as », qui nomme le sujet mais n'ajoute rien au mécanisme, et elle est signalée par les points de suspension entre crochets. La phrase complète figure dans le champ definition_de_lauteur. Les trois principes prescriptifs de la section V ont été examinés un par un et écartés, mais pas tous pour la même raison, et il faut le dire précisément. Le premier, celui du niveau habileté, fait 216 caractères en anglais, et le troisième, celui du niveau connaissance, 157 : ni l'un ni l'autre ne tient sous 150, même en traduction resserrée. Le deuxième, celui du niveau règle, fait 124 caractères en anglais et tiendrait sous 150 en français, autour de 145 : celui-là a donc été écarté pour une raison de fond et non de longueur. Pris seul, il donnerait à lire la conception écologique d'interface comme une règle de correspondance entre contraintes et indices, alors que le concept est de tenir les trois niveaux ensemble dans une même interface, ce que la phrase retenue dit et que lui ne dit pas. Si le rédacteur de la carte veut malgré tout un énoncé prescriptif, il devra le prendre dans definition_de_lauteur, le signaler comme un principe sur trois, et tenir compte de la réserve sur les corruptions de la couche texte."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Pour le niveau de l’habileté, afin de soutenir l’interaction par des signaux dans le temps et l’espace, l’opérateur doit pouvoir agir directement sur l’affichage, et la structure de l’information affichée doit correspondre à celle de ses mouvements, du tout aux parties.",
       "supports": [
@@ -858,6 +823,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-c1ba3f28a362a8df",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[3]",
+          "access": "n/a",
+          "text": "La couche texte du PDF est visiblement issue d'une reconnaissance de caractères et elle est corrompue par endroits : on lit « E]ID » et « EDD » pour « EID » (p. 6 du post-print), « disl2lay » pour « display » et « ne intent » pour « The intent » (p. 22), « sldlled » pour « skilled » (p. 23), et les folios s'extraient en deux chiffres séparés. Le fichier ne contient aucune image de page, donc aucun contrôle visuel du fac-similé n'est possible et l'extraction est le seul rendu disponible. Le passage retenu ne porte aucun de ces artefacts, ni coupure de mot en fin de ligne, et il a été relu en mode brut et en mode mise en page avec le même résultat. Il est de plus corroboré de l'intérieur par la formulation parallèle du résumé, « not to force processing to a higher level than the demands of the task require », qui est lisible sur deux rendus indépendants, le PDF et la page de notice DTU Orbit en HTML. Je le donne donc pour verbatim sur le document ouvert, en signalant que le document ouvert n'est pas la composition de l'éditeur. Une conséquence à ne pas laisser passer : les trois principes prescriptifs que je reproduis dans definition_de_lauteur portent eux, dans le fichier, ces corruptions, et je les ai redressées pour qu'ils restent lisibles. Le fichier écrit « act directly on the disl2lay. and the structure », « a consistent ome-to-one mapping » et « will sul2l2ort knowledge-based problem solving » ; j'ai rétabli display, one-to-one et support. Ces trois énoncés ne doivent donc pas être repris comme citation affichée sans être relus sur une composition non corrompue, ce que le post-print ne permet pas."
         }
       ],
       "uncited_support_signal": [
@@ -872,7 +844,7 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Pour le niveau des règles, l’interface doit établir une correspondance constante, terme à terme, entre les contraintes du domaine de travail et les indices, ou signes, qu’elle donne à voir.",
       "supports": [
@@ -882,12 +854,19 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-c1ba3f28a362a8df",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[3]",
+          "access": "n/a",
+          "text": "La couche texte du PDF est visiblement issue d'une reconnaissance de caractères et elle est corrompue par endroits : on lit « E]ID » et « EDD » pour « EID » (p. 6 du post-print), « disl2lay » pour « display » et « ne intent » pour « The intent » (p. 22), « sldlled » pour « skilled » (p. 23), et les folios s'extraient en deux chiffres séparés. Le fichier ne contient aucune image de page, donc aucun contrôle visuel du fac-similé n'est possible et l'extraction est le seul rendu disponible. Le passage retenu ne porte aucun de ces artefacts, ni coupure de mot en fin de ligne, et il a été relu en mode brut et en mode mise en page avec le même résultat. Il est de plus corroboré de l'intérieur par la formulation parallèle du résumé, « not to force processing to a higher level than the demands of the task require », qui est lisible sur deux rendus indépendants, le PDF et la page de notice DTU Orbit en HTML. Je le donne donc pour verbatim sur le document ouvert, en signalant que le document ouvert n'est pas la composition de l'éditeur. Une conséquence à ne pas laisser passer : les trois principes prescriptifs que je reproduis dans definition_de_lauteur portent eux, dans le fichier, ces corruptions, et je les ai redressées pour qu'ils restent lisibles. Le fichier écrit « act directly on the disl2lay. and the structure », « a consistent ome-to-one mapping » et « will sul2l2ort knowledge-based problem solving » ; j'ai rétabli display, one-to-one et support. Ces trois énoncés ne doivent donc pas être repris comme citation affichée sans être relus sur une composition non corrompue, ce que le post-print ne permet pas."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C034",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Pour le niveau des connaissances, le domaine de travail doit être représenté sous la forme d’une hiérarchie d’abstraction, qui serve de modèle mental extérieur à la résolution de problèmes.",
       "supports": [
@@ -897,6 +876,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-c1ba3f28a362a8df",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[3]",
+          "access": "n/a",
+          "text": "La couche texte du PDF est visiblement issue d'une reconnaissance de caractères et elle est corrompue par endroits : on lit « E]ID » et « EDD » pour « EID » (p. 6 du post-print), « disl2lay » pour « display » et « ne intent » pour « The intent » (p. 22), « sldlled » pour « skilled » (p. 23), et les folios s'extraient en deux chiffres séparés. Le fichier ne contient aucune image de page, donc aucun contrôle visuel du fac-similé n'est possible et l'extraction est le seul rendu disponible. Le passage retenu ne porte aucun de ces artefacts, ni coupure de mot en fin de ligne, et il a été relu en mode brut et en mode mise en page avec le même résultat. Il est de plus corroboré de l'intérieur par la formulation parallèle du résumé, « not to force processing to a higher level than the demands of the task require », qui est lisible sur deux rendus indépendants, le PDF et la page de notice DTU Orbit en HTML. Je le donne donc pour verbatim sur le document ouvert, en signalant que le document ouvert n'est pas la composition de l'éditeur. Une conséquence à ne pas laisser passer : les trois principes prescriptifs que je reproduis dans definition_de_lauteur portent eux, dans le fichier, ces corruptions, et je les ai redressées pour qu'ils restent lisibles. Le fichier écrit « act directly on the disl2lay. and the structure », « a consistent ome-to-one mapping » et « will sul2l2ort knowledge-based problem solving » ; j'ai rétabli display, one-to-one et support. Ces trois énoncés ne doivent donc pas être repris comme citation affichée sans être relus sur une composition non corrompue, ce que le post-print ne permet pas."
         }
       ],
       "uncited_support_signal": [
@@ -911,9 +897,9 @@
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "le fonctionnement que l’opérateur aurait à reconstituer de tête, l’écran en porte la structure.",
+      "claim_text": "On peut comprendre cette dernière expression ainsi : le fonctionnement que l’opérateur aurait à reconstituer de tête, l’écran en porte la structure.",
       "supports": [
         {
           "id": "SUP-de8641bed2c16302",
@@ -926,7 +912,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C036",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Pris isolément, le deuxième de ces principes se laisserait facilement prendre pour le cadre entier, et il ne l’est pas.",
       "supports": [
@@ -948,7 +934,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "La correspondance entre contraintes et indices sert la situation reconnue ; elle ne dit rien de ce qu’il faut fournir au geste, ni au raisonnement lorsque plus aucune règle ne s’applique.",
       "supports": [
@@ -958,6 +944,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-fbf61ff21ef6ceac",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "Les trois principes prescriptifs de la section V, un par niveau, sont le contenu opératoire du concept mais n'ont pas été retenus en citation : le premier et le troisième dépassent le plafond, et le deuxième, qui tiendrait, a été écarté pour une raison de fond, car pris seul il réduirait le cadre à une règle de correspondance entre contraintes et indices alors que le concept est de tenir les trois niveaux ensemble."
         },
         {
           "id": "SUP-8dab964cad4e71a1",
@@ -970,7 +963,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C038",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "C’est le second volet du but qui tient les trois ensemble : les trois exigences portent sur une même interface.",
       "supports": [
@@ -989,31 +982,24 @@
           "text": "Les trois principes prescriptifs de la section V, un par niveau, sont le contenu opératoire du concept mais n'ont pas été retenus en citation : le premier et le troisième dépassent le plafond, et le deuxième, qui tiendrait, a été écarté pour une raison de fond, car pris seul il réduirait le cadre à une règle de correspondance entre contraintes et indices alors que le concept est de tenir les trois niveaux ensemble."
         },
         {
-          "id": "SUP-8fe22997ace6d596",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
-        },
-        {
-          "id": "SUP-4bea364a82466170",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "[…] not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels."
-        },
-        {
           "id": "SUP-de8641bed2c16302",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Les auteurs annoncent d'abord le cadre et sa dépendance, au résumé (page de titre du post-print) : « A theoretical framework for designing interfaces for complex human-machine systems is proposed. The framework, called ecological interface design (EID), is based on the skills, rules, knowledge taxonomy of cognitive control. The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels of cognitive control. » Le corps du texte pose le même but, mais au terme d'une déduction, et c'est la formulation la plus complète du mécanisme. Phrase entière, page 21 du post-print, fin de la section IV.E « Implications for Interface Design », le paragraphe se clôt dessus : « Therefore, the general goal that a framework for interface design should strive to achieve is to design interfaces in such a way as not to force cognitive control to a higher level than the demands of the task require, while at the same time providing the appropriate support for all three levels. » Les deux prémisses qui la précèdent immédiatement, dans le même paragraphe : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels » et « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior ». Le cadre repose sur deux constructions théoriques que les auteurs disent adopter comme axiomes, page 6 : « First, the abstraction hierarchy [77, 78, 80] is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events. Second, the skills, rules, knowledge (SRK) taxonomy [75, 77, 79] is proposed as a useful framework for describing the various mechanisms that people have for processing information. The goal is to adopt these two theoretical constructs as axioms and then to use them to derive a number of implications for interface design. » Le problème que le cadre prétend traiter est nommé dès l'introduction : les événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus et pour lesquels l'opérateur ne dispose d'aucune solution intégrée, « operators cannot rely on a built in solution but must improvise one themselves » (p. 2). Le cadre se décline en trois principes prescriptifs, un par niveau de contrôle cognitif, énoncés en italique dans la section V (p. 22, 23 et 25 du post-print), et je les donne ici avec leurs corruptions de reconnaissance de caractères redressées, corrections signalées en réserve, puisqu'ils sont le contenu opératoire du concept : « 1. SBB - To support interaction via time-space signals, the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements. » ; « 2. RBB - Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface. » ; « 3. KBB - Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving. » Ce que les auteurs disent de la taxonomie SRK, dans leurs termes, et qui intéresse la carte voisine : « In the systems reliability and cognitive engineering communities, the SRK taxonomy [79] has become a widely accepted framework for describing the various mechanisms that people have for processing information » (p. 13 du post-print), la référence [79] étant Rasmussen, J. (1983), « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », IEEE Transactions on Systems, Man, and Cybernetics, SMC-13, p. 257-267. En note 3 de la même page : « Rasmussen's taxonomy of cognitive control can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level. Those not familiar with the taxonomy are referred to [79] for a more detailed description. » Le contenu de la taxonomie est résumé ainsi (p. 13 et 14) : « The basic tenets of the taxonomy are that information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- and that the way in which information is interpreted determines which of the three levels of cognitive control is activated -- skill-based behavior (SBB), rule-based behavior (RBB), and knowledge-based behavior (KBB), respectively. » Enfin, l'exemple de mécanisme le plus concret du texte, le piège procédural de Three Mile Island (p. 24) : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire, « The problem is that the operators were not aware of the boundary conditions under which the cue was valid », et l'interface aurait dû leur donner « perceptual information that reflects the fundamental constraints governing the process »."
+        },
+        {
+          "id": "SUP-8fe22997ace6d596",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l'exige la tâche, tout en apportant le soutien approprié aux trois niveaux."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C039",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Les auteurs le rattachent à l’environnement de travail : la dualité entre l’opérateur et cet environnement est, écrivent-ils, l’une des raisons pour lesquelles ils ont appelé ce cadre « écologique ».",
       "supports": [
@@ -1028,23 +1014,23 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C040",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "L’expression elle-même est antérieure à l’article de 1992.",
       "supports": [
-        {
-          "id": "SUP-07ad40f5466e8990",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
-        },
         {
           "id": "SUP-6955e3cfdf0ba50d",
           "origin": "evidence:lecture.json",
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Le texte est signé de deux auteurs, dans cet ordre : « Kim J. Vicente and Jens Rasmussen », ligne de signature imprimée sous le titre, page 2 du fichier ouvert (page de titre du post-print, non foliotée). La note de bas de page appelée sur cette même ligne donne les deux affiliations au moment de la rédaction : Vicente au Center for Human-Machine Systems Research, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta ; Rasmussen à la Technical University of Denmark et au Cognitive Systems Group, Risø National Laboratory, Roskilde. La notice Crossref du DOI 10.1109/21.156574 donne les mêmes deux noms dans le même ordre (K.J. Vicente, puis J. Rasmussen) et la page de dépôt DTU Orbit également. Le millésime 1992 est celui imprimé sur la page de couverture du dépôt (« Publication date: 1992 ») et celui du champ issued de Crossref : je ne l'ai pas relevé sur une signature datée à l'intérieur du texte, qui n'en porte pas. Le sigle EID est bien posé par les deux auteurs comme leur : ils écrivent au résumé « The framework, called ecological interface design (EID), is proposed » puis, en introduction, « This paper describes a novel theoretical framework », et ils justifient eux-mêmes le choix de l'adjectif à la page 6 du post-print : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" ». Un point que le repérage n'avait pas vu et qui interdit de dire que le terme est forgé dans ce texte-ci : l'expression existe déjà, quatre et trois ans plus tôt, dans deux textes cosignés du même binôme et cités par cet article même. Référence [108] de sa bibliographie : K. J. Vicente et J. Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, Department of Information Technology, Risø National Laboratory, Roskilde, 1988. Référence [88] : J. Rasmussen et K. J. Vicente, « Coping with human error through system design: Implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, p. 517-534 (l'année manque dans la bibliographie de l'article, la notice Crossref du DOI 10.1016/0020-7373(89)90014-x la donne à novembre 1989 et confirme les deux mêmes signatures, Rasmussen puis Vicente). Ces deux antériorités sont relevées dans la bibliographie de l'article de 1992 et dans Crossref, pas sur les documents eux-mêmes, que je n'ai pas ouverts. L'article de 1992 dit lui-même ce qu'il revendique et ce qu'il ne revendique pas, page 22 du post-print : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 111] and especially [32, 33]), the specific theoretical formulation presented here is a new one. » Ce qui est donc à porter au crédit des deux auteurs par cette carte, c'est la formulation théorique de 1992, cosignée, et le terme qui est le leur depuis 1988, cosigné lui aussi. COAUTHORED, jamais Vicente seul, jamais Rasmussen seul."
+        },
+        {
+          "id": "SUP-07ad40f5466e8990",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
         },
         {
           "id": "SUP-724bfd5a50430a02",
@@ -1054,6 +1040,13 @@
           "text": "ATTRIBUTION — la carte ne prête pas aux auteurs la paternité du terme, et elle a raison de ne pas le faire : la bibliographie du texte porte [108] « K. J. Vicente and J. Rasmussen, \"A theoretical framework for ecological interface design,\" Riso-M-2736, […] 1988 » (folio fichier 43) et [88] « J. Rasmussen and K. J. Vicente, \"Coping with human error through system design: Implications for ecological interface design,\" IJMMS, vol. 31, pp. 517-534 » (folio fichier 42), tous deux cosignés et antérieurs. Le corps du texte dit lui-même « The EID framework was first proposed in [88] » (section I.C). La revendication de nouveauté est bien restreinte à la formulation théorique : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 1 1 1] and especially [32, 33]), the specific theoretical formulation presented here is a new one » — lu verbatim au folio fichier 23, soit p. 22 du post-print."
         },
         {
+          "id": "SUP-cff51776e3d76d43",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[5]",
+          "access": "n/a",
+          "text": "Antériorités du terme non ouvertes. Le rapport Risø-M-2736 de 1988, cosigné Vicente et Rasmussen et intitulé « A theoretical framework for ecological interface design », n'est connu de moi que par la référence [108] de l'article. Je ne l'ai pas trouvé en dépôt ouvert : une recherche web ciblée n'a rendu aucun exemplaire, et le portail orbit.dtu.dk ne m'a rendu que la notice de l'article de 1992. L'article de l'International Journal of Man-Machine Studies de 1989, référence [88], n'est connu que par sa notice Crossref. La conséquence pour la carte : on peut écrire que le terme est du binôme, on ne peut pas écrire qu'il est forgé dans le texte de 1992, et on ne peut pas dater sa première occurrence sur un document lu."
+        },
+        {
           "id": "SUP-af06b16029d7f4df",
           "origin": "validated",
           "path": "$.notes[9]",
@@ -1061,33 +1054,33 @@
           "text": "Les deux antériorités du terme n'ont pas été ouvertes : le rapport Risø-M-2736 de 1988, introuvable en dépôt ouvert, et l'article de 1989, connu par sa seule notice. On peut donc écrire que le terme est du binôme, pas qu'il est forgé en 1992, ni dater sa première occurrence sur un document lu."
         },
         {
-          "id": "SUP-cff51776e3d76d43",
+          "id": "SUP-fc78e8849a7af17d",
           "origin": "evidence:lecture.json",
-          "path": "$.reserves[5]",
-          "access": "n/a",
-          "text": "Antériorités du terme non ouvertes. Le rapport Risø-M-2736 de 1988, cosigné Vicente et Rasmussen et intitulé « A theoretical framework for ecological interface design », n'est connu de moi que par la référence [108] de l'article. Je ne l'ai pas trouvé en dépôt ouvert : une recherche web ciblée n'a rendu aucun exemplaire, et le portail orbit.dtu.dk ne m'a rendu que la notice de l'article de 1992. L'article de l'International Journal of Man-Machine Studies de 1989, référence [88], n'est connu que par sa notice Crossref. La conséquence pour la carte : on peut écrire que le terme est du binôme, on ne peut pas écrire qu'il est forgé dans le texte de 1992, et on ne peut pas dater sa première occurrence sur un document lu."
+          "path": "$.sources_ouvertes[3].citation",
+          "access": "metadata-only",
+          "text": "Rasmussen, J. & Vicente, K. J. (1989). Coping with human errors through system design: implications for ecological interface design. International Journal of Man-Machine Studies, 31(5), 517-534. Notice Crossref seule, texte non ouvert. Relevée parce que l'expression « ecological interface design » y figure déjà en titre, sous les deux mêmes signatures, trois ans avant l'article de 1992 qui la cite en référence [88]."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C041",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Elle figure déjà dans le titre de deux travaux que les deux auteurs cosignent et que l’article cite : un rapport de 1988, « A theoretical framework for ecological interface design », et un article de 1989.",
       "supports": [
-        {
-          "id": "SUP-07ad40f5466e8990",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
-        },
         {
           "id": "SUP-6955e3cfdf0ba50d",
           "origin": "evidence:lecture.json",
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Le texte est signé de deux auteurs, dans cet ordre : « Kim J. Vicente and Jens Rasmussen », ligne de signature imprimée sous le titre, page 2 du fichier ouvert (page de titre du post-print, non foliotée). La note de bas de page appelée sur cette même ligne donne les deux affiliations au moment de la rédaction : Vicente au Center for Human-Machine Systems Research, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta ; Rasmussen à la Technical University of Denmark et au Cognitive Systems Group, Risø National Laboratory, Roskilde. La notice Crossref du DOI 10.1109/21.156574 donne les mêmes deux noms dans le même ordre (K.J. Vicente, puis J. Rasmussen) et la page de dépôt DTU Orbit également. Le millésime 1992 est celui imprimé sur la page de couverture du dépôt (« Publication date: 1992 ») et celui du champ issued de Crossref : je ne l'ai pas relevé sur une signature datée à l'intérieur du texte, qui n'en porte pas. Le sigle EID est bien posé par les deux auteurs comme leur : ils écrivent au résumé « The framework, called ecological interface design (EID), is proposed » puis, en introduction, « This paper describes a novel theoretical framework », et ils justifient eux-mêmes le choix de l'adjectif à la page 6 du post-print : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" ». Un point que le repérage n'avait pas vu et qui interdit de dire que le terme est forgé dans ce texte-ci : l'expression existe déjà, quatre et trois ans plus tôt, dans deux textes cosignés du même binôme et cités par cet article même. Référence [108] de sa bibliographie : K. J. Vicente et J. Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, Department of Information Technology, Risø National Laboratory, Roskilde, 1988. Référence [88] : J. Rasmussen et K. J. Vicente, « Coping with human error through system design: Implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, p. 517-534 (l'année manque dans la bibliographie de l'article, la notice Crossref du DOI 10.1016/0020-7373(89)90014-x la donne à novembre 1989 et confirme les deux mêmes signatures, Rasmussen puis Vicente). Ces deux antériorités sont relevées dans la bibliographie de l'article de 1992 et dans Crossref, pas sur les documents eux-mêmes, que je n'ai pas ouverts. L'article de 1992 dit lui-même ce qu'il revendique et ce qu'il ne revendique pas, page 22 du post-print : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 111] and especially [32, 33]), the specific theoretical formulation presented here is a new one. » Ce qui est donc à porter au crédit des deux auteurs par cette carte, c'est la formulation théorique de 1992, cosignée, et le terme qui est le leur depuis 1988, cosigné lui aussi. COAUTHORED, jamais Vicente seul, jamais Rasmussen seul."
+        },
+        {
+          "id": "SUP-07ad40f5466e8990",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
         },
         {
           "id": "SUP-724bfd5a50430a02",
@@ -1122,23 +1115,23 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C042",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ce qu’ils revendiquent en 1992 est délimité avec précision : « the specific theoretical formulation presented here is a new one ».",
       "supports": [
-        {
-          "id": "SUP-07ad40f5466e8990",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
-        },
         {
           "id": "SUP-6955e3cfdf0ba50d",
           "origin": "evidence:lecture.json",
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Le texte est signé de deux auteurs, dans cet ordre : « Kim J. Vicente and Jens Rasmussen », ligne de signature imprimée sous le titre, page 2 du fichier ouvert (page de titre du post-print, non foliotée). La note de bas de page appelée sur cette même ligne donne les deux affiliations au moment de la rédaction : Vicente au Center for Human-Machine Systems Research, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta ; Rasmussen à la Technical University of Denmark et au Cognitive Systems Group, Risø National Laboratory, Roskilde. La notice Crossref du DOI 10.1109/21.156574 donne les mêmes deux noms dans le même ordre (K.J. Vicente, puis J. Rasmussen) et la page de dépôt DTU Orbit également. Le millésime 1992 est celui imprimé sur la page de couverture du dépôt (« Publication date: 1992 ») et celui du champ issued de Crossref : je ne l'ai pas relevé sur une signature datée à l'intérieur du texte, qui n'en porte pas. Le sigle EID est bien posé par les deux auteurs comme leur : ils écrivent au résumé « The framework, called ecological interface design (EID), is proposed » puis, en introduction, « This paper describes a novel theoretical framework », et ils justifient eux-mêmes le choix de l'adjectif à la page 6 du post-print : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" ». Un point que le repérage n'avait pas vu et qui interdit de dire que le terme est forgé dans ce texte-ci : l'expression existe déjà, quatre et trois ans plus tôt, dans deux textes cosignés du même binôme et cités par cet article même. Référence [108] de sa bibliographie : K. J. Vicente et J. Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, Department of Information Technology, Risø National Laboratory, Roskilde, 1988. Référence [88] : J. Rasmussen et K. J. Vicente, « Coping with human error through system design: Implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, p. 517-534 (l'année manque dans la bibliographie de l'article, la notice Crossref du DOI 10.1016/0020-7373(89)90014-x la donne à novembre 1989 et confirme les deux mêmes signatures, Rasmussen puis Vicente). Ces deux antériorités sont relevées dans la bibliographie de l'article de 1992 et dans Crossref, pas sur les documents eux-mêmes, que je n'ai pas ouverts. L'article de 1992 dit lui-même ce qu'il revendique et ce qu'il ne revendique pas, page 22 du post-print : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 111] and especially [32, 33]), the specific theoretical formulation presented here is a new one. » Ce qui est donc à porter au crédit des deux auteurs par cette carte, c'est la formulation théorique de 1992, cosignée, et le terme qui est le leur depuis 1988, cosigné lui aussi. COAUTHORED, jamais Vicente seul, jamais Rasmussen seul."
+        },
+        {
+          "id": "SUP-07ad40f5466e8990",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "L'article de 1992 est cosigné par Kim J. Vicente et Jens Rasmussen, jamais l'un des deux seul. Ils ne forgent pas l'expression « ecological interface design » dans ce texte : elle figure déjà dans deux travaux cosignés antérieurs qu'ils citent, un rapport Risø de 1988 et un article de 1989. Ce qu'ils revendiquent est la seule formulation théorique : « the specific theoretical formulation presented here is a new one ». Le cadre s'appuie sur la taxonomie de Rasmussen telle qu'elle a paru en 1983, et non sur son rapport de 1981, que l'article ne cite nulle part. Le libellé français, lui, est de nous : il n'est pas attesté sous cette forme, même si une variante circule dans un autre ordre des mots."
         },
         {
           "id": "SUP-724bfd5a50430a02",
@@ -1151,7 +1144,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "L’article de 1989, « Coping with human errors through system design », est celui où, selon le texte de 1992 lui-même, le cadre a été proposé pour la première fois",
       "supports": [
@@ -1176,15 +1169,29 @@
           "path": "$.sources_ouvertes[3].citation",
           "access": "metadata-only",
           "text": "Rasmussen, J. & Vicente, K. J. (1989). Coping with human errors through system design: implications for ecological interface design. International Journal of Man-Machine Studies, 31(5), 517-534. Notice Crossref seule, texte non ouvert. Relevée parce que l'expression « ecological interface design » y figure déjà en titre, sous les deux mêmes signatures, trois ans avant l'article de 1992 qui la cite en référence [88]."
+        },
+        {
+          "id": "SUP-6955e3cfdf0ba50d",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Le texte est signé de deux auteurs, dans cet ordre : « Kim J. Vicente and Jens Rasmussen », ligne de signature imprimée sous le titre, page 2 du fichier ouvert (page de titre du post-print, non foliotée). La note de bas de page appelée sur cette même ligne donne les deux affiliations au moment de la rédaction : Vicente au Center for Human-Machine Systems Research, School of Industrial and Systems Engineering, Georgia Institute of Technology, Atlanta ; Rasmussen à la Technical University of Denmark et au Cognitive Systems Group, Risø National Laboratory, Roskilde. La notice Crossref du DOI 10.1109/21.156574 donne les mêmes deux noms dans le même ordre (K.J. Vicente, puis J. Rasmussen) et la page de dépôt DTU Orbit également. Le millésime 1992 est celui imprimé sur la page de couverture du dépôt (« Publication date: 1992 ») et celui du champ issued de Crossref : je ne l'ai pas relevé sur une signature datée à l'intérieur du texte, qui n'en porte pas. Le sigle EID est bien posé par les deux auteurs comme leur : ils écrivent au résumé « The framework, called ecological interface design (EID), is proposed » puis, en introduction, « This paper describes a novel theoretical framework », et ils justifient eux-mêmes le choix de l'adjectif à la page 6 du post-print : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" ». Un point que le repérage n'avait pas vu et qui interdit de dire que le terme est forgé dans ce texte-ci : l'expression existe déjà, quatre et trois ans plus tôt, dans deux textes cosignés du même binôme et cités par cet article même. Référence [108] de sa bibliographie : K. J. Vicente et J. Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, Department of Information Technology, Risø National Laboratory, Roskilde, 1988. Référence [88] : J. Rasmussen et K. J. Vicente, « Coping with human error through system design: Implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, p. 517-534 (l'année manque dans la bibliographie de l'article, la notice Crossref du DOI 10.1016/0020-7373(89)90014-x la donne à novembre 1989 et confirme les deux mêmes signatures, Rasmussen puis Vicente). Ces deux antériorités sont relevées dans la bibliographie de l'article de 1992 et dans Crossref, pas sur les documents eux-mêmes, que je n'ai pas ouverts. L'article de 1992 dit lui-même ce qu'il revendique et ce qu'il ne revendique pas, page 22 du post-print : « Although many of the general ideas behind EID have been around for some time (see [7, 81, 83, 111] and especially [32, 33]), the specific theoretical formulation presented here is a new one. » Ce qui est donc à porter au crédit des deux auteurs par cette carte, c'est la formulation théorique de 1992, cosignée, et le terme qui est le leur depuis 1988, cosigné lui aussi. COAUTHORED, jamais Vicente seul, jamais Rasmussen seul."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C044",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "sous quelle forme, il faudra le lire pour le savoir.",
       "supports": [
+        {
+          "id": "SUP-9dc407d8986bbf0f",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "SOURCES — référence 2 : verify_reference sur 10.1016/0020-7373(89)90014-x rend `conclusive: true`, `resolved: true`, `mismatches: []` — « Jens Rasmussen et Kim J. Vicente », International Journal of Man-Machine Studies, 1989, et Crossref confirme vol. 31, n° 5, p. 517-534. L'ordre des signatures affiché par la fiche (Rasmussen puis Vicente) est celui du document, inversé par rapport à l'article de 1992 : la fiche ne les a pas uniformisés, c'est correct. curl sur https://doi.org/10.1016/0020-7373(89)90014-x → HTTP 302 vers linkinghub.elsevier.com/retrieve/pii/002073738990014X. `consulted: metadata-only` est déclaré et conforme : je n'ai pas ouvert le plein texte de 1989, l'accès Elsevier étant fermé, et je n'en tire donc aucune conclusion de contenu."
+        },
         {
           "id": "SUP-af06b16029d7f4df",
           "origin": "validated",
@@ -1200,32 +1207,17 @@
           "text": "Antériorités du terme non ouvertes. Le rapport Risø-M-2736 de 1988, cosigné Vicente et Rasmussen et intitulé « A theoretical framework for ecological interface design », n'est connu de moi que par la référence [108] de l'article. Je ne l'ai pas trouvé en dépôt ouvert : une recherche web ciblée n'a rendu aucun exemplaire, et le portail orbit.dtu.dk ne m'a rendu que la notice de l'article de 1992. L'article de l'International Journal of Man-Machine Studies de 1989, référence [88], n'est connu que par sa notice Crossref. La conséquence pour la carte : on peut écrire que le terme est du binôme, on ne peut pas écrire qu'il est forgé dans le texte de 1992, et on ne peut pas dater sa première occurrence sur un document lu."
         },
         {
-          "id": "SUP-9dc407d8986bbf0f",
-          "origin": "validated",
-          "path": "$.review.notes[7]",
-          "access": "n/a",
-          "text": "SOURCES — référence 2 : verify_reference sur 10.1016/0020-7373(89)90014-x rend `conclusive: true`, `resolved: true`, `mismatches: []` — « Jens Rasmussen et Kim J. Vicente », International Journal of Man-Machine Studies, 1989, et Crossref confirme vol. 31, n° 5, p. 517-534. L'ordre des signatures affiché par la fiche (Rasmussen puis Vicente) est celui du document, inversé par rapport à l'article de 1992 : la fiche ne les a pas uniformisés, c'est correct. curl sur https://doi.org/10.1016/0020-7373(89)90014-x → HTTP 302 vers linkinghub.elsevier.com/retrieve/pii/002073738990014X. `consulted: metadata-only` est déclaré et conforme : je n'ai pas ouvert le plein texte de 1989, l'accès Elsevier étant fermé, et je n'en tire donc aucune conclusion de contenu."
-        },
-        {
           "id": "SUP-fc78e8849a7af17d",
           "origin": "evidence:lecture.json",
           "path": "$.sources_ouvertes[3].citation",
           "access": "metadata-only",
           "text": "Rasmussen, J. & Vicente, K. J. (1989). Coping with human errors through system design: implications for ecological interface design. International Journal of Man-Machine Studies, 31(5), 517-534. Notice Crossref seule, texte non ouvert. Relevée parce que l'expression « ecological interface design » y figure déjà en titre, sous les deux mêmes signatures, trois ans avant l'article de 1992 qui la cite en référence [88]."
-        },
-        {
-          "id": "SUP-02561161dccacf81",
-          "origin": "validated",
-          "path": "$.sources[1].label",
-          "access": "metadata-only",
-          "text": "Jens Rasmussen et Kim J. Vicente, « Coping with human errors through system design: implications for ecological interface design », International Journal of Man-Machine Studies, vol. 31, n° 5, 1989, p. 517-534.",
-          "access_corroboration": "corrobore"
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "Quant à la taxonomie, le texte de 1992 renvoie qui ne la connaît pas à l’article de Rasmussen de 1983",
       "supports": [
@@ -1247,7 +1239,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[2]",
       "claim_text": "dont le titre, « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », nomme déjà les trois lectures de l’information.",
       "supports": [
@@ -1269,6 +1261,6 @@
       "uncited_support_signal": []
     }
   ],
-  "estimated_tokens": 89277,
+  "estimated_tokens": 93279,
   "status": "READY"
 }
