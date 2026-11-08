@@ -1,251 +1,236 @@
 {
   "concept_id": "conception-ecologique-interface",
-  "candidate_sha256": "2a1286bf0c59c4a9e4fa3e82c5c0f8dd39d39af599445000878c33373479de42",
+  "candidate_sha256": "b5fedc432f21db4e5148f31c3afdc89c7e2bae41fad8533b031a8163c516a899",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni. Le présent générique (« Quelqu'un qui refait chaque jour le même trajet ne délibère pas ») affirme un fait psychologique valable pour quiconque, avec un détail empirique (il ne saurait pas dire ce qu'il a fait des dix dernières minutes) que rien dans le bundle n'établit ; ce n'est pas une vignette purement stipulée."
+      "verdict": "SUPPORTED",
+      "reason": "Vignette stipulée, non attribuée ; definition_de_lauteur établit trois niveaux de contrôle cognitif d'un même système de commande hiérarchique, ce qui autorise trois façons d'agir chez un même opérateur."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Aucun appui, mais énoncé conditionnel sur la personne stipulée de la vignette (« Qu'un voyant connu s'allume… ») : il ne présente aucun détail comme réel et n'attribue rien."
+      "reason": "definition_de_lauteur et notes[2] : les événements non familiers sont ceux que le concepteur n'a pas prévus ; il en suit que le concepteur ne sait pas lequel des régimes la journée appellera. Conséquence dérivée, non attribuée."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Aucun appui, mais suite conditionnelle de la même vignette stipulée (« Qu'il entende en revanche un bruit inconnu… ») : aucun détail présenté comme réel, aucune attribution."
+      "reason": "notes[0] et definition_de_lauteur : les niveaux inférieurs « tend to be executed more quickly, more effectively, and with less effort » ; forcer un niveau plus élevé rend donc la tâche plus lente et coûteuse. Le « tend à » conserve la modalité."
     },
     {
       "claim_id": "C004",
-      "verdict": "SUPPORTED",
-      "reason": "Récapitulatif de la vignette ; $.definition_de_lauteur établit les trois niveaux de contrôle cognitif (SBB, RBB, KBB)."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim établissent que le niveau des connaissances doit être soutenu (hiérarchie d'abstraction, « cope with unanticipated events ») et que l'opérateur doit improviser face à l'imprévu ; ils ne disent rien d'un affichage réduit à quelques voyants et n'autorisent pas l'absolu « il ne restera plus rien pour comprendre ». La phrase parallèle sur les chiffres est modalisée (« tend à »), celle-ci non : certitude augmentée."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[2] et $.definition_de_lauteur : les événements non familiers et non anticipés, que le concepteur n'a pas prévus ; et le but de soutenir les trois niveaux. Transposé à la vignette sans attribution."
+      "reason": "definition_de_lauteur (p. 2) : événements « unfamiliar and unanticipated », que le concepteur n'a pas prévus, « operators cannot rely on a built in solution » ; attribution.note établit la cosignature Vicente et Rasmussen."
     },
     {
       "claim_id": "C006",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis portent « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort » ($.definition_de_lauteur ; $.notes[0] en français). Le claim rend la tendance en conséquence certaine (« devient lent et fatigant »), et l'idée qu'un affichage en chiffres à interpréter « oblige à réfléchir » n'est pas portée par les appuis fournis pour ce claim."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « Rasmussen's taxonomy of cognitive control », skill-based, rule-based, knowledge-based behavior ; reserves[4] rattache la taxonomie aux travaux de Rasmussen."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Conditionnel de la vignette, dérivé de $.notes[2] (événements imprévus, pas de solution intégrée, il faut improviser) et du principe KBB de $.definition_de_lauteur (soutien au raisonnement fondé sur les connaissances)."
+      "reason": "Rattachement illustratif non attribué, cohérent avec definition_de_lauteur : signes -> règles, événement non familier sans solution intégrée -> improvisation et niveau des connaissances, niveau de l'habileté lié aux mouvements et signaux spatio-temporels."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[2] et $.definition_de_lauteur : problème nommé dès l'introduction, événements « unfamiliar and unanticipated » non prévus par le concepteur, « operators cannot rely on a built in solution ». Le signal sur $.reserves[4] (terme « familier ») vise « non familier de la taxonomie », sans rapport avec ce claim."
+      "reason": "Note 3 citée dans definition_de_lauteur : « hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level »."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur (« Rasmussen's taxonomy of cognitive control », SBB/RBB/KBB, référence [79] Rasmussen 1983), $.reserves[4], $.notes[10]. Les appuis signalés ($.reserves[6], $.review.notes[9]) ne manquent pas : le claim est déjà autorisé."
+      "reason": "definition_de_lauteur : « the way in which information is interpreted determines which of the three levels of cognitive control is activated »."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "Application de la taxonomie à la vignette, non attribuée aux auteurs ; cohérente avec $.definition_de_lauteur (signaux/mouvements pour SBB, indices/signes pour RBB, événements imprévus et résolution de problèmes pour KBB)."
+      "reason": "definition_de_lauteur : « information can be interpreted in three mutually exclusive ways -- as signals, signs, or symbols -- ... SBB, RBB, KBB, respectively »."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur, note 3 : « can be viewed as a hierarchical control system consisting of three levels. The knowledge-based level is at the top, the rule-based level is in the middle, and skill-based behavior is the bottom level »."
+      "reason": "Illustration explicitement présentée comme telle ; elle rend la thèse que la même information peut être interprétée comme signal, signe ou symbole (definition_de_lauteur), sans rien attribuer d'autre aux auteurs."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : « the way in which information is interpreted determines which of the three levels of cognitive control is activated »."
+      "reason": "Conséquence qui suit de definition_de_lauteur : l'interprétation détermine le niveau, et le but du cadre est de ne pas « force processing to a higher level » par la conception de l'interface."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : « three mutually exclusive ways -- as signals, signs, or symbols -- … SBB, RBB, and KBB, respectively »."
+      "reason": "definition_de_lauteur et notes[1] : le cadre « is based on the skills, rules, knowledge taxonomy » et l'adopte comme axiome."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Illustration modale (« peut être ») de l'interprétation tripartite d'une même information ($.definition_de_lauteur), cohérente avec les trois principes (signaux et mouvements, indices et règles, résolution de problèmes) ; non attribuée."
+      "reason": "definition_de_lauteur (p. 6) et notes[1] : deux constructions adoptées « as axioms », la hiérarchie d'abstraction « a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events »."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée : si l'interprétation détermine le niveau et que le but est de concevoir l'interface pour ne pas forcer un niveau supérieur ($.definition_de_lauteur), la présentation pèse sur le niveau. Modalisé par « peut »."
+      "reason": "definition_de_lauteur : « use them to derive a number of implications for interface design »."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur (« based on the skills, rules, knowledge taxonomy », axiome) et $.notes[1]."
+      "reason": "attribution_note : « la taxonomie de Rasmussen telle qu'elle a paru en 1983 » ; reserves[4], review.notes[3] et notes[10] : référence [79], Rasmussen 1983, IEEE SMC-13, et consigne de dater la dépendance par 1983."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur p. 6 : « the abstraction hierarchy … is proposed as a psychologically relevant form of representing the constraints in a work domain in a way that allows operators to cope with unanticipated events … adopt these two theoretical constructs as axioms » ; $.notes[1]."
+      "reason": "definition_de_lauteur : le but est posé « au terme d'une déduction » (« Therefore ... ») et les deux prémisses le précèdent « dans le même paragraphe » ; notes[0] idem."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : « then to use them to derive a number of implications for interface design »."
+      "reason": "definition_de_lauteur : « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels »."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur (référence [79] Rasmussen 1983, IEEE SMC-13), $.reserves[4] et $.attribution_note (« la taxonomie telle qu'elle a paru en 1983 ») ; le claim ne dit pas que 1983 est la première publication."
+      "reason": "definition_de_lauteur : « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior »."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : le corps du texte pose le but « au terme d'une déduction », et « les deux prémisses qui la précèdent immédiatement, dans le même paragraphe » ; $.notes[0]."
+      "reason": "quotation.text identique ; original_text et definition_de_lauteur donnent « the general goal that a framework for interface design should strive to achieve » ; review.notes[4] et [6] contrôlent localisation et traduction."
     },
     {
       "claim_id": "C021",
-      "verdict": "TOO_STRONG",
-      "reason": "Le verbatim fourni ($.definition_de_lauteur) dit « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels ». Le claim, présenté comme le constat des auteurs, supprime « tend to » et rend une tendance en fait général (« s'exécutent plus vite »)."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[8] citent le résumé : « The basic goal of EID is twofold: first, not to force processing to a higher level ..., and second, to support each of the three levels »."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : « people have a definite preference for carrying out tasks by relying on lower levels of cognitive control, even when the interface is not designed to support this type of behavior » ; $.notes[0]."
+      "reason": "definition_de_lauteur : le but est introduit par « Therefore » après les deux prémisses ; le premier volet (ne pas forcer un niveau plus élevé) en est la conséquence directe."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Citation conforme à $.quotation.text et $.quotation.original_text ; $.review.notes[4] confirme le passage IV.E introduit par « Therefore, the general goal… » ; $.review.notes[6] valide la traduction."
+      "reason": "Dérivation modalisée (« risque de ») des deux prémisses citées dans definition_de_lauteur et notes[0] ; « même sans appui » rend « even when the interface is not designed to support this type of behavior »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur et $.review.notes[8] : résumé « The basic goal of EID is twofold: first, not to force processing to a higher level than the demands of the task require, and second, to support each of the three levels » ; $.summary."
+      "reason": "quotation.original_text : « not to force » ; review.notes[8] relève que la formule ne se transforme pas en « interdire »."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Lecture dérivée : la phrase du but suit les deux prémisses (« Therefore ») selon $.definition_de_lauteur, et le premier volet (ne pas forcer un niveau supérieur) correspond à elles ; non attribuée comme citation."
+      "reason": "quotation.text : « soutien approprié aux trois niveaux » ; résumé dans definition_de_lauteur « support each of the three levels » ; review.notes[8] : le concept n'est pas rétréci au seul niveau réflexe."
     },
     {
       "claim_id": "C026",
-      "verdict": "TOO_STRONG",
-      "reason": "L'inférence repose sur « les niveaux bas coûtent moins », alors que le verbatim fourni ($.definition_de_lauteur) dit « tend to be executed … with less effort » ; la conclusion « impose un effort dont on aurait pu se passer » est donc rendue certaine là où les appuis n'autorisent qu'une tendance."
+      "verdict": "SUPPORTED",
+      "reason": "notes[5] : « L'exemple le plus concret du texte est le piège procédural de Three Mile Island » ; definition_de_lauteur idem (p. 24)."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "$.quotation.text / original_text (« not to force ») et $.review.notes[8] : le résumé « ne transforme pas “ne pas forcer” en “interdire” »."
+      "reason": "notes[5] et definition_de_lauteur : les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "$.review.notes[8] : le but « ne rétrécit pas le concept au seul niveau réflexe, puisqu'il porte explicitement le soutien “à chacun des trois niveaux” » ; « appropriate support for all three levels »."
+      "reason": "definition_de_lauteur : « The problem is that the operators were not aware of the boundary conditions under which the cue was valid »."
     },
     {
       "claim_id": "C029",
-      "verdict": "UNSUPPORTED",
-      "reason": "$.notes[5] et $.definition_de_lauteur établissent que l'exemple le plus concret est « le piège procédural de Three Mile Island ». Les appuis fournis pour ce claim ne qualifient pas l'épisode d'« accident » : ce détail n'est pas porté par eux."
+      "verdict": "SUPPORTED",
+      "reason": "Lecture présentée comme interprétation (« On peut y reconnaître »), non attribuée ; elle suit de definition_de_lauteur : piège procédural, indice (signe) qui active le niveau des règles, ignorance des conditions aux limites de validité de l'indice."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[5] et $.definition_de_lauteur : « les opérateurs avaient pris le niveau du pressuriseur comme indice de l'inventaire primaire »."
+      "reason": "definition_de_lauteur : l'interface aurait dû donner « perceptual information that reflects the fundamental constraints governing the process »."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : « The problem is that the operators were not aware of the boundary conditions under which the cue was valid » ; $.notes[5]."
+      "reason": "definition_de_lauteur : trois principes prescriptifs, un par niveau, « le contenu opératoire du concept » ; notes[3] idem."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Lecture modalisée (« On peut y reconnaître ») et non attribuée : le « cue » de TMI relève des indices/signes du niveau des règles ($.definition_de_lauteur, principe RBB), et le défaut est la méconnaissance des conditions de validité de l'indice ($.notes[5])."
+      "reason": "definition_de_lauteur, principe 1 (SBB) : « the operator should be able to act directly on the display, and the structure of the displayed information should be isomorphic to the part-whole structure of movements » ; paraphrase, pas citation, conforme à la réserve [3] sur l'OCR."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur : l'interface aurait dû donner « perceptual information that reflects the fundamental constraints governing the process »."
+      "reason": "definition_de_lauteur, principe 2 (RBB) : « Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface »."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur (« trois principes prescriptifs, un par niveau … le contenu opératoire du concept ») et $.notes[3]."
+      "reason": "definition_de_lauteur, principe 3 (KBB) : « Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving »."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur, principe SBB : act directly on the display ; structure « isomorphic to the part-whole structure of movements » (rendu par « correspondre », sans durcissement). Le signal sur $.reserves[6] ne manque pas : claim déjà autorisé."
+      "reason": "Glose présentée comme interprétation de « externalized mental model » (definition_de_lauteur) ; elle ne dépasse pas le sens d'un modèle mental extériorisé sur l'affichage."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur, principe RBB : « Provide a consistent one-to-one mapping between the work domain constraints and the cues or signs provided by the interface »."
+      "reason": "notes[3] et reserves[6] : pris seul, le deuxième principe réduirait le cadre à une règle de correspondance entre contraintes et indices, alors que le concept tient les trois niveaux ensemble. Jugement non attribué aux auteurs."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur, principe KBB : « Represent the work domain in the form of an abstraction hierarchy to serve as an externalized mental model that will support knowledge-based problem solving »."
+      "reason": "Le principe 2 (definition_de_lauteur) porte sur les indices ou signes du niveau des règles ; les principes 1 et 3 couvrent le geste et la résolution de problèmes face à l'imprévu sans solution intégrée ; notes[3] et reserves[6] confirment."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Glose fidèle de « externalized mental model » du principe KBB ($.definition_de_lauteur) : la structure à se représenter est portée par l'affichage."
+      "reason": "reserves[6] : « le concept est de tenir les trois niveaux ensemble dans une même interface, ce que la phrase retenue dit » ; quotation.text : soutien « aux trois niveaux »."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "$.notes[3] et $.reserves[6] : pris seul, le deuxième principe « réduirait le cadre à une règle de correspondance … alors que le concept est de tenir les trois niveaux ensemble ». Jugement du dossier, non attribué aux auteurs."
+      "reason": "attribution.note cite p. 6 : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" »."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Le principe RBB ($.definition_de_lauteur) ne porte que sur la correspondance contraintes/indices ; le geste et le raisonnement relèvent des principes SBB et KBB ; $.reserves[6] confirme qu'il ne dit pas le soutien des trois niveaux."
+      "reason": "attribution.note, attribution_note, review.notes[2] : l'expression figure dans deux travaux cosignés de 1988 et 1989 cités par l'article ; antériorité établie par bibliographie et Crossref, sans datation de première occurrence, ce que le claim ne fait pas."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "$.reserves[6] : « le concept est de tenir les trois niveaux ensemble dans une même interface, ce que la phrase retenue dit » ; volet « providing the appropriate support for all three levels » ($.quotation.original_text)."
+      "reason": "attribution.note et review.notes[2] : réf. [108] rapport Risø-M-2736, 1988, « A theoretical framework for ecological interface design », réf. [88] IJMMS 1989, tous deux cosignés et cités ; métadonnées confirmées par sources[1].label (metadata-only, corrobore) et sources_ouvertes[3]."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "$.attribution.note : « this duality between operator and work environment was one of the reasons for calling this theoretical framework \"ecological\" »."
+      "reason": "attribution.note et review.notes[2] citent p. 22 : « the specific theoretical formulation presented here is a new one »."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "$.attribution_note, $.attribution.note, $.review.notes[2] : l'expression figure dans [108] (1988) et [88] (1989), antérieurs et cités par l'article."
+      "reason": "review.notes[2] : « The EID framework was first proposed in [88] » (section I.C), [88] étant l'article IJMMS 1989 ; titre conforme à sources[1].label et sources_ouvertes[3] ; l'attribution au texte de 1992 est conservée."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "$.attribution.note et $.review.notes[2] : [108] Vicente & Rasmussen, « A theoretical framework for ecological interface design », Risø-M-2736, 1988 ; [88] Rasmussen & Vicente, IJMMS 31, titre contenant « ecological interface design », 1989 (Crossref, $.sources[1].label métadonnée corroborée)."
+      "reason": "review.notes[7], notes[9], reserves[5], sources_ouvertes[3] : l'article de 1989 n'a pas été ouvert, connu par sa seule notice ; le claim en tire seulement que sa forme reste à lire."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "$.attribution.note et $.review.notes[2] : verbatim « the specific theoretical formulation presented here is a new one », revendication « bien restreinte à la formulation théorique »."
+      "reason": "definition_de_lauteur (note 3) : « Those not familiar with the taxonomy are referred to [79] », [79] = Rasmussen 1983 ; reserves[4] idem."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "$.review.notes[2] : « The EID framework was first proposed in [88] » (section I.C) ; [88] identifié comme l'article IJMMS 1989 « Coping with human errors through system design » ($.sources[1].label, $.sources_ouvertes[3].citation, métadonnées)."
-    },
-    {
-      "claim_id": "C047",
-      "verdict": "SUPPORTED",
-      "reason": "$.notes[9], $.reserves[5], $.review.notes[7] : l'article de 1989 n'a pas été ouvert, connu par sa seule notice ; le claim n'en tire aucun contenu."
-    },
-    {
-      "claim_id": "C048",
-      "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur, note 3 : « Those not familiar with the taxonomy are referred to [79] », [79] = Rasmussen 1983 ; $.reserves[4]."
-    },
-    {
-      "claim_id": "C049",
-      "verdict": "SUPPORTED",
-      "reason": "$.definition_de_lauteur donne le titre exact de [79] ; « Signals, signs, and symbols » correspond aux trois modes d'interprétation de l'information décrits p. 13-14."
+      "reason": "definition_de_lauteur et review.notes[3] donnent le titre de [79] : « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models » ; signaux, signes, symboles sont les trois interprétations de l'information selon le même appui."
     }
   ]
 }
