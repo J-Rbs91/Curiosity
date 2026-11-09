@@ -1,0 +1,630 @@
+{
+  "concept_id": "conception-ecologique-interface",
+  "candidate_sha256": "2a1286bf0c59c4a9e4fa3e82c5c0f8dd39d39af599445000878c33373479de42",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 0,
+      "end": 162,
+      "claim_text": "Quelqu’un qui refait chaque jour le même trajet ne délibère pas : ses mains suivent la route, et il ne saurait pas dire ce qu’il a fait des dix dernières minutes.",
+      "normalized_claim": "Le trajet routinier se fait sans délibération et sans souvenir des dernières minutes.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 163,
+      "end": 275,
+      "claim_text": "Qu’un voyant connu s’allume, et le voilà qui reconnaît le signal et applique la conduite apprise pour ce cas-là.",
+      "normalized_claim": "Un voyant connu déclenche reconnaissance et conduite apprise.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 276,
+      "end": 451,
+      "claim_text": "Qu’il entende en revanche un bruit inconnu, et il n’a plus de conduite apprise : il lui faut se faire une idée de ce qui se passe sous le capot, puis raisonner à partir de là.",
+      "normalized_claim": "Un événement inconnu oblige à se construire une représentation et à raisonner.",
+      "support_ids": []
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[0]",
+      "start": 452,
+      "end": 514,
+      "claim_text": "Trois façons d’agir dans la même journée, sur la même machine.",
+      "normalized_claim": "Une même personne mobilise trois modes d'action sur une même machine.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 77,
+      "claim_text": "Celui qui dessine le tableau de bord ignore laquelle des trois se présentera.",
+      "normalized_claim": "Le concepteur ne sait pas quel mode d'action sera requis.",
+      "support_ids": [
+        "SUP-49dd60be4950876d",
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 78,
+      "end": 267,
+      "claim_text": "S’il présente tout sous forme de chiffres à interpréter, il oblige à réfléchir même lorsque la situation ne le demande pas, et ce qui aurait pu se faire d’un geste devient lent et fatigant.",
+      "normalized_claim": "Une présentation tout analytique force un niveau supérieur, plus lent et coûteux.",
+      "support_ids": [
+        "SUP-b03453f50cf524c9",
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 268,
+      "end": 395,
+      "claim_text": "S’il réduit tout à quelques voyants, il ne restera plus rien pour comprendre le jour où survient ce que personne n’avait prévu.",
+      "normalized_claim": "Une interface réduite à des voyants ne soutient pas le raisonnement face à l'imprévu.",
+      "support_ids": [
+        "SUP-49dd60be4950876d",
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 396,
+      "end": 593,
+      "claim_text": "C’est par ce jour-là que Kim J. Vicente et Jens Rasmussen prennent le problème : l’événement non familier, que le concepteur n’a pas anticipé et pour lequel il n’existe aucune solution toute faite.",
+      "normalized_claim": "Vicente et Rasmussen posent le problème à partir des événements non familiers et non anticipés.",
+      "support_ids": [
+        "SUP-49dd60be4950876d",
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 189,
+      "claim_text": "Ces trois régimes portent un nom dans les travaux de Jens Rasmussen : le comportement fondé sur l’habileté, celui qui est fondé sur des règles, et celui qui est fondé sur des connaissances.",
+      "normalized_claim": "La taxonomie de Rasmussen distingue SBB, RBB, KBB.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-90ff3d57cea6a669",
+        "SUP-ddeebe0043848ff6"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 190,
+      "end": 289,
+      "claim_text": "Le trajet machinal relève du premier, le voyant reconnu du deuxième, le bruit inconnu du troisième.",
+      "normalized_claim": "Rattachement interprétatif de la vignette aux trois niveaux.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 290,
+      "end": 464,
+      "claim_text": "Ce sont trois niveaux de contrôle cognitif, que l’on peut voir comme un système de commande hiérarchique : les connaissances en haut, les règles au milieu, l’habileté en bas.",
+      "normalized_claim": "Note 3 de l'article : système de contrôle hiérarchique à trois niveaux.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 105,
+      "claim_text": "Ce qui décide du niveau engagé, selon cette taxonomie, c’est la façon dont l’information est interprétée.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 106,
+      "end": 292,
+      "claim_text": "Elle peut l’être de trois manières qui s’excluent l’une l’autre, comme signal, comme signe ou comme symbole, et chacune active respectivement l’habileté, les règles ou les connaissances.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 327,
+      "end": 510,
+      "claim_text": "un même relevé peut être une grandeur sur laquelle la main s’ajuste, un indice qui déclenche une procédure, ou un élément à intégrer dans un raisonnement sur l’état de l’installation.",
+      "normalized_claim": "Glose de signal/signe/symbole.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 511,
+      "end": 674,
+      "claim_text": "Si c’est l’interprétation qui décide, la manière dont l’information est présentée n’est pas neutre : c’est par là qu’une interface peut peser sur le niveau engagé.",
+      "normalized_claim": "Conséquence dérivée : la présentation influe sur le niveau engagé.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 66,
+      "claim_text": "Cette taxonomie, l’article de 1992 la prend comme point de départ.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-273495f4f0bd6dff"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 67,
+      "end": 366,
+      "claim_text": "Vicente et Rasmussen disent l’adopter comme axiome, avec une seconde construction, la hiérarchie d’abstraction, qu’ils proposent comme une forme psychologiquement pertinente de représentation des contraintes d’un domaine de travail, qui permette aux opérateurs de faire face aux événements imprévus.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-273495f4f0bd6dff"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 367,
+      "end": 446,
+      "claim_text": "De ces deux axiomes, ils entendent déduire des conséquences pour la conception.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 447,
+      "end": 507,
+      "claim_text": "La taxonomie, elle, avait été publiée par Rasmussen en 1983.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-90ff3d57cea6a669",
+        "SUP-ddeebe0043848ff6",
+        "SUP-07022ccd72043532",
+        "SUP-07ad40f5466e8990"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 121,
+      "claim_text": "Dans le corps de l’article, le but du cadre arrive comme la conclusion de deux constats, énoncés dans le même paragraphe.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-b03453f50cf524c9"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 122,
+      "end": 270,
+      "claim_text": "Le premier : les niveaux inférieurs de contrôle cognitif s’exécutent plus vite, plus efficacement et avec moins d’effort que les niveaux supérieurs.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-b03453f50cf524c9"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 271,
+      "end": 425,
+      "claim_text": "Le second : les gens préfèrent nettement accomplir les tâches en s’appuyant sur ces niveaux inférieurs, même quand l’interface n’est pas conçue pour cela.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-b03453f50cf524c9"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 426,
+      "end": 650,
+      "claim_text": "D’où le but général que les auteurs assignent à la conception d’interface : « […] ne pas forcer le contrôle cognitif à un niveau plus élevé que ne l’exige la tâche, tout en apportant le soutien approprié aux trois niveaux. »",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-8fe22997ace6d596",
+        "SUP-38d7db562a3cc9a1",
+        "SUP-4bea364a82466170",
+        "SUP-4adf4f2c4a37bad6",
+        "SUP-69b537010a66c7c5",
+        "SUP-2b9d2b6d33439e45"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 198,
+      "claim_text": "Ce but a deux volets, et le résumé de l’article les énonce comme tels : d’abord ne pas forcer le traitement à un niveau plus élevé que la tâche ne l’exige, ensuite soutenir chacun des trois niveaux.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-1e095db7e6b750d8",
+        "SUP-6d72e523de3d0268"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 199,
+      "end": 242,
+      "claim_text": "Le premier tire la leçon des deux constats.",
+      "normalized_claim": "Le premier volet découle des deux prémisses.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-b03453f50cf524c9"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 243,
+      "end": 462,
+      "claim_text": "Puisque les niveaux bas coûtent moins et que les gens y recourent même sans appui, cela implique qu’une interface qui oblige à raisonner quand la tâche n’en demande pas tant impose un effort dont on aurait pu se passer.",
+      "normalized_claim": "Conséquence dérivée des prémisses.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-b03453f50cf524c9"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 463,
+      "end": 518,
+      "claim_text": "La formule dit « ne pas forcer », et non « interdire ».",
+      "support_ids": [
+        "SUP-8fe22997ace6d596",
+        "SUP-38d7db562a3cc9a1",
+        "SUP-4bea364a82466170",
+        "SUP-4adf4f2c4a37bad6",
+        "SUP-1e095db7e6b750d8"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 519,
+      "end": 659,
+      "claim_text": "Le second volet empêche de lire le premier comme un éloge du réflexe : le soutien est dû aux trois niveaux, celui des connaissances compris.",
+      "support_ids": [
+        "SUP-8fe22997ace6d596",
+        "SUP-38d7db562a3cc9a1",
+        "SUP-4bea364a82466170",
+        "SUP-4adf4f2c4a37bad6",
+        "SUP-de8641bed2c16302",
+        "SUP-1e095db7e6b750d8"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 80,
+      "claim_text": "L’exemple le plus concret de l’article vient de l’accident de Three Mile Island.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-eb3399f7f6b3a071"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 81,
+      "end": 173,
+      "claim_text": "Les opérateurs avaient pris le niveau du pressuriseur comme indice de l’inventaire primaire.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-eb3399f7f6b3a071"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 174,
+      "end": 337,
+      "claim_text": "Cet indice n’est valide qu’à l’intérieur de certaines conditions aux limites, et ce qui manquait aux opérateurs, écrivent les auteurs, c’est d’en avoir conscience.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-eb3399f7f6b3a071"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 204,
+      "claim_text": "On peut y reconnaître le niveau des règles pris en défaut : un indice reconnu appelle une conduite apprise, et la reconnaissance elle-même ne dit pas si les conditions où cette conduite vaut sont réunies.",
+      "normalized_claim": "Lecture interprétative de TMI comme défaillance du niveau des règles.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-eb3399f7f6b3a071"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 205,
+      "end": 399,
+      "claim_text": "La conséquence que les auteurs en tirent porte sur l’interface : elle aurait dû fournir aux opérateurs une information perceptive qui reflète les contraintes fondamentales gouvernant le procédé.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 90,
+      "claim_text": "Le cadre se décline en trois principes, un par niveau, et c’est là son contenu opératoire.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-fbf61ff21ef6ceac"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 91,
+      "end": 361,
+      "claim_text": "Pour le niveau de l’habileté, afin de soutenir l’interaction par des signaux dans le temps et l’espace, l’opérateur doit pouvoir agir directement sur l’affichage, et la structure de l’information affichée doit correspondre à celle de ses mouvements, du tout aux parties.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 362,
+      "end": 551,
+      "claim_text": "Pour le niveau des règles, l’interface doit établir une correspondance constante, terme à terme, entre les contraintes du domaine de travail et les indices, ou signes, qu’elle donne à voir.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 552,
+      "end": 741,
+      "claim_text": "Pour le niveau des connaissances, le domaine de travail doit être représenté sous la forme d’une hiérarchie d’abstraction, qui serve de modèle mental extérieur à la résolution de problèmes.",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 795,
+      "end": 890,
+      "claim_text": "le fonctionnement que l’opérateur aurait à reconstituer de tête, l’écran en porte la structure.",
+      "normalized_claim": "Glose de « externalized mental model ».",
+      "support_ids": [
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 119,
+      "claim_text": "Pris isolément, le deuxième de ces principes se laisserait facilement prendre pour le cadre entier, et il ne l’est pas.",
+      "support_ids": [
+        "SUP-fbf61ff21ef6ceac",
+        "SUP-8dab964cad4e71a1"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 120,
+      "end": 307,
+      "claim_text": "La correspondance entre contraintes et indices sert la situation reconnue ; elle ne dit rien de ce qu’il faut fournir au geste, ni au raisonnement lorsque plus aucune règle ne s’applique.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-8dab964cad4e71a1"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 308,
+      "end": 419,
+      "claim_text": "C’est le second volet du but qui tient les trois ensemble : les trois exigences portent sur une même interface.",
+      "support_ids": [
+        "SUP-8dab964cad4e71a1",
+        "SUP-fbf61ff21ef6ceac",
+        "SUP-8fe22997ace6d596",
+        "SUP-4bea364a82466170",
+        "SUP-de8641bed2c16302"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 42,
+      "end": 241,
+      "claim_text": "Les auteurs le rattachent à l’environnement de travail : la dualité entre l’opérateur et cet environnement est, écrivent-ils, l’une des raisons pour lesquelles ils ont appelé ce cadre « écologique ».",
+      "support_ids": [
+        "SUP-6955e3cfdf0ba50d"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 58,
+      "claim_text": "L’expression elle-même est antérieure à l’article de 1992.",
+      "support_ids": [
+        "SUP-07ad40f5466e8990",
+        "SUP-6955e3cfdf0ba50d",
+        "SUP-724bfd5a50430a02",
+        "SUP-af06b16029d7f4df",
+        "SUP-cff51776e3d76d43"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 59,
+      "end": 264,
+      "claim_text": "Elle figure déjà dans le titre de deux travaux que les deux auteurs cosignent et que l’article cite : un rapport de 1988, « A theoretical framework for ecological interface design », et un article de 1989.",
+      "support_ids": [
+        "SUP-07ad40f5466e8990",
+        "SUP-6955e3cfdf0ba50d",
+        "SUP-724bfd5a50430a02",
+        "SUP-cff51776e3d76d43",
+        "SUP-fc78e8849a7af17d",
+        "SUP-02561161dccacf81"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 265,
+      "end": 395,
+      "claim_text": "Ce qu’ils revendiquent en 1992 est délimité avec précision : « the specific theoretical formulation presented here is a new one ».",
+      "support_ids": [
+        "SUP-07ad40f5466e8990",
+        "SUP-6955e3cfdf0ba50d",
+        "SUP-724bfd5a50430a02"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 162,
+      "claim_text": "L’article de 1989, « Coping with human errors through system design », est celui où, selon le texte de 1992 lui-même, le cadre a été proposé pour la première fois",
+      "support_ids": [
+        "SUP-724bfd5a50430a02",
+        "SUP-02561161dccacf81",
+        "SUP-fc78e8849a7af17d"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 165,
+      "end": 217,
+      "claim_text": "sous quelle forme, il faudra le lire pour le savoir.",
+      "normalized_claim": "Le contenu de l'article de 1989 n'a pas été lu.",
+      "support_ids": [
+        "SUP-af06b16029d7f4df",
+        "SUP-cff51776e3d76d43",
+        "SUP-9dc407d8986bbf0f",
+        "SUP-fc78e8849a7af17d",
+        "SUP-02561161dccacf81"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 218,
+      "end": 319,
+      "claim_text": "Quant à la taxonomie, le texte de 1992 renvoie qui ne la connaît pas à l’article de Rasmussen de 1983",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-90ff3d57cea6a669"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 321,
+      "end": 493,
+      "claim_text": "dont le titre, « Skills, rules, knowledge: Signals, signs, and symbols and other distinctions in human performance models », nomme déjà les trois lectures de l’information.",
+      "support_ids": [
+        "SUP-de8641bed2c16302",
+        "SUP-07022ccd72043532"
+      ]
+    }
+  ]
+}
