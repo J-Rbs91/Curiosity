@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "ergonomie-tache-ergonomie-activite",
+  "candidate_sha256": "fdfb9f78698c9a65fde58bda66a70dbad6833c2e4bd8a79f0f991b7cdcc9b31a",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 50,
+  "supported": 48,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C035",
+      "verdict": "TOO_STRONG",
+      "reason": "SUP-33b9d11be9d7df09 ($.definition_de_lauteur) dit que l'entreprise demande l'efficacité « à travers la tâche » et que l'activité tient efficacité et santé ; les appuis fournis pour ce claim ne disent pas que la tâche ne porte « que » la première exigence : l'exclusivité est ajoutée."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (définition, quotation.text) portent le renversement « moyen et non horizon », mais pas cette justification : le lien causal « c'est pourquoi » et la nécessité « ne peut pas » ne figurent pas dans les appuis fournis pour ce claim ; la formule des auteurs est une orientation, non une impossibilité."
+    }
+  ]
+}

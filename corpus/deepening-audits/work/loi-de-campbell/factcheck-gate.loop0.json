@@ -1,0 +1,33 @@
+{
+  "protocol_version": 2,
+  "concept_id": "loi-de-campbell",
+  "candidate_sha256": "c6db62a8266637e846fcf2bc0aa267c9777b4495a511d11e845ba17ccfe6cac2",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 66,
+  "supported": 62,
+  "failed": 4,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (SUP-ed95af10edd7229c $.summary, SUP-44e43baae10fe353 ($.definition_de_lauteur)) établissent la tendance générale : un indicateur qui sert à la décision subit des pressions de corruption et fausse le processus surveillé. Ils ne disent rien de la vitesse ; « il ne faut pas longtemps » ajoute une rapidité que les appuis fournis pour ce claim ne portent pas."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; la conséquence sur les « trois voies » n'est rattachée à aucun support."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; l'évaluation « la plus difficile à voir » n'est rattachée à aucun support."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; l'affirmation qu'un contrôle d'exactitude ne ferait pas apparaître la troisième voie n'est rattachée à aucun support."
+    }
+  ]
+}

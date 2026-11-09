@@ -1,0 +1,685 @@
+{
+  "protocol_version": 2,
+  "concept_id": "bruit-comme-principe-d-auto-organisation",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "95f6347216ac49ee623eec2ff3360e0ae8febffb11397f85322eab035ea48a03",
+  "validated_sha256": "d31630fd8f35abd6ec0ba8d34f683e84bc8419c2b594c0585bafb2e7e3ab17b1",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "3d05fb458291772aee98a3a113433e801d855faeb68fa89c1f1eecc23ec8d68d"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/bruit-comme-principe-d-auto-organisation/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36.",
+        "cles": [
+          "doi:10.3406/comm.1972.1256",
+          "url:persee.fr/doc/comm_0588-8018_1972_num_18_1_1256"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "partial",
+        "label": "Bernard Paulré, « Évolutionnisme contemporain et auto-organisation », Économie appliquée, 50(3), 1997, p. 121-150.",
+        "cles": [
+          "doi:10.3406/ecoap.1997.1643",
+          "url:persee.fr/doc/ecoap_0013-0494_1997_num_50_3_1643"
+        ],
+        "dossier": "partial",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Le mot bruit est pris ici au sens des communications : des phénomènes aléatoires et parasites qui perturbent la transmission correcte d’un message, et qu’on cherche d’habitude à éliminer au maximum. Un théorème dû à Shannon, celui de la voie avec bruit, établit que l’information d’un message transmis dans une voie perturbée ne peut que décroître. C’est l’obstacle même qu’Henri Atlan, dans un article de 1972, entreprend de contourner sans le nier."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Que le bruit puisse organiser, Atlan ne prétend pas l’avoir découvert. Il attribue à Heinz von Foerster, « le premier, à notre connaissance », d’avoir exprimé la nécessité d’un « principe d’ordre à partir de bruit », et il revendique pour lui-même autre chose : en donner « une formulation plus précise, à l’aide du formalisme de la théorie de l’information ». C’est cette formulation qui fait tenir ensemble le théorème et la thèse. Une même perturbation ne produit pas le même effet selon qu’on regarde le message qui circule entre deux parties d’un ensemble, ou l’ensemble entier auquel elles appartiennent. Encore faut-il que cet ensemble remplisse deux conditions."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce que le bruit rend indécidable",
+      "text": "Ce que le bruit introduit entre l’entrée et la sortie de la voie porte un nom en théorie de l’information : l’ambiguïté. Le théorème en donne la mesure exacte. L’information transmise d’un point A à un point B décroît d’une quantité égale à cette ambiguïté : elle est celle qui est disponible en B, diminuée de l’ambiguïté, et en aucun cas elle ne pourra être supérieure."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce que le bruit rend indécidable",
+      "text": "Atlan l’écrit lui-même : ce théorème « semble donc exclure toute possibilité d’un rôle positif, organisationnel du bruit ». Il a pourtant prévenu dès la première note de l’article qu’il s’agit d’« un paradoxe qui n’est qu’apparent ». Ce qui le dissout ne touche pas au théorème, mais aux « postulats implicites à l’aide desquels la théorie de l’information est appliquée à l’analyse de systèmes organisés »."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "La même ambiguïté, comptée deux fois",
+      "text": "Supposons que A et B ne soient pas deux correspondants étrangers l’un à l’autre, mais deux sous-systèmes d’un même ensemble, et que la voie bruitée passe à l’intérieur de cet ensemble. Ce qui change, c’est ce dont on totalise l’information. Du point de vue de la transmission de A vers B, l’ambiguïté est perdue ; du point de vue de la quantité d’information de l’ensemble A et B pris comme un tout, elle s’ajoute. Atlan tient les deux comptes dans une seule phrase : l’ambiguïté y est « considérée comme perdue du point de vue de la transmission de A à B, et au contraire comme un supplément du point de vue de la quantité d’information totale […] de l’ensemble du système »."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "La même ambiguïté, comptée deux fois",
+      "text": "Le second compte ne remplace jamais le premier. Aussitôt après avoir montré comment un rôle positif du bruit peut se concevoir, Atlan rappelle que le fonctionnement du système dépend de la transmission d’information d’un sous-système à l’autre, et qu’à côté de ce rôle de facteur de complexification, « le rôle destructeur classique ne peut pas être ignoré ». Puis il nomme les deux effets et leur donne un signe : l’ambiguïté-destructrice, qui se compte négativement, et l’ambiguïté-autonomie, qui se compte positivement. Ce sont deux sortes d’effets d’une même ambiguïté produite par le bruit, non deux sortes de bruit, et cette distinction est celle qu’Atlan revendique en propre."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Pourquoi une seule voie ne suffit pas",
+      "text": "La contre-épreuve est donnée au même endroit, et elle est sévère. Dans un système réduit à une seule voie de communication entre A et B, l’autonomie de B par rapport à A ne peut signifier qu’une chose : un mauvais fonctionnement du système et sa destruction."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Pourquoi une seule voie ne suffit pas",
+      "text": "Il faut donc se représenter A et B reliés non seulement l’un à l’autre, mais chacun à un grand nombre d’autres sous-systèmes par un grand nombre d’autres voies, de telle sorte qu’une indépendance même totale de B par rapport à A ne fasse pas disparaître le système. Atlan reprend ici à von Neumann la notion de système extrêmement hautement compliqué, dont les composants peuvent être extrêmement nombreux et leurs relations extrêmement entrelacées. La condition est explicite : « Ce n’est que dans de tels systèmes qu’un rôle positif du bruit, par l’intermédiaire d’une ambiguïté-autonomie, peut coexister avec son rôle destructeur ». Hors de tels systèmes, seul reste le rôle destructeur."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "La redondance, et ce qu’elle a à perdre",
+      "text": "Une seconde condition accompagne la première, et elle porte sur la redondance. Du fait de ses nombreuses interconnexions, et pourvu que sa redondance initiale soit suffisamment grande, le système perturbé reste capable de fonctionner, et sa quantité d’information totale a augmenté."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "La redondance, et ce qu’elle a à perdre",
+      "text": "Atlan en tire une exigence de seuil : pour qu’un système ait des propriétés auto-organisatrices, sa redondance initiale doit avoir une valeur minimum, « puisque ces propriétés consistent en une augmentation de complexité par destruction de redondance ». La formule dit du même coup ce que l’opération coûte. Le processus décrit est une succession de désorganisations rattrapées, chaque rétablissement se faisant à un niveau de variété plus grande et de redondance plus faible. Ce qui nourrit l’organisation est prélevé sur une redondance qui diminue."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Deux termes de signes contraires",
+      "text": "La formulation la plus serrée n’est pas une image, mais une équation, celle par laquelle Atlan suit dans le temps la quantité d’information du système. Son taux de variation y apparaît comme la somme de deux termes qui correspondent, schématiquement, aux deux effets opposés du bruit. Le premier exprime la variation de la redondance, et il l’affecte d’un signe moins : si la redondance est initialement assez élevée, elle diminue sous l’effet de l’ambiguïté-autonomie, et ce terme devient positif, contribuant à accroître l’information du système. Le second exprime la variation d’une autre grandeur, que l’équation note H_max, et il est négatif."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Deux termes de signes contraires",
+      "text": "Selon les valeurs des paramètres, la quantité d’information commence alors par augmenter, atteint un maximum, puis décroît : une phase de croissance et de maturation, avec possibilité d’apprentissage adaptatif, précède une phase de vieillissement et de mort. Atlan souligne que ce sont les mêmes facteurs qui font les deux : ceux qui sont responsables de la désorganisation progressive conduisant le système à sa mort ont auparavant nourri son développement."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Un bruit qui cesserait d’en être un",
+      "text": "Reste l’objection que la thèse appelle, et le texte se la fait à lui-même. Si le bruit venu de l’environnement était utilisé par le système comme facteur d’organisation, il ne serait plus vraiment du bruit : cela reviendrait à dire que les facteurs de l’environnement ne sont pas aléatoires. Or ils le sont. Ces processus n’existent donc qu’autant que les erreurs sont a priori de vraies erreurs, que l’ordre est vraiment perturbé par le désordre, que la destruction, sans être totale, est réelle."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Un bruit qui cesserait d’en être un",
+      "text": "C’est de là que vient le titre de la section « Le bruit comme événement », et cette phrase : « Les effets du bruit deviennent alors des événements de l’histoire du système et de son processus d’organisation. » Ils demeurent pourtant les effets d’un bruit, en ce que leur survenue était imprévisible. Paulré, dans une note, cite cette phrase comme tirée d’un livre d’Atlan de 1979, Entre le cristal et la fumée, et l’article annonçait déjà dans sa bibliographie un ouvrage « à paraître », L’organisation biologique et la théorie de l’information. Ce que ces deux livres font de l’article, il faudra les ouvrir pour le voir."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-651280ca7a95d7d8",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "bruit-comme-principe-d-auto-organisation"
+    },
+    {
+      "id": "SUP-cc0c82b19ee74ff5",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "bruit-comme-principe-d-auto-organisation"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-dfef0c59c053cf40",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Le bruit comme principe d'auto-organisation"
+    },
+    {
+      "id": "SUP-2286398699fd22a0",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "auto-organisation-et-bruit"
+    },
+    {
+      "id": "SUP-deaf80963bb39805",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Henri Atlan"
+    },
+    {
+      "id": "SUP-edd232aeb2b5180f",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "L'article est signé d'un seul nom, mais Atlan ne revendique pas le principe : il l'attribue à Heinz von Foerster, « le premier, à notre connaissance », et renvoie à sa communication de 1959, publiée en 1960. Ce qu'il revendique en propre, il l'écrit : « nous avons tenté de donner au principe d'ordre à partir de bruit une formulation plus précise, à l'aide du formalisme de la théorie de l'information », avec la distinction entre ambiguïté-autonomie et ambiguïté-destructrice et l'équation qui les compose. Trois autres dettes sont nommées dans le texte et ne doivent pas être effacées : Ashby, von Neumann et Shannon, dont le théorème de la voie avec bruit est l'obstacle même que l'article entreprend de contourner sans le nier."
+    },
+    {
+      "id": "SUP-9294c6456372927b",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Le bruit qui abîme un message peut-il enrichir le système qui le contient ?"
+    },
+    {
+      "id": "SUP-cf3b3ad07234a120",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "L'ambiguïté due au bruit se retranche de l'information transmise et s'ajoute à celle du système : ce rôle positif coexiste avec le rôle destructeur, sans l'annuler."
+    },
+    {
+      "id": "SUP-3f03373ccd1c0222",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "On voit ainsi comment un rôle positif, « organisationnel » du bruit peut être conçu […] sans contredire pour autant le théorème de la voie avec bruit."
+    },
+    {
+      "id": "SUP-0daffb654907fc2d",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36. DOI 10.3406/comm.1972.1256."
+    },
+    {
+      "id": "SUP-7fe6b716b1a7e0d3",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 28, deuxième paragraphe"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-6cbd4272a2e2f98b",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21-36.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ca5869730775a7f4",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 25-32",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c4d3b04454c1c9bf",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/comm.1972.1256",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-05a1748607a09cf5",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/comm_0588-8018_1972_num_18_1_1256",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-f48355e8d440ff9c",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "partial",
+      "text": "Bernard Paulré, « Évolutionnisme contemporain et auto-organisation », Économie appliquée, 50(3), 1997, p. 121-150.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-0dccf5a797896acf",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "partial",
+      "text": "francophone-reception",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-064ee303dfc80bc1",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "partial",
+      "text": "p. 141 et 146",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-35b9af5284bc1956",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "partial",
+      "text": "10.3406/ecoap.1997.1643",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-a104fd458acdeee0",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "partial",
+      "text": "https://www.persee.fr/doc/ecoap_0013-0494_1997_num_50_3_1643",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-4630957075078bc7",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-21"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-81ab2e346959c716",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Ouvert : https://www.persee.fr/doc/comm_0588-8018_1972_num_18_1_1256 (HTTP 200) — notice conforme : Atlan Henri, « Du bruit comme principe d'auto-organisation », Communications, 18, 1972, « L'événement », pp. 21-36, DOI 10.3406/comm.1972.1256. Éditeur de la revue vérifié sur https://www.persee.fr/collection/comm (HTTP 200) : « Éditeur actuel Le Seuil », collection ouverte 1961-2014 — la référence « Paris, Seuil, 1972 » est exacte."
+    },
+    {
+      "id": "SUP-70e1f1d98fbca804",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "Texte intégral lu page par page via les fragments servis par Persée elle-même : https://www.persee.fr/doc/page/comm_0588-8018_1972_num_18_1_1256/comm_0588-8018_1972_num_18_1_T1_00NN_0000 pour NN = 23 à 36 (HTTP 200 chacun ; les pages 21-22 et 33 n'ont pas répondu après plusieurs essais, sans incidence sur les points contrôlés)."
+    },
+    {
+      "id": "SUP-5aa37b9a758c4ccb",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée deux fois. Texte OCR de la p. 28, deuxième paragraphe : « On voit ainsi comment un rôle positif, “organisational” du bruit peut être conçu dans le cadre de la théorie de l'information, sans contredire pour autant le théorème de la voie avec bruit : en diminuant la transmission d'information… ». Comme « organisational » sentait l'artefact d'OCR, j'ai ouvert le fac-similé de la page (https://www.persee.fr/renderPage/comm_0588-8018_1972_num_18_1_1256/comm_0588-8018_1972_num_18_1_T1_0028_0000_710.jpg, HTTP 200, image lue) : l'imprimé porte bien « rôle positif, « organisationnel » du bruit ». La fiche est donc conforme à l'imprimé, et le locator « p. 28, deuxième paragraphe » est exact (le premier paragraphe est « Dans ces conditions, alors que la quantité d'information transmise de A à B… » ; « Henri Allan » en tête de page est le titre courant, OCR fautif d'« Henri Atlan »). Les […] remplacent exactement « dans le cadre de la théorie de l'information, ». Réserve de rigueur, non bloquante : la citation s'arrête avant le deux-points d'origine et se clôt par un point sans marque de coupe finale ; la phrase source continue (« : en diminuant la transmission… »), sans que le sens en soit altéré."
+    },
+    {
+      "id": "SUP-e7b46c5e06b71b6f",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la note de la fiche est corroborée mot pour mot dans le texte. P. 23, section « Le principe d'ordre à partir de bruit » : « H. Von Foerster (9) le premier, à notre connaissance, a exprimé la nécessité d'un “principe d'ordre à partir de bruit” » ; la référence (9) de la bibliographie est « H. Von Foerster (1960), “On self organizing systems and their environments”, In Self Organizing System, Eds Yovitz & Cameron, Pergamon, p. 31-50 ». P. 25 : « Dans le cadre de travaux antérieurs (14, 15, 7) nous avons tenté de donner au principe d'ordre à partir de bruit une formulation plus précise, à l'aide du formalisme de la théorie de l'information ». Ashby (loi de la variété indispensable, p. 24), Von Neumann (p. 23 et p. 28, « système extrêmement hautement compliqué ») et Shannon (théorème de la voie avec bruit, p. 25) sont bien nommés comme dettes. La distinction ambiguïté-destructrice / ambiguïté-autonomie est bien revendiquée en propre p. 28 (« que nous avons appelées »). Paternité du principe : von Foerster ; apport propre d'Atlan : la formalisation informationnelle. La fiche le dit ainsi."
+    },
+    {
+      "id": "SUP-ab2d96efc33434b7",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCES — les deux DOI résolvent exactement (api.crossref.org, HTTP 200). 10.3406/comm.1972.1256 : Atlan, Communications, vol. 18, n° 1, 1972, p. 21-36. 10.3406/ecoap.1997.1643 : Bernard Paulré, « Évolutionnisme contemporain et auto-organisation », Économie appliquée, vol. 50, n° 3, 1997, p. 121-150 — auteur, titre, volume, numéro, année et pagination conformes au label affiché. Les locators de Paulré ont été ouverts (fragments Persée des p. 141 et 146, HTTP 200) : p. 141, « théories de l'ordre par le bruit (H. von Foerster, H. Atlan) », avec renvoi en note 59 à Atlan, L'Organisation biologique et la théorie de l'information, Hermann, 1972 ; p. 146, « Nécessité de la redondance… à partir des travaux de H. Atlan ou de von Foerster ». Le locator p. 25-32 du texte primaire couvre bien le développement cité."
+    },
+    {
+      "id": "SUP-bdc18dea05764a18",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "Légitimité de l'accès : Persée est le portail public français de diffusion, éditeur de la revue déclaré (Le Seuil) et barrière mobile expirée pour 1972 ; j'ai lu le texte par les points d'accès que la page du document charge elle-même. Le PDF (https://www.persee.fr/docAsPDF/comm_0588-8018_1972_num_18_1_1256.pdf) répond HTTP 403 avec le message « This resource is protected by altcha » : je n'ai pas tenté de résoudre ce défi anti-robot, et je ne l'ai donc pas ouvert."
+    },
+    {
+      "id": "SUP-214ea761a99b48ad",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "PROSE — le hook (« Le bruit qui abîme un message peut-il enrichir le système qui le contient ? ») et le summary sont portés mot pour mot par la p. 28 : l'ambiguïté « considérée comme perdue du point de vue de la transmission de A à B, et au contraire comme un supplément du point de vue de la quantité d'information totale […] de l'ensemble du système », puis « à côté de ce rôle “positif” du bruit […] le rôle destructeur classique ne peut pas être ignoré ». Rien n'excède la source ; le summary ne prétend pas à une coexistence universelle, ce qui est prudent puisque Atlan la conditionne à un « système extrêmement hautement compliqué »."
+    },
+    {
+      "id": "SUP-a506f9c21e0e1a3a",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "Hors mandat, signalé pour exactitude : la note d'attribution parle de « sa communication de 1960 » pour von Foerster. La référence d'Atlan est bien datée 1960 (volume Yovits & Cameron, Pergamon), mais la communication elle-même a été prononcée le 5 mai 1959 au Interdisciplinary Symposium on Self-Organizing Systems de Chicago. « Communication de 1959, publiée en 1960 » serait plus exact."
+    },
+    {
+      "id": "SUP-9bba962033bb14b7",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "Outil verify_reference (serveur documentary) non disponible dans cette session : les DOI ont été résolus directement via l'API Crossref et les pages Persée. Aucun autre fichier du dépôt que le brief n'a été ouvert. Incident technique noté : deux premières requêtes vers l'URL Persée du document ont renvoyé HTTP 200 avec le contenu d'autres articles (Paquette 1987, Piaget 1953) ; ces réponses ont été écartées et les trois requêtes suivantes ont rendu le bon document, de taille identique."
+    },
+    {
+      "id": "SUP-536f8dab55e1c286",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/bruit-comme-principe-d-auto-organisation/lecture.json"
+    },
+    {
+      "id": "SUP-102fffd7e6354cf5",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Les deux signes se tiennent ensemble, et c'est le point que la carte ne doit pas perdre : « à côté de ce rôle \"positif\" du bruit, facteur de complexification, le rôle destructeur classique ne peut pas être ignoré », et « Ce n'est que dans de tels systèmes qu'un rôle positif du bruit, par l'intermédiaire d'une ambiguïté-autonomie, peut coexister avec son rôle destructeur ». « Le bruit organise » seul trahirait le texte."
+    },
+    {
+      "id": "SUP-c2bd8306e7532fb4",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "L'attribution est partagée et dite en toutes lettres dans la note d'attribution : le principe est de von Foerster, la formulation en théorie de l'information est d'Atlan. La prudence d'Atlan lui-même mérite d'être reportée, il écrit « le premier, à notre connaissance »."
+    },
+    {
+      "id": "SUP-63186b0c45ebfba4",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Deux conditions de possibilité n'ont pas tenu dans le résumé : il faut un système très fortement interconnecté, au sens où von Neumann parle d'un système extrêmement hautement compliqué, et il faut que sa redondance initiale soit suffisamment grande, « puisque ces propriétés consistent en une augmentation de complexité par destruction de redondance »."
+    },
+    {
+      "id": "SUP-82309c39d87c1d1d",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "La coupe retire « dans le cadre de la théorie de l'information, », c'est-à-dire exactement ce qu'Atlan revendique en propre par rapport à von Foerster. La perte est réelle et elle est restituée par la note d'attribution. Toutes les autres coupes essayées étaient pires : supprimer « sans contredire pour autant le théorème de la voie avec bruit » aurait produit un slogan."
+    },
+    {
+      "id": "SUP-5e986b974d9bf884",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Aucun écart chiffré n'est écrit entre l'article et l'ouvrage L'organisation biologique et la théorie de l'information : la bibliographie de l'article donne le livre « à paraître », et ni le numéro de Communications ni l'article ne portent de mois. Les « trois mois » avancés par la cartographie n'ont pas été repris."
+    },
+    {
+      "id": "SUP-d85ddaab57ec713a",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Les traductions de von Foerster et d'Ashby que porte le texte sont faites par Atlan lui-même, sans mention de traducteur ni d'édition : elles ne sont pas la parole de ces auteurs et ne doivent être reprises comme telles sur aucune carte."
+    },
+    {
+      "id": "SUP-2afcff55db39b91c",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Une seule source secondaire ouverte a été trouvée, et elle est faible sur ce point : Paulré (1997) range « les théories de l'ordre par le bruit » parmi les théories de l'auto-organisation et confirme la condition de redondance, mais il renvoie à l'ouvrage et jamais à l'article de 1972."
+    },
+    {
+      "id": "SUP-600004e5dbbd437a",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Deux passages de la lecture primaire (folios 27 et 30) n'ont pas été contrôlés sur image et viennent de la seule couche océrisée ; aucun n'est cité ici."
+    },
+    {
+      "id": "SUP-f51568957074e705",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "bruit-comme-principe-d-auto-organisation"
+    },
+    {
+      "id": "SUP-c784847c3d5dc017",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Henri Atlan"
+    },
+    {
+      "id": "SUP-f44a945487c27572",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "ASSOCIATED_WITH"
+    },
+    {
+      "id": "SUP-9c85b76dc181a808",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "L'article est signé d'un seul nom, et je l'ai lu sur la page de titre du texte, au folio imprimé 21 : « Henri Atlan », au-dessus du titre « Du bruit comme principe d'auto-organisation », et de nouveau au bas du texte, folio 35, sous la mention « Institut Weizmann, Rehovot, Israël ». Aucun cosignataire. Mais la paternité du principe, elle, n'est pas revendiquée par Atlan, et c'est lui qui le dit : la section qui l'introduit, folio 23, s'intitule « Le principe d'ordre à partir de bruit » et porte cette phrase, relue sur l'image de la page, « H. Von Foerster (9) le premier, à notre connaissance, a exprimé la nécessité d'un \"principe d'ordre à partir de bruit\" pour rendre compte des propriétés les plus singulières des organismes vivants en tant que systèmes auto-organisateurs, notamment de leur adaptabilité ». La référence 9 de la bibliographie, lue elle aussi sur l'image, folio 36, est « H. Von Foerster (1960), \"On self organizing systems and their environments\", In Self Organizing System, Eds Yovitz & Cameron, Pergamon, p. 31-50 » : le millésime 1960 vient donc de la bibliographie d'Atlan, pas d'une reconstitution. Ce qu'Atlan revendique est autre chose, et il l'écrit en toutes lettres au folio 25 : « nous avons tenté de donner au principe d'ordre à partir de bruit une formulation plus précise, à l'aide du formalisme de la théorie de l'information ». La carte doit donc porter les deux choses ensemble : le principe est de von Foerster, la formulation en théorie de l'information, avec la distinction entre ambiguïté-autonomie et ambiguïté-destructrice et l'équation qui les compose, est d'Atlan, et elle est datée par ses propres renvois à des travaux antérieurs de 1968 et 1970. Trois autres dettes sont nommées dans le texte et ne doivent pas être effacées : Ashby, dont Atlan traduit lui-même la « loi de la variété indispensable » (folio 24, référence 11, « Requisite variety and its implications for the control of complex systems », Cybernetica, 1958) ; von Neumann, pour la fiabilité des automates et la notion de « système extrêmement hautement compliqué » ; Shannon, dont le théorème de la voie avec bruit est l'obstacle même que l'article entreprend de contourner sans le nier. Enfin, une précision de datation, parce qu'elle circule souvent fausse : l'article renvoie à l'ouvrage L'organisation biologique et la théorie de l'information sous la forme « H. Atlan (1971), Hermann, Paris (à paraître) », lue sur l'image du folio 36. Au moment où l'article paraît, le livre n'est donc pas encore sorti. Je n'ai pas pu vérifier le mois de parution de l'un ni de l'autre, et je n'écris donc aucun écart chiffré entre les deux."
+    },
+    {
+      "id": "SUP-f67289399b939374",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "On voit ainsi comment un rôle positif, « organisationnel » du bruit peut être conçu […] sans contredire pour autant le théorème de la voie avec bruit."
+    },
+    {
+      "id": "SUP-63c9414a067a9d65",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Henri Atlan, « Du bruit comme principe d'auto-organisation », Communications, n° 18, « L'événement », Paris, Seuil, 1972, p. 21 à 36. DOI 10.3406/comm.1972.1256. Texte intégral ouvert sur Persée, servi page par page."
+    },
+    {
+      "id": "SUP-3dd50590528e13b9",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 28, section « Ambiguïté-autonomie et ambiguïté destructrice », première phrase du deuxième paragraphe de la page"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-0656583a843a44ab",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Atlan, H. (1972). Du bruit comme principe d'auto-organisation. Communications, 18, p. 21 à 36. Persée sert le texte intégral page par page et non en un seul fichier : les seize pages 21 à 36 ont été obtenues sur des URL de la forme https://www.persee.fr/doc/page/comm_0588-8018_1972_num_18_1_1256/comm_0588-8018_1972_num_18_1_T1_<page sur quatre chiffres>_0000, toutes en HTTP 200, deux d'entre elles à la reprise après un échec réseau. Le numéro de page doit être écrit sur quatre chiffres (0021 et non 21), sans quoi Persée répond 404 : c'est la seule correction à apporter à la route transmise par la cartographie. Chaque page HTML porte, en plus de la couche OCR, l'adresse de son image ; la version pleine résolution, 1170 par 1881 pixels, s'obtient sur https://www.persee.fr/renderPage/comm_0588-8018_1972_num_18_1_1256/comm_0588-8018_1972_num_18_1_T1_<page>_0000_1171.jpg. Onze pages ont été téléchargées ainsi et lues à l'oeil : 21, 23, 24, 25, 26, 28, 29, 32, 34, 35 et 36."
+    },
+    {
+      "id": "SUP-ef255f67256e6d59",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/comm.1972.1256"
+    },
+    {
+      "id": "SUP-f6f48e46ac8ecbfd",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/comm_0588-8018_1972_num_18_1_1256"
+    },
+    {
+      "id": "SUP-2ea6a6fb3e893519",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "partial",
+      "text": "Paulré, B. (1997). Évolutionnisme contemporain et auto-organisation. Économie appliquée, 50(3), p. 121 à 150. DOI 10.3406/ecoap.1997.1643. Seule source secondaire ouverte trouvée qui situe le concept plutôt que de le mentionner en passant : elle range « les théories de l'ordre par le bruit (H. von Foerster, H. Atlan) » parmi les théories de l'auto-organisation à portée générale (p. 141), retient la condition de redondance (« pour s'auto-organiser, un système doit comporter des éléments de redondance », p. 146) et date en note l'ouvrage Hermann de 1972. Ouverte sur Persée par la même route page par page : 27 des 30 pages obtenues, les quatre pages qui nomment Atlan (126, 135, 141, 146) lues sur la couche OCR seulement, sans contrôle sur image."
+    },
+    {
+      "id": "SUP-2dd6f90e7096797c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "partial",
+      "text": "10.3406/ecoap.1997.1643"
+    },
+    {
+      "id": "SUP-b968966afe1ae836",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "partial",
+      "text": "https://www.persee.fr/doc/ecoap_0013-0494_1997_num_50_3_1643"
+    },
+    {
+      "id": "SUP-56411ab1bb24f880",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Willett, G. (1981). Henri Atlan. Entre le cristal et la fumée : Essai sur l'organisation du vivant, 1979. Communication. Information Médias Théories, 4(1), p. 162 à 163. Compte rendu ouvert sur Persée, repéré et laissé en métadonnées seules : il porte sur l'ouvrage de 1979 et non sur l'article de 1972, et n'a servi à rien dans cette lecture."
+    },
+    {
+      "id": "SUP-173828485da700ad",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://www.persee.fr/doc/comin_0382-7798_1981_num_4_1_1164"
+    },
+    {
+      "id": "SUP-392ac5188c77f512",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Le mot est défini par l'auteur dès sa note 1, folio 21, lue sur l'image : « Dans cet article, le bruit est pris avec son sens dérivé de l'étude des communications : il s'agit de tous phénomènes aléatoires parasites, qui perturbent la transmission correcte des messages et qu'on cherche d'habitude à éliminer au maximum. Comme nous le verrons, il est des cas où, malgré un paradoxe qui n'est qu'apparent, un rôle \"bénéfique\" peut lui être reconnu. » L'obstacle est posé au folio 25, sous le titre « Rappels sur la théorie de l'information appliquée à l'analyse des systèmes » : le théorème de Shannon veut que la quantité d'information d'un message transmis dans une voie perturbée « ne peut que décroître d'une quantité égale à l'ambiguïté introduite par ce bruit entre l'entrée et la sortie de la voie », et « en aucun cas elle ne pourra être supérieure ». D'où, folio 26 : « ce théorème semble donc exclure toute possibilité d'un rôle positif, organisationnel du bruit. Nous avons pu montrer qu'il n'en est rien (14, 15), précisément à cause des postulats implicites à l'aide desquels la théorie de l'information est appliquée à l'analyse de systèmes organisés ». Le mécanisme tient à un changement de point de vue, et Atlan le formule en termes de signe, folio 27 : « l'ambiguïté introduite par des facteurs de bruit dans une voie de communications située à l'intérieur d'un système a une signification différente (son signe algébrique est différent), suivant qu'on envisage l'information transmise dans la voie elle-même ou la quantité d'information contenue dans le système ». Folio 28 : « alors que la quantité d'information transmise de A à B est égale à celle de B diminuée de l'ambiguïté, la quantité d'information de l'ensemble A et B est égale à celle de B augmentée de cette ambiguïté ». Les deux effets sont explicitement tenus ensemble, et c'est le point que la carte ne doit pas perdre. Après la phrase citée, même paragraphe, folio 28 : « Il est bien évident pourtant, que le fonctionnement du système est lié à la transmission d'information dans les voies d'un sous-système à un autre, et qu'à côté de ce rôle \"positif\" du bruit, facteur de complexification, le rôle destructeur classique ne peut pas être ignoré. » Et le paragraphe suivant les nomme et les signe : « Nous avons donc affaire à deux sortes d'effets de l'ambiguïté produite par le bruit sur l'organisation générale d'un système, que nous avons appelées ambiguïté-destructrice et ambiguïté-autonomie, la première devant être comptée négativement, la deuxième positivement. » La condition de possibilité est énoncée dans la foulée, et elle est double. D'abord la structure, folio 28 : « Ce n'est que dans de tels systèmes qu'un rôle positif du bruit, par l'intermédiaire d'une ambiguïté-autonomie, peut coexister avec son rôle destructeur », « de tels systèmes » renvoyant à ce que von Neumann appelle un « système extrêmement hautement compliqué », dont « le nombre de leurs composants peut être extrêmement élevé » et dont « les relations entre ces composants peuvent être extrêmement entrelacées ». La contre-épreuve est donnée au même endroit : dans « un système limité à une seule voie de communications entre A et B, l'autonomie de B par rapport à A ne peut signifier qu'un mauvais fonctionnement du système et sa destruction » ; il faut donc « imaginer A et B reliés non seulement l'un à l'autre par cette voie, mais chacun à un grand nombre d'autres sous-systèmes par un grand nombre d'autres voies, de telle sorte qu'une indépendance même totale de B par rapport à A ne se traduise pas par une disparition du système ». Ensuite la redondance, même page : le système « du fait de ses nombreuses interconnexions, et pourvu que sa redondance initiale soit suffisamment grande, sera encore capable de fonctionner et sa quantité d'information totale aura augmenté ». Et, en toutes lettres au folio 32 : « Pour qu'un système ait des propriétés auto-organisatrices, il faut que sa redondance initiale ait une valeur minimum, puisque ces propriétés consistent en une augmentation de complexité par destruction de redondance. » La somme de deux termes de signes contraires n'est pas une image : c'est l'équation (1) du folio 29, lue sur l'image de la page, dH/dt = moins H_max fois dR/dt, plus (1 moins R) fois dH_max/dt, commentée ainsi : « Le taux de variation de quantité d'information dH/dt est ainsi la somme de deux termes qui correspondent, schématiquement, aux deux effets opposés du bruit ou aux deux sortes d'ambiguïté. Le premier terme exprime la variation de la redondance. Si celle-ci est initialement assez élevée, elle diminuera sous l'effet de l'ambiguïté-autonomie, de sorte que dR/dt sera négatif et que le premier terme sera positif, contribuant ainsi à un accroissement de la quantité d'information H du système. Le deuxième terme exprime la variation de H_max ». Le second terme, lui, « est négatif, contribuant à une diminution de la quantité d'information H du système » (folio 30). La conséquence est tirée immédiatement, folio 30 : selon les paramètres, H « commence par augmenter, atteint un maximum » puis « décroît », ce qui donne « une phase de croissance et de maturation, avec possibilité d'apprentissage adaptatif » précédant « une phase de vieillissement et de mort », et « ce sont ces mêmes facteurs responsables de la désorganisation progressive du système qui conduit ultérieurement à sa mort, qui ont précédemment \"nourri\" son développement ». Le processus, lui, est décrit au folio 29 comme « une succession de désorganisations rattrapées suivies chaque fois de rétablissement à un niveau de variété plus grande et de redondance plus faible ». Et le texte se garde lui-même du contresens que sa thèse invite, folio 34 puis 35 : « Le bruit provoqué dans le système par les facteurs aléatoires de l'environnement ne serait plus un vrai bruit à partir du moment où il serait utilisé par le système comme facteur d'organisation. Cela voudrait dire que les facteurs de l'environnement ne sont pas aléatoires. Mais ils le sont. » Et : « ces processus ne peuvent exister qu'en tant que les erreurs sont a priori de vraies erreurs, que l'ordre à un moment donné est vraiment perturbé par le désordre, que la destruction bien que non totale soit réelle, que l'irruption de l'événement soit une véritable irruption ». C'est de là que vient le titre de la section « Le bruit comme événement » : « Les effets du bruit deviennent alors des événements de l'histoire du système et de son processus d'organisation. Ils demeurent pourtant les effets d'un bruit en ce que leur survenue était imprévisible. »"
+    },
+    {
+      "id": "SUP-eddaade42c353669",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Ce que ma coupe retire, et pourquoi elle tombe là. La phrase entière du folio 28 fait 192 caractères : « On voit ainsi comment un rôle positif, \"organisationnel\" du bruit peut être conçu dans le cadre de la théorie de l'information, sans contredire pour autant le théorème de la voie avec bruit ». Le […] remplace « dans le cadre de la théorie de l'information, », soit onze mots et la virgule qui les suivait. C'est une perte réelle : ce membre de phrase est exactement ce qu'Atlan revendique en propre par rapport à von Foerster, la mise en forme du principe dans le formalisme de Shannon, et il est restitué dans definition_de_lauteur et dans la note d'attribution. Je n'ai pas coupé ailleurs parce que toutes les autres coupes possibles étaient pires : supprimer « sans contredire pour autant le théorème de la voie avec bruit » aurait retiré le versant que le texte tient précisément à conserver et aurait produit un slogan ; supprimer « pour autant » ou les guillemets d'\"organisationnel\" ne fait pas descendre la phrase sous 150. La citation retenue fait exactement 150 caractères, guillemets français et espaces compris."
+    },
+    {
+      "id": "SUP-fbfd256da8f6800e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Passages mesurés puis écartés, pour qu'un rédacteur puisse rouvrir le choix. Premièrement, folio 28 : « Ce n'est que dans de tels systèmes qu'un rôle positif du bruit, par l'intermédiaire d'une ambiguïté-autonomie, peut coexister avec son rôle destructeur. » C'est la phrase qui dit le mieux la coexistence des deux rôles et la condition, mais elle fait 152 caractères, donc deux de trop, et son « de tels systèmes » est une anaphore : hors de sa page, elle ne dit plus de quels systèmes il s'agit. Deuxièmement, folio 28 encore : « à côté de ce rôle \"positif\" du bruit, facteur de complexification, le rôle destructeur classique ne peut pas être ignoré », 127 caractères, verbatim vérifié : elle tient sous la limite mais c'est une réserve, pas un énoncé du concept, et une carte qui la porterait seule dirait l'inverse du déséquilibre à éviter. Troisièmement, folio 29 : « Le taux de variation de quantité d'information est ainsi la somme de deux termes qui correspondent, schématiquement, aux deux effets opposés du bruit », 150 caractères, mais la phrase imprimée contient la fraction dH/dt en composition mathématique au milieu du texte, que je ne peux pas reproduire en verbatim sans la transformer : elle est donc citée dans definition_de_lauteur avec cette transcription signalée, et pas dans la carte."
+    },
+    {
+      "id": "SUP-4b1b2202ce43fcea",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Réserve d'OCR, levée là où je cite et pas ailleurs. La couche OCR de Persée est fautive sur ce texte : elle écrit « Henri Allan » pour le titre courant « Henri Atlan » sur les folios 21, 24, 28, 32 et 36, « organisational » pour « organisationnel » dans la phrase même que je cite, « Schrôdinger » pour « Schrödinger », « Ashbv » pour « Ashby », et coupe des mots par des tirets de fin de ligne (« organi- sationnel », « celui- ci »). J'ai donc téléchargé les images pleine résolution et relu à l'oeil chaque passage que je cite : folios 21, 23, 24, 25, 26, 28, 29, 32, 34, 35 et 36. Deux passages de definition_de_lauteur n'ont PAS été contrôlés sur image et viennent de la seule couche OCR, je les signale plutôt que de les taire : le passage du folio 27 sur le signe algébrique de l'ambiguïté, et le passage du folio 30 sur le deuxième terme négatif et sur la courbe qui monte puis descend. Ils sont cohérents avec ce que montrent les images voisines, mais ce n'est pas la même chose qu'une vérification."
+    },
+    {
+      "id": "SUP-489d0d868ee065c1",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Route d'accès, et un point de contrôle d'accès que je n'ai pas franchi. L'adresse annoncée par la métadonnée citation_pdf_url de Persée, https://www.persee.fr/docAsPDF/comm_0588-8018_1972_num_18_1_1256.pdf, répond HTTP 403 avec le message « This resource is protected by altcha / Please visit the document page to view its content or download the PDF version ». Je n'ai fait aucune tentative de résoudre ce défi ni de le contourner : le texte intégral a été lu par la route ouverte, page HTML par page HTML plus images, qui ne présente aucun contrôle. La correction à la route transmise est le format du numéro de page, qui doit être sur quatre chiffres."
+    },
+    {
+      "id": "SUP-895937b577904151",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Unpaywall se trompe sur ce DOI, et je l'ai revérifié moi-même aujourd'hui plutôt que de le croire sur parole de la cartographie : l'API v2 sur 10.3406/comm.1972.1256 renvoie is_oa false, oa_status closed, best_oa_location nulle et zéro oa_location. Le texte est pourtant intégralement ouvert sur Persée. Ne pas conclure à la fermeture d'un texte de Persée depuis Unpaywall."
+    },
+    {
+      "id": "SUP-cf65006e3fd4d757",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Datation, ce que je peux écrire et ce que je ne peux pas. Ce que j'ai vérifié sur les documents : l'article est daté de 1972 par la métadonnée Persée (citation_year 1972, volume 18, pages 21 à 36, éditeur Seuil) et sa bibliographie donne l'ouvrage sous la forme « 7. H. ATLAN (1971), L'organisation biologique et la théorie de l'information, Hermann, Paris (à paraître) », lue sur l'image du folio 36, donc non encore paru au moment où l'article a été composé. Deux autres références y sont également marquées « à paraître », la 20 (Atlan, 1971, chez Elsevier) et la 21 (Eigen, 1971, dans Die Naturwissenschaften). Ce que je n'ai pas pu vérifier : l'affirmation de la cartographie selon laquelle l'article précède l'ouvrage de trois mois. Ni le numéro 18 de Communications ni l'article ne portent de mois, et je n'ai pas ouvert l'édition Hermann. Je n'écris donc aucun écart chiffré, et la carte ne doit pas en écrire non plus."
+    },
+    {
+      "id": "SUP-4930d1db3b111689",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Attribution, ce qui reste ouvert. Je constate qu'Atlan crédite von Foerster (1960) du principe et qu'il désigne sa propre contribution comme une formulation dans le formalisme de la théorie de l'information ; je n'ai pas ouvert le texte de von Foerster, instruit en parallèle sous la fiche ordre-a-partir-du-bruit, et je ne peux donc pas dire si la formule « order from noise » y figure sous cette forme ni ce qu'elle y recouvre exactement. La prudence d'Atlan lui-même mérite d'être reportée : il écrit « le premier, à notre connaissance ». Autre point à ne pas maquiller : les citations de von Foerster (folio 24) et la « loi de la variété indispensable » d'Ashby (folio 24, d'après un texte anglais de 1958 intitulé « Requisite variety and its implications for the control of complex systems ») sont des traductions faites par Atlan lui-même, sans mention de traducteur ni d'édition française. Elles ne sont pas la parole de von Foerster ni celle d'Ashby, et aucune ne doit être reprise comme telle sur une carte."
+    },
+    {
+      "id": "SUP-37a9d12ea937efdb",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Littérature secondaire : une seule source ouverte trouvée, et elle est faible sur ce point précis. Bernard Paulré (1997), « Évolutionnisme contemporain et auto-organisation », Économie appliquée 50(3), ouverte sur Persée, situe « les théories de l'ordre par le bruit (H. von Foerster, H. Atlan) » parmi les théories de l'auto-organisation et confirme la condition de redondance, mais elle renvoie à l'ouvrage de 1972 et à Entre le cristal et la fumée (1979), jamais à l'article de 1972 lui-même. Les recherches faites : HAL sur « complexité par le bruit » (1 résultat, sans rapport et fermé) et sur Atlan en titre (2 notices, Michel Morange, « Henri Atlan's early writings », Cellular and Molecular Biology, 2005, non ouvertes) ; Crossref sur Atlan et auto-organisation (ne rend que la source primaire et des homonymies) ; une recherche web restreinte à Persée, OpenEdition et HAL. Aucune source secondaire francophone ouverte consacrée spécifiquement à l'article de 1972 n'a été trouvée. Ce n'est pas une preuve d'absence : c'est le résultat de ces recherches-là."
+    },
+    {
+      "id": "SUP-8770bcfb98f57643",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Un fait que je signale sans l'interpréter, parce qu'il touche à la datation des formulations. Paulré cite en note 41 une phrase d'Atlan tirée d'Entre le cristal et la fumée (Seuil, 1979, p. 57), « Les effets du bruit deviennent alors des événements de l'histoire du système... », qui est mot pour mot au folio 35 de l'article de 1972, où je l'ai relue sur l'image. Je n'ai pas ouvert l'ouvrage de 1979 et je ne peux donc pas dire dans quelle mesure il reprend l'article. Une carte qui daterait cette phrase de 1979 la daterait trop tard."
+    },
+    {
+      "id": "SUP-3e9e9ac2eedaaaf4",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Incidents de collecte, pour que la route reste reproductible. Deux pages ont échoué au premier passage et ont été obtenues à la reprise, la 23 et la 32 ; une écriture de fichier a échoué une fois dans le répertoire de travail sans cause identifiée. Sur l'article de Paulré, 27 des 30 pages ont été obtenues, les 3 manquantes n'ont pas été reprises car aucune ne portait sur Atlan d'après les pages voisines, ce qui est une présomption et non une vérification."
+    }
+  ],
+  "estimated_tokens": 16631,
+  "status": "READY"
+}

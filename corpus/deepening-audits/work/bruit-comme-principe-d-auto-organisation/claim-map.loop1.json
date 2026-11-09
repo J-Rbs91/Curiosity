@@ -1,0 +1,677 @@
+{
+  "concept_id": "bruit-comme-principe-d-auto-organisation",
+  "candidate_sha256": "90cbb5f5495b221224c41290c326d885b2803f881d58f27e3b9225edde5178e7",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 0,
+      "end": 198,
+      "claim_text": "Le mot bruit est pris ici au sens des communications : des phénomènes aléatoires et parasites qui perturbent la transmission correcte d’un message, et qu’on cherche d’habitude à éliminer au maximum.",
+      "normalized_claim": "Atlan définit le bruit au sens des communications (note 1).",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 199,
+      "end": 348,
+      "claim_text": "Un théorème dû à Shannon, celui de la voie avec bruit, établit que l’information d’un message transmis dans une voie perturbée ne peut que décroître.",
+      "normalized_claim": "Le théorème de Shannon de la voie avec bruit dit que l'information transmise ne peut que décroître.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-9c85b76dc181a808",
+        "SUP-edd232aeb2b5180f",
+        "SUP-e7b46c5e06b71b6f"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 349,
+      "end": 450,
+      "claim_text": "C’est l’obstacle même qu’Henri Atlan, dans un article de 1972, entreprend de contourner sans le nier.",
+      "normalized_claim": "L'article d'Atlan de 1972 contourne ce théorème sans le contredire.",
+      "support_ids": [
+        "SUP-edd232aeb2b5180f",
+        "SUP-9c85b76dc181a808",
+        "SUP-3f03373ccd1c0222",
+        "SUP-f67289399b939374",
+        "SUP-0daffb654907fc2d",
+        "SUP-63c9414a067a9d65",
+        "SUP-6cbd4272a2e2f98b"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 70,
+      "claim_text": "Que le bruit puisse organiser, Atlan ne prétend pas l’avoir découvert.",
+      "normalized_claim": "Atlan ne revendique pas la paternité du principe.",
+      "support_ids": [
+        "SUP-9c85b76dc181a808",
+        "SUP-edd232aeb2b5180f",
+        "SUP-e7b46c5e06b71b6f",
+        "SUP-c2bd8306e7532fb4"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 71,
+      "end": 215,
+      "claim_text": "Il attribue à Heinz von Foerster, « le premier, à notre connaissance », d’avoir exprimé la nécessité d’un « principe d’ordre à partir de bruit »",
+      "normalized_claim": "Atlan attribue le principe à von Foerster.",
+      "support_ids": [
+        "SUP-9c85b76dc181a808",
+        "SUP-edd232aeb2b5180f",
+        "SUP-e7b46c5e06b71b6f",
+        "SUP-c2bd8306e7532fb4"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 217,
+      "end": 360,
+      "claim_text": "et il revendique pour lui-même autre chose : en donner « une formulation plus précise, à l’aide du formalisme de la théorie de l’information ».",
+      "normalized_claim": "Atlan revendique la formulation informationnelle.",
+      "support_ids": [
+        "SUP-9c85b76dc181a808",
+        "SUP-edd232aeb2b5180f",
+        "SUP-e7b46c5e06b71b6f",
+        "SUP-c2bd8306e7532fb4"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 361,
+      "end": 433,
+      "claim_text": "C’est cette formulation qui fait tenir ensemble le théorème et la thèse.",
+      "normalized_claim": "La formalisation informationnelle permet de concilier le théorème et le rôle positif du bruit.",
+      "support_ids": [
+        "SUP-3f03373ccd1c0222",
+        "SUP-f67289399b939374",
+        "SUP-eddaade42c353669",
+        "SUP-82309c39d87c1d1d"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 434,
+      "end": 610,
+      "claim_text": "Une même perturbation ne produit pas le même effet selon qu’on regarde le message qui circule entre deux parties d’un ensemble, ou l’ensemble entier auquel elles appartiennent.",
+      "normalized_claim": "Le signe de l'ambiguïté dépend du point de vue (voie vs système).",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-cf3b3ad07234a120",
+        "SUP-214ea761a99b48ad",
+        "SUP-4b1b2202ce43fcea"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "lead[1]",
+      "start": 611,
+      "end": 669,
+      "claim_text": "Encore faut-il que cet ensemble remplisse deux conditions.",
+      "normalized_claim": "La possibilité est soumise à deux conditions.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-63186b0c45ebfba4"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 120,
+      "claim_text": "Ce que le bruit introduit entre l’entrée et la sortie de la voie porte un nom en théorie de l’information : l’ambiguïté.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 121,
+      "end": 159,
+      "claim_text": "Le théorème en donne la mesure exacte.",
+      "normalized_claim": "Le théorème quantifie la perte comme égale à l'ambiguïté.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 160,
+      "end": 371,
+      "claim_text": "L’information transmise d’un point A à un point B décroît d’une quantité égale à cette ambiguïté : elle est celle qui est disponible en B, diminuée de l’ambiguïté, et en aucun cas elle ne pourra être supérieure.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 123,
+      "claim_text": "Atlan l’écrit lui-même : ce théorème « semble donc exclure toute possibilité d’un rôle positif, organisationnel du bruit ».",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 124,
+      "end": 233,
+      "claim_text": "Il a pourtant prévenu dès la première note de l’article qu’il s’agit d’« un paradoxe qui n’est qu’apparent ».",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 234,
+      "end": 407,
+      "claim_text": "Ce qui le dissout ne touche pas au théorème, mais aux « postulats implicites à l’aide desquels la théorie de l’information est appliquée à l’analyse de systèmes organisés ».",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-3f03373ccd1c0222",
+        "SUP-f67289399b939374"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 184,
+      "claim_text": "Supposons que A et B ne soient pas deux correspondants étrangers l’un à l’autre, mais deux sous-systèmes d’un même ensemble, et que la voie bruitée passe à l’intérieur de cet ensemble.",
+      "normalized_claim": "Restitution du dispositif d'Atlan : voie de communication située à l'intérieur d'un système.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 185,
+      "end": 240,
+      "claim_text": "Ce qui change, c’est ce dont on totalise l’information.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 241,
+      "end": 414,
+      "claim_text": "Du point de vue de la transmission de A vers B, l’ambiguïté est perdue ; du point de vue de la quantité d’information de l’ensemble A et B pris comme un tout, elle s’ajoute.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-cf3b3ad07234a120",
+        "SUP-214ea761a99b48ad"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 415,
+      "end": 676,
+      "claim_text": "Atlan tient les deux comptes dans une seule phrase : l’ambiguïté y est « considérée comme perdue du point de vue de la transmission de A à B, et au contraire comme un supplément du point de vue de la quantité d’information totale […] de l’ensemble du système ».",
+      "support_ids": [
+        "SUP-214ea761a99b48ad"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 47,
+      "claim_text": "Le second compte ne remplace jamais le premier.",
+      "support_ids": [
+        "SUP-102fffd7e6354cf5",
+        "SUP-392ac5188c77f512",
+        "SUP-cf3b3ad07234a120",
+        "SUP-214ea761a99b48ad"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 48,
+      "end": 359,
+      "claim_text": "Aussitôt après avoir montré comment un rôle positif du bruit peut se concevoir, Atlan rappelle que le fonctionnement du système dépend de la transmission d’information d’un sous-système à l’autre, et qu’à côté de ce rôle de facteur de complexification, « le rôle destructeur classique ne peut pas être ignoré ».",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-102fffd7e6354cf5",
+        "SUP-214ea761a99b48ad",
+        "SUP-fbfd256da8f6800e",
+        "SUP-3f03373ccd1c0222",
+        "SUP-f67289399b939374"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 360,
+      "end": 522,
+      "claim_text": "Puis il nomme les deux effets et leur donne un signe : l’ambiguïté-destructrice, qui se compte négativement, et l’ambiguïté-autonomie, qui se compte positivement.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 523,
+      "end": 620,
+      "claim_text": "Ce sont deux sortes d’effets d’une même ambiguïté produite par le bruit, non deux sortes de bruit",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 622,
+      "end": 683,
+      "claim_text": "et cette distinction est celle qu’Atlan revendique en propre.",
+      "support_ids": [
+        "SUP-e7b46c5e06b71b6f",
+        "SUP-edd232aeb2b5180f",
+        "SUP-9c85b76dc181a808"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 65,
+      "claim_text": "La contre-épreuve est donnée au même endroit, et elle est sévère.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 66,
+      "end": 250,
+      "claim_text": "Dans un système réduit à une seule voie de communication entre A et B, l’autonomie de B par rapport à A ne peut signifier qu’une chose : le système fonctionne mal, puis il est détruit.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 265,
+      "claim_text": "Il faut donc se représenter A et B reliés non seulement l’un à l’autre, mais chacun à un grand nombre d’autres sous-systèmes par un grand nombre d’autres voies, de telle sorte qu’une indépendance même totale de B par rapport à A ne fasse pas disparaître le système.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 266,
+      "end": 449,
+      "claim_text": "Atlan reprend ici à von Neumann la notion de système extrêmement hautement compliqué, dont les composants peuvent être extrêmement nombreux et leurs relations extrêmement entrelacées.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-e7b46c5e06b71b6f",
+        "SUP-9c85b76dc181a808",
+        "SUP-63186b0c45ebfba4",
+        "SUP-214ea761a99b48ad"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 450,
+      "end": 635,
+      "claim_text": "La condition est explicite : « Ce n’est que dans de tels systèmes qu’un rôle positif du bruit, par l’intermédiaire d’une ambiguïté-autonomie, peut coexister avec son rôle destructeur ».",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-102fffd7e6354cf5",
+        "SUP-fbfd256da8f6800e"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 636,
+      "end": 690,
+      "claim_text": "Hors de tels systèmes, seul reste le rôle destructeur.",
+      "normalized_claim": "Conséquence dérivée de la condition et de la contre-épreuve.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 78,
+      "claim_text": "Une seconde condition accompagne la première, et elle porte sur la redondance.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-63186b0c45ebfba4"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 79,
+      "end": 282,
+      "claim_text": "Du fait de ses nombreuses interconnexions, et pourvu que sa redondance initiale soit suffisamment grande, le système perturbé reste capable de fonctionner, et sa quantité d’information totale a augmenté.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 253,
+      "claim_text": "Atlan en tire une exigence de seuil : pour qu’un système ait des propriétés auto-organisatrices, sa redondance initiale doit avoir une valeur minimum, « puisque ces propriétés consistent en une augmentation de complexité par destruction de redondance ».",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-63186b0c45ebfba4"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 254,
+      "end": 307,
+      "claim_text": "La formule dit du même coup ce que l’opération coûte.",
+      "normalized_claim": "La complexité s'obtient au prix d'une destruction de redondance.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 308,
+      "end": 476,
+      "claim_text": "Le processus décrit est une succession de désorganisations rattrapées, chaque rétablissement se faisant à un niveau de variété plus grande et de redondance plus faible.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 477,
+      "end": 550,
+      "claim_text": "Ce qui nourrit l’organisation est prélevé sur une redondance qui diminue.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 151,
+      "claim_text": "La formulation la plus serrée n’est pas une image, mais une équation, celle par laquelle Atlan suit dans le temps la quantité d’information du système.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-edd232aeb2b5180f",
+        "SUP-9c85b76dc181a808"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 152,
+      "end": 284,
+      "claim_text": "Son taux de variation y apparaît comme la somme de deux termes qui correspondent, schématiquement, aux deux effets opposés du bruit.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-fbfd256da8f6800e"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 285,
+      "end": 367,
+      "claim_text": "Le premier exprime la variation de la redondance, et il l’affecte d’un signe moins",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 370,
+      "end": 548,
+      "claim_text": "si la redondance est initialement assez élevée, elle diminue sous l’effet de l’ambiguïté-autonomie, et ce terme devient positif, contribuant à accroître l’information du système.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 549,
+      "end": 647,
+      "claim_text": "Le second exprime la variation d’une autre grandeur, que l’équation note H_max, et il est négatif.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-4b1b2202ce43fcea"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 122,
+      "claim_text": "Selon les valeurs des paramètres, la quantité d’information commence alors par augmenter, atteint un maximum, puis décroît",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-4b1b2202ce43fcea"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 125,
+      "end": 258,
+      "claim_text": "une phase de croissance et de maturation, avec possibilité d’apprentissage adaptatif, précède une phase de vieillissement et de mort.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-4b1b2202ce43fcea"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 259,
+      "end": 458,
+      "claim_text": "Atlan souligne que ce sont les mêmes facteurs qui font les deux : ceux qui sont responsables de la désorganisation progressive conduisant le système à sa mort ont auparavant nourri son développement.",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-4b1b2202ce43fcea"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 74,
+      "claim_text": "Reste l’objection que la thèse appelle, et le texte se la fait à lui-même.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 75,
+      "end": 291,
+      "claim_text": "Si le bruit venu de l’environnement était utilisé par le système comme facteur d’organisation, il ne serait plus vraiment du bruit : cela reviendrait à dire que les facteurs de l’environnement ne sont pas aléatoires.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 292,
+      "end": 307,
+      "claim_text": "Or ils le sont.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 308,
+      "end": 497,
+      "claim_text": "Ces processus n’existent donc qu’autant que les erreurs sont a priori de vraies erreurs, que l’ordre est vraiment perturbé par le désordre, que la destruction, sans être totale, est réelle.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 73,
+      "claim_text": "C’est de là que vient le titre de la section « Le bruit comme événement »",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 75,
+      "end": 209,
+      "claim_text": "et cette phrase : « Les effets du bruit deviennent alors des événements de l’histoire du système et de son processus d’organisation. »",
+      "support_ids": [
+        "SUP-392ac5188c77f512",
+        "SUP-8770bcfb98f57643"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 210,
+      "end": 299,
+      "claim_text": "Ils demeurent pourtant les effets d’un bruit, en ce que leur survenue était imprévisible.",
+      "support_ids": [
+        "SUP-392ac5188c77f512"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 300,
+      "end": 409,
+      "claim_text": "Paulré, dans une note, cite cette phrase comme tirée d’un livre d’Atlan de 1979, Entre le cristal et la fumée",
+      "support_ids": [
+        "SUP-8770bcfb98f57643",
+        "SUP-37a9d12ea937efdb"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 411,
+      "end": 545,
+      "claim_text": "et l’article annonçait déjà dans sa bibliographie un ouvrage « à paraître », L’organisation biologique et la théorie de l’information.",
+      "support_ids": [
+        "SUP-cf65006e3fd4d757",
+        "SUP-9c85b76dc181a808",
+        "SUP-5e986b974d9bf884"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 546,
+      "end": 622,
+      "claim_text": "Ce que ces deux livres font de l’article, il faudra les ouvrir pour le voir.",
+      "normalized_claim": "Ni l'ouvrage de 1979 ni l'ouvrage Hermann n'ont été ouverts.",
+      "support_ids": [
+        "SUP-8770bcfb98f57643",
+        "SUP-cf65006e3fd4d757"
+      ]
+    }
+  ]
+}

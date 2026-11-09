@@ -1,3 +1,5 @@
+![Curiosity, bannière conforme à la direction artistique de l'application](.github/readme-hero.svg)
+
 # Curiosity — Comprendre le travail et les organisations
 
 **→ [j-rbs91.github.io/Curiosity](https://j-rbs91.github.io/Curiosity/)**
