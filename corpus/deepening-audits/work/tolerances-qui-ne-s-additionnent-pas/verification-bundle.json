@@ -1,8 +1,8 @@
 {
   "protocol_version": 2,
   "concept_id": "tolerances-qui-ne-s-additionnent-pas",
-  "candidate_sha256": "334d3760b8bf68dc97a71950789c0f3459192db61156882eb105fb221f5f06e2",
-  "map_sha256": "d5bebf072e6c92a89799dfea6609c661b1ca11dc7f6cce0e1b85c1d994458f54",
+  "candidate_sha256": "06870e45801240bf4561cabd306f84051b8258a5eb8b74221c9b009495ff03fe",
+  "map_sha256": "4ea1a901754d511fc32b70f6c3f5eb03a489f4da77f046ae46c26d812bda7616",
   "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
   "signal_lexique": {
     "cartes_mesurees": 136,
@@ -13,7 +13,7 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "claim_text": "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf.",
+      "claim_text": "Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum.",
       "supports": [
         {
           "id": "SUP-7c9cbf25b4e7914e",
@@ -23,32 +23,17 @@
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         },
         {
-          "id": "SUP-de9a4f153a86d001",
+          "id": "SUP-e2a21c81ba720c0c",
           "origin": "validated",
-          "path": "$.notes[4]",
+          "path": "$.review.notes[4]",
           "access": "n/a",
-          "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
+          "text": "Note d'attribution controlee sur images : << expanded in a Taylor's series >> figure p. 256 (n269), << Making application of Tchebycheff's theorem >> p. 257 (n270) ; la definition d'atelier invoquee (<< the definition of a tolerance as the range between the maximum and minimum possible values of the quality >>) est p. 253, et le constat que la combinaison des extremes est << very small indeed >> est p. 254 (n267). L'ouvrage est signe d'un seul auteur : page de titre << By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. >> ; la preface remercie T. C. Fry et E. C. Molina pour leurs critiques, ce qui est un remerciement et non une co-signature. La fiche ne revendique pour Shewhart que l'objection et sa mesure, en desavouant explicitement la pratique critiquee et les mathematiques employees : cette borne est exacte."
         }
       ],
       "uncited_support_signal": []
     },
     {
       "claim_id": "C002",
-      "locator": "lead[0]",
-      "claim_text": "Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum, à l’intérieur de laquelle on la déclare bonne.",
-      "supports": [
-        {
-          "id": "SUP-7c9cbf25b4e7914e",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C003",
       "locator": "lead[0]",
       "claim_text": "Le geste qui vient de lui-même est d’additionner les neuf plages.",
       "supports": [
@@ -77,29 +62,29 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C004",
+      "claim_id": "C003",
       "locator": "lead[0]",
       "claim_text": "Il donne une fourchette large",
       "supports": [
-        {
-          "id": "SUP-de9a4f153a86d001",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
-        },
         {
           "id": "SUP-7c9cbf25b4e7914e",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+        },
+        {
+          "id": "SUP-de9a4f153a86d001",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C005",
+      "claim_id": "C004",
       "locator": "lead[0]",
       "claim_text": "il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage.",
       "supports": [
@@ -114,7 +99,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C006",
+      "claim_id": "C005",
       "locator": "lead[1]",
       "claim_text": "W. A. Shewhart, du personnel technique des Bell Telephone Laboratories",
       "supports": [
@@ -129,10 +114,17 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "claim_text": "pose la question telle quelle en 1931, dans Economic Control of Quality of Manufactured Product, paru chez D. Van Nostrand",
       "supports": [
+        {
+          "id": "SUP-7c9cbf25b4e7914e",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+        },
         {
           "id": "SUP-b00df733fe95669b",
           "origin": "validated",
@@ -149,31 +141,24 @@
           "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, Inc., 1931, xiv-501 p. Exemplaire lu : un tirage Van Nostrand ultérieur portant « SEVENTH PRINTING » en page de titre, numérisé par Digital Library of India et servi par Internet Archive sous l'item in.ernet.dli.2015.150272, à composition et pagination identiques. Lecture faite sur les images de feuillet en pleine largeur, jamais sur la couche OCR. Pages ouvertes en image pour ce concept : feuillet n265 (p. 252, fin du paragraphe 4 et ouverture du paragraphe 5), n266 (p. 253, figure 86 « Tolerance Ranges on Observed Distributions »), n267 (p. 254), n268 (p. 255, figure 87 « Illustrating Proper Way to Set Limits » et la phrase citée), n270 (p. 257, équations 82 et théorème de Tchebychev). La source est citée sans URL, décision motivée reprise des cartes Shewhart déjà publiées : la notice de cet exemplaire ne porte aucun champ de droits et aucune autorisation d'ayant droit n'est constatée. Le texte a bien été lu, d'où consulted full-text ; c'est l'URL qui tombe, pas la lecture."
         },
         {
+          "id": "SUP-3d4a5a132a6deef8",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, 1931, partie V, chapitre XVII « Design Limits on Variability », paragraphe 5, sous la figure 87 « Illustrating Proper Way to Set Limits »."
+        },
+        {
           "id": "SUP-980c9ee83b78cd0a",
           "origin": "validated",
           "path": "$.quotation.reference",
           "access": "n/a",
           "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931."
-        },
-        {
-          "id": "SUP-bcb2e20e03378e72",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE. Le hook (<< Additionner les tolerances des pieces donne-t-il celle de l'ensemble ? >>) reprend la question que Shewhart pose lui-meme p. 253 : << What shall the engineer use as the tolerance range for the overall resistance ? >>, et l'ouvrage y repond p. 254-255 ; c'est une question, elle n'affirme rien de plus. Le summary tient sur trois appuis, tous trouves sur les images : << peut etre peu economique >> rend le << may be uneconomical >> de la p. 255 sans lever le modal ; << leurs extremes coincident rarement >> rend le << is very small indeed >> de la p. 254 sans en hausser le ton ; << l'ecart type de l'assemblage valant la racine de la somme des carres >> est la formule imprimee en haut de la p. 255, σ = racine de σ1² + σ2² + ... + σm². Aucun adjectif n'excede la source : rien n'y parle d'impossibilite, de garantie, ni de loi generale."
-        },
-        {
-          "id": "SUP-7c9cbf25b4e7914e",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C007",
       "locator": "lead[1]",
       "claim_text": "au chapitre XVII intitulé « Design limits on Variability »",
       "supports": [
@@ -190,12 +175,19 @@
           "path": "$.quotation.reference",
           "access": "n/a",
           "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, 1931, partie V, chapitre XVII « Design Limits on Variability », paragraphe 5, sous la figure 87 « Illustrating Proper Way to Set Limits »."
+        },
+        {
+          "id": "SUP-7c9cbf25b4e7914e",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C008",
       "locator": "lead[1]",
       "claim_text": "« What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ?",
       "supports": [
@@ -217,7 +209,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C009",
       "locator": "lead[1]",
       "claim_text": "Et il en fait une question d’économie : ce qu’il est économique de prévoir pour l’ensemble.",
       "supports": [
@@ -234,19 +226,12 @@
           "path": "$.reserves[1]",
           "access": "n/a",
           "text": "La citation retenue est la seule de ce passage à tenir dans le gabarit, et elle n'y tient qu'au prix d'une coupe de tête et d'une contraction, l'une et l'autre déclarées dans la note de traduction. Deux autres passages portent mieux l'argument et ont été mesurés puis écartés. Celui de la p. 254, « The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur », fait 203 caractères en anglais et ne se ramène sous 150 en français par aucune coupe qui laisse la question intelligible. Celui de la p. 254 également, sur la rareté des combinaisons extrêmes, dépasse 290 caractères. Si la rédaction juge la citation retenue trop chargée par sa formule, le repli honnête est quotation nulle et un résumé qui porte l'argument, pas une phrase raccourcie qui perdrait la référence aux limites ΣR̄i ± 3σ."
-        },
-        {
-          "id": "SUP-4fbf395a4d4a8d7a",
-          "origin": "validated",
-          "path": "$.notes[3]",
-          "access": "n/a",
-          "text": "La citation retenue est la seule de ce passage à tenir dans le gabarit, et elle n'y tient qu'au prix d'une coupe de tête et d'une contraction, l'une et l'autre déclarées dans la note de traduction. Le lecteur primaire a mesuré puis écarté deux passages qui portent mieux l'argument : celui de la page 254 sur l'économie d'une tolérance d'ensemble égale à l'étendue des extrêmes possibles fait 203 caractères en anglais, celui sur la rareté des combinaisons extrêmes dépasse 290. Il signale que si la formule ΣR̄i ± 3σ était jugée trop chargée pour la carte, le repli honnête serait une carte sans citation, jamais une phrase raccourcie qui perdrait la référence à ces limites. La formule est conservée."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "L’addition est la conséquence exacte d’une définition d’atelier",
       "supports": [
@@ -258,18 +243,18 @@
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         },
         {
-          "id": "SUP-2b23172098a4ec51",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage. Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui, et il le dit : additionner les écarts extrêmes des pièces découle de la définition d'atelier d'une tolérance, et le développement passe par une série de Taylor puis par le théorème de Tchebychev, tous deux nommés dans le texte. Ce qui lui revient est l'objection et sa mesure."
-        },
-        {
           "id": "SUP-7d69b24f8361b879",
           "origin": "evidence:lecture.json",
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage : la page de titre du tirage lu ne porte qu'un nom et la notice bibliographique qui résout le LCCN 31032090 n'enregistre aucun coauteur. La dette est ici mathématique et Shewhart la nomme lui-même dans les pages citées, sans se l'attribuer : le développement qui donne l'écart type d'un assemblage passe par une série de Taylor, la borne de probabilité vient du théorème de Tchebychev, et la minimisation de la variabilité, deux pages plus loin, emploie un multiplicateur de Lagrange. Ces trois noms sont imprimés dans le texte. La pratique qu'il critique n'est pas davantage de lui : additionner les écarts extrêmes des pièces pour obtenir la tolérance de l'ensemble est présenté comme l'usage en vigueur, « the practice previously described », qui découle de la définition d'atelier d'une tolérance comme intervalle entre valeurs extrêmes possibles. Ce qui lui revient est l'objection et sa mesure : montrer que cet usage surdimensionne la tolérance de l'ensemble, et donner la borne à retenir à la place."
+        },
+        {
+          "id": "SUP-2b23172098a4ec51",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage. Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui, et il le dit : additionner les écarts extrêmes des pièces découle de la définition d'atelier d'une tolérance, et le développement passe par une série de Taylor puis par le théorème de Tchebychev, tous deux nommés dans le texte. Ce qui lui revient est l'objection et sa mesure."
         }
       ],
       "uncited_support_signal": [
@@ -284,7 +269,7 @@
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "que Shewhart rappelle page 253 : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité.",
       "supports": [
@@ -306,9 +291,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Si une tolérance nomme le possible, le raisonnement est sans faille.",
+      "claim_text": "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages.",
       "supports": [
         {
           "id": "SUP-7c9cbf25b4e7914e",
@@ -335,22 +320,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C014",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages.",
-      "supports": [
-        {
-          "id": "SUP-7c9cbf25b4e7914e",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C015",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Ce que Shewhart met en cause n’est donc pas le calcul : c’est qu’on prenne le possible pour la mesure de ce qu’il faut prévoir.",
       "supports": [
@@ -376,17 +346,17 @@
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         },
         {
-          "id": "SUP-7d69b24f8361b879",
+          "id": "SUP-00cf45fc4a04fa31",
           "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
+          "path": "$.reserves[1]",
           "access": "n/a",
-          "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage : la page de titre du tirage lu ne porte qu'un nom et la notice bibliographique qui résout le LCCN 31032090 n'enregistre aucun coauteur. La dette est ici mathématique et Shewhart la nomme lui-même dans les pages citées, sans se l'attribuer : le développement qui donne l'écart type d'un assemblage passe par une série de Taylor, la borne de probabilité vient du théorème de Tchebychev, et la minimisation de la variabilité, deux pages plus loin, emploie un multiplicateur de Lagrange. Ces trois noms sont imprimés dans le texte. La pratique qu'il critique n'est pas davantage de lui : additionner les écarts extrêmes des pièces pour obtenir la tolérance de l'ensemble est présenté comme l'usage en vigueur, « the practice previously described », qui découle de la définition d'atelier d'une tolérance comme intervalle entre valeurs extrêmes possibles. Ce qui lui revient est l'objection et sa mesure : montrer que cet usage surdimensionne la tolérance de l'ensemble, et donner la borne à retenir à la place."
+          "text": "La citation retenue est la seule de ce passage à tenir dans le gabarit, et elle n'y tient qu'au prix d'une coupe de tête et d'une contraction, l'une et l'autre déclarées dans la note de traduction. Deux autres passages portent mieux l'argument et ont été mesurés puis écartés. Celui de la p. 254, « The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur », fait 203 caractères en anglais et ne se ramène sous 150 en français par aucune coupe qui laisse la question intelligible. Celui de la p. 254 également, sur la rareté des combinaisons extrêmes, dépasse 290 caractères. Si la rédaction juge la citation retenue trop chargée par sa formule, le repli honnête est quotation nulle et un résumé qui porte l'argument, pas une phrase raccourcie qui perdrait la référence aux limites ΣR̄i ± 3σ."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C016",
+      "claim_id": "C014",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble.",
       "supports": [
@@ -401,7 +371,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C015",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Page 254, Shewhart s’arrête sur cette chance : quand les pièces sont nombreuses et prises au hasard, le nombre de fois où leur combinaison atteint la limite haute ou la limite basse est « very small indeed », très faible en effet.",
       "supports": [
@@ -430,7 +400,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines.",
       "supports": [
@@ -459,7 +429,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "C’est l’hypothèse de ce passage, et elle porte tout le reste.",
       "supports": [
@@ -481,9 +451,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "La plage additionnée décrit alors un assemblage que rien n’interdit et qu’on n’a pratiquement aucune chance de fabriquer.",
+      "claim_text": "La plage additionnée décrit alors un assemblage que rien n’interdit, mais dont la chance, quand les pièces sont nombreuses, est très faible.",
       "supports": [
         {
           "id": "SUP-7c9cbf25b4e7914e",
@@ -493,24 +463,17 @@
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         },
         {
-          "id": "SUP-efa9980bc3e453bc",
+          "id": "SUP-e2a21c81ba720c0c",
           "origin": "validated",
-          "path": "$.quotation.original_text",
+          "path": "$.review.notes[4]",
           "access": "n/a",
-          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
-        },
-        {
-          "id": "SUP-c3c198cbf6191f0f",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+          "text": "Note d'attribution controlee sur images : << expanded in a Taylor's series >> figure p. 256 (n269), << Making application of Tchebycheff's theorem >> p. 257 (n270) ; la definition d'atelier invoquee (<< the definition of a tolerance as the range between the maximum and minimum possible values of the quality >>) est p. 253, et le constat que la combinaison des extremes est << very small indeed >> est p. 254 (n267). L'ouvrage est signe d'un seul auteur : page de titre << By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. >> ; la preface remercie T. C. Fry et E. C. Molina pour leurs critiques, ce qui est un remerciement et non une co-signature. La fiche ne revendique pour Shewhart que l'objection et sa mesure, en desavouant explicitement la pratique critiquee et les mathematiques employees : cette borne est exacte."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C019",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "c’est ici que l’écart type entre en scène",
       "supports": [
@@ -525,14 +488,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C022",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent typiquement de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée.",
-      "supports": [],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C023",
+      "claim_id": "C020",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La formule imprimée en haut de la page 255 donne celui de la résultante",
       "supports": [
@@ -561,7 +517,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C021",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces.",
       "supports": [
@@ -580,13 +536,6 @@
           "text": "PROSE. Le hook (<< Additionner les tolerances des pieces donne-t-il celle de l'ensemble ? >>) reprend la question que Shewhart pose lui-meme p. 253 : << What shall the engineer use as the tolerance range for the overall resistance ? >>, et l'ouvrage y repond p. 254-255 ; c'est une question, elle n'affirme rien de plus. Le summary tient sur trois appuis, tous trouves sur les images : << peut etre peu economique >> rend le << may be uneconomical >> de la p. 255 sans lever le modal ; << leurs extremes coincident rarement >> rend le << is very small indeed >> de la p. 254 sans en hausser le ton ; << l'ecart type de l'assemblage valant la racine de la somme des carres >> est la formule imprimee en haut de la p. 255, σ = racine de σ1² + σ2² + ... + σm². Aucun adjectif n'excede la source : rien n'y parle d'impossibilite, de garantie, ni de loi generale."
         },
         {
-          "id": "SUP-701085c0fd487b27",
-          "origin": "validated",
-          "path": "$.summary",
-          "access": "n/a",
-          "text": "Additionner les tolérances des pièces peut être peu économique : leurs extrêmes coïncident rarement, l'écart type de l'assemblage valant la racine de la somme des carrés."
-        },
-        {
           "id": "SUP-8c1e694f4a7e68ec",
           "origin": "validated",
           "path": "$.notes[2]",
@@ -597,17 +546,10 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C022",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Pour passer de cette formule à une tolérance, il faut une condition, et Shewhart la pose explicitement page 254",
+      "claim_text": "Pour passer de cette formule à une tolérance, il faut une condition, et Shewhart la pose explicitement",
       "supports": [
-        {
-          "id": "SUP-3fe26198a6f5f96b",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule l'écart type d'une résultante, σ = √(Σ ai²σi²), et en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a elle-même été posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Le résultat suppose enfin l'assemblage au hasard et l'indépendance des pièces ; un appariement sélectif en atelier le mettrait en défaut, et ce cas n'est pas examiné."
-        },
         {
           "id": "SUP-ed276a1402219999",
           "origin": "evidence:lecture.json",
@@ -616,17 +558,17 @@
           "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule un écart type de résultante, σ = √(Σ ai²σi²), et il en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a été elle-même posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5 et qui ne va pas de soi. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Enfin le résultat suppose l'assemblage au hasard, « product assembled at random », et l'indépendance des pièces : un appariement sélectif en atelier le mettrait en défaut, et Shewhart n'examine pas ce cas ici."
         },
         {
-          "id": "SUP-7c9cbf25b4e7914e",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
+          "id": "SUP-3fe26198a6f5f96b",
+          "origin": "validated",
+          "path": "$.notes[0]",
           "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule l'écart type d'une résultante, σ = √(Σ ai²σi²), et en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a elle-même été posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Le résultat suppose enfin l'assemblage au hasard et l'indépendance des pièces ; un appariement sélectif en atelier le mettrait en défaut, et ce cas n'est pas examiné."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C023",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "chaque sorte de pièce est fabriquée de façon maîtrisée autour d’une valeur moyenne, et sa tolérance est fixée à trois écarts types de part et d’autre de cette moyenne.",
       "supports": [
@@ -638,46 +580,24 @@
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         },
         {
-          "id": "SUP-3fe26198a6f5f96b",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule l'écart type d'une résultante, σ = √(Σ ai²σi²), et en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a elle-même été posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Le résultat suppose enfin l'assemblage au hasard et l'indépendance des pièces ; un appariement sélectif en atelier le mettrait en défaut, et ce cas n'est pas examiné."
-        },
-        {
           "id": "SUP-ed276a1402219999",
           "origin": "evidence:lecture.json",
           "path": "$.reserves[2]",
           "access": "n/a",
           "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule un écart type de résultante, σ = √(Σ ai²σi²), et il en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a été elle-même posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5 et qui ne va pas de soi. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Enfin le résultat suppose l'assemblage au hasard, « product assembled at random », et l'indépendance des pièces : un appariement sélectif en atelier le mettrait en défaut, et Shewhart n'examine pas ce cas ici."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C027",
-      "locator": "sections[2].paragraphs[1]",
-      "claim_text": "Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance.",
-      "supports": [
+        },
         {
           "id": "SUP-3fe26198a6f5f96b",
           "origin": "validated",
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule l'écart type d'une résultante, σ = √(Σ ai²σi²), et en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a elle-même été posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Le résultat suppose enfin l'assemblage au hasard et l'indépendance des pièces ; un appariement sélectif en atelier le mettrait en défaut, et ce cas n'est pas examiné."
-        },
-        {
-          "id": "SUP-ed276a1402219999",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[2]",
-          "access": "n/a",
-          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule un écart type de résultante, σ = √(Σ ai²σi²), et il en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a été elle-même posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5 et qui ne va pas de soi. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Enfin le résultat suppose l'assemblage au hasard, « product assembled at random », et l'indépendance des pièces : un appariement sélectif en atelier le mettrait en défaut, et Shewhart n'examine pas ce cas ici."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C024",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois.",
       "supports": [
@@ -687,19 +607,12 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
-        },
-        {
-          "id": "SUP-de9a4f153a86d001",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C025",
       "locator": "sections[2].paragraphs[2]",
       "claim_text": "La fourchette additionnée est trois fois plus large que les limites à trois écarts types de l’ensemble.",
       "supports": [
@@ -721,10 +634,39 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C026",
       "locator": "sections[2].paragraphs[2]",
-      "claim_text": "C’est ce que la figure 87 met sous les yeux pour neuf pièces",
+      "claim_text": "Pour neuf pièces, la figure 87 place l’étendue à six écarts types de l’ensemble loin à l’intérieur de la tolérance additive",
       "supports": [
+        {
+          "id": "SUP-7c9cbf25b4e7914e",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+        },
+        {
+          "id": "SUP-de9a4f153a86d001",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[2]",
+      "claim_text": "son titre porte la conclusion : « Illustrating Proper Way to Set Limits ».",
+      "supports": [
+        {
+          "id": "SUP-7c9cbf25b4e7914e",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+        },
         {
           "id": "SUP-de9a4f153a86d001",
           "origin": "validated",
@@ -733,11 +675,11 @@
           "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
         },
         {
-          "id": "SUP-7c9cbf25b4e7914e",
+          "id": "SUP-3d4a5a132a6deef8",
           "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
+          "path": "$.quotation.reference",
           "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+          "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, 1931, partie V, chapitre XVII « Design Limits on Variability », paragraphe 5, sous la figure 87 « Illustrating Proper Way to Set Limits »."
         },
         {
           "id": "SUP-75367ab18ad97ecd",
@@ -750,46 +692,10 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C031",
-      "locator": "sections[2].paragraphs[2]",
-      "claim_text": "son titre porte la conclusion : « Illustrating Proper Way to Set Limits ».",
-      "supports": [
-        {
-          "id": "SUP-de9a4f153a86d001",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
-        },
-        {
-          "id": "SUP-7c9cbf25b4e7914e",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
-        },
-        {
-          "id": "SUP-3d4a5a132a6deef8",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.reference",
-          "access": "n/a",
-          "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, 1931, partie V, chapitre XVII « Design Limits on Variability », paragraphe 5, sous la figure 87 « Illustrating Proper Way to Set Limits »."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C032",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[3]",
       "claim_text": "D’où la phrase de Shewhart, page 255 : la pratique qui additionne les limites de tolérance « may be uneconomical », peut être peu économique",
       "supports": [
-        {
-          "id": "SUP-efa9980bc3e453bc",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
-        },
         {
           "id": "SUP-c3c198cbf6191f0f",
           "origin": "evidence:lecture.json",
@@ -798,11 +704,25 @@
           "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
         },
         {
-          "id": "SUP-7c909bab5bc2ce65",
+          "id": "SUP-efa9980bc3e453bc",
           "origin": "validated",
-          "path": "$.quotation.locator",
+          "path": "$.quotation.original_text",
           "access": "n/a",
-          "text": "p. 255, ch. XVII, § 5"
+          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+        },
+        {
+          "id": "SUP-c3cea19540ab7c79",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] additionner les limites de tolérance peut être peu économique : il est très rare qu'une résistance résultante sorte des limites ΣR̄i ± 3σ."
+        },
+        {
+          "id": "SUP-7f36cf2748852446",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "[…] additionner les limites de tolérance peut être peu économique : il est très rare qu'une résistance résultante sorte des limites ΣR̄i ± 3σ."
         },
         {
           "id": "SUP-7cec3ef3dc8199b2",
@@ -812,27 +732,27 @@
           "text": "p. 255"
         },
         {
-          "id": "SUP-7c9cbf25b4e7914e",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
+          "id": "SUP-7c909bab5bc2ce65",
+          "origin": "validated",
+          "path": "$.quotation.locator",
           "access": "n/a",
-          "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+          "text": "p. 255, ch. XVII, § 5"
+        },
+        {
+          "id": "SUP-414a2d5ce98ab542",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION lue sur l'image de la page 255 (feuillet n268, bas de page), jamais sur la couche OCR : << We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. >>. Le champ original_text de la fiche est identique mot pour mot, y compris la barre sur R et le signe ±. La phrase fait bien 196 caracteres."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[3]",
       "claim_text": "parce que la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est relativement très faible.",
       "supports": [
-        {
-          "id": "SUP-efa9980bc3e453bc",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
-        },
         {
           "id": "SUP-c3c198cbf6191f0f",
           "origin": "evidence:lecture.json",
@@ -841,6 +761,20 @@
           "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
         },
         {
+          "id": "SUP-efa9980bc3e453bc",
+          "origin": "validated",
+          "path": "$.quotation.original_text",
+          "access": "n/a",
+          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+        },
+        {
+          "id": "SUP-414a2d5ce98ab542",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION lue sur l'image de la page 255 (feuillet n268, bas de page), jamais sur la couche OCR : << We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. >>. Le champ original_text de la fiche est identique mot pour mot, y compris la barre sur R et le signe ±. La phrase fait bien 196 caracteres."
+        },
+        {
           "id": "SUP-7c9cbf25b4e7914e",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
@@ -851,16 +785,37 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[3]",
       "claim_text": "Le modal compte autant que l’adjectif : improbable, et non pas impossible.",
       "supports": [
         {
-          "id": "SUP-36fc01d65a4e6883",
-          "origin": "validated",
-          "path": "$.quotation.translation.translator",
+          "id": "SUP-c3c198cbf6191f0f",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.original_text",
           "access": "n/a",
-          "text": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026), faite sur l'image de la page et non sur l'OCR ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La phrase anglaise fait 196 caractères et deux opérations ont été nécessaires. Une coupe de tête, marquée par […] : « We see at once that the practice of » est retiré, ce qui laisse l'objection entière. Une contraction de la subordonnée causale : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits » devient « : il est très rare qu'une résistance résultante sorte des limites ». Ce rendu perd l'adverbe « relatively » et convertit une probabilité en fréquence, sans renverser le sens ni durcir l'affirmation, qui reste une improbabilité et non une impossibilité. La formule ΣR̄i ± 3σ est reproduite telle qu'imprimée et ne doit pas être coupée : ce sont les limites statistiques de l'assemblage, et non les limites additives que Shewhart critique."
+          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+        },
+        {
+          "id": "SUP-efa9980bc3e453bc",
+          "origin": "validated",
+          "path": "$.quotation.original_text",
+          "access": "n/a",
+          "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+        },
+        {
+          "id": "SUP-ed276a1402219999",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[2]",
+          "access": "n/a",
+          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule un écart type de résultante, σ = √(Σ ai²σi²), et il en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a été elle-même posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5 et qui ne va pas de soi. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Enfin le résultat suppose l'assemblage au hasard, « product assembled at random », et l'indépendance des pièces : un appariement sélectif en atelier le mettrait en défaut, et Shewhart n'examine pas ce cas ici."
+        },
+        {
+          "id": "SUP-3fe26198a6f5f96b",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule l'écart type d'une résultante, σ = √(Σ ai²σi²), et en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a elle-même été posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Le résultat suppose enfin l'assemblage au hasard et l'indépendance des pièces ; un appariement sélectif en atelier le mettrait en défaut, et ce cas n'est pas examiné."
         },
         {
           "id": "SUP-c4056072cc1285db",
@@ -870,18 +825,11 @@
           "text": "Traduction interne non publiée, faite sur l'image de la page et non sur l'OCR. Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La phrase anglaise fait 196 caractères et sa traduction littérale complète en fait 177 : elle ne tenait pas dans le gabarit, et deux opérations ont été nécessaires, toutes deux déclarées ici. Premièrement une coupe, marquée par […] en tête : l'amorce « We see at once that the practice of » est retirée, ce qui laisse la proposition intacte et n'ôte rien au propos, la phrase restant l'énoncé complet de l'objection. Deuxièmement une contraction de la subordonnée causale : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits » est rendue par « : il est très rare qu'une résistance résultante sorte des limites ». Ce rendu perd deux choses et il faut le savoir, l'adverbe « relatively », et la forme probabiliste explicite « the chance is very small » convertie en une fréquence, « il est très rare ». Il ne renverse pas le sens et ne durcit pas l'affirmation, qui reste une improbabilité et non une impossibilité. La formule ΣR̄i ± 3σ est reproduite telle qu'imprimée et ne doit pas être coupée : c'est elle qui dit de quelles limites il s'agit, à savoir les limites statistiques de l'assemblage, et non les limites additives que Shewhart critique. Le lecteur qui les confondrait lirait exactement le contraire de la phrase."
         },
         {
-          "id": "SUP-c0a13b71f99a8796",
+          "id": "SUP-36fc01d65a4e6883",
           "origin": "validated",
-          "path": "$.review.notes[2]",
+          "path": "$.quotation.translation.translator",
           "access": "n/a",
-          "text": "Traduction : declaree comme interne, non publiee, faite sur l'image. La coupe de tete (<< We see at once that the practice of >>) est marquee par […] et ne durcit rien. La contraction de la subordonnee causale (<< because the chance is relatively very small that a resultant resistance would ever lie outside >> rendu par << : il est tres rare qu'une resistance resultante sorte des limites >>) est declaree dans la fiche ; elle perd << relatively >>, ce qui raffermit legerement l'enonce sans renverser le sens : le modal << may be >> est conserve par << peut etre >>, l'improbabilite reste une improbabilite. Aucun choix de mot n'inverse le sens."
-        },
-        {
-          "id": "SUP-ed276a1402219999",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[2]",
-          "access": "n/a",
-          "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule un écart type de résultante, σ = √(Σ ai²σi²), et il en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a été elle-même posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5 et qui ne va pas de soi. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Enfin le résultat suppose l'assemblage au hasard, « product assembled at random », et l'indépendance des pièces : un appariement sélectif en atelier le mettrait en défaut, et Shewhart n'examine pas ce cas ici."
+          "text": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026), faite sur l'image de la page et non sur l'OCR ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La phrase anglaise fait 196 caractères et deux opérations ont été nécessaires. Une coupe de tête, marquée par […] : « We see at once that the practice of » est retiré, ce qui laisse l'objection entière. Une contraction de la subordonnée causale : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits » devient « : il est très rare qu'une résistance résultante sorte des limites ». Ce rendu perd l'adverbe « relatively » et convertit une probabilité en fréquence, sans renverser le sens ni durcir l'affirmation, qui reste une improbabilité et non une impossibilité. La formule ΣR̄i ± 3σ est reproduite telle qu'imprimée et ne doit pas être coupée : ce sont les limites statistiques de l'assemblage, et non les limites additives que Shewhart critique."
         }
       ],
       "uncited_support_signal": [
@@ -896,7 +844,7 @@
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C031",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "La racine de la somme des carrés vaut pour une somme.",
       "supports": [
@@ -925,7 +873,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256",
       "supports": [
@@ -940,29 +888,29 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "traite le cas où la qualité d’ensemble n’est pas la somme de celles des pièces mais une fonction quelconque d’entre elles.",
       "supports": [
-        {
-          "id": "SUP-45a92230b526fd45",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le résumé dit « l'écart type de l'assemblage » là où le texte écrit celui de la résultante, la qualité X composée des qualités des pièces ; le cas général du paragraphe 6 n'est d'ailleurs pas limité aux grandeurs qui s'ajoutent, X y étant une fonction quelconque des Xi, développée en série de Taylor au premier ordre. La borne de probabilité est empruntée à Tchebychev, et la valeur 0,9973 ne vaut que si les composants sont normaux."
-        },
         {
           "id": "SUP-7c9cbf25b4e7914e",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+        },
+        {
+          "id": "SUP-45a92230b526fd45",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "Le résumé dit « l'écart type de l'assemblage » là où le texte écrit celui de la résultante, la qualité X composée des qualités des pièces ; le cas général du paragraphe 6 n'est d'ailleurs pas limité aux grandeurs qui s'ajoutent, X y étant une fonction quelconque des Xi, développée en série de Taylor au premier ordre. La borne de probabilité est empruntée à Tchebychev, et la valeur 0,9973 ne vaut que si les composants sont normaux."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C034",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Shewhart la développe « expanded in a Taylor’s series », en série de Taylor, et n’en retient que le premier ordre.",
       "supports": [
@@ -998,7 +946,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C035",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge.",
       "supports": [
@@ -1027,7 +975,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C036",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Son écart type est multiplié par ce coefficient avant d’être élevé au carré.",
       "supports": [
@@ -1056,7 +1004,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "La règle simple de la page 255 est le cas particulier où tous ces coefficients valent un, celui de la somme.",
       "supports": [
@@ -1078,7 +1026,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C038",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "La tenir pour la loi générale des assemblages serait lui faire dire plus qu’elle ne dit.",
       "supports": [
@@ -1090,11 +1038,11 @@
           "text": "Précision établie par le contrôle du 7 septembre 2026, et qui ne touche pas le résumé, donné pour fidèle. La racine de la somme des carrés que le résumé énonce est le cas de la somme, celui de la page 255 sur lequel la carte s'appuie : chaque pièce y contribue par son seul écart type. La formule générale du paragraphe 6, page 257, porte des coefficients de sensibilité, σX = √(a1²σ1² + ... + am²σm²), les ai venant du développement en série de Taylor de la fonction F au premier ordre ; la racine de la somme des carrés simple n'en est que le cas où ces coefficients valent un. La fourchette de pages de la source primaire est corrigée par le même contrôle, de p. 252-258 à p. 252-259 : le paragraphe 6 court jusqu'à la page 259, où s'ouvre le paragraphe 7."
         },
         {
-          "id": "SUP-45a92230b526fd45",
+          "id": "SUP-1bd3aa5e2cb14adb",
           "origin": "validated",
-          "path": "$.notes[1]",
+          "path": "$.review.notes[10]",
           "access": "n/a",
-          "text": "Le résumé dit « l'écart type de l'assemblage » là où le texte écrit celui de la résultante, la qualité X composée des qualités des pièces ; le cas général du paragraphe 6 n'est d'ailleurs pas limité aux grandeurs qui s'ajoutent, X y étant une fonction quelconque des Xi, développée en série de Taylor au premier ordre. La borne de probabilité est empruntée à Tchebychev, et la valeur 0,9973 ne vaut que si les composants sont normaux."
+          "text": "Hors mandat, sans consequence sur le verdict : le § 6 se poursuit jusqu'a la page 259 (le § 7 s'ouvre p. 259, feuillet n272), de sorte que la fourchette << p. 252-258 >> s'arrete une page avant la fin du § 6. Et la formule generale de la p. 257 porte des coefficients de sensibilite (σx = racine de a1²σ1² + ... + am²σm²) ; la racine de la somme des carrés du summary est le cas de la somme, qui est precisement celui de la p. 255 sur laquelle la fiche s'appuie."
         },
         {
           "id": "SUP-bcb2e20e03378e72",
@@ -1107,17 +1055,10 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C039",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257.",
       "supports": [
-        {
-          "id": "SUP-e2a21c81ba720c0c",
-          "origin": "validated",
-          "path": "$.review.notes[4]",
-          "access": "n/a",
-          "text": "Note d'attribution controlee sur images : << expanded in a Taylor's series >> figure p. 256 (n269), << Making application of Tchebycheff's theorem >> p. 257 (n270) ; la definition d'atelier invoquee (<< the definition of a tolerance as the range between the maximum and minimum possible values of the quality >>) est p. 253, et le constat que la combinaison des extremes est << very small indeed >> est p. 254 (n267). L'ouvrage est signe d'un seul auteur : page de titre << By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. >> ; la preface remercie T. C. Fry et E. C. Molina pour leurs critiques, ce qui est un remerciement et non une co-signature. La fiche ne revendique pour Shewhart que l'objection et sa mesure, en desavouant explicitement la pratique critiquee et les mathematiques employees : cette borne est exacte."
-        },
         {
           "id": "SUP-7c9cbf25b4e7914e",
           "origin": "evidence:lecture.json",
@@ -1126,11 +1067,11 @@
           "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
         },
         {
-          "id": "SUP-2b23172098a4ec51",
+          "id": "SUP-e2a21c81ba720c0c",
           "origin": "validated",
-          "path": "$.attribution_note",
+          "path": "$.review.notes[4]",
           "access": "n/a",
-          "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage. Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui, et il le dit : additionner les écarts extrêmes des pièces découle de la définition d'atelier d'une tolérance, et le développement passe par une série de Taylor puis par le théorème de Tchebychev, tous deux nommés dans le texte. Ce qui lui revient est l'objection et sa mesure."
+          "text": "Note d'attribution controlee sur images : << expanded in a Taylor's series >> figure p. 256 (n269), << Making application of Tchebycheff's theorem >> p. 257 (n270) ; la definition d'atelier invoquee (<< the definition of a tolerance as the range between the maximum and minimum possible values of the quality >>) est p. 253, et le constat que la combinaison des extremes est << very small indeed >> est p. 254 (n267). L'ouvrage est signe d'un seul auteur : page de titre << By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. >> ; la preface remercie T. C. Fry et E. C. Molina pour leurs critiques, ce qui est un remerciement et non une co-signature. La fiche ne revendique pour Shewhart que l'objection et sa mesure, en desavouant explicitement la pratique critiquee et les mathematiques employees : cette borne est exacte."
         },
         {
           "id": "SUP-7d69b24f8361b879",
@@ -1138,6 +1079,13 @@
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage : la page de titre du tirage lu ne porte qu'un nom et la notice bibliographique qui résout le LCCN 31032090 n'enregistre aucun coauteur. La dette est ici mathématique et Shewhart la nomme lui-même dans les pages citées, sans se l'attribuer : le développement qui donne l'écart type d'un assemblage passe par une série de Taylor, la borne de probabilité vient du théorème de Tchebychev, et la minimisation de la variabilité, deux pages plus loin, emploie un multiplicateur de Lagrange. Ces trois noms sont imprimés dans le texte. La pratique qu'il critique n'est pas davantage de lui : additionner les écarts extrêmes des pièces pour obtenir la tolérance de l'ensemble est présenté comme l'usage en vigueur, « the practice previously described », qui découle de la définition d'atelier d'une tolérance comme intervalle entre valeurs extrêmes possibles. Ce qui lui revient est l'objection et sa mesure : montrer que cet usage surdimensionne la tolérance de l'ensemble, et donner la borne à retenir à la place."
+        },
+        {
+          "id": "SUP-2b23172098a4ec51",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage. Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui, et il le dit : additionner les écarts extrêmes des pièces découle de la définition d'atelier d'une tolérance, et le développement passe par une série de Taylor puis par le théorème de Tchebychev, tous deux nommés dans le texte. Ce qui lui revient est l'objection et sa mesure."
         },
         {
           "id": "SUP-45a92230b526fd45",
@@ -1150,7 +1098,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C040",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale.",
       "supports": [
@@ -1172,7 +1120,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[2]",
       "claim_text": "Ni les mathématiques employées ni la pratique mise en cause ne sont de lui : ce qui lui revient est l’objection et sa mesure.",
       "supports": [
@@ -1201,7 +1149,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C042",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Une conséquence ferme la démonstration, page 259 : pour calculer la dispersion d’un ensemble, une plage de tolérance ne suffit pas.",
       "supports": [
@@ -1223,7 +1171,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Il y faut, de chaque pièce, sa valeur moyenne et son écart type, deux nombres qu’une plage ne contient pas.",
       "supports": [
@@ -1245,7 +1193,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C044",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Shewhart en fait une exigence : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ».",
       "supports": [
@@ -1267,7 +1215,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Ce qu’on doit obtenir d’un fournisseur change ainsi de nature : non pas une tolérance plus serrée, mais l’information qui permet de composer les dispersions.",
       "supports": [
@@ -1289,6 +1237,6 @@
       "uncited_support_signal": []
     }
   ],
-  "estimated_tokens": 91983,
+  "estimated_tokens": 86134,
   "status": "READY"
 }
