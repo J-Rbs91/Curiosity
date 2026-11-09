@@ -3,7 +3,7 @@
   "concept_id": "tolerances-qui-ne-s-additionnent-pas",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "994261f13ca9552c0b2f122866676dc64b426e5e660ecca2f145cbe791b50180",
+  "candidate_sha256": "334d3760b8bf68dc97a71950789c0f3459192db61156882eb105fb221f5f06e2",
   "validated_sha256": "758a007c52675881164fa9d0a27f426fde00530b51036231142b3acd54e2c0b9",
   "evidence_files": [
     {
@@ -57,22 +57,22 @@
     },
     {
       "locator": "lead[1]",
-      "text": "La question n’a rien d’oiseux : de la réponse dépendent la tolérance qu’on imposera à chaque fournisseur et le rebut qu’on acceptera. W. A. Shewhart, du personnel technique des Bell Telephone Laboratories, la pose telle quelle en 1931, au chapitre XVII d’un livre paru chez D. Van Nostrand et intitulé « Design limits on Variability » : « What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ? Sa réponse tient dans un mot, et ce mot n’est pas faux : économique."
+      "text": "W. A. Shewhart, du personnel technique des Bell Telephone Laboratories, pose la question telle quelle en 1931, dans Economic Control of Quality of Manufactured Product, paru chez D. Van Nostrand, au chapitre XVII intitulé « Design limits on Variability » : « What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ? Et il en fait une question d’économie : ce qu’il est économique de prévoir pour l’ensemble."
     },
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Ce que la définition d’atelier oblige à conclure",
-      "text": "Additionner n’est pas une bévue. C’est la conséquence exacte d’une définition reçue, que Shewhart rappelle page 253 sans l’attribuer à personne tant elle va de soi dans les ateliers : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité."
+      "text": "L’addition est la conséquence exacte d’une définition d’atelier, que Shewhart rappelle page 253 : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité."
     },
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Ce que la définition d’atelier oblige à conclure",
-      "text": "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages. Il n’y a là aucune erreur de calcul, et c’est ce qui rend la pratique difficile à déloger. Ce que Shewhart met en cause n’est pas la déduction, c’est le prix qu’on paie à prendre le possible pour la mesure de ce qu’il faut prévoir."
+      "text": "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages. Ce que Shewhart met en cause n’est donc pas le calcul : c’est qu’on prenne le possible pour la mesure de ce qu’il faut prévoir."
     },
     {
       "locator": "sections[1].paragraphs[0]",
       "section_title": "Neuf pièces à leur extrême le même jour",
-      "text": "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble. Une pièce au bord de sa plage est déjà rare ; neuf, du même côté, dans le même assemblage, c’est le produit de neuf raretés. Page 254, Shewhart s’arrête sur cette chance et la dit « very small indeed », très faible en effet."
+      "text": "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble. Page 254, Shewhart s’arrête sur cette chance : quand les pièces sont nombreuses et prises au hasard, le nombre de fois où leur combinaison atteint la limite haute ou la limite basse est « very small indeed », très faible en effet."
     },
     {
       "locator": "sections[1].paragraphs[1]",
@@ -82,45 +82,40 @@
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "L’écart type d’une somme",
-      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent en moyenne de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
+      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent typiquement de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
     },
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "L’écart type d’une somme",
-      "text": "L’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que celle où l’ensemble se tiendra. C’est ce que la figure 87 met sous les yeux pour neuf pièces, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits »."
+      "text": "Pour passer de cette formule à une tolérance, il faut une condition, et Shewhart la pose explicitement page 254 : chaque sorte de pièce est fabriquée de façon maîtrisée autour d’une valeur moyenne, et sa tolérance est fixée à trois écarts types de part et d’autre de cette moyenne. Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance."
     },
     {
       "locator": "sections[2].paragraphs[2]",
       "section_title": "L’écart type d’une somme",
-      "text": "Une condition rend la comparaison légitime, et Shewhart la pose explicitement dans ce paragraphe : que la tolérance de chaque pièce ait elle-même été fixée à trois écarts types de part et d’autre de sa valeur moyenne. Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance."
+      "text": "Sous cette condition, l’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que les limites à trois écarts types de l’ensemble. C’est ce que la figure 87 met sous les yeux pour neuf pièces, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits »."
+    },
+    {
+      "locator": "sections[2].paragraphs[3]",
+      "section_title": "L’écart type d’une somme",
+      "text": "D’où la phrase de Shewhart, page 255 : la pratique qui additionne les limites de tolérance « may be uneconomical », peut être peu économique, parce que la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est relativement très faible. Le modal compte autant que l’adjectif : improbable, et non pas impossible."
     },
     {
       "locator": "sections[3].paragraphs[0]",
-      "section_title": "Ce que la fourchette trop large fait payer",
-      "text": "Shewhart n’écrit pas que la pratique additive est fausse. Il écrit qu’elle « may be uneconomical », qu’elle peut être peu économique, et le modal compte autant que l’adjectif : l’enjeu est une dépense, pas une faute de calcul. La suite de sa phrase dit pourquoi : la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est très faible. Improbable, donc, et non pas impossible."
-    },
-    {
-      "locator": "sections[3].paragraphs[1]",
-      "section_title": "Ce que la fourchette trop large fait payer",
-      "text": "Ce que cela engage en atelier se voit quand on renverse le calcul. La tolérance de l’ensemble est le plus souvent une donnée : c’est ce que l’appareil doit tenir. L’ingénieur qui la répartit en additionnant assigne alors à chaque pièce une plage plus étroite qu’il n’est nécessaire, et une plage plus étroite se paie, en rebut, en réglages, en prix d’achat. Le même ensemble pourrait se tenir avec des pièces plus lâches, à condition de savoir comment leurs dispersions se composent."
-    },
-    {
-      "locator": "sections[4].paragraphs[0]",
       "section_title": "Quand la résultante n’est pas une somme",
       "text": "La racine de la somme des carrés vaut pour une somme. Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256, traite le cas où la qualité d’ensemble n’est pas la somme de celles des pièces mais une fonction quelconque d’entre elles. Shewhart la développe « expanded in a Taylor’s series », en série de Taylor, et n’en retient que le premier ordre."
     },
     {
-      "locator": "sections[4].paragraphs[1]",
+      "locator": "sections[3].paragraphs[1]",
       "section_title": "Quand la résultante n’est pas une somme",
       "text": "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge. Son écart type est multiplié par ce coefficient avant d’être élevé au carré. La règle simple de la page 255 est le cas particulier où tous ces coefficients valent un, celui de la somme. La tenir pour la loi générale des assemblages serait lui faire dire plus qu’elle ne dit."
     },
     {
-      "locator": "sections[4].paragraphs[2]",
+      "locator": "sections[3].paragraphs[2]",
       "section_title": "Quand la résultante n’est pas une somme",
-      "text": "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257. Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale, ce qui n’est pas donné d’avance. Ni les mathématiques employées ni la pratique mise en cause ne sont de lui, et il ne les revendique pas : ce qui lui revient est l’objection et sa mesure."
+      "text": "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257. Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale. Ni les mathématiques employées ni la pratique mise en cause ne sont de lui : ce qui lui revient est l’objection et sa mesure."
     },
     {
-      "locator": "sections[5].paragraphs[0]",
+      "locator": "sections[4].paragraphs[0]",
       "section_title": "Ce qu’il faut alors demander à un fournisseur",
       "text": "Une conséquence ferme la démonstration, page 259 : pour calculer la dispersion d’un ensemble, une plage de tolérance ne suffit pas. Il y faut, de chaque pièce, sa valeur moyenne et son écart type, deux nombres qu’une plage ne contient pas. Shewhart en fait une exigence : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ». Ce qu’on doit obtenir d’un fournisseur change ainsi de nature : non pas une tolérance plus serrée, mais l’information qui permet de composer les dispersions."
     }
@@ -722,6 +717,6 @@
       "text": "Recouvrement avec le dossier tolerance-economique-suppose-le-controle, déposé dans la même session et tiré du même chapitre. Les deux sont distincts et il faut qu'ils le restent : celui-là dit qu'une tolérance ne se fixe économiquement que sur un procédé maîtrisé, celui-ci dit comment se compose la tolérance d'un assemblage à partir de celles de ses pièces. La phrase de la p. 252 appartient au premier et n'est pas reprise ici."
     }
   ],
-  "estimated_tokens": 16301,
+  "estimated_tokens": 16008,
   "status": "READY"
 }
