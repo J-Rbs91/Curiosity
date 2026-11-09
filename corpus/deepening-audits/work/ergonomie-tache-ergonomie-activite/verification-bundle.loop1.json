@@ -1,0 +1,1091 @@
+{
+  "protocol_version": 2,
+  "concept_id": "ergonomie-tache-ergonomie-activite",
+  "candidate_sha256": "1200ff6b9ea5ca067ac4eb08c02ec977d1829db712e65edba55465ffa12f4324",
+  "map_sha256": "7ad0c215b4b66fb14d6fbe090fb5e283c8acb9715ed3af27302f004851eb11be",
+  "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
+  "signal_lexique": {
+    "cartes_mesurees": 136,
+    "plafond_cartes_par_terme": 13,
+    "termes_generiques": 789
+  },
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[1]",
+      "claim_text": "En ergonomie, ces deux versants portent des noms : la tâche, ce qui est demandé, et l’activité, ce qui est réellement fait.",
+      "supports": [
+        {
+          "id": "SUP-94ff8aa8b96c7b43",
+          "origin": "validated",
+          "path": "$.theme_labels[\"tache-et-activite\"]",
+          "access": "n/a",
+          "text": "Ce qui est demandé, ce qui est fait"
+        },
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "claim_text": "Que l’une ne se confonde pas avec l’autre est tenu pour acquis ; ce qui divise, c’est ce qu’on fait de cette distinction.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "claim_text": "François Hubault et Fabrice Bourgeois ont pris position dans cette dispute en 2004",
+      "supports": [
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-4db8b465a35bdc56",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004."
+        },
+        {
+          "id": "SUP-e474640178741ac5",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION : la cosignature est doublement attestée (métadonnées de la page : meta name=author « Hubault, François » et « Bourgeois, Fabrice », DC.creator idem ; et notice Crossref). La fiche ne revendique pour eux ni la distinction tâche/activité ni sa paternité : elle leur attribue la position prise et le renversement de l'ordre des termes, qui est effectivement énoncé en propre au § 45 et préparé au § 3 (« les uns bifurquent vers l'ergonomie de la tâche alors que les autres s'engagent vers l'ergonomie de l'activité »). J'ai lu la bibliographie complète de l'article : elle ne comporte ni Ombredane & Faverge, ni Leplat, ni aucun des auteurs auxquels la littérature rapporte habituellement la distinction — le point avancé par la note d'attribution se vérifie."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "claim_text": "leur position tient en une formule : faire de la tâche le moyen de l’activité, et non son horizon.",
+      "supports": [
+        {
+          "id": "SUP-f6a61ebaf5c952d8",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-d9373d0ffdaa6ab9",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "claim_text": "Ce qu’ils renversent, c’est l’ordre des deux termes : lequel sert l’autre.",
+      "supports": [
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "La distinction n’est pas d’eux.",
+      "supports": [
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-e474640178741ac5",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION : la cosignature est doublement attestée (métadonnées de la page : meta name=author « Hubault, François » et « Bourgeois, Fabrice », DC.creator idem ; et notice Crossref). La fiche ne revendique pour eux ni la distinction tâche/activité ni sa paternité : elle leur attribue la position prise et le renversement de l'ordre des termes, qui est effectivement énoncé en propre au § 45 et préparé au § 3 (« les uns bifurquent vers l'ergonomie de la tâche alors que les autres s'engagent vers l'ergonomie de l'activité »). J'ai lu la bibliographie complète de l'article : elle ne comporte ni Ombredane & Faverge, ni Leplat, ni aucun des auteurs auxquels la littérature rapporte habituellement la distinction — le point avancé par la note d'attribution se vérifie."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Leur article, paru en avril 2004 dans le tout premier numéro de la revue Activités",
+      "supports": [
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-4db8b465a35bdc56",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004."
+        },
+        {
+          "id": "SUP-6e8c36b0926cc832",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004.",
+          "access_corroboration": "corrobore"
+        },
+        {
+          "id": "SUP-6d4f37fd85663013",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "SOURCES : DOI 10.4000/activites.1149 résolu sur https://api.crossref.org/works/10.4000/activites.1149 (HTTP 200) : titre « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », conteneur Activites, volume 01, numéro 1, année 2004, auteurs François Hubault et Fabrice Bourgeois — conformes à la référence affichée. La notice de citation imprimée par la revue elle-même en pied d'article donne « Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 », ce qui confirme le « 1-1, avril 2004 » de la fiche. L'URL affichée est celle qui a répondu."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "s’ouvre, dans son résumé, sur cette phrase : « La distinction entre tâche et activité est fondatrice de l’ergonomie »",
+      "supports": [
+        {
+          "id": "SUP-03feb59c1ad51c36",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "Précision mineure, sans effet sur le verdict : la phrase « La distinction entre tâche et activité est fondatrice de l'ergonomie », citée par la note d'attribution comme « sa première phrase », ouvre le résumé de l'article (meta name=description, résumé affiché en tête) et non le corps du texte, dont le § 1 commence par « Quoiqu'on en dise, il existe au sein même de ce qu'on appelle désormais l'ergonomie centrée sur l'activité… ». La citation elle-même est exacte."
+        },
+        {
+          "id": "SUP-128173c5fcf696f6",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[2]",
+          "access": "n/a",
+          "text": "La première phrase du résumé, « La distinction entre tâche et activité est fondatrice de l'ergonomie. », est en revanche vérifiée sur deux canaux de nature différente : le rendu de la page et le dépôt Crossref de l'éditeur, qui la porte en clair dans le champ abstract. Je ne l'ai pas retenue comme citation de la carte parce qu'elle est du résumé et non du corps, et surtout parce qu'affichée seule elle laisserait croire que la distinction est de ces deux auteurs — ce que le texte ne dit nulle part."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Ils la tiennent pour un acquis de la discipline et ne la rapportent à aucun fondateur.",
+      "supports": [
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-e474640178741ac5",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION : la cosignature est doublement attestée (métadonnées de la page : meta name=author « Hubault, François » et « Bourgeois, Fabrice », DC.creator idem ; et notice Crossref). La fiche ne revendique pour eux ni la distinction tâche/activité ni sa paternité : elle leur attribue la position prise et le renversement de l'ordre des termes, qui est effectivement énoncé en propre au § 45 et préparé au § 3 (« les uns bifurquent vers l'ergonomie de la tâche alors que les autres s'engagent vers l'ergonomie de l'activité »). J'ai lu la bibliographie complète de l'article : elle ne comporte ni Ombredane & Faverge, ni Leplat, ni aucun des auteurs auxquels la littérature rapporte habituellement la distinction — le point avancé par la note d'attribution se vérifie."
+        },
+        {
+          "id": "SUP-c969494376455f0a",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "La bibliographie de l'article, relevée sur le dépôt Crossref de l'éditeur, ne contient ni Ombredane, ni Faverge, ni Leplat : c'est sur elle qu'est établie l'absence d'attribution de la distinction, et non sur le corps du texte, connu par le seul rendu intermédiaire."
+        },
+        {
+          "id": "SUP-fa646884cf533f78",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[3]",
+          "access": "n/a",
+          "text": "Le relevé des noms cités dans le corps du texte (Wisner au § 39, Montmollin aux § 7, 12, 14, 18, 21) vient du seul rendu WebFetch et n'a pas la même valeur de preuve que la bibliographie, celle-ci étant tirée du dépôt Crossref. L'absence d'Ombredane, de Faverge et de Leplat est établie sur la bibliographie ; leur absence du corps du texte l'est moins fermement."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Ce qui leur revient est ailleurs : la position qu’ils prennent dans une dispute, et le renversement de l’ordre des deux termes.",
+      "supports": [
+        {
+          "id": "SUP-3a9fc44bfbed6593",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois cosignent l'article de 2004 où cette position est prise. La distinction entre tâche et activité n'est pas d'eux : leur texte la tient pour un acquis de la discipline (sa première phrase est « La distinction entre tâche et activité est fondatrice de l'ergonomie ») et ne la rapporte à aucun fondateur, aucun des auteurs à qui la littérature l'attribue ne figurant dans sa bibliographie. Ce qui leur revient est la position prise dans une dispute, et le renversement de l'ordre des deux termes."
+        },
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-e474640178741ac5",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION : la cosignature est doublement attestée (métadonnées de la page : meta name=author « Hubault, François » et « Bourgeois, Fabrice », DC.creator idem ; et notice Crossref). La fiche ne revendique pour eux ni la distinction tâche/activité ni sa paternité : elle leur attribue la position prise et le renversement de l'ordre des termes, qui est effectivement énoncé en propre au § 45 et préparé au § 3 (« les uns bifurquent vers l'ergonomie de la tâche alors que les autres s'engagent vers l'ergonomie de l'activité »). J'ai lu la bibliographie complète de l'article : elle ne comporte ni Ombredane & Faverge, ni Leplat, ni aucun des auteurs auxquels la littérature rapporte habituellement la distinction — le point avancé par la note d'attribution se vérifie."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Le partage est posé dès le troisième paragraphe : « les uns bifurquent vers l’ergonomie de la tâche alors que les autres s’engagent vers l’ergonomie de l’activité ».",
+      "supports": [
+        {
+          "id": "SUP-e474640178741ac5",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "ATTRIBUTION : la cosignature est doublement attestée (métadonnées de la page : meta name=author « Hubault, François » et « Bourgeois, Fabrice », DC.creator idem ; et notice Crossref). La fiche ne revendique pour eux ni la distinction tâche/activité ni sa paternité : elle leur attribue la position prise et le renversement de l'ordre des termes, qui est effectivement énoncé en propre au § 45 et préparé au § 3 (« les uns bifurquent vers l'ergonomie de la tâche alors que les autres s'engagent vers l'ergonomie de l'activité »). J'ai lu la bibliographie complète de l'article : elle ne comporte ni Ombredane & Faverge, ni Leplat, ni aucun des auteurs auxquels la littérature rapporte habituellement la distinction — le point avancé par la note d'attribution se vérifie."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Ce qui sépare les deux voies n’est pas une méthode, mais une finalité, c’est-à-dire ce à quoi l’ergonomie doit servir.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Le titre de l’article le dit : « Disputes sur l’ergonomie de la tâche et de l’activité, ou la finalité de l’ergonomie en question ».",
+      "supports": [
+        {
+          "id": "SUP-6e8c36b0926cc832",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004.",
+          "access_corroboration": "corrobore"
+        },
+        {
+          "id": "SUP-4db8b465a35bdc56",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "François Hubault et Fabrice Bourgeois, « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », Activités, 1-1, avril 2004."
+        },
+        {
+          "id": "SUP-6d4f37fd85663013",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "SOURCES : DOI 10.4000/activites.1149 résolu sur https://api.crossref.org/works/10.4000/activites.1149 (HTTP 200) : titre « Disputes sur l'ergonomie de la tâche et de l'activité, ou la finalité de l'ergonomie en question », conteneur Activites, volume 01, numéro 1, année 2004, auteurs François Hubault et Fabrice Bourgeois — conformes à la référence affichée. La notice de citation imprimée par la revue elle-même en pied d'article donne « Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 », ce qui confirme le « 1-1, avril 2004 » de la fiche. L'URL affichée est celle qui a répondu."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "La première voie prend la tâche pour objet et pour horizon.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        },
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Le travail y est traité comme quelque chose de maîtrisable et de réglable.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "Cette ergonomie regarde pourtant ce que font les opérateurs : l’analyse y sert à décrire ce que fait l’opérateur, mais pour corriger la prescription.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "On peut entendre « horizon » en ce sens : ce que l’on apprend de l’activité revient à la tâche, et une tâche mieux écrite reste le but.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Hubault et Bourgeois lisent cette position chez Maurice de Montmollin",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "dont le Discours sur l’organisation du travail, paru en 2002, est leur adversaire déclaré",
+      "supports": [
+        {
+          "id": "SUP-b338755a254b2ff5",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "L'article est signé de deux noms, dans cet ordre : François Hubault (CEP — Ergonomie et Écologie humaine, Université Paris 1 Panthéon-Sorbonne) et Fabrice Bourgeois (ergonome consultant, Omnia intervention ergonomique) ; la même double signature figure sur le dépôt Crossref de l'éditeur, Hubault en premier auteur. Ce qui leur revient est la position prise dans la dispute, et non la distinction entre tâche et activité elle-même. Le texte donne celle-ci pour un acquis de la discipline sans nommer qui l'a posée : sa toute première phrase, en tête du résumé, est « La distinction entre tâche et activité est fondatrice de l'ergonomie. », et rien n'y renvoie à un fondateur. J'ai vérifié ce point là où il se vérifie, dans l'appareil de références : sur les vingt-quatre références de la bibliographie, relevées une à une sur le dépôt Crossref de l'éditeur, ne figurent ni Ombredane, ni Faverge, ni Leplat ; le seul auteur historique de l'ergonomie de langue française qui y soit convoqué est Alain Wisner, et le rendu de la page le donne cité au paragraphe 39 à propos d'anthropotechnologie, pas de la distinction. Hors de ce texte, la littérature du champ rapporte habituellement la distinction à André Ombredane et Jean-Marie Faverge, L'analyse du travail, Paris, PUF, 1955 — ouvrage que je n'ai pas ouvert, que cet article ne cite pas, et dont la mention ici est une attribution extérieure qui ne doit jamais se lire comme une déclaration de Hubault et Bourgeois. La dispute, elle, est datée et signée : l'article paraît dans le tout premier numéro d'Activités, daté d'avril 2004 et mis en ligne le 2 avril 2004, et il prend pour adversaire déclaré le Discours sur l'organisation du travail de Maurice de Montmollin, Paris, L'Harmattan, 2002, référence portée telle quelle dans la bibliographie de l'article. Le millésime 1955 et le millésime 2002 ne viennent donc pas de la même sorte de preuve, et je ne les mets pas sur le même plan : le second est lu dans le texte, le premier ne l'est pas."
+        },
+        {
+          "id": "SUP-b74a8a2ab6f68758",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "L'adversaire déclaré de la dispute, le Discours sur l'organisation du travail de Maurice de Montmollin (L'Harmattan, 2002), n'a pas été ouvert : tout ce qu'on sait ici de sa position vient de ce que Hubault et Bourgeois lui prêtent. La carte ne présente donc aucune position « selon Montmollin »."
+        },
+        {
+          "id": "SUP-af4b7e5a92266046",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[5]",
+          "access": "n/a",
+          "text": "Je n'ai pas ouvert non plus Montmollin, M. de (2002), Discours sur l'organisation du travail, Paris, L'Harmattan, qui est l'adversaire de la dispute. Tout ce que ce dossier rapporte de sa position vient de ce que Hubault et Bourgeois lui prêtent. Une carte qui présenterait l'ergonomie de la tâche « selon Montmollin » sortirait de ce qui est établi ici."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "la position décrite est donc celle qu’ils lui prêtent.",
+      "supports": [
+        {
+          "id": "SUP-b74a8a2ab6f68758",
+          "origin": "validated",
+          "path": "$.notes[2]",
+          "access": "n/a",
+          "text": "L'adversaire déclaré de la dispute, le Discours sur l'organisation du travail de Maurice de Montmollin (L'Harmattan, 2002), n'a pas été ouvert : tout ce qu'on sait ici de sa position vient de ce que Hubault et Bourgeois lui prêtent. La carte ne présente donc aucune position « selon Montmollin »."
+        },
+        {
+          "id": "SUP-af4b7e5a92266046",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[5]",
+          "access": "n/a",
+          "text": "Je n'ai pas ouvert non plus Montmollin, M. de (2002), Discours sur l'organisation du travail, Paris, L'Harmattan, qui est l'adversaire de la dispute. Tout ce que ce dossier rapporte de sa position vient de ce que Hubault et Bourgeois lui prêtent. Une carte qui présenterait l'ergonomie de la tâche « selon Montmollin » sortirait de ce qui est établi ici."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Dans leur article, ce cadre a un nom : « le paradigme de l’ergonomie de la tâche, où l’amélioration des conditions de travail signifie l’aménagement plus scientifique des conditions de travail ».",
+      "supports": [
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": [
+        {
+          "support_id": "SUP-4a27ed7857e8e33c",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "shared_terms": [
+            "cadre"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "L’ergonomie s’y range en amélioratrice d’un taylorisme qu’elle ne conteste pas",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "et le même passage le dit en toutes lettres : « compléter le taylorisme plutôt que le dépasser », l’améliorer, le moderniser.",
+      "supports": [
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "Hubault et Bourgeois renversent l’ordre : « On est donc là au cœur de ce qui se joue dans l’ingénierie de projet : faire de la tâche le moyen de l’activité et non pas son horizon. »",
+      "supports": [
+        {
+          "id": "SUP-f6a61ebaf5c952d8",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-d9373d0ffdaa6ab9",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-4a27ed7857e8e33c",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION : le passage est bien au paragraphe numéroté 45 de cette édition en ligne (span class=paranumber 45), dans la phrase « Ce n'est possible que dans le cadre d'une ergonomie de l'activité qui n'aborde pas la tâche de la même manière que celle proposée par l'ergonomie de la tâche… On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon. Cela passe par une définition de la tâche non pas comme norme, mais comme référence. » Comparaison caractère par caractère avec le champ quotation.text : identité complète après normalisation typographique des apostrophes (l'original porte U+2019, la fiche U+0027). Aucune coupe, aucun mot changé, pas de traduction en jeu (texte source en français)."
+        },
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "La tâche n’est plus ce vers quoi tout converge, mais ce dont l’activité se sert.",
+      "supports": [
+        {
+          "id": "SUP-f6a61ebaf5c952d8",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "La phrase suivante dit ce que cela suppose : « Cela passe par une définition de la tâche non pas comme norme, mais comme référence. »",
+      "supports": [
+        {
+          "id": "SUP-4a27ed7857e8e33c",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION : le passage est bien au paragraphe numéroté 45 de cette édition en ligne (span class=paranumber 45), dans la phrase « Ce n'est possible que dans le cadre d'une ergonomie de l'activité qui n'aborde pas la tâche de la même manière que celle proposée par l'ergonomie de la tâche… On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon. Cela passe par une définition de la tâche non pas comme norme, mais comme référence. » Comparaison caractère par caractère avec le champ quotation.text : identité complète après normalisation typographique des apostrophes (l'original porte U+2019, la fiche U+0027). Aucune coupe, aucun mot changé, pas de traduction en jeu (texte source en français)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "On peut entendre la différence ainsi : une norme s’impose et se vérifie, une référence s’utilise et se discute ; la première attend une conformité, la seconde un usage.",
+      "supports": [
+        {
+          "id": "SUP-4a27ed7857e8e33c",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION : le passage est bien au paragraphe numéroté 45 de cette édition en ligne (span class=paranumber 45), dans la phrase « Ce n'est possible que dans le cadre d'une ergonomie de l'activité qui n'aborde pas la tâche de la même manière que celle proposée par l'ergonomie de la tâche… On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon. Cela passe par une définition de la tâche non pas comme norme, mais comme référence. » Comparaison caractère par caractère avec le champ quotation.text : identité complète après normalisation typographique des apostrophes (l'original porte U+2019, la fiche U+0027). Aucune coupe, aucun mot changé, pas de traduction en jeu (texte source en français)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Les deux ergonomies observent l’activité.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": [
+        {
+          "support_id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "shared_terms": [
+            "ergonomies"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Ce qui les sépare est la fonction qu’elles donnent à cette observation : corriger la tâche dans un cas, servir l’activité dans l’autre.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        },
+        {
+          "id": "SUP-f6a61ebaf5c952d8",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Pour l’ergonomie centrée sur l’activité que défendent Hubault et Bourgeois, le travail est d’abord l’expérience de ce qui résiste.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "L’activité est ce que quelqu’un engage de lui-même pour tenir ensemble deux exigences hétérogènes : l’efficacité que l’entreprise demande à travers la tâche, et sa propre santé.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Ils écrivent aussi : « aucune description n’est à même d’épuiser la pensée qui se réalise dans le travail ».",
+      "supports": [
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "La phrase ne vise pas une tâche mal écrite : elle porte sur toute description, si soignée soit-elle",
+      "supports": [
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "aucun modèle prescriptif n’épuise le contenu de l’activité",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        },
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Le mot qui compte est « pensée » : on peut y reconnaître ce que la personne engage d’elle-même, plutôt qu’un simple geste imprévu.",
+      "supports": [
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        },
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "La formule de 2004 se place « au cœur de ce qui se joue dans l’ingénierie de projet », c’est-à-dire là où l’on conçoit.",
+      "supports": [
+        {
+          "id": "SUP-f6a61ebaf5c952d8",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-d9373d0ffdaa6ab9",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon."
+        },
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "À l’échelle d’un poste, la question devient : vise-t-on la tâche à tenir, ou l’activité qui la tiendra ?",
+      "supports": [
+        {
+          "id": "SUP-d5b78b01a2771769",
+          "origin": "validated",
+          "path": "$.hook",
+          "access": "n/a",
+          "text": "Concevoir un poste : vise-t-on la tâche à tenir, ou l'activité qui la tiendra ?"
+        },
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "L’article développe un cas d’aménagement de poste sur une ligne de montage",
+      "supports": [
+        {
+          "id": "SUP-0452727f66df9989",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "PROSE : « prend la tâche pour horizon » est porté par le § 12 (de Montmollin : « l'OST constitue l'horizon de l'ergonomie », lu dans « le paradigme de l'ergonomie de la tâche, où l'amélioration des conditions de travail signifie l'aménagement plus scientifique des conditions de travail ») et par la formule antithétique du § 45. « Corrige la prescription » correspond au § 12 (« compléter le taylorisme plutôt que le dépasser… l'améliorer, le moderniser »). « Qu'aucun modèle prescriptif n'épuise » est porté par le § 42 (« aucune description n'est à même d'épuiser la pensée qui se réalise dans le travail ») et le § 21 (« ces questions-là, les modèles fonctionnalistes ne peuvent ni ne cherchent à en rendre compte »). Le hook, formulé en question à l'échelle du poste, reste dans l'empan du texte, qui traite explicitement de l'ingénierie de projet (§ 45) et développe un cas d'aménagement de poste sur ligne de montage (§ 19-20)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "La première s’en sert pour corriger la prescription, jusqu’à obtenir une tâche qui n’ait plus besoin de ces ajouts.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "La seconde traite la prescription comme une référence : elle se demande ce que ces ajouts permettent aux opérateurs de tenir, l’efficacité demandée et leur propre santé, et modifie le poste pour leur en laisser la place.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-4a27ed7857e8e33c",
+          "origin": "validated",
+          "path": "$.review.notes[1]",
+          "access": "n/a",
+          "text": "CITATION : le passage est bien au paragraphe numéroté 45 de cette édition en ligne (span class=paranumber 45), dans la phrase « Ce n'est possible que dans le cadre d'une ergonomie de l'activité qui n'aborde pas la tâche de la même manière que celle proposée par l'ergonomie de la tâche… On est donc là au cœur de ce qui se joue dans l'ingénierie de projet : faire de la tâche le moyen de l'activité et non pas son horizon. Cela passe par une définition de la tâche non pas comme norme, mais comme référence. » Comparaison caractère par caractère avec le champ quotation.text : identité complète après normalisation typographique des apostrophes (l'original porte U+2019, la fiche U+0027). Aucune coupe, aucun mot changé, pas de traduction en jeu (texte source en français)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Les deux équipes partent des mêmes observations ; elles ne donnent pas à la tâche le même rôle.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        },
+        {
+          "id": "SUP-aead6ad6e1cdbacb",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Deux ergonomies s'opposent : l'une prend la tâche pour horizon et corrige la prescription, l'autre en fait le moyen de l'activité, qu'aucun modèle prescriptif n'épuise."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "Hubault et Bourgeois tirent de leur thèse deux conséquences qu’ils tiennent pour indissociables d’elle.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "La première porte sur la science : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet, et non à sa formalisation.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[5].paragraphs[0]",
+      "claim_text": "La seconde porte sur l’ergonome : il doit répondre de ce qu’il fait lui-même dans l’intervention, l’ergonomie n’étant pas une connaissance à appliquer, mais une pratique de recherche et d’intervention.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "Quant à la dispute, ils la présentent comme saine à condition qu’elle se voie",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "« Rien que de normal finalement, à condition qu’elles soient discutées et visibles », lit-on dans leur résumé.",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[1]",
+      "claim_text": "En fin d’article, ils proposent un dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique",
+      "supports": [
+        {
+          "id": "SUP-33b9d11be9d7df09",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le texte ne définit pas la tâche et l'activité, il les tient pour acquises et se dispute sur ce qu'on en fait. Ce qu'il oppose est une finalité, pas une méthode. D'un côté une ergonomie qui prend la tâche pour objet et pour horizon : le travail y est traité comme quelque chose de maîtrisable et de réglable, l'analyse sert à décrire ce que fait l'opérateur pour corriger la prescription, et l'ergonomie se range en amélioratrice d'un taylorisme qu'elle ne conteste pas — c'est ce que les auteurs lisent chez Maurice de Montmollin, dont ils discutent la charge contre les sciences sociales et le reproche d'incapacité fait aux ergonomes. De l'autre une ergonomie « centrée » sur l'activité, pour laquelle le travail est d'abord l'expérience de ce qui résiste : l'activité y témoigne de l'inaliénabilité du travail, elle est ce que quelqu'un engage de lui-même pour tenir ensemble deux exigences hétérogènes, l'efficacité que l'entreprise demande à travers la tâche et sa propre santé, et aucun modèle prescriptif n'en épuise le contenu. La thèse propre des auteurs est le renversement de l'ordre des deux termes, énoncé en toutes lettres au paragraphe 45 : faire de la tâche le moyen de l'activité, et non son horizon. Ils en tirent deux conséquences qu'ils tiennent pour indissociables de la première : la scientificité du discours des sciences humaines et sociales sur le travail se juge à sa fidélité à son objet et non à sa formalisation, et l'ergonome doit répondre de ce qu'il fait lui-même dans l'intervention, l'ergonomie n'étant pas une connaissance à appliquer mais une pratique de recherche et d'intervention — d'où le dispositif clinicien à trois niveaux, épistémologique, méthodologique et politique, qu'ils proposent en fin d'article. Les auteurs présentent enfin la divergence comme saine à condition d'être visible : « Rien que de normal finalement, à condition qu'elles soient discutées et visibles » (résumé)."
+        }
+      ],
+      "uncited_support_signal": []
+    }
+  ],
+  "estimated_tokens": 41187,
+  "status": "READY"
+}

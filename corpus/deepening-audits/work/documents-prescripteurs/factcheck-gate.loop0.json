@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "documents-prescripteurs",
+  "candidate_sha256": "d0d5f75b62dc359439c2e7c9bbbf7f2e4a99d7f2087944d110114ebf9a2aa4de",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 60,
+  "supported": 58,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C003",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim enumerent instruction, mode d'emploi, consigne, regle d'utilisation, procedure, document procedural, aide textuelle au travail ; ils ne nomment pas la « notice ». Le claim etend la famille a un terme que ses appuis ne portent pas."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "TOO_STRONG",
+      "reason": "Le titre de section est etabli (review.notes[6], reserves[4], definition_de_lauteur (lecture.json)). Mais les appuis fournis pour ce claim qualifient cette phrase de « these qui interesse l'ecart prescrit/reel » et de passage « plus proche du coeur du concept », et disent que c'est la distinction analyse interne / externe qui « commande tout le reste » ; ils ne font pas de l'incompletude la these centrale de l'article. Le signal SUP-f6da4d5230e22a9a ($.reserves[6], terme « intitulee ») ne porte que sur le titre, deja etabli : il ne rend pas probable un appui manquant pour la qualification « centrale »."
+    }
+  ]
+}
