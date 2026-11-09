@@ -1,0 +1,18 @@
+{
+  "protocol_version": 2,
+  "concept_id": "regulation-proportionnelle-derivee-integrale",
+  "candidate_sha256": "a848683e5420971959d747cca81c83f183879ee0d84af10155f2f5e0e0e3e6df",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 55,
+  "supported": 54,
+  "failed": 1,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C035",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim donnent trois informations « chacune en deux versions selon le signe » (ΔC, dC/dt, ∫ΔCdt, + et −) ; ils n'assignent pas à chaque paire le sens « trop / trop peu ». Pour la vitesse (dC/dt), le signe marque le sens de variation, pas un excès ou un manque : la glose étend à la dérivée une lecture que les appuis ne portent pas. Le signal (review.notes[7], terme « exemplaires ») ne paraît pas pertinent."
+    }
+  ]
+}

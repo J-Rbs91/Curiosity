@@ -1,0 +1,681 @@
+{
+  "concept_id": "regulation-proportionnelle-derivee-integrale",
+  "candidate_sha256": "a848683e5420971959d747cca81c83f183879ee0d84af10155f2f5e0e0e3e6df",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 267,
+      "end": 363,
+      "claim_text": "Un appareil qui ne connaît que l’écart de l’instant répondra de la même façon dans tous ces cas.",
+      "normalized_claim": "Un régulateur purement proportionnel ne distingue ni le sens d'évolution ni la durée d'un écart.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 160,
+      "claim_text": "Les ingénieurs qui construisaient des machines capables de corriger leurs propres erreurs en avaient tiré, avant 1959, une distinction devenue standard chez eux",
+      "normalized_claim": "La distinction P/D/I est antérieure à 1959 et standard en théorie des asservissements.",
+      "support_ids": [
+        "SUP-6d00718023726fd7",
+        "SUP-bc732211265b64d2",
+        "SUP-4650d49932230283",
+        "SUP-0036842b7ad34503"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 163,
+      "end": 290,
+      "claim_text": "d’un même écart on peut lire trois choses, sa taille, la vitesse à laquelle il change, et ce qu’il a accumulé depuis qu’il dure",
+      "normalized_claim": "Les trois informations d'écart: grandeur, vitesse, accumulation.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-f186eb915e883ba3",
+        "SUP-0b390947f4defee6"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 292,
+      "end": 384,
+      "claim_text": "Stanford Goldman appartenait au département de génie électrique de l’université de Syracuse.",
+      "support_ids": [
+        "SUP-0036842b7ad34503",
+        "SUP-2059feac7dad4334"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 385,
+      "end": 444,
+      "claim_text": "Devant une conférence interdisciplinaire réunie en mai 1959",
+      "normalized_claim": "L'exposé a été présenté à une conférence interdisciplinaire de mai 1959.",
+      "support_ids": [
+        "SUP-0036842b7ad34503",
+        "SUP-2857c697715f4cc5",
+        "SUP-4650d49932230283",
+        "SUP-7f980e6a8fd1443e",
+        "SUP-15570ce5bb28046d",
+        "SUP-b04380f788f19042"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 446,
+      "end": 503,
+      "claim_text": "il a proposé de porter ce découpage dans le corps vivant.",
+      "normalized_claim": "Goldman propose d'appliquer P/D/I à l'homéostasie.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-4650d49932230283",
+        "SUP-53def0a1dcf4c8f2",
+        "SUP-aaa2851b4e782523",
+        "SUP-c251ab1f9aa83734",
+        "SUP-5d72fb05178e03ab"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 123,
+      "claim_text": "Deux façons de rafraîchir un bol de punch. La première hôtesse y met de la glace. La seconde goûte, et rajoute de la glace.",
+      "support_ids": [
+        "SUP-9ddc753b4eb28120"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 124,
+      "end": 278,
+      "claim_text": "Goldman se sert de ces deux hôtesses, dans la version longue et élémentaire qu’il a écrite la même année pour des biologistes sans pratique de ces notions",
+      "normalized_claim": "L'exemple vient du chapitre de Mineral Metabolism, même année, version élémentaire pour biologistes.",
+      "support_ids": [
+        "SUP-9ddc753b4eb28120",
+        "SUP-0036842b7ad34503",
+        "SUP-0b390947f4defee6",
+        "SUP-a5aad58dfb6a4b5b"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 280,
+      "end": 397,
+      "claim_text": "afin d’opposer une commande en boucle ouverte et une commande en boucle fermée, qui se règle sur ce qu’elle constate.",
+      "support_ids": [
+        "SUP-9ddc753b4eb28120"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 149,
+      "claim_text": "L’exposé de 1959, lui, suppose son lecteur déjà formé à la théorie des asservissements et à celle de l’information ; il le dit dès sa deuxième phrase",
+      "support_ids": [
+        "SUP-9ddc753b4eb28120",
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 151,
+      "end": 212,
+      "claim_text": "et s’en tient à la manière dont elles s’appliquent au vivant.",
+      "support_ids": [
+        "SUP-9ddc753b4eb28120"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 213,
+      "end": 317,
+      "claim_text": "Le punch, et plus loin le thermostat, la conduite de tir et le virage, viennent du chapitre élémentaire.",
+      "normalized_claim": "Ces exemples sont tirés de Mineral Metabolism et non du texte de 1959.",
+      "support_ids": [
+        "SUP-9ddc753b4eb28120",
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 58,
+      "claim_text": "Goldman range les commandes sur une échelle de cinq types.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-a5aad58dfb6a4b5b",
+        "SUP-6d00718023726fd7",
+        "SUP-69457252d73dc08a"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 59,
+      "end": 187,
+      "claim_text": "Au premier, la correction est dirigée mais constante : une action en tout ou rien, toujours de même force, pour réduire l’écart.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 188,
+      "end": 259,
+      "claim_text": "Son exemple est le thermostat qui commande un chauffage en tout ou rien",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 261,
+      "end": 312,
+      "claim_text": "et il le donne pour le plus grossier des contrôles.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 85,
+      "claim_text": "Au deuxième type, l’action n’est plus constante : elle est proportionnelle à l’écart.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 86,
+      "end": 160,
+      "claim_text": "Le même thermostat, mais le courant de chauffe suit l’écart de température",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 162,
+      "end": 229,
+      "claim_text": "fort quand il manque cinq degrés, faible quand il en manque un demi",
+      "normalized_claim": "Illustration chiffrée de la proportionnalité (chiffres non tirés de Goldman).",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 231,
+      "end": 326,
+      "claim_text": "Goldman note que cette commande est ordinairement plus rapide et plus exacte que la précédente.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 327,
+      "end": 392,
+      "claim_text": "C’est le premier des trois renseignements : la taille de l’écart.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-f186eb915e883ba3"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "La taille d’un écart ne dit pourtant rien de son sens de marche",
+      "normalized_claim": "La grandeur instantanée n'indique pas la tendance de l'écart.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 106,
+      "end": 196,
+      "claim_text": "Le troisième type ajoute une action proportionnelle à la vitesse à laquelle l’écart change",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 198,
+      "end": 295,
+      "claim_text": "et Goldman dit à quoi elle sert : empêcher le dépassement, c’est-à-dire l’erreur en sens inverse.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 296,
+      "end": 423,
+      "claim_text": "L’exemple qu’il prend est la conduite de tir, où l’on anticipe la position de la cible d’après la vitesse qu’elle a maintenant.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 170,
+      "claim_text": "Le quatrième type ajoute le dernier renseignement : non plus l’écart de l’instant ni sa tendance, mais ce qu’il a accumulé depuis qu’il dure, son intégrale dans le temps.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 171,
+      "end": 299,
+      "claim_text": "Son effet, dans les termes de Goldman, est de renforcer l’action quand le système ne parvient pas à réduire suffisamment l’écart",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 302,
+      "end": 375,
+      "claim_text": "elle augmente l’exactitude et réduit la tendance à dériver vers l’erreur.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 376,
+      "end": 562,
+      "claim_text": "Un petit écart, trop faible pour appeler une réponse vive, mais qui tient toute la journée, finit ainsi par produire une réponse forte, non parce qu’il a grandi, mais parce qu’il a duré.",
+      "normalized_claim": "Conséquence dérivée de l'action intégrale.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 60,
+      "claim_text": "Un cinquième type vient encore au-dessus, et il sort du trio",
+      "normalized_claim": "Le type 5 n'est ni P, ni D, ni I.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 63,
+      "end": 185,
+      "claim_text": "la commande fondée sur l’anticipation d’événements à venir, celle du conducteur qui voit un virage approcher sur la route.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 186,
+      "end": 262,
+      "claim_text": "Là, la commande répond à ce qui va arriver, et non à un écart déjà constaté.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 107,
+      "claim_text": "Devant la conférence de 1959, Goldman applique ce découpage à un schéma de la régulation du glucose sanguin",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-aa02645627b6faa0",
+        "SUP-fe62918ff1738f56"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 109,
+      "end": 292,
+      "claim_text": "et compte ce qui sort du compartiment où le sucre circule : « At the right of the blood glucose compartment are six emerging information lines », six lignes d’information en émergent.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-aa02645627b6faa0"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 293,
+      "end": 425,
+      "claim_text": "Trois grandeurs, l’écart, sa vitesse, son accumulation, et chacune en deux exemplaires, l’un pour le trop, l’autre pour le trop peu.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-aa02645627b6faa0",
+        "SUP-f186eb915e883ba3",
+        "SUP-4650d49932230283"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 18,
+      "end": 75,
+      "claim_text": "alors qu’un signe suffirait à marquer les deux directions",
+      "normalized_claim": "Présupposé technique: un signe suffit à coder la direction de l'écart.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 78,
+      "end": 300,
+      "claim_text": "Parce que, dans un corps, ces deux directions n’ont pas forcément les mêmes destinataires : « The ΔC(−) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs ».",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-aa02645627b6faa0"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 301,
+      "end": 411,
+      "claim_text": "Le texte suit ensuite ces lignes vers la médullosurrénale, le pancréas, le tissu adipeux, la corticosurrénale.",
+      "support_ids": [
+        "SUP-aa02645627b6faa0"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 0,
+      "end": 24,
+      "claim_text": "Sa thèse reste modalisée",
+      "support_ids": [
+        "SUP-aa02645627b6faa0",
+        "SUP-18caf0f4b6290df1",
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 27,
+      "end": 207,
+      "claim_text": "selon lui, les six informations paraissent toutes servir à la régulation du glucose, et le corps, dans une certaine mesure au moins, les distingue et en fait des usages différents.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 208,
+      "end": 354,
+      "claim_text": "Il signale aussi des indices selon lesquels le glycogène du foie serait traité différemment par les actions proportionnelle, dérivée et intégrale.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 107,
+      "claim_text": "Un peu plus loin, Goldman revient sur les deux signes pour opposer les montages électriques et les vivants.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 108,
+      "end": 308,
+      "claim_text": "Dans un montage électrique linéaire à rétroaction, un écart négatif ressemble en tout à un écart positif au signe près, et le même mécanisme corrige les deux : il suffit que le courant change de sens.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 309,
+      "end": 374,
+      "claim_text": "Cette capacité, précise-t-il, n’est pas une propriété universelle",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 377,
+      "end": 540,
+      "claim_text": "dans un organisme, le mécanisme qui corrige un excès est souvent différent de celui qui corrige un manque, et l’un peut alors être appelé l’antagoniste de l’autre.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 29,
+      "claim_text": "Cette architecture a un prix.",
+      "support_ids": [
+        "SUP-75395df9799f296c",
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 30,
+      "end": 259,
+      "claim_text": "Une commande tenue par l’équilibre de deux antagonistes puissants est, quand elle fonctionne bien, à la fois rapide et exacte ; mais plus la commande est forte, plus le danger d’instabilité grandit quand cet équilibre est altéré.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-75395df9799f296c"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 260,
+      "end": 377,
+      "claim_text": "Le mot que Goldman emploie alors, instabilité, a chez lui un sens technique voisin de cercle vicieux ou d’emballement",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 379,
+      "end": 547,
+      "claim_text": "et la cause qu’il en donne est une affaire de calendrier : l’agent et son antagoniste entrent en action trop tard, si bien qu’au lieu de se compenser ils se renforcent.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-244397e03b289b40",
+        "SUP-7440355292a6b8d2"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 145,
+      "claim_text": "Dans un corps, ajoute-t-il, cela ne se voit généralement pas comme une oscillation. Cela se voit comme un déplacement pathologique de l’équilibre",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 148,
+      "end": 229,
+      "claim_text": "la régulation ne bat pas la mesure, elle se tient ailleurs qu’où elle le devrait.",
+      "normalized_claim": "Glose: pas d'oscillation, déplacement durable du point de fonctionnement.",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 90,
+      "claim_text": "Sur le fond, Goldman revendique bien moins qu’une lecture pressée ne le laisserait croire.",
+      "support_ids": [
+        "SUP-18caf0f4b6290df1",
+        "SUP-35e04a59b9fe824f"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 91,
+      "end": 366,
+      "claim_text": "Il écrit que ses énoncés paraissent raisonnables, mais que la littérature offre peu de mesures sur lesquelles les fonder : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them ».",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-18caf0f4b6290df1",
+        "SUP-244397e03b289b40"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 367,
+      "end": 507,
+      "claim_text": "Et il ajoute, sur la même page : « The present author is not competent to judge how much of this information is already in the literature ».",
+      "support_ids": [
+        "SUP-35e04a59b9fe824f",
+        "SUP-244397e03b289b40"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 141,
+      "claim_text": "La dernière partie de sa communication ne conclut rien sur le glucose : elle formule des questions expérimentales à poser aux physiologistes.",
+      "support_ids": [
+        "SUP-244397e03b289b40"
+      ]
+    }
+  ]
+}
