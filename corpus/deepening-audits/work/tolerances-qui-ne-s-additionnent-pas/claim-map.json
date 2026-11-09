@@ -1,6 +1,6 @@
 {
   "concept_id": "tolerances-qui-ne-s-additionnent-pas",
-  "candidate_sha256": "06870e45801240bf4561cabd306f84051b8258a5eb8b74221c9b009495ff03fe",
+  "candidate_sha256": "6c674fb7240e957f0293fa2d337e0feac27b99eaf3b2f290465de974a685edc0",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -63,22 +63,34 @@
     {
       "claim_id": "C001",
       "locator": "lead[0]",
+      "start": 0,
+      "end": 114,
+      "claim_text": "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf.",
+      "normalized_claim": "Le cas d'école est un assemblage de neuf pièces dont la qualité d'ensemble est la somme des qualités des pièces.",
+      "support_ids": [
+        "SUP-7c9cbf25b4e7914e",
+        "SUP-de9a4f153a86d001"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
       "start": 115,
       "end": 191,
       "claim_text": "Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum.",
-      "normalized_claim": "Une tolérance de pièce est une plage entre une valeur minimale et une valeur maximale.",
+      "normalized_claim": "Chaque pièce a une tolérance définie comme intervalle entre un minimum et un maximum.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-e2a21c81ba720c0c"
       ]
     },
     {
-      "claim_id": "C002",
+      "claim_id": "C003",
       "locator": "lead[0]",
       "start": 235,
       "end": 300,
       "claim_text": "Le geste qui vient de lui-même est d’additionner les neuf plages.",
-      "normalized_claim": "La pratique d'usage consiste à additionner les tolérances des pièces.",
+      "normalized_claim": "La réponse d'usage est d'additionner les plages des pièces.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-7d69b24f8361b879",
@@ -86,35 +98,24 @@
       ]
     },
     {
-      "claim_id": "C003",
+      "claim_id": "C004",
       "locator": "lead[0]",
       "start": 301,
-      "end": 330,
-      "claim_text": "Il donne une fourchette large",
-      "normalized_claim": "L'addition donne une tolérance d'ensemble large.",
+      "end": 468,
+      "claim_text": "Il donne une fourchette large, et il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage.",
+      "normalized_claim": "La tolérance additive est large et présuppose que toutes les pièces atteignent ensemble le même extrême.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-de9a4f153a86d001"
       ]
     },
     {
-      "claim_id": "C004",
-      "locator": "lead[0]",
-      "start": 335,
-      "end": 468,
-      "claim_text": "il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage.",
-      "normalized_claim": "L'addition présuppose que toutes les pièces puissent être simultanément à l'extrême de leur plage du même côté.",
-      "support_ids": [
-        "SUP-7c9cbf25b4e7914e"
-      ]
-    },
-    {
       "claim_id": "C005",
       "locator": "lead[1]",
       "start": 0,
-      "end": 70,
-      "claim_text": "W. A. Shewhart, du personnel technique des Bell Telephone Laboratories",
-      "normalized_claim": "Shewhart était membre du personnel technique des Bell Telephone Laboratories.",
+      "end": 71,
+      "claim_text": "W. A. Shewhart, du personnel technique des Bell Telephone Laboratories,",
+      "normalized_claim": "Shewhart est membre du personnel technique des Bell Telephone Laboratories.",
       "support_ids": [
         "SUP-e2a21c81ba720c0c"
       ]
@@ -123,15 +124,14 @@
       "claim_id": "C006",
       "locator": "lead[1]",
       "start": 72,
-      "end": 194,
-      "claim_text": "pose la question telle quelle en 1931, dans Economic Control of Quality of Manufactured Product, paru chez D. Van Nostrand",
-      "normalized_claim": "Shewhart pose cette question dans son livre de 1931 chez Van Nostrand.",
+      "end": 195,
+      "claim_text": "pose la question telle quelle en 1931, dans Economic Control of Quality of Manufactured Product, paru chez D. Van Nostrand,",
+      "normalized_claim": "Référence de l'ouvrage : 1931, Van Nostrand.",
       "support_ids": [
-        "SUP-7c9cbf25b4e7914e",
         "SUP-b00df733fe95669b",
-        "SUP-75367ab18ad97ecd",
+        "SUP-980c9ee83b78cd0a",
         "SUP-3d4a5a132a6deef8",
-        "SUP-980c9ee83b78cd0a"
+        "SUP-75367ab18ad97ecd"
       ]
     },
     {
@@ -140,11 +140,12 @@
       "start": 196,
       "end": 254,
       "claim_text": "au chapitre XVII intitulé « Design limits on Variability »",
-      "normalized_claim": "La question est posée au chapitre XVII, intitulé Design limits on Variability.",
+      "normalized_claim": "La question figure au chapitre XVII, « Design limits on Variability ».",
       "support_ids": [
         "SUP-b3cb0ea71eddc4c1",
         "SUP-3d4a5a132a6deef8",
-        "SUP-7c9cbf25b4e7914e"
+        "SUP-7c909bab5bc2ce65",
+        "SUP-3021ee2451fb6bd7"
       ]
     },
     {
@@ -153,7 +154,7 @@
       "start": 257,
       "end": 427,
       "claim_text": "« What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ?",
-      "normalized_claim": "Citation et traduction de la question de Shewhart.",
+      "normalized_claim": "Citation de la question de Shewhart et sa traduction.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-bcb2e20e03378e72"
@@ -165,23 +166,24 @@
       "start": 428,
       "end": 519,
       "claim_text": "Et il en fait une question d’économie : ce qu’il est économique de prévoir pour l’ensemble.",
-      "normalized_claim": "Shewhart pose la question en termes d'économie de la tolérance d'ensemble prévue en conception.",
+      "normalized_claim": "Shewhart pose la question en termes d'économie de la tolérance d'ensemble.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
-        "SUP-00cf45fc4a04fa31"
+        "SUP-00cf45fc4a04fa31",
+        "SUP-4fbf395a4d4a8d7a"
       ]
     },
     {
       "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
-      "end": 63,
-      "claim_text": "L’addition est la conséquence exacte d’une définition d’atelier",
-      "normalized_claim": "L'addition découle de la définition d'atelier d'une tolérance.",
+      "end": 64,
+      "claim_text": "L’addition est la conséquence exacte d’une définition d’atelier,",
+      "normalized_claim": "L'addition des plages découle de la définition d'atelier d'une tolérance.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
-        "SUP-7d69b24f8361b879",
-        "SUP-2b23172098a4ec51"
+        "SUP-2b23172098a4ec51",
+        "SUP-7d69b24f8361b879"
       ]
     },
     {
@@ -190,7 +192,7 @@
       "start": 65,
       "end": 317,
       "claim_text": "que Shewhart rappelle page 253 : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité.",
-      "normalized_claim": "Shewhart cite cette définition p. 253 (citation et traduction).",
+      "normalized_claim": "Citation p. 253 de la définition et traduction.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-e2a21c81ba720c0c"
@@ -202,11 +204,9 @@
       "start": 0,
       "end": 267,
       "claim_text": "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages.",
-      "normalized_claim": "Sous la définition du possible, l'addition est arithmétiquement exacte.",
+      "normalized_claim": "Sous la définition par le possible, la plage d'ensemble est exactement la somme des plages.",
       "support_ids": [
-        "SUP-7c9cbf25b4e7914e",
-        "SUP-ed276a1402219999",
-        "SUP-3fe26198a6f5f96b"
+        "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
@@ -215,10 +215,10 @@
       "start": 268,
       "end": 395,
       "claim_text": "Ce que Shewhart met en cause n’est donc pas le calcul : c’est qu’on prenne le possible pour la mesure de ce qu’il faut prévoir.",
-      "normalized_claim": "Shewhart ne conteste pas le calcul mais l'économie de prévoir l'étendue du possible.",
+      "normalized_claim": "Shewhart conteste non le calcul mais l'économie de dimensionner sur le possible.",
       "support_ids": [
-        "SUP-ed276a1402219999",
         "SUP-3fe26198a6f5f96b",
+        "SUP-ed276a1402219999",
         "SUP-7c9cbf25b4e7914e",
         "SUP-00cf45fc4a04fa31"
       ]
@@ -229,7 +229,7 @@
       "start": 0,
       "end": 114,
       "claim_text": "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble.",
-      "normalized_claim": "Atteindre la limite haute additive exige que toutes les pièces soient à leur maximum.",
+      "normalized_claim": "Atteindre le maximum additif exige que toutes les pièces soient à leur maximum.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e"
       ]
@@ -240,7 +240,7 @@
       "start": 115,
       "end": 345,
       "claim_text": "Page 254, Shewhart s’arrête sur cette chance : quand les pièces sont nombreuses et prises au hasard, le nombre de fois où leur combinaison atteint la limite haute ou la limite basse est « very small indeed », très faible en effet.",
-      "normalized_claim": "P. 254 : pour des pièces nombreuses prises au hasard, les combinaisons extrêmes sont very small indeed.",
+      "normalized_claim": "P. 254 : avec m grand et pièces au hasard, la combinaison atteint rarement les extrêmes.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-e2a21c81ba720c0c",
@@ -253,10 +253,10 @@
       "start": 0,
       "end": 204,
       "claim_text": "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines.",
-      "normalized_claim": "Le raisonnement suppose assemblage au hasard (pas d'appariement sélectif) et indépendance des pièces.",
+      "normalized_claim": "Le raisonnement suppose assemblage au hasard et indépendance des pièces.",
       "support_ids": [
-        "SUP-ed276a1402219999",
         "SUP-3fe26198a6f5f96b",
+        "SUP-ed276a1402219999",
         "SUP-7c9cbf25b4e7914e"
       ]
     },
@@ -266,10 +266,10 @@
       "start": 205,
       "end": 266,
       "claim_text": "C’est l’hypothèse de ce passage, et elle porte tout le reste.",
-      "normalized_claim": "L'hypothèse d'assemblage au hasard est celle du passage et le résultat en dépend.",
+      "normalized_claim": "Le résultat dépend de cette hypothèse d'assemblage au hasard.",
       "support_ids": [
-        "SUP-ed276a1402219999",
-        "SUP-3fe26198a6f5f96b"
+        "SUP-3fe26198a6f5f96b",
+        "SUP-ed276a1402219999"
       ]
     },
     {
@@ -278,7 +278,7 @@
       "start": 267,
       "end": 407,
       "claim_text": "La plage additionnée décrit alors un assemblage que rien n’interdit, mais dont la chance, quand les pièces sont nombreuses, est très faible.",
-      "normalized_claim": "L'assemblage extrême est possible mais très improbable quand les pièces sont nombreuses.",
+      "normalized_claim": "Les extrêmes additifs sont possibles mais très improbables quand m est grand.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-e2a21c81ba720c0c"
@@ -290,7 +290,7 @@
       "start": 21,
       "end": 62,
       "claim_text": "c’est ici que l’écart type entre en scène",
-      "normalized_claim": "L'argument fait ensuite intervenir l'écart type.",
+      "normalized_claim": "L'argument introduit alors les écarts types des pièces.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e"
       ]
@@ -299,8 +299,8 @@
       "claim_id": "C020",
       "locator": "sections[2].paragraphs[0]",
       "start": 64,
-      "end": 135,
-      "claim_text": "La formule imprimée en haut de la page 255 donne celui de la résultante",
+      "end": 136,
+      "claim_text": "La formule imprimée en haut de la page 255 donne celui de la résultante,",
       "normalized_claim": "La formule en haut de p. 255 donne l'écart type de la résultante.",
       "support_ids": [
         "SUP-bcb2e20e03378e72",
@@ -311,13 +311,14 @@
     {
       "claim_id": "C021",
       "locator": "sections[2].paragraphs[0]",
-      "start": 140,
-      "end": 244,
-      "claim_text": "elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces.",
-      "normalized_claim": "La formule est la racine carrée de la somme des carrés des écarts types.",
+      "start": 137,
+      "end": 270,
+      "claim_text": "et elle n’additionne pas les écarts types eux-mêmes : elle prend la racine carrée de la somme des carrés des écarts types des pièces.",
+      "normalized_claim": "L'écart type de la somme est la racine de la somme des carrés.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-bcb2e20e03378e72",
+        "SUP-701085c0fd487b27",
         "SUP-8c1e694f4a7e68ec"
       ]
     },
@@ -327,10 +328,10 @@
       "start": 0,
       "end": 102,
       "claim_text": "Pour passer de cette formule à une tolérance, il faut une condition, et Shewhart la pose explicitement",
-      "normalized_claim": "Passer à une tolérance exige une hypothèse que Shewhart pose explicitement.",
+      "normalized_claim": "Passer à une tolérance requiert une hypothèse posée explicitement par Shewhart.",
       "support_ids": [
-        "SUP-ed276a1402219999",
-        "SUP-3fe26198a6f5f96b"
+        "SUP-3fe26198a6f5f96b",
+        "SUP-ed276a1402219999"
       ]
     },
     {
@@ -339,11 +340,11 @@
       "start": 105,
       "end": 272,
       "claim_text": "chaque sorte de pièce est fabriquée de façon maîtrisée autour d’une valeur moyenne, et sa tolérance est fixée à trois écarts types de part et d’autre de cette moyenne.",
-      "normalized_claim": "Hypothèse : pièces contrôlées autour d'une moyenne, tolérance à ±3σ.",
+      "normalized_claim": "Hypothèse : production maîtrisée autour de moyennes, tolérance pièce à ±3σ.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
-        "SUP-ed276a1402219999",
-        "SUP-3fe26198a6f5f96b"
+        "SUP-3fe26198a6f5f96b",
+        "SUP-ed276a1402219999"
       ]
     },
     {
@@ -352,7 +353,7 @@
       "start": 90,
       "end": 295,
       "claim_text": "Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois.",
-      "normalized_claim": "Cas d'écarts types égaux : somme = 9σ1, RSS = √9 σ1 = 3σ1.",
+      "normalized_claim": "Cas d'écarts types égaux : σ = √m σ1, soit 3σ1 pour m = 9 contre 9σ1 additionnés.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e"
       ]
@@ -363,7 +364,7 @@
       "start": 296,
       "end": 399,
       "claim_text": "La fourchette additionnée est trois fois plus large que les limites à trois écarts types de l’ensemble.",
-      "normalized_claim": "Pour neuf pièces égales, la tolérance additive est trois fois plus large que ±3σ de l'ensemble.",
+      "normalized_claim": "Pour m = 9 égaux, la tolérance additive est trois fois plus large que ±3σ de la résultante.",
       "support_ids": [
         "SUP-7c9cbf25b4e7914e",
         "SUP-de9a4f153a86d001"
@@ -373,24 +374,24 @@
       "claim_id": "C026",
       "locator": "sections[2].paragraphs[2]",
       "start": 400,
-      "end": 523,
-      "claim_text": "Pour neuf pièces, la figure 87 place l’étendue à six écarts types de l’ensemble loin à l’intérieur de la tolérance additive",
-      "normalized_claim": "Figure 87, m=9 : l'étendue 6σ de la résultante est loin à l'intérieur de la tolérance additive.",
+      "end": 524,
+      "claim_text": "Pour neuf pièces, la figure 87 place l’étendue à six écarts types de l’ensemble loin à l’intérieur de la tolérance additive,",
+      "normalized_claim": "Figure 87, m = 9 : l'étendue 6σ tient loin à l'intérieur de la tolérance additive.",
       "support_ids": [
-        "SUP-7c9cbf25b4e7914e",
-        "SUP-de9a4f153a86d001"
+        "SUP-de9a4f153a86d001",
+        "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
       "claim_id": "C027",
       "locator": "sections[2].paragraphs[2]",
-      "start": 528,
+      "start": 525,
       "end": 602,
-      "claim_text": "son titre porte la conclusion : « Illustrating Proper Way to Set Limits ».",
-      "normalized_claim": "Le titre de la figure 87 est Illustrating Proper Way to Set Limits et porte la conclusion.",
+      "claim_text": "et son titre porte la conclusion : « Illustrating Proper Way to Set Limits ».",
+      "normalized_claim": "Titre de la figure 87.",
       "support_ids": [
-        "SUP-7c9cbf25b4e7914e",
         "SUP-de9a4f153a86d001",
+        "SUP-7c9cbf25b4e7914e",
         "SUP-3d4a5a132a6deef8",
         "SUP-75367ab18ad97ecd"
       ]
@@ -399,17 +400,17 @@
       "claim_id": "C028",
       "locator": "sections[2].paragraphs[3]",
       "start": 0,
-      "end": 140,
-      "claim_text": "D’où la phrase de Shewhart, page 255 : la pratique qui additionne les limites de tolérance « may be uneconomical », peut être peu économique",
-      "normalized_claim": "P. 255, Shewhart dit que la pratique additive may be uneconomical.",
+      "end": 141,
+      "claim_text": "D’où la phrase de Shewhart, page 255 : la pratique qui additionne les limites de tolérance « may be uneconomical », peut être peu économique,",
+      "normalized_claim": "P. 255 : additionner les limites peut être peu économique.",
       "support_ids": [
-        "SUP-c3c198cbf6191f0f",
         "SUP-efa9980bc3e453bc",
-        "SUP-c3cea19540ab7c79",
+        "SUP-c3c198cbf6191f0f",
         "SUP-7f36cf2748852446",
-        "SUP-7cec3ef3dc8199b2",
+        "SUP-c3cea19540ab7c79",
         "SUP-7c909bab5bc2ce65",
-        "SUP-414a2d5ce98ab542"
+        "SUP-7cec3ef3dc8199b2",
+        "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
@@ -418,12 +419,13 @@
       "start": 142,
       "end": 293,
       "claim_text": "parce que la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est relativement très faible.",
-      "normalized_claim": "Raison : la chance de sortir de ΣR̄i ± 3σ est relativement très faible.",
+      "normalized_claim": "Motif : la chance de sortir de ΣR̄i ± 3σ est relativement très faible.",
       "support_ids": [
-        "SUP-c3c198cbf6191f0f",
         "SUP-efa9980bc3e453bc",
-        "SUP-414a2d5ce98ab542",
-        "SUP-7c9cbf25b4e7914e"
+        "SUP-c3c198cbf6191f0f",
+        "SUP-7c9cbf25b4e7914e",
+        "SUP-36fc01d65a4e6883",
+        "SUP-c4056072cc1285db"
       ]
     },
     {
@@ -432,14 +434,14 @@
       "start": 294,
       "end": 368,
       "claim_text": "Le modal compte autant que l’adjectif : improbable, et non pas impossible.",
-      "normalized_claim": "L'énoncé de Shewhart est modal (may be) et porte sur une improbabilité, non une impossibilité.",
+      "normalized_claim": "L'énoncé est modal : improbabilité, pas impossibilité.",
       "support_ids": [
-        "SUP-c3c198cbf6191f0f",
-        "SUP-efa9980bc3e453bc",
-        "SUP-ed276a1402219999",
-        "SUP-3fe26198a6f5f96b",
+        "SUP-c0a13b71f99a8796",
+        "SUP-36fc01d65a4e6883",
         "SUP-c4056072cc1285db",
-        "SUP-36fc01d65a4e6883"
+        "SUP-3fe26198a6f5f96b",
+        "SUP-ed276a1402219999",
+        "SUP-bcb2e20e03378e72"
       ]
     },
     {
@@ -459,11 +461,12 @@
       "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
       "start": 54,
-      "end": 161,
-      "claim_text": "Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256",
-      "normalized_claim": "Le § 6 a ce titre et s'ouvre p. 256.",
+      "end": 162,
+      "claim_text": "Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256,",
+      "normalized_claim": "Le § 6, ainsi intitulé, s'ouvre p. 256.",
       "support_ids": [
-        "SUP-b3cb0ea71eddc4c1"
+        "SUP-b3cb0ea71eddc4c1",
+        "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
@@ -474,39 +477,51 @@
       "claim_text": "traite le cas où la qualité d’ensemble n’est pas la somme de celles des pièces mais une fonction quelconque d’entre elles.",
       "normalized_claim": "Le § 6 traite X fonction quelconque des Xi.",
       "support_ids": [
-        "SUP-7c9cbf25b4e7914e",
-        "SUP-45a92230b526fd45"
+        "SUP-45a92230b526fd45",
+        "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
       "claim_id": "C034",
       "locator": "sections[3].paragraphs[0]",
       "start": 286,
-      "end": 400,
-      "claim_text": "Shewhart la développe « expanded in a Taylor’s series », en série de Taylor, et n’en retient que le premier ordre.",
-      "normalized_claim": "Développement en série de Taylor au premier ordre.",
+      "end": 362,
+      "claim_text": "Shewhart la développe « expanded in a Taylor’s series », en série de Taylor,",
+      "normalized_claim": "Citation « expanded in a Taylor's series ».",
       "support_ids": [
         "SUP-e2a21c81ba720c0c",
         "SUP-7c9cbf25b4e7914e",
-        "SUP-45a92230b526fd45",
-        "SUP-8c1e694f4a7e68ec"
+        "SUP-45a92230b526fd45"
       ]
     },
     {
       "claim_id": "C035",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 0,
-      "end": 148,
-      "claim_text": "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge.",
-      "normalized_claim": "La formule générale porte des coefficients de sensibilité ai.",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 363,
+      "end": 400,
+      "claim_text": "et n’en retient que le premier ordre.",
+      "normalized_claim": "Développement au premier ordre.",
       "support_ids": [
+        "SUP-45a92230b526fd45",
         "SUP-8c1e694f4a7e68ec",
-        "SUP-1bd3aa5e2cb14adb",
         "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
       "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 148,
+      "claim_text": "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge.",
+      "normalized_claim": "Coefficients de sensibilité ai issus du développement de Taylor.",
+      "support_ids": [
+        "SUP-8c1e694f4a7e68ec",
+        "SUP-7c9cbf25b4e7914e",
+        "SUP-1bd3aa5e2cb14adb"
+      ]
+    },
+    {
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[1]",
       "start": 149,
       "end": 225,
@@ -519,64 +534,65 @@
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C038",
       "locator": "sections[3].paragraphs[1]",
       "start": 226,
       "end": 334,
       "claim_text": "La règle simple de la page 255 est le cas particulier où tous ces coefficients valent un, celui de la somme.",
-      "normalized_claim": "La RSS de p. 255 est le cas ai = 1.",
+      "normalized_claim": "RSS simple = coefficients égaux à un.",
       "support_ids": [
         "SUP-8c1e694f4a7e68ec",
         "SUP-1bd3aa5e2cb14adb"
       ]
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C039",
       "locator": "sections[3].paragraphs[1]",
       "start": 335,
       "end": 423,
       "claim_text": "La tenir pour la loi générale des assemblages serait lui faire dire plus qu’elle ne dit.",
-      "normalized_claim": "La RSS simple n'est pas une loi générale.",
+      "normalized_claim": "La RSS simple n'est pas une loi générale chez Shewhart.",
       "support_ids": [
         "SUP-8c1e694f4a7e68ec",
         "SUP-1bd3aa5e2cb14adb",
-        "SUP-bcb2e20e03378e72"
-      ]
-    },
-    {
-      "claim_id": "C039",
-      "locator": "sections[3].paragraphs[2]",
-      "start": 0,
-      "end": 161,
-      "claim_text": "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257.",
-      "normalized_claim": "La borne de probabilité est empruntée à Tchebychev, nommé p. 257.",
-      "support_ids": [
-        "SUP-7c9cbf25b4e7914e",
-        "SUP-e2a21c81ba720c0c",
-        "SUP-7d69b24f8361b879",
-        "SUP-2b23172098a4ec51",
+        "SUP-bcb2e20e03378e72",
         "SUP-45a92230b526fd45"
       ]
     },
     {
       "claim_id": "C040",
       "locator": "sections[3].paragraphs[2]",
+      "start": 0,
+      "end": 161,
+      "claim_text": "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257.",
+      "normalized_claim": "La borne de probabilité est empruntée à Tchebychev, nommé p. 257.",
+      "support_ids": [
+        "SUP-e2a21c81ba720c0c",
+        "SUP-7c9cbf25b4e7914e",
+        "SUP-45a92230b526fd45",
+        "SUP-2b23172098a4ec51",
+        "SUP-7d69b24f8361b879"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[2]",
       "start": 162,
       "end": 290,
       "claim_text": "Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale.",
-      "normalized_claim": "0,9973 ne vaut que pour des composants normaux.",
+      "normalized_claim": "0,9973 ne vaut que sous normalité des composants.",
       "support_ids": [
         "SUP-45a92230b526fd45",
         "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[2]",
       "start": 291,
       "end": 416,
       "claim_text": "Ni les mathématiques employées ni la pratique mise en cause ne sont de lui : ce qui lui revient est l’objection et sa mesure.",
-      "normalized_claim": "Attribution : seule l'objection et sa mesure reviennent à Shewhart.",
+      "normalized_claim": "Attribution : ni maths ni pratique de Shewhart ; l'objection et sa mesure lui reviennent.",
       "support_ids": [
         "SUP-2b23172098a4ec51",
         "SUP-7d69b24f8361b879",
@@ -584,19 +600,19 @@
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C043",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 131,
       "claim_text": "Une conséquence ferme la démonstration, page 259 : pour calculer la dispersion d’un ensemble, une plage de tolérance ne suffit pas.",
-      "normalized_claim": "P. 259, conclusion : une plage de tolérance ne suffit pas à calculer la dispersion d'un ensemble.",
+      "normalized_claim": "P. 259 : conclusion — une plage ne suffit pas pour calculer la dispersion d'ensemble.",
       "support_ids": [
-        "SUP-5a98845716221e2d",
-        "SUP-7c9cbf25b4e7914e"
+        "SUP-7c9cbf25b4e7914e",
+        "SUP-5a98845716221e2d"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C044",
       "locator": "sections[4].paragraphs[0]",
       "start": 132,
       "end": 239,
@@ -608,24 +624,24 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[0]",
       "start": 240,
       "end": 419,
       "claim_text": "Shewhart en fait une exigence : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ».",
-      "normalized_claim": "Citation de l'exigence de spécification p. 259.",
+      "normalized_claim": "Citation de l'exigence de spécification.",
       "support_ids": [
         "SUP-5a98845716221e2d",
         "SUP-7c9cbf25b4e7914e"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[0]",
       "start": 420,
       "end": 577,
       "claim_text": "Ce qu’on doit obtenir d’un fournisseur change ainsi de nature : non pas une tolérance plus serrée, mais l’information qui permet de composer les dispersions.",
-      "normalized_claim": "Exiger du fournisseur une information (moyenne, écart type) plutôt qu'une tolérance plus serrée.",
+      "normalized_claim": "Au fournisseur on demande une information d'autre nature, pas une tolérance plus serrée.",
       "support_ids": [
         "SUP-5a98845716221e2d",
         "SUP-7c9cbf25b4e7914e"
