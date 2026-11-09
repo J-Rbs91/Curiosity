@@ -3,7 +3,7 @@
   "concept_id": "regulation-proportionnelle-derivee-integrale",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "58095da7f3bc23655b719217ac50ce2337f8c958ca46447163767fc2ea71ce35",
+  "candidate_sha256": "15450df37cba91443714151f110c78f7a53043ada3bdfe662d3551057f3a68e7",
   "validated_sha256": "301f438ad09d77e38f26b9d17791840a4903a42eea94d358f732054b357bad5c",
   "evidence_files": [
     {
@@ -53,86 +53,86 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Une pièce est à trois degrés de moins que ce qu’on lui demande. Le chiffre est simple, et il ne dit presque rien. Ces trois degrés se creusent-ils parce qu’une fenêtre vient de s’ouvrir, ou se comblent-ils parce que le chauffage travaille depuis dix minutes ? Durent-ils depuis vingt secondes ou depuis deux heures ? Un appareil qui ne connaît que l’écart de l’instant répondra de la même façon dans tous ces cas, et il se trompera dans la plupart d’entre eux."
+      "text": "Une pièce est à trois degrés de moins que ce qu’on lui demande. Le chiffre est simple, et il ne dit presque rien. Ces trois degrés se creusent-ils parce qu’une fenêtre vient de s’ouvrir, ou se comblent-ils parce que le chauffage travaille depuis dix minutes ? Durent-ils depuis vingt secondes ou depuis deux heures ? Un appareil qui ne connaît que l’écart de l’instant répondra de la même façon dans tous ces cas."
     },
     {
       "locator": "lead[1]",
-      "text": "Les ingénieurs qui construisaient des machines capables de corriger leurs propres erreurs en avaient tiré, bien avant 1959, une distinction devenue banale chez eux : d’un même écart on peut lire trois choses, sa taille, la vitesse à laquelle il change, et ce qu’il a accumulé depuis qu’il dure. Stanford Goldman enseignait le génie électrique à Syracuse. Devant une conférence interdisciplinaire réunie en mai 1959, il a proposé de porter ce découpage dans le corps vivant, et de demander aux biologistes lequel de ces trois renseignements un organisme utilise, quand, et par quelle voie."
+      "text": "Les ingénieurs qui construisaient des machines capables de corriger leurs propres erreurs en avaient tiré, avant 1959, une distinction devenue standard chez eux : d’un même écart on peut lire trois choses, sa taille, la vitesse à laquelle il change, et ce qu’il a accumulé depuis qu’il dure. Stanford Goldman appartenait au département de génie électrique de l’université de Syracuse. Devant une conférence interdisciplinaire réunie en mai 1959, il a proposé de porter ce découpage dans le corps vivant."
     },
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Verser la glace, ou goûter le punch",
-      "text": "Deux façons de rafraîchir un bol de punch. La première : estimer la quantité de glace qu’il faudra, la mettre, et s’en aller. La seconde : mettre de la glace, goûter, trouver le punch encore tiède, en remettre, goûter encore. Goldman se sert de ces deux hôtesses, dans la version longue et élémentaire qu’il a écrite la même année pour des lecteurs sans pratique de ces notions, afin d’opposer une commande qui agit d’après un calcul fait à l’avance et une commande qui agit d’après ce qu’elle constate."
+      "text": "Deux façons de rafraîchir un bol de punch. La première hôtesse y met de la glace. La seconde goûte, et rajoute de la glace. Goldman se sert de ces deux hôtesses, dans la version longue et élémentaire qu’il a écrite la même année pour des biologistes sans pratique de ces notions, afin d’opposer une commande en boucle ouverte et une commande en boucle fermée, qui se règle sur ce qu’elle constate."
     },
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Verser la glace, ou goûter le punch",
-      "text": "Tout ce qui suit ne concerne que la seconde. Dès qu’une commande se règle sur ce qu’elle constate, elle travaille sur une différence entre l’état voulu et l’état obtenu, et cette différence devient sa matière première. La question n’est plus de savoir s’il faut regarder le résultat, mais ce qu’on y lit au juste."
+      "text": "L’exposé de 1959, lui, suppose son lecteur déjà formé à la théorie des asservissements et à celle de l’information ; il le dit dès sa deuxième phrase, et s’en tient à la manière dont elles s’appliquent au vivant. Le punch, et plus loin le thermostat, la conduite de tir et le virage, viennent du chapitre élémentaire."
     },
     {
       "locator": "sections[1].paragraphs[0]",
       "section_title": "Le thermostat qui ne sait dire qu’oui ou non",
-      "text": "Goldman range les commandes sur une échelle de cinq degrés, du plus grossier au plus fin. Au premier degré, la correction est dirigée mais constante : c’est tout ou rien, une action toujours de même force tant que l’écart existe, coupée dès qu’il disparaît. Son exemple est le thermostat qui commande un chauffage en tout ou rien, et il le donne pour le plus grossier des contrôles. L’ennui se voit dans n’importe quel logement : le chauffage travaille à pleine force jusqu’au dernier dixième de degré, la chaleur déjà lancée continue de monter, et la pièce dépasse la température demandée avant de redescendre."
+      "text": "Goldman range les commandes sur une échelle de cinq types. Au premier, la correction est dirigée mais constante : une action en tout ou rien, toujours de même force, pour réduire l’écart. Son exemple est le thermostat qui commande un chauffage en tout ou rien, et il le donne pour le plus grossier des contrôles."
     },
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Le thermostat qui ne sait dire qu’oui ou non",
-      "text": "Au deuxième degré, l’action n’est plus constante : elle est proportionnelle à l’écart. Le même thermostat, mais le courant de chauffe suit l’écart de température, fort quand il manque cinq degrés, faible quand il en manque un demi. Goldman note que cette commande est ordinairement plus rapide et plus exacte que la précédente, et l’on voit pourquoi : elle frappe fort quand c’est loin et se retient quand c’est près, de sorte qu’elle arrive sans emporter la cible. C’est le premier des trois termes, l’action proportionnelle à l’écart."
+      "text": "Au deuxième type, l’action n’est plus constante : elle est proportionnelle à l’écart. Le même thermostat, mais le courant de chauffe suit l’écart de température, fort quand il manque cinq degrés, faible quand il en manque un demi. Goldman note que cette commande est ordinairement plus rapide et plus exacte que la précédente. C’est le premier des trois renseignements : la taille de l’écart."
     },
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "La vitesse de l’écart, et ce qu’il a accumulé",
-      "text": "Rester proportionnel ne suffit pourtant pas toujours, parce que la taille d’un écart ne dit rien de son sens de marche. Trois degrés qui se creusent et trois degrés qui se comblent donnent le même chiffre et appellent deux conduites opposées. Le troisième degré de l’échelle ajoute donc une action proportionnelle à la vitesse à laquelle l’écart change, et Goldman dit à quoi elle sert : empêcher le dépassement, c’est-à-dire l’erreur en sens inverse. L’exemple qu’il prend est la conduite de tir, où l’on vise l’endroit où la cible sera d’après la vitesse qu’elle a maintenant. Corriger sur la vitesse, c’est corriger d’avance."
+      "text": "La taille d’un écart ne dit pourtant rien de son sens de marche, comme on l’a vu avec la fenêtre ouverte. Le troisième type ajoute une action proportionnelle à la vitesse à laquelle l’écart change, et Goldman dit à quoi elle sert : empêcher le dépassement, c’est-à-dire l’erreur en sens inverse. L’exemple qu’il prend est la conduite de tir, où l’on anticipe la position de la cible d’après la vitesse qu’elle a maintenant."
     },
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "La vitesse de l’écart, et ce qu’il a accumulé",
-      "text": "Le quatrième degré ajoute le renseignement le plus discret des trois : non plus l’écart de l’instant ni sa tendance, mais ce qu’il a accumulé depuis qu’il dure, son intégrale dans le temps. Son effet, dans les termes de Goldman, est de renforcer l’action quand le système ne parvient pas à réduire suffisamment l’écart ; elle augmente l’exactitude et empêche une dérive de s’installer. Un petit écart, trop faible pour appeler une réponse vive, mais qui tient toute la journée, finit ainsi par produire une réponse forte, non parce qu’il a grandi, mais parce qu’il a duré."
+      "text": "Le quatrième type ajoute le dernier renseignement : non plus l’écart de l’instant ni sa tendance, mais ce qu’il a accumulé depuis qu’il dure, son intégrale dans le temps. Son effet, dans les termes de Goldman, est de renforcer l’action quand le système ne parvient pas à réduire suffisamment l’écart ; elle augmente l’exactitude et réduit la tendance à dériver vers l’erreur. Un petit écart, trop faible pour appeler une réponse vive, mais qui tient toute la journée, finit ainsi par produire une réponse forte, non parce qu’il a grandi, mais parce qu’il a duré."
     },
     {
       "locator": "sections[2].paragraphs[2]",
       "section_title": "La vitesse de l’écart, et ce qu’il a accumulé",
-      "text": "Un cinquième degré vient encore au-dessus, et il sort du trio : la commande fondée sur l’anticipation d’événements à venir, celle du conducteur qui voit le virage approcher et tourne avant d’avoir été déporté. Là, l’écart n’existe pas encore : rien ne serait revenu à temps pour le signaler."
+      "text": "Un cinquième type vient encore au-dessus, et il sort du trio : la commande fondée sur l’anticipation d’événements à venir, celle du conducteur qui voit un virage approcher sur la route. Là, la commande répond à ce qui va arriver, et non à un écart déjà constaté."
     },
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Six lignes au bord du glucose sanguin",
-      "text": "Devant la conférence de 1959, Goldman applique ce découpage à un schéma de la régulation du glucose sanguin, et compte ce qui sort du compartiment où le sucre circule : « At the right of the blood glucose compartment are six emerging information lines », six lignes d’information en émergent. Trois grandeurs, l’écart, sa vitesse, son accumulation, et chacune en deux exemplaires, l’un pour le trop, l’autre pour le trop peu."
+      "text": "Devant la conférence de 1959, Goldman applique ce découpage à un schéma de la régulation du glucose sanguin, et compte ce qui sort du compartiment où le sucre circule : « At the right of the blood glucose compartment are six emerging information lines », six lignes d’information en émergent. Trois grandeurs, l’écart, sa vitesse, son accumulation, et chacune en deux exemplaires, l’un pour le trop, l’autre pour le trop peu."
     },
     {
       "locator": "sections[3].paragraphs[1]",
       "section_title": "Six lignes au bord du glucose sanguin",
-      "text": "Pourquoi doubler, alors qu’un signe suffirait à marquer les deux directions ? Parce que, dans un corps, ces deux directions ne s’adressent pas aux mêmes destinataires : « The ΔC(−) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs ». Le texte suit ensuite ces lignes vers la médullosurrénale, le pancréas, le tissu adipeux, la corticosurrénale, et soutient que l’organisme fait de ces six renseignements des usages différents plutôt qu’un seul."
+      "text": "Pourquoi doubler, alors qu’un signe suffirait à marquer les deux directions ? Parce que, dans un corps, ces deux directions n’ont pas forcément les mêmes destinataires : « The ΔC(−) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs ». Le texte suit ensuite ces lignes vers la médullosurrénale, le pancréas, le tissu adipeux, la corticosurrénale."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Six lignes au bord du glucose sanguin",
+      "text": "Sa thèse reste modalisée : selon lui, les six informations paraissent toutes servir à la régulation du glucose, et le corps, dans une certaine mesure au moins, les distingue et en fait des usages différents. Il signale aussi des indices selon lesquels le glycogène du foie serait traité différemment par les actions proportionnelle, dérivée et intégrale."
     },
     {
       "locator": "sections[4].paragraphs[0]",
       "section_title": "Les antagonistes et le prix de la puissance",
-      "text": "Ce dédoublement tient à une différence que Goldman juge décisive entre les machines et les vivants. Dans un montage électrique à rétroaction, un écart négatif ressemble en tout à un écart positif au signe près, et le même mécanisme corrige les deux : il suffit que le courant change de sens. Dans un organisme, le mécanisme qui corrige un excès n’est le plus souvent pas celui qui corrige un manque, et l’un est alors l’antagoniste de l’autre. Trois lectures de l’écart, deux machineries pour agir : six lignes, et non trois."
+      "text": "Un peu plus loin, Goldman revient sur les deux signes pour opposer les montages électriques et les vivants. Dans un montage électrique linéaire à rétroaction, un écart négatif ressemble en tout à un écart positif au signe près, et le même mécanisme corrige les deux : il suffit que le courant change de sens. Cette capacité, précise-t-il, n’est pas une propriété universelle : dans un organisme, le mécanisme qui corrige un excès est souvent différent de celui qui corrige un manque, et l’un peut alors être appelé l’antagoniste de l’autre."
     },
     {
       "locator": "sections[4].paragraphs[1]",
       "section_title": "Les antagonistes et le prix de la puissance",
-      "text": "Cette architecture a un prix. Une commande tenue par l’équilibre de deux antagonistes puissants est, quand tout va bien, la plus rapide et la plus exacte qui soit ; mais plus la commande est forte, plus la rupture de cet équilibre devient dangereuse. Le mot que Goldman emploie alors, instabilité, a chez lui un sens voisin de cercle vicieux ou d’emballement, et la cause qu’il en donne est une affaire de calendrier : l’agent et son antagoniste entrent en action trop tard, si bien qu’au lieu de se compenser ils se renforcent."
+      "text": "Cette architecture a un prix. Une commande tenue par l’équilibre de deux antagonistes puissants est, quand elle fonctionne bien, à la fois rapide et exacte ; mais plus la commande est forte, plus le danger d’instabilité grandit quand cet équilibre est altéré. Le mot que Goldman emploie alors, instabilité, a chez lui un sens technique voisin de cercle vicieux ou d’emballement, et la cause qu’il en donne est une affaire de calendrier : l’agent et son antagoniste entrent en action trop tard, si bien qu’au lieu de se compenser ils se renforcent."
     },
     {
       "locator": "sections[4].paragraphs[2]",
       "section_title": "Les antagonistes et le prix de la puissance",
-      "text": "Dans un corps, ajoute-t-il, cela ne se voit généralement pas comme une oscillation. Cela se voit comme un déplacement durable de l’équilibre : la régulation ne bat pas la mesure, elle se tient ailleurs qu’où elle le devrait."
+      "text": "Dans un corps, ajoute-t-il, cela ne se voit généralement pas comme une oscillation. Cela se voit comme un déplacement pathologique de l’équilibre : la régulation ne bat pas la mesure, elle se tient ailleurs qu’où elle le devrait."
     },
     {
       "locator": "sections[5].paragraphs[0]",
       "section_title": "Une manière de regarder, et ce qu’elle demande",
-      "text": "L’exposé de 1959 s’adresse à des lecteurs supposés connaître déjà la théorie des asservissements et celle de l’information ; il le dit dès sa deuxième phrase et n’explique donc ni l’une ni l’autre. C’est pour cela que Goldman a doublé son propos, la même année, d’un chapitre destiné aux biologistes qui n’en avaient aucune pratique : le punch, le thermostat et le virage viennent de là."
+      "text": "Sur le fond, Goldman revendique bien moins qu’une lecture pressée ne le laisserait croire. Il écrit que ses énoncés paraissent raisonnables, mais que la littérature offre peu de mesures sur lesquelles les fonder : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them ». Et il ajoute, sur la même page : « The present author is not competent to judge how much of this information is already in the literature »."
     },
     {
       "locator": "sections[5].paragraphs[1]",
       "section_title": "Une manière de regarder, et ce qu’elle demande",
-      "text": "Sur le fond, il revendique bien moins qu’une lecture pressée ne le laisserait croire. Il écrit que ses énoncés paraissent raisonnables, mais que la littérature offre peu de mesures sur lesquelles les fonder : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them ». Et lorsque le président de séance le presse, dans la discussion qui suit, il répond : « I merely suggested that these ideas might be of value when you are studying homeostatic controls »."
-    },
-    {
-      "locator": "sections[5].paragraphs[2]",
-      "section_title": "Une manière de regarder, et ce qu’elle demande",
-      "text": "La dernière partie de sa communication ne conclut donc rien sur le glucose : elle formule des questions à poser aux physiologistes. Ce qu’il propose est une manière de regarder assortie d’un programme d’expériences, pas un résultat de physiologie."
+      "text": "La dernière partie de sa communication ne conclut rien sur le glucose : elle formule des questions expérimentales à poser aux physiologistes."
     }
   ],
   "supports": [
@@ -719,6 +719,6 @@
       "text": "Textes cités par Goldman et non ouverts dans cette lecture : Cannon, The Wisdom of the Body (1932) ; Black, Stabilized feedback amplifiers, Bell System Technical Journal (1934) ; Getting, Servo systems, dans Theory of Servo Mechanisms (1947) ; Wiener, Cybernetics (1948) ; Goldman lui-même, Information Theory (Prentice-Hall, 1953) ; Anderson et Long, Endocrinology (1947), cité en note page 118 sur le pancréas comme transducteur de commande. Aucun n'a été consulté, ni en texte ni en notice."
     }
   ],
-  "estimated_tokens": 18830,
+  "estimated_tokens": 18439,
   "status": "READY"
 }
