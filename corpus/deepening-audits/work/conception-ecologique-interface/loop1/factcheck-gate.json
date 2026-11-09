@@ -1,0 +1,38 @@
+{
+  "protocol_version": 2,
+  "concept_id": "conception-ecologique-interface",
+  "candidate_sha256": "2a1286bf0c59c4a9e4fa3e82c5c0f8dd39d39af599445000878c33373479de42",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 49,
+  "supported": 44,
+  "failed": 5,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni. Le présent générique (« Quelqu'un qui refait chaque jour le même trajet ne délibère pas ») affirme un fait psychologique valable pour quiconque, avec un détail empirique (il ne saurait pas dire ce qu'il a fait des dix dernières minutes) que rien dans le bundle n'établit ; ce n'est pas une vignette purement stipulée."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis portent « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort » ($.definition_de_lauteur ; $.notes[0] en français). Le claim rend la tendance en conséquence certaine (« devient lent et fatigant »), et l'idée qu'un affichage en chiffres à interpréter « oblige à réfléchir » n'est pas portée par les appuis fournis pour ce claim."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "TOO_STRONG",
+      "reason": "Le verbatim fourni ($.definition_de_lauteur) dit « lower levels of cognitive control tend to be executed more quickly, more effectively, and with less effort than higher levels ». Le claim, présenté comme le constat des auteurs, supprime « tend to » et rend une tendance en fait général (« s'exécutent plus vite »)."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "TOO_STRONG",
+      "reason": "L'inférence repose sur « les niveaux bas coûtent moins », alors que le verbatim fourni ($.definition_de_lauteur) dit « tend to be executed … with less effort » ; la conclusion « impose un effort dont on aurait pu se passer » est donc rendue certaine là où les appuis n'autorisent qu'une tendance."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "UNSUPPORTED",
+      "reason": "$.notes[5] et $.definition_de_lauteur établissent que l'exemple le plus concret est « le piège procédural de Three Mile Island ». Les appuis fournis pour ce claim ne qualifient pas l'épisode d'« accident » : ce détail n'est pas porté par eux."
+    }
+  ]
+}

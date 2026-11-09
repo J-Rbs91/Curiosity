@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "ergonomie-tache-ergonomie-activite",
+  "candidate_sha256": "1200ff6b9ea5ca067ac4eb08c02ec977d1829db712e65edba55465ffa12f4324",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 47,
+  "supported": 45,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C027",
+      "verdict": "UNSUPPORTED",
+      "reason": "Le seul appui fourni pour ce claim ($.review.notes[1]) porte l'opposition « non pas comme norme, mais comme référence » et la tâche comme moyen de l'activité, ce qui fonde au plus « une référence s'utilise / un usage ». Les appuis fournis pour ce claim ne portent pas les caractérisations « une norme s'impose et se vérifie », « une référence se discute », ni « la première attend une conformité » : la glose ajoute un contenu que les supports n'établissent pas, même présentée comme lecture possible."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "TOO_STRONG",
+      "reason": "$.definition_de_lauteur et $.summary attribuent à cette ergonomie l'analyse de ce que fait l'opérateur « pour corriger la prescription » et la tâche pour horizon. Les appuis fournis pour ce claim ne portent pas la fin « jusqu'à obtenir une tâche qui n'ait plus besoin de ces ajouts » : ce point d'aboutissement — l'élimination de l'apport des opérateurs — extrapole au-delà de « corriger »."
+    }
+  ]
+}

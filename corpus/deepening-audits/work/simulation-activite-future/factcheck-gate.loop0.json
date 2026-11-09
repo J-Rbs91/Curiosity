@@ -1,0 +1,20 @@
+{
+  "protocol_version": 2,
+  "concept_id": "simulation-activite-future",
+  "candidate_sha256": "0a9bfda6afb47e045635f47be769ad1b7a955aa59109a7e1846516f0d25f9cd6",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 65,
+  "supported": 64,
+  "failed": 0,
+  "mapping_incomplete": [
+    {
+      "claim_id": "C001",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Aucun appui fourni pour ce claim. Le signal nomme SUP-b8a10ceb0fde0e3c ($.definition_de_lauteur, evidence:lecture.json), termes partagés « interroger », « observer » : cet appui est la lecture primaire du point théorique (activité future non prévisible en détail, concepteurs pas en situation de décrire comment les personnes travailleront) et manque visiblement au rattachement de cette prémisse. Remapper avant tout jugement d'entailment."
+    }
+  ],
+  "structural_errors": [
+    "C001: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
+  "failures": []
+}
