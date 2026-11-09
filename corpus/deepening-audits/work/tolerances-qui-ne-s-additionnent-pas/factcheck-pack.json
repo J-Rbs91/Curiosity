@@ -3,7 +3,7 @@
   "concept_id": "tolerances-qui-ne-s-additionnent-pas",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "06870e45801240bf4561cabd306f84051b8258a5eb8b74221c9b009495ff03fe",
+  "candidate_sha256": "6c674fb7240e957f0293fa2d337e0feac27b99eaf3b2f290465de974a685edc0",
   "validated_sha256": "758a007c52675881164fa9d0a27f426fde00530b51036231142b3acd54e2c0b9",
   "evidence_files": [
     {
@@ -82,7 +82,7 @@
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "L’écart type d’une somme",
-      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
+      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne pas les écarts types eux-mêmes : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
     },
     {
       "locator": "sections[2].paragraphs[1]",
@@ -717,6 +717,6 @@
       "text": "Recouvrement avec le dossier tolerance-economique-suppose-le-controle, déposé dans la même session et tiré du même chapitre. Les deux sont distincts et il faut qu'ils le restent : celui-là dit qu'une tolérance ne se fixe économiquement que sur un procédé maîtrisé, celui-ci dit comment se compose la tolérance d'un assemblage à partir de celles de ses pièces. La phrase de la p. 252 appartient au premier et n'est pas reprise ici."
     }
   ],
-  "estimated_tokens": 15904,
+  "estimated_tokens": 15913,
   "status": "READY"
 }
