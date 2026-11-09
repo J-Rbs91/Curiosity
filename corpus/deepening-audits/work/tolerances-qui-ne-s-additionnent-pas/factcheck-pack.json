@@ -1,0 +1,727 @@
+{
+  "protocol_version": 2,
+  "concept_id": "tolerances-qui-ne-s-additionnent-pas",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "994261f13ca9552c0b2f122866676dc64b426e5e660ecca2f145cbe791b50180",
+  "validated_sha256": "758a007c52675881164fa9d0a27f426fde00530b51036231142b3acd54e2c0b9",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "7af1480c2c6100f09b6ca15ddfd1b72377f3ccaacb73f2a6d435c22b84585108"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+        "cles": [
+          "rep:lccn31032090"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+        "cles": [
+          "isbn:9780873890762"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf. Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum, à l’intérieur de laquelle on la déclare bonne. Reste à écrire la tolérance de l’ensemble. Le geste qui vient de lui-même est d’additionner les neuf plages. Il donne une fourchette large, et il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "La question n’a rien d’oiseux : de la réponse dépendent la tolérance qu’on imposera à chaque fournisseur et le rebut qu’on acceptera. W. A. Shewhart, du personnel technique des Bell Telephone Laboratories, la pose telle quelle en 1931, au chapitre XVII d’un livre paru chez D. Van Nostrand et intitulé « Design limits on Variability » : « What shall the engineer use as the tolerance range for the overall resistance ? », que doit prendre l’ingénieur comme plage de tolérance pour la résistance d’ensemble ? Sa réponse tient dans un mot, et ce mot n’est pas faux : économique."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce que la définition d’atelier oblige à conclure",
+      "text": "Additionner n’est pas une bévue. C’est la conséquence exacte d’une définition reçue, que Shewhart rappelle page 253 sans l’attribuer à personne tant elle va de soi dans les ateliers : « the definition of a tolerance as the range between the maximum and minimum possible values of the quality », la tolérance entendue comme l’étendue entre la plus grande et la plus petite valeur possibles de la qualité."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce que la définition d’atelier oblige à conclure",
+      "text": "Si une tolérance nomme le possible, le raisonnement est sans faille. La plus grande valeur possible de l’ensemble est bien la somme des plus grandes valeurs possibles des pièces, la plus petite la somme des plus petites, et la plage de l’ensemble la somme des plages. Il n’y a là aucune erreur de calcul, et c’est ce qui rend la pratique difficile à déloger. Ce que Shewhart met en cause n’est pas la déduction, c’est le prix qu’on paie à prendre le possible pour la mesure de ce qu’il faut prévoir."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Neuf pièces à leur extrême le même jour",
+      "text": "Pour qu’un ensemble atteigne la valeur haute annoncée, il faut que les neuf pièces soient à leur maximum ensemble. Une pièce au bord de sa plage est déjà rare ; neuf, du même côté, dans le même assemblage, c’est le produit de neuf raretés. Page 254, Shewhart s’arrête sur cette chance et la dit « very small indeed », très faible en effet."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Neuf pièces à leur extrême le même jour",
+      "text": "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines. C’est l’hypothèse de ce passage, et elle porte tout le reste. La plage additionnée décrit alors un assemblage que rien n’interdit et qu’on n’a pratiquement aucune chance de fabriquer."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "L’écart type d’une somme",
+      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent en moyenne de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "L’écart type d’une somme",
+      "text": "L’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que celle où l’ensemble se tiendra. C’est ce que la figure 87 met sous les yeux pour neuf pièces, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits »."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "L’écart type d’une somme",
+      "text": "Une condition rend la comparaison légitime, et Shewhart la pose explicitement dans ce paragraphe : que la tolérance de chaque pièce ait elle-même été fixée à trois écarts types de part et d’autre de sa valeur moyenne. Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce que la fourchette trop large fait payer",
+      "text": "Shewhart n’écrit pas que la pratique additive est fausse. Il écrit qu’elle « may be uneconomical », qu’elle peut être peu économique, et le modal compte autant que l’adjectif : l’enjeu est une dépense, pas une faute de calcul. La suite de sa phrase dit pourquoi : la chance qu’un ensemble sorte des limites tracées à trois écarts types autour de la somme des valeurs moyennes est très faible. Improbable, donc, et non pas impossible."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce que la fourchette trop large fait payer",
+      "text": "Ce que cela engage en atelier se voit quand on renverse le calcul. La tolérance de l’ensemble est le plus souvent une donnée : c’est ce que l’appareil doit tenir. L’ingénieur qui la répartit en additionnant assigne alors à chaque pièce une plage plus étroite qu’il n’est nécessaire, et une plage plus étroite se paie, en rebut, en réglages, en prix d’achat. Le même ensemble pourrait se tenir avec des pièces plus lâches, à condition de savoir comment leurs dispersions se composent."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Quand la résultante n’est pas une somme",
+      "text": "La racine de la somme des carrés vaut pour une somme. Le paragraphe suivant, « The General Problem of Setting Tolerances on Controlled Product », ouvert page 256, traite le cas où la qualité d’ensemble n’est pas la somme de celles des pièces mais une fonction quelconque d’entre elles. Shewhart la développe « expanded in a Taylor’s series », en série de Taylor, et n’en retient que le premier ordre."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Quand la résultante n’est pas une somme",
+      "text": "Chaque pièce entre alors dans le compte avec un coefficient qui mesure sa part d’influence : de combien l’ensemble bouge quand cette pièce-là bouge. Son écart type est multiplié par ce coefficient avant d’être élevé au carré. La règle simple de la page 255 est le cas particulier où tous ces coefficients valent un, celui de la somme. La tenir pour la loi générale des assemblages serait lui faire dire plus qu’elle ne dit."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Quand la résultante n’est pas une somme",
+      "text": "Le passage de l’écart type à une probabilité se fait par un emprunt que Shewhart nomme dans le texte : « Making application of Tchebycheff’s theorem », page 257. Quant à la valeur familière de 0,9973 attachée à trois écarts types, elle ne vaut que si les composants suivent une loi normale, ce qui n’est pas donné d’avance. Ni les mathématiques employées ni la pratique mise en cause ne sont de lui, et il ne les revendique pas : ce qui lui revient est l’objection et sa mesure."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Ce qu’il faut alors demander à un fournisseur",
+      "text": "Une conséquence ferme la démonstration, page 259 : pour calculer la dispersion d’un ensemble, une plage de tolérance ne suffit pas. Il y faut, de chaque pièce, sa valeur moyenne et son écart type, deux nombres qu’une plage ne contient pas. Shewhart en fait une exigence : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ». Ce qu’on doit obtenir d’un fournisseur change ainsi de nature : non pas une tolérance plus serrée, mais l’information qui permet de composer les dispersions."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-96460d3effeaae7b",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "tolerances-qui-ne-s-additionnent-pas"
+    },
+    {
+      "id": "SUP-60d2275c3fb51133",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "tolerances-qui-ne-s-additionnent-pas"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-acdfbcff9f4ccdec",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Les tolérances ne s'additionnent pas"
+    },
+    {
+      "id": "SUP-fb777e8fe95f1191",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "variation-et-controle"
+    },
+    {
+      "id": "SUP-fe787f58870c07ad",
+      "origin": "validated",
+      "path": "$.theme_labels[\"variation-et-controle\"]",
+      "access": "n/a",
+      "text": "Ce qu'un procédé fait varier"
+    },
+    {
+      "id": "SUP-b9a679c58001ffaa",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "W. A. Shewhart"
+    },
+    {
+      "id": "SUP-2b23172098a4ec51",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage. Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui, et il le dit : additionner les écarts extrêmes des pièces découle de la définition d'atelier d'une tolérance, et le développement passe par une série de Taylor puis par le théorème de Tchebychev, tous deux nommés dans le texte. Ce qui lui revient est l'objection et sa mesure."
+    },
+    {
+      "id": "SUP-d738594b6590a990",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Additionner les tolérances des pièces donne-t-il celle de l'ensemble ?"
+    },
+    {
+      "id": "SUP-701085c0fd487b27",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Additionner les tolérances des pièces peut être peu économique : leurs extrêmes coïncident rarement, l'écart type de l'assemblage valant la racine de la somme des carrés."
+    },
+    {
+      "id": "SUP-7f36cf2748852446",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] additionner les limites de tolérance peut être peu économique : il est très rare qu'une résistance résultante sorte des limites ΣR̄i ± 3σ."
+    },
+    {
+      "id": "SUP-980c9ee83b78cd0a",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931."
+    },
+    {
+      "id": "SUP-7c909bab5bc2ce65",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 255, ch. XVII, § 5"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-efa9980bc3e453bc",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-36fc01d65a4e6883",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, 7 septembre 2026), faite sur l'image de la page et non sur l'OCR ; aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La phrase anglaise fait 196 caractères et deux opérations ont été nécessaires. Une coupe de tête, marquée par […] : « We see at once that the practice of » est retiré, ce qui laisse l'objection entière. Une contraction de la subordonnée causale : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits » devient « : il est très rare qu'une résistance résultante sorte des limites ». Ce rendu perd l'adverbe « relatively » et convertit une probabilité en fréquence, sans renverser le sens ni durcir l'affirmation, qui reste une improbabilité et non une impossibilité. La formule ΣR̄i ± 3σ est reproduite telle qu'imprimée et ne doit pas être coupée : ce sont les limites statistiques de l'assemblage, et non les limites additives que Shewhart critique."
+    },
+    {
+      "id": "SUP-b00df733fe95669b",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931, xiv-501 p. (LCCN 31032090)",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-3021ee2451fb6bd7",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 252-259, ch. XVII, § 5 et 6",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-1719f1148ba779c6",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 31032090",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-30aabf93d5a91088",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee, American Society for Quality Control, 1980 (réimpression).",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-6ecc146edc7cf33e",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "978-0-87389-076-2",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-3fe26198a6f5f96b",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule l'écart type d'une résultante, σ = √(Σ ai²σi²), et en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a elle-même été posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Le résultat suppose enfin l'assemblage au hasard et l'indépendance des pièces ; un appariement sélectif en atelier le mettrait en défaut, et ce cas n'est pas examiné."
+    },
+    {
+      "id": "SUP-45a92230b526fd45",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le résumé dit « l'écart type de l'assemblage » là où le texte écrit celui de la résultante, la qualité X composée des qualités des pièces ; le cas général du paragraphe 6 n'est d'ailleurs pas limité aux grandeurs qui s'ajoutent, X y étant une fonction quelconque des Xi, développée en série de Taylor au premier ordre. La borne de probabilité est empruntée à Tchebychev, et la valeur 0,9973 ne vaut que si les composants sont normaux."
+    },
+    {
+      "id": "SUP-8c1e694f4a7e68ec",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Précision établie par le contrôle du 7 septembre 2026, et qui ne touche pas le résumé, donné pour fidèle. La racine de la somme des carrés que le résumé énonce est le cas de la somme, celui de la page 255 sur lequel la carte s'appuie : chaque pièce y contribue par son seul écart type. La formule générale du paragraphe 6, page 257, porte des coefficients de sensibilité, σX = √(a1²σ1² + ... + am²σm²), les ai venant du développement en série de Taylor de la fonction F au premier ordre ; la racine de la somme des carrés simple n'en est que le cas où ces coefficients valent un. La fourchette de pages de la source primaire est corrigée par le même contrôle, de p. 252-258 à p. 252-259 : le paragraphe 6 court jusqu'à la page 259, où s'ouvre le paragraphe 7."
+    },
+    {
+      "id": "SUP-4fbf395a4d4a8d7a",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "La citation retenue est la seule de ce passage à tenir dans le gabarit, et elle n'y tient qu'au prix d'une coupe de tête et d'une contraction, l'une et l'autre déclarées dans la note de traduction. Le lecteur primaire a mesuré puis écarté deux passages qui portent mieux l'argument : celui de la page 254 sur l'économie d'une tolérance d'ensemble égale à l'étendue des extrêmes possibles fait 203 caractères en anglais, celui sur la rareté des combinaisons extrêmes dépasse 290. Il signale que si la formule ΣR̄i ± 3σ était jugée trop chargée pour la carte, le repli honnête serait une carte sans citation, jamais une phrase raccourcie qui perdrait la référence à ces limites. La formule est conservée."
+    },
+    {
+      "id": "SUP-de9a4f153a86d001",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Ce que la figure 87 met sous les yeux, et que la carte ne peut pas montrer : pour neuf pièces, la tolérance additive va de ΣR̄i moins 3Σσi à ΣR̄i plus 3Σσi, tandis que l'étendue à six sigmas de la résultante tient loin à l'intérieur. Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits »."
+    },
+    {
+      "id": "SUP-5a98845716221e2d",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Ce qu'il faut exiger d'un fournisseur n'est pas une tolérance plus serrée mais une information d'une autre nature, et Shewhart le conclut en propre page 259 : « the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi ». Ce point est celui de la carte voisine tolerance-economique-suppose-le-controle et n'est pas repris ici."
+    },
+    {
+      "id": "SUP-1ea444227d9bcd15",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Recouvrement avec tolerance-economique-suppose-le-controle, tirée du même chapitre : les deux sont distincts et doivent le rester. Celle-là dit qu'une tolérance ne se fixe économiquement que sur un procédé maîtrisé, celle-ci dit comment se compose la tolérance d'un assemblage à partir de celles de ses pièces. La phrase de la page 252 appartient à la première et n'est pas reprise ici."
+    },
+    {
+      "id": "SUP-84bdd0f6a951a1a3",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Frontière avec la théorie de la mesure, tranchée par le lecteur primaire : ce qui est en jeu n'est pas ce qu'un indicateur déforme, mais une grandeur qu'un ingénieur d'études dimensionne et le coût de rebut que ce dimensionnement engendre. La parenté avec la propagation des erreurs de mesure est réelle et Shewhart la traite ailleurs, en partie VII, p. 392 à 394 ; ces pages n'ont pas été ouvertes et la carte n'affirme rien de ce rapprochement."
+    },
+    {
+      "id": "SUP-310fd6b8545ad8a2",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Rattachement de thème, même réserve que pour la carte voisine. Le titre du thème, « Ce qu'un procédé fait varier », porte cette carte ; sa description, qui ne parle que du partage entre causes de hasard et causes assignables, ne couvre pas le dimensionnement d'une limite sur du variable. La description gagnerait à être élargie si les deux cartes de tolérance sont reçues."
+    },
+    {
+      "id": "SUP-3dbcdb1fa5197c8e",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Ce qui n'a pas été ouvert : le premier tirage de 1931, la réimpression ASQC de 1980 en prêt contrôlé, l'appendice I auquel Shewhart renvoie pour la démonstration de la tendance vers la normalité de la résultante, et le paragraphe 7, « Design for Minimum Variability », p. 259 à 261, lu en OCR seulement et cité nulle part. Ce dernier pourrait porter une carte distincte, sur la conception d'un assemblage à variabilité minimale, qui reste à instruire."
+    },
+    {
+      "id": "SUP-3a1b55c263f6af88",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Correspondance folio et feuillet du scan : 13 et non 11, établie sur les en-têtes imprimés, le feuillet n268 portant « DESIGN LIMITS ON VARIABILITY 255 ». Exemplaire ouvert : le tirage « SEVENTH PRINTING » servi par l'item Internet Archive in.ernet.dli.2015.150272, lu sur les images de feuillet en pleine largeur, jamais sur la couche OCR."
+    },
+    {
+      "id": "SUP-31004412f82555fa",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "La source primaire est citée sans URL, décision motivée reprise des cartes Shewhart déjà publiées : aucune autorisation d'ayant droit n'est constatée sur l'exemplaire numérisé. La référence résout par son LCCN, dont l'export MODS a répondu HTTP 500 toute la session et qui a été résolu par l'API Open Library, enregistrement OL6766665M, provenance dérivée déclarée comme telle."
+    },
+    {
+      "id": "SUP-c240df745e6127cd",
+      "origin": "validated",
+      "path": "$.notes[12]",
+      "access": "n/a",
+      "text": "Aucune source secondaire n'a été ouverte : l'avertissement du validateur est le compte rendu exact du dossier. La seconde source affichée est la réimpression ASQC de 1980, non ouverte, retenue parce qu'elle résout par ISBN et donne au lecteur un exemplaire trouvable."
+    },
+    {
+      "id": "SUP-fceab174c462f3a4",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "controle aveugle"
+    },
+    {
+      "id": "SUP-21b43745cc2801e4",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-09-07"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-6ec4ed2c0a0b33f5",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Exemplaire ouvert : Internet Archive, item in.ernet.dli.2015.150272 (Shewhart, Economic Control of Quality of Manufactured Product, D. Van Nostrand). Images demandees sans suffixe : archive.org/download/in.ernet.dli.2015.150272/page/n262.jpg, n265, n267, n268, n269, n270, plus n0 et n1. Correspondance folio/feuillet controlee sur l'en-tete imprime de chaque page et non par calcul : n265 porte << 252 ECONOMIC CONTROL OF QUALITY >>, n267 << 254 >>, n268 << DESIGN LIMITS ON VARIABILITY 255 >>, n269 << 256 ECONOMIC CONTROL OF QUALITY >>."
+    },
+    {
+      "id": "SUP-414a2d5ce98ab542",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION lue sur l'image de la page 255 (feuillet n268, bas de page), jamais sur la couche OCR : << We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. >>. Le champ original_text de la fiche est identique mot pour mot, y compris la barre sur R et le signe ±. La phrase fait bien 196 caracteres."
+    },
+    {
+      "id": "SUP-c0a13b71f99a8796",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "Traduction : declaree comme interne, non publiee, faite sur l'image. La coupe de tete (<< We see at once that the practice of >>) est marquee par […] et ne durcit rien. La contraction de la subordonnee causale (<< because the chance is relatively very small that a resultant resistance would ever lie outside >> rendu par << : il est tres rare qu'une resistance resultante sorte des limites >>) est declaree dans la fiche ; elle perd << relatively >>, ce qui raffermit legerement l'enonce sans renverser le sens : le modal << may be >> est conserve par << peut etre >>, l'improbabilite reste une improbabilite. Aucun choix de mot n'inverse le sens."
+    },
+    {
+      "id": "SUP-b3cb0ea71eddc4c1",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "Localisation verifiee sur images : le feuillet n262 porte << CHAPTER XVII / Design limits on Variability / 1. Tolerances >> ; le § 5 << Tolerances for Quality of Finished Product in Terms of Tolerances of Piece-parts >> s'ouvre au bas de la page 252 (n265) ; le § 6 << The General Problem of Setting Tolerances on Controlled Product >> s'ouvre page 256 (n269). Le locator de la citation (p. 255, ch. XVII, § 5) est donc exact, et celui de la source primaire (p. 252-258, ch. XVII, § 5 et 6) tombe juste."
+    },
+    {
+      "id": "SUP-e2a21c81ba720c0c",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "Note d'attribution controlee sur images : << expanded in a Taylor's series >> figure p. 256 (n269), << Making application of Tchebycheff's theorem >> p. 257 (n270) ; la definition d'atelier invoquee (<< the definition of a tolerance as the range between the maximum and minimum possible values of the quality >>) est p. 253, et le constat que la combinaison des extremes est << very small indeed >> est p. 254 (n267). L'ouvrage est signe d'un seul auteur : page de titre << By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. >> ; la preface remercie T. C. Fry et E. C. Molina pour leurs critiques, ce qui est un remerciement et non une co-signature. La fiche ne revendique pour Shewhart que l'objection et sa mesure, en desavouant explicitement la pratique critiquee et les mathematiques employees : cette borne est exacte."
+    },
+    {
+      "id": "SUP-bcb2e20e03378e72",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE. Le hook (<< Additionner les tolerances des pieces donne-t-il celle de l'ensemble ? >>) reprend la question que Shewhart pose lui-meme p. 253 : << What shall the engineer use as the tolerance range for the overall resistance ? >>, et l'ouvrage y repond p. 254-255 ; c'est une question, elle n'affirme rien de plus. Le summary tient sur trois appuis, tous trouves sur les images : << peut etre peu economique >> rend le << may be uneconomical >> de la p. 255 sans lever le modal ; << leurs extremes coincident rarement >> rend le << is very small indeed >> de la p. 254 sans en hausser le ton ; << l'ecart type de l'assemblage valant la racine de la somme des carres >> est la formule imprimee en haut de la p. 255, σ = racine de σ1² + σ2² + ... + σm². Aucun adjectif n'excede la source : rien n'y parle d'impossibilite, de garantie, ni de loi generale."
+    },
+    {
+      "id": "SUP-ae50215fd6165c09",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "Reserve d'edition, dite comme telle : l'exemplaire numerise que j'ai ouvert est une reimpression Van Nostrand ulterieure, la page de titre portant << SEVENTH PRINTING >> et le verso << 250 Fourth Avenue, New York 3 >> / << Printed [...] by Lancaster Press, Inc. >>, tiree des memes plaques (pagination et titres courants identiques a ce que decrit la notice LC : xiv, 501 p.). Je n'ai pas pu ouvrir un exemplaire du premier tirage de 1931 : HathiTrust (item wu.89047216890) est en 403, l'exemplaire IA economiccontrolo0000shew (reimpression ASQC 1980) est en pret controle et ses images ne sont pas servies."
+    },
+    {
+      "id": "SUP-8f98a2226bac779b",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "SOURCES. LCCN 31032090 resolu par openlibrary.org/api/books?bibkeys=LCCN:31032090 (provenance derivee du MARC de la Library of Congress, lccn.loc.gov etant en 500) : Economic control of quality of manufactured product, W. A. Shewhart, D. Van Nostrand Company, Inc., New York, 1931, pagination << xiv, 501 p. >>, LC TS155 .S47, OCLC 1045408. Tout concorde avec le libelle de la fiche, y compris le xiv-501 p."
+    },
+    {
+      "id": "SUP-ed4ed923e4bdcffb",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "SOURCES. ISBN 978-0-87389-076-2 resolu par openlibrary.org/api/books : OL1641789M, American Society for Quality Control, Milwaukee, Wis., 1980, 501 p., note << 50th anniversary commemorative reissue >> et << Reprint. Originally published: New York : Van Nostrand, 1931 >>. Le libelle << Milwaukee, American Society for Quality Control, 1980 (reimpression) >> est exact ; la cle de controle de l'ISBN-13 est juste (somme ponderee 128, cle 2). La fiche annonce cette source en consulted: metadata-only, ce qui correspond a ce qui est verifiable."
+    },
+    {
+      "id": "SUP-31989dac1175297a",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas pu atteindre, apres tentative : le serveur MCP documentary n'expose aucun outil, donc aucun verify_reference n'a ete lance ; l'API Google Books (googleapis.com/books/v1/volumes, recherche plein texte sur la phrase) repond 429 << Quota exceeded >> ; metrology-journal.org et mdpi.com repondent 403 sur les deux articles de synthese qui creditent la paternite du tolerancement statistique ; BookReaderJSIA d'Internet Archive repond 400. Ces echecs ne refutent rien : ils me privent seulement d'une corroboration secondaire, l'attribution etant tranchee sur le texte primaire ouvert."
+    },
+    {
+      "id": "SUP-1bd3aa5e2cb14adb",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "Hors mandat, sans consequence sur le verdict : le § 6 se poursuit jusqu'a la page 259 (le § 7 s'ouvre p. 259, feuillet n272), de sorte que la fourchette << p. 252-258 >> s'arrete une page avant la fin du § 6. Et la formule generale de la p. 257 porte des coefficients de sensibilite (σx = racine de a1²σ1² + ... + am²σm²) ; la racine de la somme des carrés du summary est le cas de la somme, qui est precisement celui de la p. 255 sur laquelle la fiche s'appuie."
+    },
+    {
+      "id": "SUP-baacd8dda2c0dd29",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "tolerances-qui-ne-s-additionnent-pas"
+    },
+    {
+      "id": "SUP-42bae5cb6d4bd94a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "W. A. Shewhart"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-7d69b24f8361b879",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Argument conduit par W. A. Shewhart, seul auteur de l'ouvrage : la page de titre du tirage lu ne porte qu'un nom et la notice bibliographique qui résout le LCCN 31032090 n'enregistre aucun coauteur. La dette est ici mathématique et Shewhart la nomme lui-même dans les pages citées, sans se l'attribuer : le développement qui donne l'écart type d'un assemblage passe par une série de Taylor, la borne de probabilité vient du théorème de Tchebychev, et la minimisation de la variabilité, deux pages plus loin, emploie un multiplicateur de Lagrange. Ces trois noms sont imprimés dans le texte. La pratique qu'il critique n'est pas davantage de lui : additionner les écarts extrêmes des pièces pour obtenir la tolérance de l'ensemble est présenté comme l'usage en vigueur, « the practice previously described », qui découle de la définition d'atelier d'une tolérance comme intervalle entre valeurs extrêmes possibles. Ce qui lui revient est l'objection et sa mesure : montrer que cet usage surdimensionne la tolérance de l'ensemble, et donner la borne à retenir à la place."
+    },
+    {
+      "id": "SUP-c3cea19540ab7c79",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] additionner les limites de tolérance peut être peu économique : il est très rare qu'une résistance résultante sorte des limites ΣR̄i ± 3σ."
+    },
+    {
+      "id": "SUP-3d4a5a132a6deef8",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, 1931, partie V, chapitre XVII « Design Limits on Variability », paragraphe 5, sous la figure 87 « Illustrating Proper Way to Set Limits »."
+    },
+    {
+      "id": "SUP-7cec3ef3dc8199b2",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 255"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-c3c198cbf6191f0f",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-c4056072cc1285db",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée, faite sur l'image de la page et non sur l'OCR. Aucune traduction française publiée de l'ouvrage de 1931 n'a été identifiée. La phrase anglaise fait 196 caractères et sa traduction littérale complète en fait 177 : elle ne tenait pas dans le gabarit, et deux opérations ont été nécessaires, toutes deux déclarées ici. Premièrement une coupe, marquée par […] en tête : l'amorce « We see at once that the practice of » est retirée, ce qui laisse la proposition intacte et n'ôte rien au propos, la phrase restant l'énoncé complet de l'objection. Deuxièmement une contraction de la subordonnée causale : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits » est rendue par « : il est très rare qu'une résistance résultante sorte des limites ». Ce rendu perd deux choses et il faut le savoir, l'adverbe « relatively », et la forme probabiliste explicite « the chance is very small » convertie en une fréquence, « il est très rare ». Il ne renverse pas le sens et ne durcit pas l'affirmation, qui reste une improbabilité et non une impossibilité. La formule ΣR̄i ± 3σ est reproduite telle qu'imprimée et ne doit pas être coupée : c'est elle qui dit de quelles limites il s'agit, à savoir les limites statistiques de l'assemblage, et non les limites additives que Shewhart critique. Le lecteur qui les confondrait lirait exactement le contraire de la phrase."
+    },
+    {
+      "id": "SUP-75367ab18ad97ecd",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand Company, Inc., 1931, xiv-501 p. Exemplaire lu : un tirage Van Nostrand ultérieur portant « SEVENTH PRINTING » en page de titre, numérisé par Digital Library of India et servi par Internet Archive sous l'item in.ernet.dli.2015.150272, à composition et pagination identiques. Lecture faite sur les images de feuillet en pleine largeur, jamais sur la couche OCR. Pages ouvertes en image pour ce concept : feuillet n265 (p. 252, fin du paragraphe 4 et ouverture du paragraphe 5), n266 (p. 253, figure 86 « Tolerance Ranges on Observed Distributions »), n267 (p. 254), n268 (p. 255, figure 87 « Illustrating Proper Way to Set Limits » et la phrase citée), n270 (p. 257, équations 82 et théorème de Tchebychev). La source est citée sans URL, décision motivée reprise des cartes Shewhart déjà publiées : la notice de cet exemplaire ne porte aucun champ de droits et aucune autorisation d'ayant droit n'est constatée. Le texte a bien été lu, d'où consulted full-text ; c'est l'URL qui tombe, pas la lecture."
+    },
+    {
+      "id": "SUP-f1d52a9657db5f2c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 31032090"
+    },
+    {
+      "id": "SUP-47af50c631ddc559",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Notice bibliographique de l'édition de 1931. L'export MODS de la Library of Congress (https://lccn.loc.gov/31032090/mods) a répondu HTTP 500 pendant toute la session, de même que /marcxml et /dc : panne de service, aucun contrôle d'accès en cause. Notice résolue par l'API Open Library sur le même LCCN, enregistrement OL6766665M, dérivé du MARC de la Library of Congress : « by W.A. Shewhart », New York, D. Van Nostrand Company, Inc., 1931, « xiv, 501 p. », OCLC 1045408, LC TS155 .S47. Provenance dérivée, à ne pas présenter comme l'export MODS lui-même."
+    },
+    {
+      "id": "SUP-629e413da699d28e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "LCCN 31032090"
+    },
+    {
+      "id": "SUP-0a1b679e31bfcd88",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://openlibrary.org/api/books?bibkeys=LCCN:31032090&format=json&jscmd=data"
+    },
+    {
+      "id": "SUP-ee31687191bbf627",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "W. A. Shewhart, Economic Control of Quality of Manufactured Product, Milwaukee (Wis.), American Society for Quality Control, 1980, xiv-501 p., réimpression commémorative du cinquantenaire. Notice Open Library OL1641789M : ISBN-10 0873890760, LC TS155 .S47 1980. Non ouverte, prêt contrôlé non emprunté ; sa pagination n'a pas été collationnée."
+    },
+    {
+      "id": "SUP-45795a2f3e3ae5a8",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "978-0-87389-076-2"
+    },
+    {
+      "id": "SUP-ac38ed3727b7828c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://openlibrary.org/api/books?bibkeys=ISBN:9780873890762&format=json&jscmd=data"
+    },
+    {
+      "id": "SUP-7c9cbf25b4e7914e",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Shewhart pose le problème sous une forme d'atelier, chapitre XVII, paragraphe 5, p. 252 et 253 : « Assume that an engineer wishes to design a circuit containing m different pieces of standard apparatus, such as relays, transformers, and so on. Suppose that he wishes to set a tolerance range on the overall resistance in the circuit and that the tolerance limits on the resistances of these m different pieces of apparatus are respectively R11 and R12 ; R21 and R22 ; ... ; Rm1 and Rm2. What shall the engineer use as the tolerance range for the overall resistance? » Et il donne d'abord la réponse d'usage, p. 253 : « The answer to the question is obviously R12 + R22 + ... + Rm2 − R11 − R21 − ... − Rm1, if we hold to the definition of a tolerance as the range between the maximum and minimum possible values of the quality. Before accepting this answer, however, let us consider the problem further. » L'objection tient en une phrase de bon sens, p. 254 : « When the number m of different resistances is large, it is obvious that the number of times that we may expect to get a combination of m resistances chosen at random (one each from the m different kinds of resistances) that will add up to either the maximum or minimum limit is very small indeed. The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur. » Il pose alors ses hypothèses, même page : chaque type d'appareil est fabriqué « under conditions such that the resistances are controlled about average values R̄1, R̄2, ..., R̄m, with standard deviations σ1, σ2, ..., σm », et, pour simplifier, « that the resistances are normally controlled ». Il adopte pour chaque pièce la tolérance R̄i ± 3σi, et calcule ce que donne alors la somme, p. 255 : « the expected distribution of the sum of m resistances chosen from the m different kinds of resistances as indicated above would be normal with an expected or mean value equal to ΣR̄i and a standard deviation σ = √(σ1² + σ2² + ... + σm²) ». Puis le cas d'école : « Suppose that we assume, as a simple case, that each of the m standard deviations is equal to, let us say, σ1. It is obvious that the standard deviation of the sum is σ = √m σ1. » La figure 87, p. 255, met les deux constructions l'une sous l'autre pour m égal à neuf, et son titre dit ce que Shewhart en conclut : « Illustrating Proper Way to Set Limits ». En 87-a, la tolérance additive, de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi ; en 87-b, la distribution réelle de la résultante, dont l'étendue à six sigmas est marquée « 6σ » et tient loin à l'intérieur des limites précédentes. D'où la phrase citée, p. 255 : « We see at once that the practice of adding tolerance limits may be uneconomical because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ. » Le cas général suit, paragraphe 6, p. 256 et 257, et il n'est pas limité aux résistances qui s'ajoutent : X est une fonction quelconque F des qualités X1 à Xm des pièces, développée en série de Taylor au premier ordre, ce qui donne les équations (82), p. 257 : « X̄ = F(X̄1, X̄2, ..., X̄m) » et « σX = √(a1²σ1² + a2²σ2² + ... + am²σm²) ». Shewhart insiste sur ce que ce résultat ne suppose pas, même page : « No matter what the nature of the distribution functions f1(X1), f2(X2), ..., fm(Xm), Equations (82) enable us to write down the expected resultant quality X̄ and the standard deviation σX of this quality about the expected value. » La borne de probabilité, elle, est empruntée : « Making application of Tchebycheff's theorem, we can say that the probability Ptσ that the resultant quality will lie within the interval X̄ ± tσX satisfies the inequality Ptσx > 1 − 1/t². For example, one can say with certainty that in the long run more than (1 − 1/9) of the product will have a quality X lying within the limits X̄ ± 3σX. » Et si les composants sont normaux, « the probability P3σx is equal to 0.9973 ». Un dernier résultat, p. 258, achève l'argument et va contre l'intuition : la résultante est plus normale que ses composants, « the skewness and flatness of the resultant distribution will be approximately normal, even though the individual qualities are distributed in a way such that their skewness and flatness are appreciably different from zero and three respectively », et « in the more general case, where the distribution functions for the m different quality characteristics are not all alike, it may also be shown that the distribution of the resultant effect X will approach normality as m → ∞ ». Ce qu'il faut donc exiger des fournisseurs n'est pas une tolérance plus serrée, c'est une information de nature différente, p. 258 et 259 : « there are many advantages to be gained by specifying that the quality of raw materials and piece-parts shall be controlled about known averages and with known standard deviations », et « Hence from a design viewpoint we conclude that the specification of control should include the specification of expected value X̄i and standard deviation σi of any quality characteristic Xi. »"
+    },
+    {
+      "id": "SUP-53a4e3c7c1784a6b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "La correspondance folio et feuillet est de 13, non de 11, et elle a été établie sur les en-têtes imprimés, page par page, jamais par calcul. Pour ce concept : n266 porte « DESIGN LIMITS ON VARIABILITY 253 », n267 porte « 254 ECONOMIC CONTROL OF QUALITY », n268 porte « DESIGN LIMITS ON VARIABILITY 255 », n270 porte « DESIGN LIMITS ON VARIABILITY 257 ». Le même écart de 13 se lit sur les feuillets n262 à n265 et, dans la partie VI, sur n303, n316 et n317."
+    },
+    {
+      "id": "SUP-00cf45fc4a04fa31",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La citation retenue est la seule de ce passage à tenir dans le gabarit, et elle n'y tient qu'au prix d'une coupe de tête et d'une contraction, l'une et l'autre déclarées dans la note de traduction. Deux autres passages portent mieux l'argument et ont été mesurés puis écartés. Celui de la p. 254, « The question arises, therefore, as to whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum resistances that may occur », fait 203 caractères en anglais et ne se ramène sous 150 en français par aucune coupe qui laisse la question intelligible. Celui de la p. 254 également, sur la rareté des combinaisons extrêmes, dépasse 290 caractères. Si la rédaction juge la citation retenue trop chargée par sa formule, le repli honnête est quotation nulle et un résumé qui porte l'argument, pas une phrase raccourcie qui perdrait la référence aux limites ΣR̄i ± 3σ."
+    },
+    {
+      "id": "SUP-ed276a1402219999",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Ce que le texte ne dit pas, et qu'une carte ne doit pas lui faire dire. Shewhart ne dit pas que la tolérance de l'ensemble est la racine carrée de la somme des carrés des tolérances : il calcule un écart type de résultante, σ = √(Σ ai²σi²), et il en déduit des limites à trois sigmas, ce qui n'est la même chose que si chaque tolérance de pièce a été elle-même posée à trois sigmas, hypothèse qu'il fait explicitement au paragraphe 5 et qui ne va pas de soi. Il ne dit pas non plus que la pratique additive est fausse : il dit qu'elle peut être peu économique, « may be uneconomical », et l'enjeu est un coût, pas une erreur de calcul. Enfin le résultat suppose l'assemblage au hasard, « product assembled at random », et l'indépendance des pièces : un appariement sélectif en atelier le mettrait en défaut, et Shewhart n'examine pas ce cas ici."
+    },
+    {
+      "id": "SUP-cfa64517c16a9df9",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas ouvert. Le premier tirage de 1931 lui-même, les folios cités n'ayant pas été collationnés contre l'édition originale. La réimpression ASQC de 1980, en prêt contrôlé, non empruntée. L'appendice I, auquel Shewhart renvoie en note p. 258 pour la démonstration de la tendance vers la normalité de la résultante : je ne l'ai pas lu, et rien n'est affirmé ici sur cette démonstration au delà de la phrase que Shewhart en donne dans le corps du texte. Le paragraphe 7, « Design for Minimum Variability », p. 259 à 261, n'a été lu qu'en OCR et n'est cité nulle part : il contient un problème de minimisation sous contrainte par multiplicateur de Lagrange, dont Shewhart dit lui-même qu'il n'est pas toujours résoluble, et il pourrait porter une carte distincte, sur la conception d'un assemblage à variabilité minimale, qui reste à instruire."
+    },
+    {
+      "id": "SUP-56c0da39cc345f81",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Frontière. Ce concept est bien en operations management et non en théorie de la mesure : ce qui est en jeu n'est pas ce qu'un indicateur déforme, mais une grandeur qu'un ingénieur d'études dimensionne, la tolérance d'un ensemble, et le coût de rebut que ce dimensionnement engendre. La parenté avec la propagation des erreurs de mesure est réelle et Shewhart la traite ailleurs dans le livre, en partie VII, sous le nom de loi de propagation des erreurs, p. 392 à 394 : je n'ai pas ouvert ces pages, et la carte ne doit rien affirmer de ce rapprochement."
+    },
+    {
+      "id": "SUP-59a105cca824a20f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Recouvrement avec le dossier tolerance-economique-suppose-le-controle, déposé dans la même session et tiré du même chapitre. Les deux sont distincts et il faut qu'ils le restent : celui-là dit qu'une tolérance ne se fixe économiquement que sur un procédé maîtrisé, celui-ci dit comment se compose la tolérance d'un assemblage à partir de celles de ses pièces. La phrase de la p. 252 appartient au premier et n'est pas reprise ici."
+    }
+  ],
+  "estimated_tokens": 16301,
+  "status": "READY"
+}
