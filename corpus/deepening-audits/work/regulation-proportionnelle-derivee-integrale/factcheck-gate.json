@@ -1,18 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "regulation-proportionnelle-derivee-integrale",
-  "candidate_sha256": "15450df37cba91443714151f110c78f7a53043ada3bdfe662d3551057f3a68e7",
+  "candidate_sha256": "a848683e5420971959d747cca81c83f183879ee0d84af10155f2f5e0e0e3e6df",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 56,
-  "supported": 55,
+  "claims": 55,
+  "supported": 54,
   "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
+      "claim_id": "C035",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis (definition_de_lauteur, summary) font de la grandeur de l'écart l'une des trois informations utiles, et Goldman dit le Type 2 fondé sur elle « ordinarily faster and more accurate » que le Type 1 ; ils ne portent pas que ce chiffre « ne dit presque rien » : l'évaluation excède les appuis."
+      "reason": "Les appuis fournis pour ce claim donnent trois informations « chacune en deux versions selon le signe » (ΔC, dC/dt, ∫ΔCdt, + et −) ; ils n'assignent pas à chaque paire le sens « trop / trop peu ». Pour la vitesse (dC/dt), le signe marque le sens de variation, pas un excès ou un manque : la glose étend à la dérivée une lecture que les appuis ne portent pas. Le signal (review.notes[7], terme « exemplaires ») ne paraît pas pertinent."
     }
   ]
 }

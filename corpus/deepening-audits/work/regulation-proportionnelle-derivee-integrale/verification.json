@@ -1,191 +1,191 @@
 {
   "concept_id": "regulation-proportionnelle-derivee-integrale",
-  "candidate_sha256": "15450df37cba91443714151f110c78f7a53043ada3bdfe662d3551057f3a68e7",
+  "candidate_sha256": "a848683e5420971959d747cca81c83f183879ee0d84af10155f2f5e0e0e3e6df",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis (definition_de_lauteur, summary) font de la grandeur de l'écart l'une des trois informations utiles, et Goldman dit le Type 2 fondé sur elle « ordinarily faster and more accurate » que le Type 1 ; ils ne portent pas que ce chiffre « ne dit presque rien » : l'évaluation excède les appuis."
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence dérivée non attribuée : selon SUP-35e04a59b9fe824f ($.definition_de_lauteur), le type 2 est une « action proportional to error » et la vitesse et l'accumulation sont des informations distinctes ; un appareil fonction du seul écart instantané répond donc identiquement à écart égal."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée de SUP-35e04a59b9fe824f ($.definition_de_lauteur) : l'action du Type 2 est proportionnelle à l'écart seul, la vitesse et l'accumulation étant des informations distinctes ajoutées par les Types 3 et 4."
+      "reason": "review.notes[3] présente le trio comme la typologie standard des asservissements, appuyée sur Getting 1947 ; reserves[3] et attribution.note citent Black 1934 et précisent que les notions sont antérieures à 1959."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[3] : trio présenté comme « la typologie standard des asservissements », appuyée sur Getting 1947 ; reserves[3] et attribution_note : notions prises à la théorie des asservissements et antérieures à l'exposé de 1959."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « trois informations différentes sur un même écart, sa grandeur, sa vitesse de variation et son accumulation dans le temps » ; summary concorde. Le $.hook signalé n'est pas nécessaire, le claim est déjà porté."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « trois informations différentes sur un même écart, sa grandeur, sa vitesse de variation et son accumulation dans le temps ». Le signal ($.hook) n'est pas nécessaire au claim."
+      "reason": "attribution.note et review.notes[2] : « Department of Electrical Engineering, Syracuse University »."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : adresse « Department of Electrical Engineering, Syracuse University » sous la signature."
+      "reason": "attribution.note et review.notes[4] : actes d'une conférence interdisciplinaire tenue les 5 et 6 mai 1959."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note et review.notes[4] : actes d'une conférence interdisciplinaire tenue les 5 et 6 mai 1959."
+      "reason": "quotation.original_text « proportional, derivative and integral controls may all be used in homeostasis » ; attribution_note : ce qui lui revient est la transposition au corps vivant."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "quotation (« may all be used in homeostasis ») et attribution_note : ce qui revient à Goldman est la transposition du trio au corps vivant."
+      "reason": "reserves[1] : « l'hôtesse qui met un glaçon dans le punch et celle qui goûte et rajoute de la glace (page 63) »."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : « l'hôtesse qui met un glaçon dans le punch et celle qui goûte et rajoute de la glace » (p. 63)."
+      "reason": "reserves[1] : exemple en p. 63 de Mineral Metabolism, chapitre annoncé « for biologists who have no previous acquaintance with these theories » ; attribution.note : même auteur, même année, plus long et plus élémentaire."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : chapitre de Mineral Metabolism « for biologists who have no previous acquaintance with these theories », exemple des hôtesses p. 63 ; sources_ouvertes[1] : « version longue et élémentaire » ; notes[0] : même année."
+      "reason": "reserves[1] : l'exemple des hôtesses illustre « boucle ouverte contre boucle fermée » ; la glose « se règle sur ce qu'elle constate » correspond à l'hôtesse qui goûte."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : « page 63, boucle ouverte contre boucle fermée » ; la glose « se règle sur ce qu'elle constate » suit de l'hôtesse qui goûte."
+      "reason": "reserves[1] : « Goldman écrit dès sa deuxième phrase, page 108 : It is assumed that the reader already has a working knowledge of both of these theories » ; SUP-35e04a59b9fe824f ($.definition_de_lauteur) nomme ces théories (control system theory, information theory)."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : « It is assumed that the reader already has a working knowledge of both of these theories » dès la deuxième phrase, p. 108 ; definition_de_lauteur nomme les deux théories (control system theory, information theory)."
+      "reason": "reserves[1] : « we shall only discuss the ways in which they apply to homeostasis »."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : « we shall only discuss the ways in which they apply to homeostasis » ; homéostasie définie dans le corps d'un organisme (definition_de_lauteur)."
+      "reason": "reserves[1] : le thermostat, le punch, la voiture sur la route sont des exemples que le chapitre primaire n'a pas, tirés de Mineral Metabolism ; SUP-35e04a59b9fe824f ($.definition_de_lauteur) place thermostat, gunfire control et virage dans la typologie de ce chapitre, p. 64."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : thermostat, punch, voiture tenue sur la route se trouvent dans le chapitre élémentaire et non dans le primaire ; definition_de_lauteur place la conduite de tir (Type 3) dans l'échelle de Mineral Metabolism p. 64."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « une échelle de cinq types » transcrite de Mineral Metabolism p. 64 ; review.notes[6] confirme la localisation."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « une échelle de cinq types », Mineral Metabolism p. 64 ; review.notes[6] confirme Types 1 à 5 p. 63-64."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Type 1. Directed correction. Constant (+ or -) off or on action to reduce error »."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Type 1. Directed correction. Constant (+ or -) \" off \" or \" on \" action to reduce error »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Example : thermostat with off-or-on heater »."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Example : thermostat with off-or-on heater »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This is the crudest type of control »."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This is the crudest type of control »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Type 2. Proportional control. Action proportional to error »."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Type 2. Proportional control. Action proportional to error »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « thermostat with heating current proportional to the temperature deviation »."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « thermostat with heating current proportional to the temperature deviation »."
+      "reason": "Illustration chiffrée non attribuée qui découle strictement de la proportionnalité courant / écart portée par SUP-35e04a59b9fe824f ($.definition_de_lauteur) (Type 2)."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Illustration chiffrée dérivée de la proportionnalité « heating current proportional to the temperature deviation » (SUP-35e04a59b9fe824f ($.definition_de_lauteur)) ; elle n'attribue aucun chiffre à Goldman comme donnée."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This is ordinarily faster and more accurate than Type 1 »."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This is ordinarily faster and more accurate than Type 1 »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : grandeur de l'écart, première des trois informations (ΔC, Error proportional information) ; summary concorde."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : l'information proportionnelle porte la grandeur de l'écart, première des trois informations."
+      "reason": "Conséquence dérivée non attribuée : SUP-35e04a59b9fe824f ($.definition_de_lauteur) distingue la grandeur de l'écart et sa vitesse de variation comme deux informations différentes."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée de SUP-35e04a59b9fe824f ($.definition_de_lauteur) : grandeur et vitesse de variation sont deux informations distinctes sur un même écart."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Action proportional to the rate of change of the error »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Action proportional to the rate of change of the error »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « is used to prevent overshoot (i.e., error in the opposite direction) »."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « is used to prevent overshoot (i.e., error in the opposite direction) »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « used in gunfire control to anticipate the location of the target on the basis of its present velocity »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « used in gunfire control to anticipate the location of the target on the basis of its present velocity »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Action proportional to the time integral of the error » ; glose « son accumulation dans le temps »."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Type 4. The foregoing plus integral control. Action proportional to the time integral of the error » ; « son accumulation dans le temps »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This increases the controlling action if the system is failing to reduce the error sufficiently »."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This increases the controlling action if the system is failing to reduce the error sufficiently »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Integral control increases the accuracy of control and reduces any tendency of the system to drift into error »."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Integral control increases the accuracy of control and reduces any tendency of the system to drift into error »."
+      "reason": "Conséquence dérivée, non attribuée à Goldman, de l'action proportionnelle à l'intégrale temporelle de l'écart et du renforcement de l'action quand l'écart n'est pas réduit (SUP-35e04a59b9fe824f ($.definition_de_lauteur))."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée, présentée comme telle (« ainsi »), de l'action proportionnelle à l'intégrale temporelle de l'écart et de son renforcement quand l'écart n'est pas réduit (SUP-35e04a59b9fe824f ($.definition_de_lauteur))."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « Type 5. Control due to anticipation of future events », distinct des actions proportionnelle, dérivée, intégrale."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : Type 5 « Control due to anticipation of future events », placé après le Type 4 et hors des actions proportionnelle, dérivée, intégrale."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « the driver of an automobile when he sees a turn in the road coming ahead »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « the driver of an automobile when he sees a turn in the road coming ahead »."
+      "reason": "Glose directe de « anticipation of future events » (SUP-35e04a59b9fe824f ($.definition_de_lauteur)), opposée aux types 1-4 définis sur l'erreur."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Glose directe de « anticipation of future events » (SUP-35e04a59b9fe824f ($.definition_de_lauteur))."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : figure 1 p. 109, partie du système de régulation du glucose sanguin ; review.notes[8]/[9] concordent ; le chapitre est l'exposé de la conférence de 1959."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : figure 1 p. 109, partie du système de régulation du glucose sanguin, lignes proportionnelle, dérivée, intégrale ; review.notes[9] : « diagrammatic representation of part of the blood glucose control system »."
+      "reason": "Citation exacte dans SUP-35e04a59b9fe824f ($.definition_de_lauteur) et review.notes[8] : « At the right of the blood glucose compartment are six emerging information lines »."
     },
     {
       "claim_id": "C035",
-      "verdict": "SUPPORTED",
-      "reason": "Citation exacte portée par SUP-35e04a59b9fe824f ($.definition_de_lauteur) et review.notes[8]."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim donnent trois informations « chacune en deux versions selon le signe » (ΔC, dC/dt, ∫ΔCdt, + et −) ; ils n'assignent pas à chaque paire le sens « trop / trop peu ». Pour la vitesse (dC/dt), le signe marque le sens de variation, pas un excès ou un manque : la glose étend à la dérivée une lecture que les appuis ne portent pas. Le signal (review.notes[7], terme « exemplaires ») ne paraît pas pertinent."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) et review.notes[8] : ΔC, dC/dt, ∫ΔCdt, chacune en (+) et (−), « chacune en deux versions selon le signe »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) p. 111 : dans les systèmes électriques linéaires, l'erreur négative ne diffère de la positive que par le signe ; la remarque du texte en découle."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Citation exacte portée par SUP-35e04a59b9fe824f ($.definition_de_lauteur) et review.notes[8], causalité (« because ») présente dans la source."
+      "reason": "Citation exacte dans SUP-35e04a59b9fe824f ($.definition_de_lauteur) et review.notes[8] : « does not necessarily go to the same set of organs »."
     },
     {
       "claim_id": "C038",
@@ -195,12 +195,12 @@
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] et review.notes[8] : thèse modalisée (« appear to », « to some extent », « semble »)."
+      "reason": "review.notes[8] relève les modalisations (« it is possible that », « apparently ») ; notes[1] : degré de certitude bas."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « all six types of information ... appear to be used in the regulation of blood glucose ; to some extent, at least, the body distinguishes between them and makes different use of them »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) p. 110 : « all six types of information ... appear to be used in the regulation of blood glucose ; to some extent, at least, the body distinguishes between them and makes different use of them »."
     },
     {
       "claim_id": "C041",
@@ -210,7 +210,7 @@
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : règle des antagonistes p. 111, opposant systèmes électriques linéaires et systèmes biologiques sur le signe de l'erreur."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : règle des antagonistes p. 111, opposant systèmes électriques linéaires et systèmes biologiques, sur les erreurs positives et négatives."
     },
     {
       "claim_id": "C043",
@@ -220,67 +220,62 @@
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « This ability ... is not a universal property of feedback control systems »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « not a universal property of feedback control systems »."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « In biological systems, the mechanism to correct positive errors is frequently different ... one mechanism may be called the antagonist of the other »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « frequently different ... one mechanism may be called the antagonist of the other »."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « le prix de la puissance » ; notes[3] idem."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) et notes[3] nomment « le prix de la puissance » attaché aux antagonistes."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « a control which is maintained by the balance of two strong antagonists. When operating properly, such a control is both fast and accurate »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « balance of two strong antagonists. When operating properly, such a control is both fast and accurate. However, the stronger the control ... the greater the danger of instability when the balance ... is impaired »."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « the stronger the control ... the greater the danger of instability when the balance between antagonists is impaired »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « a special technical meaning which is more or less equivalent to the terms vicious cycle or runaway process »."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « a special technical meaning which is more or less equivalent to the terms \" vicious cycle \" or \" runaway process \" »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « a timing error ... start too late so that instead of balancing each other, they act regeneratively » ; reserves[0] concorde."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « a timing error ... start too late so that instead of balancing each other, they act regeneratively » ; reserves[0] : « se renforcent au lieu de se compenser »."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « instability is not usually exhibited as an oscillation, but rather as a pathological displacement of the homeostatic balance »."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : « instability is not usually exhibited as an oscillation, but rather as a pathological displacement of the homeostatic balance »."
+      "reason": "Glose du même passage (SUP-35e04a59b9fe824f ($.definition_de_lauteur)) : pas d'oscillation mais « déplacement durable du point de fonctionnement »."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Glose de « pathological displacement of the homeostatic balance », que SUP-35e04a59b9fe824f ($.definition_de_lauteur) rend par « un déplacement durable du point de fonctionnement »."
+      "reason": "notes[1] et SUP-35e04a59b9fe824f ($.definition_de_lauteur) : degré de certitude « plus bas que ne le laisserait croire une lecture pressée »."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] et SUP-35e04a59b9fe824f ($.definition_de_lauteur) : degré de certitude « plus bas qu'une lecture pressée ne le laisserait croire »."
+      "reason": "Citation exacte, p. 110, dans SUP-35e04a59b9fe824f ($.definition_de_lauteur) et notes[1]."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "Citation exacte portée par SUP-35e04a59b9fe824f ($.definition_de_lauteur) et notes[1], p. 110."
+      "reason": "SUP-35e04a59b9fe824f ($.definition_de_lauteur) : citation exacte, « Page 110 encore », même page que la précédente."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "Citation exacte portée par SUP-35e04a59b9fe824f ($.definition_de_lauteur), « Page 110 encore », même page que la précédente."
-    },
-    {
-      "claim_id": "C056",
-      "verdict": "SUPPORTED",
-      "reason": "reserves[0] : « la section 6 du chapitre, pages 117 à 120, ne conclut rien sur le glucose et formule des questions expérimentales à poser aux physiologistes » ; les pages 120-121 sont la discussion transcrite (attribution.note)."
+      "reason": "reserves[0] : « la section 6 du chapitre, pages 117 à 120, ne conclut rien sur le glucose et formule des questions expérimentales à poser aux physiologistes » ; elle précède la discussion transcrite."
     }
   ]
 }
