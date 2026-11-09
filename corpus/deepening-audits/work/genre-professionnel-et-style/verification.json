@@ -1,166 +1,166 @@
 {
   "concept_id": "genre-professionnel-et-style",
-  "candidate_sha256": "60450fdf5ee618e1be46a6383f3ef1dd7cd84f35181571ce39f2a303fa5660fd",
+  "candidate_sha256": "b672a798f62fca95b24aa79d947fba34b39eb76e8d66aa3fd0beabb1f48135b6",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Le summary (« manières de faire que nul n'a prescrites ») et le hook (« sans jamais l'écrire ») portent l'absence d'écrit prescriptif ; fiche de poste et manuel de procédures en sont des illustrations. Le signal $.review.notes[1] partage « fiche » au sens de la carte, sans rapport avec ce claim."
+      "reason": "$.hook (« ce qui se fait » « sans jamais l'écrire »), $.summary (« manières de faire que nul n'a prescrites ») et $.definition_de_lauteur (corps d'évaluations qui règlent l'activité « de façon tacite », « parfois malgré l'organisation prescrite ») autorisent que ces manières ne relèvent ni d'une prescription écrite ni d'une procédure ; fiche de poste et manuel sont des illustrations du prescrit. L'appui signalé $.review.notes[1] partage « fiche » au sens de la fiche du corpus, sans rapport avec ce claim."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Lecture.json : « mémoire impersonnelle et collective », « corps d'évaluations partagées », « règles communes », « son adoption marque l'appartenance à un groupe » ; summary : « que nul n'a prescrites ». Reconnaissance collective et absence d'auteur sont couvertes."
+      "reason": "$.definition_de_lauteur : « mémoire impersonnelle et collective », « corps d'évaluations partagées », obligations auxquelles on parvient « sans chercher à le faire », « son adoption marque l'appartenance à un groupe » ; $.summary : « nul n'a prescrites ». Le caractère collectif, reconnu et sans auteur est porté."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "« corps d'évaluations partagées qui règlent l'activité personnelle de façon tacite », « règles communes », « le genre social du métier, le genre professionnel » (§ 4-6). Le signal $.attribution.note partage « écrites » au sens de « écrites au nous », sans rapport."
+      "reason": "$.definition_de_lauteur (« règles communes », « corps d'évaluations partagées qui règlent l'activité personnelle de façon tacite », note de lecture « ce que le métier prescrit tacitement à ceux qui l'exercent ») et la citation § 4 « le genre social du métier, le genre professionnel » autorisent la définition et le nom. L'appui signalé $.attribution.note partage « écrites » au sens de « écrites au nous », sans rapport."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "$.attribution_note et $.review.notes[3] : le genre est celui du métier, non le rapport social de sexe ; aucune occurrence de femme/homme/sexe."
+      "reason": "$.attribution_note et $.review.notes[3] : « genre » désigne le genre du métier et non le rapport social de sexe ; recherche plein texte sans occurrence de femme/homme/sexe ; la note de lecture de $.definition_de_lauteur le dit aussi."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "« travail d'ajustement du genre pour en faire un instrument de l'action que nous désignons comme le style de l'action » ; summary « Chacun les retouche » ; la lecture relève « mémoire singulière » et « styles individuels » (§ 8, § 10), ce qui porte la différence entre individus."
+      "reason": "$._alternatives_verbatim_meme_source[0].text (« ce travail d'ajustement du genre pour en faire un instrument de l'action que nous désignons comme le style de l'action »), $.summary (« Chacun les retouche en agissant (le style) ») et $.definition_de_lauteur (style comme « mixte » rapporté à la mémoire singulière, « styles individuels », écarts stylistiques) autorisent cette glose de l'appropriation individuelle."
     },
     {
       "claim_id": "C006",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis établissent les quatre signatures et la date de mai 2000 de l'article, qui définit les deux notions au « nous ». Mais les appuis fournis pour ce claim ($.reserves[0], $.notes[2], $.attribution_note) disent aussi que cet article n'est pas le texte de référence du couple genre/style, qu'il renvoie lui-même à un texte « sous presse » signé du seul duo Clot et Faïta. « ont formulé cette distinction en 2000 » présente l'article à quatre signatures comme le lieu d'origine de la distinction, ce que ces appuis n'autorisent pas."
+      "verdict": "SUPPORTED",
+      "reason": "Les quatre noms sont portés par $.authors[0-3].name et $.attribution.authors[0-3].name, dans cet ordre ; $.attribution_note et $.attribution.note parlent du « nous » d'un collectif de recherche."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Titre (« Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité »), lecture (professionnels confrontés à leur activité filmée, réel de l'activité) et $.reserves[1-2] : l'article présente une méthode d'entretien pour analyser le travail réel."
+      "reason": "Titre « Entretiens en autoconfrontation croisée : une méthode en clinique de l'activité » ($.sources[0].label, corrobore ; $.sources_ouvertes[0].citation) et $.definition_de_lauteur (réel de l'activité, professionnels confrontés à leur activité filmée) autorisent la description d'une étude du travail réel à partir d'entretiens avec les professionnels."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim § 4 : « Nous désignons ce travail comme le genre social du métier, le genre professionnel »."
+      "reason": "$.attribution_note : « L'article de 2000 ... les deux notions y sont définies » ; date 2000 confirmée par $.sources[0].label, $.reserves[5] et $.review.notes[0]."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim § 4 « les « obligations » auxquelles parviennent » ; $._quotation_verification.controle_mecanique confirme que les guillemets autour d'« obligations » sont dans le texte. Le signal $.attribution.note (« définissent ») ne porte pas sur ce point."
+      "reason": "$._quotation_verification.phrase_complete_du_texte et $.review.notes[1] portent verbatim « le genre social du métier, le genre professionnel » (§ 4), au « nous » des auteurs."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "$._quotation_verification.coupe : obligations « produites par ceux qui les subissent, et non prescrites d'en haut » ; summary : « que nul n'a prescrites »."
+      "reason": "La phrase complète porte « les « obligations » » et $._quotation_verification.controle_mecanique atteste que les guillemets français autour d'« obligations » sont dans le texte imprimé."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim § 4 : « auxquelles parviennent [...] ceux qui travaillent pour arriver à travailler, souvent malgré tout, parfois malgré l'organisation prescrite du travail »."
+      "reason": "$._quotation_verification.coupe (« produites par ceux qui les subissent, et non prescrites d'en haut »), $.notes[0], $.summary (« nul n'a prescrites ») et $.definition_de_lauteur (réorganisation de la tâche par les collectifs, « parfois malgré l'organisation prescrite ») autorisent le claim."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "« pour arriver à travailler, souvent malgré tout, parfois malgré l'organisation prescrite du travail », « ressource de la vie professionnelle », « moyen de savoir s'y retrouver dans la situation et de savoir comment agir » : fonction pratique face aux insuffisances du prescrit."
+      "reason": "Le fragment cité est verbatim et contigu dans $._quotation_verification.phrase_complete_du_texte et $.review.notes[1] (§ 4), et suit bien « auxquelles parviennent »."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Lecture : « corps d'évaluations partagées », « manières de se tenir, manières de s'adresser », « techniques intellectuelles et corporelles tramées dans des mots et des gestes » : plus qu'une liste de gestes techniques."
+      "reason": "$.definition_de_lauteur : obligations de « ceux qui travaillent pour arriver à travailler, souvent malgré tout, parfois malgré l'organisation prescrite », règles « simultanément une ressource », « moyen de savoir s'y retrouver dans la situation et de savoir comment agir » ; $._alternatives_verbatim_meme_source[1].text le confirme. La glose « quand les consignes officielles ne suffisent pas » reste en deçà de « malgré l'organisation prescrite »."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim § 4 : « un corps d'évaluations partagées qui règlent l'activité personnelle de façon tacite »."
+      "reason": "$.definition_de_lauteur : le genre comprend des « évaluations partagées », des « manières de s'adresser », des « techniques intellectuelles et corporelles tramées dans des mots et des gestes de métier », marque « l'appartenance à un groupe » ; il dépasse donc une liste de gestes techniques."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "« corps d'évaluations partagées », « répertoire d'actes convenus ou déplacés », réglant « l'activité personnelle de façon tacite » ; hook « ce qui « se fait » » : gloss fidèle."
+      "reason": "Citation verbatim portée par $.definition_de_lauteur (§ 4) et reprise par $.review.notes[3] et $.review.notes[5]."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim § 5 : « Mémoire impersonnelle et collective [...] manières de se tenir, manières de s'adresser » ; « mots et des gestes de métier »."
+      "reason": "$.definition_de_lauteur (« corps d'évaluations partagées », « répertoire d'actes convenus ou déplacés », mémoire mobilisée par l'action qui règle l'activité personnelle de façon tacite) et $.hook (« ce qui se fait ») autorisent la glose d'un jugement collectif intériorisé, présentée comme « une sorte de »."
     },
     {
       "claim_id": "C017",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim décrivent le genre comme un « canevas prêt à agir » objet d'« ajustements et de retouches », mais aussi comme « un moyen de savoir s'y retrouver dans la situation et de savoir comment agir ». Ils n'affirment pas que la règle collective ne dit « jamais exactement » quoi faire : l'absolu est du texte lecteur."
+      "verdict": "SUPPORTED",
+      "reason": "$._alternatives_verbatim_meme_source[4].text porte verbatim « Mémoire impersonnelle et collective ... manières de se tenir, manières de s'adresser » ; « mémoire de métier » est autorisé par « mots et gestes de métier » dans $.definition_de_lauteur ; « aux autres » est implicite à « s'adresser »."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "« objet des ajustements et des retouches de ceux qui en font leur instrument. C'est ce travail d'ajustement du genre pour en faire un instrument de l'action » ; « mémoire mobilisée par l'action », « activité en situation »."
+      "reason": "$.definition_de_lauteur (§ 5) : les auteurs décrivent le genre comme « un canevas \"prêt à agir\" » ; le texte les fait parler « reprenant Berthoz », mais le claim dit seulement qu'ils décrivent ainsi le genre, ce qui est exact, sans leur prêter l'invention de l'expression."
     },
     {
       "claim_id": "C019",
-      "verdict": "SUPPORTED",
-      "reason": "Verbatim § 8 : « C'est ce travail d'ajustement du genre pour en faire un instrument de l'action que nous désignons comme le style de l'action »."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim disent que le genre est « l'objet des ajustements et des retouches de ceux qui en font leur instrument » et que le style est « ce travail d'ajustement du genre pour en faire un instrument de l'action », la retouche se faisant « au besoin » ; ils présentent même le genre comme un canevas « prêt à agir », « un moyen économique de se mettre au diapason de la situation ». Le claim ajoute une nécessité universelle (« Chaque personne doit donc l'adapter ») et fait de l'adaptation la condition pour que la règle « devienne utilisable » : glissement possibilité / « au besoin » -> nécessité, et quantification universelle que ces appuis n'autorisent pas."
     },
     {
       "claim_id": "C020",
-      "verdict": "TOO_STRONG",
-      "reason": "« la façon dont chacun le rend maniable » suit de l'ajustement du genre en instrument. Mais les appuis fournis pour ce claim définissent aussi le style comme « une sorte d'affranchissement à l'égard de certaines contraintes génériques » et « l'effort d'émancipation du sujet par rapport à la mémoire impersonnelle » ; la négation catégorique « n'est pas ce qui s'oppose au genre » n'est pas posée par eux et efface cette dimension."
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim dans $._alternatives_verbatim_meme_source[0].text, localisée § 8 par $._alternatives_verbatim_meme_source[0].locator, vérifiée par $.review.notes[2] et $.notes[1] ; elle est au « nous » des mêmes auteurs."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Retouche « inaugurant ainsi une variante du genre », « le développement, donc la vie même du genre », « fonction sociale des styles individuels » ; summary « c'est cette retouche qui fait vivre le genre ». Le signal $.review.notes[3] (« individuelle ») porte sur l'attribution, sans rapport."
+      "reason": "$.definition_de_lauteur (retouche « inaugurant ainsi une variante du genre », « le développement, donc la vie même du genre, qui est assuré »), $.summary (« c'est cette retouche qui fait vivre le genre ») et $.review.notes[5] autorisent la conséquence sur la règle. L'appui signalé $.review.notes[3] partage « individuelle » au sens de « sans part individuelle » d'attribution, sans rapport."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim § 8 : « au besoin en retouchant la règle, le geste ou le mot, inaugurant ainsi une variante du genre », le sujet « prenant ses distances avec la contrainte »."
+      "reason": "Le fragment cité est verbatim dans $.definition_de_lauteur (§ 8) et $.review.notes[5] ; « s'écarte un peu de ce qui se fait » glose « prenant ses distances avec la contrainte »."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "« une variante du genre dont l'avenir dépendra finalement du collectif » ; « évaluées puis éventuellement validées par le collectif » (§ 8). Le signal $._alternatives_verbatim_meme_source[1].pourquoi_ecartee (« isolée ») vise le choix d'une citation, pas ce contenu."
+      "reason": "$.definition_de_lauteur : « une variante du genre dont l'avenir dépendra finalement du collectif » et nouvelles attributions « évaluées puis éventuellement validées par le collectif » ; « peut la valider » respecte « éventuellement »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "$.review.notes[5] cite § 8 : « Ce faisant, c'est le développement, donc la vie même du genre, qui est assuré » ; la lecture porte le même fragment."
+      "reason": "$.review.notes[5] porte verbatim « Ce faisant, c'est le développement, donc la vie même du genre, qui est assuré » (§ 8), que $.definition_de_lauteur confirme et rattache à la retouche stylistique ; $.summary le résume."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Summary : « Chacun les retouche en agissant [...] c'est cette retouche qui fait vivre le genre » ; § 8 : vie du genre assurée par « recréation personnelle » ; genre « mémoire mobilisée par l'action »."
+      "reason": "Conséquence dérivée, non attribuée aux auteurs (« ce qu'on peut penser »), qui suit de $.summary (« c'est cette retouche qui fait vivre le genre ») et de $.definition_de_lauteur (mémoire « mobilisée par l'action », retouche qui assure « la vie même du genre », nouvelles attributions par recréation personnelle). L'appui signalé $.reserves[4] ne partage que « penser », terme non spécifique."
     },
     {
       "claim_id": "C026",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim ($.reserves[1], $.notes[3]) disent que l'article LU n'est pas consacré au couple pour lui-même. Le claim porte sur la distinction en général et affirme qu'elle n'a été posée dans aucun texte qui s'y consacre : extension de l'article lu à toute l'histoire de la notion, que ces appuis n'autorisent pas."
+      "verdict": "SUPPORTED",
+      "reason": "Date mai 2000 portée par $.reserves[5] (citation_publication_date « 2000/mai/01 »), $.quotation.reference et $.sources[0].label (corrobore) ; la notice metadata-only ne sert qu'à la métadonnée de date. Les définitions dans cet article sont portées par $.quotation.reference (section « 2. Les genres de l'activité »)."
     },
     {
       "claim_id": "C027",
-      "verdict": "CONFLICT",
-      "reason": "Mai 2000 et le caractère méthodologique de l'article sont établis. Mais « Elle vient d'un article de mai 2000 » est contredit par les appuis fournis : $.reserves[0] et $.notes[2] précisent que cet article n'est pas le texte de référence du couple genre/style et « renvoie lui-même à celui-là » (Clot et Faïta, « sous presse », non ouvert, non daté)."
+      "verdict": "SUPPORTED",
+      "reason": "$.reserves[1] et $.notes[3] : « L'article lu est d'abord un texte de méthode », « Ce n'est pas un texte consacré au couple pour lui-même » ; titre sur l'autoconfrontation croisée, méthode d'entretien ; $.definition_de_lauteur ancre l'étude du réel de l'activité."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Titre de l'article : « une méthode en clinique de l'activité » ($.sources[0].label, $.quotation.reference). Le signal $.review.notes[6] (« champ ») n'est pas nécessaire : le titre porte le claim."
+      "reason": "Le titre « une méthode en clinique de l'activité » est porté par $.sources[0].label (corrobore), $.sources_ouvertes[0].citation et $.quotation.reference."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "$.reserves[1] : genre et style « exposés en deux sections théoriques [...] qui servent d'appui à la méthode. Ce n'est pas un texte consacré au couple pour lui-même » ; $.notes[3] idem."
+      "reason": "$.reserves[1] et $.notes[3] : genre et style « exposés en deux sections théoriques qui servent d'appui à la méthode », « pas un texte consacré au couple pour lui-même »."
     },
     {
       "claim_id": "C030",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim établissent que les deux sections de définition sont écrites au « nous » et que ce « nous » ne se dédouble pas pour attribuer les notions ; ils ne disent pas que tout l'article, « du début à la fin », est écrit au « nous ». Extension de portée."
+      "verdict": "SUPPORTED",
+      "reason": "$.attribution.note, $.attribution_note et $.review.notes[3] : les deux sections qui définissent les notions sont écrites au « nous » du collectif des quatre signataires."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "$.attribution.note : « Rien dans le texte ne rapporte les deux notions à l'un des quatre » ; $.review.notes[3] : « sans part individuelle »."
+      "reason": "$.attribution.note : « ce \"nous\" ne se dédouble jamais pour attribuer une part à quelqu'un » ; $.attribution_note : « sans qu'aucune part ne soit attribuée à l'un d'eux »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Notions posées au « nous » d'un collectif de recherche, sans part attribuée (attribution.note, attribution_note), signature COAUTHORED : présentation comme travail commun."
+      "reason": "$.attribution.authorship « COAUTHORED », $.attribution_note (notions définies au « nous » d'un collectif) et $.review.notes[3] (« sans part individuelle ») autorisent la présentation comme produit d'un travail commun."
     }
   ]
 }
