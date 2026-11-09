@@ -1,0 +1,43 @@
+{
+  "protocol_version": 2,
+  "concept_id": "genre-professionnel-et-style",
+  "candidate_sha256": "60450fdf5ee618e1be46a6383f3ef1dd7cd84f35181571ce39f2a303fa5660fd",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 32,
+  "supported": 26,
+  "failed": 6,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C006",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent les quatre signatures et la date de mai 2000 de l'article, qui définit les deux notions au « nous ». Mais les appuis fournis pour ce claim ($.reserves[0], $.notes[2], $.attribution_note) disent aussi que cet article n'est pas le texte de référence du couple genre/style, qu'il renvoie lui-même à un texte « sous presse » signé du seul duo Clot et Faïta. « ont formulé cette distinction en 2000 » présente l'article à quatre signatures comme le lieu d'origine de la distinction, ce que ces appuis n'autorisent pas."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim décrivent le genre comme un « canevas prêt à agir » objet d'« ajustements et de retouches », mais aussi comme « un moyen de savoir s'y retrouver dans la situation et de savoir comment agir ». Ils n'affirment pas que la règle collective ne dit « jamais exactement » quoi faire : l'absolu est du texte lecteur."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "TOO_STRONG",
+      "reason": "« la façon dont chacun le rend maniable » suit de l'ajustement du genre en instrument. Mais les appuis fournis pour ce claim définissent aussi le style comme « une sorte d'affranchissement à l'égard de certaines contraintes génériques » et « l'effort d'émancipation du sujet par rapport à la mémoire impersonnelle » ; la négation catégorique « n'est pas ce qui s'oppose au genre » n'est pas posée par eux et efface cette dimension."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim ($.reserves[1], $.notes[3]) disent que l'article LU n'est pas consacré au couple pour lui-même. Le claim porte sur la distinction en général et affirme qu'elle n'a été posée dans aucun texte qui s'y consacre : extension de l'article lu à toute l'histoire de la notion, que ces appuis n'autorisent pas."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "CONFLICT",
+      "reason": "Mai 2000 et le caractère méthodologique de l'article sont établis. Mais « Elle vient d'un article de mai 2000 » est contredit par les appuis fournis : $.reserves[0] et $.notes[2] précisent que cet article n'est pas le texte de référence du couple genre/style et « renvoie lui-même à celui-là » (Clot et Faïta, « sous presse », non ouvert, non daté)."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim établissent que les deux sections de définition sont écrites au « nous » et que ce « nous » ne se dédouble pas pour attribuer les notions ; ils ne disent pas que tout l'article, « du début à la fin », est écrit au « nous ». Extension de portée."
+    }
+  ]
+}
