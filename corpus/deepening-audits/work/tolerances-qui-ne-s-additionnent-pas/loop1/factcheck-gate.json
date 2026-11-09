@@ -1,0 +1,43 @@
+{
+  "protocol_version": 2,
+  "concept_id": "tolerances-qui-ne-s-additionnent-pas",
+  "candidate_sha256": "334d3760b8bf68dc97a71950789c0f3459192db61156882eb105fb221f5f06e2",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 49,
+  "supported": 43,
+  "failed": 6,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim (SUP-7c9cbf25) définissent la tolérance comme « the range between the maximum and minimum possible values of the quality » ; ils ne portent pas l'élément « à l'intérieur de laquelle on la déclare bonne » (critère d'acceptation), que le claim ajoute."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim disent « very small indeed » (p. 254, et seulement « when the number m ... is large ») et « relatively very small » (p. 255) ; « pratiquement aucune chance » durcit cette improbabilité et omet la condition sur le grand nombre de pièces."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim, et le signal est vide ; la définition de l'écart type (écart typique à la valeur centrale, petit/grand selon la fabrication) n'est établie par aucun support du bundle pour ce claim."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim placent à la p. 254 l'hypothèse « controlled about average values ... with standard deviations » (SUP-7c9cbf25) et l'hypothèse des tolérances à trois sigmas « explicitement au paragraphe 5 » (SUP-3fe26198, SUP-ed276a14), mais n'établissent pas que l'adoption de R̄i ± 3σi, partie de la condition énoncée en C026, figure p. 254."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (SUP-3fe26198, SUP-ed276a14) disent seulement que les limites à trois sigmas ne coïncident avec la racine des carrés des tolérances que si chaque tolérance a été posée à trois sigmas ; ils ne portent ni l'explication par des plages couvrant des parts différentes de la production, ni que la formule « ne dirait plus rien de la tolérance »."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim disent que la figure 87 montre, pour neuf pièces, la tolérance additive et l'étendue à six sigmas qui « tient loin à l'intérieur » ; ils n'établissent pas qu'elle figure des pièces également dispersées ni le rapport trois que « C'est ce que » lui fait montrer."
+    }
+  ]
+}

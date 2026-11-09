@@ -3,7 +3,7 @@
   "concept_id": "tolerances-qui-ne-s-additionnent-pas",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "334d3760b8bf68dc97a71950789c0f3459192db61156882eb105fb221f5f06e2",
+  "candidate_sha256": "06870e45801240bf4561cabd306f84051b8258a5eb8b74221c9b009495ff03fe",
   "validated_sha256": "758a007c52675881164fa9d0a27f426fde00530b51036231142b3acd54e2c0b9",
   "evidence_files": [
     {
@@ -53,7 +53,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf. Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum, à l’intérieur de laquelle on la déclare bonne. Reste à écrire la tolérance de l’ensemble. Le geste qui vient de lui-même est d’additionner les neuf plages. Il donne une fourchette large, et il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage."
+      "text": "Un mécanisme est fait de neuf pièces montées bout à bout, et ce qu’il vaut est la somme de ce que valent les neuf. Chacune arrive avec sa tolérance : une plage entre un minimum et un maximum. Reste à écrire la tolérance de l’ensemble. Le geste qui vient de lui-même est d’additionner les neuf plages. Il donne une fourchette large, et il suppose sans le dire que les neuf pièces peuvent se trouver ensemble au bord de leur plage, du même côté, dans le même assemblage."
     },
     {
       "locator": "lead[1]",
@@ -77,22 +77,22 @@
     {
       "locator": "sections[1].paragraphs[1]",
       "section_title": "Neuf pièces à leur extrême le même jour",
-      "text": "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines. C’est l’hypothèse de ce passage, et elle porte tout le reste. La plage additionnée décrit alors un assemblage que rien n’interdit et qu’on n’a pratiquement aucune chance de fabriquer."
+      "text": "Le raisonnement suppose que les pièces se rencontrent au hasard : qu’on les prenne dans des bacs sans regarder si l’une compense l’autre, et que la valeur de chacune ne dise rien de celle de ses voisines. C’est l’hypothèse de ce passage, et elle porte tout le reste. La plage additionnée décrit alors un assemblage que rien n’interdit, mais dont la chance, quand les pièces sont nombreuses, est très faible."
     },
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "L’écart type d’une somme",
-      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. L’écart type d’une pièce est un nombre qui dit de combien ses valeurs s’écartent typiquement de leur valeur centrale : petit quand la fabrication est serrée, grand quand elle est dispersée. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
+      "text": "Reste à chiffrer, et c’est ici que l’écart type entre en scène. La formule imprimée en haut de la page 255 donne celui de la résultante, et elle n’additionne rien : elle prend la racine carrée de la somme des carrés des écarts types des pièces."
     },
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "L’écart type d’une somme",
-      "text": "Pour passer de cette formule à une tolérance, il faut une condition, et Shewhart la pose explicitement page 254 : chaque sorte de pièce est fabriquée de façon maîtrisée autour d’une valeur moyenne, et sa tolérance est fixée à trois écarts types de part et d’autre de cette moyenne. Sans elle, on comparerait des plages qui ne couvrent pas la même part de la production, et la racine des carrés ne dirait plus rien de la tolérance."
+      "text": "Pour passer de cette formule à une tolérance, il faut une condition, et Shewhart la pose explicitement : chaque sorte de pièce est fabriquée de façon maîtrisée autour d’une valeur moyenne, et sa tolérance est fixée à trois écarts types de part et d’autre de cette moyenne."
     },
     {
       "locator": "sections[2].paragraphs[2]",
       "section_title": "L’écart type d’une somme",
-      "text": "Sous cette condition, l’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que les limites à trois écarts types de l’ensemble. C’est ce que la figure 87 met sous les yeux pour neuf pièces, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits »."
+      "text": "Sous cette condition, l’écart entre les deux façons de compter se voit sur un cas simple. Supposons les neuf pièces également dispersées : additionner leurs écarts types en donne neuf fois un, prendre la racine de la somme des carrés en donne trois fois un, puisque la racine de neuf vaut trois. La fourchette additionnée est trois fois plus large que les limites à trois écarts types de l’ensemble. Pour neuf pièces, la figure 87 place l’étendue à six écarts types de l’ensemble loin à l’intérieur de la tolérance additive, et son titre porte la conclusion : « Illustrating Proper Way to Set Limits »."
     },
     {
       "locator": "sections[2].paragraphs[3]",
@@ -717,6 +717,6 @@
       "text": "Recouvrement avec le dossier tolerance-economique-suppose-le-controle, déposé dans la même session et tiré du même chapitre. Les deux sont distincts et il faut qu'ils le restent : celui-là dit qu'une tolérance ne se fixe économiquement que sur un procédé maîtrisé, celui-ci dit comment se compose la tolérance d'un assemblage à partir de celles de ses pièces. La phrase de la p. 252 appartient au premier et n'est pas reprise ici."
     }
   ],
-  "estimated_tokens": 16008,
+  "estimated_tokens": 15904,
   "status": "READY"
 }
