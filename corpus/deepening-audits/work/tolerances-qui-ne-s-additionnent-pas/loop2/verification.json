@@ -1,0 +1,231 @@
+{
+  "concept_id": "tolerances-qui-ne-s-additionnent-pas",
+  "candidate_sha256": "06870e45801240bf4561cabd306f84051b8258a5eb8b74221c9b009495ff03fe",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : chaque pièce a des « tolerance limits » Ri1 et Ri2, et la tolérance est « the range between the maximum and minimum possible values » ; review.notes[4] confirme la définition p. 253."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « The answer to the question is obviously R12 + R22 + ... − R11 − ... » ; attribution.note et attribution_note : additionner les écarts extrêmes est l'usage en vigueur qui découle de la définition d'atelier."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et notes[4] : sur la figure 87 l'étendue réelle de la résultante tient « loin à l'intérieur » de la tolérance additive ; la fourchette additive est donc large en comparaison."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence dérivée : la somme des maxima n'est atteinte que si toutes les pièces sont simultanément au maximum ; definition_de_lauteur p. 254 parle de la combinaison qui « add up to either the maximum or minimum limit ». Le claim vise la pratique, pas une parole de Shewhart."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[4] cite la page de titre : « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. »."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "sources[0].label (full-text, corrobore) et sources_ouvertes[0].citation : Economic Control of Quality of Manufactured Product, New York, D. Van Nostrand, 1931 ; definition_de_lauteur cite la question posée p. 252-253."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[3] : feuillet n262 « CHAPTER XVII / Design limits on Variability » ; quotation.reference situe le passage au chapitre XVII, § 5."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique à celle de definition_de_lauteur et de review.notes[5] (p. 253) ; la traduction est littérale."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur p. 254 : « whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum » ; reserves[1] reprend ce passage."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : la somme est « obviously » la réponse « if we hold to the definition of a tolerance as the range between the maximum and minimum possible values » ; attribution.note : l'usage « découle de la définition d'atelier ». Le signal (review.notes[4], terme « exacte ») porte sur une autre exactitude (la borne d'attribution) et ne manque pas à ce claim."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 253 conforme à definition_de_lauteur et review.notes[4] ; traduction fidèle ; « if we hold to the definition » autorise « rappelle »."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : la somme est « obviously » la réponse sous cette définition ; reserves[2] et notes[0] : Shewhart ne dit pas la pratique additive fausse, l'enjeu n'est pas une erreur de calcul. La décomposition max/min est l'arithmétique de cette réponse."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[2] / notes[0] : « l'enjeu est un coût, pas une erreur de calcul » ; definition_de_lauteur et reserves[1] : la question est s'il est économique de prévoir une tolérance égale à l'étendue des valeurs possibles."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence arithmétique de la somme des maxima ; definition_de_lauteur p. 254 vise la combinaison qui « add up to either the maximum or minimum limit »."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[4] : p. 254, « When the number m ... is large ... chosen at random ... add up to either the maximum or minimum limit is very small indeed » ; paraphrase et traduction fidèles."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[2] / notes[0] : le résultat suppose « l'assemblage au hasard » et « l'indépendance des pièces », un appariement sélectif le mettrait en défaut ; definition_de_lauteur : « chosen at random (one each from the m different kinds) ». L'image des bacs illustre sans ajouter."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[2] / notes[0] : le résultat suppose l'assemblage au hasard et l'indépendance, et un appariement sélectif le mettrait en défaut ; l'argument qui suit en dépend donc."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur p. 253-254 : les extrêmes sont des valeurs « possible », et leur combinaison est « very small indeed » quand m est grand ; review.notes[4] le confirme."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : les hypothèses de la même page introduisent les « standard deviations σ1, ..., σm » à ce point de l'argument."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[5] : formule « imprimée en haut de la p. 255 », σ = racine de σ1² + ... + σm² ; notes[1] : le texte parle de l'écart type de la résultante."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (definition_de_lauteur, review.notes[5], notes[2]) donnent σ = √(σ1² + ... + σm²) : la formule additionne les carrés des écarts types. « elle n'additionne rien » excède ces appuis et contredit la suite de la phrase ; ils autorisent seulement qu'elle n'additionne pas les écarts types eux-mêmes."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[2] / notes[0] : passer de l'écart type à une tolérance suppose que chaque tolérance de pièce soit posée à trois sigmas, « hypothèse qu'il fait explicitement au paragraphe 5 »."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « controlled about average values R̄1, ..., R̄m, with standard deviations σ1, ..., σm », et Shewhart adopte pour chaque pièce la tolérance R̄i ± 3σi ; reserves[2] confirme l'hypothèse explicite."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : cas d'école où les m écarts types valent σ1, d'où σ = √m σ1, et figure 87 pour m égal à neuf ; l'arithmétique (9 contre √9 = 3) suit exactement."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et notes[4] : tolérance additive ΣR̄i ± 3Σσi contre ΣR̄i ± 3σ avec σ = √m σ1 ; pour neuf pièces égales, 27σ1 contre 9σ1, rapport trois. Conséquence dérivée dans le cadre posé par la phrase précédente."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et notes[4] : figure 87, m = 9, l'étendue à six sigmas de la résultante « tient loin à l'intérieur » de la tolérance additive."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "notes[4] : « Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits » » ; même titre dans definition_de_lauteur et quotation.reference."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text et review.notes[1] : « the practice of adding tolerance limits may be uneconomical », p. 255 (quotation.locator) ; traduction qui garde le modal."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ » ; rendu fidèle, « relativement » conservé."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[2] / notes[0] : Shewhart dit que la pratique « peut être peu économique », non qu'elle est fausse ; les deux notes de traducteur : l'énoncé « reste une improbabilité et non une impossibilité ». Le signal (review.notes[5], « adjectif ») irait dans le même sens mais n'est pas nécessaire : les appuis fournis suffisent."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "notes[2] et review.notes[10] : la racine de la somme des carrés simple « est le cas de la somme »."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[3] : « le § 6 « The General Problem of Setting Tolerances on Controlled Product » s'ouvre page 256 »."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et definition_de_lauteur : le cas général du paragraphe 6 n'est pas limité aux grandeurs qui s'ajoutent, X y est « une fonction quelconque » des Xi."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[4] : « expanded in a Taylor's series » figure p. 256 ; notes[1], notes[2], definition_de_lauteur : développement au premier ordre."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "notes[2] et review.notes[10] : la formule générale porte des « coefficients de sensibilité » ai issus du développement de Taylor au premier ordre ; la glose « de combien l'ensemble bouge quand la pièce bouge » est le sens même de sensibilité."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et notes[2] : σX = √(a1²σ1² + ... + am²σm²), et ai²σi² = (aiσi)²."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "notes[2] : la racine de la somme des carrés simple « n'en est que le cas où ces coefficients valent un », cas de la somme, page 255 ; review.notes[10] concorde."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[5] : « rien n'y parle ... de loi generale » ; notes[2] : la règle simple n'est qu'un cas particulier de la formule à coefficients."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[4] : « Making application of Tchebycheff's theorem », p. 257 ; attribution.note, attribution_note et notes[1] : la borne de probabilité est empruntée et nommée dans le texte."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] : « la valeur 0,9973 ne vaut que si les composants sont normaux » ; definition_de_lauteur : « if the components are normal, the probability P3σx is equal to 0.9973 ». « familière » est un qualificatif sans portée factuelle sur la source."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note et attribution.note : « Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui ... Ce qui lui revient est l'objection et sa mesure » ; review.notes[4] valide cette borne."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "notes[5] : Shewhart conclut page 259 que la spécification doit inclure valeur attendue et écart type, et ce qu'il faut exiger est « une information d'une autre nature » qu'une tolérance ; definition_de_lauteur : « Hence from a design viewpoint we conclude »."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "notes[5] et definition_de_lauteur : la spécification doit inclure « expected value X̄i and standard deviation σi », information d'une autre nature qu'une tolérance."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique dans notes[5] et definition_de_lauteur (p. 259) ; « should include » autorise « exigence »."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "notes[5] : « Ce qu'il faut exiger d'un fournisseur n'est pas une tolérance plus serrée mais une information d'une autre nature » ; definition_de_lauteur : contrôle « about known averages and with known standard deviations » des pièces. Formulé comme conséquence, non comme citation."
+    }
+  ]
+}

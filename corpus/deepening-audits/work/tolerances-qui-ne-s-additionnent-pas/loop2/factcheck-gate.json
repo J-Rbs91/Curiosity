@@ -1,0 +1,18 @@
+{
+  "protocol_version": 2,
+  "concept_id": "tolerances-qui-ne-s-additionnent-pas",
+  "candidate_sha256": "06870e45801240bf4561cabd306f84051b8258a5eb8b74221c9b009495ff03fe",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 45,
+  "supported": 44,
+  "failed": 1,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C021",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (definition_de_lauteur, review.notes[5], notes[2]) donnent σ = √(σ1² + ... + σm²) : la formule additionne les carrés des écarts types. « elle n'additionne rien » excède ces appuis et contredit la suite de la phrase ; ils autorisent seulement qu'elle n'additionne pas les écarts types eux-mêmes."
+    }
+  ]
+}

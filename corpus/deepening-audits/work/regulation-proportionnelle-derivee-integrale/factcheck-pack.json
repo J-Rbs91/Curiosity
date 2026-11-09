@@ -1,0 +1,724 @@
+{
+  "protocol_version": 2,
+  "concept_id": "regulation-proportionnelle-derivee-integrale",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "6ad42fedad667270861c513b15f0c75fc8f532823af4d3f0e5b0ec9ce1f3a9ef",
+  "validated_sha256": "301f438ad09d77e38f26b9d17791840a4903a42eea94d358f732054b357bad5c",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "3ba602baed67aedc4befbfa5af23cd464aa54050603428d2f3be3c1208744b54"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/regulation-proportionnelle-derivee-integrale/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Stanford Goldman, « Further Consideration of Cybernetic Aspects of Homeostasis », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 108-121.",
+        "cles": [
+          "rep:lccn6012574"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Stanford Goldman, « Cybernetic Aspects of Homeostasis », dans C. L. Comar et F. Bronner (dir.), Mineral Metabolism. An Advanced Treatise, vol. I, partie A, New York et Londres, Academic Press, 1960, p. 61-100.",
+        "cles": [
+          "rep:lccn609067"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Une pièce est à trois degrés de moins que ce qu’on lui demande. Ces trois degrés se creusent-ils parce qu’une fenêtre vient de s’ouvrir, ou se comblent-ils parce que le chauffage travaille depuis dix minutes ? Durent-ils depuis vingt secondes ou depuis deux heures ? Un appareil qui ne connaît que l’écart de l’instant répondra de la même façon dans tous ces cas."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Les ingénieurs qui construisaient des machines capables de corriger leurs propres erreurs en avaient tiré, avant 1959, une distinction devenue standard chez eux : d’un même écart on peut lire trois choses, sa taille, la vitesse à laquelle il change, et ce qu’il a accumulé depuis qu’il dure. Stanford Goldman appartenait au département de génie électrique de l’université de Syracuse. Devant une conférence interdisciplinaire réunie en mai 1959, il a proposé de porter ce découpage dans le corps vivant."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Verser la glace, ou goûter le punch",
+      "text": "Deux façons de rafraîchir un bol de punch. La première hôtesse y met de la glace. La seconde goûte, et rajoute de la glace. Goldman se sert de ces deux hôtesses, dans la version longue et élémentaire qu’il a écrite la même année pour des biologistes sans pratique de ces notions, afin d’opposer une commande en boucle ouverte et une commande en boucle fermée, qui se règle sur ce qu’elle constate."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Verser la glace, ou goûter le punch",
+      "text": "L’exposé de 1959, lui, suppose son lecteur déjà formé à la théorie des asservissements et à celle de l’information ; il le dit dès sa deuxième phrase, et s’en tient à la manière dont elles s’appliquent au vivant. Le punch, et plus loin le thermostat, la conduite de tir et le virage, viennent du chapitre élémentaire."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Le thermostat qui ne sait dire qu’oui ou non",
+      "text": "Goldman range les commandes sur une échelle de cinq types. Au premier, la correction est dirigée mais constante : une action en tout ou rien, toujours de même force, pour réduire l’écart. Son exemple est le thermostat qui commande un chauffage en tout ou rien, et il le donne pour le plus grossier des contrôles."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Le thermostat qui ne sait dire qu’oui ou non",
+      "text": "Au deuxième type, l’action n’est plus constante : elle est proportionnelle à l’écart. Le même thermostat, mais le courant de chauffe suit l’écart de température, fort quand il manque cinq degrés, faible quand il en manque un demi. Goldman note que cette commande est ordinairement plus rapide et plus exacte que la précédente. C’est le premier des trois renseignements : la taille de l’écart."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "La vitesse de l’écart, et ce qu’il a accumulé",
+      "text": "La taille d’un écart ne dit pourtant rien de son sens de marche, comme on l’a vu avec la fenêtre ouverte. Le troisième type ajoute une action proportionnelle à la vitesse à laquelle l’écart change, et Goldman dit à quoi elle sert : empêcher le dépassement, c’est-à-dire l’erreur en sens inverse. L’exemple qu’il prend est la conduite de tir, où l’on anticipe la position de la cible d’après la vitesse qu’elle a maintenant."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "La vitesse de l’écart, et ce qu’il a accumulé",
+      "text": "Le quatrième type ajoute le dernier renseignement : non plus l’écart de l’instant ni sa tendance, mais ce qu’il a accumulé depuis qu’il dure, son intégrale dans le temps. Son effet, dans les termes de Goldman, est de renforcer l’action quand le système ne parvient pas à réduire suffisamment l’écart ; elle augmente l’exactitude et réduit la tendance à dériver vers l’erreur. Un petit écart, trop faible pour appeler une réponse vive, mais qui tient toute la journée, finit ainsi par produire une réponse forte, non parce qu’il a grandi, mais parce qu’il a duré."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "La vitesse de l’écart, et ce qu’il a accumulé",
+      "text": "Un cinquième type vient encore au-dessus, et il sort du trio : la commande fondée sur l’anticipation d’événements à venir, celle du conducteur qui voit un virage approcher sur la route. Là, la commande répond à ce qui va arriver, et non à un écart déjà constaté."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Six lignes au bord du glucose sanguin",
+      "text": "Devant la conférence de 1959, Goldman applique ce découpage à un schéma de la régulation du glucose sanguin, et compte ce qui sort du compartiment où le sucre circule : « At the right of the blood glucose compartment are six emerging information lines », six lignes d’information en émergent. Trois grandeurs, l’écart, sa vitesse, son accumulation, et chacune en deux versions selon le signe."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Six lignes au bord du glucose sanguin",
+      "text": "Pourquoi doubler, alors qu’un signe suffirait à marquer les deux directions ? Parce que, dans un corps, ces deux directions n’ont pas forcément les mêmes destinataires : « The ΔC(−) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs ». Le texte suit ensuite ces lignes vers la médullosurrénale, le pancréas, le tissu adipeux, la corticosurrénale."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Six lignes au bord du glucose sanguin",
+      "text": "Sa thèse reste modalisée : selon lui, les six informations paraissent toutes servir à la régulation du glucose, et le corps, dans une certaine mesure au moins, les distingue et en fait des usages différents. Il signale aussi des indices selon lesquels le glycogène du foie serait traité différemment par les actions proportionnelle, dérivée et intégrale."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Les antagonistes et le prix de la puissance",
+      "text": "Un peu plus loin, Goldman revient sur les deux signes pour opposer les montages électriques et les vivants. Dans un montage électrique linéaire à rétroaction, un écart négatif ressemble en tout à un écart positif au signe près, et le même mécanisme corrige les deux : il suffit que le courant change de sens. Cette capacité, précise-t-il, n’est pas une propriété universelle : dans un organisme, le mécanisme qui corrige un excès est souvent différent de celui qui corrige un manque, et l’un peut alors être appelé l’antagoniste de l’autre."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Les antagonistes et le prix de la puissance",
+      "text": "Cette architecture a un prix. Une commande tenue par l’équilibre de deux antagonistes puissants est, quand elle fonctionne bien, à la fois rapide et exacte ; mais plus la commande est forte, plus le danger d’instabilité grandit quand cet équilibre est altéré. Le mot que Goldman emploie alors, instabilité, a chez lui un sens technique voisin de cercle vicieux ou d’emballement, et la cause qu’il en donne est une affaire de calendrier : l’agent et son antagoniste entrent en action trop tard, si bien qu’au lieu de se compenser ils se renforcent."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Les antagonistes et le prix de la puissance",
+      "text": "Dans un corps, ajoute-t-il, cela ne se voit généralement pas comme une oscillation. Cela se voit comme un déplacement pathologique de l’équilibre : la régulation ne bat pas la mesure, elle se tient ailleurs qu’où elle le devrait."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Une manière de regarder, et ce qu’elle demande",
+      "text": "Sur le fond, Goldman revendique bien moins qu’une lecture pressée ne le laisserait croire. Il écrit que ses énoncés paraissent raisonnables, mais que la littérature offre peu de mesures sur lesquelles les fonder : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them ». Et il ajoute, sur la même page : « The present author is not competent to judge how much of this information is already in the literature »."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Une manière de regarder, et ce qu’elle demande",
+      "text": "La dernière partie de sa communication ne conclut rien sur le glucose : elle formule des questions expérimentales à poser aux physiologistes."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-fc2d9da803085cb1",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "regulation-proportionnelle-derivee-integrale"
+    },
+    {
+      "id": "SUP-cfd37dc7d82cf752",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "regulation-proportionnelle-derivee-integrale"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-97874c7315a7a685",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Contrôle proportionnel, dérivé et intégral"
+    },
+    {
+      "id": "SUP-affadf82061b1e4f",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "variete-et-moyens-de-la-regulation"
+    },
+    {
+      "id": "SUP-884b863cb2e80f41",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Stanford Goldman"
+    },
+    {
+      "id": "SUP-4650d49932230283",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Le chapitre porte une seule signature. Goldman n'est l'auteur ni de la notion d'homéostasie, qu'il rapporte à Walter B. Cannon et, plus loin en amont, à Claude Bernard, ni du trio proportionnel, dérivé, intégral, qu'il prend à la théorie des asservissements. Ce qui lui revient en propre est leur rapprochement : soutenir que le corps vivant émet six informations d'écart distinctes, trois grandeurs et deux signes, qu'il les achemine vers des organes différents et qu'il en fait des usages différents. Le millésime 1960 est celui des actes ; l'exposé est de mai 1959, et les notions qu'il rapproche lui sont antérieures."
+    },
+    {
+      "id": "SUP-673085c6713707a9",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Un corps corrige-t-il la taille de l'écart, sa vitesse, ou ce qu'il en a accumulé ?"
+    },
+    {
+      "id": "SUP-f186eb915e883ba3",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "L'écart ne donne pas une information mais six : sa grandeur, sa vitesse, son accumulation, chacune en deux signes, dont le corps semble faire des usages différents."
+    },
+    {
+      "id": "SUP-53def0a1dcf4c8f2",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Une idée trop peu reconnue des biologistes est que les contrôles proportionnel, dérivé et intégral peuvent tous être utilisés dans l'homéostasie."
+    },
+    {
+      "id": "SUP-7f980e6a8fd1443e",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Stanford Goldman, « Further Consideration of Cybernetic Aspects of Homeostasis », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 108-121."
+    },
+    {
+      "id": "SUP-d075b51b4a1bc0de",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 108, ouverture de la section 1"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-aaa2851b4e782523",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "A concept which is not as widely appreciated in biological circles as it should be is that proportional, derivative and integral controls may all be used in homeostasis."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-174b1c438bf4f799",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity) ; aucune traduction française publiée de ce chapitre n'a été identifiée."
+    },
+    {
+      "id": "SUP-c2646b776b099167",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Stanford Goldman, « Further Consideration of Cybernetic Aspects of Homeostasis », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Oxford, Pergamon Press, 1960, p. 108-121.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-a92fde2fb86e20e1",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 108-110",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8cf437829aba9113",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 60-12574",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7d0774e76625da",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Stanford Goldman, « Cybernetic Aspects of Homeostasis », dans C. L. Comar et F. Bronner (dir.), Mineral Metabolism. An Advanced Treatise, vol. I, partie A, New York et Londres, Academic Press, 1960, p. 61-100.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-456fe5b3d2c35de4",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "full-text",
+      "text": "p. 63-64",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-5ae53e484b47d34d",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 60-9067",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-4630957075078bc7",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-21"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-b746efccc356b450",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée dans le texte que j'ai ouvert moi-même. Téléchargé https://archive.org/download/SelfOrganizingSystems/SelfOrganizingSystems_djvu.txt (HTTP 200, 695 215 octets, OCR ABBYY de l'exemplaire numérisé). La page 108 porte, immédiatement sous le titre de section « 1. PROPORTIONAL, DERIVATIVE AND INTEGRAL CONTROLS IN HOMEOSTASIS », la phrase exacte : « A concept which is not as widely appreciated in biological circles as it should be is that proportional, derivative and integral controls may all be used in homeostasis. » Correspondance mot à mot avec original_text, sans coupe. Le locator « p. 108, ouverture de la section 1 » est juste : c'est bien la première phrase de la section 1, la page 108 étant celle du bandeau de fin de page dans le fac-similé."
+    },
+    {
+      "id": "SUP-a6aba2c752dbf871",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION (traduction) — la fiche déclare la traduction (language fr, original_language en, translation.kind « in-house », original_text donné, absence de traduction française publiée signalée). La déclaration est conforme. Le rendu français est fidèle au sens ; seule remarque, « in biological circles » est resserré en « des biologistes » (plutôt que « dans les milieux biologiques ») : nuance perdue, pas de contresens."
+    },
+    {
+      "id": "SUP-2059feac7dad4334",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — le chapitre porte bien une signature unique : « FURTHER CONSIDERATION OF CYBERNETIC ASPECTS OF HOMEOSTASIS* / Stanford Goldman / Department of Electrical Engineering, Syracuse University ». Aucun coauteur. La table des matières du volume donne « ...by S. Goldman 108 »."
+    },
+    {
+      "id": "SUP-6d00718023726fd7",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la note de la fiche est corroborée par les textes. Dans le chapitre de Mineral Metabolism (p. 61), Goldman écrit lui-même : « [les idées d'homéo]stasis go back at least to Claude Bernard, but the term homeostasis was introduced by Walter B. Cannon about 30 years ago » ; ses références de fin de chapitre listent Bernard (1878), Cannon (1926, 1929, 1932). Le trio proportionnel/dérivé/intégral y est présenté comme la typologie standard des asservissements (Types 1 à 5, p. 64), appuyée sur une citation d'Ivan Getting, « Servo systems », dans James, Nichols et Phillips (dir.), Theory of Servo Mechanisms, McGraw-Hill, 1947. Goldman ne revendique donc ni l'un ni l'autre, et se borne dans la discussion du colloque à « I merely suggested that these ideas might be of value when you are studying homeostatic controls » (p. 120). Ce qui lui revient — le rapprochement et le schéma à six lignes d'écart — est bien de lui."
+    },
+    {
+      "id": "SUP-2857c697715f4cc5",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "ATTRIBUTION (dates) — la page de titre porte « PROCEEDINGS OF AN interdisciplinary conference / 5 and 6 May, 1959 » et « 1960 » : le millésime 1960 est bien celui des actes, l'exposé de mai 1959. Conforme à la note."
+    },
+    {
+      "id": "SUP-c0e01c22bf590258",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "SOURCES 1 — la page de titre et la page de copyright du fac-similé donnent : Self-Organizing Systems, Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, éditeurs Marshall C. Yovits et Scott Cameron, Symposium Publications Division, Pergamon Press, Oxford · London · New York · Paris, 1960, « Copyright © 1960 Pergamon Press Inc. », « LIBRARY OF CONGRESS CARD NUMBER: 60-12574 ». Le LCCN affiché par la fiche est donc vérifié sur la pièce elle-même. Pagination : le chapitre commence p. 108 et le suivant (Bishop) p. 122 selon la table des matières ; la discussion de Goldman se termine p. 121. « p. 108-121 » est exact."
+    },
+    {
+      "id": "SUP-69457252d73dc08a",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "SOURCES 2 — https://archive.org/details/mineralmetabolis0000clco, texte téléchargé via https://archive.org/download/mineralmetabolis0000clco/mineralmetabolis0000clco_djvu.txt (HTTP 200, 1 083 885 octets ; les fichiers sont servis librement, item des collections ServantsOfKnowledge / JaiGyan, aucun emprunt ni contournement). Page de titre : Mineral Metabolism, An Advanced Treatise, éd. C. L. Comar et Felix Bronner, Volume I « Principles, Processes, and Systems », Part A (chapitres 1-10), Academic Press, New York and London ; « Copyright © 1960 by Academic Press Inc. » ; « Library of Congress Catalog Card Number: 60-9067 ». Le chapitre 3, « Cybernetic Aspects of Homeostasis », Stanford Goldman, commence p. 61 (vérifié aussi via mineralmetabolis0000clco_page_numbers.json : feuillet 81 = p. 61) et se termine p. 100 (« 100 STANFORD GOLDMAN », ACKNOWLEDGMENTS et REFERENCES) ; le chapitre 4 (Chelation) commence p. 101. « p. 61-100 » est exact. Le locator « p. 63-64 » tombe précisément sur l'exposé des Types 1 à 5 de contrôle (proportionnel, proportionnel + dérivé, puis intégral) : il porte bien ce qu'il annonce."
+    },
+    {
+      "id": "SUP-b10244c0bc573ecd",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "SOURCES (accès et légitimité, déclaré tel quel) — les deux exemplaires sont hébergés ouvertement par l'Internet Archive et j'y ai accédé sans contournement, sans défi anti-robot, sans emprunt. Mais aucune autorisation d'ayant droit ne se constate sur l'une ni l'autre page. L'item SelfOrganizingSystems relève des collections « millionbooks » / « universallibrary » et ne porte qu'un texte de droits générique de l'Internet Archive (« This collection is free and open for everyone to use », dans SelfOrganizingSystems_original.xml), alors que l'ouvrage porte « Copyright © 1960 Pergamon Press Inc. ». L'item mineralmetabolis0000clco relève de JaiGyan / ServantsOfKnowledge (numérisation CFTRI-Mysore) alors que la page de copyright porte « All rights reserved. NO PART OF THIS BOOK MAY BE REPRODUCED IN ANY FORM [...] WITHOUT WRITTEN PERMISSION FROM THE PUBLISHERS ». Je ne conclus pas à l'illégitimité — je constate seulement que la mise à disposition n'est adossée à aucune autorisation vérifiable, et que la mention « Exemplaire numérisé à l'Internet Archive » ne doit pas être lue comme une garantie de statut. Les références bibliographiques, elles, résolvent intégralement."
+    },
+    {
+      "id": "SUP-aa02645627b6faa0",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "PROSE — le summary (« L'écart ne donne pas une information mais six : sa grandeur, sa vitesse, son accumulation, chacune en deux signes, dont le corps semble faire des usages différents ») est porté à la lettre par p. 108-110 : « At the right of the blood glucose compartment are six emerging information lines » ; les six lignes sont ΔC(+), ΔC(−), dC/dt(+), dC/dt(−), ∫ΔCdt(+), ∫ΔCdt(−). L'usage différencié est explicite : « The ΔC(−) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs », puis l'acheminement vers la médullosurrénale, le pancréas, le tissu adipeux, la corticosurrénale. Le « semble » du summary est exactement calibré sur les modalisations de Goldman (« it is possible that », « apparently », « not clear from the literature ») et sur son propre recul en discussion. Le hook est une question, il n'affirme rien au-delà."
+    },
+    {
+      "id": "SUP-fe62918ff1738f56",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "PROSE (réserve mineure, non bloquante) — le schéma aux six lignes est chez Goldman une « diagrammatic representation of part of the blood glucose control system », donc un cas ; le summary parle du corps en général. La généralisation reste couverte par la thèse même de la citation (« may all be used in homeostasis ») et par le « semble » : pas de débordement."
+    },
+    {
+      "id": "SUP-69281ff12e7ee8cf",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "Exactitude de fait (hors mandat, signalé comme demandé) — je n'ai relevé aucune inexactitude factuelle sur les champs affichés. Titre du chapitre, orthographe des noms (Yovits, Cameron, Comar, Bronner), lieux d'édition, années, volume, partie, pagination et les deux LCCN sont conformes aux pages de titre et de copyright que j'ai lues."
+    },
+    {
+      "id": "SUP-b1f2b40c2a9b4461",
+      "origin": "validated",
+      "path": "$.review.notes[11]",
+      "access": "n/a",
+      "text": "Outils — l'outil verify_reference du serveur documentary n'était pas exposé dans ma session ; je n'ai donc pas pu l'appeler. Les deux identifiants affichés étant des LCCN (et non des DOI ou ISBN), je les ai vérifiés directement sur les pages de copyright des ouvrages numérisés, ce qui est une preuve plus forte qu'une notice de base tierce. Aucun échec de résolution n'est à interpréter comme une réfutation."
+    },
+    {
+      "id": "SUP-90d4339eb9d835ce",
+      "origin": "validated",
+      "path": "$.review.notes[12]",
+      "access": "n/a",
+      "text": "Je n'ai ouvert aucun autre fichier du dépôt que corpus/review/regulation-proportionnelle-derivee-integrale.brief.json."
+    },
+    {
+      "id": "SUP-4ea70bf38830312d",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/regulation-proportionnelle-derivee-integrale/lecture.json"
+    },
+    {
+      "id": "SUP-0b390947f4defee6",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Le principe se prend dans les actes de 1960 ; la version enseignable est dans le chapitre jumeau de Mineral Metabolism, que Goldman signe la même année et qu'il annonce lui-même en note comme l'exposé élémentaire destiné aux biologistes. C'est de ce chapitre que l'accroche tire sa formulation en trois termes : action proportionnelle à l'écart, à sa vitesse de variation, à son intégrale dans le temps."
+    },
+    {
+      "id": "SUP-18caf0f4b6290df1",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le degré de certitude que l'auteur revendique est plus bas qu'une lecture pressée ne le laisserait croire, d'où le « semble » du résumé. Goldman écrit p. 110 : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them », et dans la discussion, p. 120 : « I am not arguing for the fact that physiological controls are as I have stated here, I merely suggested that these ideas might be of value ». C'est une grille de lecture assortie d'un programme d'expériences, pas un résultat de physiologie."
+    },
+    {
+      "id": "SUP-55ef3de4fbe7f568",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La phrase anglaise fait 169 caractères et ne pouvait pas passer telle quelle. Trois choix de traduction sont à connaître : « is not as widely appreciated in biological circles as it should be » est ramené à « trop peu reconnue des biologistes » ; « controls » est rendu par « contrôles » et non par « correcteurs », qui tirerait vers le réglage d'un correcteur, hors périmètre ; et le modal « may » est conservé en « peuvent ». Le texte anglais est conservé en entier et fait foi."
+    },
+    {
+      "id": "SUP-75395df9799f296c",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Ce que la carte n'emporte pas : la physiologie de ce chapitre est celle de 1959 et l'auteur la donne pour conjecturale. Les prolongements du même chapitre, la règle des antagonistes et le prix de la puissance (une commande tenue par deux antagonistes forts est rapide et exacte, et d'autant plus exposée à l'instabilité), appartiennent au principe mais n'ont pas tenu dans le résumé."
+    },
+    {
+      "id": "SUP-f67cf66b2f211735",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Les pages 111 à 114 et 120 du chapitre primaire n'ont été lues que sur la couche océrisée : rien de ce qu'elles portent ne doit passer en citation sans relecture sur image. La citation retenue, elle, a été relue deux fois sur l'image de la p. 108."
+    },
+    {
+      "id": "SUP-bbbd16d5450cf988",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Aucune réception francophone n'a été trouvée, et la recherche a porté sur deux moteurs seulement. Le rapport du Syracuse University Research Institute que Goldman cite en note n'a pas été localisé."
+    },
+    {
+      "id": "SUP-6911f86b4786a310",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "La référence, le localisateur et la note de traduction ont été ramenés à ce qui s'affiche ; le détail est dans corpus/evidence/regulation-proportionnelle-derivee-integrale/lecture.json."
+    },
+    {
+      "id": "SUP-93f2311839dd9caf",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "regulation-proportionnelle-derivee-integrale"
+    },
+    {
+      "id": "SUP-026e1cfa4d5c239c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Stanford Goldman"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-0036842b7ad34503",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le chapitre porte une seule signature, lue sur l'image de la page imprimée 108 : « STANFORD GOLDMAN », sous le titre « FURTHER CONSIDERATION OF CYBERNETIC ASPECTS OF HOMEOSTASIS », avec l'adresse « Department of Electrical Engineering, Syracuse University, Syracuse, N.Y. ». La note d'astérisque de la même page indique le financement : « This work has been sponsored by the Information Systems Branch of the Office of Naval Research ». La table des matières du volume, également ouverte, donne « Further Consideration of Cybernetic Aspects of Homeostasis ... by S. Goldman 108 » : aucun cosignataire nulle part. Deux précisions de date, vérifiées sur les pages liminaires du volume et non déduites. Le volume est daté de 1960 (Pergamon Press, Oxford, Londres, New York, Paris, copyright 1960 Pergamon Press Inc., Library of Congress card number 60-12574), mais sa page de titre le décrit comme les actes d'une conférence interdisciplinaire tenue les 5 et 6 mai 1959, coparrainée par l'Information Systems Branch de l'Office of Naval Research et l'Armour Research Foundation of Illinois Institute of Technology, Marshall C. Yovits en étant le président et Scott Cameron le secrétaire. Une carte qui écrirait 1960 écrit donc la date de publication des actes, pas celle de la communication : l'exposé est de mai 1959. Deuxième précision : le même auteur publie la même année, chez un autre éditeur, un chapitre plus long et plus élémentaire qui porte le même propos, « Cybernetic Aspects of Homeostasis », chapitre 3 de Mineral Metabolism. An Advanced Treatise, sous la direction de C. L. Comar et Felix Bronner, volume I « Principles, Processes, and Systems », partie A, Academic Press, New York et Londres, 1960, p. 61 à 100. Je l'ai ouvert et lu, et le titre du chapitre de 1960 dit lui-même qu'il est une suite (« Further Consideration ») : les deux textes se lisent ensemble, l'un ne remplace pas l'autre, et la section sur le glucose y est presque mot pour mot la même. Enfin, ce que l'attribution ne doit pas laisser croire. Goldman n'est l'auteur ni de la notion d'homéostasie, qu'il rapporte à Walter B. Cannon et, plus loin en amont, à Claude Bernard, ni du trio proportionnel, dérivé, intégral, qu'il prend à la théorie des asservissements et dont il cite les sources (H. S. Black, 1934, pour la rétroaction négative stabilisatrice, Ivan Getting, 1947, pour les types de contrôle, Norbert Wiener, 1948, pour le mot « cybernétique »). Ce qui lui revient en propre, et qui est l'objet de la fiche, est la transposition : soutenir que le corps vivant émet six informations d'écart distinctes, trois grandeurs et deux signes, qu'il les achemine vers des organes différents et qu'il en fait des usages différents. Dernier point de prudence : les pages 120 et 121 du chapitre sont une discussion transcrite entre plusieurs participants nommés, Schmidt, Jones, Powers et Goldman. Ces répliques ne sont pas du texte signé et ne doivent pas être citées comme telles."
+    },
+    {
+      "id": "SUP-c251ab1f9aa83734",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Une idée trop peu reconnue des biologistes est que les contrôles proportionnel, dérivé et intégral peuvent tous être utilisés dans l'homéostasie."
+    },
+    {
+      "id": "SUP-15570ce5bb28046d",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Stanford Goldman, « Further Consideration of Cybernetic Aspects of Homeostasis », dans Marshall C. Yovits et Scott Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Oxford, Pergamon Press, 1960, p. 108 à 121. Library of Congress card number 60-12574."
+    },
+    {
+      "id": "SUP-a7af76d9ad550edd",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 108, première phrase de la section 1, « Proportional, Derivative and Integral Controls in Homeostasis »"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-5d72fb05178e03ab",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "A concept which is not as widely appreciated in biological circles as it should be is that proportional, derivative and integral controls may all be used in homeostasis."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-8522c15a1bf296df",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 21 août 2026. Aucune traduction française publiée de ce chapitre n'a été identifiée. La phrase anglaise, relue caractère par caractère sur l'image de la page 108 et non sur la couche OCR, fait 169 caractères : elle ne peut pas passer telle quelle. Plutôt que de la couper, je l'ai traduite, et trois choix doivent être connus. Premièrement, « is not as widely appreciated in biological circles as it should be » est rendu par « trop peu reconnue des biologistes » : le comparatif est ramené à un « trop peu » qui en dit la même chose (moins reconnue qu'elle ne devrait l'être), et « biological circles », les milieux biologiques, est resserré sur les personnes, les biologistes. La forme littérale, « Une idée trop peu reconnue dans les milieux biologiques est que les contrôles proportionnel, dérivé et intégral peuvent tous être utilisés dans l'homéostasie », fait 159 caractères et passe le plafond de neuf caractères : c'est la seule raison de ce resserrement. Deuxièmement, « controls » est rendu par « contrôles » et non par « correcteurs » ou « actions correctrices » : le vocabulaire de l'automaticien tirerait la phrase vers le réglage d'un correcteur, c'est-à-dire vers ce que le périmètre du domaine rejette, alors que Goldman parle de types d'information d'écart auxquels un organisme répond. Troisièmement, le modal « may » est conservé en « peuvent » : Goldman avance une possibilité, il ne décrit pas un fait établi, et il le redit lui-même dans la discussion qui suit son exposé. Le texte anglais est conservé en entier dans original_text : c'est lui qui fait foi."
+    },
+    {
+      "id": "SUP-b04380f788f19042",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Goldman, S. (1960). Further Consideration of Cybernetic Aspects of Homeostasis. Dans M. C. Yovits & S. Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959 (p. 108 à 121). Oxford : Pergamon Press, International Tracts in Computer Science and Technology and their Application, volume 2. Source primaire. Exemplaire numérisé sur Internet Archive, item SelfOrganizingSystems, collections millionbooks et universallibrary, sans champ access-restricted-item dans /metadata : aucun contrôle d'accès rencontré ni contourné. Couche OCR complète téléchargée en text/plain (HTTP 200, 695 215 octets), chapitre lu en entier, discussion transcrite comprise. Les pages 108, 109 et 110, qui portent le point de principe, ont ensuite été rendues en image par le service IIIF de l'item (feuillets 123, 124 et 125, soit page imprimée = feuillet moins 15) et relues à l'oeil, la citation retenue ayant été contrôlée une seconde fois sur un agrandissement de la seule phrase."
+    },
+    {
+      "id": "SUP-a5d92610e128c67f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 60-12574"
+    },
+    {
+      "id": "SUP-30b916e60b10fecb",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/download/SelfOrganizingSystems/SelfOrganizingSystems_djvu.txt"
+    },
+    {
+      "id": "SUP-a5aad58dfb6a4b5b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Goldman, S. (1960). Cybernetic Aspects of Homeostasis. Chapitre 3 de C. L. Comar & F. Bronner (dir.), Mineral Metabolism. An Advanced Treatise, volume I, Principles, Processes, and Systems, partie A (p. 61 à 100). New York et Londres : Academic Press. Copyright 1960 Academic Press Inc., Library of Congress Catalog Card Number 60-9067. Texte du même auteur, annoncé en note de bas de page 108 du chapitre primaire comme sa version longue et élémentaire, et retrouvé ouvert. Exemplaire numérisé sur Internet Archive, item mineralmetabolis0000clco, collections ServantsOfKnowledge et JaiGyan, sans champ access-restricted-item dans /metadata. Couche OCR complète téléchargée (HTTP 200, 1 083 885 octets) et chapitre lu en entier ; les pages 63 et 64, qui portent la typologie des cinq types de contrôle, ont été rendues en image par le service IIIF (feuillets 83 et 84, soit page imprimée = feuillet moins 20) et relues à l'oeil."
+    },
+    {
+      "id": "SUP-ba0b88ffa454172a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 60-9067"
+    },
+    {
+      "id": "SUP-eb359132a2c4b040",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://archive.org/download/mineralmetabolis0000clco/mineralmetabolis0000clco_djvu.txt"
+    },
+    {
+      "id": "SUP-35e04a59b9fe824f",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Le principe, dans les termes de Goldman, sans l'appareil. Il commence par définir les deux mots, en note de bas de page 108, et la définition vaut d'être gardée telle quelle parce qu'elle est datée et située : « The name \" cybernetics \" is used to describe the entire field of control and communication (information) theory, whether in the machine or in the animal. The maintenance of a prescribed internal environment in the body of an organism, in spite of wide fluctuations in its activity and in its external environment, is called \" homeostasis. \" » (les guillemets doubles sont ceux de l'imprimé, relevés sur l'image). Le propos du chapitre est annoncé dès la première ligne de la page 108 : « The purpose of this paper is to discuss certain topics in the application of control system theory and information theory to the analysis of homeostasis. » La thèse vient immédiatement après, en tête de la section 1, intitulée « PROPORTIONAL, DERIVATIVE AND INTEGRAL CONTROLS IN HOMEOSTASIS » : « A concept which is not as widely appreciated in biological circles as it should be is that proportional, derivative and integral controls may all be used in homeostasis. » Ce que cela veut dire tient à une figure et à un décompte. La figure 1, page 109, représente une partie du système de régulation du glucose sanguin, et Goldman écrit : « At the right of the blood glucose compartment are six emerging information lines, in accordance with this point-of-view. » Ces six lignes sont, dans les légendes de la figure lues sur l'image : ΔC(+) et ΔC(-), « Error proportional information » ; dC/dt(+) et dC/dt(-), « Error derivative information » ; ∫ΔCdt(+) et ∫ΔCdt(-), « Integral of error information ». Autrement dit trois informations différentes sur un même écart, sa grandeur, sa vitesse de variation et son accumulation dans le temps, chacune en deux versions selon le signe. Le point de principe est que ces six informations ne vont pas au même endroit et ne servent pas à la même chose. Sur le signe d'abord, page 109 : « The ΔC(-) line is distinguished from the ΔC(+) line because its information does not necessarily go to the same set of organs. » Puis, page 110, la phrase qui porte tout le chapitre : « Of special interest is the fact that all six types of information indicated in the figure appear to be used in the regulation of blood glucose ; to some extent, at least, the body distinguishes between them and makes different use of them. » Et l'illustration, même page : « There is evidence to indicate that the liver glycogen is acted upon in a different way by proportional, derivative and integral controls. » Ce que ces trois mots désignent, Goldman le dit sans mathématiques dans son chapitre jumeau de Mineral Metabolism, page 64, en une échelle de cinq types que je transcris depuis l'image : « Type 1. Directed correction. Constant (+ or -) \" off \" or \" on \" action to reduce error. Example : thermostat with off-or-on heater. This is the crudest type of control. Type 2. Proportional control. Action proportional to error. Example : thermostat with heating current proportional to the temperature deviation. This is ordinarily faster and more accurate than Type 1. Type 3. Proportional plus derivative control. Action proportional to the rate of change of the error is used to prevent overshoot (i.e., error in the opposite direction). This is used in gunfire control to anticipate the location of the target on the basis of its present velocity. Type 4. The foregoing plus integral control. Action proportional to the time integral of the error is introduced. This increases the controlling action if the system is failing to reduce the error sufficiently. Integral control increases the accuracy of control and reduces any tendency of the system to drift into error. Type 5. Control due to anticipation of future events. This is the type of control used by the driver of an automobile when he sees a turn in the road coming ahead. » Deux prolongements du même chapitre de 1960 appartiennent au principe et non à la physiologie, et un rédacteur de carte doit savoir qu'ils existent. Le premier est la règle des antagonistes, page 111 : « In linear electrical feedback systems, a negative error is in all respects similar to a positive error except for a change in sign, which means merely a change in direction of current flow. The same feedback mechanism which corrects a positive error will likewise correct a negative error. This ability to handle positive and negative errors with the same mechanism is not a universal property of feedback control systems. In biological systems, the mechanism to correct positive errors is frequently different from that correcting negative errors. In such a case, one mechanism may be called the antagonist of the other. » Le second est le prix de la puissance, pages 112 et 113 : « The most dangerous situation from a stability point-of-view arises in the case of a control which is maintained by the balance of two strong antagonists. When operating properly, such a control is both fast and accurate. However, the stronger the control (the greater the feedback effect) the greater the danger of instability when the balance between antagonists is impaired. » Goldman précise que le mot instabilité a ici « a special technical meaning which is more or less equivalent to the terms \" vicious cycle \" or \" runaway process \" » (page 112), que la cause en est un défaut de calendrier, « it is a timing error which prevents the desired balance. The actions of the controlling agent and its antagonist start too late so that instead of balancing each other, they act regeneratively » (page 113), et que dans un corps le résultat n'est pas une oscillation mais un déplacement durable du point de fonctionnement : « in the case of homeostatis, instability is not usually exhibited as an oscillation, but rather as a pathological displacement of the homeostatic balance » (page 114, la coquille sur homeostatis est dans l'imprimé). Il faut enfin garder le degré de certitude que l'auteur revendique, parce qu'il est plus bas que ne le laisserait croire une lecture pressée. Page 110 : « Although the statements made seem reasonable, we actually have relatively little quantitative information in the literature upon which to base them. » Page 110 encore : « The present author is not competent to judge how much of this information is already in the literature. » Et dans la discussion qui suit l'exposé, page 120, en réponse au président de séance : « I am not arguing for the fact that physiological controls are as I have stated here, I merely suggested that these ideas might be of value when you are studying homeostatic controls. » Ce que Goldman propose est donc une grille de lecture assortie d'un programme d'expériences, pas un résultat de physiologie."
+    },
+    {
+      "id": "SUP-244397e03b289b40",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "DÉCISION DE PÉRIMÈTRE, tranchée avant toute rédaction et rendue explicite ici comme la mission le demandait : le candidat entre. Le motif, vérifié sur le texte et non sur la cartographie. Sur la première frontière de rejet, la biologie de la régulation : l'objet réel du chapitre n'est pas la physiologie étudiée pour elle-même. Goldman ne rapporte aucune expérience, ne produit aucune donnée, écrit lui-même page 110 que « we actually have relatively little quantitative information in the literature upon which to base » les rattachements qu'il propose, et se déclare « not competent to judge how much of this information is already in the literature ». Le glucose sanguin est le support d'une démonstration, pas son objet : la section 6 du chapitre, pages 117 à 120, ne conclut rien sur le glucose et formule des questions expérimentales à poser aux physiologistes. Sur la seconde frontière, la théorie du contrôle au sens de l'ingénieur : il n'y a dans ce chapitre ni fonction de transfert, ni transformée, ni critère de stabilité, ni gain, ni dimensionnement d'aucun correcteur. Les seules notations sont ΔC, dC/dt et ∫ΔCdt, qui servent à nommer trois informations d'écart, et la section 3 traite l'instabilité par un récit de calendrier (l'agent et son antagoniste agissent trop tard et se renforcent au lieu de se compenser), pas par un critère. Ce qui reste, une fois ces deux lectures écartées, est exactement ce que le périmètre appelle la littérature de l'homéostasie et de la régulation du vivant : un système vivant ne travaille pas sur une information d'écart mais sur six, il les distingue et il en fait des usages différents. La première condition du test d'entrée est donc remplie, la deuxième aussi (signature unique, documentée, voir la note d'attribution)."
+    },
+    {
+      "id": "SUP-9ddc753b4eb28120",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Troisième condition du test d'entrée, l'enseignabilité : elle n'est pas remplie par le texte primaire, et c'est une réserve qui doit peser sur la rédaction de la carte. Goldman écrit dès sa deuxième phrase, page 108 : « It is assumed that the reader already has a working knowledge of both of these theories and we shall only discuss the ways in which they apply to homeostasis. » Le chapitre est écrit pour un auditoire déjà formé, et sa section 5 sur la quantification et l'information binaire est franchement technique. Ce qui est enseignable, c'est ce qu'il énonce, pas la manière dont il l'énonce. La carte doit donc porter le point de principe (trois informations d'écart, deux signes, six lignes, et la distinction que le corps opère entre elles) et jamais l'appareil. Élément utile trouvé en cours de lecture et qui n'était pas dans la cartographie : la version enseignable existe, elle est de Goldman lui-même, et elle est ouverte. C'est le chapitre 3 de Mineral Metabolism, dont la note de bas de page 108 dit qu'il « includes a survey of the elements of control system theory and information theory for biologists who have no previous acquaintance with these theories ». On y trouve les exemples que le chapitre primaire n'a pas : le thermostat tout ou rien, l'hôtesse qui met un glaçon dans le punch et celle qui goûte et rajoute de la glace (page 63, boucle ouverte contre boucle fermée), la main qui va vers la salière et la voiture qu'on tient sur la route (page 64, citation d'Ivan Getting). Si le rédacteur cherche une accroche, elle est là, et elle est du même auteur et de la même année."
+    },
+    {
+      "id": "SUP-4eac35914ced4cba",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Réserve d'OCR levée pour la citation, maintenue pour le reste. La cartographie prévenait que la numérisation est une numérisation de masse, avec des coquilles sur les guillemets et les césures, et c'est exact : la couche texte donne par exemple « ' Cybernetic Aspects of Homeostasis ill » pour le titre courant de la page 111, « Integral-or-error » là où la même phrase écrit ailleurs « integral-of-error », et « AC(+) » ou « dC/d*(+) » pour ΔC(+) et dC/dt(+). La phrase retenue n'a donc pas été prise sur l'OCR : elle a été relue sur l'image de la page 108, puis une seconde fois sur un agrandissement de la seule phrase, obtenu par une requête de région du service IIIF. Elle ne comporte ni césure ni guillemet et se lit sans ambiguïté. Les pages 109 et 110, dont sont tirés les passages sur les six lignes et sur la distinction que le corps opère entre elles, ont elles aussi été rendues en image et relues, de même que les légendes de la figure 1. En revanche, les passages cités dans definition_de_lauteur qui viennent des pages 111 à 114 et 120 (antagonistes, instabilité, déplacement pathologique, réplique dans la discussion) ont été lus sur la couche OCR seule : leur orthographe est vraisemblable mais n'a pas été contrôlée sur l'image, et aucun d'eux ne doit passer en citation de carte sans cette relecture."
+    },
+    {
+      "id": "SUP-bc732211265b64d2",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Ce que le texte doit à d'autres, et qui interdit d'en faire une origine. Ni l'homéostasie ni le trio proportionnel, dérivé, intégral ne sont de Goldman : le chapitre jumeau de Mineral Metabolism, page 61 et 62, attribue le terme homéostasie à Walter B. Cannon (« about 30 years ago »), en fait remonter les idées à Claude Bernard, donne à H. S. Black (1934) la théorie générale de la rétroaction négative stabilisatrice, née de la stabilisation des amplificateurs sur les lignes téléphoniques transcontinentales, et rappelle que c'est Wiener, en 1948, qui a donné au champ le nom de cybernétique. La typologie en cinq types de la page 64 est illustrée par une longue citation d'Ivan Getting (1947). Aucun de ces textes n'a été ouvert dans cette lecture. Ce qui revient à Goldman est la transposition et le décompte des six lignes, rien de plus, et la carte ne doit pas dater de 1959 ou de 1960 des notions qui lui sont antérieures."
+    },
+    {
+      "id": "SUP-8f83428532f56c92",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Les deux travaux antérieurs signalés par la cartographie ont été cherchés. Le chapitre de Mineral Metabolism a été trouvé, ouvert et lu en entier : c'est le chapitre 3 du volume I, partie A, de l'ouvrage dirigé par C. L. Comar et Felix Bronner, Academic Press, 1960, pages 61 à 100 (la table des matières du volume et le dernier titre courant du chapitre concordent sur la page 100 ; une notice bibliographique tierce rencontrée en recherche donnait « p. 61 à 101 », je ne l'ai pas retenue puisque je n'ai pas pu ouvrir la publication qui la porte, et que le document lui-même dit 100). Le rapport du Syracuse University Research Institute, Report No. EE494-581T1, janvier 1958, n'a en revanche pas été trouvé : la recherche plein texte d'Internet Archive sur « EE494 » ne rend aucun résultat, et une recherche web sur le titre et la cote n'a rien donné. Son existence n'est donc établie que par la note de bas de page 108 du chapitre primaire, qui le décrit et le date. Je ne peux pas dire ce qu'il contient au delà de ce que cette note en dit."
+    },
+    {
+      "id": "SUP-f411b6e066848093",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Réception francophone : rien trouvé, et la recherche est faible. La cartographie avait cherché sur Persée et n'avait retenu ni physiologie pure ni didactique. J'ai ajouté une interrogation de HAL en plein texte croisant Goldman, homéostasie et cybernétique : un seul document, une thèse de neurosciences de 2019 sans rapport. Aucune traduction française de l'un ou l'autre chapitre n'a été identifiée. Ces deux constats reposent sur deux moteurs seulement : ce sont des recherches qui n'ont rien rendu, pas une démonstration d'absence."
+    },
+    {
+      "id": "SUP-8cc037352125ed0b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Ce que la carte ne doit pas emporter avec le principe. La physiologie de ce chapitre est celle de 1959 et elle est datée : le rôle de l'adénohypophyse y est explicitement donné pour incertain (« The mechanism of action of the adenohypophysal hormone is not certain »), l'hypothèse d'un oedème comme cercle vicieux de l'aldostérone y est présentée comme une possibilité (« Whether or not the foregoing is the true explanation of various edemas »), et le chapitre jumeau va jusqu'à se demander si le diabète relève d'une instabilité d'asservissement. Rien de tout cela n'est un acquis, et rien de tout cela n'appartient au point de principe. Une carte qui reprendrait un de ces exemples ferait passer pour de la connaissance médicale ce que l'auteur donne pour une conjecture de méthode."
+    },
+    {
+      "id": "SUP-7440355292a6b8d2",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Frontière avec le domaine voisin fermé, vérifiée plutôt que présumée. Le texte pourrait sembler relever de systems-thinking par sa section 3, qui décrit une oscillation qui s'amplifie et un système qui se bloque loin de sa consigne. Ce n'est pas le cas selon la table du périmètre : Goldman ne modélise ni ne simule, il n'étudie pas le comportement dans le temps qu'engendre une structure de boucles et de stocks, il énonce une condition portant sur l'information dont un régulateur dispose et sur le calendrier de ses actions. C'est la colonne cybernetics. Le mot delay ne figure pas dans son vocabulaire, il parle de temps d'action T1 et T2 et d'erreur de calendrier."
+    },
+    {
+      "id": "SUP-2939d77933e9e20c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Textes cités par Goldman et non ouverts dans cette lecture : Cannon, The Wisdom of the Body (1932) ; Black, Stabilized feedback amplifiers, Bell System Technical Journal (1934) ; Getting, Servo systems, dans Theory of Servo Mechanisms (1947) ; Wiener, Cybernetics (1948) ; Goldman lui-même, Information Theory (Prentice-Hall, 1953) ; Anderson et Long, Endocrinology (1947), cité en note page 118 sur le pancréas comme transducteur de commande. Aucun n'a été consulté, ni en texte ni en notice."
+    }
+  ],
+  "estimated_tokens": 18412,
+  "status": "READY"
+}

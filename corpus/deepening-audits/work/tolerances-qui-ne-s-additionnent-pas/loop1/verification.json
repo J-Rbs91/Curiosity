@@ -1,0 +1,251 @@
+{
+  "concept_id": "tolerances-qui-ne-s-additionnent-pas",
+  "candidate_sha256": "334d3760b8bf68dc97a71950789c0f3459192db61156882eb105fb221f5f06e2",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 (lecture) : circuit de m pièces dont on cherche la tolérance de la résistance d'ensemble, somme des résistances ; figure 87 pour m égal à neuf (aussi SUP-de9a4f15). Mise en situation fidèle."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim (SUP-7c9cbf25) définissent la tolérance comme « the range between the maximum and minimum possible values of the quality » ; ils ne portent pas l'élément « à l'intérieur de laquelle on la déclare bonne » (critère d'acceptation), que le claim ajoute."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 : « The answer to the question is obviously R12 + ... − R11 ... » ; SUP-7d69b24f/SUP-2b231720 : additionner les écarts extrêmes est l'usage en vigueur."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-de9a4f15 et SUP-7c9cbf25 : la tolérance additive va de ΣR̄i − 3Σσi à ΣR̄i + 3Σσi et l'étendue à six sigmas de la résultante « tient loin à l'intérieur »."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence dérivée, non attribuée à Shewhart : la plage additive (somme des maxima moins somme des minima, SUP-7c9cbf25) n'est atteinte que si les pièces sont ensemble à l'extrême ; Shewhart objecte précisément sur la rareté de ces combinaisons (p. 254)."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-e2a21c81 : page de titre « By W. A. SHEWHART, Ph.D., Member of the Technical Staff, Bell Telephone Laboratories, Inc. »."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-b00df733 (full-text, corrobore), SUP-75367ab1, SUP-980c9ee8 : ouvrage, Van Nostrand, 1931 ; SUP-7c9cbf25 et SUP-bcb2e20e : la question est posée p. 253."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-b3cb0ea7 : feuillet n262 « CHAPTER XVII / Design limits on Variability » ; SUP-3d4a5a13 concorde."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim dans SUP-7c9cbf25 et SUP-bcb2e20e ; traduction fidèle."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 (p. 254) : « whether or not it is economical to allow in design for an over-all tolerance range equal to the range between the possible maximum and minimum » ; SUP-00cf45fc, SUP-4fbf395a concordent."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 : la réponse additive est « obviously » juste « if we hold to the definition of a tolerance as the range between the maximum and minimum possible values » ; SUP-2b231720/SUP-7d69b24f : elle « découle de la définition d'atelier ». Le signal (SUP-e2a21c81, terme « exacte ») porte sur l'exactitude d'une borne d'attribution, sans rapport avec ce claim."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-e2a21c81 et SUP-7c9cbf25 : la définition citée est p. 253, citation verbatim, traduction fidèle."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ed276a14/SUP-3fe26198 : Shewhart ne dit pas que la pratique additive est fausse, l'enjeu est un coût et non une erreur de calcul ; SUP-7c9cbf25 : réponse « obviously » juste sous la définition par le possible."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "Dérivation directe de la réponse imprimée p. 253 (SUP-7c9cbf25) : R12 + ... + Rm2 − R11 − ... − Rm1, pour une résultante qui est une somme."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ed276a14/SUP-3fe26198 : « l'enjeu est un coût, pas une erreur de calcul » ; SUP-7c9cbf25 : la question est s'il est économique de prévoir l'étendue entre extrêmes possibles."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence logique d'une somme, cohérente avec SUP-7c9cbf25 (combinaison qui « will add up to either the maximum or minimum limit »)."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 et SUP-e2a21c81 : p. 254, « When the number m ... is large ... chosen at random ... add up to either the maximum or minimum limit is very small indeed » ; paraphrase fidèle."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ed276a14/SUP-3fe26198 : le résultat suppose l'assemblage au hasard et l'indépendance des pièces, un appariement sélectif le mettrait en défaut ; SUP-7c9cbf25 : « chosen at random ». L'image des bacs est illustrative."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ed276a14/SUP-3fe26198 : le résultat suppose l'assemblage au hasard et l'indépendance, et un appariement sélectif le mettrait en défaut ; la dépendance de la suite à cette hypothèse en découle."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim disent « very small indeed » (p. 254, et seulement « when the number m ... is large ») et « relatively very small » (p. 255) ; « pratiquement aucune chance » durcit cette improbabilité et omet la condition sur le grand nombre de pièces."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 : les hypothèses de Shewhart à ce point introduisent les écarts types σ1 ... σm ; transition narrative fidèle."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim, et le signal est vide ; la définition de l'écart type (écart typique à la valeur centrale, petit/grand selon la fabrication) n'est établie par aucun support du bundle pour ce claim."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-bcb2e20e : « la formule imprimée en haut de la p. 255 » ; SUP-7c9cbf25/SUP-45a92230 : écart type de la somme/résultante."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 : σ = √(σ1² + ... + σm²) ; SUP-701085c0, SUP-8c1e694f concordent. « n'additionne rien » se lit, dans la phrase même, comme « n'additionne pas les écarts types »."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim placent à la p. 254 l'hypothèse « controlled about average values ... with standard deviations » (SUP-7c9cbf25) et l'hypothèse des tolérances à trois sigmas « explicitement au paragraphe 5 » (SUP-3fe26198, SUP-ed276a14), mais n'établissent pas que l'adoption de R̄i ± 3σi, partie de la condition énoncée en C026, figure p. 254."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 : résistances « controlled about average values ... with standard deviations » et tolérance adoptée R̄i ± 3σi ; SUP-3fe26198/SUP-ed276a14 concordent."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (SUP-3fe26198, SUP-ed276a14) disent seulement que les limites à trois sigmas ne coïncident avec la racine des carrés des tolérances que si chaque tolérance a été posée à trois sigmas ; ils ne portent ni l'explication par des plages couvrant des parts différentes de la production, ni que la formule « ne dirait plus rien de la tolérance »."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25 : cas d'école « each of the m standard deviations is equal to σ1 » donnant σ = √m σ1, figure pour m = 9 ; arithmétique exacte, présentée comme supposition."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Dans la supposition de C028 : tolérance additive ΣR̄i ± 3Σσi (SUP-de9a4f15, SUP-7c9cbf25) soit ±27σ1, contre ±9σ1 pour les limites à trois sigmas de la résultante ; rapport trois, dérivation exacte."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim disent que la figure 87 montre, pour neuf pièces, la tolérance additive et l'étendue à six sigmas qui « tient loin à l'intérieur » ; ils n'établissent pas qu'elle figure des pièces également dispersées ni le rapport trois que « C'est ce que » lui fait montrer."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-de9a4f15 : « Le titre de la figure porte la conclusion de Shewhart, « Illustrating Proper Way to Set Limits » » ; SUP-7c9cbf25, SUP-3d4a5a13 concordent."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-efa9980b/SUP-c3c198cb : « the practice of adding tolerance limits may be uneconomical » ; SUP-7c909bab : p. 255. Modal conservé."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-efa9980b/SUP-c3c198cb : « because the chance is relatively very small that a resultant resistance would ever lie outside the limits ΣR̄i ± 3σ », σ étant l'écart type de la somme (SUP-7c9cbf25) ; « relativement » conservé."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-36fc01d6, SUP-c4056072, SUP-c0a13b71 : le modal « may be » est conservé, l'affirmation « reste une improbabilité et non une impossibilité ». Le signal (SUP-bcb2e20e, « adjectif ») ne manque pas : les appuis fournis portent déjà la matière."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-8c1e694f/SUP-1bd3aa5e : la racine de la somme des carrés est « le cas de la somme », cas particulier de la formule générale à coefficients."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-b3cb0ea7 : « le § 6 « The General Problem of Setting Tolerances on Controlled Product » s'ouvre page 256 »."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-45a92230 et SUP-7c9cbf25 : au paragraphe 6, X est une fonction quelconque F des Xi, non limitée aux grandeurs qui s'ajoutent."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-e2a21c81 : « expanded in a Taylor's series » p. 256 ; SUP-45a92230/SUP-8c1e694f : développement au premier ordre."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-8c1e694f/SUP-1bd3aa5e : « coefficients de sensibilité » ai issus du développement de Taylor au premier ordre ; la glose « de combien l'ensemble bouge quand la pièce bouge » rend fidèlement un coefficient de sensibilité."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25/SUP-8c1e694f : σX = √(a1²σ1² + ... + am²σm²), soit (aiσi)²."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-8c1e694f : « la racine de la somme des carrés simple n'en est que le cas où ces coefficients valent un » ; SUP-1bd3aa5e : « le cas de la somme ... celui de la p. 255 »."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-8c1e694f : cas particulier de la formule générale ; SUP-bcb2e20e : « rien n'y parle ... de loi generale »."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-e2a21c81 : « Making application of Tchebycheff's theorem » p. 257 ; SUP-7c9cbf25 : borne de probabilité empruntée ; SUP-2b231720/SUP-7d69b24f : nommé dans le texte."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-45a92230 : « la valeur 0,9973 ne vaut que si les composants sont normaux » ; SUP-7c9cbf25 : « if the components are normal ... P3σx is equal to 0.9973 »."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-2b231720 : « Ni la pratique qu'il critique ni les mathématiques qu'il emploie ne sont de lui ... Ce qui lui revient est l'objection et sa mesure » ; SUP-7d69b24f, SUP-e2a21c81 concordent."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-5a988457 et SUP-7c9cbf25 : Shewhart conclut p. 259 que la spécification doit inclure valeur attendue et écart type de chaque qualité ; l'insuffisance d'une plage pour calculer la dispersion en découle (σ de la résultante requiert les σi)."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-7c9cbf25/SUP-5a988457 : la spécification doit inclure « expected value X̄i and standard deviation σi » ; la formule de la résultante requiert ces deux quantités par pièce."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-5a988457 et SUP-7c9cbf25 : citation verbatim « the specification of control should include ... »."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-5a988457 : « Ce qu'il faut exiger d'un fournisseur n'est pas une tolérance plus serrée mais une information d'une autre nature » ; SUP-7c9cbf25 concorde (p. 258-259)."
+    }
+  ]
+}
