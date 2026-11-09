@@ -1,0 +1,877 @@
+{
+  "protocol_version": 2,
+  "concept_id": "effet-de-cadrage",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "f616cbc16f826d4e9bafc822dc9de7cdd7e4f4f32b447badc04d75ad75a4e102",
+  "validated_sha256": "262c50d1021f1a6283be2716098d8c3dae5d4b79f5f4c6fcb2d0b565cb8b8c02",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "2af278b69453dd2630f94f02d7294a7427548e2aabf4644b7058b34f6abf1599"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 167-192.",
+        "cles": [
+          "isbn:9780521351492",
+          "url:archive.org/details/decisionmaking"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », The Journal of Business, vol. 59, n° 4 (supplément), 1986, p. S251-S278.",
+        "cles": [
+          "doi:10.1086/296365",
+          "url:doi.org/10.1086/296365"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "metadata-only",
+        "label": "Amos Tversky et Daniel Kahneman, « The Framing of Decisions and the Psychology of Choice », Science, vol. 211, n° 4481, 30 janvier 1981, p. 453-458.",
+        "cles": [
+          "doi:10.1126/science.7455683",
+          "url:doi.org/10.1126/science.7455683"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 3,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Nous tenons pour acquis qu’une décision porte sur ce qui va se passer et non sur la phrase qui le décrit. C’est cette certitude que le travail d’Amos Tversky et Daniel Kahneman met en difficulté."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Le résultat qui l’ébranle tient en deux énoncés d’un même problème, qui ne diffèrent que par la façon de compter les issues : les choix majoritaires s’y renversent. Et l’explication ne suffit pas à défaire ce renversement, au point que les auteurs écrivent : « Par la persistance de leur attrait, les effets de cadrage ressemblent davantage à des illusions visuelles qu’à des erreurs de calcul. »"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Deux énoncés, une épidémie",
+      "text": "Le problème, dit de la maladie asiatique, suppose une épidémie dont on attend qu’elle tue 600 personnes, et deux programmes pour y faire face. Dans le premier énoncé, les issues se comptent en vies sauvées : un programme sûr sauve 200 personnes, l’autre est un pari. Dans le second, les mêmes programmes se comptent en vies perdues : d’un côté la mort certaine de 400 personnes, de l’autre le programme risqué. Sur 600 personnes menacées, en sauver 200 à coup sûr et en laisser mourir 400 à coup sûr désignent la même issue."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Deux énoncés, une épidémie",
+      "text": "Les choix se renversent. En vies sauvées, 72 % des répondants retiennent le programme sûr et 28 % le pari ; en vies perdues, 22 % retiennent la mort certaine de 400 personnes et 78 % le programme risqué. Le chapitre, qui numérote les deux énoncés 5 et 6, tranche : « Problems 5 and 6, however, are essentially identical ». Ils ne diffèrent que par la manière de compter, en vies sauvées « relative to an expected loss of 600 lives if no action is taken », ou en vies perdues."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Ce que l’invariance exige, et ce qu’elle n’exige pas",
+      "text": "L’exigence à laquelle ces réponses contreviennent s’appelle l’invariance : « different representations of the same choice problem should yield the same preference », des représentations différentes d’un même problème de choix devraient conduire à la même préférence. Elle ne dit pas ce qu’il faut préférer : elle demande seulement que la préférence entre des options soit indépendante de leur description. Parmi les hypothèses de fond de la théorie de l’utilité espérée, c’est celle que personne ne conteste, si élémentaire qu’elle est « tacitly assumed in the characterization of options rather than explicitly stated as a testable axiom » : on la suppose en décrivant les options, sans l’énoncer comme un axiome à tester."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Ce que l’invariance exige, et ce qu’elle n’exige pas",
+      "text": "Tout le poids porte alors sur « un même problème ». Si deux présentations diffèrent par leurs conséquences, préférer l’une n’a rien d’un effet de cadrage : c’est une préférence ordinaire. L’intérêt des deux énoncés de l’épidémie est que l’écart y est confiné à la façon de compter les issues."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Ce que l’invariance exige, et ce qu’elle n’exige pas",
+      "text": "Le chapitre étend le constat : « variations in the framing of decision problems produce systematic violations of invariance and dominance that cannot be defended on normative grounds ». Indéfendables sur le plan normatif veut dire qu’aucune norme du bon choix ne les justifie, non que ceux qui les commettent y renoncent. La dominance, seconde exigence nommée, cède sur un autre problème du chapitre, qui pose deux décisions à prendre ensemble : 73 % des répondants y choisissent une combinaison de deux paris dominée par celle qu’ils rejettent, et la dominance devient invisible dès que les deux décisions sont présentées séparément."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Pourquoi un mot suffit à déplacer le choix",
+      "text": "Le mécanisme vient de la théorie des perspectives, dont le chapitre rappelle l’architecture. Le choix s’y fait en deux temps : une analyse préliminaire qui cadre le problème, c’est-à-dire fixe les actes, les éventualités et les issues à considérer, puis une évaluation. Les issues n’y sont pas jugées comme des états de richesse, mais comme des écarts, positifs ou négatifs, par rapport à un point de référence neutre. La courbe qui leur donne une valeur est en S, concave dans les gains, convexe dans les pertes, et plus raide du côté des pertes : c’est l’aversion aux pertes."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Pourquoi un mot suffit à déplacer le choix",
+      "text": "Le cadrage agit au premier temps : « The reference point can also be shifted by a mere labeling of outcomes », le point de référence peut être déplacé par le seul étiquetage des issues. Appliqué à l’épidémie, cela se lit ainsi : comptées en vies sauvées, à partir des 600 morts attendus si rien n’est fait, les issues apparaissent comme des gains, et la majorité fuit le risque ; comptées en vies perdues, elles apparaissent comme des pertes, et la majorité le recherche."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Pourquoi un mot suffit à déplacer le choix",
+      "text": "Le cadre ne tient pas aux seuls mots de l’énoncé : il dépend de la manière dont le problème est présenté, mais aussi des « norms, habits, and expectancies of the decision maker », les normes, les habitudes et les attentes de celui qui décide."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "L’attrait qui survit à l’explication",
+      "text": "À plusieurs reprises, les auteurs ont présenté les deux versions aux mêmes répondants et discuté avec eux de l’incohérence de leurs préférences. Beaucoup ont exprimé le souhait de rester prudents dans la version des vies sauvées et preneurs de risque dans celle des vies perdues, « although they also expressed a wish for their answers to be consistent », alors même qu’ils souhaitaient que leurs réponses soient cohérentes."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "L’attrait qui survit à l’explication",
+      "text": "Dans un autre problème du chapitre, repris de McNeil et ses collègues (1982), les mêmes statistiques de survie au cancer du poumon sont présentées tantôt en taux de survie, tantôt en taux de mortalité, et la part des répondants favorables à la radiothérapie passe de 18 % à 44 %. L’effet, précisent les auteurs, « was not smaller for experienced physicians or for statistically sophisticated business students than for a group of clinic patients »."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "L’attrait qui survit à l’explication",
+      "text": "Pourquoi l’esprit ne ramène-t-il pas les deux énoncés à une forme commune ? La perception et le langage produisent d’eux-mêmes de telles représentations canoniques : un cercle blanc vu de biais sous une lumière faible reste blanc et circulaire. Mais « the mental machinery that transforms percepts and sentences into standard forms does not automatically apply to the process of choice ». Les auteurs reviennent plus loin sur la comparaison, « The example of visual illusion is instructive », en s’appuyant sur une illusion visuelle reproduite en figure dans le chapitre même."
+    },
+    {
+      "locator": "sections[3].paragraphs[3]",
+      "section_title": "L’attrait qui survit à l’explication",
+      "text": "On peut comprendre ainsi l’opposition entre illusion et erreur de calcul : une erreur de calcul, une fois montrée, perd son attrait, alors qu’ici la démonstration change le jugement porté sur la réponse sans défaire l’attirance pour elle. Les auteurs écrivent ailleurs que les incitations « work by focusing attention and by prolonging deliberation », et sont donc plus à même de prévenir les erreurs nées d’un manque d’attention que celles qui viennent d’une perception ou d’une intuition fautive. Si l’effet de cadrage relève de la seconde famille, un supplément d’attention a moins de chances d’en venir à bout."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "D’où vient le cadrage, et ce qu’il laisse ouvert",
+      "text": "Les auteurs ne revendiquent pas la notion entière : selon eux, le présent concept de cadrage est né de l’analyse des problèmes d’Allais par Savage (1954) et Raiffa (1968), qui avaient « reframed these examples in an attempt to make the application of cancellation more compelling », reformulé ces exemples pour rendre plus convaincante l’application du principe d’annulation. Ce qui leur revient est d’en avoir fait un effet mesuré et systématique, opposé à l’invariance."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "D’où vient le cadrage, et ce qu’il laisse ouvert",
+      "text": "Une précaution, qui n’est pas des auteurs : les « frames » de Goffman (1974) relèvent d’une autre lignée, et ces cadres-là ne sont pas ceux-ci. Le cadrage de Tversky et Kahneman porte sur la représentation d’un problème de choix."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "D’où vient le cadrage, et ce qu’il laisse ouvert",
+      "text": "La conclusion que les auteurs tirent de ces effets tient en deux propositions. Les effets de cadrage étant omniprésents, aucune théorie descriptive adéquate ne peut les ignorer ; l’invariance étant normativement indispensable, aucune théorie prescriptive adéquate ne devrait en permettre la violation. D’où leur constat : « the dream of constructing a theory that is acceptable both descriptively and normatively appears unrealizable ». Et ils bornent leur propre résultat : ils ont identifié des règles courantes de cadrage et montré leurs effets sur le choix, « but we have not provided a formal theory of framing »."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-1d6564e49e1f63f2",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "effet-de-cadrage"
+    },
+    {
+      "id": "SUP-26fa7dcb45dcf956",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "effet-de-cadrage"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-89f732c743d83ce4",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "L'effet de cadrage"
+    },
+    {
+      "id": "SUP-905dfdcf6a8e0314",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "choisir-sous-risque"
+    },
+    {
+      "id": "SUP-f4b0c87c42633064",
+      "origin": "validated",
+      "path": "$.theme_labels[\"choisir-sous-risque\"]",
+      "access": "n/a",
+      "text": "Choisir quand on ne sait pas"
+    },
+    {
+      "id": "SUP-76fa2495406fbfbd",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Amos Tversky"
+    },
+    {
+      "id": "SUP-0a05e4a37c237f50",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "Daniel Kahneman"
+    },
+    {
+      "id": "SUP-6772ab2bcc2f8f44",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Chapitre signé « Amos Tversky and Daniel Kahneman », dans cet ordre. Il n'est pas inédit en 1988 : une note de la page 189 le donne pour la reprise, révisée dans sa première et sa dernière section, d'un article paru dans le Journal of Business en 1986. Les auteurs ne revendiquent pas la paternité entière de la notion : ils écrivent page 184 que le concept de cadrage vient de l'analyse des problèmes d'Allais par Savage (1954) et Raiffa (1968)."
+    },
+    {
+      "id": "SUP-5cd6377e384f98d6",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Une décision dite en vies sauvées ou en vies perdues reste-t-elle la même ?"
+    },
+    {
+      "id": "SUP-784e43a5714ed5d1",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Deux présentations d'un même problème de choix, identiques dans leurs conséquences, appellent des préférences différentes : c'est l'invariance qui est violée."
+    },
+    {
+      "id": "SUP-a6f02195da15217e",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Par la persistance de leur attrait, les effets de cadrage ressemblent davantage à des illusions visuelles qu'à des erreurs de calcul."
+    },
+    {
+      "id": "SUP-b579ffce56473f3c",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 167-192."
+    },
+    {
+      "id": "SUP-b42a6d69df35b868",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 175, section « Framing outcomes »"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-21124b6beff3f448",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "In the persistence of their appeal, framing effects resemble visual illusions more than computational errors."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-601c8282f60a80ab",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce chapitre de 1988 n'a été identifiée, ni de l'article de 1986 dont il est la reprise. Deux choix de traduction à signaler. « Appeal » est rendu par « attrait » et non par « force » ou « évidence » : la phrase vient immédiatement après le constat que des répondants, à qui les deux versions du problème ont été présentées et expliquées, continuent d'être attirés par la réponse prudente dans la version « vies sauvées » et par la réponse risquée dans la version « vies perdues », tout en souhaitant être cohérents. C'est bien l'attirance qui persiste, pas la validité. « Visual illusions » est rendu littéralement par « illusions visuelles » et non par « illusions d'optique », parce que les auteurs renvoient plus loin, page 187, à une illusion visuelle qu'ils reproduisent en figure dans le chapitre même, et non à une catégorie générale."
+    },
+    {
+      "id": "SUP-7d623daba147c251",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 167-192.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-1d1cd0e5517cc3aa",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "chap. 9, p. 167-192",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-59872d18f993d0cc",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "9780521351492",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-acb13cf6d103c9d0",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DecisionMaking",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-d4a816a28929a29f",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "Amos Tversky et Daniel Kahneman, « Rational Choice and the Framing of Decisions », The Journal of Business, vol. 59, n° 4 (supplément), 1986, p. S251-S278.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-94698c9adc23bf7e",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "metadata-only",
+      "text": "p. S251-S278",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ba08d99bbd5d9947",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1086/296365",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-4b0a39374c79fc6f",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1086/296365",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-dd956b89a91595e9",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Amos Tversky et Daniel Kahneman, « The Framing of Decisions and the Psychology of Choice », Science, vol. 211, n° 4481, 30 janvier 1981, p. 453-458.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-10716fc0f2e29c25",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "p. 453-458",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-17989351839e763c",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1126/science.7455683",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-55490a3ecc7ae425",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1126/science.7455683",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-a5be4fa625196cd8",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-23"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-5e5713c0d604f480",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée dans le texte intégral du volume, pas dans une source secondaire. Ouvert https://archive.org/details/DecisionMaking (631 images, OCR ABBYY) via https://archive.org/download/DecisionMaking/DecisionMaking_djvu.txt. La page portant le numéro 175, sous-section « Framing outcomes », se termine par : « Many respondents expressed a wish to remain risk averse in the \"lives saved\" version and risk seeking in the \"lives lost\" version, although they also expressed a wish for their answers to be consistent. In the persistence of their appeal, framing effects resemble visual illusions more than computational errors. » Le `original_text` de la fiche est mot pour mot cette dernière phrase. Le locator est exact au double titre : page (le bloc est encadré par les marqueurs de bas de page 174 et 175) et section (« Framing outcomes » commence p. 173, la sous-section suivante « Discounts and surcharges » démarre immédiatement après la phrase citée). L'index du volume, p. 613, porte d'ailleurs « visual illusions, 175, 187 »."
+    },
+    {
+      "id": "SUP-119f5b463a3be413",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — la phrase est identique dans l'article de 1986 dont le chapitre est la reprise. Ouvert le tiré à part JSTOR http://cogsci.bme.hu/~ktkuser/KURZUSOK/BMETE47MN05/2017_2018_2/TverskyKahneman1986.pdf (29 p., en-tête « The Journal of Business, Vol. 59, No. 4, Part 2: The Behavioral Foundations of Economic Theory. (Oct., 1986), pp. S251-S278 ») : même phrase, même position, juste avant « Discounts and Surcharges ». La citation est donc stable entre les deux états du texte."
+    },
+    {
+      "id": "SUP-d7c25668cdf01ea6",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "CITATION — point à connaître pour ne pas se faire « corriger » à tort : la variante qui circule le plus largement n'est pas celle-ci. Ouvert https://www.psy.miami.edu/_assets/pdf/rpo-articles/kahneman-and-tversky-1984.pdf (Kahneman & Tversky, « Choices, Values, and Frames », American Psychologist, 1984) : on y lit « In their stubborn appeal, framing effects resemble perceptual illusions more than computational errors. » — « stubborn appeal » et « perceptual illusions », là où 1986/1988 portent « the persistence of their appeal » et « visual illusions ». La fiche a retenu la leçon du texte qu'elle cite, ce qui est correct ; c'est un indice que le chapitre a bien été ouvert et non recopié."
+    },
+    {
+      "id": "SUP-def865c60178c11a",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "TRADUCTION — déclarée (in-house, traducteur nommé, `original_text` et `original_language` fournis), sans coupe, donc pas de […] attendu. Rendu fidèle : « In the persistence of their appeal » → « Par la persistance de leur attrait » ; « visual illusions » → « illusions visuelles » ; « computational errors » → « erreurs de calcul ». Les deux justifications de la note de traduction sont vérifiables dans le texte : (a) « appeal » comme attirance et non validité — le paragraphe immédiatement antérieur, p. 175, décrit des répondants à qui les deux versions ont été présentées et qui souhaitent rester averses au risque en « lives saved » et preneurs de risque en « lives lost » tout en voulant être cohérents ; (b) le renvoi p. 187 existe bien — « The example of visual illusion is instructive » y renvoie à la figure 9.3, l'illusion de Müller-Lyer reproduite p. 179-180 dans le chapitre même. Je n'ai identifié aucune traduction française publiée de ce chapitre ni de l'article de 1986 ; la seule traduction française voisine que je connaisse porte sur le texte de 1984 (annexe de « Système 1 / Système 2 »), qui est une autre leçon (cf. note précédente)."
+    },
+    {
+      "id": "SUP-7ba08fbd92062252",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — confirmée et correctement bornée. Le sommaire du volume donne « 9 Amos Tversky and Daniel Kahneman — Rational choice and the framing of decisions », p. 167 ; le chapitre 10 (Shafer) commence p. 193, ce qui borne le chapitre à p. 167-192 comme l'affiche la fiche. Titres courants : verso « Amos Tversky and Daniel Kahneman », recto « Rational choice and the framing of decisions ». L'ordre de signature est bien Tversky puis Kahneman. Les deux réserves de l'`attribution_note` sont exactes : (a) p. 184, première ligne de la page, « The present concept of framing originated from the analysis of Allais's problems by Savage (1954, pp. 101-4) and Raiffa (1968, pp. 80-6), who reframed [...] » — les auteurs renvoient donc explicitement l'origine du concept à Savage et Raiffa ; (b) la section NOTES commence p. 189 et mentionne le Journal of Business 59 (1986), S251-78, © 1986 by The University of Chicago."
+    },
+    {
+      "id": "SUP-4333c38a90b588dd",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — une précision de formulation, sans effet sur le verdict. La note de la p. 189 ne dit pas littéralement « reprise révisée dans sa première et sa dernière section » : elle dit « The present chapter reviews our work on decision making under risk from a new perspective, discussed primarily in the first and last sections. Most of the empirical demonstrations were reported in earlier publications. Problems 3, 4, 7, 8, and 12 were published for the first time in the Journal of Business, 59 (1986), S251-78. » La paraphrase de la fiche est matériellement juste — j'ai comparé les deux textes et le corps du chapitre est bien celui de l'article de 1986 —, mais elle resserre en « reprise révisée » ce que la note formule comme un changement de perspective localisé. Rien à corriger au regard des quatre points."
+    },
+    {
+      "id": "SUP-5c9ff92aef04c9ab",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "SOURCES 1/3 — ISBN 9780521351492. La page de copyright du volume numérisé porte « ISBN 0 521 35149 9 », soit exactement cet ISBN-13, avec « DECISION MAKING — DESCRIPTIVE, NORMATIVE, AND PRESCRIPTIVE INTERACTIONS », « EDITED BY DAVID E. BELL, HOWARD RAIFFA, AND AMOS TVERSKY », « CAMBRIDGE UNIVERSITY PRESS », « © Cambridge University Press 1988 / First published 1988 ». Éditeurs, titre, sous-titre, éditeur commercial, année et pagination du chapitre : tout concorde. L'URL archive.org affichée résout bien vers ce volume (métadonnées : creator « Bell, David E.; Raiffa, Howard; Tversky, Amos, Eds », date 1988) ; le champ `consulted: full-text` est justifié, j'ai lu le texte intégral."
+    },
+    {
+      "id": "SUP-bc0c7550aafcc800",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "SOURCES 2/3 — DOI 10.1086/296365, résolu par négociation de contenu Crossref (Accept: application/vnd.citationstyles.csl+json) : « Rational Choice and the Framing of Decisions », Amos Tversky puis Daniel Kahneman, The Journal of Business, vol. 59, issue « S4 », page de départ S251, 1986, University of Chicago Press. Le tiré à part ouvert confirme « No. 4, Part 2 », Oct. 1986, pp. S251-S278. La fiche écrit « n° 4 (supplément) » là où l'éditeur écrit « Part 2 » : rendu acceptable, et la pagination en S le confirme. À noter au passage : la bibliographie du volume de 1988 elle-même (p. 568) cite cet article « 59, Part 2, 251-78 », sans le préfixe S — c'est la fiche qui a la pagination correcte, pas le livre."
+    },
+    {
+      "id": "SUP-5e26db92317adf81",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "SOURCES 3/3 — DOI 10.1126/science.7455683, même méthode : « The Framing of Decisions and the Psychology of Choice », Tversky puis Kahneman, Science, vol. 211, n° 4481, p. 453-458, 30 janvier 1981, AAAS. Correspondance exacte avec le libellé de la fiche, jusqu'au jour. Cohérent aussi avec les renvois internes du chapitre (« Tversky and Kahneman, 1981, p. 453 » pour les problèmes 5 et 6, p. 455 pour Allais, p. 458 pour la version à enjeu monétaire réel)."
+    },
+    {
+      "id": "SUP-d1ff5eef3b00bd44",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "SOURCES — limite de méthode à déclarer. L'outil `verify_reference` du serveur `documentary` n'était pas exposé dans mon environnement ; je n'ai donc pas pu m'en servir. J'ai résolu les deux DOI directement contre Crossref et vérifié l'ISBN contre la page de copyright de l'exemplaire numérisé, ce qui est au moins aussi probant pour ce cas précis. Trois tentatives de récupération de PDF de l'article de 1986 ont échoué avant la quatrième (403 sur hss.caltech.edu, 502 du proxy sur www2.bc.edu, 404 sur home.uchicago.edu) : ce sont des refus d'accès, pas des indices d'inexistence — l'article a ensuite été ouvert intégralement ailleurs."
+    },
+    {
+      "id": "SUP-a02e5b023d53c417",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "PROSE — `hook` : « Une décision dite en vies sauvées ou en vies perdues reste-t-elle la même ? » Porté mot pour mot par la source : p. 174, problèmes 5 (N=152) et 6 (N=155), maladie asiatique, « the former is framed in terms of the number of lives saved [...] whereas the latter is framed in terms of the number of lives lost ». Le hook ne promet rien de plus que ce que le texte montre."
+    },
+    {
+      "id": "SUP-6431a90eda657343",
+      "origin": "validated",
+      "path": "$.review.notes[11]",
+      "access": "n/a",
+      "text": "PROSE — `summary` : « Deux présentations d'un même problème de choix, identiques dans leurs conséquences, appellent des préférences différentes : c'est l'invariance qui est violée. » Les trois affirmations sont couvertes. « Identiques dans leurs conséquences » : p. 174, « Problems 5 and 6, however, are essentially identical. They differ only in that [...] ». « Préférences différentes » : 72 %/28 % contre 22 %/78 % dans les taux affichés. « L'invariance est violée » : la définition normative est donnée p. 168 (« different representations of the same choice problem should yield the same preference »), et p. 173 le chapitre conclut « variations in the framing of decision problems produce systematic violations of invariance and dominance that cannot be defended on normative grounds ». Le summary parle de préférences majoritaires sans le dire, mais c'est aussi le niveau auquel le texte source raisonne — pas de débordement."
+    },
+    {
+      "id": "SUP-037e8ff053fbeddc",
+      "origin": "validated",
+      "path": "$.review.notes[12]",
+      "access": "n/a",
+      "text": "Hors mandat, pour information et sans incidence : la fiche n'attribue à personne le mot « framing » lui-même. C'est prudent — le concept de cadrage au sens décisionnel est ici revendiqué comme dérivé de Savage et Raiffa par les auteurs eux-mêmes, et il ne se confond pas avec les « frames » de Goffman (1974), qui relèvent d'une autre lignée. Rien à corriger."
+    },
+    {
+      "id": "SUP-b028addda0432c08",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Cette carte repose sur le même exemplaire numérisé que quatre autres du même lot : le recueil de 1988 dirigé par Bell, Raiffa et Tversky, déposé sur Internet Archive sous l'identifiant DecisionMaking. Aucune contre-lecture sur un second exemplaire n'a été possible, et un défaut de ce scan se propagerait aux cinq fiches sans être détecté ici."
+    },
+    {
+      "id": "SUP-f8b5c799bc1b2bad",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Constat matériel sur cet exemplaire : le fichier de pagination de l'archive (DecisionMaking_page_numbers.json) décale d'une unité par rapport aux folios imprimés. La pagination de cette carte a été établie sur les folios lus en pied de page, sur les en-têtes courants, sur la table des matières du recueil et sur la notice Crossref du chapitre, qui concordent."
+    },
+    {
+      "id": "SUP-08d96e16029810c6",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La citation caractérise l'effet sans le définir : elle dit ce qui le distingue d'une erreur de calcul. C'est le résumé qui porte la définition, tirée de la défaillance de l'invariance établie p. 168-172, et non la citation."
+    },
+    {
+      "id": "SUP-57a1167458703e5e",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "L'article de 1981 paru dans Science, d'où vient le problème dit de la maladie asiatique, n'a pas été ouvert. Le problème est cité depuis le chapitre de 1988, p. 175, où les auteurs renvoient eux-mêmes à « Tversky and Kahneman, 1981, p. 453 » : c'est de cette page que l'accroche tire les vies sauvées et les vies perdues."
+    },
+    {
+      "id": "SUP-ed720cbaab9493ca",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Leçon du verbatim, à ne pas « corriger » en aval. La variante qui circule le plus est celle du texte de 1984, « In their stubborn appeal, framing effects resemble perceptual illusions more than computational errors ». Le texte cité ici est celui de 1986 repris en 1988, qui porte « In the persistence of their appeal » et « visual illusions » : c'est la bonne leçon pour ce texte, et la traduction affichée en découle. Remplacer par stubborn ou perceptual introduirait l'erreur."
+    },
+    {
+      "id": "SUP-259f87d01f6d4a35",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "effet-de-cadrage"
+    },
+    {
+      "id": "SUP-6f1f5e179a289890",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Amos Tversky"
+    },
+    {
+      "id": "SUP-dc5a904dee854636",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "Daniel Kahneman"
+    },
+    {
+      "id": "SUP-ee91fd4a67198c4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-0a6a95165f3fd9b6",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le chapitre est signé de deux noms, dans cet ordre : « AMOS TVERSKY AND DANIEL KAHNEMAN », lu sur la signature elle-même, en tête de la page d'ouverture du chapitre 9, sous le titre « RATIONAL CHOICE AND THE FRAMING OF DECISIONS », image du feuillet 0176 du scan Internet Archive. La notice Crossref du chapitre (DOI 10.1017/cbo9780511598951.011) porte les mêmes deux auteurs dans le même ordre et la pagination 167-192. C'est donc une coécriture, sans auteur principal déclaré : COAUTHORED. Trois précisions que le chapitre donne lui-même, et qu'il faut écrire pour ne pas laisser un script les reconstituer. Premièrement, ce chapitre n'est pas un texte inédit de 1988 : la note liminaire non numérotée de la page 189, lue sur l'image, écrit que « The present chapter reviews our work on decision making under risk from a new perspective, discussed primarily in the first and last sections », puis que « Problems 3, 4, 7, 8, and 12 were published for the first time in the Journal of Business, 59 (1986), S251-78. © 1986 by The University of Chicago. » Les millésimes 1986 et la pagination S251-78 sont écrits dans cette note de la page 189, ils ne sont pas reconstruits depuis une base. C'est donc une reprise, révisée par ses auteurs dans sa première et sa dernière section, de l'article de 1986. Deuxièmement, le problème dit « de la maladie asiatique », qui porte la démonstration la plus enseignable du chapitre, y est explicitement rapporté à une publication antérieure des deux mêmes auteurs : la page 175 introduit les problèmes 5 et 6 par la mention « (Tversky and Kahneman, 1981, p. 453) », lue sur l'image. Le millésime 1981 et le folio 453 sont écrits dans le chapitre. Troisièmement, les auteurs ne revendiquent pas la paternité entière de la notion de cadrage : à la page 184, ils écrivent que « The present concept of framing originated from the analysis of Allais's problems by Savage (1954, pp. 101-4) and Raiffa (1968, pp. 80-6), who reframed these examples in an attempt to make the application of cancellation more compelling. » La notion de reformulation d'un même problème leur vient donc, de leur propre aveu, de Leonard J. Savage et de Howard Raiffa ; ce qui leur revient est d'en avoir fait un effet mesuré et systématique, opposé à l'axiome d'invariance. Rien de tout cela ne déplace la signature du chapitre : deux auteurs, COAUTHORED."
+    },
+    {
+      "id": "SUP-254e54e0c87e654e",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Par la persistance de leur attrait, les effets de cadrage ressemblent davantage à des illusions visuelles qu'à des erreurs de calcul."
+    },
+    {
+      "id": "SUP-98e2a26c77b1d0f2",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Tversky, A. et Kahneman, D. (1988). « Rational Choice and the Framing of Decisions », chapitre 9 de D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, p. 167-192. DOI du chapitre 10.1017/cbo9780511598951.011, ISBN du recueil 9780521351492. Exemplaire numérisé lu sur Internet Archive, identifiant DecisionMaking."
+    },
+    {
+      "id": "SUP-41fef0173edbed6f",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 175, deux dernières lignes du dernier paragraphe de la sous-section « Framing outcomes », juste avant l'intertitre « Discounts and surcharges ». Folio 175 imprimé en pied de page, lu sur l'image (feuillet 0184 du scan Internet Archive, en-tête courant « Rational choice and the framing of decisions »)."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-253c45faafd44e33",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "In the persistence of their appeal, framing effects resemble visual illusions more than computational errors."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-d3b82e7a32501f44",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce chapitre de 1988 n'a été identifiée, ni de l'article de 1986 dont il est la reprise. Deux choix de traduction à signaler. « Appeal » est rendu par « attrait » et non par « force » ou « évidence » : la phrase vient immédiatement après le constat que des répondants, à qui les deux versions du problème ont été présentées et expliquées, continuent d'être attirés par la réponse prudente dans la version « vies sauvées » et par la réponse risquée dans la version « vies perdues », tout en souhaitant être cohérents. C'est bien l'attirance qui persiste, pas la validité. « Visual illusions » est rendu littéralement par « illusions visuelles » et non par « illusions d'optique », parce que les auteurs renvoient plus loin, page 187, à une illusion visuelle qu'ils reproduisent en figure dans le chapitre même, et non à une catégorie générale."
+    },
+    {
+      "id": "SUP-34e6e3fa665510f0",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation._verification",
+      "access": "n/a",
+      "text": "Verbatim établi sur l'image de la page, pas sur la couche OCR. Méthode : la couche texte du scan (DecisionMaking_djvu.xml, découpée page par page) a servi à repérer le passage, puis l'image du feuillet 0184 a été téléchargée en pleine résolution (3296 x 5096 pixels, 600 ppp) depuis l'interface de lecture d'Internet Archive, et le passage relu deux fois : une fois sur la page entière réduite, une fois sur un recadrage des trois dernières lignes du paragraphe à la résolution native. Les deux lectures concordent mot pour mot avec la couche OCR pour cette phrase, ce qui n'est pas le cas partout dans le chapitre : l'OCR de la page 167, par exemple, est méconnaissable, et rien n'en a été tiré. La phrase intégrale, non coupée, est bien celle qui figure en `original_text` ; il n'y a ni coupe ni ellipse. Le folio « 175 » est imprimé en pied de cette même image, et l'en-tête courant « Rational choice and the framing of decisions » en tête : la localisation est établie sur le folio imprimé, jamais sur un index de feuillet. Contrôle croisé de la pagination : la table des matières du recueil donne 167 pour le chapitre 9 et 193 pour le chapitre 10 ; la notice Crossref du chapitre donne 167-192 ; les versos portent « Amos Tversky and Daniel Kahneman » et les rectos l'en-tête du chapitre, de la page 168 à la page 192 incluse."
+    },
+    {
+      "id": "SUP-df42c935e7131517",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Bell, D. E., Raiffa, H. et Tversky, A. (dir.) (1988). Decision Making: Descriptive, Normative, and Prescriptive Interactions. Cambridge University Press. Exemplaire numérisé complet (631 feuillets, pages image à 600 ppp plus couche OCR), collections millionbooks et universallibrary d'Internet Archive, sans restriction d'accès sur la notice. Chapitre 9, p. 167-192, lu intégralement en image et en couche texte."
+    },
+    {
+      "id": "SUP-28f3321f91d69dc5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "9780521351492"
+    },
+    {
+      "id": "SUP-975d8b5c7cf20509",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DecisionMaking"
+    },
+    {
+      "id": "SUP-66966e5af81f44e6",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Tversky, A. et Kahneman, D. (1988). « Rational Choice and the Framing of Decisions », chapitre 9 de Decision Making, Cambridge University Press, p. 167-192. Notice Crossref du chapitre vérifiée : titre, deux auteurs dans l'ordre Tversky puis Kahneman, recueil, pagination 167-192. Concordante avec les folios imprimés lus sur les images."
+    },
+    {
+      "id": "SUP-e5d8a84dacb6409b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1017/cbo9780511598951.011"
+    },
+    {
+      "id": "SUP-04a0f354231a04bb",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1017/cbo9780511598951.011"
+    },
+    {
+      "id": "SUP-d07756d06bb37fed",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Bell, D. E., Raiffa, H. et Tversky, A. (dir.) (1988). Decision Making. Notice Crossref du recueil : éditeur Cambridge University Press, date de publication 28 octobre 1988, ISBN 9780521351492 (relié), 9780521368513 (broché), 9780511598951 (électronique)."
+    },
+    {
+      "id": "SUP-0c57bdae4a0cf71d",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1017/cbo9780511598951"
+    },
+    {
+      "id": "SUP-9eae4acdd86023d5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1017/cbo9780511598951"
+    },
+    {
+      "id": "SUP-137ffce946c4c633",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Tversky, A. et Kahneman, D. (1986). « Rational Choice and the Framing of Decisions ». The Journal of Business, 59(4, supplément), S251-S278. University of Chicago Press. Article dont le chapitre de 1988 est la reprise révisée. Notice Crossref vérifiée (titre, deux auteurs, revue, volume 59, page de début S251, 1986). Texte fermé, non ouvert."
+    },
+    {
+      "id": "SUP-191c2177ed820d46",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1086/296365"
+    },
+    {
+      "id": "SUP-c43c2aad061743ec",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1086/296365"
+    },
+    {
+      "id": "SUP-f6ef34da70f986a0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "metadata-only",
+      "text": "Tversky, A. et Kahneman, D. (1981). « The Framing of Decisions and the Psychology of Choice ». Science, 211(4481), 453-458. Article antérieur des mêmes auteurs, cité par le chapitre de 1988 comme source des problèmes 5 et 6. Notice Crossref vérifiée (titre, deux auteurs, revue, volume 211, numéro 4481, p. 453-458, 30 janvier 1981) : la pagination concorde avec le renvoi « 1981, p. 453 » lu page 175 du chapitre. Texte fermé, non ouvert."
+    },
+    {
+      "id": "SUP-7e1c54461740bda0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1126/science.7455683"
+    },
+    {
+      "id": "SUP-d618d3da185d867a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1126/science.7455683"
+    },
+    {
+      "id": "SUP-07e1b0dac1bc5b35",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Dans les termes du chapitre, lu de la page 167 à la page 192. Le point de départ n'est pas psychologique mais axiomatique. Les auteurs isolent, sous la théorie de l'utilité espérée, quatre hypothèses de fond : annulation (cancellation), transitivité, dominance et invariance, et les ordonnent par leur force normative (p. 168-169). L'invariance est celle que personne ne conteste : « different representations of the same choice problem should yield the same preference. That is, the preference between options should be independent of their description » (p. 168-169). Les auteurs soulignent qu'elle est si élémentaire qu'elle n'est même pas posée comme un axiome testable : « This principle of invariance (or extensionality [Arrow, 1982]) is so basic that it is tacitly assumed in the characterization of options rather than explicitly stated as a testable axiom » (p. 169). L'effet de cadrage est exactement la défaillance de cette invariance-là, obtenue expérimentalement. Le chapitre l'établit par des paires de problèmes extensionnellement identiques et différemment formulés. Cas médical (McNeil et al., 1982, problème 1, p. 170) : les mêmes statistiques de survie au cancer du poumon, présentées en taux de survie ou en taux de mortalité, font passer la proportion de répondants favorables à la radiothérapie de 18 % à 44 % ; « The inconsequential difference in formulation produced a marked effect », et « The framing effect was not smaller for experienced physicians or for statistically sophisticated business students than for a group of clinic patients » (p. 170). Cas des décisions concurrentes (problème 2, p. 170-171) : 73 % des répondants choisissent une combinaison de deux paris qui est dominée par celle qu'ils rejettent, dominance qui devient invisible dès que les deux décisions sont présentées séparément. Cas de la maladie asiatique (problèmes 5 et 6, p. 175, repris de Tversky et Kahneman, 1981, p. 453) : une épidémie censée tuer 600 personnes, deux programmes, mêmes conséquences dans les deux versions. Version en vies sauvées, 72 % choisissent le programme sûr qui sauve 200 personnes, aversion pour le risque. Version en vies perdues, 78 % choisissent le programme risqué plutôt que la mort certaine de 400 personnes, goût du risque. « Problems 5 and 6, however, are essentially identical. They differ only in that the former is framed in terms of the number of lives saved (relative to an expected loss of 600 lives if no action is taken), whereas the latter is framed in terms of the number of lives lost » (p. 175). Le mécanisme est donné par la théorie des perspectives, dont le chapitre rappelle l'architecture (p. 172-174). Le choix comporte deux phases : une phase de cadrage et d'édition, puis une phase d'évaluation. La première « consists of a preliminary analysis of the decision problem, which frames the effective acts, contingencies, and outcomes. Framing is controlled by the manner in which the choice problem is presented as well as by norms, habits, and expectancies of the decision maker » (p. 172). Le cadrage n'est donc pas seulement affaire de mots de l'énoncé : il dépend aussi de ce que le décideur apporte. Les conséquences ne sont pas évaluées en états de richesse mais en écarts positifs ou négatifs par rapport à un point de référence neutre, avec une fonction de valeur en S, concave dans les gains, convexe dans les pertes, et plus raide du côté des pertes (aversion aux pertes, p. 173, figure 9.1). Le cadrage agit en déplaçant ce point de référence : « The reference point can also be shifted by a mere labeling of outcomes » (p. 175). D'où la formulation générale : « variations in the framing of decision problems produce systematic violations of invariance and dominance that cannot be defended on normative grounds » (p. 171), et « Failures of invariance are explained by framing effects that control the representation of options, in conjunction with the nonlinearities of value and belief » (p. 172). Deux mécanismes auraient pu sauver l'invariance, et les auteurs expliquent pourquoi ils ne jouent pas (p. 171-172). Une représentation canonique, d'abord : l'appareil perceptif et l'appareil linguistique en produisent spontanément, un cercle blanc vu de biais dans une lumière faible reste blanc et circulaire, mais « the mental machinery that transforms percepts and sentences into standard forms does not automatically apply to the process of choice ». Une évaluation linéaire ensuite : si les perspectives risquées étaient ordonnées par leur valeur actuarielle, invariance et dominance tiendraient toujours ; elles ne le sont pas. Le point le plus important pour ne pas ramener l'effet de cadrage à une simple erreur : il ne se dissipe pas quand on l'explique. « On several occasions we presented both versions to the same respondents and discussed with them the inconsistent preferences evoked by the two frames. Many respondents expressed a wish to remain risk averse in the 'lives saved' version and risk seeking in the 'lives lost' version, although they also expressed a wish for their answers to be consistent. In the persistence of their appeal, framing effects resemble visual illusions more than computational errors » (p. 175). Le chapitre en tire des cas non expérimentaux : le prix étiqueté comme rabais plutôt que comme surcharge (Thaler, 1980, et le lobby des cartes de crédit, p. 176), la table d'impôt construite avec le foyer sans enfant ou le foyer à deux enfants comme cas par défaut (Schelling, 1981, p. 176), l'illusion monétaire (p. 176). Le tableau 9.1 (p. 185) range explicitement les effets de cadrage sous la violation de l'invariance, et note que seule la théorie des perspectives rend compte à la fois des violations de dominance et d'invariance. La portée que les auteurs revendiquent est méthodologique et non correctrice : « Because framing effects and the associated failures of invariance are ubiqitous, no adequate descriptive theory can ignore these phenomena. On the other hand, because invariance (or extensionality) is normatively indispensable, no adequate prescriptive theory should permit its violation. Consequently, the dream of constructing a theory that is acceptable both descriptively and normatively appears unrealizable » (p. 185). Les auteurs bornent eux-mêmes leur résultat : « Because the framing of decisions depends on the language of presentation, on the context of choice, and on the nature of the display, our treatment of the process is necessarily informal and incomplete. We have identified several common rules of framing, and we have demonstrated their effects on choice, but we have not provided a formal theory of framing » (p. 186). Enfin, la dernière section (p. 186-188) réfute une à une les trois hypothèses de sauvetage habituelles, dites bolstering assumptions : que les violations seraient cantonnées aux enjeux dérisoires, qu'elles seraient éliminées par l'apprentissage, qu'elles seraient corrigées par le marché. Sur les incitations : « Incentives do not operate by magic: they work by focusing attention and by prolonging deliberation. Consequently, they are more likely to prevent errors that arise from insufficient attention and effort than errors that arise from misperception or faulty intuition » (p. 187). Sur l'apprentissage : il exige un retour d'information exact et immédiat, condition rarement remplie pour les décisions de dirigeants, d'entrepreneurs et de responsables politiques, dont les plus importantes sont uniques (p. 187-188). Sur le marché : la charge de la preuve incombe à qui invoque le mécanisme correcteur, exemple à l'appui du marché des paris hippiques, efficient sur le gagnant et non sur le placé (Hausch, Ziemba et Rubinstein, 1981, p. 188)."
+    },
+    {
+      "id": "SUP-434727c0f65c80fb",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Réserve de dépendance, à porter telle quelle : cette fiche repose entièrement sur un seul exemplaire numérisé, celui du recueil de 1988 déposé sur Internet Archive sous l'identifiant DecisionMaking, et ce même exemplaire pourvoit cinq fiches du présent lot. Aucune contre-lecture sur une seconde numérisation ni sur un exemplaire imprimé n'a été possible : s'il existait un défaut de ce scan (feuillet manquant, page interpolée, folio abîmé), il se propagerait aux cinq fiches sans être détecté ici. La concordance des folios imprimés avec la table des matières du recueil et avec la notice Crossref du chapitre est le seul contrôle croisé qui ait pu être fait."
+    },
+    {
+      "id": "SUP-2d0598ad082c095a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "L'article de 1986 dont ce chapitre est la reprise, Tversky, A. et Kahneman, D., « Rational Choice and the Framing of Decisions », The Journal of Business 59(4), S251-S278, DOI 10.1086/296365, n'a pas été ouvert : il est fermé. Sa notice Crossref a été vérifiée, rien de plus. Aucune phrase de cette fiche n'est localisée dans cet article, et il n'est pas présenté comme la source de la citation. La note liminaire de la page 189 du chapitre indique d'ailleurs que la reprise n'est pas à l'identique, la première et la dernière section ayant été retravaillées : citer l'une pour l'autre serait doublement fautif."
+    },
+    {
+      "id": "SUP-b71a6f8008861d1f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "L'article antérieur des mêmes auteurs, « The Framing of Decisions and the Psychology of Choice », Science 211(4481), 1981, p. 453-458, DOI 10.1126/science.7455683, n'a pas été ouvert non plus : fermé également, notice Crossref seule vérifiée. C'est le texte le plus célèbre des deux, et c'est le piège de ce dossier : le problème dit de la maladie asiatique est presque toujours cité depuis lui. Ici, il est cité depuis le chapitre de 1988, page 175, où il est reproduit avec ses effectifs et ses pourcentages, et où les auteurs renvoient eux-mêmes à « Tversky and Kahneman, 1981, p. 453 ». La citation retenue et son locator portent sur la version de 1988 uniquement. Aucune comparaison mot à mot entre les deux versions du problème n'a pu être faite, faute d'accès à celle de 1981 : rien ne permet donc d'affirmer ici qu'elles sont identiques."
+    },
+    {
+      "id": "SUP-dc8bacb34a5eafbd",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Piège de pagination, désamorcé mais à consigner. Le fichier DecisionMaking_page_numbers.json de l'archive donne, pour le feuillet 176, le folio 167 ; or le contenu de ce feuillet est bien la page 167, tandis que la table de correspondance décale d'une unité l'ensemble de la plage vérifiée (elle attribue par exemple le folio 167 à un feuillet dont le texte est la page 166, fin de la bibliographie du chapitre 8). La pagination de cette fiche n'a donc été établie ni sur ce fichier, ni sur un index de feuillet, mais sur les folios imprimés lus en pied de page sur les images, sur les en-têtes courants, et sur deux contrôles externes concordants : la table des matières du recueil (chapitre 9 à la page 167, chapitre 10 à la page 193) et la notice Crossref du chapitre (167-192)."
+    },
+    {
+      "id": "SUP-4dced606805f7a0c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "La page d'ouverture du chapitre, page 167, ne porte pas de folio imprimé, comme il est d'usage pour une page de titre de chapitre. Son numéro est établi par la table des matières, par la continuité avec le verso 168 qui porte l'en-tête « Amos Tversky and Daniel Kahneman » et son folio, et par la notice Crossref. Rien n'a été cité depuis cette page, dont la couche OCR est par ailleurs très dégradée, au point d'être illisible ligne à ligne ; le titre et la signature y ont été lus sur l'image, pas sur l'OCR."
+    },
+    {
+      "id": "SUP-057eaf54eb5927d8",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "La couche OCR du volume est de qualité inégale et n'a servi qu'au repérage. Là où elle a été utilisée pour établir du texte, celui-ci a été relu sur l'image en pleine résolution : c'est le cas de la citation retenue (p. 175), de la définition du cadrage (p. 172), de la note liminaire (p. 189) et de la phrase sur l'origine du concept (p. 184). Les autres passages anglais rapportés dans `definition_de_lauteur` ont été lus sur la page réduite ou sur la couche OCR seule et peuvent porter des coquilles de reconnaissance résiduelles : le mot « ubiqitous » cité depuis la page 185 est ainsi donné tel que l'OCR le rend, sans avoir été vérifié sur l'image, et il s'agit très probablement de « ubiquitous ». Aucun de ces passages non revérifiés n'est utilisé comme citation."
+    },
+    {
+      "id": "SUP-761e83300908f89e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Aucune traduction française publiée de ce chapitre, ni de l'article de 1986, n'a été identifiée. La citation affichée est donc une traduction de notre fait, et l'anglais est conservé dans `original_text`. Une réserve particulière sur ce point : le problème de la maladie asiatique circule en français dans la traduction par Raymond Clarinard de Thinking, Fast and Slow de Daniel Kahneman (Système 1, système 2, Flammarion, 2012), ouvrage qui n'a pas été ouvert ici et qui n'est de toute façon pas ce texte. Une reprise ultérieure de l'auteur, même traduite et publiée, ne peut pas servir de traduction publiée pour le chapitre de 1988."
+    },
+    {
+      "id": "SUP-bdde980f4ac79693",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Le chapitre lui-même refuse la paternité entière de la notion. Page 184 : « The present concept of framing originated from the analysis of Allais's problems by Savage (1954, pp. 101-4) and Raiffa (1968, pp. 80-6), who reframed these examples in an attempt to make the application of cancellation more compelling. » Ni The Foundations of Statistics de Leonard J. Savage (1954) ni Decision Analysis de Howard Raiffa (1968) n'ont été ouverts : l'antériorité est ici rapportée telle que les auteurs l'écrivent, elle n'a pas été vérifiée à la source. Il faut la lire comme une déclaration des auteurs, pas comme un constat établi par cette lecture."
+    },
+    {
+      "id": "SUP-eb2c7c1e7fa215a7",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "La citation retenue compare les effets de cadrage à des illusions visuelles. Les auteurs appuient ailleurs cette comparaison sur une illusion visuelle reproduite en figure dans le chapitre, évoquée page 187 sous les intitulés « figure 9.3 » et « figure 4 ». Ces figures n'ont pas été examinées sur les images, et la numérotation incohérente relevée page 187 (« figure 9.3 » puis « figure 4 » dans la même phrase) n'a pas été tranchée : elle peut être une coquille de l'imprimé comme une erreur d'OCR. La comparaison est donc rapportée depuis la phrase de la page 175, qui se suffit à elle-même, et non depuis les figures."
+    },
+    {
+      "id": "SUP-f0356379f9617547",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Un passage plus explicite que la citation retenue a été écarté, et il faut dire pourquoi. La phrase qui énonce le plus directement le mécanisme est celle de la page 175 : « Problems 5 and 6, however, are essentially identical. They differ only in that the former is framed in terms of the number of lives saved (relative to an expected loss of 600 lives if no action is taken), whereas the latter is framed in terms of the number of lives lost. » Elle fait 264 caractères en anglais et davantage en français, et aucune coupe ne la ramène sous 150 caractères sans lui retirer soit l'identité des deux problèmes, soit l'opposition des deux cadres, c'est-à-dire sans la vider. Deux autres candidates ont été écartées pour la même raison de longueur, une fois traduites : « variations in the framing of decision problems produce systematic violations of invariance and dominance that cannot be defended on normative grounds » (p. 171) et « Failures of invariance are explained by framing effects that control the representation of options, in conjunction with the nonlinearities of value and belief » (p. 172). La citation finalement retenue tient dans la limite sans coupe, mais elle caractérise l'effet, elle ne le définit pas : elle dit ce qui le distingue d'une erreur de calcul, pas ce qu'il est. Le résumé de la carte doit porter la définition, la citation ne le fera pas à sa place."
+    },
+    {
+      "id": "SUP-c97ef8e0b1b8a931",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "La réception du texte n'a pas été instruite, ni en anglais ni en français : aucune base bibliométrique n'a été interrogée, aucun commentaire, aucune contestation, aucune réplication ni méta-analyse n'a été ouverte. Ce silence n'est pas un constat d'absence de controverse ; c'est un point non instruit, hors du périmètre de cette lecture."
+    }
+  ],
+  "estimated_tokens": 20238,
+  "status": "READY"
+}
