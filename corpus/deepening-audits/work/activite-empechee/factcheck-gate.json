@@ -1,18 +1,23 @@
 {
   "protocol_version": 2,
   "concept_id": "activite-empechee",
-  "candidate_sha256": "4cd3f2788d5eeb95170df879e8a62663e1b054828919369c8f1553196a61f00c",
+  "candidate_sha256": "df470a1003cc0a9ebc3ea96218729c8a70051703a800a07bce65042f1c7c806b",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 65,
-  "supported": 64,
-  "failed": 1,
+  "claims": 44,
+  "supported": 42,
+  "failed": 2,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C011",
-      "verdict": "CONFLICT",
-      "reason": "Les appuis fournis pour ce claim contredisent l'identification du terme de l'auteur au seul « reste » : $.quotation.text et $.summary posent que le réel de l'activité est le volume dont l'activité réalisée est la surface, et $.definition_de_lauteur cite « l'activité réalisée [...] n'a pas le monopole du réel de l'activité » et « le réel de l'activité est aussi ce qui ne se fait pas ». Le réalisé est donc compris dans le réel, et non exclu de lui ; prêter à l'auteur (« il l'appelle ») le nom de ce qui reste hors du visible excède ce que les appuis autorisent — ce que la phrase suivante du texte (C012) dément d'ailleurs elle-même."
+      "claim_id": "C005",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis donnent une image géométrique (le réalisé « n'est jamais que la surface » d'un volume) et un réel « beaucoup moins observable » ; aucun ne porte une proportion. « C'est la plus grande partie de ce qui s'est réellement passé », présenté comme ce que l'auteur « affirme », transforme la métaphore en affirmation quantitative attribuée."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui n'est rattaché à ce claim. Il affirme une possibilité générale et en nomme les causes (moyens, temps, autre urgence), ce qui n'est pas purement hypothétique ; rien de fourni ne l'établit."
     }
   ]
 }
