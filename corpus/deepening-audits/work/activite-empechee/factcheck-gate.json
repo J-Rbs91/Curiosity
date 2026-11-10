@@ -1,23 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "activite-empechee",
-  "candidate_sha256": "df470a1003cc0a9ebc3ea96218729c8a70051703a800a07bce65042f1c7c806b",
+  "candidate_sha256": "e25db4c3d5aa77ba06fa363aa287eb1d14c647fe21da1558c2f98dc8f9e50f33",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 44,
-  "supported": 42,
-  "failed": 2,
+  "claims": 39,
+  "supported": 38,
+  "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C005",
+      "claim_id": "C010",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis donnent une image géométrique (le réalisé « n'est jamais que la surface » d'un volume) et un réel « beaucoup moins observable » ; aucun ne porte une proportion. « C'est la plus grande partie de ce qui s'est réellement passé », présenté comme ce que l'auteur « affirme », transforme la métaphore en affirmation quantitative attribuée."
-    },
-    {
-      "claim_id": "C022",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui n'est rattaché à ce claim. Il affirme une possibilité générale et en nomme les causes (moyens, temps, autre urgence), ce qui n'est pas purement hypothétique ; rien de fourni ne l'établit."
+      "reason": "Les appuis fournis font du realise la surface du reel de l'activite, volume qui est « aussi » ce qui ne se fait pas et comprend donc le fait; le claim fait du realise la face exposee de 'ce qui ne s'est pas fait', deplacant le referent du volume vers le seul non-fait."
     }
   ]
 }
