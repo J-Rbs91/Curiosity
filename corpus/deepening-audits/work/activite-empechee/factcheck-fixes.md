@@ -387,3 +387,76 @@ seule proposition ce que C060 portait, nom de la psychodynamique du travail comp
 genre et du style et n'a rien à voir avec cette frontière.
 
 Ce compte rendu ne vaut ni `ACCEPT` ni `FACTCHECK_PASS`.
+
+# Nouveau cycle — boucle de correction n° 1 sur 2 (2026-11-10)
+
+concept : activite-empechee
+mode    : FACTCHECK_FIX
+gate appliqué : corpus/deepening-audits/work/activite-empechee/factcheck-gate.json
+                (FACTCHECK_FAIL, 44 claims, 42 soutenus, 2 refusés)
+SHA de la version refusée : df470a1003cc0a9ebc3ea96218729c8a70051703a800a07bce65042f1c7c806b
+
+Matière relue : `factcheck-gate.json` (motifs des deux refus), `verification.json` et
+`claim-map.json` (claims voisins C004, C006, C021, C023, tous soutenus), texte du deepening.
+Aucune recherche web, aucun `SUP-...` inventé, aucun artefact de fact-check modifié. Aucune
+affirmation nouvelle : les deux gestes sont des retraits.
+
+## C005 — REMOVE (TOO_STRONG)
+
+`lead[1]`.
+
+- avant : « Le psychologue du travail Yves Clot donne un nom à l’ensemble, liste comprise, et il
+  affirme surtout que ce qui n’y figure pas n’est pas un détail : c’est la plus grande partie de ce
+  qui s’est réellement passé. Dans un texte de 2004, … »
+- après : « Le psychologue du travail Yves Clot donne un nom à l’ensemble, liste comprise. Dans un
+  texte de 2004, … »
+
+Motif : les appuis (SUP-c47f3f20944d14c0, SUP-c98d6b242ef735ab, SUP-94d565db4258c7c6) portent une
+image géométrique (le réalisé « n’est jamais que la surface » d’un volume), pas une proportion.
+Un bornage (« une part qui n’est pas un détail ») aurait encore été une caractérisation attribuée à
+l’auteur sans appui propre ; le retrait est préféré. Le travail pédagogique reste fait par la
+citation de 2004 (C006, soutenu) et la phrase « partie émergée » qui la suit, que le retrait rend
+immédiatement consécutive au nom donné à l’ensemble (C004, soutenu, inchangé).
+
+## C022 — REMOVE (UNSUPPORTED)
+
+`sections[1].paragraphs[1]`.
+
+- retiré : « Quelqu’un de très compétent peut tout autant chercher à faire quelque chose sans y
+  parvenir, parce que les moyens manquent, parce que le temps manque, parce qu’une autre urgence
+  est passée devant. »
+
+Motif : aucun appui rattaché ; la phrase nomme des causes d’échec (moyens, temps, urgence) que le
+dossier ne fournit pas. Pas de réattribution possible, pas de marquage en interprétation honnête
+(les causes seraient toujours affirmées). Le paragraphe garde C021 et C023, tous deux soutenus, qui
+s’enchaînent directement : « Cette liste ne réduit pas les échecs à un manque de compétence. Le réel
+de l’activité n’est pas le tiroir où l’on rangerait les ratés… ».
+
+## Relecture titre / `lead` / `limits`
+
+- Titre de section « Ce que ce volume contient » : inchangé, toujours exact.
+- `lead[1]` : la séquence nom → citation 2004 → « partie émergée » reste cohérente ; le « donc » de
+  la dernière phrase s’appuie désormais directement sur la citation.
+- `limits` : non modifié, non remonté. Pour le prochain réécrivain : ne pas réintroduire de
+  proportion (« la plus grande partie ») ni de causes d’échec non documentées.
+
+## Deltas des paragraphes touchés
+
+- `lead[1]` : nomme l’ensemble et en donne l’image de 2004 (surface / volume).
+- `sections[1].paragraphs[1]` : écarte la lecture « réel = ratés d’incompétents » et pose le réel
+  de l’activité comme part ordinaire de tout travail.
+
+## Contrôle mécanique
+
+`npm run corpus:deepen -- --check --only=activite-empechee` :
+« 1 approfondissement(s) contrôlé(s), 1382 mots. Rien projeté. » — PASS.
+
+## Compte de mots
+
+Avant : 1440 mots (compte du contrôle, `limits` compris) ; après : 1382 (−26 pour C005, −32 pour
+C022). Aucun ajout, donc aucun support à citer pour un ajout.
+
+## Suite attendue
+
+Nouveau SHA : e25db4c3d5aa77ba06fa363aa287eb1d14c647fe21da1558c2f98dc8f9e50f33. Le SHA a changé :
+l’orchestrateur doit recommencer à `PREPARE`. Aucune validation ni `FACTCHECK_PASS` déclarée ici.
