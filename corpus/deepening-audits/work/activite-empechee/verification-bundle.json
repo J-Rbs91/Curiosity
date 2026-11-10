@@ -1,8 +1,8 @@
 {
   "protocol_version": 2,
   "concept_id": "activite-empechee",
-  "candidate_sha256": "df470a1003cc0a9ebc3ea96218729c8a70051703a800a07bce65042f1c7c806b",
-  "map_sha256": "35edd038389f49ea68bf2411685739b45d9c1c406ce230c6de2f13010846c0cc",
+  "candidate_sha256": "e25db4c3d5aa77ba06fa363aa287eb1d14c647fe21da1558c2f98dc8f9e50f33",
+  "map_sha256": "ae4ac7fc59643c28e488f8b600e1171df24dbf3131f16c5159d9cc1aa213e5ea",
   "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
   "signal_lexique": {
     "cartes_mesurees": 136,
@@ -28,6 +28,21 @@
           "path": "$.review.notes[3]",
           "access": "n/a",
           "text": "SOURCES, locators — hal.science/hal-05334852v1/document (4 p., dépôt du texte PISTES 26-3) : § 5 « Le réel déborde le réalisé. Cela est vrai en général, comme l'a vu Vygotski » ; § 6 « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire… ». Le locator « § 5-6 » et la description « reformulation tardive où se lit l'énumération » résolvent. hal.science/hal-02150864/document (26 p.), section NOTES, note 2 : « Cette formulation est pour nous conceptuellement stabilisée : le réel de l'activité n'est pas que l'activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l'analyse (Clot, 2008). » Locator « note 2 » exact."
+        },
+        {
+          "id": "SUP-1ec99fe961831e90",
+          "origin": "evidence:lecture.json",
+          "path": "$.sources_ouvertes[1].citation",
+          "access": "full-text",
+          "text": "Clot, Y. (2024). « J. Leplat, l'ouverture et la force d'esprit ». Perspectives interdisciplinaires sur le travail et la santé, 26-3. Signé Clot seul (vérifié sur la page de titre du PDF publié, sur la notice HAL hal-05334852v1, sur Crossref et sur la page de la revue). Reformulation tardive par l'auteur lui-même, et c'est là — et non dans le texte de 2004 — que se trouve l'énumération de ce que le réel de l'activité contient au-delà du réalisé, ainsi que le seul énoncé de sa main sur les activités empêchées. Lu deux fois et sur deux exemplaires : le PDF publié déposé sur HAL (143 137 octets, 4 pages, CC BY-NC-ND 4.0), extrait et contrôlé caractère par caractère hors ligne, et la page de la revue, dont la transcription du paragraphe 6 coïncide mot pour mot avec celle du PDF. Unpaywall : is_oa true, oa_status « gold », trois localisations ouvertes."
+        },
+        {
+          "id": "SUP-537f7ce75d1dcea5",
+          "origin": "validated",
+          "path": "$.sources[1].label",
+          "access": "full-text",
+          "text": "Yves Clot, « J. Leplat, l'ouverture et la force d'esprit », PISTES, 26-3, 2024 : reformulation tardive où se lit l'énumération de ce que contient le réel de l'activité.",
+          "access_corroboration": "corrobore"
         }
       ],
       "uncited_support_signal": []
@@ -45,18 +60,18 @@
           "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
         },
         {
-          "id": "SUP-c47f3f20944d14c0",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.text",
+          "id": "SUP-8f1ac29be28c521b",
+          "origin": "validated",
+          "path": "$.hook",
           "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
+          "text": "Ce que vous avez fait aujourd'hui dit-il tout ce que votre travail a été ?"
         },
         {
-          "id": "SUP-c98d6b242ef735ab",
+          "id": "SUP-5c9780b6b74f9950",
           "origin": "validated",
-          "path": "$.quotation.text",
+          "path": "$.summary",
           "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
+          "text": "Ce qui se fait n'épuise pas le travail : le réel de l'activité a un volume dont l'activité réalisée n'est que la surface, et c'est lui que l'analyse cherche à ouvrir."
         }
       ],
       "uncited_support_signal": []
@@ -67,6 +82,13 @@
       "claim_text": "Le psychologue du travail Yves Clot",
       "supports": [
         {
+          "id": "SUP-aa871c541e8015da",
+          "origin": "validated",
+          "path": "$.authors[0].name",
+          "access": "n/a",
+          "text": "Yves Clot"
+        },
+        {
           "id": "SUP-646a0cf1ccea31e7",
           "origin": "evidence:lecture.json",
           "path": "$.attribution.note",
@@ -74,11 +96,11 @@
           "text": "Le texte d'où la citation est tirée est signé par Yves Clot seul, et je l'ai vérifié sur le document lui-même avant toute base tierce : la page de couverture du PDF publié par la revue porte « Action et connaissance en clinique de l'activité / Yves Clot » et un seul nom, et la référence électronique que la revue y imprime elle-même se lit « Yves Clot, 'Action et connaissance en clinique de l'activité', Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 » ; l'en-tête courant de chaque page du corps porte « Y. Clot » au singulier. La notice Crossref du DOI 10.4000/activites.1145 ne contient qu'un auteur (Clot, Yves, sequence first, volume 01, issue 1, issued 2004). Le millésime 2004 écrit ici vient donc de la signature imprimée sur le document et de Crossref, qui concordent ; il n'est déduit d'aucune autre source. C'est une attribution à un auteur unique pour cette formulation-ci, et il faut dire pourquoi ce n'est pas une évidence. D'abord parce que le courant qui la porte, la clinique de l'activité, est un collectif de l'équipe de psychologie du travail du Cnam : la bibliographie de ce texte de 2004 est pour un tiers faite des cosignatures de Clot lui-même — avec Faïta, avec Kostulski, avec Faïta, Fernandez et Scheller, avec Scheller, Caroly, Millanvoye et Volkoff — et la même formulation est reprise en première personne du pluriel dans un texte cosigné que j'ai lu, Bonnefond, J.-Y. & Clot, Y. (2018), en note de bas de page : « Cette formulation est pour nous conceptuellement stabilisée ». Le « nous » y est celui des deux signataires et, au-delà, de l'équipe. Ensuite parce que Clot ne présente pas cette phrase comme neuve à l'endroit où il l'écrit : il l'introduit par « on retrouve ici un résultat exposé ailleurs (Clot, 2003 c) », renvoyant à un texte antérieur de lui-même — « Clot, Y. (2003, c). Le collectif dans l'individu ? In G. Vallery & R. Amalberti (Dir.). Modèles et pratiques de… », tel que sa propre bibliographie l'écrit — que je n'ai pas ouvert. Le texte cité n'est donc pas le texte d'origine du concept, mais la plus ancienne de ses formulations que j'aie pu ouvrir et contrôler. Enfin, dans un texte plus tardif et lui aussi signé de lui seul (PISTES, 26-3, 2024), Clot fait porter à Vygotski l'idée qui soutient la notion — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles » — et ce qui lui revient en propre est le transport de cette idée dans l'analyse du travail, et le nom qu'il lui donne. Les deux ouvrages auxquels toutes les bibliographies que j'ai lues renvoient pour ce point s'écrivent, sous leur plume, « Clot, Y. (1999). La fonction psychologique du travail. Paris : PUF, coll. Le Travail Humain » et « Clot, Y. (2008). Travail et pouvoir d'agir. Paris : PUF » ; la bibliographie du texte de 2004 en donne d'ailleurs un état intermédiaire, « Clot, Y. (2002, a). La fonction psychologique du travail. Troisième édition augmentée. Paris : PUF ». Je n'ai ouvert aucun de ces livres, et je reporte ces millésimes comme des références lues dans des bibliographies, non comme des signatures que j'aurais vérifiées (voir reserves). Le concept reste donc rattaché à Clot seul, avec cette réserve explicite : la paternité porte sur la formulation, l'élaboration est celle d'une équipe, et la filiation revendiquée est vygotskienne."
         },
         {
-          "id": "SUP-aa871c541e8015da",
+          "id": "SUP-a2b965c80c470e1d",
           "origin": "validated",
-          "path": "$.authors[0].name",
+          "path": "$.attribution_note",
           "access": "n/a",
-          "text": "Yves Clot"
+          "text": "Yves Clot signe seul le texte de 2004 d'où vient la citation, mais il n'y présente pas la formule comme neuve : il l'introduit en renvoyant à un texte antérieur de lui-même, qui n'a pas pu être ouvert, et rapporte ailleurs à Vygotski l'idée qui la soutient. L'élaboration est celle de l'équipe de clinique de l'activité du Cnam, dont les cosignatures occupent un tiers de sa bibliographie. Un point que le lecteur doit connaître : ce texte dit l'écart entre l'activité réalisée et le réel de l'activité ; l'énumération de ce que ce réel contient (ce qu'on n'a pas pu faire, ce qu'on a cherché à faire sans y parvenir) se lit dans un texte du même auteur paru vingt ans plus tard."
         }
       ],
       "uncited_support_signal": [
@@ -95,8 +117,15 @@
     {
       "claim_id": "C004",
       "locator": "lead[1]",
-      "claim_text": "donne un nom à l’ensemble, liste comprise",
+      "claim_text": "donne un nom à l’ensemble, liste comprise.",
       "supports": [
+        {
+          "id": "SUP-646a0cf1ccea31e7",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Le texte d'où la citation est tirée est signé par Yves Clot seul, et je l'ai vérifié sur le document lui-même avant toute base tierce : la page de couverture du PDF publié par la revue porte « Action et connaissance en clinique de l'activité / Yves Clot » et un seul nom, et la référence électronique que la revue y imprime elle-même se lit « Yves Clot, 'Action et connaissance en clinique de l'activité', Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 » ; l'en-tête courant de chaque page du corps porte « Y. Clot » au singulier. La notice Crossref du DOI 10.4000/activites.1145 ne contient qu'un auteur (Clot, Yves, sequence first, volume 01, issue 1, issued 2004). Le millésime 2004 écrit ici vient donc de la signature imprimée sur le document et de Crossref, qui concordent ; il n'est déduit d'aucune autre source. C'est une attribution à un auteur unique pour cette formulation-ci, et il faut dire pourquoi ce n'est pas une évidence. D'abord parce que le courant qui la porte, la clinique de l'activité, est un collectif de l'équipe de psychologie du travail du Cnam : la bibliographie de ce texte de 2004 est pour un tiers faite des cosignatures de Clot lui-même — avec Faïta, avec Kostulski, avec Faïta, Fernandez et Scheller, avec Scheller, Caroly, Millanvoye et Volkoff — et la même formulation est reprise en première personne du pluriel dans un texte cosigné que j'ai lu, Bonnefond, J.-Y. & Clot, Y. (2018), en note de bas de page : « Cette formulation est pour nous conceptuellement stabilisée ». Le « nous » y est celui des deux signataires et, au-delà, de l'équipe. Ensuite parce que Clot ne présente pas cette phrase comme neuve à l'endroit où il l'écrit : il l'introduit par « on retrouve ici un résultat exposé ailleurs (Clot, 2003 c) », renvoyant à un texte antérieur de lui-même — « Clot, Y. (2003, c). Le collectif dans l'individu ? In G. Vallery & R. Amalberti (Dir.). Modèles et pratiques de… », tel que sa propre bibliographie l'écrit — que je n'ai pas ouvert. Le texte cité n'est donc pas le texte d'origine du concept, mais la plus ancienne de ses formulations que j'aie pu ouvrir et contrôler. Enfin, dans un texte plus tardif et lui aussi signé de lui seul (PISTES, 26-3, 2024), Clot fait porter à Vygotski l'idée qui soutient la notion — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles » — et ce qui lui revient en propre est le transport de cette idée dans l'analyse du travail, et le nom qu'il lui donne. Les deux ouvrages auxquels toutes les bibliographies que j'ai lues renvoient pour ce point s'écrivent, sous leur plume, « Clot, Y. (1999). La fonction psychologique du travail. Paris : PUF, coll. Le Travail Humain » et « Clot, Y. (2008). Travail et pouvoir d'agir. Paris : PUF » ; la bibliographie du texte de 2004 en donne d'ailleurs un état intermédiaire, « Clot, Y. (2002, a). La fonction psychologique du travail. Troisième édition augmentée. Paris : PUF ». Je n'ai ouvert aucun de ces livres, et je reporte ces millésimes comme des références lues dans des bibliographies, non comme des signatures que j'aurais vérifiées (voir reserves). Le concept reste donc rattaché à Clot seul, avec cette réserve explicite : la paternité porte sur la formulation, l'élaboration est celle d'une équipe, et la filiation revendiquée est vygotskienne."
+        },
         {
           "id": "SUP-94d565db4258c7c6",
           "origin": "evidence:lecture.json",
@@ -105,11 +134,18 @@
           "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
         },
         {
-          "id": "SUP-646a0cf1ccea31e7",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
+          "id": "SUP-c98d6b242ef735ab",
+          "origin": "validated",
+          "path": "$.quotation.text",
           "access": "n/a",
-          "text": "Le texte d'où la citation est tirée est signé par Yves Clot seul, et je l'ai vérifié sur le document lui-même avant toute base tierce : la page de couverture du PDF publié par la revue porte « Action et connaissance en clinique de l'activité / Yves Clot » et un seul nom, et la référence électronique que la revue y imprime elle-même se lit « Yves Clot, 'Action et connaissance en clinique de l'activité', Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 » ; l'en-tête courant de chaque page du corps porte « Y. Clot » au singulier. La notice Crossref du DOI 10.4000/activites.1145 ne contient qu'un auteur (Clot, Yves, sequence first, volume 01, issue 1, issued 2004). Le millésime 2004 écrit ici vient donc de la signature imprimée sur le document et de Crossref, qui concordent ; il n'est déduit d'aucune autre source. C'est une attribution à un auteur unique pour cette formulation-ci, et il faut dire pourquoi ce n'est pas une évidence. D'abord parce que le courant qui la porte, la clinique de l'activité, est un collectif de l'équipe de psychologie du travail du Cnam : la bibliographie de ce texte de 2004 est pour un tiers faite des cosignatures de Clot lui-même — avec Faïta, avec Kostulski, avec Faïta, Fernandez et Scheller, avec Scheller, Caroly, Millanvoye et Volkoff — et la même formulation est reprise en première personne du pluriel dans un texte cosigné que j'ai lu, Bonnefond, J.-Y. & Clot, Y. (2018), en note de bas de page : « Cette formulation est pour nous conceptuellement stabilisée ». Le « nous » y est celui des deux signataires et, au-delà, de l'équipe. Ensuite parce que Clot ne présente pas cette phrase comme neuve à l'endroit où il l'écrit : il l'introduit par « on retrouve ici un résultat exposé ailleurs (Clot, 2003 c) », renvoyant à un texte antérieur de lui-même — « Clot, Y. (2003, c). Le collectif dans l'individu ? In G. Vallery & R. Amalberti (Dir.). Modèles et pratiques de… », tel que sa propre bibliographie l'écrit — que je n'ai pas ouvert. Le texte cité n'est donc pas le texte d'origine du concept, mais la plus ancienne de ses formulations que j'aie pu ouvrir et contrôler. Enfin, dans un texte plus tardif et lui aussi signé de lui seul (PISTES, 26-3, 2024), Clot fait porter à Vygotski l'idée qui soutient la notion — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles » — et ce qui lui revient en propre est le transport de cette idée dans l'analyse du travail, et le nom qu'il lui donne. Les deux ouvrages auxquels toutes les bibliographies que j'ai lues renvoient pour ce point s'écrivent, sous leur plume, « Clot, Y. (1999). La fonction psychologique du travail. Paris : PUF, coll. Le Travail Humain » et « Clot, Y. (2008). Travail et pouvoir d'agir. Paris : PUF » ; la bibliographie du texte de 2004 en donne d'ailleurs un état intermédiaire, « Clot, Y. (2002, a). La fonction psychologique du travail. Troisième édition augmentée. Paris : PUF ». Je n'ai ouvert aucun de ces livres, et je reporte ces millésimes comme des références lues dans des bibliographies, non comme des signatures que j'aurais vérifiées (voir reserves). Le concept reste donc rattaché à Clot seul, avec cette réserve explicite : la paternité porte sur la formulation, l'élaboration est celle d'une équipe, et la filiation revendiquée est vygotskienne."
+          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
+        },
+        {
+          "id": "SUP-c47f3f20944d14c0",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
         }
       ],
       "uncited_support_signal": []
@@ -117,47 +153,18 @@
     {
       "claim_id": "C005",
       "locator": "lead[1]",
-      "claim_text": "il affirme surtout que ce qui n’y figure pas n’est pas un détail : c’est la plus grande partie de ce qui s’est réellement passé.",
-      "supports": [
-        {
-          "id": "SUP-c47f3f20944d14c0",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
-        },
-        {
-          "id": "SUP-c98d6b242ef735ab",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
-        },
-        {
-          "id": "SUP-94d565db4258c7c6",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C006",
-      "locator": "lead[1]",
       "claim_text": "Dans un texte de 2004, il écrit que « le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface ».",
       "supports": [
         {
-          "id": "SUP-c47f3f20944d14c0",
-          "origin": "evidence:lecture.json",
+          "id": "SUP-c98d6b242ef735ab",
+          "origin": "validated",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
         },
         {
-          "id": "SUP-c98d6b242ef735ab",
-          "origin": "validated",
+          "id": "SUP-c47f3f20944d14c0",
+          "origin": "evidence:lecture.json",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
@@ -192,30 +199,51 @@
           "text": "Clot, Y. (2004). « Action et connaissance en clinique de l'activité ». Activités, 1-1, p. 23-33. Signé Clot seul. C'est la source de la citation retenue, et le texte désigné comme source primaire par la cartographie du domaine. Lu intégralement dans le PDF publié par la revue (302 704 octets, 12 pages). L'article ne dit le mot « empêchement » que deux fois, et dans les deux cas à propos de l'objet de la recherche et non de l'activité de l'opérateur : « dès lors qu'on prend pour objet de recherche le développement de l'activité et ses empêchements » (p. 30) et « L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements » (p. 31). L'expression « le réel de l'activité » n'y paraît qu'une fois, dans la phrase citée."
         },
         {
+          "id": "SUP-6ef118ab36c053f3",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 31 (§ 29)"
+        },
+        {
+          "id": "SUP-77622698d6fb65a2",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "p. 31 de l'édition PDF de la revue (PDF p. 10 sur 12 ; pied de page « @ctivités, volume 1 numéro 1 31 ») : c'est la dernière phrase de la page, et la dernière phrase de la section. Dans l'édition HTML, où les paragraphes sont numérotés, c'est le paragraphe 29, qui ne compte que cette seule phrase. La phrase entière commence par « On peut faire une autre remarque : on retrouve ici un résultat exposé ailleurs (Clot, 2003 c) : » ; la citation reprend le segment qui suit le second deux-points, sans le tronquer."
+        },
+        {
           "id": "SUP-14f182557881499d",
           "origin": "validated",
           "path": "$.review.notes[0]",
           "access": "n/a",
           "text": "CITATION — ouvert https://journals.openedition.org/activites/1145 (HTML) : au § 29 on lit mot pour mot « On peut faire une autre remarque : on retrouve ici un résultat exposé ailleurs (Clot, 2003 c) : le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Aucune coupe, aucune traduction : le texte est français d'origine, la fiche déclare correctement translation.kind = none."
+        },
+        {
+          "id": "SUP-f8d3c87c1f9c523b",
+          "origin": "validated",
+          "path": "$.review.notes[4]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — le texte de 2004 est signé Yves Clot seul (page de titre du PDF, notice Crossref). Le renvoi interne du § 29 va à « Clot, 2003 c », que la bibliographie p. 33 identifie comme « Le collectif dans l'individu ? », Actes du XXXVIIIe Congrès de la SELF — texte lui aussi signé Clot seul ; je n'ai pas pu ouvrir ces actes. Recherche de revendication concurrente : j'ai ouvert Clot & Faïta, « Genres et styles en analyse du travail », Travailler 6, 2000 (PDF masterprotc4.free.fr/IMG/pdf/texteclot4.pdf, 36 p.) — l'expression « réel de l'activité » n'y apparaît qu'une fois, de façon incidente, sans être posée comme concept ; le couple activité réalisée / réel de l'activité n'y est pas thématisé. Aucun auteur tiers ne porte de revendication de paternité. La filiation vygotskienne que la fiche signale est effectivement portée par les sources (2024, § 5, renvoi explicite à Vygotski)."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C007",
+      "claim_id": "C006",
       "locator": "lead[1]",
       "claim_text": "Ce qu’on a fait, ce qui se voit et se raconte, n’est donc que la partie émergée de ce qu’on a traversé pour le faire.",
       "supports": [
         {
-          "id": "SUP-c47f3f20944d14c0",
-          "origin": "evidence:lecture.json",
+          "id": "SUP-c98d6b242ef735ab",
+          "origin": "validated",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
         },
         {
-          "id": "SUP-c98d6b242ef735ab",
-          "origin": "validated",
+          "id": "SUP-c47f3f20944d14c0",
+          "origin": "evidence:lecture.json",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
@@ -226,12 +254,19 @@
           "path": "$.summary",
           "access": "n/a",
           "text": "Ce qui se fait n'épuise pas le travail : le réel de l'activité a un volume dont l'activité réalisée n'est que la surface, et c'est lui que l'analyse cherche à ouvrir."
+        },
+        {
+          "id": "SUP-94d565db4258c7c6",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C007",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "L’auteur emploie deux termes qui ne sont pas synonymes.",
       "supports": [
@@ -253,7 +288,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C009",
+      "claim_id": "C008",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Ce qui se voit, un objet produit, un dossier clos, une tâche cochée, il l’appelle l’activité réalisée.",
       "supports": [
@@ -263,6 +298,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
+        },
+        {
+          "id": "SUP-c98d6b242ef735ab",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
         },
         {
           "id": "SUP-c47f3f20944d14c0",
@@ -275,10 +317,17 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Le réel de l’activité, lui, ne désigne pas ce qui resterait une fois le visible mis de côté : sa formule emboîte le premier terme dans le second, comme une surface est comprise dans un volume.",
       "supports": [
+        {
+          "id": "SUP-c98d6b242ef735ab",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
+        },
         {
           "id": "SUP-c47f3f20944d14c0",
           "origin": "evidence:lecture.json",
@@ -287,8 +336,30 @@
           "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
         },
         {
+          "id": "SUP-94d565db4258c7c6",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Ce qui s’est fait n’est pas à côté de ce qui ne s’est pas fait, il en est la face exposée.",
+      "supports": [
+        {
           "id": "SUP-c98d6b242ef735ab",
           "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
+        },
+        {
+          "id": "SUP-c47f3f20944d14c0",
+          "origin": "evidence:lecture.json",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
@@ -305,35 +376,6 @@
     },
     {
       "claim_id": "C011",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Ce qui s’est fait n’est pas à côté de ce qui ne s’est pas fait, il en est la face exposée.",
-      "supports": [
-        {
-          "id": "SUP-c47f3f20944d14c0",
-          "origin": "evidence:lecture.json",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
-        },
-        {
-          "id": "SUP-c98d6b242ef735ab",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
-        },
-        {
-          "id": "SUP-94d565db4258c7c6",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Dans un texte de 2024, il le redit en d’autres mots : l’activité réalisée, celle que le psychologue du travail peut observer, « n’a pas le monopole du réel de l’activité vécue des sujets, beaucoup moins observable ».",
       "supports": [
@@ -363,7 +405,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C013",
+      "claim_id": "C012",
       "locator": "sections[0].paragraphs[1]",
       "claim_text": "Et il ajoute : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. »",
       "supports": [
@@ -373,86 +415,6 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C014",
-      "locator": "sections[0].paragraphs[1]",
-      "claim_text": "On ne garde pas de sa journée ce qui s’est fait en laissant à la porte ce qui ne s’est pas fait ; les deux entrent ensemble.",
-      "supports": [
-        {
-          "id": "SUP-94d565db4258c7c6",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C015",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "Dire qu’il y a un volume ne dit pas encore de quoi il est fait.",
-      "supports": [
-        {
-          "id": "SUP-94d565db4258c7c6",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
-        },
-        {
-          "id": "SUP-8b0ef8c76d45389f",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[0]",
-          "access": "n/a",
-          "text": "La citation retenue dit l'écart entre le réalisé et le réel, mais elle ne dit pas l'empêchement, et la carte ne doit pas lui faire dire ce qu'elle ne dit pas. Le texte de 2004 n'emploie « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération de ce que contient le volume — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024, reproduite intégralement dans definition_de_lauteur. J'ai préféré une citation prise dans le plus ancien des deux textes ouvrables, quitte à ce qu'elle soit une image plutôt qu'une définition ; si le rédacteur juge que la carte a besoin de l'énumération, elle existe sous la même signature et elle est référencée ici, mais elle date de vingt ans plus tard."
-        },
-        {
-          "id": "SUP-f75445b1ff5df394",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "LE TITRE PORTE CE QUE LA CITATION ÉTABLIT, ET RIEN DE PLUS. La citation dit l'écart entre le réalisé et le réel ; elle ne dit pas l'empêchement. Le texte de 2004 n'écrit « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération célèbre — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024. L'identifiant du fichier reste « activite-empechee », qui est le libellé de réception."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C016",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "C’est vingt ans plus tard, dans le texte de 2024, que l’auteur ouvre la liste",
-      "supports": [
-        {
-          "id": "SUP-94d565db4258c7c6",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
-        },
-        {
-          "id": "SUP-8b0ef8c76d45389f",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[0]",
-          "access": "n/a",
-          "text": "La citation retenue dit l'écart entre le réalisé et le réel, mais elle ne dit pas l'empêchement, et la carte ne doit pas lui faire dire ce qu'elle ne dit pas. Le texte de 2004 n'emploie « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération de ce que contient le volume — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024, reproduite intégralement dans definition_de_lauteur. J'ai préféré une citation prise dans le plus ancien des deux textes ouvrables, quitte à ce qu'elle soit une image plutôt qu'une définition ; si le rédacteur juge que la carte a besoin de l'énumération, elle existe sous la même signature et elle est référencée ici, mais elle date de vingt ans plus tard."
-        },
-        {
-          "id": "SUP-f75445b1ff5df394",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "LE TITRE PORTE CE QUE LA CITATION ÉTABLIT, ET RIEN DE PLUS. La citation dit l'écart entre le réalisé et le réel ; elle ne dit pas l'empêchement. Le texte de 2004 n'écrit « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération célèbre — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024. L'identifiant du fichier reste « activite-empechee », qui est le libellé de réception."
-        },
-        {
-          "id": "SUP-a2b965c80c470e1d",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Yves Clot signe seul le texte de 2004 d'où vient la citation, mais il n'y présente pas la formule comme neuve : il l'introduit en renvoyant à un texte antérieur de lui-même, qui n'a pas pu être ouvert, et rapporte ailleurs à Vygotski l'idée qui la soutient. L'élaboration est celle de l'équipe de clinique de l'activité du Cnam, dont les cosignatures occupent un tiers de sa bibliographie. Un point que le lecteur doit connaître : ce texte dit l'écart entre l'activité réalisée et le réel de l'activité ; l'énumération de ce que ce réel contient (ce qu'on n'a pas pu faire, ce qu'on a cherché à faire sans y parvenir) se lit dans un texte du même auteur paru vingt ans plus tard."
         },
         {
           "id": "SUP-1ec99fe961831e90",
@@ -473,7 +435,73 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C017",
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "On ne garde pas de sa journée ce qui s’est fait en laissant à la porte ce qui ne s’est pas fait ; les deux entrent ensemble.",
+      "supports": [
+        {
+          "id": "SUP-94d565db4258c7c6",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[0]",
+      "claim_text": "C’est vingt ans plus tard, dans le texte de 2024, que l’auteur ouvre la liste",
+      "supports": [
+        {
+          "id": "SUP-94d565db4258c7c6",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
+        },
+        {
+          "id": "SUP-a2b965c80c470e1d",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Yves Clot signe seul le texte de 2004 d'où vient la citation, mais il n'y présente pas la formule comme neuve : il l'introduit en renvoyant à un texte antérieur de lui-même, qui n'a pas pu être ouvert, et rapporte ailleurs à Vygotski l'idée qui la soutient. L'élaboration est celle de l'équipe de clinique de l'activité du Cnam, dont les cosignatures occupent un tiers de sa bibliographie. Un point que le lecteur doit connaître : ce texte dit l'écart entre l'activité réalisée et le réel de l'activité ; l'énumération de ce que ce réel contient (ce qu'on n'a pas pu faire, ce qu'on a cherché à faire sans y parvenir) se lit dans un texte du même auteur paru vingt ans plus tard."
+        },
+        {
+          "id": "SUP-8b0ef8c76d45389f",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[0]",
+          "access": "n/a",
+          "text": "La citation retenue dit l'écart entre le réalisé et le réel, mais elle ne dit pas l'empêchement, et la carte ne doit pas lui faire dire ce qu'elle ne dit pas. Le texte de 2004 n'emploie « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération de ce que contient le volume — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024, reproduite intégralement dans definition_de_lauteur. J'ai préféré une citation prise dans le plus ancien des deux textes ouvrables, quitte à ce qu'elle soit une image plutôt qu'une définition ; si le rédacteur juge que la carte a besoin de l'énumération, elle existe sous la même signature et elle est référencée ici, mais elle date de vingt ans plus tard."
+        },
+        {
+          "id": "SUP-f75445b1ff5df394",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "LE TITRE PORTE CE QUE LA CITATION ÉTABLIT, ET RIEN DE PLUS. La citation dit l'écart entre le réalisé et le réel ; elle ne dit pas l'empêchement. Le texte de 2004 n'écrit « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération célèbre — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024. L'identifiant du fichier reste « activite-empechee », qui est le libellé de réception."
+        },
+        {
+          "id": "SUP-1ec99fe961831e90",
+          "origin": "evidence:lecture.json",
+          "path": "$.sources_ouvertes[1].citation",
+          "access": "full-text",
+          "text": "Clot, Y. (2024). « J. Leplat, l'ouverture et la force d'esprit ». Perspectives interdisciplinaires sur le travail et la santé, 26-3. Signé Clot seul (vérifié sur la page de titre du PDF publié, sur la notice HAL hal-05334852v1, sur Crossref et sur la page de la revue). Reformulation tardive par l'auteur lui-même, et c'est là — et non dans le texte de 2004 — que se trouve l'énumération de ce que le réel de l'activité contient au-delà du réalisé, ainsi que le seul énoncé de sa main sur les activités empêchées. Lu deux fois et sur deux exemplaires : le PDF publié déposé sur HAL (143 137 octets, 4 pages, CC BY-NC-ND 4.0), extrait et contrôlé caractère par caractère hors ligne, et la page de la revue, dont la transcription du paragraphe 6 coïncide mot pour mot avec celle du PDF. Unpaywall : is_oa true, oa_status « gold », trois localisations ouvertes."
+        },
+        {
+          "id": "SUP-537f7ce75d1dcea5",
+          "origin": "validated",
+          "path": "$.sources[1].label",
+          "access": "full-text",
+          "text": "Yves Clot, « J. Leplat, l'ouverture et la force d'esprit », PISTES, 26-3, 2024 : reformulation tardive où se lit l'énumération de ce que contient le réel de l'activité.",
+          "access_corroboration": "corrobore"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C015",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "« le réel de l’activité est aussi ce qui ne se fait pas, ce qu’on ne peut pas faire, ce qu’on cherche à faire sans y parvenir – les échecs –, ce qu’on aurait voulu ou pu faire, ce qu’on pense ou qu’on rêve pouvoir faire ailleurs. »",
       "supports": [
@@ -490,12 +518,26 @@
           "path": "$.review.notes[3]",
           "access": "n/a",
           "text": "SOURCES, locators — hal.science/hal-05334852v1/document (4 p., dépôt du texte PISTES 26-3) : § 5 « Le réel déborde le réalisé. Cela est vrai en général, comme l'a vu Vygotski » ; § 6 « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire… ». Le locator « § 5-6 » et la description « reformulation tardive où se lit l'énumération » résolvent. hal.science/hal-02150864/document (26 p.), section NOTES, note 2 : « Cette formulation est pour nous conceptuellement stabilisée : le réel de l'activité n'est pas que l'activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l'analyse (Clot, 2008). » Locator « note 2 » exact."
+        },
+        {
+          "id": "SUP-5690f943879007ce",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "La formule qui circule dans la littérature de reprise, « le réel de l'activité, c'est aussi ce qui ne se fait pas », n'est écrite telle quelle dans aucun des deux textes de Clot que j'ai ouverts. Le texte de 2024 écrit « le réel de l'activité est aussi ce qui ne se fait pas », sans virgule et sans « c'est », et la suite de sa phrase n'est pas facultative. Le texte de 2004 ne contient pas du tout cette tournure. Toute reprise de la variante en « c'est » serait une phrase de tiers."
+        },
+        {
+          "id": "SUP-1ec99fe961831e90",
+          "origin": "evidence:lecture.json",
+          "path": "$.sources_ouvertes[1].citation",
+          "access": "full-text",
+          "text": "Clot, Y. (2024). « J. Leplat, l'ouverture et la force d'esprit ». Perspectives interdisciplinaires sur le travail et la santé, 26-3. Signé Clot seul (vérifié sur la page de titre du PDF publié, sur la notice HAL hal-05334852v1, sur Crossref et sur la page de la revue). Reformulation tardive par l'auteur lui-même, et c'est là — et non dans le texte de 2004 — que se trouve l'énumération de ce que le réel de l'activité contient au-delà du réalisé, ainsi que le seul énoncé de sa main sur les activités empêchées. Lu deux fois et sur deux exemplaires : le PDF publié déposé sur HAL (143 137 octets, 4 pages, CC BY-NC-ND 4.0), extrait et contrôlé caractère par caractère hors ligne, et la page de la revue, dont la transcription du paragraphe 6 coïncide mot pour mot avec celle du PDF. Unpaywall : is_oa true, oa_status « gold », trois localisations ouvertes."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C018",
+      "claim_id": "C016",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "La phrase ne s’arrête pas là : « Il faut y ajouter – paradoxe fréquent – ce qu’on fait pour ne pas faire ce qui est à faire, ou encore ce qu’on fait sans vouloir le faire. Sans compter ce qui est à refaire. »",
       "supports": [
@@ -524,7 +566,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Le volume ne contient donc pas seulement de l’inaccompli : il contient aussi des actions accomplies et visibles, dont l’intérêt tient à ce qu’elles évitent ou à ce qu’elles contredisent.",
       "supports": [
@@ -539,7 +581,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C020",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Un empêchement ne se repère pas forcément comme un blanc dans l’emploi du temps.",
       "supports": [
@@ -554,7 +596,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C021",
+      "claim_id": "C019",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Cette liste ne réduit pas les échecs à un manque de compétence.",
       "supports": [
@@ -569,14 +611,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C022",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Quelqu’un de très compétent peut tout autant chercher à faire quelque chose sans y parvenir, parce que les moyens manquent, parce que le temps manque, parce qu’une autre urgence est passée devant.",
-      "supports": [],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C023",
+      "claim_id": "C020",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Le réel de l’activité n’est pas le tiroir où l’on rangerait les ratés d’un travail mal fait : c’est une part ordinaire de tout travail, aussi bien mené soit-il par ailleurs.",
       "supports": [
@@ -598,7 +633,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C021",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "La réponse de l’auteur tient à ce qui se passe dans l’instant où l’on agit",
       "supports": [
@@ -613,9 +648,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C022",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "il ne la présente pas comme sienne : il rapporte à Vygotski l’idée qui soutient toute la notion, et le cite",
+      "claim_text": "et il ne la présente pas comme sienne : il rapporte à Vygotski l’idée qui soutient toute la notion",
       "supports": [
         {
           "id": "SUP-94d565db4258c7c6",
@@ -656,9 +691,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C023",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "« chaque minute, l’homme est plein de possibilités non réalisées, et ce qui se réalise n’est jamais que l’activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n’ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n’ayant que plus de force pour exercer dans l’activité du sujet une influence contre laquelle il peut rester sans défense. »",
+      "claim_text": "et le cite : « chaque minute, l’homme est plein de possibilités non réalisées, et ce qui se réalise n’est jamais que l’activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n’ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n’ayant que plus de force pour exercer dans l’activité du sujet une influence contre laquelle il peut rester sans défense. »",
       "supports": [
         {
           "id": "SUP-94d565db4258c7c6",
@@ -678,7 +713,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C027",
+      "claim_id": "C024",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Si une seule activité l’emporte au point de collision, ne pas faire quelque chose n’est pas un événement négatif : c’est l’issue d’un affrontement, et les activités battues ne s’évaporent pas.",
       "supports": [
@@ -702,7 +737,7 @@
       ]
     },
     {
-      "claim_id": "C028",
+      "claim_id": "C025",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Elles restent là, d’autant plus agissantes qu’elles ont été refoulées.",
       "supports": [
@@ -717,7 +752,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C029",
+      "claim_id": "C026",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Une activité empêchée n’est pas une activité absente, c’est une activité qui continue d’agir sur celui qui ne l’a pas faite.",
       "supports": [
@@ -732,7 +767,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C027",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "L’empêchement n’est donc pas seulement extérieur : il ne se réduit pas à l’obstacle ou au moyen qui manque, il se joue aussi entre des manières de faire qui se disputent le même instant.",
       "supports": [
@@ -747,7 +782,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C028",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "L’idée circule sous une étiquette plus courte qu’elle : activité empêchée, au singulier, comme s’il s’agissait d’une catégorie fixe.",
       "supports": [
@@ -766,13 +801,6 @@
           "text": "Le libellé « activité empêchée » au singulier est d'ailleurs plus figé que ce que l'auteur écrit : Clot écrit « les activités suspendues, contrariées ou empêchées », au pluriel et adjectivé. Où le substantif apparaît pour la première fois dans son œuvre n'a pas pu être établi."
         },
         {
-          "id": "SUP-f75445b1ff5df394",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "LE TITRE PORTE CE QUE LA CITATION ÉTABLIT, ET RIEN DE PLUS. La citation dit l'écart entre le réalisé et le réel ; elle ne dit pas l'empêchement. Le texte de 2004 n'écrit « empêchements » que deux fois, et les deux fois à propos de l'objet de la recherche (« le développement de l'activité et ses empêchements »), jamais pour désigner ce que le travailleur n'a pas pu faire. L'énumération célèbre — ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir — n'est pas dans ce texte : elle est dans celui de 2024. L'identifiant du fichier reste « activite-empechee », qui est le libellé de réception."
-        },
-        {
           "id": "SUP-d111dea4d5b00b68",
           "origin": "evidence:lecture.json",
           "path": "$.reserves[7]",
@@ -783,7 +811,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C029",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "L’auteur écrit plutôt un pluriel adjectivé.",
       "supports": [
@@ -805,7 +833,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Dans le texte de 2024, qu’il signe seul,",
       "supports": [
@@ -817,25 +845,17 @@
           "text": "Clot, Y. (2024). « J. Leplat, l'ouverture et la force d'esprit ». Perspectives interdisciplinaires sur le travail et la santé, 26-3. Signé Clot seul (vérifié sur la page de titre du PDF publié, sur la notice HAL hal-05334852v1, sur Crossref et sur la page de la revue). Reformulation tardive par l'auteur lui-même, et c'est là — et non dans le texte de 2004 — que se trouve l'énumération de ce que le réel de l'activité contient au-delà du réalisé, ainsi que le seul énoncé de sa main sur les activités empêchées. Lu deux fois et sur deux exemplaires : le PDF publié déposé sur HAL (143 137 octets, 4 pages, CC BY-NC-ND 4.0), extrait et contrôlé caractère par caractère hors ligne, et la page de la revue, dont la transcription du paragraphe 6 coïncide mot pour mot avec celle du PDF. Unpaywall : is_oa true, oa_status « gold », trois localisations ouvertes."
         },
         {
-          "id": "SUP-537f7ce75d1dcea5",
-          "origin": "validated",
-          "path": "$.sources[1].label",
-          "access": "full-text",
-          "text": "Yves Clot, « J. Leplat, l'ouverture et la force d'esprit », PISTES, 26-3, 2024 : reformulation tardive où se lit l'énumération de ce que contient le réel de l'activité.",
-          "access_corroboration": "corrobore"
-        },
-        {
-          "id": "SUP-8afd7962ac923a25",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
+          "id": "SUP-646a0cf1ccea31e7",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
           "access": "n/a",
-          "text": "SOURCES — Crossref 10.4000/activites.1145 → « Action et connaissance en clinique de l'activité », Yves Clot, Activités, vol. 01, n° 1, 2004. Crossref 10.4000/1356u → « J. Leplat, l'ouverture et la force d'esprit. », Yves Clot, PISTES 26-3, 2024. Crossref 10.4000/pistes.5538 → « Clinique du travail et santé au travail : ouvertures, perspectives et limites », Jean-Yves Bonnefond et Yves Clot, PISTES 20-1, 2018. Les trois notices concordent avec les libellés affichés (auteurs, revue, volume, année)."
+          "text": "Le texte d'où la citation est tirée est signé par Yves Clot seul, et je l'ai vérifié sur le document lui-même avant toute base tierce : la page de couverture du PDF publié par la revue porte « Action et connaissance en clinique de l'activité / Yves Clot » et un seul nom, et la référence électronique que la revue y imprime elle-même se lit « Yves Clot, 'Action et connaissance en clinique de l'activité', Activités [En ligne], 1-1 | avril 2004, mis en ligne le 02 avril 2004 » ; l'en-tête courant de chaque page du corps porte « Y. Clot » au singulier. La notice Crossref du DOI 10.4000/activites.1145 ne contient qu'un auteur (Clot, Yves, sequence first, volume 01, issue 1, issued 2004). Le millésime 2004 écrit ici vient donc de la signature imprimée sur le document et de Crossref, qui concordent ; il n'est déduit d'aucune autre source. C'est une attribution à un auteur unique pour cette formulation-ci, et il faut dire pourquoi ce n'est pas une évidence. D'abord parce que le courant qui la porte, la clinique de l'activité, est un collectif de l'équipe de psychologie du travail du Cnam : la bibliographie de ce texte de 2004 est pour un tiers faite des cosignatures de Clot lui-même — avec Faïta, avec Kostulski, avec Faïta, Fernandez et Scheller, avec Scheller, Caroly, Millanvoye et Volkoff — et la même formulation est reprise en première personne du pluriel dans un texte cosigné que j'ai lu, Bonnefond, J.-Y. & Clot, Y. (2018), en note de bas de page : « Cette formulation est pour nous conceptuellement stabilisée ». Le « nous » y est celui des deux signataires et, au-delà, de l'équipe. Ensuite parce que Clot ne présente pas cette phrase comme neuve à l'endroit où il l'écrit : il l'introduit par « on retrouve ici un résultat exposé ailleurs (Clot, 2003 c) », renvoyant à un texte antérieur de lui-même — « Clot, Y. (2003, c). Le collectif dans l'individu ? In G. Vallery & R. Amalberti (Dir.). Modèles et pratiques de… », tel que sa propre bibliographie l'écrit — que je n'ai pas ouvert. Le texte cité n'est donc pas le texte d'origine du concept, mais la plus ancienne de ses formulations que j'aie pu ouvrir et contrôler. Enfin, dans un texte plus tardif et lui aussi signé de lui seul (PISTES, 26-3, 2024), Clot fait porter à Vygotski l'idée qui soutient la notion — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles » — et ce qui lui revient en propre est le transport de cette idée dans l'analyse du travail, et le nom qu'il lui donne. Les deux ouvrages auxquels toutes les bibliographies que j'ai lues renvoient pour ce point s'écrivent, sous leur plume, « Clot, Y. (1999). La fonction psychologique du travail. Paris : PUF, coll. Le Travail Humain » et « Clot, Y. (2008). Travail et pouvoir d'agir. Paris : PUF » ; la bibliographie du texte de 2004 en donne d'ailleurs un état intermédiaire, « Clot, Y. (2002, a). La fonction psychologique du travail. Troisième édition augmentée. Paris : PUF ». Je n'ai ouvert aucun de ces livres, et je reporte ces millésimes comme des références lues dans des bibliographies, non comme des signatures que j'aurais vérifiées (voir reserves). Le concept reste donc rattaché à Clot seul, avec cette réserve explicite : la paternité porte sur la formulation, l'élaboration est celle d'une équipe, et la filiation revendiquée est vygotskienne."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "la liste débouche sur une règle : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l’analyse. »",
       "supports": [
@@ -850,9 +870,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C032",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Un texte de 2018 qu’il cosigne",
+      "claim_text": "Un texte de 2018 qu’il cosigne tient cette formulation pour « conceptuellement stabilisée » : « le réel de l’activité n’est pas que l’activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l’analyse ».",
       "supports": [
         {
           "id": "SUP-2812cb300ba840d4",
@@ -870,26 +890,12 @@
           "access_corroboration": "corrobore"
         },
         {
-          "id": "SUP-8afd7962ac923a25",
+          "id": "SUP-ee84a7679c83f32b",
           "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "SOURCES — Crossref 10.4000/activites.1145 → « Action et connaissance en clinique de l'activité », Yves Clot, Activités, vol. 01, n° 1, 2004. Crossref 10.4000/1356u → « J. Leplat, l'ouverture et la force d'esprit. », Yves Clot, PISTES 26-3, 2024. Crossref 10.4000/pistes.5538 → « Clinique du travail et santé au travail : ouvertures, perspectives et limites », Jean-Yves Bonnefond et Yves Clot, PISTES 20-1, 2018. Les trois notices concordent avec les libellés affichés (auteurs, revue, volume, année)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C036",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "tient cette formulation pour « conceptuellement stabilisée » : « le réel de l’activité n’est pas que l’activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l’analyse ».",
-      "supports": [
-        {
-          "id": "SUP-2812cb300ba840d4",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[2].citation",
+          "path": "$.sources[2].locator",
           "access": "full-text",
-          "text": "Bonnefond, J.-Y. & Clot, Y. (2018). « Clinique du travail et santé au travail : ouvertures, perspectives et limites ». Perspectives interdisciplinaires sur le travail et la santé, 20-1. Cosigné, donc autant source primaire tardive que secondaire. PDF publié par la revue et déposé sur HAL (hal-02150864, fichier serveur « pistes-5538.pdf », 585 009 octets, 26 pages), lu directement. Sa note de bas de page 2 est la déclaration de stabilité conceptuelle la plus nette que j'aie trouvée sur ce point : « Cette formulation est pour nous conceptuellement stabilisée : le réel de l'activité n'est pas que l'activité réalisée, les activités suspendues, contrariées ou empêchées, voire les contre-activités, doivent être admises dans l'analyse (Clot, 2008). » Non retenue comme citation parce qu'elle est cosignée et que la couche texte de ce PDF insère des espaces parasites à l'intérieur des mots."
+          "text": "note 2",
+          "access_corroboration": "corrobore"
         },
         {
           "id": "SUP-ef71b0d2b7494085",
@@ -909,7 +915,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C033",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Le singulier range sous un mot unique ce que l’auteur écrit avec plusieurs, et c’est cette variété qu’il aplatit.",
       "supports": [
@@ -931,7 +937,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C034",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Dès le texte de 2004, l’auteur écrit que l’expérimentation en clinique de l’activité, sa manière d’étudier le travail, « vise à donner du volume à cette activité réalisée ».",
       "supports": [
@@ -948,14 +954,21 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE — le hook (« Ce que vous avez fait aujourd'hui dit-il tout ce que votre travail a été ? ») est l'exacte question que porte la métaphore volume/surface du § 29 ; il n'ajoute rien. Le summary emploie les deux termes de l'auteur, « le réel de l'activité » et « l'activité réalisée », et n'écrit nulle part « activité réelle » — c'est le point qui aurait pu déraper, puisque Clot construit précisément le réel de l'activité contre l'activité réelle de la tradition ergonomique. La clause finale « c'est lui que l'analyse cherche à ouvrir » est couverte par la note 2 de 2018 (« doivent être admises dans l'analyse ») et par 2004 § 30 (« L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée »). Rien qui déborde, rien qui rétrécisse."
+        },
+        {
+          "id": "SUP-4679703635e97ece",
+          "origin": "evidence:lecture.json",
+          "path": "$.sources_ouvertes[0].citation",
+          "access": "full-text",
+          "text": "Clot, Y. (2004). « Action et connaissance en clinique de l'activité ». Activités, 1-1, p. 23-33. Signé Clot seul. C'est la source de la citation retenue, et le texte désigné comme source primaire par la cartographie du domaine. Lu intégralement dans le PDF publié par la revue (302 704 octets, 12 pages). L'article ne dit le mot « empêchement » que deux fois, et dans les deux cas à propos de l'objet de la recherche et non de l'activité de l'opérateur : « dès lors qu'on prend pour objet de recherche le développement de l'activité et ses empêchements » (p. 30) et « L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements » (p. 31). L'expression « le réel de l'activité » n'y paraît qu'une fois, dans la phrase citée."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C035",
       "locator": "sections[4].paragraphs[0]",
-      "claim_text": "Un article de 2011 qu’il cosigne",
+      "claim_text": "Un article de 2011 qu’il cosigne dit ce que cela change pour l’observation : « la clinique de l’activité distingue l’activité réalisée du réel de l’activité (Clot, 2008). Elle ne limite donc pas les possibilités du professionnel observé à ce qu’on lui voit faire ».",
       "supports": [
         {
           "id": "SUP-89739a4b2497d763",
@@ -968,22 +981,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C040",
-      "locator": "sections[4].paragraphs[0]",
-      "claim_text": "dit ce que cela change pour l’observation : « la clinique de l’activité distingue l’activité réalisée du réel de l’activité (Clot, 2008). Elle ne limite donc pas les possibilités du professionnel observé à ce qu’on lui voit faire ».",
-      "supports": [
-        {
-          "id": "SUP-89739a4b2497d763",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[3].citation",
-          "access": "full-text",
-          "text": "Simonet, P., Caroly, S. & Clot, Y. (2011). « Méthodes d'observation de l'activité de travail et prévention durable des TMS : action et discussion interdisciplinaire entre clinique de l'activité et ergonomie ». Activités, 8(1). PDF lu directement (dépôt HAL halshs-00715614, 745 927 octets, 27 pages). Utile à deux titres : il montre l'usage opératoire de la distinction (« la clinique de l'activité distingue l'activité réalisée du réel de l'activité (Clot, 2008). Elle ne limite donc pas les possibilités du professionnel observé à ce qu'on lui voit faire »), et il donne l'attribution telle que l'équipe elle-même l'écrit, en renvoyant « d'activité empêchée » à (Clot, 1999)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C041",
+      "claim_id": "C036",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Deux personnes qui obtiennent le même résultat n’ont donc pas forcément traversé le même travail, et un regard qui ne retient que le résultat les tiendra pour équivalentes.",
       "supports": [
@@ -995,24 +993,17 @@
           "text": "Simonet, P., Caroly, S. & Clot, Y. (2011). « Méthodes d'observation de l'activité de travail et prévention durable des TMS : action et discussion interdisciplinaire entre clinique de l'activité et ergonomie ». Activités, 8(1). PDF lu directement (dépôt HAL halshs-00715614, 745 927 octets, 27 pages). Utile à deux titres : il montre l'usage opératoire de la distinction (« la clinique de l'activité distingue l'activité réalisée du réel de l'activité (Clot, 2008). Elle ne limite donc pas les possibilités du professionnel observé à ce qu'on lui voit faire »), et il donne l'attribution telle que l'équipe elle-même l'écrit, en renvoyant « d'activité empêchée » à (Clot, 1999)."
         },
         {
-          "id": "SUP-c47f3f20944d14c0",
+          "id": "SUP-94d565db4258c7c6",
           "origin": "evidence:lecture.json",
-          "path": "$.quotation.text",
+          "path": "$.definition_de_lauteur",
           "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
-        },
-        {
-          "id": "SUP-c98d6b242ef735ab",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "le réel de l’activité possède un volume dont l’activité réalisée par un opérateur n’est jamais que la surface."
+          "text": "Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel. Dans le texte de 2004, la notion arrive tout à la fin, comme conclusion d'une démonstration menée sur deux terrains (une comédienne de la Comédie-Française qui cherche comment tenir un chandelier brûlant, et un échange en autoconfrontation croisée entre un facteur titulaire et un jeune rouleur), et elle tient en une image : « le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface. » Ce qui précède commande cette phrase. L'objet de la clinique de l'activité n'est pas l'activité observable : « Il s'agit moins de repérer les organisateurs de l'action ou les schèmes, pour parler comme Piaget, que d'étudier les organisateurs et l'organisation de la transformation de l'activité. Autrement dit moins de repérer la structure de l'activité en tant que telle que la structure de son développement possible ou impossible. L'objet de connaissance est moins l'activité que le développement de l'activité et ses empêchements. » Et ce qui suit en donne la conséquence de méthode : « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée. Mais elle peut servir aussi à étudier comment cette activité prend ce volume, lorsqu'elle le prend. » Le texte de 2004 dit donc que le réalisé n'épuise pas le réel, mais il n'énumère pas ce que ce volume contient. C'est un texte plus tardif, également signé de Clot seul (PISTES, 26-3, 2024, § 5 et 6), qui le fait, et c'est là que se trouve l'énoncé le plus direct de l'activité empêchée. Il y écrit d'abord, en une phrase : « Le réel déborde le réalisé », après avoir posé que « l'activité réalisée qui en sort et que le psychologue du travail peut observer n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable ». Puis il ouvre le volume : « le réel de l'activité est aussi ce qui ne se fait pas, ce qu'on ne peut pas faire, ce qu'on cherche à faire sans y parvenir – les échecs –, ce qu'on aurait voulu ou pu faire, ce qu'on pense ou qu'on rêve pouvoir faire ailleurs. Il faut y ajouter – paradoxe fréquent – ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire. Sans compter ce qui est à refaire. » Il en tire la règle d'analyse : « Les activités suspendues, contrariées ou empêchées et, pour tout dire, ravalées, doivent donc être admises dans l'analyse. » Deux choses sont à ne pas perdre. La première est que l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise, et il le fait porter par Vygotski — « chaque minute, l'homme est plein de possibilités non réalisées, et ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision entre toutes les activités possibles. Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer dans l'activité du sujet une influence contre laquelle il peut rester sans défense. » L'activité empêchée n'est donc pas une activité absente : c'est une activité qui continue d'agir sur celui qui ne l'a pas faite. La seconde est que l'empêchement est chez lui un problème de santé et non de performance : l'activité « affranchit le sujet – en risquant toujours l'échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d'en être empêchée. C'est bien sûr souvent le cas et c'est la source même de la dégradation de la santé au travail jusqu'aux formes graves de psychopathologie du travail » ; « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective inhérente à l'activité ainsi définie. » Il précise enfin ce que la notion refuse : « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas trier. » Le concept est construit contre une manière de définir l'activité, que Clot expose avant de la déplacer : celle où l'activité est « déclenchée et guidée par la tâche » (il cite Leplat et Hoc, 1983), et où « La tâche est ce qui est à faire, l'activité ce qui se fait, a-t-on pris l'habitude de dire ». Le réel de l'activité est précisément ce que cette dernière formule laisse tomber."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C037",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Pour celui qui travaille, ensuite, ce qui se joue dans l’empêchement n’est pas la qualité d’un résultat, c’est sa santé, et l’auteur l’écrit sans détour.",
       "supports": [
@@ -1027,7 +1018,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C038",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "L’activité, telle qu’il la définit, « affranchit le sujet – en risquant toujours l’échec – des dépendances de la situation concrète et se subordonne le contexte en question, à moins d’en être empêchée. C’est bien sûr souvent le cas et c’est la source même de la dégradation de la santé au travail jusqu’aux formes graves de psychopathologie du travail ».",
       "supports": [
@@ -1042,7 +1033,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C039",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Ce qui se trouve atteint porte chez lui un nom, le pouvoir d’agir, qui « peut se trouver et se trouve fréquemment amputé aujourd’hui, jusqu’à entamer la vitalité subjective inhérente à l’activité ainsi définie ».",
       "supports": [
@@ -1057,6 +1048,6 @@
       "uncited_support_signal": []
     }
   ],
-  "estimated_tokens": 67409,
+  "estimated_tokens": 68839,
   "status": "READY"
 }
