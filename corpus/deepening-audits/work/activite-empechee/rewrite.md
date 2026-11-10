@@ -1,278 +1,117 @@
 concept : activite-empechee
-mode    : REVISE (application de `corpus/deepening-audits/work/activite-empechee/audit.md`)
-date    : 2026-09-30
+mode    : REVISE (application de `corpus/deepening-audits/work/activite-empechee/audit.md`, protocole d'audit v4)
+date    : 2026-11-10
 
 ## Matière lue
 
-- `corpus/deepenings/PROTOCOLE.md`, `AUDIT_PROTOCOL.md` (v3), `FACTCHECK_PROTOCOL.md` (v2)
-- `corpus/deepenings/activite-empechee.json` (version auditée)
-- `corpus/validated/activite-empechee.json` : champ `dossier` **absent** (`None`), le répertoire
-  conventionnel est donc le seul à ouvrir
-- `corpus/evidence/activite-empechee/` listé : **un seul fichier**, `lecture.json`, lu en entier
-  (`attribution`, `quotation`, `sources_ouvertes`, `definition_de_lauteur`, `reserves`). Aucun
-  `scouting.json`, aucun fichier de réception.
-- entrée `activite-empechee` de `src/content/generated/concepts.generated.ts`, pour mesurer ce que
-  l'`attributionNote` affiche déjà au lecteur
-- `scripts/corpus/lib/deepenings.mjs` et `deepen.mjs`, pour connaître le périmètre exact du
-  contrôle de citations (enregistrement validé + fichiers du dossier, via `dossierBrut`)
+- `corpus/deepenings/PROTOCOLE.md`, `AUDIT_PROTOCOL.md` (v4), `FACTCHECK_PROTOCOL.md` (v3)
+- `corpus/deepenings/activite-empechee.json` (version auditée, SHA `0a016d07…`)
+- `corpus/validated/activite-empechee.json` : aucun champ `dossier`, répertoire conventionnel seul
+- `corpus/evidence/activite-empechee/` listé : un seul fichier, `lecture.json`, lu en entier
+  (`attribution`, `quotation`, `sources_ouvertes`, `definition_de_lauteur`, `reserves`)
+- `factcheck-pack.json` (registre des supports), `claim-map.json`, `verification.json` et
+  `factcheck-gate.json` du tour 3 du 2026-09-30 (SHA `4cd3f278…`), lus comme **précédents** de
+  formulation et non comme passes.
 
-Niveaux d'accès : les cinq sources de `sources_ouvertes` sont `consulted: "full-text"`. Aucune
-source `metadata-only` n'a été mobilisée. Les deux ouvrages PUF, Clot 2003c, Clot & Leplat 2005 et
-tout texte de Dejours n'ont **aucun** `consulted` : traités comme non lus, aucune phrase sur leur
-contenu.
+Aucune recherche web, aucun fait ajouté de mémoire. Toutes les sources mobilisées sont
+`full-text` dans `sources_ouvertes` ; aucune source sans `consulted` (2003c, ouvrages PUF, Dejours)
+n'est mobilisée pour son contenu.
 
-Aucune recherche web. Aucun fait ajouté de mémoire (en particulier : ni prénom, ni qualité, ni
-dates pour Vygotski, que le dossier ne nomme que par son patronyme).
-
-## Compte de mots lecteur (lead + sections, `limits` exclu)
-
-Comptés avec `words()` du script, sur la version de `HEAD` et sur la nouvelle :
+## Compte de mots du texte lecteur (lead + sections, découpage sur espaces)
 
 | | avant | après |
 |---|---|---|
-| lead | 208 | 208 (inchangé au mot) |
-| sections | 959 | 1 363 |
-| **texte lecteur (lead + sections)** | **1 167** | **1 571** |
-| `limits` (interne, non affiché) | 249 | 344 |
-| total compté par le script | 1 416 | 1 915 |
+| lead | 208 | 213 |
+| sections | 959 | 971 |
+| **texte lecteur** | **1 167** | **1 184** (+1,5 %) |
+| `limits` (interne) | 249 | 256 |
+| total script `corpus:deepen` | — | 1 440 |
 
-(L'audit annonçait 1 135 mots lecteur et 281 de `limits` pour le même total de 1 416 : le partage
-diffère de 32 mots selon la manière de compter les mots composés, le total non. Les chiffres
-ci-dessus sont ceux du script.)
+(L'audit compte 1 135 mots lecteur pour la version d'origine avec une autre règle de découpage ;
+à règle constante la croissance est de +1,5 %, sous le plafond de +9 %, dans la cible 1 050–1 200.)
 
-L'augmentation porte **entièrement** sur de la matière citée verbatim dans les fichiers autorisés
-et jamais employée : le mécanisme vygotskien du conflit d'activités possibles, l'enjeu de santé, le
-déplacement d'objet du texte de 2004, la fin de l'énumération de 2024, la glose de Simonet, Caroly
-& Clot 2011, et la formule ergonomique contre laquelle le concept se construit. Les 291 mots que
-l'audit relevait sans delta propre ont été retirés dans le même mouvement. Le solde est de
-+404 mots lecteur pour cinq deltas nouveaux, dont trois que l'audit désignait comme le cœur
-manquant. Aucun objectif de longueur n'a été poursuivi : le texte lecteur atteint 1 571 mots parce
-que cinq paliers ont été ajoutés, et il aurait été rendu plus court si la matière avait manqué.
+Architecture : cinq sections, dix paragraphes (contre cinq sections, dix paragraphes avant),
+conforme à la trajectoire cible ; l'architecture à six sections du tour 3 n'est pas reprise.
 
-## Gestes par catégorie
+## Retraits (substitution, pas empilement)
 
-### Suppressions (REMOVE)
+- C011 « Le reste, tout ce qui a été mobilisé sans laisser de trace équivalente, il l'appelle le
+  réel de l'activité » : supprimé. S1 dit désormais que le réel n'est pas « ce qui resterait une
+  fois le visible mis de côté ».
+- lead[1] « donne un nom à ce reste » → « donne un nom à l'ensemble, liste comprise ».
+- S1.P2 (vignette de la machine, redite de lead[0], « Tout le reste […] appartient au réel ») :
+  supprimé.
+- S2.P1 « Quatre éléments, donc […] possibilité manquée » : supprimé (compte fermé contredit par
+  SUP-08c2d43fe6f4b8c5, SUP-5690f943879007ce).
+- S2.P2 « presque nécessaire » : supprimé.
+- S3.P1 « On résume souvent » : remplacé par « L'idée circule sous une étiquette » (aucune fréquence).
+- S3.P2 (définitions inventées de « suspendue » et « contrariée ») : supprimé en entier.
+- S4 entière (généalogie 2003, équipe, « toute une équipe de recherche », « deux décennies »),
+  redondante avec l'`attributionNote` : supprimée.
+- S5.P1 « Le texte de 2004 le dit […] juger un travail, ou chercher à l'améliorer » et « en disent
+  souvent plus long » : supprimés.
+- S5.P2 « le texte de 2018 demande […] au même titre » : supprimé ; la conclusion d'observation est
+  réattribuée à l'article de 2011, qui la porte.
 
-1. **Section « Une idée qui n'est pas présentée comme neuve » supprimée en entier** (185 mots,
-   2 paragraphes). Son contenu est mot pour mot en substance l'`attributionNote` que la carte
-   affiche avant l'ouverture de l'approfondissement (renvoi à un texte antérieur de lui-même,
-   filiation Vygotski, élaboration de l'équipe du Cnam, tiers de bibliographie cosigné). Défaut
-   majeur 1 de l'audit.
-2. **S1.P2 supprimé** (106 mots) : l'exemple inventé de la machine en panne réénumérait lead[0]
-   (essais qui ne donnent rien, hésitation à appeler un collègue, solution trouvée presque par
-   hasard). Défaut majeur 4.
-3. **Moitié de S1.P1 supprimée** : « on peut voir la surface entière sans jamais soupçonner ce
-   qu'il y a en dessous », reparaphrase de lead[1].
-4. **« Quatre éléments, donc »** supprimé : l'énumération de 2024 se poursuit et la source la
-   laisse ouverte. Défaut majeur 6.
-5. **« en disent souvent plus long sur les difficultés réelles d'un travail que le résultat »**
-   supprimé : évaluation de fréquence sans appui. Défaut majeur 5.
-6. **« une bonne partie de ce que le travail apprend à quelqu'un se joue précisément dans cette
-   diversité »** supprimé : sans appui. Défaut majeur 5.
-7. **« C'est précisément cet écart que le texte de 2018 demande de prendre en compte »**
-   supprimé : faisait dire au texte de 2018 une comparaison interindividuelle qu'il ne formule
-   pas. Défaut majeur 5.
-8. **« ce que l'auteur cherche à distinguer » (suspendue vs contrariée)** supprimé, et la
-   distinction n'est **pas** réécrite comme lecture proposée : aucune source ne la formule, et la
-   développer même marquée n'apportait rien que la variété du pluriel ne dise déjà. Défaut
-   majeur 5. Interdiction reportée dans `limits[2]`.
-9. **Point final abusif après la citation de Vygotski en 2004** : disparu avec la section.
+## Ajouts et supports qui les financent
 
-### Réductions de portée (NARROW)
+| emplacement | ajout | support_id |
+|---|---|---|
+| lead[1] | « donne un nom à l'ensemble, liste comprise » (le nom va au volume entier) | SUP-c98d6b242ef735ab, SUP-94d565db4258c7c6 |
+| S1.P1 | « deux termes qui ne sont pas synonymes » | SUP-94d565db4258c7c6 (« deux mots qui ne sont pas synonymes ») |
+| S1.P1 | le réel ne désigne pas ce qui resterait ; emboîtement surface/volume ; « face exposée » | SUP-c98d6b242ef735ab, SUP-94d565db4258c7c6 (précédents C012, C013) |
+| S1.P2 | 2024 : « n'a pas le monopole du réel de l'activité vécue des sujets, beaucoup moins observable », réalisé « que le psychologue du travail peut observer » | SUP-94d565db4258c7c6, SUP-ef71b0d2b7494085 |
+| S1.P2 | « Entre le réel et le réalisé […] ne peuvent pas trier » et sa paraphrase | SUP-94d565db4258c7c6 (précédents C046, C047) |
+| S2.P1 | « vingt ans plus tard », énumération complète, suite « Il faut y ajouter […] à refaire », le volume contient aussi des actions accomplies, un empêchement n'est pas un blanc | SUP-94d565db4258c7c6, SUP-ef71b0d2b7494085, SUP-08c2d43fe6f4b8c5, SUP-5690f943879007ce, SUP-a2b965c80c470e1d (précédents C022–C028) |
+| S3.P1 | mécanisme : renvoi à Vygotski et citation de la collision des activités possibles | SUP-94d565db4258c7c6, SUP-646a0cf1ccea31e7, SUP-a2b965c80c470e1d, SUP-f8d3c87c1f9c523b (précédents C031–C033) |
+| S3.P2 | activités battues agissantes ; activité empêchée non absente ; empêchement pas seulement extérieur (le conflit interne s'ajoute à l'obstacle) | SUP-94d565db4258c7c6, SUP-646a0cf1ccea31e7 (précédents C034–C037) |
+| S4 | règle de 2024 signée seul (« ravalées ») ; 2018 cosigné « conceptuellement stabilisée » | SUP-94d565db4258c7c6, SUP-1ec99fe961831e90, SUP-2812cb300ba840d4, SUP-ef71b0d2b7494085, SUP-485dab252c277bc9, SUP-b240192fa21354b5 (précédents C030, C048–C052) |
+| S5.P1 | 2004 « vise à donner du volume » avec son sujet exact (l'expérimentation en clinique de l'activité) | SUP-94d565db4258c7c6, SUP-220f157f8f801cf4 |
+| S5.P1 | article de 2011 cosigné : « ne limite donc pas les possibilités du professionnel observé » ; deux personnes, même résultat | SUP-89739a4b2497d763 (précédents C062–C064) |
+| S5.P2 | enjeu de santé, citation « affranchit le sujet […] psychopathologie du travail », pouvoir d'agir « amputé » | SUP-94d565db4258c7c6 (précédents C041–C044) ; « souvent » et « fréquemment » sont dans les citations de l'auteur, jamais en voix de narrateur |
 
-10. L'énumération de 2024 n'est plus refermée : « La liste, elle, avance par ajouts et ne se
-    referme sur aucun compte ».
-11. « L'ergonomie **a l'habitude de** distinguer » au lieu d'une antériorité datée : calqué sur
-    « a-t-on pris l'habitude de dire » de la source.
-12. Aucune phrase sur la diffusion ou la fréquence des reprises : la notion est dite
-    « couramment confondue » avec la psychodynamique du travail, ce que le dossier porte, et rien
-    sur l'ampleur de sa circulation, qu'aucun relevé ne mesure.
-13. La différence avec la psychodynamique du travail est **signalée et non caractérisée** ;
-    Christophe Dejours n'est pas nommé dans le texte lecteur (il l'est dans `limits`, à titre
-    d'interdit).
+Formulations conservées mot pour mot de la version d'origine : lead[0] entier ; citation et
+dernière phrase de lead[1] ; S2.P2 (sans « presque nécessaire »).
 
-### Réattributions (REATTRIBUTE)
+## Delta par paragraphe
 
-14. Le mécanisme du conflit d'activités possibles est attribué à **Vygotski cité par Clot**, pas à
-    Clot : « il ne la présente pas comme sienne : il rapporte à Vygotski l'idée qui soutient toute
-    la notion, et le cite ». La filiation se dit là où elle sert, et en deux lignes, la carte
-    l'affichant déjà.
-15. L'inventaire du volume est attribué au texte de 2024 et non à celui de 2004, avec l'écart de
-    vingt ans énoncé : « le texte de 2004 ne le dit pas : il pose l'écart sans en faire
-    l'inventaire ».
-16. La règle d'analyse et « conceptuellement stabilisée » sont attribuées au texte cosigné de
-    2018, avec son « nous » rendu par « est pour eux ».
-17. La glose opératoire est attribuée à l'article de 2011 cosigné, verbatim.
+- lead[0] : sur sa propre journée, le lecteur voit ce que le compte rendu laisse tomber.
+- lead[1] : un auteur nomme le tout, et l'image surface/volume.
+- S1.P1 : deux termes non synonymes, le réalisé est inclus dans le réel (et non l'inverse du « reste »).
+- S1.P2 : l'auteur le confirme en 2024 ; celui qui travaille ne peut pas trier.
+- S2.P1 : contenu du volume, y compris des actions accomplies ; l'empêchement n'est pas un blanc.
+- S2.P2 : l'échec n'est pas l'incompétence.
+- S3.P1 : le mécanisme vygotskien de la collision des activités possibles.
+- S3.P2 : conséquence : l'empêché continue d'agir, l'empêchement n'est pas seulement extérieur.
+- S4.P1 : l'étiquette au singulier contre le pluriel adjectivé de l'auteur (2024 seul, 2018 cosigné).
+- S5.P1 : conséquence pour l'observation (2004, 2011).
+- S5.P2 : conséquence pour celui qui travaille : santé et pouvoir d'agir ; le texte se ferme sur
+  cette tension, sans conclusion récapitulative.
 
-### Marquages d'interprétation (MARK_AS_INTERPRETATION)
+Aucune paire consécutive au même delta ; aucune section ne reprend principalement une précédente.
 
-18. Le test des deux personnes au même résultat n'est plus donné comme une exigence du texte de
-    2018 : il suit la citation de 2011 comme conséquence dérivée (« Deux personnes qui obtiennent
-    le même résultat n'ont **donc** pas traversé le même travail »), autorisée par « Elle ne limite
-    donc pas les possibilités du professionnel observé à ce qu'on lui voit faire ».
-19. « Un empêchement ne se repère **pas forcément** comme un blanc dans l'emploi du temps » :
-    conséquence explicitement dérivée de la fin de l'énumération, non énoncé de l'auteur.
+## `limits` (interne, non affiché)
 
-### Non-établissement maintenu comme non-établissement (point 9 de l'audit, non tranché)
+Réécrit en quatre paragraphes : 2003c sans lecture ; ouvrages PUF et livre de 1999 connus par
+bibliographies, première occurrence du substantif non établie ; qualificatifs nommés sans être
+définis l'un contre l'autre, formule en « c'est aussi » et énumération sans compte ;
+psychodynamique du travail non documentée. `limits[3]` d'origine (« se joue dans les articles que
+l'auteur a publiés en revue ») est retiré, comme l'audit le demandait : présupposition non
+soutenue (SUP-d111dea4d5b00b68).
 
-20. **L'origine du substantif n'est affirmée dans aucun sens.** S5 dit trois choses, et seulement
-    trois : l'étiquette circule au singulier ; l'auteur écrit un pluriel adjectivé, ce que
-    `notes[1]` établit ; et « Le substantif n'est pas pour autant étranger à son œuvre : un article
-    de 2011 qu'il cosigne l'emploie, en le renvoyant à l'un de ses livres antérieurs. Où il paraît
-    pour la première fois sous sa plume n'est pas établi par les sources disponibles. » La phrase
-    « Ce n'est pas exactement ce qu'écrit l'auteur », qui transformait une impossibilité
-    d'établissement en constat négatif, a disparu. Aucune page ni aucun contenu du livre de 1999
-    n'est évoqué.
+## Prescriptions d'audit non suivies ou réduites
 
-### Ajouts (matière lue, jamais employée)
-
-21. **S3 « Pourquoi ce qui n'a pas eu lieu pèse encore »**, section nouvelle : le passage de
-    Vygotski cité par le texte de 2024, et la conséquence que le dossier en tire lui-même
-    (« Une activité empêchée n'est pas une activité absente, c'est une activité qui continue
-    d'agir sur celui qui ne l'a pas faite »), plus le corollaire que l'empêchement n'est pas
-    seulement extérieur, que le dossier énonce aussi. Défaut majeur 2.
-22. **S4 « Une affaire de santé, pas de performance »** : les deux passages de 2024 sur
-    l'empêchement comme source de dégradation de la santé et sur le pouvoir d'agir amputé, et
-    « Entre le réel et le réalisé de leur activité, celles et ceux qui travaillent ne peuvent pas
-    trier. » L'ancien S2.P2 (l'échec n'est pas l'indice d'une incompétence) y migre et y devient la
-    marche d'entrée. Défaut majeur 3.
-23. **S6 « Le réel de l'activité n'est pas l'activité réelle »**, section nouvelle : la formule
-    ergonomique que Clot expose avant de s'en écarter, « déclenchée et guidée par la tâche », et
-    l'avertissement de vocabulaire que la revue de la carte désigne comme « le point qui aurait pu
-    déraper ». Plus la glose de 2011.
-24. **S1.P2 remplacé** : le déplacement d'objet du texte de 2004 (« la structure de son
-    développement possible ou impossible », « moins l'activité que le développement de l'activité
-    et ses empêchements ») et la conséquence de méthode (« vise à donner du volume à cette activité
-    réalisée »), avec les deux terrains **nommés comme terrains et non racontés comme scènes** : la
-    comédienne de la Comédie-Française cherchant comment tenir un chandelier brûlant, l'échange
-    entre un facteur titulaire et un jeune rouleur. Le mot « autoconfrontation croisée » n'est pas
-    employé : le dossier le porte, mais l'expliquer aurait demandé ce qu'aucune source ne dit.
-25. **Fin de l'énumération de 2024** rendue, « paradoxe fréquent » compris, avec la conséquence
-    qu'un empêchement peut prendre la forme d'une action accomplie et visible.
-26. **« La clinique de l'activité » est désormais introduite avant d'être utilisée**, en S1.P2,
-    comme « la manière d'étudier le travail que l'auteur appelle la clinique de l'activité ».
-    Accroc de progressivité relevé par l'audit.
-
-### Titres et lead (chantier M, point 4)
-
-Chaque titre a été relu contre le paragraphe qu'il annonce, après retrait :
-
-- « La surface et le volume » : inchangé, appuyé sur `quotation.text`.
-- « Ce que ce volume contient » : inchangé, et ne promet plus un compte fermé.
-- « Pourquoi ce qui n'a pas eu lieu pèse encore » : appuyé sur les « résidus incontrôlés n'ayant
-  que plus de force » du passage cité et sur la lecture du dossier.
-- « Une affaire de santé, pas de performance » : appuyé sur les deux passages de 2024 ; le dossier
-  écrit lui-même « l'empêchement est chez lui un problème de santé et non de performance ».
-- « Un mot plus rigide que celui de l'auteur » : **conservé**, parce que `notes[1]` l'établit mot
-  pour mot (« plus figé que ce que l'auteur écrit »). Le titre porte sur la rigidité du libellé,
-  pas sur une absence dans l'œuvre : il ne dépasse plus le paragraphe tempéré.
-- « Le réel de l'activité n'est pas l'activité réelle » : appuyé sur `review.notes[5]`, « Clot
-  construit précisément le réel de l'activité contre l'activité réelle de la tradition
-  ergonomique ».
-
-`lead[0]` et `lead[1]` sont **inchangés au mot**, comme l'audit le prescrit. Contrôle d'excédent :
-la promesse du lead (un reste, un nom, une thèse de proportion) est tenue et dépassée par les
-sections ; rien n'y est annoncé que le texte ne livre plus.
-
-## `limits` refait comme frontière interne
-
-L'ancien champ était de la prose lecteur et `limits[0]` affirmait d'un texte non ouvert que « la
-réponse y est écrite », en contradiction directe avec `review.notes[6]` (« je ne peux donc ni
-confirmer ni infirmer que la formule y figure déjà telle quelle »). Défaut majeur 8. Le nouveau
-champ est écrit pour les agents et nomme, dans l'ordre : Clot 2003c avec sa **double description
-divergente** (chapitre Vallery & Amalberti / Actes du XXXVIIIe Congrès de la SELF, point 9 de
-l'audit, signalé et non tranché) et l'interdiction symétrique des deux conclusions ; *La fonction
-psychologique du travail* et *Travail et pouvoir d'agir* avec leur état d'accès (hors accès ouvert,
-absents de HAL et d'Internet Archive) et le statut des millésimes 1999, 2002, 2008 ; *Le Travail
-Humain* et *Travailler*, Cairn, HTTP 403, Clot & Leplat 2005 ; Clot & Faïta 2000, atteint par une
-autre voie, qui ne fonde aucune antériorité ; l'origine non établie du substantif dans les deux
-sens, avec Simonet, Caroly & Clot 2011 et son renvoi à (Clot, 1999) sans page ; l'interdiction de
-prêter à l'auteur l'écart suspendue / contrariée ; l'absence de relevé de réception (scite non
-connecté, OpenAlex en échec de quota) ; la psychodynamique du travail de Christophe Dejours comme
-frontière signalable et non caractérisable ; les deux interdits de vocabulaire.
-
-`limits` fait 344 mots, au-dessus de la fourchette indicative de 100-200 du protocole. C'est
-assumé : l'audit exige neuf éléments nommés avec leur état d'accès et l'affirmation qu'ils
-interdisent, chaque phrase en porte un, et aucune n'est une précaution sans objet. Le champ ne
-s'affiche pas.
-
-Contrôle inverse : **aucun contenu de `limits` n'est remonté comme bloc visible.** Les deux seules
-phrases du texte lecteur qui touchent une frontière sont intégrées à un raisonnement et rédigées du
-côté du lecteur, sans aveu de lecture : « Où il paraît pour la première fois sous sa plume n'est pas
-établi par les sources disponibles » (S5) et « Ce en quoi elle consiste se lira dans les textes de
-part et d'autre » (S6, qui sert de pouvoir d'ouverture). Aucun titre de rubrique du genre « Ce que
-les sources ne permettent pas d'établir ».
-
-## Contrôle des deltas, paragraphe par paragraphe
-
-| paragraphe | delta |
-|---|---|
-| lead[0] | le compte rendu d'une journée laisse tomber une classe entière de choses vécues ; « ce que j'ai fait » n'est pas « ce que j'ai traversé » |
-| lead[1] | ce reste a un auteur, un nom, et une thèse de proportion : le réalisé n'en est que la surface |
-| S1.P1 | les deux termes de l'auteur, et la relation entre eux : inclusion, pas juxtaposition |
-| S1.P2 | d'où vient la phrase et pourquoi elle est nécessaire : l'objet visé n'est pas l'activité mais son développement possible ou impossible, et l'intervention vise à donner du volume au réalisé |
-| S2.P1 | ce que le volume contient : cinq registres du non-fait, et l'écart de vingt ans entre l'image et l'inventaire |
-| S2.P2 | l'empêchement peut prendre la forme d'une action accomplie et visible ; la liste ne se referme pas ; la règle d'analyse |
-| S3.P1 | le mécanisme : une seule activité l'emporte au point de collision, les autres forment des résidus incontrôlés qui gagnent en force |
-| S3.P2 | conséquence : l'activité empêchée n'est pas absente, elle agit encore, et l'empêchement n'est pas seulement extérieur |
-| S4.P1 | l'échec n'est pas l'indice d'une incompétence ; l'empêchement est une part ordinaire du travail bien fait |
-| S4.P2 | l'enjeu n'est pas l'évaluation d'un résultat mais la santé, et le pouvoir d'agir amputé |
-| S4.P3 | celui qui travaille ne peut pas trier entre le réel et le réalisé |
-| S5.P1 | précision de vocabulaire : pluriel adjectivé contre singulier figé, et l'origine du substantif reste ouverte |
-| S6.P1 | le contresens le plus probable est écarté : réel de l'activité n'est pas activité réelle, et la tâche/activité laisse tomber précisément ce dont il s'agit |
-| S6.P2 | ce que la distinction change pour une observation, et une frontière encore ouverte vers une autre approche de la souffrance au travail |
-
-Aucun paragraphe sans delta. Aucune paire consécutive de deltas substantiellement identiques.
-Aucune section dont le rôle principal répète une section antérieure : S1 nomme, S2 remplit, S3
-explique, S4 déplace l'enjeu, S5 corrige le mot, S6 sépare d'un voisin. Vérification faite contre
-l'`attributionNote` de la carte : plus aucun paragraphe ne la redouble.
-
-## Conformité de forme
-
-- 6 sections (max 7), titres de 23 à 49 caractères (max 60), aucun titre de fonction.
-- Aucun tiret cadratin U+2014. Les seuls tirets sont les demi-cadratins U+2013 **internes aux
-  citations** de 2024, qui les portent.
-- Espaces fines insécables U+202F posées dans tous les guillemets (point 10 de l'audit).
-  Vigilance : le tiret insécable U+2011, d'abord posé par cohérence typographique, faisait échouer
-  deux citations au contrôle (« contre-activités », « a-t-on pris l'habitude de dire »), le
-  normalisateur de `unsourcedQuotations` ne repliant que U+2013 et U+2014. Tous remplacés par des
-  traits d'union simples.
-- Aucun terme de dispositif, aucun aveu de lecture, ni dans le texte lecteur ni dans `limits`.
-- Toutes les citations de cinq mots ou plus sont verbatim dans `corpus/validated/` ou
-  `corpus/evidence/activite-empechee/lecture.json` : zéro signalement du contrôle.
+- S1 en un paragraphe « deux au plus » : deux paragraphes, le second portant la confirmation de 2024.
+- Pas de renvoi de lecture à *Travail et pouvoir d'agir* en fin de texte : tout énoncé reliant ce
+  titre au pouvoir d'agir risquait une phrase de contenu sur un ouvrage non lu ; le texte se clôt
+  sur la citation de l'auteur.
+- La mention du substantif chez l'équipe en 2011 (précédent C053) n'est pas reprise, faute de
+  place ; elle reste financée (SUP-89739a4b2497d763).
 
 ## Contrôle mécanique
 
-    npm run corpus:deepen -- --check --only=activite-empechee
-    1 approfondissement(s) contrôlé(s), 1915 mots. Rien projeté.
+`npm run corpus:deepen -- --check --only=activite-empechee` : PASS (« 1 approfondissement(s)
+contrôlé(s), 1440 mots. Rien projeté. »).
 
-PASS, sans avertissement de citation.
-
-## Signalement d'isolation (chantier O)
-
-Mes seuls fichiers de travail sont dans `corpus/deepening-audits/work/activite-empechee/`. Aucun
-fichier de travail d'un autre concept n'a été ouvert. `git status` montre cependant deux
-approfondissements d'autres cartes modifiés dans l'arbre de travail,
-`corpus/deepenings/absorber-les-fluctuations-de-commandes.json` et
-`corpus/deepenings/amenagement-onereux-du-monde-exterieur.json` : signalés, non lus, non touchés.
-
-## Suite attendue
-
-La modification du fichier invalide le SHA : le cycle de fact-check doit reprendre à `PREPARE`.
-Aucun support `SUP-...` n'a été inventé, aucun artefact de fact-check n'a été touché. Ce compte
-rendu ne vaut ni `ACCEPT` ni `FACTCHECK_PASS`.
-
-## Points d'attention pour le vérificateur
-
-1. `lead[1]`, « c'est la plus grande partie de ce qui s'est réellement passé » : proportion non
-   touchée sur instruction de l'audit, appuyée par l'image volume/surface, par « Le réel déborde le
-   réalisé » et par « l'immensité du réel de l'activité ». Si le gate la juge trop forte, le geste
-   minimal est un NARROW sur « la plus grande partie », pas une refonte du lead.
-2. S3.P2 et S1.P1 reposent en partie sur des gloses du lecteur primaire présentes dans
-   `definition_de_lauteur` (« L'activité empêchée n'est donc pas une activité absente… », « Le réel
-   de l'activité est précisément ce que cette dernière formule laisse tomber ») et non sur des
-   phrases de Clot. Elles sont des appuis du pack, mais le mapping doit les citer explicitement :
-   c'est exactement le type d'omission que `points-de-levier` et `critere-de-la-retroaction` ont
-   payé.
-3. Vygotski n'est ni daté, ni qualifié, ni prénommé : le dossier ne le fait pas. Une demande de
-   « clarté » sur ce point ne peut pas être satisfaite sans source nouvelle.
+Le SHA du texte a changé : le fact-check doit reprendre à `PREPARE`. Aucune auto-validation, aucun
+`FACTCHECK_PASS` déclaré ici.
