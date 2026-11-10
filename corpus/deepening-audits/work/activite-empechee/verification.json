@@ -1,201 +1,196 @@
 {
   "concept_id": "activite-empechee",
-  "candidate_sha256": "e25db4c3d5aa77ba06fa363aa287eb1d14c647fe21da1558c2f98dc8f9e50f33",
+  "candidate_sha256": "b87b47b97e0eb0e1feeb07c72b296b386dadf82c7830e344c0422b0096aefa72",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "Exemples hypothetiques adresses au lecteur, non attribues; ils illustrent l'enumeration de 2024 portee par definition_de_lauteur (SUP-94d565db4258c7c6) (ce qu'on cherche a faire sans y parvenir, ce qu'on aurait voulu faire, ce qu'on fait sans vouloir le faire) et 'forcement' suit de « jamais que la surface »."
+      "reason": "Question adressée au lecteur, hypothétique, qui reprend le hook ($.hook) ; aucun détail n'est présenté comme réel ni attribué."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "Cadre hypothetique; definition_de_lauteur (SUP-94d565db4258c7c6) donne le reel de l'activite vecue comme « beaucoup moins observable » et comme un volume dont le realise n'est que la surface (summary SUP-5c9780b6b74f9950)."
+      "reason": "Exemples illustratifs au conditionnel du lecteur, chacun couvert par l'énumération de 2024 dans definition_de_lauteur : ce qu'on cherche à faire sans y parvenir, ce qu'on aurait voulu faire, ce qu'on fait sans vouloir le faire ; l'écart réalisé/réel est dans le summary."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "Nom porte par authors[0].name; attribution.note et attribution_note situent Clot dans l'equipe de psychologie du travail du Cnam. Le signal (terme 'psychologue' dans definition_de_lauteur (SUP-94d565db4258c7c6)) vise le psychologue generique, pas un appui manquant."
+      "reason": "La métaphore volume/surface (quotation.text : le réalisé « n'est jamais que la surface ») et « beaucoup moins observable » (definition_de_lauteur) autorisent que ce non-réalisé échappe au compte rendu tout en occupant une part importante du vécu."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : ce qui revient en propre a Clot est « le nom qu'il lui donne »; la citation emboite le realise dans le reel, d'ou 'liste comprise'."
+      "reason": "definition_de_lauteur et attribution_note : Clot nomme « le réel de l'activité », et dans le texte de 2024 il en énumère le contenu ; « psychologue du travail » est porté par attribution.note (équipe de psychologie du travail du Cnam)."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim (quotation.text), reference 2004 et signature confirmees par quotation.reference, review.notes[0] et sources[0] corrobore."
+      "reason": "Citation verbatim identique à quotation.text ; référence Activités 1-1, avril 2004, p. 31 (§ 29), confirmée par review.notes[0]."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Paraphrase de l'image volume/surface (quotation.text, summary) et de l'activite realisee observable vs reel vecu (definition_de_lauteur (SUP-94d565db4258c7c6)); pas d'attribution ajoutee."
+      "reason": "Paraphrase fidèle de l'image volume/surface (quotation.text) et du summary, sans changement de portée."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur (SUP-94d565db4258c7c6) : « deux mots qui ne sont pas synonymes : le realise et le reel »; review.notes[5] confirme l'usage des deux termes."
+      "reason": "definition_de_lauteur : « Clot pose l'écart en deux mots qui ne sont pas synonymes : le réalisé et le réel » ; review.notes[5] confirme qu'il s'agit des termes de l'auteur."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "L'activite realisee est definie comme ce que le psychologue peut observer (definition_de_lauteur (SUP-94d565db4258c7c6)); les exemples sont de simples illustrations non attribuees."
+      "reason": "definition_de_lauteur : l'activité réalisée est celle « que le psychologue du travail peut observer » ; les exemples sont des illustrations du rédacteur et ne sont pas attribués à l'auteur."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Lecture directe de l'image volume/surface (quotation.text) et de « le reel deborde le realise » (definition_de_lauteur (SUP-94d565db4258c7c6))."
+      "reason": "La formule de quotation.text fait du réalisé la surface du volume du réel ; « le réel de l'activité est aussi ce qui ne se fait pas » et « Le réel déborde le réalisé » (definition_de_lauteur) confirment l'inclusion."
     },
     {
       "claim_id": "C010",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis font du realise la surface du reel de l'activite, volume qui est « aussi » ce qui ne se fait pas et comprend donc le fait; le claim fait du realise la face exposee de 'ce qui ne s'est pas fait', deplacant le referent du volume vers le seul non-fait."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur rapporte verbatim cette phrase du texte PISTES 2024 ; sources_ouvertes[1] et sources[1] (accès corroboré) établissent la lecture de ce texte."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim et attribution au texte de 2024 dans definition_de_lauteur (SUP-94d565db4258c7c6); source 2024 corrobore (sources[1])."
+      "reason": "Citation verbatim dans definition_de_lauteur (« Il précise enfin ce que la notion refuse »), dans le développement consacré au texte de 2024."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur (SUP-94d565db4258c7c6) rapporte la phrase verbatim dans son compte rendu du texte de 2024 (« Il precise enfin... »)."
+      "reason": "Glose directe de « ne peuvent pas trier » entre le réel et le réalisé (definition_de_lauteur), qui ne dit rien de plus."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Glose fidele de « Entre le reel et le realise de leur activite, celles et ceux qui travaillent ne peuvent pas trier » (definition_de_lauteur (SUP-94d565db4258c7c6))."
+      "reason": "Citation verbatim dans definition_de_lauteur et dans review.notes[3] (§ 6 de PISTES 26-3, 2024) ; l'écart de vingt ans entre 2004 et 2024 et le fait que l'énumération n'est pas dans le texte de 2004 sont portés par reserves[0] et notes[0]."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "attribution_note, notes[0], reserves[0] et definition_de_lauteur (SUP-94d565db4258c7c6) situent l'enumeration dans le texte de 2024, vingt ans apres celui de 2004."
+      "reason": "Suite verbatim dans definition_de_lauteur ; reserves[4] et notes[4] disent que « la suite de sa phrase n'est pas facultative »."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans definition_de_lauteur (SUP-94d565db4258c7c6) et review.notes[3] (§ 6 du texte de 2024)."
+      "reason": "Conséquence directe de « ce qu'on fait pour ne pas faire ce qui est à faire, ou encore ce qu'on fait sans vouloir le faire » (definition_de_lauteur) : il s'agit d'actions faites, qui évitent quelque chose ou contredisent la volonté."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans definition_de_lauteur (SUP-94d565db4258c7c6); reserves[4] et notes[4] presentent cette suite comme la suite non facultative de la phrase."
+      "reason": "Conséquence prudente (« pas forcément ») tirée de « ce qu'on fait pour ne pas faire ce qui est à faire » (definition_de_lauteur)."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "Consequence derivee de « ce qu'on fait pour ne pas faire ce qui est a faire, ou encore ce qu'on fait sans vouloir le faire » (definition_de_lauteur (SUP-94d565db4258c7c6)), formulee comme lecture et non comme citation."
+      "reason": "Dans l'énumération (definition_de_lauteur), les échecs voisinent avec « ce qu'on ne peut pas faire », et l'activité est dite progresser « en risquant toujours l'échec » ; la formulation négative ne prête à l'auteur aucune thèse qu'il n'énonce pas."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Consequence derivee des memes items : l'empechement peut prendre la forme d'actions faites (definition_de_lauteur (SUP-94d565db4258c7c6))."
+      "reason": "Le réel inclut bien plus que des ratés (ce qu'on aurait voulu faire, ce qu'on rêve de faire ailleurs…), et « en risquant toujours l'échec » (definition_de_lauteur) : l'interprétation suit des appuis."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "L'enumeration fournie range les echecs parmi le contenu ordinaire du reel sans aucune reference a la competence, et definition_de_lauteur (SUP-94d565db4258c7c6) pose l'empechement comme probleme de sante et non de performance."
+      "reason": "« le réel de l'activité possède un volume dont l'activité réalisée par un opérateur n'est jamais que la surface » (quotation.text) ; « chaque minute, l'homme est plein de possibilités non réalisées » (definition_de_lauteur) : la portée générale est celle de la source."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "« Cela est vrai en general » (review.notes[3]), « jamais que la surface » et « chaque minute, l'homme est plein de possibilites non realisees » (definition_de_lauteur (SUP-94d565db4258c7c6)) fondent la generalite."
+      "reason": "Le passage de Vygotski que porte Clot (« chaque minute… au point de collision », definition_de_lauteur) situe l'explication dans l'instant de l'action ; C021 qualifie ensuite l'attribution."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Vygotski cite par Clot : « chaque minute ... au point de collision entre toutes les activites possibles » (definition_de_lauteur (SUP-94d565db4258c7c6))."
+      "reason": "definition_de_lauteur et attribution.note : Clot « fait porter à Vygotski l'idée qui soutient la notion » et cite son passage ; review.notes[3]/[4] relèvent un renvoi explicite à Vygotski (2024, § 5)."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : « Clot fait porter a Vygotski l'idee qui soutient la notion »; idem attribution_note et review.notes[4]."
+      "reason": "Citation verbatim présente dans definition_de_lauteur et dans attribution.note, comme passage de Vygotski que Clot cite."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans definition_de_lauteur (SUP-94d565db4258c7c6) et partiellement dans attribution.note, presentee comme de Vygotski."
+      "reason": "Interprétation directe de « ce qui se réalise n'est jamais que l'activité qui a vaincu au point de collision » (definition_de_lauteur) : le non-fait est l'issue d'un conflit et non une simple absence. L'appui signalé SUP-646a0cf1ccea31e7 ($.attribution.note) partage seulement le terme « issue », qui désigne là le numéro Crossref (« issue 1 ») : aucun rattachement manquant."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Derive de « l'activite qui a vaincu au point de collision » et des « residus » (definition_de_lauteur (SUP-94d565db4258c7c6)); le signal (terme 'issue' dans attribution.note) renvoie a un numero de revue Crossref, sans rapport avec le claim."
+      "reason": "Paraphrase de « Celles qui n'ont pas vaincu, plus ou moins refoulées, forment des résidus incontrôlés n'ayant que plus de force pour exercer… une influence » (definition_de_lauteur), présentée dans la continuité de la citation de Vygotski."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Glose de « plus ou moins refoulees, forment des residus incontroles n'ayant que plus de force pour exercer ... une influence » (definition_de_lauteur (SUP-94d565db4258c7c6))."
+      "reason": "definition_de_lauteur l'écrit dans les mêmes termes comme conséquence du passage de Vygotski ; le texte lecteur ne la présente pas comme une citation de Clot."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "Repris de definition_de_lauteur (SUP-94d565db4258c7c6) : « L'activite empechee n'est donc pas une activite absente : c'est une activite qui continue d'agir... », presente comme lecture et non citation."
+      "reason": "definition_de_lauteur : « l'empêchement n'est pas seulement extérieur : Clot le rattache au conflit entre des activités possibles concurrentes dont une seule se réalise »."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur (SUP-94d565db4258c7c6) : « l'empechement n'est pas seulement exterieur : Clot le rattache au conflit entre des activites possibles concurrentes »."
+      "reason": "reserves[5] et notes[1] : le libellé au singulier est un libellé de réception « plus figé que ce que l'auteur écrit » ; notes[0] : « libellé de réception »."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "reserves[5] et notes[1] : libelle de reception au singulier plus fige que ce que l'auteur ecrit; reserves[7] : il circule largement."
+      "reason": "reserves[5] et notes[1] : Clot écrit « les activités suspendues, contrariées ou empêchées », au pluriel et adjectivé ; « plutôt » respecte la réserve sur l'origine non établie du substantif."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "reserves[5] et notes[1] : Clot ecrit « les activites suspendues, contrariees ou empechees », au pluriel et adjective."
+      "reason": "Citation verbatim dans definition_de_lauteur (« Il en tire la règle d'analyse ») ; sources_ouvertes[1] : PISTES 26-3, 2024, signé Clot seul ; accès corroboré."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "sources_ouvertes[1].citation : texte de 2024 « Signe Clot seul », verifie sur plusieurs supports."
+      "reason": "sources_ouvertes[2] : Bonnefond & Clot (2018), cosigné, note 2 verbatim « Cette formulation est pour nous conceptuellement stabilisée : le réel de l'activité n'est pas que l'activité réalisée, les activités suspendues… » ; review.notes[3] confirme ; accès corroboré."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur (SUP-94d565db4258c7c6) donne cette phrase verbatim comme regle d'analyse tiree de l'enumeration du texte de 2024."
+      "reason": "Interprétation fondée sur reserves[5] et notes[1] : un singulier « plus figé » qu'un pluriel adjectivé à plusieurs termes."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Note 2 de Bonnefond & Clot 2018 citee verbatim dans sources_ouvertes[2] et review.notes[3]; cosignature et locator corrobores (sources[2])."
+      "reason": "definition_de_lauteur rattache au texte de 2004 la phrase « L'expérimentation en clinique de l'activité vise à donner du volume à cette activité réalisée » ; review.notes[5] la situe en 2004, § 30."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "reserves[5] et notes[1] : le singulier est plus fige que le pluriel adjective de l'auteur."
+      "reason": "sources_ouvertes[3] : Simonet, Caroly & Clot (2011), Activités 8(1), lu directement, citation verbatim identique."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans definition_de_lauteur (SUP-94d565db4258c7c6), localisee en 2004 § 30 par review.notes[5]."
+      "reason": "Conséquence prudente (« pas forcément ») de « Elle ne limite donc pas les possibilités du professionnel observé à ce qu'on lui voit faire » (sources_ouvertes[3]) et de l'image volume/surface."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "sources_ouvertes[3] : Simonet, Caroly & Clot 2011, cosigne, citation verbatim."
+      "reason": "Corollaire de la distinction posée dans sources_ouvertes[3] : un regard limité à ce qu'on voit faire ne distingue pas ce qui a été traversé."
     },
     {
       "claim_id": "C036",
-      "verdict": "SUPPORTED",
-      "reason": "Consequence derivee de « ne limite donc pas les possibilites du professionnel observe a ce qu'on lui voit faire » (sources_ouvertes[3]), formulee comme inference et non comme citation."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis donnent Clot écrivant que l'empêchement est « la source même de la dégradation de la santé au travail ». L'opposition « pas la qualité d'un résultat, mais la santé » ne figure que dans la glose du lecteur primaire (« un problème de santé et non de performance »), pas dans les phrases citées de l'auteur. « l'auteur l'écrit sans détour » attribue donc à Clot une exclusion que les appuis fournis pour ce claim ne lui font pas écrire."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur (SUP-94d565db4258c7c6) : « l'empechement est chez lui un probleme de sante et non de performance », appuye par la citation explicite sur la degradation de la sante."
+      "reason": "Citation verbatim dans definition_de_lauteur ; « telle qu'il la définit » reprend « l'activité ainsi définie » de la même source."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans definition_de_lauteur (SUP-94d565db4258c7c6)."
-    },
-    {
-      "claim_id": "C039",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans definition_de_lauteur (SUP-94d565db4258c7c6) (« C'est ce pouvoir d'agir qui peut se trouver et se trouve frequemment ampute... »)."
+      "reason": "definition_de_lauteur : « C'est ce pouvoir d'agir qui peut se trouver et se trouve fréquemment amputé aujourd'hui, jusqu'à entamer la vitalité subjective… », dans la suite de la phrase sur l'activité « à moins d'en être empêchée »."
     }
   ]
 }
