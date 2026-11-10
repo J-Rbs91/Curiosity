@@ -460,3 +460,44 @@ C022). Aucun ajout, donc aucun support à citer pour un ajout.
 
 Nouveau SHA : e25db4c3d5aa77ba06fa363aa287eb1d14c647fe21da1558c2f98dc8f9e50f33. Le SHA a changé :
 l’orchestrateur doit recommencer à `PREPARE`. Aucune validation ni `FACTCHECK_PASS` déclarée ici.
+
+---
+
+# Correction FACTCHECK_FAIL — boucle 2/2
+
+Gate lu : `factcheck-gate.json` (SHA candidat e25db4c3…, 39 claims, 38 soutenus, 1 refusé).
+
+## C010 — TOO_STRONG — retiré
+
+- Locator : `sections[0].paragraphs[0]`.
+- Phrase retirée : « Ce qui s’est fait n’est pas à côté de ce qui ne s’est pas fait, il en est la
+  face exposée. »
+- Motif : les appuis (SUP-c98d6b242ef735ab, SUP-c47f3f20944d14c0, SUP-94d565db4258c7c6) font de
+  l’activité réalisée la surface du **réel de l’activité**, volume qui comprend aussi le fait ; la
+  phrase déplaçait le référent du volume vers le seul non-fait.
+- Mode : retrait pur. Le paragraphe garde son delta (deux termes non synonymes, emboîtement de la
+  surface dans le volume), déjà porté par la phrase précédente ; une reformulation correcte
+  (« le réalisé est la surface du réel de l’activité ») n’aurait fait que la répéter.
+
+## Même défaut ailleurs
+
+Recherche dans tout le deepening de « ne s’est pas fait », « non-fait », « face », « émergée » :
+aucune autre phrase ne fait du réalisé la face du seul non-fait. `lead[1]` (« la partie émergée de
+ce qu’on a traversé pour le faire ») rapporte le volume à l’ensemble de ce qui a été traversé, fait
+compris ; il était soutenu au gate et n’est pas touché. `sections[1].paragraphs[0]` dit déjà
+explicitement que le volume contient aussi des actions accomplies.
+
+## Contrôle mécanique
+
+`npm run corpus:deepen -- --check --only=activite-empechee` :
+« 1 approfondissement(s) contrôlé(s), 1361 mots. Rien projeté. » — PASS.
+
+## Compte de mots
+
+Avant : 1382 ; après : 1361 (−21). Aucun ajout, aucun support à citer.
+
+## Suite attendue
+
+sha256 du fichier : b87b47b97e0eb0e1feeb07c72b296b386dadf82c7830e344c0422b0096aefa72. Le SHA a
+changé : l’orchestrateur doit recommencer à `PREPARE`. Aucune validation ni `FACTCHECK_PASS`
+déclarée ici.
