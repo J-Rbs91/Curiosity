@@ -1,0 +1,708 @@
+{
+  "concept_id": "analyse-du-travail",
+  "candidate_sha256": "b43d04dd9e488e6423cbf103748fa5e310a828b52ca140915b95f91eca9c96bb",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "NO_VERIFIABLE_CLAIM"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 87,
+      "claim_text": "En 1952, dans un texte intitulé « Analyse et structure du travail », Jean-Marie Faverge",
+      "normalized_claim": "Faverge est l'auteur, en 1952, d'un texte intitulé « Analyse et structure du travail ».",
+      "support_ids": [
+        "SUP-5a8e9c1b0f8e9251",
+        "SUP-a783c1d4e478c002",
+        "SUP-5e6cedee578e383f",
+        "SUP-9ba0e679413a00cd",
+        "SUP-e9c61a6790c855e3"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 88,
+      "end": 146,
+      "claim_text": "part de l’étude du travail telle qu’elle se pratique alors",
+      "normalized_claim": "Faverge part de l'étude du travail telle qu'elle se pratique en 1952.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 148,
+      "end": 283,
+      "claim_text": "Elle comporte, écrit-il, des démarches analytiques destinées à isoler les éléments importants, et à rejeter tout ce qui est accessoire.",
+      "normalized_claim": "Faverge écrit que cette étude comporte des démarches analytiques pour isoler l'important et rejeter l'accessoire.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-7bdf5a5fc20f03e9",
+        "SUP-0289ba669a23bf65"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 284,
+      "end": 433,
+      "claim_text": "Or cette analyse « risque de détruire certaines structures, certaines unités, disons certaines molécules pour rappeler une analogie avec la chimie ».",
+      "normalized_claim": "Faverge écrit que l'analyse risque de détruire structures/unités/molécules.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-0289ba669a23bf65"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 434,
+      "end": 595,
+      "claim_text": "Et il poursuit : « L’inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu’à du verbalisme. »",
+      "normalized_claim": "Citation verbatim enchaînée dans le même paragraphe.",
+      "support_ids": [
+        "SUP-a60d68862c14e368",
+        "SUP-d632d37a9006632d",
+        "SUP-0289ba669a23bf65",
+        "SUP-e54a61744429a505",
+        "SUP-e0f619227cd7b946"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 90,
+      "claim_text": "Faverge montre son objection sur trois terrains, qui sont les trois sections de son texte.",
+      "normalized_claim": "L'argument est montré sur trois terrains correspondant aux trois sections.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 91,
+      "end": 137,
+      "claim_text": "Le premier est la mesure des temps de travail.",
+      "normalized_claim": "Première section : l'analyse des temps.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-e0f619227cd7b946"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 138,
+      "end": 202,
+      "claim_text": "Il y vise des méthodes analytiques américaines, Q.S.K. et M.T.M.",
+      "normalized_claim": "Il vise les méthodes analytiques américaines Q.S.K. et M.T.M.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 204,
+      "end": 311,
+      "claim_text": "qui cherchent des éléments universels de travail, des éléments en lesquels toute tâche pourrait s’analyser,",
+      "normalized_claim": "Ces méthodes cherchent des éléments universels de travail.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-f8f3e372fe870579",
+        "SUP-d798c81f25b5fbd1"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 312,
+      "end": 391,
+      "claim_text": "et qui traitent le temps d’un travail comme la somme des temps de ses éléments.",
+      "normalized_claim": "Elles traitent le temps d'un travail comme somme des temps élémentaires.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 392,
+      "end": 599,
+      "claim_text": "Ces méthodes reposent sur un critère d’unité que leurs praticiens se donnent eux-mêmes : le temps d’un élément resterait le même quels que soient les éléments qui le précèdent ou le suivent dans l’opération.",
+      "normalized_claim": "Critère d'unité que se donnent les praticiens.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 158,
+      "claim_text": "Faverge leur oppose ceci : « le danger de telles méthodes est précisément de briser les structures à l’intérieur desquelles les temps ne s’additionnent pas ».",
+      "normalized_claim": "Citation sur le danger de briser les structures.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 159,
+      "end": 295,
+      "claim_text": "Il relève que, quand la rapidité augmente, la séquence des gestes s’altère : les gestes se chevauchent, le trajet de la main s’arrondit.",
+      "normalized_claim": "Quand la rapidité augmente la séquence s'altère, gestes chevauchés, trajet arrondi.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-d798c81f25b5fbd1",
+        "SUP-a80c742f3798f5fd"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 296,
+      "end": 378,
+      "claim_text": "Et il rappelle que le critère d’unité de ces méthodes n’est justement pas vérifié.",
+      "normalized_claim": "Le critère d'unité n'est pas vérifié.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 379,
+      "end": 526,
+      "claim_text": "Cela implique que l’erreur n’attend pas l’addition : le geste chronométré à part n’est déjà plus tout à fait celui qui s’exécute entre ses voisins.",
+      "normalized_claim": "Conséquence dérivée : le geste isolé diffère déjà du geste en séquence.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 61,
+      "claim_text": "Ce que ces méthodes brisent, Faverge l’appelle une structure,",
+      "normalized_claim": "Ce que ces méthodes brisent, Faverge le nomme structure.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 62,
+      "end": 155,
+      "claim_text": "et il note que « la notion de structuration se confond presque avec celle de signification ».",
+      "normalized_claim": "Citation structuration/signification.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 156,
+      "end": 259,
+      "claim_text": "Ces idées sur les structures, il les dit « développées en particulier par la psychologie de la forme »,",
+      "normalized_claim": "Idées développées par la psychologie de la forme.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 260,
+      "end": 351,
+      "claim_text": "et il regrette qu’elles n’aient pas pénétré l’analyse du travail telle qu’elle se pratique.",
+      "normalized_claim": "Regret que ces idées n'aient pas pénétré l'analyse du travail.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 204,
+      "claim_text": "On peut résumer ainsi l’unité de son argument : ce qui fait qu’un travail est ce qu’il est ne se trouve pas dans les éléments qu’on en isole, mais dans les structures signifiantes que l’opérateur y forme.",
+      "normalized_claim": "Résumé interprétatif : le travail tient aux structures signifiantes formées par l'opérateur.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 205,
+      "end": 293,
+      "claim_text": "Et ces structures ne se déduisent pas d’une décomposition préalable : elles s’observent.",
+      "normalized_claim": "Les structures s'observent, ne se déduisent pas.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 40,
+      "claim_text": "Le deuxième terrain est l’apprentissage.",
+      "normalized_claim": "Deuxième terrain : l'apprentissage.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 41,
+      "end": 139,
+      "claim_text": "Des structures y apparaissent, et elles se voient aux articulations entre des ensembles de gestes.",
+      "normalized_claim": "Structures visibles aux articulations entre ensembles de gestes.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 140,
+      "end": 264,
+      "claim_text": "Pour Faverge, « il serait absurde de ne pas les reconnaître », ou de les détruire dans l’analyse psychotechnique du travail.",
+      "normalized_claim": "Citation « il serait absurde » + ne pas les détruire.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 34,
+      "claim_text": "Il ajoute une remarque de méthode.",
+      "normalized_claim": "Faverge ajoute une remarque de méthode.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 35,
+      "end": 137,
+      "claim_text": "Les premières observations, celles qu’on fait « lorsque nous apprenons un métier pour le comprendre »,",
+      "normalized_claim": "Citation des premières observations faites en apprenant le métier.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-7bdf5a5fc20f03e9"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 138,
+      "end": 233,
+      "claim_text": "sont importantes parce qu’elles saisissent un moment de l’apprentissage qui s’évanouit ensuite.",
+      "normalized_claim": "Elles sont importantes car elles saisissent un moment évanescent.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 45,
+      "claim_text": "Le troisième terrain est celui des aptitudes,",
+      "normalized_claim": "Troisième terrain : les aptitudes.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 46,
+      "end": 231,
+      "claim_text": "et l’objection y est affirmée sans réserve : « les fameuses aptitudes ne peuvent être isolées de certaines structures, qu’en le faisant on détruit les molécules dont nous avons parlé ».",
+      "normalized_claim": "Objection affirmée sans réserve, citation sur les aptitudes et les molécules.",
+      "support_ids": [
+        "SUP-520e32fd6d097859"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 232,
+      "end": 335,
+      "claim_text": "Là où l’ouverture du texte disait que l’analyse « risque » de détruire, ce passage dit qu’elle détruit.",
+      "normalized_claim": "Passage du « risque » (§1) à l'affirmation (§25).",
+      "support_ids": [
+        "SUP-520e32fd6d097859",
+        "SUP-0289ba669a23bf65",
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 167,
+      "claim_text": "À propos d’un ensemble d’épreuves, Faverge écrit : « ce n’est pas une “aptitude” qui fait l’unité entre ces épreuves, c’est la signification du résultat à atteindre ».",
+      "normalized_claim": "Citation sur l'unité des épreuves.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 168,
+      "end": 255,
+      "claim_text": "Il écrit aussi qu’« une analyse du travail en terme d’aptitudes n’est que verbalisme »,",
+      "normalized_claim": "Citation : analyse en termes d'aptitudes = verbalisme.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 256,
+      "end": 371,
+      "claim_text": "et conclut sur une notion d’aptitude « qui ne représente rien en dehors de la signification de la tâche proposée ».",
+      "normalized_claim": "Conclusion sur la notion d'aptitude.",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a",
+        "SUP-f8f3e372fe870579"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 372,
+      "end": 521,
+      "claim_text": "On peut comprendre alors ce que « verbalisme » vise chez lui : un mot, ici « aptitude », qui ne représente rien hors de la signification de la tâche.",
+      "normalized_claim": "Interprétation dérivée de « verbalisme ».",
+      "support_ids": [
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 89,
+      "claim_text": "L’expression « analyse du travail » ne vient pas du livre qui en est devenu la référence.",
+      "normalized_claim": "Le nom ne vient pas du livre de 1955.",
+      "support_ids": [
+        "SUP-926060d9409d8c44",
+        "SUP-bd4bde62a74862fc",
+        "SUP-c954fca2ac2a09c9"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 90,
+      "end": 215,
+      "claim_text": "En 1952, Faverge parle déjà des « différents domaines où l’on pratique l’analyse du travail », comme d’une pratique en cours,",
+      "normalized_claim": "Faverge 1952 parle déjà des domaines où l'on pratique l'analyse du travail.",
+      "support_ids": [
+        "SUP-c954fca2ac2a09c9",
+        "SUP-926060d9409d8c44",
+        "SUP-bd4bde62a74862fc",
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 216,
+      "end": 326,
+      "claim_text": "et la Bibliothèque nationale de France catalogue un titre « Analyse du travail » de Joseph Compagnon dès 1943.",
+      "normalized_claim": "Notice BnF d'un titre de Joseph Compagnon, 1943.",
+      "support_ids": [
+        "SUP-926060d9409d8c44"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 171,
+      "claim_text": "Le livre paraît en 1955 : André Ombredane et Jean-Marie Faverge, L’analyse du travail. Facteur d’économie humaine et de productivité, aux Presses universitaires de France.",
+      "normalized_claim": "Référence du livre de 1955.",
+      "support_ids": [
+        "SUP-91bdfaea49579c6e",
+        "SUP-01e6336b0a9fb276",
+        "SUP-393c0f9a4dceccdc",
+        "SUP-9f7d83c8da239a86",
+        "SUP-8ad3f3f43bb70a5f"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 172,
+      "end": 232,
+      "claim_text": "Selon Guy Karnas et Pierre Salengros, dans un texte de 1986,",
+      "normalized_claim": "Karnas et Salengros, texte de 1986.",
+      "support_ids": [
+        "SUP-df2a41a02951487f",
+        "SUP-ee266954aa3d1213",
+        "SUP-f7fe3905e75e4f6e",
+        "SUP-3048cf5bf853e1b6"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 233,
+      "end": 334,
+      "claim_text": "il reprend les conférences données au « Séminaire d’Analyse du Travail » de l’U.L.B. en 1953 et 1954,",
+      "normalized_claim": "Le livre reprend les conférences du Séminaire de l'ULB 1953-1954.",
+      "support_ids": [
+        "SUP-926060d9409d8c44"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 335,
+      "end": 383,
+      "claim_text": "et il a joué pour le champ le rôle de référence.",
+      "normalized_claim": "Rôle de référence du livre pour le champ.",
+      "support_ids": [
+        "SUP-926060d9409d8c44",
+        "SUP-bd4bde62a74862fc"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 77,
+      "claim_text": "Régis Ouvrier-Bonnaz, qui présente la republication du texte de 1952 en 2011,",
+      "normalized_claim": "Ouvrier-Bonnaz présente la republication de 2011.",
+      "support_ids": [
+        "SUP-90384e64544889a4",
+        "SUP-6e0329da76564422",
+        "SUP-8f3c46f37b9aca8e"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 78,
+      "end": 184,
+      "claim_text": "écrit que son interrogation « est reprise pratiquement mot pour mot dans le chapitre V » du livre de 1955,",
+      "normalized_claim": "Ouvrier-Bonnaz : reprise quasi mot pour mot au chapitre V.",
+      "support_ids": [
+        "SUP-43fc675cbd5208f6",
+        "SUP-945287efa81baaca",
+        "SUP-2c47178dd79f4059"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 185,
+      "end": 268,
+      "claim_text": "et que ce texte « annonce le départ du mouvement d’ergonomie de langue française ».",
+      "normalized_claim": "Ouvrier-Bonnaz : le texte annonce le départ de l'ergonomie francophone.",
+      "support_ids": [
+        "SUP-c954fca2ac2a09c9"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 269,
+      "end": 343,
+      "claim_text": "La reprise au chapitre V, c’est dans ce chapitre qu’il faudra la vérifier.",
+      "normalized_claim": "La reprise au chapitre V n'est pas vérifiée.",
+      "support_ids": [
+        "SUP-43fc675cbd5208f6",
+        "SUP-945287efa81baaca"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 80,
+      "claim_text": "C’est aussi au livre de 1955 que Karnas et Salengros rapportent une distinction.",
+      "normalized_claim": "Karnas et Salengros rapportent la distinction au livre de 1955.",
+      "support_ids": [
+        "SUP-3048cf5bf853e1b6",
+        "SUP-ec5576c9c6e6ae8b",
+        "SUP-4d0d409d82651d7a",
+        "SUP-c954fca2ac2a09c9",
+        "SUP-bd4bde62a74862fc"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 81,
+      "end": 240,
+      "claim_text": "Ils en résument l’apport ainsi : « l’analyse du travail doit distinguer l’analyse de la tâche et l’analyse de l’activité ou encore des conduites opératoires »,",
+      "normalized_claim": "Citation Karnas & Salengros tâche/activité.",
+      "support_ids": [
+        "SUP-3048cf5bf853e1b6",
+        "SUP-4d0d409d82651d7a",
+        "SUP-ec5576c9c6e6ae8b",
+        "SUP-c954fca2ac2a09c9"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 241,
+      "end": 300,
+      "claim_text": "et « on distinguera dans l’analyse le quoi et le comment ».",
+      "normalized_claim": "Citation quoi/comment.",
+      "support_ids": [
+        "SUP-3048cf5bf853e1b6",
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 50,
+      "claim_text": "Cette distinction n’est pas dans le texte de 1952.",
+      "normalized_claim": "La distinction n'est pas dans le texte de 1952.",
+      "support_ids": [
+        "SUP-f8f3e372fe870579",
+        "SUP-ec5576c9c6e6ae8b",
+        "SUP-c954fca2ac2a09c9",
+        "SUP-bd4bde62a74862fc",
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 51,
+      "end": 124,
+      "claim_text": "Le mot « activité » n’apparaît pas dans le corps de l’article de Faverge,",
+      "normalized_claim": "« activité » absent du corps de l'article.",
+      "support_ids": [
+        "SUP-f8f3e372fe870579",
+        "SUP-ec5576c9c6e6ae8b",
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 125,
+      "end": 261,
+      "claim_text": "et « tâche » y est employé au sens courant, comme dans « la signification de la tâche proposée », sans opposition entre les deux termes.",
+      "normalized_claim": "« tâche » au sens courant, sans opposition.",
+      "support_ids": [
+        "SUP-f8f3e372fe870579",
+        "SUP-ec5576c9c6e6ae8b",
+        "SUP-4d0d409d82651d7a"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 262,
+      "end": 318,
+      "claim_text": "Prêter la distinction à ce texte serait un anachronisme.",
+      "normalized_claim": "Attribuer la distinction au texte de 1952 serait anachronique.",
+      "support_ids": [
+        "SUP-f8f3e372fe870579"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 319,
+      "end": 422,
+      "claim_text": "En quels termes exacts l’ouvrage de 1955 pose le quoi et le comment, c’est en le lisant qu’on le saura.",
+      "normalized_claim": "L'ouvrage de 1955 n'a pas été lu.",
+      "support_ids": [
+        "SUP-c6eaa8a6a1e5f6de",
+        "SUP-9f7d83c8da239a86",
+        "SUP-3048cf5bf853e1b6",
+        "SUP-17d36612020c60a4"
+      ]
+    }
+  ]
+}
