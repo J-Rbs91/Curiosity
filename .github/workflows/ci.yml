@@ -93,7 +93,7 @@ jobs:
       - run: npm ci
 
       - name: Tester les garde-fous de fusion automatique
-        run: node --test scripts/ci/auto-merge-prs.test.mjs
+        run: node --test scripts/ci/auto-merge-prs.node-check.mjs
       - run: npm test
       - run: npm run lint
 
