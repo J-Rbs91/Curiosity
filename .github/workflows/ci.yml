@@ -92,6 +92,8 @@ jobs:
           cache: npm
       - run: npm ci
 
+      - name: Tester les garde-fous de fusion automatique
+        run: node --test scripts/ci/auto-merge-prs.test.mjs
       - run: npm test
       - run: npm run lint
 
