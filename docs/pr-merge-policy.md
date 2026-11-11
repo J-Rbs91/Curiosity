@@ -50,3 +50,16 @@ Une vraie exception nécessitant une décision humaine doit porter l'étiquette
 La CI GitHub vérifie le fonctionnement du moteur ; l'auto-fusion n'est
 considérée opérationnelle qu'après observation d'une exécution GitHub Actions
 réelle réussie sur une PR éligible. Un test local réussi ne suffit pas.
+
+## Diagnostic des PR en attente
+
+Si une PR ne fusionne pas après les contrôles, consulter le journal du workflow
+`Auto-merge qualified PRs` dans GitHub Actions. Le moteur rapporte la raison
+du refus, notamment un check absent, un conflit, un refus documentaire ou une
+revue requise. Ne pas assimiler un run de CI sur un ancien SHA à la validation
+du nouveau commit.
+
+En cas d'incident transitoire GitHub Actions (timeout réseau ou run annulé par
+un commit plus récent), n'effectuer aucune fusion tant que les contrôles du
+SHA actuel ne sont pas tous réussis. Une nouvelle exécution ou un contrôle
+ultérieur doit confirmer la réussite avant la fusion.
