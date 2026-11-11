@@ -70,3 +70,23 @@ La cible de l'audit était 1 200-1 280 ; on est 5 mots au-dessus. La croissance 
 Le répertoire de travail temporaire était partagé avec un autre agent : un script de génération portant le même nom y a été remplacé, et son exécution a écrit un instant dans `corpus/deepenings/analyse-des-groupes-professionnels.json` le contenu d'`amplification-de-la-regulation` (refusé par le check, nom de fichier). Le fichier a été entièrement régénéré depuis un script isolé ; la version finale est celle du SHA ci-dessus, `conceptId` vérifié. Aucun autre fichier du dépôt n'a été écrit par cette exécution. Les modifications présentes dans `amplification-de-la-regulation.json` et `analyse-du-travail.json` ne viennent pas de cette réécriture.
 
 Aucune auto-validation : ni ACCEPT ni FACTCHECK_PASS.
+
+## Boucle de correction factuelle 1 (FACTCHECK_FIX)
+
+mode : FACTCHECK_FIX
+Gate en échec : `factcheck-gate.json`, SHA candidat c90dde34…, 58/59 claims soutenus. Seul échec : C001 (lead[0], TOO_STRONG).
+
+Le reproche : SUP-e5be2e3b23776046 établit un « stéréotype social largement diffusé » et des analyses par caractéristiques (savoir, éthique ; monopolisation de tâches et contrôle du recrutement p. 111-112). Il ne porte ni l'exemple médecin / employé, ni la fréquence « presque toujours », ni les années d'études, l'examen d'entrée ou le traitement des clients.
+
+Correction minimale (une seule phrase, lead[0], première phrase) :
+
+- avant : « Demandez ce qui distingue un médecin d’un employé quelconque, et la réponse viendra presque toujours de l’intérieur du métier : les années d’études, l’examen qui filtre l’entrée, les règles que les praticiens se donnent entre eux, la façon dont ils traitent ceux qui viennent les voir, le droit qu’ils ont d’interdire à d’autres certains actes. »
+- après : « Si l’on cherche ce qui distingue une profession d’un autre métier, on peut être tenté de répondre de l’intérieur du métier : le savoir que ses membres mettent en pratique, l’éthique qui règle leur activité, les tâches qu’ils se réservent, le contrôle qu’ils exercent sur l’entrée dans la profession. »
+
+Ce qui a été fait : l'exemple non financé (médecin / employé) est retiré ; la fréquence (« presque toujours ») est remplacée par une modalité de tentation (« on peut être tenté »), qui ne dit plus combien de gens répondent ainsi ; les cinq traits non financés sont remplacés par les quatre que nomme le support : le savoir mis en pratique et l'éthique qui règle l'activité des membres (p. 92-93, cités dans le dossier), la réservation de certaines tâches et le contrôle du recrutement (p. 111-112). Support : SUP-e5be2e3b23776046. Aucune affirmation nouvelle : la phrase dit moins que l'ancienne. La seconde phrase de lead[0] (C002, déjà soutenue) et tout le reste du texte sont inchangés.
+
+Mots (texte lecteur + limits, selon le check) : 1 487 avant, 1 481 après.
+check mécanique : PASS (`npm run corpus:deepen -- --check --only=analyse-des-groupes-professionnels`, 1 481 mots, rien projeté).
+SHA-256 nouvelle version : c1a3b0592c651eae299ab8cf83ff558378c633d71e374b29e8192ee0672bed03. Le SHA c90dde34… est invalidé : l'orchestrateur doit reprendre à PREPARE.
+
+Aucune auto-validation : ni ACCEPT ni FACTCHECK_PASS.

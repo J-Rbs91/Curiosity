@@ -3,7 +3,7 @@
   "concept_id": "analyse-des-groupes-professionnels",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "c90dde342c37335ed57932a1d71cf84c35242dba53b8c95a0644fc52d49731bf",
+  "candidate_sha256": "c1a3b0592c651eae299ab8cf83ff558378c633d71e374b29e8192ee0672bed03",
   "validated_sha256": "deeac5dc42d648953eeb5f989ab01c5cf8f2fb2a0c9549400f9fd8ff6757e26e",
   "evidence_files": [
     {
@@ -44,7 +44,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Demandez ce qui distingue un médecin d’un employé quelconque, et la réponse viendra presque toujours de l’intérieur du métier : les années d’études, l’examen qui filtre l’entrée, les règles que les praticiens se donnent entre eux, la façon dont ils traitent ceux qui viennent les voir, le droit qu’ils ont d’interdire à d’autres certains actes. Tout cela se décrit sans jamais sortir du groupe : on observe les gens du métier entre eux, on fait l’inventaire de ce qui les tient ensemble, et l’on croit tenir du même coup ce qui les caractérise."
+      "text": "Si l’on cherche ce qui distingue une profession d’un autre métier, on peut être tenté de répondre de l’intérieur du métier : le savoir que ses membres mettent en pratique, l’éthique qui règle leur activité, les tâches qu’ils se réservent, le contrôle qu’ils exercent sur l’entrée dans la profession. Tout cela se décrit sans jamais sortir du groupe : on observe les gens du métier entre eux, on fait l’inventaire de ce qui les tient ensemble, et l’on croit tenir du même coup ce qui les caractérise."
     },
     {
       "locator": "lead[1]",
@@ -529,6 +529,6 @@
       "text": "Le PDF de Persée (/docAsPDF/) rend 403 et n'a pas été sollicité. La vérification s'est faite sur la couche texte du service /doc/page/ et sur les images de pages du service renderPage, qui sont des fac-similés de la revue imprimée. Aucun exemplaire papier n'a été consulté. La première requête sur la page 88 a échoué sur une coupure réseau et a été reprise ; la page a bien été ouverte."
     }
   ],
-  "estimated_tokens": 15803,
+  "estimated_tokens": 15788,
   "status": "READY"
 }
