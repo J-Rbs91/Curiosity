@@ -24,12 +24,14 @@ vérification manuelle dans le navigateur...).
       (`docs/corpus-workflow.md`) et n'a pas été rédigée de mémoire
 - [ ] La documentation pertinente (README, docs/) a été mise à jour si nécessaire
 
-## Fusion automatisée
+## Qualification et fusion
 
-- [ ] Si cette PR est prête, elle n'est pas en brouillon et les gates requis ont été vérifiés.
-- [ ] Si la PR modifie un approfondissement, FACTCHECK_PASS et review ACCEPT sont attestés.
-- [ ] En cas de blocage réel, ajouter `needs-manual-review` avec la raison ; ne pas prétendre à une validation non obtenue.
+- [ ] PR prête pour revue si son auteur a terminé les vérifications déclarées.
+- [ ] Changements, validations et risques décrits avec des preuves vérifiables.
+- [ ] Si la PR modifie un approfondissement, joindre les verdicts FACTCHECK et de revue indépendante.
+- [ ] Identifier les conflits et dépendances éventuels, sans masquer les échecs.
 
-Les PR prêtes sont fusionnées automatiquement conformément à
-`docs/pr-merge-policy.md`. Ne pas ajouter de mention générique demandant une
-décision de fusion par une routine centrale.
+Les contrôles CI et l'absence de conflit ne constituent **pas** une certification de la PR.
+La décision et la fusion sur `main` sont prises par un contrôleur distinct, mandaté par
+le propriétaire, après revue du diff et des preuves. Ne pas attendre systématiquement
+une « routine centrale » non définie et ne pas annoncer une fusion non réalisée.
