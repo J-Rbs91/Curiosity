@@ -3,7 +3,7 @@
   "concept_id": "analyse-du-travail",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "7bc6bed27d9dabbfc52b766019572896570724ad7db51fb6f3b90c9e64197960",
+  "candidate_sha256": "b43d04dd9e488e6423cbf103748fa5e310a828b52ca140915b95f91eca9c96bb",
   "validated_sha256": "fd983116874d325cc12d64b5adbaa04504bfff0eb5da7d37ff29dc8d95786e55",
   "evidence_files": [
     {
@@ -76,71 +76,76 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Un poste de travail se décrit facilement comme une liste de gestes : saisir la pièce, la retourner, positionner un boulon, serrer, reposer l’ensemble, recommencer. Chaque ligne de cette liste, prise seule, est exacte. Mais lue dans son ensemble, elle ne redonne pas le travail : on y cherche en vain pourquoi ces gestes s’enchaînent dans cet ordre plutôt qu’un autre, ce que l’un prépare pour le suivant, ce qui change quand la pièce arrive de travers. Le détail est là, entier ; ce qui reliait les gestes entre eux a disparu."
+      "text": "Imaginons qu’on veuille décrire un poste de travail en dressant la liste de ses gestes : saisir la pièce, la retourner, positionner un boulon, serrer, reposer, recommencer, chaque geste noté et chronométré à part. Une telle liste a l’air de tout contenir. Mais une fois le travail décrit élément par élément, que reste-t-il de ce qui s’y fait ?"
     },
     {
       "locator": "lead[1]",
-      "text": "C’est exactement ce piège que décrit, en 1952, Jean-Marie Faverge, dans un texte sur les manières d’étudier le travail. Il compare cette décomposition à un geste de chimiste : casser un composé en ses éléments fait perdre les propriétés qui tenaient à leur agencement, à ce qu’il appelle, par comparaison, des « molécules ». Appliquée au travail, la même opération produit un inventaire de fragments qui, selon ses mots, « ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu’à du verbalisme » : des mots pour chaque geste, plus rien qui rende compte de l’ensemble."
+      "text": "En 1952, dans un texte intitulé « Analyse et structure du travail », Jean-Marie Faverge part de l’étude du travail telle qu’elle se pratique alors. Elle comporte, écrit-il, des démarches analytiques destinées à isoler les éléments importants, et à rejeter tout ce qui est accessoire. Or cette analyse « risque de détruire certaines structures, certaines unités, disons certaines molécules pour rappeler une analogie avec la chimie ». Et il poursuit : « L’inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu’à du verbalisme. »"
     },
     {
       "locator": "sections[0].paragraphs[0]",
-      "section_title": "Ce qui se perd quand on décompose un geste",
-      "text": "Dans ce même texte, Faverge écrit que l’étude d’un travail « risque de détruire certaines structures, certaines unités, disons certaines molécules pour rappeler une analogie avec la chimie ». L’image est précise : une molécule d’eau n’est pas une réserve d’oxygène et d’hydrogène rangés côte à côte, elle est ce que devient la matière quand ces deux éléments se lient d’une façon particulière. Séparer l’oxygène de l’hydrogène ne laisse subsister aucune des deux substances : cela produit deux gaz qui n’ont plus rien à voir avec l’eau."
+      "section_title": "Des temps qui ne s’additionnent pas",
+      "text": "Faverge montre son objection sur trois terrains, qui sont les trois sections de son texte. Le premier est la mesure des temps de travail. Il y vise des méthodes analytiques américaines, Q.S.K. et M.T.M., qui cherchent des éléments universels de travail, des éléments en lesquels toute tâche pourrait s’analyser, et qui traitent le temps d’un travail comme la somme des temps de ses éléments. Ces méthodes reposent sur un critère d’unité que leurs praticiens se donnent eux-mêmes : le temps d’un élément resterait le même quels que soient les éléments qui le précèdent ou le suivent dans l’opération."
     },
     {
       "locator": "sections[0].paragraphs[1]",
-      "section_title": "Ce qui se perd quand on décompose un geste",
-      "text": "Un geste de travail répond à la même logique. Serrer un boulon après avoir positionné la pièce n’est pas la simple addition de « positionner » et de « serrer » : la façon de positionner dépend de la façon dont on va serrer ensuite, et inversement. Décrire les deux gestes séparément, minutés l’un après l’autre, fait disparaître ce lien. Ce qui reste est vrai de chaque geste pris à part, et faux de l’ensemble qu’ils formaient."
+      "section_title": "Des temps qui ne s’additionnent pas",
+      "text": "Faverge leur oppose ceci : « le danger de telles méthodes est précisément de briser les structures à l’intérieur desquelles les temps ne s’additionnent pas ». Il relève que, quand la rapidité augmente, la séquence des gestes s’altère : les gestes se chevauchent, le trajet de la main s’arrondit. Et il rappelle que le critère d’unité de ces méthodes n’est justement pas vérifié. Cela implique que l’erreur n’attend pas l’addition : le geste chronométré à part n’est déjà plus tout à fait celui qui s’exécute entre ses voisins."
     },
     {
       "locator": "sections[1].paragraphs[0]",
-      "section_title": "Un verbalisme, pas une erreur de détail",
-      "text": "Le mot que choisit Faverge pour désigner ce résultat, le verbalisme, mérite d’être expliqué : il ne s’agit pas d’une erreur de fait, d’une case cochée par erreur dans l’inventaire. Chaque geste noté peut être décrit avec une exactitude parfaite, chronométré à la seconde près, sans qu’aucune de ces notations soit fausse. Le verbalisme est ce qui arrive quand la somme de descriptions exactes ne redonne plus l’objet qu’elles étaient censées décrire : on continue de parler du travail, mais on ne parle plus que de mots qui en tiennent lieu."
+      "section_title": "Structure et signification",
+      "text": "Ce que ces méthodes brisent, Faverge l’appelle une structure, et il note que « la notion de structuration se confond presque avec celle de signification ». Ces idées sur les structures, il les dit « développées en particulier par la psychologie de la forme », et il regrette qu’elles n’aient pas pénétré l’analyse du travail telle qu’elle se pratique."
     },
     {
       "locator": "sections[1].paragraphs[1]",
-      "section_title": "Un verbalisme, pas une erreur de détail",
-      "text": "La conséquence vaut pour toute description qui procède par inventaire : un descriptif de poste, un protocole écrit, un mode opératoire détaillé. Aucune de ces pièces n’est fausse dans son détail. Mais aucune ne garantit, par le seul fait d’être complète, qu’elle rend compte de ce qui se passe réellement quand quelqu’un exécute le travail qu’elle décrit."
+      "section_title": "Structure et signification",
+      "text": "On peut résumer ainsi l’unité de son argument : ce qui fait qu’un travail est ce qu’il est ne se trouve pas dans les éléments qu’on en isole, mais dans les structures signifiantes que l’opérateur y forme. Et ces structures ne se déduisent pas d’une décomposition préalable : elles s’observent."
     },
     {
       "locator": "sections[2].paragraphs[0]",
-      "section_title": "Là où l’inventaire ne perd rien",
-      "text": "L’analogie chimique porte elle-même sa propre limite : toutes les molécules ne perdent pas autant à être séparées, et tous les travaux ne sont pas également structurés. Imaginons une tâche réduite à un seul geste répété à l’identique, sans enchaînement avec un autre, sans ajustement d’une fois sur l’autre : verser un liquide dans un récipient, encore et encore, toujours de la même manière. La décomposer en éléments ne détruit alors presque rien, puisqu’il n’y avait guère de structure à détruire au départ. Ce cas n’est pas discuté par Faverge ; il découle simplement de son propre raisonnement, retourné."
+      "section_title": "Ce qui se voit en apprenant",
+      "text": "Le deuxième terrain est l’apprentissage. Des structures y apparaissent, et elles se voient aux articulations entre des ensembles de gestes. Pour Faverge, « il serait absurde de ne pas les reconnaître », ou de les détruire dans l’analyse psychotechnique du travail."
     },
     {
       "locator": "sections[2].paragraphs[1]",
-      "section_title": "Là où l’inventaire ne perd rien",
-      "text": "La mise en garde vaut donc surtout pour les travaux où l’ordre des gestes, leurs ajustements réciproques et la marge laissée à la personne pour faire face à un imprévu comptent autant que les gestes pris un à un. C’est précisément ce genre de travail que l’expression désignait déjà en 1952, avant qu’un texte plus développé ne s’impose comme sa référence : celui des métiers où décrire chaque geste séparément ne suffit jamais à comprendre ce qui s’y fait."
+      "section_title": "Ce qui se voit en apprenant",
+      "text": "Il ajoute une remarque de méthode. Les premières observations, celles qu’on fait « lorsque nous apprenons un métier pour le comprendre », sont importantes parce qu’elles saisissent un moment de l’apprentissage qui s’évanouit ensuite."
     },
     {
       "locator": "sections[3].paragraphs[0]",
-      "section_title": "Les aptitudes prises une à une",
-      "text": "Faverge applique le même raisonnement à un objet plus inattendu : les aptitudes, les capacités qu’on prête habituellement à une personne pour expliquer qu’elle réussit ou échoue à une tâche. Il écrit que « les fameuses aptitudes ne peuvent être isolées de certaines structures, qu’en le faisant on détruit les molécules dont nous avons parlé ». Une aptitude n’existe donc pas à l’état pur, détachable de la situation où elle s’exerce : elle est ce que devient une capacité une fois prise dans l’organisation particulière d’un travail donné."
+      "section_title": "Les aptitudes, ou le verbalisme",
+      "text": "Le troisième terrain est celui des aptitudes, et l’objection y est affirmée sans réserve : « les fameuses aptitudes ne peuvent être isolées de certaines structures, qu’en le faisant on détruit les molécules dont nous avons parlé ». Là où l’ouverture du texte disait que l’analyse « risque » de détruire, ce passage dit qu’elle détruit."
     },
     {
       "locator": "sections[3].paragraphs[1]",
-      "section_title": "Les aptitudes prises une à une",
-      "text": "Isoler une aptitude pour la mesurer, hors de toute situation de travail, revient à faire subir aux capacités humaines le même traitement qu’aux gestes : on obtient un chiffre exact sur un fragment, on perd ce qui ne se manifeste que dans l’agencement complet du travail réel."
+      "section_title": "Les aptitudes, ou le verbalisme",
+      "text": "À propos d’un ensemble d’épreuves, Faverge écrit : « ce n’est pas une “aptitude” qui fait l’unité entre ces épreuves, c’est la signification du résultat à atteindre ». Il écrit aussi qu’« une analyse du travail en terme d’aptitudes n’est que verbalisme », et conclut sur une notion d’aptitude « qui ne représente rien en dehors de la signification de la tâche proposée ». On peut comprendre alors ce que « verbalisme » vise chez lui : un mot, ici « aptitude », qui ne représente rien hors de la signification de la tâche."
     },
     {
       "locator": "sections[4].paragraphs[0]",
-      "section_title": "Un nom plus ancien que son texte de référence",
-      "text": "Le texte de 1952 n’introduit pas cette façon de nommer les choses : il la trouve déjà en usage. Faverge y évoque « les différents domaines où l’on pratique l’analyse du travail », comme d’une activité déjà répandue, qui n’a pas besoin d’être définie pour qu’on la reconnaisse. L’expression désignait donc une pratique avant de désigner un texte de référence."
+      "section_title": "Un nom plus ancien que son livre",
+      "text": "L’expression « analyse du travail » ne vient pas du livre qui en est devenu la référence. En 1952, Faverge parle déjà des « différents domaines où l’on pratique l’analyse du travail », comme d’une pratique en cours, et la Bibliothèque nationale de France catalogue un titre « Analyse du travail » de Joseph Compagnon dès 1943."
     },
     {
       "locator": "sections[4].paragraphs[1]",
-      "section_title": "Un nom plus ancien que son texte de référence",
-      "text": "De cet ouvrage, on ne retiendra ici que l’état civil : les noms des deux auteurs, le titre complet, l’éditeur et l’année de parution. Ce qu’il dit, il le dit dans ses pages ; le texte qu’on peut citer avec certitude sans les avoir ouvertes reste celui de 1952, signé par Faverge seul."
+      "section_title": "Un nom plus ancien que son livre",
+      "text": "Le livre paraît en 1955 : André Ombredane et Jean-Marie Faverge, L’analyse du travail. Facteur d’économie humaine et de productivité, aux Presses universitaires de France. Selon Guy Karnas et Pierre Salengros, dans un texte de 1986, il reprend les conférences données au « Séminaire d’Analyse du Travail » de l’U.L.B. en 1953 et 1954, et il a joué pour le champ le rôle de référence."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Un nom plus ancien que son livre",
+      "text": "Régis Ouvrier-Bonnaz, qui présente la republication du texte de 1952 en 2011, écrit que son interrogation « est reprise pratiquement mot pour mot dans le chapitre V » du livre de 1955, et que ce texte « annonce le départ du mouvement d’ergonomie de langue française ». La reprise au chapitre V, c’est dans ce chapitre qu’il faudra la vérifier."
     },
     {
       "locator": "sections[5].paragraphs[0]",
       "section_title": "Ce qui est demandé, ce qui est fait",
-      "text": "Des lecteurs plus tardifs de ce courant rapportent que l’ouvrage écrit avec Ombredane met en place une distinction devenue depuis très courante dans l’étude du travail : ce qui est demandé à quelqu’un, la tâche qu’on lui confie, ne coïncide jamais tout à fait avec ce qu’il fait réellement pour s’en acquitter, ce que ces mêmes lecteurs appellent l’activité. L’écart entre les deux n’est pas un défaut d’exécution : c’est la place laissée à la personne pour ajuster une consigne générale à une situation particulière, qui ne se répète jamais exactement de la même façon."
+      "text": "C’est aussi au livre de 1955 que Karnas et Salengros rapportent une distinction. Ils en résument l’apport ainsi : « l’analyse du travail doit distinguer l’analyse de la tâche et l’analyse de l’activité ou encore des conduites opératoires », et « on distinguera dans l’analyse le quoi et le comment »."
     },
     {
       "locator": "sections[5].paragraphs[1]",
       "section_title": "Ce qui est demandé, ce qui est fait",
-      "text": "Cette distinction ne figure pas dans le texte de 1952 : le mot « activité » n’y apparaît à aucun moment, et « tâche » n’y est employé qu’au sens courant, sans opposition marquée. Elle est rapportée à l’ouvrage écrit avec Ombredane par des commentateurs qui l’ont lu. Pour établir depuis quand et en quels termes exacts ce texte pose la distinction, il faudra le lire."
+      "text": "Cette distinction n’est pas dans le texte de 1952. Le mot « activité » n’apparaît pas dans le corps de l’article de Faverge, et « tâche » y est employé au sens courant, comme dans « la signification de la tâche proposée », sans opposition entre les deux termes. Prêter la distinction à ce texte serait un anachronisme. En quels termes exacts l’ouvrage de 1955 pose le quoi et le comment, c’est en le lisant qu’on le saura."
     }
   ],
   "supports": [
@@ -855,6 +860,6 @@
       "text": "Un autre passage a été écarté et je dis pourquoi. L'ouverture de l'article — « L'étude psychotechnique du travail comporte des démarches analytiques destinées à isoler les éléments importants. » (113 caractères) — tient largement sous la limite et a l'avantage d'être la première phrase du texte, mais elle énonce ce que Faverge critique, et non ce qu'il soutient : isolée, elle lui ferait dire l'inverse de son propos. C'est exactement le retournement de sens que la coupe ne doit pas produire. La phrase du § 14 sur l'observation en situation d'apprentissage (« C'est ainsi que nos premières observations, lorsque nous apprenons un métier pour le comprendre… ») aurait été la plus proche du sous-titre de la fiche, mais elle dépasse 220 caractères et n'admet pas de coupe qui la laisse intelligible."
     }
   ],
-  "estimated_tokens": 16017,
+  "estimated_tokens": 15825,
   "status": "READY"
 }
