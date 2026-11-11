@@ -1,0 +1,689 @@
+{
+  "protocol_version": 2,
+  "concept_id": "amplification-de-la-regulation",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "420585cb9e8faa4fd3742df72ab89e9c1e5585a91c09915e3629093655f5ede6",
+  "validated_sha256": "b8cbe3372b68357401c453466326563b6cba1603663e53038005f31922703925",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "5aa71ebf35d16f7e6449d0ef717a1f3906a3a6c0e62b1c112f6fcc7c8cfa4507"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/amplification-de-la-regulation/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+        "cles": [
+          "url:pespmc1.vub.ac.be/books/introcyb.pdf"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "Michael U. Ben-Eli, « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 1979, p. 285-296.",
+        "cles": [
+          "doi:10.1080/01969727908927610",
+          "url:doi.org/10.1080/01969727908927610"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Un enfant soulève de très lourdes charges, parce que son père veut bien les soulever pour lui. C’est, pour W. Ross Ashby, le type même de l’amplificateur, et la scène dit déjà l’essentiel : la force qui soulève vient d’ailleurs. Un amplificateur, écrit Ashby, n’agit que rarement en grossissant directement ce qu’il reçoit, comme la lentille du projectionniste de cinéma, qui agrandit vraiment l’image ; le plus souvent, il procède par supplémentation."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Ashby transpose ensuite la question à la régulation, dont il prend pour exemple un bain qu’il faut maintenir en température à force de corrections. Peut-on obtenir une régulation plus grande que celle qu’on sait fabriquer ? Une loi qu’il a lui-même énoncée, la loi de la variété requise, interdit d’agrandir directement un régulateur. Il consacre pourtant un chapitre entier, intitulé « Amplifying Regulation », à montrer par quelle voie un régulateur plus grand peut quand même s’établir, et à quel prix."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce que fait un amplificateur de puissance",
+      "text": "Ashby examine d’abord la supplémentation dans l’amplificateur de puissance. Celui-ci ne crée pas d’énergie : il puise dans une réserve abondante, charbon, pétrole, et il n’y parvient que parce que l’opération se fait en deux étages couplés, à l’intérieur de chacun desquels l’énergie est strictement conservée. C’est cette séparation en deux étages, écrit-il, qui rend l’amplification de puissance possible, car en un seul étage la loi de conservation de l’énergie interdirait toute amplification simple et directe."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce que fait un amplificateur de puissance",
+      "text": "Il en tire deux points de vue, et donne raison aux deux. Pour le théoricien, il n’y a aucune amplification réelle : l’opérateur ne fait, en quelque sorte, que prendre leur énergie à d’autres sources. Pour l’homme de métier, qui a accès à une source abondante, l’amplification est bien réelle, et pratique. Ce double regard est le premier des deux garde-fous qu’Ashby pose lui-même."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Fabriquer un régulateur, c’est le sélectionner",
+      "text": "Cette analogie, Ashby la transporte à la régulation en toutes lettres. La loi de la variété requise, écrit-il, « like the law of Conservation of Energy », interdit absolument tout grossissement direct et simple, mais elle n’interdit pas la supplémentation. La comparaison range sa loi parmi les interdits absolus de la physique, et on peut la lire comme une indication de sortie : de même que la conservation de l’énergie n’interdit que l’amplification de puissance en un seul étage, la loi de la variété requise laisse ouverte la voie de la supplémentation. C’est en ce sens, précise Ashby, qu’il faut entendre la régulation « amplifiante ». Le mot amplification ne désigne donc pas, chez lui, l’opération interdite, le grossissement, mais le résultat obtenu par l’autre voie."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Fabriquer un régulateur, c’est le sélectionner",
+      "text": "L’analogie demande encore une grandeur à compter. Ashby prend la sélection : pour qu’un régulateur existe, il faut l’avoir choisi parmi tous ceux qu’on aurait pu faire, et cette sélection se mesure, par le nombre de bits nécessaires pour distinguer le bon régulateur de tous les autres. La question devient alors comptable : combien de sélection faut-il dépenser, et combien en obtient-on ?"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Fabriquer un régulateur, c’est le sélectionner",
+      "text": "D’où l’énoncé qu’il compose lui-même en italique, prudent jusque dans sa grammaire : si le régulateur final peut être atteint par étapes, « the possibility exists that the provision of a small regulator at the first stage may lead to the final establishment of a much bigger regulator », la possibilité existe que la fourniture d’un petit régulateur au premier étage conduise à l’établissement final d’un régulateur bien plus grand. Une possibilité, et un verbe, « may », qui ne promet rien. Le chapitre précédent avait préparé ce point en notant que la capacité du second régulateur n’est pas bornée par celle du premier."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "La perturbation qui revient tous les jours",
+      "text": "Ashby chiffre ce mécanisme sur le bain qu’il faut maintenir en température. Admettons cent corrections par jour pendant un an : trente-six mille cinq cents sélections d’un bit, que l’opérateur devrait faire une à une s’il s’en chargeait lui-même. Supposons maintenant qu’il sache fabriquer un thermostat au prix de, disons, mille bits. On peut y lire les deux étages de l’énoncé : au premier, l’opérateur sélectionne un thermostat ; au second, le thermostat sélectionne les corrections. Entre les mille bits dépensés et les trente-six mille cinq cents obtenus, l’amplification vaut environ trente-six."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "La perturbation qui revient tous les jours",
+      "text": "Ce qui rend l’opération payante tient dans un membre de phrase : « by using the fact that the Grand Disturbance is repetitive [...] the act of selecting appropriately from 1000 bits has as consequence the correct selection from 36,500 bits ». C’est parce que la grande perturbation se répète que bien choisir parmi mille bits a pour conséquence le bon choix parmi trente-six mille cinq cents. La condition est la répétition, et non la mise en étages seule. Ashby l’avait annoncée au chapitre précédent : « From here on we shall consider the case in which the disturbance, and the regulatory response, occur more than once; for such cases show constraint, of which advantage can be taken », à partir d’ici seront considérés les cas où la perturbation, et la réponse régulatrice, se produisent plus d’une fois, car ces cas présentent une contrainte dont on peut tirer parti."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "D’où vient ce qui manque au premier étage",
+      "text": "Reste la question que l’analogie rendait inévitable. L’amplificateur de puissance prend son énergie dans une réserve ; où le second étage d’une régulation prend-il ce que le premier ne lui a pas fourni ? Ashby répond que ce supplément est apporté par les autres entrées, l’environnement compris. Son exemple : vingt mécaniciens chargés de tenir deux mille pièces climatisées. C’est l’environnement, et non le mécanicien, qui communique à chaque conditionneur la température et l’humidité du moment, de sorte que ces sources participent à la régulation d’ensemble sans passer par le mécanicien."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "D’où vient ce qui manque au premier étage",
+      "text": "C’est sur cet exemple qu’il écrit : « the regulation that could not be done in one stage may, if the conditions are suitable, be possible in two », la régulation qu’on ne pouvait pas obtenir en un étage peut, si les conditions s’y prêtent, devenir possible en deux. Le nombre d’étages n’est d’ailleurs pas limité à deux. Et le procédé n’a rien de neuf : les animaux supérieurs, ceux qui s’adaptent en apprenant, ont trouvé la méthode il y a longtemps."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Les cas où l’amplification n’a pas lieu",
+      "text": "Le second garde-fou tient en une phrase : « There is, of course, not necessarily any amplification ». Celui qui fabrique fait toujours, au moins intuitivement, la balance entre ce que coûte la fabrication de la machine qui fera le travail et ce que coûterait le travail fait lui-même. Cela implique que, si le thermostat coûtait plus de bits que l’année de corrections qu’il remplace, rien ne serait gagné."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Les cas où l’amplification n’a pas lieu",
+      "text": "Un cas négatif confirme la condition de répétition. Quand le patrimoine génétique spécifie directement le régulateur, l’amplification n’a pas lieu, du moins du point de vue adopté, même si un certain avantage est obtenu lorsque les perturbations reviennent souvent au cours de la vie de l’organisme. Ce cas figure dans la section qu’Ashby intitule « Amplification in the brain », qui parle aussi d’une régulation finale « far greater than could be achieved by the gene-pattern directly », bien plus grande que celle que le patrimoine génétique atteindrait directement."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Les cas où l’amplification n’a pas lieu",
+      "text": "Le chapitre se clôt sur une dernière section, « Amplifying intelligence », et le livre avec lui, sur cette phrase : « But this book must stop; these are not matters for an Introduction. » Le livre doit s’arrêter : ce ne sont pas là des sujets pour une introduction. En 1960, Ashby intitule « Amplifying Adaptation » un chapitre de la deuxième édition de Design for a Brain ; ce qu’il y fait de l’argument, c’est ce chapitre qu’il faudra lire."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-d432b2c84068a031",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "amplification-de-la-regulation"
+    },
+    {
+      "id": "SUP-dbd66a990c31eaf3",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "amplification-de-la-regulation"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-8dec6bef21791dfe",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "L'amplification de la régulation"
+    },
+    {
+      "id": "SUP-affadf82061b1e4f",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "variete-et-moyens-de-la-regulation"
+    },
+    {
+      "id": "SUP-3714c926ccd69ab7",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "W. Ross Ashby"
+    },
+    {
+      "id": "SUP-ccc39990130d4d97",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Le nom du concept est de l'auteur : « Amplifying Regulation » est le titre du chapitre 14 d'An Introduction to Cybernetics, et Ashby emploie la tournure « an amplification of regulation » dans sa propre préface pour annoncer ce que fera la troisième partie du livre. Le titre français traduit donc un intitulé d'auteur, il n'est pas un baptême par un tiers. Le concept est un corollaire de la loi de la variété requise, qu'Ashby énonce lui-même au chapitre 11 du même ouvrage, et il s'appuie explicitement sur les sections du chapitre précédent : c'est un enchaînement interne à un livre d'un seul auteur."
+    },
+    {
+      "id": "SUP-14d36910204d76eb",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Comment obtenir une régulation plus grande que celle qu'on sait fabriquer ?"
+    },
+    {
+      "id": "SUP-ae1477b43c9e384d",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "La loi de la variété requise interdit d'agrandir un régulateur, non de le supplémenter : en sélectionner un petit peut en établir un grand, si la perturbation se répète."
+    },
+    {
+      "id": "SUP-4acc485a4ed39aca",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "La loi de la variété requise […] interdit absolument tout grossissement direct et simple, mais elle n'interdit pas la supplémentation."
+    },
+    {
+      "id": "SUP-042dfa665933af02",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956 (tirage lu : seconde impression, 1957), chapitre 14 « Amplifying Regulation », section 14/4 « Regulation and selection ». Édition électronique de 1999 préparée pour le Principia Cybernetica Web avec l'autorisation de la succession Ashby."
+    },
+    {
+      "id": "SUP-eb97b1d7f10470e2",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "ch. 14, section 14/4, p. 268"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-33703f43fa948859",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "The law of Requisite Variety […] absolutely prohibits any direct and simple magnification but it does not prohibit supplementation."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-8c7a3aa7bd6a0771",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de l'Introduction to Cybernetics n'a été identifiée. « Magnification » est rendu par « grossissement » et non par « amplification » : Ashby oppose dans ce chapitre le fait d'agrandir un régulateur, qu'il déclare impossible, au fait de le supplémenter, et « amplification » — le mot du titre du chapitre, « Amplifying Regulation » — désigne chez lui le résultat obtenu par la seconde voie, non l'opération interdite par la première. Les rabattre l'un sur l'autre rendrait la phrase contradictoire."
+    },
+    {
+      "id": "SUP-6dc4ac53b35e395e",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1956. Édition électronique de 1999 autorisée par la succession Ashby, Principia Cybernetica Web.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-d94d680ae71d0db3",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "ch. 14, p. 265-272",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c0ff10ee6d0f3e1b",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-74e44beac7c19b1d",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "Michael U. Ben-Eli, « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 1979, p. 285-296.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-17f3663cb3d0deae",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-621140f4fc720277",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1080/01969727908927610",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-bc1ad1001b4126c6",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1080/01969727908927610",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-4630957075078bc7",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-21"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-9535491a6207c8bc",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "SOURCE PRIMAIRE OUVERTE : https://pespmc1.vub.ac.be/books/IntroCyb.pdf, HTTP 200, 2 023 477 octets, 156 pages PDF (2 pages de livre par page PDF), texte extrait intégralement avec PyMuPDF. Page de garde (PDF p. 1) : « Copyright © 1956, 1999 by The Estate of W. Ross Ashby — Non-profit reproduction and distribution of this text for educational and research reasons is permitted providing this copyright statement is included [...] Prepared for the Principia Cybernetica Web — With kind permission of the Estate trustees Jill Ashby, Sally Bannister, Ruth Pettit ». Page de titre : « SECOND IMPRESSION, LONDON, CHAPMAN & HALL LTD, 1957 » ; verso : « First published 1956 / Second impression 1957 ». Le tirage annoncé par la fiche (seconde impression, 1957) et l'autorisation de la succession sont donc constatés sur le document lui-même, non déduits. La page d'hébergement https://pespmc1.vub.ac.be/ASHBBOOK.html (HTTP 200) le redit : « This publication has been made possible largely through Mick Ashby, the author's grandson, who has convinced the copyright holders (the Ashby estate) that they should allow us to produce an electronic version. » Accès en libre lecture, sans mur ni contrôle contourné."
+    },
+    {
+      "id": "SUP-42f295ea7b81ad3b",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée à l'endroit annoncé. Section 14/4 « Regulation and selection » commence en bas de la p. 267 (PDF p. 142) et se poursuit p. 268 (PDF p. 143). Le dernier paragraphe de 14/4, p. 268, se lit : « This is the sense in which \"amplifying\" regulation is to be understood. The law of Requisite Variety, like the law of Conservation of Energy, absolutely prohibits any direct and simple magnification but it does not prohibit supplementation. » (les césures de fin de ligne « Conser-vation » et « mag-nification » sont rétablies). La fiche cite « The law of Requisite Variety […] absolutely prohibits any direct and simple magnification but it does not prohibit supplementation. » : la coupe signalée par […] porte exactement sur l'incise « , like the law of Conservation of Energy, », elle ne modifie pas le sens. Verbatim, en anglais, sans traduction — conforme à language: \"en\" et translation.kind: \"none\". Le locator ch. 14, section 14/4, p. 268 est exact."
+    },
+    {
+      "id": "SUP-a00d1c22475ca552",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — l'intitulé est bien d'Ashby, vérifié dans le livre lui-même. PDF p. 141 : « 265 / Chapter 14 / AMPLIFYING REGULATION » ; l'index (p. 289) porte « Amplifier, of power, 238 — of regulation, 265 — of intelligence, 271 ». La préface (p. vi, PDF p. 3) annonce la troisième partie : « It shows how hierarchies of such regulators and controllers can be built, and how an amplification of regulation is thereby made possible. » La tournure est donc bien de l'auteur, dans sa propre préface, et pour l'objet annoncé. La loi de la variété requise est énoncée par Ashby lui-même en S.11/7 (« This is the law of Requisite Variety », index p. 206), et le ch. 14 renvoie explicitement à S.13/10 et S.13/18 du chapitre précédent : enchaînement interne à un livre d'un seul auteur, pas de baptême par un tiers. L'article de Ben-Eli (1979) reprend l'expression vingt-trois ans après le livre et ne peut fonder aucune paternité concurrente."
+    },
+    {
+      "id": "SUP-f0b829d11ea612ab",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCE SECONDAIRE — DOI 10.1080/01969727908927610 : https://doi.org/... répond HTTP 302 vers tandfonline.com/doi/abs/10.1080/01969727908927610 (article sous paywall, non ouvert : consulted \"metadata-only\" est donc exact). Notice Crossref (https://api.crossref.org/works/10.1080/01969727908927610, HTTP 200) : « AMPLIFYING REGULATION AND VARIETY INCREASE IN EVOLVING SYSTEMS », Michael U. Ben-Eli, Journal of Cybernetics, vol. 9, n° 3, p. 285-296, 1979. Contre-vérification OpenAlex : titre, auteur unique, 1979, 9(3), 285-296, Journal of Cybernetics — identiques. Aucun écart avec ce que la fiche affiche."
+    },
+    {
+      "id": "SUP-c0162e5eb654b3df",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "OUTIL — verify_reference (serveur documentary) n'était pas exposé dans cette session ; lancé à la main, scripts/mcp/documentary-server.mjs échoue au démarrage (ERR_MODULE_NOT_FOUND : '@modelcontextprotocol/sdk' absent). La résolution du DOI a donc été faite directement contre Crossref et OpenAlex, qui ont tous deux répondu : le résultat est concluant, ce n'est pas un silence de base."
+    },
+    {
+      "id": "SUP-f1bd5b64596b4192",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE — le hook (« Comment obtenir une régulation plus grande que celle qu'on sait fabriquer ? ») est porté par la fin du ch. 13, p. 264 : « the capacity of R2 is not bounded by that of R1. The possibility arises that R2 may be of capacity greater than R1, so that an amplification occurs », et par S.14/6, p. 270-271 (« an ultimate regulation far greater than could be achieved by the gene-pattern directly »). Le summary est porté aussi : la première proposition reprend la citation de 14/4 ; la condition « si la perturbation se répète » n'est pas ajoutée par la fiche, elle est d'Ashby, S.13/7, p. 248 : « From here on we shall consider the case in which the disturbance, and the regulatory response, occur more than once; for such cases show constraint, of which advantage can be taken », et elle fait le calcul de l'exemple du bain thermostaté (S.14/5, p. 269 : « by using the fact that the Grand Disturbance is repetitive (S.13/9) [...] So an amplification of about × 36 [...] has occurred »)."
+    },
+    {
+      "id": "SUP-ce7e166d861ae33c",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "INEXACTITUDE SIGNALÉE HORS DES QUATRE POINTS (n'emporte pas REWORK) : le locator de la source primaire annonce « ch. 14, p. 265-271 ». Le chapitre 14 court en réalité p. 265-272 : S.14/7 « Amplifying intelligence » commence p. 271 et s'achève p. 272 (« But this book must stop; these are not matters for an Introduction. »), les REFERENCES commençant p. 273. La plage affichée est donc courte d'une page ; tout ce que la fiche utilise (p. 268) y est bien contenu. Corriger en « ch. 14, p. 265-272 »."
+    },
+    {
+      "id": "SUP-a8872a7399f022e9",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "NUANCE SIGNALÉE (n'emporte pas REWORK) : le summary écrit « sélectionner par étapes en établit un plus grand », là où Ashby module deux fois — S.14/4, p. 268 : « the possibility exists that the provision of a small regulator at the first stage may lead to the final establishment of a much bigger regulator », et S.14/5, p. 269 : « There is, of course, not necessarily any amplification », p. 270 : « the regulation that could not be done in one stage may, if the conditions are suitable, be possible in two ». La chose affirmée reste celle du livre (Ashby chiffre des amplifications effectives), mais un « peut en établir » serait plus exact que l'indicatif."
+    },
+    {
+      "id": "SUP-1a6d4abb9bc244d3",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "PÉRIMÈTRE — je n'ai ouvert aucun autre fichier du dépôt sur cette carte. Un ls de corpus/review/ (pour écrire le verdict) m'a exposé le nom de amplification-de-la-regulation.json ; je ne l'ai pas lu. Aucun mur d'accès rencontré, sauf l'article de Ben-Eli (Taylor & Francis, payant), non ouvert et déclaré tel par la fiche."
+    },
+    {
+      "id": "SUP-e3c38024c7155ab0",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/amplification-de-la-regulation/lecture.json"
+    },
+    {
+      "id": "SUP-369a122aba5db9d5",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La condition est le caractère répétitif de la perturbation, pas la mise en étages seule. Ashby l'écrit dans son exemple chiffré du bain thermostaté : « by using the fact that the Grand Disturbance is repetitive [...] the act of selecting appropriately from 1000 bits has as consequence the correct selection from 36,500 bits ». Il le confirme a contrario en 14/6, où l'amplification n'a pas lieu."
+    },
+    {
+      "id": "SUP-b744eaeb8d7bf962",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Ashby pose lui-même deux garde-fous que la reprise perdrait volontiers : pour le théoricien il n'y a aucune amplification réelle, l'opérateur puisant dans une source abondante ; et « There is, of course, not necessarily any amplification », le praticien évaluant toujours la balance entre le coût de fabriquer la machine et celui de faire le travail."
+    },
+    {
+      "id": "SUP-52def26571273846",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La coupe retire les six mots « like the law of Conservation of Energy », c'est-à-dire la comparaison qui place la loi dans la classe des interdits absolus de la physique. Les deux propositions, l'interdiction et l'exception, sont conservées intactes avec leur adverbe « absolutely ». Une variante sans « absolutely » a été écartée : elle affaiblissait l'interdit."
+    },
+    {
+      "id": "SUP-8eb5b36d55588d21",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "La lecture primaire corrige la cartographie sur la localisation : le passage n'est pas « autour de la section 14/3 » mais à la fin de la section 14/4, p. 268, relue sur l'image du feuillet."
+    },
+    {
+      "id": "SUP-0ca38b79e4ab388e",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Ben-Eli (1979) est la seule reprise dédiée du concept sous son nom qui ait été identifiée ; elle est fermée et n'a pas été ouverte, seules ses métadonnées ont été vérifiées. Aucune source secondaire ouverte n'a été trouvée, ni en anglais ni en français."
+    },
+    {
+      "id": "SUP-057d66952274458a",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "La rareté du concept dans la littérature n'est établie que par trois contrôles négatifs (la reprise de la loi par Ashby en 1958, l'article de synthèse de Heylighen et Joslyn, le Web Dictionary of Cybernetics and Systems) : cela rend le signal plausible, cela ne le mesure pas."
+    },
+    {
+      "id": "SUP-d7d9c3616c4cded0",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "La référence et le localisateur de la citation ont été ramenés à ce qui s'affiche ; le détail de l'exemplaire, de la pagination et du défaut de composition du fichier de 1999 est dans corpus/evidence/amplification-de-la-regulation/lecture.json."
+    },
+    {
+      "id": "SUP-1a277979ae84e102",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "amplification-de-la-regulation"
+    },
+    {
+      "id": "SUP-a40ad8dcd423ea9c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "W. Ross Ashby"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-89616a64416b0c2d",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "W. Ross Ashby signe seul l'ouvrage que j'ai ouvert. La page de titre porte « AN INTRODUCTION TO CYBERNETICS by W. ROSS ASHBY, M.A., M.D.(Cantab.), D.P.M., Director of Research, Barnwood House, Gloucester », un seul nom, suivi de « SECOND IMPRESSION, LONDON, CHAPMAN & HALL LTD, 37 ESSEX STREET WC2, 1957 » ; la mention de copyright de la même feuille lit « Copyright © 1956, 1999 by The Estate of W. Ross Ashby ». Ces deux millésimes, 1956 pour le copyright et 1957 pour la seconde impression effectivement reproduite, sont écrits noir sur blanc sur le document que j'ai lu ; je n'en avance aucun autre. Particularité rare, et qui vaut d'être dite : le nom du concept est de l'auteur lui-même. « Amplifying Regulation » est le titre que porte le chapitre 14 dans la table des matières imprimée et en tête de la page 265, et Ashby emploie la tournure « an amplification of regulation » dans sa propre préface (p. vi) pour annoncer ce que fera la troisième partie du livre. Le titre français de la fiche est donc la traduction d'un intitulé d'auteur, non un baptême par un tiers. Le concept est un corollaire de la loi de la variété requise, qu'Ashby énonce lui-même au chapitre 11 du même ouvrage, et il s'appuie explicitement sur les sections 13/9, 13/10, 13/11 et 13/18 du chapitre précédent : c'est un enchaînement interne à un livre d'un seul auteur, sans coécriture ni antériorité disputée que j'aie pu constater."
+    },
+    {
+      "id": "SUP-898b30cf9780253c",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "The law of Requisite Variety […] absolutely prohibits any direct and simple magnification but it does not prohibit supplementation."
+    },
+    {
+      "id": "SUP-8c2ca7c680ddbb0e",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "W. Ross Ashby, An Introduction to Cybernetics, Londres, Chapman & Hall, 1957 (seconde impression, copyright 1956), chapitre 14 « Amplifying Regulation », section 14/4 « Regulation and selection », p. 268, dernier paragraphe avant la section 14/5. Édition électronique autorisée par la succession Ashby et préparée pour le Principia Cybernetica Web (1999)."
+    },
+    {
+      "id": "SUP-60eea0f47f67c0d4",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 268, section 14/4"
+    },
+    {
+      "id": "SUP-f5a20cd89af9c844",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-71a9d7440310455a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Ashby, W. R. (1957). An Introduction to Cybernetics. Londres : Chapman & Hall, seconde impression, copyright 1956. Édition électronique autorisée par la succession Ashby, Principia Cybernetica Web, 1999 (PDF, 156 feuillets, 2 023 477 octets, md5 d72ec9fd681e68f24772901f87cf0b05)."
+    },
+    {
+      "id": "SUP-bcad4b8d4bfec095",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://pespmc1.vub.ac.be/books/IntroCyb.pdf"
+    },
+    {
+      "id": "SUP-ca05df816564562b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Ashby, W. R. (1958). « Requisite variety and its implications for the control of complex systems ». Cybernetica, 1(2), 83-99. Republié sur le web par F. Heylighen, Principia Cybernetica Project. Ouvert et lu intégralement (13 pages) : cette reprise par Ashby lui-même de la loi de la variété requise ne contient aucune occurrence de « amplif » ni de « supplement », donc pas le corollaire du chapitre 14."
+    },
+    {
+      "id": "SUP-c3b88092f5421077",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "http://pespmc1.vub.ac.be/books/AshbyReqVar.pdf"
+    },
+    {
+      "id": "SUP-d5b742ae1d62018b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "full-text",
+      "text": "Heylighen, F. et Joslyn, C. (2001). « Cybernetics and Second-Order Cybernetics ». Dans R. A. Meyers (dir.), Encyclopedia of Physical Science & Technology, 3e éd., New York : Academic Press. Ouvert et lu intégralement (24 pages) : la loi de la variété requise y est traitée en détail, le corollaire d'amplification du chapitre 14 n'y figure pas. Consultée comme contrôle négatif de réception, pas comme source du concept."
+    },
+    {
+      "id": "SUP-e9da49dc9f80b35f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "full-text",
+      "text": "https://pespmc1.vub.ac.be/Papers/Cybernetics-EPST.pdf"
+    },
+    {
+      "id": "SUP-57a4d9cfe0b97646",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Ben-Eli, M. U. (1979). « Amplifying regulation and variety increase in evolving systems ». Journal of Cybernetics, 9(3), 285-296. Seule reprise dédiée du concept sous son nom que j'aie identifiée. Métadonnées vérifiées sur Crossref (auteur unique, volume 9, numéro 3, p. 285-296, juillet 1979) ; Unpaywall et OpenAlex donnent is_oa false, oa_status « closed », aucun dépôt en texte intégral. Texte non ouvert."
+    },
+    {
+      "id": "SUP-22fbec6e71a8eac8",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1080/01969727908927610"
+    },
+    {
+      "id": "SUP-b916e01078aadb62",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1080/01969727908927610"
+    },
+    {
+      "id": "SUP-d573815d2a827d89",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Ashby part de ce qu'est un amplificateur en général, et son point de départ est une négation : « Rarely an amplifier acts by directly magnifying the input, as does the cine-projectionist’s lens; but more commonly it works by supplementation » (14/1, p. 265). Un amplificateur de puissance ne crée pas d'énergie ; il puise dans un réservoir abondant, et il n'y parvient que parce que le processus se fait en deux étages couplés, à l'intérieur de chacun desquels l'énergie est strictement conservée. « It is this separation into two stages that makes power-amplification possible, for otherwise, i.e. in one stage, the law of conservation of energy would make any simple and direct amplification of power impossible. » Il transpose cela à la régulation en 14/3 et 14/4. Pour qu'un régulateur existe, il faut une sélection, et la quantité de sélection se mesure, par le nombre de bits nécessaires pour distinguer le bon régulateur de tous ceux qu'on aurait pu faire. D'où l'énoncé, dont il compose lui-même la proposition centrale en italique : « It follows from S.13/18 that if the final regulator can be arrived at by stages (the whole selection occurring in stages) the possibility exists that the provision of a small regulator at the first stage may lead to the final establishment of a much bigger regulator (i.e. one of larger capacity) so that the process shows amplification. This is the sense in which “amplifying” regulation is to be understood. The law of Requisite Variety, like the law of Conservation of Energy, absolutely prohibits any direct and simple magnification but it does not prohibit supplementation. » (p. 268). La condition qui fait tout tenir est nommée dans l'exemple chiffré du bain thermostaté (14/5, p. 269) : il faut 100 corrections par jour pendant un an, soit 36 500 sélections d'un bit, ce qu'Ashby appelle une Grande Perturbation dont la variété est de 2 puissance 36 500 possibilités (l'édition électronique imprime ici « 236S00 », l'exposant et la virgule ayant sauté à la composition) ; si l'opérateur peut fabriquer un thermostat au prix de, disons, 1000 bits, alors « by using the fact that the Grand Disturbance is repetitive (S.13/9), the act of selecting appropriately from 1000 bits has as consequence the correct selection from 36,500 bits ». L'amplification vaut donc environ x 36 sur l'échelle logarithmique, et elle est achetée par le caractère répétitif de la perturbation, pas par la seule mise en étages. Ashby le confirme a contrario en 14/6 : quand le patrimoine génétique spécifie directement le régulateur, « Amplification does not occur (from our present point of view, though some advantage is gained (S.13/9) if the disturbances recur frequently in the organism’s lifetime) ». Il ajoute deux garde-fous que la reprise perdrait volontiers. D'abord le point de vue double de 14/2 : pour le théoricien il n'y a aucune amplification réelle, l'opérateur peut « as it were, rob other sources of energy (coal, oil, etc.) to achieve his end », et « the basic type of amplifier is the boy who can lift big weights—because his father is willing to lift them for him! » ; pour l'homme de métier qui a accès à une source abondante, l'amplification est bien réelle et pratique, et « Obviously, both points of view are right ». Ensuite l'avertissement de 14/5 : « There is, of course, not necessarily any amplification », l'homme de métier faisant toujours au moins une évaluation intuitive de la balance entre le coût de fabriquer la machine qui fera le travail et le coût de le faire lui-même. Ashby demande enfin d'où vient le supplément, et sa réponse est que la variété manquante est apportée par les autres entrées, l'environnement compris : dans l'exemple des vingt mécaniciens qui tiennent deux mille pièces climatisées, c'est l'environnement « which communicates to the conditioner, and not to the mechanic, what is the temperature and humidity at each moment », de sorte que ces sources participent à la régulation totale sans utiliser le mécanicien comme canal. Le nombre d'étages n'est pas limité à deux, et le procédé n'a rien d'inédit : « The amplification of regulation is thus no new thing, for the higher animals, those that adapt by learning, discovered the method long ago. »"
+    },
+    {
+      "id": "SUP-6dc7ec11e6e64bea",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "LOCALISATION, la réserve annoncée par la cartographie est levée, et sa conclusion corrigée sur un point. La mise en page du PDF est bien piégeuse, mais j'en ai établi la règle : chaque feuillet est une page A4 portrait portant l'attribut de rotation 90, ce qui l'affiche en paysage, et il contient deux pages du livre, la page impaire dans la moitié haute et la page paire dans la moitié basse. L'ordre apparent est donc inversé à l'intérieur d'un même feuillet, et c'est ce qui fait croire à une extraction linéaire que 14/4 précède 14/3. En redressant la rotation puis en découpant chaque feuillet en deux, la lecture redevient continue. Le feuillet 143 du PDF (index 142) porte ainsi la page 269 en haut et la page 268 en bas. J'ai relu la page 268 sur une image rendue à trois fois la résolution nominale : le folio « 268 » et l'en-tête « AN INTRODUCTION TO CYBERNETICS » y sont lisibles, et la phrase citée s'y trouve au dernier paragraphe, juste avant le titre de section « 14/5 ». Correction à la cartographie : ce passage n'est pas « autour de la section 14/3 » mais à la fin de la section 14/4 « Regulation and selection », qui commence page 267 et se termine page 268. La pagination avancée par la cartographie pour les sections 14/2 à 14/4, p. 265-268, est exacte, et elle est corroborée par la table des matières imprimée du livre lui-même (p. ix), qui donne « 14: AMPLIFYING REGULATION . 265 », « What is an amplifier? 265 », « Amplification in the brain 270 », « Amplifying intelligence 271 »."
+    },
+    {
+      "id": "SUP-f7ae689b5b6bc842",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "ÉDITION ET PAGINATION. Les numéros de page que je donne sont ceux de la seconde impression Chapman & Hall de 1957, seule édition que j'aie ouverte. Je n'ai pas vérifié la pagination des autres tirages ni des réimpressions ultérieures en livre de poche, et je ne peux donc pas garantir que « p. 268 » y désigne le même passage. Le pointeur qui ne bouge pas est le numéro de section, 14/4 ; c'est lui qu'il faut suivre si l'on ouvre un autre tirage. Une page de résultats de recherche généraliste affirme au passage que le chapitre 14 commence page 259 : c'est faux pour l'édition que j'ai lue, où 259 est le début de la section « Selection and machinery » du chapitre 13. Je n'ai pas cherché d'où venait cette affirmation et je ne la reprends pas."
+    },
+    {
+      "id": "SUP-378878f0626fbb8f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "DÉFAUT DE COMPOSITION DE L'ÉDITION ÉLECTRONIQUE, signalé parce qu'il touche le seul chiffre du chapitre. Page 269, la variété de la Grande Perturbation du bain thermostaté est imprimée « 236S00 » dans le PDF de 1999, sur une seule ligne de base, sans exposant : je l'ai relu au zoom sur l'image du feuillet, c'est bien ce que porte le fichier. L'arithmétique du paragraphe, 100 corrections par jour sur un an, soit 36 500 sélections d'un bit, ne laisse aucun doute sur ce qu'il faut lire, 2 puissance 36 500, l'exposant et sa virgule ayant sauté à la composition. Je le dis plutôt que de citer silencieusement une forme corrigée. Ce défaut n'affecte pas la phrase retenue en citation, que j'ai vérifiée caractère par caractère sur l'image et dont la couche texte ne présente aucune anomalie."
+    },
+    {
+      "id": "SUP-bd7b22874efae9ee",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "COUPE DE LA CITATION. La phrase entière fait 168 caractères et ne tient donc pas dans les 150 : « The law of Requisite Variety, like the law of Conservation of Energy, absolutely prohibits any direct and simple magnification but it does not prohibit supplementation. » La coupe retire les six mots « like the law of Conservation of Energy », c'est-à-dire la comparaison, et rien d'autre : les deux propositions, l'interdiction et l'exception, sont conservées intactes avec leur adverbe « absolutely ». Ce que la coupe fait perdre est réel mais est du registre de l'appui, pas de l'énoncé : la comparaison avec la conservation de l'énergie place la loi de la variété requise dans la classe des interdits absolus de la physique, et elle prépare l'analogie qui structure tout le chapitre, l'amplificateur de puissance à deux étages. Le résumé peut la reprendre, la citation ne la porte pas. Une variante sans « absolutely » descendait à 120 caractères mais affaiblissait l'interdit, ce qui est exactement le contresens à éviter ici : je l'ai écartée."
+    },
+    {
+      "id": "SUP-fdc993b22afaa638",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "PASSAGES CONCURRENTS ÉCARTÉS. Deux autres phrases du même chapitre tiennent sous 150 caractères et disent le mécanisme plutôt que l'interdit. La première est la proposition qu'Ashby compose lui-même en italique, p. 268 : « the provision of a small regulator at the first stage may lead to the final establishment of a much bigger regulator » (116 caractères). Elle est excellente mais commence par une minuscule au milieu d'une subordonnée conditionnelle, et détachée de son « if the final regulator can be arrived at by stages » elle se lit comme une promesse sans condition, ce qui est le contresens que la carte doit empêcher ; la phrase complète fait 200 caractères. La seconde est p. 270 : « Thus the regulation that could not be done in one stage may, if the conditions are suitable, be possible in two » (112 caractères), qui garde sa réserve mais renvoie à un exemple précis, les vingt mécaniciens et les deux mille pièces, sans lequel elle est abstraite. La phrase retenue a été préférée parce qu'elle est la seule qui nomme la loi dont ce concept est le corollaire."
+    },
+    {
+      "id": "SUP-39c8b6bbf84b8f43",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "LANGUE ET TRADUCTION. La citation est donnée en anglais, dans la langue du texte ouvert, et translation.kind vaut « none ». Je n'ai pas traduit, et c'est un choix motivé, pas un oubli. Une traduction française existe, Introduction à la cybernétique, Dunod, 1958 : je ne l'ai pas localisée, encore moins ouverte, et je n'en cite donc rien, ni son texte, ni son traducteur, ni sa pagination. Or les deux mots sur lesquels repose la phrase, « magnification » opposé à « supplementation », n'ont pas d'équivalent français évident et le rendu de 1958 les a nécessairement tranchés d'une manière que je ne connais pas. Fabriquer ici une traduction interne aurait mis en circulation une troisième version française, en concurrence avec une traduction publiée que je ne peux pas vérifier. Si quelqu'un ouvre l'édition Dunod, c'est elle qu'il faudra citer, avec son traducteur et sa page."
+    },
+    {
+      "id": "SUP-5940df15fffd839c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "SOURCE SECONDAIRE : aucune source secondaire ouverte. La seule reprise dédiée du concept sous son nom que j'aie trouvée est Ben-Eli, M. U. (1979), « Amplifying regulation and variety increase in evolving systems », Journal of Cybernetics, 9(3), 285-296, doi 10.1080/01969727908927610. Elle est fermée : Unpaywall renvoie is_oa false, OpenAlex donne oa_status « closed », aucune version déposée, et l'unique localisation connue est la page payante de Taylor & Francis. Je ne l'ai pas ouverte et je ne dis rien de son contenu au-delà de ses métadonnées Crossref. Aucune autre source secondaire ouverte n'a été trouvée, ni en anglais ni en français."
+    },
+    {
+      "id": "SUP-00a94112a402e9e2",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "SIGNAL DE RARETÉ : partiellement vérifié, et je ne l'affirme pas au-delà de ce que j'ai contrôlé. La vérification par recherche de citations demandée par la cartographie n'a pas pu être faite davantage que par elle : le budget quotidien d'OpenAlex était épuisé pour les requêtes de recherche (« Insufficient budget », les seules interrogations passées sont des relevés de notice unique) et l'API Semantic Scholar a répondu 429 sur toutes mes requêtes. Ce que j'ai pu établir tient en trois contrôles négatifs, faits en texte intégral sur des documents ouverts, et qui valent ce qu'ils valent : la reprise de la loi de la variété requise par Ashby lui-même en 1958 dans Cybernetica ne contient aucune occurrence de « amplif » ni de « supplement » ; l'article de synthèse de Heylighen et Joslyn (2001) pour l'Encyclopedia of Physical Science & Technology traite la loi de la variété requise en détail et ne mentionne nulle part le corollaire du chapitre 14, le mot « amplification » y désignant autre chose, l'asymétrie énergétique de la boucle de commande ; le Web Dictionary of Cybernetics and Systems du Principia Cybernetica Web, qui combine le glossaire de l'ASC, le dictionnaire de Krippendorff et le glossaire de Hornung, a des entrées « Amplification », « Amplifying Feedback », « Intelligence Amplification » et « Law of Requisite Variety », mais aucune entrée pour l'amplification de la régulation. Une recherche francophone sur HAL en texte intégral pour « amplification de la régulation » associée à Ashby renvoie zéro résultat, et pour Ashby associé à « variété requise » un seul document, une thèse d'informatique de 2014 sans rapport avec ce corollaire. Trois absences documentées ne font pas une mesure de réception : elles rendent le signal plausible, elles ne l'établissent pas."
+    },
+    {
+      "id": "SUP-99da574ff64488df",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "TEXTE APPARENTÉ NON OUVERT. Une recherche Crossref fait apparaître un chapitre intitulé « Amplifying Adaptation » dans Design for a Brain (deuxième édition, 1960, doi 10.1007/978-94-015-1320-3_18), du même auteur, dont le titre suggère une formulation parallèle du même mouvement appliquée à l'adaptation. Je ne l'ai pas ouvert et je ne sais donc pas s'il reprend, prolonge ou précède l'argument du chapitre 14 de 1956. Aucune conclusion n'en est tirée ici ; c'est une piste pour un approfondissement, pas un élément d'attribution."
+    },
+    {
+      "id": "SUP-c67629c8ba1e7d94",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "RÉCEPTION EN GESTION ET EN CONSEIL : non instruite. Les recherches francophones généralistes sur la loi de la variété requise ne renvoient à peu près que de la vulgarisation de coaching, de thérapie brève et de formation, explicitement hors périmètre. Je ne les ai pas ouvertes et je n'en tire rien, sinon le constat que la voie francophone accessible par ce chemin ne mène pas à de la littérature instruisable."
+    }
+  ],
+  "estimated_tokens": 16082,
+  "status": "READY"
+}

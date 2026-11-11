@@ -1,0 +1,762 @@
+{
+  "concept_id": "analyse-des-groupes-professionnels",
+  "candidate_sha256": "c90dde342c37335ed57932a1d71cf84c35242dba53b8c95a0644fc52d49731bf",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 0,
+      "end": 344,
+      "claim_text": "Demandez ce qui distingue un médecin d’un employé quelconque, et la réponse viendra presque toujours de l’intérieur du métier : les années d’études, l’examen qui filtre l’entrée, les règles que les praticiens se donnent entre eux, la façon dont ils traitent ceux qui viennent les voir, le droit qu’ils ont d’interdire à d’autres certains actes.",
+      "normalized_claim": "La caractérisation courante d'une profession procède par traits internes (formation, examen, règles, rapport au client, monopole d'actes).",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 345,
+      "end": 544,
+      "claim_text": "Tout cela se décrit sans jamais sortir du groupe : on observe les gens du métier entre eux, on fait l’inventaire de ce qui les tient ensemble, et l’on croit tenir du même coup ce qui les caractérise.",
+      "normalized_claim": "Cette approche décrit le groupe de l'intérieur (relations entre membres, inventaire des traits) et croit saisir ainsi ce qui le caractérise.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-d712f2ab823b5401",
+        "SUP-2146fb672e111411"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 69,
+      "claim_text": "En 1973, dans la Revue française de sociologie, Jean-Michel Chapoulie",
+      "normalized_claim": "Article de Chapoulie, RFS, 1973.",
+      "support_ids": [
+        "SUP-5520886a9254ae83",
+        "SUP-4a12e9ae469ac0af",
+        "SUP-a993caa27f325e7d",
+        "SUP-feae79d00dde35d6",
+        "SUP-a1684971822d2772"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 70,
+      "end": 155,
+      "claim_text": "passe en revue les manières dont la sociologie s’y est prise pour étudier ces groupes",
+      "normalized_claim": "L'article est un examen critique des théories sociologiques des professions.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-a993caa27f325e7d"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 160,
+      "end": 220,
+      "claim_text": "il termine par une objection qui ne vise pas une seule école",
+      "normalized_claim": "L'objection finale vise plusieurs écoles (fonctionnalisme et interactionnisme).",
+      "support_ids": [
+        "SUP-2590269d427c9acd",
+        "SUP-1f79f8bde5845fff",
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 223,
+      "end": 368,
+      "claim_text": "décrire un corps professionnel par ce qui se passe en son sein laisse de côté ce qu’il doit à la place qu’il occupe dans la société autour de lui",
+      "normalized_claim": "Contenu de l'objection.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-d712f2ab823b5401",
+        "SUP-738c09c79fad0b9a",
+        "SUP-6befb2f8f068219b"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 370,
+      "end": 482,
+      "claim_text": "Cette place, il l’appelle la position dans la structure de classe, et c’est par elle qu’il propose de commencer.",
+      "normalized_claim": "Chapoulie nomme cette place position dans la structure de classe et propose de partir d'elle.",
+      "support_ids": [
+        "SUP-738c09c79fad0b9a",
+        "SUP-6befb2f8f068219b",
+        "SUP-d712f2ab823b5401",
+        "SUP-28fe50985695d082"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 203,
+      "claim_text": "La dernière page de l’article ramasse la démarche en une phrase : « […] on peut s’interroger d’abord sur les propriétés que les corps professionnels doivent à leur position dans la structure de classe. »",
+      "normalized_claim": "Citation p. 114, dernière page.",
+      "support_ids": [
+        "SUP-738c09c79fad0b9a",
+        "SUP-6befb2f8f068219b",
+        "SUP-631faec4e4e5c33b",
+        "SUP-514d4119e750a94f",
+        "SUP-d712f2ab823b5401",
+        "SUP-2146fb672e111411"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 204,
+      "end": 260,
+      "claim_text": "La position n’est pas un trait du métier mais un rapport",
+      "normalized_claim": "Interprétation : la position est relationnelle.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 263,
+      "end": 438,
+      "claim_text": "un peu plus haut, Chapoulie écrit que la constitution des corps professionnels renvoie aux relations économiques, politiques et idéologiques entre groupes et classes sociales.",
+      "normalized_claim": "Citation p. 111-112.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 69,
+      "claim_text": "Un cas discuté dans l’article le montre : l’hétérogénéité du barreau.",
+      "normalized_claim": "Le barreau est discuté (p. 94).",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 70,
+      "end": 163,
+      "claim_text": "Une première explication se tire de l’intérieur du métier : la division du travail juridique.",
+      "normalized_claim": "Explication par la division du travail juridique.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 164,
+      "end": 343,
+      "claim_text": "Chapoulie retient des recherches qu’il cite qu’elle ne suffit pas, et que l’hétérogénéité résulte aussi des différences dans la base sociale du recrutement des étudiants en droit.",
+      "normalized_claim": "Chapoulie retient que l'hétérogénéité tient aussi au recrutement social.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 344,
+      "end": 514,
+      "claim_text": "On voit sur ce cas ce que change la question de la position : la première explication se lit sur le métier, la seconde oblige à regarder d’où viennent ceux qui y entrent.",
+      "normalized_claim": "Interprétation dérivée du cas.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 90,
+      "claim_text": "L’adversaire principal de l’article, ce sont les théories fonctionnalistes des professions",
+      "normalized_claim": "Cible principale : fonctionnalisme.",
+      "support_ids": [
+        "SUP-2590269d427c9acd",
+        "SUP-bef2e4299cfd8ae9"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 92,
+      "end": 131,
+      "claim_text": "dont l’examen occupe les pages 88 à 108",
+      "normalized_claim": "Pagination de l'examen.",
+      "support_ids": [
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 133,
+      "end": 280,
+      "claim_text": "Chapoulie les soumet à deux épreuves : leur adéquation aux données des recherches monographiques, et les postulats de base de leurs problématiques.",
+      "normalized_claim": "Programme p. 87.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 281,
+      "end": 313,
+      "claim_text": "Le barreau relève de la première",
+      "normalized_claim": "Le cas du barreau relève de l'épreuve empirique.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 316,
+      "end": 350,
+      "claim_text": "le reproche central, de la seconde",
+      "normalized_claim": "Le reproche central porte sur les postulats.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 353,
+      "end": 455,
+      "claim_text": "page 113, il leur reproche de n’attribuer aux corps professionnels « que des propriétés de condition »",
+      "normalized_claim": "Citation p. 113.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 140,
+      "claim_text": "Chapoulie donne la raison de ce manque à la même page : la notion de classe sociale y est réduite à celle de différenciation professionnelle",
+      "normalized_claim": "p. 113, réduction de la classe à la différenciation professionnelle.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 142,
+      "end": 256,
+      "claim_text": "et le rapport d’un corps professionnel à la structure de classe se ramène à une relation abstraite avec la société",
+      "normalized_claim": "p. 113, relation abstraite avec la société.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 258,
+      "end": 443,
+      "claim_text": "Il ne reste alors, pour analyser une profession, que des caractéristiques qui lui sont propres, comme le savoir qu’elle met en pratique ou l’éthique qui règle l’activité de ses membres.",
+      "normalized_claim": "Analyses substantialistes par le savoir et l'éthique.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 444,
+      "end": 494,
+      "claim_text": "Le geste n’est pas une trouvaille de fin d’article",
+      "normalized_claim": "Le renversement est opéré dès le corps.",
+      "support_ids": [
+        "SUP-28fe50985695d082"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 497,
+      "end": 683,
+      "claim_text": "dès la page 92, Chapoulie reproche aux recherches qui se réclament de Parsons d’étudier les corps professionnels en eux-mêmes, et non à partir de leur position dans la structure sociale.",
+      "normalized_claim": "Citation p. 92.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-28fe50985695d082",
+        "SUP-d712f2ab823b5401"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 48,
+      "claim_text": "Le ton n’est pourtant pas celui du congédiement.",
+      "normalized_claim": "L'article ne congédie pas le fonctionnalisme.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 49,
+      "end": 390,
+      "claim_text": "À la dernière page, l’article tient les études fonctionnalistes pour « pas inutiles », à une condition : reconnaître dans le type-idéal des professions « une systématisation parmi d’autres du modèle professionnel », et tenir compte de ce que cette représentation occulte, les relations des groupes professionnels avec la structure de classe.",
+      "normalized_claim": "Concession p. 114.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 391,
+      "end": 530,
+      "claim_text": "Le modèle professionnel désigne, depuis la page 89, l’ensemble des représentations sociales des rôles et de l’organisation des professions.",
+      "normalized_claim": "Définition p. 89.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 531,
+      "end": 701,
+      "claim_text": "On peut donc lire ainsi la concession : la théorie fonctionnaliste vaut comme mise en forme de cette représentation, non comme description de ce que sont les professions.",
+      "normalized_claim": "Interprétation de la concession.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 205,
+      "claim_text": "Pour mettre en difficulté les théories fonctionnalistes, Chapoulie s’appuie largement sur des travaux d’une autre famille, celle qu’on dit interactionniste, les recherches d’Everett Hughes et de ses élèves",
+      "normalized_claim": "L'interactionnisme (Hughes et élèves) sert d'appui contre le fonctionnalisme.",
+      "support_ids": [
+        "SUP-bef2e4299cfd8ae9",
+        "SUP-2590269d427c9acd",
+        "SUP-e5be2e3b23776046",
+        "SUP-0a330aa7d612ac87"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 208,
+      "end": 287,
+      "claim_text": "Hughes, Becker, Hall et Strauss l’aident à mettre le fonctionnalisme en défaut.",
+      "normalized_claim": "Noms des appuis.",
+      "support_ids": [
+        "SUP-bef2e4299cfd8ae9"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 288,
+      "end": 455,
+      "claim_text": "Il le reconnaît dans une note de la page 113 : la plupart des travaux cités à l’appui des critiques des théories fonctionnalistes adoptaient la problématique d’Hughes.",
+      "normalized_claim": "Note 59, p. 113.",
+      "support_ids": [
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 72,
+      "claim_text": "Puis, aux pages 112 à 114, le même critère se retourne contre cet allié.",
+      "normalized_claim": "Retournement du critère contre l'interactionnisme, p. 112-114.",
+      "support_ids": [
+        "SUP-2590269d427c9acd",
+        "SUP-bef2e4299cfd8ae9"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 73,
+      "end": 145,
+      "claim_text": "Chapoulie leur reconnaît des descriptions détaillées d’exemples concrets",
+      "normalized_claim": "Concession aux interactionnistes.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 147,
+      "end": 272,
+      "claim_text": "mais elles s’en tiennent aux relations observables, sans construire les relations objectives qui les rendraient intelligibles",
+      "normalized_claim": "Critique p. 113.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-2590269d427c9acd"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 275,
+      "end": 363,
+      "claim_text": "sur la position dans la structure de classe, elles n’évitent pas les généralités vagues.",
+      "normalized_claim": "Généralités vagues.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 364,
+      "end": 483,
+      "claim_text": "Son exemple est celui de deux concepts introduits par Hughes pour analyser la délégation d’autorité, license et mandate",
+      "normalized_claim": "License et mandate.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 486,
+      "end": 697,
+      "claim_text": "ils ne donnent lieu à aucune recherche précise, parce que les instances qui délèguent cette autorité s’analysent en rapports de classe, non en relations observables entre membres de classes sociales différentes.",
+      "normalized_claim": "Raison donnée p. 113-114.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 698,
+      "end": 880,
+      "claim_text": "C’est à cette démarche que la phrase de la page 114 citée plus haut oppose la sienne, au lieu d’« étudier les seules relations sociales entretenues par les membres des professions ».",
+      "normalized_claim": "Subordonnée coupée de la citation.",
+      "support_ids": [
+        "SUP-d712f2ab823b5401",
+        "SUP-2146fb672e111411"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 246,
+      "claim_text": "Ce qui est proposé n’est pas un modèle concurrent, et Chapoulie prend soin de le dire : on peut ébaucher « non les éléments d’une autre théorie des groupes professionnels, mais une sorte de guide pour l’analyse sociologique d’exemples concrets ».",
+      "normalized_claim": "Statut de guide, p. 114.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-d5902a766d961cd3",
+        "SUP-c72b91ada862d276"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 247,
+      "end": 384,
+      "claim_text": "Une théorie dirait ce qu’est une profession et permettrait de trancher si tel métier en est une ; un guide indique par où prendre un cas.",
+      "normalized_claim": "Glose de la différence théorie/guide.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 62,
+      "claim_text": "Le refus de définir se pratique juste avant, pages 111 et 112.",
+      "normalized_claim": "Refus de définir p. 111-112.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 63,
+      "end": 179,
+      "claim_text": "Chapoulie y retient deux caractéristiques objectives des métiers qui s’analysent par rapport au modèle professionnel",
+      "normalized_claim": "Deux caractéristiques objectives.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 182,
+      "end": 248,
+      "claim_text": "l’appartenance aux classes moyennes plutôt qu’à la classe ouvrière",
+      "normalized_claim": "Classes moyennes.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 250,
+      "end": 438,
+      "claim_text": "et une qualification socialement reconnue, liée à la tendance de ces corps à monopoliser un secteur d’activité en réservant certaines tâches à leurs membres et en contrôlant le recrutement",
+      "normalized_claim": "Qualification reconnue et monopole.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 440,
+      "end": 602,
+      "claim_text": "Il précise aussitôt que ces deux propriétés ne définissent pas les corps professionnels : elles marquent seulement les limites dans lesquelles on peut en trouver.",
+      "normalized_claim": "Ne définissent pas.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 32,
+      "claim_text": "Le guide tient en trois entrées.",
+      "normalized_claim": "Trois directions.",
+      "support_ids": [
+        "SUP-d5902a766d961cd3",
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 33,
+      "end": 249,
+      "claim_text": "La première est celle des carrières des praticiens, « en mettant l’accent sur les déterminismes objectifs et non seulement comme les études interactionnistes sur l’adaptation subjective aux carrières individuelles ».",
+      "normalized_claim": "Carrières.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-d5902a766d961cd3"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 250,
+      "end": 332,
+      "claim_text": "La deuxième porte sur les « formes d’intégration et de différenciation internes ».",
+      "normalized_claim": "Intégration et différenciation.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-d5902a766d961cd3"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 333,
+      "end": 486,
+      "claim_text": "La troisième vise les « caractéristiques des délégations d’autorité qui fondent l’existence des professions comme catégorie de la pratique quotidienne ».",
+      "normalized_claim": "Délégations d'autorité.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-d5902a766d961cd3"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 74,
+      "claim_text": "Ce que veut dire l’accent sur les déterminismes objectifs se voit page 110",
+      "normalized_claim": "Lien interprétatif entre l'entrée carrières et la p. 110.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 77,
+      "end": 253,
+      "claim_text": "les conduites des praticiens ne s’expliquent pas par leurs seules conditions d’emploi à un moment donné, mais par l’ensemble des conditions rencontrées au cours de la carrière.",
+      "normalized_claim": "p. 110 sur les carrières.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 254,
+      "end": 345,
+      "claim_text": "La troisième entrée revient au point où l’interactionnisme échouait avec license et mandate",
+      "normalized_claim": "Lien délégation d'autorité / license et mandate.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 347,
+      "end": 496,
+      "claim_text": "et rejoint le geste de la page 89, où Chapoulie réserve le mot « professions » à des objets de la pratique quotidienne plutôt qu’à un concept savant.",
+      "normalized_claim": "p. 89.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 298,
+      "claim_text": "La première page de l’article explique que l’hétérogénéité du corps professoral, révélée par la « crise » de l’enseignement secondaire, pousse à douter des analyses sociologiques existantes des corps professionnels, qui « servent presque toujours de paradigmes aux études sur le corps enseignant ».",
+      "normalized_claim": "p. 86.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 299,
+      "end": 502,
+      "claim_text": "La note 1 de la même page rattache le travail à une enquête collective menée au Centre de Sociologie Européenne, en collaboration avec Dominique Merllié, sur les professeurs de l’enseignement secondaire.",
+      "normalized_claim": "Note 1 p. 86.",
+      "support_ids": [
+        "SUP-a1684971822d2772",
+        "SUP-d9cc6f1b57562fb3"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 503,
+      "end": 602,
+      "claim_text": "Le matériau empirique est donc coproduit ; la thèse de méthode, elle, est avancée sous un seul nom.",
+      "normalized_claim": "Coproduction du matériau, signature unique.",
+      "support_ids": [
+        "SUP-a1684971822d2772",
+        "SUP-d9cc6f1b57562fb3",
+        "SUP-68eb2797a0e6397a"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 249,
+      "claim_text": "L’article annonce lui-même sa suite : « Dans un article ultérieur, nous tenterons de donner une illustration de la démarche qui vient d’être ici proposée, en partant de l’exemple du corps professoral dans l’enseignement secondaire public français. »",
+      "normalized_claim": "Dernière phrase de l'article.",
+      "support_ids": [
+        "SUP-e5be2e3b23776046",
+        "SUP-fe84fcc761be079b",
+        "SUP-9608f4c5d9a9b1e8"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 250,
+      "end": 305,
+      "claim_text": "Il renvoie en outre à un document multigraphié de 1972.",
+      "normalized_claim": "Document multigraphié 1972.",
+      "support_ids": [
+        "SUP-fe84fcc761be079b",
+        "SUP-9608f4c5d9a9b1e8"
+      ]
+    }
+  ]
+}
