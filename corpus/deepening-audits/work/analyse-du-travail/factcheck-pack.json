@@ -1,0 +1,860 @@
+{
+  "protocol_version": 2,
+  "concept_id": "analyse-du-travail",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "7bc6bed27d9dabbfc52b766019572896570724ad7db51fb6f3b90c9e64197960",
+  "validated_sha256": "fd983116874d325cc12d64b5adbaa04504bfff0eb5da7d37ff29dc8d95786e55",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "44b64c871cccd241de05b992886a4c112c1957f1a51f5c927f033cc0f053699b"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8 ; republié dans PISTES, 13-2, 2011.",
+        "cles": [
+          "doi:10.4000/pistes.1789",
+          "url:journals.openedition.org/pistes/1789"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "André Ombredane et Jean-Marie Faverge, L'analyse du travail. Facteur d'économie humaine et de productivité, Paris, Presses universitaires de France, 1955, 236 p.",
+        "cles": [
+          "url:catalogue.bnf.fr/ark:/12148/cb32497119k"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "partial",
+        "label": "Régis Ouvrier-Bonnaz, « Analyse et structure du travail de Jean-Marie Faverge », PISTES, 13-2, 2011 : présentation accompagnant la republication.",
+        "cles": [
+          "doi:10.4000/pistes.2537",
+          "url:journals.openedition.org/pistes/2537"
+        ],
+        "dossier": "partial",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[3]",
+        "declare": "partial",
+        "label": "Guy Karnas et Pierre Salengros, « L'analyse du travail trente ans après Ombredane et Faverge », PISTES, 19-2, 2017 : republication d'un texte de 1986.",
+        "cles": [
+          "doi:10.4000/pistes.5122",
+          "url:journals.openedition.org/pistes/5122"
+        ],
+        "dossier": "partial",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 4,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Un poste de travail se décrit facilement comme une liste de gestes : saisir la pièce, la retourner, positionner un boulon, serrer, reposer l’ensemble, recommencer. Chaque ligne de cette liste, prise seule, est exacte. Mais lue dans son ensemble, elle ne redonne pas le travail : on y cherche en vain pourquoi ces gestes s’enchaînent dans cet ordre plutôt qu’un autre, ce que l’un prépare pour le suivant, ce qui change quand la pièce arrive de travers. Le détail est là, entier ; ce qui reliait les gestes entre eux a disparu."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "C’est exactement ce piège que décrit, en 1952, Jean-Marie Faverge, dans un texte sur les manières d’étudier le travail. Il compare cette décomposition à un geste de chimiste : casser un composé en ses éléments fait perdre les propriétés qui tenaient à leur agencement, à ce qu’il appelle, par comparaison, des « molécules ». Appliquée au travail, la même opération produit un inventaire de fragments qui, selon ses mots, « ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu’à du verbalisme » : des mots pour chaque geste, plus rien qui rende compte de l’ensemble."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce qui se perd quand on décompose un geste",
+      "text": "Dans ce même texte, Faverge écrit que l’étude d’un travail « risque de détruire certaines structures, certaines unités, disons certaines molécules pour rappeler une analogie avec la chimie ». L’image est précise : une molécule d’eau n’est pas une réserve d’oxygène et d’hydrogène rangés côte à côte, elle est ce que devient la matière quand ces deux éléments se lient d’une façon particulière. Séparer l’oxygène de l’hydrogène ne laisse subsister aucune des deux substances : cela produit deux gaz qui n’ont plus rien à voir avec l’eau."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce qui se perd quand on décompose un geste",
+      "text": "Un geste de travail répond à la même logique. Serrer un boulon après avoir positionné la pièce n’est pas la simple addition de « positionner » et de « serrer » : la façon de positionner dépend de la façon dont on va serrer ensuite, et inversement. Décrire les deux gestes séparément, minutés l’un après l’autre, fait disparaître ce lien. Ce qui reste est vrai de chaque geste pris à part, et faux de l’ensemble qu’ils formaient."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Un verbalisme, pas une erreur de détail",
+      "text": "Le mot que choisit Faverge pour désigner ce résultat, le verbalisme, mérite d’être expliqué : il ne s’agit pas d’une erreur de fait, d’une case cochée par erreur dans l’inventaire. Chaque geste noté peut être décrit avec une exactitude parfaite, chronométré à la seconde près, sans qu’aucune de ces notations soit fausse. Le verbalisme est ce qui arrive quand la somme de descriptions exactes ne redonne plus l’objet qu’elles étaient censées décrire : on continue de parler du travail, mais on ne parle plus que de mots qui en tiennent lieu."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Un verbalisme, pas une erreur de détail",
+      "text": "La conséquence vaut pour toute description qui procède par inventaire : un descriptif de poste, un protocole écrit, un mode opératoire détaillé. Aucune de ces pièces n’est fausse dans son détail. Mais aucune ne garantit, par le seul fait d’être complète, qu’elle rend compte de ce qui se passe réellement quand quelqu’un exécute le travail qu’elle décrit."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Là où l’inventaire ne perd rien",
+      "text": "L’analogie chimique porte elle-même sa propre limite : toutes les molécules ne perdent pas autant à être séparées, et tous les travaux ne sont pas également structurés. Imaginons une tâche réduite à un seul geste répété à l’identique, sans enchaînement avec un autre, sans ajustement d’une fois sur l’autre : verser un liquide dans un récipient, encore et encore, toujours de la même manière. La décomposer en éléments ne détruit alors presque rien, puisqu’il n’y avait guère de structure à détruire au départ. Ce cas n’est pas discuté par Faverge ; il découle simplement de son propre raisonnement, retourné."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Là où l’inventaire ne perd rien",
+      "text": "La mise en garde vaut donc surtout pour les travaux où l’ordre des gestes, leurs ajustements réciproques et la marge laissée à la personne pour faire face à un imprévu comptent autant que les gestes pris un à un. C’est précisément ce genre de travail que l’expression désignait déjà en 1952, avant qu’un texte plus développé ne s’impose comme sa référence : celui des métiers où décrire chaque geste séparément ne suffit jamais à comprendre ce qui s’y fait."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Les aptitudes prises une à une",
+      "text": "Faverge applique le même raisonnement à un objet plus inattendu : les aptitudes, les capacités qu’on prête habituellement à une personne pour expliquer qu’elle réussit ou échoue à une tâche. Il écrit que « les fameuses aptitudes ne peuvent être isolées de certaines structures, qu’en le faisant on détruit les molécules dont nous avons parlé ». Une aptitude n’existe donc pas à l’état pur, détachable de la situation où elle s’exerce : elle est ce que devient une capacité une fois prise dans l’organisation particulière d’un travail donné."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Les aptitudes prises une à une",
+      "text": "Isoler une aptitude pour la mesurer, hors de toute situation de travail, revient à faire subir aux capacités humaines le même traitement qu’aux gestes : on obtient un chiffre exact sur un fragment, on perd ce qui ne se manifeste que dans l’agencement complet du travail réel."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Un nom plus ancien que son texte de référence",
+      "text": "Le texte de 1952 n’introduit pas cette façon de nommer les choses : il la trouve déjà en usage. Faverge y évoque « les différents domaines où l’on pratique l’analyse du travail », comme d’une activité déjà répandue, qui n’a pas besoin d’être définie pour qu’on la reconnaisse. L’expression désignait donc une pratique avant de désigner un texte de référence."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Un nom plus ancien que son texte de référence",
+      "text": "De cet ouvrage, on ne retiendra ici que l’état civil : les noms des deux auteurs, le titre complet, l’éditeur et l’année de parution. Ce qu’il dit, il le dit dans ses pages ; le texte qu’on peut citer avec certitude sans les avoir ouvertes reste celui de 1952, signé par Faverge seul."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Ce qui est demandé, ce qui est fait",
+      "text": "Des lecteurs plus tardifs de ce courant rapportent que l’ouvrage écrit avec Ombredane met en place une distinction devenue depuis très courante dans l’étude du travail : ce qui est demandé à quelqu’un, la tâche qu’on lui confie, ne coïncide jamais tout à fait avec ce qu’il fait réellement pour s’en acquitter, ce que ces mêmes lecteurs appellent l’activité. L’écart entre les deux n’est pas un défaut d’exécution : c’est la place laissée à la personne pour ajuster une consigne générale à une situation particulière, qui ne se répète jamais exactement de la même façon."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Ce qui est demandé, ce qui est fait",
+      "text": "Cette distinction ne figure pas dans le texte de 1952 : le mot « activité » n’y apparaît à aucun moment, et « tâche » n’y est employé qu’au sens courant, sans opposition marquée. Elle est rapportée à l’ouvrage écrit avec Ombredane par des commentateurs qui l’ont lu. Pour établir depuis quand et en quels termes exacts ce texte pose la distinction, il faudra le lire."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-e27f51cabcaaec0a",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "analyse-du-travail"
+    },
+    {
+      "id": "SUP-e94813448d0422ad",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "analyse-du-travail"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-25ecd41496751300",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Analyse du travail"
+    },
+    {
+      "id": "SUP-41cf795315a39834",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "tache-et-activite"
+    },
+    {
+      "id": "SUP-94ff8aa8b96c7b43",
+      "origin": "validated",
+      "path": "$.theme_labels[\"tache-et-activite\"]",
+      "access": "n/a",
+      "text": "Ce qui est demandé, ce qui est fait"
+    },
+    {
+      "id": "SUP-dc0e36f166a82c35",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "André Ombredane"
+    },
+    {
+      "id": "SUP-90dce4fdf79256e5",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "ombredane"
+    },
+    {
+      "id": "SUP-534a7a4c927e0910",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "Jean-Marie Faverge"
+    },
+    {
+      "id": "SUP-529d7e102c86252b",
+      "origin": "validated",
+      "path": "$.authors[1].app_author_id",
+      "access": "n/a",
+      "text": "faverge"
+    },
+    {
+      "id": "SUP-bd4bde62a74862fc",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "La méthode et sa mise en forme de référence pour le champ francophone viennent de L'analyse du travail, ouvrage cosigné par André Ombredane et Jean-Marie Faverge et paru en 1955, qui n'a pas pu être ouvert : sa notice de bibliothèque en établit la double signature, rien de son contenu. Le nom, lui, ne vient pas de ce livre : l'expression circulait avant lui, et le texte de 1952 cité ici parle déjà des domaines « où l'on pratique l'analyse du travail ». La citation affichée vient de ce texte antérieur, « Analyse et structure du travail » (1952), signé de Faverge seul, et la distinction entre analyse de la tâche et analyse de l'activité n'y figure pas ; elle n'est rapportée à l'ouvrage de 1955 que par des commentateurs, en seconde main."
+    },
+    {
+      "id": "SUP-a60d68862c14e368",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "L'inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu'à du verbalisme."
+    },
+    {
+      "id": "SUP-5a8e9c1b0f8e9251",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8 ; republié dans PISTES, 13-2, 2011."
+    },
+    {
+      "id": "SUP-e54a61744429a505",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "§ 1, paragraphe liminaire"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-a2da228c5866fb5f",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Décrire un travail élément par élément : que reste-t-il de ce qui s'y fait ?"
+    },
+    {
+      "id": "SUP-140ff1fd49717835",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Décomposer le travail en éléments brise les structures dont il est fait : l'inventaire des fragments ne rend plus compte du comportement réel."
+    },
+    {
+      "id": "SUP-a783c1d4e478c002",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8 ; republié dans PISTES, 13-2, 2011.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-f2dda06035fddc2a",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "§ 1",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-5d814856d8022881",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.4000/pistes.1789",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-b56045a393ebc0c7",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://journals.openedition.org/pistes/1789",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-91bdfaea49579c6e",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "André Ombredane et Jean-Marie Faverge, L'analyse du travail. Facteur d'économie humaine et de productivité, Paris, Presses universitaires de France, 1955, 236 p.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-bf881976f4c75324",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "BnF ark:/12148/cb32497119k",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-7793da7eec0a3d6a",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://catalogue.bnf.fr/ark:/12148/cb32497119k",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-90384e64544889a4",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "partial",
+      "text": "Régis Ouvrier-Bonnaz, « Analyse et structure du travail de Jean-Marie Faverge », PISTES, 13-2, 2011 : présentation accompagnant la republication.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-03318d9406525ead",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "partial",
+      "text": "secondary-academic",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-022c5e7211c8e638",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "partial",
+      "text": "10.4000/pistes.2537",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-f324f966d09b8918",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "partial",
+      "text": "https://journals.openedition.org/pistes/2537",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-df2a41a02951487f",
+      "origin": "validated",
+      "path": "$.sources[3].label",
+      "access": "partial",
+      "text": "Guy Karnas et Pierre Salengros, « L'analyse du travail trente ans après Ombredane et Faverge », PISTES, 19-2, 2017 : republication d'un texte de 1986.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-7a39812a7ece4071",
+      "origin": "validated",
+      "path": "$.sources[3].kind",
+      "access": "partial",
+      "text": "secondary-academic",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-34569a1af0b96f32",
+      "origin": "validated",
+      "path": "$.sources[3].doi_isbn",
+      "access": "partial",
+      "text": "10.4000/pistes.5122",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-5360efa7d008b418",
+      "origin": "validated",
+      "path": "$.sources[3].url",
+      "access": "partial",
+      "text": "https://journals.openedition.org/pistes/5122",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-6d0236b48129bdf9",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-18"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-0289ba669a23bf65",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "CITATION — ouvert https://journals.openedition.org/pistes/1789 (HTTP 200, HTML complet, texte intégral). Le paragraphe numéroté 1, paragraphe liminaire de l'article, se lit : « L'étude psychotechnique du travail comporte des démarches analytiques… Elle risque de détruire certaines structures, certaines unités, disons certaines molécules pour rappeler une analogie avec la chimie. L'inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu'à du verbalisme. » La phrase affichée est verbatim, sans coupe, au locator annoncé (§ 1). Aucune traduction en jeu : texte français d'origine."
+    },
+    {
+      "id": "SUP-e9c61a6790c855e3",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "SOURCE 1 — la même page porte en « Notes de la rédaction » : « Paru dans Bulletin du CERP, No 1, janvier - juin 1952, pp. 1-8. » Signature : Jean-Marie Faverge seul. Crossref 10.4000/pistes.1789 rend le même titre, le même auteur unique, PISTES vol. 13-2, 2011. La référence affichée résout intégralement, y compris la pagination 1-8."
+    },
+    {
+      "id": "SUP-393c0f9a4dceccdc",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "SOURCE 2 — ouvert https://catalogue.bnf.fr/ark:/12148/cb32497119k (HTTP 200). Notice FRBNF32497119 : Ombredane, André (1898-1958) et Faverge, Jean-Marie (1912?-1988) ; « L'analyse du travail : facteur d'économie humaine et de productivité » ; Paris, Presses universitaires de France, 1955 ; 1 vol. (236 p.) ; coll. Bibliothèque de psychologie appliquée. Auteurs, titre, éditeur, année et pagination concordent exactement. Le champ consulted=metadata-only est exact : je n'ai pas ouvert le contenu de l'ouvrage (la notice signale un exemplaire numérisé NUMM-3376528 consultable seulement en extrait ; je ne l'ai pas atteint)."
+    },
+    {
+      "id": "SUP-8f3c46f37b9aca8e",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCE 3 — Crossref 10.4000/pistes.2537 : Régis Ouvrier-Bonnaz, « Analyse et structure du travail de Jean-Marie Faverge », PISTES 13-2, 2011. Page ouverte au second essai après un reset de connexion : il s'agit bien de la présentation accompagnant la republication (en tête : « Référence(s) : Jean-Marie Faverge, Analyse et structure du travail, Bulletin du CERP, n° 1, janvier-juin 1952 »)."
+    },
+    {
+      "id": "SUP-f7fe3905e75e4f6e",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCE 4 — Crossref 10.4000/pistes.5122 : Guy Karnas et Pierre Salengros, « L'analyse du travail trente ans après Ombredane et Faverge », PISTES 19-2, 2017. Page ouverte (HTTP 200) ; en « Notes de la rédaction » : « Paru dans Karnas, G. et Salengros, P. (1986). L'analyse du travail trente ans après Ombredane et Faverge. In R. Patesson (coord.), L'Homme et l'écran, p. 331-340. Bruxelles : Éd. de l'Université de Bruxelles. » La mention « republication d'un texte de 1986 » est exacte."
+    },
+    {
+      "id": "SUP-c954fca2ac2a09c9",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la double signature de l'ouvrage de 1955 est établie par la notice BnF. La restriction portée par la fiche est vérifiée point par point : (a) le nom ne vient pas du livre — le texte de 1952, ouvert par moi, écrit bien « les différents domaines où l'on pratique l'analyse du travail » (§ 1) ; (b) la distinction analyse de la tâche / analyse de l'activité ne figure pas dans le texte de 1952 : ces deux syntagmes y sont absents (recherche sur le texte intégral) ; (c) elle est bien rapportée à 1955 par des commentateurs, ce que confirment Karnas et Salengros § 2 et § 44-48 (« l'analyse du travail doit distinguer l'analyse de la tâche et l'analyse de l'activité ») et Ouvrier-Bonnaz § 6 (le texte de 1952 « annonce le départ du mouvement d'ergonomie de langue française »). L'attribution affichée — méthode et forme de référence issues de l'ouvrage cosigné — est exacte et correctement bornée ; aucune paternité indue n'est revendiquée."
+    },
+    {
+      "id": "SUP-520e32fd6d097859",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "PROSE — le summary avance « Décomposer le travail en éléments brise les structures dont il est fait ». Faverge nuance en § 1 (« Elle risque de détruire certaines structures »), mais affirme la même chose sans réserve en § 25 du même texte : « les fameuses aptitudes ne peuvent être isolées de certaines structures, qu'en le faisant on détruit les molécules dont nous avons parlé ». L'affirmation est donc portée par la source ouverte. Le hook est interrogatif et n'ajoute rien. Ni hook ni summary n'avancent la distinction tâche/activité, absente du texte cité : la prose reste sur ce que la citation soutient."
+    },
+    {
+      "id": "SUP-17d36612020c60a4",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "NON ATTEINT — la recension de l'ouvrage de 1955 dans le BINOP 1956 (Persée, binop_0005-3147_1956_num_12_2_3432) n'a rien rendu à l'extraction ; le contenu de l'ouvrage de 1955 n'a été ouvert par aucune voie. Ces échecs d'accès ne contredisent rien de ce qu'affirme la fiche, qui déclare elle-même n'avoir consulté que la notice."
+    },
+    {
+      "id": "SUP-e45bf95b6a3c0e3d",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "HORS DES QUATRE POINTS (note, pas motif) — la notice BnF signale un exemplaire numérisé consultable en extrait dans Gallica : une consultation partielle du contenu de 1955 permettrait peut-être de sortir la distinction tâche/activité de la seconde main. Cela ne change rien à la validité de la carte telle qu'elle est écrite."
+    },
+    {
+      "id": "SUP-9f7d83c8da239a86",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "L'ouvrage cosigné de 1955 n'a pas été ouvert : aucune édition en texte intégral n'a été atteinte. Seule sa notice BnF (ark:/12148/cb32497119k) a été consultée — titre, sous-titre, ordre des deux auteurs, éditeur, année, pagination. Rien de son contenu n'est établi ici."
+    },
+    {
+      "id": "SUP-ec5576c9c6e6ae8b",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "La distinction tâche / activité n'est PAS dans le texte de 1952 : le mot « activité » n'apparaît pas dans le corps de l'article, et « tâche » y est employé au sens courant. La carte ne la lui attribue donc pas. Ce que l'on sait de cette distinction pour l'ouvrage de 1955 vient de Karnas et Salengros (« l'analyse du travail doit distinguer l'analyse de la tâche et l'analyse de l'activité »), c'est-à-dire d'une source secondaire non contrôlée sur le livre."
+    },
+    {
+      "id": "SUP-945287efa81baaca",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Le lien entre le texte de 1952 et le chapitre V de l'ouvrage de 1955 repose sur une seule affirmation d'Ouvrier-Bonnaz, non vérifiable faute d'accès au livre."
+    },
+    {
+      "id": "SUP-3116108fe9d0fedb",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "La citation a été relevée à travers un outil de rendu (le site de la revue oppose une page anti-robot en ligne de commande), contrôlée par trois requêtes indépendantes concordantes et recoupée sur la traduction portugaise du même texte parue dans Laboreal (DOI 10.4000/laboreal.9901). La forme exacte des signes typographiques n'a pas pu être vérifiée sur le HTML source."
+    },
+    {
+      "id": "SUP-a80c742f3798f5fd",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Le texte republié porte des fautes non corrigées (« peut être dangereuses », « le geste s'arrondi ») qui indiquent une saisie non révisée : une divergence avec le ronéotypé de 1952 reste possible et n'a pas pu être contrôlée."
+    },
+    {
+      "id": "SUP-eb4c58c1be305d2c",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Le cours de 1956 publié dans le Bulletin de psychologie (Persée) est une transcription de notes prises par une tierce personne : consulté, jamais cité."
+    },
+    {
+      "id": "SUP-926060d9409d8c44",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Antériorité du terme « analyse du travail » sur l'ouvrage de 1955, sur trois pièces concordantes : (a) Faverge 1952, § 1, parle des domaines « où l'on pratique l'analyse du travail » comme d'une pratique en cours ; (b) Karnas et Salengros (PISTES 19-2, § 3) indiquent que l'ouvrage reprend les conférences données au « Séminaire d'Analyse du Travail » de l'U.L.B. en 1953 et 1954 ; (c) la BnF catalogue un titre « Analyse du travail » de Joseph Compagnon dès 1943 (ark:/12148/cb319624586). Ce que Karnas et Salengros attestent de l'ouvrage est son rôle de référence pour le champ (§ 3), non la paternité du nom."
+    },
+    {
+      "id": "SUP-6c48d17d5342066f",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "analyse-du-travail"
+    },
+    {
+      "id": "SUP-971433cfc82ddec5",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "André Ombredane"
+    },
+    {
+      "id": "SUP-65b889d6d3337a41",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "Jean-Marie Faverge"
+    },
+    {
+      "id": "SUP-ee91fd4a67198c4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-2c47178dd79f4059",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Attribution à écrire en deux temps, parce que le texte que j'ai ouvert et le texte qui fonde la méthode ne sont pas le même. Le texte que j'ai ouvert et d'où vient la citation est de Jean-Marie Faverge seul : « Analyse et structure du travail », paru sous forme ronéotypée dans le premier numéro du Bulletin du Centre d'Études et de Recherches Psychotechniques (CERP), n° 1, janvier-juin 1952, p. 1-8, et republié tel quel par la revue PISTES en 2011 (13-2). Aucun autre nom ne figure sur ce texte : la republication PISTES, la traduction portugaise de Laboreal et la notice Crossref du DOI 10.4000/pistes.1789 portent toutes « Jean-Marie Faverge » seul. L'ouvrage qui fonde la méthode et qui porte le nom sous lequel le champ la connaît est en revanche cosigné : Ombredane, A. et Faverge, J.-M. (1955), L'analyse du travail. Facteur d'économie humaine et de productivité, Paris, Presses universitaires de France, coll. « Bibliothèque de psychologie appliquée », 1 vol., 236 p. La notice de la Bibliothèque nationale de France (ark:/12148/cb32497119k), que j'ai interrogée directement, donne les deux auteurs dans cet ordre sur la page de titre — « par le Dr A. Ombredane… et J.-M. Faverge… » — et les identifie comme André Ombredane (1898-1958) et Jean-Marie Faverge (1912?-1988). Je déclare donc COAUTHORED et je porte les deux noms : ranger cette méthode sous le seul nom de Faverge écraserait une cosignature attestée, et la littérature du champ dit systématiquement « Ombredane et Faverge ». Ce qui revient à quel texte, dit en toutes lettres. Au texte de 1952, signé Faverge seul, revient l'argument que je cite : la décomposition analytique du travail en éléments détruit les structures dont l'activité réelle est faite, et son inventaire ne rend plus compte du comportement réel. À l'ouvrage de 1955, cosigné, revient la mise en méthode et, en particulier, la distinction entre analyse de la tâche et analyse de l'activité, que le texte de 1952 ne formule pas (voir reserves) et que je n'ai pas pu lire dans l'ouvrage lui-même, faute d'édition ouvrable. Un lien entre les deux textes est établi par la présentation qui accompagne la republication : Régis Ouvrier-Bonnaz écrit que l'interrogation du texte de 1952 « est reprise pratiquement mot pour mot dans le chapitre V du livre écrit avec Ombredanne publié en 1955 “L'analyse du travail” » — la graphie « Ombredanne », à deux n, est celle de cette présentation ; la forme retenue ici, « Ombredane », est celle de la notice d'autorité de la BnF et de la page de titre de l'ouvrage. Enfin, aucun millésime avancé ici n'est déduit : 1952 est la date portée par la note de la rédaction de PISTES et par la notice de la traduction Laboreal, 1955 est la date de la notice BnF de l'ouvrage cosigné, 2011 est la date de la republication."
+    },
+    {
+      "id": "SUP-d632d37a9006632d",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "L'inventaire des fragments ainsi obtenu ne permet plus de rendre compte du comportement réel et ne peut donner naissance qu'à du verbalisme."
+    },
+    {
+      "id": "SUP-5e6cedee578e383f",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Jean-Marie Faverge, « Analyse et structure du travail », Bulletin du Centre d'Études et de Recherches Psychotechniques (CERP), n° 1, janvier-juin 1952, p. 1-8 ; republié dans Perspectives interdisciplinaires sur le travail et la santé (PISTES), 13-2, 2011, mis en ligne le 1er novembre 2012, DOI 10.4000/pistes.1789, licence CC BY-NC-ND 4.0."
+    },
+    {
+      "id": "SUP-e0f619227cd7b946",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "§ 1 du texte republié — paragraphe liminaire, avant le premier intertitre (« L'analyse des temps dans le travail ») ; avant-dernière phrase de ce paragraphe. Je ne donne pas de numéro de page : l'édition d'origine est paginée p. 1-8, mais la republication en ligne ne reporte aucun marqueur de pagination à l'intérieur du texte, et je n'ai pas ouvert le tiré à part de 1952 pour établir la correspondance."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-9ba0e679413a00cd",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Faverge, J.-M. (2011 [1952]). « Analyse et structure du travail ». Perspectives interdisciplinaires sur le travail et la santé (PISTES), 13-2. Republication du texte paru dans le Bulletin du CERP, n° 1, janvier-juin 1952, p. 1-8."
+    },
+    {
+      "id": "SUP-9f74ad5b3337d161",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "DOI 10.4000/pistes.1789"
+    },
+    {
+      "id": "SUP-3d9195516df779f5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://journals.openedition.org/pistes/1789"
+    },
+    {
+      "id": "SUP-6c7b90b6c9ca4736",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "partial",
+      "text": "Faverge, J.-M. (2009 [1952]). « Análise e estrutura do trabalho ». Laboreal, 5(1). Traduction portugaise d'Andreia Ferreira du même texte de 1952."
+    },
+    {
+      "id": "SUP-4dcc48d034f8e732",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "partial",
+      "text": "DOI 10.4000/laboreal.9901"
+    },
+    {
+      "id": "SUP-67318951e7f62a5e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "partial",
+      "text": "https://journals.openedition.org/laboreal/9901"
+    },
+    {
+      "id": "SUP-6e0329da76564422",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "partial",
+      "text": "Ouvrier-Bonnaz, R. (2011). « Analyse et structure du travail de Jean-Marie Faverge ». PISTES, 13-2. Présentation accompagnant la republication."
+    },
+    {
+      "id": "SUP-febb79bf49f0e19a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "partial",
+      "text": "DOI 10.4000/pistes.2537"
+    },
+    {
+      "id": "SUP-d498194e5827584a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "partial",
+      "text": "https://journals.openedition.org/pistes/2537"
+    },
+    {
+      "id": "SUP-ee266954aa3d1213",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "partial",
+      "text": "Karnas, G. et Salengros, P. (2017 [1986]). « L'analyse du travail trente ans après Ombredane et Faverge ». PISTES, 19-2. Republication du texte paru dans R. Patesson (coord.), L'Homme et l'écran. Aspects de l'ergonomie en informatique, Bruxelles, Éd. de l'Université de Bruxelles, p. 331-340."
+    },
+    {
+      "id": "SUP-46127f255ea1fb35",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "partial",
+      "text": "DOI 10.4000/pistes.5122"
+    },
+    {
+      "id": "SUP-8eb9491cdafff71a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "partial",
+      "text": "https://journals.openedition.org/pistes/5122"
+    },
+    {
+      "id": "SUP-3f7dd4e846f56808",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "partial",
+      "text": "Faverge, J.-M. (1956). « L'analyse du travail » (cours des 13, 20, 27 février, des 5, 12, 19 mars et du 9 avril 1956, notes prises par Jacqueline Mucchielli). Bulletin de psychologie, 9(9), p. 509-521 ; suite 9(10), p. 587-591 ; fin 9(11-12), p. 695."
+    },
+    {
+      "id": "SUP-a5c6718247d40801",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].doi_isbn",
+      "access": "partial",
+      "text": "DOI 10.3406/bupsy.1956.6849 ; 10.3406/bupsy.1956.6864 ; 10.3406/bupsy.1956.6886"
+    },
+    {
+      "id": "SUP-33b07d18e9d9188b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "partial",
+      "text": "https://www.persee.fr/doc/bupsy_0007-4403_1956_num_9_9_6849"
+    },
+    {
+      "id": "SUP-01e6336b0a9fb276",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].citation",
+      "access": "metadata-only",
+      "text": "Ombredane, A. et Faverge, J.-M. (1955). L'analyse du travail. Facteur d'économie humaine et de productivité. Paris, Presses universitaires de France, coll. « Bibliothèque de psychologie appliquée », 236 p. — notice d'autorité consultée, ouvrage non ouvert."
+    },
+    {
+      "id": "SUP-042f77aff5388e99",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].doi_isbn",
+      "access": "metadata-only",
+      "text": "BnF ark:/12148/cb32497119k"
+    },
+    {
+      "id": "SUP-6416f259425767b0",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].url",
+      "access": "metadata-only",
+      "text": "https://catalogue.bnf.fr/ark:/12148/cb32497119k"
+    },
+    {
+      "id": "SUP-4d0d409d82651d7a",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Faverge part de ce que fait l'étude du travail telle qu'elle se pratique en 1952, et lui oppose une objection de méthode. « L'étude psychotechnique du travail comporte des démarches analytiques destinées à isoler les éléments importants. L'analyse conduit à localiser ces éléments pour mieux les décrire et à rejeter tout ce qui est accessoire. » Or, écrit-il, « les psychologues savent combien la méthode analytique appliquée à l'observation des comportements humains peut être dangereuses » : « Elle risque de détruire certaines structures, certaines unités, disons certaines molécules pour rappeler une analogie avec la chimie. » D'où la phrase citée : l'inventaire des fragments ne rend plus compte du comportement réel et ne produit que du verbalisme. Il regrette que ces idées, « développées en particulier par la psychologie de la forme », n'aient pas pénétré les domaines où l'on pratique l'analyse du travail, et il le montre sur trois terrains, qui sont les trois sections de l'article. (1) L'analyse des temps : contre les méthodes analytiques américaines Q.S.K. et M.T.M., qui cherchent « des éléments universels de travail, c'est-à-dire des éléments en lesquels on peut analyser toute tâche » et traitent le temps de travail comme la somme des temps élémentaires, il objecte que « le danger de telles méthodes est précisément de briser les structures à l'intérieur desquelles les temps ne s'additionnent pas » ; il relève « l'altération de la séquence des therbligs » quand la rapidité augmente — les gestes se chevauchent, le trajet de la main s'arrondit — et rappelle que le critère d'unité que les praticiens se donnent eux-mêmes (« le temps d'un élément reste le même quels que soient les éléments qui le précèdent ou le suivent dans l'opération ») n'est justement pas vérifié. Il note que « la notion de structuration se confond presque avec celle de signification ». (2) L'apprentissage : des structures apparaissent au cours de l'apprentissage, visibles aux articulations entre ensembles de gestes, et « il serait absurde de ne pas les reconnaître » ou de les détruire dans l'analyse psychotechnique du travail ; il ajoute que les premières observations, faites en apprenant soi-même le métier pour le comprendre, sont importantes parce qu'elles saisissent un moment de l'apprentissage qui s'évanouit ensuite. (3) Les aptitudes : « ce n'est pas une “aptitude” qui fait l'unité entre ces épreuves, c'est la signification du résultat à atteindre » ; « une analyse du travail en terme d'aptitudes n'est que verbalisme », et il conclut sur la notion d'aptitude « qui ne représente rien en dehors de la signification de la tâche proposée ». L'unité de son argument est donc là : ce qui fait qu'un travail est ce qu'il est n'est pas dans les éléments qu'on en isole mais dans les structures signifiantes que l'opérateur y forme, et ces structures ne se déduisent pas d'une décomposition préalable — elles s'observent. Ce que ce texte de 1952 ne fait pas, et qu'il faut dire : il ne pose pas la distinction tâche / activité en ces termes. Le mot « activité » n'y figure pas ; « tâche » y est employé au sens courant. La distinction est posée dans l'ouvrage cosigné de 1955, dont Karnas et Salengros résument ainsi l'apport : « l'analyse du travail doit distinguer l'analyse de la tâche et l'analyse de l'activité ou encore des conduites opératoires », « on distinguera dans l'analyse le quoi et le comment »."
+    },
+    {
+      "id": "SUP-c6eaa8a6a1e5f6de",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "L'ouvrage fondateur n'a pas été ouvert. Ombredane, A. et Faverge, J.-M. (1955), L'analyse du travail (PUF, 236 p.), n'existe dans aucune édition en texte intégral que j'aie pu atteindre : recherche Internet Archive sur le titre combiné aux deux noms, 0 résultat (numFound = 0). Je n'en connais que la notice BnF (ark:/12148/cb32497119k), qui m'a donné le titre complet avec son sous-titre, les deux auteurs et leur ordre sur la page de titre, l'éditeur, la collection, l'année et la pagination — rien de son contenu. Tout ce que ce dossier avance sur cet ouvrage vient soit de cette notice, soit de deux textes secondaires ouverts et déclarés ci-dessous, jamais du livre."
+    },
+    {
+      "id": "SUP-f8f3e372fe870579",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La distinction tâche / activité n'est PAS dans le texte cité, et c'est le résultat documentaire le plus important de cette lecture. Vérification faite sur le texte de 1952 republié : le mot « activité » n'apparaît pas dans le corps de l'article — il ne figure que dans le résumé rédigé par la rédaction de PISTES en 2011 (« la sélection et la fragmentation de l'activité humaine »), qui n'est pas de Faverge. Le mot « tâche » y est employé au sens courant (« des éléments en lesquels on peut analyser toute tâche », « la signification de la tâche proposée »), pas comme terme d'une opposition conceptuelle. Une carte qui ferait dire à ce texte de 1952 qu'il distingue la tâche de l'activité commettrait un anachronisme."
+    },
+    {
+      "id": "SUP-3048cf5bf853e1b6",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Ce que je sais de la distinction tâche / activité vient d'une source secondaire, et je ne l'ai pas contrôlée sur l'ouvrage. Karnas, G. et Salengros, P., « L'analyse du travail trente ans après Ombredane et Faverge » (PISTES, 19-2, 2017, republication d'un texte de 1986), écrivent que « l'analyse du travail doit distinguer l'analyse de la tâche et l'analyse de l'activité ou encore des conduites opératoires » et qu'« on distinguera dans l'analyse le quoi et le comment ». Ce sont leurs mots sur l'ouvrage de 1955, pas les mots de l'ouvrage. Ils ne peuvent pas servir de citation, et ils ne servent ici qu'à situer ce que le texte cité ne contient pas. Note de date à ne pas recomposer : la note de la rédaction de PISTES donne 1986 pour la publication d'origine de ce texte (dans R. Patesson (coord.), L'Homme et l'écran, Bruxelles), là où le repérage préalable indiquait 1985 ; je retiens 1986, qui est ce que j'ai lu."
+    },
+    {
+      "id": "SUP-43fc675cbd5208f6",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Le lien entre le texte de 1952 et le chapitre V de l'ouvrage de 1955 repose sur une seule affirmation, secondaire. Régis Ouvrier-Bonnaz, dans la présentation qui accompagne la republication (PISTES, 13-2, 2011, DOI 10.4000/pistes.2537), écrit que l'interrogation de Faverge « est reprise pratiquement mot pour mot dans le chapitre V du livre écrit avec Ombredanne publié en 1955 “L'analyse du travail” ». Je n'ai pas pu vérifier cette reprise, puisque le livre n'est pas ouvrable. Je la rapporte comme une affirmation de Ouvrier-Bonnaz, pas comme un fait établi par ma lecture."
+    },
+    {
+      "id": "SUP-aece3623ac242738",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Le cours de 1956 sur Persée n'est pas un texte écrit par Faverge, et ne pouvait donc pas fournir la citation. Les trois livraisons de « L'analyse du travail » dans le Bulletin de psychologie, 9(9), 9(10) et 9(11-12), sont la transcription d'un cours oral : la première page porte « Cours des 13, 20, 27 février, des 5, 12, 19 mars et du 9 avril 1956 » et parle de Faverge à la troisième personne (« Dans ce cours, M. FAVERGE traitera surtout des problèmes de formation professionnelle et d'aménagement du travail »), et la dernière page se clôt sur « Notes prises par Jacqueline Mucchielli ». Ce sont des notes de cours prises par une tierce personne, non relues par l'auteur pour autant que je puisse le savoir : en tirer une phrase entre guillemets attribuée à Faverge aurait été une citation de seconde main. Cette source est donc consultée et déclarée, jamais citée."
+    },
+    {
+      "id": "SUP-3b3c0d7e887ee47a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Accès Persée limité, et limité de deux façons. Les trois pages ont bien répondu en HTTP 200 (88 043, 77 100 et 71 025 octets) et j'ai extrait moi-même le texte OCR du bloc articleBody, mais ce texte est celui de la PREMIÈRE PAGE seulement pour les deux premières livraisons (p. 509 et p. 587) ; seule la dernière (p. 695) tient sur une page et est donc intégrale. De plus, Persée signale lui-même dans son code que « ce texte est issu d'un traitement automatique (ocr) et n'a pas été revu ou corrigé », et l'OCR obtenu est visiblement dégradé (mots coupés par des tirets conditionnels, « Mucchiei.li » pour Mucchielli, « es¬ pèce », « FAISAN eut fraiseuse »). Rien de citable n'en a été tiré, et rien de ce qui précède n'en dépend au-delà de ce que ces pages disent d'elles-mêmes."
+    },
+    {
+      "id": "SUP-7ab7e3d775cb5627",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "La citation a été relevée à travers un relais, non sur le HTML brut, et je dis comment je l'ai contrôlée. `curl` sur journals.openedition.org ne rend pas l'article mais une page de vérification anti-robot Anubis (5 261 octets constants, testé sur /pistes/pdf/1789, /pistes/tei/1789 et /pistes/basictei/1789) ; l'OAI-PMH d'OpenEdition rend la notice mais pas le texte, et le format `tei` y répond en HTTP 500. Le texte n'a donc été lisible que par WebFetch, dont la sortie est produite par un modèle. Pour ne pas faire reposer une citation verbatim sur un seul rendu, j'ai demandé la phrase trois fois, dans trois formulations différentes et indépendantes (reproduction des six premiers paragraphes ; recopie isolée de la phrase et de ses voisines ; question fermée « cette phrase figure-t-elle exactement, et sinon quelle est la forme exacte ») : les trois rendus donnent la même phrase, mot pour mot et ponctuation comprise. J'ai en outre contrôlé la phrase par sa traduction portugaise indépendante (Laboreal, DOI 10.4000/laboreal.9901, trad. Andreia Ferreira), qui rend le même énoncé au même endroit du même paragraphe : « O inventário de fragmentos assim obtidos não permite dar conta do comportamento real e não pode mais do que fazer nascer o verbalismo. » Ce que ce contrôle ne garantit pas : la forme exacte des signes typographiques (apostrophe droite ou courbe, espaces fines) n'a pas pu être vérifiée octet par octet, puisque je n'ai jamais eu le HTML source sous les yeux."
+    },
+    {
+      "id": "SUP-d798c81f25b5fbd1",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Le texte republié porte des fautes que je n'ai pas corrigées et qui indiquent que la republication n'a pas été révisée. On lit dans le seul § 1 « peut être dangereuses » (accord fautif) et, plus loin, « des éléments en lesquels on peut analyser, toute tâche » (virgule fautive), « le geste s'arrondi », « quelque soit les éléments ». La phrase que je cite est indemne de ces fautes, mais leur présence signifie que le texte en ligne est une saisie non relue : une divergence avec le ronéotypé de 1952 reste possible et n'a pas pu être contrôlée, faute d'accès à l'original."
+    },
+    {
+      "id": "SUP-8ad3f3f43bb70a5f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Le sous-titre de l'ouvrage de 1955, « Facteur d'économie humaine et de productivité », est repris de la notice BnF telle qu'elle m'a été rendue. La littérature du champ cite habituellement l'ouvrage sous son seul titre court ; les deux formes désignent le même livre."
+    },
+    {
+      "id": "SUP-a638796e8b60dc15",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas cherché à ouvrir, et qui manque. Je n'ai pas eu accès à la revue Le travail humain (Cairn, HTTP 403 selon le repérage, non retesté ici), où Faverge a beaucoup publié, ni à ses ouvrages ultérieurs (notamment L'ergonomie des processus industriels, 1966, et Psychosociologie des accidents du travail, 1967). Une formulation plus tardive et plus explicite de la méthode par Faverge lui-même existe donc peut-être, et la citation retenue n'est pas présentée comme la meilleure de toute l'œuvre : c'est la meilleure du texte que j'ai pu ouvrir."
+    },
+    {
+      "id": "SUP-7bdf5a5fc20f03e9",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "Un autre passage a été écarté et je dis pourquoi. L'ouverture de l'article — « L'étude psychotechnique du travail comporte des démarches analytiques destinées à isoler les éléments importants. » (113 caractères) — tient largement sous la limite et a l'avantage d'être la première phrase du texte, mais elle énonce ce que Faverge critique, et non ce qu'il soutient : isolée, elle lui ferait dire l'inverse de son propos. C'est exactement le retournement de sens que la coupe ne doit pas produire. La phrase du § 14 sur l'observation en situation d'apprentissage (« C'est ainsi que nos premières observations, lorsque nous apprenons un métier pour le comprendre… ») aurait été la plus proche du sous-titre de la fiche, mais elle dépasse 220 caractères et n'admet pas de coupe qui la laisse intelligible."
+    }
+  ],
+  "estimated_tokens": 16017,
+  "status": "READY"
+}
