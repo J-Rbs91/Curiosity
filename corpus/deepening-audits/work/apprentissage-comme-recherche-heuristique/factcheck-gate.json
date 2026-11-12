@@ -1,0 +1,28 @@
+{
+  "protocol_version": 2,
+  "concept_id": "apprentissage-comme-recherche-heuristique",
+  "candidate_sha256": "6f9313beb312921f1fddc45f5b191d01799e43877cb6b7bcb39b081153f17e57",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 60,
+  "supported": 57,
+  "failed": 3,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C024",
+      "verdict": "TOO_STRONG",
+      "reason": "definition_de_lauteur cite p. 164 « other processes which may be far more efficient than simple trial and error » ; le texte lecteur écrit « des procédés bien plus efficaces », supprimant le « may be » sur l'efficacité, et présente comme « règle » ce que le support donne comme une leçon conditionnelle."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "TOO_STRONG",
+      "reason": "La séparation noyau / spécification de l'environnement est portée par definition_de_lauteur et summary, mais les appuis fournis pour ce claim ne disent rien d'une confusion fréquente entre ces deux questions : « qu'on confond volontiers » ajoute une généralisation sur la fréquence."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis établissent qu'« efficace » signifie « qui permet effectivement de résoudre » ; ils ne portent pas l'opposition entre vérité/exactitude et rendement, ni qu'une description exacte puisse rester inutile : extension interprétative présentée comme ce que le texte demande."
+    }
+  ]
+}
