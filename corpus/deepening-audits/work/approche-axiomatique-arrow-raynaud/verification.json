@@ -1,361 +1,321 @@
 {
   "concept_id": "approche-axiomatique-arrow-raynaud",
-  "candidate_sha256": "cc886095874bc750922dda99ae8c47de01c6c68323b00f5713dbcb0a8cb4651a",
+  "candidate_sha256": "fe286a86b48a94b5f8e1a72f7e8f975c4e381f5f3fca383367523877d67e0ade",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis attestent une « large collection » de recettes multicritères (citation tierce d'Arrow et Raynaud), que chaque méthode est la recette de son auteur, et que l'article nomme trois éditeurs de logiciels p. 21. Ils ne portent ni le dénombrement « des dizaines », ni que chaque méthode a son nom et sa formule, ni que certaines méthodes ont chacune leur logiciel : la quantification et la caractérisation excèdent les appuis."
+      "verdict": "SUPPORTED",
+      "reason": "p. 11 dans $.definition_de_lauteur : « Chacune de ces méthodes est en fait la recette personnelle de décision de son auteur » ; $.review.notes[3] relève chez un tiers lu l'observation d'Arrow et Raynaud sur « a large collection of multicriterion decision-making recipes »."
     },
     {
       "claim_id": "C002",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni pour ce claim ; il affirme un fait sur le comportement des méthodes (deux méthodes, mêmes données, deux résultats) et n'est pas purement hypothétique."
+      "verdict": "SUPPORTED",
+      "reason": "Les notices fournies ($.sources[0].label, $.quotation.reference, $.sources_ouvertes[0].citation) donnent Revue française de gestion, n° 106, 1995."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "La citation tierce rapportée en review.notes[3] (« without being able to decide which of them were the best ») et l'adossement p. 11 en review.notes[7] (« choisir entre les diverses recettes celle qui convient le mieux ») portent la question de la meilleure méthode."
+      "reason": "$.definition_de_lauteur cite p. 11 : l'approche « se situe à un niveau différent des autres méthodes multicritères », ce que la lecture appelle son changement de niveau."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "Référence : Revue française de gestion, n° 106, novembre-décembre 1995."
+      "reason": "Citation verbatim donnée par $.review.notes[2] et $.attribution.note (p. 11)."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « ce que l'article appelle son changement de niveau », « se situe à un niveau différent des autres méthodes multicritères » (p. 11)."
+      "reason": "Citation verbatim p. 11 dans $.definition_de_lauteur et $.review.notes[7]."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 « développée il y a quelques années sous le nom d'approche axiomatique Arrow-Raynaud » portée par attribution.note et review.notes[2]."
+      "reason": "Paraphrase fidèle de p. 11 (choisir entre recettes par leurs propriétés logiques), de la définition de l'axiome (propriété que doit vérifier la méthode choisie) et des deux étapes structuration / recherche des axiomes."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 exacte dans definition_de_lauteur et review.notes[7]."
+      "reason": "$.quotation.text : « On entend par axiome toute propriété logique que doit vérifier une méthode choisie par le décideur »."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "Les appuis portent le déplacement vers les propriétés logiques de la règle (p. 11), l'axiome comme propriété que doit vérifier la méthode (p. 13) et la règle plutôt que la solution ; la reformulation procédurale est une conséquence fidèle, non attribuée comme citation."
+      "reason": "Deux étapes annoncées p. 11, « la structuration des données et la recherche des axiomes » ($.definition_de_lauteur, $.notes[1])."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "Définition p. 13 : axiome = propriété logique que doit vérifier une méthode."
+      "reason": "$.definition_de_lauteur : recrutement d'un professeur par un département universitaire, sept candidats, cinq critères pondérés à 100."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "Deux étapes annoncées p. 11 : « la structuration des données et la recherche des axiomes »."
+      "reason": "Matrice des intensités de préférence de A sur B ; comparaison par paires rapportée aux conditions de May ($.definition_de_lauteur)."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : recrutement d'un professeur par un département universitaire, sept candidats, cinq critères pondérés à 100."
+      "reason": "Intensité = somme des poids des critères qui évaluent A meilleur que B, « quel que soit l'écart » : seul compte le sens de la préférence par critère."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Matrice de surclassement et comparaison par paires (note 3, p. 12) dans definition_de_lauteur ; notes[1]."
+      "reason": "Citation verbatim p. 11 dans $.definition_de_lauteur et $.notes[1] ; critères pondérés."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Intensité de préférence = somme des poids des critères qui évaluent A meilleur que B, « quel que soit l'écart » (p. 11)."
+      "reason": "Conséquence directe de la définition d'une matrice de surclassement par paires : la case (B, A) applique la même règle en sens inverse."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "Critères pondérés ; citation p. 11 exacte dans definition_de_lauteur et notes[1]."
+      "reason": "Axiome 0, ne juger que sur la matrice (p. 13), dans $.definition_de_lauteur et $.notes[1]."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "La matrice de surclassement porte l'intensité pour chaque paire ordonnée ; la case B sur A en découle directement de la définition fournie."
+      "reason": "L'écart est exclu par un motif explicite (« car la mesure de cet écart semble trop discutable… »), donc délibérément."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Axiome 0 : ne juger que sur la matrice (p. 13), dans definition_de_lauteur et notes[1]."
+      "reason": "Illustration stipulée qui découle de « quel que soit l'écart de A par rapport à B selon ce critère » ; rien n'est attribué à l'article."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "L'exclusion de l'écart est motivée explicitement p. 11 (« car la mesure de cet écart semble trop discutable... ») ; definition_de_lauteur : ce que la méthode refuse d'agréger est l'amplitude des écarts."
+      "reason": "Citation verbatim p. 11 dans $.definition_de_lauteur et $.notes[1]."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Illustration non attribuée qui suit de « quel que soit l'écart de A par rapport à B selon ce critère » (p. 11)."
+      "reason": "Conséquence dérivée, non attribuée à l'auteur : la méthode agrège le poids des critères favorables et refuse d'agréger l'amplitude des écarts."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 exacte dans definition_de_lauteur et notes[1]."
+      "reason": "Conséquence dérivée du refus d'agréger les écarts : aucune conversion d'amplitudes entre critères n'entre dans le calcul, seuls les poids, posés explicitement, y entrent ; présentée comme implication, non comme thèse de l'auteur."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée, non attribuée, du refus d'agréger l'amplitude des écarts : seul le poids des critères favorables compte."
+      "reason": "$.quotation.text verbatim, relu sur l'image de la p. 13 selon $.review.notes[1]."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée, non attribuée : l'agrégation ne porte que sur des poids de critères et non sur l'amplitude des écarts, donc aucune conversion entre unités n'intervient implicitement."
+      "reason": "Glose directe de la définition citée (« propriété logique que doit vérifier une méthode ») ; le signal sur $.review.notes[8] (terme « reclame ») vise un homographe (réclame publicitaire) et ne rend pas probable un rattachement manquant."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "quotation.text et locator p. 13 : citation exacte. Signal : aucun."
+      "reason": "$.definition_de_lauteur et $.notes[1] : axiome 0, ne juger que sur la matrice (p. 13), premier de la numérotation."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "Dérivé de la définition p. 13 (propriété que doit vérifier une méthode). Le signal (review.notes[8], terme « reclame ») porte sur le sens « réclame » publicitaire et ne concerne pas ce claim."
+      "reason": "$.definition_de_lauteur : axiome 1, règle de Condorcet, élu si tous les coefficients de sa ligne atteignent la moitié de la somme des poids (p. 13)."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Axiome 0 : ne juger que sur la matrice (p. 13)."
+      "reason": "Reformulation exacte de la règle citée en C023 : chaque coefficient de la ligne est la confrontation à un autre candidat."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "Axiome 1, règle de Condorcet appliquée aux coefficients de la matrice (p. 13)."
+      "reason": "Déduction logique explicite de la définition, au mode du possible ; cohérente avec le critère de conciliation ajouté « sous la contrainte qu'un vainqueur de Condorcet se dégage »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : axiome 1, règle de Condorcet, élu si tous les coefficients de sa ligne atteignent la moitié de la somme des poids (p. 13)."
+      "reason": "Axiome 4, p. 15, citation verbatim ; défini par un critère ajouté pour qu'un vainqueur de Condorcet se dégage, donc en réponse à son absence."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Reformulation exacte de la règle de Condorcet telle que définie dans l'appui (chaque coefficient de ligne = face à un autre candidat)."
+      "reason": "$.definition_de_lauteur : « critère virtuel, dit de conciliation » dont le poids p est minimal sous la contrainte qu'un vainqueur de Condorcet se dégage."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence logique de la définition fournie, présentée comme telle (« cela découle de sa définition »)."
+      "reason": "$.notes[3] et $.reserves[1] : illustré p. 15 et 16 par un conseil municipal à trois partis et trois projets."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "Axiome 4, citation p. 15 exacte ; construit par ajout d'un critère de conciliation jusqu'à ce qu'un vainqueur de Condorcet se dégage, ce qui le rattache au cas sans vainqueur."
+      "reason": "Citation verbatim dans $.definition_de_lauteur, $.notes[3], $.reserves[1]."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « critère virtuel, dit de conciliation » de poids minimal sous la contrainte qu'un vainqueur de Condorcet se dégage."
+      "reason": "$.attribution.note et $.attribution_note citent p. 16 « H. Raynaud a démontré les théorèmes suivants » ; formulé comme rapport de l'article."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] et reserves[1] : conseil municipal à trois partis et trois projets, p. 15-16."
+      "reason": "$.notes[3] : choix prudent « caractérisé par les quatre théorèmes de Raynaud p. 16 et 17 »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Citation « une idée de la gravité du conflit entre les critères » dans definition_de_lauteur et notes[3]."
+      "reason": "p. 11 : Arrow a utilisé cette approche pour le problème de la démocratie dans les années 50 ; $.reserves[0] : démarche transportée de la démocratie à la gestion."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 16 « H. Raynaud a démontré les théorèmes suivants » dans attribution_note et attribution.note."
+      "reason": "Citation verbatim p. 11 dans $.definition_de_lauteur, attribuée à l'article."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "notes[3] : choix prudent « caractérisé par les quatre théorèmes de Raynaud p. 16 et 17 »."
+      "reason": "Citation verbatim p. 11 dans $.definition_de_lauteur."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 : Arrow utilise l'approche pour le problème de la démocratie dans les années 50, Raynaud la transporte ensuite à la gestion (definition_de_lauteur, notes[0], reserves[0])."
+      "reason": "$.reserves[0] : « cet article hérite de la méthode axiomatique et des axiomes d'Arrow, non du théorème d'impossibilité » ; $.notes[0] concordant."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 exacte dans definition_de_lauteur."
+      "reason": "Formule de transition adossée à $.reserves[0] et $.notes[4] : l'axiome d'Arrow est examiné, jugé trop fort et remplacé."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 exacte dans definition_de_lauteur."
+      "reason": "p. 17 cité verbatim ; $.reserves[0] et $.notes[4] : jugé « ici inutilement fort » et remplacé ; $.reserves[8] pour la francisation."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "notes[0] et reserves[0] : est reprise la démarche axiomatique, et les axiomes d'Arrow en propre."
+      "reason": "Citation verbatim p. 17 dans $.definition_de_lauteur."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "reserves[0] et notes[4] : l'axiome d'Arrow est examiné, jugé trop fort et remplacé."
+      "reason": "Axiome 5, indépendance dichotomique supérieure (p. 17), substituée à l'axiome d'Arrow jugé trop fort après rejet de l'indépendance séquentielle jugée trop faible ($.definition_de_lauteur, $.reserves[0], $.notes[4])."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "Francisation p. 17 citée ; examiné, jugé trop fort et remplacé (definition_de_lauteur, notes[4]) ; reserves[8] : axiome que l'approche écarte."
+      "reason": "Lecture explicitement interprétative (« On peut y lire ») qui suit du couple « inutilement fort » / « au contraire trop faible » cité p. 17."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 17 « Il serait ici inutilement fort » dans definition_de_lauteur."
+      "reason": "Le texte énonce lui-même une incompatibilité entre ses propres axiomes p. 18 ($.notes[1], $.definition_de_lauteur) ; le signal sur $.review.notes[0] (terme « cache ») ne rend pas probable un appui manquant, le claim étant porté par les appuis fournis."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 17 exacte dans definition_de_lauteur."
+      "reason": "Citation verbatim p. 18 ; $.definition_de_lauteur rattache la monotonie à l'axiome 6 (p. 18) et en tire la version restrictive 6'."
     },
     {
       "claim_id": "C043",
-      "verdict": "SUPPORTED",
-      "reason": "notes[4] et reserves[0] : lui substitue une indépendance dichotomique supérieure (axiome 5, p. 17), après l'axiome d'Arrow trop fort et l'indépendance séquentielle trop faible."
+      "verdict": "TOO_STRONG",
+      "reason": "La source fournie qualifie l'incompatibilité : « Dans le cas général, cet axiome n'est pas compatible… ». Le claim l'énonce sans ce qualificatif, comme impossibilité absolue pour toute règle de décision."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "Lecture interprétative signalée comme telle (« On peut y lire »), qui suit du couple trop fort / trop faible cité p. 17."
+      "reason": "$.definition_de_lauteur : « d'où la version restrictive 6' », monotonie restreinte au départage (p. 18)."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "notes[1] : le texte déclare lui-même une incompatibilité entre ses propres axiomes (p. 18). Le signal (review.notes[0], terme « cache ») est un verbe courant ; rien n'indique que cet appui manque à ce claim, déjà porté par les appuis fournis."
+      "reason": "Citation verbatim p. 17 dans $.attribution.note, attribuée à l'article qui rapporte la proposition d'Arrow et Raynaud."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 18 exacte ; definition_de_lauteur la rattache à l'axiome 6, monotonie, d'où la version 6'."
+      "reason": "Citation verbatim p. 19 ($.review.notes[7], $.definition_de_lauteur qui la range dans « la thèse d'ensemble »)."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Glose directe de la citation p. 18 qui la précède immédiatement : les axiomes de monotonie, prudence et indépendance ne sont pas compatibles dans le cas général, c'est-à-dire pour une règle."
+      "reason": "Citation verbatim ; $.reserves[2] la place p. 19, même page que la citation de C046 selon $.review.notes[7]."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « d'où la version restrictive 6' », monotonie restreinte au départage (p. 18)."
+      "reason": "Titre donné par $.sources[0].label et $.quotation.reference."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 17 exacte dans attribution.note."
+      "reason": "$.review.notes[8] : l'article nomme trois éditeurs de logiciels (Xephon, Triade, Stratec, p. 21)."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 19 exacte (definition_de_lauteur, review.notes[7]) ; « thèse d'ensemble » dans definition_de_lauteur."
+      "reason": "Citation verbatim p. 18 dans $.notes[2] ; $.definition_de_lauteur concordant."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 19 exacte (notes[8], reserves[2]), même page que la citation précédente selon review.notes[7]."
+      "reason": "Suit de « Ce serait une compréhension erronée de l'approche » et de l'impossibilité d'un système d'axiomes unique citées dans les appuis."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "Titre « Un outil d'aide à la décision multicritère » dans la référence et review.notes[8]."
+      "reason": "$.review.notes[8] : la conclusion se clôt sur cette mise en garde, citée verbatim (p. 21)."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[8] : trois éditeurs de logiciels nommés p. 21, dans la dernière partie (VII et Conclusion, p. 20-21)."
+      "reason": "$.review.notes[8] : l'article désigne lui-même « le point le plus faible de l'approche » (p. 20)."
     },
     {
       "claim_id": "C054",
-      "verdict": "TOO_STRONG",
-      "reason": "La citation p. 18 est portée par notes[2] et definition_de_lauteur. Les appuis fournis pour ce claim ne disent pas que l'article a exposé une batterie d'axiomes « cohérente » ni « la règle qui la satisfait » ; ils notent au contraire une incompatibilité entre axiomes p. 18. Cette caractérisation de la progression de l'article excède les appuis."
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[2] et $.definition_de_lauteur : la « bibliothèque d'axiomes » n'existe pas encore (p. 20)."
     },
     {
       "claim_id": "C055",
-      "verdict": "SUPPORTED",
-      "reason": "Dérivé de « Ce serait une compréhension erronée de l'approche » (p. 18) et de l'absence de système d'axiomes unique (p. 19) ; notes[2] : l'article ne propose pas un produit."
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis ne donnent la proposition qu'au subjonctif (« le décideur gestionnaire ne puisse en général se passer… »), sans la principale qui la gouverne ; le claim la convertit en assertion indicative que le texte ajouterait, sans que les appuis établissent ce cadre modal."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[8] : citation p. 21 exacte, dans la conclusion, mise en garde méthodologique."
+      "reason": "Signature p. 11 citée verbatim par $.attribution_note, $.attribution.note, $.review.notes[2]."
     },
     {
       "claim_id": "C057",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis disent qu'il ne faut pas employer une méthode dont on n'a pas accepté les fondements, qui ne sont pas de la technique mathématique. Ils ne disent pas que le choix des axiomes ne se délègue pas ; notes[2] rapporte même que le décideur ne peut en général se passer d'un expert pour formuler ses axiomes. L'affirmation catégorique « elle ne se sous-traite pas » excède les appuis."
+      "verdict": "SUPPORTED",
+      "reason": "$.attribution.note et $.review.notes[2] : troisième personne « d'un bout à l'autre » / « de bout en bout »."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[8] : « le point le plus faible de l'approche » (p. 20)."
+      "reason": "Citation p. 11 dans $.attribution.note et $.attribution_note."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "notes[2] et definition_de_lauteur : la « bibliothèque d'axiomes » n'existe pas encore (p. 20)."
+      "reason": "$.attribution_note : « aucun résultat ne lui est attribué dans l'article » ; confirmé par $.review.notes[4]."
     },
     {
       "claim_id": "C060",
-      "verdict": "TOO_STRONG",
-      "reason": "La citation est portée par notes[2] et definition_de_lauteur, mais ces appuis juxtaposent l'absence de bibliothèque et le besoin d'un expert sans établir le lien de conséquence que pose « si bien que » ; corrélation rendue en causalité."
+      "verdict": "SUPPORTED",
+      "reason": "$.review.notes[4] cite p. 11 « Comme cette présentation s'adresse à des non-mathématiciens »."
     },
     {
       "claim_id": "C061",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis portent le besoin « en général » d'un expert pour formuler les axiomes. Ils ne portent pas que la démarche « promet de rendre au décideur la maîtrise de ses propres exigences », et « il lui faut » supprime le « en général » de la source."
+      "verdict": "SUPPORTED",
+      "reason": "$.attribution.note et $.attribution_note : approche dite antérieure de quelques années « sans jamais la dater »."
     },
     {
       "claim_id": "C062",
       "verdict": "SUPPORTED",
-      "reason": "Signature p. 11 citée exactement dans attribution_note et review.notes[2]."
+      "reason": "Métadonnées seules : notice du livre (Arrow et Raynaud, MIT Press, 1986) et citation par l'article en note p. 11 ($.attribution.note, $.sources_ouvertes[1].citation) ; aucun contenu du livre n'est affirmé."
     },
     {
       "claim_id": "C063",
       "verdict": "SUPPORTED",
-      "reason": "attribution_note et review.notes[2] : troisième personne d'un bout à l'autre."
-    },
-    {
-      "claim_id": "C064",
-      "verdict": "SUPPORTED",
-      "reason": "Citation p. 11 exacte dans attribution_note et review.notes[2]."
-    },
-    {
-      "claim_id": "C065",
-      "verdict": "SUPPORTED",
-      "reason": "attribution_note, review.notes[4], reserves[5] : aucun résultat attribué à Pasquier-Dorthe."
-    },
-    {
-      "claim_id": "C066",
-      "verdict": "SUPPORTED",
-      "reason": "review.notes[4] : « Comme cette présentation s'adresse à des non-mathématiciens » (p. 11)."
-    },
-    {
-      "claim_id": "C067",
-      "verdict": "SUPPORTED",
-      "reason": "attribution_note : approche dite antérieure de quelques années sans jamais être datée."
-    },
-    {
-      "claim_id": "C068",
-      "verdict": "SUPPORTED",
-      "reason": "Métadonnées de l'ouvrage (metadata-only corroboré) : Kenneth J. Arrow et Hervé Raynaud cosignataires ; claim de métadonnée seulement."
-    },
-    {
-      "claim_id": "C069",
-      "verdict": "SUPPORTED",
-      "reason": "attribution.note et sources_ouvertes[1] : ouvrage cité par l'article en note p. 11."
-    },
-    {
-      "claim_id": "C070",
-      "verdict": "SUPPORTED",
-      "reason": "Métadonnées : titre, The MIT Press, 1986."
-    },
-    {
-      "claim_id": "C071",
-      "verdict": "SUPPORTED",
-      "reason": "notes[5], reserves[6] : l'ouvrage n'a pas été ouvert ; le claim se borne à le dire."
+      "reason": "$.sources_ouvertes[1].citation, $.reserves[6], $.notes[5] : l'ouvrage n'a pas été ouvert ; le claim n'affirme rien de son contenu."
     }
   ]
 }

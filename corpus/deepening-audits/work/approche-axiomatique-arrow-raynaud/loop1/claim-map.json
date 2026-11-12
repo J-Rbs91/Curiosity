@@ -1,0 +1,859 @@
+{
+  "concept_id": "approche-axiomatique-arrow-raynaud",
+  "candidate_sha256": "fe286a86b48a94b5f8e1a72f7e8f975c4e381f5f3fca383367523877d67e0ade",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 338,
+      "end": 406,
+      "claim_text": "On en trouve une large collection, chacune la recette de son auteur.",
+      "normalized_claim": "Il existe une large collection de méthodes multicritères, chacune étant la recette de son auteur.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-a1259e7051279e8f",
+        "SUP-d86d39d02ebf80a7",
+        "SUP-ff16f64e0bd3cd6a"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 58,
+      "claim_text": "Un article de 1995 paru dans la Revue française de gestion",
+      "normalized_claim": "L'article source date de 1995 et paraît dans la Revue française de gestion.",
+      "support_ids": [
+        "SUP-415fe0d27965e16e",
+        "SUP-4245d0feccfd5c21",
+        "SUP-cc3a61554e159637",
+        "SUP-d7b3b4c496034996"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 59,
+      "end": 88,
+      "claim_text": "répond en changeant de niveau",
+      "normalized_claim": "L'article situe sa réponse à un autre niveau que les méthodes.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 90,
+      "end": 203,
+      "claim_text": "L’approche qu’il présente, « développée il y a quelques années sous le nom d’approche axiomatique Arrow-Raynaud »",
+      "normalized_claim": "Citation : approche développée il y a quelques années sous ce nom.",
+      "support_ids": [
+        "SUP-c8b5925ca9762ce1",
+        "SUP-81b5db4b0315787f"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 205,
+      "end": 314,
+      "claim_text": "part d’un constat : « Chacune de ces méthodes est en fait la recette personnelle de décision de son auteur. »",
+      "normalized_claim": "Citation du constat de départ.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-ff16f64e0bd3cd6a"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 315,
+      "end": 529,
+      "claim_text": "Au lieu de choisir une méthode puis de découvrir comment elle se comporte, on écrit d’abord ce que l’on exige d’elle, exigence par exigence, et l’on cherche ensuite quelles règles de décision les respectent toutes.",
+      "normalized_claim": "La démarche part des propriétés exigées puis cherche les règles qui les vérifient.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-ff16f64e0bd3cd6a",
+        "SUP-56bebeb1ec746a5c",
+        "SUP-bebd87fe6e41d81b",
+        "SUP-88336cb264935c09"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 530,
+      "end": 581,
+      "claim_text": "Chacune de ces exigences porte ici le nom d’axiome.",
+      "normalized_claim": "Les exigences s'appellent axiomes.",
+      "support_ids": [
+        "SUP-bebd87fe6e41d81b",
+        "SUP-88336cb264935c09",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 87,
+      "claim_text": "L’article annonce deux temps : mettre les données en forme, puis chercher les exigences",
+      "normalized_claim": "Deux étapes annoncées : structuration des données, recherche des axiomes.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 89,
+      "end": 243,
+      "claim_text": "et il les déroule sur un exemple chiffré, le recrutement d’un professeur par un département universitaire, sept candidats et cinq critères pondérés à 100.",
+      "normalized_claim": "Exemple du recrutement : 7 candidats, 5 critères pondérés à 100.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 244,
+      "end": 307,
+      "claim_text": "La mise en forme consiste à comparer les options deux par deux.",
+      "normalized_claim": "Structuration par comparaison par paires.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 308,
+      "end": 412,
+      "claim_text": "Pour deux options A et B, on ne demande à chaque critère qu’une chose : lequel des deux il place devant.",
+      "normalized_claim": "Seul compte le sens de la préférence par critère.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 413,
+      "end": 570,
+      "claim_text": "Chaque critère porte un poids, qui dit son importance, et l’on inscrit dans une case « la somme des poids des critères qui évaluent A comme meilleur que B ».",
+      "normalized_claim": "Case de la matrice = somme des poids des critères favorables à A.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 571,
+      "end": 614,
+      "claim_text": "Une case symétrique fait le compte inverse.",
+      "normalized_claim": "La matrice contient aussi la case B sur A.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 615,
+      "end": 656,
+      "claim_text": "Le tableau obtenu tient tout le problème.",
+      "normalized_claim": "La matrice est la seule base de jugement (axiome 0).",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 59,
+      "claim_text": "Ce qui n’y entre pas est aussi délibéré que ce qui y entre.",
+      "normalized_claim": "L'exclusion de l'écart est un choix délibéré.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 60,
+      "end": 189,
+      "claim_text": "Qu’un fournisseur livre trois jours plus tôt ou trente jours plus tôt, le tableau écrit la même chose : ce critère le met devant.",
+      "normalized_claim": "Quel que soit l'écart, seul le sens de la préférence est inscrit.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 190,
+      "end": 355,
+      "claim_text": "L’écart entre deux options selon un critère est écarté, « car la mesure de cet écart semble trop discutable pour que l’on puisse sérieusement le prendre en compte ».",
+      "normalized_claim": "Citation du motif d'exclusion de l'écart.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 356,
+      "end": 479,
+      "claim_text": "Le refus a un prix : un avantage spectaculaire sur un point cesse d’être spectaculaire, il devient un poids parmi d’autres.",
+      "normalized_claim": "Conséquence dérivée : l'amplitude d'un avantage n'est pas agrégée.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 480,
+      "end": 628,
+      "claim_text": "Cela implique, en retour, qu’aucun taux de change implicite entre des euros et des jours ne se glisse dans le calcul sans que personne l’ait décidé.",
+      "normalized_claim": "Conséquence dérivée : pas de compensation implicite entre unités de critères.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 144,
+      "claim_text": "L’article définit le mot en une phrase : « On entend par axiome toute propriété logique que doit vérifier une méthode choisie par le décideur. »",
+      "normalized_claim": "Citation de la définition de l'axiome.",
+      "support_ids": [
+        "SUP-bebd87fe6e41d81b",
+        "SUP-88336cb264935c09",
+        "SUP-813433b6d138c5f0",
+        "SUP-6c605c1bcd33e593"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 145,
+      "end": 317,
+      "claim_text": "Un axiome, ici, n’est donc pas une vérité de départ dont on déduirait le reste : c’est une propriété que l’on réclame de la procédure, et qu’elle vérifie ou ne vérifie pas.",
+      "normalized_claim": "Interprétation : l'axiome est une propriété exigée de la méthode.",
+      "support_ids": [
+        "SUP-bebd87fe6e41d81b",
+        "SUP-88336cb264935c09",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 318,
+      "end": 451,
+      "claim_text": "Le premier porte le numéro 0 et interdit de juger sur autre chose que le tableau : ce qui n’y figure pas ne pèse pas sur la décision.",
+      "normalized_claim": "Axiome 0 : ne juger que sur la matrice.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 177,
+      "claim_text": "L’axiome 1 montre ce que l’on fait du tableau. C’est la règle de Condorcet : un candidat est élu si tous les coefficients de sa ligne atteignent la moitié de la somme des poids.",
+      "normalized_claim": "Axiome 1 : règle de Condorcet sur la matrice.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 178,
+      "end": 290,
+      "claim_text": "Autrement dit, face à chacun des autres pris un par un, il doit réunir au moins la moitié du poids des critères.",
+      "normalized_claim": "Reformulation dérivée de la règle de Condorcet.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 174,
+      "claim_text": "Une exigence aussi stricte peut ne désigner personne : cela découle de sa définition, puisqu’il suffit que chaque candidat reste, face à un autre au moins, sous cette moitié.",
+      "normalized_claim": "Dérivé : la règle de Condorcet peut n'élire personne.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-8e3e561997b6e587"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 175,
+      "end": 253,
+      "claim_text": "L’axiome 4 répond à ce cas : « Le candidat retenu sera un vainqueur prudent ».",
+      "normalized_claim": "Axiome 4 : vainqueur prudent.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-8e3e561997b6e587",
+        "SUP-ebeed7ff25e870dd"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 254,
+      "end": 387,
+      "claim_text": "On ajoute au tableau un « critère virtuel, dit de conciliation », du plus petit poids qui suffise à dégager un vainqueur de Condorcet",
+      "normalized_claim": "Critère virtuel de conciliation de poids minimal.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-8e3e561997b6e587",
+        "SUP-ebeed7ff25e870dd"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 389,
+      "end": 470,
+      "claim_text": "et l’article l’illustre par un conseil municipal à trois partis et trois projets.",
+      "normalized_claim": "Illustration par un conseil municipal.",
+      "support_ids": [
+        "SUP-8e3e561997b6e587",
+        "SUP-ebeed7ff25e870dd"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 471,
+      "end": 551,
+      "claim_text": "Ce poids minimal donne « une idée de la gravité du conflit entre les critères ».",
+      "normalized_claim": "Citation sur le poids minimal.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-8e3e561997b6e587",
+        "SUP-ebeed7ff25e870dd"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 552,
+      "end": 623,
+      "claim_text": "L’article rapporte que « H. Raynaud a démontré les théorèmes suivants »",
+      "normalized_claim": "Citation : théorèmes démontrés par Raynaud.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-5d17c57793905db0",
+        "SUP-81b5db4b0315787f",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 626,
+      "end": 685,
+      "claim_text": "quatre, pages 16 et 17, qui caractérisent ce choix prudent.",
+      "normalized_claim": "Quatre théorèmes p. 16-17 caractérisant le choix prudent.",
+      "support_ids": [
+        "SUP-8e3e561997b6e587",
+        "SUP-ebeed7ff25e870dd",
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "Cette façon de procéder n’est pas née dans les problèmes de gestion.",
+      "normalized_claim": "La démarche vient d'ailleurs (problème de la démocratie).",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-5c006f2bddfd3e31",
+        "SUP-e315780bc74b49d9"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 69,
+      "end": 222,
+      "claim_text": "L’article la fait remonter à Kenneth Arrow, qui, « dans les années 50, a eu l’idée d’utiliser cette approche pour résoudre le problème de la démocratie »",
+      "normalized_claim": "Citation sur Arrow dans les années 50.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-5c006f2bddfd3e31",
+        "SUP-e315780bc74b49d9"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 224,
+      "end": 400,
+      "claim_text": "et poursuit : « Hervé Raynaud, dans la ligne de cette démarche, a voulu formaliser le problème de la décision de gestion impliquant des critères multiples et contradictoires. »",
+      "normalized_claim": "Citation sur Raynaud et la décision de gestion.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 401,
+      "end": 494,
+      "claim_text": "Ce sont la démarche elle-même et les axiomes d’Arrow en propre qui passent de l’un à l’autre.",
+      "normalized_claim": "Héritage : démarche et axiomes d'Arrow.",
+      "support_ids": [
+        "SUP-5c006f2bddfd3e31",
+        "SUP-e315780bc74b49d9"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 31,
+      "claim_text": "Transporter n’est pas recopier.",
+      "normalized_claim": "L'article modifie ce qu'il hérite d'Arrow.",
+      "support_ids": [
+        "SUP-e315780bc74b49d9",
+        "SUP-10c3b4bbff5cec59"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 32,
+      "end": 197,
+      "claim_text": "L’axiome d’Arrow que le texte francise en « indépendance par rapport aux alternatives irrelevantes » y est examiné, puis écarté : « Il serait ici inutilement fort. »",
+      "normalized_claim": "IIA examiné et jugé trop fort.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-10c3b4bbff5cec59",
+        "SUP-e315780bc74b49d9",
+        "SUP-72b1b0c7dfc00690"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 198,
+      "end": 409,
+      "claim_text": "La version propre à Arrow et Raynaud ne convient pas davantage : « L’axiome dit d’indépendance séquentielle d’Arrow et Raynaud serait au contraire trop faible pour permettre une distinction entre X4, X5 et X7. »",
+      "normalized_claim": "Indépendance séquentielle jugée trop faible.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 410,
+      "end": 498,
+      "claim_text": "L’article retient entre les deux une indépendance dichotomique supérieure, son axiome 5.",
+      "normalized_claim": "Axiome 5 : indépendance dichotomique supérieure.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-10c3b4bbff5cec59",
+        "SUP-e315780bc74b49d9"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 499,
+      "end": 590,
+      "claim_text": "On peut y lire que choisir un axiome, c’est aussi le régler entre trop fort et trop faible.",
+      "normalized_claim": "Interprétation dérivée.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 60,
+      "claim_text": "Le procédé peut aussi échouer, et l’article ne le cache pas.",
+      "normalized_claim": "L'article déclare une incompatibilité entre ses axiomes.",
+      "support_ids": [
+        "SUP-b8d716b25014aa29",
+        "SUP-e315780bc74b49d9",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 61,
+      "end": 215,
+      "claim_text": "Page 18, à propos de son axiome 6, la monotonie : « Dans le cas général, cet axiome n’est pas compatible avec les axiomes de prudence et d’indépendance. »",
+      "normalized_claim": "Citation p. 18 sur la monotonie.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 216,
+      "end": 308,
+      "claim_text": "Ces trois exigences ne peuvent pas être satisfaites en même temps par une règle de décision.",
+      "normalized_claim": "Dérivé : incompatibilité des trois axiomes.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 309,
+      "end": 399,
+      "claim_text": "L’article en tire une version restrictive, l’axiome 6’, monotonie restreinte au départage.",
+      "normalized_claim": "Axiome 6'.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-b8d716b25014aa29"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 400,
+      "end": 583,
+      "claim_text": "Page 17 déjà, le texte rapporte que « Arrow et Raynaud, dans leur approche, proposent, lorsque l’on est confronté à de telles difficultés, de chercher à ajouter de nouveaux axiomes ».",
+      "normalized_claim": "Citation p. 17.",
+      "support_ids": [
+        "SUP-81b5db4b0315787f",
+        "SUP-5d17c57793905db0",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 298,
+      "claim_text": "La thèse la plus large de l’article porte sur l’ensemble de ces problèmes : « les solutions des problèmes de décision multicritère sont très spécifiques et il ne peut être question de tous les résoudre au moyen d’un seul et même système d’axiomes et par conséquent d’une règle unique de décision ».",
+      "normalized_claim": "Thèse : pas de système d'axiomes unique.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-ff16f64e0bd3cd6a",
+        "SUP-56bebeb1ec746a5c"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 299,
+      "end": 482,
+      "claim_text": "Sur la même page, il ajoute : « Pour Arrow et Raynaud, l’obstination de ceux qui prétendent pouvoir appliquer légitimement à tous les cas une panoplie limitée de recettes est vaine. »",
+      "normalized_claim": "Citation p. 19, même page que la précédente.",
+      "support_ids": [
+        "SUP-813433b6d138c5f0",
+        "SUP-ff16f64e0bd3cd6a",
+        "SUP-9030ad7d5984cbed",
+        "SUP-d7e1db658a330073",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 76,
+      "claim_text": "Le titre de l’article annonce « Un outil d’aide à la décision multicritère »",
+      "normalized_claim": "Titre de l'article.",
+      "support_ids": [
+        "SUP-415fe0d27965e16e",
+        "SUP-4245d0feccfd5c21",
+        "SUP-59b3f7b10f179bbf"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 78,
+      "end": 142,
+      "claim_text": "et ses dernières pages nomment bien trois éditeurs de logiciels.",
+      "normalized_claim": "Trois éditeurs de logiciels nommés en fin d'article.",
+      "support_ids": [
+        "SUP-59b3f7b10f179bbf"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 143,
+      "end": 432,
+      "claim_text": "Il prend pourtant soin de prévenir un contresens sur la batterie d’axiomes qu’il expose : cette batterie « pourrait sembler souhaitable pour tous les cas possibles, ou bien, être préconisée par Arrow et Raynaud comme étant leur méthode. Ce serait une compréhension erronée de l’approche ».",
+      "normalized_claim": "Citation p. 18 sur le contresens.",
+      "support_ids": [
+        "SUP-4712cfd1742e17f4",
+        "SUP-813433b6d138c5f0",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 433,
+      "end": 549,
+      "claim_text": "La batterie exposée est un exemple de ce que la démarche permet de construire, pas la méthode maison de ses auteurs.",
+      "normalized_claim": "Interprétation : la batterie est un exemple.",
+      "support_ids": [
+        "SUP-4712cfd1742e17f4",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 211,
+      "claim_text": "La conclusion vise l’usage même des méthodes toutes faites : il s’agit de « ne pas employer une méthode dont on n’ait pas accepté profondément les fondements qui, eux, ne sont pas de la technique mathématique ».",
+      "normalized_claim": "Citation de la conclusion.",
+      "support_ids": [
+        "SUP-59b3f7b10f179bbf"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 92,
+      "claim_text": "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ».",
+      "normalized_claim": "Point faible nommé p. 20.",
+      "support_ids": [
+        "SUP-59b3f7b10f179bbf",
+        "SUP-4712cfd1742e17f4",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 93,
+      "end": 181,
+      "claim_text": "La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore",
+      "normalized_claim": "Bibliothèque d'axiomes inexistante.",
+      "support_ids": [
+        "SUP-4712cfd1742e17f4",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 183,
+      "end": 323,
+      "claim_text": "et le texte ajoute que le décideur gestionnaire ne peut « en général se passer d’un expert qui l’aide à formuler correctement ses axiomes ».",
+      "normalized_claim": "Besoin d'un expert.",
+      "support_ids": [
+        "SUP-4712cfd1742e17f4",
+        "SUP-813433b6d138c5f0"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "L’article est signé « par Jacques Pasquier-Dorthe et Hervé Raynaud »",
+      "normalized_claim": "Signature.",
+      "support_ids": [
+        "SUP-5d17c57793905db0",
+        "SUP-81b5db4b0315787f",
+        "SUP-c8b5925ca9762ce1",
+        "SUP-415fe0d27965e16e"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 70,
+      "end": 157,
+      "claim_text": "et il parle pourtant d’Arrow et de Raynaud à la troisième personne d’un bout à l’autre.",
+      "normalized_claim": "Troisième personne.",
+      "support_ids": [
+        "SUP-5d17c57793905db0",
+        "SUP-81b5db4b0315787f",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 158,
+      "end": 270,
+      "claim_text": "Les outils qu’il expose y sont dits « le fruit d’une longue collaboration entre Kenneth Arrow et Hervé Raynaud »",
+      "normalized_claim": "Citation sur la collaboration.",
+      "support_ids": [
+        "SUP-5d17c57793905db0",
+        "SUP-81b5db4b0315787f",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 272,
+      "end": 328,
+      "claim_text": "et aucun résultat n’y est attribué à l’autre signataire.",
+      "normalized_claim": "Aucun résultat attribué à Pasquier-Dorthe.",
+      "support_ids": [
+        "SUP-5d17c57793905db0",
+        "SUP-81b5db4b0315787f",
+        "SUP-0515e3050658c8fb",
+        "SUP-6b64bcfc02f8ac8c"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 329,
+      "end": 395,
+      "claim_text": "C’est une présentation, qui « s’adresse à des non-mathématiciens »",
+      "normalized_claim": "Présentation pour non-mathématiciens.",
+      "support_ids": [
+        "SUP-0515e3050658c8fb"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 397,
+      "end": 475,
+      "claim_text": "d’une approche qu’il ne date jamais autrement que par ces « quelques années ».",
+      "normalized_claim": "Approche non datée.",
+      "support_ids": [
+        "SUP-5d17c57793905db0",
+        "SUP-81b5db4b0315787f",
+        "SUP-c8b5925ca9762ce1"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 171,
+      "claim_text": "Les deux noms se retrouvent ensemble sur un livre que l’article cite lui-même en note : Social Choice and Multicriterion Decision-Making, publié en 1986 par The MIT Press.",
+      "normalized_claim": "Livre commun de 1986 cité en note.",
+      "support_ids": [
+        "SUP-23e332af43bebb13",
+        "SUP-36ee1b71e28feb25",
+        "SUP-81b5db4b0315787f",
+        "SUP-a1259e7051279e8f",
+        "SUP-eb7935232b522a06"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 172,
+      "end": 252,
+      "claim_text": "Ce que les deux hommes y écrivent de leur main, il faudra l’ouvrir pour le voir.",
+      "normalized_claim": "Le livre de 1986 n'a pas été ouvert.",
+      "support_ids": [
+        "SUP-36ee1b71e28feb25",
+        "SUP-03ae5252a9b71104",
+        "SUP-8214c7681112727e"
+      ]
+    }
+  ]
+}

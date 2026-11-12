@@ -1,43 +1,23 @@
 {
   "protocol_version": 2,
   "concept_id": "approche-axiomatique-arrow-raynaud",
-  "candidate_sha256": "cc886095874bc750922dda99ae8c47de01c6c68323b00f5713dbcb0a8cb4651a",
+  "candidate_sha256": "fe286a86b48a94b5f8e1a72f7e8f975c4e381f5f3fca383367523877d67e0ade",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 71,
-  "supported": 65,
-  "failed": 6,
+  "claims": 63,
+  "supported": 61,
+  "failed": 2,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C001",
+      "claim_id": "C043",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis attestent une « large collection » de recettes multicritères (citation tierce d'Arrow et Raynaud), que chaque méthode est la recette de son auteur, et que l'article nomme trois éditeurs de logiciels p. 21. Ils ne portent ni le dénombrement « des dizaines », ni que chaque méthode a son nom et sa formule, ni que certaines méthodes ont chacune leur logiciel : la quantification et la caractérisation excèdent les appuis."
+      "reason": "La source fournie qualifie l'incompatibilité : « Dans le cas général, cet axiome n'est pas compatible… ». Le claim l'énonce sans ce qualificatif, comme impossibilité absolue pour toute règle de décision."
     },
     {
-      "claim_id": "C002",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni pour ce claim ; il affirme un fait sur le comportement des méthodes (deux méthodes, mêmes données, deux résultats) et n'est pas purement hypothétique."
-    },
-    {
-      "claim_id": "C054",
+      "claim_id": "C055",
       "verdict": "TOO_STRONG",
-      "reason": "La citation p. 18 est portée par notes[2] et definition_de_lauteur. Les appuis fournis pour ce claim ne disent pas que l'article a exposé une batterie d'axiomes « cohérente » ni « la règle qui la satisfait » ; ils notent au contraire une incompatibilité entre axiomes p. 18. Cette caractérisation de la progression de l'article excède les appuis."
-    },
-    {
-      "claim_id": "C057",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis disent qu'il ne faut pas employer une méthode dont on n'a pas accepté les fondements, qui ne sont pas de la technique mathématique. Ils ne disent pas que le choix des axiomes ne se délègue pas ; notes[2] rapporte même que le décideur ne peut en général se passer d'un expert pour formuler ses axiomes. L'affirmation catégorique « elle ne se sous-traite pas » excède les appuis."
-    },
-    {
-      "claim_id": "C060",
-      "verdict": "TOO_STRONG",
-      "reason": "La citation est portée par notes[2] et definition_de_lauteur, mais ces appuis juxtaposent l'absence de bibliothèque et le besoin d'un expert sans établir le lien de conséquence que pose « si bien que » ; corrélation rendue en causalité."
-    },
-    {
-      "claim_id": "C061",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis portent le besoin « en général » d'un expert pour formuler les axiomes. Ils ne portent pas que la démarche « promet de rendre au décideur la maîtrise de ses propres exigences », et « il lui faut » supprime le « en général » de la source."
+      "reason": "Les appuis fournis ne donnent la proposition qu'au subjonctif (« le décideur gestionnaire ne puisse en général se passer… »), sans la principale qui la gouverne ; le claim la convertit en assertion indicative que le texte ajouterait, sans que les appuis établissent ce cadre modal."
     }
   ]
 }
