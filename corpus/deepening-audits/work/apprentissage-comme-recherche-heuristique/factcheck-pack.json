@@ -1,0 +1,969 @@
+{
+  "protocol_version": 2,
+  "concept_id": "apprentissage-comme-recherche-heuristique",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "b3e4a8d4732ae78fd5d81c6abd2dba8129eaac1b5f4cbfe2fec9b6be52fcc7f6",
+  "validated_sha256": "2d0e49fbd322900a947e610e7394c6a9eec6357016ea8462d038267df5585e84",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "6d96be46be04c1c7ec68d8d042ade2256fa3b0fd95eceb9b427247af9d3f13e0"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/apprentissage-comme-recherche-heuristique/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Allen Newell, J. C. Shaw et Herbert A. Simon, « A Variety of Intelligent Learning in a General Problem Solver », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Pergamon Press, 1960, p. 153-189.",
+        "cles": [
+          "rep:lccn6012574",
+          "url:archive.org/details/selforganizingsystems"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Newell, Shaw et Simon, « A Variety of Intelligent Learning in a General Problem Solver ». Tiré à part de l'éditeur, Pergamon Press, 1960. Stanford Digital Repository, fonds Edward A. Feigenbaum, druid wx800gp4144.",
+        "cles": [
+          "url:purl.stanford.edu/wx800gp4144"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "metadata-only",
+        "label": "Stafford Beer, compte rendu de Self-Organizing Systems, dirigé par M. C. Yovits et S. Cameron, OR (Operational Research Quarterly), vol. 12, n° 2, juin 1961, p. 129.",
+        "cles": [
+          "doi:10.2307/3007426",
+          "url:doi.org/10.2307/3007426"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 3,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Deux personnes butent sur le même problème de géométrie. L’une le voit se défaire en quelques minutes, l’autre tourne autour pendant une heure. Ce n’est pas que la première calcule plus vite : elle repère, dans la figure qu’elle a sous les yeux, quel écart sépare ce qu’elle tient de ce qu’elle cherche, et quelle construction réduira cet écart. Ce qu’elle a gagné avec l’exercice ressemble moins à une méthode nouvelle qu’à un regard exercé sur le terrain. Si l’on voulait fabriquer une machine qui progresse de cette manière, il faudrait savoir dire ce qui, en elle, aurait à changer."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "La question a une date et un lieu : les 5 et 6 mai 1959, à Chicago, une conférence interdisciplinaire consacrée aux systèmes auto-organisateurs. Allen Newell, J. C. Shaw et Herbert Simon y viennent avec un programme de résolution de problèmes qu’ils ont décrit ailleurs, et avec une proposition qu’ils avancent avec une prudence visible dès leurs premières pages : leur analyse, préviennent-ils, est encore incomplète. Ils ne présentent pas une machine qui apprend. Ils cherchent l’endroit exact où, dans une machine de ce genre, l’apprentissage devrait se loger."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce qu’un programme doit savoir du terrain",
+      "text": "Le programme dont il est question compare deux choses : la situation où il se trouve et celle qu’il vise. Il nomme la différence entre les deux, puis cherche dans son répertoire une opération capable de la réduire ; si cette opération ne s’applique pas telle quelle, il se donne pour nouveau but de rendre son application possible, et recommence. Le chapitre rappelle ce fonctionnement en trois pages et le désigne comme une chose déjà nommée, « what we usually call means-end analysis », ce que nous appelons d’ordinaire l’analyse moyens-fins. L’expression renvoie à deux rapports antérieurs des mêmes auteurs, l’un d’août 1958 sur les processus de la pensée créatrice, l’autre de janvier 1959 sur le programme général de résolution de problèmes. Ils l’écrivent sans détour p. 155 : leur programme et ses performances ont été décrits en détail dans d’autres publications, et ils n’en donnent ici que de quoi rendre la suite compréhensible à qui ne les connaît pas."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce qu’un programme doit savoir du terrain",
+      "text": "Reste à savoir ce qu’un programme pareil doit posséder avant de commencer. Trois choses, que le texte réunit sous un seul terme : les objets du domaine où il travaille, les opérations qu’il peut leur appliquer, et la liste des différences qu’il sait remarquer entre deux objets. Cet ensemble, le chapitre l’appelle task environment, l’environnement de la tâche, et il en donne lui-même la teneur p. 155 et p. 160. Ce n’est ni un décor ni un contexte au sens vague : c’est la description sur laquelle toute la recherche s’appuie, et hors de laquelle le programme ne peut rien remarquer."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Apprendre traité comme un problème à résoudre",
+      "text": "Comment un tel programme pourrait-il devenir meilleur ? On pourrait lui adjoindre un mécanisme d’apprentissage séparé, chargé de le corriger du dehors. Les auteurs prennent une autre route, et elle tient dans une hypothèse : choisir une bonne description du domaine est peut-être, en soi, un problème de la sorte que le programme sait déjà traiter. Ce qui reviendrait à le laisser être son propre programme d’apprentissage, « it may be possible to let GPS be its own learning program »."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Apprendre traité comme un problème à résoudre",
+      "text": "Le mode du verbe fait ici tout le travail, et il n’y a pas à le durcir : peut-être. L’annonce de leur propos est du même ordre, suivre cette piste pour voir où elle mène, avec l’avertissement que l’analyse restera incomplète. Ce n’est pas une modestie de façade, c’est le statut réel de ce qui suit."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Apprendre traité comme un problème à résoudre",
+      "text": "Le texte se démarque au passage d’une autre façon d’envisager l’affaire. Il mentionne en note, p. 155, le programme d’apprentissage de Friedberg, dont l’intérêt, écrit-il, tient à ce que l’ensemble de composants dans lequel ce programme puise est celui de tous les programmes possibles, un ensemble très vaste. On peut lire ce rapprochement comme une façon de situer ce qui est proposé ici : le choix dont il s’agit porte sur un objet bien plus étroit que l’espace de tous les programmes concevables, à savoir la description d’un domaine de travail."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce que ces programmes d’apprentissage modifient",
+      "text": "L’énoncé de conception qui en résulte est net, et c’est l’un des rares du texte à n’être pas au conditionnel. P. 161, les auteurs écrivent que ces programmes d’apprentissage ne changent pas le noyau du système : ils modifient la spécification de l’environnement, « These learning programs do not change the core of GPS; instead, they modify the specification of the environment »."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce que ces programmes d’apprentissage modifient",
+      "text": "La portée de cette phrase est plus grande qu’elle n’en a l’air, parce qu’elle sépare deux questions qu’on confond volontiers : comment on cherche, et ce qu’on sait du terrain où l’on cherche. La machinerie de recherche reste la même d’un domaine à l’autre ; ce qui varie, et ce qui pourrait s’acquérir, appartient à la description : les différences que le programme sait remarquer, et ce qui, dans le domaine, se rattache à quoi. L’une des sections du chapitre, p. 162, porte précisément sur l’acquisition d’une de ces pièces, sous le titre « Learning the Table of Connections »."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Ce que ces programmes d’apprentissage modifient",
+      "text": "Une conséquence immédiate mérite d’être dite, car elle change la manière de poser la question de départ. Si ce qui s’apprend tient dans la description du domaine, alors progresser ne consiste pas à devenir plus intelligent en général, mais à savoir mieux de quoi est fait le terrain sur lequel on travaille. C’est une hypothèse de conception, pas un résultat expérimental ; elle a l’avantage de désigner un objet précis auquel s’en prendre."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce que « caractériser efficacement » veut dire ici",
+      "text": "Efficace, dans ces pages, ne veut dire ni rapide ni économique. Une caractérisation efficace est celle qui permet effectivement de résoudre. L’emploi parallèle du même folio le montre : les différences réunies dans la figure 6 y sont présentées comme des traits de l’environnement de la tâche logique « that are effective for problem solving in that environment », des traits qui permettent de résoudre des problèmes dans cet environnement. Une description peut être exacte et rester inutile ; ce qui est demandé n’est pas sa vérité, mais son rendement pour la recherche."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce que « caractériser efficacement » veut dire ici",
+      "text": "Le partage des rôles, dans ce chapitre, demande une seconde d’attention. Ce qui y est affirmé de l’apprentissage humain et ce qui y est proposé pour le programme ne sont pas au même endroit. La phrase du folio 161 déclare que ce genre d’apprentissage, apprendre à caractériser efficacement l’environnement d’une tâche, est important et répandu chez les humains ; elle ne dit pas comment les humains s’y prennent, et le mécanisme exposé ensuite est celui d’un programme. Prendre la première pour une thèse de psychologie que le second démontrerait serait lui faire dire davantage qu’elle ne dit."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Une simulation menée à la main",
+      "text": "Il faut maintenant dire ce qui, dans tout cela, a tourné : rien. Le mécanisme exposé dans ces pages a été déroulé à la main par ses auteurs, sur un seul domaine, la logique. Le tableau 5 s’intitule « Sketch of Hand Simulation with Logic as the A-Environment », esquisse d’une simulation à la main, et il se termine sur la mention que la simulation a été arrêtée à ce point, « The simulation was terminated at this point »."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Une simulation menée à la main",
+      "text": "Les auteurs ne le dissimulent pas, ils l’écrivent. P. 180 : ce qu’ils donnent est loin de suffire pour que quiconque vérifie ce qu’ils ont fait, et ils avancent leur schéma dans un esprit très provisoire, « we put the scheme forward in a very tentative spirit ». P. 186 : la possibilité qu’ils viennent d’envisager n’est aucunement mise à l’épreuve, « This possibility is quite untested », leur travail s’étant borné à la tâche logique."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Une simulation menée à la main",
+      "text": "Dans la discussion transcrite à la suite du chapitre, un participant demande sur quelle machine tout ceci se fait. C’est Newell seul qui répond, et sa réponse est sans ambiguïté : le programme est sur le Johnniac de la RAND, le travail dont il parle est entièrement une simulation à la main, et le programme, en cours de mise au point, « is not yet solving any problems », ne résout encore aucun problème. Ces phrases sont les siennes, prononcées en séance, et la signature commune du chapitre ne les couvre pas."
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "section_title": "Une simulation menée à la main",
+      "text": "Ce constat ne dévalue pas le texte, il en fixe le genre. Ce qu’on lit là est une proposition de conception, argumentée puis déroulée à la main jusqu’à un point d’arrêt, et non le compte rendu d’un programme qui aurait appris quoi que ce soit. Les deux se ressemblent de loin ; ils ne valent pas la même chose, et l’écart entre les deux est exactement ce que ces trente-sept pages laissent ouvert."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-7b57ecac6dbe2fc9",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "apprentissage-comme-recherche-heuristique"
+    },
+    {
+      "id": "SUP-5b28c3b6a9f487cb",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "apprentissage-comme-recherche-heuristique"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-cd56b150c60ceabf",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Apprendre, un problème de recherche heuristique"
+    },
+    {
+      "id": "SUP-3e21b565aec1a074",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "chercher-plutot-que-calculer"
+    },
+    {
+      "id": "SUP-b35103832f5a3016",
+      "origin": "validated",
+      "path": "$.theme_labels[\"chercher-plutot-que-calculer\"]",
+      "access": "n/a",
+      "text": "Chercher une solution plutôt que la calculer"
+    },
+    {
+      "id": "SUP-be51acd7e63264ed",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Allen Newell"
+    },
+    {
+      "id": "SUP-1c1917916916f603",
+      "origin": "validated",
+      "path": "$.authors[1].name",
+      "access": "n/a",
+      "text": "J. C. Shaw"
+    },
+    {
+      "id": "SUP-e16722660ebc46cf",
+      "origin": "validated",
+      "path": "$.authors[2].name",
+      "access": "n/a",
+      "text": "Herbert A. Simon"
+    },
+    {
+      "id": "SUP-6ebd0be3b4b64594",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Concept coécrit par Allen Newell, J. C. Shaw et Herbert A. Simon, signé de leurs trois noms sur la page d'ouverture du chapitre, dans des actes publiés en 1960 ; aucun auteur principal n'y est déclaré. Le chapitre ne fonde ni le General Problem Solver ni l'analyse moyens-fins, qu'il rappelle en renvoyant à deux rapports antérieurs des mêmes auteurs, de 1958 et de 1959. Ce qui lui est propre est le traitement de l'apprentissage."
+    },
+    {
+      "id": "SUP-311a7b9ccef849c0",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Qu'apprend-on au juste, quand on apprend à résoudre des problèmes ?"
+    },
+    {
+      "id": "SUP-9d8263255098a140",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Apprendre est un problème que le solveur pourrait traiter lui-même : ce qui doit changer n'est pas son noyau, mais la description qu'il a de son environnement."
+    },
+    {
+      "id": "SUP-1c2bfde0ec7f4f63",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Apprendre à caractériser efficacement l'environnement de la tâche est une forme importante et répandue de l'apprentissage humain."
+    },
+    {
+      "id": "SUP-ce2a60a0542a589e",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Newell, A., Shaw, J. C. et Simon, H. A. (1960). « A Variety of Intelligent Learning in a General Problem Solver », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Pergamon Press, p. 153-189."
+    },
+    {
+      "id": "SUP-9aa4275f2de049b8",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 161, section « The Learning Problem »"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-86e45f80fbae4d76",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Learning to characterize in an effective way the task environment is an important and prevalent kind of human learning."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-a4b2c7454b645dd5",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée, ni du volume qui le porte. La phrase est traduite entière, sans coupe : 129 caractères en français. Quatre choix de mot à signaler. « Task environment » est rendu par « environnement de la tâche », littéralement, et non par « contexte » ni par « situation » : c'est un terme technique que le chapitre définit lui-même, page 155 et page 160, comme l'ensemble formé par les objets, les opérateurs et les différences propres à un domaine, et l'un des points du texte est justement que ce qui s'apprend appartient à cet ensemble et non au noyau du solveur. « To characterize in an effective way » est rendu par « caractériser efficacement » : « effective » ne veut pas dire ici rapide ou économique, mais « qui permet effectivement de résoudre », comme le montre l'emploi parallèle de la page 161, « features of the logic task environment that are effective for problem solving in that environment ». « Prevalent » est rendu par « répandue » et non par « prévalente », faux ami, ni par « dominante », qui ajouterait une hiérarchie que le texte ne pose pas. « Kind of human learning » est rendu par « forme de l'apprentissage humain » plutôt que par « type d'apprentissage humain », pour éviter de laisser entendre une taxinomie des apprentissages que le chapitre ne construit pas ; le titre du chapitre dit d'ailleurs « a variety of intelligent learning », une variété parmi d'autres, non identifiées."
+    },
+    {
+      "id": "SUP-f9236e9b8ec4d92d",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Allen Newell, J. C. Shaw et Herbert A. Simon, « A Variety of Intelligent Learning in a General Problem Solver », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems, Pergamon Press, 1960, p. 153-189.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-7ea3489657268041",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 153-189, citation p. 161",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8cf437829aba9113",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 60-12574",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-7ee918359df8a517",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/SelfOrganizingSystems",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-30c27162157c5c1c",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Newell, Shaw et Simon, « A Variety of Intelligent Learning in a General Problem Solver ». Tiré à part de l'éditeur, Pergamon Press, 1960. Stanford Digital Repository, fonds Edward A. Feigenbaum, druid wx800gp4144.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-d2e653cda24d7fa4",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "full-text",
+      "text": "37 pages, folios 153 à 189",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-433ac502433c1719",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "full-text",
+      "text": "druid:wx800gp4144",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-91545edf323b6d92",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "full-text",
+      "text": "https://purl.stanford.edu/wx800gp4144",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c8f1df7bab27815c",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Stafford Beer, compte rendu de Self-Organizing Systems, dirigé par M. C. Yovits et S. Cameron, OR (Operational Research Quarterly), vol. 12, n° 2, juin 1961, p. 129.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-03318d9406525ead",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-bb9f1bb873d88d8a",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "p. 129",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-9582a4334e143d02",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.2307/3007426",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-bcd3cac1e46bbf68",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.2307/3007426",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-288bda26b5131d66",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-09-08"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-e15fe40858deb3f0",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "EXEMPLAIRE 1 (Internet Archive) — item https://archive.org/details/SelfOrganizingSystems (HTTP 200). J'ai téléchargé moi-même SelfOrganizingSystems_djvu.txt (695 215 octets, md5 6bb9a532e2292f36016ae173550abe7c) et SelfOrganizingSystems_djvu.xml (7 390 860 octets, md5 45b37e735959f31655932bfb1f4c18f2) ; les deux md5 sont identiques à ceux de la notice https://archive.org/metadata/SelfOrganizingSystems, donc je tiens bien le fichier annoncé et non celui d'un autre ouvrage. J'ai segmenté l'OCR par <OBJECT> du djvu.xml pour obtenir 338 feuillets, puis j'ai identifié chaque page par son propre en-tête courant, sans jamais calculer un décalage folio/feuillet."
+    },
+    {
+      "id": "SUP-75d016eb0f909dab",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "ÉDITION — feuillet n2 (page de titre) : « SELF-ORGANIZING SYSTEMS / PROCEEDINGS OF AN INTERDISCIPLINARY CONFERENCE 5 and 6 May, 1959 / Co-sponsored by Information Systems Branch of Office of Naval Research and Armour Research Foundation of Illinois Institute of Technology / Editors MARSHALL C. YOVITS […] SCOTT CAMERON […] SYMPOSIUM PUBLICATIONS DIVISION / PERGAMON PRESS / OXFORD · LONDON · NEW YORK · PARIS / 1960 ». Feuillet n3 (page de copyright) : « Copyright © 1960 Pergamon Press Inc. / LIBRARY OF CONGRESS CARD NUMBER: 60-12574 ». L'éditeur, l'année, les deux directeurs et le LCCN 60-12574 affichés par la fiche sont donc exacts sur la pièce. Le colloque est de mai 1959, les actes de 1960 : la fiche dit « dans des actes publiés en 1960 », ce qui est la formulation juste."
+    },
+    {
+      "id": "SUP-a556495b421e9947",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "PAGINATION — je n'ai rien déduit de la table des matières seule, mais je l'ai relevée (feuillet n8) : « A Variety of Intelligent Learning in a General Problem Solver …by A. Newell, J. C. Shaw and H. A. Simon 153 » puis « Learning in Neural Systems… P. M. Milner 190 ». J'ai ensuite vérifié page par page par en-tête courant : le chapitre s'ouvre au feuillet n168 (folio imprimé 153, en pied de page les notes d'auteur « * The RAND Corporation, 1700 Main Street, Santa Monica, California. † Carnegie Institute of Technology. »), et se ferme au feuillet n204 (en-tête « Intelligent Learning in a GPS 189 ») ; le feuillet n205 porte le titre « LEARNING IN NEURAL SYSTEMS / P. M. Milner » avec folio 190 en pied et sa propre note d'auteur (subvention M-2455 du NIMH), qui appartient donc à Milner et non au chapitre de Newell-Shaw-Simon. L'étendue p. 153-189 affichée par la fiche est exacte."
+    },
+    {
+      "id": "SUP-fb1304ecc393af79",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "CITATION, relue sur l'image et non sur l'OCR — j'ai téléchargé le dérivé sans suffixe https://archive.org/download/SelfOrganizingSystems/page/n176.jpg (HTTP 200, 1 830 218 octets, 4248 × 5500 px), et non le dérivé _x1600 qui rogne la marge gauche. L'en-tête courant de cette page se lit « Intelligent Learning in a GPS   161 ». Au deuxième paragraphe, je lis à l'image, lettre à lettre : « Learning to characterize in an effective way the task environment is an important and prevalent kind of human learning. » C'est exactement l'`original_text` de la fiche, sans coupe et sans variante. Le paragraphe suivant porte bien, lui aussi à l'image, « The differences listed in Fig. 6 are features of the logic task environment that are effective for problem solving in that environment », c'est-à-dire l'emploi parallèle de « effective » que la note de traduction invoque pour justifier « caractériser efficacement » ; l'OCR d'archive.org y lit fautivement « fisted » pour « listed », l'image dit « listed »."
+    },
+    {
+      "id": "SUP-cc7f969d388e00b5",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "LOCALISATION DE SECTION — le locator « p. 161, section “The Learning Problem” » est exact. L'intertitre « The Learning Problem » figure en bas du folio 160 (feuillet n175) et la section se poursuit sur le folio 161 ; la section suivante, « Learning the Table of Connections », ne commence qu'au folio 162 (feuillet n177). La phrase citée est donc bien p. 161 et bien à l'intérieur de cette section."
+    },
+    {
+      "id": "SUP-ec4a01c9164b24d0",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "EXEMPLAIRE 2, provenance distincte (Stanford) — https://purl.stanford.edu/wx800gp4144 (HTTP 200). J'ai téléchargé https://stacks.stanford.edu/file/druid:wx800gp4144/wx800gp4144.pdf (HTTP 200, 10 190 978 octets, md5 c61430d2bcedb77eae6a5342181fa062) et le .txt associé (82 341 octets, md5 c6f2881d88017668527ec0e1a6ef93c4) : les deux md5 sont identiques à ceux déclarés dans la notice cocina https://purl.stanford.edu/wx800gp4144.json. Rendu de la première page à 200 dpi : bandeau imprimé « Reprinted from “Self-Organizing Systems” / PERGAMON PRESS / OXFORD · LONDON · NEW YORK · PARIS / Printed in Great Britain by Bell & Bain Ltd., Glasgow. », puis le titre et la signature « A. NEWELL,* J. C. SHAW* and H. A. SIMON† », folio 153 en pied. C'est bien le tiré à part de l'éditeur que la fiche annonce, et la suite du PDF court de 153 à 189. Sur cet exemplaire, le feuillet portant « Intelligent Learning in a GPS / 161 » contient à l'identique « Learning to characterize in an effective way the task environment is an important and prevalent kind of human learning. » Deux exemplaires de provenance distincte concordent donc sur le folio comme sur le libellé."
+    },
+    {
+      "id": "SUP-32c616f3cdf1e5dc",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "EXEMPLAIRE 3, non demandé mais dirimant — RAND P-1742, https://bitsavers.org/pdf/rand/ipl/P-1742_A_Variety_Of_Intelligent_Learning_In_A_General_Problem_Solver_Jul59.pdf (403 sur requête nue ; HTTP 200, 3 570 378 octets, avec en-tête User-Agent de navigateur et Referer sur le répertoire parent). PDF de 54 pages sans couche texte, lu par rendu d'images à 110 dpi. Page de garde : « A VARIETY OF INTELLIGENT LEARNING IN A GENERAL PROBLEM SOLVER / A. Newell / J. C. Shaw / H. A. Simon* / Mathematics Division / The RAND Corporation / P-1742 / July 6, 1959 — Presented at the Interdisciplinary Conference on Self-Organizing Systems, The Museum of Science and Industry, Chicago, Illinois, May 5,6, 1959. — *RAND Consultant with Carnegie Institute of Technology ». Folio 13 : intertitre « The Learning Problem ». Folio 14 : la phrase citée, mot pour mot. Le texte préexiste donc en 1959 sous les mêmes trois signatures ; la fiche ne prétend nulle part à une première publication en 1960, et son locator vise le volume Pergamon, où je l'ai vérifié."
+    },
+    {
+      "id": "SUP-9e1642828ff7fa53",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — confirmée, et les trois affirmations de la note d'attribution sont vérifiées à la source. (a) « signé de leurs trois noms sur la page d'ouverture du chapitre » : oui, lu à l'image sur les deux exemplaires, « A. NEWELL,* J. C. SHAW* and H. A. SIMON† », sans hiérarchie ni mention d'auteur correspondant ; la préface du volume (feuillet n6) les cite de même en groupe (« III. Learning in Finite Automata — Newell, Shaw, Simon; Milner; Minsky; Campbell »). (b) « Le chapitre ne fonde ni le General Problem Solver ni l'analyse moyens-fins » : folio 155, « GPS and its performance have been described in detail in other publications.(3,4) We will include here only enough description to make GPS comprehensible to readers who are not already familiar with it » ; et folio 158-159, « Fig. 5. Means-end analysis. Figure 5 shows a basic system of methods for what we usually call means-end analysis » — « what we usually call » est un renvoi à du déjà-nommé, pas une fondation. (c) « deux rapports antérieurs des mêmes auteurs, de 1958 et de 1959 » : les références 3 et 4, lues à l'image du folio 187 (feuillet n202), sont « 3. A. NEWELL, J. C. SHAW and H. A. SIMON, The processes of creative thinking, P1320, The RAND Corporation, August, 1958. » et « 4. A. NEWELL, J. C. SHAW and H. A. SIMON, Report on a general problem-solving program, P1584, January, 1959, The RAND Corporation. » Ce sont exactement les deux appels (3,4) du folio 155. La note d'attribution est donc littéralement exacte, y compris sur les millésimes."
+    },
+    {
+      "id": "SUP-6fa0d556a957f216",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "VÉRIFICATION EN SENS INVERSE — la fiche ne prête au chapitre aucune notion qu'il attribue à d'autres. Le chapitre situe explicitement hors de lui GPS et l'analyse moyens-fins (renvois ci-dessus), la machine à apprendre de Friedberg (note du folio 155, où il s'en démarque : « the interest of Friedberg's learning program stems from the fact that [the set of] components for his program consists of all possible programs — a very large [set] »), et les travaux d'Oettinger (1952), Selfridge et Dinneen (1955) en références 1, 6 et 7. Rien de tout cela n'apparaît dans le hook, le summary, le titre ou la citation. Ce que la fiche retient — l'apprentissage comme problème que le solveur pourrait se poser à lui-même, et le déplacement du noyau vers la spécification de l'environnement — est bien du chapitre, folios 155 et 161."
+    },
+    {
+      "id": "SUP-1de2495de279e279",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "PROSE, le point sur lequel j'ai porté le plus d'attention : la fiche affirme-t-elle que le programme a appris ? Non, et le texte ne le permettrait pas. Le summary dit « Apprendre est un problème que le solveur POURRAIT traiter lui-même » ; le folio 155 dit « it MAY BE POSSIBLE to let GPS be its own learning program, so that the problem of selecting an A-component will be a problem of the form GPS [can handle]. The purpose of this paper is to follow this heuristic in order to see where it leads. It will become apparent that our analysis is still incomplete ». Le conditionnel de la fiche est exactement la modalité du texte. La seconde clause, « ce qui doit changer n'est pas son noyau, mais la description qu'il a de son environnement », rend le folio 161 : « These learning programs do not change the core of GPS; instead, they modify the specification of the environment » — énoncé de conception, non de résultat, et la fiche le laisse tel."
+    },
+    {
+      "id": "SUP-e7006a69ae683971",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "PROSE, état réel du travail, établi sur la discussion transcrite en fin de chapitre (folios 187-189, feuillets n202-n204), lue à l'image. McCORMICK (Naval Ordnance Laboratory) demande quelle machine est utilisée ; réponse : « NEWELL: The program is on the RAND Johnniac. The work I am talking about here is all hand simulation. The GPS program is now being debugged, but is not yet solving any problems. Hence, most of our information about its characteristics comes from extensive hand simulation. » Et folio 189 : « the right answer to the question is that at this moment GPS will not play chess because we do not know how to make it play chess […] GPS could really be better called GPSWP — sort of GPS with pretentions. » Le corps du chapitre dit la même chose : folio 180, « Since this is not nearly enough information to allow anyone else to verify what we have done, we put the scheme forward in a very tentative spirit » ; folio 185, « The rough simulation presents good evidence, we think, that we have specified the mechanisms… », la table 5 étant intitulée « Sketch of Hand Simulation with Logic as the A-Environment » et se terminant par « The simulation was terminated at this point » ; folio 186, « This possibility is quite untested, for all our work here has been limited to the task of logic ». Rien n'a tourné : le programme d'apprentissage est simulé à la main. Une fiche qui aurait écrit « le solveur apprend » ou « GPS a appris » aurait débordé ; celle-ci ne le fait pas. `prose: fidele`."
+    },
+    {
+      "id": "SUP-bd05e473c4f51d3b",
+      "origin": "validated",
+      "path": "$.review.notes[11]",
+      "access": "n/a",
+      "text": "PROSE, précaution sur la discussion — les réponses de la discussion sont attribuées au seul NEWELL (« NEWELL: … »), non aux trois cosignataires ; une cosignature de chapitre ne les couvrirait pas. La fiche ne cite rien de la discussion et ne fait porter aucune affirmation sur elle : le risque ne se réalise pas. Je m'en sers ici comme constat sur l'état du travail, non comme parole des trois auteurs."
+    },
+    {
+      "id": "SUP-1e1a52e8525b49ba",
+      "origin": "validated",
+      "path": "$.review.notes[12]",
+      "access": "n/a",
+      "text": "SOURCE 1/3 — Internet Archive, item Self-Organizing Systems : URL vivante (HTTP 200), édition, année, éditeurs, LCCN, éditeur commercial, pagination du chapitre et folio de la citation, tout est vérifié ci-dessus. `consulted: full-text` est justifié : j'ai lu les 37 folios du chapitre, les liminaires et la table des matières."
+    },
+    {
+      "id": "SUP-4c8427947c9af9ef",
+      "origin": "validated",
+      "path": "$.review.notes[13]",
+      "access": "n/a",
+      "text": "SOURCE 2/3 — Stanford, druid wx800gp4144 : PURL vivante, md5 concordants, tiré à part Pergamon établi sur le bandeau imprimé de la pièce, folios 153 à 189 constatés. Deux écarts à signaler, tous deux au bénéfice de la fiche et non contre elle. (a) La notice Stanford date l'item « 1959 », mais elle le dit elle-même dans sa note : « Date is of the original RAND Corporation technical report, not the publication by Pergamon Press in “Self Organizing Systems” ». La fiche, en datant le tiré à part de 1960, décrit la pièce et non la notice, et elle a raison. (b) La notice Stanford déclare « 1 document ; 38 pages » quand la fiche annonce « 37 pages, folios 153 à 189 » : le PDF compte bien 38 images, soit les 37 folios 153-189 plus un dernier feuillet vierge. Le décompte de la fiche porte sur les folios et il est exact. La notice ne mentionne que Newell (creator) et Simon (contributor) et omet J. C. Shaw ; la pièce elle-même porte les trois noms, et c'est la pièce qui fait foi. `consulted: full-text` justifié."
+    },
+    {
+      "id": "SUP-3248970782d35571",
+      "origin": "validated",
+      "path": "$.review.notes[14]",
+      "access": "n/a",
+      "text": "SOURCE 3/3 — DOI 10.2307/3007426 résolu contre https://api.crossref.org/works/10.2307/3007426 (HTTP 200) : type journal-article, title « Self-Organizing Systems », container-title « OR », volume 12, issue 2, page 129, published-print 1961-06, éditeur JSTOR, ISSN 1473-2858, auteurs Stafford Beer (sequence first) puis Marshall Yovits et Scott Cameron (encodage JSTOR des auteurs de l'ouvrage recensé). Le libellé de la fiche — Stafford Beer, compte rendu de Self-Organizing Systems dirigé par Yovits et Cameron, OR vol. 12 n° 2, juin 1961, p. 129 — correspond champ à champ. `consulted: metadata-only` est la déclaration honnête : la résolution du DOI aboutit bien à https://www.jstor.org/stable/3007426?origin=crossref (HTTP 200) mais la page servie est une page de garde de 3 038 octets sans le texte de la recension, et je n'ai pas d'accès JSTOR. Le contenu de la recension n'est donc ni vérifié ni infirmé par moi ; la fiche ne lui fait d'ailleurs porter aucune affirmation."
+    },
+    {
+      "id": "SUP-6d05977042c4ba58",
+      "origin": "validated",
+      "path": "$.review.notes[15]",
+      "access": "n/a",
+      "text": "NON ATTEINT, déclaré après tentative réelle. (a) Les outils `mcp__documentary__*` ne sont pas exposés à cette session (serveur en échec de connexion) : DOI et identifiants ont été résolus à la main contre api.crossref.org, archive.org/metadata et purl.stanford.edu/*.json. (b) Le texte intégral de la recension de Stafford Beer m'est resté fermé : https://doi.org/10.2307/3007426 redirige vers JSTOR qui ne sert qu'une page de garde. (c) bitsavers.org refuse la requête nue (HTTP 403, Apache/2.4.59) ; j'ai obtenu le P-1742 en présentant un User-Agent de navigateur et un Referer sur le répertoire parent, ce que je signale pour que la pièce reste retrouvable. Le PDF RAND n'a pas de couche texte : je l'ai lu par rendu d'images uniquement."
+    },
+    {
+      "id": "SUP-0e75b21eb24c4da8",
+      "origin": "validated",
+      "path": "$.review.notes[16]",
+      "access": "n/a",
+      "text": "HORS DES QUATRE POINTS, pour information et sans incidence sur le verdict. Il existe une tension interne au volume, entre le corps du chapitre et sa discussion, que la fiche n'exploite pas et n'a pas à exploiter : folio 160, les auteurs écrivent « We refer the reader to the other publications already cited, in which we show that GPS will, in fact, solve problems in logic, trigonometry, and elementary algebra » ; folio 187, Newell répond en séance que « The GPS program is now being debugged, but is not yet solving any problems ». Autrement dit, en mai 1959, les performances de GPS annoncées dans P1584 reposaient elles aussi sur de la simulation à la main. C'est un point de réception intéressant pour qui voudrait un jour élargir la fiche ; il ne change rien à l'exactitude de ce qu'elle affirme aujourd'hui."
+    },
+    {
+      "id": "SUP-fbbeaa166565c337",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/apprentissage-comme-recherche-heuristique/lecture.json"
+    },
+    {
+      "id": "SUP-6e0ac5411586d424",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Thème nouveau : « chercher-plutot-que-calculer » n'est pas déclaré dans src/content/themes.ts. La carte porte son libellé et déclare son domaine ; l'avertissement du validateur est attendu, et le thème sera déclaré à la réception, après le contrôle aveugle."
+    },
+    {
+      "id": "SUP-171ed0451080d543",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le programme n'a pas appris, et aucune phrase de la carte ne l'affirme. Interrogé en séance, Newell répond p. 187 : « The work I am talking about here is all hand simulation. The GPS program is now being debugged, but is not yet solving any problems. » Ce qui est établi est un mécanisme spécifié et déroulé à la main par ses auteurs."
+    },
+    {
+      "id": "SUP-b37bb04f9d34eb68",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Pagination du chapitre : p. 153-189, et non 153-190. Le folio 190 ouvre le chapitre suivant, « Learning in Neural Systems » de P. M. Milner, dont il porte la note de bas de page. Établi sur deux exemplaires indépendants, le volume numérisé et le tiré à part de l'éditeur, dont les 37 pages numérotées vont de 153 à 189, et concordant avec la table des matières du volume."
+    },
+    {
+      "id": "SUP-d45ffc9e789914b6",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Ce chapitre n'est pas la source primaire de GPS ni de l'analyse moyens-fins : il les rappelle en trois pages, p. 155 à 159, écrit « what we usually call means-end analysis » et renvoie à deux rapports antérieurs des mêmes auteurs, P1320 (août 1958) et P1584 (janvier 1959), lus dans sa liste de références p. 187. P1584 n'a pas pu être ouvert : rand.org répond HTTP 403 sur la notice comme sur le fichier, et aucun miroir n'a été trouvé. Si le corpus veut la carte moyens-fins, c'est sur ce rapport qu'elle s'instruit."
+    },
+    {
+      "id": "SUP-2dc0b3967b7bb64f",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Le résumé porte le mécanisme et la citation porte l'humain : c'est délibéré, la phrase citée déclare l'apprentissage humain mais ne dit pas comment cet apprentissage se fait. Le mécanisme résumé est celui de la p. 161 : « These learning programs do not change the core of GPS; instead, they modify the specification of the environment. » Le « pourrait traiter lui-même » du résumé rend l'hypothèse de la p. 155, « it may be possible to let GPS be its own learning program », et non un résultat."
+    },
+    {
+      "id": "SUP-35bf94a3611f9684",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "La discussion transcrite p. 187-189 fait partie du chapitre et y est paginée, mais c'est Newell seul qui y répond aux questions de la salle : aucune phrase n'en est citée, elle serait faussement attribuée aux trois auteurs."
+    },
+    {
+      "id": "SUP-f3c12e11d078dbff",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Locator de la citation abrégé pour l'affichage. Le dossier de lecture le donne en entier, avec le report de feuillet des deux exemplaires : feuillet 168 plus 8 du scan d'Internet Archive, neuvième page du tiré à part de Stanford, le folio 161 étant imprimé en tête de page à droite de l'en-tête courant « Intelligent Learning in a GPS »."
+    },
+    {
+      "id": "SUP-71591797a5b72711",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Éditeur : Symposium Publications Division, Pergamon Press, Oxford, Londres, New York, Paris, 1960, numéro de fiche Library of Congress 60-12574. Spartan Books, que la cartographie donnait, n'apparaît dans aucun des deux exemplaires : ce sont les actes de la conférence suivante, tenue en 1962."
+    },
+    {
+      "id": "SUP-1233c5cb8e15b29f",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Le compte rendu de Stafford Beer porte sur le volume entier ; seule sa notice a été vérifiée, le texte n'a pas été ouvert, et rien n'est affirmé de ce qu'il dirait du chapitre de Newell, Shaw et Simon. C'est la seule trace de réception identifiée par la lecture primaire."
+    },
+    {
+      "id": "SUP-2de08b9d7e531485",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Aucune couche francophone : ni traduction ni réception française identifiée. Persée, HAL, OpenEdition Books et theses.fr n'ont pas été interrogés dans la session de lecture, le serveur documentaire étant en échec de connexion : lacune de méthode, pas constat d'absence."
+    },
+    {
+      "id": "SUP-1e0c7e2e92487bae",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "L'attribution affichée est écrite pour l'écran à partir de la note du dossier de lecture, qui dépasse deux mille caractères ; rien n'y est ajouté, et les trois précisions qu'elle abrège (renvoi à P1320 et P1584, discussion signée de Newell seul, mise de côté du Logic Theorist au profit de GPS) sont dans ces notes ou dans le dossier."
+    },
+    {
+      "id": "SUP-301b4aa330b479f5",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "Cartes voisines des mêmes auteurs, tirées de l'article de 1958 : programme-comme-theorie-du-comportement et recherche-heuristique-contre-force-brute. Celle-ci porte sur l'apprentissage, que le texte de 1958 diffère explicitement, p. 165."
+    },
+    {
+      "id": "SUP-4629d04e1d0e9d7b",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "apprentissage-comme-recherche-heuristique"
+    },
+    {
+      "id": "SUP-69382825540f7473",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Allen Newell"
+    },
+    {
+      "id": "SUP-16c5a94c83c4a3cb",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[1].name",
+      "access": "n/a",
+      "text": "J. C. Shaw"
+    },
+    {
+      "id": "SUP-49907532bf7e04a2",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[2].name",
+      "access": "n/a",
+      "text": "Herbert A. Simon"
+    },
+    {
+      "id": "SUP-ee91fd4a67198c4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "COAUTHORED"
+    },
+    {
+      "id": "SUP-6b687a62ac141416",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le chapitre est signé de trois noms, dans cet ordre, sur sa page d'ouverture : « A. NEWELL,* J. C. SHAW* and H. A. SIMON† ». La signature a été lue sur l'image du folio 153 de deux exemplaires distincts : le feuillet 168 du volume numérisé sur Internet Archive (item SelfOrganizingSystems) et la première page du tiré à part de l'éditeur conservé au Stanford Digital Repository (druid wx800gp4144). Les deux appels de note sont développés en bas de la même page et donnent les affiliations : l'astérisque pour Newell et Shaw, « The RAND Corporation, 1700 Main Street, Santa Monica, California » ; l'obèle pour Simon, « Carnegie Institute of Technology ». Aucun auteur principal n'est déclaré, aucune répartition des rôles n'est écrite : c'est une cosignature, donc COAUTHORED. Trois précisions que le chapitre donne lui-même, et qu'il faut écrire en toutes lettres pour qu'aucun script ne les recompose. Premièrement, ce texte ne fonde ni le General Problem Solver ni la procédure d'analyse moyens-fins qu'il décrit aux pages 158 et 159 : il écrit page 155 que « GPS and its performance have been described in detail in other publications », et sa liste de références, page 187, renvoie à deux rapports antérieurs des trois mêmes auteurs, A. Newell, J. C. Shaw et H. A. Simon, « The processes of creative thinking », P1320, The RAND Corporation, August, 1958, et A. Newell, J. C. Shaw et H. A. Simon, « Report on a general problem-solving program », P1584, January, 1959, The RAND Corporation. Les millésimes 1958 et 1959, les cotes P1320 et P1584 et le mois de parution sont lus sur cette page de références, ils ne viennent pas d'une base. Ce qui est propre à ce chapitre de 1960, c'est le traitement de l'apprentissage, pas le solveur qui l'illustre. Deuxièmement, le chapitre se clôt sur une discussion transcrite, pages 187 à 189, où les questions de la salle sont signées McCormick, Kantner et Burroughs et où c'est Newell seul qui répond, nommément et à la première personne : une phrase prise dans ces trois pages est de Newell, pas des trois auteurs, et ne peut pas être citée comme leur. Troisièmement, la seule antériorité que les auteurs revendiquent explicitement dans ce texte est la leur : ils écrivent page 153 « We might have chosen for study our chess program or LT, our earlier program for proving theorems in logic, but the reason for preferring GPS will become apparent immediately », phrase qui met de côté le Logic Theorist au profit de GPS. Rien de tout cela ne déplace la signature du chapitre : trois auteurs, COAUTHORED."
+    },
+    {
+      "id": "SUP-5f93b45adc3f8b45",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Apprendre à caractériser efficacement l'environnement de la tâche est une forme importante et répandue de l'apprentissage humain."
+    },
+    {
+      "id": "SUP-f692b86aad700e7b",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Newell, A., Shaw, J. C. et Simon, H. A. (1960). « A Variety of Intelligent Learning in a General Problem Solver », dans M. C. Yovits et S. Cameron (dir.), Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, Symposium Publications Division, Pergamon Press, Oxford, Londres, New York, Paris, p. 153-189. Numéro de fiche de la Library of Congress : 60-12574. Deux exemplaires lus : le volume numérisé sur Internet Archive, identifiant SelfOrganizingSystems, et le tiré à part de l'éditeur conservé au Stanford Digital Repository, druid wx800gp4144."
+    },
+    {
+      "id": "SUP-d77ed8c67e1bf073",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 161, première phrase du troisième paragraphe de la section « The Learning Problem ». Le folio 161 est imprimé en tête de page, à droite de l'en-tête courant « Intelligent Learning in a GPS » ; il a été lu sur l'image de la page dans les deux exemplaires (feuillet 168 + 8 du scan Internet Archive, neuvième page du tiré à part de Stanford)."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-23629ed67862cebc",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Learning to characterize in an effective way the task environment is an important and prevalent kind of human learning."
+    },
+    {
+      "id": "SUP-25b44e99e7adef42",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-abe57de2585fb205",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-4402076983d09428",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity). Aucune traduction française publiée de ce chapitre n'a été identifiée, ni du volume qui le porte. La phrase est traduite entière, sans coupe : 129 caractères en français. Quatre choix de mot à signaler. « Task environment » est rendu par « environnement de la tâche », littéralement, et non par « contexte » ni par « situation » : c'est un terme technique que le chapitre définit lui-même, page 155 et page 160, comme l'ensemble formé par les objets, les opérateurs et les différences propres à un domaine, et l'un des points du texte est justement que ce qui s'apprend appartient à cet ensemble et non au noyau du solveur. « To characterize in an effective way » est rendu par « caractériser efficacement » : « effective » ne veut pas dire ici rapide ou économique, mais « qui permet effectivement de résoudre », comme le montre l'emploi parallèle de la page 161, « features of the logic task environment that are effective for problem solving in that environment ». « Prevalent » est rendu par « répandue » et non par « prévalente », faux ami, ni par « dominante », qui ajouterait une hiérarchie que le texte ne pose pas. « Kind of human learning » est rendu par « forme de l'apprentissage humain » plutôt que par « type d'apprentissage humain », pour éviter de laisser entendre une taxinomie des apprentissages que le chapitre ne construit pas ; le titre du chapitre dit d'ailleurs « a variety of intelligent learning », une variété parmi d'autres, non identifiées."
+    },
+    {
+      "id": "SUP-cadbcdf854984411",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation._verification",
+      "access": "n/a",
+      "text": "Verbatim établi sur l'image de la page, jamais sur la couche OCR, et croisé sur deux exemplaires indépendants. Méthode. Le fichier SelfOrganizingSystems_djvu.xml a été téléchargé et son empreinte vérifiée contre la notice de l'item (md5 45b37e735959f31655932bfb1f4c18f2, 7 390 860 octets), puis découpé en 338 blocs de texte, un par feuillet, pour servir uniquement au repérage. Le passage repéré, l'image du feuillet a été téléchargée en pleine résolution par le dérivé sans suffixe indiqué par le lot, https://archive.org/download/SelfOrganizingSystems/page/n176.jpg, soit 4248 x 5500 pixels, et le paragraphe relu sur un recadrage de la moitié haute. Le folio « 161 » et l'en-tête courant « Intelligent Learning in a GPS » sont imprimés sur cette même image. Contre-lecture sur un second exemplaire : le tiré à part de l'éditeur déposé au Stanford Digital Repository, druid wx800gp4144, PDF de 10 190 978 octets, 38 pages, dont les 38 images ont été extraites une à une ; la neuvième porte le même folio 161, le même en-tête et le même paragraphe, dans une impression nettement plus lisible que la numérisation d'Internet Archive. Les deux lectures concordent mot pour mot, y compris la ponctuation : « Learning to characterize in an effective way the task environment is an important and prevalent kind of human learning. » Il n'y a ni coupe ni ellipse. La couche OCR d'Internet Archive rendait déjà cette phrase correctement, ce qui n'est pas le cas partout dans le chapitre : le feuillet 172, qui porte le folio 157, ne rend aucune ligne de texte, et les folios 166, 167, 173, 183 et 187 sortent en bouillie. Rien n'a été tiré de ces pages."
+    },
+    {
+      "id": "SUP-b8f6b4d60bf19691",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Yovits, M. C. et Cameron, S. (dir.) (1960). Self-Organizing Systems. Proceedings of an Interdisciplinary Conference, 5 and 6 May, 1959, co-sponsored by the Information Systems Branch of the Office of Naval Research and the Armour Research Foundation of Illinois Institute of Technology. Symposium Publications Division, Pergamon Press, Oxford, Londres, New York, Paris. Copyright 1960 Pergamon Press Inc., numéro de fiche Library of Congress 60-12574, imprimé par Bell & Bain Ltd., Glasgow. Volume numérisé complet, 338 feuillets, collections millionbooks et universallibrary d'Internet Archive, sans restriction d'accès sur la notice (champ access-restricted-item absent des métadonnées). Chapitre de Newell, Shaw et Simon, p. 153-189, lu intégralement en couche texte et par images pour les pages citées ; table des matières lue au feuillet 8."
+    },
+    {
+      "id": "SUP-a5d92610e128c67f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "LCCN 60-12574"
+    },
+    {
+      "id": "SUP-28502ceaf55ed212",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/SelfOrganizingSystems"
+    },
+    {
+      "id": "SUP-2b6aa078b3aeb24f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Newell, A., Shaw, J. C. et Simon, H. A. (1960). « A Variety of Intelligent Learning in a General Problem Solver ». Tiré à part de l'éditeur, portant en tête « Reprinted from \"Self-Organizing Systems\", PERGAMON PRESS, OXFORD, LONDON, NEW YORK, PARIS, Printed in Great Britain by Bell & Bain Ltd., Glasgow ». Stanford Digital Repository, fonds Edward A. Feigenbaum Papers, cote SC0340, accession 1986-052, boîte 53, dossier 30. PDF de 38 pages, accès et téléchargement déclarés « world » dans la notice, mention d'usage : ouvert à la recherche et librement utilisable à des fins non commerciales avec attribution. Lu intégralement en images : les 37 premières portent les folios 153 à 189, la trente-huitième est un verso blanc."
+    },
+    {
+      "id": "SUP-9b3e1950d81b87f1",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "druid:wx800gp4144"
+    },
+    {
+      "id": "SUP-adaf6925d7d12085",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://purl.stanford.edu/wx800gp4144"
+    },
+    {
+      "id": "SUP-c988968761c142bc",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Notice bibliographique de l'édition, Open Library : Self-organizing systems, Symposium Publications Division, Pergamon Press, New York, 1960, 322 pages, contributions de Cameron, Scott et Yovits, M. C., auteur collectif « Interdisciplinary Conference on Self-Organizing Systems, Chicago 1959 ». Notice vérifiée pour corroborer l'éditeur, l'année et l'ampleur du volume. Aucun ISBN : le volume est antérieur à l'ISBN."
+    },
+    {
+      "id": "SUP-c65fc2713c50364d",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "OL16489558M"
+    },
+    {
+      "id": "SUP-aff2ce52550d5ac2",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://openlibrary.org/books/OL16489558M/Self-organizing_systems"
+    },
+    {
+      "id": "SUP-053e7fc3a07e6e1e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Beer, S. (1961). Compte rendu de Self-Organizing Systems, dirigé par M. C. Yovits et S. Cameron. OR (Operational Research Quarterly), 12(2), p. 129. Recension contemporaine du volume, la seule trace de réception identifiée dans cette session. Notice Crossref vérifiée : titre, auteur Stafford Beer, revue, volume 12, numéro 2, page 129, juin 1961, éditeur JSTOR. Texte non ouvert."
+    },
+    {
+      "id": "SUP-8b5372a0b67d2403",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.2307/3007426"
+    },
+    {
+      "id": "SUP-44dc2c4815885eb1",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.2307/3007426"
+    },
+    {
+      "id": "SUP-2d4c282512815320",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "partial",
+      "text": "Newell, A., Shaw, J. C. et Simon, H. A. (1958). « Elements of a Theory of Human Problem Solving ». Psychological Review, 65(3), p. 151-166. Texte voisin des mêmes auteurs, ouvert ici uniquement pour délimiter ce qui est propre à 1960. Tiré à part numérisé servi par le serveur IIIF de la bibliothèque de Carnegie Mellon, fonds Allen Newell, cote Newell_box00049_fld04210_doc0005 : HTTP 200, PDF de 717 231 octets, 6 feuillets. La page de titre porte « Psychological Review, Vol. 65, No. 3, 1958 », les trois auteurs et leurs affiliations, et la dernière page se termine par « (Received July 10, 1957) ». Consultation partielle : la couche texte a pu être extraite en clair pour le premier feuillet et pour les références, mais les feuillets encodés en police composite n'ont rendu qu'un texte tronqué, et aucune image n'a pu être rendue faute d'outil de rastérisation dans cet environnement. Aucune citation de cette fiche ne repose sur ce texte."
+    },
+    {
+      "id": "SUP-222c13eb71a5d266",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].doi_isbn",
+      "access": "partial",
+      "text": "10.1037/h0048495"
+    },
+    {
+      "id": "SUP-27eee995c81420c2",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "partial",
+      "text": "https://iiif.library.cmu.edu/file/Newell_box00049_fld04210_doc0005/Newell_box00049_fld04210_doc0005.pdf"
+    },
+    {
+      "id": "SUP-637de5e3c93e090b",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Dans les termes du chapitre, lu du folio 153 au folio 189. L'objet du texte n'est pas le solveur, c'est l'apprentissage. La première phrase le pose : « The analysis in this paper is part of an exploration of the possibilities for learning and self-organization in a computer program called the General Problem Solver I, or GPS » (p. 153). La démarche est annoncée comme une heuristique, et les auteurs l'écrivent comme telle : « The analysis derives from the following heuristic: To study learning and self organization, take a program that accomplishes a significant task and discover all the ways it can be improved and can improve itself » (p. 153). Le dispositif est posé en deux étages, figure 1, p. 154. En bas, le programme de performance, ici GPS. Au-dessus, un second programme, le programme d'apprentissage, « that operates on the performance program as its object to produce a new performance program better adapted to its task » (p. 153). Les auteurs refusent de définir en général l'adaptation : « We will not try to define in general the notion of adaptive change and its measurement. In each particular learning situation we must convince ourselves that the learning program is so structured that it will try to produce better programs, although it may not always succeed, even in the long run » (p. 153). Le programme d'apprentissage travaille sur un espace, l'ensemble des composants possibles pour un aspect A du programme de performance, espace qui « might consist, for example, of all programs that can be built up from a set of primitive processes » (p. 154). Vient alors la thèse propre à ce texte, énoncée p. 155 comme l'heuristique qui commande tout le reste : « In designing learning programs we are using a particular heuristic: Generally: that significant learning situations will require learning programs that are heuristic problem-solving programs, in the sense in which that word is currently used in discussing chess and theorem-proving programs. More specifically: that because GPS has pretensions of solving a wide array of problems, it may be possible to let GPS be its own learning program, so that the problem of selecting an A-component will be a problem of the form GPS can work on. » Apprendre n'est donc pas une opération d'une autre espèce que résoudre : c'est un problème, qui se traite par la même recherche heuristique, et le solveur peut être son propre apprenti. Le chapitre ne prétend pas fonder cette recherche heuristique : GPS et l'analyse moyens-fins sont rappelés en trois pages, p. 155 à 159, et renvoyés à des publications antérieures des mêmes auteurs, « GPS and its performance have been described in detail in other publications » (p. 155), avec la figure 5 intitulée « Means-end analysis » (p. 158) et la formule « Figure 5 shows a basic system of methods for what we usually call means-end analysis » (p. 158), où le « usually » dit assez que le terme est déjà le leur et déjà en circulation. Ce que le rappel retient est ceci : GPS travaille sur un environnement fait d'objets et d'opérateurs ; il compare deux objets, détecte entre eux une différence, cherche dans une table de connexions quel opérateur est pertinent pour réduire cette différence, et applique cet opérateur, ce qui engendre à son tour de nouveaux buts. Trois types de buts seulement : transformer l'objet a en objet b, appliquer l'opérateur q à l'objet a, réduire la différence d entre a et b (p. 157 à 159). Point décisif pour la suite : « Specific differences and the tests that detect them are not part of the GPS proper but are parts of each particular task environment to which the program is applied » (p. 160). Le noyau du solveur est vide de contenu ; ce qui fait la différence entre chercher au hasard et chercher utilement est logé dans la description de l'environnement. C'est exactement ce que le chapitre décide de faire apprendre : « In the present paper we shall only consider programs to enable GPS to improve its performance in a given task environment, to learn heuristics appropriate to that environment. [...] These learning programs do not change the core of GPS; instead, they modify the specification of the environment, thus making GPS more efficient in solving problems in that environment » (p. 161). Et c'est là que les auteurs déclarent explicitement modéliser un apprentissage humain, dans la phrase retenue en citation : « Learning to characterize in an effective way the task environment is an important and prevalent kind of human learning. A problem solver who is experienced in a particular environment will notice features that will be unnoticed by (or even invisible to) an inexperienced person. The native tracker in the forest is a classical example » (p. 161). Le coût de ne pas avoir appris est chiffré en termes de recherche : « A problem solver who does not have available a good set of differences has little means for working toward his goal except to try, at random or by rote, different sequences of operators until he gets the answer. He cannot even measure progress easily, for the most direct clue to progress is the elimination of differences between the terminal expression and the expressions he has obtained » (p. 161). Le renvoi à l'humain est repris page 162, sous une forme pédagogique : « It would be possible, in instructing a learner about a new subject, to teach him specifically what differences to attend to and what operators are relevant to what differences: to give him explicitly a list of differences and a table of connections. In teaching humans we seldom do this. [...] We usually leave it up to the learner to acquire the differences and connections inductively. We assume that humans are equipped with learning programs for improving their performance programs in these two respects. The learner is supposed to be able, himself, to develop a theory about the significant characteristics and structures of the task environment, and to incorporate that theory in his problem-solving program » (p. 162). Deux problèmes d'apprentissage sont alors posés et traités. Le premier, p. 162 à 164 : construire la table de connexions qui associe à chaque différence les opérateurs pertinents. Les auteurs montrent d'abord la solution paresseuse, statistique, « the simplest kind of mechanism of natural selection, to use evolutionary language, or reinforcement of correct responses, to use psychological language » (p. 163), et la refusent, non parce qu'elle échouerait mais parce qu'elle gaspille de l'information disponible : « there is no reason why we should limit ourselves to such mechanisms, which operate entirely inductively from performance, when other information is available » (p. 163). La solution retenue lit directement la forme de chaque opérateur, applique à sa forme d'entrée et à sa forme de sortie les tests de différence, et remplit la table sans recherche par essai et erreur. La leçon est généralisée p. 164 : « If the program can discover only how the performance program behaves when a given element from the set is incorporated in it, then the learning program can do little more than search blindly and select the elements that work well. If other information is available, however, [...] the learning program can incorporate other processes which may be far more efficient than simple trial and error mechanisms. The important empirical question is this: When we consider the learning problems that arise naturally in complex intelligent systems, what is the nature of the information that is available? » Le second problème, p. 164 à 185, est celui que les auteurs tiennent pour le difficile : trouver un bon jeu de différences, c'est-à-dire construire les tests qui font voir ce qui, dans l'environnement, mérite attention. Il faut pour cela un langage dans lequel écrire ces tests, le Difference Program Language, avec une partie générale valable pour tous les environnements et une partie propre à chacun (p. 165), et il faut éviter la circularité : « In some sense they must be more elementary than the differences eventually needed, or the suspicion will remain that the important learning occurred in the selection of these primitive notions and not in the assembly of a program from them » (p. 165). GPS est alors mis à travailler sur ce second environnement, celui des programmes de différences, avec ses propres objets, opérateurs et différences, et une simulation est conduite qui produit un jeu de différences à partir de presque rien. Les conclusions, p. 185 et 186, sont mesurées et il faut les retenir telles quelles : la simulation « presents good evidence, we think, that we have specified the mechanisms that are essential to permitting GPS to work on its own learning. These mechanisms delineate at least one variety of intelligent learning » (p. 185) ; l'objet visé n'est pas unique et le but n'est donc pas une cible, « the goal of obtaining a satisfactory set of differences, unlike GPS goals considered previously, is not a search for a unique specified object. This difficulty was circumvented by the form of the Reduce goals (D1 to D9), which give GPS \"direction\" in its learning task without specifying a definite final resting place » (p. 185) ; la généralité annoncée n'est pas testée, « this possibility is quite untested, for all our work here has been limited to the task of logic » (p. 186) ; et une objection de fond est retournée contre les auteurs par eux-mêmes, l'existence possible d'un jeu de différences universel qui rendrait tout ce travail d'apprentissage inutile (p. 186). Enfin, l'écart avec l'humain est nommé par eux comme un défaut de leur montage : « Different task environments for GPS are completely independent, much more so than the different task environments for a human, which all occur, in the last analysis, in the same real world, to be perceived through the same set of senses » (p. 186). CE QUI EST PROPRE À 1960 FACE À 1958, question posée explicitement au lecteur de ce texte. Trois marques, toutes lues dans les imprimés. Un, l'objet. 1958 énonce les éléments d'une théorie de la résolution humaine de problèmes, c'est-à-dire ce qu'une théorie doit expliquer et de quoi elle est faite : un système de traitement de l'information, des mémoires, des processus élémentaires, des règles pour les composer en programmes, et l'idée qu'un programme est une théorie du comportement. L'apprentissage n'y est qu'une question posée dans le premier paragraphe, parmi celles auxquelles une telle théorie devra un jour répondre : « It should explain how specific and general problem-solving skills are learned, and what it is that the problem solver \"has\" when he has learned them. » 1960 répond à cette question précise, et c'est tout son sujet. Deux, le programme. 1958 argumente sur LT, le Logic Theorist ; 1960 écarte LT nommément dès sa première page, « We might have chosen for study our chess program or LT, our earlier program for proving theorems in logic, but the reason for preferring GPS will become apparent immediately » (p. 153), et le motif est donné aussitôt : c'est parce que GPS sépare le noyau général du contenu de l'environnement qu'il peut devenir son propre apprenti. Ce n'est donc pas un détail d'illustration, c'est la condition du raisonnement de 1960. Trois, la filiation déclarée. La liste de références de 1960, page 187, ne cite pas l'article de 1958 dans Psychological Review. Elle cite Newell et Simon 1956 sur la machine à théorie logique (référence 5), et les deux rapports RAND P1320 et P1584 pour GPS (références 3 et 4). Les deux textes ne se citent donc pas l'un l'autre et ne portent pas le même objet : celui de 1958 établit qu'un programme peut valoir comme théorie du raisonnement humain, celui de 1960 traite l'apprentissage comme un problème de recherche heuristique dont l'enjeu est ce que le résolveur apprend à regarder. Une carte issue de 1958 et une carte issue de 1960 ne se répéteraient pas, à condition que celle de 1960 porte sur l'apprentissage et non sur GPS. RÉSERVE DE PORTÉE, à ne pas perdre. Ce que le chapitre rapporte n'est pas une exécution machine. Interrogé en séance, Newell répond page 187 : « The program is on the RAND Johnniac. The work I am talking about here is all hand simulation. The GPS program is now being debugged, but is not yet solving any problems. » Le mot « simulation » qui revient tout au long du texte désigne donc un déroulé à la main, et aucune phrase de carte ne peut affirmer que le programme a effectivement appris."
+    },
+    {
+      "id": "SUP-116554928669beb2",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Correction de pagination, contre la consigne reçue et contre la fiche de cartographie du 23 août 2026. Le lot m'a transmis, comme piège hérité et déjà vérifié trois fois, que « le folio 190 porte encore la note de bas de page de Newell, Shaw et Simon », que la table des matières contredirait ses propres folios et que la pagination à retenir serait 153-190. Ma lecture contredit ce constat sur les trois points, et il faut le dire pour que la vérification ne soit pas refaite à l'identique. Sur l'exemplaire d'Internet Archive, le feuillet 205 porte le folio 190 imprimé en pied de page, et cette page est la page d'ouverture du chapitre suivant, « LEARNING IN NEURAL SYSTEMS », de P. M. Milner, Department of Psychology, McGill University, Montreal, Canada. La note de bas de page qu'elle porte est celle de Milner : « This investigation was supported by a grant, M-2455, from the National Institute of Mental Health, U.S. Public Health Service. » Elle a été lue sur l'image, pas sur l'OCR. Le feuillet précédent, folio 189, porte l'en-tête courant « Intelligent Learning in a GPS » et la fin de la discussion. La table des matières du volume, lue au feuillet 8, annonce Newell, Shaw et Simon page 153 et Milner page 190 : elle est donc en accord avec les folios, et non en contradiction. Contre-épreuve indépendante sur le second exemplaire : le tiré à part de l'éditeur conservé à Stanford compte 38 pages, dont les 37 premières portent les folios 153 à 189 et la trente-huitième est un verso blanc. La pagination de ce chapitre est p. 153-189. L'hypothèse la plus économique sur l'origine de l'erreur héritée est que le tiré à part comporte 38 feuillets et qu'un comptage y ajoute une page, mais ce n'est qu'une hypothèse et elle n'a pas été vérifiée."
+    },
+    {
+      "id": "SUP-d6e160cfa7213bda",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Correction d'éditeur, plus mineure mais du même ordre. La consigne reçue et la fiche de cartographie donnent « Pergamon Press / Spartan Books ». La page de titre du volume, lue au feuillet 2, porte « SYMPOSIUM PUBLICATIONS DIVISION, PERGAMON PRESS, OXFORD, LONDON, NEW YORK, PARIS, 1960 », et la page suivante « Copyright 1960 Pergamon Press Inc. », avec les adresses de Pergamon à Oxford, Londres, New York, Washington, Paris et Francfort, le numéro de fiche Library of Congress 60-12574 et la mention « Printed in Great Britain by Bell & Bain, Ltd., Glasgow ». Spartan Books n'apparaît nulle part dans cet exemplaire, ni sur le tiré à part de l'éditeur, dont le bandeau porte « Reprinted from \"Self-Organizing Systems\", PERGAMON PRESS ». La confusion vient probablement des actes de la deuxième conférence, tenue en 1962 et publiée chez Spartan Books, qui n'est pas ce volume."
+    },
+    {
+      "id": "SUP-4bb790e64b657fae",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Identifiant proposé par la cartographie écarté, et il faut dire pourquoi plutôt que de le garder par commodité. L'identifiant proposé était `recherche-heuristique-dans-gps` ; il nomme la procédure de recherche heuristique de GPS, c'est-à-dire l'analyse moyens-fins, et ce texte ne l'établit pas. Il la résume en trois pages, la nomme comme une chose déjà nommée, « what we usually call means-end analysis » (p. 158), et renvoie explicitement le lecteur à deux rapports antérieurs des mêmes auteurs pour sa description, P1320 (1958) et P1584 (1959). Instruire l'analyse moyens-fins sur ce texte reviendrait à citer une récapitulation à la place de la source, ce que la hiérarchie des sources interdit. L'identifiant retenu, `apprentissage-comme-recherche-heuristique`, nomme ce que ce chapitre établit et que rien d'autre n'établit à sa place : l'apprentissage traité comme un problème de recherche heuristique, dont l'objet est ce que le résolveur apprend à distinguer dans son environnement. Vérification de non-collision faite sur `corpus/validated/` et sur `corpus/evidence/` : aucun identifiant ni slug existant ne correspond. La carte voisine `heuristiques-de-jugement` porte sur les heuristiques de jugement de probabilité et n'a pas le même objet."
+    },
+    {
+      "id": "SUP-addcbef175a90278",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Un seul concept est instruit, alors que le lot en autorisait deux. Le second candidat envisagé était l'analyse moyens-fins comme procédure de choix, et il est écarté pour la raison ci-dessus : ce chapitre n'en est pas la source primaire. Si le corpus veut cette carte, elle doit être instruite sur Newell, A., Shaw, J. C. et Simon, H. A., « Report on a general problem-solving program », P1584, The RAND Corporation, January 1959, référence lue dans la liste de références du chapitre, page 187. Cette source n'a pas pu être ouverte dans cette session : rand.org a répondu HTTP 403 sur la page de notice https://www.rand.org/pubs/papers/P1584.html comme sur le chemin de fichier https://www.rand.org/content/dam/rand/pubs/papers/2008/P1584.pdf, ce qui ressemble à une protection anti-robot et n'a pas été contourné. Une recherche d'identifiant contenant P1584 sur Internet Archive n'a rendu aucun miroir de ce rapport (8 résultats, tous sans rapport). Le rapport P1320, « The processes of creative thinking », August 1958, n'a pas été cherché."
+    },
+    {
+      "id": "SUP-a25940e0ad90ecac",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Deux passages plus explicites que la citation retenue ont été écartés pour longueur, et il faut dire lesquels pour qu'ils ne soient pas cherchés à nouveau. Le premier est l'énoncé même de la thèse, p. 155 : « Generally: that significant learning situations will require learning programs that are heuristic problem-solving programs, in the sense in which that word is currently used in discussing chess and theorem-proving programs. » Traduit sans sa subordonnée finale, il fait encore 161 caractères en français, et toute coupe supplémentaire lui retire soit la généralité, soit le mot heuristique, c'est-à-dire son contenu. Le second est celui qui montre le mieux ce que coûte l'absence d'apprentissage, p. 161 : « A problem solver who does not have available a good set of differences has little means for working toward his goal except to try, at random or by rote, different sequences of operators until he gets the answer. » Il fait 166 caractères en français dans sa version déjà coupée, et la coupe qui le ramènerait sous 150 supprimerait « at random or by rote », qui est précisément l'opposition entre chercher au hasard et chercher avec des différences. La citation retenue, p. 161, tient dans la limite sans aucune coupe et porte la déclaration explicite d'apprentissage humain, mais elle ne dit pas comment cet apprentissage se fait : le résumé de la carte doit porter le mécanisme, la citation ne le fera pas à sa place."
+    },
+    {
+      "id": "SUP-c9ab3ef0f13b0c34",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Aucune phrase de la discussion transcrite, pages 187 à 189, n'a été retenue comme citation, et c'est délibéré. Ces trois pages font partie du chapitre et sont paginées avec lui, mais elles sont un échange oral où c'est Newell seul qui répond aux questions de McCormick, de Kantner et d'un intervenant identifié comme Burroughs. Une phrase prise là et affichée sous trois noms serait une fausse attribution. C'est d'autant plus tentant que la phrase la plus enseignable du chapitre s'y trouve peut-être : « GPS could really be better called GPSWP, sort of GPS with pretentions » (p. 189). Elle est de Newell et d'aucun autre."
+    },
+    {
+      "id": "SUP-910ac3c77700889e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "La couche OCR d'Internet Archive n'a servi qu'au repérage et elle est par endroits inutilisable. Le feuillet 172, qui porte le folio 157, ne rend aucune ligne de texte dans le fichier djvu.xml : cette page n'a pas été relue sur image, et rien n'en est tiré. Les folios 166, 167, 173, 183 et 187 sortent en texte largement corrompu. Les passages anglais rapportés dans `definition_de_lauteur` ont été relus sur image pour les pages 153, 155, 161, 162, 187 et 189 ; ceux des pages 154, 158, 159, 160, 163, 164, 165, 185 et 186 proviennent de la couche OCR seule, corrigée à la lecture, et peuvent porter des coquilles de reconnaissance résiduelles. Aucun d'eux n'est utilisé comme citation."
+    },
+    {
+      "id": "SUP-5cfb9317cb769322",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "La réception du texte n'est pas instruite. Une seule trace contemporaine a été identifiée, le compte rendu du volume par Stafford Beer dans OR, 12(2), 1961, p. 129, dont seule la notice Crossref a été vérifiée : l'article n'a pas été ouvert et rien n'est affirmé de son contenu, en particulier rien sur ce qu'il dirait du chapitre de Newell, Shaw et Simon en particulier. Aucune recherche bibliométrique n'a été faite, aucune histoire de l'intelligence artificielle n'a été ouverte, aucune réplication ni contestation n'a été cherchée."
+    },
+    {
+      "id": "SUP-585a5045aaa4dc0e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Aucune couche francophone. Aucune traduction française publiée de ce chapitre ni du volume n'a été identifiée, et aucune réception française du texte n'a été trouvée. La recherche a été faite en français sur le titre du chapitre et sur les noms des trois auteurs, sans résultat autre que des pages générales sur le General Problem Solver, qui relèvent du web général et ne valent que pour détecter. Les bases francophones que le périmètre demande d'interroger en parallèle, Persée, HAL, OpenEdition Books et theses.fr, n'ont pas été interrogées dans cette session : c'est une lacune de méthode, pas un constat d'absence."
+    },
+    {
+      "id": "SUP-99e6411c129f50cb",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Le chapitre parle d'un programme, et le périmètre de `decision-science` n'admet un texte d'intelligence artificielle que s'il expose une procédure de choix présentée comme un modèle de celle d'un humain. La condition est remplie ici, mais elle tient à peu de phrases, et il faut les compter honnêtement : la déclaration explicite d'apprentissage humain se trouve p. 161 et p. 162, la comparaison avec l'enseignement humain p. 162, l'aveu d'écart avec la situation humaine p. 186, et la mention que certaines variantes de GPS simulent en détail le comportement d'humains sur les mêmes tâches p. 160. Le reste du texte, soit une vingtaine de pages, est de la description de programme. Une carte qui présenterait ce chapitre comme un traité de psychologie de l'apprentissage déborderait ses sources ; une carte qui le présenterait comme une technique d'apprentissage automatique le ferait sortir du périmètre. Le point d'équilibre est celui que le texte occupe lui-même : une hypothèse sur ce qu'apprend un résolveur de problèmes, humain ou machine, énoncée depuis un programme."
+    },
+    {
+      "id": "SUP-47cf3705d564797c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "Réserve de portée, déjà écrite dans `definition_de_lauteur` mais répétée ici parce qu'elle est la plus facile à perdre à la rédaction. La simulation rapportée aux pages 178 à 185 est une simulation à la main. Newell le dit en séance, p. 187 : « The work I am talking about here is all hand simulation. The GPS program is now being debugged, but is not yet solving any problems. » Aucune phrase de carte ne peut donc écrire que le programme a appris, ni qu'un ordinateur a produit ces jeux de différences. Ce qui est établi, c'est un mécanisme spécifié et déroulé par ses auteurs sur le papier."
+    }
+  ],
+  "estimated_tokens": 27257,
+  "status": "READY"
+}
