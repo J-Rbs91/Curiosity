@@ -3,7 +3,7 @@
   "concept_id": "approche-axiomatique-arrow-raynaud",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "cc886095874bc750922dda99ae8c47de01c6c68323b00f5713dbcb0a8cb4651a",
+  "candidate_sha256": "fe286a86b48a94b5f8e1a72f7e8f975c4e381f5f3fca383367523877d67e0ade",
   "validated_sha256": "f8319fd62b548addfb09421576ba4a5bdf3bd2a0771ef5e508b2db065901d773",
   "evidence_files": [
     {
@@ -65,7 +65,7 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Imaginons quatre fournisseurs à départager, et un tableau à double entrée : le prix, le délai, la qualité constatée, le service après-vente. Chacun l’emporte sur un point et perd sur un autre, et personne autour de la table ne veut dire à voix haute combien de jours de retard valent mille euros d’économie. On cherche alors une méthode. On en trouve des dizaines, chacune avec son nom, sa formule, parfois son logiciel, et deux d’entre elles, sur les mêmes chiffres, peuvent désigner deux fournisseurs différents. Vient la question qui paraît la seule sensée : laquelle est la bonne ?"
+      "text": "Imaginons quatre fournisseurs à départager, et un tableau à double entrée : le prix, le délai, la qualité constatée, le service après-vente. Chacun l’emporte sur un point et perd sur un autre, et personne autour de la table ne veut dire à voix haute combien de jours de retard valent mille euros d’économie. On cherche alors une méthode. On en trouve une large collection, chacune la recette de son auteur. Vient la question qui paraît la seule sensée : laquelle est la bonne ?"
     },
     {
       "locator": "lead[1]",
@@ -119,17 +119,17 @@
     {
       "locator": "sections[4].paragraphs[0]",
       "section_title": "Ni une recette de plus, ni un produit",
-      "text": "Le titre de l’article annonce « Un outil d’aide à la décision multicritère », et ses dernières pages nomment bien trois éditeurs de logiciels. Il prend pourtant soin, après avoir exposé une batterie d’axiomes cohérente et la règle qui la satisfait, de prévenir un contresens : cette batterie « pourrait sembler souhaitable pour tous les cas possibles, ou bien, être préconisée par Arrow et Raynaud comme étant leur méthode. Ce serait une compréhension erronée de l’approche ». La batterie exposée est un exemple de ce que la démarche permet de construire, pas la méthode maison de ses auteurs."
+      "text": "Le titre de l’article annonce « Un outil d’aide à la décision multicritère », et ses dernières pages nomment bien trois éditeurs de logiciels. Il prend pourtant soin de prévenir un contresens sur la batterie d’axiomes qu’il expose : cette batterie « pourrait sembler souhaitable pour tous les cas possibles, ou bien, être préconisée par Arrow et Raynaud comme étant leur méthode. Ce serait une compréhension erronée de l’approche ». La batterie exposée est un exemple de ce que la démarche permet de construire, pas la méthode maison de ses auteurs."
     },
     {
       "locator": "sections[4].paragraphs[1]",
       "section_title": "Ni une recette de plus, ni un produit",
-      "text": "La conclusion vise l’usage même des méthodes toutes faites : il s’agit de « ne pas employer une méthode dont on n’ait pas accepté profondément les fondements qui, eux, ne sont pas de la technique mathématique ». Le choix des axiomes n’est pas la partie technique que l’on délègue à un spécialiste avant de récupérer un résultat : c’est la partie où le décideur s’engage, et elle ne se sous-traite pas."
+      "text": "La conclusion vise l’usage même des méthodes toutes faites : il s’agit de « ne pas employer une méthode dont on n’ait pas accepté profondément les fondements qui, eux, ne sont pas de la technique mathématique »."
     },
     {
       "locator": "sections[4].paragraphs[2]",
       "section_title": "Ni une recette de plus, ni un produit",
-      "text": "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ». La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore, si bien que « le décideur gestionnaire ne puisse en général se passer d’un expert qui l’aide à formuler correctement ses axiomes ». L’aveu est sérieux : une démarche qui promet de rendre au décideur la maîtrise de ses propres exigences reconnaît qu’il lui faut, pour les formuler, quelqu’un qui sache les écrire."
+      "text": "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ». La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore, et le texte ajoute que le décideur gestionnaire ne peut « en général se passer d’un expert qui l’aide à formuler correctement ses axiomes »."
     },
     {
       "locator": "sections[5].paragraphs[0]",
@@ -751,6 +751,6 @@
       "text": "Point de coordination sur le vocabulaire, pour le rédacteur et le contrôleur : ce texte francise l'axiome d'Arrow en « indépendance par rapport aux alternatives irrelevantes » (p. 17), forme qui diffère de l'identifiant independance-des-alternatives-non-pertinentes déjà présent dans corpus/evidence. Il ne s'agit pas de deux concepts distincts mais de deux traductions du même axiome, et cette carte ne l'instruit pas : elle le mentionne comme un axiome que l'approche écarte."
     }
   ],
-  "estimated_tokens": 17912,
+  "estimated_tokens": 17741,
   "status": "READY"
 }
