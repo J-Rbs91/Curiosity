@@ -114,3 +114,15 @@ Correction minimale des six claims refusés ; aucune phrase soutenue touchée, a
 - C061 (TOO_STRONG, s4 §3) : phrase « L'aveu est sérieux … » retirée.
 
 Check mécanique : `npm run corpus:deepen -- --check --only=approche-axiomatique-arrow-raynaud` PASS. Le SHA a changé : reprendre à PREPARE.
+
+## FACTCHECK_FIX — boucle 2 (correction minimale après gate 61/63)
+
+- C043 (TOO_STRONG, sections[3].paragraphs[0]) : réserve de la source restituée.
+  « Ces trois exigences ne peuvent pas être satisfaites… » devient « Dans le cas général, ces trois
+  exigences ne peuvent donc pas être satisfaites en même temps par une règle de décision. »
+  Appuis inchangés : SUP-813433b6d138c5f0, SUP-b8d716b25014aa29 (citation p. 18 « Dans le cas général… »).
+- C055 (TOO_STRONG, sections[4].paragraphs[2]) : proposition au subjonctif sans principale dans le
+  pack, donc claim retiré. La phrase s'arrête à « … n’existe pas encore. »
+- Aucune autre phrase touchée, rien ajouté. Texte lecteur : environ 1595 mots avant, 1578 après.
+- `npm run corpus:deepen -- --check --only=approche-axiomatique-arrow-raynaud` : PASS.
+- Le SHA candidat change : reprendre à PREPARE.

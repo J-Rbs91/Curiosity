@@ -3,7 +3,7 @@
   "concept_id": "approche-axiomatique-arrow-raynaud",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "fe286a86b48a94b5f8e1a72f7e8f975c4e381f5f3fca383367523877d67e0ade",
+  "candidate_sha256": "588a908511c192bd1b4af013f806b19a0c7d430ad5aef993b5a3c8429dc3fa28",
   "validated_sha256": "f8319fd62b548addfb09421576ba4a5bdf3bd2a0771ef5e508b2db065901d773",
   "evidence_files": [
     {
@@ -109,7 +109,7 @@
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Quand trois exigences ne tiennent pas ensemble",
-      "text": "Le procédé peut aussi échouer, et l’article ne le cache pas. Page 18, à propos de son axiome 6, la monotonie : « Dans le cas général, cet axiome n’est pas compatible avec les axiomes de prudence et d’indépendance. » Ces trois exigences ne peuvent pas être satisfaites en même temps par une règle de décision. L’article en tire une version restrictive, l’axiome 6’, monotonie restreinte au départage. Page 17 déjà, le texte rapporte que « Arrow et Raynaud, dans leur approche, proposent, lorsque l’on est confronté à de telles difficultés, de chercher à ajouter de nouveaux axiomes »."
+      "text": "Le procédé peut aussi échouer, et l’article ne le cache pas. Page 18, à propos de son axiome 6, la monotonie : « Dans le cas général, cet axiome n’est pas compatible avec les axiomes de prudence et d’indépendance. » Dans le cas général, ces trois exigences ne peuvent donc pas être satisfaites en même temps par une règle de décision. L’article en tire une version restrictive, l’axiome 6’, monotonie restreinte au départage. Page 17 déjà, le texte rapporte que « Arrow et Raynaud, dans leur approche, proposent, lorsque l’on est confronté à de telles difficultés, de chercher à ajouter de nouveaux axiomes »."
     },
     {
       "locator": "sections[3].paragraphs[1]",
@@ -129,7 +129,7 @@
     {
       "locator": "sections[4].paragraphs[2]",
       "section_title": "Ni une recette de plus, ni un produit",
-      "text": "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ». La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore, et le texte ajoute que le décideur gestionnaire ne peut « en général se passer d’un expert qui l’aide à formuler correctement ses axiomes »."
+      "text": "Le texte va plus loin et nomme lui-même, page 20, « le point le plus faible de l’approche ». La « bibliothèque d’axiomes » où l’on viendrait puiser ses exigences n’existe pas encore."
     },
     {
       "locator": "sections[5].paragraphs[0]",
@@ -751,6 +751,6 @@
       "text": "Point de coordination sur le vocabulaire, pour le rédacteur et le contrôleur : ce texte francise l'axiome d'Arrow en « indépendance par rapport aux alternatives irrelevantes » (p. 17), forme qui diffère de l'identifiant independance-des-alternatives-non-pertinentes déjà présent dans corpus/evidence. Il ne s'agit pas de deux concepts distincts mais de deux traductions du même axiome, et cette carte ne l'instruit pas : elle le mentionne comme un axiome que l'approche écarte."
     }
   ],
-  "estimated_tokens": 17741,
+  "estimated_tokens": 17703,
   "status": "READY"
 }
