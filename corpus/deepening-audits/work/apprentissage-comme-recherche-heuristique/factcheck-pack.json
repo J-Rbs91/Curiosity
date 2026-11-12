@@ -3,7 +3,7 @@
   "concept_id": "apprentissage-comme-recherche-heuristique",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "6f9313beb312921f1fddc45f5b191d01799e43877cb6b7bcb39b081153f17e57",
+  "candidate_sha256": "de0e3f1a5032e1e22c0f594b777de2f23dc4bb794afd9164d7b54e9005c0b19d",
   "validated_sha256": "2d0e49fbd322900a947e610e7394c6a9eec6357016ea8462d038267df5585e84",
   "evidence_files": [
     {
@@ -94,7 +94,7 @@
     {
       "locator": "sections[1].paragraphs[2]",
       "section_title": "Apprendre traité comme un problème à résoudre",
-      "text": "Le programme d’apprentissage travaille en effet dans un espace, l’ensemble des pièces possibles pour un aspect du programme de performance. Le texte mentionne en note, p. 155, le programme d’apprentissage de Friedberg, dont l’intérêt, écrit-il, tient à ce que l’ensemble de composants dans lequel ce programme puise est celui de tous les programmes possibles, un ensemble très vaste. Plus loin, les auteurs posent une règle : si un programme d’apprentissage ne peut observer que les performances obtenues avec tel élément, il ne peut guère que chercher à l’aveugle et retenir ce qui marche ; si d’autres informations sont disponibles, il peut recourir à des procédés bien plus efficaces que l’essai et l’erreur. On peut comprendre ainsi ce que le mot heuristique vient faire ici : apprendre devient une recherche, et toute la question est de savoir ce qui la guide."
+      "text": "Le programme d’apprentissage travaille en effet dans un espace, l’ensemble des pièces possibles pour un aspect du programme de performance. Le texte mentionne en note, p. 155, le programme d’apprentissage de Friedberg, dont l’intérêt, écrit-il, tient à ce que l’ensemble de composants dans lequel ce programme puise est celui de tous les programmes possibles, un ensemble très vaste. Plus loin, les auteurs ajoutent : si un programme d’apprentissage ne peut observer que les performances obtenues avec tel élément, il ne peut guère que chercher à l’aveugle et retenir ce qui marche ; si d’autres informations sont disponibles, il peut recourir à des procédés qui peuvent être bien plus efficaces que l’essai et l’erreur. On peut comprendre ainsi ce que le mot heuristique vient faire ici : apprendre devient une recherche, et toute la question est de savoir ce qui la guide."
     },
     {
       "locator": "sections[2].paragraphs[0]",
@@ -104,12 +104,12 @@
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Ce que ces programmes d’apprentissage modifient",
-      "text": "Cette phrase sépare deux questions qu’on confond volontiers : comment on cherche, et ce qu’on sait du terrain où l’on cherche. Ce qui pourrait s’acquérir appartient à la description : les différences que le programme sait remarquer, et la table qui associe à chaque différence les opérations pertinentes. C’est cette table que traite la section « Learning the Table of Connections », p. 162. Les auteurs y écartent le renforcement statistique des associations réussies, non parce qu’il échouerait, mais parce qu’il se prive d’une information disponible : la solution retenue applique les tests de différence aux formes d’entrée et de sortie de chaque opération, et remplit la table sans essais ni erreurs."
+      "text": "Cette phrase sépare deux questions : comment on cherche, et ce qu’on sait du terrain où l’on cherche. Ce qui pourrait s’acquérir appartient à la description : les différences que le programme sait remarquer, et la table qui associe à chaque différence les opérations pertinentes. C’est cette table que traite la section « Learning the Table of Connections », p. 162. Les auteurs y écartent le renforcement statistique des associations réussies, non parce qu’il échouerait, mais parce qu’il se prive d’une information disponible : la solution retenue applique les tests de différence aux formes d’entrée et de sortie de chaque opération, et remplit la table sans essais ni erreurs."
     },
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Ce que « caractériser efficacement » veut dire ici",
-      "text": "Efficace, dans ces pages, ne veut dire ni rapide ni économique : une caractérisation efficace est celle qui permet effectivement de résoudre. P. 161, les différences de la figure 6 sont présentées comme des traits de l’environnement de la tâche logique « that are effective for problem solving in that environment ». La même page dit ce que coûte leur absence : un résolveur sans bon jeu de différences n’a guère d’autre moyen que d’essayer, « at random or by rote », au hasard ou par routine, des suites d’opérations jusqu’à la réponse, et il ne peut même pas mesurer facilement ses progrès, dont l’indice le plus direct est la disparition des différences. Une description peut être exacte et rester inutile ; ce qui est demandé n’est pas sa vérité, mais son rendement pour la recherche."
+      "text": "Efficace, dans ces pages, ne veut dire ni rapide ni économique : une caractérisation efficace est celle qui permet effectivement de résoudre. P. 161, les différences de la figure 6 sont présentées comme des traits de l’environnement de la tâche logique « that are effective for problem solving in that environment ». La même page dit ce que coûte leur absence : un résolveur sans bon jeu de différences n’a guère d’autre moyen que d’essayer, « at random or by rote », au hasard ou par routine, des suites d’opérations jusqu’à la réponse, et il ne peut même pas mesurer facilement ses progrès, dont l’indice le plus direct est la disparition des différences."
     },
     {
       "locator": "sections[3].paragraphs[1]",
@@ -959,6 +959,6 @@
       "text": "Réserve de portée, déjà écrite dans `definition_de_lauteur` mais répétée ici parce qu'elle est la plus facile à perdre à la rédaction. La simulation rapportée aux pages 178 à 185 est une simulation à la main. Newell le dit en séance, p. 187 : « The work I am talking about here is all hand simulation. The GPS program is now being debugged, but is not yet solving any problems. » Aucune phrase de carte ne peut donc écrire que le programme a appris, ni qu'un ordinateur a produit ces jeux de différences. Ce qui est établi, c'est un mécanisme spécifié et déroulé par ses auteurs sur le papier."
     }
   ],
-  "estimated_tokens": 27541,
+  "estimated_tokens": 27492,
   "status": "READY"
 }
