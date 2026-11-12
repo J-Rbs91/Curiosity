@@ -5,6 +5,16 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-11-12
+
+`ROUTINE_PASS_WITH_BLOCKED_SOURCES`. Lot de 3 cartes jamais auditées, toutes `REVISE`.
+
+- `apprentissage-comme-recherche-heuristique` : réécrite, gates 57/60 puis **64/64**, revue ACCEPT, publiée.
+- `approche-axiomatique-arrow-raynaud` : gates 65/71, 61/63, 64/65 ; refusée au plafond de boucles, restaurée par SHA de blob. Le texte publié garde les défauts relevés par l'audit (citation p. 17 recousue en S3.P2) : à reprendre.
+- `automatisation-centree-humain` : gates 63/74, 67/69, 68/69 ; refusée au plafond, restaurée.
+- contrôles : validate 140 / 136 / 0 erreur · `npm test` 575/575 · projection ne touchant qu'une carte.
+- observation : les deux refus tombent à **un seul claim** au dernier tour, sur une phrase d'interprétation ou de portée (C054, C001) ; un troisième tour de correction minimale aurait vraisemblablement abouti, mais le plafond est le protocole.
+
 ## Passage d'audit — 2026-09-30
 
 Septième exécution. **Une carte publiée sur trois, deux refusées au plafond de boucles — et le

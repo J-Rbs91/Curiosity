@@ -1,0 +1,68 @@
+{
+  "protocol_version": 2,
+  "concept_id": "automatisation-centree-humain",
+  "candidate_sha256": "888799505dc3307b4afb6e995b493d16ee124f9ab9e6ec2a39cbec5d8fd19c30",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 74,
+  "supported": 63,
+  "failed": 11,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim (definition_de_lauteur, notes[1]) portent la perte de conscience de l'état et la rétroaction insuffisante (ce que la machine fait, pourquoi, pourquoi elle vient de changer), mais ne parlent pas de reprise en main ni de « depuis quand » ; le claim ajoute un moment déclencheur et une exigence que ces appuis ne portent pas."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "TOO_STRONG",
+      "reason": "Le texte de Billings porte bien « which the human can direct », mais les appuis fournis pour ce claim ne hiérarchisent pas les deux membres de la définition ; « le plus important » est une évaluation que ces appuis n'autorisent pas."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; l'évaluation du mot « déclarés » comme le plus contraignant n'est portée par rien dans le bundle."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; la conséquence sur l'impossibilité de coopérer n'est portée par aucun support."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "TOO_STRONG",
+      "reason": "review.notes[14] établit que la phrase p. 7 a pour sujet « the interposition of more and more automation » et ne nomme pas les quatre attributs ; les appuis fournis pour ce claim ne montrent pas que cette phrase relie « ces conditions » à leur effet."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "TOO_STRONG",
+      "reason": "Billings écrit « pilots may become less concerned » ; le claim supprime la modalité (peut -> fait), que review.notes[13] souligne."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "TOO_STRONG",
+      "reason": "Billings écrit « this may have the desirable effect of lessening flight crew workload » ; le claim rend la diminution certaine et transforme « desirable » en « précisément recherché »."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul appui est la glose de notes[3] ; le verbatim qu'elle cite dit que ces problèmes ne sont pas des « automation problems » mais des problèmes du système homme-machine, ce qui n'autorise pas d'attribuer à Billings le propos que l'automatisation « est mal conçue »."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim situent les premiers principes fig. 2-3 p. 8, mais n'établissent pas que l'exposé du concept s'achève sur cette liste."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "TOO_STRONG",
+      "reason": "L'existence des corollaires est portée par la fig. 2-3, mais les appuis fournis pour ce claim n'établissent pas que ce sont eux « qui portent la doctrine »."
+    },
+    {
+      "claim_id": "C067",
+      "verdict": "TOO_STRONG",
+      "reason": "Le corollaire est symétrique (« every intelligent system element ... intent of other ... elements ») ; le claim le réduit à la machine comprenant l'humain et ajoute « et pas seulement ce qu'il vient de faire », que les appuis fournis ne portent pas."
+    }
+  ]
+}

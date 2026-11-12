@@ -1,0 +1,856 @@
+{
+  "concept_id": "apprentissage-comme-recherche-heuristique",
+  "candidate_sha256": "de0e3f1a5032e1e22c0f594b777de2f23dc4bb794afd9164d7b54e9005c0b19d",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 360,
+      "end": 471,
+      "claim_text": "Ce qu’elle a gagné avec l’exercice ressemble moins à une méthode nouvelle qu’à un regard exercé sur le terrain.",
+      "normalized_claim": "Ce que gagne le résolveur expérimenté est une perception exercée de l'environnement plutôt qu'une méthode nouvelle (écho de p. 161).",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-1c2bfde0ec7f4f63",
+        "SUP-5f93b45adc3f8b45"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 472,
+      "end": 600,
+      "claim_text": "Si l’on voulait fabriquer une machine qui progresse de cette manière, il faudrait savoir dire ce qui, en elle, aurait à changer.",
+      "normalized_claim": "Concevoir une machine qui apprend ainsi suppose de localiser ce qui doit changer en elle.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-9d8263255098a140"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 144,
+      "claim_text": "La question a une date et un lieu : les 5 et 6 mai 1959, à Chicago, une conférence interdisciplinaire consacrée aux systèmes auto-organisateurs.",
+      "normalized_claim": "Conférence interdisciplinaire sur les systèmes auto-organisateurs, Chicago, 5-6 mai 1959.",
+      "support_ids": [
+        "SUP-75d016eb0f909dab",
+        "SUP-32c616f3cdf1e5dc",
+        "SUP-b8f6b4d60bf19691",
+        "SUP-f692b86aad700e7b",
+        "SUP-c988968761c142bc"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 145,
+      "end": 242,
+      "claim_text": "Allen Newell, J. C. Shaw et Herbert Simon y viennent avec un programme de résolution de problèmes",
+      "normalized_claim": "Les trois auteurs présentent à cette conférence un texte portant sur un programme de résolution de problèmes (GPS).",
+      "support_ids": [
+        "SUP-32c616f3cdf1e5dc",
+        "SUP-6b687a62ac141416",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 243,
+      "end": 269,
+      "claim_text": "qu’ils ont décrit ailleurs",
+      "normalized_claim": "GPS a été décrit dans des publications antérieures des mêmes auteurs.",
+      "support_ids": [
+        "SUP-6ebd0be3b4b64594",
+        "SUP-6b687a62ac141416",
+        "SUP-9e1642828ff7fa53",
+        "SUP-637de5e3c93e090b",
+        "SUP-d45ffc9e789914b6"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 365,
+      "end": 417,
+      "claim_text": "leur analyse, préviennent-ils, est encore incomplète",
+      "normalized_claim": "Les auteurs écrivent que leur analyse est encore incomplète (p. 155).",
+      "support_ids": [
+        "SUP-1de2495de279e279"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 274,
+      "end": 362,
+      "claim_text": "avec une proposition qu’ils avancent avec une prudence visible dès leurs premières pages",
+      "normalized_claim": "La proposition est avancée prudemment dès le début du chapitre.",
+      "support_ids": [
+        "SUP-1de2495de279e279",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 419,
+      "end": 465,
+      "claim_text": "Ils ne présentent pas une machine qui apprend.",
+      "normalized_claim": "Le chapitre ne présente pas un programme ayant effectivement appris.",
+      "support_ids": [
+        "SUP-171ed0451080d543",
+        "SUP-47cf3705d564797c",
+        "SUP-e7006a69ae683971",
+        "SUP-1de2495de279e279",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "lead[1]",
+      "start": 466,
+      "end": 563,
+      "claim_text": "Ils cherchent l’endroit exact où, dans une machine de ce genre, l’apprentissage devrait se loger.",
+      "normalized_claim": "Le chapitre cherche où, dans GPS, l'apprentissage doit porter.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-9d8263255098a140",
+        "SUP-2dc0b3967b7bb64f",
+        "SUP-1de2495de279e279"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 139,
+      "claim_text": "Le programme dont il est question, le General Problem Solver (GPS), compare deux choses : la situation où il se trouve et celle qu’il vise.",
+      "normalized_claim": "GPS compare deux objets.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 140,
+      "end": 311,
+      "claim_text": "Il nomme la différence entre les deux, cherche dans une table de connexions une opération capable de la réduire et l’applique, ce qui engendre à son tour de nouveaux buts.",
+      "normalized_claim": "Détection de différence, recherche dans la table de connexions, application de l'opérateur, nouveaux buts.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 312,
+      "end": 386,
+      "claim_text": "Le chapitre ne fonde pas ce fonctionnement : il le rappelle en trois pages",
+      "normalized_claim": "Le chapitre ne fonde pas GPS et le rappelle en trois pages.",
+      "support_ids": [
+        "SUP-6ebd0be3b4b64594",
+        "SUP-6b687a62ac141416",
+        "SUP-d45ffc9e789914b6",
+        "SUP-9e1642828ff7fa53",
+        "SUP-637de5e3c93e090b",
+        "SUP-4bb790e64b657fae"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 388,
+      "end": 527,
+      "claim_text": "le désigne comme une chose déjà nommée, « what we usually call means-end analysis », ce que nous appelons d’ordinaire l’analyse moyens-fins",
+      "normalized_claim": "Citation p. 158 « what we usually call means-end analysis ».",
+      "support_ids": [
+        "SUP-9e1642828ff7fa53",
+        "SUP-d45ffc9e789914b6",
+        "SUP-637de5e3c93e090b",
+        "SUP-4bb790e64b657fae"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 529,
+      "end": 598,
+      "claim_text": "et renvoie pour le détail à des rapports antérieurs des mêmes auteurs",
+      "normalized_claim": "Renvoi à P1320 et P1584.",
+      "support_ids": [
+        "SUP-6ebd0be3b4b64594",
+        "SUP-6b687a62ac141416",
+        "SUP-9e1642828ff7fa53",
+        "SUP-d45ffc9e789914b6",
+        "SUP-637de5e3c93e090b",
+        "SUP-4bb790e64b657fae"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 75,
+      "end": 278,
+      "claim_text": "Trois choses, que le texte réunit sous un seul terme : les objets du domaine où il travaille, les opérations qu’il peut leur appliquer, et la liste des différences qu’il sait remarquer entre deux objets.",
+      "normalized_claim": "L'environnement de la tâche = objets, opérateurs, différences.",
+      "support_ids": [
+        "SUP-a4b2c7454b645dd5",
+        "SUP-4402076983d09428",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 279,
+      "end": 361,
+      "claim_text": "Cet ensemble, le chapitre l’appelle task environment, l’environnement de la tâche.",
+      "normalized_claim": "Terme « task environment ».",
+      "support_ids": [
+        "SUP-a4b2c7454b645dd5",
+        "SUP-4402076983d09428",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 362,
+      "end": 423,
+      "claim_text": "C’est la description sur laquelle toute la recherche s’appuie",
+      "normalized_claim": "La recherche de GPS s'appuie sur la description de l'environnement.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 428,
+      "end": 603,
+      "claim_text": "le point décisif vient p. 160 : les différences et les tests qui les détectent ne font pas partie du solveur proprement dit, mais de chaque environnement auquel on l’applique.",
+      "normalized_claim": "Citation p. 160 sur les différences comme partie de l'environnement.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 604,
+      "end": 641,
+      "claim_text": "Le noyau ne contient rien du domaine.",
+      "normalized_claim": "Le noyau de GPS est vide de contenu de domaine.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 56,
+      "end": 265,
+      "claim_text": "Les auteurs posent un dispositif à deux étages : en bas, le programme qui résout ; au-dessus, un programme d’apprentissage qui le prend pour objet et cherche à en produire une version mieux adaptée à sa tâche.",
+      "normalized_claim": "Dispositif à deux étages, figure 1, p. 153-154.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 266,
+      "end": 584,
+      "claim_text": "Pour ce second étage, ils avancent une thèse générale : les situations d’apprentissage significatives exigeront des programmes d’apprentissage qui soient eux-mêmes des programmes de résolution heuristique de problèmes, au sens où l’on en parlait alors à propos des programmes d’échecs et de démonstration de théorèmes.",
+      "normalized_claim": "Thèse générale p. 155.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-a25940e0ad90ecac"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 243,
+      "claim_text": "La version spécifique suit. Puisque GPS a la prétention de résoudre des problèmes très variés, il serait peut-être possible de le laisser être son propre programme d’apprentissage, « it may be possible to let GPS be its own learning program ».",
+      "normalized_claim": "Version spécifique p. 155 : GPS pourrait être son propre programme d'apprentissage.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-1de2495de279e279",
+        "SUP-2dc0b3967b7bb64f"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 244,
+      "end": 320,
+      "claim_text": "Le second étage n’est donc pas supprimé : c’est le solveur qui l’occuperait.",
+      "normalized_claim": "Le solveur occuperait le rôle du programme d'apprentissage.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-1de2495de279e279",
+        "SUP-2dc0b3967b7bb64f"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 139,
+      "claim_text": "Le programme d’apprentissage travaille en effet dans un espace, l’ensemble des pièces possibles pour un aspect du programme de performance.",
+      "normalized_claim": "Espace des composants possibles pour un aspect A, p. 154.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 140,
+      "end": 217,
+      "claim_text": "Le texte mentionne en note, p. 155, le programme d’apprentissage de Friedberg",
+      "normalized_claim": "Note p. 155 sur Friedberg.",
+      "support_ids": [
+        "SUP-6fa0d556a957f216"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 219,
+      "end": 383,
+      "claim_text": "dont l’intérêt, écrit-il, tient à ce que l’ensemble de composants dans lequel ce programme puise est celui de tous les programmes possibles, un ensemble très vaste.",
+      "normalized_claim": "Contenu de la note sur Friedberg.",
+      "support_ids": [
+        "SUP-6fa0d556a957f216"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 384,
+      "end": 720,
+      "claim_text": "Plus loin, les auteurs ajoutent : si un programme d’apprentissage ne peut observer que les performances obtenues avec tel élément, il ne peut guère que chercher à l’aveugle et retenir ce qui marche ; si d’autres informations sont disponibles, il peut recourir à des procédés qui peuvent être bien plus efficaces que l’essai et l’erreur.",
+      "normalized_claim": "Passage p. 164.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 790,
+      "end": 874,
+      "claim_text": "apprendre devient une recherche, et toute la question est de savoir ce qui la guide.",
+      "normalized_claim": "Interprétation : l'apprentissage comme recherche, guidée par l'information disponible.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 115,
+      "claim_text": "L’objet de cette recherche est fixé p. 161. Il s’agit d’apprendre les heuristiques propres à un environnement donné",
+      "normalized_claim": "p. 161 : apprendre les heuristiques propres à un environnement.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 117,
+      "end": 357,
+      "claim_text": "et les programmes d’apprentissage ne changent pas le noyau du système : ils modifient la spécification de l’environnement, « These learning programs do not change the core of GPS; instead, they modify the specification of the environment ».",
+      "normalized_claim": "Citation p. 161.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-1de2495de279e279",
+        "SUP-2dc0b3967b7bb64f",
+        "SUP-9d8263255098a140"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 101,
+      "claim_text": "Cette phrase sépare deux questions : comment on cherche, et ce qu’on sait du terrain où l’on cherche.",
+      "normalized_claim": "Interprétation : séparation noyau / description de l'environnement.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-9d8263255098a140"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 102,
+      "end": 279,
+      "claim_text": "Ce qui pourrait s’acquérir appartient à la description : les différences que le programme sait remarquer, et la table qui associe à chaque différence les opérations pertinentes.",
+      "normalized_claim": "Les deux objets d'apprentissage : table de connexions et jeu de différences.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 280,
+      "end": 366,
+      "claim_text": "C’est cette table que traite la section « Learning the Table of Connections », p. 162.",
+      "normalized_claim": "Section commençant p. 162.",
+      "support_ids": [
+        "SUP-cc7f969d388e00b5",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 367,
+      "end": 527,
+      "claim_text": "Les auteurs y écartent le renforcement statistique des associations réussies, non parce qu’il échouerait, mais parce qu’il se prive d’une information disponible",
+      "normalized_claim": "Rejet du renforcement statistique, p. 163.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 530,
+      "end": 680,
+      "claim_text": "la solution retenue applique les tests de différence aux formes d’entrée et de sortie de chaque opération, et remplit la table sans essais ni erreurs.",
+      "normalized_claim": "Solution retenue.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 141,
+      "claim_text": "Efficace, dans ces pages, ne veut dire ni rapide ni économique : une caractérisation efficace est celle qui permet effectivement de résoudre.",
+      "normalized_claim": "Sens de « effective ».",
+      "support_ids": [
+        "SUP-a4b2c7454b645dd5",
+        "SUP-4402076983d09428"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 142,
+      "end": 316,
+      "claim_text": "P. 161, les différences de la figure 6 sont présentées comme des traits de l’environnement de la tâche logique « that are effective for problem solving in that environment ».",
+      "normalized_claim": "Citation p. 161 sur la figure 6.",
+      "support_ids": [
+        "SUP-fb1304ecc393af79",
+        "SUP-a4b2c7454b645dd5",
+        "SUP-4402076983d09428"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 317,
+      "end": 536,
+      "claim_text": "La même page dit ce que coûte leur absence : un résolveur sans bon jeu de différences n’a guère d’autre moyen que d’essayer, « at random or by rote », au hasard ou par routine, des suites d’opérations jusqu’à la réponse",
+      "normalized_claim": "Citation p. 161, at random or by rote.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-a25940e0ad90ecac"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 538,
+      "end": 657,
+      "claim_text": "et il ne peut même pas mesurer facilement ses progrès, dont l’indice le plus direct est la disparition des différences.",
+      "normalized_claim": "Suite de la citation p. 161.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 113,
+      "claim_text": "Ce qui est affirmé de l’apprentissage humain et ce qui est proposé pour le programme ne sont pas au même endroit.",
+      "normalized_claim": "Distinction entre déclarations sur l'humain et mécanisme du programme.",
+      "support_ids": [
+        "SUP-99e6411c129f50cb",
+        "SUP-2dc0b3967b7bb64f",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 114,
+      "end": 283,
+      "claim_text": "La phrase de la p. 161 déclare que ce genre d’apprentissage, apprendre à caractériser efficacement l’environnement d’une tâche, est important et répandu chez les humains",
+      "normalized_claim": "Citation p. 161.",
+      "support_ids": [
+        "SUP-1c2bfde0ec7f4f63",
+        "SUP-86e45f80fbae4d76",
+        "SUP-9aa4275f2de049b8",
+        "SUP-5f93b45adc3f8b45",
+        "SUP-23629ed67862cebc",
+        "SUP-d77ed8c67e1bf073",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 285,
+      "end": 457,
+      "claim_text": "et l’illustre aussitôt : un résolveur expérimenté remarque des traits qui échappent au novice, voire lui sont invisibles, et le pisteur en forêt en est l’exemple classique.",
+      "normalized_claim": "Suite p. 161 : résolveur expérimenté, pisteur.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 458,
+      "end": 626,
+      "claim_text": "P. 162, ils notent qu’on pourrait donner à un apprenant la liste des différences et la table des connexions, mais qu’on le laisse d’ordinaire les acquérir par induction",
+      "normalized_claim": "p. 162, enseignement humain.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 628,
+      "end": 703,
+      "claim_text": "et ils supposent les humains munis de programmes d’apprentissage pour cela.",
+      "normalized_claim": "p. 162 « We assume that humans are equipped with learning programs ».",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 704,
+      "end": 781,
+      "claim_text": "C’est une supposition déclarée ; le mécanisme exposé est celui d’un programme",
+      "normalized_claim": "Statut de supposition et mécanisme de programme.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-99e6411c129f50cb"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 783,
+      "end": 905,
+      "claim_text": "et prendre l’une pour une thèse de psychologie que l’autre démontrerait serait leur faire dire davantage qu’ils ne disent.",
+      "normalized_claim": "Le chapitre n'est pas une thèse de psychologie démontrée.",
+      "support_ids": [
+        "SUP-99e6411c129f50cb",
+        "SUP-47cf3705d564797c"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 165,
+      "claim_text": "L’autre pièce, le jeu de différences, est celle que les auteurs tiennent pour la difficile : il s’agit de construire les tests qui font voir ce qui mérite attention.",
+      "normalized_claim": "Second problème, p. 164-185.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 166,
+      "end": 390,
+      "claim_text": "Il faut un langage pour écrire ces tests, dont les notions élémentaires soient plus simples que les différences recherchées ; sinon, on soupçonnerait que l’essentiel de l’apprentissage a eu lieu dans le choix de ces notions.",
+      "normalized_claim": "Difference Program Language, circularité, p. 165.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 391,
+      "end": 484,
+      "claim_text": "GPS est alors mis au travail sur ce nouvel environnement, celui des programmes de différences",
+      "normalized_claim": "GPS appliqué à l'environnement des programmes de différences.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 486,
+      "end": 604,
+      "claim_text": "et comme il n’y a pas là d’objet unique à atteindre, ses buts lui donnent une direction sans fixer de point d’arrivée.",
+      "normalized_claim": "p. 185, buts Reduce D1-D9.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 64,
+      "claim_text": "Il faut maintenant dire ce qui, dans tout cela, a tourné : rien.",
+      "normalized_claim": "Rien n'a été exécuté en machine.",
+      "support_ids": [
+        "SUP-e7006a69ae683971",
+        "SUP-171ed0451080d543",
+        "SUP-47cf3705d564797c",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 65,
+      "end": 112,
+      "claim_text": "Ce déroulé a été mené à la main par ses auteurs",
+      "normalized_claim": "Simulation à la main.",
+      "support_ids": [
+        "SUP-e7006a69ae683971",
+        "SUP-171ed0451080d543",
+        "SUP-47cf3705d564797c",
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 114,
+      "end": 146,
+      "claim_text": "sur un seul domaine, la logique.",
+      "normalized_claim": "Travail limité à la logique, p. 186.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-e7006a69ae683971"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 147,
+      "end": 395,
+      "claim_text": "Le tableau 5 s’intitule « Sketch of Hand Simulation with Logic as the A-Environment », esquisse d’une simulation à la main, et il se termine sur la mention que la simulation a été arrêtée à ce point, « The simulation was terminated at this point ».",
+      "normalized_claim": "Table 5.",
+      "support_ids": [
+        "SUP-e7006a69ae683971"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 396,
+      "end": 598,
+      "claim_text": "Les auteurs pensent pourtant, p. 185, que cette simulation sommaire fournit de bons indices qu’ils ont spécifié les mécanismes essentiels, qui délimitent au moins une variété d’apprentissage intelligent",
+      "normalized_claim": "p. 185.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-e7006a69ae683971"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 600,
+      "end": 714,
+      "claim_text": "et ils reconnaissent p. 186 que la généralité annoncée n’est pas éprouvée, « This possibility is quite untested ».",
+      "normalized_claim": "p. 186.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-e7006a69ae683971"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 114,
+      "claim_text": "Dans la discussion transcrite à la suite du chapitre, un participant demande sur quelle machine tout ceci se fait.",
+      "normalized_claim": "Question de McCormick.",
+      "support_ids": [
+        "SUP-e7006a69ae683971",
+        "SUP-6b687a62ac141416",
+        "SUP-c9ab3ef0f13b0c34"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 115,
+      "end": 143,
+      "claim_text": "C’est Newell seul qui répond",
+      "normalized_claim": "Newell seul répond.",
+      "support_ids": [
+        "SUP-bd05e473c4f51d3b",
+        "SUP-35bf94a3611f9684",
+        "SUP-6b687a62ac141416",
+        "SUP-c9ab3ef0f13b0c34",
+        "SUP-e7006a69ae683971"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 145,
+      "end": 405,
+      "claim_text": "et sa réponse est sans ambiguïté : le programme est sur le Johnniac de la RAND, le travail dont il parle est entièrement une simulation à la main, et le programme, en cours de mise au point, « is not yet solving any problems », ne résout encore aucun problème.",
+      "normalized_claim": "Réponse de Newell p. 187.",
+      "support_ids": [
+        "SUP-e7006a69ae683971",
+        "SUP-637de5e3c93e090b",
+        "SUP-171ed0451080d543",
+        "SUP-47cf3705d564797c"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 406,
+      "end": 512,
+      "claim_text": "Ces phrases sont les siennes, prononcées en séance, et la signature commune du chapitre ne les couvre pas.",
+      "normalized_claim": "Attribution à Newell seul.",
+      "support_ids": [
+        "SUP-bd05e473c4f51d3b",
+        "SUP-35bf94a3611f9684",
+        "SUP-6b687a62ac141416",
+        "SUP-c9ab3ef0f13b0c34"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 0,
+      "end": 55,
+      "claim_text": "Ce que le chapitre laisse ouvert, il le nomme lui-même.",
+      "normalized_claim": "Le chapitre nomme ses propres questions ouvertes.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 56,
+      "end": 277,
+      "claim_text": "P. 164, il pose ce qu’il appelle la question empirique importante : dans les problèmes d’apprentissage qui surgissent naturellement chez des systèmes intelligents complexes, de quelle nature est l’information disponible ?",
+      "normalized_claim": "p. 164.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 278,
+      "end": 406,
+      "claim_text": "P. 186, les auteurs se font deux objections : un jeu de différences universel pourrait rendre ce travail d’apprentissage inutile",
+      "normalized_claim": "p. 186, objection 1.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 409,
+      "end": 574,
+      "claim_text": "et les environnements de GPS sont entièrement indépendants, bien plus que ceux d’un humain, qui se présentent tous dans le même monde réel, perçu par les mêmes sens.",
+      "normalized_claim": "p. 186, objection 2.",
+      "support_ids": [
+        "SUP-637de5e3c93e090b",
+        "SUP-99e6411c129f50cb"
+      ]
+    }
+  ]
+}

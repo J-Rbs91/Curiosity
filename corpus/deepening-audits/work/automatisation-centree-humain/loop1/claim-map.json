@@ -1,0 +1,862 @@
+{
+  "concept_id": "automatisation-centree-humain",
+  "candidate_sha256": "abdd1f9976b6b0f204899d2e5e02c483c3c19be225c65256a9889a5104c2d7a6",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 266,
+      "end": 367,
+      "claim_text": "Elle cesse de l’être si cette personne ne sait plus ce que la machine fait, ni pourquoi elle le fait.",
+      "normalized_claim": "La situation devient problématique quand l'opérateur ne sait plus ce que fait la machine ni pourquoi.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 49,
+      "claim_text": "C’est de ce problème que part Charles E. Billings",
+      "normalized_claim": "Billings part du problème de l'opérateur qui perd de vue ce que fait la machine.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-e48f19d649c3cc2a"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 50,
+      "end": 103,
+      "claim_text": "dans un mémorandum publié par la NASA en février 1996",
+      "support_ids": [
+        "SUP-896e8f7062026e6c",
+        "SUP-e4a5db9f6e51a820",
+        "SUP-a2dda4441da1c37d",
+        "SUP-de84fe563b85764e",
+        "SUP-1fd6421d7c3664d0"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 105,
+      "end": 128,
+      "claim_text": "Il traite de l’aviation",
+      "support_ids": [
+        "SUP-896e8f7062026e6c",
+        "SUP-e48f19d649c3cc2a"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 131,
+      "end": 188,
+      "claim_text": "le pilote y porte la responsabilité de la sécurité du vol",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 190,
+      "end": 266,
+      "claim_text": "alors que toujours plus d’automatisation s’interpose entre lui et l’appareil",
+      "support_ids": [
+        "SUP-10632b1b06e9364a",
+        "SUP-7077a01f11b29367",
+        "SUP-1df7f6dbc76d6fc2",
+        "SUP-116deac7c682a2eb"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 268,
+      "end": 429,
+      "claim_text": "Dire d’une automatisation qu’elle est centrée sur l’humain désigne, chez lui, une exigence qui porte sur la place laissée à celui qui devra répondre du résultat.",
+      "normalized_claim": "Interprétation : le concept porte sur la place de l'opérateur responsable.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-c8676b3312ed6af9"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 101,
+      "claim_text": "Billings commence par définir l’automatisation elle-même, et cette définition commande tout le reste.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 102,
+      "end": 399,
+      "claim_text": "Il la tient pour un outil ou une ressource : un dispositif, un système ou une méthode par lequel un opérateur accomplit une tâche qui serait autrement plus difficile ou impossible, ou bien qu’il peut charger d’exécuter plus ou moins seul une tâche exigeant sinon davantage d’attention ou d’effort.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 400,
+      "end": 476,
+      "claim_text": "Dans le second membre de phrase, quelqu’un dirige la machine vers une tâche.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 477,
+      "end": 584,
+      "claim_text": "L’automatisation n’est pas un opérateur de remplacement, c’est un moyen remis entre les mains de quelqu’un.",
+      "normalized_claim": "Lecture interprétative de la définition.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 71,
+      "claim_text": "De là vient la définition du concept, à la troisième page du mémorandum",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-c8676b3312ed6af9"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 74,
+      "end": 317,
+      "claim_text": "une automatisation « automation designed to work cooperatively with human operators in the pursuit of stated common objectives », conçue pour travailler en coopération avec les opérateurs humains dans la poursuite d’objectifs communs déclarés.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-c8676b3312ed6af9",
+        "SUP-6060afeabe3b6e5c"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 318,
+      "end": 385,
+      "claim_text": "Le mémorandum de 1991 que celui-ci prolonge portait déjà la formule",
+      "support_ids": [
+        "SUP-a55f757915207ce6",
+        "SUP-d05abe07efd63d6e",
+        "SUP-4cb6c233c418d483"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 387,
+      "end": 446,
+      "claim_text": "à la première personne du pluriel et sans le mot « common »",
+      "support_ids": [
+        "SUP-a55f757915207ce6",
+        "SUP-d05abe07efd63d6e",
+        "SUP-09c689639377f631"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 143,
+      "claim_text": "L’expression, en revanche, Billings ne la revendique pas : « The term is not mine, and I have been unable to find out who first conceived it. »",
+      "support_ids": [
+        "SUP-a983c28738a99cc4",
+        "SUP-e4a5db9f6e51a820",
+        "SUP-32da8a851e1aced8",
+        "SUP-e20e16b3205607e9"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 144,
+      "end": 240,
+      "claim_text": "Il renvoie à Sheridan, Norman, Rouse et Cooley pour les technologies dites centrées sur l’humain",
+      "support_ids": [
+        "SUP-a983c28738a99cc4",
+        "SUP-e4a5db9f6e51a820",
+        "SUP-e20e16b3205607e9",
+        "SUP-32da8a851e1aced8"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 245,
+      "end": 315,
+      "claim_text": "son avant-propos cite un plan professionnel de 1989 qui l’emploie déjà",
+      "support_ids": [
+        "SUP-a983c28738a99cc4",
+        "SUP-2c88f2d406b41f26",
+        "SUP-e4a5db9f6e51a820",
+        "SUP-32da8a851e1aced8"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 317,
+      "end": 448,
+      "claim_text": "Ce qu’il revendique est la doctrine qu’il désigne par ce nom, « a philosophy or construct which I call human-centered automation ».",
+      "support_ids": [
+        "SUP-a983c28738a99cc4",
+        "SUP-e4a5db9f6e51a820",
+        "SUP-32da8a851e1aced8",
+        "SUP-e20e16b3205607e9"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 167,
+      "claim_text": "Le chapitre où le concept est exposé range les difficultés de l’automatisation aéronautique derrière un phénomène central : la perte de conscience de l’état du système",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-e48f19d649c3cc2a",
+        "SUP-95a1d7e9dd08550b"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 169,
+      "end": 276,
+      "claim_text": "c’est-à-dire le moment où l’opérateur ne sait plus où en est la machine ni ce qu’elle est en train de faire",
+      "normalized_claim": "Glose de 'loss of state awareness'.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-e48f19d649c3cc2a"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 278,
+      "end": 357,
+      "claim_text": "Billings lui donne quatre conditions d’apparition, et il les définit une à une.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-e48f19d649c3cc2a",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 202,
+      "claim_text": "La complexité rend le détail du fonctionnement plus difficile à comprendre, à se représenter et à retenir, précisément quand cette compréhension serait nécessaire pour expliquer un comportement observé.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 203,
+      "end": 272,
+      "claim_text": "Le couplage désigne les interdépendances entre fonctions automatisées",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 275,
+      "end": 408,
+      "claim_text": "elles sont rarement évidentes, souvent absentes des manuels mis à disposition des utilisateurs, et c’est de là que vient la surprise.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 0,
+      "end": 83,
+      "claim_text": "L’autonomie décrit un comportement machine qui paraît s’être déclenché de lui-même.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 84,
+      "end": 187,
+      "claim_text": "Lorsqu’il n’est pas attendu, il est souvent perçu comme animé, comme si le système avait sa propre idée",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 192,
+      "end": 267,
+      "claim_text": "l’humain doit décider, parfois vite, si ce qu’il voit est approprié ou non.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 268,
+      "end": 441,
+      "claim_text": "La rétroaction insuffisante, enfin, décrit une machine qui ne dit pas, ou dit mal, ce qu’elle fait, pourquoi elle le fait, ou pourquoi elle vient de changer de comportement.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-edef8e92d88849d2"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 442,
+      "end": 573,
+      "claim_text": "Il ne reste alors à l’opérateur que sa mémoire et l’idée qu’il se fait du fonctionnement pour interpréter ce qu’il a sous les yeux.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 169,
+      "claim_text": "Billings écrit : « L’interposition de toujours plus d’automatisation entre le pilote et le véhicule tend à éloigner les pilotes de bien des détails de l’opération […]. »",
+      "support_ids": [
+        "SUP-10632b1b06e9364a",
+        "SUP-7077a01f11b29367",
+        "SUP-00e60512db7b2d6f",
+        "SUP-73fd60734c65c09d",
+        "SUP-a8d164b5338dcfb5"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 39,
+      "claim_text": "Le mouvement est lent et à double face.",
+      "normalized_claim": "Le mouvement opère avec le temps et a un effet souhaitable et un effet indésirable.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-13bc5ab40a672cee"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 40,
+      "end": 137,
+      "claim_text": "Avec le temps, si la machine est fiable, le pilote peut se soucier moins du détail de ses tâches.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-13bc5ab40a672cee",
+        "SUP-0cf09b5a313f653f"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 138,
+      "end": 215,
+      "claim_text": "Sa charge de travail peut en être allégée, effet que Billings dit souhaitable",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-13bc5ab40a672cee"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 217,
+      "end": 284,
+      "claim_text": "mais il peut devenir, et se sentir, moins impliqué dans la mission.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-13bc5ab40a672cee",
+        "SUP-0cf09b5a313f653f"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 285,
+      "end": 393,
+      "claim_text": "Billings nomme ce mouvement la mise à la périphérie de l’équipage, « peripheralization of the flight crew ».",
+      "support_ids": [
+        "SUP-13bc5ab40a672cee",
+        "SUP-bc5399c3ede09619",
+        "SUP-adff7f1e9e33be6a"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 53,
+      "claim_text": "Il prend soin de ne pas en faire un constat accompli.",
+      "support_ids": [
+        "SUP-0cf09b5a313f653f",
+        "SUP-162b6d82c119f09f",
+        "SUP-adff7f1e9e33be6a"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 54,
+      "end": 199,
+      "claim_text": "Il écrit qu’il ne croit pas ce sentiment d’implication diminuée répandu, « I do not believe that a sense of diminished involvement is prevalent »",
+      "support_ids": [
+        "SUP-0cf09b5a313f653f",
+        "SUP-162b6d82c119f09f"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 204,
+      "end": 293,
+      "claim_text": "ajoute aussitôt que cela pourrait bien le devenir si l’on continue dans la voie présente.",
+      "support_ids": [
+        "SUP-0cf09b5a313f653f",
+        "SUP-162b6d82c119f09f"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 294,
+      "end": 487,
+      "claim_text": "Ce qu’il tient en revanche pour acquis est plus étroit : des accidents récents ont montré avec quelle facilité des pilotes peuvent perdre le fil de ce qui se passe à bord d’un appareil moderne.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-0cf09b5a313f653f"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 94,
+      "claim_text": "Une phrase du même chapitre coupe court à la question qui vient d’abord, celle du responsable.",
+      "normalized_claim": "La phrase est du chapitre 2 et écarte l'imputation à la machine ou à l'humain.",
+      "support_ids": [
+        "SUP-83096e4243781191",
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 95,
+      "end": 303,
+      "claim_text": "La plupart de ces problèmes, écrit Billings, ne sont pas plus des problèmes d’automatisation que des problèmes d’erreur humaine : « They are human-machine system problems, and they must be attacked as such. »",
+      "support_ids": [
+        "SUP-83096e4243781191",
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 304,
+      "end": 403,
+      "claim_text": "Ce qu’il faut traiter n’est ni la machine seule ni l’opérateur seul, mais le couple qu’ils forment.",
+      "support_ids": [
+        "SUP-83096e4243781191",
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 68,
+      "claim_text": "Un chapitre plus tardif reprend la question du côté de la conception",
+      "support_ids": [
+        "SUP-65e46b338cdd50e6",
+        "SUP-e48f19d649c3cc2a",
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 72,
+      "end": 237,
+      "claim_text": "range les difficultés sous cinq facteurs : quatre tiennent à la conception, la complexité, la fragilité, l’opacité et le littéralisme, le cinquième est la formation.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-847e50066b533826",
+        "SUP-65e46b338cdd50e6"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 52,
+      "claim_text": "L’opacité est le terme qu’il pose en son nom propre.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-65e46b338cdd50e6"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 53,
+      "end": 273,
+      "claim_text": "À mesure que la complexité de l’automatisation augmente, il devient plus difficile au concepteur de fournir au pilote qui surveille une information manifeste et sans ambiguïté sur ce que la machine est en train de faire.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 274,
+      "end": 392,
+      "claim_text": "D’autres ont parlé de cela comme d’un défaut de transparence, « Others have referred to it as a lack of transparency »",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-65e46b338cdd50e6"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 397,
+      "end": 460,
+      "claim_text": "Billings tient les deux termes pour synonymes dans ce contexte.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-65e46b338cdd50e6"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 461,
+      "end": 583,
+      "claim_text": "Le résumé du mémorandum range l’opacité avec la rétroaction insuffisante, « opacity, or inadequate feedback to operators »",
+      "support_ids": [
+        "SUP-95a1d7e9dd08550b"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 586,
+      "end": 658,
+      "claim_text": "on peut y lire la même difficulté, vue cette fois du côté du concepteur.",
+      "normalized_claim": "Interprétation : opacité = rétroaction insuffisante vue du côté de la conception.",
+      "support_ids": [
+        "SUP-95a1d7e9dd08550b",
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 659,
+      "end": 784,
+      "claim_text": "Son effet net, écrit Billings, est une conscience diminuée de la situation, problème sérieux dans un environnement dynamique.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-6060afeabe3b6e5c"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 99,
+      "claim_text": "C’est à l’opacité qu’il rattache explicitement l’erreur de mode et le défaut de conscience de mode.",
+      "support_ids": [
+        "SUP-65e46b338cdd50e6",
+        "SUP-e48f19d649c3cc2a"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 100,
+      "end": 454,
+      "claim_text": "Le même chapitre dit ce que la multiplication des modes coûte à l’opérateur : il doit apprendre, retenir et pouvoir retrouver ce qui concerne chacun d’eux pour s’en servir, ce qui impose une charge cognitive considérable, rend moins probable qu’il se fasse une idée juste du fonctionnement de la machine et rend plus probable un usage impropre des modes.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-847e50066b533826"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "Billings dresse une liste qu’il appelle les premiers principes.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-4f516c8d7569d25f"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 64,
+      "end": 204,
+      "claim_text": "Elle part de deux prémisses de responsabilité, le pilote pour la sécurité du vol, le contrôleur pour la séparation et l’écoulement du trafic",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 209,
+      "end": 276,
+      "claim_text": "en tire des axiomes : l’un et l’autre doivent rester aux commandes.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 309,
+      "end": 388,
+      "claim_text": "Les deux opérateurs doivent être activement impliqués et suffisamment informés.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 389,
+      "end": 491,
+      "claim_text": "Ils doivent pouvoir surveiller l’automatisation qui les assiste, ce qui exige qu’elle soit prévisible.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 492,
+      "end": 540,
+      "claim_text": "L’automatisation doit à son tour les surveiller.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 541,
+      "end": 621,
+      "claim_text": "Et chaque élément intelligent du système doit comprendre l’intention des autres.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 622,
+      "end": 762,
+      "claim_text": "Ces intitulés avaient déjà paru en 1989, sur une planche signée de Curtis Graeber et de Billings, sous la mention « Our present construct ».",
+      "support_ids": [
+        "SUP-1c71712dc2c13d9a",
+        "SUP-689fe45ecd65f963",
+        "SUP-a983c28738a99cc4",
+        "SUP-d7c9c6b0efb1cab4",
+        "SUP-64d81ee6d82c2f82"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "Billings prend d’ailleurs aussitôt ses distances avec la liste.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-4f516c8d7569d25f"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 64,
+      "end": 288,
+      "claim_text": "Ces principes, dit-il, sont énoncés comme des absolus, mais ils sont en réalité des « matters of choice to which system designers may or may not wish to adhere », des affaires de choix auxquelles un concepteur adhère ou non.",
+      "support_ids": [
+        "SUP-bc5399c3ede09619",
+        "SUP-4f516c8d7569d25f"
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 0,
+      "end": 72,
+      "claim_text": "Deux ans après le mémorandum, un rapport de David Woods et Nadine Sarter",
+      "support_ids": [
+        "SUP-9c4eb085bcd6ea98",
+        "SUP-c92ee166d033a7b2",
+        "SUP-3a319902fc57308f",
+        "SUP-cb50d6b81dd45165"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 73,
+      "end": 195,
+      "claim_text": "fait de l’approche centrée sur l’humain, en citant Billings, « a necessary first step » pour la recherche et la conception",
+      "support_ids": [
+        "SUP-c92ee166d033a7b2",
+        "SUP-3a319902fc57308f"
+      ]
+    },
+    {
+      "claim_id": "C067",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 200,
+      "end": 332,
+      "claim_text": "la reformule déjà en trois attributs qui ne sont pas les siens : conduite par le problème, centrée sur l’activité, liée au contexte.",
+      "support_ids": [
+        "SUP-cb50d6b81dd45165"
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 333,
+      "end": 396,
+      "claim_text": "Ils les rapportent à un texte de Winograd et Woods paru en 1997",
+      "support_ids": [
+        "SUP-cb50d6b81dd45165"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 399,
+      "end": 442,
+      "claim_text": "ce que ce texte en fait, il faudra le lire.",
+      "normalized_claim": "Winograd et Woods 1997 n'a pas été lu.",
+      "support_ids": [
+        "SUP-cb50d6b81dd45165"
+      ]
+    }
+  ]
+}
