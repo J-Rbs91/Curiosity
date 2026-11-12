@@ -99,3 +99,18 @@ non reconstitué ; « difficultés » p. 17 non rattachées à p. 18). Aucun con
 dans le texte lecteur.
 
 Aucune auto-validation : le texte doit repasser par PREPARE (SHA modifié).
+
+---
+
+## FACTCHECK_FIX (2026-11-12) — gate FACTCHECK_FAIL 65/71
+
+Correction minimale des six claims refusés ; aucune phrase soutenue touchée, aucune affirmation ajoutée. Texte lecteur : 1598 mots après correction (≈ -95 mots).
+
+- C001 (TOO_STRONG, lead) : « des dizaines, chacune avec son nom, sa formule, parfois son logiciel » → « une large collection, chacune la recette de son auteur » (portée ramenée à ce que le vérificateur juge attesté ; SUP-a1259e7051279e8f, SUP-813433b6d138c5f0).
+- C002 (UNSUPPORTED, lead) : « deux d'entre elles, sur les mêmes chiffres, peuvent désigner deux fournisseurs différents » retiré.
+- C054 (TOO_STRONG, s4 §1) : caractérisation « batterie d'axiomes cohérente et la règle qui la satisfait » retirée ; la citation p. 18 est conservée, introduite par « un contresens sur la batterie d'axiomes qu'il expose ».
+- C057 (TOO_STRONG, s4 §2) : phrase « le choix des axiomes … ne se sous-traite pas » retirée (contredite par le besoin d'expert, notes[2]).
+- C060 (TOO_STRONG, s4 §3) : « si bien que » (causalité) remplacé par une juxtaposition « et le texte ajoute que … ne peut « en général se passer d'un expert … » » ; citation conservée mot pour mot.
+- C061 (TOO_STRONG, s4 §3) : phrase « L'aveu est sérieux … » retirée.
+
+Check mécanique : `npm run corpus:deepen -- --check --only=approche-axiomatique-arrow-raynaud` PASS. Le SHA a changé : reprendre à PREPARE.
