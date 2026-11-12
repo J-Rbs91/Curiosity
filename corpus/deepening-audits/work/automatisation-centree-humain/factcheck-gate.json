@@ -1,23 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "automatisation-centree-humain",
-  "candidate_sha256": "abdd1f9976b6b0f204899d2e5e02c483c3c19be225c65256a9889a5104c2d7a6",
+  "candidate_sha256": "d402d1eba31668a717d4974268afef57fac621d4396830e7a6c645e32c424552",
   "verdict": "FACTCHECK_FAIL",
   "claims": 69,
-  "supported": 67,
-  "failed": 2,
+  "supported": 68,
+  "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
       "claim_id": "C001",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis pour ce claim présentent la rétroaction insuffisante comme une condition associée à la perte de conscience de l'état du système (« operators may be surprised », « serious problem »), et la définition de l'automatisation comme outil. Ils ne posent pas de seuil catégorique au-delà duquel l'automatisation cesserait d'être ce que la phrase lui attribue : la formulation transforme un problème décrit en condition définitoire."
-    },
-    {
-      "claim_id": "C007",
-      "verdict": "TOO_STRONG",
-      "reason": "La définition citée (definition_de_lauteur, notes[0]) parle d'une automatisation conçue pour coopérer avec les opérateurs vers des objectifs communs déclarés, une « intention de conception ». Le lien à la responsabilité n'apparaît, dans les appuis fournis, que dans les prémisses des premiers principes, que Billings donne lui-même pour des « matters of choice ». Attribuer au terme lui-même, « chez lui », une exigence portant sur la place de celui qui répond du résultat excède ce que ces appuis autorisent."
+      "reason": "Les appuis fournis portent « Over time, if the automation is reliable, pilots may become less concerned with the details of their tasks » (p. 7) : le « may » devient « finit par penser à autre chose », et les fonctions concrètes (tenir le cap, maintenir l'allure, rattraper seule les petits écarts) ne figurent dans aucun des appuis fournis pour ce claim."
     }
   ]
 }
