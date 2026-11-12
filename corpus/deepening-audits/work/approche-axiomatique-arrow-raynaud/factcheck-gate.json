@@ -1,23 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "approche-axiomatique-arrow-raynaud",
-  "candidate_sha256": "fe286a86b48a94b5f8e1a72f7e8f975c4e381f5f3fca383367523877d67e0ade",
+  "candidate_sha256": "588a908511c192bd1b4af013f806b19a0c7d430ad5aef993b5a3c8429dc3fa28",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 63,
-  "supported": 61,
-  "failed": 2,
+  "claims": 65,
+  "supported": 64,
+  "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
-      "claim_id": "C043",
+      "claim_id": "C054",
       "verdict": "TOO_STRONG",
-      "reason": "La source fournie qualifie l'incompatibilité : « Dans le cas général, cet axiome n'est pas compatible… ». Le claim l'énonce sans ce qualificatif, comme impossibilité absolue pour toute règle de décision."
-    },
-    {
-      "claim_id": "C055",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis ne donnent la proposition qu'au subjonctif (« le décideur gestionnaire ne puisse en général se passer… »), sans la principale qui la gouverne ; le claim la convertit en assertion indicative que le texte ajouterait, sans que les appuis établissent ce cadre modal."
+      "reason": "$.review.notes[8] porte la citation de la conclusion (p. 21) comme mise en garde méthodologique sur l'emploi d'une méthode dont on n'a pas accepté les fondements ; les appuis fournis pour ce claim ne disent pas que cette conclusion vise « les méthodes toutes faites » : la cible est requalifiée."
     }
   ]
 }
