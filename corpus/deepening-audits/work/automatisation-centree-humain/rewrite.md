@@ -102,3 +102,26 @@ nommés, non définis ; aucun accident précis nommé. Aucun contenu de limits r
 sections disent déjà sur pièce (refus de paternité, Woods et Sarter).
 
 Pas d'auto-validation : le SHA a changé, l'orchestrateur doit reprendre à PREPARE.
+
+---
+
+## FACTCHECK_FIX (2026-11-12) — gate FACTCHECK_FAIL 63/74
+
+Correction minimale ; aucune phrase soutenue retouchée, aucune affirmation ajoutée.
+Texte lecteur : 1641 -> 1531 mots (compteur `corpus:deepen --check`).
+
+| Claim | Verdict | Correction |
+|---|---|---|
+| C001 | TOO_STRONG | Bornée : « reprendre la main » et « depuis quand » retirés ; reste « si cette personne ne sait plus ce que la machine fait, ni pourquoi elle le fait » (rétroaction insuffisante, déjà portée par SUP-bc5399c3ede09619 / SUP-edef8e92d88849d2). |
+| C010 | TOO_STRONG | Hiérarchie retirée : « Dans le second membre de phrase, quelqu'un dirige la machine vers une tâche. » |
+| C014 | UNSUPPORTED | Phrase retirée. |
+| C015 | UNSUPPORTED | Phrase retirée. |
+| C032 | TOO_STRONG | Cadre « relie ces conditions à leur effet / a pour sujet » retiré ; la citation est introduite par « Billings écrit : ». |
+| C035 | TOO_STRONG | Modalité rétablie : « peut se soucier moins ». |
+| C036 | TOO_STRONG | « peut en être allégée, effet que Billings dit souhaitable » (« may », « desirable »). |
+| C046 | TOO_STRONG | Phrase retirée. |
+| C058 | TOO_STRONG | « s'achève sur » retiré : « Billings dresse une liste qu'il appelle les premiers principes. » |
+| C061 | TOO_STRONG | « et ce sont eux qui portent la doctrine » retiré. |
+| C067 | TOO_STRONG | Phrase retirée (le corollaire symétrique reste énoncé dans la phrase précédente). |
+
+Check mécanique : PASS. Le SHA a changé : reprendre à PREPARE.

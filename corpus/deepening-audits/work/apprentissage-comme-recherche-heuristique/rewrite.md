@@ -128,3 +128,21 @@ Conservés mot pour mot : lead[1], la phrase Friedberg de S2.P3, la citation p. 
 
 Aucune auto-validation : ni `ACCEPT` ni `FACTCHECK_PASS` ne sont revendiqués. Prochaine étape :
 `PREPARE` sur le nouveau SHA.
+
+---
+
+## FACTCHECK_FIX (gate 57/60, SHA 6f9313be…)
+
+Correction minimale des trois claims `TOO_STRONG` ; aucune autre phrase touchée, aucune affirmation ajoutée.
+
+- **C024** (`sections[1].paragraphs[2]`) : « les auteurs posent une règle » → « les auteurs ajoutent » ;
+  « des procédés bien plus efficaces » → « des procédés qui peuvent être bien plus efficaces »
+  (rétablit le « may be » de SUP-637de5e3c93e090b).
+- **C028** (`sections[2].paragraphs[1]`) : retrait de « qu’on confond volontiers » (généralisation
+  de fréquence sans support) ; la séparation des deux questions reste.
+- **C037** (`sections[3].paragraphs[0]`) : phrase « Une description peut être exacte et rester
+  inutile ; … son rendement pour la recherche. » retirée (opposition vérité/rendement non portée).
+
+Mots du texte lecteur : environ 1868 avant, 1846 après (contrôle mécanique). Aucun ajout, donc
+aucun support à citer. `npm run corpus:deepen -- --check --only=apprentissage-comme-recherche-heuristique` :
+PASS. Le SHA a changé : reprendre à `PREPARE`.
