@@ -1,0 +1,336 @@
+{
+  "concept_id": "classement-multicritere-electre",
+  "candidate_sha256": "4f93add59a714523cf98332f2c951a66331004b987fa1f20898e2038b8ff6452",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "sources[0].label (corrobore) et sources_ouvertes[0].citation datent l'article de Roy à 1968 ; l'exposé d'une méthode y est porté par le titre « (La méthode ELECTRE) »."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et summary : Roy ne construit jamais une valeur ou note globale, il construit une relation ; l'appartement est l'exemple stipulé du texte."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : l'objet construit est une relation binaire sur E, donc une affirmation portant sur des couples (e, e')."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et summary : surclassement si majorité suffisante sans opposition trop forte (seuil q), c'est-à-dire malgré des points de vue discordants."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[7] cite le résumé p. 57 mot pour mot : « Soit E un ensemble d'objets sur lesquels n points de vue permettent de définir n préordres complets »."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : K_i est « au moins » une échelle dont les échelons s'ordonnent complètement ; l'évaluation « modeste » est une lecture dérivée non attribuée à Roy."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : chaque point de vue attribue à chaque objet un état d'une échelle finie ordonnée, d'où un préordre complet ; le partage d'un même état (même rang) en découle."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : K_i est au moins une échelle et chaque point de vue définit un préordre complet sur E ; exemple des appartements stipulé."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[7] porte la remarque p. 64 selon laquelle les échelons d'une échelle peuvent n'avoir aucune signification métrique précise."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "Glose dérivée de l'absence de signification métrique des échelons (review.notes[7]), formulée sans être attribuée comme citation."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : l'indicateur de discordance suppose des échelons repérés par des nombres et des écarts comparables."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : d(e, e') est le plus grand écart défavorable, normé par l'étendue maximale d'une échelle."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur porte la même formulation : suppose que les échelons soient repérés par des nombres et les écarts comparables d'une échelle à l'autre."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : Roy pose d'abord G_0, graphe des comparaisons unanimes ; « la plus sûre » est une conséquence dérivée de l'unanimité."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence logique de l'unanimité de G_0 (definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur cite « en général il est loin d'être complet » ; notes[2] et reserves[6] reprennent « loin d'être complet » pour le graphe de l'unanimité."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence de G_0 comme intersection des comparaisons unanimes (definition_de_lauteur) : un couple sur lequel les points de vue divergent n'y est pas relié. Le signal (reserves[0], « paires ») n'est pas nécessaire, le claim tenant sur l'appui fourni."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et reserves[7] : la question p. 66 porte sur les arcs à adjoindre pour obtenir un graphe G ; « flèches » glose « arcs »."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et reserves[7] donnent la citation p. 66 identique ; « comparaisons unanimes » = G_0."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[2] : la partie « B. — LA METHODE ELECTRE » commence par « 1. — Les indicateurs de concordance et de discordance »."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : c(e, e') est la part, pondérée par des coefficients traduisant l'importance relative, de la classe concordante."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : il vaut 1 si et seulement si l'unanimité est atteinte."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur cite « inspiré des idées de A. de Condorcet »."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : d(e, e') est le plus grand écart défavorable observé."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : e surclasse e' si et seulement si concordance ≥ p et discordance ≤ q, deux conditions conjointes."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur donne la relecture p. 71 avec les deux segments cités ; review.notes[7] confirme la page."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[7] : « aucun des points de vue en désaccord avec cette majorité ne révèle une supériorité trop fort[e] (seuil q) de e' par rapport à e »."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : l'une est une part pondérée, l'autre un écart maximal ; l'appréciation « ce qui fait la méthode » est une lecture dérivée non attribuée."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : part pondérée de la classe concordante, au moins égale à p."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : la discordance est le plus grand écart défavorable, un maximum et non une somme."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture modalisée (« On peut y lire ») dérivée de la condition d ≤ q de definition_de_lauteur, non attribuée à Roy."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence de definition_de_lauteur : un discordant à faible écart laisse d ≤ q et n'agit qu'en sortant de la classe concordante pondérée."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence de la définition « si et seulement si » de definition_de_lauteur : d > q exclut le surclassement quelle que soit la concordance."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "Remarque modalisée dérivée de definition_de_lauteur : coefficients d'importance relative et écarts comparables d'une échelle à l'autre."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "Exemple stipulé conforme au mécanisme de definition_de_lauteur (concordance ≥ p, faible écart sans veto)."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "Exemple stipulé conforme au mécanisme de definition_de_lauteur (écart défavorable supérieur au seuil q, q proche de 0)."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : p et q sont des seuils choisis, la relation est calculée pour une série de couples (p, q)."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : p voisin de 1 et q proche de 0."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.text et quotation.locator (p. 71, section B.2) ; review.notes[1] confirme la lecture sur la page imprimée 71."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[1] donne le texte lu p. 71 incluant « sur laquelle on peut, pour des valeurs appropriées de p et de q, fonder une réponse aux problèmes posés au commencement du paragraphe A.3 »."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : la relation G(p, q) dépend des seuils et est calculée pour une série de couples ; « pas forcément » est modalisé."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : programme pour ordinateur C.D.C., disponible à la SEMA, calculant la relation pour une série de couples (p, q)."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur, reserves[6], notes[2] : graphe pas forcément riche en couples comparables, extensions cherchant les seuils qui le rendent complet. Signaux (reserves[0], review.notes[8]) non nécessaires ; review.notes[8] ne partage que le mot « verdict » dans un sens méta."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence de la définition « si et seulement si » de definition_de_lauteur pour l'arc de e vers e'."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "Possibilité (« peuvent ») dérivée de la définition du surclassement ; exemple stipulé."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : G(p, q) n'est plus forcément transitif dès que p < 1 et q > 0 ; reserves[6] confirme (p. 69)."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur cite la phrase mot pour mot."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[8] : « bien adaptée » à la sélection, « peut-être moins » au rangement complet, p. 71."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "sources[0].label : titre « Classement et choix en présence de points de vue multiples »."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : noyau avec stabilité externe et interne, définies comme dans le claim."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[6] : face à un noyau trop gros l'explication donnée est « l'antagonisme des points de vue » (p. 72), non un défaut de la méthode ; notes[2] concorde."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur, reserves[7] et reserves[6] donnent la citation et la page 72."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[6] : l'absence de comparaison est traitée comme une information sur le conflit des points de vue, pas comme un échec."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : l'article se clôt sur des extensions vers des préordres."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : fermeture transitive de G(p, q) et couples de seuils « efficaces », les plus exigeants qui rendent encore le graphe complet."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "notes[0] et reserves[4] portent la même affirmation."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[8] : « le vocabulaire « multicritère » s'imposant plus tard » ; reserves[4] concorde."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et reserves[5] : le refus d'agréger est fait, non argumenté."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et reserves[5] : la seule phrase qui en approche, p. 66, porte sur les approches concurrentes."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[5] : la bibliographie retient Arrow [1] et les utilités additives de Fishburn [8] et [9]."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1], reserves[5] et definition_de_lauteur citent « aucune ne paraît toutefois avoir pleinement abouti »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note, attribution.note et review.notes[3] : référence [3] de juin 1966 déjà intitulée « ELECTRE : ... »."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note, attribution.note, review.notes[3] et notice Crossref (metadata-only, métadonnée de signature) : auteur unique B. Roy."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "attribution_note et attribution.note : méthode et nom antérieurs et collectifs, établis sur la bibliographie imprimée (notes[3], reserves[2]) ; le claim ne dépasse pas ce niveau."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "attribution.note : le résumé nomme ELECTRE comme programme avant méthode, citation identique."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "attribution.note et review.notes[3] : réf. [3], Benayoun, Roy, Sussmann, Note de travail n° 49 de la Direction Scientifique de la SEMA, juin 1966, titre identique ; établi sur la bibliographie imprimée."
+    }
+  ]
+}

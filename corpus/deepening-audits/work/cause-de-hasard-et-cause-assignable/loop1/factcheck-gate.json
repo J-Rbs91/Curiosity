@@ -1,0 +1,33 @@
+{
+  "protocol_version": 2,
+  "concept_id": "cause-de-hasard-et-cause-assignable",
+  "candidate_sha256": "36cb53a7b0444ab0be11b3f82a98199704549967096bcdc587b294f7b1a591db",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 48,
+  "supported": 44,
+  "failed": 4,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; il tire de la vignette une conséquence affirmée (corrections inutiles) et n'est pas purement hypothétique."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; il affirme une conséquence (laisser passer une vraie panne) que rien de fourni n'autorise."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "TOO_STRONG",
+      "reason": "Dans la citation fournie ($.review.notes[2], $.notes[0]), « very early in the development of control methods » qualifie la découverte du fait (« This fact was discovered »), non la dénomination ; $.notes[0] dit seulement « un moment antérieur ». Le claim reporte la datation « très précoce » sur l'acte de nommer, ce que les appuis fournis pour ce claim n'autorisent pas."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; il affirme que la construction de l'étalon se lit dans la suite du livre, ce que rien de fourni n'établit."
+    }
+  ]
+}

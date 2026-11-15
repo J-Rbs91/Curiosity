@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/deepening.schema.json",
+  "conceptId": "cause-de-hasard-et-cause-assignable",
+  "lead": [
+    "Dans un atelier qui fabrique la même pièce toute la journée, deux pièces ne sont jamais exactement identiques. On les mesure, et les chiffres bougent un peu, un peu au-dessus, un peu en dessous, sans que rien de particulier ne se soit passé. Puis un matin, une mesure s’écarte davantage. Faut-il arrêter la machine et chercher ce qui a changé ? Celui qui court après chaque écart passe ses journées à corriger des choses qui n’en avaient pas besoin, et finit souvent par dérégler ce qui allait bien. Celui qui ne bouge jamais laisse passer le jour où quelque chose s’est réellement cassé.",
+    "La variation ne se supprime pas : la question est de savoir laquelle mérite une enquête. W. A. Shewhart, membre du personnel technique des Bell Telephone Laboratories, la pose dans ces termes-là dans un livre paru chez D. Van Nostrand en 1931. Une planche pleine page, page 13, la met en légende sous une série de courbes : « Should These Variations be Left to Chance? », faut-il laisser ces variations au hasard ? Et le titre de la section qui suit la reformule à l’usage de l’atelier : « When do Fluctuations Indicate Trouble? », quand des fluctuations signalent-elles un ennui ?"
+  ],
+  "sections": [
+    {
+      "title": "Ce que « sous contrôle » veut dire ici",
+      "paragraphs": [
+        "Le mot « contrôle » ne désigne pas, chez Shewhart, le fait de surveiller ou de piloter. Il en donne une définition, dans une section intitulée « Definition of Control », et cette définition part de la variation plutôt que de l’action. Un procédé sous contrôle n’est pas un procédé qui ne varie pas : c’est un procédé dont la variation reste reconnaissable et tenue dans des limites. Page 6, il écrit de cette variabilité qu’elle est « distinguishable and, as it were, constant variability within limits », et il en fait la seconde caractéristique du contrôle.",
+        "La conséquence déplace l’objectif. Ce qu’on cherche à faire disparaître n’est pas la variation, c’est l’imprévisibilité. Tant que les mesures dansent de la même façon, jour après jour, à l’intérieur de la même fourchette, l’état des choses est stable et l’on sait entre quelles bornes il se tient. Ce qui doit alerter n’est donc pas l’écart en soi, mais l’écart qui ne ressemble plus au comportement habituel du procédé. Un même chiffre peut être anodin sur une machine et alarmant sur une autre : ce qui le juge, c’est ce que cette machine-là fait d’ordinaire."
+      ]
+    },
+    {
+      "title": "Un système constant, posé en postulat",
+      "paragraphs": [
+        "D’où vient cette variabilité constante ? D’un ensemble de causes qui agissent en permanence et forment système. Ce qui frappe, page 12, c’est le statut que Shewhart donne à cette idée : elle est numérotée et posée comme un postulat, « Constant systems of chance causes do exist in nature ». Des systèmes constants de causes de hasard existent bel et bien dans la nature : ce n’est pas démontré, c’est posé, et le reste s’appuie dessus.",
+        "L’autre versant se définit par exclusion, et la formule mérite qu’on s’y arrête. Ce sont, page 14, « unknown causes of variability in the quality of a product which do not belong to a constant system », des causes inconnues de variabilité qui n’appartiennent pas à un système constant. Une cause n’est donc pas assignable parce qu’elle serait grosse, spectaculaire ou facile à voir : elle l’est parce qu’elle n’appartient pas au système constant. Le critère porte sur l’appartenance, pas sur la taille de l’effet.",
+        "Un troisième postulat suit immédiatement : « Assignable causes of variation may be found and eliminated. » Le verbe compte. Il ne dit pas que ces causes seront trouvées, ni qu’elles se trouvent facilement : il dit qu’elles peuvent l’être. C’est là que le partage devient une consigne de travail. On ne supprime pas un système constant de causes de hasard, on apprend à vivre avec ; ce qui n’en fait pas partie peut en droit être retiré."
+      ]
+    },
+    {
+      "title": "Un mot que Shewhart ne s’attribue pas",
+      "paragraphs": [
+        "Le mot « assignable » a fait fortune, et son auteur n’en revendique pas la paternité. Page 14, il écrit : « This fact was discovered very early in the development of control methods, and these causes were called assignable », le mot en italique dans le texte. Passif, passé : ces causes ont été appelées ainsi, par des gens qu’il ne nomme pas, à un moment qu’il situe seulement comme très précoce dans la mise au point des méthodes de contrôle. La phrase ne nomme pas davantage d’institution, seulement un domaine de fabrication, « in the production of telephone equipment ».",
+        "Ce qui lui revient est autre chose, et ce n’est pas mince : la mise en forme systématique, les postulats numérotés, la démonstration. Le vocabulaire, lui, est présenté comme reçu. La différence importe à qui veut citer juste : attribuer à Shewhart l’invention du terme irait au-delà de ce que sa propre phrase autorise.",
+        "La page de titre ne porte qu’un nom. La préface en porte cinq autres : T. C. Fry et E. C. Molina, remerciés « on the theoretical side », H. F. Dodge « on the practical side », puis R. L. Jones et G. D. Edwards, « under whose helpful guidance the present basis for economic control of quality of manufactured product has been developed ». Ce sont des remerciements et non des cosignatures, et le livre reste de Shewhart seul. Ils disent tout de même d’où sort une idée pareille : d’un travail collectif dont l’ouvrage est la mise en forme."
+      ]
+    },
+    {
+      "title": "Trouver, puis supprimer",
+      "paragraphs": [
+        "Juste après le troisième postulat vient une phrase qui commence par « Hence », donc : « to secure control, the manufacturer must seek to find and eliminate assignable causes. » Elle n’ajoute pas un fait, elle tire une conséquence. Et elle place la charge sur les épaules du fabricant, pas sur celles d’un statisticien : le partage sert à décider quoi faire, dans un atelier, avec des moyens finis.",
+        "Deux verbes, et le second ne va pas de soi : trouver, puis supprimer. Identifier la cause ne suffit pas, il faut qu’elle cesse d’agir. Le but visé n’est pas la connaissance du procédé mais son état. C’est ce qui donne à la distinction son tranchant pratique : elle ne classe pas des causes pour le plaisir de les classer, elle désigne ce sur quoi il vaut la peine d’intervenir, et par différence tout ce qu’il est inutile de poursuivre.",
+        "Elle dit aussi quand s’arrêter, ce qui est plus rare. Puisque l’objectif est d’assurer le contrôle, et que le contrôle est cet état où la variation reste dans ses limites habituelles, la recherche a un terme : quand il ne reste plus de cause assignable à retirer, il ne reste que le système constant, et il n’y a plus rien à chercher. Imaginons un régleur qui reprendrait sa machine après chaque mesure un peu haute : il traiterait comme assignable ce qui appartient au système constant, et courrait après une cause qui n’existe pas."
+      ]
+    },
+    {
+      "title": "L’étalon qui manque encore",
+      "paragraphs": [
+        "Reste le plus difficile, et Shewhart le formule lui-même : rien, dans la distinction, ne dit de quel côté tombe l’écart qu’on a sous les yeux. Une mesure un peu haute ne porte pas d’étiquette. D’où cette phrase, qui est un aveu autant qu’un programme : « What we need is some yardstick to detect in such variations any evidence of the presence of assignable causes ». Ce qu’il nous faut, c’est un étalon capable de déceler, dans de telles variations, le signe qu’une cause assignable est présente.",
+        "Tant que cet étalon manque, le partage reste juste et inutilisable. On peut toujours appeler assignable ce qui dérange et hasard ce qu’on préfère ne pas expliquer, et la distinction n’y opposera rien. Ce qui la rend opérante, c’est la règle de décision qui vient ensuite : une procédure qui, à partir des mesures elles-mêmes, tranche entre les deux versants sans qu’on ait à en juger d’avance. Le partage énoncé aux pages 12 à 14 est ce qui rend cette règle nécessaire, et il n’en tient pas lieu."
+      ]
+    }
+  ],
+  "limits": [
+    "Qui a appelé ces causes « assignables », et quand ? La phrase de la page 14 renvoie au passé sans donner de nom. Le vocabulaire a pu se fixer plus tôt, dans les mémorandums d’inspection du système Bell des années 1924 à 1926 : ce sont eux qu’il faudra lire pour établir une antériorité, qu’aucune pièce ne permet d’affirmer ici.",
+    "Les pages 6 à 14 posent le partage et réclament un étalon ; elles ne le construisent pas. La règle qui décide, dans une suite de mesures, qu’une cause assignable est présente, et ce que le mot « economic » du titre recouvre exactement, occupent les cinq cents pages suivantes : elles attendent leur lecteur.",
+    "L’exemplaire le plus facile à se procurer aujourd’hui est la réimpression publiée en 1980 à Milwaukee par l’American Society for Quality Control pour le cinquantenaire du livre. Les folios cités ici sont ceux de l’édition Van Nostrand ; qui travaille sur cette réimpression vérifiera les siens en l’ouvrant.",
+    "Les traductions données plus haut servent à faire comprendre, pas à faire référence : les phrases de Shewhart se citent en anglais, et une traduction française publiée de l’ouvrage reste à identifier."
+  ]
+}

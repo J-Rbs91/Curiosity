@@ -1,0 +1,26 @@
+{
+  "protocol_version": 2,
+  "concept_id": "classement-par-valeurs-compensatrices",
+  "candidate_sha256": "f34d0b2ebf8676c4169ac3c25c8bb6605607168cbdfbefb3f362a4e05919b89f",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 62,
+  "supported": 60,
+  "failed": 1,
+  "mapping_incomplete": [
+    {
+      "claim_id": "C002",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Le mapping ne fournit aucun appui pour ce claim, alors que le signal nomme SUP-9207a3b322791aca (validated, $.review.notes[3]), qui partage le terme peu courant « réflexe ». Une note de revue de la carte qui emploie ce mot rend probable un rattachement manquant. Sans lui, les appuis fournis pour ce claim ne portent ni la moyenne ni l'effet d'une note basse ; le claim est à remapper avant tout jugement."
+    }
+  ],
+  "structural_errors": [
+    "C002: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
+  "failures": [
+    {
+      "claim_id": "C011",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui n'est fourni pour ce claim, qui glose le sens de « suppléer » chez Lahy ; le signal est vide. Les appuis fournis pour ce claim ne permettent donc pas d'en vérifier la définition."
+    }
+  ]
+}

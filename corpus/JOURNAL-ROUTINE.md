@@ -5,6 +5,18 @@ coup d'œil ce que la précédente a fait, sur quelle branche elle l'a laissé, 
 reprendre. **Les scripts priment sur ce fichier** : il dit ce qui a été tenté et pourquoi, ils
 disent ce qui est.
 
+## Passage d'audit — 2026-11-15
+
+`ROUTINE_PASS_WITH_BLOCKED_SOURCES`. Lot de 3 cartes jamais auditées, toutes `REVISE` : 2 publiées, 1 refusée à la revue.
+
+- **Contexte.** La chaîne v2 (knowledge records, `corpus:knowledge`) n'existe que sur `origin/feat/content-pipeline-v2`, sans PR ouverte ; `main` ne porte que le protocole d'audit v4. Cette passe a donc suivi le protocole de `main` et n'a migré aucun concept vers v2. Le serveur MCP documentaire était `CONNECTION_CLOSED` : aucune acquisition n'a été tentée, aucune source nouvelle n'a été ouverte.
+- `cause-de-hasard-et-cause-assignable` : gates 44/48, 54/55, **57/57**, revue ACCEPT, publiée. Texte lecteur plus court.
+- `classement-par-valeurs-compensatrices` : INVALID puis **63/63**, revue ACCEPT, publiée.
+- `classement-multicritere-electre` : gates INVALID (12 échecs réels), 67/69, 66/66 ; **revue REJECT** (les retraits du fact-check ont laissé le lead sans problème posé et deux renvois orphelins). Restaurée par blob 9b8b3cbf. La réécriture candidate n'a pas été sauvegardée avant la restauration : erreur de manipulation de ma part, à ne pas répéter (copier le candidat sous `work/<id>/` avant tout `git cat-file`).
+- **Anomalie de protocole.** Sur deux cartes, `uncited_support_signal` (lexical) a fait rendre `MAPPING_INCOMPLETE` sur un appui sans rapport avec le claim (« réflexe psychogalvanique » pour « réflexe » ; numérotation des notes pour « notes »). Les claims étaient réellement sans appui, donc le résultat net est juste, mais le motif de l'INVALID était faux. Pas de remapping : aucun appui pertinent n'était constatable. Un correcteur a aussi fait un `git stash` en plein lot ; rien n'a été perdu (SHA vérifiés contre les packs).
+- **Observation.** Le même schéma que le 12 novembre : une réécriture qui grossit (+8 % ici) échoue sur ses ajouts, et la correction par retrait abîme le lead. Les deux cartes publiées sont celles dont le texte a diminué ou peu grossi.
+- Contrôles : validate 140 / 136 / 0 erreur · `npm test` 575/575 · lint propre · projection idempotente, ne touchant que deux cartes · `tsc` : 4 erreurs `PageProps`/`LayoutProps` préexistantes (identiques sans ce lot).
+
 ## Passage d'audit — 2026-11-12
 
 `ROUTINE_PASS_WITH_BLOCKED_SOURCES`. Lot de 3 cartes jamais auditées, toutes `REVISE`.

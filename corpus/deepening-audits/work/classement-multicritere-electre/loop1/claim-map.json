@@ -1,0 +1,907 @@
+{
+  "concept_id": "classement-multicritere-electre",
+  "candidate_sha256": "0795c2c6efd5277999f137fb45534670a13110348b52bac055ce27bc562bd585",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "NO_VERIFIABLE_CLAIM"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 89,
+      "claim_text": "En 1968, Bernard Roy expose une façon de procéder qui prend le problème par l’autre bout.",
+      "normalized_claim": "En 1968 Roy présente une méthode qui renverse l'approche habituelle (relation plutôt que valeur).",
+      "support_ids": [
+        "SUP-f6db26d13b107d67",
+        "SUP-a5577a39b54bb2de",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 90,
+      "end": 148,
+      "claim_text": "Elle ne cherche pas à dire ce que vaut chaque appartement.",
+      "normalized_claim": "La méthode ne construit pas de valeur globale par objet.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45e837f6734ce643",
+        "SUP-36e5ad9f2527d27e",
+        "SUP-0145b36e88040f5a"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 149,
+      "end": 273,
+      "claim_text": "Elle se demande seulement, pour deux d’entre eux pris ensemble, ce qu’on a le droit d’affirmer de l’un par rapport à l’autre",
+      "normalized_claim": "La méthode construit une relation binaire entre objets pris deux à deux.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45e837f6734ce643"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 278,
+      "end": 375,
+      "claim_text": "à quelles conditions cette affirmation tient encore quand une partie des points de vue s’y oppose",
+      "normalized_claim": "La relation tient sous conditions malgré l'opposition d'une partie des points de vue.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45e837f6734ce643",
+        "SUP-973179bac7ab395b"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 164,
+      "claim_text": "Dès son résumé, l’article pose ce qu’il faut avoir en main : « Soit E un ensemble d’objets sur lesquels n points de vue permettent de définir n préordres complets »",
+      "normalized_claim": "Citation du résumé de l'article.",
+      "support_ids": [
+        "SUP-973179bac7ab395b",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 166,
+      "end": 220,
+      "claim_text": "Sous ce vocabulaire, l’exigence de départ est modeste.",
+      "normalized_claim": "Évaluation : l'exigence initiale (un préordre par point de vue) est faible.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 221,
+      "end": 351,
+      "claim_text": "Un préordre complet, c’est un classement de tous les objets du meilleur au moins bon, où deux objets peuvent occuper le même rang.",
+      "normalized_claim": "Définition du préordre complet.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 352,
+      "end": 448,
+      "claim_text": "Chaque point de vue doit au moins savoir ranger les appartements les uns par rapport aux autres.",
+      "normalized_claim": "Chaque point de vue doit fournir un rangement complet des objets.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 107,
+      "claim_text": "Page 64, Roy remarque que les échelons d’une échelle peuvent n’avoir aucune signification métrique précise.",
+      "normalized_claim": "Remarque p. 64 sur l'absence de signification métrique des échelons.",
+      "support_ids": [
+        "SUP-973179bac7ab395b"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 108,
+      "end": 252,
+      "claim_text": "Autrement dit, que deux échelons successifs portent les numéros 2 et 3 n’oblige pas à croire que l’écart entre eux vaut celui qui sépare 3 de 4.",
+      "normalized_claim": "Glose : les écarts entre échelons ne sont pas forcément égaux.",
+      "support_ids": [
+        "SUP-973179bac7ab395b"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 63,
+      "claim_text": "La méthode ne s’en tient pas pour autant à de purs classements.",
+      "normalized_claim": "La méthode utilise plus que l'information ordinale.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 64,
+      "end": 215,
+      "claim_text": "Pour juger si une opposition est trop forte, elle mesure le plus grand écart défavorable entre deux objets, rapporté à l’étendue maximale d’une échelle",
+      "normalized_claim": "Indicateur de discordance : plus grand écart défavorable normé par l'étendue maximale.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 217,
+      "end": 340,
+      "claim_text": "ce qui suppose que les échelons soient repérés par des nombres et que les écarts soient comparables d’une échelle à l’autre",
+      "normalized_claim": "Hypothèse cardinale et de comparabilité inter-échelles.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 137,
+      "claim_text": "La première idée qui vient est la plus sûre : ne déclarer un objet meilleur qu’un autre que lorsque tous les points de vue sont d’accord.",
+      "normalized_claim": "Point de départ : le graphe des comparaisons unanimes.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 138,
+      "end": 207,
+      "claim_text": "Contre une conclusion pareille, aucun point de vue ne peut protester.",
+      "normalized_claim": "Une comparaison unanime n'est contredite par aucun point de vue.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 208,
+      "end": 315,
+      "claim_text": "Elle a un défaut, et Roy le constate : le réseau de comparaisons obtenu ainsi reste « loin d’être complet »",
+      "normalized_claim": "Roy constate que le graphe de l'unanimité est loin d'être complet.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45f93c92df06158e",
+        "SUP-db3bcb253100d9a4"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 317,
+      "end": 399,
+      "claim_text": "Dès que les points de vue divergent, des paires d’objets ne sont reliées par rien.",
+      "normalized_claim": "Conséquence : des paires restent non comparées en cas de désaccord.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45f93c92df06158e"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 49,
+      "claim_text": "Page 66, Roy pose la question en termes de graphe",
+      "normalized_claim": "Formulation du problème en termes de graphe p. 66.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-0d5734384b30fb56"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 51,
+      "end": 116,
+      "claim_text": "c’est-à-dire d’un jeu de flèches tracées d’un objet vers un autre",
+      "normalized_claim": "Glose de la notion de graphe (arcs entre objets).",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 119,
+      "end": 320,
+      "claim_text": "quelles flèches ajouter aux comparaisons unanimes pour obtenir un graphe « en aussi “bon accord” que possible avec les divers points de vue, sans être pour cela “trop pauvre” en couples comparables » ?",
+      "normalized_claim": "Question p. 66 citée.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-0d5734384b30fb56",
+        "SUP-45f93c92df06158e",
+        "SUP-973179bac7ab395b"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 74,
+      "claim_text": "La partie de l’article qui expose la méthode s’ouvre sur deux indicateurs.",
+      "normalized_claim": "La partie B s'ouvre sur les indicateurs de concordance et discordance.",
+      "support_ids": [
+        "SUP-a7bfd3ac11d88217",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 75,
+      "end": 283,
+      "claim_text": "Le premier, de concordance, mesure ce qui appuie la comparaison de deux objets : c’est la part des points de vue qui vont dans son sens, chacun pesant selon un coefficient qui traduit son importance relative.",
+      "normalized_claim": "Définition de l'indicateur de concordance pondéré.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 284,
+      "end": 337,
+      "claim_text": "Il vaut 1 si et seulement si l’unanimité est atteinte",
+      "normalized_claim": "Concordance = 1 ssi unanimité.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 342,
+      "end": 393,
+      "claim_text": "Roy le dit « inspiré des idées de A. de Condorcet »",
+      "normalized_claim": "Citation sur Condorcet.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 395,
+      "end": 476,
+      "claim_text": "Le second, de discordance, retient le plus grand écart observé en sens contraire.",
+      "normalized_claim": "Définition de la discordance.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 98,
+      "claim_text": "Deux conditions doivent alors être remplies ensemble pour qu’un objet e en surclasse un autre, e’.",
+      "normalized_claim": "Double condition du surclassement.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 99,
+      "end": 259,
+      "claim_text": "Roy les relit en clair page 71 : il faut qu’« une majorité suffisante (seuil p) se dégage parmi les points de vue » « pour placer e au moins aussi haut que e’ »",
+      "normalized_claim": "Citation p. 71, condition de concordance.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-973179bac7ab395b"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 261,
+      "end": 411,
+      "claim_text": "et qu’« aucun des points de vue en désaccord avec cette majorité ne révèle une supériorité » trop forte de e’ sur e, appréciée par un second seuil, q.",
+      "normalized_claim": "Citation p. 71, condition de non-discordance avec seuil q.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-973179bac7ab395b"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 0,
+      "end": 80,
+      "claim_text": "Les deux conditions ne sont pas de même nature, et c’est ce qui fait la méthode.",
+      "normalized_claim": "Interprétation : l'hétérogénéité des deux conditions est le coeur de la méthode.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 81,
+      "end": 228,
+      "claim_text": "La première fait une somme d’appuis : elle demande qu’une part suffisante des points de vue, pesés selon leur importance, soutienne la comparaison.",
+      "normalized_claim": "Concordance comme somme pondérée.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 229,
+      "end": 322,
+      "claim_text": "La seconde ne fait aucune somme : elle regarde l’intensité d’un seul désaccord, le plus fort.",
+      "normalized_claim": "Discordance comme maximum d'un seul écart.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 323,
+      "end": 382,
+      "claim_text": "On peut y lire un droit de veto accordé à l’écart excessif.",
+      "normalized_claim": "Lecture interprétative en termes de veto.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 383,
+      "end": 550,
+      "claim_text": "Un point de vue minoritaire dont l’objection est faible ne bloque pas ; un point de vue isolé dont l’objection est massive bloque, quelle que soit la majorité en face.",
+      "normalized_claim": "Conséquence de la condition de discordance.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[2]",
+      "start": 579,
+      "end": 775,
+      "claim_text": "la question de départ, combien vaut un point de vue face à un autre, n’a pas disparu : elle loge désormais dans les coefficients d’importance et dans les écarts à comparer d’une échelle à l’autre.",
+      "normalized_claim": "La pondération et la comparabilité inter-échelles réintroduisent la question de l'importance relative.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[3]",
+      "start": 34,
+      "end": 164,
+      "claim_text": "Un loyer très légèrement supérieur ne suffit pas à empêcher qu’un logement en surclasse un autre, parce que l’objection est mince.",
+      "normalized_claim": "Application : un faible écart défavorable ne bloque pas.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[3]",
+      "start": 165,
+      "end": 280,
+      "claim_text": "Un trajet trois fois plus long, lui, bloque la conclusion, même si le prix et la surface s’accordent à la soutenir.",
+      "normalized_claim": "Application : un écart défavorable massif bloque malgré la majorité.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 67,
+      "claim_text": "Les lettres p et q ne sont pas des résultats, ce sont des réglages.",
+      "normalized_claim": "p et q sont des seuils choisis.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 68,
+      "end": 113,
+      "claim_text": "Roy place p au voisinage de 1 et q près de 0.",
+      "normalized_claim": "Valeurs typiques des seuils.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 114,
+      "end": 261,
+      "claim_text": "Et la phrase de la page 71 selon laquelle la relation de surclassement « peut apparaître comme une résultante convenable des divers points de vue »",
+      "normalized_claim": "Citation p. 71.",
+      "support_ids": [
+        "SUP-c999e3cd5b27d17a",
+        "SUP-10ca6b2285695725",
+        "SUP-f640892fa869d60d",
+        "SUP-ac5fdae8244e7053",
+        "SUP-ffceb1faf13bc248"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 262,
+      "end": 419,
+      "claim_text": "ajoute que c’est sur elle qu’« on peut, pour des valeurs appropriées de p et de q, fonder une réponse aux problèmes posés au commencement du paragraphe A.3 »",
+      "normalized_claim": "Suite de la phrase p. 71.",
+      "support_ids": [
+        "SUP-ffceb1faf13bc248"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 78,
+      "claim_text": "Deux réglages différents ne donnent donc pas forcément les mêmes comparaisons.",
+      "normalized_claim": "La relation dépend du couple (p, q).",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 79,
+      "end": 170,
+      "claim_text": "Le programme décrit dans l’article, écrit pour un ordinateur C.D.C. et disponible à la SEMA",
+      "normalized_claim": "Programme pour ordinateur C.D.C., disponible à la SEMA.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 172,
+      "end": 235,
+      "claim_text": "calcule d’ailleurs la relation pour une série de couples (p, q)",
+      "normalized_claim": "Le programme calcule la relation pour plusieurs couples de seuils.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 76,
+      "claim_text": "Une relation construite de cette façon peut laisser des paires sans verdict.",
+      "normalized_claim": "La relation de surclassement peut laisser des paires non comparées.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45f93c92df06158e",
+        "SUP-db3bcb253100d9a4"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 77,
+      "end": 175,
+      "claim_text": "Quand la majorité manque, ou quand une opposition trop forte s’exprime, aucune flèche n’est tracée",
+      "normalized_claim": "Pas d'arc si concordance < p ou discordance > q.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 178,
+      "end": 310,
+      "claim_text": "l’appartement bon marché mais lointain et l’appartement proche mais plus petit peuvent très bien ne se surclasser ni l’un ni l’autre",
+      "normalized_claim": "Application : deux objets peuvent ne se surclasser dans aucun sens.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 312,
+      "end": 410,
+      "claim_text": "La relation n’est pas non plus forcément transitive dès que p est inférieur à 1 et q supérieur à 0",
+      "normalized_claim": "Non-transitivité pour p<1 et q>0.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45f93c92df06158e"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 412,
+      "end": 605,
+      "claim_text": "et Roy l’écrit : « si l’accord des divers points de vue est suffisant pour que e’ surclasse e et e’’ surclasse e’, il n’en découle pas logiquement un accord suffisant pour que e’’ surclasse e »",
+      "normalized_claim": "Citation sur la non-transitivité.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 145,
+      "claim_text": "Roy juge la relation de surclassement « bien adaptée » au problème de la sélection, et « peut-être moins » à celui du rangement complet (page 71)",
+      "normalized_claim": "Jugement de Roy p. 71.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45f93c92df06158e",
+        "SUP-308939bff2bf72fe"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 147,
+      "end": 220,
+      "claim_text": "alors que le titre de l’article annonce le classement autant que le choix",
+      "normalized_claim": "Le titre porte « Classement et choix ».",
+      "support_ids": [
+        "SUP-f6db26d13b107d67",
+        "SUP-a5577a39b54bb2de"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 222,
+      "end": 408,
+      "claim_text": "La sélection passe par le noyau du graphe : un groupe d’objets tel que tout objet écarté est surclassé par au moins un objet conservé, et qu’aucun objet conservé n’en surclasse un autre.",
+      "normalized_claim": "Définition du noyau (stabilités externe et interne).",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 69,
+      "claim_text": "Quand ce noyau reste trop gros, Roy n’y voit pas une faute de méthode",
+      "normalized_claim": "Un noyau trop gros n'est pas imputé à la méthode.",
+      "support_ids": [
+        "SUP-45f93c92df06158e",
+        "SUP-db3bcb253100d9a4",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 72,
+      "end": 244,
+      "claim_text": "« il faut en conclure que l’antagonisme des points de vue est tel que ces seuils ne peuvent donner lieu à une synthèse suffisamment riche en couples comparables » (page 72)",
+      "normalized_claim": "Citation p. 72.",
+      "support_ids": [
+        "SUP-0088596fe72045cd",
+        "SUP-45f93c92df06158e",
+        "SUP-0d5734384b30fb56"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 246,
+      "end": 311,
+      "claim_text": "Un résultat indécis dit alors quelque chose du problème lui-même.",
+      "normalized_claim": "Interprétation : l'indécision informe sur le conflit des points de vue.",
+      "support_ids": [
+        "SUP-45f93c92df06158e"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 0,
+      "end": 45,
+      "claim_text": "Le rangement n’est pas abandonné pour autant.",
+      "normalized_claim": "L'article ne renonce pas au rangement.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 46,
+      "end": 179,
+      "claim_text": "L’article se clôt sur des extensions vers des préordres, notamment par la fermeture transitive du graphe obtenu pour un réglage donné",
+      "normalized_claim": "Extensions finales : fermeture transitive de G(p,q).",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[3]",
+      "start": 184,
+      "end": 299,
+      "claim_text": "par la recherche de couples de seuils dits « efficaces » : les plus exigeants qui rendent encore le graphe complet.",
+      "normalized_claim": "Couples de seuils efficaces.",
+      "support_ids": [
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 124,
+      "claim_text": "Le mot « critère » n’apparaît pas une seule fois dans le corps de cet article : Roy écrit « points de vue » de bout en bout.",
+      "normalized_claim": "Absence du mot critère dans le corps de l'article.",
+      "support_ids": [
+        "SUP-a523cca2f82fe99e",
+        "SUP-3c98fb429e3cb19d",
+        "SUP-308939bff2bf72fe"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 125,
+      "end": 179,
+      "claim_text": "Le vocabulaire du multicritère s’est imposé plus tard.",
+      "normalized_claim": "Le terme multicritère est postérieur.",
+      "support_ids": [
+        "SUP-308939bff2bf72fe",
+        "SUP-3c98fb429e3cb19d"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 180,
+      "end": 266,
+      "claim_text": "Et la construction d’une relation plutôt que d’une note est pratiquée, jamais plaidée.",
+      "normalized_claim": "Le refus d'agréger est fait, non argumenté.",
+      "support_ids": [
+        "SUP-0145b36e88040f5a",
+        "SUP-36e5ad9f2527d27e",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 267,
+      "end": 366,
+      "claim_text": "La seule phrase qui s’en approche, page 66, dit des approches proposées pour répondre à sa question",
+      "normalized_claim": "Seule phrase approchante p. 66 sur les approches concurrentes.",
+      "support_ids": [
+        "SUP-0145b36e88040f5a",
+        "SUP-36e5ad9f2527d27e",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 368,
+      "end": 450,
+      "claim_text": "dont la bibliographie retient celles d’Arrow et les utilités additives de Fishburn",
+      "normalized_claim": "Bibliographie : Arrow, Fishburn (utilités additives).",
+      "support_ids": [
+        "SUP-36e5ad9f2527d27e"
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 452,
+      "end": 509,
+      "claim_text": "qu’« aucune ne paraît toutefois avoir pleinement abouti »",
+      "normalized_claim": "Citation p. 66.",
+      "support_ids": [
+        "SUP-0145b36e88040f5a",
+        "SUP-36e5ad9f2527d27e",
+        "SUP-0088596fe72045cd"
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 52,
+      "claim_text": "Le nom ELECTRE, enfin, est plus ancien que l’article",
+      "normalized_claim": "Le nom ELECTRE précède 1968.",
+      "support_ids": [
+        "SUP-fb1f08386f4a405d",
+        "SUP-6eed90593ae37ec5",
+        "SUP-861b0c3a8e17e774"
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 54,
+      "end": 71,
+      "claim_text": "signé de Roy seul",
+      "normalized_claim": "L'article de 1968 est signé du seul Roy.",
+      "support_ids": [
+        "SUP-fb1f08386f4a405d",
+        "SUP-6eed90593ae37ec5",
+        "SUP-861b0c3a8e17e774",
+        "SUP-cb2e2e7475710a46",
+        "SUP-7d586b179c6bedaa"
+      ]
+    },
+    {
+      "claim_id": "C066",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 73,
+      "end": 106,
+      "claim_text": "et il n’appartient pas à lui seul",
+      "normalized_claim": "Le nom/la méthode sont collectifs (Benayoun, Roy, Sussmann).",
+      "support_ids": [
+        "SUP-fb1f08386f4a405d",
+        "SUP-6eed90593ae37ec5",
+        "SUP-861b0c3a8e17e774",
+        "SUP-a5a6e7d12f30172b",
+        "SUP-24c11fe57dccd849",
+        "SUP-fd0f3fcb27dc0d1e",
+        "SUP-3ea5a7308e14f74d",
+        "SUP-655322f0bd523627",
+        "SUP-adfa57307c920fa6",
+        "SUP-134d6b2d0b2bad45",
+        "SUP-999bad1b47dd875c"
+      ]
+    },
+    {
+      "claim_id": "C067",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 108,
+      "end": 225,
+      "claim_text": "Le résumé de 1968 nomme d’abord un programme : « une méthode (laquelle a donné lieu à un programme baptisé ELECTRE) »",
+      "normalized_claim": "Citation du résumé nommant le programme ELECTRE.",
+      "support_ids": [
+        "SUP-6eed90593ae37ec5"
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 227,
+      "end": 376,
+      "claim_text": "La bibliographie renvoie à une note de travail de la Direction scientifique de la SEMA, de juin 1966, cosignée par R. Benayoun, B. Roy et B. Sussmann",
+      "normalized_claim": "Référence [3] : note de travail SEMA juin 1966, trois signataires.",
+      "support_ids": [
+        "SUP-fb1f08386f4a405d",
+        "SUP-6eed90593ae37ec5",
+        "SUP-861b0c3a8e17e774",
+        "SUP-a5a6e7d12f30172b",
+        "SUP-24c11fe57dccd849"
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 377,
+      "end": 480,
+      "claim_text": "et déjà intitulée « ELECTRE : Une méthode pour guider le choix en présence de points de vue multiples »",
+      "normalized_claim": "Titre de la note de 1966.",
+      "support_ids": [
+        "SUP-fb1f08386f4a405d",
+        "SUP-6eed90593ae37ec5",
+        "SUP-861b0c3a8e17e774"
+      ]
+    }
+  ]
+}
