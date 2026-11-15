@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "classement-multicritere-electre",
+  "candidate_sha256": "0795c2c6efd5277999f137fb45534670a13110348b52bac055ce27bc562bd585",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 69,
+  "supported": 67,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C033",
+      "verdict": "TOO_STRONG",
+      "reason": "Seconde moitié conforme à 2045cd. Mais 2045cd exige aussi une concordance ≥ p, avec p voisin de 1 : un point de vue minoritaire, même à objection faible, abaisse la concordance et peut bloquer si son poids dépasse 1−p. « ne bloque pas » sans condition excède les appuis fournis."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "TOO_STRONG",
+      "reason": "D'après 2045cd, le surclassement exige aussi une concordance ≥ p, p voisin de 1 ; le point de vue du loyer, même faiblement opposé, retire son poids de la classe concordante et peut à lui seul faire tomber la concordance sous p. Les appuis fournis n'autorisent pas « ne suffit pas à empêcher » sans condition sur les poids et p."
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "concept_id": "classement-par-valeurs-compensatrices",
+  "candidate_sha256": "f34d0b2ebf8676c4169ac3c25c8bb6605607168cbdfbefb3f362a4e05919b89f",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "SUPPORTED",
+      "reason": "La vignette (plusieurs épreuves, un verdict unique d'aptitude) correspond à $.reserves[0] et $.notes[7] : la règle « agrège plusieurs tests en un verdict unique d'aptitude ». Aucun détail attribué à l'auteur."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Le mapping ne fournit aucun appui pour ce claim, alors que le signal nomme SUP-9207a3b322791aca (validated, $.review.notes[3]), qui partage le terme peu courant « réflexe ». Une note de revue de la carte qui emploie ce mot rend probable un rattachement manquant. Sans lui, les appuis fournis pour ce claim ne portent ni la moyenne ni l'effet d'une note basse ; le claim est à remapper avant tout jugement."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "SUPPORTED",
+      "reason": "Reprise quasi verbatim du hook ($.hook) : « Une faiblesse dans une épreuve se rattrape-t-elle ailleurs, et jusqu'où ? » ; $.review.notes[6] confirme que c'est la question traitée p. 156-157 et 163."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "$.sources[0].label (full-text, corrobore) et la citation de lecture.json donnent J.-M. Lahy, L'année psychologique, tome 25, 1924 ; les notes d'attribution confirment l'auteur unique et l'année."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "Le titre (« La sélection psycho-physiologique des machinistes de la Société des Transports en commun de la région parisienne ») et $.definition_de_lauteur (50 premiers machinistes examinés, « candidats machinistes », « recrutement », « nos services ») autorisent le compte rendu d'une sélection de machinistes pour la STCRP."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "$.reserves[0] et $.notes[7] : la règle « agrège plusieurs tests en un verdict unique d'aptitude » ; $.definition_de_lauteur montre que ce verdict décide de l'élimination ou du rejet des candidats « de nos services ». La reformulation en décision d'embauche n'excède pas ces appuis."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "$.attribution_note, $.review.notes[2] et la citation p. 156 : le principe « découle de nos recherches antérieures [...] des linotypistes et des dactylographes », avec les notes 1910 et 1913, travaux de Lahy lui-même."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : principe posé comme constat (« Nous avons constaté ») et « deux réglages que Lahy déclare arbitraires », « Il refuse de laisser croire que la règle est dictée par les faits » ; $.notes[5] le confirme, avec le caractère provisoire du principe."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "Le principe est intitulé « Principe physiologique » et part de « l'organisme humain est un complexe de fonctions » ; la conséquence sur les tests vient ensuite ($.definition_de_lauteur, $.notes[1])."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim de la p. 156 présente dans $.definition_de_lauteur et $.notes[1]."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui n'est fourni pour ce claim, qui glose le sens de « suppléer » chez Lahy ; le signal est vide. Les appuis fournis pour ce claim ne permettent donc pas d'en vérifier la définition."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 157 dans $.definition_de_lauteur : « tel wattman médiocre dans un test moteur peut, étant excellent dans un test d'attention, fournir un bon travail. C'est d'ailleurs ainsi que les choses se passent » ; le wattman est bien le métier étudié."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 156 ; $.definition_de_lauteur la présente comme « la conséquence méthodologique » qui suit immédiatement."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "Dans $.definition_de_lauteur, la phrase « on ferait donc une erreur grossière [...] » suit directement l'exemple du wattman (« C'est d'ailleurs ainsi que les choses se passent : on ferait donc... ») ; citation verbatim confirmée par $.notes[7] et $.reserves[0]."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture présentée comme une pente de l'idée, non comme une thèse de Lahy, et conforme à la mise en garde qu'il formule lui-même : exagérer la suppléance ferait « retomber dans l'erreur de croire qu'un seul test peut caractériser un wattman » ($.definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim dans $.definition_de_lauteur, énoncée « dans la phrase qui suit immédiatement » l'exemple ; $.notes[1] et $.review.notes[0] le confirment."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique à $.quotation.text (validated et lecture.json), vérifiée sur image p. 157 ($.review.notes[0]) ; la formule « Nous avons constaté » justifie « comme une constatation »."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : la limite est « répétée p. 163, dans les termes qui nomment le principe », « C'est là, p. 163, que le concept reçoit son nom » ; $.review.notes[1] confirme le nom donné par Lahy."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim de la p. 163 dans $.definition_de_lauteur, $.notes[1] et $.reserves[2] ; $.review.notes[1] l'a vérifiée sur image."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence interprétative fidèle aux appuis : compensation admise mais limitée (p. 157, 163), classement par catégories et « éliminations successives » plutôt que note unique ($.definition_de_lauteur, $.notes[1], $.summary)."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "Les catégories sont définies par la configuration des mentions (présence d'un « très bien », d'un « très mal ») et non par un total ($.definition_de_lauteur) ; $.review.notes[5] mentionne « les déciles et les profils » p. 158-159."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur, p. 158 : le rendement brut n'est pas comparable d'un test à l'autre, d'où l'adoption d'une « expression commune à tous les tests »."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 158 dans $.definition_de_lauteur et $.notes[4]."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 158 dans $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : « une échelle de 50 degrés », découpée en déciles « pour ne pas donner trop d'importance aux différences faibles » ; le rang remplace le rendement brut. $.notes[4] concorde."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "Correspondance décile/terme reprise exactement de la citation p. 162-163 dans $.definition_de_lauteur (1er : très bien ; 2e-3e : bien ; 4e-7e : passable ; 8e-9e : mal ; 10e : très mal)."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "Les deux fragments cités sont verbatim dans $.definition_de_lauteur et $.notes[4]."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : la règle de compensation est formulée p. 163 avec ces termes (« la notation très bien [...] contrebalance et équilibre les valeurs notées dans les autres tests »). Transition fidèle."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Citations verbatim p. 163 dans $.definition_de_lauteur ; $.notes[2] et $.reserves[3] confirment « l'un des cinq tests »."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim de la définition de la 2e catégorie dans $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim de la définition de la 3e catégorie dans $.definition_de_lauteur."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 165 dans $.definition_de_lauteur ; la coupe après « suffisant » n'altère pas le sens."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : « Les quatre catégories se subdivisent en sept groupes » ; $.notes[4] concorde."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : « une catégorie à part, la 4e, avec les sujets chez qui, au cours de l'examen, nous avons décelé des tares psychopathiques » ; $.notes[4] concorde."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture explicitement présentée comme telle (« On peut la lire »), appuyée par les appuis fournis : la 4e catégorie est dite « à part » et repose sur des tares décelées à l'examen, non sur les mentions des déciles ($.definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur, $.notes[2], $.reserves[3] : sous ce titre imprimé p. 165, Lahy juge injustifiée la pondération de son propre dispositif (« Rien ne nous autorise à agir ainsi »), « un raisonnement qui se corrige en cours de route »."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 162 dans $.definition_de_lauteur : « 5 valeurs caractéristiques : une pour la suggestibilité motrice ; deux pour l'attention diffusée [...] et deux pour l'exactitude motrice » ; trois fonctions."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur, p. 165 : un poids égal aux 5 valeurs attribuerait « une valeur simple à la suggestibilité motrice et une valeur double à la fonction d'attention ainsi qu'à la régularité des gestes »."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 165 dans $.definition_de_lauteur, $.notes[2] et $.reserves[3]."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur, $.notes[2], $.reserves[3] : base effective ramenée à trois valeurs, une par fonction, avec pour l'attention diffusée et la régularité la mesure qui donne au sujet le meilleur rang."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[5] : « Deux réglages que Lahy déclare lui-même arbitraires, p. 165 » ; $.definition_de_lauteur les situe p. 165, comme l'équilibre des valeurs."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 165 dans $.definition_de_lauteur : avec 10 tests, « l'importance compensatrice d'un seul eût été diminuée et il eut fallu accorder à 2 « très bien » l'importance que nous avions attribuée à un seul »."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 165 dans $.definition_de_lauteur et $.notes[5]."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "Synthèse dérivée des appuis : thèse posée comme constat sur l'organisme (« Nous avons constaté ») et réglages que Lahy déclare lui-même non dictés par les faits ($.definition_de_lauteur, $.notes[5]). Elle n'est pas présentée comme une citation."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 163 dans $.definition_de_lauteur et $.notes[5], présentée par ces appuis comme une déclaration du « caractère provisoire »."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur, p. 163 : « A mesure que nous connaîtrons [...] les fonctions psycho-motrices qui entrent en jeu dans le travail du machiniste, leurs rapports et les limites de leurs suppléances [...] nous pourrons établir numériquement les valeurs nécessaires pour caractériser le bon machiniste » ; fragments verbatim."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur : classement « confronté au jugement hiérarchique », valeur professionnelle de 37 machinistes classés par le service de l'Exploitation, et accords sur des séries d'« agents » ; $.notes[6] concorde."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur et $.notes[6], p. 168 : écart de 10,81 % entre classement psychotechnique et valeur professionnelle des 37 machinistes."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur et $.notes[6], p. 171 : « pourcentage d'accords » de 80 % sur 136 sujets en trois séries (38, 50, 48)."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur et $.notes[6] : « Lahy borne aussitôt la portée de ces chiffres », par la nature biologique des lois et par la faillibilité de l'étalon."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 171 dans $.definition_de_lauteur et $.notes[6]."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur et $.notes[6], p. 168 : le classement professionnel « est à quelque degré subjectif »."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "Inférence présentée comme telle (« Cela implique ») qui suit de ce que les appuis disent de l'étalon : faillible, « à quelque degré subjectif » ($.definition_de_lauteur, $.notes[6]). Rien n'est attribué à Lahy."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[3] : « une fois les candidats rangés, où passe le couperet n'est pas fixé par la science » ; $.definition_de_lauteur distingue le classement du seuil d'élimination."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "$.notes[3] et $.definition_de_lauteur : le seuil n'est pas fixé par la science, mais par « le marché de la main-d'oeuvre », « les réserves en personnel et les nécessités du service »."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "Citation p. 168 dans $.definition_de_lauteur et $.notes[3] (« qu'il serait prudent de n'utiliser pour la conduite des véhicules que dans la mesure où... ») ; la 3e catégorie est bien celle des « très mal » sans « très bien »."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 171 et exemple paraphrasé fidèlement (« éliminés tous les sujets ayant non seulement un « très mauvais » [...] mais aussi plusieurs « mauvais » sans « très mauvais » ») dans $.definition_de_lauteur ; $.notes[3] concorde."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 171 dans $.definition_de_lauteur et $.notes[3]."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture présentée comme telle (« On peut le lire ainsi ») et dérivée de la citation p. 171 : une règle plus rigide absorbe les cas d'élimination, mais rejette « un plus grand nombre de sujets aptes » ($.definition_de_lauteur, $.review.notes[7])."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "Citation verbatim p. 171-172 dans $.definition_de_lauteur, $.notes[3], $.review.notes[6] et $.reserves[1]."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "$.review.notes[7] : « Lahy écrit « doit régler ». Lahy énonce une règle de conduite pour son laboratoire » ; la citation de $.definition_de_lauteur parle de « nos services »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "$.definition_de_lauteur (« Le point optimum est déterminé par les réserves en personnel et les nécessités du service », 3e catégorie employable selon l'état du recrutement), $.notes[3] (« n'est pas fixé par la science »), $.reserves[0] (« seuil indexé sur le marché du travail ») et $.summary. Le signal (SUP-d0de83fca7a8c922, $.review.notes[5], « réglage du seuil ») ne désigne pas de matière manquante."
+    }
+  ]
+}

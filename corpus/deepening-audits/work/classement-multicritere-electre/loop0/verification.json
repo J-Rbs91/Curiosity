@@ -1,0 +1,386 @@
+{
+  "concept_id": "classement-multicritere-electre",
+  "candidate_sha256": "9252ee1263984a6f7f9bf7d6c10b893e57e3a83df1542a67672a03e8287775e0",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim. Le seul appui signalé, SUP-308939bff2bf72fe ($.review.notes[8]), partage le mot « noter » au sens de « à noter aussi » : rien ne laisse penser qu'il porte la procédure d'addition décrite."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni ; l'affirmation que l'addition désigne toujours un gagnant n'est portée par aucun support, et aucun appui n'est signalé."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "UNSUPPORTED",
+      "reason": "Jugement évaluatif sans aucun appui fourni ; aucun appui n'est signalé."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni. Le seul appui signalé, SUP-7d586b179c6bedaa ($.review.notes[5]), partage « résolu » au sens d'un DOI résolu contre Crossref : il ne concerne pas le claim."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "SUPPORTED",
+      "reason": "Le libellé de la source donne Roy 1968 ; SUP-0088596fe72045cd ($.definition_de_lauteur) et le summary établissent qu'il construit une relation au lieu d'une valeur globale, ce que rend « par l'autre bout »."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : « Roy ne construit à aucun moment une valeur ou une note globale » ; le reserves[5] et le notes[1] le confirment."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : l'objet construit est une relation binaire sur les couples (e, e') ; le summary dit « non une valeur globale mais une relation »."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "Le summary (« si une majorité l'appuie sans opposition trop forte ») et SUP-0088596fe72045cd ($.definition_de_lauteur) (concordance, discordance, seuils p et q) portent la condition sous désaccord partiel."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-973179bac7ab395b cite le résumé p. 57 mot pour mot : « Soit E un ensemble d'objets sur lesquels n points de vue permettent de définir n préordres complets »."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "Interprétation dérivée et non attribuée : SUP-0088596fe72045cd ($.definition_de_lauteur) dit que K_i est « au moins une échelle », exigence minimale d'ordre."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : une application y_i attribue à chaque objet un état d'un ensemble fini complètement ordonné, ce qui définit un préordre complet ; plusieurs objets peuvent recevoir le même état."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : K_i est au moins une échelle et chaque point de vue définit un préordre complet sur E."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-973179bac7ab395b, note de revue vérifiée sur le PDF, rapporte « la remarque p. 64 selon laquelle les échelons d'une échelle peuvent n'avoir aucune signification métrique précise »."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "Glose explicitement introduite par « Autrement dit » de la remarque p. 64 rapportée par SUP-973179bac7ab395b ; elle n'ajoute ni portée ni attribution."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Aucun appui fourni. L'appui signalé SUP-abe2a24f4528b146 (evidence:lecture.json, $.reserves[12]) est le seul du pack à porter le terme « notes », et il s'agit d'une réserve de la lecture primaire : il est probable qu'il traite de l'addition de notes et qu'il aurait dû être examiné pour ce claim. À remapper."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : l'indicateur de discordance suppose des échelons repérés par des nombres et des écarts comparables, donc plus que des classements."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : « le plus grand “écart” défavorable observé, normé par l'étendue maximale d'une échelle »."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) porte la même formule : « ce qui suppose que les échelons soient repérés par des nombres et que les écarts soient comparables d'une échelle à l'autre »."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : Roy pose d'abord G_0, le graphe des comparaisons unanimes ; « la plus sûre » est une évaluation que justifie la conséquence logique de l'unanimité."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence logique de la définition de G_0 comme intersection des préordres, donnée par SUP-0088596fe72045cd ($.definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) cite « loin d'être complet » ; SUP-db3bcb253100d9a4 et SUP-45f93c92df06158e le confirment, et la suite du texte de Roy cherche les arcs à ajouter."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence directe de G_0 = intersection des préordres (SUP-0088596fe72045cd ($.definition_de_lauteur)) : une paire sur laquelle les points de vue divergent n'y est pas reliée. Le signal sur SUP-22f1144ef37c2fdd ($.reserves[0], le titre) ne concerne pas ce claim."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "TOO_STRONG",
+      "reason": "SUP-45f93c92df06158e et SUP-0088596fe72045cd ($.definition_de_lauteur) disent du graphe de l'unanimité qu'il est « en général » « loin d'être complet » ; « qui ne compare presque rien » durcit ce constat. Les appuis fournis pour ce claim ne présentent pas non plus la note globale comme l'un des deux pôles de l'arbitrage, que Roy pose entre bon accord et richesse en couples comparables."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) et SUP-0d5734384b30fb56 donnent la question p. 66 ; le segment cité est continu dans l'original et « flèches ajouter aux comparaisons unanimes » rend « arcs qu'il convient d'adjoindre à G_0 »."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-a7bfd3ac11d88217 : la partie « B. — LA METHODE ELECTRE » s'ouvre sur « 1. — Les indicateurs de concordance et de discordance »."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : part de la classe concordante pondérée par des coefficients c_i « traduisant l'importance relative des points de vue »."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : « il vaut 1 si et seulement si l'unanimité est atteinte »."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) cite la formule « inspiré des idées de A. de Condorcet »."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : « le plus grand “écart” défavorable observé »."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : e surclasse e' si et seulement si concordance ≥ p et discordance ≤ q."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) et SUP-973179bac7ab395b citent p. 71 les deux segments, séparés dans l'original par une coupe."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "Segment cité exact selon SUP-0088596fe72045cd ($.definition_de_lauteur) et SUP-973179bac7ab395b ; la coquille « trop fort » est laissée hors guillemets, conformément à SUP-705eb6a6ec4745b3."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : la concordance est une part pondérée, la discordance un maximum d'écart, et la relation se définit par la conjonction des deux ; « ce qui fait la méthode » est une lecture non attribuée."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : concordance = part pondérée de la classe concordante, exigée au moins égale à p."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : la discordance est le plus grand écart défavorable observé, sans agrégation."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture annoncée comme telle (« On peut y lire ») et conforme à SUP-0088596fe72045cd ($.definition_de_lauteur) : une discordance supérieure à q interdit le surclassement quelle que soit la concordance."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence directe de la double condition de SUP-0088596fe72045cd ($.definition_de_lauteur) : un écart sous q ne bloque pas, un seul écart au-dessus de q bloque indépendamment de la concordance."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "Remarque annoncée (« On peut aussi remarquer ») et appuyée par SUP-0088596fe72045cd ($.definition_de_lauteur) : coefficients c_i d'importance relative, écarts supposés comparables d'une échelle à l'autre."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "Application illustrative de la condition de discordance décrite par SUP-0088596fe72045cd ($.definition_de_lauteur) : un écart faible, sous q, n'empêche pas le surclassement."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "Application illustrative de la condition de discordance décrite par SUP-0088596fe72045cd ($.definition_de_lauteur) : un écart défavorable important dépasse le seuil q, proche de 0, et bloque malgré la concordance."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Le seul appui fourni, SUP-0088596fe72045cd ($.definition_de_lauteur), porte la double condition, pas ce que « l'addition des notes autorisait ». L'appui signalé SUP-abe2a24f4528b146 (evidence:lecture.json, $.reserves[12]) est le seul du pack à porter le terme « notes » et vient d'une réserve de la lecture primaire : il manque probablement à ce claim. À remapper."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : p et q sont deux seuils qui définissent la relation, que le programme fait varier en série de couples (p, q)."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim présentent p et q comme des seuils choisis, mais n'établissent pas que « rien » dans les points de vue n'en fixe la valeur. SUP-0088596fe72045cd ($.definition_de_lauteur) mentionne au contraire une recherche de couples de seuils « efficaces », les plus exigeants qui rendent encore le graphe complet, soit une détermination dépendant des données."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : « p voisin de 1 et q proche de 0 »."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "TOO_STRONG",
+      "reason": "SUP-ffceb1faf13bc248 et la citation SUP-c999e3cd5b27d17a donnent : la relation « peut apparaître comme une résultante convenable », et seulement « en ce sens » des deux conditions. « présente la relation de surclassement comme » efface le modal (peut → fait)."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-ffceb1faf13bc248 donne la phrase entière lue p. 71 : « … sur laquelle on peut, pour des valeurs appropriées de p et de q, fonder une réponse aux problèmes posés au commencement du paragraphe A.3 »."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : la relation est un graphe G(p, q) calculé pour une série de couples (p, q)."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : programme pour ordinateur C.D.C., disponible à la SEMA, qui calcule la relation pour une série de couples (p, q)."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "TOO_STRONG",
+      "reason": "Lecture annoncée, mais « il tient en deux nombres » dépasse ce qu'établit SUP-0088596fe72045cd ($.definition_de_lauteur) : la relation dépend aussi des coefficients c_i d'importance et de la comparabilité supposée des écarts entre échelles, ce que le texte lecteur reconnaît lui-même en C038. L'arbitraire ne se réduit pas à p et q d'après les appuis fournis."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim ne traitent pas du désaccord entre personnes ni de sa transformation. Ils ne réduisent pas non plus les choix à la part requise et à l'écart interdit, puisque les coefficients d'importance y figurent."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis établissent que la relation peut laisser des couples non comparés : G_0 « loin d'être complet », arbitrage avec la richesse en couples comparables, noyau trop gros. Mais SUP-0088596fe72045cd ($.definition_de_lauteur) mentionne des couples de seuils qui « rendent encore le graphe complet » : « laisse des paires sans verdict » change une possibilité en propriété générale. Les signaux sur SUP-22f1144ef37c2fdd et SUP-308939bff2bf72fe tiennent à « paires » au sens du titre et à « verdict » de revue, sans rapport avec ce claim."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : e surclasse e' si et seulement si les deux conditions sont remplies ; à défaut, l'arc correspondant n'existe pas."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "Possibilité (« peuvent ») conforme à SUP-0088596fe72045cd ($.definition_de_lauteur) et SUP-45f93c92df06158e : la relation n'est pas forcément complète."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : G(p, q) « n'est plus forcément transitif dès que p < 1 et q > 0 »."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique dans SUP-0088596fe72045cd ($.definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur), SUP-308939bff2bf72fe et SUP-45f93c92df06158e : « bien adaptée » à la sélection, « peut-être moins » au rangement complet, p. 71."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "Titre « Classement et choix en présence de points de vue multiples » (SUP-f6db26d13b107d67, SUP-22f1144ef37c2fdd)."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : noyau défini par la stabilité externe et la stabilité interne, dans les termes du claim."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-45f93c92df06158e : face à un noyau trop gros, l'explication donnée est « l'antagonisme des points de vue » (p. 72), « non un défaut de la méthode »."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique dans SUP-0088596fe72045cd ($.definition_de_lauteur) ; la page 72 est donnée par SUP-45f93c92df06158e et SUP-0d5734384b30fb56."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-45f93c92df06158e : « L'absence de comparaison est donc traitée comme une information sur le conflit des points de vue, pas comme un échec »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) : l'article se clôt sur des extensions vers des préordres."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-0088596fe72045cd ($.definition_de_lauteur) porte la même chose : fermeture transitive de G(p, q) et couples de seuils « efficaces », les plus exigeants qui rendent encore le graphe complet."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-3c98fb429e3cb19d et SUP-a523cca2f82fe99e : « critère » n'apparaît pas dans le corps de l'article ; Roy écrit « points de vue »."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-308939bff2bf72fe : « le vocabulaire “multicritère” s'imposant plus tard » ; SUP-3c98fb429e3cb19d parle d'une reformulation ultérieure."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-36e5ad9f2527d27e et SUP-0145b36e88040f5a : « Le refus est fait, pas argumenté »."
+    },
+    {
+      "claim_id": "C067",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-36e5ad9f2527d27e et SUP-0145b36e88040f5a : « La seule phrase qui approche une prise de position est page 66, sur les approches concurrentes »."
+    },
+    {
+      "claim_id": "C068",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-36e5ad9f2527d27e : la bibliographie retient « Arrow [1] et les utilités additives de Fishburn [8] et [9] »."
+    },
+    {
+      "claim_id": "C069",
+      "verdict": "SUPPORTED",
+      "reason": "Citation identique dans SUP-36e5ad9f2527d27e, SUP-0145b36e88040f5a et SUP-0088596fe72045cd ($.definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C070",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-6eed90593ae37ec5, SUP-fb1f08386f4a405d et SUP-861b0c3a8e17e774 : la bibliographie de l'article cite une note SEMA de juin 1966 et un manuel de mai 1966 qui portent déjà le nom ELECTRE."
+    },
+    {
+      "claim_id": "C071",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-6eed90593ae37ec5, SUP-861b0c3a8e17e774 et SUP-7d586b179c6bedaa : signature « par B. Roy » seule, confirmée par Crossref."
+    },
+    {
+      "claim_id": "C072",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-6eed90593ae37ec5 et SUP-fb1f08386f4a405d : « la méthode et son nom sont antérieurs et collectifs », établi sur la bibliographie imprimée (SUP-a5a6e7d12f30172b, SUP-24c11fe57dccd849)."
+    },
+    {
+      "claim_id": "C073",
+      "verdict": "SUPPORTED",
+      "reason": "SUP-6eed90593ae37ec5 : le résumé « nomme d'ailleurs ELECTRE comme le nom d'un programme avant celui d'une méthode », avec le segment cité identique."
+    },
+    {
+      "claim_id": "C074",
+      "verdict": "SUPPORTED",
+      "reason": "Référence [3] de la bibliographie, rapportée par SUP-6eed90593ae37ec5, SUP-fb1f08386f4a405d et SUP-861b0c3a8e17e774 : auteurs, date, service et titre concordent."
+    },
+    {
+      "claim_id": "C075",
+      "verdict": "TOO_STRONG",
+      "reason": "La note de 1966 n'a pas été ouverte (SUP-fb1f08386f4a405d, SUP-a5a6e7d12f30172b, SUP-24c11fe57dccd849) : son existence n'est établie que par la bibliographie. SUP-6eed90593ae37ec5 cite en outre un « Manuel de référence du programme ELECTRE » de mai 1966, antérieur à la note de juin. SUP-9e93919b521cc64f ne rapporte qu'une « première présentation » dans des revues non ouvertes. Affirmer que la méthode est « née » dans cette note dépasse ces appuis."
+    },
+    {
+      "claim_id": "C076",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis établissent que la note n'a pas été ouverte et qu'une preuve directe de la cosignature reste à produire (SUP-a5a6e7d12f30172b, SUP-24c11fe57dccd849). Ils ne disent pas que cette note permettrait de savoir ce que chacun a apporté. SUP-ebf0c83fda8a2acf désigne d'autres voies non instruites, les récits ultérieurs de Roy ; « c'est cette note qu'il faudra lire » en fait la voie unique et concluante."
+    }
+  ]
+}
