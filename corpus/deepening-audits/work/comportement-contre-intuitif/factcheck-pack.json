@@ -1,0 +1,507 @@
+{
+  "protocol_version": 2,
+  "concept_id": "comportement-contre-intuitif",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "2aa07a8907e59911f0739852f6263d6eb71b649d4d61bd2ecfe9a87a82e0534b",
+  "validated_sha256": "8ded5a5e21d30fb58bc3ea20e246dc431d7350de244f702d88b1174d3ac6b7f6",
+  "evidence_files": [],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": false,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+        "cles": [
+          "url:ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+        "cles": [
+          "url:static.clexchange.org/ftp/documents/system-dynamics/sd1993-01counterintuitivebe.pdf"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "metadata-only",
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+        "cles": [
+          "doi:10.1177/003754977101600202",
+          "url:doi.org/10.1177/003754977101600202"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[3]",
+        "declare": "metadata-only",
+        "label": "John D. Sterman, « Learning from Evidence in a Complex World », American Journal of Public Health, vol. 96, n° 3, mars 2006, p. 505-514.",
+        "cles": [
+          "doi:10.2105/ajph.2005.066043",
+          "url:doi.org/10.2105/ajph.2005.066043"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 0,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 4
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Une ville manque de logements abordables, alors elle en construit. Dix ans plus tard, elle en manque davantage, et elle est plus pauvre qu’avant. Un service croule sous les appels, alors on renforce l’équipe qui les traite. Un an plus tard, le nombre d’appels a monté. Chaque décision était raisonnable, prise par des gens compétents qui voyaient correctement le problème devant eux. Et chacune a produit le contraire de ce qu’elle visait."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Jay W. Forrester, ingénieur devenu au Massachusetts Institute of Technology le fondateur de la dynamique des systèmes, a passé sa carrière sur cette énigme. Sa réponse n’est pas que les décideurs se trompent par négligence ou par intérêt. Elle est plus dérangeante : dans un ensemble où tout se boucle sur tout, notre manière ordinaire de repérer une cause devient un guide qui nous égare, et il nous égare de façon régulière, prévisible, presque mécanique."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Là où l’intuition a appris à chercher",
+      "text": "Notre façon de remonter d’un effet à sa cause s’est formée sur des situations simples, où les deux sont voisins. On touche une plaque brûlante, la douleur vient tout de suite et vient de là. On lâche un verre, il tombe. Dans ce monde-là, la règle qui consiste à chercher juste avant et juste à côté fonctionne remarquablement bien, et elle a été apprise si tôt qu’elle ne se présente plus comme une règle : elle se présente comme l’évidence."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Là où l’intuition a appris à chercher",
+      "text": "Forrester observe que cette règle cesse d’être valable dès qu’on a affaire à un ensemble dont les parties s’influencent en retour. Sa formulation est directe : dans ces ensembles, écrit-il, « in complex dynamic systems, causes are often far removed in both time and space from the symptoms ». La vraie cause peut se trouver des années plus tôt, et dans une partie du système sans rapport apparent avec l’endroit où le symptôme se manifeste."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Là où l’intuition a appris à chercher",
+      "text": "Le problème n’est pas seulement que la cause soit loin. Il est qu’il y a presque toujours, tout près du symptôme, quelque chose qui a l’air d’être la cause. Ce quelque chose est en réalité un autre effet, produit par les mêmes boucles, et qui arrive à peu près en même temps. L’intuition l’attrape, s’y arrête, et se déclare satisfaite."
+    },
+    {
+      "locator": "sections[0].paragraphs[3]",
+      "section_title": "Là où l’intuition a appris à chercher",
+      "text": "Il vaut la peine de nommer ce qui rend un ensemble « complexe » au sens où Forrester l’entend, parce que le mot sert à tout. Il ne s’agit ni du nombre de pièces ni de la difficulté du sujet. Il s’agit de la présence de boucles : ce que produit une partie revient modifier ce qui la produit, parfois après un long détour. Un moteur d’avion est compliqué et n’est pas bouclé de cette façon ; un quartier, un budget public ou une équipe le sont, et le sont même quand ils paraissent modestes."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Le système désigne lui-même la mauvaise porte",
+      "text": "C’est ici que l’analyse devient tranchante. Forrester ne dit pas seulement que les points d’intervention efficaces sont difficiles à trouver. Il dit que le système attire activement l’attention ailleurs, et que cet ailleurs est précisément l’endroit où agir ne donnera rien : « En réalité, les systèmes sociaux attirent l’attention sur les points mêmes où toute tentative d’intervention échouera »."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Le système désigne lui-même la mauvaise porte",
+      "text": "Ce n’est pas une malveillance du système, c’est une conséquence de sa structure. Le symptôme le plus douloureux est aussi le plus visible, il occupe le débat, il commande l’urgence. Or c’est un symptôme, pas un levier. L’effort s’y concentre parce que la souffrance s’y concentre, et l’effort y est absorbé sans effet durable."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Le système désigne lui-même la mauvaise porte",
+      "text": "On peut le formuler autrement. Un système bouclé produit deux sortes de choses en même temps : des états douloureux, et des explications toutes faites de ces états. Les secondes sont fabriquées par la même machinerie que les premiers, et elles ont l’avantage d’être disponibles immédiatement, sans enquête. C’est pourquoi elles gagnent presque toujours contre une explication qui demanderait de remonter dix ans en arrière et de traverser trois services."
+    },
+    {
+      "locator": "sections[1].paragraphs[3]",
+      "section_title": "Le système désigne lui-même la mauvaise porte",
+      "text": "Une conséquence pratique en découle immédiatement : le fait qu’une mesure soit consensuelle, qu’elle réponde à une évidence partagée, qu’elle porte sur ce dont tout le monde parle, n’est pas un indice qu’elle est bonne. Cela peut être l’indice inverse."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Pourquoi l’effort redouble quand il échoue",
+      "text": "Le mécanisme se referme par un dernier tour, et c’est lui qui rend la situation durable plutôt que passagère. Une politique appliquée sur un faux levier ne produit pas rien : elle produit souvent une aggravation, différée et donc difficile à lui imputer. On constate que le problème empire. On en conclut qu’on n’en a pas fait assez. On en fait davantage."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Pourquoi l’effort redouble quand il échoue",
+      "text": "Imaginons un service d’assistance dont les délais s’allongent. On y ajoute des agents. Les délais baissent, les usagers apprennent que l’assistance répond vite, ils appellent pour des questions qu’ils auraient résolues seuls, la charge remonte, et les délais avec elle. Six mois plus tard, la conclusion qui s’impose au comité de direction est qu’il faut encore recruter. Cet exemple est fabriqué pour montrer la forme du raccourci, non tiré d’une enquête."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Pourquoi l’effort redouble quand il échoue",
+      "text": "Il n’y a dans cette spirale ni faute morale ni incompétence. Les gens font ce que l’observation leur commande de faire. Le défaut est dans le rapport entre une structure de boucles et une manière d’observer qui n’a pas été faite pour elle."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce que ce renversement ne dit pas",
+      "text": "Le concept se prête à deux contresens, et ils sont symétriques. Le premier consiste à en tirer que l’intuition est nulle et qu’il faut cesser de s’y fier. Forrester dit autre chose : les gens perçoivent très correctement leur environnement immédiat, ils savent ce qu’ils cherchent à obtenir, ils énoncent leurs raisons sans se mentir. C’est le passage de ces perceptions justes à une conclusion sur l’ensemble qui échoue."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce que ce renversement ne dit pas",
+      "text": "Le second contresens consiste à faire de ce renversement une règle : puisque l’intuition se trompe, il suffirait de faire l’inverse de ce qu’elle suggère. Cela ne fonctionne pas davantage. Rien ne garantit que le contraire d’un mauvais levier soit un bon levier ; il faut établir, ensemble par ensemble, comment il est bouclé. C’est précisément ce que la modélisation sert à faire, et c’est un travail, pas un réflexe."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Ce que ce renversement ne dit pas",
+      "text": "Un troisième malentendu guette, plus discret : croire que la contre-intuition serait une propriété des grands systèmes seulement, États, économies, planète. Rien dans le raisonnement ne dépend de la taille. Ce qui la produit est la présence de boucles et de délais, et une équipe de dix personnes en contient assez pour que le mécanisme joue."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que le concept change pour qui décide",
+      "text": "La première conséquence est un doute méthodique, appliqué non pas aux solutions mais à la façon dont le problème a été posé. Avant de demander quelle mesure prendre, il devient utile de demander qui a désigné ce point-là comme le point à traiter, et sur quelle observation. Si la seule réponse est que c’est là que la douleur se voit, le travail n’a pas commencé."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que le concept change pour qui décide",
+      "text": "La seconde est un rapport différent au temps. Une politique dont on n’observe l’effet que sur quelques mois est évaluée exactement dans la fenêtre où le système répond le moins fidèlement. Chercher l’écart entre ce qu’une mesure produit tout de suite et ce qu’elle produit à terme est le prolongement direct de cette analyse."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Ce que le concept change pour qui décide",
+      "text": "La troisième est une exigence de représentation. Tant que les politiques suivies restent dans la tête de ceux qui les appliquent, personne ne peut voir ce qu’elles font ensemble. Les mettre à plat, les relier, et regarder ce que le tout engendre est le geste que Forrester propose contre une intuition qui, seule, ne peut pas y arriver."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-8e029f03039e3b2b",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "comportement-contre-intuitif"
+    },
+    {
+      "id": "SUP-20ddaf294ebd0141",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "comportement-contre-intuitif"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-bf452398484b46c5",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Comportement contre-intuitif"
+    },
+    {
+      "id": "SUP-030158bc1b447e69",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "comportement-dans-le-temps"
+    },
+    {
+      "id": "SUP-08dcad5690d580a7",
+      "origin": "validated",
+      "path": "$.theme_labels[\"comportement-dans-le-temps\"]",
+      "access": "n/a",
+      "text": "Ce qu'une structure finit par produire"
+    },
+    {
+      "id": "SUP-2502444d673d5045",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Jay W. Forrester"
+    },
+    {
+      "id": "SUP-29c8758fc9353378",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Pourquoi le remède raisonnable aggrave-t-il si souvent le problème ?"
+    },
+    {
+      "id": "SUP-4abdd5d8faac0683",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Forrester : dans un système de boucles, la cause est loin du symptôme dans le temps et l'espace, et le système désigne lui-même les points où intervenir ne sert à rien."
+    },
+    {
+      "id": "SUP-36933704fc895f9f",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-7245e2cd29eb9da9",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-629d979af949e436",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-705d6d98f890ec43",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "full-text",
+      "text": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-873a1fcfca7989cd",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-e536d979c90a36d7",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "p. 61-76",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-5c39e621ddb79b8b",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1177/003754977101600202",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-d8b8a2c1b2a6d9e8",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1177/003754977101600202",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-5b344c8614c55648",
+      "origin": "validated",
+      "path": "$.sources[3].label",
+      "access": "metadata-only",
+      "text": "John D. Sterman, « Learning from Evidence in a Complex World », American Journal of Public Health, vol. 96, n° 3, mars 2006, p. 505-514.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-7a39812a7ece4071",
+      "origin": "validated",
+      "path": "$.sources[3].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-2928e11b702e8f0c",
+      "origin": "validated",
+      "path": "$.sources[3].locator",
+      "access": "metadata-only",
+      "text": "p. 505-514",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-6395277977d6abf5",
+      "origin": "validated",
+      "path": "$.sources[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.2105/ajph.2005.066043",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-cbd0318043c9474f",
+      "origin": "validated",
+      "path": "$.sources[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.2105/ajph.2005.066043",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-3da51495dfe3ad8e",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)"
+    },
+    {
+      "id": "SUP-d71b9359ee4b2610",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-22"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-897f28c3defd623f",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    },
+    {
+      "id": "SUP-b9aef3b6c7d159ce",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology."
+    },
+    {
+      "id": "SUP-6ea9e762eb2f0d39",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "En réalité, les systèmes sociaux attirent l'attention sur les points mêmes où toute tentative d'intervention échouera."
+    },
+    {
+      "id": "SUP-29db1d7d390dade5",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995."
+    },
+    {
+      "id": "SUP-400d2e91bc1e8781",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 11, section VI"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-956b35ff51e7483f",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "In fact, social systems draw attention to the very points at which an attempt to intervene will fail."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-540b04eb63c094d5",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce texte n'a été cherchée ni identifiée."
+    },
+    {
+      "id": "SUP-53f95d9946006afb",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La citation est relevée sur D-4468-2, mise à jour de mars 1995, et non sur l'article de Technology Review 73(3), janvier 1971, qui n'a pas été ouvert. Le document porte lui-même sa date de révision et son texte a bougé avec elle : il annonce « developments over the last 60 years », ce que l'article de 1971 ne pouvait pas écrire. Le verbatim retenu a été comparé chaîne par chaîne sur un second exemplaire indépendant, D-4468-1 du Creative Learning Exchange : identique."
+    },
+    {
+      "id": "SUP-1aa91b2edc061e78",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le texte fonde ce renversement sur un mécanisme et non sur une ironie : « in complex dynamic systems, causes are often far removed in both time and space from the symptoms » (p. 11). Ce que le résumé appelle la distance de la cause au symptôme est cette phrase-là."
+    },
+    {
+      "id": "SUP-e8e20adaf0965447",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "L'exemple que Forrester donne juste après, le logement social urbain, n'est pas repris sur la carte : il demande le modèle urbain de 1969 pour être compris, et la carte n'a pas la place de l'établir."
+    }
+  ],
+  "estimated_tokens": 6827,
+  "status": "READY"
+}
