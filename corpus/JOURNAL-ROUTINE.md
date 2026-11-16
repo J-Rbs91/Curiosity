@@ -2968,3 +2968,10 @@ septième fois.
 - **Elle n'a produit elle-même aucune connaissance.** Chaque carte est passée par un lecteur
   primaire, un rédacteur et un contrôleur aveugle qui ne recevait que le dossier du script. Aucun
   agent n'a contrôlé son propre travail.
+
+## 2026-11-16 : audit de 3 approfondissements jamais audités
+
+- `compromis-defection-prise-de-parole` : REVISE, réécrit, `FACTCHECK_PASS` 58/58 après deux boucles de correction, `ACCEPT`. Texte lecteur -11 %.
+- `classification-negociee-et-salaire-effectif` : REVISE, réécriture refusée au gate (3 évaluations, la dernière à 1 claim sur 72), texte d'origine restauré par son SHA de blob, trace `rewrite_rejected_factcheck`.
+- `comportement-contre-intuitif` : `BLOCKED_SOURCE`. Aucun dossier de preuve ; le texte attribue à Forrester des thèses que le pack ne finance pas. Débloque : un dossier de lecture de Forrester D-4468-1 ou D-4468-2.
+- File restante : 113 cartes stale (jamais auditées, protocole 3, ou refusées).
