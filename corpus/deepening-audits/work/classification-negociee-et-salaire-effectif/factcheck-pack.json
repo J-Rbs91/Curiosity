@@ -3,7 +3,7 @@
   "concept_id": "classification-negociee-et-salaire-effectif",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "7a33dede1c94fbb5702c6c09d2ec378696a2a739f5440eafa086d1c0f6bf71e3",
+  "candidate_sha256": "4cb8d84cf309b49064da4278c3b76980c0a39ec3da7c623fce8def6703c257d8",
   "validated_sha256": "b77996c6ee7cccb6a507b3af21aa0136c973a4fc68aec1bb2b614cdd0e07ce4c",
   "evidence_files": [
     {
@@ -66,16 +66,16 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Un bulletin de paie porte deux mentions qui sont censées se répondre : une catégorie, et une somme. La catégorie vient d’un texte négocié entre syndicats et employeurs pour toute une branche d’activité, qui range les emplois du moins qualifié au plus qualifié et attache à chaque rang un minimum. On en conclut volontiers que le classement commande la paie : monter d’un cran, c’est gagner plus, et gagner plus que quelqu’un, c’est être classé plus haut que lui."
+      "text": "Le classement d’un emploi vient d’un texte négocié entre syndicats et employeurs pour toute une branche d’activité, qui range les emplois du moins qualifié au plus qualifié et attache à chaque rang un minimum. On en conclut volontiers que le classement commande la paie : monter d’un cran, c’est gagner plus, et gagner plus que quelqu’un, c’est être classé plus haut que lui."
     },
     {
       "locator": "lead[1]",
-      "text": "Dans quatre entreprises de l’habillement observées de mai à juillet 1980, le lien entre les deux mentions était lâche. Pierre Dubois, sociologue du travail, y a suivi le trajet qui va de la grille signée pour la branche à la somme versée à une ouvrière. Ce trajet passe par au moins deux mains, celles de l’entreprise puis celles du mode de rémunération, et le classement perd quelque chose à chaque passage."
+      "text": "Dans quatre entreprises de l’habillement observées de mai à juillet 1980, le lien entre classement et paie était lâche. Pierre Dubois, sociologue du travail, y a suivi le trajet qui va de la grille signée pour la branche à la somme versée à une ouvrière. Ce trajet passe par au moins deux mains, celles de l’entreprise puis celles du mode de rémunération, et le classement perd quelque chose à chaque passage."
     },
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Ce que la convention classe, ce n’est pas l’ouvrière",
-      "text": "Au premier niveau, celui du texte de branche, le classement ne regarde personne. Ce qui reçoit une catégorie, c’est le poste de travail, pas celle qui l’occupe : « le système national de classification exclut la prise en compte de l’individu (c’est le poste qui est qualifié ou non) », écrit Dubois. La convention ne mentionne nulle part le diplôme, l’ancienneté, le comportement au travail, la compétence ou l’expérience. Elle sépare même elle-même ce qui classe et ce qui paie : la prime d’ancienneté qu’elle prévoit, jusqu’à 15 % du salaire de base, « influe donc sur le salaire », « mais elle ne joue pas sur le coefficient de classification ». Imaginons deux femmes assises au même poste, l’une depuis vingt ans, l’autre depuis trois semaines : selon la convention, elles relèvent du même rang."
+      "text": "Au premier niveau, celui du texte de branche, le classement ne regarde personne. Ce qui reçoit une catégorie, c’est le poste de travail, pas celle qui l’occupe : « le système national de classification exclut la prise en compte de l’individu (c’est le poste qui est qualifié ou non) », écrit Dubois. La convention ne mentionne nulle part, comme critère de classification, le diplôme, l’ancienneté, le comportement au travail, la compétence ou l’expérience. Elle sépare même elle-même ce qui classe et ce qui paie : la prime d’ancienneté qu’elle prévoit, jusqu’à 15 % du salaire de base, « influe donc sur le salaire », « mais elle ne joue pas sur le coefficient de classification ». Imaginons deux femmes assises au même poste, l’une depuis vingt ans, l’autre depuis trois semaines : selon la convention, elles relèvent du même rang."
     },
     {
       "locator": "sections[0].paragraphs[1]",
@@ -105,7 +105,7 @@
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "La prime de rendement défait la hiérarchie",
-      "text": "L’effet est mesurable dans l’ordre même de la hiérarchie. La phrase de Dubois ne s’arrête pas à la déconnexion : « des ouvriers classés dans des catégories basses peuvent percevoir des salaires plus élevés que ceux qui occupent les postes du haut de la hiérarchie ouvrière et même que certains agents de maîtrise ». L’amplitude suit le même mouvement. Entre la catégorie la plus qualifiée et la moins qualifiée, l’écart prévu par la convention était de 1 à 1,39 ; les écarts constatés dans les entreprises étudiées allaient de 1 à plus de 2. Ces valeurs valent pour cette branche et pour ces années : ce ne sont pas des ordres de grandeur généraux."
+      "text": "La phrase de Dubois ne s’arrête pas à la déconnexion : « des ouvriers classés dans des catégories basses peuvent percevoir des salaires plus élevés que ceux qui occupent les postes du haut de la hiérarchie ouvrière et même que certains agents de maîtrise ». L’amplitude suit le même mouvement. Entre la catégorie la plus qualifiée et la moins qualifiée, l’écart prévu par la convention était de 1 à 1,39 ; les écarts constatés dans les entreprises étudiées allaient de 1 à plus de 2. Ces valeurs valent pour cette branche et pour ces années : ce ne sont pas des ordres de grandeur généraux."
     },
     {
       "locator": "sections[3].paragraphs[0]",
@@ -808,6 +808,6 @@
       "text": "Ce qui n'a pas été ouvert, et qui limite ce que la fiche peut dire. L'article de Salais de 1976 n'a été ouvert que par sa première page : il suffit à établir l'antériorité de la distinction individu/emploi, il ne permet pas de dire jusqu'où Salais lui-même va dans le rapport au salaire, ni s'il aborde la rémunération au rendement. Si le domaine veut instruire une carte sur cette distinction, elle se fera sur Salais et elle demandera une lecture complète des pages 3 à 11, qui n'a pas été faite ici. N'ont pas non plus été ouverts les textes que Dubois mobilise et que je ne connais que par ce qu'il en écrit : l'ouvrage du CEREQ « La qualification, de quoi parle-t-on ? » (1978), le Répertoire français des emplois (cahier n° 12, tome 2, 1980), la convention collective nationale des industries de l'habillement (Journal officiel n° 1142, octobre 1977) et le projet de refonte de septembre 1976, l'enquête de M. Lacroix (1976) citée page 7, les articles de Cézard, Cézard et Goy, Barge et Payen, Eymard-Duvernay et Vincent cités en notes. Les quatre entreprises restent anonymes dans l'article et aucune donnée d'enquête n'est publiée au-delà des tableaux 2 et 4 : les proportions et les écarts rapportés ici sont ceux que Dubois publie, et n'ont pas été recalculés."
     }
   ],
-  "estimated_tokens": 23861,
+  "estimated_tokens": 23824,
   "status": "READY"
 }

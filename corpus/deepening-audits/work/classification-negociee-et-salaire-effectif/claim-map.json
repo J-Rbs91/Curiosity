@@ -1,6 +1,6 @@
 {
   "concept_id": "classification-negociee-et-salaire-effectif",
-  "candidate_sha256": "7a33dede1c94fbb5702c6c09d2ec378696a2a739f5440eafa086d1c0f6bf71e3",
+  "candidate_sha256": "4cb8d84cf309b49064da4278c3b76980c0a39ec3da7c623fce8def6703c257d8",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -64,18 +64,20 @@
       "claim_id": "C001",
       "locator": "lead[0]",
       "start": 0,
-      "end": 99,
-      "claim_text": "Un bulletin de paie porte deux mentions qui sont censées se répondre : une catégorie, et une somme.",
-      "normalized_claim": "Un bulletin de paie mentionne une catégorie et une somme censées se correspondre.",
-      "support_ids": []
+      "end": 114,
+      "claim_text": "Le classement d’un emploi vient d’un texte négocié entre syndicats et employeurs pour toute une branche d’activité",
+      "normalized_claim": "La classification des emplois est fixée par une convention collective de branche négociée.",
+      "support_ids": [
+        "SUP-adb88b188d7fb949"
+      ]
     },
     {
       "claim_id": "C002",
       "locator": "lead[0]",
-      "start": 100,
-      "end": 296,
-      "claim_text": "La catégorie vient d’un texte négocié entre syndicats et employeurs pour toute une branche d’activité, qui range les emplois du moins qualifié au plus qualifié et attache à chaque rang un minimum.",
-      "normalized_claim": "La catégorie provient d'une convention de branche négociée qui hiérarchise les emplois et attache un salaire minimum à chaque rang.",
+      "start": 116,
+      "end": 208,
+      "claim_text": "qui range les emplois du moins qualifié au plus qualifié et attache à chaque rang un minimum",
+      "normalized_claim": "La grille hiérarchise les postes et attache à chaque catégorie un salaire minimal.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
@@ -83,10 +85,10 @@
     {
       "claim_id": "C003",
       "locator": "lead[0]",
-      "start": 297,
-      "end": 462,
+      "start": 210,
+      "end": 375,
       "claim_text": "On en conclut volontiers que le classement commande la paie : monter d’un cran, c’est gagner plus, et gagner plus que quelqu’un, c’est être classé plus haut que lui.",
-      "normalized_claim": "La croyance courante est que la classification détermine le salaire.",
+      "normalized_claim": "Le lien habituellement supposé est que la classification détermine le salaire.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
@@ -97,9 +99,10 @@
       "start": 0,
       "end": 72,
       "claim_text": "Dans quatre entreprises de l’habillement observées de mai à juillet 1980",
-      "normalized_claim": "L'enquête porte sur quatre entreprises de l'habillement observées de mai à juillet 1980.",
+      "normalized_claim": "Terrain : quatre entreprises de l'habillement, enquêtes de mai à juillet 1980.",
       "support_ids": [
         "SUP-cdb26bc391faed3b",
+        "SUP-2cc86747b2a053de",
         "SUP-3a62712ff9751634",
         "SUP-3576be76da6e0332"
       ]
@@ -108,9 +111,9 @@
       "claim_id": "C005",
       "locator": "lead[1]",
       "start": 74,
-      "end": 117,
-      "claim_text": "le lien entre les deux mentions était lâche",
-      "normalized_claim": "Dans ces entreprises, le lien classification-salaire était lâche.",
+      "end": 118,
+      "claim_text": "le lien entre classement et paie était lâche",
+      "normalized_claim": "Dubois constate un lien lâche entre classification et salaire.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-21996bfd7b6d0782"
@@ -119,10 +122,10 @@
     {
       "claim_id": "C006",
       "locator": "lead[1]",
-      "start": 119,
-      "end": 155,
+      "start": 120,
+      "end": 156,
       "claim_text": "Pierre Dubois, sociologue du travail",
-      "normalized_claim": "Pierre Dubois est sociologue du travail.",
+      "normalized_claim": "Dubois est sociologue du travail.",
       "support_ids": [
         "SUP-5eff21c227659d04",
         "SUP-3576be76da6e0332"
@@ -131,22 +134,23 @@
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "start": 157,
-      "end": 252,
+      "start": 158,
+      "end": 253,
       "claim_text": "y a suivi le trajet qui va de la grille signée pour la branche à la somme versée à une ouvrière",
-      "normalized_claim": "Dubois a étudié le passage de la grille de branche au salaire versé.",
+      "normalized_claim": "L'article suit la chaîne convention de branche - pratique d'entreprise - salaire.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
-        "SUP-e3dca5678bf20551"
+        "SUP-3576be76da6e0332",
+        "SUP-c65ca504b0fada11"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "lead[1]",
-      "start": 254,
-      "end": 408,
+      "start": 255,
+      "end": 409,
       "claim_text": "Ce trajet passe par au moins deux mains, celles de l’entreprise puis celles du mode de rémunération, et le classement perd quelque chose à chaque passage.",
-      "normalized_claim": "Entre grille et salaire interviennent les pratiques d'entreprise puis le mode de rémunération, chacun distendant le lien.",
+      "normalized_claim": "Deux niveaux successifs (entreprise, mode de rémunération) détachent le salaire du classement.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-ba4e0b9de46e54b3",
@@ -157,32 +161,20 @@
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
-      "end": 80,
-      "claim_text": "Au premier niveau, celui du texte de branche, le classement ne regarde personne.",
-      "normalized_claim": "La convention de branche ne prend pas en compte l'individu.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-1eecf7197577a9bd"
-      ]
-    },
-    {
-      "claim_id": "C010",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 81,
       "end": 159,
-      "claim_text": "Ce qui reçoit une catégorie, c’est le poste de travail, pas celle qui l’occupe",
-      "normalized_claim": "La convention classe des postes, non des personnes.",
+      "claim_text": "Au premier niveau, celui du texte de branche, le classement ne regarde personne. Ce qui reçoit une catégorie, c’est le poste de travail, pas celle qui l’occupe",
+      "normalized_claim": "La convention de branche classe les postes, pas les individus.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 162,
-      "end": 299,
-      "claim_text": "« le système national de classification exclut la prise en compte de l’individu (c’est le poste qui est qualifié ou non) », écrit Dubois.",
-      "normalized_claim": "Citation de Dubois.",
+      "end": 298,
+      "claim_text": "« le système national de classification exclut la prise en compte de l’individu (c’est le poste qui est qualifié ou non) », écrit Dubois",
+      "normalized_claim": "Citation p. 10.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-1eecf7197577a9bd",
@@ -190,12 +182,23 @@
       ]
     },
     {
-      "claim_id": "C012",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
       "start": 300,
-      "end": 422,
-      "claim_text": "La convention ne mentionne nulle part le diplôme, l’ancienneté, le comportement au travail, la compétence ou l’expérience.",
-      "normalized_claim": "Absence de critères individuels dans la convention.",
+      "end": 456,
+      "claim_text": "La convention ne mentionne nulle part, comme critère de classification, le diplôme, l’ancienneté, le comportement au travail, la compétence ou l’expérience.",
+      "normalized_claim": "Aucun critère individuel dans la convention.",
+      "support_ids": [
+        "SUP-adb88b188d7fb949"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 457,
+      "end": 512,
+      "claim_text": "Elle sépare même elle-même ce qui classe et ce qui paie",
+      "normalized_claim": "La règle négociée sépare classement et paie.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
@@ -203,10 +206,10 @@
     {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
-      "start": 423,
-      "end": 478,
-      "claim_text": "Elle sépare même elle-même ce qui classe et ce qui paie",
-      "normalized_claim": "La convention sépare classification et rémunération.",
+      "start": 515,
+      "end": 681,
+      "claim_text": "la prime d’ancienneté qu’elle prévoit, jusqu’à 15 % du salaire de base, « influe donc sur le salaire », « mais elle ne joue pas sur le coefficient de classification »",
+      "normalized_claim": "Note 5 sur la prime d'ancienneté.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
@@ -214,38 +217,16 @@
     {
       "claim_id": "C014",
       "locator": "sections[0].paragraphs[0]",
-      "start": 481,
-      "end": 551,
-      "claim_text": "la prime d’ancienneté qu’elle prévoit, jusqu’à 15 % du salaire de base",
-      "normalized_claim": "La convention prévoit une prime d'ancienneté jusqu'à 15 % du salaire de base.",
+      "start": 784,
+      "end": 833,
+      "claim_text": "selon la convention, elles relèvent du même rang.",
+      "normalized_claim": "Conséquence de la vignette : l'ancienneté ne change pas le rang conventionnel.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
       "claim_id": "C015",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 553,
-      "end": 647,
-      "claim_text": "« influe donc sur le salaire », « mais elle ne joue pas sur le coefficient de classification »",
-      "normalized_claim": "Citations de Dubois (note 5) sur la prime d'ancienneté.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949"
-      ]
-    },
-    {
-      "claim_id": "C016",
-      "locator": "sections[0].paragraphs[0]",
-      "start": 750,
-      "end": 798,
-      "claim_text": "selon la convention, elles relèvent du même rang",
-      "normalized_claim": "Conséquence tirée de la vignette : même poste, même rang, quelle que soit l'ancienneté.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949"
-      ]
-    },
-    {
-      "claim_id": "C017",
       "locator": "sections[0].paragraphs[1]",
       "start": 0,
       "end": 94,
@@ -253,53 +234,51 @@
       "normalized_claim": "La distinction individu/emploi n'est pas de Dubois.",
       "support_ids": [
         "SUP-e3dca5678bf20551",
-        "SUP-c936bae88e45ea1b",
-        "SUP-3576be76da6e0332"
+        "SUP-3576be76da6e0332",
+        "SUP-c936bae88e45ea1b"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 95,
+      "end": 125,
+      "claim_text": "Il le présente comme un acquis",
+      "normalized_claim": "Dubois la présente comme acquise.",
+      "support_ids": [
+        "SUP-e3dca5678bf20551",
+        "SUP-3576be76da6e0332",
+        "SUP-c936bae88e45ea1b"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 130,
+      "end": 232,
+      "claim_text": "sa première note renvoie à un ouvrage du CEREQ de 1978 et à un article de Robert Salais publié en 1976",
+      "normalized_claim": "Note 1 : CEREQ 1978 et Salais 1976.",
+      "support_ids": [
+        "SUP-e3dca5678bf20551",
+        "SUP-3576be76da6e0332",
+        "SUP-c936bae88e45ea1b"
       ]
     },
     {
       "claim_id": "C018",
       "locator": "sections[0].paragraphs[1]",
-      "start": 95,
-      "end": 125,
-      "claim_text": "Il le présente comme un acquis",
-      "normalized_claim": "Dubois présente la distinction comme acquise.",
+      "start": 234,
+      "end": 282,
+      "claim_text": "dont la première page pose bien les deux notions",
+      "normalized_claim": "La p. 3 de Salais pose les deux notions.",
       "support_ids": [
-        "SUP-e3dca5678bf20551",
-        "SUP-c936bae88e45ea1b",
-        "SUP-3576be76da6e0332"
+        "SUP-31d7a4c01aad1bd9",
+        "SUP-d212997e4714d370",
+        "SUP-0d58526f159be174"
       ]
     },
     {
       "claim_id": "C019",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 130,
-      "end": 232,
-      "claim_text": "sa première note renvoie à un ouvrage du CEREQ de 1978 et à un article de Robert Salais publié en 1976",
-      "normalized_claim": "La note 1 renvoie au CEREQ 1978 et à Salais 1976.",
-      "support_ids": [
-        "SUP-c936bae88e45ea1b",
-        "SUP-3576be76da6e0332",
-        "SUP-e3dca5678bf20551",
-        "SUP-8150b6e4035d5533"
-      ]
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[0].paragraphs[1]",
-      "start": 234,
-      "end": 282,
-      "claim_text": "dont la première page pose bien les deux notions",
-      "normalized_claim": "La p. 3 de Salais 1976 pose les deux notions.",
-      "support_ids": [
-        "SUP-0d58526f159be174",
-        "SUP-31d7a4c01aad1bd9",
-        "SUP-d212997e4714d370",
-        "SUP-06de05f47e7f009c"
-      ]
-    },
-    {
-      "claim_id": "C021",
       "locator": "sections[0].paragraphs[1]",
       "start": 284,
       "end": 462,
@@ -307,35 +286,34 @@
       "normalized_claim": "Apport propre de Dubois.",
       "support_ids": [
         "SUP-e3dca5678bf20551",
-        "SUP-c936bae88e45ea1b",
         "SUP-3576be76da6e0332",
+        "SUP-c936bae88e45ea1b"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 106,
+      "claim_text": "Une entreprise, elle, fait travailler des personnes, et les entreprises observées « ne peuvent l’ignorer »",
+      "normalized_claim": "Citation p. 8-9.",
+      "support_ids": [
+        "SUP-adb88b188d7fb949"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 109,
+      "end": 199,
+      "claim_text": "deux ouvriers occupant le même poste pourront ne pas être au même niveau de classification",
+      "normalized_claim": "Même poste, classifications différentes possibles.",
+      "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
       "claim_id": "C022",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 0,
-      "end": 106,
-      "claim_text": "Une entreprise, elle, fait travailler des personnes, et les entreprises observées « ne peuvent l’ignorer »",
-      "normalized_claim": "Les entreprises ne peuvent ignorer qu'elles emploient des personnes.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949"
-      ]
-    },
-    {
-      "claim_id": "C023",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 109,
-      "end": 199,
-      "claim_text": "deux ouvriers occupant le même poste pourront ne pas être au même niveau de classification",
-      "normalized_claim": "Même poste, classification possiblement différente.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949"
-      ]
-    },
-    {
-      "claim_id": "C024",
       "locator": "sections[1].paragraphs[0]",
       "start": 201,
       "end": 263,
@@ -346,12 +324,35 @@
       ]
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[0]",
       "start": 264,
-      "end": 378,
-      "claim_text": "Elles s’en arrangent en installant « un minimum de carrière ouvrière, au moyen d’un circuit de postes de travail »",
-      "normalized_claim": "Les entreprises installent un circuit de postes.",
+      "end": 497,
+      "claim_text": "Elles s’en arrangent en installant « un minimum de carrière ouvrière, au moyen d’un circuit de postes de travail » : des postes d’accès pour les débutants, des postes tout-venant, des postes de promotion, et des postes de relégation.",
+      "normalized_claim": "Circuit de postes.",
+      "support_ids": [
+        "SUP-adb88b188d7fb949",
+        "SUP-2c4f2343f3015066"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 61,
+      "claim_text": "Le classement change alors de fonction sans changer de forme.",
+      "normalized_claim": "Interprétation : la classification d'entreprise devient liée à l'individu.",
+      "support_ids": [
+        "SUP-adb88b188d7fb949"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 62,
+      "end": 310,
+      "claim_text": "Sur un poste tout-venant, « sans changer de travail et sans que le contenu de l’activité soit modifié, l’ouvrière peut se voir attribuer une classification plus élevée », qui récompense son ancienneté, son expérience ou son comportement au travail.",
+      "normalized_claim": "Promotion sur place.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-2c4f2343f3015066"
@@ -359,59 +360,11 @@
     },
     {
       "claim_id": "C026",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 381,
-      "end": 496,
-      "claim_text": "des postes d’accès pour les débutants, des postes tout-venant, des postes de promotion, et des postes de relégation",
-      "normalized_claim": "Typologie des postes du circuit.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-2c4f2343f3015066"
-      ]
-    },
-    {
-      "claim_id": "C027",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 61,
-      "claim_text": "Le classement change alors de fonction sans changer de forme.",
-      "normalized_claim": "En entreprise, la classification sert à reconnaître l'individu tout en restant une classification de postes.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-2c4f2343f3015066"
-      ]
-    },
-    {
-      "claim_id": "C028",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 62,
-      "end": 231,
-      "claim_text": "Sur un poste tout-venant, « sans changer de travail et sans que le contenu de l’activité soit modifié, l’ouvrière peut se voir attribuer une classification plus élevée »",
-      "normalized_claim": "Citation sur le poste tout-venant.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-2c4f2343f3015066"
-      ]
-    },
-    {
-      "claim_id": "C029",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 233,
-      "end": 309,
-      "claim_text": "qui récompense son ancienneté, son expérience ou son comportement au travail",
-      "normalized_claim": "La classification plus élevée récompense ancienneté, expérience, comportement.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-2c4f2343f3015066"
-      ]
-    },
-    {
-      "claim_id": "C030",
       "locator": "sections[1].paragraphs[1]",
       "start": 311,
       "end": 455,
       "claim_text": "Dubois le résume d’un mot : « le système de classification pratiqué par les entreprises est un mixte de critères liés au poste et à l’individu »",
-      "normalized_claim": "Citation de Dubois (p. 10).",
+      "normalized_claim": "Citation p. 10.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-1eecf7197577a9bd",
@@ -419,51 +372,40 @@
       ]
     },
     {
-      "claim_id": "C031",
+      "claim_id": "C027",
       "locator": "sections[1].paragraphs[1]",
       "start": 457,
-      "end": 547,
-      "claim_text": "Un même intitulé de catégorie ne dit donc plus la même chose selon l’endroit où on le lit.",
-      "normalized_claim": "Inférence : la catégorie change de sens entre convention et entreprise.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949"
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 548,
       "end": 642,
-      "claim_text": "Dans la convention, il désigne un travail ; dans l’atelier, il désigne en partie une personne.",
-      "normalized_claim": "Convention : poste ; entreprise : en partie individu.",
+      "claim_text": "Un même intitulé de catégorie ne dit donc plus la même chose selon l’endroit où on le lit. Dans la convention, il désigne un travail ; dans l’atelier, il désigne en partie une personne.",
+      "normalized_claim": "Conséquence dérivée : la catégorie désigne un poste dans la convention, en partie un individu dans l'entreprise.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C028",
       "locator": "sections[1].paragraphs[2]",
       "start": 0,
       "end": 70,
       "claim_text": "L’application de la grille varie elle aussi d’une entreprise à l’autre",
-      "normalized_claim": "Application variable de la grille entre entreprises.",
+      "normalized_claim": "Disparités d'application.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C029",
       "locator": "sections[1].paragraphs[2]",
       "start": 73,
       "end": 171,
       "claim_text": "la proportion d’ouvriers non qualifiés va de 17,9 % dans l’entreprise 3 à 74 % dans l’entreprise 2",
-      "normalized_claim": "Chiffres de non-qualifiés par entreprise.",
+      "normalized_claim": "Chiffres p. 7-8.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C030",
       "locator": "sections[1].paragraphs[2]",
       "start": 173,
       "end": 224,
@@ -474,23 +416,23 @@
       ]
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C031",
       "locator": "sections[1].paragraphs[2]",
       "start": 226,
       "end": 396,
       "claim_text": "Dubois y lit une compensation : « On dirait donc que l’entreprise 3 compense ses bas salaires par une politique moins rigoureuse dans l’attribution des classifications. »",
-      "normalized_claim": "Citation de Dubois sur l'entreprise 3.",
+      "normalized_claim": "Citation.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C032",
       "locator": "sections[1].paragraphs[2]",
       "start": 397,
       "end": 528,
       "claim_text": "C’est à propos de ce cas qu’il avance qu’« on pourrait faire l’hypothèse d’une large indépendance entre classification et salaire »",
-      "normalized_claim": "Hypothèse avancée à propos de l'entreprise 3.",
+      "normalized_claim": "Hypothèse p. 8, à propos de l'entreprise 3.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-cdb26bc391faed3b",
@@ -498,85 +440,74 @@
       ]
     },
     {
-      "claim_id": "C038",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 0,
-      "end": 44,
-      "claim_text": "Reste le troisième niveau, celui du salaire.",
-      "normalized_claim": "Le salaire est le troisième niveau de l'analyse de Dubois.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949"
-      ]
-    },
-    {
-      "claim_id": "C039",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[0]",
       "start": 45,
       "end": 178,
       "claim_text": "La convention attache à chaque catégorie, de A à K, un salaire minimal garanti à l’embauche et un autre après trois mois d’ancienneté",
-      "normalized_claim": "Salaires minimaux conventionnels par catégorie A à K.",
+      "normalized_claim": "Minima conventionnels.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[0]",
       "start": 181,
       "end": 230,
       "claim_text": "la qualification fixe un plancher, pas un salaire",
-      "normalized_claim": "La qualification détermine un plancher salarial.",
+      "normalized_claim": "La qualification détermine le plancher du salaire.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[0]",
       "start": 232,
       "end": 270,
       "claim_text": "Les entreprises peuvent aller au-delà.",
-      "normalized_claim": "Les entreprises peuvent payer au-delà des minima.",
+      "normalized_claim": "Politique salariale au-delà des contraintes conventionnelles.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[0]",
       "start": 271,
       "end": 355,
       "claim_text": "Quand elles paient au temps, le lien entre les deux échelles reste « assez strict ».",
-      "normalized_claim": "Paiement au temps : lien assez strict.",
+      "normalized_claim": "Paiement au temps.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C037",
       "locator": "sections[2].paragraphs[0]",
       "start": 356,
       "end": 475,
       "claim_text": "Quand elles paient au rendement, ce qui détermine le salaire, « c’est conjointement la classification et le rendement »",
-      "normalized_claim": "Paiement au rendement : classification et rendement conjointement.",
+      "normalized_claim": "Paiement au rendement.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C038",
       "locator": "sections[2].paragraphs[0]",
       "start": 480,
       "end": 585,
       "claim_text": "l’ouvrier payé ainsi peut surveiller sa prime « au point d’en ignorer son coefficient de classification »",
-      "normalized_claim": "L'ouvrier au rendement peut ignorer son coefficient.",
+      "normalized_claim": "Citation p. 10.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-c735bea1024f30d3"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C039",
       "locator": "sections[2].paragraphs[0]",
       "start": 587,
       "end": 689,
@@ -589,50 +520,36 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C040",
       "locator": "sections[2].paragraphs[1]",
       "start": 0,
-      "end": 57,
-      "claim_text": "L’effet est mesurable dans l’ordre même de la hiérarchie.",
-      "normalized_claim": "Le salaire au rendement affecte l'ordre hiérarchique des salaires.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-ee66999baf1f5d77"
-      ]
-    },
-    {
-      "claim_id": "C047",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 58,
-      "end": 314,
+      "end": 256,
       "claim_text": "La phrase de Dubois ne s’arrête pas à la déconnexion : « des ouvriers classés dans des catégories basses peuvent percevoir des salaires plus élevés que ceux qui occupent les postes du haut de la hiérarchie ouvrière et même que certains agents de maîtrise »",
-      "normalized_claim": "Suite de la phrase p. 11.",
+      "normalized_claim": "Suite de la phrase citée p. 11.",
       "support_ids": [
-        "SUP-ee66999baf1f5d77",
         "SUP-0155ae4a2f2606f2",
-        "SUP-d474aeb3dcbbcae8",
-        "SUP-5c4e5ca4913160de",
+        "SUP-ee66999baf1f5d77",
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C041",
       "locator": "sections[2].paragraphs[1]",
-      "start": 316,
-      "end": 351,
+      "start": 258,
+      "end": 293,
       "claim_text": "L’amplitude suit le même mouvement.",
-      "normalized_claim": "Le salaire au rendement élargit l'écart maximal.",
+      "normalized_claim": "Le rendement ouvre aussi l'écart maximal.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C042",
       "locator": "sections[2].paragraphs[1]",
-      "start": 352,
-      "end": 461,
-      "claim_text": "Entre la catégorie la plus qualifiée et la moins qualifiée, l’écart prévu par la convention était de 1 à 1,39",
-      "normalized_claim": "Écart conventionnel 1 à 1,39.",
+      "start": 294,
+      "end": 483,
+      "claim_text": "Entre la catégorie la plus qualifiée et la moins qualifiée, l’écart prévu par la convention était de 1 à 1,39 ; les écarts constatés dans les entreprises étudiées allaient de 1 à plus de 2.",
+      "normalized_claim": "Chiffres d'amplitude.",
       "support_ids": [
         "SUP-adb88b188d7fb949",
         "SUP-904913d98ee31d5b",
@@ -640,23 +557,10 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C043",
       "locator": "sections[2].paragraphs[1]",
-      "start": 464,
-      "end": 540,
-      "claim_text": "les écarts constatés dans les entreprises étudiées allaient de 1 à plus de 2",
-      "normalized_claim": "Écarts observés de 1 à plus de 2.",
-      "support_ids": [
-        "SUP-adb88b188d7fb949",
-        "SUP-904913d98ee31d5b",
-        "SUP-2cc86747b2a053de"
-      ]
-    },
-    {
-      "claim_id": "C051",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 542,
-      "end": 648,
+      "start": 484,
+      "end": 590,
       "claim_text": "Ces valeurs valent pour cette branche et pour ces années : ce ne sont pas des ordres de grandeur généraux.",
       "normalized_claim": "Portée limitée des valeurs.",
       "support_ids": [
@@ -665,19 +569,19 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
       "start": 0,
       "end": 85,
       "claim_text": "Cette déconnexion n’est pas seulement comptable : elle se retourne sur les conduites.",
-      "normalized_claim": "La déconnexion a un effet sur les conduites.",
+      "normalized_claim": "Effet en retour sur les conduites.",
       "support_ids": [
         "SUP-2a88ffa533273db3",
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[0]",
       "start": 86,
       "end": 492,
@@ -689,37 +593,38 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[0]",
       "start": 493,
       "end": 644,
       "claim_text": "Une classification mieux cotée par la règle négociée peut ainsi être refusée par celles à qui on l’offre, parce que le salaire dit autre chose qu’elle.",
-      "normalized_claim": "Inférence : refus d'une classification supérieure.",
+      "normalized_claim": "Conséquence dérivée.",
       "support_ids": [
         "SUP-adb88b188d7fb949"
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 101,
       "claim_text": "L’écart entre ce qui se négocie et ce qui se touche n’est ni propre à l’habillement ni propre à 1980.",
-      "normalized_claim": "L'écart négocié/perçu est attesté hors habillement et hors 1980.",
+      "normalized_claim": "Généralité de l'écart, attestée par Saglio.",
       "support_ids": [
         "SUP-68046c6e2cf6ebfd",
         "SUP-ad5a9899191471f7",
         "SUP-fff6440963c6b3e0",
-        "SUP-6b1a649e8d86ceb5"
+        "SUP-6b1a649e8d86ceb5",
+        "SUP-ba4e0b9de46e54b3"
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[0]",
       "start": 102,
       "end": 167,
       "claim_text": "Jean Saglio, étudiant les arrêtés Parodi de 1945 sur les salaires",
-      "normalized_claim": "Saglio étudie les arrêtés Parodi de 1945.",
+      "normalized_claim": "Objet de Saglio.",
       "support_ids": [
         "SUP-24d3f11adcb3b362",
         "SUP-68046c6e2cf6ebfd",
@@ -728,24 +633,24 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[0]",
       "start": 169,
       "end": 354,
       "claim_text": "note que « ce qui est déterminé par la décision ministérielle n’est en effet pas le salaire effectif, mais la fourchette dans laquelle doit s’inscrire le salaire moyen de la catégorie »",
-      "normalized_claim": "Citation Saglio §7.",
+      "normalized_claim": "Citation §7.",
       "support_ids": [
-        "SUP-00fa16508eeaddad",
-        "SUP-68046c6e2cf6ebfd"
+        "SUP-68046c6e2cf6ebfd",
+        "SUP-00fa16508eeaddad"
       ]
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[0]",
       "start": 356,
       "end": 496,
       "claim_text": "Le décrochage qu’il décrit tient d’abord à l’inflation et au gel d’un salaire de référence, celui du manoeuvre de la métallurgie parisienne.",
-      "normalized_claim": "Cause principale du décrochage chez Saglio.",
+      "normalized_claim": "Causes du décrochage chez Saglio.",
       "support_ids": [
         "SUP-ad5a9899191471f7",
         "SUP-fff6440963c6b3e0",
@@ -753,48 +658,36 @@
       ]
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[0]",
       "start": 497,
-      "end": 541,
-      "claim_text": "Le rendement n’en est pas absent pour autant",
-      "normalized_claim": "Le rendement figure aussi chez Saglio.",
+      "end": 626,
+      "claim_text": "Le rendement n’en est pas absent pour autant : il rappelle qu’à cette date « bon nombre d’ouvriers sont encore payés aux pièces »",
+      "normalized_claim": "Citation §7.",
       "support_ids": [
         "SUP-68046c6e2cf6ebfd",
         "SUP-00fa16508eeaddad"
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[0]",
-      "start": 544,
-      "end": 626,
-      "claim_text": "il rappelle qu’à cette date « bon nombre d’ouvriers sont encore payés aux pièces »",
-      "normalized_claim": "Citation Saglio §7.",
-      "support_ids": [
-        "SUP-00fa16508eeaddad",
-        "SUP-68046c6e2cf6ebfd"
-      ]
-    },
-    {
-      "claim_id": "C061",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 631,
+      "start": 628,
       "end": 792,
-      "claim_text": "décrit la tactique consistant à « exclure progressivement de la réglementation certaines formes de rémunération, notamment pour les ouvriers payés au rendement »",
-      "normalized_claim": "Citation Saglio §68.",
+      "claim_text": "et décrit la tactique consistant à « exclure progressivement de la réglementation certaines formes de rémunération, notamment pour les ouvriers payés au rendement »",
+      "normalized_claim": "Citation §68.",
       "support_ids": [
         "SUP-00fa16508eeaddad",
         "SUP-68046c6e2cf6ebfd"
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
-      "end": 145,
-      "claim_text": "Saglio rapporte à cette politique « l’une des origines du décrochage habituel entre les salaires conventionnels négociés et les salaires réels ».",
-      "normalized_claim": "Citation Saglio §82.",
+      "end": 144,
+      "claim_text": "Saglio rapporte à cette politique « l’une des origines du décrochage habituel entre les salaires conventionnels négociés et les salaires réels »",
+      "normalized_claim": "Citation §82.",
       "support_ids": [
         "SUP-68046c6e2cf6ebfd",
         "SUP-ad5a9899191471f7",
@@ -802,7 +695,7 @@
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[1]",
       "start": 146,
       "end": 212,
@@ -814,7 +707,7 @@
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C055",
       "locator": "sections[4].paragraphs[1]",
       "start": 213,
       "end": 255,
@@ -826,11 +719,11 @@
       ]
     },
     {
-      "claim_id": "C065",
+      "claim_id": "C056",
       "locator": "sections[4].paragraphs[1]",
-      "start": 259,
+      "start": 256,
       "end": 306,
-      "claim_text": "porte sur un autre matériau et une autre époque",
+      "claim_text": "et porte sur un autre matériau et une autre époque",
       "normalized_claim": "Autre matériau, autre période.",
       "support_ids": [
         "SUP-ad5a9899191471f7",
@@ -838,36 +731,24 @@
       ]
     },
     {
-      "claim_id": "C066",
+      "claim_id": "C057",
       "locator": "sections[4].paragraphs[1]",
       "start": 308,
-      "end": 388,
-      "claim_text": "Les deux textes attestent le même type d’écart par des causes d’abord distinctes",
-      "normalized_claim": "Même type d'écart, causes distinctes.",
+      "end": 444,
+      "claim_text": "Les deux textes attestent le même type d’écart par des causes d’abord distinctes : c’est une convergence, ce n’est pas une confirmation.",
+      "normalized_claim": "Convergence, pas validation.",
       "support_ids": [
         "SUP-ad5a9899191471f7",
         "SUP-fff6440963c6b3e0"
       ]
     },
     {
-      "claim_id": "C067",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 391,
-      "end": 443,
-      "claim_text": "c’est une convergence, ce n’est pas une confirmation",
-      "normalized_claim": "Saglio ne valide pas le mécanisme de Dubois.",
-      "support_ids": [
-        "SUP-ad5a9899191471f7",
-        "SUP-fff6440963c6b3e0"
-      ]
-    },
-    {
-      "claim_id": "C068",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[0]",
       "start": 0,
       "end": 36,
       "claim_text": "L’enquête est étroite et le déclare.",
-      "normalized_claim": "L'enquête est limitée et Dubois le dit.",
+      "normalized_claim": "Non-représentativité déclarée.",
       "support_ids": [
         "SUP-6b1a649e8d86ceb5",
         "SUP-ba4e0b9de46e54b3",
@@ -875,7 +756,7 @@
       ]
     },
     {
-      "claim_id": "C069",
+      "claim_id": "C059",
       "locator": "sections[5].paragraphs[0]",
       "start": 37,
       "end": 90,
@@ -888,7 +769,7 @@
       ]
     },
     {
-      "claim_id": "C070",
+      "claim_id": "C060",
       "locator": "sections[5].paragraphs[0]",
       "start": 92,
       "end": 224,
@@ -902,56 +783,44 @@
       ]
     },
     {
-      "claim_id": "C071",
+      "claim_id": "C061",
       "locator": "sections[5].paragraphs[0]",
       "start": 226,
       "end": 449,
       "claim_text": "L’encadré qui les présente prévient : « Au total, les caractéristiques de ces quatre entreprises sont spécifiques, de sorte qu’elles ne peuvent prétendre être représentatives de l’ensemble de l’industrie de l’habillement. »",
-      "normalized_claim": "Citation encadré p. 7.",
+      "normalized_claim": "Citation de l'encadré p. 7.",
       "support_ids": [
         "SUP-6b1a649e8d86ceb5",
         "SUP-ba4e0b9de46e54b3"
       ]
     },
     {
-      "claim_id": "C072",
+      "claim_id": "C062",
       "locator": "sections[5].paragraphs[0]",
       "start": 450,
       "end": 628,
       "claim_text": "Ce qu’il revendique est autre : l’analyse de leurs pratiques « permet d’éclairer et de mieux comprendre les liens qui peuvent exister entre formation, qualification et salaire ».",
-      "normalized_claim": "Citation encadré p. 7.",
+      "normalized_claim": "Objet revendiqué.",
       "support_ids": [
         "SUP-6b1a649e8d86ceb5",
         "SUP-ba4e0b9de46e54b3"
       ]
     },
     {
-      "claim_id": "C073",
+      "claim_id": "C063",
       "locator": "sections[5].paragraphs[0]",
       "start": 629,
-      "end": 657,
-      "claim_text": "Dubois n’affirme pas une loi",
-      "normalized_claim": "Modalité faible de la thèse.",
+      "end": 713,
+      "claim_text": "Dubois n’affirme pas une loi ; il montre un mécanisme à l’oeuvre en quatre endroits.",
+      "normalized_claim": "Modalité de la thèse.",
       "support_ids": [
         "SUP-cdb26bc391faed3b",
-        "SUP-2cc86747b2a053de"
-      ]
-    },
-    {
-      "claim_id": "C074",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 660,
-      "end": 712,
-      "claim_text": "il montre un mécanisme à l’oeuvre en quatre endroits",
-      "normalized_claim": "Mécanisme observé dans quatre entreprises.",
-      "support_ids": [
         "SUP-2cc86747b2a053de",
-        "SUP-ba4e0b9de46e54b3",
-        "SUP-21996bfd7b6d0782"
+        "SUP-ba4e0b9de46e54b3"
       ]
     },
     {
-      "claim_id": "C075",
+      "claim_id": "C064",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 41,
@@ -963,36 +832,48 @@
       ]
     },
     {
-      "claim_id": "C076",
+      "claim_id": "C065",
       "locator": "sections[5].paragraphs[1]",
       "start": 42,
       "end": 110,
       "claim_text": "Les ouvrières forment 85 pour cent des effectifs salariés du secteur",
-      "normalized_claim": "85 % d'ouvrières.",
+      "normalized_claim": "85 % (p. 3).",
       "support_ids": [
         "SUP-470c666aea18380a",
         "SUP-c735bea1024f30d3"
       ]
     },
     {
-      "claim_id": "C077",
+      "claim_id": "C066",
       "locator": "sections[5].paragraphs[1]",
       "start": 115,
-      "end": 344,
-      "claim_text": "Dubois s’arrête sur un poste où elles ne sont pas majoritaires : « dans la confection, les coupeurs sont encore en majorité des hommes ; serait-ce à cause de cela que ce poste est situé haut dans l’échelle des classifications ? »",
-      "normalized_claim": "Question sur les coupeurs.",
+      "end": 177,
+      "claim_text": "Dubois s’arrête sur un poste où elles ne sont pas majoritaires",
+      "normalized_claim": "Poste de coupeur.",
       "support_ids": [
         "SUP-64313c54d5bd5105",
         "SUP-c735bea1024f30d3"
       ]
     },
     {
-      "claim_id": "C078",
+      "claim_id": "C067",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 180,
+      "end": 344,
+      "claim_text": "« dans la confection, les coupeurs sont encore en majorité des hommes ; serait-ce à cause de cela que ce poste est situé haut dans l’échelle des classifications ? »",
+      "normalized_claim": "Citation p. 7.",
+      "support_ids": [
+        "SUP-64313c54d5bd5105",
+        "SUP-c735bea1024f30d3"
+      ]
+    },
+    {
+      "claim_id": "C068",
       "locator": "sections[5].paragraphs[1]",
       "start": 345,
       "end": 386,
       "claim_text": "Il pose la question et ne la tranche pas.",
-      "normalized_claim": "Hypothèse non tranchée.",
+      "normalized_claim": "Non tranché.",
       "support_ids": [
         "SUP-64313c54d5bd5105",
         "SUP-c735bea1024f30d3"
