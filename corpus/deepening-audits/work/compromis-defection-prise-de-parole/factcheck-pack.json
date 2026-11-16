@@ -3,7 +3,7 @@
   "concept_id": "compromis-defection-prise-de-parole",
   "context_budget_tokens": 300000,
   "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
-  "candidate_sha256": "d69006f312461849eabb0eb577af973c872abe04c601a77dcd1e1a6ee71c313d",
+  "candidate_sha256": "462f1d987485be030e4b6e2cf5ee5acafc9ce3c23e1ff12102fc854ff375909f",
   "validated_sha256": "8f4ec0f2457233465caed08fb06f4dd55400d4efd42deef513f8999a4642785e",
   "evidence_files": [
     {
@@ -77,81 +77,76 @@
   "paragraphs": [
     {
       "locator": "lead[0]",
-      "text": "Quand un client n’est plus content d’un magasin, il en change. Personne ne lui demande pourquoi, et son départ passe pour un message suffisant : c’est ainsi qu’on décrit d’ordinaire le fonctionnement d’un marché. Un salarié mécontent dispose de la même issue, la démission, mais elle lui coûte beaucoup plus cher. Il perd son ancienneté, ses collègues, parfois une partie de ce qu’il a appris là et nulle part ailleurs. Son employeur, de son côté, perd quelqu’un qu’il a formé et recommence. Et le motif du départ ne remonte à personne : une démission ne dit pas ce qui aurait pu être corrigé."
+      "text": "Imaginons un salarié qui ne supporte plus la manière dont son travail est organisé. Il peut faire ce que fait un client mécontent qui change de magasin : partir. Ce départ a pourtant un prix pour l’entreprise, qui devra embaucher quelqu’un d’autre et le former à son tour."
     },
     {
       "locator": "lead[1]",
-      "text": "Il existe une autre issue : rester, et le dire. Celle-ci ne dépend pas seulement du caractère de chacun. Elle suppose un endroit où porter la plainte, une procédure qui l’instruise, et de quoi empêcher qu’elle se retourne contre celui qui l’a formulée. Sans cela, se plaindre revient à s’exposer, et il ne reste que partir ou se taire. Richard B. Freeman fait de cette condition le cœur d’un article de 1980 : ce qui retient un salarié n’est pas seulement ce qu’on lui paie, c’est aussi de savoir à qui parler."
+      "text": "Il existe une autre issue : rester, et dire ce qui ne va pas. Encore faut-il un endroit où le dire, et que cette parole pèse face à l’autorité du supérieur. Richard B. Freeman fait de cette condition l’objet d’un article de 1980, dont la question tient en une ligne : un salarié mécontent part-il moins s’il a, dans l’entreprise, où se plaindre ?"
     },
     {
       "locator": "sections[0].paragraphs[0]",
       "section_title": "Partir sans rien dire, ou rester et le dire",
-      "text": "Les deux issues portent un nom, et il ne vient pas de Freeman. Albert O. Hirschman les avait opposées en 1970 dans Exit, Voice, and Loyalty : la défection, qui consiste à quitter la relation, et la prise de parole, qui consiste à rester en manifestant son désaccord. Freeman le dit dès le résumé de son article, qu’il place « in the context of Hirschman’s exit-voice dichotomy », et il renvoie au livre de 1970 dans sa bibliographie."
+      "text": "Les deux issues portent un nom, et il ne vient pas de Freeman. Le couple défection / prise de parole est d’Albert O. Hirschman, qui l’avait posé en 1970 dans Exit, Voice, and Loyalty. Freeman le dit dès le résumé de son article, qu’il place « in the context of Hirschman’s exit-voice dichotomy », et il renvoie au livre de 1970 dans sa bibliographie. Appliqués aux salariés, les deux termes prennent chez lui un sens précis : la défection consiste avant tout à démissionner, et la prise de parole passe par le syndicat et la négociation collective, où les salariés élisent des représentants pour discuter avec la direction."
     },
     {
       "locator": "sections[0].paragraphs[1]",
       "section_title": "Partir sans rien dire, ou rester et le dire",
-      "text": "Ce qu’il revendique est ailleurs. Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book ». Sa contribution propre consiste à y installer le syndicat comme l’institution qui porte la parole à l’intérieur de l’entreprise, puis à vérifier, sur les données de personnes réelles, si cette parole se paie en départs évités. Le couple n’est pas de lui ; sa mise à l’épreuve l’est."
+      "text": "Ce qu’il revendique est ailleurs. Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book ». Sa contribution propre consiste à y installer le syndicat comme l’institution qui porte la parole à l’intérieur de l’entreprise, puis à en éprouver le compromis sur données individuelles : là où les salariés disposent d’une institution pour exprimer leur mécontentement, ils devraient moins recourir au départ, donc démissionner moins et rester plus longtemps. Le couple n’est pas de lui ; sa mise à l’épreuve l’est."
     },
     {
       "locator": "sections[1].paragraphs[0]",
-      "section_title": "Un endroit où porter une réclamation",
-      "text": "L’institution que Freeman met au premier plan n’est pas la négociation salariale, à laquelle on pense d’abord quand on parle de syndicat. C’est ce que l’anglais appelle le « grievance and arbitration system », et les deux mots disent l’essentiel : une réclamation peut être déposée, et si elle ne se règle pas, elle est tranchée par un arbitre. Freeman écrit, page 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
+      "section_title": "Un endroit où porter un grief",
+      "text": "L’institution que Freeman met au premier plan n’est pas la négociation salariale, à laquelle on pense d’abord quand on parle de syndicat. C’est le « grievance and arbitration system », le système de griefs et d’arbitrage. Freeman écrit, page 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
     },
     {
       "locator": "sections[1].paragraphs[1]",
-      "section_title": "Un endroit où porter une réclamation",
-      "text": "Le mot qui compte dans cette phrase est alternative. Une telle procédure ne rend pas les salariés contents ; elle leur ouvre une autre manière de dire qu’ils ne le sont pas, qui n’exige pas de partir. Freeman ajoute que la négociation collective des contrats de travail agit dans le même sens : « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». Il parle à ce propos d’un « industrial jurisprudence system », d’un canal d’autorité qui vient doubler, à l’intérieur de l’entreprise, celui de la hiérarchie."
+      "section_title": "Un endroit où porter un grief",
+      "text": "Le mot qui compte dans cette phrase est alternative. Un tel système ne rend pas les salariés contents ; il leur ouvre une autre manière de dire qu’ils ne le sont pas, qui n’exige pas de partir. Freeman ajoute que la négociation collective des contrats agit dans le même sens, « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior » : les salariés qui auraient démissionné y cherchent d’abord à obtenir les changements voulus. Un troisième dispositif, l’« industrial jurisprudence system », soumet les décisions prises sur le lieu de travail à des règles négociées, l’ancienneté par exemple, plutôt qu’au jugement du supérieur."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Un endroit où porter un grief",
+      "text": "Pourquoi faudrait-il un syndicat pour cela ? Parce que, selon Freeman, l’essence de la prise de parole est de réduire le pouvoir de la direction et de créer dans l’entreprise un second canal d’autorité. Un tel changement du rapport de pouvoir s’obtient difficilement sans organisation indépendante, comme l’ont montré les plans de représentation du personnel des années 1920. Il souligne l’écart qui en résulte : une procédure de griefs figure dans 99 % des grandes conventions collectives américaines, contre 30 % des entreprises non syndiquées."
     },
     {
       "locator": "sections[2].paragraphs[0]",
       "section_title": "Écarter le salaire avant de conclure",
-      "text": "Reste à savoir si cela se voit. On constate en effet, dans les données, que les salariés syndiqués restent plus longtemps et démissionnent moins : le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes », d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles. Ce constat, seul, n’établit rien, parce qu’une autre explication se présente aussitôt."
+      "text": "Reste à savoir si cela se voit. Les salariés syndiqués restent plus longtemps et démissionnent moins : le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes », d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles. Ce constat, seul, n’établit rien, parce qu’une autre explication se présente aussitôt."
     },
     {
       "locator": "sections[2].paragraphs[1]",
       "section_title": "Écarter le salaire avant de conclure",
-      "text": "Les syndicats obtiennent de meilleures rémunérations, et un salarié mieux payé qu’il ne le serait ailleurs a de bonnes raisons de rester, sans qu’aucune procédure de réclamation y soit pour quelque chose. Une vingtaine de pages d’économie du travail servent à neutraliser cette voie salariale : comparer des salariés à rémunération comparable, et regarder si l’écart subsiste. Il subsiste. À compensation tenue fixe, écrit Freeman page 665, « unionism raises tenure and reduces quits »."
+      "text": "Un syndicat peut retenir les salariés par ce qu’il obtient pour eux : salaires, avantages sociaux, conditions de travail. Freeman appelle ces voies les « monopoly routes », par opposition aux « voice routes », seules en cause dans sa thèse. Les sections II et III, de la page 648 à la page 666, servent à tenir les premières fixes pour isoler les secondes : comparer des salariés à rémunération comparable, et regarder si l’écart subsiste. Il subsiste. À compensation tenue fixe, écrit Freeman page 666, « unionism raises tenure and reduces quits ». Il écarte aussi l’idée que les syndicats réuniraient simplement des travailleurs naturellement plus stables : à salaire égal, un même individu est moins susceptible de démissionner dans un lieu de travail syndiqué que dans un lieu qui ne l’est pas."
     },
     {
       "locator": "sections[3].paragraphs[0]",
       "section_title": "Une démonstration par élimination",
-      "text": "Il manque pourtant quelque chose, et Freeman est le premier à le dire. Personne ne mesure la parole. On sait compter les départs, les années d’ancienneté, les salaires ; on ne dispose d’aucun instrument qui évaluerait, chez un salarié donné, la quantité d’expression que son syndicat lui rend possible. Il avait prévenu dès la page 644 que séparer cet effet des autres composantes du fait syndical serait « exceedingly difficult »."
+      "text": "Il manque pourtant quelque chose, et Freeman est le premier à le dire : il ne dispose d’aucune mesure directe de la parole. Dès la page 644, il prévient que séparer son effet des autres composantes du fait syndical est « exceedingly difficult ». La phrase qui ouvre la quatrième section, page 666, fixe donc la portée de tout ce qui précède : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis ». L’explication par la parole tient à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse."
     },
     {
       "locator": "sections[3].paragraphs[1]",
       "section_title": "Une démonstration par élimination",
-      "text": "D’où la phrase qui ouvre la quatrième section, page 666, et qui fixe la portée de tout ce qui précède : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis ». L’explication par la parole tient donc à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse. Ce n’est pas la même chose que de montrer que la parole est là : c’est montrer qu’une fois écarté ce qui pouvait en tenir lieu, il reste un écart qu’elle expliquerait bien."
-    },
-    {
-      "locator": "sections[3].paragraphs[2]",
-      "section_title": "Une démonstration par élimination",
-      "text": "La nuance n’est pas une coquetterie de méthode. Une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffit qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui. L’écrire à l’endroit même où l’on annonce son résultat indique au lecteur où porter son effort s’il veut contester."
+      "text": "La nuance n’est pas une coquetterie de méthode. Elle implique qu’une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffirait qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui."
     },
     {
       "locator": "sections[4].paragraphs[0]",
       "section_title": "Trois indices que Freeman ne durcit pas",
-      "text": "L’article ne s’arrête pourtant pas à ce constat. Freeman produit ensuite trois éléments qui vont dans le sens de son hypothèse. Le premier rapporte les taux de démission au niveau de satisfaction déclaré : l’effet du syndicat sur les départs est plus marqué chez les insatisfaits, ce qu’on attend précisément d’un canal fait pour l’insatisfaction. Le deuxième rapporte l’ancienneté à l’étendue des clauses de réclamation relevées par le Bureau of Labor Statistics : plus la procédure couvre de motifs, plus les salariés restent."
+      "text": "L’article ne s’arrête pourtant pas à ce constat. Freeman produit ensuite trois éléments qui vont dans le sens de son hypothèse. Le premier rapporte les taux de démission au niveau de satisfaction déclaré : le syndicat abaisse davantage les départs des insatisfaits que ceux des satisfaits, ce qu’on attend d’un canal fait pour l’insatisfaction. Le deuxième rapporte l’ancienneté à l’étendue des clauses de griefs relevées par le Bureau of Labor Statistics : plus ces clauses sont étendues, plus l’ancienneté des syndiqués est longue."
     },
     {
       "locator": "sections[4].paragraphs[1]",
       "section_title": "Trois indices que Freeman ne durcit pas",
-      "text": "Le troisième est une comparaison empruntée à Sargent et Clawson, que Freeman reprend page 670 : dans les hôpitaux dotés d’une procédure écrite, le taux de séparation s’établit à 0,50, contre 0,81 là où elle n’existe pas. Trois observations différentes, qui pointent dans la même direction, et dont aucune ne mesure directement ce que l’on cherche."
-    },
-    {
-      "locator": "sections[4].paragraphs[2]",
-      "section_title": "Trois indices que Freeman ne durcit pas",
-      "text": "Freeman qualifie lui-même ces appuis de « no more than suggestive », page 670, puis de « suggestive rather than definitive », page 670. Sa conclusion tient dans une formule tout aussi mesurée : son étude « finds some support for the hypothesis ». Elle trouve un certain appui à l’hypothèse. Elle ne dit pas qu’elle l’a établie."
+      "text": "Le troisième est une comparaison empruntée à Sargent et Clawson, que Freeman reprend page 670 : dans les hôpitaux dotés d’une procédure écrite de griefs, le taux de séparation s’établit à 0,50, contre 0,81 là où elle n’existe pas. Aucune de ces trois observations ne mesure directement la parole, et Freeman les qualifie lui-même de « no more than suggestive », page 669, puis de « suggestive rather than definitive », page 670 : son étude, dit-il, « finds some support for the hypothesis »."
     },
     {
       "locator": "sections[5].paragraphs[0]",
       "section_title": "Ceux qui restent et ne disent rien",
-      "text": "Le raisonnement a une conséquence qu’il vaut la peine de tirer, parce qu’elle en marque aussi la limite. Ce que l’on compte, ce sont des départs. Or un départ est visible et une absence de départ ne l’est pas : dans les chiffres, celui qui reste parce qu’il a obtenu gain de cause ressemble trait pour trait à celui qui reste parce qu’il n’a nulle part où aller, et à celui qui reste après avoir renoncé à demander quoi que ce soit."
+      "text": "On peut en tirer une limite. Ce que l’on compte, ce sont des départs, et un départ qui n’a pas lieu ne dit pas pourquoi : dans un taux de démission, celui qui reste parce qu’il a obtenu gain de cause pèse exactement comme celui qui reste après avoir renoncé à demander quoi que ce soit. Un même écart peut donc recouvrir une entreprise où l’on parle et où les choses bougent, et une entreprise où l’on se tait faute de mieux."
     },
     {
       "locator": "sections[5].paragraphs[1]",
       "section_title": "Ceux qui restent et ne disent rien",
-      "text": "Un même écart de démissions peut donc recouvrir des situations opposées : une entreprise où l’on parle et où les choses bougent, une entreprise où l’on se tait faute de mieux. La remarque n’a rien perdu de son actualité : en 2009, Matthew Allen et Heinz-Josef Tüselmann plaident encore, dans Employee Relations, pour que les études empiriques cessent de tout ramener à la prise de parole et fassent leur place à la défection, à la loyauté et à la négligence."
+      "text": "Les autres réponses à l’insatisfaction ont d’ailleurs leurs défenseurs. En 2009, Matthew Allen et Heinz-Josef Tüselmann demandent, dans Employee Relations, que les études empiriques fassent aussi leur place à la défection, à la loyauté et à la négligence ; ils discutent le triptyque de Hirschman et What Do Unions Do?, le livre que Freeman a cosigné avec James L. Medoff en 1984."
     },
     {
       "locator": "sections[5].paragraphs[2]",
@@ -838,6 +833,6 @@
       "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
     }
   ],
-  "estimated_tokens": 16341,
+  "estimated_tokens": 16271,
   "status": "READY"
 }
