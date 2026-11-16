@@ -1,0 +1,18 @@
+{
+  "protocol_version": 2,
+  "concept_id": "classification-negociee-et-salaire-effectif",
+  "candidate_sha256": "25db26db7083591d736662788b15ce4ad3665ea7fd6585a6bb70ec9eab4e8b3b",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 72,
+  "supported": 71,
+  "failed": 1,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C005",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis portent une modalité atténuée : section intitulée « un lien assez lâche », « une certaine déconnection », « impression d'escalier » ; et definition_de_lauteur précise que, payée au temps, l'entreprise garde un lien « assez strict ». Le claim affirme sans réserve, pour les quatre entreprises, un lien « lâche » : il supprime l'atténuation et l'exception."
+    }
+  ]
+}
