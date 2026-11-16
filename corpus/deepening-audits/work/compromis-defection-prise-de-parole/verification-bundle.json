@@ -1,8 +1,8 @@
 {
   "protocol_version": 2,
   "concept_id": "compromis-defection-prise-de-parole",
-  "candidate_sha256": "3bebf562dbbea4a8c4d04384af685c2e4009b6589c777e858b81f12321323bf9",
-  "map_sha256": "df52abed88aaa9fecf82cf67369243fbece8331a62be8fb704d5ea50869ce458",
+  "candidate_sha256": "ee11a53bbb11972cb6f38b3d38cb00608442ae6fbe91cf044b20de88e0f1c639",
+  "map_sha256": "389689d64d66661e1fb9a6574891ca77fe9a29507301d1fdf3b635891e721027",
   "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
   "signal_lexique": {
     "cartes_mesurees": 136,
@@ -123,18 +123,18 @@
           "text": "Un salarié mécontent part-il moins s'il a, dans l'entreprise, où se plaindre ?"
         },
         {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
-        {
           "id": "SUP-88ca4448a605caf9",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+        },
+        {
+          "id": "SUP-b4b759f42059e392",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[5]",
+          "access": "n/a",
+          "text": "Passages écartés, et pourquoi. La phrase entière ci-dessus fait 232 caractères, hors format. La phrase du résumé, p. 643, « Unionism is expected to reduce quits and permanent separations and raise job tenure by providing a \"voice\" alternative to exit when workers are dissatisfied with conditions » fait 173 caractères et n'admet pas de coupe honnête sous 150 sans perdre soit les séparations, soit l'ancienneté, soit l'insatisfaction ; elle reste le meilleur second choix si l'on accepte une coupe après « quits ». La phrase la plus forte pour l'objet organisationnel, « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), 102 caractères, a été écartée pour une raison matérielle et non de sens : sur cette page, la numérisation rogne le bord gauche et ampute la première lettre de nombreuses lignes (« s to reduce », « vithin the firm », « trategy »). La citer supposerait de restituer des caractères que le fac-similé ne porte pas. La page 645, elle, est intacte."
         }
       ],
       "uncited_support_signal": []
@@ -144,13 +144,6 @@
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Les deux issues portent un nom, et il ne vient pas de Freeman.",
       "supports": [
-        {
-          "id": "SUP-978902c7aea8fb06",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles."
-        },
         {
           "id": "SUP-c0e2c3b400fd5cfe",
           "origin": "evidence:lecture.json",
@@ -164,6 +157,20 @@
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "Note d'attribution complète de la lecture primaire, dont la ligne affichée est la version courte : « Richard B. Freeman signe seul l'article, affilié à Harvard University. Le couple sortie/prise de parole n'est pas de lui et il ne le revendique pas : il l'attribue en toutes lettres à Albert O. Hirschman dès la première ligne du résumé, “in the context of Hirschman's exit-voice dichotomy”, et renvoie en références à Exit, Voice, and Loyalty (Harvard University Press, 1970) ainsi qu'à un texte de Hirschman de 1976. Ce que Freeman pose comme sa contribution propre est ailleurs : appliquer ce modèle au syndicat, tenu pour l'institution de voix de l'entreprise, et en tester le compromis sur données individuelles, terrain que Hirschman avait laissé de côté selon lui, “little attention is paid to the labor market in Hirschman's book”. La carte attribue donc à Freeman l'application et la mise à l'épreuve du compromis dans l'entreprise, pas la paternité du modèle. »"
+        },
+        {
+          "id": "SUP-978902c7aea8fb06",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles."
+        },
+        {
+          "id": "SUP-6bd07cab5b1928c0",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "ATTRIBUTION (Q1) — vérifiée sur le texte lui-même, p. 643 : « In the exit-voice model of the social system [Hirschman, 1970, 1976] individuals react… » et « While little attention is paid to the labor market in Hirschman's book [1970], the exit-voice dichotomy provides a potentially fruitful framework for analyzing… the trade union. » La bibliographie p. 672 porte Hirschman, Exit, Voice, and Loyalty, Harvard University Press, 1970. La note d'attribution de la fiche (couple d'Hirschman, application au syndicat et test sur données individuelles à Freeman) est donc exacte, y compris le « cite dès son résumé » : le résumé de la p. 643 dit bien « in the context of Hirschman's exit-voice dichotomy ». Antériorité vérifiée : Freeman avait déjà exposé l'argument dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, 66-2, 1976, p. 361-368 (OpenAlex W1483289005), qu'il cite lui-même — c'est encore Freeman, aucun tiers ne s'interpose."
         }
       ],
       "uncited_support_signal": []
@@ -173,13 +180,6 @@
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Le couple défection / prise de parole est d’Albert O. Hirschman, qui l’avait posé en 1970 dans Exit, Voice, and Loyalty.",
       "supports": [
-        {
-          "id": "SUP-978902c7aea8fb06",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles."
-        },
         {
           "id": "SUP-c0e2c3b400fd5cfe",
           "origin": "evidence:lecture.json",
@@ -224,18 +224,18 @@
           "text": "Note d'attribution complète de la lecture primaire, dont la ligne affichée est la version courte : « Richard B. Freeman signe seul l'article, affilié à Harvard University. Le couple sortie/prise de parole n'est pas de lui et il ne le revendique pas : il l'attribue en toutes lettres à Albert O. Hirschman dès la première ligne du résumé, “in the context of Hirschman's exit-voice dichotomy”, et renvoie en références à Exit, Voice, and Loyalty (Harvard University Press, 1970) ainsi qu'à un texte de Hirschman de 1976. Ce que Freeman pose comme sa contribution propre est ailleurs : appliquer ce modèle au syndicat, tenu pour l'institution de voix de l'entreprise, et en tester le compromis sur données individuelles, terrain que Hirschman avait laissé de côté selon lui, “little attention is paid to the labor market in Hirschman's book”. La carte attribue donc à Freeman l'application et la mise à l'épreuve du compromis dans l'entreprise, pas la paternité du modèle. »"
         },
         {
-          "id": "SUP-6bd07cab5b1928c0",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "ATTRIBUTION (Q1) — vérifiée sur le texte lui-même, p. 643 : « In the exit-voice model of the social system [Hirschman, 1970, 1976] individuals react… » et « While little attention is paid to the labor market in Hirschman's book [1970], the exit-voice dichotomy provides a potentially fruitful framework for analyzing… the trade union. » La bibliographie p. 672 porte Hirschman, Exit, Voice, and Loyalty, Harvard University Press, 1970. La note d'attribution de la fiche (couple d'Hirschman, application au syndicat et test sur données individuelles à Freeman) est donc exacte, y compris le « cite dès son résumé » : le résumé de la p. 643 dit bien « in the context of Hirschman's exit-voice dichotomy ». Antériorité vérifiée : Freeman avait déjà exposé l'argument dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, 66-2, 1976, p. 361-368 (OpenAlex W1483289005), qu'il cite lui-même — c'est encore Freeman, aucun tiers ne s'interpose."
-        },
-        {
           "id": "SUP-978902c7aea8fb06",
           "origin": "validated",
           "path": "$.attribution_note",
           "access": "n/a",
           "text": "Le couple défection / prise de parole est d'Albert O. Hirschman, que Freeman cite dès son résumé. Ce qui revient à Freeman est de l'appliquer au syndicat et d'en éprouver le compromis dans l'entreprise, sur données individuelles."
+        },
+        {
+          "id": "SUP-6bd07cab5b1928c0",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "ATTRIBUTION (Q1) — vérifiée sur le texte lui-même, p. 643 : « In the exit-voice model of the social system [Hirschman, 1970, 1976] individuals react… » et « While little attention is paid to the labor market in Hirschman's book [1970], the exit-voice dichotomy provides a potentially fruitful framework for analyzing… the trade union. » La bibliographie p. 672 porte Hirschman, Exit, Voice, and Loyalty, Harvard University Press, 1970. La note d'attribution de la fiche (couple d'Hirschman, application au syndicat et test sur données individuelles à Freeman) est donc exacte, y compris le « cite dès son résumé » : le résumé de la p. 643 dit bien « in the context of Hirschman's exit-voice dichotomy ». Antériorité vérifiée : Freeman avait déjà exposé l'argument dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, 66-2, 1976, p. 361-368 (OpenAlex W1483289005), qu'il cite lui-même — c'est encore Freeman, aucun tiers ne s'interpose."
         }
       ],
       "uncited_support_signal": []
@@ -243,8 +243,15 @@
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "il renvoie au livre de 1970 dans sa bibliographie",
+      "claim_text": "et il renvoie au livre de 1970 dans sa bibliographie.",
       "supports": [
+        {
+          "id": "SUP-6bd07cab5b1928c0",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "ATTRIBUTION (Q1) — vérifiée sur le texte lui-même, p. 643 : « In the exit-voice model of the social system [Hirschman, 1970, 1976] individuals react… » et « While little attention is paid to the labor market in Hirschman's book [1970], the exit-voice dichotomy provides a potentially fruitful framework for analyzing… the trade union. » La bibliographie p. 672 porte Hirschman, Exit, Voice, and Loyalty, Harvard University Press, 1970. La note d'attribution de la fiche (couple d'Hirschman, application au syndicat et test sur données individuelles à Freeman) est donc exacte, y compris le « cite dès son résumé » : le résumé de la p. 643 dit bien « in the context of Hirschman's exit-voice dichotomy ». Antériorité vérifiée : Freeman avait déjà exposé l'argument dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, 66-2, 1976, p. 361-368 (OpenAlex W1483289005), qu'il cite lui-même — c'est encore Freeman, aucun tiers ne s'interpose."
+        },
         {
           "id": "SUP-c0e2c3b400fd5cfe",
           "origin": "evidence:lecture.json",
@@ -258,13 +265,6 @@
           "path": "$.notes[0]",
           "access": "n/a",
           "text": "Note d'attribution complète de la lecture primaire, dont la ligne affichée est la version courte : « Richard B. Freeman signe seul l'article, affilié à Harvard University. Le couple sortie/prise de parole n'est pas de lui et il ne le revendique pas : il l'attribue en toutes lettres à Albert O. Hirschman dès la première ligne du résumé, “in the context of Hirschman's exit-voice dichotomy”, et renvoie en références à Exit, Voice, and Loyalty (Harvard University Press, 1970) ainsi qu'à un texte de Hirschman de 1976. Ce que Freeman pose comme sa contribution propre est ailleurs : appliquer ce modèle au syndicat, tenu pour l'institution de voix de l'entreprise, et en tester le compromis sur données individuelles, terrain que Hirschman avait laissé de côté selon lui, “little attention is paid to the labor market in Hirschman's book”. La carte attribue donc à Freeman l'application et la mise à l'épreuve du compromis dans l'entreprise, pas la paternité du modèle. »"
-        },
-        {
-          "id": "SUP-6bd07cab5b1928c0",
-          "origin": "validated",
-          "path": "$.review.notes[2]",
-          "access": "n/a",
-          "text": "ATTRIBUTION (Q1) — vérifiée sur le texte lui-même, p. 643 : « In the exit-voice model of the social system [Hirschman, 1970, 1976] individuals react… » et « While little attention is paid to the labor market in Hirschman's book [1970], the exit-voice dichotomy provides a potentially fruitful framework for analyzing… the trade union. » La bibliographie p. 672 porte Hirschman, Exit, Voice, and Loyalty, Harvard University Press, 1970. La note d'attribution de la fiche (couple d'Hirschman, application au syndicat et test sur données individuelles à Freeman) est donc exacte, y compris le « cite dès son résumé » : le résumé de la p. 643 dit bien « in the context of Hirschman's exit-voice dichotomy ». Antériorité vérifiée : Freeman avait déjà exposé l'argument dans « Individual Mobility and Union Voice in the Labor Market », American Economic Review, 66-2, 1976, p. 361-368 (OpenAlex W1483289005), qu'il cite lui-même — c'est encore Freeman, aucun tiers ne s'interpose."
         }
       ],
       "uncited_support_signal": []
@@ -287,7 +287,7 @@
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "la prise de parole passe par le syndicat et la négociation collective, où les salariés élisent des représentants pour discuter avec la direction.",
+      "claim_text": "et la prise de parole passe par le syndicat et la négociation collective, où les salariés élisent des représentants pour discuter avec la direction.",
       "supports": [
         {
           "id": "SUP-88ca4448a605caf9",
@@ -324,7 +324,7 @@
     {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
-      "claim_text": "Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book »",
+      "claim_text": "Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book ».",
       "supports": [
         {
           "id": "SUP-c0e2c3b400fd5cfe",
@@ -390,6 +390,13 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+        },
+        {
+          "id": "SUP-b4b759f42059e392",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[5]",
+          "access": "n/a",
+          "text": "Passages écartés, et pourquoi. La phrase entière ci-dessus fait 232 caractères, hors format. La phrase du résumé, p. 643, « Unionism is expected to reduce quits and permanent separations and raise job tenure by providing a \"voice\" alternative to exit when workers are dissatisfied with conditions » fait 173 caractères et n'admet pas de coupe honnête sous 150 sans perdre soit les séparations, soit l'ancienneté, soit l'insatisfaction ; elle reste le meilleur second choix si l'on accepte une coupe après « quits ». La phrase la plus forte pour l'objet organisationnel, « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), 102 caractères, a été écartée pour une raison matérielle et non de sens : sur cette page, la numérisation rogne le bord gauche et ampute la première lettre de nombreuses lignes (« s to reduce », « vithin the firm », « trategy »). La citer supposerait de restituer des caractères que le fac-similé ne porte pas. La page 645, elle, est intacte."
         }
       ],
       "uncited_support_signal": [
@@ -436,7 +443,7 @@
     {
       "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
-      "claim_text": "L’institution que Freeman met au premier plan n’est pas la négociation salariale.",
+      "claim_text": "L’institution que Freeman met au premier plan n’est pas la négociation salariale. C’est le « grievance and arbitration system », le système de griefs et d’arbitrage.",
       "supports": [
         {
           "id": "SUP-88ca4448a605caf9",
@@ -444,77 +451,6 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        },
-        {
-          "id": "SUP-2f8c94cb7c947196",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
-        },
-        {
-          "id": "SUP-93f5f2f2fda71b69",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Coupes de la citation : la première remplace « , which », la seconde supprime « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (232 caractères, hors format). L'italique de « grievance and arbitration system » n'est pas conservée."
-        },
-        {
-          "id": "SUP-1e6214176efbee74",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C018",
-      "locator": "sections[1].paragraphs[0]",
-      "claim_text": "C’est le « grievance and arbitration system », le système de griefs et d’arbitrage.",
-      "supports": [
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        },
-        {
-          "id": "SUP-2f8c94cb7c947196",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
-        },
-        {
-          "id": "SUP-93f5f2f2fda71b69",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Coupes de la citation : la première remplace « , which », la seconde supprime « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (232 caractères, hors format). L'italique de « grievance and arbitration system » n'est pas conservée."
-        },
-        {
-          "id": "SUP-1e6214176efbee74",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
-        },
-        {
-          "id": "SUP-69cbdbc306b53e32",
-          "origin": "validated",
-          "path": "$.quotation.text",
-          "access": "n/a",
-          "text": "le système de griefs et d'arbitrage […] offre aux salariés mécontents qui envisagent de partir un autre moyen d'exprimer leur mécontentement […]"
-        },
-        {
-          "id": "SUP-1f6216e89e7061b9",
-          "origin": "validated",
-          "path": "$.quotation.original_text",
-          "access": "n/a",
-          "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]"
         },
         {
           "id": "SUP-1c71ba35ca252553",
@@ -524,26 +460,26 @@
           "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]"
         },
         {
-          "id": "SUP-9b10a5b39f3cc3fb",
+          "id": "SUP-69cbdbc306b53e32",
           "origin": "validated",
-          "path": "$.quotation.translation.translator",
+          "path": "$.quotation.text",
           "access": "n/a",
-          "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de l'article de 1980 n'a été identifiée. « Grievance system » est rendu par « système de griefs », terme employé pour les relations professionnelles nord-américaines, et non par « procédure de réclamation », qui renverrait à un dispositif français sans équivalence. « Alternative means » est rendu par « un autre moyen » : en français, « moyen alternatif » se lirait comme un jugement de valeur sur le moyen. Les coupes sont celles de la citation anglaise, inchangées."
+          "text": "le système de griefs et d'arbitrage […] offre aux salariés mécontents qui envisagent de partir un autre moyen d'exprimer leur mécontentement […]"
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C019",
+      "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
       "claim_text": "Freeman écrit, page 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »",
       "supports": [
         {
-          "id": "SUP-2f8c94cb7c947196",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
+          "id": "SUP-1e6214176efbee74",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
           "access": "n/a",
-          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
+          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
         },
         {
           "id": "SUP-93f5f2f2fda71b69",
@@ -553,18 +489,11 @@
           "text": "Coupes de la citation : la première remplace « , which », la seconde supprime « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (232 caractères, hors format). L'italique de « grievance and arbitration system » n'est pas conservée."
         },
         {
-          "id": "SUP-1e6214176efbee74",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
-        },
-        {
-          "id": "SUP-0e1fe7512346fdd7",
+          "id": "SUP-2f8c94cb7c947196",
           "origin": "validated",
-          "path": "$.quotation.locator",
+          "path": "$.review.notes[1]",
           "access": "n/a",
-          "text": "p. 645, section I"
+          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
         },
         {
           "id": "SUP-d478714fb971ba22",
@@ -574,55 +503,11 @@
           "text": "p. 645 (page physique 3 du PDF NBER w0242)"
         },
         {
-          "id": "SUP-3a54cbe51088a632",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Localisation matérielle de la citation, retirée du champ affiché : p. 645 = page physique 3 du PDF NBER w0242 (règle vérifiée sur les titres courants, page imprimée = page physique + 642). La page 645 a été rendue en image et la phrase relue caractère par caractère, la couche OCR du fac-similé étant fautive."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C020",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Le mot qui compte dans cette phrase est alternative.",
-      "supports": [
-        {
-          "id": "SUP-2f8c94cb7c947196",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
-          "access": "n/a",
-          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
-        },
-        {
-          "id": "SUP-93f5f2f2fda71b69",
-          "origin": "validated",
-          "path": "$.notes[2]",
-          "access": "n/a",
-          "text": "Coupes de la citation : la première remplace « , which », la seconde supprime « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (232 caractères, hors format). L'italique de « grievance and arbitration system » n'est pas conservée."
-        },
-        {
-          "id": "SUP-1e6214176efbee74",
+          "id": "SUP-1c71ba35ca252553",
           "origin": "evidence:lecture.json",
-          "path": "$.reserves[4]",
-          "access": "n/a",
-          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C021",
-      "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Un tel système ouvre aux salariés mécontents une autre manière de le dire, qui n’exige pas de partir.",
-      "supports": [
-        {
-          "id": "SUP-69cbdbc306b53e32",
-          "origin": "validated",
           "path": "$.quotation.text",
           "access": "n/a",
-          "text": "le système de griefs et d'arbitrage […] offre aux salariés mécontents qui envisagent de partir un autre moyen d'exprimer leur mécontentement […]"
+          "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]"
         },
         {
           "id": "SUP-1f6216e89e7061b9",
@@ -630,6 +515,50 @@
           "path": "$.quotation.original_text",
           "access": "n/a",
           "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Le mot qui compte dans cette phrase est alternative.",
+      "supports": [
+        {
+          "id": "SUP-1e6214176efbee74",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
+        },
+        {
+          "id": "SUP-1c71ba35ca252553",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Un tel système ouvre aux salariés mécontents une autre manière de le dire, qui n’exige pas de partir.",
+      "supports": [
+        {
+          "id": "SUP-88ca4448a605caf9",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+        },
+        {
+          "id": "SUP-1e6214176efbee74",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "Dans l'original, « grievance and arbitration system » est composé en italique ; la citation retenue ne conserve pas cette italique. Coupes signalées : la première remplace « , which », la seconde supprime la fin de phrase « and possibly changing work conditions ». Phrase entière, p. 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »"
         },
         {
           "id": "SUP-1c71ba35ca252553",
@@ -639,26 +568,19 @@
           "text": "the grievance and arbitration system […] offers dissatisfied workers who are considering quitting an alternative means of expressing discontent […]"
         },
         {
-          "id": "SUP-2f8c94cb7c947196",
+          "id": "SUP-69cbdbc306b53e32",
           "origin": "validated",
-          "path": "$.review.notes[1]",
+          "path": "$.quotation.text",
           "access": "n/a",
-          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
-        },
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+          "text": "le système de griefs et d'arbitrage […] offre aux salariés mécontents qui envisagent de partir un autre moyen d'exprimer leur mécontentement […]"
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C022",
+      "claim_id": "C021",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Freeman ajoute que la négociation collective des contrats agit dans le même sens, « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior »",
+      "claim_text": "Freeman ajoute que la négociation collective des contrats devrait, elle aussi, réduire les départs, « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior »",
       "supports": [
         {
           "id": "SUP-4805438acee39f7c",
@@ -678,7 +600,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C023",
+      "claim_id": "C022",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "les salariés qui auraient démissionné y cherchent d’abord à obtenir les changements voulus.",
       "supports": [
@@ -693,7 +615,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C024",
+      "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
       "claim_text": "Un troisième dispositif, l’« industrial jurisprudence system », soumet les décisions prises sur le lieu de travail à des règles négociées, l’ancienneté par exemple, plutôt qu’au jugement du supérieur.",
       "supports": [
@@ -722,7 +644,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C025",
+      "claim_id": "C024",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "Parce que, selon Freeman, l’essence de la prise de parole est de réduire le pouvoir de la direction et de créer dans l’entreprise un second canal d’autorité.",
       "supports": [
@@ -746,19 +668,12 @@
           "path": "$.notes[4]",
           "access": "n/a",
           "text": "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas."
-        },
-        {
-          "id": "SUP-3f8dd9fa8029a914",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[0]",
-          "access": "n/a",
-          "text": "PÉRIMÈTRE, constat en clair. Le texte est aux deux tiers de l'économie du travail et pour un tiers de l'analyse d'un dispositif organisationnel, mais la part économique est instrumentale et non thématique : elle sert à neutraliser la voie salariale pour que le reste puisse être imputé au dispositif interne. Le dispositif interne à l'entreprise occupe la section I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme, raisons de son absence hors syndicat) et la section IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, effet de la portée des clauses de griefs sur l'ancienneté, comparaison d'hôpitaux avec et sans procédure écrite de griefs). Relèvent au contraire du marché du travail et du salaire les sections II et III (p. 648-666) : contrôle des effets de salaire de monopole, biais d'omission des opportunités alternatives, équations de logit et d'ancienneté, tables de coefficients, ainsi qu'une partie de la conclusion (p. 671, licenciements et rappels, ajustement salarial sur le cycle, part de la rémunération différée). Objet du texte : le syndicat comme institution de voix dans l'entreprise et son effet sur la démission, l'ancienneté et les séparations. C'est donc bien un mécanisme organisationnel qui est visé, sur données de marché du travail, et la carte devra rester sur les sections I et IV sous peine de basculer dans l'économie salariale syndicale."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C026",
+      "claim_id": "C025",
       "locator": "sections[1].paragraphs[2]",
       "claim_text": "Un tel changement du rapport de pouvoir s’obtient difficilement sans organisation indépendante, comme l’ont montré les plans de représentation du personnel des années 1920.",
       "supports": [
@@ -773,37 +688,22 @@
       "uncited_support_signal": []
     },
     {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[2]",
+      "claim_text": "Il souligne l’écart qui en résulte : une procédure de griefs figure dans 99 % des grandes conventions collectives américaines, contre 30 % des entreprises non syndiquées.",
+      "supports": [
+        {
+          "id": "SUP-88ca4448a605caf9",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
       "claim_id": "C027",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "Il souligne l’écart qui en résulte",
-      "supports": [
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C028",
-      "locator": "sections[1].paragraphs[2]",
-      "claim_text": "une procédure de griefs figure dans 99 % des grandes conventions collectives américaines, contre 30 % des entreprises non syndiquées.",
-      "supports": [
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Les salariés syndiqués restent plus longtemps et démissionnent moins",
       "supports": [
@@ -832,24 +732,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C030",
+      "claim_id": "C028",
       "locator": "sections[2].paragraphs[0]",
-      "claim_text": "le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes »",
-      "supports": [
-        {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C031",
-      "locator": "sections[2].paragraphs[0]",
-      "claim_text": "d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles.",
+      "claim_text": "le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes », d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles.",
       "supports": [
         {
           "id": "SUP-4805438acee39f7c",
@@ -864,19 +749,12 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        },
-        {
-          "id": "SUP-c0e2c3b400fd5cfe",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
-          "access": "n/a",
-          "text": "Richard B. Freeman signe seul l'article, affilié à Harvard University. Le couple sortie/prise de parole n'est pas de lui et il ne le revendique pas : il l'attribue en toutes lettres à Albert O. Hirschman dès la première ligne du résumé, « in the context of Hirschman's exit-voice dichotomy », et renvoie en références à Exit, Voice, and Loyalty (Harvard University Press, 1970) ainsi qu'à un texte de Hirschman de 1976. Ce que Freeman pose comme sa contribution propre est ailleurs : appliquer ce modèle au syndicat, tenu pour l'institution de voix de l'entreprise, et en tester le compromis sur données individuelles, terrain que Hirschman avait laissé de côté selon lui, « little attention is paid to the labor market in Hirschman's book ». La carte attribue donc à Freeman l'application et la mise à l'épreuve du compromis dans l'entreprise, pas la paternité du modèle."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C032",
+      "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
       "claim_text": "Ce constat, seul, n’établit rien, parce qu’une autre explication se présente aussitôt.",
       "supports": [
@@ -893,19 +771,12 @@
           "path": "$.reserves[0]",
           "access": "n/a",
           "text": "PÉRIMÈTRE, constat en clair. Le texte est aux deux tiers de l'économie du travail et pour un tiers de l'analyse d'un dispositif organisationnel, mais la part économique est instrumentale et non thématique : elle sert à neutraliser la voie salariale pour que le reste puisse être imputé au dispositif interne. Le dispositif interne à l'entreprise occupe la section I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme, raisons de son absence hors syndicat) et la section IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, effet de la portée des clauses de griefs sur l'ancienneté, comparaison d'hôpitaux avec et sans procédure écrite de griefs). Relèvent au contraire du marché du travail et du salaire les sections II et III (p. 648-666) : contrôle des effets de salaire de monopole, biais d'omission des opportunités alternatives, équations de logit et d'ancienneté, tables de coefficients, ainsi qu'une partie de la conclusion (p. 671, licenciements et rappels, ajustement salarial sur le cycle, part de la rémunération différée). Objet du texte : le syndicat comme institution de voix dans l'entreprise et son effet sur la démission, l'ancienneté et les séparations. C'est donc bien un mécanisme organisationnel qui est visé, sur données de marché du travail, et la carte devra rester sur les sections I et IV sous peine de basculer dans l'économie salariale syndicale."
-        },
-        {
-          "id": "SUP-1a5b628853077a17",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C033",
+      "claim_id": "C030",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Un syndicat peut retenir les salariés par ce qu’il obtient pour eux : salaires, avantages sociaux, conditions de travail.",
       "supports": [
@@ -920,7 +791,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Freeman appelle ces voies les « monopoly routes », par opposition aux « voice routes », seules en cause dans sa thèse.",
       "supports": [
@@ -935,17 +806,10 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C035",
+      "claim_id": "C032",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Les sections II et III, de la page 648 à la page 666, servent à tenir les premières fixes pour isoler les secondes",
       "supports": [
-        {
-          "id": "SUP-1a5b628853077a17",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas."
-        },
         {
           "id": "SUP-3f8dd9fa8029a914",
           "origin": "evidence:lecture.json",
@@ -954,6 +818,13 @@
           "text": "PÉRIMÈTRE, constat en clair. Le texte est aux deux tiers de l'économie du travail et pour un tiers de l'analyse d'un dispositif organisationnel, mais la part économique est instrumentale et non thématique : elle sert à neutraliser la voie salariale pour que le reste puisse être imputé au dispositif interne. Le dispositif interne à l'entreprise occupe la section I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme, raisons de son absence hors syndicat) et la section IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, effet de la portée des clauses de griefs sur l'ancienneté, comparaison d'hôpitaux avec et sans procédure écrite de griefs). Relèvent au contraire du marché du travail et du salaire les sections II et III (p. 648-666) : contrôle des effets de salaire de monopole, biais d'omission des opportunités alternatives, équations de logit et d'ancienneté, tables de coefficients, ainsi qu'une partie de la conclusion (p. 671, licenciements et rappels, ajustement salarial sur le cycle, part de la rémunération différée). Objet du texte : le syndicat comme institution de voix dans l'entreprise et son effet sur la démission, l'ancienneté et les séparations. C'est donc bien un mécanisme organisationnel qui est visé, sur données de marché du travail, et la carte devra rester sur les sections I et IV sous peine de basculer dans l'économie salariale syndicale."
         },
         {
+          "id": "SUP-1a5b628853077a17",
+          "origin": "validated",
+          "path": "$.notes[4]",
+          "access": "n/a",
+          "text": "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas."
+        },
+        {
           "id": "SUP-88ca4448a605caf9",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
@@ -964,9 +835,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C036",
+      "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "comparer des salariés à rémunération comparable, et regarder si l’écart subsiste. Il subsiste.",
+      "claim_text": "comparer des salariés à rémunération comparable, et regarder si l’écart subsiste",
       "supports": [
         {
           "id": "SUP-88ca4448a605caf9",
@@ -976,28 +847,19 @@
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
         },
         {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        }
-      ],
-      "uncited_support_signal": [
-        {
-          "support_id": "SUP-3f8dd9fa8029a914",
+          "id": "SUP-3f8dd9fa8029a914",
           "origin": "evidence:lecture.json",
           "path": "$.reserves[0]",
-          "shared_terms": [
-            "remuneration"
-          ]
+          "access": "n/a",
+          "text": "PÉRIMÈTRE, constat en clair. Le texte est aux deux tiers de l'économie du travail et pour un tiers de l'analyse d'un dispositif organisationnel, mais la part économique est instrumentale et non thématique : elle sert à neutraliser la voie salariale pour que le reste puisse être imputé au dispositif interne. Le dispositif interne à l'entreprise occupe la section I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme, raisons de son absence hors syndicat) et la section IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, effet de la portée des clauses de griefs sur l'ancienneté, comparaison d'hôpitaux avec et sans procédure écrite de griefs). Relèvent au contraire du marché du travail et du salaire les sections II et III (p. 648-666) : contrôle des effets de salaire de monopole, biais d'omission des opportunités alternatives, équations de logit et d'ancienneté, tables de coefficients, ainsi qu'une partie de la conclusion (p. 671, licenciements et rappels, ajustement salarial sur le cycle, part de la rémunération différée). Objet du texte : le syndicat comme institution de voix dans l'entreprise et son effet sur la démission, l'ancienneté et les séparations. C'est donc bien un mécanisme organisationnel qui est visé, sur données de marché du travail, et la carte devra rester sur les sections I et IV sous peine de basculer dans l'économie salariale syndicale."
         }
-      ]
+      ],
+      "uncited_support_signal": []
     },
     {
-      "claim_id": "C037",
+      "claim_id": "C034",
       "locator": "sections[2].paragraphs[1]",
-      "claim_text": "À compensation tenue fixe, écrit Freeman page 666, « unionism raises tenure and reduces quits ».",
+      "claim_text": "Il subsiste. À compensation tenue fixe, écrit Freeman page 666, « unionism raises tenure and reduces quits ».",
       "supports": [
         {
           "id": "SUP-4805438acee39f7c",
@@ -1005,12 +867,19 @@
           "path": "$.review.notes[5]",
           "access": "n/a",
           "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
+        },
+        {
+          "id": "SUP-88ca4448a605caf9",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C038",
+      "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "Il écarte aussi l’idée que les syndicats réuniraient simplement des travailleurs naturellement plus stables",
       "supports": [
@@ -1025,7 +894,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C039",
+      "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
       "claim_text": "à salaire égal, un même individu est moins susceptible de démissionner dans un lieu de travail syndiqué que dans un lieu qui ne l’est pas.",
       "supports": [
@@ -1040,17 +909,10 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C040",
+      "claim_id": "C037",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Il manque pourtant quelque chose, et Freeman est le premier à le dire : il ne dispose d’aucune mesure directe de la parole.",
       "supports": [
-        {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
         {
           "id": "SUP-88ca4448a605caf9",
           "origin": "evidence:lecture.json",
@@ -1059,18 +921,11 @@
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
         },
         {
-          "id": "SUP-e5b891ffabafd5e4",
+          "id": "SUP-4805438acee39f7c",
           "origin": "validated",
-          "path": "$.notes[5]",
+          "path": "$.review.notes[5]",
           "access": "n/a",
-          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
-        },
-        {
-          "id": "SUP-9da10e5e3f239fe3",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[10]",
-          "access": "n/a",
-          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
+          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
         },
         {
           "id": "SUP-f8adcbfcdd14de49",
@@ -1083,7 +938,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C038",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "Dès la page 644, il prévient que séparer son effet des autres composantes du fait syndical est « exceedingly difficult ».",
       "supports": [
@@ -1105,10 +960,97 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C039",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "La phrase qui ouvre la quatrième section, page 666,",
+      "claim_text": "La phrase qui ouvre la quatrième section, page 666, fixe donc la portée de tout ce qui précède : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis ».",
       "supports": [
+        {
+          "id": "SUP-4805438acee39f7c",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
+        },
+        {
+          "id": "SUP-e5b891ffabafd5e4",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
+        },
+        {
+          "id": "SUP-9da10e5e3f239fe3",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[10]",
+          "access": "n/a",
+          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
+        },
+        {
+          "id": "SUP-88ca4448a605caf9",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "L’explication par la parole tient à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse.",
+      "supports": [
+        {
+          "id": "SUP-e5b891ffabafd5e4",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
+        },
+        {
+          "id": "SUP-4805438acee39f7c",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "La nuance n’est pas une coquetterie de méthode.",
+      "supports": [
+        {
+          "id": "SUP-e5b891ffabafd5e4",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
+        },
+        {
+          "id": "SUP-4805438acee39f7c",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Elle implique qu’une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffirait qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui.",
+      "supports": [
+        {
+          "id": "SUP-e5b891ffabafd5e4",
+          "origin": "validated",
+          "path": "$.notes[5]",
+          "access": "n/a",
+          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
+        },
         {
           "id": "SUP-4805438acee39f7c",
           "origin": "validated",
@@ -1121,158 +1063,6 @@
     },
     {
       "claim_id": "C043",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "fixe donc la portée de tout ce qui précède",
-      "supports": [
-        {
-          "id": "SUP-e5b891ffabafd5e4",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
-        },
-        {
-          "id": "SUP-9da10e5e3f239fe3",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[10]",
-          "access": "n/a",
-          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
-        },
-        {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C044",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "« the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis »",
-      "supports": [
-        {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
-        {
-          "id": "SUP-e5b891ffabafd5e4",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
-        },
-        {
-          "id": "SUP-9da10e5e3f239fe3",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[10]",
-          "access": "n/a",
-          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
-        },
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C045",
-      "locator": "sections[3].paragraphs[0]",
-      "claim_text": "L’explication par la parole tient à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse.",
-      "supports": [
-        {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
-        {
-          "id": "SUP-e5b891ffabafd5e4",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
-        },
-        {
-          "id": "SUP-9da10e5e3f239fe3",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[10]",
-          "access": "n/a",
-          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
-        },
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C046",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "La nuance n’est pas une coquetterie de méthode.",
-      "supports": [
-        {
-          "id": "SUP-e5b891ffabafd5e4",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
-        },
-        {
-          "id": "SUP-9da10e5e3f239fe3",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[10]",
-          "access": "n/a",
-          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C047",
-      "locator": "sections[3].paragraphs[1]",
-      "claim_text": "Elle implique qu’une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffirait qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui.",
-      "supports": [
-        {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
-        {
-          "id": "SUP-e5b891ffabafd5e4",
-          "origin": "validated",
-          "path": "$.notes[5]",
-          "access": "n/a",
-          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
-        },
-        {
-          "id": "SUP-9da10e5e3f239fe3",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[10]",
-          "access": "n/a",
-          "text": "Freeman lui-même limite la portée de sa démonstration, et la carte ne devrait pas la durcir : l'interprétation par la voix « rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666), et il ajoute p. 644 que toute négociation collective mêlant la voix aux autres composantes du fait syndical, en séparer proprement l'effet est « exceedingly difficult »."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C048",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "L’article ne s’arrête pourtant pas à ce constat. Freeman produit ensuite trois éléments qui vont dans le sens de son hypothèse.",
       "supports": [
@@ -1294,23 +1084,23 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C044",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le premier rapporte les taux de démission au niveau de satisfaction déclaré : le syndicat abaisse davantage les départs des insatisfaits que ceux des satisfaits",
       "supports": [
-        {
-          "id": "SUP-56834f17dc485b6b",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "PROSE — nuance versée en note, sans conséquence sur le verdict : après la phrase de la p. 666, Freeman produit tout de même trois éléments directs (Tableau VI, taux de démission par niveau de satisfaction ; Tableau VII, effet de l'étendue des clauses de griefs BLS sur l'ancienneté ; Sargent & Clawson), qu'il qualifie lui-même de « no more than suggestive » (p. 669) et « suggestive rather than definitive » (p. 670), et conclut « finds some support for the hypothesis » (p. 666). Le « par défaut » du summary reste donc dans ce que la source porte ; une version future pourrait sans dommage mentionner ces appuis suggestifs."
-        },
         {
           "id": "SUP-88ca4448a605caf9",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+        },
+        {
+          "id": "SUP-56834f17dc485b6b",
+          "origin": "validated",
+          "path": "$.review.notes[6]",
+          "access": "n/a",
+          "text": "PROSE — nuance versée en note, sans conséquence sur le verdict : après la phrase de la p. 666, Freeman produit tout de même trois éléments directs (Tableau VI, taux de démission par niveau de satisfaction ; Tableau VII, effet de l'étendue des clauses de griefs BLS sur l'ancienneté ; Sargent & Clawson), qu'il qualifie lui-même de « no more than suggestive » (p. 669) et « suggestive rather than definitive » (p. 670), et conclut « finds some support for the hypothesis » (p. 666). Le « par défaut » du summary reste donc dans ce que la source porte ; une version future pourrait sans dommage mentionner ces appuis suggestifs."
         },
         {
           "id": "SUP-1a5b628853077a17",
@@ -1330,7 +1120,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C045",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "ce qu’on attend d’un canal fait pour l’insatisfaction.",
       "supports": [
@@ -1345,7 +1135,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Le deuxième rapporte l’ancienneté à l’étendue des clauses de griefs relevées par le Bureau of Labor Statistics",
       "supports": [
@@ -1364,13 +1154,6 @@
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
         },
         {
-          "id": "SUP-1a5b628853077a17",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas."
-        },
-        {
           "id": "SUP-3f8dd9fa8029a914",
           "origin": "evidence:lecture.json",
           "path": "$.reserves[0]",
@@ -1381,7 +1164,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "plus ces clauses sont étendues, plus l’ancienneté des syndiqués est longue.",
       "supports": [
@@ -1403,7 +1186,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Le troisième est une comparaison empruntée à Sargent et Clawson, que Freeman reprend page 670",
       "supports": [
@@ -1425,54 +1208,11 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "dans les hôpitaux dotés d’une procédure écrite de griefs, le taux de séparation s’établit à 0,50, contre 0,81 là où elle n’existe pas.",
       "supports": [
         {
-          "id": "SUP-4805438acee39f7c",
-          "origin": "validated",
-          "path": "$.review.notes[5]",
-          "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
-        },
-        {
-          "id": "SUP-1a5b628853077a17",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Périmètre tenu par la carte : le dispositif interne à l'entreprise, sections I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme) et IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, portée des clauses de griefs, hôpitaux avec et sans procédure écrite). Les sections II et III (p. 648-666) relèvent de l'économie du travail et servent à neutraliser la voie salariale ; la carte ne s'y appuie pas."
-        },
-        {
-          "id": "SUP-3f8dd9fa8029a914",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[0]",
-          "access": "n/a",
-          "text": "PÉRIMÈTRE, constat en clair. Le texte est aux deux tiers de l'économie du travail et pour un tiers de l'analyse d'un dispositif organisationnel, mais la part économique est instrumentale et non thématique : elle sert à neutraliser la voie salariale pour que le reste puisse être imputé au dispositif interne. Le dispositif interne à l'entreprise occupe la section I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme, raisons de son absence hors syndicat) et la section IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, effet de la portée des clauses de griefs sur l'ancienneté, comparaison d'hôpitaux avec et sans procédure écrite de griefs). Relèvent au contraire du marché du travail et du salaire les sections II et III (p. 648-666) : contrôle des effets de salaire de monopole, biais d'omission des opportunités alternatives, équations de logit et d'ancienneté, tables de coefficients, ainsi qu'une partie de la conclusion (p. 671, licenciements et rappels, ajustement salarial sur le cycle, part de la rémunération différée). Objet du texte : le syndicat comme institution de voix dans l'entreprise et son effet sur la démission, l'ancienneté et les séparations. C'est donc bien un mécanisme organisationnel qui est visé, sur données de marché du travail, et la carte devra rester sur les sections I et IV sous peine de basculer dans l'économie salariale syndicale."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Aucune de ces trois observations ne mesure directement la parole",
-      "supports": [
-        {
-          "id": "SUP-56834f17dc485b6b",
-          "origin": "validated",
-          "path": "$.review.notes[6]",
-          "access": "n/a",
-          "text": "PROSE — nuance versée en note, sans conséquence sur le verdict : après la phrase de la p. 666, Freeman produit tout de même trois éléments directs (Tableau VI, taux de démission par niveau de satisfaction ; Tableau VII, effet de l'étendue des clauses de griefs BLS sur l'ancienneté ; Sargent & Clawson), qu'il qualifie lui-même de « no more than suggestive » (p. 669) et « suggestive rather than definitive » (p. 670), et conclut « finds some support for the hypothesis » (p. 666). Le « par défaut » du summary reste donc dans ce que la source porte ; une version future pourrait sans dommage mentionner ces appuis suggestifs."
-        },
-        {
           "id": "SUP-88ca4448a605caf9",
           "origin": "evidence:lecture.json",
           "path": "$.definition_de_lauteur",
@@ -1490,9 +1230,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "Freeman les qualifie lui-même de « no more than suggestive », page 669, puis de « suggestive rather than definitive », page 670",
+      "claim_text": "Ces trois éléments, Freeman les qualifie lui-même de « no more than suggestive », page 669, puis de « suggestive rather than definitive », page 670",
       "supports": [
         {
           "id": "SUP-56834f17dc485b6b",
@@ -1505,9 +1245,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "son étude, dit-il, « finds some support for the hypothesis »",
+      "claim_text": "son étude, dit-il, « finds some support for the hypothesis ».",
       "supports": [
         {
           "id": "SUP-56834f17dc485b6b",
@@ -1520,7 +1260,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C058",
+      "claim_id": "C052",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Ce que l’on compte, ce sont des départs",
       "supports": [
@@ -1542,29 +1282,22 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C059",
+      "claim_id": "C053",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "un départ qui n’a pas lieu ne dit pas pourquoi : dans un taux de démission, celui qui reste parce qu’il a obtenu gain de cause pèse exactement comme celui qui reste après avoir renoncé à demander quoi que ce soit.",
+      "claim_text": "et un départ qui n’a pas lieu ne dit pas pourquoi : dans un taux de démission, celui qui reste parce qu’il a obtenu gain de cause pèse exactement comme celui qui reste après avoir renoncé à demander quoi que ce soit.",
       "supports": [
         {
-          "id": "SUP-4805438acee39f7c",
+          "id": "SUP-e5b891ffabafd5e4",
           "origin": "validated",
-          "path": "$.review.notes[5]",
+          "path": "$.notes[5]",
           "access": "n/a",
-          "text": "PROSE (Q4) — chaque mot porteur trouve sa phrase. « le syndicat offre griefs et négociation » : p. 645-646, section I, « the grievance and arbitration system » puis « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior ». « le salarié démissionne moins » : résumé p. 643, « significantly lower exit for unionists in several large data tapes », et p. 666, « unionism raises tenure and reduces quits » avec compensation tenue fixe. « faute de mesure directe … ne le prouve que par défaut » : c'est la phrase même de Freeman, p. 666, ouverture de la section IV — « Because of the lack of a direct measure of \"voice\" components of unionism, however, the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis. » Le hook (« part-il moins s'il a, dans l'entreprise, où se plaindre ? ») est interrogatif et n'affirme rien au-delà de l'hypothèse que Freeman teste ; « dans l'entreprise » est couvert par la comparaison Sargent & Clawson reprise p. 670 (hôpitaux avec / sans procédure écrite de griefs : taux de séparation 0,50 contre 0,81)."
-        },
-        {
-          "id": "SUP-88ca4448a605caf9",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
+          "text": "Freeman limite lui-même la portée de sa démonstration, et le résumé ne la durcit pas : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666) ; séparer proprement l'effet de voix des autres composantes du fait syndical est « exceedingly difficult » (p. 644)."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C054",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "Les autres réponses à l’insatisfaction ont d’ailleurs leurs défenseurs.",
       "supports": [
@@ -1589,12 +1322,19 @@
           "path": "$.reserves[7]",
           "access": "n/a",
           "text": "Allen et Tüselmann 2009 : PDF vérifié ouvert par moi-même (HTTP 200, 96 ko, PDF de 15 pages reprenant la mise en page de la revue, p. 538-552). Consulté partiellement : résumé, introduction, et recherche sur le texte intégral extrait. Réserve d'usage : cet article discute le triptyque de Hirschman et Freeman et Medoff, What Do Unions Do? (1984), mais ne cite nulle part l'article de 1980 lui-même. Ce n'est donc pas une réception directe de ce texte."
+        },
+        {
+          "id": "SUP-f30dbc1b67184d23",
+          "origin": "validated",
+          "path": "$.notes[6]",
+          "access": "n/a",
+          "text": "Allen et Tüselmann 2009, déclarée « partial » par CETTE lecture (résumé, introduction et recherche sur le texte intégral extrait) : cet article discute le triptyque de Hirschman et Freeman et Medoff, What Do Unions Do? (1984), mais ne cite nulle part l'article de 1980. Ce n'est donc pas une réception directe de ce texte."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C055",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "En 2009, Matthew Allen et Heinz-Josef Tüselmann demandent, dans Employee Relations, que les études empiriques fassent aussi leur place à la défection, à la loyauté et à la négligence",
       "supports": [
@@ -1612,12 +1352,19 @@
           "path": "$.sources_ouvertes[3].citation",
           "access": "partial",
           "text": "Matthew M. C. Allen et Heinz-Josef Tüselmann, « All powerful voice? The need to include \"exit\", \"loyalty\" and \"neglect\" in empirical studies too », Employee Relations, vol. 31, n° 5, 2009, p. 538-552 ; version déposée en accès ouvert par le dépôt institutionnel de l'université de Manchester."
+        },
+        {
+          "id": "SUP-0dfb5609cc8321fd",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[7]",
+          "access": "n/a",
+          "text": "Allen et Tüselmann 2009 : PDF vérifié ouvert par moi-même (HTTP 200, 96 ko, PDF de 15 pages reprenant la mise en page de la revue, p. 538-552). Consulté partiellement : résumé, introduction, et recherche sur le texte intégral extrait. Réserve d'usage : cet article discute le triptyque de Hirschman et Freeman et Medoff, What Do Unions Do? (1984), mais ne cite nulle part l'article de 1980 lui-même. Ce n'est donc pas une réception directe de ce texte."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C056",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "ils discutent le triptyque de Hirschman et What Do Unions Do?",
       "supports": [
@@ -1639,10 +1386,17 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C057",
       "locator": "sections[5].paragraphs[1]",
       "claim_text": "le livre que Freeman a cosigné avec James L. Medoff en 1984.",
       "supports": [
+        {
+          "id": "SUP-ea74664af4271eef",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[9]",
+          "access": "n/a",
+          "text": "Non ouverts : l'édition de revue de l'article (doi 10.2307/1885662), et Richard B. Freeman et James L. Medoff, What Do Unions Do?, que l'article de 1980 cite comme « forthcoming » et qui paraîtra en 1984. Le prolongement du modèle dans cet ouvrage n'est donc pas établi ici."
+        },
         {
           "id": "SUP-0dfb5609cc8321fd",
           "origin": "evidence:lecture.json",
@@ -1656,19 +1410,12 @@
           "path": "$.notes[6]",
           "access": "n/a",
           "text": "Allen et Tüselmann 2009, déclarée « partial » par CETTE lecture (résumé, introduction et recherche sur le texte intégral extrait) : cet article discute le triptyque de Hirschman et Freeman et Medoff, What Do Unions Do? (1984), mais ne cite nulle part l'article de 1980. Ce n'est donc pas une réception directe de ce texte."
-        },
-        {
-          "id": "SUP-ea74664af4271eef",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[9]",
-          "access": "n/a",
-          "text": "Non ouverts : l'édition de revue de l'article (doi 10.2307/1885662), et Richard B. Freeman et James L. Medoff, What Do Unions Do?, que l'article de 1980 cite comme « forthcoming » et qui paraîtra en 1984. Le prolongement du modèle dans cet ouvrage n'est donc pas établi ici."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[2]",
       "claim_text": "Ce que décrit Freeman est par ailleurs un dispositif situé : le syndicalisme américain de son temps, avec ses conventions collectives et ses arbitres.",
       "supports": [
@@ -1680,16 +1427,16 @@
           "text": "Dans les termes de Freeman, la prise de parole des salariés est « embodied in unionism and the collective bargaining system by which workers elect union leaders to represent them in negotiations with management », et la sortie « consists primarily of quits » (p. 643). D'où le compromis, énoncé p. 643 : « when workers have a voice institution for expressing discontent, they should use the exit option less frequently and thus exhibit lower quit rates and longer spells of job tenure with firms. » Freeman sépare deux voies par lesquelles le syndicat réduit la sortie : les « monopoly routes » (salaires, avantages sociaux, conditions obtenus par le pouvoir de monopole syndical) et les « voice routes », seules en cause dans sa thèse ; tout l'appareil statistique sert à tenir les premières fixes pour isoler les secondes. Trois dispositifs internes portent la voix (p. 645-646) : d'abord le « grievance and arbitration system », qu'il dit le plus important et qu'il oppose au recours plus radical de la sortie, en soulignant qu'il est présent dans 99 % des grandes conventions collectives américaines contre 30 % des entreprises non syndiquées ; ensuite la négociation régulière du contrat, où les salariés qui auraient démissionné cherchent d'abord à obtenir les changements voulus ; enfin l'« industrial jurisprudence system », qui dilue l'autorité managériale en soumettant les décisions du lieu de travail à des règles négociées, l'ancienneté par exemple, plutôt qu'au jugement du supérieur. Pourquoi ces dispositifs sont rares hors syndicat : « the essence of voice is to reduce managerial power and create a dual authority channel within the firm » (p. 647), changement de rapport de pouvoir difficile à obtenir sans organisation indépendante, comme l'ont montré les plans de représentation du personnel des années 1920. Résultats : à salaire et avantages tenus fixes, le syndicat allonge l'ancienneté et abaisse démissions et séparations, sur les données NLS, PSID et CPS ; le modèle logit à effets fixes écarte l'explication par la sélection de travailleurs naturellement plus stables, « In an organized work place a given individual is less likely to quit than in a nonorganized work place, wages held fixed » (p. 666). La section IV cherche des preuves directes du canal de voix : le syndicat abaisse davantage le taux de démission des travailleurs qui se déclarent insatisfaits que celui des satisfaits ; l'ancienneté des syndiqués croît avec la part des clauses de griefs non restrictives ; les hôpitaux dotés d'une procédure écrite de griefs ont un taux de séparation de 0,50 contre 0,81. Freeman énonce lui-même la faiblesse de sa démonstration : faute de mesure directe de la voix, « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis » (p. 666). Conséquence tirée en conclusion : la baisse des départs crée une main-d'œuvre stable, abaisse les coûts d'embauche et de formation et élève la productivité de l'établissement (p. 671)."
         },
         {
-          "id": "SUP-2f8c94cb7c947196",
-          "origin": "validated",
-          "path": "$.review.notes[1]",
+          "id": "SUP-3f8dd9fa8029a914",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[0]",
           "access": "n/a",
-          "text": "CITATION (Q2) — page physique 3 = page imprimée 645, section « I. UNIONISM AND EXIT BEHAVIOR ». La couche OCR du fac-similé est fautive (« grieL'-ance », « .system ») ; j'ai donc extrait l'image de page (pypdf, image I0.png, 1650x2556) et lu le passage sur l'image : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. » (« grievance and arbitration system » en italique dans l'original). La citation de la fiche restitue ces mots exactement ; les deux coupes sont signalées par […] — la première remplace « , which », la seconde retire « and possibly changing work conditions ». Localisation p. 645, section I : exacte. Pas de traduction à déclarer (langue en, original_text à null : cohérent)."
+          "text": "PÉRIMÈTRE, constat en clair. Le texte est aux deux tiers de l'économie du travail et pour un tiers de l'analyse d'un dispositif organisationnel, mais la part économique est instrumentale et non thématique : elle sert à neutraliser la voie salariale pour que le reste puisse être imputé au dispositif interne. Le dispositif interne à l'entreprise occupe la section I (p. 645-648 : système de griefs et d'arbitrage, négociation collective comme canal d'expression, « industrial jurisprudence system », voix comme canal d'autorité parallèle dans la firme, raisons de son absence hors syndicat) et la section IV (p. 666-669 : effet plus fort du syndicat sur les insatisfaits, effet de la portée des clauses de griefs sur l'ancienneté, comparaison d'hôpitaux avec et sans procédure écrite de griefs). Relèvent au contraire du marché du travail et du salaire les sections II et III (p. 648-666) : contrôle des effets de salaire de monopole, biais d'omission des opportunités alternatives, équations de logit et d'ancienneté, tables de coefficients, ainsi qu'une partie de la conclusion (p. 671, licenciements et rappels, ajustement salarial sur le cycle, part de la rémunération différée). Objet du texte : le syndicat comme institution de voix dans l'entreprise et son effet sur la démission, l'ancienneté et les séparations. C'est donc bien un mécanisme organisationnel qui est visé, sur données de marché du travail, et la carte devra rester sur les sections I et IV sous peine de basculer dans l'économie salariale syndicale."
         }
       ],
       "uncited_support_signal": []
     }
   ],
-  "estimated_tokens": 79820,
+  "estimated_tokens": 69029,
   "status": "READY"
 }

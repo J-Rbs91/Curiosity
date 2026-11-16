@@ -1,6 +1,6 @@
 {
   "concept_id": "compromis-defection-prise-de-parole",
-  "candidate_sha256": "3bebf562dbbea4a8c4d04384af685c2e4009b6589c777e858b81f12321323bf9",
+  "candidate_sha256": "ee11a53bbb11972cb6f38b3d38cb00608442ae6fbe91cf044b20de88e0f1c639",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -74,7 +74,7 @@
       "start": 100,
       "end": 210,
       "claim_text": "Ce départ a pourtant un prix pour l’entreprise, qui devra embaucher quelqu’un d’autre et le former à son tour.",
-      "normalized_claim": "Le départ d'un salarié coûte à l'entreprise en embauche et formation (conséquence que Freeman tire p. 671).",
+      "normalized_claim": "Un départ volontaire coûte à l'entreprise le remplacement et la formation.",
       "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
@@ -85,7 +85,7 @@
       "start": 0,
       "end": 61,
       "claim_text": "Il existe une autre issue : rester, et dire ce qui ne va pas.",
-      "normalized_claim": "La prise de parole est une alternative au départ pour le salarié mécontent.",
+      "normalized_claim": "L'alternative au départ est de rester et de faire entendre son mécontentement.",
       "support_ids": [
         "SUP-88ca4448a605caf9",
         "SUP-b4b759f42059e392"
@@ -97,7 +97,7 @@
       "start": 62,
       "end": 156,
       "claim_text": "Encore faut-il un endroit où le dire, et que cette parole pèse face à l’autorité du supérieur.",
-      "normalized_claim": "La parole suppose une institution et un contrepoids à l'autorité managériale.",
+      "normalized_claim": "La prise de parole suppose un lieu institutionnel et un contrepoids à l'autorité managériale.",
       "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
@@ -108,7 +108,7 @@
       "start": 157,
       "end": 228,
       "claim_text": "Richard B. Freeman fait de cette condition l’objet d’un article de 1980",
-      "normalized_claim": "Freeman consacre un article de 1980 à cette question.",
+      "normalized_claim": "Freeman consacre un article de 1980 à cette condition.",
       "support_ids": [
         "SUP-e20483b96cf78626",
         "SUP-164ed1627b2c31a5",
@@ -121,11 +121,11 @@
       "start": 230,
       "end": 346,
       "claim_text": "dont la question tient en une ligne : un salarié mécontent part-il moins s’il a, dans l’entreprise, où se plaindre ?",
-      "normalized_claim": "La question de l'article.",
+      "normalized_claim": "La question de l'article : le salarié mécontent part-il moins s'il dispose d'un canal de plainte.",
       "support_ids": [
         "SUP-f104eaa2d6d06d40",
-        "SUP-4805438acee39f7c",
-        "SUP-88ca4448a605caf9"
+        "SUP-88ca4448a605caf9",
+        "SUP-b4b759f42059e392"
       ]
     },
     {
@@ -134,11 +134,12 @@
       "start": 0,
       "end": 62,
       "claim_text": "Les deux issues portent un nom, et il ne vient pas de Freeman.",
-      "normalized_claim": "Le couple n'est pas de Freeman.",
+      "normalized_claim": "Le couple exit/voice n'est pas de Freeman.",
       "support_ids": [
-        "SUP-978902c7aea8fb06",
         "SUP-c0e2c3b400fd5cfe",
-        "SUP-2990a9a8b5be99d7"
+        "SUP-2990a9a8b5be99d7",
+        "SUP-978902c7aea8fb06",
+        "SUP-6bd07cab5b1928c0"
       ]
     },
     {
@@ -147,9 +148,8 @@
       "start": 63,
       "end": 183,
       "claim_text": "Le couple défection / prise de parole est d’Albert O. Hirschman, qui l’avait posé en 1970 dans Exit, Voice, and Loyalty.",
-      "normalized_claim": "Hirschman, Exit, Voice, and Loyalty, 1970.",
+      "normalized_claim": "Hirschman a posé le couple en 1970 dans Exit, Voice, and Loyalty.",
       "support_ids": [
-        "SUP-978902c7aea8fb06",
         "SUP-c0e2c3b400fd5cfe",
         "SUP-2990a9a8b5be99d7",
         "SUP-6bd07cab5b1928c0"
@@ -161,25 +161,25 @@
       "start": 184,
       "end": 295,
       "claim_text": "Freeman le dit dès le résumé de son article, qu’il place « in the context of Hirschman’s exit-voice dichotomy »",
-      "normalized_claim": "Le résumé cite Hirschman.",
+      "normalized_claim": "Le résumé de Freeman se place dans le contexte de la dichotomie de Hirschman.",
       "support_ids": [
         "SUP-c0e2c3b400fd5cfe",
         "SUP-2990a9a8b5be99d7",
-        "SUP-6bd07cab5b1928c0",
-        "SUP-978902c7aea8fb06"
+        "SUP-978902c7aea8fb06",
+        "SUP-6bd07cab5b1928c0"
       ]
     },
     {
       "claim_id": "C009",
       "locator": "sections[0].paragraphs[0]",
-      "start": 300,
-      "end": 349,
-      "claim_text": "il renvoie au livre de 1970 dans sa bibliographie",
-      "normalized_claim": "Bibliographie : Hirschman 1970.",
+      "start": 297,
+      "end": 350,
+      "claim_text": "et il renvoie au livre de 1970 dans sa bibliographie.",
+      "normalized_claim": "La bibliographie de Freeman renvoie au livre de 1970.",
       "support_ids": [
+        "SUP-6bd07cab5b1928c0",
         "SUP-c0e2c3b400fd5cfe",
-        "SUP-2990a9a8b5be99d7",
-        "SUP-6bd07cab5b1928c0"
+        "SUP-2990a9a8b5be99d7"
       ]
     },
     {
@@ -188,7 +188,7 @@
       "start": 351,
       "end": 473,
       "claim_text": "Appliqués aux salariés, les deux termes prennent chez lui un sens précis : la défection consiste avant tout à démissionner",
-      "normalized_claim": "Exit = surtout les démissions.",
+      "normalized_claim": "Chez Freeman, la défection consiste avant tout en démissions.",
       "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
@@ -196,10 +196,10 @@
     {
       "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "start": 478,
+      "start": 475,
       "end": 623,
-      "claim_text": "la prise de parole passe par le syndicat et la négociation collective, où les salariés élisent des représentants pour discuter avec la direction.",
-      "normalized_claim": "Voice = syndicat et négociation collective avec représentants élus.",
+      "claim_text": "et la prise de parole passe par le syndicat et la négociation collective, où les salariés élisent des représentants pour discuter avec la direction.",
+      "normalized_claim": "La voix passe par le syndicat et la négociation collective avec représentants élus.",
       "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
@@ -210,7 +210,7 @@
       "start": 0,
       "end": 33,
       "claim_text": "Ce qu’il revendique est ailleurs.",
-      "normalized_claim": "Freeman revendique une contribution autre que le couple.",
+      "normalized_claim": "Freeman revendique autre chose que le couple.",
       "support_ids": [
         "SUP-c0e2c3b400fd5cfe",
         "SUP-2990a9a8b5be99d7"
@@ -220,9 +220,9 @@
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[1]",
       "start": 34,
-      "end": 181,
-      "claim_text": "Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book »",
-      "normalized_claim": "Citation sur le peu d'attention de Hirschman au marché du travail.",
+      "end": 182,
+      "claim_text": "Le marché du travail, remarque-t-il, tient peu de place chez Hirschman : « While little attention is paid to the labor market in Hirschman’s book ».",
+      "normalized_claim": "Freeman note que Hirschman accorde peu de place au marché du travail.",
       "support_ids": [
         "SUP-c0e2c3b400fd5cfe",
         "SUP-2990a9a8b5be99d7",
@@ -235,7 +235,7 @@
       "start": 183,
       "end": 369,
       "claim_text": "Sa contribution propre consiste à y installer le syndicat comme l’institution qui porte la parole à l’intérieur de l’entreprise, puis à en éprouver le compromis sur données individuelles",
-      "normalized_claim": "Contribution de Freeman : syndicat comme institution de voix, test sur données individuelles.",
+      "normalized_claim": "Contribution de Freeman : syndicat comme institution de voix, test du compromis sur données individuelles.",
       "support_ids": [
         "SUP-c0e2c3b400fd5cfe",
         "SUP-2990a9a8b5be99d7",
@@ -248,9 +248,10 @@
       "start": 372,
       "end": 543,
       "claim_text": "là où les salariés disposent d’une institution pour exprimer leur mécontentement, ils devraient moins recourir au départ, donc démissionner moins et rester plus longtemps.",
-      "normalized_claim": "Énoncé du compromis p. 643.",
+      "normalized_claim": "Hypothèse : institution de voix -> moins de départs, ancienneté plus longue.",
       "support_ids": [
-        "SUP-88ca4448a605caf9"
+        "SUP-88ca4448a605caf9",
+        "SUP-b4b759f42059e392"
       ]
     },
     {
@@ -259,7 +260,7 @@
       "start": 544,
       "end": 599,
       "claim_text": "Le couple n’est pas de lui ; sa mise à l’épreuve l’est.",
-      "normalized_claim": "Attribution : modèle à Hirschman, test à Freeman.",
+      "normalized_claim": "Le couple n'est pas de Freeman, sa mise à l'épreuve l'est.",
       "support_ids": [
         "SUP-978902c7aea8fb06",
         "SUP-c0e2c3b400fd5cfe",
@@ -270,453 +271,436 @@
       "claim_id": "C017",
       "locator": "sections[1].paragraphs[0]",
       "start": 0,
-      "end": 81,
-      "claim_text": "L’institution que Freeman met au premier plan n’est pas la négociation salariale.",
-      "normalized_claim": "L'institution la plus importante n'est pas la négociation salariale.",
+      "end": 165,
+      "claim_text": "L’institution que Freeman met au premier plan n’est pas la négociation salariale. C’est le « grievance and arbitration system », le système de griefs et d’arbitrage.",
+      "normalized_claim": "Freeman place au premier plan le système de griefs et d'arbitrage, non la négociation salariale.",
       "support_ids": [
         "SUP-88ca4448a605caf9",
-        "SUP-2f8c94cb7c947196",
-        "SUP-93f5f2f2fda71b69",
-        "SUP-1e6214176efbee74"
+        "SUP-1c71ba35ca252553",
+        "SUP-69cbdbc306b53e32"
       ]
     },
     {
       "claim_id": "C018",
       "locator": "sections[1].paragraphs[0]",
-      "start": 82,
-      "end": 165,
-      "claim_text": "C’est le « grievance and arbitration system », le système de griefs et d’arbitrage.",
-      "normalized_claim": "Institution principale : système de griefs et d'arbitrage.",
+      "start": 166,
+      "end": 428,
+      "claim_text": "Freeman écrit, page 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »",
+      "normalized_claim": "Citation p. 645.",
       "support_ids": [
-        "SUP-88ca4448a605caf9",
-        "SUP-2f8c94cb7c947196",
-        "SUP-93f5f2f2fda71b69",
         "SUP-1e6214176efbee74",
-        "SUP-69cbdbc306b53e32",
-        "SUP-1f6216e89e7061b9",
+        "SUP-93f5f2f2fda71b69",
+        "SUP-2f8c94cb7c947196",
+        "SUP-d478714fb971ba22",
         "SUP-1c71ba35ca252553",
-        "SUP-9b10a5b39f3cc3fb"
+        "SUP-1f6216e89e7061b9"
       ]
     },
     {
       "claim_id": "C019",
-      "locator": "sections[1].paragraphs[0]",
-      "start": 166,
-      "end": 428,
-      "claim_text": "Freeman écrit, page 645 : « Perhaps the most important such institution is the grievance and arbitration system, which offers dissatisfied workers who are considering quitting an alternative means of expressing discontent and possibly changing work conditions. »",
-      "normalized_claim": "Citation intégrale p. 645.",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 52,
+      "claim_text": "Le mot qui compte dans cette phrase est alternative.",
+      "normalized_claim": "Le mot-clé de la phrase citée est alternative.",
       "support_ids": [
-        "SUP-2f8c94cb7c947196",
-        "SUP-93f5f2f2fda71b69",
         "SUP-1e6214176efbee74",
-        "SUP-0e1fe7512346fdd7",
-        "SUP-d478714fb971ba22",
-        "SUP-3a54cbe51088a632"
+        "SUP-1c71ba35ca252553"
       ]
     },
     {
       "claim_id": "C020",
       "locator": "sections[1].paragraphs[1]",
-      "start": 0,
-      "end": 52,
-      "claim_text": "Le mot qui compte dans cette phrase est alternative.",
-      "normalized_claim": "Le terme 'alternative' figure dans la phrase et porte l'idée.",
+      "start": 53,
+      "end": 154,
+      "claim_text": "Un tel système ouvre aux salariés mécontents une autre manière de le dire, qui n’exige pas de partir.",
+      "normalized_claim": "Le système de griefs offre un moyen d'expression sans départ.",
       "support_ids": [
-        "SUP-2f8c94cb7c947196",
-        "SUP-93f5f2f2fda71b69",
-        "SUP-1e6214176efbee74"
+        "SUP-88ca4448a605caf9",
+        "SUP-1e6214176efbee74",
+        "SUP-1c71ba35ca252553",
+        "SUP-69cbdbc306b53e32"
       ]
     },
     {
       "claim_id": "C021",
       "locator": "sections[1].paragraphs[1]",
-      "start": 53,
-      "end": 154,
-      "claim_text": "Un tel système ouvre aux salariés mécontents une autre manière de le dire, qui n’exige pas de partir.",
-      "normalized_claim": "Le système offre une autre manière d'exprimer le mécontentement sans partir.",
+      "start": 155,
+      "end": 368,
+      "claim_text": "Freeman ajoute que la négociation collective des contrats devrait, elle aussi, réduire les départs, « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior »",
+      "normalized_claim": "La négociation collective devrait aussi réduire les départs.",
       "support_ids": [
-        "SUP-69cbdbc306b53e32",
-        "SUP-1f6216e89e7061b9",
-        "SUP-1c71ba35ca252553",
-        "SUP-2f8c94cb7c947196",
+        "SUP-4805438acee39f7c",
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C022",
       "locator": "sections[1].paragraphs[1]",
-      "start": 155,
-      "end": 350,
-      "claim_text": "Freeman ajoute que la négociation collective des contrats agit dans le même sens, « The regular process of collective negotiation of labor contracts can also be expected to reduce exit behavior »",
-      "normalized_claim": "Citation sur la négociation collective.",
+      "start": 371,
+      "end": 462,
+      "claim_text": "les salariés qui auraient démissionné y cherchent d’abord à obtenir les changements voulus.",
+      "normalized_claim": "Les salariés qui auraient démissionné cherchent d'abord à obtenir des changements.",
       "support_ids": [
-        "SUP-4805438acee39f7c",
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C023",
       "locator": "sections[1].paragraphs[1]",
-      "start": 353,
-      "end": 444,
-      "claim_text": "les salariés qui auraient démissionné y cherchent d’abord à obtenir les changements voulus.",
-      "normalized_claim": "Mécanisme de la négociation.",
-      "support_ids": [
-        "SUP-88ca4448a605caf9"
-      ]
-    },
-    {
-      "claim_id": "C024",
-      "locator": "sections[1].paragraphs[1]",
-      "start": 445,
-      "end": 645,
+      "start": 463,
+      "end": 663,
       "claim_text": "Un troisième dispositif, l’« industrial jurisprudence system », soumet les décisions prises sur le lieu de travail à des règles négociées, l’ancienneté par exemple, plutôt qu’au jugement du supérieur.",
-      "normalized_claim": "Industrial jurisprudence system.",
+      "normalized_claim": "Industrial jurisprudence system : règles négociées (ancienneté) plutôt que jugement du supérieur.",
       "support_ids": [
         "SUP-88ca4448a605caf9",
         "SUP-1a5b628853077a17",
         "SUP-3f8dd9fa8029a914"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[2]",
+      "start": 45,
+      "end": 202,
+      "claim_text": "Parce que, selon Freeman, l’essence de la prise de parole est de réduire le pouvoir de la direction et de créer dans l’entreprise un second canal d’autorité.",
+      "normalized_claim": "Selon Freeman, l'essence de la voix est de réduire le pouvoir managérial et créer un second canal d'autorité.",
+      "support_ids": [
+        "SUP-88ca4448a605caf9",
+        "SUP-b4b759f42059e392",
+        "SUP-1a5b628853077a17"
       ]
     },
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[2]",
-      "start": 45,
-      "end": 202,
-      "claim_text": "Parce que, selon Freeman, l’essence de la prise de parole est de réduire le pouvoir de la direction et de créer dans l’entreprise un second canal d’autorité.",
-      "normalized_claim": "Essence de la voix, p. 647.",
+      "start": 203,
+      "end": 375,
+      "claim_text": "Un tel changement du rapport de pouvoir s’obtient difficilement sans organisation indépendante, comme l’ont montré les plans de représentation du personnel des années 1920.",
+      "normalized_claim": "Ce changement exige une organisation indépendante, comme l'ont montré les plans de représentation des années 1920.",
       "support_ids": [
-        "SUP-88ca4448a605caf9",
-        "SUP-b4b759f42059e392",
-        "SUP-1a5b628853077a17",
-        "SUP-3f8dd9fa8029a914"
+        "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C026",
       "locator": "sections[1].paragraphs[2]",
-      "start": 203,
-      "end": 375,
-      "claim_text": "Un tel changement du rapport de pouvoir s’obtient difficilement sans organisation indépendante, comme l’ont montré les plans de représentation du personnel des années 1920.",
-      "normalized_claim": "Nécessité d'une organisation indépendante ; plans des années 1920.",
+      "start": 376,
+      "end": 546,
+      "claim_text": "Il souligne l’écart qui en résulte : une procédure de griefs figure dans 99 % des grandes conventions collectives américaines, contre 30 % des entreprises non syndiquées.",
+      "normalized_claim": "Procédure de griefs : 99 % des grandes conventions contre 30 % des entreprises non syndiquées.",
       "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C027",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 376,
-      "end": 410,
-      "claim_text": "Il souligne l’écart qui en résulte",
-      "normalized_claim": "L'écart syndiqué/non syndiqué découle de cette nécessité, et Freeman le souligne.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 32,
+      "end": 100,
+      "claim_text": "Les salariés syndiqués restent plus longtemps et démissionnent moins",
+      "normalized_claim": "Les syndiqués ont plus d'ancienneté et démissionnent moins.",
       "support_ids": [
-        "SUP-88ca4448a605caf9"
+        "SUP-88ca4448a605caf9",
+        "SUP-4805438acee39f7c",
+        "SUP-f8adcbfcdd14de49"
       ]
     },
     {
       "claim_id": "C028",
-      "locator": "sections[1].paragraphs[2]",
-      "start": 413,
-      "end": 546,
-      "claim_text": "une procédure de griefs figure dans 99 % des grandes conventions collectives américaines, contre 30 % des entreprises non syndiquées.",
-      "normalized_claim": "99 % contre 30 %.",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 103,
+      "end": 289,
+      "claim_text": "le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes », d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles.",
+      "normalized_claim": "Le résumé parle de significantly lower exit sur plusieurs grands fichiers.",
       "support_ids": [
+        "SUP-4805438acee39f7c",
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C029",
       "locator": "sections[2].paragraphs[0]",
-      "start": 32,
-      "end": 100,
-      "claim_text": "Les salariés syndiqués restent plus longtemps et démissionnent moins",
-      "normalized_claim": "Effet syndical sur ancienneté et démissions.",
+      "start": 290,
+      "end": 376,
+      "claim_text": "Ce constat, seul, n’établit rien, parce qu’une autre explication se présente aussitôt.",
+      "normalized_claim": "La corrélation seule n'établit pas l'effet de voix, une explication concurrente existe.",
       "support_ids": [
         "SUP-88ca4448a605caf9",
-        "SUP-4805438acee39f7c",
-        "SUP-f8adcbfcdd14de49"
+        "SUP-3f8dd9fa8029a914"
       ]
     },
     {
       "claim_id": "C030",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 103,
-      "end": 207,
-      "claim_text": "le résumé de l’article parle d’un « significantly lower exit for unionists in several large data tapes »",
-      "normalized_claim": "Citation du résumé.",
-      "support_ids": [
-        "SUP-4805438acee39f7c"
-      ]
-    },
-    {
-      "claim_id": "C031",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 209,
-      "end": 289,
-      "claim_text": "d’un écart net retrouvé dans plusieurs grands fichiers de données individuelles.",
-      "normalized_claim": "Paraphrase : écart dans plusieurs grands fichiers individuels.",
-      "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-88ca4448a605caf9",
-        "SUP-c0e2c3b400fd5cfe"
-      ]
-    },
-    {
-      "claim_id": "C032",
-      "locator": "sections[2].paragraphs[0]",
-      "start": 290,
-      "end": 376,
-      "claim_text": "Ce constat, seul, n’établit rien, parce qu’une autre explication se présente aussitôt.",
-      "normalized_claim": "L'écart brut ne suffit pas, une explication salariale concurrente existe.",
-      "support_ids": [
-        "SUP-88ca4448a605caf9",
-        "SUP-3f8dd9fa8029a914",
-        "SUP-1a5b628853077a17"
-      ]
-    },
-    {
-      "claim_id": "C033",
       "locator": "sections[2].paragraphs[1]",
       "start": 0,
       "end": 121,
       "claim_text": "Un syndicat peut retenir les salariés par ce qu’il obtient pour eux : salaires, avantages sociaux, conditions de travail.",
-      "normalized_claim": "Voies de monopole.",
+      "normalized_claim": "Le syndicat peut retenir par salaires, avantages, conditions.",
       "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
     },
     {
-      "claim_id": "C034",
+      "claim_id": "C031",
       "locator": "sections[2].paragraphs[1]",
       "start": 122,
       "end": 240,
       "claim_text": "Freeman appelle ces voies les « monopoly routes », par opposition aux « voice routes », seules en cause dans sa thèse.",
-      "normalized_claim": "Monopoly routes vs voice routes.",
+      "normalized_claim": "Monopoly routes vs voice routes, seules en cause dans la thèse.",
       "support_ids": [
+        "SUP-88ca4448a605caf9"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 241,
+      "end": 355,
+      "claim_text": "Les sections II et III, de la page 648 à la page 666, servent à tenir les premières fixes pour isoler les secondes",
+      "normalized_claim": "Sections II-III (p. 648-666) tiennent fixes les voies de monopole.",
+      "support_ids": [
+        "SUP-3f8dd9fa8029a914",
+        "SUP-1a5b628853077a17",
+        "SUP-88ca4448a605caf9"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 358,
+      "end": 438,
+      "claim_text": "comparer des salariés à rémunération comparable, et regarder si l’écart subsiste",
+      "normalized_claim": "Méthode : comparer à rémunération comparable.",
+      "support_ids": [
+        "SUP-88ca4448a605caf9",
+        "SUP-3f8dd9fa8029a914"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 440,
+      "end": 549,
+      "claim_text": "Il subsiste. À compensation tenue fixe, écrit Freeman page 666, « unionism raises tenure and reduces quits ».",
+      "normalized_claim": "À compensation fixe, p. 666, unionism raises tenure and reduces quits.",
+      "support_ids": [
+        "SUP-4805438acee39f7c",
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C035",
       "locator": "sections[2].paragraphs[1]",
-      "start": 241,
-      "end": 355,
-      "claim_text": "Les sections II et III, de la page 648 à la page 666, servent à tenir les premières fixes pour isoler les secondes",
-      "normalized_claim": "Rôle des sections II et III.",
+      "start": 550,
+      "end": 657,
+      "claim_text": "Il écarte aussi l’idée que les syndicats réuniraient simplement des travailleurs naturellement plus stables",
+      "normalized_claim": "Freeman écarte l'explication par sélection de travailleurs stables.",
       "support_ids": [
-        "SUP-1a5b628853077a17",
-        "SUP-3f8dd9fa8029a914",
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C036",
       "locator": "sections[2].paragraphs[1]",
-      "start": 358,
-      "end": 452,
-      "claim_text": "comparer des salariés à rémunération comparable, et regarder si l’écart subsiste. Il subsiste.",
-      "normalized_claim": "À rémunération tenue fixe, l'effet subsiste.",
+      "start": 660,
+      "end": 798,
+      "claim_text": "à salaire égal, un même individu est moins susceptible de démissionner dans un lieu de travail syndiqué que dans un lieu qui ne l’est pas.",
+      "normalized_claim": "À salaire égal, un même individu démissionne moins en lieu syndiqué.",
       "support_ids": [
-        "SUP-88ca4448a605caf9",
-        "SUP-4805438acee39f7c"
+        "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C037",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 453,
-      "end": 549,
-      "claim_text": "À compensation tenue fixe, écrit Freeman page 666, « unionism raises tenure and reduces quits ».",
-      "normalized_claim": "Citation p. 666.",
-      "support_ids": [
-        "SUP-4805438acee39f7c"
-      ]
-    },
-    {
-      "claim_id": "C038",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 550,
-      "end": 657,
-      "claim_text": "Il écarte aussi l’idée que les syndicats réuniraient simplement des travailleurs naturellement plus stables",
-      "normalized_claim": "Rejet de l'explication par sélection.",
-      "support_ids": [
-        "SUP-88ca4448a605caf9"
-      ]
-    },
-    {
-      "claim_id": "C039",
-      "locator": "sections[2].paragraphs[1]",
-      "start": 660,
-      "end": 798,
-      "claim_text": "à salaire égal, un même individu est moins susceptible de démissionner dans un lieu de travail syndiqué que dans un lieu qui ne l’est pas.",
-      "normalized_claim": "Paraphrase de la phrase p. 666 sur l'individu.",
-      "support_ids": [
-        "SUP-88ca4448a605caf9"
-      ]
-    },
-    {
-      "claim_id": "C040",
       "locator": "sections[3].paragraphs[0]",
       "start": 0,
       "end": 123,
       "claim_text": "Il manque pourtant quelque chose, et Freeman est le premier à le dire : il ne dispose d’aucune mesure directe de la parole.",
       "normalized_claim": "Freeman reconnaît l'absence de mesure directe de la voix.",
       "support_ids": [
-        "SUP-4805438acee39f7c",
         "SUP-88ca4448a605caf9",
-        "SUP-e5b891ffabafd5e4",
-        "SUP-9da10e5e3f239fe3",
+        "SUP-4805438acee39f7c",
         "SUP-f8adcbfcdd14de49"
       ]
     },
     {
-      "claim_id": "C041",
+      "claim_id": "C038",
       "locator": "sections[3].paragraphs[0]",
       "start": 124,
       "end": 245,
       "claim_text": "Dès la page 644, il prévient que séparer son effet des autres composantes du fait syndical est « exceedingly difficult ».",
-      "normalized_claim": "Exceedingly difficult, p. 644.",
+      "normalized_claim": "P. 644 : séparer l'effet de voix est exceedingly difficult.",
       "support_ids": [
         "SUP-e5b891ffabafd5e4",
         "SUP-9da10e5e3f239fe3"
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C039",
       "locator": "sections[3].paragraphs[0]",
       "start": 246,
-      "end": 297,
-      "claim_text": "La phrase qui ouvre la quatrième section, page 666,",
-      "normalized_claim": "Localisation : ouverture de la section IV, p. 666.",
+      "end": 508,
+      "claim_text": "La phrase qui ouvre la quatrième section, page 666, fixe donc la portée de tout ce qui précède : « the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis ».",
+      "normalized_claim": "Ouverture section IV p. 666 : interprétation par défaut.",
       "support_ids": [
+        "SUP-4805438acee39f7c",
+        "SUP-e5b891ffabafd5e4",
+        "SUP-9da10e5e3f239fe3",
+        "SUP-88ca4448a605caf9"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 509,
+      "end": 659,
+      "claim_text": "L’explication par la parole tient à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse.",
+      "normalized_claim": "Paraphrase française de la phrase p. 666.",
+      "support_ids": [
+        "SUP-e5b891ffabafd5e4",
+        "SUP-4805438acee39f7c"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 47,
+      "claim_text": "La nuance n’est pas une coquetterie de méthode.",
+      "normalized_claim": "La réserve de Freeman a une portée substantielle.",
+      "support_ids": [
+        "SUP-e5b891ffabafd5e4",
+        "SUP-4805438acee39f7c"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 48,
+      "end": 271,
+      "claim_text": "Elle implique qu’une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffirait qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui.",
+      "normalized_claim": "Une explication par défaut est exposée à un facteur omis.",
+      "support_ids": [
+        "SUP-e5b891ffabafd5e4",
         "SUP-4805438acee39f7c"
       ]
     },
     {
       "claim_id": "C043",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 298,
-      "end": 340,
-      "claim_text": "fixe donc la portée de tout ce qui précède",
-      "normalized_claim": "Cette phrase limite la portée de la démonstration.",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 127,
+      "claim_text": "L’article ne s’arrête pourtant pas à ce constat. Freeman produit ensuite trois éléments qui vont dans le sens de son hypothèse.",
+      "normalized_claim": "Après ce constat Freeman produit trois éléments favorables.",
       "support_ids": [
-        "SUP-e5b891ffabafd5e4",
-        "SUP-9da10e5e3f239fe3",
-        "SUP-4805438acee39f7c"
-      ]
-    },
-    {
-      "claim_id": "C044",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 343,
-      "end": 507,
-      "claim_text": "« the voice interpretation of the relation rests on the inability of other factors to explain the union effect, rather than on positive support for the hypothesis »",
-      "normalized_claim": "Citation p. 666.",
-      "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-e5b891ffabafd5e4",
-        "SUP-9da10e5e3f239fe3",
+        "SUP-56834f17dc485b6b",
         "SUP-88ca4448a605caf9"
       ]
     },
     {
-      "claim_id": "C045",
-      "locator": "sections[3].paragraphs[0]",
-      "start": 509,
-      "end": 659,
-      "claim_text": "L’explication par la parole tient à ce qu’aucun autre facteur ne parvient à rendre compte de l’écart, et non à un appui positif apporté à l’hypothèse.",
-      "normalized_claim": "Traduction de la citation.",
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 128,
+      "end": 288,
+      "claim_text": "Le premier rapporte les taux de démission au niveau de satisfaction déclaré : le syndicat abaisse davantage les départs des insatisfaits que ceux des satisfaits",
+      "normalized_claim": "Le syndicat abaisse davantage les démissions des insatisfaits.",
       "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-e5b891ffabafd5e4",
-        "SUP-9da10e5e3f239fe3",
+        "SUP-88ca4448a605caf9",
+        "SUP-56834f17dc485b6b",
+        "SUP-1a5b628853077a17",
+        "SUP-3f8dd9fa8029a914"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 290,
+      "end": 344,
+      "claim_text": "ce qu’on attend d’un canal fait pour l’insatisfaction.",
+      "normalized_claim": "Ce résultat est cohérent avec un canal de voix.",
+      "support_ids": [
         "SUP-88ca4448a605caf9"
       ]
     },
     {
       "claim_id": "C046",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 0,
-      "end": 47,
-      "claim_text": "La nuance n’est pas une coquetterie de méthode.",
-      "normalized_claim": "Évaluation : la réserve de Freeman a une portée réelle.",
-      "support_ids": [
-        "SUP-e5b891ffabafd5e4",
-        "SUP-9da10e5e3f239fe3"
-      ]
-    },
-    {
-      "claim_id": "C047",
-      "locator": "sections[3].paragraphs[1]",
-      "start": 48,
-      "end": 271,
-      "claim_text": "Elle implique qu’une explication qui occupe la place laissée vide par les autres reste exposée à la suivante : il suffirait qu’un facteur non mesuré, jusque-là ignoré, vienne combler cet espace pour qu’elle perde son appui.",
-      "normalized_claim": "Conséquence logique d'une démonstration par élimination.",
-      "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-e5b891ffabafd5e4",
-        "SUP-9da10e5e3f239fe3"
-      ]
-    },
-    {
-      "claim_id": "C048",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 0,
-      "end": 127,
-      "claim_text": "L’article ne s’arrête pourtant pas à ce constat. Freeman produit ensuite trois éléments qui vont dans le sens de son hypothèse.",
-      "normalized_claim": "Après p. 666, trois éléments à l'appui.",
-      "support_ids": [
-        "SUP-56834f17dc485b6b",
-        "SUP-88ca4448a605caf9"
-      ]
-    },
-    {
-      "claim_id": "C049",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 128,
-      "end": 288,
-      "claim_text": "Le premier rapporte les taux de démission au niveau de satisfaction déclaré : le syndicat abaisse davantage les départs des insatisfaits que ceux des satisfaits",
-      "normalized_claim": "Tableau VI : effet plus fort sur les insatisfaits.",
-      "support_ids": [
-        "SUP-56834f17dc485b6b",
-        "SUP-88ca4448a605caf9",
-        "SUP-1a5b628853077a17",
-        "SUP-3f8dd9fa8029a914"
-      ]
-    },
-    {
-      "claim_id": "C050",
-      "locator": "sections[4].paragraphs[0]",
-      "start": 290,
-      "end": 344,
-      "claim_text": "ce qu’on attend d’un canal fait pour l’insatisfaction.",
-      "normalized_claim": "Ce résultat est conforme à l'hypothèse de voix.",
-      "support_ids": [
-        "SUP-88ca4448a605caf9"
-      ]
-    },
-    {
-      "claim_id": "C051",
       "locator": "sections[4].paragraphs[0]",
       "start": 345,
       "end": 455,
       "claim_text": "Le deuxième rapporte l’ancienneté à l’étendue des clauses de griefs relevées par le Bureau of Labor Statistics",
-      "normalized_claim": "Tableau VII : clauses de griefs BLS et ancienneté.",
+      "normalized_claim": "Ancienneté vs étendue des clauses de griefs BLS.",
       "support_ids": [
         "SUP-56834f17dc485b6b",
         "SUP-88ca4448a605caf9",
-        "SUP-1a5b628853077a17",
         "SUP-3f8dd9fa8029a914"
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
       "start": 458,
       "end": 533,
       "claim_text": "plus ces clauses sont étendues, plus l’ancienneté des syndiqués est longue.",
-      "normalized_claim": "Sens de la relation.",
+      "normalized_claim": "Plus les clauses sont étendues, plus l'ancienneté est longue.",
+      "support_ids": [
+        "SUP-88ca4448a605caf9",
+        "SUP-3f8dd9fa8029a914"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 93,
+      "claim_text": "Le troisième est une comparaison empruntée à Sargent et Clawson, que Freeman reprend page 670",
+      "normalized_claim": "Comparaison Sargent et Clawson reprise p. 670.",
+      "support_ids": [
+        "SUP-4805438acee39f7c",
+        "SUP-56834f17dc485b6b"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 96,
+      "end": 230,
+      "claim_text": "dans les hôpitaux dotés d’une procédure écrite de griefs, le taux de séparation s’établit à 0,50, contre 0,81 là où elle n’existe pas.",
+      "normalized_claim": "Hôpitaux avec procédure écrite : 0,50 contre 0,81.",
+      "support_ids": [
+        "SUP-88ca4448a605caf9",
+        "SUP-4805438acee39f7c"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 231,
+      "end": 378,
+      "claim_text": "Ces trois éléments, Freeman les qualifie lui-même de « no more than suggestive », page 669, puis de « suggestive rather than definitive », page 670",
+      "normalized_claim": "Freeman les dit no more than suggestive (p. 669), suggestive rather than definitive (p. 670).",
+      "support_ids": [
+        "SUP-56834f17dc485b6b"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 381,
+      "end": 442,
+      "claim_text": "son étude, dit-il, « finds some support for the hypothesis ».",
+      "normalized_claim": "Freeman conclut finds some support for the hypothesis.",
+      "support_ids": [
+        "SUP-56834f17dc485b6b"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 29,
+      "end": 68,
+      "claim_text": "Ce que l’on compte, ce sont des départs",
+      "normalized_claim": "Les mesures portent sur des départs (démissions, séparations, ancienneté).",
       "support_ids": [
         "SUP-88ca4448a605caf9",
         "SUP-3f8dd9fa8029a914"
@@ -724,96 +708,36 @@
     },
     {
       "claim_id": "C053",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 0,
-      "end": 93,
-      "claim_text": "Le troisième est une comparaison empruntée à Sargent et Clawson, que Freeman reprend page 670",
-      "normalized_claim": "Sargent & Clawson, p. 670.",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 70,
+      "end": 286,
+      "claim_text": "et un départ qui n’a pas lieu ne dit pas pourquoi : dans un taux de démission, celui qui reste parce qu’il a obtenu gain de cause pèse exactement comme celui qui reste après avoir renoncé à demander quoi que ce soit.",
+      "normalized_claim": "Un taux de démission ne distingue pas le maintien par voix réussie du maintien par renoncement.",
       "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-56834f17dc485b6b"
+        "SUP-e5b891ffabafd5e4"
       ]
     },
     {
       "claim_id": "C054",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 96,
-      "end": 230,
-      "claim_text": "dans les hôpitaux dotés d’une procédure écrite de griefs, le taux de séparation s’établit à 0,50, contre 0,81 là où elle n’existe pas.",
-      "normalized_claim": "0,50 contre 0,81.",
-      "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-88ca4448a605caf9",
-        "SUP-1a5b628853077a17",
-        "SUP-3f8dd9fa8029a914"
-      ]
-    },
-    {
-      "claim_id": "C055",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 231,
-      "end": 295,
-      "claim_text": "Aucune de ces trois observations ne mesure directement la parole",
-      "normalized_claim": "Les trois indices ne mesurent pas directement la voix.",
-      "support_ids": [
-        "SUP-56834f17dc485b6b",
-        "SUP-88ca4448a605caf9",
-        "SUP-4805438acee39f7c"
-      ]
-    },
-    {
-      "claim_id": "C056",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 300,
-      "end": 427,
-      "claim_text": "Freeman les qualifie lui-même de « no more than suggestive », page 669, puis de « suggestive rather than definitive », page 670",
-      "normalized_claim": "Qualifications de Freeman.",
-      "support_ids": [
-        "SUP-56834f17dc485b6b"
-      ]
-    },
-    {
-      "claim_id": "C057",
-      "locator": "sections[4].paragraphs[1]",
-      "start": 430,
-      "end": 490,
-      "claim_text": "son étude, dit-il, « finds some support for the hypothesis »",
-      "normalized_claim": "Conclusion de Freeman.",
-      "support_ids": [
-        "SUP-56834f17dc485b6b"
-      ]
-    },
-    {
-      "claim_id": "C058",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 29,
-      "end": 68,
-      "claim_text": "Ce que l’on compte, ce sont des départs",
-      "normalized_claim": "Les mesures de Freeman portent sur les départs (démissions, séparations, ancienneté).",
-      "support_ids": [
-        "SUP-88ca4448a605caf9",
-        "SUP-3f8dd9fa8029a914"
-      ]
-    },
-    {
-      "claim_id": "C059",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 73,
-      "end": 286,
-      "claim_text": "un départ qui n’a pas lieu ne dit pas pourquoi : dans un taux de démission, celui qui reste parce qu’il a obtenu gain de cause pèse exactement comme celui qui reste après avoir renoncé à demander quoi que ce soit.",
-      "normalized_claim": "Limite dérivée : un taux de démission ne distingue pas les motifs du maintien.",
-      "support_ids": [
-        "SUP-4805438acee39f7c",
-        "SUP-88ca4448a605caf9"
-      ]
-    },
-    {
-      "claim_id": "C060",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 71,
       "claim_text": "Les autres réponses à l’insatisfaction ont d’ailleurs leurs défenseurs.",
-      "normalized_claim": "Des auteurs plaident pour les autres réponses.",
+      "normalized_claim": "D'autres réponses à l'insatisfaction sont défendues dans la littérature.",
+      "support_ids": [
+        "SUP-dbd07018e4e6c778",
+        "SUP-20ad32057ac52d2c",
+        "SUP-0dfb5609cc8321fd",
+        "SUP-f30dbc1b67184d23"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 72,
+      "end": 254,
+      "claim_text": "En 2009, Matthew Allen et Heinz-Josef Tüselmann demandent, dans Employee Relations, que les études empiriques fassent aussi leur place à la défection, à la loyauté et à la négligence",
+      "normalized_claim": "Allen et Tüselmann 2009 (Employee Relations) demandent d'inclure exit, loyalty, neglect.",
       "support_ids": [
         "SUP-dbd07018e4e6c778",
         "SUP-20ad32057ac52d2c",
@@ -821,52 +745,40 @@
       ]
     },
     {
-      "claim_id": "C061",
-      "locator": "sections[5].paragraphs[1]",
-      "start": 72,
-      "end": 254,
-      "claim_text": "En 2009, Matthew Allen et Heinz-Josef Tüselmann demandent, dans Employee Relations, que les études empiriques fassent aussi leur place à la défection, à la loyauté et à la négligence",
-      "normalized_claim": "Allen et Tüselmann 2009.",
-      "support_ids": [
-        "SUP-dbd07018e4e6c778",
-        "SUP-20ad32057ac52d2c"
-      ]
-    },
-    {
-      "claim_id": "C062",
+      "claim_id": "C056",
       "locator": "sections[5].paragraphs[1]",
       "start": 257,
       "end": 318,
       "claim_text": "ils discutent le triptyque de Hirschman et What Do Unions Do?",
-      "normalized_claim": "Ils discutent Hirschman et What Do Unions Do?",
+      "normalized_claim": "Ils discutent le triptyque de Hirschman et What Do Unions Do?.",
       "support_ids": [
         "SUP-0dfb5609cc8321fd",
         "SUP-f30dbc1b67184d23"
       ]
     },
     {
-      "claim_id": "C063",
+      "claim_id": "C057",
       "locator": "sections[5].paragraphs[1]",
       "start": 320,
       "end": 380,
       "claim_text": "le livre que Freeman a cosigné avec James L. Medoff en 1984.",
-      "normalized_claim": "Freeman & Medoff 1984.",
+      "normalized_claim": "What Do Unions Do? cosigné par Freeman et Medoff, 1984.",
       "support_ids": [
+        "SUP-ea74664af4271eef",
         "SUP-0dfb5609cc8321fd",
-        "SUP-f30dbc1b67184d23",
-        "SUP-ea74664af4271eef"
+        "SUP-f30dbc1b67184d23"
       ]
     },
     {
-      "claim_id": "C064",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[2]",
       "start": 0,
       "end": 150,
       "claim_text": "Ce que décrit Freeman est par ailleurs un dispositif situé : le syndicalisme américain de son temps, avec ses conventions collectives et ses arbitres.",
-      "normalized_claim": "Le dispositif décrit est celui du syndicalisme américain de 1980.",
+      "normalized_claim": "Le dispositif décrit est celui du syndicalisme américain de son temps.",
       "support_ids": [
         "SUP-88ca4448a605caf9",
-        "SUP-2f8c94cb7c947196"
+        "SUP-3f8dd9fa8029a914"
       ]
     }
   ]
