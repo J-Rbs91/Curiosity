@@ -114,3 +114,22 @@ texte, Allen et Tüselmann sans filiation).
   arbitres ») : appui SUP-88ca4448a605caf9 (99 % des grandes conventions collectives américaines).
 
 Le SHA a changé : le pack doit être reconstruit (retour à PREPARE). Aucune auto-validation.
+
+## Boucle 1 — correction après FACTCHECK_FAIL (loop0, 63/69, 6 échecs)
+
+Correction minimale, aucune affirmation ajoutée.
+
+- C001 (lead[0], UNSUPPORTED) : analogie du client qui change de magasin retirée ; reste « Il peut partir. »
+- C019 (S2.P1, UNSUPPORTED) : incise « à laquelle on pense d'abord quand on parle de syndicat » retirée.
+- C023 (S2.P2, TOO_STRONG) : la négation « ne rend pas les salariés contents » est retirée ; la phrase
+  devient « Un tel système ouvre aux salariés mécontents une autre manière de le dire, qui n'exige pas
+  de partir », au plus près de « offers dissatisfied workers … an alternative means of expressing
+  discontent » (p. 645, citation déjà présente dans le paragraphe précédent).
+- C062 (S6.P1, UNSUPPORTED) : phrase sur « un même écart » (parole contre silence résigné) retirée ;
+  le paragraphe garde la limite du non-départ, déjà soutenue.
+- C068, C069 (S6.P3, UNSUPPORTED) : les deux phrases sur la transposition et la « question qui se
+  transporte » sont retirées ; le paragraphe se réduit au constat d'un dispositif situé.
+
+Mots du texte lecteur (lead + titres + paragraphes, décompte par espaces) : 1368 → 1257 (−111).
+Le contrôle `npm run corpus:deepen -- --check --only=compromis-defection-prise-de-parole` passe
+(décompte du script : 1429 mots). Le SHA a changé : retour à PREPARE. Aucune auto-validation.

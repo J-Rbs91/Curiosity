@@ -105,3 +105,15 @@ n'est attribuable ; le chapô de la p. 3 ne se cite pas comme parole de Dubois
 
 Aucune validation propre n'est revendiquée ; le SHA a changé, le pack doit être reconstruit
 (PREPARE).
+
+## Boucle 1 — correction après FACTCHECK_FAIL (loop0, 75/78)
+
+Correction minimale, aucune affirmation nouvelle, aucun support ajouté.
+
+- **C001** (UNSUPPORTED, `lead[0]`) : phrase « Un bulletin de paie porte deux mentions… » retirée. La phrase suivante commence désormais par « Le classement d’un emploi vient d’un texte négocié… » (reprise de C002, sans le bulletin). Par cohérence, C005 « le lien entre les deux mentions était lâche » devient « le lien entre classement et paie était lâche » (portée inchangée, le référent « deux mentions » ayant disparu).
+- **C012** (TOO_STRONG, `sections[0].paragraphs[0]`) : portée rebornée à la restriction du support SUP-adb88b188d7fb949 — « La convention ne mentionne nulle part, comme critère de classification, le diplôme, l’ancienneté… ». Supprime la contradiction apparente avec la prime d’ancienneté citée juste après.
+- **C046** (TOO_STRONG, `sections[2].paragraphs[1]`) : phrase « L’effet est mesurable dans l’ordre même de la hiérarchie. » retirée ; le paragraphe s’ouvre sur la citation de Dubois (« peuvent percevoir… »), qui porte elle-même sa modalité.
+
+Mots du texte lecteur (lead + sections, titres compris, décompte par espaces) : 1396 → 1375 (−21).
+
+Contrôle mécanique : `npm run corpus:deepen -- --check --only=classification-negociee-et-salaire-effectif` → PASS (« 1 approfondissement(s) contrôlé(s), 1552 mots »). Le SHA du candidat a changé : reprendre à `PREPARE`.
