@@ -1,0 +1,43 @@
+{
+  "protocol_version": 2,
+  "concept_id": "compromis-defection-prise-de-parole",
+  "candidate_sha256": "462f1d987485be030e4b6e2cf5ee5acafc9ce3c23e1ff12102fc854ff375909f",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 69,
+  "supported": 63,
+  "failed": 6,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Les appuis fournis pour ce claim établissent que la sortie du salarié consiste en démissions (« consists primarily of quits »), mais ne portent pas l'analogie du client mécontent qui change de magasin. L'appui signalé $.hook ne concerne que le salarié et ne porterait pas cette analogie : pas de MAPPING_INCOMPLETE."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "UNSUPPORTED",
+      "reason": "Ce claim n'a reçu aucun appui. Il généralise ce que l'on pense d'abord du syndicat, et les appuis fournis n'établissent pas cette perception commune."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis établissent un autre moyen d'exprimer le mécontentement sans partir. Ils ne disent pas que le système « ne rend pas les salariés contents » : la phrase entière de la p. 645 ajoute « and possibly changing work conditions », ce qui laisse ouverte une amélioration de leur situation. La négation est plus forte que la source."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "UNSUPPORTED",
+      "reason": "Ce claim n'a reçu aucun appui. L'hypothèse d'un même écart produit par une résignation silencieuse est une critique propre au texte, et les appuis fournis pour ce claim ne la portent pas."
+    },
+    {
+      "claim_id": "C068",
+      "verdict": "UNSUPPORTED",
+      "reason": "Ce claim n'a reçu aucun appui. C'est un jugement épistémique sur la transposition à d'autres pays, et les appuis fournis pour ce claim ne le portent pas."
+    },
+    {
+      "claim_id": "C069",
+      "verdict": "UNSUPPORTED",
+      "reason": "Ce claim n'a reçu aucun appui. C'est une évaluation de ce qui se transpose. L'appui signalé ($.review.notes[6], « dommage ») ne partage qu'un mot d'usage et porte sur un autre sujet : pas de MAPPING_INCOMPLETE."
+    }
+  ]
+}
