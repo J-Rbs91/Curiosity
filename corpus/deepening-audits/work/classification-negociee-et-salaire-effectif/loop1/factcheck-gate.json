@@ -1,0 +1,18 @@
+{
+  "protocol_version": 2,
+  "concept_id": "classification-negociee-et-salaire-effectif",
+  "candidate_sha256": "4cb8d84cf309b49064da4278c3b76980c0a39ec3da7c623fce8def6703c257d8",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 68,
+  "supported": 67,
+  "failed": 1,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui fourni (SUP-adb88b188d7fb949) établit que, dans l'habillement, la classification figure dans les annexes de la convention collective de branche, objet de négociations entre partenaires sociaux. Le claim érige ce cas en règle générale pour le classement de tout emploi : exemple -> règle générale, portée que les appuis fournis pour ce claim n'autorisent pas."
+    }
+  ]
+}

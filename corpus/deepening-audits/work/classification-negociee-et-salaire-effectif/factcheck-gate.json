@@ -1,28 +1,18 @@
 {
   "protocol_version": 2,
   "concept_id": "classification-negociee-et-salaire-effectif",
-  "candidate_sha256": "7a33dede1c94fbb5702c6c09d2ec378696a2a739f5440eafa086d1c0f6bf71e3",
+  "candidate_sha256": "4cb8d84cf309b49064da4278c3b76980c0a39ec3da7c623fce8def6703c257d8",
   "verdict": "FACTCHECK_FAIL",
-  "claims": 78,
-  "supported": 75,
-  "failed": 3,
+  "claims": 68,
+  "supported": 67,
+  "failed": 1,
   "mapping_incomplete": [],
   "structural_errors": [],
   "failures": [
     {
       "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni pour ce claim ; l'affirmation générale sur le bulletin de paie et ses deux mentions n'est portée par aucun support résolu."
-    },
-    {
-      "claim_id": "C012",
       "verdict": "TOO_STRONG",
-      "reason": "SUP-adb88b188d7fb949 rapporte que « nulle part ne sont mentionnés des critères individuels de classification : ni le diplôme, ni l'ancienneté… » ; le même appui indique que la convention prévoit une prime d'ancienneté (note 5). Le claim supprime la restriction « comme critère de classification » et fait dire que la convention ne mentionne nulle part l'ancienneté : élargissement de portée."
-    },
-    {
-      "claim_id": "C046",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis (SUP-adb88b188d7fb949, SUP-ee66999baf1f5d77) rapportent que des ouvriers de catégories basses « peuvent percevoir » des salaires plus élevés : une possibilité observée, non une mesure de l'inversion de la hiérarchie. « L'effet est mesurable » durcit la modalité ; les chiffres fournis portent sur l'amplitude des écarts, pas sur l'ordre de la hiérarchie."
+      "reason": "L'appui fourni (SUP-adb88b188d7fb949) établit que, dans l'habillement, la classification figure dans les annexes de la convention collective de branche, objet de négociations entre partenaires sociaux. Le claim érige ce cas en règle générale pour le classement de tout emploi : exemple -> règle générale, portée que les appuis fournis pour ce claim n'autorisent pas."
     }
   ]
 }

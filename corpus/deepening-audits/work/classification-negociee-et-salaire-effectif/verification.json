@@ -1,396 +1,346 @@
 {
   "concept_id": "classification-negociee-et-salaire-effectif",
-  "candidate_sha256": "7a33dede1c94fbb5702c6c09d2ec378696a2a739f5440eafa086d1c0f6bf71e3",
+  "candidate_sha256": "4cb8d84cf309b49064da4278c3b76980c0a39ec3da7c623fce8def6703c257d8",
   "results": [
     {
       "claim_id": "C001",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni pour ce claim ; l'affirmation générale sur le bulletin de paie et ses deux mentions n'est portée par aucun support résolu."
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui fourni (SUP-adb88b188d7fb949) établit que, dans l'habillement, la classification figure dans les annexes de la convention collective de branche, objet de négociations entre partenaires sociaux. Le claim érige ce cas en règle générale pour le classement de tout emploi : exemple -> règle générale, portée que les appuis fournis pour ce claim n'autorisent pas."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : convention collective de branche négociée par les partenaires sociaux, hiérarchisation des postes (catégories A à K, de la moins à la plus qualifiée), salaire minimal garanti attaché à chaque coefficient."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : la convention opère une « hiérarchisation des postes de travail » et lie à chaque coefficient (catégories A à K) un salaire minimal garanti. Lu comme portant sur la convention de branche ; la portée générale du sujet est traitée en C001."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 nomme « le lien habituel qui s'établit entre la classification et le salaire (la première déterminant le second) » : le claim présente cette conclusion comme une opinion courante, ce que l'appui autorise."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : Dubois invite à « dépasser le lien habituel qui s'établit entre la classification et le salaire (la première déterminant le second) ». Le claim décrit cette lecture habituelle, présentée comme opinion courante et non comme fait."
     },
     {
       "claim_id": "C004",
       "verdict": "SUPPORTED",
-      "reason": "SUP-cdb26bc391faed3b : quatre entreprises, enquêtes de mai à juillet 1980 ; SUP-3a62712ff9751634 / SUP-3576be76da6e0332 : industrie de l'habillement (CETIH)."
+      "reason": "notes[0] (SUP-cdb26bc391faed3b) et reserves[1] : « Quatre entreprises, un établissement observé dans chacune, enquêtes de mai à juillet 1980 » ; branche habillement attestée par review.notes[4] et attribution.note."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : section « Classification et salaire : un lien assez lâche », « une certaine déconnection entre classification et salaire » ; SUP-21996bfd7b6d0782 concorde."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : section « Classification et salaire : un lien assez lâche », « une certaine déconnection entre classification et salaire » ; summary concordant. Constat situé dans les quatre entreprises, non érigé en loi."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "SUP-5eff21c227659d04 / SUP-3576be76da6e0332 : professeur de sociologie, chercheur au Groupe de sociologie du travail du CNRS."
+      "reason": "review.notes[2] et attribution.note : « professeur de sociologie à l'université de Lille III, est chercheur au Groupe de sociologie du travail du CNRS »."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 et SUP-e3dca5678bf20551 : emboîtement convention de branche, pratiques d'entreprise, salaire (rémunération des ouvrières)."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : article suivant la convention de branche, la pratique d'entreprise puis le salaire effectivement versé ; sources_ouvertes[0] confirme le parcours de l'argument."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 (convention, pratique d'entreprise, prime de rendement) et SUP-054cc0937dbc8f51 (« se séparent d'un cran à chaque niveau où l'on descend ») autorisent cette formulation."
+      "reason": "reserves[0] : l'entreprise réintroduit des critères d'individu et « le salaire effectivement versé s'en détache une troisième fois par la prime de rendement » ; reserves[2] : la règle et le salaire « se séparent d'un cran à chaque niveau »."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-1eecf7197577a9bd : la convention « exclut la prise en compte de l'individu »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « il s'agit d'une hiérarchisation des postes de travail et non des individus » ; « ce sont les postes de travail qui sont qualifiés ou non »."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « ce sont les postes de travail qui sont qualifiés ou non », « hiérarchisation des postes de travail et non des individus »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : citation exacte de la récapitulation p. 10, en corps de texte (et non du chapô, dont l'attribution est réservée par reserves[8]) ; review.notes[8] la recoupe."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 10 en corps de texte rapportée verbatim par SUP-adb88b188d7fb949 et SUP-1eecf7197577a9bd ; SUP-61a4b969669f12d7 confirme qu'elle est de Dubois (corps de texte, non chapô)."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « Nulle part ne sont mentionnés des critères individuels de classification : ni le diplôme, ni l'ancienneté, ni le comportement au travail [...], ni la compétence ou l'expérience professionnelle. »"
     },
     {
       "claim_id": "C012",
-      "verdict": "TOO_STRONG",
-      "reason": "SUP-adb88b188d7fb949 rapporte que « nulle part ne sont mentionnés des critères individuels de classification : ni le diplôme, ni l'ancienneté… » ; le même appui indique que la convention prévoit une prime d'ancienneté (note 5). Le claim supprime la restriction « comme critère de classification » et fait dire que la convention ne mentionne nulle part l'ancienneté : élargissement de portée."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : à propos de la note 5, « la règle négociée sépare donc elle-même ce qui classe et ce qui paie »."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : note 5, la prime d'ancienneté influe sur le salaire mais pas sur le coefficient ; « la règle négociée sépare donc elle-même ce qui classe et ce qui paie »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : la prime d'ancienneté prévue par la convention « influe donc sur le salaire », jusqu'à 15 % du salaire de base, « mais elle ne joue pas sur le coefficient de classification »."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : prime d'ancienneté prévue par la convention, jusqu'à 15 % du salaire de base."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : la convention classe les postes et non les individus, et l'ancienneté ne joue pas sur le coefficient ; deux occupantes d'un même poste relèvent donc du même rang conventionnel. Conséquence dérivée, non attribuée à l'auteur."
     },
     {
       "claim_id": "C015",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 rapporte ces deux fragments de la note 5 verbatim."
+      "reason": "attribution_note (SUP-e3dca5678bf20551) : « La distinction entre qualification de l'individu et qualification de l'emploi n'est pas de lui » ; review.notes[3] concordant."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence directe de SUP-adb88b188d7fb949 : classement par poste, l'ancienneté ne joue pas sur le coefficient."
+      "reason": "attribution_note et review.notes[3] : « il la présente comme un acquis » (« On peut opposer sommairement deux grands systèmes de qualification... »)."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "SUP-e3dca5678bf20551, SUP-c936bae88e45ea1b, SUP-3576be76da6e0332 : la distinction n'est pas de Dubois."
+      "reason": "attribution_note : « sa note 1 renvoie à un ouvrage du CEREQ de 1978 et à Robert Salais, 1976 » ; review.notes[3] et attribution.note détaillent ces références. Le claim ne prétend pas que la note se limite à elles."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Mêmes appuis : « il la présente comme un acquis »."
+      "reason": "notes[7], sources_ouvertes[2] (accès partial, première page) et review.notes[7] : première page de Salais ouverte, « Le terme de qualification recouvre deux notions : la qualification de l'individu d'une part, et celle de l'emploi d'autre part »."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "SUP-c936bae88e45ea1b / SUP-3576be76da6e0332 : note 1 renvoyant au CEREQ 1978 et à Salais, Économie et statistique, 1976 ; SUP-8150b6e4035d5533 (corrobore) confirme la référence."
+      "reason": "attribution_note : « Ce qui est de lui est l'emboîtement des trois niveaux, convention de branche, pratiques d'entreprise, salaire, et la déconnexion entre classification et salaire qui en résulte »."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "SUP-0d58526f159be174 (p. 3 ouverte en image), SUP-31d7a4c01aad1bd9, SUP-d212997e4714d370 : la première page pose les deux notions ; locator p. 3 corroboré."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : les entreprises « ne peuvent l'ignorer » qu'elles font travailler des personnes."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "SUP-e3dca5678bf20551 / SUP-c936bae88e45ea1b / SUP-3576be76da6e0332 : ce qui est de Dubois est l'emboîtement des trois niveaux et la déconnexion qui en résulte."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « deux ouvriers occupant le même poste de travail pourront ne pas être au même niveau de classification »."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : les entreprises « ne peuvent l'ignorer » qu'elles font travailler des personnes."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : la grille conventionnelle est une hiérarchisation des postes et non des individus ; reformulation dérivée fidèle."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « deux ouvriers occupant le même poste de travail pourront ne pas être au même niveau de classification »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) et notes[3] : « un minimum de carrière ouvrière, au moyen d'un circuit de postes de travail », postes d'accès pour les débutants, tout-venant, de promotion, de relégation."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "Dérivé de SUP-adb88b188d7fb949 : la grille conventionnelle ne hiérarchise que des postes."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : sur un même poste, une classification plus élevée peut être attribuée pour récompenser l'individu, « une classification liée à l'individu et non [...] au poste ». Interprétation dérivée, non attribuée à l'auteur."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-2c4f2343f3015066 : citation verbatim."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) et notes[3] : citation exacte ; la classification plus élevée « récompense » expérience, ancienneté ou comportement au travail (notes[3] le formule sans réserve)."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-2c4f2343f3015066 : postes d'accès pour les débutants, tout-venant, de promotion, de relégation."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : citation exacte de la récapitulation p. 10 ; review.notes[8] concordant."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "Interprétation qui suit de SUP-adb88b188d7fb949 / SUP-2c4f2343f3015066 : même grille, classification plus élevée sans changement de poste, liée à l'individu."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : convention = classement de postes, entreprise = mixte de critères de poste et d'individu ; conséquence dérivée fidèle, formulée « en partie »."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans SUP-adb88b188d7fb949 et SUP-2c4f2343f3015066."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : là où la grille est utilisée, « les écarts d'application sont considérables »."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "SUP-2c4f2343f3015066 : « récompense son expérience, son ancienneté ou son comportement au travail » ; SUP-adb88b188d7fb949 concorde."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : la proportion d'ouvriers non qualifiés « varie ainsi de 17,9 % (entreprise 3) à 74 % (entreprise 2) »."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "Citation p. 10 verbatim dans SUP-adb88b188d7fb949 / SUP-1eecf7197577a9bd / SUP-61a4b969669f12d7."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : écarts constatés « sans que l'organisation du travail explique le décalage »."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée de SUP-adb88b188d7fb949 (poste en convention, critères mixtes en entreprise), formulée comme lecture et non comme citation."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : citation exacte « On dirait donc que l'entreprise 3 compense ses bas salaires par une politique moins rigoureuse dans l'attribution des classifications »."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "Idem : convention classant des postes, entreprises mêlant critères de poste et d'individu (SUP-adb88b188d7fb949)."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « Cet exemple incite à dépasser le lien habituel [...] Dans ce cas, on pourrait faire l'hypothèse d'une large indépendance entre classification et salaire » ; modalité hypothétique conservée (notes[0], reserves[1])."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « les écarts d'application sont considérables »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « à chaque coefficient professionnel (catégories A à K) sont liés un salaire minimal garanti à l'embauche et un salaire minimal garanti après trois mois d'ancienneté »."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « varie ainsi de 17,9 % (entreprise 3) à 74 % (entreprise 2) »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « La qualification détermine donc le niveau plancher du salaire. » ; « Plancher, et non salaire »."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « sans que l'organisation du travail explique le décalage »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : les entreprises « peuvent mettre en oeuvre une politique salariale qui va au-delà de ces contraintes conventionnelles »."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans SUP-adb88b188d7fb949."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : payée au temps, l'entreprise garde un lien « assez strict » entre les deux échelles."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « Cet exemple incite… Dans ce cas, on pourrait faire l'hypothèse… » ; modalité hypothétique conservée (SUP-cdb26bc391faed3b, SUP-2cc86747b2a053de)."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : payée au rendement, « ce qui détermine le niveau de salaire de chacun ou du groupe, c'est conjointement la classification et le rendement »."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : le troisième niveau est celui du salaire."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) et reserves[4] : l'ouvrier payé au rendement fait attention à sa prime « au point d'en ignorer son coefficient de classification » ; modalité « peut » prudente."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : salaire minimal garanti à l'embauche et après trois mois d'ancienneté, catégories A à K."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « En 1978 [...] la rémunération de 45,2 % des ouvriers de l'habillement tient compte du rendement » ; notes[1] et reserves[1] concordants."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : « La qualification détermine donc le niveau plancher du salaire »."
+      "reason": "quotation.locator et review.notes[0] : la phrase p. 11 se poursuit après « déconnecter le système de salaire du système de classification » par la citation exacte reprise."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : les entreprises « peuvent mettre en oeuvre une politique salariale qui va au-delà »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : le salaire au rendement « contribue à ouvrir l'écart maximal de salaire », dans le même sens que la déconnexion."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : payée au temps, lien « assez strict »."
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) et notes[1] : écart conventionnel de 1 à 1,39 entre la catégorie la plus et la moins qualifiée ; de 1 à plus de 2 dans les entreprises observées."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : citation verbatim pour le paiement au rendement."
+      "reason": "notes[1] et reserves[1] : les valeurs « valent pour la branche et pour la date, et ne sont pas des ordres de grandeur généraux »."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-c735bea1024f30d3 : l'ouvrier fait attention à sa prime « au point d'en ignorer son coefficient de classification » ; modalité « peut » prudente."
+      "reason": "notes[4] : « La déconnexion a un effet en retour sur les conduites, qui montre qu'elle n'est pas seulement comptable ». Le signal (quotation.locator, terme « retourne ») porte sur la coupe de la citation, sans rapport avec ce claim."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-904913d98ee31d5b : 45,2 % en 1978."
+      "reason": "notes[4] et definition_de_lauteur (SUP-adb88b188d7fb949) : citation exacte, p. 11."
     },
     {
       "claim_id": "C046",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis (SUP-adb88b188d7fb949, SUP-ee66999baf1f5d77) rapportent que des ouvriers de catégories basses « peuvent percevoir » des salaires plus élevés : une possibilité observée, non une mesure de l'inversion de la hiérarchie. « L'effet est mesurable » durcit la modalité ; les chiffres fournis portent sur l'amplitude des écarts, pas sur l'ordre de la hiérarchie."
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur (SUP-adb88b188d7fb949) : « la classification la mieux cotée par la règle négociée peut être refusée par celles à qui elle est offerte, parce que le salaire dit autre chose qu'elle ». Présenté comme conséquence, non comme parole de l'auteur."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "SUP-ee66999baf1f5d77 et SUP-0155ae4a2f2606f2 donnent la phrase entière p. 11, dont la suite après la déconnexion est citée verbatim."
+      "reason": "sources_ouvertes[1], notes[6], reserves[9] : Saglio atteste un écart de même type entre salaires conventionnels négociés et salaires réels, pour 1945 et sur un autre matériau ; notes[2] et reserves[0] : le mécanisme n'est pas propre à l'habillement selon l'auteur."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 : le salaire au rendement « contribue à ouvrir l'écart maximal de salaire »."
+      "reason": "sources[1].label (full-text, corrobore) et sources_ouvertes[1] : article de Jean Saglio sur les arrêtés Parodi sur les salaires ; notes[6] : arrêtés Parodi de 1945."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-904913d98ee31d5b : écart conventionnel de 1 à 1,39."
+      "reason": "review.notes[6] et sources_ouvertes[1] : §7, citation exacte (texte intégral lu, corroboré)."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 / SUP-904913d98ee31d5b : de 1 à plus de 2 dans les entreprises observées."
+      "reason": "notes[6] et reserves[9] : « Son décrochage tient d'abord à l'inflation et au gel d'un salaire de référence, celui du manoeuvre de la métallurgie parisienne »."
     },
     {
       "claim_id": "C051",
       "verdict": "SUPPORTED",
-      "reason": "SUP-904913d98ee31d5b / SUP-2cc86747b2a053de : valeurs valables pour la branche et la date, pas des ordres de grandeur généraux."
+      "reason": "review.notes[6] et sources_ouvertes[1] : §7, « bon nombre d'ouvriers sont encore payés aux pièces ». Le signal (notes[2], terme « absent ») concerne l'encadré absent de la couche texte, sans rapport avec ce claim."
     },
     {
       "claim_id": "C052",
       "verdict": "SUPPORTED",
-      "reason": "SUP-2a88ffa533273db3 : « effet en retour sur les conduites, qui montre qu'elle n'est pas seulement comptable »."
+      "reason": "review.notes[6] : §68, citation exacte ; sources_ouvertes[1] concordant."
     },
     {
       "claim_id": "C053",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans SUP-2a88ffa533273db3 et SUP-adb88b188d7fb949."
+      "reason": "sources_ouvertes[1], notes[6], reserves[9] : citation exacte du §82, attribuée à Saglio."
     },
     {
       "claim_id": "C054",
       "verdict": "SUPPORTED",
-      "reason": "SUP-adb88b188d7fb949 tire exactement cette conséquence de la citation p. 11, au mode du possible (« peut être refusée »)."
+      "reason": "notes[6] et reserves[9] : « formule prudente qui propose une origine parmi d'autres »."
     },
     {
       "claim_id": "C055",
       "verdict": "SUPPORTED",
-      "reason": "SUP-68046c6e2cf6ebfd / SUP-ad5a9899191471f7 : Saglio atteste un décrochage entre salaires conventionnels négociés et salaires réels en 1945, sur un autre matériau ; SUP-6b1a649e8d86ceb5 : l'objet déclaré n'est pas l'habillement."
+      "reason": "notes[6] et reserves[9] : « Il ne cite pas Dubois et ne commente pas l'article de 1982 »."
     },
     {
       "claim_id": "C056",
       "verdict": "SUPPORTED",
-      "reason": "SUP-24d3f11adcb3b362 (corrobore) et SUP-68046c6e2cf6ebfd : Saglio, arrêtés Parodi, 1945."
+      "reason": "notes[6] et reserves[9] : « sur un autre matériau, les arrêtés Parodi de 1945, et pour une autre période »."
     },
     {
       "claim_id": "C057",
       "verdict": "SUPPORTED",
-      "reason": "SUP-00fa16508eeaddad cite §7 verbatim ; SUP-68046c6e2cf6ebfd (texte intégral lu) concorde."
+      "reason": "notes[6] et reserves[9] : « deux causes distinctes d'un même type d'écart, et il ne faut pas faire dire à Saglio qu'il valide le mécanisme de Dubois »."
     },
     {
       "claim_id": "C058",
       "verdict": "SUPPORTED",
-      "reason": "SUP-ad5a9899191471f7 / SUP-fff6440963c6b3e0 : décrochage dû d'abord à l'inflation et au gel du salaire du manoeuvre de la métallurgie parisienne."
+      "reason": "notes[2] et reserves[0] : l'encadré déclare que les quatre entreprises « ne peuvent prétendre être représentatives » ; reserves[1] : quatre entreprises, un établissement chacune."
     },
     {
       "claim_id": "C059",
       "verdict": "SUPPORTED",
-      "reason": "SUP-68046c6e2cf6ebfd / SUP-00fa16508eeaddad : paiement aux pièces (§7) et ouvriers payés au rendement (§68)."
+      "reason": "notes[0], reserves[1], reserves[6] : un établissement observé dans chaque entreprise."
     },
     {
       "claim_id": "C060",
       "verdict": "SUPPORTED",
-      "reason": "SUP-00fa16508eeaddad / SUP-68046c6e2cf6ebfd : citation verbatim §7."
+      "reason": "review.notes[4], attribution_note, attribution.note, reserves[6] : enquêtes financées par le ministère du Travail, avec la collaboration du CETIH."
     },
     {
       "claim_id": "C061",
       "verdict": "SUPPORTED",
-      "reason": "SUP-00fa16508eeaddad : « la tactique d'« exclure progressivement de la réglementation certaines formes de rémunération, notamment pour les ouvriers payés au rendement » » (§68)."
+      "reason": "notes[2] et reserves[0] : citation exacte de l'encadré de la p. 7, relu sur image."
     },
     {
       "claim_id": "C062",
       "verdict": "SUPPORTED",
-      "reason": "Citation verbatim §82 dans SUP-68046c6e2cf6ebfd, SUP-ad5a9899191471f7, SUP-fff6440963c6b3e0."
+      "reason": "notes[2] et reserves[0] : « En revanche, et c'est l'objet de cette étude, l'analyse de leurs pratiques permet d'éclairer et de mieux comprendre les liens qui peuvent exister entre formation, qualification et salaire »."
     },
     {
       "claim_id": "C063",
       "verdict": "SUPPORTED",
-      "reason": "SUP-ad5a9899191471f7 / SUP-fff6440963c6b3e0 : « formule prudente qui propose une origine parmi d'autres »."
+      "reason": "notes[0] et reserves[1] : « Dubois n'affirme pas une loi » ; reserves[0] : un mécanisme énoncé sur quatre entreprises ; summary validé « Sur quatre entreprises ». Le signal (definition_de_lauteur, terme « oeuvre ») ne vise que l'expression « mettre en oeuvre », sans matière manquante pour ce claim."
     },
     {
       "claim_id": "C064",
       "verdict": "SUPPORTED",
-      "reason": "SUP-ad5a9899191471f7 / SUP-fff6440963c6b3e0 : il ne cite pas Dubois et ne commente pas l'article de 1982."
+      "reason": "notes[11] et reserves[4] : hypothèse « soulevée par l'auteur et n'est pas tranchée par lui »."
     },
     {
       "claim_id": "C065",
       "verdict": "SUPPORTED",
-      "reason": "Mêmes appuis : autre matériau, autre période."
+      "reason": "review.notes[10] : « les ouvrières constituent 85 % des effectifs salariés du secteur (p. 3) » ; reserves[4] concordant."
     },
     {
       "claim_id": "C066",
       "verdict": "SUPPORTED",
-      "reason": "Mêmes appuis : « deux causes distinctes d'un même type d'écart »."
+      "reason": "notes[11] et reserves[4] : « les coupeurs sont encore en majorité des hommes »."
     },
     {
       "claim_id": "C067",
       "verdict": "SUPPORTED",
-      "reason": "Mêmes appuis : attestation indépendante, « il ne faut pas faire dire à Saglio qu'il valide le mécanisme de Dubois »."
+      "reason": "notes[11] et reserves[4] : citation exacte, p. 7."
     },
     {
       "claim_id": "C068",
       "verdict": "SUPPORTED",
-      "reason": "SUP-6b1a649e8d86ceb5 / SUP-ba4e0b9de46e54b3 : déclaration de non-représentativité dans l'encadré p. 7 ; SUP-2cc86747b2a053de : quatre entreprises, un établissement chacune."
-    },
-    {
-      "claim_id": "C069",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-cdb26bc391faed3b / SUP-2cc86747b2a053de / SUP-117d92dd4ad627c0 : un établissement observé par entreprise."
-    },
-    {
-      "claim_id": "C070",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-3a62712ff9751634 / SUP-e3dca5678bf20551 / SUP-3576be76da6e0332 : financement du ministère du Travail, collaboration du CETIH."
-    },
-    {
-      "claim_id": "C071",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim de l'encadré dans SUP-6b1a649e8d86ceb5 et SUP-ba4e0b9de46e54b3."
-    },
-    {
-      "claim_id": "C072",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans les mêmes appuis."
-    },
-    {
-      "claim_id": "C073",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-cdb26bc391faed3b / SUP-2cc86747b2a053de : « Dubois n'affirme pas une loi »."
-    },
-    {
-      "claim_id": "C074",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-2cc86747b2a053de / SUP-ba4e0b9de46e54b3 : mécanisme énoncé, quatre entreprises ; SUP-21996bfd7b6d0782 concorde."
-    },
-    {
-      "claim_id": "C075",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-64313c54d5bd5105 / SUP-c735bea1024f30d3 : hypothèse soulevée et non tranchée."
-    },
-    {
-      "claim_id": "C076",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-470c666aea18380a / SUP-c735bea1024f30d3 : ouvrières, 85 % des effectifs salariés du secteur."
-    },
-    {
-      "claim_id": "C077",
-      "verdict": "SUPPORTED",
-      "reason": "Citation verbatim dans SUP-64313c54d5bd5105 / SUP-c735bea1024f30d3 ; coupeurs majoritairement des hommes."
-    },
-    {
-      "claim_id": "C078",
-      "verdict": "SUPPORTED",
-      "reason": "SUP-64313c54d5bd5105 : « n'est pas tranchée par lui »."
+      "reason": "notes[11] et reserves[4] : Dubois « soulève l'hypothèse [...] il ne l'établit pas » ; « n'est pas tranchée par lui »."
     }
   ]
 }
