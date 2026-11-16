@@ -133,3 +133,13 @@ Correction minimale, aucune affirmation ajoutée.
 Mots du texte lecteur (lead + titres + paragraphes, décompte par espaces) : 1368 → 1257 (−111).
 Le contrôle `npm run corpus:deepen -- --check --only=compromis-defection-prise-de-parole` passe
 (décompte du script : 1429 mots). Le SHA a changé : retour à PREPARE. Aucune auto-validation.
+
+## Boucle 2 — correction après FACTCHECK_FAIL (loop1)
+
+Gate loop1 : FACTCHECK_FAIL, 62/64 soutenus. Correction minimale, aucune affirmation ajoutée.
+
+- **C022 (TOO_STRONG)**, `sections[1].paragraphs[1]` : « la négociation collective des contrats agit dans le même sens » transformait le « can be expected to » de Freeman en effet constaté. Remplacé par « devrait, elle aussi, réduire les départs », qui reprend la modalité d'attente théorique de la citation (SUP-4805438acee39f7c), laissée intacte.
+- **C055 (UNSUPPORTED)**, `sections[4].paragraphs[1]` : « Aucune de ces trois observations ne mesure directement la parole » retiré. L'absence de mesure directe est dite par le pack avant ces éléments, pas à propos de chacun, et SUP-88ca4448a605caf9 les présente au contraire comme des preuves directes recherchées. La phrase suivante devient « Ces trois éléments, Freeman les qualifie lui-même de … » pour que l'antécédent reste les trois éléments (C056, SUP-56834f17dc485b6b) et non les hôpitaux.
+
+Mots du texte lecteur (compteur de `corpus:deepen --check`) : 1429 → 1422 (−7).
+Check mécanique : `npm run corpus:deepen -- --check --only=compromis-defection-prise-de-parole` PASS. Le SHA candidat change : reprendre à PREPARE.

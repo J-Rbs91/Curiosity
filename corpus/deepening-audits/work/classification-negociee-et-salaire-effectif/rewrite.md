@@ -117,3 +117,13 @@ Correction minimale, aucune affirmation nouvelle, aucun support ajouté.
 Mots du texte lecteur (lead + sections, titres compris, décompte par espaces) : 1396 → 1375 (−21).
 
 Contrôle mécanique : `npm run corpus:deepen -- --check --only=classification-negociee-et-salaire-effectif` → PASS (« 1 approfondissement(s) contrôlé(s), 1552 mots »). Le SHA du candidat a changé : reprendre à `PREPARE`.
+
+## Boucle 2 — correction après FACTCHECK_FAIL (loop1, 67/68)
+
+Correction minimale, aucune affirmation nouvelle, aucun support ajouté.
+
+- **C001** (TOO_STRONG, `lead[0]`) : le support SUP-adb88b188d7fb949 n'établit le rattachement de la classification à la convention collective de branche négociée que pour l'habillement ; le claim en faisait une règle générale. Portée rebornée au cas documenté : « Le classement d’un emploi vient d’un texte négocié entre syndicats et employeurs pour toute une branche d’activité, » devient « Dans l’habillement, le classement d’un emploi vient d’un texte négocié entre syndicats et employeurs pour toute la branche, ». Le reste de la phrase est inchangé.
+
+Mots du texte lecteur (lead + sections, titres compris, décompte par espaces) : 1375 → 1376 (+1).
+
+Contrôle mécanique : `npm run corpus:deepen -- --check --only=classification-negociee-et-salaire-effectif` → PASS (« 1 approfondissement(s) contrôlé(s), 1553 mots »). Le SHA du candidat a changé : reprendre à `PREPARE`.
