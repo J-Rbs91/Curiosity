@@ -147,3 +147,21 @@ minimale, aucune autre phrase touchée, aucune affirmation nouvelle.
 Texte lecteur : 1676 → 1678 mots (+2, écart lexical des deux reformulations).
 `npm run corpus:deepen -- --check --only=controle-de-la-perception` : PASS.
 Le SHA est invalidé : reprendre à `PREPARE`. Aucune auto-validation.
+
+## Correction après FACTCHECK_FAIL (boucle 2/2)
+
+Mode : FACTCHECK_FIX. Un seul claim texte fautif, C033 (`TOO_STRONG`). Correction minimale par
+réattribution, aucune autre phrase touchée, aucune affirmation nouvelle.
+
+- **C033** (`sections[3].paragraphs[0]`) : « La théorie du contrôle des ingénieurs décrit une
+  boucle du point de vue d’un observateur extérieur. » → « Selon Powers, la théorie du contrôle
+  des ingénieurs comprend le contrôle du point de vue d’un observateur extérieur. » La
+  caractérisation est désormais attribuée à Powers, et le verbe suit le support (« understand
+  control from an outside observer's point of view, as in engineering control theory »,
+  SUP-726a338878992bfe, $.definition_de_lauteur) ; « décrit une boucle », que le support ne porte
+  pas, est retiré.
+- **C025** (`MAPPING_INCOMPLETE`) : relève du mapping, texte non touché.
+
+Texte lecteur : 1678 → 1680 mots (+2, réattribution).
+`npm run corpus:deepen -- --check --only=controle-de-la-perception` : PASS.
+Le SHA est invalidé : reprendre à `PREPARE`. Aucune auto-validation.
