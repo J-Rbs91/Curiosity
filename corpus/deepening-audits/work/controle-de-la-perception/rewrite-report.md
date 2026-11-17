@@ -128,3 +128,22 @@ dans le texte lecteur.
 cette réécriture, qui n'a lancé aucune installation. Fichier non touché.
 
 Toute modification invalide le SHA du pack : reprendre à `PREPARE`. Aucune auto-validation.
+
+## Correction après FACTCHECK_FAIL (boucle 1/2)
+
+Mode : FACTCHECK_FIX. Gate du SHA `d34749b9…938e` : 59/61 soutenus, deux `TOO_STRONG`. Correction
+minimale, aucune autre phrase touchée, aucune affirmation nouvelle.
+
+- **C008** (`sections[0].paragraphs[0]`) : « qu’il nomme sur l’exemple qu’il file le plus
+  volontiers, celui du conducteur » → « qu’il nomme sur un exemple dont il se sert abondamment,
+  celui du conducteur ». Le superlatif comparatif est retiré ; la nouvelle formulation reprend
+  « se sert abondamment du conducteur » ($.reserves[6]), déjà dans les supports mappés du claim
+  (SUP-726a338878992bfe, SUP-2896a9447f8bf230, SUP-dcd73d9d29227bde).
+- **C026** (`sections[2].paragraphs[0]`) : « courant dont la grandeur dépend de celles d’un
+  ensemble de stimulations sensorielles primaires » → « courant dont la grandeur est liée à celles
+  d’un ensemble… », rendu littéral de « is related to » (SUP-65143896f74a02fc) ; la dépendance
+  n'est plus affirmée.
+
+Texte lecteur : 1676 → 1678 mots (+2, écart lexical des deux reformulations).
+`npm run corpus:deepen -- --check --only=controle-de-la-perception` : PASS.
+Le SHA est invalidé : reprendre à `PREPARE`. Aucune auto-validation.
