@@ -1,23 +1,26 @@
 {
   "protocol_version": 2,
   "concept_id": "controle-de-la-perception",
-  "candidate_sha256": "d34749b9bef32e47a66092c165a025a4b155f59f5feb5bbf57491720b954938e",
-  "verdict": "FACTCHECK_FAIL",
-  "claims": 61,
-  "supported": 59,
-  "failed": 2,
-  "mapping_incomplete": [],
-  "structural_errors": [],
+  "candidate_sha256": "2e8c5e3a9c28d182885368ece68fda827d018c3a33b976e15b1bb6c8336136d8",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 64,
+  "supported": 62,
+  "failed": 1,
+  "mapping_incomplete": [
+    {
+      "claim_id": "C025",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Le claim n'a aucun appui fourni, et le signal nomme SUP-9bdd1bd97d6567ff, evidence:lecture.json, $.reserves[9], qui partage le terme 'impression', absent partout ailleurs dans le pack : une réserve du lecteur primaire portant ce terme, sur une carte dont le paragraphe oppose le sens courant de perception au sens de Powers, rend probable qu'elle devait être rattachée ici. Les appuis fournis pour ce claim (aucun) ne permettent pas de juger."
+    }
+  ],
+  "structural_errors": [
+    "C025: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
   "failures": [
     {
-      "claim_id": "C008",
+      "claim_id": "C033",
       "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis disent que Powers « se sert abondamment du conducteur » ($.reserves[6]) et « file lui-même » cet exemple ($.notes[5]) ; aucun ne dit que c'est l'exemple qu'il file « le plus volontiers ». Le superlatif comparatif excède les appuis."
-    },
-    {
-      "claim_id": "C026",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis citent « a neural current in a single fiber or bundle of redundant fibers which has a magnitude that is related to the magnitudes of some set of primary sensory-nerve stimulations » : « is related to » devient « dépend de », glissement d'une relation vers une dépendance que la citation n'énonce pas."
+      "reason": "Les appuis fournis (définition_de_lauteur) portent seulement que Powers caractérise ainsi l'ingénierie : « understand control from an outside observer's point of view, as in engineering control theory ». Le claim énonce cette caractérisation de la théorie des ingénieurs comme un fait, au nom du narrateur, sans l'attribuer à Powers."
     }
   ]
 }
