@@ -1,26 +1,12 @@
 {
   "protocol_version": 2,
   "concept_id": "controle-de-la-perception",
-  "candidate_sha256": "2e8c5e3a9c28d182885368ece68fda827d018c3a33b976e15b1bb6c8336136d8",
-  "verdict": "FACTCHECK_INVALID",
-  "claims": 64,
+  "candidate_sha256": "ac5290f96341d4c7920a1e7b69d384c9ff7d80b04c3410aa906b1e13abb0bf6c",
+  "verdict": "FACTCHECK_PASS",
+  "claims": 62,
   "supported": 62,
-  "failed": 1,
-  "mapping_incomplete": [
-    {
-      "claim_id": "C025",
-      "verdict": "MAPPING_INCOMPLETE",
-      "reason": "Le claim n'a aucun appui fourni, et le signal nomme SUP-9bdd1bd97d6567ff, evidence:lecture.json, $.reserves[9], qui partage le terme 'impression', absent partout ailleurs dans le pack : une réserve du lecteur primaire portant ce terme, sur une carte dont le paragraphe oppose le sens courant de perception au sens de Powers, rend probable qu'elle devait être rattachée ici. Les appuis fournis pour ce claim (aucun) ne permettent pas de juger."
-    }
-  ],
-  "structural_errors": [
-    "C025: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
-  ],
-  "failures": [
-    {
-      "claim_id": "C033",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis (définition_de_lauteur) portent seulement que Powers caractérise ainsi l'ingénierie : « understand control from an outside observer's point of view, as in engineering control theory ». Le claim énonce cette caractérisation de la théorie des ingénieurs comme un fait, au nom du narrateur, sans l'attribuer à Powers."
-    }
-  ]
+  "failed": 0,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": []
 }
