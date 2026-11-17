@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "controle-de-la-perception",
+  "candidate_sha256": "d34749b9bef32e47a66092c165a025a4b155f59f5feb5bbf57491720b954938e",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 61,
+  "supported": 59,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C008",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis disent que Powers « se sert abondamment du conducteur » ($.reserves[6]) et « file lui-même » cet exemple ($.notes[5]) ; aucun ne dit que c'est l'exemple qu'il file « le plus volontiers ». Le superlatif comparatif excède les appuis."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis citent « a neural current in a single fiber or bundle of redundant fibers which has a magnitude that is related to the magnitudes of some set of primary sensory-nerve stimulations » : « is related to » devient « dépend de », glissement d'une relation vers une dépendance que la citation n'énonce pas."
+    }
+  ]
+}
