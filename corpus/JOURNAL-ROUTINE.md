@@ -2975,3 +2975,12 @@ septième fois.
 - `classification-negociee-et-salaire-effectif` : REVISE, réécriture refusée au gate (3 évaluations, la dernière à 1 claim sur 72), texte d'origine restauré par son SHA de blob, trace `rewrite_rejected_factcheck`.
 - `comportement-contre-intuitif` : `BLOCKED_SOURCE`. Aucun dossier de preuve ; le texte attribue à Forrester des thèses que le pack ne finance pas. Débloque : un dossier de lecture de Forrester D-4468-1 ou D-4468-2.
 - File restante : 113 cartes stale (jamais auditées, protocole 3, ou refusées).
+
+## 2026-11-17 : audit de 3 approfondissements jamais audités
+
+- `conduite-economique` : REVISE, réécrit (-8 % de texte lecteur), `FACTCHECK_PASS` 59/59 au premier tour, `ACCEPT`.
+- `concevoir-pour-l-activite` : REVISE, réécrit (-21 %, retrait des passages sans support ; la divergence sur la conclusion de Béguin n'est pas tranchée et consignée dans `limits`), `FACTCHECK_PASS` 57/57, `ACCEPT`.
+- `controle-de-la-perception` : REVISE, réécrit (+2,8 %), deux boucles de correction (C008, C026, C033 TOO_STRONG) et un remapping sur appui nommé (C025), `FACTCHECK_PASS` 62/62, `ACCEPT`.
+- Aucun `BLOCKED_SOURCE`. Projection `deepenings.generated.ts` régénérée, idempotente.
+- File restante : 72 cartes jamais auditées, 31 en protocole 3, 8 refusées.
+- Anomalie : `npx tsc --noEmit` signale `PageProps`/`LayoutProps` introuvables (types Next générés absents du checkout), sans lien avec le corpus. `package-lock.json` modifié dans l'arbre avant la routine, volontairement non commité.

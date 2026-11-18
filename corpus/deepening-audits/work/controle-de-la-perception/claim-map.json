@@ -1,0 +1,813 @@
+{
+  "concept_id": "controle-de-la-perception",
+  "candidate_sha256": "ac5290f96341d4c7920a1e7b69d384c9ff7d80b04c3410aa906b1e13abb0bf6c",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 254,
+      "end": 379,
+      "claim_text": "Ce qui se répète dans cette scène n’est aucun des mouvements que l’on voit : c’est le niveau du café, qui reste sous le bord.",
+      "normalized_claim": "Dans la vignette, l invariant est un résultat perçu (niveau du café) et non les mouvements.",
+      "support_ids": [
+        "SUP-f64aca6caebf87ba",
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 380,
+      "end": 505,
+      "claim_text": "Décrire la scène par ses mouvements revient donc à énumérer tout ce qui change en laissant de côté la seule chose qui tienne.",
+      "normalized_claim": "Conséquence tirée de la vignette : décrire le comportement par les mouvements manque la variable maintenue.",
+      "support_ids": [
+        "SUP-f64aca6caebf87ba",
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 86,
+      "claim_text": "William T. Powers fait de ce qui tient, et non de ce qui bouge, l’objet de sa théorie.",
+      "normalized_claim": "Powers fait de la grandeur maintenue (et non des mouvements) l objet de sa théorie.",
+      "support_ids": [
+        "SUP-f64aca6caebf87ba",
+        "SUP-726a338878992bfe",
+        "SUP-a0ca2d4a468e8080",
+        "SUP-624c9b0efa36ef4e",
+        "SUP-da94da96efe85020"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 87,
+      "end": 263,
+      "claim_text": "Pour lui, l’organisme ne tient pas ses actions : il tient une grandeur qu’il perçoit, et ses actions changent autant qu’il le faut pour que cette grandeur, elle, ne change pas.",
+      "normalized_claim": "L organisme contrôle une perception, ses actions sont le moyen variable.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-f64aca6caebf87ba",
+        "SUP-a0ca2d4a468e8080",
+        "SUP-eac2532e1d459c5b"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 264,
+      "end": 315,
+      "claim_text": "Powers ne réserve pas ce mécanisme à l’être humain.",
+      "normalized_claim": "Powers étend le contrôle au-delà de l humain.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-2896a9447f8bf230"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 316,
+      "end": 367,
+      "claim_text": "Il y voit le principe le plus élémentaire du vivant",
+      "normalized_claim": "Control is the most basic principle of life.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 369,
+      "end": 442,
+      "claim_text": "à l’œuvre jusque dans la cellule et dans l’amibe qui étend un pseudopode.",
+      "normalized_claim": "Powers applique le contrôle à la cellule et à l amibe (pseudopode).",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-2896a9447f8bf230"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 73,
+      "claim_text": "Powers décompose ce mécanisme en trois pièces, qu’il nomme sur un exemple",
+      "normalized_claim": "Powers nomme trois pièces de la boucle sur un exemple.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 74,
+      "end": 123,
+      "claim_text": "dont il se sert abondamment, celui du conducteur.",
+      "normalized_claim": "L exemple du conducteur est abondamment employé par Powers.",
+      "support_ids": [
+        "SUP-2896a9447f8bf230",
+        "SUP-dcd73d9d29227bde",
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 124,
+      "end": 393,
+      "claim_text": "La première est la perception, et il précise laquelle : ce qui est tenu n’est ni la voiture ni la route, mais « the relationship of the car to the road as seen through the windshield », le rapport entre la voiture et la route tel qu’il apparaît à travers le pare-brise.",
+      "normalized_claim": "La perception contrôlée est le rapport voiture-route vu à travers le pare-brise (citation et traduction).",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-a0ca2d4a468e8080",
+        "SUP-dcd73d9d29227bde",
+        "SUP-2896a9447f8bf230"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 394,
+      "end": 481,
+      "claim_text": "La deuxième est une référence, c’est-à-dire une image de ce que ce rapport devrait être",
+      "normalized_claim": "Deuxième pièce : l image de référence.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 484,
+      "end": 595,
+      "claim_text": "Powers insiste sur son emplacement, elle est au-dedans et jamais au-dehors, et c’est cela qu’il appelle un but.",
+      "normalized_claim": "Goals are In Here, not Out There.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 596,
+      "end": 769,
+      "claim_text": "La troisième est l’écart entre les deux, auquel il donne la définition la plus courte possible : l’erreur n’est rien d’autre que la différence entre la référence et le réel.",
+      "normalized_claim": "Error just means the difference between reference and real.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 182,
+      "claim_text": "Une fois ces trois pièces posées, quelque chose devient inutile. Il n’y a pas à calculer d’avance de combien il faut tourner le volant, ni à établir un plan des mouvements à produire",
+      "normalized_claim": "La boucle dispense de calculer la quantité exacte et de planifier.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 185,
+      "end": 367,
+      "claim_text": "l’action se corrige en continu à mesure que l’écart change, et les corrections deviennent de plus en plus petites à mesure que l’écart diminue, jusqu’à ce qu’il n’y ait plus d’écart.",
+      "normalized_claim": "Ajustement continu, corrections décroissantes jusqu à erreur nulle.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 368,
+      "end": 435,
+      "claim_text": "Powers y insiste : pas de calculs compliqués, pas de planification.",
+      "normalized_claim": "No complex computations. No planning.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 100,
+      "claim_text": "Le même volant sert à Powers pour un point plus difficile, et c’est un vent de travers qui le porte.",
+      "normalized_claim": "Powers emploie l exemple du vent de travers.",
+      "support_ids": [
+        "SUP-2896a9447f8bf230",
+        "SUP-dcd73d9d29227bde"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 101,
+      "end": 228,
+      "claim_text": "Vue du dehors, la scène est limpide : une rafale pousse la voiture, le conducteur tourne le volant, la rafale a causé le geste.",
+      "normalized_claim": "Il semble que le conducteur réponde directement au vent.",
+      "support_ids": [
+        "SUP-2896a9447f8bf230"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 229,
+      "end": 332,
+      "claim_text": "Powers fait remarquer que le conducteur, dans une voiture fermée, n’a aucun moyen de percevoir ce vent.",
+      "normalized_claim": "Dans une voiture fermée, aucun moyen de détecter le vent.",
+      "support_ids": [
+        "SUP-2896a9447f8bf230",
+        "SUP-dcd73d9d29227bde"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 333,
+      "end": 456,
+      "claim_text": "Ce qu’il perçoit, ce sont des effets sur la voiture, et encore : des effets qu’il est pour l’essentiel en train d’empêcher.",
+      "normalized_claim": "Il ne perçoit que des effets sur la voiture qu il empêche pour l essentiel.",
+      "support_ids": [
+        "SUP-2896a9447f8bf230"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 65,
+      "claim_text": "L’ordre des causes que croit voir l’observateur est donc inversé.",
+      "normalized_claim": "L apparence causale est trompeuse / inversée.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-2896a9447f8bf230"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 66,
+      "end": 271,
+      "claim_text": "En apparence, les perturbations causent les actions ; en réalité, dit Powers, les actions empêchent les perturbations de modifier sensiblement ce dont l’organisme se soucie, les perceptions qu’il contrôle.",
+      "normalized_claim": "The appearance is that disturbances cause actions; real story...",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 272,
+      "end": 415,
+      "claim_text": "Il en donne la règle : à mesure que les perturbations vont et viennent, le comportement change de façon à produire des effets égaux et opposés.",
+      "normalized_claim": "As disturbances come and go, behavior changes to have equal and opposite effects.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 416,
+      "end": 517,
+      "claim_text": "Et quand c’est la référence qui varie, le comportement change pour que la perception varie avec elle.",
+      "normalized_claim": "As reference conditions vary, perceptions vary in a matching way.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 90,
+      "end": 204,
+      "claim_text": "Dans le chapitre de prémisses de Behavior: The Control of Perception, Powers lui donne un sens matériel et étroit.",
+      "normalized_claim": "Le chapitre 3 Premises définit la perception en termes matériels.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-25fd6f666dde6db2",
+        "SUP-65143896f74a02fc",
+        "SUP-69dbb9f7dc0dedc9",
+        "SUP-16c7d801c77dc0a5"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 205,
+      "end": 411,
+      "claim_text": "Il appelle perception, au sens large, l’ensemble des événements qui suivent une stimulation dans la partie du cerveau qui reçoit, depuis les récepteurs sensoriels jusqu’aux centres les plus élevés du cortex",
+      "normalized_claim": "Définition large de la perception (p. 34).",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 414,
+      "end": 595,
+      "claim_text": "et, au sens strict, un courant nerveux dans une fibre ou dans un faisceau de fibres, courant dont la grandeur est liée à celles d’un ensemble de stimulations sensorielles primaires.",
+      "normalized_claim": "Définition stricte : courant nerveux dont la grandeur dépend de stimulations primaires.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-65143896f74a02fc"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 596,
+      "end": 634,
+      "claim_text": "Une perception, ici, est une quantité.",
+      "normalized_claim": "Conséquence : la perception est une grandeur.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-65143896f74a02fc"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 226,
+      "claim_text": "Ce chapitre pose aussi ce que le cerveau n’est pas. Powers y écarte le modèle de l’ordinateur numérique, au motif qu’il n’existe dans le système nerveux aucune horloge qui ferait se succéder les changements d’état en bon ordre",
+      "normalized_claim": "Rejet du modèle numérique : pas d horloge dans le système nerveux.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-65143896f74a02fc"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 228,
+      "end": 347,
+      "claim_text": "et lui substitue un dispositif à grandeurs continues, qui additionne, amplifie, intègre et dérive des courants nerveux.",
+      "normalized_claim": "Cerveau calculateur analogique : sommateurs, amplificateurs, intégrateurs, dérivateurs.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-65143896f74a02fc"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 348,
+      "end": 619,
+      "claim_text": "Il en tire une conséquence qu’il assume : ces signaux perceptifs sont la réalité, pour autant que le cerveau fasse l’expérience d’une réalité, alors même qu’ils dépendent d’autre chose, une réalité extérieure supposée, qui n’est pas la même chose que la réalité éprouvée.",
+      "normalized_claim": "Résumé p. 39 : perceptual signals are reality as far as the brain experiences reality...",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 116,
+      "claim_text": "Selon Powers, la théorie du contrôle des ingénieurs comprend le contrôle du point de vue d’un observateur extérieur.",
+      "normalized_claim": "Engineering control theory : point de vue de l observateur extérieur.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 117,
+      "end": 318,
+      "claim_text": "Powers veut aussi saisir de quoi le contrôle a l’air pour celui qui contrôle, c’est-à-dire pour vous et pour moi, qui occupons chacun notre exemplaire de ce mécanisme et participons à le faire marcher.",
+      "normalized_claim": "How control appears to the controller, you and me...",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 319,
+      "end": 445,
+      "claim_text": "Le nom même de la théorie, Perceptual Control Theory, vient selon lui du rôle central que la perception joue dans le contrôle.",
+      "normalized_claim": "This is why the theory is called PCT.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 56,
+      "claim_text": "Il attend des choses différentes des deux points de vue.",
+      "normalized_claim": "Deux points de vue, deux attentes.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 57,
+      "end": 197,
+      "claim_text": "Du dehors, des modèles objectifs qui reproduisent sur ordinateur, avec une grande précision, quelques formes simples du comportement humain.",
+      "normalized_claim": "External point of view : objective models on a computer.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 198,
+      "end": 359,
+      "claim_text": "Du dedans, la possibilité de comprendre bien des aspects du comportement en voyant le contrôle comme un contrôle de la perception plutôt que d’un monde objectif.",
+      "normalized_claim": "Internal point of view : control of perception rather than of an objective world.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-d2140fd4454fc2ca",
+        "SUP-eac2532e1d459c5b"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 360,
+      "end": 516,
+      "claim_text": "Deux lignes plus haut, il borne lui-même sa prétention et prévient qu’il ne règle pas entièrement les énigmes que soulèvent la perception et le point de vue",
+      "normalized_claim": "I won t pretend these puzzles are completely solved (deux lignes plus haut).",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 519,
+      "end": 647,
+      "claim_text": "ce qu’il propose est sa meilleure tentative pour mettre de la cohérence entre le comportement observable et l’expérience privée.",
+      "normalized_claim": "My best try at bringing consistency...",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 57,
+      "claim_text": "Une boucle seule ne suffit pas à Powers, et il en empile.",
+      "normalized_claim": "La hiérarchie de boucles est une seconde thèse.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 58,
+      "end": 93,
+      "claim_text": "Dans son exposé de synthèse de 2009",
+      "normalized_claim": "PCT in 11 Steps est un texte de synthèse daté de 2009.",
+      "support_ids": [
+        "SUP-64dedb28a292aff7",
+        "SUP-21ad41839b9a59ca",
+        "SUP-be45c5b25ecd378f",
+        "SUP-ceebf2a49be2f447"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 95,
+      "end": 282,
+      "claim_text": "il pose que seuls les systèmes du premier niveau agissent directement sur l’environnement ; tous les autres agissent en ajustant les buts perceptifs des systèmes qui leur sont inférieurs.",
+      "normalized_claim": "Only first-level systems act on the environment directly...",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 283,
+      "end": 499,
+      "claim_text": "Un étage supérieur ne dit donc pas à l’étage au-dessous ce qu’il doit faire, il lui montre ce qu’il doit percevoir, en faisant varier continûment l’image de référence plutôt qu’en commandant des mouvements de volant.",
+      "normalized_claim": "The higher system is not telling the lower one what to do but showing it what to perceive.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 114,
+      "claim_text": "La phrase qui ferme l’exposé vaut pour tous les étages : « All control their own perceptions, not their actions. »",
+      "normalized_claim": "La formule finale de l étape 11 vaut pour tous les niveaux.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-a0ca2d4a468e8080"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 115,
+      "end": 176,
+      "claim_text": "Tous contrôlent leurs propres perceptions, pas leurs actions.",
+      "normalized_claim": "Traduction de la formule.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-a0ca2d4a468e8080",
+        "SUP-f64aca6caebf87ba"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 177,
+      "end": 449,
+      "claim_text": "On peut en tirer une remarque qui n’est pas de Powers : une consigne formulée en gestes à produire et une consigne formulée en résultat à percevoir ne demandent pas la même chose à qui la reçoit, et c’est la seconde qui correspond à ce que cette boucle est censée traiter.",
+      "normalized_claim": "Inférence de l auteur de la carte à partir de la thèse hiérarchique.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 88,
+      "claim_text": "Powers ne tait jamais sa parenté avec la cybernétique : il la discute pour s’en séparer.",
+      "normalized_claim": "Filiation cybernétique explicite et discutée.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 89,
+      "end": 268,
+      "claim_text": "Dans son chapitre de prémisses, il cite l’analyse des réseaux de neurones de McCulloch et l’analyse des séries temporelles stationnaires que Wiener donne dans Cybernetics, en 1948",
+      "normalized_claim": "Ch. 3 p. 21 : McCulloch, Wiener Cybernetics 1948.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 270,
+      "end": 492,
+      "claim_text": "pour leur opposer ce qu’il tient pour la principale difficulté : les théorèmes se sont multipliés, mais ces analyses exigent assez régulièrement, sur le système nerveux, des hypothèses contraires à ce que l’on sait de lui.",
+      "normalized_claim": "The main difficulty... contrary to known fact.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 110,
+      "claim_text": "Le reproche est plus net encore dans son texte de 2009, dont une section traite de la cybernétique en passant.",
+      "normalized_claim": "PCT in 11 Steps (2009), section Cybernetics en Passant.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-64dedb28a292aff7",
+        "SUP-21ad41839b9a59ca",
+        "SUP-be45c5b25ecd378f",
+        "SUP-ceebf2a49be2f447"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 111,
+      "end": 149,
+      "claim_text": "Powers y raconte la naissance du champ",
+      "normalized_claim": "Il raconte la naissance de la cybernétique.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 151,
+      "end": 344,
+      "claim_text": "puis dit ce qui lui a manqué : ses principaux fondateurs n’étaient pas des ingénieurs de l’asservissement, ils en ont appris juste assez pour bâtir leur pensée autour de la causalité circulaire",
+      "normalized_claim": "Main founders were not control-system engineers...",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 346,
+      "end": 497,
+      "claim_text": "et sont partis vers la communication, la théorie de l’information et, plus tard, l’intelligence artificielle, sans mener la transformation à son terme.",
+      "normalized_claim": "...failed to carry the transformation to its ultimate conclusion.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 498,
+      "end": 545,
+      "claim_text": "Il se rattache en revanche sans réserve à Ashby",
+      "normalized_claim": "Rattachement à Ashby.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 547,
+      "end": 712,
+      "claim_text": "et à l’ingénierie des asservissements des années 1920 et 1930, dont il dit qu’elle a découvert par accident comment fonctionnent les systèmes qui poursuivent un but.",
+      "normalized_claim": "Ingénierie 1920-1930, découverte par accident de how purposive systems work.",
+      "support_ids": [
+        "SUP-726a338878992bfe"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 0,
+      "end": 141,
+      "claim_text": "C’est pourtant pour la rejoindre, raconte-t-il, qu’il avait commencé à explorer les systèmes de contrôle avec R. K. Clark et R. L. MacFarland",
+      "normalized_claim": "Avec Clark et MacFarland, dans l idée de rejoindre la cybernétique.",
+      "support_ids": [
+        "SUP-ceebf2a49be2f447",
+        "SUP-81d7ddda7a055ec7",
+        "SUP-327d690caca2ea9d"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 144,
+      "end": 288,
+      "claim_text": "après leur premier article, en 1960, la psychologie et la cybernétique ont opposé à leurs avances un désintérêt général, et il a poursuivi seul.",
+      "normalized_claim": "Après l article de 1960, désintérêt général ; Powers continue seul.",
+      "support_ids": [
+        "SUP-ceebf2a49be2f447",
+        "SUP-81d7ddda7a055ec7",
+        "SUP-327d690caca2ea9d",
+        "SUP-be45c5b25ecd378f"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 289,
+      "end": 376,
+      "claim_text": "Son texte de 2009 se termine sur « A revolution, in progress », une révolution en cours",
+      "normalized_claim": "PCT in 11 Steps (2009) se termine sur A revolution, in progress.",
+      "support_ids": [
+        "SUP-726a338878992bfe",
+        "SUP-ceebf2a49be2f447",
+        "SUP-64dedb28a292aff7",
+        "SUP-21ad41839b9a59ca"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 381,
+      "end": 501,
+      "claim_text": "le recueil de 2016 où ses textes sont reproduits présente la théorie comme la troisième grande théorie de la psychologie",
+      "normalized_claim": "Sous-titre du recueil 2016 : Third Grand Theory in Psychology.",
+      "support_ids": [
+        "SUP-64dedb28a292aff7",
+        "SUP-21ad41839b9a59ca",
+        "SUP-a82bdd863bda1e15",
+        "SUP-327d690caca2ea9d",
+        "SUP-ceebf2a49be2f447",
+        "SUP-d3aafc3ec7246dd6",
+        "SUP-8b8b632de82f0b18"
+      ]
+    },
+    {
+      "claim_id": "C060",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 503,
+      "end": 582,
+      "claim_text": "formule que son éditeur rattache à un article de deux praticiens de la théorie.",
+      "normalized_claim": "Formule rattachée à Mansell et Marken 2015, praticiens de la PCT.",
+      "support_ids": [
+        "SUP-a82bdd863bda1e15",
+        "SUP-f21714509709aa21",
+        "SUP-ceebf2a49be2f447",
+        "SUP-327d690caca2ea9d",
+        "SUP-ed27a80deaa43f0e"
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 583,
+      "end": 676,
+      "claim_text": "C’est une position revendiquée par l’auteur et par ses proches, pas un état constaté du champ",
+      "normalized_claim": "Position de partisans, non état du champ.",
+      "support_ids": [
+        "SUP-327d690caca2ea9d",
+        "SUP-ceebf2a49be2f447",
+        "SUP-d3aafc3ec7246dd6",
+        "SUP-ed27a80deaa43f0e",
+        "SUP-a82bdd863bda1e15"
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 679,
+      "end": 774,
+      "claim_text": "pour savoir ce que la psychologie en a fait, il faudra lire d’autres auteurs que ses partisans.",
+      "normalized_claim": "La réception par la psychologie n est pas établie par le dossier ; sources indépendantes non lues.",
+      "support_ids": [
+        "SUP-ed27a80deaa43f0e",
+        "SUP-d3aafc3ec7246dd6",
+        "SUP-5f1e9ce0cb806024"
+      ]
+    }
+  ]
+}

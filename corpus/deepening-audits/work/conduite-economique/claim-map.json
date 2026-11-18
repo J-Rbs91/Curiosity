@@ -1,0 +1,748 @@
+{
+  "concept_id": "conduite-economique",
+  "candidate_sha256": "ebfb774d6da8945cbffdf075bfddb6b964085af7a7967e816f330a8eb7a9409f",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 418,
+      "end": 540,
+      "claim_text": "Le geste est le même dans les trois cas, et ce qui les sépare n’est pas dans les quelques secondes que l’image a retenues.",
+      "normalized_claim": "Le geste enregistré seul ne porte pas ce qui distingue les trois conduites possibles (conséquence tirée de la vignette).",
+      "support_ids": [
+        "SUP-bfb32f88ed394d31",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "start": 27,
+      "end": 143,
+      "claim_text": "Paul Albou en 1982, dans un article du Bulletin de psychologie consacré à la définition de la psychologie économique",
+      "normalized_claim": "Albou publie en 1982 dans le Bulletin de psychologie un article sur la définition de la psychologie économique.",
+      "support_ids": [
+        "SUP-3f764ff8a073c8e3",
+        "SUP-66e74c3fa69db500",
+        "SUP-1e1317d202c81bfa",
+        "SUP-d258b9dbc8daf8d5",
+        "SUP-82cdf97b81cd2cdd",
+        "SUP-798b956757882cd7"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "start": 145,
+      "end": 253,
+      "claim_text": "Il y réserve une sous-section entière à deux mots que le français distingue, le comportement et la conduite.",
+      "normalized_claim": "L article consacre une sous-section propre à la distinction conduite/comportement, deux mots que le français distingue.",
+      "support_ids": [
+        "SUP-e18f66303bb07ebc",
+        "SUP-9b45e0f942381913",
+        "SUP-1fe05e9bd4b411a3",
+        "SUP-82cdf97b81cd2cdd",
+        "SUP-798b956757882cd7",
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 254,
+      "end": 353,
+      "claim_text": "Ce n’est pas une querelle de vocabulaire : Albou traite ce fait de langue comme un fait de doctrine",
+      "normalized_claim": "Albou traite la distinction linguistique comme un enjeu doctrinal.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 355,
+      "end": 412,
+      "claim_text": "et de la réponse dépend ce que sa discipline doit étudier",
+      "normalized_claim": "La distinction détermine l objet de la psychologie économique.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-d5d351900e53d81a",
+        "SUP-3d2451f0877fd69a",
+        "SUP-bfb32f88ed394d31"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 39,
+      "claim_text": "Albou part d’une observation de langue.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 40,
+      "end": 135,
+      "claim_text": "Les économistes français, et même beaucoup de psychologues, parlent de comportement économique.",
+      "normalized_claim": "Albou attribue aux économistes français et à beaucoup de psychologues l usage de « comportement économique ».",
+      "support_ids": [
+        "SUP-82961a9ed3b87236",
+        "SUP-d57ba480c276ea42",
+        "SUP-0ea0bdb4b92c496d",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 136,
+      "end": 287,
+      "claim_text": "Lui écrit, page 201, que la psychologie économique « ne s’intéresse qu’aux « conduites économiques », c’est-à-dire à des comportements significatifs ».",
+      "normalized_claim": "Citation p. 201.",
+      "support_ids": [
+        "SUP-d5d351900e53d81a",
+        "SUP-3d2451f0877fd69a",
+        "SUP-aad137805fb9bde9",
+        "SUP-2d466748b634d365",
+        "SUP-82961a9ed3b87236"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 288,
+      "end": 398,
+      "claim_text": "La conduite n’est donc pas un autre objet que le comportement : c’est un comportement qui a une signification.",
+      "normalized_claim": "La conduite est un comportement significatif.",
+      "support_ids": [
+        "SUP-d5d351900e53d81a",
+        "SUP-3d2451f0877fd69a",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 399,
+      "end": 464,
+      "claim_text": "Ce qui justifie de la nommer à part tient, selon lui, à l’anglais",
+      "normalized_claim": "Albou fonde la distinction sur un contraste avec l anglais.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-216ae0170e5a5609",
+        "SUP-69a1b0383c8a6a1a"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 467,
+      "end": 558,
+      "claim_text": "le mot behavio(u)r « est un terme massif que connote deux idées que le français distingue »",
+      "normalized_claim": "Citation sur behavio(u)r.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 33,
+      "claim_text": "L’argument a pourtant une limite.",
+      "normalized_claim": "Le texte d Albou présente une limite sur l argument linguistique.",
+      "support_ids": [
+        "SUP-216ae0170e5a5609",
+        "SUP-69a1b0383c8a6a1a"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 34,
+      "end": 199,
+      "claim_text": "Les auteurs anglophones qu’Albou nomme, « de Katona à van Raaij », définissent la discipline comme the study of economic behavior sans trancher entre ces deux idées.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 200,
+      "end": 273,
+      "claim_text": "Mais il ne discute pas le fait que l’anglais dispose aussi du mot conduct",
+      "support_ids": [
+        "SUP-216ae0170e5a5609",
+        "SUP-69a1b0383c8a6a1a"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 275,
+      "end": 366,
+      "claim_text": "et il ne cite aucun auteur anglophone qui aurait fait la distinction dans sa propre langue.",
+      "support_ids": [
+        "SUP-216ae0170e5a5609",
+        "SUP-69a1b0383c8a6a1a"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 54,
+      "claim_text": "Ce qu’Albou refuse a un nom. Il vise les behavioristes",
+      "normalized_claim": "Albou nomme les behavioristes comme la position qu il refuse.",
+      "support_ids": [
+        "SUP-78dac375149ba806",
+        "SUP-be71057fc6e5a36e",
+        "SUP-bfb32f88ed394d31"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 56,
+      "end": 116,
+      "claim_text": "fidèles selon lui aux orientations de la psychologie animale",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-de5e3347756c945f"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 118,
+      "end": 230,
+      "claim_text": "qui ont proposé, « notamment avec Watson », d’enregistrer les faits « sans se préoccuper de leur signification »",
+      "support_ids": [
+        "SUP-78dac375149ba806",
+        "SUP-57246eed955c516c",
+        "SUP-be71057fc6e5a36e",
+        "SUP-de5e3347756c945f"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 232,
+      "end": 331,
+      "claim_text": "Son refus a pourtant une borne précise. Ce point de vue, il le juge compatible avec l’économie pure",
+      "normalized_claim": "Albou juge le point de vue behavioriste compatible avec l économie pure.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 334,
+      "end": 473,
+      "claim_text": "c’est sa propre discipline qui le rejette : « la Psychologie économique, telle que nous la concevons, ne saurait admettre ce point de vue »",
+      "support_ids": [
+        "SUP-d8429d35e6b0b601",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 475,
+      "end": 598,
+      "claim_text": "La thèse ne condamne donc pas l’enregistrement en général, elle dit de quoi la psychologie économique ne peut se contenter.",
+      "normalized_claim": "Conséquence interprétative : le refus porte sur la psychologie économique seulement.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-d8429d35e6b0b601"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 40,
+      "claim_text": "La cible n’est pas seulement historique.",
+      "normalized_claim": "Albou vise aussi un contemporain.",
+      "support_ids": [
+        "SUP-78dac375149ba806"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 41,
+      "end": 167,
+      "claim_text": "Dans sa note 13, Albou vise un contemporain, Katona, qui lui aurait déclaré en 1966 se vouloir exclusivement « fact finding ».",
+      "support_ids": [
+        "SUP-78dac375149ba806"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 75,
+      "claim_text": "Page 202, Albou raconte un apologue qui fait tenir sa thèse dans une image.",
+      "support_ids": [
+        "SUP-ce1779d076a3078e",
+        "SUP-6c6b88056078b189",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 76,
+      "end": 184,
+      "claim_text": "Un promeneur ramasse une perle sur une plage. A-t-il eu, à cet instant, une conduite économique ? Pas encore",
+      "normalized_claim": "Le promeneur qui ramasse la perle n a pas encore eu de conduite économique.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-ce1779d076a3078e"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 187,
+      "end": 210,
+      "claim_text": "tout dépend de la suite",
+      "normalized_claim": "Le caractère économique dépend des suites de l acte.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-de5e3347756c945f"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 212,
+      "end": 344,
+      "claim_text": "S’il dissout la perle dans du vinaigre pour l’absorber, sa conduite est gastronomique, et elle perd son statut économique potentiel.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-ce1779d076a3078e",
+        "SUP-6c6b88056078b189"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 345,
+      "end": 476,
+      "claim_text": "S’il la conserve comme réserve de valeur, ou l’échange contre d’autres biens, sa démarche antérieure revêt une vocation économique.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-ce1779d076a3078e",
+        "SUP-6c6b88056078b189"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 104,
+      "claim_text": "Le mot qui instruit est « antérieure » : c’est le geste de ramasser qui reçoit après coup son caractère.",
+      "normalized_claim": "Interprétation : le caractère économique est conféré rétroactivement au geste.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 105,
+      "end": 199,
+      "claim_text": "Le caractère économique ne se lit pas sur l’acte pris à part, mais sur ses suites observables.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-de5e3347756c945f"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 200,
+      "end": 268,
+      "claim_text": "Et le vinaigre ne supprime pas toute conduite, il en fait une autre.",
+      "normalized_claim": "La perle dissoute donne une conduite gastronomique, non une absence de conduite.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-ce1779d076a3078e"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 269,
+      "end": 383,
+      "claim_text": "Cela implique, pour la caméra du supermarché, qu’une part de ce qui manquait à l’image était la suite de la scène.",
+      "normalized_claim": "Conséquence dérivée appliquée à la vignette.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-de5e3347756c945f"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 59,
+      "end": 99,
+      "claim_text": "Albou donne trois traits de la conduite.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-57246eed955c516c"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 100,
+      "end": 239,
+      "claim_text": "Le premier est la situation : « la conduite économique ne peut être comprise isolément, sans référence à la situation », écrit-il page 201.",
+      "support_ids": [
+        "SUP-57246eed955c516c",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 240,
+      "end": 410,
+      "claim_text": "La personnalité elle-même, « système des conditions de la conduite », ne se ramène pas selon lui à un ensemble d’habitudes conçues comme chaînes de réflexes conditionnés.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 155,
+      "claim_text": "Le deuxième est la continuité. Organisée selon des structures, la conduite « s’inscrit dans un courant qui n’est pas nécessairement ni toujours conscient »",
+      "support_ids": [
+        "SUP-57246eed955c516c",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 157,
+      "end": 243,
+      "claim_text": "et c’est à ce caractère de continuité et de fluidité qu’elle doit d’être significative",
+      "support_ids": [
+        "SUP-57246eed955c516c",
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 245,
+      "end": 456,
+      "claim_text": "Albou en tire lui-même une conséquence pour la mesure : on peut y découper des unités ou en extraire des facteurs, mais ces segments n’ont pas d’existence propre et dépendent des instruments qui les déterminent.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 457,
+      "end": 599,
+      "claim_text": "On peut y ajouter une conséquence : puisque le courant n’est pas toujours conscient, interroger l’intéressé sur ses raisons ne règle pas tout.",
+      "normalized_claim": "Inférence propre au texte lecteur (non attribuée à Albou) tirée de la non-conscience du courant.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-57246eed955c516c"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 0,
+      "end": 103,
+      "claim_text": "Le troisième est le sens : « les conduites économiques ont un sens, elles veulent dire quelque chose ».",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 104,
+      "end": 214,
+      "claim_text": "Acheter, vendre, épargner, investir répondent à des motivations individuelles et à des aspirations collectives",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[2]",
+      "start": 216,
+      "end": 295,
+      "claim_text": "de sorte que ces conduites relèvent, selon Albou, d’une sémiologie généralisée.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e",
+        "SUP-de5e3347756c945f"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 57,
+      "claim_text": "Albou ne présente pas la notion de conduite comme sienne.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 58,
+      "end": 123,
+      "claim_text": "Il en emprunte la définition à Daniel Lagache et la cite page 202",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 126,
+      "end": 348,
+      "claim_text": "c’est « un ensemble d’opérations matérielles et symboliques par lesquelles un organisme en situation tend à réaliser ses possibilités ou à réduire les tensions qui, en compromettant son intégrité, le mettent en mouvement »",
+      "normalized_claim": "Citation de Lagache par Albou.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 51,
+      "end": 142,
+      "claim_text": "Les opérations sont « matérielles et symboliques » : les gestes comptent, les signes aussi.",
+      "normalized_claim": "Lecture de la définition de Lagache.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 143,
+      "end": 230,
+      "claim_text": "L’organisme est dit « en situation » : le premier trait figure dans la définition même.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4",
+        "SUP-57246eed955c516c"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 231,
+      "end": 339,
+      "claim_text": "Et la conduite est orientée, elle tend vers quelque chose, réaliser des possibilités ou réduire une tension.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 0,
+      "end": 40,
+      "claim_text": "Ces pages n’ont rien d’un état de l’art.",
+      "support_ids": [
+        "SUP-57246eed955c516c"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 41,
+      "end": 110,
+      "claim_text": "Albou parle à la première personne, il nomme la position qu’il écarte",
+      "support_ids": [
+        "SUP-d8429d35e6b0b601",
+        "SUP-57246eed955c516c",
+        "SUP-78dac375149ba806"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 112,
+      "end": 336,
+      "claim_text": "et il raconte la résistance qu’il a rencontrée : « La distinction est d’importance, si même elle n’a pas toujours été comprise », écrit-il, en renvoyant aux réunions internationales où il avait eu l’occasion de la présenter.",
+      "support_ids": [
+        "SUP-d8429d35e6b0b601",
+        "SUP-0c9cec40b65b866a",
+        "SUP-1e7c3edd9e7267a6"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 337,
+      "end": 430,
+      "claim_text": "Il revendique aussi, page 199, l’antériorité de ses éléments sur ceux de Pierre-Louis Reynaud",
+      "support_ids": [
+        "SUP-86cde1fe959e93c5"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[5].paragraphs[0]",
+      "start": 432,
+      "end": 516,
+      "claim_text": "qui les aurait repris en 1974, écrit-il page 204, « parfois sans mention d’origine »",
+      "support_ids": [
+        "SUP-86cde1fe959e93c5"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 0,
+      "end": 19,
+      "claim_text": "Il date sa formule.",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 20,
+      "end": 223,
+      "claim_text": "Dès 1974, dans un ouvrage collectif publié par les Presses Universitaires de France, « nous étions convenus », écrit-il, de définir la discipline comme « l’étude scientifique des conduites économiques ».",
+      "support_ids": [
+        "SUP-f10d8d7a4270cfb4"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 224,
+      "end": 409,
+      "claim_text": "Lors d’une table ronde tenue à Paris le 30 septembre 1980, l’Association française de psychologie économique « a fortement souligné la nécessité de ne pas confondre ces deux concepts ».",
+      "support_ids": [
+        "SUP-d8429d35e6b0b601",
+        "SUP-0c9cec40b65b866a",
+        "SUP-1e7c3edd9e7267a6"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[5].paragraphs[1]",
+      "start": 410,
+      "end": 536,
+      "claim_text": "La section de l’article qui porte la distinction s’intitule « b) la Psychologie économique étudie les conduites économiques. »",
+      "support_ids": [
+        "SUP-e18f66303bb07ebc",
+        "SUP-1fe05e9bd4b411a3"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 0,
+      "end": 137,
+      "claim_text": "Albou en attend davantage qu’un partage de mots. La conduite économique résulte, pour Albou, de l’intégration des conduites particulières",
+      "normalized_claim": "Albou attache une portée théorique à la distinction : la conduite économique intègre les conduites particulières.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "locator": "sections[5].paragraphs[2]",
+      "start": 139,
+      "end": 311,
+      "claim_text": "et c’est ce qui permet, dit-il page 202, de mieux saisir « la rationalité ou l’irrationalité des procédures » qu’adoptent les agents, une fois tenu compte de leurs projets.",
+      "support_ids": [
+        "SUP-be71057fc6e5a36e"
+      ]
+    }
+  ]
+}
