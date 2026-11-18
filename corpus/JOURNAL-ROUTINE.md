@@ -2975,3 +2975,11 @@ septième fois.
 - `classification-negociee-et-salaire-effectif` : REVISE, réécriture refusée au gate (3 évaluations, la dernière à 1 claim sur 72), texte d'origine restauré par son SHA de blob, trace `rewrite_rejected_factcheck`.
 - `comportement-contre-intuitif` : `BLOCKED_SOURCE`. Aucun dossier de preuve ; le texte attribue à Forrester des thèses que le pack ne finance pas. Débloque : un dossier de lecture de Forrester D-4468-1 ou D-4468-2.
 - File restante : 113 cartes stale (jamais auditées, protocole 3, ou refusées).
+
+## 2026-11-18 : audit de 3 approfondissements jamais audités
+
+- `concevoir-pour-l-activite` : REWRITE, réécrit (−14 %), `FACTCHECK_PASS` 59/59 au troisième tour (C008 puis C022 corrigés), `ACCEPT`.
+- `controle-de-la-perception` : REVISE, réécrit (+5,5 %), `FACTCHECK_PASS` 61/61 au deuxième tour (C034 corrigé), `ACCEPT`.
+- `conduite-economique` : REVISE, réécriture refusée au gate (57/60, 54/57, 60/61 ; dernier refus C052), texte d'origine restauré par son SHA de blob, trace `rewrite_rejected_factcheck`. Le texte restauré n'a pas lui-même été fact-checké.
+- Anomalies : `package-lock.json` modifié par le hook d'installation (non commité) ; scripts du répertoire de travail écrasés entre agents parallèles (aucun effet constaté sur les textes) ; serveur MCP `documentary` non connecté (aucune acquisition de source nouvelle).
+- File restante : environ 111 cartes stale.

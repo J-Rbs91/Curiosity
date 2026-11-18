@@ -1,0 +1,28 @@
+{
+  "protocol_version": 2,
+  "concept_id": "conduite-economique",
+  "candidate_sha256": "b4f0ffaa25aefd6331a557bcb1cc1dc856fc0b607dfb8c0b18670196aea30ba9",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 57,
+  "supported": 54,
+  "failed": 3,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C001",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim. Le texte du claim ne marque pas lui-même son caractère stipulé (« Le film » est présenté au défini, comme un objet donné) et il porte une thèse conceptuelle — l'enregistrement ne dit pas ce qui s'est passé — que les appuis fournis pour ce claim (aucun) n'autorisent. Dans le doute sur le statut purement hypothétique, refus."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim. « ce qui les sépare ne se voit pas sur l'image » est une thèse sur la différence entre geste et signification, et les appuis fournis pour ce claim (aucun) ne l'autorisent ; le caractère purement stipulé de la scène n'est pas établi par le texte du claim."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "TOO_STRONG",
+      "reason": "Le seul appui fourni pour ce claim, notes[10], rapporte que Katona « lui aurait declare » en 1966 se vouloir « fact finding » : témoignage indirect au conditionnel, rapporté par Albou. Le claim pose en voix narrative, comme fait établi, que « le programme adverse existait de son temps sous une forme très nette » : glissement de certitude (ouï-dire rapporté -> fait) et d'intensité (« très nette »), et l'appui fourni ne dit pas que Katona incarne le programme behavioriste, seulement que la note le vise."
+    }
+  ]
+}

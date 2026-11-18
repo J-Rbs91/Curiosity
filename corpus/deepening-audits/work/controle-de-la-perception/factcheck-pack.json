@@ -1,0 +1,901 @@
+{
+  "protocol_version": 2,
+  "concept_id": "controle-de-la-perception",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "262e2096a022f0713060a23e2247d99a008767c777fbb4bd4b47e304094ee8a0",
+  "validated_sha256": "863f542f47427dca82178b1d734957eef14d7aa2a1693af87b74eac00fd25803",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "e52790d17d91af67dfc2289d7c05100305e437590ffeebd163a8571df6c3dc9e"
+    }
+  ],
+  "dossier_declare": {
+    "declare": "corpus/evidence/controle-de-la-perception/lecture.json",
+    "statut": "conventionnel",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "partial",
+        "label": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control », p. 17-26.",
+        "cles": [
+          "isbn:9780964712157",
+          "url:livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "partial",
+        "label": "William T. Powers, Behavior: The Control of Perception, 2e éd., Bloomfield (NJ), Benchmark Publications, 2005 (1re éd. 1973, Aldine Publishing Co., Chicago), chapitre 3 « Premises ».",
+        "cles": [
+          "isbn:9780964712171",
+          "url:livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "full-text",
+        "label": "Dag Forssell (dir.), Perceptual Control Theory: An Overview of the Third Grand Theory in Psychology, Menlo Park (CA), Living Control Systems Publishing, 2016. Contient « PCT in 11 Steps », de W. T. Powers, 2009.",
+        "cles": [
+          "isbn:9781938090127",
+          "url:livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[3]",
+        "declare": "metadata-only",
+        "label": "William T. Powers, « Quantitative analysis of purposive systems: Some spadework at the foundations of scientific psychology », Psychological Review, 85(5), 1978, p. 417-435.",
+        "cles": [
+          "doi:10.1037/0033-295x.85.5.417",
+          "url:doi.org/10.1037/0033-295x.85.5.417"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 4,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons deux personnes qui traversent la même pièce en portant une tasse pleine. Aucune ne pose les pieds aux mêmes endroits, aucune ne tient le bras de la même façon, et si l’on demandait à l’une de recommencer, elle ne referait pas les mêmes gestes. Ce qui se répète dans cette scène n’est aucun des mouvements que l’on voit : c’est le niveau du café, qui reste sous le bord. Décrire la scène par ses mouvements revient donc à énumérer tout ce qui change en laissant de côté la seule chose qui tienne."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "William T. Powers appelle contrôle le processus qui consiste à agir sur le monde que l’on perçoit pour le rendre tel qu’on le veut, et l’y maintenir. Ses exemples : se tenir debout, marcher, conduire une voiture, faire des œufs brouillés, chanter un air. Le comportement, pour lui, est le moyen ajustable par lequel un organisme maintient ses perceptions conformes à des références : quand une perturbation survient, il change pour produire des effets égaux et opposés. Et Powers ne réserve pas ce mécanisme à l’être humain : il y voit le principe le plus élémentaire du vivant, jusqu’à la cellule et à l’amibe qui étend un pseudopode."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Une perception, une référence, un écart",
+      "text": "Powers décompose ce mécanisme en trois pièces, qu’il nomme sur un exemple dont il se sert abondamment, celui du conducteur. La première est la perception, et il précise laquelle : ce qui est tenu n’est ni la voiture ni la route, mais « the relationship of the car to the road as seen through the windshield », le rapport entre la voiture et la route tel qu’il apparaît à travers le pare-brise. La deuxième est une référence, c’est-à-dire une image de ce que ce rapport devrait être ; Powers insiste sur son emplacement, elle est au-dedans et jamais au-dehors, et c’est cela qu’il appelle un but. La troisième est l’écart entre les deux, qu’il définit ainsi : l’erreur n’est rien d’autre que la différence entre la référence et le réel."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Une perception, une référence, un écart",
+      "text": "Une fois ces trois pièces posées, quelque chose devient inutile. Il n’y a pas à calculer d’avance de combien il faut tourner le volant, ni à établir un plan des mouvements à produire : l’écart se voit en continu, l’action se corrige en continu, et les corrections deviennent de plus en plus petites à mesure que l’écart diminue, jusqu’à ce qu’il n’y ait plus d’écart. Powers le résume ainsi : pas de calculs complexes, pas de planification."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Le vent que le conducteur ne sent pas",
+      "text": "Le même volant sert à Powers pour un point plus difficile, et c’est un vent de travers qui le porte. Vue du dehors, la scène est limpide : une rafale pousse la voiture, le conducteur tourne le volant, la rafale a causé le geste. Powers fait remarquer que le conducteur, dans une voiture fermée, n’a aucun moyen de percevoir ce vent. Ce qu’il perçoit, ce sont des effets sur la voiture, et encore : des effets qu’il est, pour l’essentiel, en train d’empêcher."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Le vent que le conducteur ne sent pas",
+      "text": "L’ordre des causes que croit voir l’observateur est donc inversé. Il croit que les perturbations produisent les actions ; ce qui se passe, selon Powers, est que les actions empêchent les perturbations de modifier sensiblement ce dont l’organisme se soucie : les perceptions qu’il contrôle. On peut en tirer une conséquence : quand le contrôle réussit, ce qui est tenu bouge peu, et ce que l’on voit bouger, ce sont les actions."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce qu’un étage supérieur demande au suivant",
+      "text": "La référence elle-même peut varier. Dans le même passage, Powers ajoute que lorsque les conditions de référence changent, le comportement change pour faire varier la perception de la même manière. C’est par là que les boucles s’empilent. Dans son exposé de synthèse de 2009, il pose que seuls les systèmes du premier niveau agissent directement sur l’environnement ; tous les autres agissent en ajustant les buts perceptifs des systèmes qui leur sont inférieurs."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce qu’un étage supérieur demande au suivant",
+      "text": "Un étage supérieur ne dit pas à l’étage au-dessous ce qu’il doit faire, il lui montre ce qu’il doit percevoir, en faisant varier continûment l’image de référence plutôt qu’en commandant des mouvements de volant. La dernière étape de son exposé se termine sur une phrase qui vaut pour tous les étages : « All control their own perceptions, not their actions. » Tous contrôlent leurs propres perceptions, pas leurs actions."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce que « perception » veut dire ici",
+      "text": "Le mot perception peut évoquer une impression, une interprétation, quelque chose de flou. Dans le chapitre de prémisses de Behavior: The Control of Perception, Powers lui donne un sens matériel et étroit. Il appelle perception, au sens large, l’ensemble des événements qui suivent une stimulation dans la partie du cerveau qui reçoit, depuis les récepteurs sensoriels jusqu’aux centres les plus élevés du cortex ; et, au sens strict, un courant nerveux dans une fibre ou dans un faisceau de fibres, courant dont la grandeur est liée à celles d’un ensemble de stimulations sensorielles primaires. Une perception, ici, est une quantité."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce que « perception » veut dire ici",
+      "text": "Ce chapitre pose aussi ce que le cerveau n’est pas. Powers y écarte le modèle de l’ordinateur numérique, au motif qu’il n’existe dans le système nerveux aucune horloge qui ferait se succéder les changements d’état en bon ordre, et lui substitue un dispositif à grandeurs continues, qui additionne, amplifie, intègre et dérive des courants nerveux. Il en tire une conséquence : ces signaux perceptifs sont la réalité, pour autant que le cerveau fasse l’expérience d’une réalité, alors même qu’ils dépendent d’autre chose, une réalité extérieure supposée, qui n’est pas la même chose que la réalité éprouvée."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Deux points de vue sur la même boucle",
+      "text": "La théorie porte le nom de Perceptual Control Theory, et Powers en donne la raison : la perception joue un rôle central dans le contrôle. Il précise aussitôt d’où il entend regarder ce contrôle. La théorie du contrôle des ingénieurs le décrit du point de vue d’un observateur extérieur ; Powers veut aussi saisir de quoi il a l’air pour celui qui contrôle, c’est-à-dire pour vous et pour moi, qui occupons chacun notre exemplaire de ce mécanisme et participons à le faire marcher."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Deux points de vue sur la même boucle",
+      "text": "Il attend des choses différentes des deux points de vue. Du dehors, des modèles objectifs qui reproduisent sur ordinateur, avec une grande précision, quelques formes simples du comportement humain. Du dedans, ceci : « Using the internal point of view, we can understand many aspects of behavior by seeing control as control of perception rather than of an objective world ». Deux lignes plus haut, il borne lui-même sa prétention et prévient qu’il ne règle pas entièrement les énigmes que soulèvent la perception et le point de vue : ce qu’il propose est sa meilleure tentative pour mettre de la cohérence entre le comportement observable et l’expérience privée."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Ce que Powers reproche à la cybernétique",
+      "text": "De la cybernétique, Powers a d’abord voulu faire partie. Il raconte qu’avec R. K. Clark et R. L. MacFarland il a commencé à explorer les systèmes de contrôle dans l’idée de rejoindre ce mouvement. Après leur premier article, paru en 1960, leurs avances à la psychologie et à la cybernétique se sont heurtées à un désintérêt général ; ses deux collègues sont passés à autre chose, et il a poursuivi seul, jusqu’à un premier livre en 1973."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Ce que Powers reproche à la cybernétique",
+      "text": "Il discute la cybernétique, et c’est pour s’en séparer. Dans son chapitre de prémisses, il cite l’analyse des réseaux de neurones de McCulloch et l’analyse des séries temporelles stationnaires que Wiener donne dans Cybernetics, en 1948 : les théorèmes se sont multipliés, reconnaît-il, mais la principale difficulté de ces analyses est qu’elles exigent assez régulièrement, sur le système nerveux, des hypothèses contraires à ce que l’on sait de lui."
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "Ce que Powers reproche à la cybernétique",
+      "text": "Dans son texte de 2009, Powers raconte la naissance du champ, puis dit ce qui lui a manqué : ses principaux fondateurs n’étaient pas des ingénieurs de l’asservissement, ils en ont appris juste assez pour bâtir leur pensée autour de la causalité circulaire, et sont partis vers la communication, la théorie de l’information et, plus tard, l’intelligence artificielle, sans mener la transformation à son terme. Il se rattache en revanche sans réserve à Ashby, et à l’ingénierie des asservissements des années 1920 et 1930, dont il dit qu’elle a découvert par accident comment fonctionnent les systèmes qui poursuivent un but."
+    },
+    {
+      "locator": "sections[5].paragraphs[3]",
+      "section_title": "Ce que Powers reproche à la cybernétique",
+      "text": "Ce texte se clôt sur quatre mots : « A revolution, in progress. » Le volume qui le reproduit en 2016, sous la direction de Dag Forssell, a reçu cette année-là un sous-titre qui fait de la théorie la troisième grande théorie de la psychologie : une formule de son éditeur, rapportée à un article de deux praticiens de la théorie. C’est une position que l’auteur et ses proches revendiquent, non un état constaté du champ. Pour voir en quels termes Powers l’a lui-même exposée aux psychologues, le texte à lire est son article de 1978 dans Psychological Review, le seul qu’il ait donné de sa théorie dans une grande revue de psychologie à comité de lecture."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-47dbfe2745a87679",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "controle-de-la-perception"
+    },
+    {
+      "id": "SUP-5c8cd3f651228b92",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "controle-de-la-perception"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-ab1fd50ba31126cd",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Le comportement est le contrôle de la perception"
+    },
+    {
+      "id": "SUP-c7668a26cd7163e6",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "la-boucle-et-l-ecart"
+    },
+    {
+      "id": "SUP-f37e87c668ef2936",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "William T. Powers"
+    },
+    {
+      "id": "SUP-327d690caca2ea9d",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Les textes lus sont signés de Powers seul ; Dag Forssell est l'éditeur du recueil de 2016, pas un coauteur ni un coauteur du concept. Powers désamorce lui-même le piège de datation : l'article de 1960 dont on fait souvent la naissance de la théorie est une coécriture avec R. K. Clark et R. L. MacFarland, et il n'a pas été ouvert ici. Le sous-titre du recueil, « An Overview of the Third Grand Theory in Psychology », est une formule de son éditeur ajoutée en 2016 et rapportée à un article de partisans : c'est une position revendiquée par l'auteur et par ses proches, pas un état constaté du champ."
+    },
+    {
+      "id": "SUP-7af230b08fa642c9",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Que tient-on vraiment en tenant un volant : la voiture, ou ce qu'on voit ?"
+    },
+    {
+      "id": "SUP-f64aca6caebf87ba",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Le comportement est le moyen variable par lequel un organisme tient ses perceptions conformes à des références internes : il contrôle ses perceptions, pas ses actions."
+    },
+    {
+      "id": "SUP-624c9b0efa36ef4e",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Où l'on voit que le comportement est le processus par lequel nous agissons sur le monde pour contrôler les perceptions qui comptent pour nous"
+    },
+    {
+      "id": "SUP-27b5006c3f1fdb29",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control ». Extrait reproduit dans Dag Forssell (dir.), Perceptual Control Theory, Menlo Park (CA), Living Control Systems Publishing, 2016."
+    },
+    {
+      "id": "SUP-ad7fe5c72ac43158",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 17 du livre, p. 147 du recueil"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-85dfe0593ec9723f",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "In which we see that behavior is the process by which we act on the world to control perceptions that matter to us"
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-3daa9b90140368e4",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de Making Sense of Behavior n'a été identifiée. « In which we see that » est le résumé de chapitre à l'ancienne : il est rendu par « Où l'on voit que », qui est la forme française de ce genre de sommaire, et non mot à mot. « To control » est rendu par « contrôler » et non par « réguler » : c'est le terme de la théorie du contrôle perceptif, qui donne son nom à l'ouvrage."
+    },
+    {
+      "id": "SUP-3d4ab7d5d9546137",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "partial",
+      "text": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Bloomfield (NJ), Benchmark Publications, chapitre 2 « Perceptual Control », p. 17-26.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "partial",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-6cf556aae03fcff7",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "partial",
+      "text": "p. 17-26",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ad20c9ddd52fa7f5",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "partial",
+      "text": "ISBN 978-0-9647121-5-7",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-06aa7c1c21c6eee6",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "partial",
+      "text": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-69dbb9f7dc0dedc9",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "partial",
+      "text": "William T. Powers, Behavior: The Control of Perception, 2e éd., Bloomfield (NJ), Benchmark Publications, 2005 (1re éd. 1973, Aldine Publishing Co., Chicago), chapitre 3 « Premises ».",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "partial",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-000df09e14a41a07",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "partial",
+      "text": "p. 21-40",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-1c6b7fa52923627a",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "partial",
+      "text": "ISBN 978-0-9647121-7-1",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-bcff8eb6371d3b86",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "partial",
+      "text": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-64dedb28a292aff7",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "full-text",
+      "text": "Dag Forssell (dir.), Perceptual Control Theory: An Overview of the Third Grand Theory in Psychology, Menlo Park (CA), Living Control Systems Publishing, 2016. Contient « PCT in 11 Steps », de W. T. Powers, 2009.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-90950a759c40fa5b",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "full-text",
+      "text": "p. 20-25",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-0d57fe65792494b7",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "full-text",
+      "text": "ISBN 978-1-938090-12-7",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-4032f16c6e760424",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "full-text",
+      "text": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-7ab7b4f24feb01a9",
+      "origin": "validated",
+      "path": "$.sources[3].label",
+      "access": "metadata-only",
+      "text": "William T. Powers, « Quantitative analysis of purposive systems: Some spadework at the foundations of scientific psychology », Psychological Review, 85(5), 1978, p. 417-435.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-29d6a7cf27fbe81b",
+      "origin": "validated",
+      "path": "$.sources[3].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-0069b04fa2866f6a",
+      "origin": "validated",
+      "path": "$.sources[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1037/0033-295X.85.5.417",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-9b9ac4b8f41a0f20",
+      "origin": "validated",
+      "path": "$.sources[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1037/0033-295X.85.5.417",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-4630957075078bc7",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-21"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-ab678188465209a5",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Source ouverte en propre : https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf (HTTP 200, 6,75 Mo, 425 p. PDF). Mise à disposition légitime et constatée, pas déduite : p. 2 du PDF, « This book [...] is available as a free PDF download from the publisher's website » et « Printing at high resolution and content copying are allowed » ; p. iii, l'éditeur du recueil est Living Control Systems Publishing, Menlo Park (CA) ; p. iii-iv, « Thanks to the following for reprint permissions: Benchmark Publications and Bill Powers for selections from Behavior: The Control of Perception, Making Sense of Behavior [...] ». Les extraits de Powers sont donc reproduits avec autorisation de l'ayant droit."
+    },
+    {
+      "id": "SUP-4e6ea6feff5b609f",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — vérifiée à l'œil, pas seulement par extraction de texte : PDF p. 163, rendue en image. En-tête « PCT — A Book of Readings / Making Sense of Behavior by William T. Powers    147 ». La page porte « Chapter 2 / Perceptual Control » puis, en italique, « In which we see that behavior / is the process by which we / act on the world to control / perceptions that matter to us ». Verbatim, sans coupe, sans traduction (la fiche déclare bien translation.kind = none). Contrôle de la double pagination annoncée : la page suivante (PDF 164) porte en pied le folio du livre « 18 », donc la page citée est bien la p. 17 du livre ; et les folios du recueil se suivent (PDF 162 = 146, 163 = 147). Le locator « p. 17 du livre, p. 147 du recueil » est exact aux deux échelles."
+    },
+    {
+      "id": "SUP-abb4abdd0d28d154",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "SOURCES 1 — Making Sense of Behavior. La page de présentation du recueil (PDF 162, folio 146) donne « © 1998-2004 Benchmark Publications Inc. / 180 pages / Benchmark Publications, Bloomfield, NJ / 978-0-9647121-5-7 (paperback) » : ISBN et lieu d'édition conformes à ce qu'affiche la fiche. Pagination du chapitre 2 contrôlée de bout en bout : l'extrait court des PDF 163 à 172, et la dernière page (rendue en image) porte le folio « 26 » sous le paragraphe final « [...] using the same concept of perceptual control. » Le locator « p. 17-26 » est donc juste. Vérification externe : OpenLibrary ISBN 9780964712157 → Powers, Making Sense of Behavior: the meaning of control, Benchmark Publications, 1998, LCCN 99216013."
+    },
+    {
+      "id": "SUP-16c7d801c77dc0a5",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCES 2 — Behavior: The Control of Perception. PDF 141 (folio 125) : « © 2005 Benchmark Publications Inc. / Second edition, revised and expanded / 332 pages / Benchmark Publications, Bloomfield, NJ / 978-0-9647121-7-1 (paperback) », suivi de la table des matières où « 3. Premises » commence p. 21 et « 4. Feedback and Behavior » p. 41 : le chapitre 3 occupe donc bien p. 21-40, comme annoncé. OpenLibrary ISBN 9780964712171 confirme l'édition 2005, Powers auteur unique."
+    },
+    {
+      "id": "SUP-21ad41839b9a59ca",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCES 3 — recueil 2016. PDF p. iii : « Forssell, Dag, Editor, 1940– / Perceptual Control Theory : An Overview of the Third Grand Theory in Psychology / xvi, 408 p. (May, 2016) / 978-1-938090-12-7 (softcover) ». Titre, sous-titre, direction, lieu, année et ISBN affichés sont exacts. « PCT in 11 Steps » vérifié aux PDF 36-41, folios 20 à 25 — exactement le locator annoncé —, signé « By William T. Powers » et « © 2009 Bill Powers, File PCT_11_steps.pdf », datation confirmée par la signature finale « Bill Powers, Lafayette, Colorado, October 2009 »."
+    },
+    {
+      "id": "SUP-9600c257088dba9f",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "SOURCES 4 — DOI résolu par l'API Crossref (https://api.crossref.org/works/10.1037/0033-295X.85.5.417) : « Quantitative analysis of purposive systems: Some spadework at the foundations of scientific psychology. », Psychological Review, vol. 85, n° 5, p. 417-435, 1978, auteur unique William T. Powers, éditeur APA. Les six éléments affichés par la fiche concordent. Résolution concluante."
+    },
+    {
+      "id": "SUP-81d7ddda7a055ec7",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — la fiche ne s'appuie pas sur une association mais sur une déclaration de l'auteur, que j'ai lue : dans « PCT in 11 Steps », étape 5 (recueil p. 22), Powers écrit lui-même « With the help of R. K. Clark and R. L. MacFarland, I began to explore control systems [...] After our first paper was published in 1960 [...] Clark and MacFarland went on to other things, and I kept working on PCT on my own. This led to my first book in 1973. » La coécriture de 1960 et la paternité ultérieure de Powers seul sont donc établies par le texte même. Vérification externe de l'article de 1960 : SAGE, Perceptual and Motor Skills, vol. 11, p. 71-88 (Part I) et p. 309-323 (Part II), signé Powers, Clark & McFarland. Cet article est sous péage ; je ne l'ai pas ouvert et n'ai tenté aucun contournement — la fiche déclare d'ailleurs elle-même ne pas l'avoir ouvert. Détail sans conséquence : la fiche orthographie « MacFarland », qui est l'orthographe de Powers lui-même ; la revue imprime « Mc Farland ». Ce n'est pas une erreur de la fiche."
+    },
+    {
+      "id": "SUP-a82bdd863bda1e15",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "ATTRIBUTION (suite) — les deux réserves de la note de la fiche se vérifient. (a) Forssell est bien « Editor » et non coauteur (PDF p. iii et signature de l'avant-propos). (b) Le sous-titre est bien de 2016 et bien de l'éditeur : PDF p. iii, « Prior (2008-2014) editions title: Perceptual Control Theory: Science & Applications – A Book of Readings. [...] New subtitle, new ISBN numbers, new publication date. May, 2016. » Et il renvoie bien à un article de partisans : PDF p. xiii, « THE ORIGINS AND FUTURE OF CONTROL THEORY IN PSYCHOLOGY — Paper explains that PCT is the third Grand Theory in psychology », lien psycnet.apa.org/journals/gpr/19/4/425 ; Crossref donne Mansell & Marken, Review of General Psychology, 19(4), 425-430, 2015, DOI 10.1037/gpr0000057 — deux auteurs engagés dans la PCT. La prudence de la fiche sur ce point est fondée."
+    },
+    {
+      "id": "SUP-a0ca2d4a468e8080",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "PROSE — le summary est presque un décalque des mots de Powers, et non une extrapolation. Recueil p. 24, étape 9 intitulée « Behavior: The Control of Perception » : « Behavior is simply the adjustable means by which an organism can keep its perceptions matching reference conditions. » ; et p. 25, dernière ligne de l'étape 11 : « All control their own perceptions, not their actions. » Le « moyen variable », les « références internes » et l'opposition perceptions/actions sont donc tous portés textuellement. Le hook est une question, il n'affirme rien, et son exemple est celui du texte : p. 23, « When someone steers a car, the perception that matters is the relationship of the car to the road as seen through the windshield. »"
+    },
+    {
+      "id": "SUP-967e7910fd883d93",
+      "origin": "validated",
+      "path": "$.review.notes[9]",
+      "access": "n/a",
+      "text": "Inexactitude de fait signalée hors des quatre questions, sans incidence sur le verdict : la source 2 écrit « 1re éd. 1973, Aldine de Gruyter ». L'imprint de 1973 était Aldine Publishing Co., Chicago — l'entité Aldine de Gruyter naît de la fusion avec Walter de Gruyter en 1988 et n'existait pas en 1973. Le recueil lui-même écrit « Aldine, 1973 » (PDF 78), et les recensions contemporaines écrivent « Chicago: Aldine Publishing Co., 1973 » (Science 184(4135), p. 455 ; Philosophy of Science, notice Cambridge). Cela dit, la forme « Aldine de Gruyter, 1973 » est une convention de citation répandue dans la littérature (elle figure par exemple dans Nature Reviews Neuroscience, 2023) : ce n'est pas une invention de la fiche. Correction suggérée si l'on veut la précision : « 1re éd. 1973, Aldine, Chicago »."
+    },
+    {
+      "id": "SUP-dd28489d8f154919",
+      "origin": "validated",
+      "path": "$.review.notes[10]",
+      "access": "n/a",
+      "text": "Autre point mineur, sans incidence : la source 1 et la référence de citation ne datent pas Making Sense of Behavior. La date est 1998 (copyright du livre, LCCN 99216013). L'ISBN suffit à lever l'ambiguïté, mais l'ajout de « 1998 » alignerait cette référence sur les trois autres, toutes datées."
+    },
+    {
+      "id": "SUP-099a3003778372c1",
+      "origin": "validated",
+      "path": "$.review.notes[11]",
+      "access": "n/a",
+      "text": "Périmètre : aucun autre fichier du dépôt n'a été ouvert sur cette carte — ni dossier documentaire, ni cartographie, ni note d'agent. Textes non atteints et déclarés comme tels : l'article Powers, Clark & McFarland 1960 (SAGE, péage) et l'article Mansell & Marken 2015 (APA PsycNet, péage), tous deux vérifiés par leurs seules métadonnées."
+    },
+    {
+      "id": "SUP-df107122ed403012",
+      "origin": "validated",
+      "path": "$.dossier",
+      "access": "n/a",
+      "text": "corpus/evidence/controle-de-la-perception/lecture.json"
+    },
+    {
+      "id": "SUP-be45c5b25ecd378f",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Ne pas dater ce concept de 1960 : l'article fondateur de cette année est une coécriture à trois que personne n'a ouverte. Ce qui a été lu et cité est signé de Powers seul et se date de 1973 pour le premier livre, de 1998 à 2004 pour le second, de 2009 pour le texte de synthèse."
+    },
+    {
+      "id": "SUP-d3aafc3ec7246dd6",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "« La troisième grande théorie de la psychologie » est une formule d'éditeur ajoutée en 2016, une revendication de partisans et non un état du champ. Aucune source secondaire indépendante n'a pu être ouverte : ni Powers 1978 dans Psychological Review, ni Mansell et Marken 2015, ni la critique de Locke 1991, tous fermés. Rien ne peut donc être dit ici de la réception critique de cette théorie autrement qu'en rapportant ce que ses partisans en disent."
+    },
+    {
+      "id": "SUP-0f3740b4add4da7a",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La citation est une épigraphe de chapitre, en italique et sur quatre lignes dans le livre, jointes ici par des espaces et sans aucune coupe. C'est la seule phrase courte et autonome des extraits ouverts qui énonce la thèse entière."
+    },
+    {
+      "id": "SUP-d2140fd4454fc2ca",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Deux formulations plus exactes du mécanisme existent et ont été écartées : « Behavior is simply the adjustable means by which an organism can keep its perceptions matching reference conditions » vient d'un texte de circonstance, un canevas rédigé pour un projet d'émission qui n'a pas abouti ; et « Using the internal point of view, we can understand many aspects of behavior by seeing control as control of perception rather than of an objective world » fait 154 caractères."
+    },
+    {
+      "id": "SUP-25fd6f666dde6db2",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Le chapitre 3 de Behavior: The Control of Perception, seul chapitre de ce livre que le recueil reproduise, n'énonce pas la thèse : c'est le chapitre des prémisses techniques. Les mots « behavior is the control of perception » n'y figurent nulle part, et les chapitres où la thèse se construit n'ont pas pu être ouverts. Il est affiché en source pour ce qu'il porte, la définition matérielle de la perception, pas pour la thèse."
+    },
+    {
+      "id": "SUP-dcd73d9d29227bde",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "L'accroche s'appuie sur l'exemple que Powers file lui-même, le conducteur qui maintient « the relationship of the car to the road as seen through the windshield », y compris contre un vent de travers qu'il ne perçoit pas."
+    },
+    {
+      "id": "SUP-86c10ffa3c7f3d4e",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Aucune traduction française, aucune réception francophone : la recherche sur HAL ne rend rien. Toute formule française du concept, à commencer par le titre de cette carte, est de notre fait."
+    },
+    {
+      "id": "SUP-9f94a81b45e1e1bf",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Les dates et les lieux portés par le recueil de 2016 sont contradictoires d'une bibliographie à l'autre : les millésimes affichés ici sont ceux qui ont été lus deux fois."
+    },
+    {
+      "id": "SUP-dffc15b5635e315b",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "controle-de-la-perception"
+    },
+    {
+      "id": "SUP-dfe4b7d248a8d617",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "William T. Powers"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-ceebf2a49be2f447",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Les trois textes de Powers que j'ai ouverts dans le recueil de 2016 ne portent qu'une signature, la sienne, et je l'ai relevée sur chacun. Les deux extraits de livres sont annoncés « By William T. Powers » sur leur page de faux titre dans le recueil (p. 125 pour Behavior: The Control of Perception, p. 146 pour Making Sense of Behavior: The Meaning of Control), et le titre courant de toutes leurs pages répète « Behavior: The Control of Perception by William T. Powers » et « Making Sense of Behavior by William T. Powers ». Le troisième texte, « PCT in 11 Steps » (recueil p. 20 à 25), porte en pied de page « © 2009 Bill Powers » et se termine par la signature manuscrite en toutes lettres « Bill Powers, Lafayette, Colorado, October 2009 ». Auteur unique, donc, pour ce qui est cité. Dag Forssell n'est pas coauteur du concept : il est l'éditeur du recueil, désigné comme tel en page de titre (« Dag Forssell, Editor ») et dans la notice de catalogue (« Forssell, Dag, Editor, 1940 »). Il signe les préfaces, les présentations de section et plusieurs articles distincts ; c'est Powers qu'il faut citer, jamais lui. Le piège d'attribution est ailleurs, et Powers le désamorce lui-même. L'article fondateur de 1960, dont on fait souvent la date de naissance de la théorie, est une coécriture à trois, et Powers l'écrit en toutes lettres dans « PCT in 11 Steps » : « With the help of R. K. Clark and R. L. MacFarland, I began to explore control systems with the idea of joining the cybernetics movement. After our first paper was published in 1960, we made overtures to psychology and cybernetics, but were put off by a general lack of interest. Clark and MacFarland went on to other things, and I kept working on PCT on my own. » Les bibliographies du recueil donnent cet article sous la forme « Powers, W.T., Clark, R.K., and McFarland, R.L. (1960). A general feedback theory of human behavior. Perceptual and Motor Skills 11, 71-88 (Part 1) and 309-323 (Part 2) ». Conséquence pour la carte : si elle porte un millésime, ce ne peut pas être 1960, car 1960 est la date d'un texte à trois signatures que je n'ai pas ouvert. Ce que j'ai ouvert et ce que je cite est signé de Powers seul, et se date de 1973 pour le premier livre, de 1998 pour le second, de 2009 pour le texte de synthèse. Dernière précision, et elle est de la responsabilité du lecteur primaire : d'où parle ce texte. Le sous-titre du recueil, « An Overview of the Third Grand Theory in Psychology », est une formule de son éditeur, ajoutée en 2016 seulement, la préface le dit (« The changes to this 2016 edition with a new cover, subtitle, ISBN numbers, and publication date »), les éditions de 2008 à 2014 s'intitulant « Science & Applications ». Le recueil s'ouvre sur « This book is all about a scientific revolution in progress » et rapporte la formule des trois grandes théories à un article de partisans, Mansell et Marken, « The Origins and Future of Control Theory in Psychology », Review of General Psychology, 2015. Powers lui-même clôt « PCT in 11 Steps » sur « A revolution, in progress ». C'est donc une position revendiquée par l'auteur et par ses proches, pas un état constaté du champ, et une carte qui présenterait cette théorie comme un acquis de la psychologie trahirait ce que le texte dit de lui-même."
+    },
+    {
+      "id": "SUP-da94da96efe85020",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "In which we see that behavior is the process by which we act on the world to control perceptions that matter to us"
+    },
+    {
+      "id": "SUP-c130e1ce737dcedc",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "William T. Powers, Making Sense of Behavior: The Meaning of Control, Benchmark Publications, Bloomfield (NJ), copyright 1998-2004, ISBN 978-0-9647121-5-7, chapitre 2 « Perceptual Control », page de titre du chapitre. Extrait reproduit p. 147 de Dag Forssell (dir.), Perceptual Control Theory: An Overview of the Third Grand Theory in Psychology, Living Control Systems Publishing, Menlo Park (CA), 2016, ISBN 978-1-938090-12-7, en accès libre sur le site de l'éditeur."
+    },
+    {
+      "id": "SUP-a71235a418d132b8",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 17, page de titre du chapitre 2 « Perceptual Control » (p. 147 du recueil de 2016)"
+    },
+    {
+      "id": "SUP-f5a20cd89af9c844",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-8b8b632de82f0b18",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Forssell, D. (dir.) (2016). Perceptual Control Theory: An Overview of the Third Grand Theory in Psychology. Introductions, Readings, and Resources. Menlo Park (CA) : Living Control Systems Publishing. Notice de catalogue : xvi, 408 p., mai 2016 ; le fichier PDF en compte 425. Fichier vérifié dans cette session : HTTP 200, application/pdf, 6 751 936 octets, 425 pages, SHA-256 d94bca9ce75dbf3a0d060d7c8ee40084703114d71cdcc7c910859691900783b4. Ce sont les extraits de Powers qui sont lus ici, et eux seuls : Behavior: The Control of Perception, chapitre 3 « Premises » intégral, p. 125 à 145 du recueil soit p. 21 à 40 du livre ; Making Sense of Behavior, chapitre 2 « Perceptual Control » intégral, p. 146 à 156 du recueil soit p. 17 à 26 du livre ; et l'article « PCT in 11 Steps », p. 20 à 25 du recueil. La page de crédits, p. iii, liste nommément les autorisations obtenues : « Thanks to the following for reprint permissions: Benchmark Publications and Bill Powers for selections from Behavior: The Control of Perception, Making Sense of Behavior, and Living Control Systems I, II and III. » La page ii annonce le fichier comme téléchargement libre depuis le site de l'éditeur et précise ses permissions techniques : « The file is password protected. Changes are not allowed. Printing at high resolution and content copying are allowed. » La page de copyright interdit sa republication : « The e-book (pdf-file) may not be posted at any web site without permission from Living Control Systems Publishing. » Il est donc cité par son URL d'origine et n'a été miroité nulle part."
+    },
+    {
+      "id": "SUP-5a47c26b59f3f382",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "ISBN 978-1-938090-12-7"
+    },
+    {
+      "id": "SUP-0e85d65fb4358633",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+    },
+    {
+      "id": "SUP-02983d71878cf297",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "partial",
+      "text": "Powers, W. T. (2005). Behavior: The Control of Perception, seconde édition révisée et augmentée. Bloomfield (NJ) : Benchmark Publications, 332 p. Première édition 1973, Hawthorne (NY), Aldine de Gruyter. Ouvrage sous droits, non ouvert en entier : seul le chapitre 3 « Premises » a été lu, dans sa reproduction intégrale au recueil de 2016. La table des matières complète de l'édition de 2005 y figure p. 125 et permet de situer ce chapitre parmi les dix-huit."
+    },
+    {
+      "id": "SUP-9677634fb0c448ae",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "partial",
+      "text": "ISBN 978-0-9647121-7-1"
+    },
+    {
+      "id": "SUP-4a2ea09f0affcd71",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "partial",
+      "text": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+    },
+    {
+      "id": "SUP-81a6830f85389553",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "partial",
+      "text": "Powers, W. T. (1998-2004). Making Sense of Behavior: The Meaning of Control. Bloomfield (NJ) : Benchmark Publications, 180 p. Ouvrage sous droits, non ouvert en entier : seul le chapitre 2 « Perceptual Control » a été lu, dans sa reproduction intégrale au recueil de 2016, p. 146 à 156. C'est de sa page de titre de chapitre qu'est tirée la citation retenue."
+    },
+    {
+      "id": "SUP-464452012cb7cc0e",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "partial",
+      "text": "ISBN 978-0-9647121-5-7"
+    },
+    {
+      "id": "SUP-0992382a546e34de",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "partial",
+      "text": "https://www.livingcontrolsystems.com/download/pct_readings_ebook_2016.pdf"
+    },
+    {
+      "id": "SUP-fbe5f11db7d894a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Powers, W. T. (1978). Quantitative analysis of purposive systems: Some spadework at the foundations of scientific psychology. Psychological Review, 85(5), 417-435. Seul exposé de la théorie par Powers dans une revue de psychologie à comité de lecture de premier plan, et le texte auquel renvoie le recueil quand il situe la réception académique. Notice Crossref ouverte ; Unpaywall répond is_oa: false et aucune version déposée n'a été trouvée. Non lu."
+    },
+    {
+      "id": "SUP-5563ce55c9ad3852",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1037/0033-295X.85.5.417"
+    },
+    {
+      "id": "SUP-04dc4f4b1b1a2bb5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1037/0033-295X.85.5.417"
+    },
+    {
+      "id": "SUP-f21714509709aa21",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "metadata-only",
+      "text": "Mansell, W. & Marken, R. S. (2015). The Origins and Future of Control Theory in Psychology. Review of General Psychology, 19(4), 425-430. C'est l'article auquel le recueil rattache explicitement sa formule des trois grandes théories : « Paper explains that PCT is the third Grand Theory in psychology, with the first two being the behaviorist and cognitive theories » (recueil p. xiii). Ses deux auteurs sont des praticiens de la théorie : ce n'est pas une source secondaire indépendante, c'est la revendication elle-même, publiée dans une revue de l'American Psychological Association. Notice Crossref ouverte, Unpaywall n'annonce aucune version libre. Non lu."
+    },
+    {
+      "id": "SUP-fca2173a9d4efe15",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1037/gpr0000057"
+    },
+    {
+      "id": "SUP-3c76d5d021d0897a",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1037/gpr0000057"
+    },
+    {
+      "id": "SUP-686175abbc896c25",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].citation",
+      "access": "metadata-only",
+      "text": "Locke, E. A. (1991). Goal theory vs. control theory: Contrasting approaches to understanding work motivation. Motivation and Emotion, 15(1), 9-28. Repéré comme la critique extérieure la plus citée de l'application de la théorie du contrôle à la motivation humaine. Elle vise la famille des modèles de régulation par l'écart et non nommément la théorie de Powers, et je ne peux pas dire ce qu'elle en retient sans l'avoir lue. Unpaywall répond is_oa: false. Non lu."
+    },
+    {
+      "id": "SUP-86a10cbff418cd66",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1007/BF00991473"
+    },
+    {
+      "id": "SUP-d7585f01505cbc4c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1007/BF00991473"
+    },
+    {
+      "id": "SUP-726a338878992bfe",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Powers ne définit pas le comportement d'abord, il définit le contrôle, et le comportement en découle. Sa définition la plus courte est au premier paragraphe de « PCT in 11 Steps », recueil p. 20, section 1 « Behavior as Control » : « Control is a process of acting on the world we perceive to make it the way we want it to be, and to keep it that way. » Suit une liste d'exemples qui donne la portée qu'il revendique : « standing upright; walking; steering a car; scrambling eggs; scratching an itch; knitting socks; singing a tune. Extruding a pseudopod to absorb a nanospeck of food (all organisms control, not only human beings). » Et la généralisation : « Control is the most basic principle of life and can be seen at every level of organization once you know what to look for. » Le renversement proprement dit est énoncé au même endroit, section 9, recueil p. 24, dont le titre est exactement le titre du livre de 1973, « Behavior: The Control of Perception » : « Behavior is the externally visible part of a process by which perceptions of various aspects of the experienced world are controlled. It is not the end-product of either the effects of stimuli or the goals sought by the organism. Behavior is simply the adjustable means by which an organism can keep its perceptions matching reference conditions. As disturbances come and go, behavior changes to have equal and opposite effects. As reference conditions vary, behavior changes to cause perceptions to vary in a matching way. » Et l'illusion d'optique qu'il prétend dissiper, même page : « The appearance is that the disturbances cause the actions, the observable behavior. But the real story is that the actions prevent the disturbances from significantly altering what the organism is concerned with: the perceptions it is controlling. » Les trois pièces de la boucle sont nommées section 7, recueil p. 23, sur l'exemple du volant : la perception (« the relationship of the car to the road as seen through the windshield »), l'image de référence (« the image of how the car and road should look must be in that same form, because the perception has to be compared with that image, the reference image (\"goal:\" goals are In Here, not Out There) »), et l'erreur (« \"Error\" just means the difference between reference and real »). Powers insiste sur ce que la boucle dispense de faire : « the brain doesn't have to compute the exact amount because it can continuously adjust the action as the error changes, making smaller and smaller approximate adjustments as the error gets smaller until there is no error. [...] No complex computations. No planning. » La hiérarchie est la seconde thèse, section 11, recueil p. 25 : « The higher system is not telling the lower one what to do but showing it what to perceive. It does so by continuously varying the reference image, not by commanding steering wheel movements. » Et la formule qui ferme le texte : « The only systems that act on the environment directly are those at the first level. All the rest act by adjusting the perceptual goals for lower systems. All control their own perceptions, not their actions. » Le texte se termine sur « A revolution, in progress. » Le chapitre 2 de Making Sense of Behavior, dont est tirée la citation retenue, dit d'où le regard est pris. Ouverture, p. 18 du livre, recueil p. 148 : « Perception plays a central role in controlling. This is why the theory behind this book is called Perceptual Control Theory, or PCT. The emphasis in PCT is not only to understand control from an outside observer's point of view, as in engineering control theory, but to grasp how control appears to the controller, that is, to you and me, who occupy our own copies of this marvelous mechanism and participate in running it. » Le chapitre se ferme, p. 26 du livre, recueil p. 156, sur ce que Powers prétend obtenir : « Using the external point of view, we can make objective models that, on a computer, will reproduce some simple forms of human behavior with great precision. Using the internal point of view, we can understand many aspects of behavior by seeing control as control of perception rather than of an objective world. » Il borne lui-même cette prétention deux lignes plus haut : « I won't pretend that these puzzles about perception and point of view are completely solved by the propositions put forth here. All of this is just my best try at bringing consistency into the study of both publicly observable behavior and private experience. » Le chapitre 3 de Behavior: The Control of Perception, « Premises », p. 21 à 40 du livre, ne dit rien de tout cela, et c'est important : il pose les prémisses techniques. Il rejette le modèle du cerveau comme calculateur numérique (« There is no clock in the nervous system to cause changes of state to occur in neat sequence »), construit le cerveau comme calculateur analogique fait de sommateurs, d'amplificateurs, d'intégrateurs et de dérivateurs de courants nerveux, et définit la perception en termes matériels, p. 34 et 35 : « When I refer to perception, I mean in general the entire set of events, following stimulation, that occurs in the input part of the brain, all the way from sensory receptors to the highest centers in the cerebral cortex » ; puis « A \"perception\" means a neural current in a single fiber or bundle of redundant fibers which has a magnitude that is related to the magnitudes of some set of primary sensory-nerve stimulations. » Le résumé du chapitre, p. 39, tire la conséquence : « These signals, perceptual signals, are reality as far as the brain experiences reality, yet are functionally dependent on something else, a supposed external reality, which is not the same thing as experienced reality. » La filiation cybernétique est explicite et discutée, jamais tue. Dans le chapitre 3, p. 21, Powers nomme ses prédécesseurs pour s'en séparer : « McCulloch's (1972) nerve-net analysis was based on this concept; so was Wiener's \"stationary time series\" analysis in Cybernetics (1948). Many others have continued in this tradition, and the mathematical theorems have multiplied and prospered. The main difficulty with such analyses is that they quite regularly require assumptions about the nervous system that are contrary to known fact. » Dans « PCT in 11 Steps », section 5, intitulée « Cybernetics en Passant », recueil p. 22, il raconte la naissance du champ (Cannon, l'homéostasie, Rosenblueth, Wiener) puis énonce son reproche : « Unfortunately, the main founders of cybernetics were not control-system engineers. They learned just enough about control systems to pattern cybernetic thinking around concepts like circular causation, but were more interested in subjects like communication, information theory, and (later) artificial intelligence and failed to carry the transformation to its ultimate conclusion. » Il se rattache en revanche sans réserve à Ashby (« a psychiatrist in the cybernetics movement who did have an understanding of control systems ») et à l'ingénierie de l'asservissement des années 1920 et 1930, dont il dit qu'elle a découvert par accident « how purposive systems work ». Le recueil ouvre d'ailleurs sur cette dette, p. iv : « In 1927, Harold Stephen Black, an American electrical engineer, revolutionized the field of applied electronics by inventing the negative feedback amplifier, a control device. »"
+    },
+    {
+      "id": "SUP-65143896f74a02fc",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Le chapitre désigné par la cartographie du côté de Behavior: The Control of Perception, le chapitre 3 « Premises », n'énonce pas la thèse et ne peut pas servir à la porter. Je l'ai lu en entier, p. 21 à 40 du livre, recueil p. 126 à 145 : c'est le chapitre des prémisses techniques, sur le rejet du modèle numérique du cerveau, la construction d'un cerveau calculateur analogique et une définition matérielle de la perception comme courant nerveux. Les mots « behavior is the control of perception » n'y figurent nulle part, et son propre résumé, p. 39, ne parle que du modèle à variables continues. Le recueil ne reproduit que ce chapitre du livre de 1973 et 2005 : il ne donne accès ni au chapitre 4 « Feedback and Behavior », ni au chapitre 5 « The Control-System Unit of Organization », qui sont, d'après la table des matières reproduite p. 125, l'endroit où la thèse est construite. Une carte ne doit donc pas attribuer une formulation de la thèse à ce chapitre."
+    },
+    {
+      "id": "SUP-f5def49a40f241f4",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Le défaut d'encodage du fichier est réel, il est plus étendu que ne le disait la cartographie, et je l'ai contourné par l'image et non par la devinette. Il ne se manifeste pas de la même façon selon l'outil : pdftotext n'était pas disponible ici, et PyMuPDF ne rend pas des lettres décalées de trois positions mais des tabulations et des caractères de contrôle, c'est-à-dire un vide. Mesuré page par page (part des caractères alphabétiques parmi les caractères non blancs), le défaut touche entièrement les pages 164 à 172 du fichier, soit la totalité du corps du chapitre 2 de Making Sense of Behavior, recueil p. 148 à 156, où la proportion tombe entre 0,05 et 0,11 contre 0,95 et plus sur un bloc sain ; et partiellement les pages 142, 144, 145, 146, 155, 160 et 161, soit des passages du chapitre 3 de Behavior: The Control of Perception. Aucune citation n'a été relevée dans un bloc défectueux par extraction de texte. Tout ce que je rapporte de ces blocs a été lu sur un rendu image des pages à 2,6 fois la taille nominale, où la composition est parfaitement lisible : c'est ainsi que j'ai lu le corps du chapitre 2 de Making Sense of Behavior, le résumé du chapitre 3 de Behavior: The Control of Perception p. 39 et la section « A Premise Concerning Perception » p. 34 et 35."
+    },
+    {
+      "id": "SUP-70c08553688e04cf",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "La citation retenue est une épigraphe de chapitre, pas une phrase du corps du texte, et il faut le savoir. Elle occupe la page de titre du chapitre 2 de Making Sense of Behavior, sous le titre « Perceptual Control », en italique et sur quatre lignes ; je les ai jointes par des espaces, sans autre modification. Elle fait 114 caractères. Elle est de Powers, elle est dans son livre, et c'est la seule phrase courte et autonome de ces extraits qui énonce la thèse entière. Je l'ai relevée deux fois : sur la couche texte, où cette page précise s'extrait proprement (0,96 de caractères alphabétiques, à la différence des pages suivantes), et sur le rendu image de la page 163 du fichier, où j'ai lu mot pour mot « In which we see that behavior is the process by which we act on the world to control perceptions that matter to us ». Aucune coupe, aucun crochet."
+    },
+    {
+      "id": "SUP-eac2532e1d459c5b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Trois autres passages ont été mesurés puis écartés, et le rédacteur doit savoir qu'ils existent. Le plus tentant est la phrase de clôture du même chapitre, p. 26 du livre, recueil p. 156 : « Using the internal point of view, we can understand many aspects of behavior by seeing control as control of perception rather than of an objective world », 154 caractères, donc hors gabarit ; coupée en « [...] we can understand many aspects of behavior by seeing control as control of perception rather than of an objective world » elle tombe à 124, mais elle perd alors le point de vue interne qui est tout son sujet et qui la rend intelligible, et je l'ai donc laissée. Le second vient de « PCT in 11 Steps », section 9, recueil p. 24 : « Behavior is simply the adjustable means by which an organism can keep its perceptions matching reference conditions », 116 caractères, sans coupe, et c'est la formulation la plus exacte du mécanisme que j'aie trouvée ; je ne l'ai pas retenue parce qu'elle vient d'un texte de circonstance, un canevas rédigé par Powers pour un projet d'émission de télévision qui n'a pas abouti, le recueil le dit en note p. 20, alors que la citation retenue vient d'un livre publié sous ISBN. Si le rédacteur préfère la précision du mécanisme à l'autorité de la source, c'est celle-là qu'il faut prendre, avec sa référence exacte, et pas la reformuler. Le troisième, « Control is a process of acting on the world we perceive to make it the way we want it to be, and to keep it that way » (117 caractères, même texte, section 1), définit le contrôle et non le comportement : il porterait une autre carte."
+    },
+    {
+      "id": "SUP-ed27a80deaa43f0e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Aucune source secondaire indépendante n'a été ouverte, et je n'en ai trouvé aucune en accès libre. Les autres textes du recueil (Marken, Carey, Nevin, Bourbon, Runkel, Forssell) sont de praticiens de la théorie et ne comptent pas comme littérature secondaire. Hors du recueil, j'ai identifié trois références par leurs métadonnées Crossref, sans pouvoir en lire une seule : Powers 1978 dans Psychological Review, qui est le seul exposé de la théorie par son auteur dans une revue de psychologie à comité de lecture de premier plan ; Mansell et Marken 2015 dans Review of General Psychology, qui porte la revendication des trois grandes théories ; et Locke 1991 dans Motivation and Emotion, la critique extérieure la plus citée de l'application de la théorie du contrôle à la motivation, qui vise du reste la famille des modèles de régulation par l'écart et pas nommément Powers. Unpaywall répond is_oa: false sur les trois, et aucune version déposée n'a été trouvée. Je ne peux donc rien dire de la réception critique de cette théorie, ni de la place qu'elle occupe réellement dans la psychologie contemporaine, autrement qu'en rapportant ce que ses partisans en disent. La carte doit s'en tenir là."
+    },
+    {
+      "id": "SUP-859bdf33f42b9136",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Aucune traduction française, aucune réception francophone. La recherche sur HAL ne rend rien : zéro résultat pour « perceptual control theory », un seul pour « contrôle perceptuel » et il s'agit d'une thèse d'optique sans rapport. Une recherche générale ne fait apparaître aucune édition française des deux livres. Le recueil signale en revanche une édition chinoise de Behavior: The Control of Perception, dans sa section Reviews p. x. Toute formule française du concept qui apparaîtrait sur la carte serait donc de notre fait, et doit être donnée comme telle : la citation, elle, reste en anglais."
+    },
+    {
+      "id": "SUP-2896a9447f8bf230",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Frontière avec human-factors, vérifiée sur le texte et non présumée : le candidat reste ici. Powers se sert abondamment du conducteur automobile, de son volant et de son pare-brise, et un lecteur pressé y verrait une carte de facteurs humains. Ce n'est pas ce que le texte fait de cet exemple. Il ne demande jamais ce que l'opérateur perçoit ou manque dans sa tâche, ne s'intéresse ni à sa charge, ni à son erreur, ni à l'interface : il s'en sert pour montrer que la variable maintenue constante est une perception (« the relationship of the car to the road as seen through the windshield ») et que le mouvement du volant est le moyen variable par lequel elle est maintenue, y compris contre une perturbation que le conducteur ne perçoit pas du tout, le vent de travers. Le point est explicite : « It really looks as if the driver is responding directly to the crosswind, but of course in a closed comfortable car there is no way to detect the crosswind, except through effects on the car that the driver is mostly preventing. » L'objet est la structure de la boucle, et Powers l'applique explicitement à l'amibe, à la cellule et à l'enzyme autant qu'au conducteur. Il faut en revanche signaler la dette dans l'autre sens : le contrôle supervisé de Sheridan, déjà instruit en human-factors, et cette carte parlent tous deux de boucles ; ce sont deux objets différents et il n'y a pas de réinstruction."
+    },
+    {
+      "id": "SUP-5f1e9ce0cb806024",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas pu ouvrir. Les deux livres ne sont accessibles que par les extraits reproduits dans le recueil : un chapitre sur dix-huit pour Behavior: The Control of Perception, un chapitre pour Making Sense of Behavior. Je n'ai vu ni la préface, ni le glossaire, ni le chapitre 4 ni le chapitre 5 du premier, où se construit la thèse. Je n'ai pas ouvert l'article fondateur de 1960 signé Powers, Clark et McFarland, ni l'article de 1978 dans Psychological Review, ni les trois volumes Living Control Systems, dont le recueil ne donne aussi que des extraits. Je n'ai pas ouvert non plus les deux handbooks publiés chez Academic Press en 2020 et 2023 sous la direction de Warren Mansell, dont Crossref donne les chapitres : ils indiqueraient l'état actuel de la diffusion universitaire de la théorie, et cette vérification reste à faire."
+    },
+    {
+      "id": "SUP-6c1bc2b855bb30a7",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Les dates et les lieux de ce fichier ne sont pas fiables et ne doivent pas être recopiés sans contrôle, ce qui est la raison pour laquelle je n'en écris aucun que je n'aie lu deux fois. Making Sense of Behavior y est daté « © 1998-2004 » sur sa page de faux titre, « 1998 » dans une bibliographie du recueil et « 1999 » dans une autre, avec « Bloomfield, NJ » d'un côté et « New Canaan CT » de l'autre. Behavior: The Control of Perception est donné « Hawthorne, NY: Aldine de Gruyter » pour 1973 dans une bibliographie et « Hawthorn, New York » dans une autre. L'éditeur du recueil se déclare à Menlo Park (CA) dans la notice de catalogue et signe ses préfaces depuis Hayward (CA). Le recueil compte 425 pages dans le fichier PDF et se déclare « xvi, 408 p. » en notice. Enfin, une page du recueil de 2016 présente encore Powers sous la forme « William T. (Bill) Powers (1926 ) », millésime de mort ouvert, alors que le texte a été composé après sa disparition : c'est un reliquat d'édition antérieure, et un avertissement suffisant sur la fiabilité des dates dans ce document."
+    },
+    {
+      "id": "SUP-9bdd1bd97d6567ff",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Sur l'accès, pour mémoire et parce que le fichier est chiffré. Le PDF porte un chiffrement AES 128 bits avec mot de passe propriétaire, mais il s'ouvre sans mot de passe utilisateur et ses indicateurs de permission autorisent explicitement la copie de contenu, l'extraction pour accessibilité et l'impression haute définition, seules la modification et l'assemblage étant refusés. La page ii du document le dit dans les mêmes termes en clair : « Printing at high resolution and content copying are allowed. » Aucun contrôle d'accès n'a donc été rencontré ni contourné, ni pour lire le fichier, ni pour en extraire le texte, ni pour en rendre les pages en image. Le fichier n'a été recopié nulle part et n'est cité que par l'URL de l'éditeur."
+    }
+  ],
+  "estimated_tokens": 21502,
+  "status": "READY"
+}

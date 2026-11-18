@@ -1,0 +1,28 @@
+{
+  "protocol_version": 2,
+  "concept_id": "conduite-economique",
+  "candidate_sha256": "41133c7f4e3b897c8a17d490354eaede20ae0a4a1bc13ca5f95ce5d06567d0a5",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 60,
+  "supported": 57,
+  "failed": 3,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C006",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis pour ce claim établissent que le français distingue les deux termes, que l'anglais behavior les confond et que les économistes français et beaucoup de psychologues disent « comportement économique » ; ils n'attribuent pas la confusion à « l'usage courant », généralisation qui élargit la portée."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui n'est fourni pour ce claim ; l'affirmation sur ce que le texte d'Albou ne formule pas n'est établie par aucun support résolu dans le bundle."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "TOO_STRONG",
+      "reason": "L'appui fourni pour ce claim (notes[8]) dit la querelle d'antériorité « consignée et non tranchée » par la carte, faute de pièce du côté de Reynaud dans le corpus ; « elle reste ouverte » affirmé sans réserve passe d'une non-décision du corpus à un état de la question."
+    }
+  ]
+}

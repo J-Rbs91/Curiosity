@@ -1,0 +1,579 @@
+{
+  "protocol_version": 2,
+  "concept_id": "conduite-economique",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "501e7b519bed4f3b8a3ddf8d4b589fa6aedde05fbac51b74a35908b2ed7eb378",
+  "validated_sha256": "60041878a5628f72dc87e624e2f065719244c58af1f7a8aa79af0f144b0de7c3",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "be98ce4b7cf1f13cac899e89464d7c3f9a782e5c36386159b1359f80f30df874"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+        "cles": [
+          "doi:10.3406/bupsy.1982.12417",
+          "url:persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons une caméra installée au-dessus d’un rayon de supermarché. Elle enregistre tout : la main qui prend un paquet, le regard sur l’étiquette, le paquet reposé, la personne qui s’éloigne. Supposons, dans cette scène inventée, que ce film complet ne dise pas ce qui vient de se passer : cette personne a-t-elle renoncé à cause du prix, vérifié une composition pour quelqu’un d’autre, ou simplement occupé une minute d’attente ? Supposons encore que le geste soit le même dans les trois cas, et que rien, sur l’image imaginée, ne les sépare."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "C’est cet écart qui occupe Paul Albou en 1982, dans un article du Bulletin de psychologie où il cherche à dire de quoi sa discipline s’occupe exactement. Il y consacre une sous-section entière à deux mots que le français distingue et que l’anglais réunit sous behavior, le comportement et la conduite. Ce n’est pas une querelle de vocabulaire : de la réponse dépend ce qu’une discipline accepte de compter comme un fait."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Deux mots français pour un seul mot anglais",
+      "text": "Albou part d’une observation de langue. Les économistes français, et beaucoup de psychologues avec eux, parlent selon lui de comportement économique, alors que la discipline ne s’intéresse qu’aux conduites. Ce qui justifie l’écart tient, écrit-il page 201, à l’anglais : le mot behavio(u)r « est un terme massif que connote deux idées que le français distingue ». Les auteurs anglophones, « de Katona à van Raaij », définissent de leur côté la discipline comme the study of economic behavior, sans trancher entre les deux. Ramené au rayon de supermarché, le partage est simple : la main qui prend le paquet et le repose relève du comportement, ce que la personne était en train de faire relève de la conduite."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Deux mots français pour un seul mot anglais",
+      "text": "L’argument s’arrête pourtant là où l’anglais aurait pu lui répondre. Albou ne discute pas le fait que cette langue dispose aussi du mot conduct, et il ne nomme aucun auteur anglophone qui aurait posé chez lui la même différence. La distinction se donne comme un avantage du français, sans que la démonstration aille le vérifier dans l’usage anglais lui-même."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Ce qu’un fait enregistré ne dit pas encore",
+      "text": "Ce qu’Albou refuse a un nom et une adresse. Il vise les behavioristes, fidèles selon lui aux orientations de la psychologie animale, qui ont proposé, « notamment avec Watson », d’enregistrer les faits « sans se préoccuper de leur signification ». Ce point de vue, il le juge compatible avec l’économie pure. Mais pour sa propre discipline il ne transige pas : « la Psychologie économique, telle que nous la concevons, ne saurait admettre ce point de vue »."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Ce qu’un fait enregistré ne dit pas encore",
+      "text": "Le refus trace donc une frontière de discipline. Dans une note, Albou rapporte que Katona lui aurait déclaré en 1966 se vouloir exclusivement « fact finding »."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "La perle ramassée sur une plage",
+      "text": "Page 202, Albou raconte une petite histoire qui fait tenir sa thèse dans une image. Un promeneur ramasse une perle sur une plage. A-t-il eu, à cet instant, une conduite économique ? Pas encore. S’il la dissout dans du vinaigre pour l’absorber, sa conduite est gastronomique, et elle perd le statut économique qu’elle aurait pu prendre. S’il la conserve comme réserve de valeur, ou l’échange contre d’autres biens, c’est sa démarche antérieure, le geste de ramasser, qui revêt une vocation économique."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "La perle ramassée sur une plage",
+      "text": "La leçon tient en deux temps. Le caractère économique d’un acte ne se lit pas sur l’acte pris à part, mais sur ses suites observables. Et ces suites agissent à rebours : elles qualifient un geste déjà accompli. La perle dissoute ne fait pas sortir le promeneur du domaine des conduites ; sa conduite change seulement d’espèce."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Une conduite tient à sa situation et à son cours",
+      "text": "Albou écrit page 201 que « la conduite économique ne peut être comprise isolément, sans référence à la situation ». Il ajoute que la personnalité, « système des conditions de la conduite », ne se ramène pas à un ensemble d’habitudes conçues comme chaînes de réflexes conditionnés."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Une conduite tient à sa situation et à son cours",
+      "text": "Le second appui est la continuité. Une conduite est organisée selon des structures, et « elle s’inscrit dans un courant qui n’est pas nécessairement ni toujours conscient » : c’est à cette continuité, à cette fluidité, qu’elle doit selon lui d’être significative. Albou en tire lui-même la conséquence : on peut découper dans ce courant des unités, ou en extraire des facteurs, mais ces segments n’ont pas d’existence propre et dépendent des instruments qui les déterminent. On peut en tirer une seconde, qui relève de l’interprétation : puisque le courant n’est pas toujours conscient, interroger l’intéressé sur ses raisons ne règle pas tout."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Une conduite veut dire quelque chose",
+      "text": "Reste le trait qui fait de la conduite un comportement significatif. Albou l’écrit : « les conduites économiques ont un sens, elles veulent dire quelque chose ». Acheter, vendre, épargner, investir répondent à des motivations individuelles et à des aspirations collectives, de sorte que ces conduites relèvent, dit-il, d’une sémiologie généralisée."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Une conduite veut dire quelque chose",
+      "text": "Albou ne présente pas la conduite comme sa trouvaille. Il en emprunte la définition à Daniel Lagache et la cite page 202 : c’est « un ensemble d’opérations matérielles et symboliques par lesquelles un organisme en situation tend à réaliser ses possibilités ou à réduire les tensions qui, en compromettant son intégrité, le mettent en mouvement »."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Une conduite veut dire quelque chose",
+      "text": "Chaque membre de cette phrase porte quelque chose. Les opérations sont « matérielles et symboliques » : les gestes comptent, les signes aussi. L’organisme est dit « en situation » : le trait posé à la page précédente est inscrit dans la définition même. Et la conduite est orientée : elle tend à réaliser des possibilités ou à réduire des tensions."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Une thèse défendue, et datée",
+      "text": "Ces pages n’ont rien d’un état de l’art. Albou parle à la première personne, il nomme la position qu’il écarte, et il raconte la résistance qu’il a rencontrée : « La distinction est d’importance, si même elle n’a pas toujours été comprise », écrit-il, en renvoyant aux réunions internationales où il avait eu l’occasion de la présenter."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Une thèse défendue, et datée",
+      "text": "Il l’adosse aussi à une décision collective et datée. Lors d’une table ronde tenue à Paris le 30 septembre 1980, l’Association française de psychologie économique « a fortement souligné la nécessité de ne pas confondre ces deux concepts ». Et sa formule a un état antérieur : dès 1974, rappelle-t-il, dans un ouvrage collectif publié par les Presses Universitaires de France, « nous étions convenus » de définir la discipline comme « l’étude scientifique des conduites économiques »."
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "Une thèse défendue, et datée",
+      "text": "Une querelle traverse ces pages, que les sources disponibles ne permettent pas de trancher, faute de pièce venant de l’autre partie. Albou revendique page 199 l’antériorité de ses éléments sur ceux de Pierre-Louis Reynaud, « Comme Reynaud, et avant même qu’il ne se préoccupe de ce problème », et il écrit page 204 que Reynaud les a repris en 1974, « parfois sans mention d’origine »."
+    },
+    {
+      "locator": "sections[5].paragraphs[3]",
+      "section_title": "Une thèse défendue, et datée",
+      "text": "Reste ce que la notion permet de faire. La conduite économique résulte, pour Albou, de l’intégration des conduites particulières, et c’est ce qui permet, écrit-il page 202, de mieux saisir « la rationalité ou l’irrationalité des procédures » qu’adoptent les agents, une fois tenu compte de leurs projets."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-8df4aae744d44a8f",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "conduite-economique"
+    },
+    {
+      "id": "SUP-c00138bb61f694d9",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "conduite-economique"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-6142a9bae5afdb8b",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Conduite et comportement"
+    },
+    {
+      "id": "SUP-721dfcf5220da682",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "psychologie-economique"
+    },
+    {
+      "id": "SUP-b0b01bf8221b265b",
+      "origin": "validated",
+      "path": "$.theme_labels[\"psychologie-economique\"]",
+      "access": "n/a",
+      "text": "Psychologie économique"
+    },
+    {
+      "id": "SUP-1e1317d202c81bfa",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Paul Albou"
+    },
+    {
+      "id": "SUP-0c9cec40b65b866a",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Article signé du seul Paul Albou. Il donne la distinction pour la sienne et la date : il écrit l'avoir défendue dans des réunions internationales où elle n'a pas toujours été comprise, et rappelle qu'une table ronde de l'Association française de psychologie économique, tenue à Paris le 30 septembre 1980, l'a reprise à son compte."
+    },
+    {
+      "id": "SUP-d5d351900e53d81a",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] nous estimons que la Psychologie économique ne s'intéresse qu'aux « conduites économiques », c'est-à-dire à des comportements significatifs."
+    },
+    {
+      "id": "SUP-9b45e0f942381913",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205, section B, « Conduite et comportement »"
+    },
+    {
+      "id": "SUP-aad137805fb9bde9",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 201"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-d262732bda4fddbf",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Enregistrer un comportement suffit-il, si l'on ignore ce qu'il veut dire ?"
+    },
+    {
+      "id": "SUP-bfb32f88ed394d31",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Albou ne retient que la conduite, comportement significatif, situé et continu, non le fait que le behaviorisme enregistre sans sa signification."
+    },
+    {
+      "id": "SUP-3f764ff8a073c8e3",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-db9e3c932008c07c",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 201-202",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-1bad739b65a5a8fd",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/bupsy.1982.12417",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-0a62373bf606155c",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-ce85a7b2a7dae203",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-28"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-adb089ce39821441",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "MÉTHODE — Je n'ai pas travaillé sur la couche OCR. J'ai relevé sur la notice https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417 (curl, HTTP 200) les URL de page (motif _T1_), puis téléchargé les fac-similés renderPage des p. 199, 200, 201 et 202 (https://www.persee.fr/renderPage/bupsy_0007-4403_1982_num_36_358_12417/bupsy_0007-4403_1982_num_36_358_T1_0201_0000_1400.jpg, PNG 1424x2133, HTTP 200) et lu ces images, recadrées et agrandies. L'endpoint texte /doc/page/ a bien répondu via WebFetch mais a refusé la reproduction intégrale ; je ne m'en suis donc pas servi pour établir le verbatim."
+    },
+    {
+      "id": "SUP-82961a9ed3b87236",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION (verbatim, p. 201, colonne de droite, sous-section « 1°) Conduite et comportement ») — lu sur le fac-similé, agrandi : « A la différence des économistes français, et même de beaucoup de psychologues, qui parlent de « comportement économique », nous estimons que la Psychologie économique ne s'intéresse qu'aux « conduites économiques », c'est-à-dire à des comportements significatifs. » La fiche coupe la subordonnée initiale et le signale par […] ; la suite est reproduite mot pour mot, ponctuation et guillemets compris. La phrase tient entièrement dans la p. 201 : locator exact. Texte français d'origine, aucune traduction à déclarer."
+    },
+    {
+      "id": "SUP-e18f66303bb07ebc",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "SOURCES (résolvent) — Le DOI 10.3406/bupsy.1982.12417 résout en CSL-JSON (HTTP 200, Crossref/PERSEE Program) sur : titre « Contribution à une définition de la psychologie économique », auteur unique Paul Albou, container « Bulletin de psychologie », volume 36 (= tome XXXVI), issue 358, published-print 1982, page 195-205, ISSN 0007-4403, resource primary = l'URL Persée affichée par la fiche. Tous les éléments de la référence concordent. La mention « section B, « Conduite et comportement » » résout elle aussi : le fac-similé montre « a) la psychologie économique est une discipline scientifique. » p. 199 et « b) la Psychologie économique étudie les conduites économiques. » en bas de colonne gauche p. 201, la sous-section citée étant « 1°) Conduite et comportement » au sein de b). Le locator de source p. 201-202 couvre bien le développement invoqué."
+    },
+    {
+      "id": "SUP-d8429d35e6b0b601",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION (confirmée) — Article signé du seul Paul Albou (confirmé par la notice et par Crossref, un seul auteur). La thèse est énoncée à la première personne et revendiquée : « nous estimons que la Psychologie économique ne s'intéresse qu'aux « conduites économiques » » (p. 201) et « la Psychologie économique, telle que nous la concevons, ne saurait admettre ce point de vue » (p. 201). Le contexte de défense est vérifié sur l'image : « La distinction est d'importance, si même elle n'a pas toujours été comprise, notamment dans certaines réunions internationales où nous avons eu l'occasion de la présenter » et « [Toute différence] a été la position de l'Association française de Psychologie économique qui, lors d'une Table ronde organisée à Paris, le 30 septembre 1980, a fortement souligné la nécessité de ne pas confondre ces deux concepts » (p. 201). Note : l'imprimé porte bien « Toute différence a été la position », tournure boiteuse qui ressemble à une coquille de composition ; je la relève telle quelle sans la corriger."
+    },
+    {
+      "id": "SUP-f10d8d7a4270cfb4",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "ATTRIBUTION, nuance documentée (ne remet pas en cause le verdict) — Albou ne présente pas la notion de « conduite » comme sienne : il en emprunte la définition à Daniel Lagache, cité entre guillemets p. 202 (« un ensemble d'opérations matérielles et symboliques par lesquelles un organisme en situation tend à réaliser ses possibilités ou à réduire les tensions qui, en compromettant son intégrité, le mettent en mouvement »), et il fonde la distinction sur la langue elle-même (« Le mot anglo-américain « behavio(u)r » est un terme massif que connote deux idées que le français distingue », p. 201). Il date par ailleurs la définition d'un travail antérieur et collectif : « dès 1974, dans un ouvrage collectif publié par les Presses Universitaires de France, nous étions convenus de définir la Psychologie économique comme « l'étude scientifique des conduites économiques » » (p. 199, note 9 : « La psychologie économique », Traité de Psychologie appliquée, fasc. X, 1974, Paris, PUF, p. 42). La carte ne revendique nulle part la paternité de la distinction conduite/comportement — son summary porte sur ce qu'Albou retient pour la discipline — donc l'attribution tient. Je n'ai pas pu consulter le fascicule X de 1974 pour établir si la formule y est collective ou de sa seule plume : point non vérifié."
+    },
+    {
+      "id": "SUP-57246eed955c516c",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE (fidèle) — Les trois qualificatifs du summary sont chacun adossés à une phrase du texte, dans le périmètre du locator p. 201-202. « significatif » : « c'est-à-dire à des comportements significatifs » (p. 201) et « c'est à ce caractères de continuité et de fluidité qu'elle doit d'être significative » (p. 202). « situé » : « la conduite économique ne peut être comprise isolément, sans référence à la situation » (p. 201, fin de colonne droite), redoublé par « un organisme en situation » dans la définition de Lagache (p. 202). « continu » : « Organisée selon des structures, elle s'inscrit dans un courant qui n'est pas nécessairement ni toujours conscient, et c'est à ce caractères de continuité et de fluidité… » (p. 201-202). Le membre « non le fait enregistré sans sa signification » reprend au plus près « proposé d'enregistrer les « faits » sans se préoccuper de leur signification » (p. 201). Le hook (« Enregistrer un comportement suffit-il, si l'on ignore ce qu'il veut dire ? ») ne fait que retourner cette même phrase en question. Rien dans l'accroche ni dans le résumé n'excède les sources, et rien n'y rétrécit la thèse : le texte porte bien une thèse propre, énoncée en première personne et opposée à une position adverse nommée, ce n'est pas un état de l'art."
+    },
+    {
+      "id": "SUP-a117b1d6f490dcb1",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Aucune source secondaire n'a été ouverte sur ce lot, ni par la cartographie ni par la lecture primaire : la carte repose sur sa seule source primaire, et rien n'est établi de la réception de ce texte."
+    },
+    {
+      "id": "SUP-d9826cdf06c29253",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le PDF complet servi par Persée à l'adresse docAsPDF répond HTTP 403. La lecture a été faite page par page sur l'endpoint page, les onze pages 195 à 205 en HTTP 200, et croisée avec les images de page servies par renderPage ; aucun bloc manquant n'a été constaté et le passage cité a été relu sur l'image de la page 201."
+    },
+    {
+      "id": "SUP-9f9d529eac42e54e",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La couche OCR de Persée porte des fautes qui ne sont pas dans l'imprimé et qui n'ont pas été reprises : « Pierre-Louis Renaud » page 195 pour Reynaud, « septembre-octobre 1981 » page 195 là où le contexte impose 1881, et un doublement de mots page 205."
+    },
+    {
+      "id": "SUP-82cdf97b81cd2cdd",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Deuxième fiche tirée du même article que « definition-de-la-psychologie-economique ». Le concept en est le pivot, mais il s'énonce séparément aux pages 201 et 202, sous l'intertitre propre « Conduite et comportement ». Si le contrôle juge que les deux fiches n'en font qu'une, c'est celle-ci qui doit céder : la définition de la discipline est l'objet déclaré de l'article."
+    },
+    {
+      "id": "SUP-d57ba480c276ea42",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "La citation s'ouvre sur une coupe parce que la phrase imprimée commence par la partie adverse, les économistes français et beaucoup de psychologues qui parlent de comportement économique. La coupe retire l'adversaire, non la thèse."
+    },
+    {
+      "id": "SUP-ce1779d076a3078e",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "L'apologue de la perle, page 202, aurait été la citation la plus parlante : le promeneur qui ramasse une perle n'a pas encore eu de conduite économique, et sa démarche ne revêt une vocation économique que s'il la conserve comme réserve de valeur au lieu de la dissoudre dans du vinaigre. Il ne tient pas sous 150 caractères, et toute coupe assez courte supprimait l'un des deux termes."
+    },
+    {
+      "id": "SUP-de5e3347756c945f",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Le résumé n'épuise pas le concept : le motif antibehavioriste explicite chez Albou, l'appui sur Watson et la psychologie animale, la sémiologie généralisée dont les conduites relèveraient, et le fait que le caractère économique se lise sur les suites de l'acte et non sur l'acte pris à part ne sont pas portés à la carte."
+    },
+    {
+      "id": "SUP-216ae0170e5a5609",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Albou fonde la distinction sur la langue française et l'oppose à un usage anglophone, behavior étant selon lui « un terme massif ». Il ne discute pas le fait que l'anglais dispose aussi de conduct, et ne cite aucun auteur anglophone qui aurait fait la distinction dans sa propre langue. Cette limite est dans le texte et n'a pas été comblée depuis un commentaire extérieur."
+    },
+    {
+      "id": "SUP-86cde1fe959e93c5",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Querelle d'antériorité avec l'autre auteur de ce lot, consignée et non tranchée : Albou revendique page 199 l'antériorité de ses éléments sur Pierre-Louis Reynaud, « Comme Reynaud, et avant même qu'il ne se préoccupe de ce problème », et écrit page 204 que Reynaud les a repris en 1974 « parfois sans mention d'origine ». Le corpus ne dispose d'aucune pièce du côté de Reynaud sur ce point, et la carte ne prend pas parti."
+    },
+    {
+      "id": "SUP-3a5b76803d614a8c",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Champ domain retiré après déclaration du thème psychologie-economique dans src/content/themes.ts : ce champ n'existe que pour le cas où aucun thème de la fiche n'est connu de l'application, et l'invariant est vérifié par taxonomy.test.ts."
+    },
+    {
+      "id": "SUP-78dac375149ba806",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Correction appliquee sur remarque hors mandat du controle aveugle, qui rendait PASS. Le resume ecartait une position sans dire a qui elle appartient : Albou l'impute nommement, page 201, aux behavioristes « notamment avec Watson », et sa note 13 vise un contemporain, Katona, qui lui aurait declare en 1966 se vouloir exclusivement « fact finding ». Le resume nomme desormais le behaviorisme. La mention de psychologie economique a ete retiree de la premiere proposition pour tenir sous le plafond de 170 caracteres, sans perte : le theme et la carte soeur la portent."
+    },
+    {
+      "id": "SUP-420f8519c35c0fda",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "conduite-economique"
+    },
+    {
+      "id": "SUP-d258b9dbc8daf8d5",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Paul Albou"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-1e7c3edd9e7267a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Signature imprimée relevée sur la page 195 : Paul ALBOU, Laboratoire de Psychologie économique, Université René Descartes (Paris V). La distinction est présentée par Albou comme la sienne, et il la date : il écrit page 201 l'avoir défendue dans des réunions internationales où elle n'a pas toujours été comprise, et rappelle qu'une table ronde de l'Association française de psychologie économique, tenue à Paris le 30 septembre 1980, l'a reprise à son compte."
+    },
+    {
+      "id": "SUP-3d2451f0877fd69a",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] nous estimons que la Psychologie économique ne s'intéresse qu'aux « conduites économiques », c'est-à-dire à des comportements significatifs."
+    },
+    {
+      "id": "SUP-1fe05e9bd4b411a3",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, section B, b), 1°, « Conduite et comportement »"
+    },
+    {
+      "id": "SUP-2d466748b634d365",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 201"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-66e74c3fa69db500",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Albou, Paul (1982), « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, p. 195-205."
+    },
+    {
+      "id": "SUP-462aa421caeae2a9",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/bupsy.1982.12417"
+    },
+    {
+      "id": "SUP-204a7f29da7f5cd3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
+    },
+    {
+      "id": "SUP-be71057fc6e5a36e",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Albou part d'un fait de langue qu'il traite comme un fait de doctrine. L'anglais behavior est selon lui « un terme massif » qui connote deux idées que le français distingue, le comportement et la conduite ; les auteurs anglophones, « de Katona à van Raaij », définissent la discipline comme the study of economic behavior sans trancher entre les deux, et les économistes français, comme beaucoup de psychologues, disent comportement économique. Albou ne retient que la conduite, définie comme comportement significatif. Le motif est explicite : les behavioristes, fidèles aux orientations de la psychologie animale, ont proposé avec Watson d'enregistrer les faits sans se préoccuper de leur signification, point de vue qu'il juge compatible avec l'économie pure mais que la psychologie économique ne saurait admettre. Trois traits suivent. La conduite est située : elle ne peut être comprise isolément, sans référence à la situation, et la personnalité, « système des conditions de la conduite », ne se ramène pas à un ensemble d'habitudes conçues comme chaînes de réflexes conditionnés. La conduite est continue : elle s'inscrit dans un courant qui n'est pas toujours conscient, et c'est à ce caractère de continuité et de fluidité qu'elle doit d'être significative ; on peut y découper des unités ou en extraire des facteurs, mais ces segments n'ont pas d'existence propre et dépendent des instruments qui les déterminent. La conduite fait sens : « les conduites économiques ont un sens, elles veulent dire quelque chose », acheter, vendre, épargner, investir répondant à des motivations individuelles et à des aspirations collectives, de sorte qu'elles relèvent d'une sémiologie généralisée. De là le point qui engage l'économie : le caractère économique ne se lit pas sur l'acte pris à part mais sur ses suites observables. C'est l'apologue de la perle, page 202 : le promeneur qui ramasse une perle sur une plage n'a pas encore eu de conduite économique ; s'il la dissout dans du vinaigre pour l'absorber, la conduite est gastronomique et perd son statut économique potentiel ; s'il la conserve comme réserve de valeur ou l'échange contre d'autres biens, sa démarche antérieure revêt une vocation économique. La conduite économique résulte donc de l'intégration des conduites particulières, et c'est aussi ce qui permet, dit Albou page 202, de mieux saisir « la rationalité ou l'irrationalité des procédures » qu'adoptent les agents, une fois tenu compte de leurs projets."
+    },
+    {
+      "id": "SUP-798b956757882cd7",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Ce concept est tiré du même article que la fiche definition-de-la-psychologie-economique et il en est le pivot conceptuel, mais il s'énonce séparément aux pages 201 et 202, sous un intertitre propre, « Conduite et comportement ». Si le validateur juge que les deux fiches n'en font qu'une, c'est celle-ci qui doit céder : la définition de la discipline est l'objet déclaré de l'article."
+    },
+    {
+      "id": "SUP-0ea0bdb4b92c496d",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La citation retenue commence à un […] parce que la phrase imprimée s'ouvre sur la partie adverse, à savoir les économistes français et beaucoup de psychologues qui parlent de comportement économique. La coupe retire l'adversaire, non la thèse, et la proposition retenue reste celle d'Albou. Passage relu sur l'image de la page 201."
+    },
+    {
+      "id": "SUP-6c6b88056078b189",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "L'apologue de la perle, page 202, aurait été la citation la plus parlante de cette fiche, mais il ne tient pas sous 150 caractères : il se déploie sur une quinzaine de lignes, et le membre qui porte la démonstration, la conservation de la perle comme réserve de valeur, ne se comprend pas sans le membre opposé, la perle dissoute dans du vinaigre. Toute coupe assez courte pour tenir supprimait l'un des deux termes et détruisait l'argument."
+    },
+    {
+      "id": "SUP-e4c34f749aef51ec",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Le PDF complet servi par Persée à l'adresse docAsPDF répond HTTP 403. La lecture a été faite page par page sur l'endpoint page, les onze pages 195 à 205 en HTTP 200, et croisée avec les images de page servies par renderPage. Aucun bloc manquant n'a été constaté."
+    },
+    {
+      "id": "SUP-69a1b0383c8a6a1a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Albou fonde la distinction sur la langue française et l'oppose à un usage anglophone. Il ne discute pas le fait que l'anglais dispose aussi de conduct, et il ne cite aucun auteur anglophone qui aurait fait la distinction dans sa propre langue. Cette limite est dans le texte, elle n'a pas été comblée depuis un commentaire extérieur."
+    }
+  ],
+  "estimated_tokens": 10879,
+  "status": "READY"
+}
