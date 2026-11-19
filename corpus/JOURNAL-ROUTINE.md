@@ -2984,3 +2984,10 @@ septième fois.
 - Aucun `BLOCKED_SOURCE`. Projection `deepenings.generated.ts` régénérée, idempotente.
 - File restante : 72 cartes jamais auditées, 31 en protocole 3, 8 refusées.
 - Anomalie : `npx tsc --noEmit` signale `PageProps`/`LayoutProps` introuvables (types Next générés absents du checkout), sans lien avec le corpus. `package-lock.json` modifié dans l'arbre avant la routine, volontairement non commité.
+
+## 2026-11-19 : audit de 3 approfondissements jamais audités
+
+- `cout-de-remonter-l-effectif` : REVISE, réécrit (-10 %), 4 claims corrigés par retrait à la boucle 1/2, `FACTCHECK_PASS` 58/58, `ACCEPT`.
+- `controle-supervise` : REVISE, réécriture `FACTCHECK_PASS` 65/65 mais `REJECT` à la revue (C060, « la définition sous deux noms » contredit la définition commune aux deux textes ; le gate l'avait laissé passer sur des appuis qui portent eux-mêmes l'incohérence). Texte d'origine restauré par SHA de blob, trace `rewrite_rejected`. Anomalie de dossier : `lecture.json` dit « version abrégée » pour la communication, ce que contredit la note de datation.
+- `court-terme-contre-long-terme` : `BLOCKED_SOURCE`. Aucun dossier de preuve, six attributions à Forrester sans support. Débloque : un dossier de lecture de Forrester D-4468-2 (section VI, p. 12).
+- File restante : 69 cartes jamais auditées. `package-lock.json` modifié avant la routine, volontairement non commité.
