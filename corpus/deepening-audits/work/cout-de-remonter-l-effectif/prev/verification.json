@@ -1,0 +1,336 @@
+{
+  "concept_id": "cout-de-remonter-l-effectif",
+  "candidate_sha256": "89311757d3616907e2d67fab9ff0af6d608075c72cd0a7ab3c91942fd7aa5840",
+  "results": [
+    {
+      "claim_id": "C001",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis (definition_de_lauteur) portent seulement que, dans le modèle, « In general, the function r(t) will be oscillatory » ; ils ne portent ni échelle mensuelle ni constat empirique sur les ateliers, et notes[1] (cité ailleurs) rappelle que Bellman ne donne aucun exemple d'atelier réel. Le claim transforme une hypothèse de modèle en fait général d'atelier, à une granularité « d'un mois à l'autre » que les appuis fournis ne portent pas."
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[2] : « losing an amount of money in excess wages proportional to (x(t)-r(t))dt over the interval (t,t+dt) » ; summary : être au-dessus du besoin se paie en salaires. La proportionnalité à la durée couvre « aussi longtemps que l'écart dure »."
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis portent que Bellman envisage d'abaisser x(t) au niveau de r(t) (« if we decrease x(t) to the level of r(t) ») ; ils ne portent pas que ce geste serait un réflexe spontané (« vient tout seul »). Généralisation psychologique non établie par les appuis fournis pour ce claim."
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text/text : abaisser x(t) au niveau de r(t) expose à devoir l'augmenter si r(t) augmente ; la contrainte x(t) ≥ r(t) (definition_de_lauteur) impose de remonter avec la charge."
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim. Il présente comme ce que demande la remontée des détails concrets (retrouver des gens, les installer, attendre qu'ils tiennent le rythme) que les appuis fournis ailleurs ne portent pas ; le modèle ne décrit pas la nature du coût de montée. Le seul appui signalé (reserves[8], terme « rythme ») concerne le rythme de production de la partie V et ne paraît pas porter cette matière : pas de MAPPING_INCOMPLETE."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur distingue un coût d'ÉTAT et un coût de CHANGEMENT ; reserves[7] et notes[2] : « le coût du changement de niveau, distinct du coût d'être au mauvais niveau »."
+    },
+    {
+      "claim_id": "C007",
+      "verdict": "SUPPORTED",
+      "reason": "sources[0].label (full-text, corrobore), quotation.reference, review.notes[0] et attribution.note : Richard Bellman, RAND Corporation, P-651, révisé le 23 mai 1955, signature unique."
+    },
+    {
+      "claim_id": "C008",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[2] : les deux coûts (excess wages, puis coût de remontée) sont énoncés dans des phrases consécutives du même paragraphe."
+    },
+    {
+      "claim_id": "C009",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et definition_de_lauteur : « ne donne aucun exemple d'atelier réel »."
+    },
+    {
+      "claim_id": "C010",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : critère (2) J(x) = ∫₀ᵀ [(x(t)-r(t)) + a Max (dx/dt, 0)]dt réunit les deux termes."
+    },
+    {
+      "claim_id": "C011",
+      "verdict": "SUPPORTED",
+      "reason": "sources[0].label, quotation.reference, sources_ouvertes[0].citation : Mathematical Aspects of Scheduling Theory, P-651."
+    },
+    {
+      "claim_id": "C012",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[4] : la partie III s'ouvre sur § 1 « Preliminaries » ; definition_de_lauteur : « a class of problems which are occasionally called \"smoothing\" problems »."
+    },
+    {
+      "claim_id": "C013",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et reserves[10] portent la citation exacte de « The general problem has the following character »."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « penalty is the same regardless of the direction of deviation; in other cases, we have one type of penalty for overshooting the requirements, and another type of penalty for not being able to meet the requirements »."
+    },
+    {
+      "claim_id": "C015",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur, review.notes[4], attribution.note : § 2 « An Industrial Smoothing Problem » pose x(t) et r(t)."
+    },
+    {
+      "claim_id": "C016",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[4] portent la citation « a staff of employees capable of turning out a certain quantity of work x(t) »."
+    },
+    {
+      "claim_id": "C017",
+      "verdict": "SUPPORTED",
+      "reason": "translator (validated et lecture) : x(t) désigne la quantité de travail que le personnel est capable de produire, Bellman n'employant pas le mot effectif ; conséquence directe de la citation."
+    },
+    {
+      "claim_id": "C018",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « committments requiring a quantity r(t) » au temps t."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « In general, the function r(t) will be oscillatory as a function of time »."
+    },
+    {
+      "claim_id": "C020",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et reserves[10] : « at all times we are required to have x(t) ≥ r(t), which is to say we are required to meet our committments come what may »."
+    },
+    {
+      "claim_id": "C021",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture interprétative présentée comme telle (« On peut lire ») ; definition_de_lauteur montre le passage d'un cadre à pénalité pour non-satisfaction à une contrainte stricte."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur porte le cadre général (pénalité pour « not being able to meet the requirements ») et la contrainte « required to meet our committments come what may »."
+    },
+    {
+      "claim_id": "C023",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et definition_de_lauteur : « dans ce modèle, rien ne se stocke, le besoin doit être couvert à chaque instant par la capacité présente » ; reserves[7] : aucun stock chez Bellman. Le claim est borné à « dans ces pages »."
+    },
+    {
+      "claim_id": "C024",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence dérivée : sans stock et sous x(t) ≥ r(t), la seule variable de décision est la trajectoire x(t) (definition_de_lauteur : « choose an absolutely continuous x(t) ») ; formulée comme déduction, non comme attribution."
+    },
+    {
+      "claim_id": "C025",
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; l'affirmation évaluative que ce coût est « celui que tout le monde voit » n'est portée par aucun appui fourni."
+    },
+    {
+      "claim_id": "C026",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[2] portent la citation exacte ; reserves[1] documente la restitution du mot « over »."
+    },
+    {
+      "claim_id": "C027",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : perte « proportional to (x(t)-r(t))dt », donc à l'écart et à la durée."
+    },
+    {
+      "claim_id": "C028",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence arithmétique directe de la proportionnalité à (x(t)-r(t))dt portée par definition_de_lauteur."
+    },
+    {
+      "claim_id": "C029",
+      "verdict": "SUPPORTED",
+      "reason": "Dérivation : sous x(t) ≥ r(t), le seul terme (x(t)-r(t)) est minimisé à écart nul ; definition_de_lauteur et quotation.original_text (« decrease x(t) to the level of r(t) »)."
+    },
+    {
+      "claim_id": "C030",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text et review.notes[2] : la phrase suivante (« However, if we decrease x(t) to the level of r(t)… This cannot be done without cost ») oppose un coût à cette réduction."
+    },
+    {
+      "claim_id": "C031",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text et quotation.text : « if we decrease x(t) to the level of r(t), we are faced with the prospect of having possibly to increase x(t) if r(t) increases. This cannot be done without cost »."
+    },
+    {
+      "claim_id": "C032",
+      "verdict": "SUPPORTED",
+      "reason": "translator (validated et lecture) et review.notes[3] : « la litote est de Bellman »."
+    },
+    {
+      "claim_id": "C033",
+      "verdict": "SUPPORTED",
+      "reason": "quotation.original_text et definition_de_lauteur : même phrase, « and we shall take the cost of doing this proportional to dx/dt »."
+    },
+    {
+      "claim_id": "C034",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : coût de changement « proportionnel à la vitesse de montée » ; notes[0] : choix de modélisation du coût de montée."
+    },
+    {
+      "claim_id": "C035",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur, notes[0], reserves[11], review.notes[7] : « Assuming that it costs us nothing to decrease x(t) », hypothèse écrite."
+    },
+    {
+      "claim_id": "C036",
+      "verdict": "SUPPORTED",
+      "reason": "Glose immédiate de l'hypothèse citée dans la phrase précédente et bornée par elle (et par C040) ; definition_de_lauteur, notes[0], summary (« dans son modèle, redescendre ne coûte rien »)."
+    },
+    {
+      "claim_id": "C037",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « the cost of changing the level of labor supply … proportional to max (dx/dt, 0)dt », posé à la suite de l'hypothèse."
+    },
+    {
+      "claim_id": "C038",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et notes[0] : l'écriture max (dx/dt, 0) fait que seule la pente positive est facturée. Le signal (reserves[9], « maximum ») vise la recherche d'un maximum en partie IV, sans rapport."
+    },
+    {
+      "claim_id": "C039",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « seule la pente positive est facturée »."
+    },
+    {
+      "claim_id": "C040",
+      "verdict": "SUPPORTED",
+      "reason": "notes[0] et reserves[11] : hypothèse « posée pour simplifier le critère, et non un fait d'atelier »."
+    },
+    {
+      "claim_id": "C041",
+      "verdict": "SUPPORTED",
+      "reason": "notes[0] et reserves[11] : « licencier coûte »."
+    },
+    {
+      "claim_id": "C042",
+      "verdict": "SUPPORTED",
+      "reason": "notes[0] et reserves[11] : « le mémorandum de Holt, Modigliani et Simon compte précisément un coût d'embauche et de licenciement » ; reserves[7] et notes[2] : mémorandum de mai 1955."
+    },
+    {
+      "claim_id": "C043",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[7] et notes[2] : une fluctuation de commandes se répartit entre le stock, les heures et l'effectif chez Holt, Modigliani et Simon."
+    },
+    {
+      "claim_id": "C044",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[7] et notes[2] : zéro occurrence de Holt, Modigliani, Simon et Muth dans les 74 feuillets ; Bellman ne cite pas ces auteurs."
+    },
+    {
+      "claim_id": "C045",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[7] et notes[2] : chez HMS trois exutoires et dosage ; chez Bellman aucun stock et asymétrie entre monter et descendre."
+    },
+    {
+      "claim_id": "C046",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « J(x) = ∫₀ᵀ [(x(t)-r(t)) + a Max (dx/dt, 0)]dt where a is some positive constant »."
+    },
+    {
+      "claim_id": "C047",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : « choose an absolutely continuous x(t) which minimizes J(x) while satisfying the requirement x(t) ≥ r(t) »."
+    },
+    {
+      "claim_id": "C048",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : version en temps discret § 3, même somme J{x} = Σ … sous x(k) ≥ r(k)."
+    },
+    {
+      "claim_id": "C049",
+      "verdict": "SUPPORTED",
+      "reason": "Lecture présentée comme telle (« On peut lire ») et dérivable du critère où le terme d'excédent a un coefficient 1 et le terme de montée un coefficient a (definition_de_lauteur)."
+    },
+    {
+      "claim_id": "C050",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et definition_de_lauteur : aucun ordre de grandeur pour la constante a."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence dérivée de la coexistence des deux termes du critère (definition_de_lauteur), présentée comme déduction."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur : baisse gratuite par hypothèse, écart nul à x=r, remontée facturée par a Max(dx/dt,0) ; quotation.original_text : abaisser expose à devoir remonter si r(t) augmente. Dans le scénario de creux suivi de remontée, la dérivation tient."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "Dérivation du critère (definition_de_lauteur) : rester au-dessus de r(t) paie le terme (x(t)-r(t)) sur la durée et évite la pente positive."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "Conséquence modale (« peut ») du critère à deux termes pondérés par a (definition_de_lauteur) ; ne prétend pas donner la solution."
+    },
+    {
+      "claim_id": "C055",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] et definition_de_lauteur : « Il ne dit pas qu'il vaut mieux garder de la capacité d'avance … ce n'est écrit nulle part »."
+    },
+    {
+      "claim_id": "C056",
+      "verdict": "SUPPORTED",
+      "reason": "attribution.note : ce qui revient en propre à Bellman est la formulation du problème et du critère, non le résultat ; definition_de_lauteur : critère J(x) à minimiser."
+    },
+    {
+      "claim_id": "C057",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[5] et attribution.note portent la citation exacte du résumé du rapport ; attribution_note : le rapport se donne pour un exposé."
+    },
+    {
+      "claim_id": "C058",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[4], reserves[15], notes[8], attribution.note : Bellman pose des modèles et crédite nommément Jacobs, Arrow-Harris-Marschak, S. Johnson."
+    },
+    {
+      "claim_id": "C059",
+      "verdict": "SUPPORTED",
+      "reason": "reserves[9], notes[8], reserves[15] : § 5 de la partie III, « in the form given by W. Jacobs »."
+    },
+    {
+      "claim_id": "C060",
+      "verdict": "SUPPORTED",
+      "reason": "attribution.note, attribution_note, review.notes[4] : la solution du problème de lissage est renvoyée à des travaux coécrits ou tiers."
+    },
+    {
+      "claim_id": "C061",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur, review.notes[4], reserves[5], notes[4] : folio 40, « The solution turns out to have a quite simple form, see [4] »."
+    },
+    {
+      "claim_id": "C062",
+      "verdict": "SUPPORTED",
+      "reason": "review.notes[4], reserves[5] : l'entrée [4] est des trois auteurs Bellman, Glicksberg et Gross ; attribution.note et attribution_note : renvoi à un article coécrit avec I. Glicksberg et O. Gross."
+    },
+    {
+      "claim_id": "C063",
+      "verdict": "SUPPORTED",
+      "reason": "definition_de_lauteur et review.notes[4] portent la citation exacte ; reserves[6] et notes[5] : entrée [8] Karlin."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "SUPPORTED",
+      "reason": "notes[1] : Bellman donne seulement que la solution est simple et qu'elle se trouve ailleurs ; glose de la citation qui précède."
+    },
+    {
+      "claim_id": "C065",
+      "verdict": "SUPPORTED",
+      "reason": "notes[3] et reserves[8] : partie V, § 2 « Production Smoothing », folios 50 à 52, programmation linéaire, coût de stockage de l'excédent accumulé, à quinze pages d'écart."
+    },
+    {
+      "claim_id": "C066",
+      "verdict": "SUPPORTED",
+      "reason": "notes[3] et reserves[8] : le mot lissage désigne chez Bellman deux modèles différents, et celui-ci est le seul qui ignore le stock."
+    }
+  ]
+}

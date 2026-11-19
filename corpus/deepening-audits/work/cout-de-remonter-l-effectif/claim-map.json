@@ -1,0 +1,790 @@
+{
+  "concept_id": "cout-de-remonter-l-effectif",
+  "candidate_sha256": "322bdd97ce786b88119abd040198a9dc45c8a993718b180940b00861c55279d1",
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "lead[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "mapping_status": "CLAIMS_MAPPED"
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "mapping_status": "CLAIMS_MAPPED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[0]",
+      "start": 87,
+      "end": 236,
+      "claim_text": "Quand l’équipe en place peut faire plus que ce qui lui est demandé, la différence se paie en salaires versés pour un travail dont personne n’a besoin",
+      "normalized_claim": "Une capacité supérieure au besoin se paie en salaires excédentaires.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-8a18ad697e763e0c",
+        "SUP-9b54f703f0472315"
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[0]",
+      "start": 238,
+      "end": 286,
+      "claim_text": "et elle se paie aussi longtemps que l’écart dure",
+      "normalized_claim": "Le coût d'excédent court sur toute la durée de l'écart.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-8a18ad697e763e0c"
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[0]",
+      "start": 288,
+      "end": 366,
+      "claim_text": "D’où l’idée de ramener la capacité au niveau exact du besoin, et de l’y tenir.",
+      "normalized_claim": "Le coût d'excédent pousse à ajuster la capacité au besoin.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-5f42e9238997b248",
+        "SUP-3a59178836df2daf"
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "start": 0,
+      "end": 103,
+      "claim_text": "Ce geste a une face qui ne se voit que plus tard : quand la charge remonte, il faut remonter avec elle.",
+      "normalized_claim": "Abaisser la capacité expose à devoir la relever quand le besoin remonte.",
+      "support_ids": [
+        "SUP-5f42e9238997b248",
+        "SUP-3a59178836df2daf",
+        "SUP-b5f0cdd19431ecb0",
+        "SUP-9443c8e1ccc108da",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "locator": "lead[1]",
+      "start": 104,
+      "end": 213,
+      "claim_text": "C’est une dépense d’une autre nature, qui ne tient pas au niveau où l’on se trouve mais au fait d’en changer.",
+      "normalized_claim": "Le coût de remontée est un coût de changement, distinct du coût d'état.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-9540c7a3f4e41d4a",
+        "SUP-5127db0208c54f63"
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "locator": "lead[1]",
+      "start": 214,
+      "end": 343,
+      "claim_text": "Dans un rapport de la RAND Corporation révisé le 23 mai 1955, Richard Bellman écrit ces deux dépenses l’une à la suite de l’autre",
+      "normalized_claim": "Bellman, rapport RAND révisé le 23 mai 1955, écrit les deux coûts à la suite.",
+      "support_ids": [
+        "SUP-1dbf1b7c41d6c2c3",
+        "SUP-5e75e370e7232e5f",
+        "SUP-cd001e490b23aca2",
+        "SUP-5e61f61d8ac1b2c1",
+        "SUP-04f913376a84c1c2",
+        "SUP-91b16a99db4d076d",
+        "SUP-38e25a6b66746f9f",
+        "SUP-079a95da56ea8995",
+        "SUP-8a18ad697e763e0c"
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "locator": "lead[1]",
+      "start": 345,
+      "end": 385,
+      "claim_text": "sans donner aucun exemple d’atelier réel",
+      "normalized_claim": "Bellman ne donne aucun exemple d'atelier réel.",
+      "support_ids": [
+        "SUP-90d253780b3f39bb",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "start": 387,
+      "end": 419,
+      "claim_text": "et les réunit en un seul critère",
+      "normalized_claim": "Les deux coûts sont réunis dans un critère unique.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 0,
+      "end": 89,
+      "claim_text": "Le rapport s’intitule Mathematical Aspects of Scheduling Theory et porte le numéro P-651.",
+      "normalized_claim": "Titre et numéro du rapport.",
+      "support_ids": [
+        "SUP-1dbf1b7c41d6c2c3",
+        "SUP-5e75e370e7232e5f",
+        "SUP-cd001e490b23aca2",
+        "SUP-5e61f61d8ac1b2c1"
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 90,
+      "end": 181,
+      "claim_text": "Sa troisième partie s’ouvre sur une classe de problèmes que l’on appelle parfois de lissage",
+      "normalized_claim": "La partie III s'ouvre sur les problèmes dits de lissage.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-dac242ba32f415af"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 186,
+      "end": 331,
+      "claim_text": "Bellman en donne d’abord le caractère général : « we wish to maintain a system in a given state, with penalties for deviations from this state ».",
+      "normalized_claim": "Citation du caractère général des problèmes de lissage.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-c8f6805cce300810"
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 332,
+      "end": 556,
+      "claim_text": "Il s’agit de maintenir un système dans un état donné et de pénaliser les écarts, tantôt de la même façon dans les deux sens, tantôt avec une pénalité pour le dépassement et une autre pour l’incapacité à satisfaire le besoin.",
+      "normalized_claim": "Paraphrase du § 1 sur les pénalités symétriques ou distinctes.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 0,
+      "end": 103,
+      "claim_text": "Le paragraphe suivant, « An Industrial Smoothing Problem », pose un cas industriel avec deux grandeurs.",
+      "normalized_claim": "Le § 2 pose un cas industriel à deux grandeurs.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-dac242ba32f415af"
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 104,
+      "end": 259,
+      "claim_text": "x(t) est ce que le personnel présent est capable de produire à l’instant t, « a staff of employees capable of turning out a certain quantity of work x(t) »",
+      "normalized_claim": "Définition de x(t) avec citation.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-dac242ba32f415af"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 262,
+      "end": 316,
+      "claim_text": "une quantité de travail, et non un nombre de personnes",
+      "normalized_claim": "x(t) est une quantité de travail, pas un effectif.",
+      "support_ids": [
+        "SUP-ed631393b3b5a9cf",
+        "SUP-dbd8217f510c3ab3",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 318,
+      "end": 376,
+      "claim_text": "r(t) est ce que les engagements requièrent au même instant",
+      "normalized_claim": "Définition de r(t).",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 381,
+      "end": 447,
+      "claim_text": "Bellman précise qu’en général cette fonction oscille dans le temps",
+      "normalized_claim": "r(t) est en général oscillante.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[0].paragraphs[1]",
+      "start": 449,
+      "end": 588,
+      "claim_text": "La contrainte vaut à chaque instant, x(t) au moins égal à r(t), « which is to say we are required to meet our committments come what may ».",
+      "normalized_claim": "Contrainte x(t) >= r(t) à tout instant, avec citation.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-c8f6805cce300810"
+      ]
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 0,
+      "end": 160,
+      "claim_text": "On peut lire là un choix. Le cadre général admettait une pénalité pour l’incapacité à satisfaire le besoin ; dans ce problème-ci, le couvrir est une obligation.",
+      "normalized_claim": "Le § 2 remplace la pénalité de non-satisfaction du cadre général par une obligation.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 161,
+      "end": 290,
+      "claim_text": "Et il se couvre sur le moment : dans ces pages, rien ne se stocke, aucune réserve fabriquée d’avance ne vient couvrir une pointe.",
+      "normalized_claim": "Pas de stock dans ce modèle ; le besoin est couvert par la capacité présente.",
+      "support_ids": [
+        "SUP-90d253780b3f39bb",
+        "SUP-079a95da56ea8995",
+        "SUP-9540c7a3f4e41d4a",
+        "SUP-5127db0208c54f63"
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[0].paragraphs[2]",
+      "start": 291,
+      "end": 405,
+      "claim_text": "Il en découle que la seule chose sur laquelle on puisse agir est le niveau lui-même, et le moment où on le change.",
+      "normalized_claim": "Dérivé : la seule variable d'action est le niveau et son changement.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 0,
+      "end": 194,
+      "claim_text": "Le premier coût, Bellman l’écrit ainsi : « If x(t) exceeds r(t), we consider ourselves to be losing an amount of money in excess wages proportional to (x(t)-r(t))dt over the interval (t,t+dt). »",
+      "normalized_claim": "Citation du premier coût.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-8a18ad697e763e0c"
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 195,
+      "end": 336,
+      "claim_text": "La perte est proportionnelle à l’écart et à la durée : un écart deux fois plus grand, ou tenu deux fois plus longtemps, coûte deux fois plus.",
+      "normalized_claim": "Lecture de la proportionnalité à l'écart et à la durée.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-8a18ad697e763e0c"
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[1].paragraphs[0]",
+      "start": 337,
+      "end": 407,
+      "claim_text": "Pris seul, ce coût ne recommande qu’une chose, réduire l’écart à zéro.",
+      "normalized_claim": "Dérivé : seul, le coût d'excédent pousse à annuler l'écart.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 0,
+      "end": 183,
+      "claim_text": "La phrase suivante retourne cette recommandation. Abaisser x(t) au niveau de r(t), écrit Bellman, expose à devoir le relever si r(t) augmente, et cela « cannot be done without cost ».",
+      "normalized_claim": "La phrase suivante de Bellman énonce le coût de devoir remonter.",
+      "support_ids": [
+        "SUP-5f42e9238997b248",
+        "SUP-3a59178836df2daf",
+        "SUP-b5f0cdd19431ecb0",
+        "SUP-9443c8e1ccc108da",
+        "SUP-079a95da56ea8995",
+        "SUP-8a18ad697e763e0c"
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 184,
+      "end": 205,
+      "claim_text": "La litote est de lui.",
+      "normalized_claim": "« cannot be done without cost » est une litote de Bellman.",
+      "support_ids": [
+        "SUP-ed631393b3b5a9cf",
+        "SUP-dbd8217f510c3ab3",
+        "SUP-c53918b7a4fa36a6"
+      ]
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 206,
+      "end": 311,
+      "claim_text": "Il donne aussitôt à ce coût sa forme : « and we shall take the cost of doing this proportional to dx/dt »",
+      "normalized_claim": "Citation de la forme du coût de montée.",
+      "support_ids": [
+        "SUP-5f42e9238997b248",
+        "SUP-3a59178836df2daf",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[1].paragraphs[1]",
+      "start": 313,
+      "end": 379,
+      "claim_text": "c’est-à-dire proportionnel à la vitesse à laquelle le niveau monte",
+      "normalized_claim": "dx/dt lu comme vitesse de montée.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 0,
+      "end": 114,
+      "claim_text": "La phrase d’après pose une hypothèse, écrite comme telle : « Assuming that it costs us nothing to decrease x(t) ».",
+      "normalized_claim": "Citation de l'hypothèse de baisse gratuite.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-3a1f08f32d8d151a",
+        "SUP-71169a297336aded",
+        "SUP-c8f6805cce300810"
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 115,
+      "end": 149,
+      "claim_text": "Baisser la capacité ne coûte rien.",
+      "normalized_claim": "Dans le modèle, la baisse ne coûte rien.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-9b54f703f0472315",
+        "SUP-3a1f08f32d8d151a"
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 150,
+      "end": 212,
+      "claim_text": "D’où l’écriture du second coût, proportionnel à max (dx/dt, 0)",
+      "normalized_claim": "Le second coût est proportionnel à max(dx/dt,0).",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-3a1f08f32d8d151a",
+        "SUP-dca2107158ea5435"
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[2].paragraphs[0]",
+      "start": 215,
+      "end": 379,
+      "claim_text": "quand le niveau monte, la pente est positive et elle est facturée ; quand il descend, le maximum vaut zéro et rien n’est compté. Seule la montée entre dans la note.",
+      "normalized_claim": "Seule la pente positive est facturée.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-3a1f08f32d8d151a"
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 0,
+      "end": 90,
+      "claim_text": "Cette gratuité n’est pas un constat d’atelier : elle est posée pour simplifier le critère.",
+      "normalized_claim": "La gratuité de la baisse est une hypothèse simplificatrice.",
+      "support_ids": [
+        "SUP-3a1f08f32d8d151a",
+        "SUP-71169a297336aded",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 91,
+      "end": 106,
+      "claim_text": "Licencier coûte",
+      "normalized_claim": "Licencier a un coût.",
+      "support_ids": [
+        "SUP-3a1f08f32d8d151a",
+        "SUP-71169a297336aded"
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 111,
+      "end": 230,
+      "claim_text": "un mémorandum de mai 1955, signé de Holt, Modigliani et Simon, compte précisément un coût d’embauche et de licenciement",
+      "normalized_claim": "Holt, Modigliani et Simon, mai 1955, comptent un coût d'embauche et de licenciement.",
+      "support_ids": [
+        "SUP-3a1f08f32d8d151a",
+        "SUP-71169a297336aded",
+        "SUP-9540c7a3f4e41d4a",
+        "SUP-5127db0208c54f63"
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 233,
+      "end": 314,
+      "claim_text": "il répartit une fluctuation de commandes entre le stock, les heures et l’effectif",
+      "normalized_claim": "Le mémorandum répartit les fluctuations entre stock, heures, effectif.",
+      "support_ids": [
+        "SUP-9540c7a3f4e41d4a",
+        "SUP-5127db0208c54f63"
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 316,
+      "end": 348,
+      "claim_text": "Bellman ne cite pas ces auteurs.",
+      "normalized_claim": "Bellman ne cite pas Holt, Modigliani, Simon.",
+      "support_ids": [
+        "SUP-9540c7a3f4e41d4a",
+        "SUP-5127db0208c54f63"
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[2].paragraphs[1]",
+      "start": 349,
+      "end": 478,
+      "claim_text": "Chez eux, la question est le dosage entre trois exutoires ; chez lui, sans stock, elle est l’asymétrie entre monter et descendre.",
+      "normalized_claim": "Contraste des deux modèles.",
+      "support_ids": [
+        "SUP-9540c7a3f4e41d4a",
+        "SUP-5127db0208c54f63"
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 0,
+      "end": 182,
+      "claim_text": "Le critère additionne les deux dépenses sur toute la période, de 0 à T : à chaque instant, l’écart x(t) moins r(t), plus a fois max (dx/dt, 0), « where a is some positive constant ».",
+      "normalized_claim": "Forme du critère J(x).",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 183,
+      "end": 312,
+      "claim_text": "Le problème devient alors de choisir une trajectoire x(t) qui rende ce total le plus petit possible sans jamais passer sous r(t).",
+      "normalized_claim": "Le problème est de minimiser J sous x>=r.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 313,
+      "end": 397,
+      "claim_text": "Une version où le temps avance par pas reprend la même somme, période après période.",
+      "normalized_claim": "La version discrète reprend la même somme.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 398,
+      "end": 488,
+      "claim_text": "On peut lire a comme le prix d’une unité de montée rapporté à celui d’une unité d’excédent",
+      "normalized_claim": "Interprétation de a comme prix relatif.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
+      "start": 493,
+      "end": 536,
+      "claim_text": "Bellman n’en donne aucun ordre de grandeur.",
+      "normalized_claim": "Aucun ordre de grandeur pour a.",
+      "support_ids": [
+        "SUP-90d253780b3f39bb",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 0,
+      "end": 27,
+      "claim_text": "Il en découle un arbitrage.",
+      "normalized_claim": "Le critère implique un arbitrage.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 108,
+      "end": 328,
+      "claim_text": "Descendre au plus juste pendant ce mois ne coûte rien sur le moment, mais achète la remontée qui suivra, comptée par le second terme ; rester au-dessus coûte des salaires pendant tout le creux, et épargne cette remontée.",
+      "normalized_claim": "Conséquence dérivée de la vignette selon le critère.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C046",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 329,
+      "end": 403,
+      "claim_text": "Selon la valeur de a et l’allure de r(t), l’un ou l’autre peut l’emporter.",
+      "normalized_claim": "L'issue dépend de a et de r(t).",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 404,
+      "end": 482,
+      "claim_text": "Bellman n’écrit nulle part qu’il vaudrait mieux garder de la capacité d’avance",
+      "normalized_claim": "Bellman ne conclut pas à garder de la capacité d'avance.",
+      "support_ids": [
+        "SUP-90d253780b3f39bb",
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "locator": "sections[3].paragraphs[1]",
+      "start": 485,
+      "end": 539,
+      "claim_text": "ce qu’il fait, c’est rendre la comparaison calculable.",
+      "normalized_claim": "Le critère rend la comparaison calculable.",
+      "support_ids": [
+        "SUP-079a95da56ea8995"
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 0,
+      "end": 289,
+      "claim_text": "Le rapport dit lui-même ce qu’il est. Son résumé annonce : « The purpose of this paper is to formulate a number of significant mathematical problems which have arisen in connection with the theory of scheduling, and to discuss the methods which have been devised to treat these problems. »",
+      "normalized_claim": "Citation du résumé du rapport.",
+      "support_ids": [
+        "SUP-81b8eee51fdf2402",
+        "SUP-5e61f61d8ac1b2c1",
+        "SUP-04f913376a84c1c2"
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 290,
+      "end": 353,
+      "claim_text": "Bellman y aligne des énoncés et en crédite plusieurs à d’autres",
+      "normalized_claim": "Bellman expose des problèmes et en crédite plusieurs à des tiers.",
+      "support_ids": [
+        "SUP-5031fed8d0181306",
+        "SUP-5e61f61d8ac1b2c1",
+        "SUP-54ad16092923f0d5",
+        "SUP-0ed15234c7c63d49"
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "locator": "sections[4].paragraphs[0]",
+      "start": 356,
+      "end": 445,
+      "claim_text": "un problème voisin, dans la même partie, est reproduit « in the form given by W. Jacobs »",
+      "normalized_claim": "Le problème du traiteur est reproduit d'après Jacobs.",
+      "support_ids": [
+        "SUP-3e24413ea4afec42",
+        "SUP-54ad16092923f0d5",
+        "SUP-0ed15234c7c63d49",
+        "SUP-5031fed8d0181306",
+        "SUP-5e61f61d8ac1b2c1"
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 0,
+      "end": 45,
+      "claim_text": "Le problème de lissage ne fait pas exception.",
+      "normalized_claim": "La solution du problème de lissage est aussi renvoyée à d'autres.",
+      "support_ids": [
+        "SUP-5e61f61d8ac1b2c1",
+        "SUP-04f913376a84c1c2"
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 46,
+      "end": 162,
+      "claim_text": "Juste après le critère, au folio 40, Bellman écrit : « The solution turns out to have a quite simple form, see [4] »",
+      "normalized_claim": "Citation du renvoi au folio 40.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-dac242ba32f415af",
+        "SUP-058ea3deb3227042",
+        "SUP-7f7f0de72270aec9"
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 164,
+      "end": 232,
+      "claim_text": "et renvoie ainsi à un travail coécrit avec I. Glicksberg et O. Gross",
+      "normalized_claim": "Le renvoi [4] vise un travail du trio Bellman-Glicksberg-Gross.",
+      "support_ids": [
+        "SUP-dac242ba32f415af",
+        "SUP-058ea3deb3227042",
+        "SUP-7f7f0de72270aec9",
+        "SUP-5e61f61d8ac1b2c1",
+        "SUP-04f913376a84c1c2"
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 235,
+      "end": 380,
+      "claim_text": "pour la version où le temps avance par pas : « The solution to this problem is similar to that given for the continuous version, see Karlin [8] »",
+      "normalized_claim": "Citation du renvoi à Karlin pour la version discrète.",
+      "support_ids": [
+        "SUP-079a95da56ea8995",
+        "SUP-dac242ba32f415af",
+        "SUP-924983a8fb9519a1",
+        "SUP-ec236bb164c83341"
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "locator": "sections[4].paragraphs[1]",
+      "start": 382,
+      "end": 440,
+      "claim_text": "La solution existe, elle est simple, et elle est ailleurs.",
+      "normalized_claim": "Bellman ne donne pas la solution, dit qu'elle est simple et la renvoie ailleurs.",
+      "support_ids": [
+        "SUP-90d253780b3f39bb",
+        "SUP-079a95da56ea8995",
+        "SUP-5e61f61d8ac1b2c1",
+        "SUP-04f913376a84c1c2"
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 0,
+      "end": 198,
+      "claim_text": "Une quinzaine de pages plus loin, le même rapport traite sous le titre « Production Smoothing » un autre lissage, par la programmation linéaire, où l’excédent s’accumule et paie un coût de stockage.",
+      "normalized_claim": "Partie V § 2 Production Smoothing : programmation linéaire, coût de stockage.",
+      "support_ids": [
+        "SUP-703c62d71d9397a2",
+        "SUP-393e88a2d2c9e1a1"
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "locator": "sections[4].paragraphs[2]",
+      "start": 199,
+      "end": 315,
+      "claim_text": "Le même mot désigne donc chez Bellman deux modèles différents, et celui-ci est le seul des deux qui ignore le stock.",
+      "normalized_claim": "Deux modèles de lissage, celui-ci seul sans stock.",
+      "support_ids": [
+        "SUP-703c62d71d9397a2",
+        "SUP-393e88a2d2c9e1a1"
+      ]
+    }
+  ]
+}
