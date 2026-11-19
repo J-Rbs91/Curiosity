@@ -1,0 +1,512 @@
+{
+  "protocol_version": 2,
+  "concept_id": "court-terme-contre-long-terme",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "18adf55c9d0e49811b374008321767872f0212e7adc2c99d47eca2d194172d2e",
+  "validated_sha256": "52dd2ead6d1cac0bbfd39e93a621013483194d5bae2c6a0cceec64dad157513a",
+  "evidence_files": [],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": false,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+        "cles": [
+          "url:ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "full-text",
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+        "cles": [
+          "url:static.clexchange.org/ftp/documents/system-dynamics/sd1993-01counterintuitivebe.pdf"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[2]",
+        "declare": "metadata-only",
+        "label": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+        "cles": [
+          "doi:10.1177/003754977101600202",
+          "url:doi.org/10.1177/003754977101600202"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      },
+      {
+        "chemin": "$.sources[3]",
+        "declare": "metadata-only",
+        "label": "John D. Sterman, « System Dynamics Modeling: Tools for Learning in a Complex World », California Management Review, vol. 43, n° 4, 2001, p. 8-25.",
+        "cles": [
+          "doi:10.2307/41166098",
+          "url:doi.org/10.2307/41166098"
+        ],
+        "dossier": null,
+        "statut": "dossier-absent"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 0,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 4
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Un service tient ses délais en repoussant la maintenance. Les délais tiennent, et pendant un an tout le monde constate que la décision était bonne. La deuxième année, les pannes commencent, et il faut à la fois réparer et tenir les délais. La troisième, plus rien ne tient. Personne, à aucun moment, n’a pris de décision absurde : chaque arbitrage a été fait au vu de ce qui était mesurable au moment où il fallait trancher."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Jay W. Forrester range ce scénario parmi les comportements les plus dangereux des systèmes sociaux, et il en donne une raison qui n’est pas morale. Dans un ensemble où les effets circulent en boucle avec des retards, la réponse qu’une décision produit tout de suite et celle qu’elle produit au bout de plusieurs années ne vont pas dans le même sens. Ce n’est pas un risque parmi d’autres : c’est, dit-il, le cas ordinaire."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Deux réponses de sens contraire",
+      "text": "La formulation de Forrester est sans détour : « Une politique qui produit une amélioration à court terme est généralement une politique qui dégrade le système à long terme ». Le mot qui compte est « généralement ». Il ne s’agit pas d’un accident réservé aux mauvaises décisions, mais de la forme habituelle que prend la réponse d’un ensemble bouclé."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Deux réponses de sens contraire",
+      "text": "La proposition symétrique est vraie aussi, et elle est plus dure à vivre : « policies that produce long-run improvement may initially depress behavior of a system ». Une décision saine commence donc souvent par faire empirer les choses, ce qui la rend indéfendable exactement au moment où il faudrait la défendre."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Deux réponses de sens contraire",
+      "text": "Mises ensemble, ces deux propositions dessinent un piège complet. Ce qui soulage se paie, ce qui répare coûte d’abord, et les deux se ressemblent au moment où l’on observe. Rien dans les premiers mois ne distingue une mesure qui abîme d’une mesure qui guérit."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Pourquoi le court terme parle plus fort",
+      "text": "Si les deux horizons se contredisent, encore faut-il expliquer pourquoi c’est presque toujours le premier qui l’emporte. Forrester le note en une phrase : « The short run is more visible and more compelling ». Le court terme n’est pas seulement plus proche, il est plus bruyant. Il se présente sous forme de plaintes, d’alertes, de chiffres du mois, de réunions convoquées en urgence."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Pourquoi le court terme parle plus fort",
+      "text": "Le long terme, lui, n’a pas de porte-parole. Il ne produit aucun signal au moment où l’on décide, et quand il en produit un, il est trop tard pour que quiconque relie ce signal à la décision qui l’a causé. L’asymétrie n’est pas une faiblesse de caractère des décideurs : elle est inscrite dans la façon dont l’information leur parvient."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Pourquoi le court terme parle plus fort",
+      "text": "S’ajoute une asymétrie de responsabilité qui n’est pas dans le texte mais qui en découle sans effort : celui qui prend la mesure de soulagement en récolte le bénéfice, celui qui en paiera la facture est souvent quelqu’un d’autre, quelques années plus tard. Rien dans la structure ne rappelle le premier au second."
+    },
+    {
+      "locator": "sections[1].paragraphs[3]",
+      "section_title": "Pourquoi le court terme parle plus fort",
+      "text": "Il y a là une conséquence que le raisonnement impose : plus une organisation raccourcit le cycle par lequel elle juge ses décisions, plus elle se rend aveugle au versant qui compte. Un pilotage mensuel n’observe pas mieux qu’un pilotage annuel, il observe seulement plus souvent la partie de la réponse qui trompe."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "L’accumulation, et le moment où plus rien ne suffit",
+      "text": "Le mécanisme ne serait qu’ennuyeux s’il se répétait à l’identique. Ce qui le rend redoutable est qu’il s’empile. Chaque décision de soulagement laisse derrière elle une dégradation qui ne se voit pas encore, et la suivante s’ajoute à la précédente au lieu de la remplacer."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "L’accumulation, et le moment où plus rien ne suffit",
+      "text": "Le mot qui manque à l’intuition ordinaire pour saisir cela est celui de stock. Une décision de soulagement ne modifie pas seulement un flux, ce qui entre et ce qui sort au moment où l’on regarde : elle modifie lentement une réserve, l’état d’un réseau, la confiance d’une équipe, l’usure d’un équipement. Un stock ne se voit pas d’un mois sur l’autre, il se voit quand il est vide."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "L’accumulation, et le moment où plus rien ne suffit",
+      "text": "Forrester en tire une conséquence qui vaut d’être prise au sérieux : une suite de mesures toutes destinées à améliorer l’immédiat peut charger un système d’une telle dette que les mesures d’urgence, un jour, ne suffisent plus. Ce n’est pas un effondrement soudain, c’est le moment où la manœuvre habituelle cesse d’avoir prise."
+    },
+    {
+      "locator": "sections[2].paragraphs[3]",
+      "section_title": "L’accumulation, et le moment où plus rien ne suffit",
+      "text": "Il en tire aussi une lecture du présent qui prolonge directement le mécanisme : beaucoup des difficultés qu’une organisation ou un pays affronte aujourd’hui ne sont pas des problèmes nouveaux. Ce sont les intérêts cumulés d’arbitrages de court terme pris des décennies plus tôt, par des gens qui avaient de bonnes raisons."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Ce que le concept n’autorise pas à conclure",
+      "text": "Une lecture pressée en fait une règle d’inversion : puisque ce qui soulage abîme, il suffirait de choisir ce qui fait mal. C’est un contresens. Rien n’assure qu’une mesure douloureuse soit une mesure qui répare ; la douleur immédiate n’est pas davantage un indicateur de qualité que le soulagement immédiat."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Ce que le concept n’autorise pas à conclure",
+      "text": "Une autre lecture, plus subtile, transforme l’analyse en dispense d’évaluation : si les effets ne se voient qu’à long terme, autant ne pas mesurer. C’est l’inverse de ce que propose Forrester, dont tout le travail consiste à construire des représentations qui donnent à voir le comportement d’un ensemble sur la durée, précisément parce que l’observation directe n’y arrive pas."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Ce que le concept n’autorise pas à conclure",
+      "text": "Enfin, l’opposition entre les deux horizons ne dit rien de la durée exacte que recouvre chacun d’eux. Elle dépend du système : dans une équipe, le retournement peut se jouer sur quelques mois ; dans une ville, sur une génération. Ce qui est général, c’est la contradiction, pas son échéance."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que cela change pour qui arbitre",
+      "text": "La première conséquence pratique est une question à poser avant toute décision qui soulage : par quel mécanisme ce soulagement se paie-t-il, et où ? Si personne ne sait répondre, cela ne signifie pas que la réponse est « nulle part ». Cela signifie que le prix est simplement invisible depuis l’endroit où l’on se tient."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que cela change pour qui arbitre",
+      "text": "La seconde touche à la façon dont on juge une décision passée. Évaluer une mesure sur la fenêtre où le système répond à l’envers revient à valider systématiquement les mauvaises et à condamner les bonnes. Une évaluation utile suppose de savoir sur quel horizon le retournement se produit, ce qui demande de connaître les boucles et les retards en jeu."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Ce que cela change pour qui arbitre",
+      "text": "La troisième est un usage défensif du concept. Devant une mesure présentée comme évidemment bénéfique et dont les effets se constatent déjà, l’analyse de Forrester ne conseille pas de refuser : elle conseille de chercher le versant retardé, et de le chercher ailleurs que là où le bénéfice se manifeste."
+    },
+    {
+      "locator": "sections[4].paragraphs[3]",
+      "section_title": "Ce que cela change pour qui arbitre",
+      "text": "Reste une quatrième conséquence, moins confortable. Si le versant long d’une décision n’émet aucun signal au moment où elle se prend, alors aucune vigilance individuelle ne le rattrapera. Ce qui peut le rattraper est une représentation partagée du système, construite à froid, que l’on interroge avant de trancher plutôt qu’après avoir constaté les dégâts. C’est le geste que Forrester oppose à l’arbitrage au jugé, et il demande du travail plutôt que de la prudence."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-0009b4da86fb4814",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "court-terme-contre-long-terme"
+    },
+    {
+      "id": "SUP-1a64adfd33d32d23",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "court-terme-contre-long-terme"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-56b45c49e57669e8",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Le court terme contre le long terme"
+    },
+    {
+      "id": "SUP-030158bc1b447e69",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "comportement-dans-le-temps"
+    },
+    {
+      "id": "SUP-08dcad5690d580a7",
+      "origin": "validated",
+      "path": "$.theme_labels[\"comportement-dans-le-temps\"]",
+      "access": "n/a",
+      "text": "Ce qu'une structure finit par produire"
+    },
+    {
+      "id": "SUP-2502444d673d5045",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Jay W. Forrester"
+    },
+    {
+      "id": "SUP-f665b54bd36830ba",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Et si ce qui améliore tout de suite était ce qui dégrade à la fin ?"
+    },
+    {
+      "id": "SUP-c4137f292e1bd542",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Forrester : dans un système social, la réponse de court terme et celle de long terme sont le plus souvent de sens contraire, et c'est la première qui se voit."
+    },
+    {
+      "id": "SUP-36933704fc895f9f",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995, 28 p. Mise à jour de l'article paru dans Technology Review en janvier 1971.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-7245e2cd29eb9da9",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://ocw.mit.edu/courses/15-988-system-dynamics-self-study-fall-1998-spring-1999/65cdf0faf132dec7ec75e91f9651b31f_behavior.pdf",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-629d979af949e436",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "full-text",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-1, Creative Learning Exchange, 1995, 30 p. Second exemplaire de la même mise à jour, distribué avec l'autorisation portée en tête du document.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-705d6d98f890ec43",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "full-text",
+      "text": "http://static.clexchange.org/ftp/documents/system-dynamics/SD1993-01CounterintuitiveBe.pdf",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-873a1fcfca7989cd",
+      "origin": "validated",
+      "path": "$.sources[2].label",
+      "access": "metadata-only",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », Simulation, vol. 16, n° 2, février 1971, p. 61-76.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-c01b46ee50da2c17",
+      "origin": "validated",
+      "path": "$.sources[2].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-e536d979c90a36d7",
+      "origin": "validated",
+      "path": "$.sources[2].locator",
+      "access": "metadata-only",
+      "text": "p. 61-76",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-5c39e621ddb79b8b",
+      "origin": "validated",
+      "path": "$.sources[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1177/003754977101600202",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-d8b8a2c1b2a6d9e8",
+      "origin": "validated",
+      "path": "$.sources[2].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1177/003754977101600202",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-7d92cd2cb2022153",
+      "origin": "validated",
+      "path": "$.sources[3].label",
+      "access": "metadata-only",
+      "text": "John D. Sterman, « System Dynamics Modeling: Tools for Learning in a Complex World », California Management Review, vol. 43, n° 4, 2001, p. 8-25.",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-7a39812a7ece4071",
+      "origin": "validated",
+      "path": "$.sources[3].kind",
+      "access": "metadata-only",
+      "text": "secondary-academic",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-a946cf01e5e8acd6",
+      "origin": "validated",
+      "path": "$.sources[3].locator",
+      "access": "metadata-only",
+      "text": "p. 8-25",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-236005af5d813329",
+      "origin": "validated",
+      "path": "$.sources[3].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.2307/41166098",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-cf37655c46201da2",
+      "origin": "validated",
+      "path": "$.sources[3].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.2307/41166098",
+      "access_corroboration": "dossier-absent"
+    },
+    {
+      "id": "SUP-3da51495dfe3ad8e",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "chaîne Curiosity, session du 22 août 2026 (contrôle non aveugle, voir notes)"
+    },
+    {
+      "id": "SUP-d71b9359ee4b2610",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-22"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-897f28c3defd623f",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Contrôle du 22 août 2026, mené dans la même session que la rédaction : il n'a donc pas été aveugle au sens de docs/corpus-workflow.md. Le dossier de npm run corpus:brief a été produit et relu, les quatre questions ont été tranchées une à une contre les textes rouverts, et l'écart au protocole est déclaré ici plutôt que passé sous silence."
+    },
+    {
+      "id": "SUP-b9aef3b6c7d159ce",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Concept de Jay W. Forrester, fondateur de la dynamique des systèmes au Massachusetts Institute of Technology."
+    },
+    {
+      "id": "SUP-3fa993d883db1a72",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Une politique qui produit une amélioration à court terme est généralement une politique qui dégrade le système à long terme."
+    },
+    {
+      "id": "SUP-29db1d7d390dade5",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Jay W. Forrester, « Counterintuitive Behavior of Social Systems », D-4468-2, System Dynamics Group, Massachusetts Institute of Technology, 1995."
+    },
+    {
+      "id": "SUP-6996bbe34a9a53d8",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 12, section VI"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-4d2830ee8ef2e997",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "A policy that produces improvement in the short run is usually one that degrades a system in the long run."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-540b04eb63c094d5",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, 22 août 2026). Aucune traduction française publiée de ce texte n'a été cherchée ni identifiée."
+    },
+    {
+      "id": "SUP-53f95d9946006afb",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La citation est relevée sur D-4468-2, mise à jour de mars 1995, et non sur l'article de Technology Review 73(3), janvier 1971, qui n'a pas été ouvert. Le document porte lui-même sa date de révision et son texte a bougé avec elle : il annonce « developments over the last 60 years », ce que l'article de 1971 ne pouvait pas écrire. Le verbatim retenu a été comparé chaîne par chaîne sur un second exemplaire indépendant, D-4468-1 du Creative Learning Exchange : identique."
+    },
+    {
+      "id": "SUP-8309eed15a1d5e9f",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Forrester énonce la réciproque dans la phrase suivante, et elle n'est pas sur la carte faute de place : « policies that produce long-run improvement may initially depress behavior of a system » (p. 12)."
+    },
+    {
+      "id": "SUP-24054b796591ef6b",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Ce que l'accroche appelle « ce qui se voit » est dans le texte : « The short run is more visible and more compelling » (p. 12). Le résumé ne va pas au-delà."
+    }
+  ],
+  "estimated_tokens": 6678,
+  "status": "READY"
+}
