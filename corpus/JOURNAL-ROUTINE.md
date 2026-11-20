@@ -2992,6 +2992,15 @@ septième fois.
 - `court-terme-contre-long-terme` : `BLOCKED_SOURCE`. Aucun dossier de preuve, six attributions à Forrester sans support. Débloque : un dossier de lecture de Forrester D-4468-2 (section VI, p. 12).
 - File restante : 69 cartes jamais auditées. `package-lock.json` modifié avant la routine, volontairement non commité.
 
+## 2026-11-20 : audit de 3 approfondissements jamais audités
+
+- `criticite-technique-contre-poids-financier` : REVISE, réécrit (-13 %), `FACTCHECK_PASS` 70/70 au deuxième tour (C011, C066 retirés), `ACCEPT`.
+- `critique-de-l-utilite-esperee-subjective` : REWRITE, `FACTCHECK_PASS` 58/58 après deux boucles, mais `REJECT` pédagogique (corrections par suppression pure : lead réduit à un paragraphe qui emploie le terme sans le définir). Texte d'origine restauré par SHA de blob. Piste : lead de deux paragraphes avec vignette hypothétique et définition de travail.
+- `critique-de-l-homo-oeconomicus` : REVISE, plafond de boucles atteint (`FACTCHECK_FAIL` : C010 TOO_STRONG, C018 localisation p. 114), texte d'origine restauré par SHA de blob. Milet 1982 reste `absent` dans le pack (chantier J).
+- Exclues du lot : `controle-supervise`, `court-terme-contre-long-terme`, `cout-de-remonter-l-effectif` (PR #163 ouverte, chantier N).
+- File restante : 69 cartes jamais auditées (hors PR #163 : 66), 31 en protocole 3, 10 refusées.
+- Anomalie : les comptes de mots du rapport de réécriture (1 443 → 1 256) et de `corpus:deepen --check` (≈1 590) divergent ; la méthode de comptage diffère. `package-lock.json` modifié avant la routine, non commité.
+
 ## 2026-11-21 : audit de 3 approfondissements jamais audités
 
 - `debat-de-normes` : REVISE, réécrit (≈ −4 %), deux boucles de correction par suppression pure (C015, C004 `UNSUPPORTED`), `FACTCHECK_PASS` 51/51, `ACCEPT`. Régressions de clarté mineures relevées : « renormaliser » non expliqué au lead (la glose a dû être retirée faute de support) ; à reprendre si une formulation passe le gate.

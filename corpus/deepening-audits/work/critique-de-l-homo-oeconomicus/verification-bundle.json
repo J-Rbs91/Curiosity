@@ -1,0 +1,1103 @@
+{
+  "protocol_version": 2,
+  "concept_id": "critique-de-l-homo-oeconomicus",
+  "candidate_sha256": "d5ca65cc1fdddaad3e5b9e530c72fbc11403569172bebbe4381594c6e66ec7f1",
+  "map_sha256": "9186e79bb204b16e013c7402c2057add442e1800a921625f40e6932f4063c7ff",
+  "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
+  "signal_lexique": {
+    "cartes_mesurees": 136,
+    "plafond_cartes_par_terme": 13,
+    "termes_generiques": 786
+  },
+  "claims": [
+    {
+      "claim_id": "C001",
+      "locator": "lead[1]",
+      "claim_text": "En 1902, chez l’éditeur Félix Alcan, Gabriel Tarde, professeur au Collège de France, publie une Psychologie économique.",
+      "supports": [
+        {
+          "id": "SUP-eb83e4ef9d60a060",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-8092caa6b586a093",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-7c4f4d8e3fa6b018",
+          "origin": "validated",
+          "path": "$.review.notes[2]",
+          "access": "n/a",
+          "text": "PAGE DE TITRE — image du feuillet n12 (https://archive.org/download/psychologiecono03tardgoog/page/n12.jpg) : « PSYCHOLOGIE ÉCONOMIQUE / PAR / G. TARDE / de l'Institut, / Professeur au Collège de France. / TOME PREMIER / PARIS / FÉLIX ALCAN, ÉDITEUR / ... / 1902 ». Un seul nom. Conforme à ce qu'affirme la fiche."
+        },
+        {
+          "id": "SUP-728b34176e1adb71",
+          "origin": "validated",
+          "path": "$.sources[0].label",
+          "access": "full-text",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p.",
+          "access_corroboration": "corrobore"
+        },
+        {
+          "id": "SUP-f2632e816ceadf10",
+          "origin": "evidence:lecture.json",
+          "path": "$.sources_ouvertes[0].citation",
+          "access": "full-text",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, 383 p. Exemplaire de l'University of Michigan numérisé par Google et versé sans restriction : collection americana, possible-copyright-status NOT_IN_COPYRIGHT, aucun champ access-restricted-item, aucun statut de prêt numérique."
+        },
+        {
+          "id": "SUP-35023adcc0feb311",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+        },
+        {
+          "id": "SUP-78cdc1d6a76c4edb",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C002",
+      "locator": "lead[1]",
+      "claim_text": "Dans un chapitre de sa partie préliminaire, « Coup d’œil historique »,",
+      "supports": [
+        {
+          "id": "SUP-35023adcc0feb311",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+        },
+        {
+          "id": "SUP-78cdc1d6a76c4edb",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+        },
+        {
+          "id": "SUP-b24d31f6c7504e7e",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "CHAPITRE — table des matières lue sur l'image du feuillet n397 (p. 382) : « PARTIE PRÉLIMINAIRE … Chapitre IV. — Coup d'œil historique … 107 ». La référence de la citation (« partie préliminaire, chapitre IV “Coup d'œil historique” ») est exacte."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C003",
+      "locator": "lead[1]",
+      "claim_text": "il reproche aux économistes d’avoir fait de l’homme économique une « sorte d’être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l’intérêt personnel ».",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C004",
+      "locator": "lead[1]",
+      "claim_text": "L’abstraction qu’il leur reproche est double : avoir conçu un homme sans rien d’humain dans le cœur, et l’avoir détaché de tout groupe.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C005",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "La phrase court sur deux pages, du bas de la page 114 au haut de la page 115",
+      "supports": [
+        {
+          "id": "SUP-e3f443a28d5b4709",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "CITATION — la phrase est à cheval sur deux pages, j'ai lu les deux images. Feuillet n129 = p. 114 : « Cet homo æconomicus, qui poursuivrait exclusivement / et méthodiquement son intérêt égoïste, abstraction faite de ». Feuillet n130 = p. 115 (titre courant « COUP D'ŒIL HISTORIQUE 115 ») : « tout sentiment, de toute foi, de tout parti pris, n'est pas / seulement un être incomplet, il implique contradiction. » Les deux coupes de la fiche tombent exactement sur « exclusivement et méthodiquement » et sur « abstraction faite de tout sentiment, de toute foi, de tout parti pris », toutes deux signalées par […]. Locator « t. I, p. 114-115 » exact."
+        },
+        {
+          "id": "SUP-a9d75c48a4541cf8",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "TENEUR ENTIÈRE DE LA PHRASE CITÉE ET DÉTAIL DES COUPES. La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Elle se lit en entier : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée, elle fait 220 caractères, au-delà du plafond de 150. Les deux coupes signalées par […] portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris » ; elles ne retournent pas le sens. Aucun autre passage de Tarde n'a été écarté par la lecture primaire, qui ne signale pas de citation concurrente."
+        },
+        {
+          "id": "SUP-b0010ad193a36921",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[2]",
+          "access": "n/a",
+          "text": "La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Sa teneur entière est : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée elle fait 220 caractères ; les deux coupes signalées portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris », et ne retournent pas le sens."
+        },
+        {
+          "id": "SUP-3c157f6b98ee99d1",
+          "origin": "validated",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "t. I, p. 114-115"
+        },
+        {
+          "id": "SUP-bb2a29fb260fd208",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.locator",
+          "access": "n/a",
+          "text": "t. I, p. 114-115"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C006",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "elle tient en une seule respiration : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n’est pas seulement un être incomplet, il implique contradiction. »",
+      "supports": [
+        {
+          "id": "SUP-a9d75c48a4541cf8",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "TENEUR ENTIÈRE DE LA PHRASE CITÉE ET DÉTAIL DES COUPES. La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Elle se lit en entier : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée, elle fait 220 caractères, au-delà du plafond de 150. Les deux coupes signalées par […] portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris » ; elles ne retournent pas le sens. Aucun autre passage de Tarde n'a été écarté par la lecture primaire, qui ne signale pas de citation concurrente."
+        },
+        {
+          "id": "SUP-b0010ad193a36921",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[2]",
+          "access": "n/a",
+          "text": "La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Sa teneur entière est : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée elle fait 220 caractères ; les deux coupes signalées portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris », et ne retournent pas le sens."
+        },
+        {
+          "id": "SUP-e3f443a28d5b4709",
+          "origin": "validated",
+          "path": "$.review.notes[3]",
+          "access": "n/a",
+          "text": "CITATION — la phrase est à cheval sur deux pages, j'ai lu les deux images. Feuillet n129 = p. 114 : « Cet homo æconomicus, qui poursuivrait exclusivement / et méthodiquement son intérêt égoïste, abstraction faite de ». Feuillet n130 = p. 115 (titre courant « COUP D'ŒIL HISTORIQUE 115 ») : « tout sentiment, de toute foi, de tout parti pris, n'est pas / seulement un être incomplet, il implique contradiction. » Les deux coupes de la fiche tombent exactement sur « exclusivement et méthodiquement » et sur « abstraction faite de tout sentiment, de toute foi, de tout parti pris », toutes deux signalées par […]. Locator « t. I, p. 114-115 » exact."
+        },
+        {
+          "id": "SUP-eec88f0c8da46111",
+          "origin": "validated",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Cet homo æconomicus, qui poursuivrait […] son intérêt égoïste […] n'est pas seulement un être incomplet, il implique contradiction."
+        },
+        {
+          "id": "SUP-b80b7e447ee8c6b4",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.text",
+          "access": "n/a",
+          "text": "Cet homo æconomicus, qui poursuivrait […] son intérêt égoïste […] n'est pas seulement un être incomplet, il implique contradiction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C007",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Deux reproches y sont faits, et le second n’est pas de la même espèce que le premier.",
+      "supports": [
+        {
+          "id": "SUP-a9d75c48a4541cf8",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "TENEUR ENTIÈRE DE LA PHRASE CITÉE ET DÉTAIL DES COUPES. La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Elle se lit en entier : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée, elle fait 220 caractères, au-delà du plafond de 150. Les deux coupes signalées par […] portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris » ; elles ne retournent pas le sens. Aucun autre passage de Tarde n'a été écarté par la lecture primaire, qui ne signale pas de citation concurrente."
+        },
+        {
+          "id": "SUP-b0010ad193a36921",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[2]",
+          "access": "n/a",
+          "text": "La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Sa teneur entière est : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée elle fait 220 caractères ; les deux coupes signalées portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris », et ne retournent pas le sens."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C008",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "Un être incomplet est un portrait auquel il manque des traits. Un être qui implique contradiction est un portrait dont les traits se chassent les uns les autres.",
+      "supports": [
+        {
+          "id": "SUP-a9d75c48a4541cf8",
+          "origin": "validated",
+          "path": "$.notes[1]",
+          "access": "n/a",
+          "text": "TENEUR ENTIÈRE DE LA PHRASE CITÉE ET DÉTAIL DES COUPES. La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Elle se lit en entier : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée, elle fait 220 caractères, au-delà du plafond de 150. Les deux coupes signalées par […] portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris » ; elles ne retournent pas le sens. Aucun autre passage de Tarde n'a été écarté par la lecture primaire, qui ne signale pas de citation concurrente."
+        },
+        {
+          "id": "SUP-b0010ad193a36921",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[2]",
+          "access": "n/a",
+          "text": "La citation enjambe la coupure des pages 114 et 115 : c'est une seule phrase continue de l'imprimé, non un passage recomposé à partir de deux endroits. Sa teneur entière est : « Cet homo æconomicus, qui poursuivrait exclusivement et méthodiquement son intérêt égoïste, abstraction faite de tout sentiment, de toute foi, de tout parti pris, n'est pas seulement un être incomplet, il implique contradiction. » Non coupée elle fait 220 caractères ; les deux coupes signalées portent sur les adverbes « exclusivement et méthodiquement » et sur l'apposition « abstraction faite de tout sentiment, de toute foi, de tout parti pris », et ne retournent pas le sens."
+        },
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C009",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "La raison est donnée page 114. Concevoir ainsi l’homme économique, « c’est oublier que la conscience du moi ne se précise et ne s’accentue, ne se réalise à vrai dire, que par la conscience d’autrui ».",
+      "supports": [
+        {
+          "id": "SUP-cedfb22dcfc87cf4",
+          "origin": "validated",
+          "path": "$.review.notes[13]",
+          "access": "n/a",
+          "text": "PROSE — le hook (« est-ce seulement un être incomplet ? ») décalque la formule imprimée « n'est pas seulement un être incomplet ». Le summary tient sur la seule p. 114 pour sa seconde moitié : « C'est oublier que la conscience du moi ne se précise et ne s'accentue, ne se réalise à vrai dire, que par la conscience d'autrui ». Le lien de conséquence posé par le deux-points est celui du texte (« S'il en est ainsi… la prétention d'isoler le premier est chimérique. Cet homo æconomicus… implique contradiction »). Rien qui déborde, rien qui rétrécisse."
+        },
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-6e4c9ffd3625d70d",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Pour Tarde, l'homme abstrait des économistes, mû par le seul intérêt personnel, implique contradiction : la conscience du moi ne se réalise que par celle d'autrui."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C010",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Le dernier verbe emporte l’affaire : autrui ne rend pas seulement le moi plus net, il le rend réel.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-6e4c9ffd3625d70d",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "Pour Tarde, l'homme abstrait des économistes, mû par le seul intérêt personnel, implique contradiction : la conscience du moi ne se réalise que par celle d'autrui."
+        },
+        {
+          "id": "SUP-cedfb22dcfc87cf4",
+          "origin": "validated",
+          "path": "$.review.notes[13]",
+          "access": "n/a",
+          "text": "PROSE — le hook (« est-ce seulement un être incomplet ? ») décalque la formule imprimée « n'est pas seulement un être incomplet ». Le summary tient sur la seule p. 114 pour sa seconde moitié : « C'est oublier que la conscience du moi ne se précise et ne s'accentue, ne se réalise à vrai dire, que par la conscience d'autrui ». Le lien de conséquence posé par le deux-points est celui du texte (« S'il en est ainsi… la prétention d'isoler le premier est chimérique. Cet homo æconomicus… implique contradiction »). Rien qui déborde, rien qui rétrécisse."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Les progrès de l’égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d’autrui, et « la prétention d’isoler le premier est chimérique ».",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-cedfb22dcfc87cf4",
+          "origin": "validated",
+          "path": "$.review.notes[13]",
+          "access": "n/a",
+          "text": "PROSE — le hook (« est-ce seulement un être incomplet ? ») décalque la formule imprimée « n'est pas seulement un être incomplet ». Le summary tient sur la seule p. 114 pour sa seconde moitié : « C'est oublier que la conscience du moi ne se précise et ne s'accentue, ne se réalise à vrai dire, que par la conscience d'autrui ». Le lien de conséquence posé par le deux-points est celui du texte (« S'il en est ainsi… la prétention d'isoler le premier est chimérique. Cet homo æconomicus… implique contradiction »). Rien qui déborde, rien qui rétrécisse."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C012",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Tarde ajoute qu’il n’est pas d’homme dont l’intérêt le plus cher ne soit d’éviter toute lésion faite à sa foi et à son orgueil.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C013",
+      "locator": "sections[0].paragraphs[1]",
+      "claim_text": "Si c’est vrai, l’intérêt qu’on prétendait garder contient déjà la foi qu’on a cru retirer.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[2]",
+      "claim_text": "Au bas de la page 114, une note appelle en renfort l’économiste Henry Charles Carey : « L’économie politique, dit Carey, ayant créé à son usage un être auquel elle a donné le nom d’homme… »",
+      "supports": [
+        {
+          "id": "SUP-a2953f5aa0ee81ac",
+          "origin": "validated",
+          "path": "$.review.notes[6]",
+          "access": "n/a",
+          "text": "NOTE CAREY — la note (1) au bas de la p. 114 est bien la citation de Carey (« L'économie politique, dit Carey, ayant créé à son usage un être auquel elle a donné le nom d'homme… »), conforme à ce qu'annonce la note d'attribution. Elle appuie l'argument sans le porter : la thèse de la contradiction interne est énoncée par Tarde à la première personne."
+        },
+        {
+          "id": "SUP-eb83e4ef9d60a060",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-8092caa6b586a093",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[2]",
+      "claim_text": "L’appui est net, mais il reste un appui : c’est Tarde qui énonce à la première personne la thèse de la contradiction, et Carey qui lui prête une formule.",
+      "supports": [
+        {
+          "id": "SUP-a2953f5aa0ee81ac",
+          "origin": "validated",
+          "path": "$.review.notes[6]",
+          "access": "n/a",
+          "text": "NOTE CAREY — la note (1) au bas de la p. 114 est bien la citation de Carey (« L'économie politique, dit Carey, ayant créé à son usage un être auquel elle a donné le nom d'homme… »), conforme à ce qu'annonce la note d'attribution. Elle appuie l'argument sans le porter : la thèse de la contradiction interne est énoncée par Tarde à la première personne."
+        },
+        {
+          "id": "SUP-eb83e4ef9d60a060",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-8092caa6b586a093",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-dc4ed6561d2a332a",
+          "origin": "validated",
+          "path": "$.review.notes[8]",
+          "access": "n/a",
+          "text": "ATTRIBUTION — confirmée. Le concept porté par la carte est la critique tardienne de l'homo æconomicus (l'abstraction « implique contradiction » parce que la conscience du moi ne se réalise que par celle d'autrui), pas la forge du terme latin, que la fiche ne revendique nulle part. Ouvrage signé d'un seul nom, thèse énoncée à la première personne, antécédent de 1881 déclaré par Tarde lui-même et corroboré par Milet."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C016",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Tarde ferme cette porte page 115.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C017",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "Il n’aperçoit nulle part trace d’une transformation réfrigérante de l’homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d’âge en âge, progressent ensemble ».",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C018",
+      "locator": "sections[1].paragraphs[1]",
+      "claim_text": "On peut y lire le parallélisme de la page 114, transposé dans le temps : si la raison et la passion croissent du même pas, aucun progrès de la rationalité ne viendra jamais rendre vrai le personnage.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C019",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "Le second versant de l’abstraction tient au groupe. L’homme économique est représenté détaché de tout groupe : sans corporation, sans secte, sans parti, sans patrie.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C020",
+      "locator": "sections[2].paragraphs[0]",
+      "claim_text": "Or, écrit Tarde page 116, jamais un vendeur et un acheteur, un producteur et un consommateur, ne se sont trouvés en présence sans avoir été « escortés chacun d’un cortège invisible d’associés, d’amis, de coreligionnaires ».",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C021",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "Leur pensée a pesé sur la discussion du prix ou du salaire, et l’a finalement imposé, le plus souvent au détriment de l’intérêt strictement individuel de ceux qui traitaient.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C022",
+      "locator": "sections[2].paragraphs[1]",
+      "claim_text": "On peut mesurer où le coup porte : ce n’est pas dans les marges sentimentales de la vie économique que l’abstraction manque son objet, c’est sur le prix et le salaire eux-mêmes.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C023",
+      "locator": "sections[2].paragraphs[2]",
+      "claim_text": "Tarde donne un fait à l’appui, page 117 : c’est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu’ont été inventées les grèves sympathiques, faites par des ouvriers qui n’y ont aucun intérêt et qui en souffrent.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C024",
+      "locator": "sections[2].paragraphs[2]",
+      "claim_text": "Le « nous dit-on » a son poids : dans l’exemple qu’il rapporte, cette solidarité coûteuse apparaît dans le pays même que l’on dit le plus utilitaire.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C025",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Ces pages appartiennent au chapitre « Coup d’œil historique », qui court de la page 107 à la page 142.",
+      "supports": [
+        {
+          "id": "SUP-7f2f48c63116ccc6",
+          "origin": "validated",
+          "path": "$.notes[3]",
+          "access": "n/a",
+          "text": "PAGES OUVERTES EN IMAGE : page de titre, p. 63, p. 64, p. 65, p. 109, p. 114, p. 115, p. 116, p. 142. Le chapitre IV, « Coup d'œil historique » (p. 107 à 142), d'où vient la citation, a été lu de bout en bout en couche texte, ainsi que le chapitre II (p. 63 à 96)."
+        },
+        {
+          "id": "SUP-1a3bbe65c14588ea",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[4]",
+          "access": "n/a",
+          "text": "Pages ouvertes en image : page de titre, p. 63, p. 64, p. 65, p. 109, p. 114, p. 115, p. 116, p. 142. Le chapitre IV, « Coup d'œil historique » (p. 107 à 142), d'où vient la citation, a été lu de bout en bout en couche texte, ainsi que le chapitre II (p. 63 à 96)."
+        },
+        {
+          "id": "SUP-b24d31f6c7504e7e",
+          "origin": "validated",
+          "path": "$.review.notes[5]",
+          "access": "n/a",
+          "text": "CHAPITRE — table des matières lue sur l'image du feuillet n397 (p. 382) : « PARTIE PRÉLIMINAIRE … Chapitre IV. — Coup d'œil historique … 107 ». La référence de la citation (« partie préliminaire, chapitre IV “Coup d'œil historique” ») est exacte."
+        },
+        {
+          "id": "SUP-bd6cc3f20f0b991d",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "NOTE p. 142 — lue dans le texte, au bas du dernier feuillet du chapitre IV, immédiatement avant « LIVRE PREMIER » (dont la TdM donne le début à la p. 143) : « Celles que j'ai à exposer sont le développement de germes posés en substance, pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 … sous le titre de la Psychologie en économie politique. » La note d'attribution cite juste."
+        },
+        {
+          "id": "SUP-35023adcc0feb311",
+          "origin": "validated",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+        },
+        {
+          "id": "SUP-78cdc1d6a76c4edb",
+          "origin": "evidence:lecture.json",
+          "path": "$.quotation.reference",
+          "access": "n/a",
+          "text": "Gabriel Tarde, Psychologie économique, Paris, Félix Alcan, 1902, tome premier, partie préliminaire, chapitre IV « Coup d'œil historique »"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C026",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Aux pages 117 et 118, Tarde voit dans la psychologie hédonistique du dix-huitième siècle, celle qui réduit tous les mouvements de l’âme à des peines évitées et à des plaisirs recherchés, ce qui explique la date de naissance de l’économie politique classique.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        },
+        {
+          "id": "SUP-fe3d6ce20738f323",
+          "origin": "validated",
+          "path": "$.notes[10]",
+          "access": "n/a",
+          "text": "Le résumé n'épuise pas le concept, faute de place. Il ne porte ni le refus de l'échappatoire du progrès de la rationalité, Tarde ne voyant nulle trace d'une transformation réfrigérante de l'homme et tenant que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115) ; ni la seconde abstraction reprochée, l'homme économique détaché de tout groupe, corporation, secte, parti, patrie, alors que vendeur et acheteur sont « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires » dont la pensée impose le prix, le plus souvent au détriment de leur intérêt strictement individuel (t. I, p. 116) ; ni le fait donné à l'appui page 117, les grèves sympathiques inventées « dans le pays le plus utilitaire », faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent ; ni le lien que Tarde établit entre la psychologie hédonistique du dix-huitième siècle et la date de naissance de l'économie politique classique (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C027",
+      "locator": "sections[3].paragraphs[0]",
+      "claim_text": "Dès que cette psychologie a été abandonnée, ajoute-t-il, l’économie classique a été mise en demeure de mourir ou de se métamorphoser.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C028",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "Le lien avec l’homme économique est posé dès la page 114 : cette figure est le défaut d’économistes qui, quand ils ont été psychologues, n’ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri ».",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C029",
+      "locator": "sections[3].paragraphs[1]",
+      "claim_text": "On peut comprendre l’homme économique comme cette psychologie individuelle mise en personnage.",
+      "supports": [
+        {
+          "id": "SUP-6fcba877725693bc",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Tarde adresse aux économistes le reproche de n'avoir pas été assez psychologues ou de l'avoir été mal : quand ils l'ont été, ils n'ont fait que de la psychologie individuelle, « celle précisément dont le rôle est subordonné et sans cesse amoindri » (t. I, p. 114). Le défaut se voit dans leur conception de l'homme économique, « sorte d'être spirituel abstrait, supposé étranger à tout autre sentiment que le mobile de l'intérêt personnel ». C'est oublier, dit-il, que la conscience du moi ne se réalise que par la conscience d'autrui : les progrès de l'égoïsme ne sauraient donc être que parallèles à ceux de la préoccupation d'autrui, et « la prétention d'isoler le premier est chimérique ». D'où la thèse : cet homo æconomicus n'est pas seulement un être incomplet, il implique contradiction, car il n'est pas d'homme dont l'intérêt le plus cher ne soit d'éviter toute lésion faite à sa foi et à son orgueil. Tarde refuse aussi l'échappatoire du progrès de la rationalité : nulle part il n'aperçoit trace d'une transformation réfrigérante de l'homme dans un sens de moins en moins passionnel, et il lui semble que « la passion et la raison, d'âge en âge, progressent ensemble » (t. I, p. 115). L'abstraction est double : avoir conçu un homme sans rien d'humain dans le cœur, et l'avoir représenté détaché de tout groupe, corporation, secte, parti, patrie. Or, écrit-il, jamais un producteur et un consommateur, un vendeur et un acheteur ne se sont trouvés en présence sans avoir été « escortés chacun d'un cortège invisible d'associés, d'amis, de coreligionnaires, dont la pensée a pesé sur eux dans la discussion du prix ou du salaire et finalement l'a imposé, au détriment le plus souvent de leur intérêt strictement individuel » (t. I, p. 116). L'écart au modèle est donc énoncé et orienté : le prix et le salaire s'établissent contre l'intérêt individuel des contractants, sous la pression d'un groupe absent de la transaction. Tarde en donne un fait à l'appui, page 117 : c'est en Amérique, « dans le pays le plus utilitaire, nous dit-on », qu'ont été inventées les grèves sympathiques, faites par des ouvriers qui n'y ont aucun intérêt et qui en souffrent. Il ajoute que la psychologie hédonistique du dix-huitième siècle, qui réduit tous les mouvements de l'âme à des peines évitées et à des plaisirs recherchés, explique la date de naissance de l'économie politique classique, et que celle-ci a été mise en demeure de mourir ou de se métamorphoser dès que cette psychologie a été abandonnée (t. I, p. 117-118)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C030",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Quatre-vingts ans plus tard, dans le Bulletin de psychologie, Jean Milet dégage de la Psychologie économique quatre thèses majeures",
+      "supports": [
+        {
+          "id": "SUP-303ba2680bf7faca",
+          "origin": "validated",
+          "path": "$.sources[1].label",
+          "access": "full-text",
+          "text": "Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », Bulletin de psychologie, tome XXXV, n° 357, 1982, p. 907-913.",
+          "access_corroboration": "absent"
+        },
+        {
+          "id": "SUP-a6662bcaf5bc6fd3",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "SOURCE 2 OUVERTE — DOI 10.3406/bupsy.1982.12030 résolu par api.crossref.org : Jean Milet, Bulletin de psychologie, vol. 35, n° 357, 1982, p. 907-913, éditeur PERSEE. J'ai ensuite lu les IMAGES de pages sur Persée (renderPage/bupsy_0007-4403_1982_num_35_357_12030/…_F_0907/0909/0910_0000_710.jpg)."
+        },
+        {
+          "id": "SUP-c1c20490ebd6790e",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "LOCATOR DE LA SOURCE 2 — vérifié sur image. p. 909 : Milet donne l'article de 1881 dans la Revue philosophique (t. XII, sept. 1881), cite la note de Tarde « Tome I, p. 142 », et classe « une critique sévère des notions reçues alors en matière d'économie » comme la première des quatre thèses majeures. p. 910 : « Jusqu'ici tous les économistes ont pris en considération dans leurs théories les réactions d'une sorte d'homo œconomicus, qui se comporterait comme une mécanique, comme un automate… » Le locator p. 909-910 est le bon."
+        },
+        {
+          "id": "SUP-3062921f746a3c55",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE MILET APPORTE ICI, et pourquoi il figure en source. Son article expose le contenu de la Psychologie économique et traite la critique de l'homo oeconomicus page 910, parmi les quatre thèses qu'il dégage de l'ouvrage page 909. Il confirme donc que ce passage est tenu pour un moment de la doctrine, et non pour une remarque isolée. Il ne fonde en revanche aucun mot du résumé, qui est établi sur l'imprimé de Tarde seul : Milet cite Tarde de seconde main, et le lecteur secondaire déclare n'avoir ouvert aucune des sources primaires que Milet mobilise. La phrase de Milet la plus exacte, celle de la page 909, n'a pas été retenue en citation par son propre lecteur, parce qu'elle fait 200 caractères et que tout ce qui s'y laisserait couper est précisément ce qui restreint la revendication ; son titre non plus, parce qu'un titre de revue affiche la thèse sous sa forme la plus large, que le corps restreint et que la conclusion abandonne au profit de « un initiateur » (p. 913)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C031",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "et la première, page 909, est « une critique sévère des notions reçues alors en matière d’économie ».",
+      "supports": [
+        {
+          "id": "SUP-c1c20490ebd6790e",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "LOCATOR DE LA SOURCE 2 — vérifié sur image. p. 909 : Milet donne l'article de 1881 dans la Revue philosophique (t. XII, sept. 1881), cite la note de Tarde « Tome I, p. 142 », et classe « une critique sévère des notions reçues alors en matière d'économie » comme la première des quatre thèses majeures. p. 910 : « Jusqu'ici tous les économistes ont pris en considération dans leurs théories les réactions d'une sorte d'homo œconomicus, qui se comporterait comme une mécanique, comme un automate… » Le locator p. 909-910 est le bon."
+        },
+        {
+          "id": "SUP-3062921f746a3c55",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE MILET APPORTE ICI, et pourquoi il figure en source. Son article expose le contenu de la Psychologie économique et traite la critique de l'homo oeconomicus page 910, parmi les quatre thèses qu'il dégage de l'ouvrage page 909. Il confirme donc que ce passage est tenu pour un moment de la doctrine, et non pour une remarque isolée. Il ne fonde en revanche aucun mot du résumé, qui est établi sur l'imprimé de Tarde seul : Milet cite Tarde de seconde main, et le lecteur secondaire déclare n'avoir ouvert aucune des sources primaires que Milet mobilise. La phrase de Milet la plus exacte, celle de la page 909, n'a pas été retenue en citation par son propre lecteur, parce qu'elle fait 200 caractères et que tout ce qui s'y laisserait couper est précisément ce qui restreint la revendication ; son titre non plus, parce qu'un titre de revue affiche la thèse sous sa forme la plus large, que le corps restreint et que la conclusion abandonne au profit de « un initiateur » (p. 913)."
+        },
+        {
+          "id": "SUP-8b058221854c90c4",
+          "origin": "validated",
+          "path": "$.sources[1].locator",
+          "access": "full-text",
+          "text": "p. 909-910",
+          "access_corroboration": "absent"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C032",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Sa page 910 en donne la version mécanique : « Jusqu’ici tous les économistes ont pris en considération dans leurs théories les réactions d’une sorte d’homo œconomicus, qui se comporterait comme une mécanique, comme un automate… »",
+      "supports": [
+        {
+          "id": "SUP-c1c20490ebd6790e",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "access": "n/a",
+          "text": "LOCATOR DE LA SOURCE 2 — vérifié sur image. p. 909 : Milet donne l'article de 1881 dans la Revue philosophique (t. XII, sept. 1881), cite la note de Tarde « Tome I, p. 142 », et classe « une critique sévère des notions reçues alors en matière d'économie » comme la première des quatre thèses majeures. p. 910 : « Jusqu'ici tous les économistes ont pris en considération dans leurs théories les réactions d'une sorte d'homo œconomicus, qui se comporterait comme une mécanique, comme un automate… » Le locator p. 909-910 est le bon."
+        },
+        {
+          "id": "SUP-3062921f746a3c55",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE MILET APPORTE ICI, et pourquoi il figure en source. Son article expose le contenu de la Psychologie économique et traite la critique de l'homo oeconomicus page 910, parmi les quatre thèses qu'il dégage de l'ouvrage page 909. Il confirme donc que ce passage est tenu pour un moment de la doctrine, et non pour une remarque isolée. Il ne fonde en revanche aucun mot du résumé, qui est établi sur l'imprimé de Tarde seul : Milet cite Tarde de seconde main, et le lecteur secondaire déclare n'avoir ouvert aucune des sources primaires que Milet mobilise. La phrase de Milet la plus exacte, celle de la page 909, n'a pas été retenue en citation par son propre lecteur, parce qu'elle fait 200 caractères et que tout ce qui s'y laisserait couper est précisément ce qui restreint la revendication ; son titre non plus, parce qu'un titre de revue affiche la thèse sous sa forme la plus large, que le corps restreint et que la conclusion abandonne au profit de « un initiateur » (p. 913)."
+        },
+        {
+          "id": "SUP-8b058221854c90c4",
+          "origin": "validated",
+          "path": "$.sources[1].locator",
+          "access": "full-text",
+          "text": "p. 909-910",
+          "access_corroboration": "absent"
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C033",
+      "locator": "sections[4].paragraphs[0]",
+      "claim_text": "Pour ce lecteur, la critique est un moment de la doctrine, non une remarque isolée.",
+      "supports": [
+        {
+          "id": "SUP-3062921f746a3c55",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE MILET APPORTE ICI, et pourquoi il figure en source. Son article expose le contenu de la Psychologie économique et traite la critique de l'homo oeconomicus page 910, parmi les quatre thèses qu'il dégage de l'ouvrage page 909. Il confirme donc que ce passage est tenu pour un moment de la doctrine, et non pour une remarque isolée. Il ne fonde en revanche aucun mot du résumé, qui est établi sur l'imprimé de Tarde seul : Milet cite Tarde de seconde main, et le lecteur secondaire déclare n'avoir ouvert aucune des sources primaires que Milet mobilise. La phrase de Milet la plus exacte, celle de la page 909, n'a pas été retenue en citation par son propre lecteur, parce qu'elle fait 200 caractères et que tout ce qui s'y laisserait couper est précisément ce qui restreint la revendication ; son titre non plus, parce qu'un titre de revue affiche la thèse sous sa forme la plus large, que le corps restreint et que la conclusion abandonne au profit de « un initiateur » (p. 913)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C034",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Le titre de l’article, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique »",
+      "supports": [
+        {
+          "id": "SUP-3401ea9e67ec9bc4",
+          "origin": "validated",
+          "path": "$.review.notes[10]",
+          "access": "n/a",
+          "text": "ÉCART DE MÉTADONNÉE, EN FAVEUR DE LA FICHE — Crossref et les métadonnées HTML de Persée donnent le titre sans article : « Gabriel Tarde (1843-1904) : créateur de la psychologie économique ». L'IMAGE de la p. 907 porte en gros caractères « Gabriel Tarde (1843-1904) : / Le créateur de la psychologie économique », avec le bandeau « BULLETIN DE PSYCHOLOGIE / Tome XXXV, n° 357 ». La fiche suit l'imprimé, y compris le tome en chiffres romains. Rien à corriger."
+        },
+        {
+          "id": "SUP-303ba2680bf7faca",
+          "origin": "validated",
+          "path": "$.sources[1].label",
+          "access": "full-text",
+          "text": "Jean Milet, « Gabriel Tarde (1843-1904) : Le créateur de la psychologie économique », Bulletin de psychologie, tome XXXV, n° 357, 1982, p. 907-913.",
+          "access_corroboration": "absent"
+        },
+        {
+          "id": "SUP-511a25ad61d1d2e2",
+          "origin": "validated",
+          "path": "$.notes[9]",
+          "access": "n/a",
+          "text": "ÉTAT D'OUVERTURE DE LA SOURCE SECONDAIRE : les sept pages 907 à 913 ont toutes été ouvertes en image, sur l'endpoint de rendu de Persée, et lues en entier, notes de bas de page comprises ; aucune n'a été lue en OCR seul. Deux points restent indéterminés et ne doivent pas être comblés : le genre exact du texte, qui se donne page 913 comme lié à un « Colloque » que l'article ne nomme nulle part, et le voisinage éditorial du numéro, le sommaire du fascicule n'étant pas accessible par Persée. Le titre imprimé porte l'article défini, « Le créateur de la psychologie économique », là où les notices Persée et Crossref l'omettent : une recherche par titre exact doit tenir compte des deux formes."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C035",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "promet pourtant plus que son texte ne soutient",
+      "supports": [
+        {
+          "id": "SUP-3062921f746a3c55",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE MILET APPORTE ICI, et pourquoi il figure en source. Son article expose le contenu de la Psychologie économique et traite la critique de l'homo oeconomicus page 910, parmi les quatre thèses qu'il dégage de l'ouvrage page 909. Il confirme donc que ce passage est tenu pour un moment de la doctrine, et non pour une remarque isolée. Il ne fonde en revanche aucun mot du résumé, qui est établi sur l'imprimé de Tarde seul : Milet cite Tarde de seconde main, et le lecteur secondaire déclare n'avoir ouvert aucune des sources primaires que Milet mobilise. La phrase de Milet la plus exacte, celle de la page 909, n'a pas été retenue en citation par son propre lecteur, parce qu'elle fait 200 caractères et que tout ce qui s'y laisserait couper est précisément ce qui restreint la revendication ; son titre non plus, parce qu'un titre de revue affiche la thèse sous sa forme la plus large, que le corps restreint et que la conclusion abandonne au profit de « un initiateur » (p. 913)."
+        },
+        {
+          "id": "SUP-c342f5eef0b7751d",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande tout usage qu'on en fait. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un tardien pour son auteur, et publiée dans la revue qui servait alors d'organe à la psychologie économique française : l'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Deux faits l'imposent, établis sur la pièce. Milet renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de sa démonstration. Et Milet lui-même récuse la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et ajoute Bagehot, Royce, Baldwin, plus tard Giddings. Ce qu'il maintient, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Conséquence pour la carte : une fiche qui écrirait « Tarde est le fondateur de la psychologie économique » sur la foi de Milet écrirait un faux, et un faux que Milet dément page 909. Cette carte ne l'écrit pas : ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution ne font de Tarde le fondateur, le créateur ou le père de la discipline. Toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C036",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "et Milet y est partie : il écrit dans la revue qui servait alors d’organe à la psychologie économique française",
+      "supports": [
+        {
+          "id": "SUP-c342f5eef0b7751d",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande tout usage qu'on en fait. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un tardien pour son auteur, et publiée dans la revue qui servait alors d'organe à la psychologie économique française : l'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Deux faits l'imposent, établis sur la pièce. Milet renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de sa démonstration. Et Milet lui-même récuse la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et ajoute Bagehot, Royce, Baldwin, plus tard Giddings. Ce qu'il maintient, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Conséquence pour la carte : une fiche qui écrirait « Tarde est le fondateur de la psychologie économique » sur la foi de Milet écrirait un faux, et un faux que Milet dément page 909. Cette carte ne l'écrit pas : ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution ne font de Tarde le fondateur, le créateur ou le père de la discipline. Toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C037",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "et sa démonstration s’appuie sur son propre ouvrage de 1970 sur Tarde.",
+      "supports": [
+        {
+          "id": "SUP-c342f5eef0b7751d",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande tout usage qu'on en fait. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un tardien pour son auteur, et publiée dans la revue qui servait alors d'organe à la psychologie économique française : l'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Deux faits l'imposent, établis sur la pièce. Milet renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de sa démonstration. Et Milet lui-même récuse la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et ajoute Bagehot, Royce, Baldwin, plus tard Giddings. Ce qu'il maintient, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Conséquence pour la carte : une fiche qui écrirait « Tarde est le fondateur de la psychologie économique » sur la foi de Milet écrirait un faux, et un faux que Milet dément page 909. Cette carte ne l'écrit pas : ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution ne font de Tarde le fondateur, le créateur ou le père de la discipline. Toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C038",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Il écarte lui-même la lecture large, page 909 : « l’idée de fonder l’économie sur la psychologie, et non plus sur les facteurs matériels, était dans l’air à cette époque ».",
+      "supports": [
+        {
+          "id": "SUP-c342f5eef0b7751d",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande tout usage qu'on en fait. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un tardien pour son auteur, et publiée dans la revue qui servait alors d'organe à la psychologie économique française : l'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Deux faits l'imposent, établis sur la pièce. Milet renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de sa démonstration. Et Milet lui-même récuse la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et ajoute Bagehot, Royce, Baldwin, plus tard Giddings. Ce qu'il maintient, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Conséquence pour la carte : une fiche qui écrirait « Tarde est le fondateur de la psychologie économique » sur la foi de Milet écrirait un faux, et un faux que Milet dément page 909. Cette carte ne l'écrit pas : ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution ne font de Tarde le fondateur, le créateur ou le père de la discipline. Toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C039",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Il nomme Schmoller, Wagner et Menger, chefs d’écoles qui « arborent le titre de psychologie économique » avant Tarde, puis Bagehot, Royce, Baldwin, et plus tard Giddings.",
+      "supports": [
+        {
+          "id": "SUP-c342f5eef0b7751d",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande tout usage qu'on en fait. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un tardien pour son auteur, et publiée dans la revue qui servait alors d'organe à la psychologie économique française : l'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Deux faits l'imposent, établis sur la pièce. Milet renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de sa démonstration. Et Milet lui-même récuse la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et ajoute Bagehot, Royce, Baldwin, plus tard Giddings. Ce qu'il maintient, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Conséquence pour la carte : une fiche qui écrirait « Tarde est le fondateur de la psychologie économique » sur la foi de Milet écrirait un faux, et un faux que Milet dément page 909. Cette carte ne l'écrit pas : ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution ne font de Tarde le fondateur, le créateur ou le père de la discipline. Toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C040",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Ce qu’il maintient tient dans une seule phrase : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s’appuyant intégralement sur les analyses de la psychologie sociale ».",
+      "supports": [
+        {
+          "id": "SUP-c342f5eef0b7751d",
+          "origin": "validated",
+          "path": "$.notes[7]",
+          "access": "n/a",
+          "text": "RÉSERVE D'ANTÉRIORITÉ ATTACHÉE À LA SOURCE SECONDAIRE, qui commande tout usage qu'on en fait. L'article de Jean Milet est une revendication de priorité, formulée en 1982 par un tardien pour son auteur, et publiée dans la revue qui servait alors d'organe à la psychologie économique française : l'attribution de la fondation de la discipline est donc disputée à l'intérieur de la lignée elle-même, et Milet y occupe une position de partie, non d'arbitre. Deux faits l'imposent, établis sur la pièce. Milet renvoie trois fois, en notes des pages 908, 911 et 912, à son propre ouvrage Gabriel Tarde et la philosophie de l'Histoire (Vrin, 1970), qui est l'appui de sa démonstration. Et Milet lui-même récuse la lecture large de son titre : il écrit page 909 que « l'idée de fonder l'économie sur la psychologie, et non plus sur les facteurs matériels, était dans l'air à cette époque », nomme Schmoller, Wagner et Menger comme chefs d'écoles qui « arborent le titre de psychologie économique » avant Tarde, et ajoute Bagehot, Royce, Baldwin, plus tard Giddings. Ce qu'il maintient, et rien d'autre, tient dans une phrase adversative de la page 909 : Tarde « a été le premier à échafauder une véritable théorie économique, complète et conséquente, s'appuyant intégralement sur les analyses de la psychologie sociale ». Conséquence pour la carte : une fiche qui écrirait « Tarde est le fondateur de la psychologie économique » sur la foi de Milet écrirait un faux, et un faux que Milet dément page 909. Cette carte ne l'écrit pas : ni le titre, ni l'accroche, ni le résumé, ni la note d'attribution ne font de Tarde le fondateur, le créateur ou le père de la discipline. Toute reprise ultérieure de Milet doit rester attribuée (« selon Jean Milet », « Milet soutient que ») et conserver la restriction."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C041",
+      "locator": "sections[4].paragraphs[1]",
+      "claim_text": "Sa conclusion, page 913, en fait « un initiateur ».",
+      "supports": [
+        {
+          "id": "SUP-3062921f746a3c55",
+          "origin": "validated",
+          "path": "$.notes[8]",
+          "access": "n/a",
+          "text": "CE QUE MILET APPORTE ICI, et pourquoi il figure en source. Son article expose le contenu de la Psychologie économique et traite la critique de l'homo oeconomicus page 910, parmi les quatre thèses qu'il dégage de l'ouvrage page 909. Il confirme donc que ce passage est tenu pour un moment de la doctrine, et non pour une remarque isolée. Il ne fonde en revanche aucun mot du résumé, qui est établi sur l'imprimé de Tarde seul : Milet cite Tarde de seconde main, et le lecteur secondaire déclare n'avoir ouvert aucune des sources primaires que Milet mobilise. La phrase de Milet la plus exacte, celle de la page 909, n'a pas été retenue en citation par son propre lecteur, parce qu'elle fait 200 caractères et que tout ce qui s'y laisserait couper est précisément ce qui restreint la revendication ; son titre non plus, parce qu'un titre de revue affiche la thèse sous sa forme la plus large, que le corps restreint et que la conclusion abandonne au profit de « un initiateur » (p. 913)."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C042",
+      "locator": "sections[4].paragraphs[2]",
+      "claim_text": "Tarde lui-même renvoie plus haut. À la fin du chapitre, page 142, une note donne ses théories pour « le développement de germes posés en substance »",
+      "supports": [
+        {
+          "id": "SUP-bd6cc3f20f0b991d",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "NOTE p. 142 — lue dans le texte, au bas du dernier feuillet du chapitre IV, immédiatement avant « LIVRE PREMIER » (dont la TdM donne le début à la p. 143) : « Celles que j'ai à exposer sont le développement de germes posés en substance, pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 … sous le titre de la Psychologie en économie politique. » La note d'attribution cite juste."
+        },
+        {
+          "id": "SUP-eb83e4ef9d60a060",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-8092caa6b586a093",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        }
+      ],
+      "uncited_support_signal": [
+        {
+          "support_id": "SUP-c1c20490ebd6790e",
+          "origin": "validated",
+          "path": "$.review.notes[11]",
+          "shared_terms": [
+            "theories"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[4].paragraphs[2]",
+      "claim_text": "et situe ces germes « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ».",
+      "supports": [
+        {
+          "id": "SUP-bd6cc3f20f0b991d",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "NOTE p. 142 — lue dans le texte, au bas du dernier feuillet du chapitre IV, immédiatement avant « LIVRE PREMIER » (dont la TdM donne le début à la p. 143) : « Celles que j'ai à exposer sont le développement de germes posés en substance, pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 … sous le titre de la Psychologie en économie politique. » La note d'attribution cite juste."
+        },
+        {
+          "id": "SUP-eb83e4ef9d60a060",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-8092caa6b586a093",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C044",
+      "locator": "sections[4].paragraphs[2]",
+      "claim_text": "Sous quelle forme l’objection à l’homme économique s’y présentait, ce sont ces deux livraisons qui le diront : il faudra les lire.",
+      "supports": [
+        {
+          "id": "SUP-bd6cc3f20f0b991d",
+          "origin": "validated",
+          "path": "$.review.notes[7]",
+          "access": "n/a",
+          "text": "NOTE p. 142 — lue dans le texte, au bas du dernier feuillet du chapitre IV, immédiatement avant « LIVRE PREMIER » (dont la TdM donne le début à la p. 143) : « Celles que j'ai à exposer sont le développement de germes posés en substance, pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 … sous le titre de la Psychologie en économie politique. » La note d'attribution cite juste."
+        },
+        {
+          "id": "SUP-eb83e4ef9d60a060",
+          "origin": "validated",
+          "path": "$.attribution_note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        },
+        {
+          "id": "SUP-8092caa6b586a093",
+          "origin": "evidence:lecture.json",
+          "path": "$.attribution.note",
+          "access": "n/a",
+          "text": "Un seul nom sur la page de titre, relue sur l'image du feuillet : « PSYCHOLOGIE ÉCONOMIQUE PAR G. TARDE, de l'Institut, Professeur au Collège de France. TOME PREMIER. PARIS, FÉLIX ALCAN, ÉDITEUR. 1902. » L'argument est de Tarde, qui le donne comme le développement de germes posés, écrit-il en note page 142, « pour la première fois, dans la Revue philosophique, en septembre et octobre 1881 », sous le titre « la Psychologie en économie politique ». Il appuie sa critique d'une citation de l'économiste Henry Charles Carey, mise en note de la page 114, mais la thèse de la contradiction interne de l'homo æconomicus est la sienne."
+        }
+      ],
+      "uncited_support_signal": []
+    }
+  ],
+  "estimated_tokens": 42664,
+  "status": "READY"
+}
