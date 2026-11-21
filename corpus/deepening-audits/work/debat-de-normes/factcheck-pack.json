@@ -1,0 +1,690 @@
+{
+  "protocol_version": 2,
+  "concept_id": "debat-de-normes",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "f391949ac691f248acda852d815b61be29cb1d804d56ab72e4183de886827383",
+  "validated_sha256": "7eb03bd302ca4c1aa89a7c496a595219188c9bf4a90a31998915631d97994a1e",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "53fc0fb84a4ac8e36488e8f78318e826bedb61e2ddec6ae5a3347a932fc94681"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133.",
+        "cles": [
+          "doi:10.4000/activites.1728",
+          "url:journals.openedition.org/activites/1728"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Une infirmière doit administrer un médicament en suivant un protocole écrit pour éviter les erreurs. Le patient qu’elle a devant elle n’est pourtant jamais tout à fait celui que le protocole avait en tête : ses antécédents médicaux ne sont pas tous connus, le produit prescrit n’est plus en stock, il a peur et comprend mal ce qu’on lui demande. Elle doit décider, sur le moment, ce qu’il convient réellement de faire. Suit-elle encore la règle, ou bien s’en écarte-t-elle ?"
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Cette situation n’a rien d’exceptionnel : elle se répète, sous une forme ou une autre, dans presque tout travail réglé par des règles, qu’il s’agisse d’un protocole, d’une consigne, d’une recette ou d’une habitude de métier. Aucune règle écrite à l’avance ne peut prévoir exactement ce qu’exigera chaque situation réelle. Le philosophe et ergologue Yves Schwartz a donné un nom à ce qui se joue alors : un débat de normes, c’est-à-dire une confrontation entre ce qui était prévu avant d’agir et ce que la situation, une fois là, réclame vraiment. Il n’y voit pas un incident regrettable, mais un trait permanent de toute activité de travail."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce que la règle ne peut jamais tout dire",
+      "text": "Dans l’exemple de l’infirmière, il y a d’un côté ce qui est écrit noir sur blanc avant qu’elle agisse : la dose, l’horaire, la procédure à suivre. On appelle cela le travail prescrit. Il y a de l’autre ce qu’elle fait effectivement, avec les moyens du moment, une fois dans la chambre du patient : le travail réel. Les deux ne coïncident jamais tout à fait, et ce n’est pas un défaut de rédaction de la procédure. Aucune consigne, même détaillée, ne peut décrire à l’avance toutes les situations où elle devra s’appliquer."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce que la règle ne peut jamais tout dire",
+      "text": "C’est de cette distinction, bien connue de qui étudie le travail, que l’auteur part pour poser un problème plus large. Ce qu’il observe à propos d’un poste de travail précis vaut, selon lui, pour l’activité humaine en général : « […] des débats de normes ne cessent d’occuper, de saisir l’activité humaine […] ». Le travail prescrit n’est donc qu’un cas particulier d’un phénomène plus vaste : à chaque instant d’une activité, quelque chose qui avait été fixé à l’avance se trouve remis en jeu par ce qu’il faut faire réellement."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Des règles plus anciennes que la tâche du jour",
+      "text": "Le mot « norme » peut sembler abstrait ; il désigne ici, très simplement, tout ce qui est fixé avant qu’une personne commence à agir et qui oriente ce qu’elle doit faire. Une consigne écrite en est une. Mais il y en a bien d’autres : l’habitude prise dans un service, la façon dont les collègues procèdent, une règle de métier jamais écrite nulle part, une attente implicite de la hiérarchie. Toutes précèdent l’activité ; c’est en ce sens qu’on peut les dire antécédentes."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Des règles plus anciennes que la tâche du jour",
+      "text": "Le travail prescrit, celui que décrit une procédure officielle, n’est donc qu’une norme antécédente parmi d’autres, et elle n’est pas toujours la plus déterminante. Il arrive qu’une habitude de métier pèse davantage que la consigne du jour, ou que deux normes antécédentes se contredisent : ce que demande le protocole n’est pas toujours ce qu’attendent les collègues, ni ce qu’impose l’urgence de la situation. Reconnaître cette pluralité change la question posée au début : ce n’est pas seulement la règle écrite qui se discute dans l’action, c’est tout un ensemble de normes plus anciennes que la tâche elle-même."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Refaire la norme en la suivant",
+      "text": "Suivre une norme antécédente n’est presque jamais l’appliquer telle quelle : il faut la faire tenir dans une situation qu’elle n’avait pas prévue. Imaginons un cuisinier qui suit une recette précise, mais reçoit ce matin-là un poisson plus petit que d’habitude, dans une cuisine où un four est en panne. Respecter la recette au sens strict serait absurde ; l’ignorer complètement livrerait un plat raté. Ce qu’il fait, en réalité, c’est retravailler la recette pour qu’elle produise encore ce qu’elle était censée produire, avec ce qu’il a sous la main."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Refaire la norme en la suivant",
+      "text": "C’est ce mouvement que l’auteur appelle une renormalisation : reprendre une norme, non pour la rejeter, mais pour la faire vivre dans une situation où, telle quelle, elle ne suffirait pas. Ce n’est ni de la désobéissance ni de l’improvisation pure : la norme antécédente reste le point de départ, mais elle doit être retravaillée pour que le travail se fasse réellement. Une partie de ce qui fait la compétence d’un métier tient précisément dans cette capacité à renormaliser sans le dire, sans même toujours s’en apercevoir."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Un débat qui ne s’arrête jamais",
+      "text": "Ce débat entre normes antécédentes et renormalisation n’est pas un épisode occasionnel, réservé aux imprévus ou aux situations dégradées. L’auteur insiste sur sa permanence : ces débats « ne cessent d’occuper » l’activité humaine, à chaque instant, y compris dans les tâches les plus réglées et les plus répétitives. Même un geste apparemment mécanique suppose un minimum d’ajustement de la personne qui l’exécute à l’instant précis où elle l’exécute."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Un débat qui ne s’arrête jamais",
+      "text": "Cela déplace le regard porté sur les écarts au travail. Un écart entre ce qui était prescrit et ce qui a été fait n’est pas d’abord un signe d’erreur ou de négligence à corriger : il peut être la trace normale, attendue, du travail en train de se faire. Une organisation qui chercherait à supprimer entièrement ces écarts ne supprimerait pas les difficultés du travail, elle empêcherait seulement les personnes de les résoudre."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Ce que ce débat coûte, ou apporte, à la santé",
+      "text": "Cette idée de débat entre des normes n’appartient pas seulement à l’auteur : il la reprend explicitement de Georges Canguilhem, qu’il mentionne douze fois dans le texte où il développe cette analyse du travail. On peut comprendre l’apport de Canguilhem ainsi : être en bonne santé n’est pas seulement subir sans dommage des normes venues de l’extérieur, c’est pouvoir, soi-même, en produire. L’auteur reprend cette idée en des termes très proches, en évoquant une pensée de la santé « comme un débat toujours renouvelé entre des normes anonymes venant de l’environnement, et des normes que chaque être vivant produit et essaie de promouvoir »."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Ce que ce débat coûte, ou apporte, à la santé",
+      "text": "Transposée au travail, cette idée a une conséquence directe : la façon dont une personne renormalise ce qui lui est demandé n’est pas un détail technique, c’est ce qui est en jeu pour sa santé. L’auteur décrit cela comme « une tentative reconduite jour après jour d’assurer sa propre santé […] c’est une tentative pour créer de l’espace social, de l’espace industrieux pour ses propres normes de vie ». Autrement dit, pouvoir peser, même modestement, sur les normes qui organisent son activité fait partie de ce qui permet de tenir dans son travail, et pas seulement de l’exécuter."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Ce que ce débat n’autorise pas à conclure",
+      "text": "Reconnaître ce débat permanent ne revient pas à dire que toute règle est arbitraire, ni que s’en écarter serait toujours légitime. La renormalisation, telle que l’auteur la présente, part de la norme antécédente et la retravaille ; elle ne consiste pas à l’ignorer. Imaginons, à l’inverse, un employé qui déciderait unilatéralement d’ignorer une consigne de sécurité sous prétexte qu’elle le ralentit : ce ne serait pas un débat de normes, ce serait un renoncement pur et simple à la norme antécédente, sans rien mettre à sa place qui réponde au même besoin."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Ce que ce débat n’autorise pas à conclure",
+      "text": "La distinction entre norme antécédente et renormalisation est ici un outil pour décrire ce qui se passe dans l’activité, et non une classification stricte que l’auteur imposerait à chaque geste observé. Elle sert surtout à déplacer une question habituelle : au lieu de demander seulement si une personne a bien suivi la règle, elle invite à demander ce que cette personne a dû faire, en plus de la règle, pour que le travail se fasse réellement."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-e06a1a823c7f2dde",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "debat-de-normes"
+    },
+    {
+      "id": "SUP-7dd3a1de44030690",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "debat-de-normes"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-3173687688709de7",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Débats de normes"
+    },
+    {
+      "id": "SUP-b3939f10774a3b4f",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "activite-empechee-et-metier"
+    },
+    {
+      "id": "SUP-1d690330c05048b8",
+      "origin": "validated",
+      "path": "$.theme_labels[\"activite-empechee-et-metier\"]",
+      "access": "n/a",
+      "text": "Ce que le travail empêche"
+    },
+    {
+      "id": "SUP-7f0545fb194d3fe8",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Yves Schwartz"
+    },
+    {
+      "id": "SUP-8a858d407f1d238a",
+      "origin": "validated",
+      "path": "$.authors[0].app_author_id",
+      "access": "n/a",
+      "text": "schwartz"
+    },
+    {
+      "id": "SUP-a85c0d2abefb6423",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Yves Schwartz signe seul l'article de 2007 où la formule se lit, au pluriel : « débats de normes ». Il en assume la racine et la nomme : c'est chez Georges Canguilhem, cité douze fois dans ce texte, qu'il prend l'idée de la santé comme débat entre des normes venues du milieu et celles que le vivant produit et cherche à promouvoir. Une réserve pour le lecteur : ce texte ne porte pas l'expression « usage de soi », qui n'y figure pas une seule fois ; les deux formules sont distinctes et la carte n'en annonce qu'une."
+    },
+    {
+      "id": "SUP-f2ab8ef079174ba6",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] des débats de normes ne cessent d’occuper, de saisir l’activité humaine […]"
+    },
+    {
+      "id": "SUP-a7a3d09d41312e9b",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133."
+    },
+    {
+      "id": "SUP-c927177154299f04",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 131"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-212e2ba4b0c4cf64",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Travailler, est-ce appliquer des normes ou les rediscuter à chaque fois ?"
+    },
+    {
+      "id": "SUP-01e6106a4cc268bb",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Le travail prescrit n'est qu'une norme parmi celles qui précèdent l'activité. Celui qui travaille les renormalise sans cesse, et c'est sa santé qui se joue dans ce débat."
+    },
+    {
+      "id": "SUP-26d3091f529c043d",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 4-2, 2007, p. 122-133.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-d5d2cabbf6357f0d",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 131",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-e2d86523dd4a4ca6",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.4000/activites.1728",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-d987c375d3dee5f7",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://journals.openedition.org/activites/1728",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-6d0236b48129bdf9",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-18"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-c11d554600553303",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Ouvert moi-même le PDF de l'éditeur : https://journals.openedition.org/activites/pdf/1728 (13 p., téléchargé 699 438 octets, couche texte présente). Folios imprimés lisibles en tête de page (« @ctivités, 2007, volume 4 numéro 2 122 » à « … 133 ») : le PDF p. 11 porte le folio 131."
+    },
+    {
+      "id": "SUP-45f24791295ef670",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — sur ce folio 131 je lis : « Comme le suggère au niveau microscopique la distinction entre « travail prescrit » et « travail réel », des débats de normes ne cessent d’occuper, de saisir l’activité humaine : débats entre des normes antécédentes, dont le « travail prescrit » peut être l’une d’elles, et des tendances à la renormalisation… ». Le segment cité correspond caractère pour caractère (apostrophes courbes comprises) à un test de correspondance stricte après normalisation des seuls sauts de ligne. Les deux coupes sont signalées par […]. Locator p. 131 exact."
+    },
+    {
+      "id": "SUP-1f386322d008c81d",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "TRADUCTION — le texte publié est en français et n'est pas une traduction : la p. 122 précise « An English draft translation of this article is available on request to the author ». La note 14 remercie Xavier Roth « pour son travail de traduction et de conseil », ce qui ne fait pas du français une version seconde. Le champ translation.kind = \"none\" est donc juste."
+    },
+    {
+      "id": "SUP-f007f85116d6ff41",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCES — Crossref (https://api.crossref.org/works/10.4000/activites.1728) rend : titre « Un bref aperçu de l’histoire culturelle du concept d’activité », auteur unique Yves Schwartz, container « Activites », volume 04, issue 2, published-print 2007, éditeur OpenEdition. Crossref ne porte pas de champ page ; la pagination 122-133 est confirmée par l'article lui-même, section « référencement » (PDF p. 11) : « @ctivités, 4 (2), pp. 122-133 ». L'URL https://journals.openedition.org/activites/1728 répond 200 (HTML) et /pdf/1728 répond 200 (application/pdf). Consulted \"full-text\" vérifié."
+    },
+    {
+      "id": "SUP-92190a6392545d23",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — Schwartz signe seul (Crossref : un seul auteur, sequence first). La formule « débats de normes » est bien de lui : il l'a mise en titre dès 2004 (« Raison pratique et débats de normes », in Bienenstock & Tosel dir., La raison pratique au XXe siècle) — notice HAL, recherche https://api.archives-ouvertes.fr/search/?q=%22débats%20de%20normes%22 (16 notices, la plus ancienne est celle de Schwartz 2004 ; toutes les suivantes sont des reprises ergologiques : Durrive, Prévot-Carpentier, Roth, Mencacci…). Aucun revendicateur antérieur trouvé."
+    },
+    {
+      "id": "SUP-c4dc3d0a4ecf36f3",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "ATTRIBUTION, la part canguilhémienne — elle est déclarée par Schwartz lui-même dans le texte cité, p. 128 (PDF p. 8) : « … G. Canguilhem, […] pensant la santé comme un débat toujours renouvelé entre des normes anonymes venant de l'environnement, et des normes que chaque être vivant produit et essaie de promouvoir ». La note d'attribution de la fiche reprend fidèlement cette phrase-source : la racine est empruntée, la nomination est de Schwartz. Xavier Roth, « De la renormalisation », Ergologia n° 1, 2009, p. 123-132 (https://ergologia.org/wp-content/uploads/2022/08/8-1_roth.pdf), parle du « concept ergologique » et des « débats de normes mis en avant par la démarche ergologique », et rappelle que la généalogie de l'idée est plus tortueuse qu'une simple rencontre Canguilhem / prescrit-réel — cela concerne la genèse, non la paternité de la formule."
+    },
+    {
+      "id": "SUP-cb73027064e4e177",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "PROSE — hook et summary tiennent dans les sources. « Le travail prescrit n'est qu'une norme parmi celles qui précèdent l'activité » : p. 131, « des normes antécédentes, dont le « travail prescrit » peut être l'une d'elles ». « Les renormalise sans cesse » : p. 131, « ne cessent d'occuper » et « des tendances à la renormalisation ». « C'est sa santé qui se joue dans ce débat » : p. 131, « Éviter « l'invivable », « l'insupportable », signifie une tentative reconduite jour après jour d'assurer sa propre santé […] c'est une tentative pour créer de l'espace social, de l'espace industrieux pour ses propres normes de vie », et p. 128 pour l'équation santé = débat de normes. Aucun adjectif en excès relevé."
+    },
+    {
+      "id": "SUP-c0a3b7446753e7db",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "Hors des quatre points, pour information : la réserve de la note d'attribution est exacte — « usage de soi » ne figure pas une seule fois dans l'article (0 occurrence de « usage de soi » / « usages de soi » dans le texte extrait des 13 pages). Le décompte « cité douze fois » correspond à 12 occurrences du token « Canguilhem » dans l'intégralité du PDF, bibliographie et notes comprises ; la base du décompte n'est pas explicitée dans la fiche, mais le chiffre est arithmétiquement juste."
+    },
+    {
+      "id": "SUP-54a04ab814915219",
+      "origin": "validated",
+      "path": "$.review.notes[8]",
+      "access": "n/a",
+      "text": "Non atteint : aucun outil mcp__documentary__* n'était exposé, la résolution a été faite à la main (Crossref, HAL). OpenAlex et Semantic Scholar n'ont pas été interrogés (quota en échec annoncé) : leur silence n'est pas un constat. Le premier appel à /activites/pdf/1728 a échoué (connection reset) ; la seconde tentative a abouti — l'échec initial ne disait rien du texte."
+    },
+    {
+      "id": "SUP-d804919d0019b5ca",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "LA CITATION EST FRAGILE, ET LE CONTRÔLE DOIT LE SAVOIR. Elle fait 79 caractères, coupée aux deux bouts, et abandonne le mécanisme. La phrase source fait 283 caractères : « Comme le suggère au niveau microscopique la distinction entre “travail prescrit” et “travail réel”, des débats de normes ne cessent d'occuper, de saisir l'activité humaine : débats entre des normes antécédentes, dont le “travail prescrit” peut être l'une d'elles, et des tendances à la renormalisation dont l'existence est attestée au niveau microscopique par le “travail réel” ou “actuel”. » Trois versions plus complètes ont été composées et mesurées à 155, 159 et 160 caractères ; les ramener sous 150 exigeait une troisième ellipse au milieu du doublet « ne cessent d'occuper, de saisir », c'est-à-dire un montage. Le fragment retenu est un segment continu, sans coupe interne. Il a été gardé plutôt qu'abandonné parce qu'il nomme le concept et énonce sa permanence ; le mécanisme — normes antécédentes contre renormalisation — est porté par le résumé, pas par la citation. Une carte sans citation aurait été complète : si le contrôle juge le fragment insuffisant, le retirer ne coûte rien à la fiche."
+    },
+    {
+      "id": "SUP-25af427858e6d045",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Avertissement de méthode qui a failli produire une fausse citation : le rendu de l'édition en ligne donne la phrase avec une majuscule initiale, « Des débats de normes ne cessent d'occuper… », comme s'il s'agissait du début de la phrase. Le PDF de la revue montre qu'il n'en est rien. Le texte retenu est celui du PDF, et il commence par une coupe explicite pour cette raison."
+    },
+    {
+      "id": "SUP-1d1f582b20d1e1ad",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Le numéro de paragraphe de l'édition en ligne n'est pas fiable : interrogée trois fois, la page attribue « § 45 » indifféremment aux trois caractéristiques de l'activité, qui sont trois puces distinctes. C'est la pagination imprimée, lue page à page sur le PDF de la revue (en-tête courant et folios), qui fait foi."
+    },
+    {
+      "id": "SUP-58501dfa88ca4684",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Le PDF lu est hébergé par le site d'une association qui met en ligne les textes de l'auteur, non par l'éditeur. Il porte l'habillage de la revue et concorde avec la notice Crossref sur le titre, l'auteur, le volume, le numéro et l'année ; la concordance avec l'édition de l'éditeur n'a été contrôlée que sur le passage cité et sur le plan de l'article."
+    },
+    {
+      "id": "SUP-b40da06361e0f462",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "« Usage de soi » : zéro occurrence dans ce texte, non plus que « corps-soi », « dramatiques », « normativité » ou « entités collectives ». Le texte de 1987 dont le titre porte la formule a été téléchargé mais n'a pas pu être lu — numérisation sans couche texte. Rien n'est avancé sur la date de première formulation de « usage de soi »."
+    },
+    {
+      "id": "SUP-8adbf48cc65f5c2b",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "L'antériorité de « débats de normes » n'est pas établie : l'auteur se cite lui-même en 2004 dans sa propre bibliographie, mais ce volume n'a pas été ouvert. 2007 est la date du texte ouvert où la formule se lit, pas celle de son invention."
+    },
+    {
+      "id": "SUP-996785f2f93e9b9a",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Réception et contestation non instruites : Cairn est inaccessible depuis l'environnement de lecture. Ce silence est un silence d'outils."
+    },
+    {
+      "id": "SUP-688d7d8c0b411aaf",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "debat-de-normes"
+    },
+    {
+      "id": "SUP-38421d6c5e5da255",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Yves Schwartz"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-156512f1471f8fc3",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le texte lu est signé d'un seul nom. La signature se lit en tête de la première page de l'article — « Un bref aperçu de l'histoire culturelle du concept d'activité / Yves Schwartz / schwartz@up.univ-aix.fr », p. 122 de @ctivités, 2007, volume 4 numéro 2 — et la notice Crossref du DOI 10.4000/activites.1728 ne porte qu'un auteur, « Yves Schwartz », en séquence « first » et sans second nom. SOLE_AUTHOR pour ce texte. Quatre précisions que la lecture oblige à écrire en toutes lettres. Premièrement, sur la formule elle-même : ce texte porte « débats de normes », au pluriel, et deux fois seulement — une fois dans le corps du texte (p. 131, troisième caractéristique de l'activité) et une fois dans sa propre bibliographie, où l'auteur se cite : « Schwartz, Y. (2004). Raison Pratique et débats de normes. In M. Bienenstock, & A. Tosel (Eds.), La Raison pratique au XXème siècle (pp. 261-294). Paris : L'Harmattan. » La formule est donc bien de Schwartz, et le millésime 2004 est celui que j'ai lu dans la bibliographie de l'article lui-même, p. 132-133, sur une référence signée de son seul nom ; je ne l'ai pas déduit d'une base ni d'un commentaire, et je n'affirme pas pour autant que 2004 soit la première mise en forme imprimée de la formule, puisque ce volume n'a pas été ouvert. La note 1 de l'article, p. 122, ajoute que ce texte « est une présentation compacte, issue d'une série de conférences et de cours donnés depuis 2004 » : la formule circulait donc oralement à cette date au moins. Deuxièmement, sur l'autre formule : « usage de soi » n'est PAS dans ce texte. Recherche faite sur le texte intégral converti, l'expression n'y figure pas une seule fois, ni au singulier ni au pluriel, non plus que « corps-soi », « dramatiques », « normativité » ou « entités collectives ». Les deux formules que le repérage plaçait ensemble sont bien distinctes, et ce texte-ci n'en porte qu'une (voir reserves). Troisièmement, sur la racine empruntée, que le texte assume explicitement : Georges Canguilhem est nommé douze fois. Dès la p. 122, l'auteur rappelle que « le philosophe français G. Canguilhem (1966) utilise le terme « activité » pour identifier spécifiquement ce qu'est la vie ». Surtout, p. 129-130, il décrit Canguilhem « pensant la santé comme un débat toujours renouvelé entre des normes anonymes venant de l'environnement, et des normes que chaque être vivant produit et essaie de promouvoir, et concevant ainsi l'agir technique comme la prolongation de ce débat immémorial ». Le mot « débat » appliqué à des normes est donc explicitement rapporté par Schwartz à Canguilhem, et la figure 2 de l'article range Canguilhem sur l'« axe de l'INVIVABLE : une vie en santé ne peut coexister avec la prédétermination complète des normes de son activité », en renvoyant à la recension par Canguilhem, en 1947, de l'enquête de Georges Friedmann sur les usines taylorisées (« Canguilhem, 1947, pp. 120-136 »). Le concept est de Schwartz ; sa racine est empruntée, et il l'écrit lui-même. Quatrièmement, l'ergologie est un programme collectif et l'article le montre en se référant à un ouvrage cosigné, « Schwartz, Y, & Durrive, L. (2003). Travail et Ergologie. Entretiens sur l'activité humaine. Toulouse : Octarès » — mais cette cosignature porte sur un autre livre, pas sur ce texte-ci, et ne déplace donc pas l'attribution de l'article lu."
+    },
+    {
+      "id": "SUP-4bd14affa5bb0547",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "[…] des débats de normes ne cessent d’occuper, de saisir l’activité humaine […]"
+    },
+    {
+      "id": "SUP-9c58455153e6186b",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Yves Schwartz, « Un bref aperçu de l'histoire culturelle du concept d'activité », @ctivités, 2007, vol. 4, n° 2, p. 122-133. DOI 10.4000/activites.1728. Édition en ligne en accès ouvert (journals.openedition.org/activites/1728) ; PDF de la mise en page de la revue (pagination 122-133) consulté sur le site de l'association Ergologia."
+    },
+    {
+      "id": "SUP-2843369f89b9efe3",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 131, section 5 « L'approche ergologique : trois instructions résultant de cette histoire », troisième des trois caractéristiques de l'activité humaine — troisième puce de la p. 131, milieu de la première phrase de la puce. Dans l'édition en ligne d'OpenEdition, ce passage se situe au voisinage du § 45 ; la numérotation des paragraphes de cette édition n'a pas pu être recontrôlée à l'unité près (voir reserves), c'est donc la pagination imprimée, lue sur le PDF de la revue, qui fait foi ici."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-b57bab0dadcd52f6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation._verification",
+      "access": "n/a",
+      "text": "Verbatim établi sur deux témoins indépendants et concordants. (1) Le PDF de la mise en page de la revue (12 pages, en-tête courant « @ctivités, 2007, volume 4 numéro 2 » + folio, bloc « référencement » final renvoyant à http://www.activites.org/v4n2/v4n2.pdf), téléchargé et converti en texte : la chaîne retenue s'y lit telle quelle. (2) L'édition en ligne d'OpenEdition, rendue par WebFetch, qui donne la même phrase. La phrase entière, non coupée, est : « Comme le suggère au niveau microscopique la distinction entre « travail prescrit » et « travail réel », des débats de normes ne cessent d'occuper, de saisir l'activité humaine : débats entre des normes antécédentes, dont le « travail prescrit » peut être l'une d'elles, et des tendances à la renormalisation dont l'existence est attestée au niveau microscopique par le « travail réel » ou « actuel ». » Elle fait 283 caractères. Le fragment retenu est un segment CONTINU de cette phrase : une seule coupe en tête, une seule coupe en fin, aucune coupe interne, aucun recollement de deux endroits du texte. Les guillemets typographiques et l'apostrophe courbe sont ceux de la source."
+    },
+    {
+      "id": "SUP-d76ce8dbb503c6ba",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Schwartz, Y. (2007). « Un bref aperçu de l'histoire culturelle du concept d'activité ». @ctivités, 4(2), p. 122-133. PDF de la mise en page de la revue (12 p.), hébergé par le site de l'association Ergologia dans sa liste « Contributions d'Yves Schwartz ». Couche texte exploitable ; en-tête courant et folios 122 à 133 vérifiés page à page."
+    },
+    {
+      "id": "SUP-8e5d368290394051",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.4000/activites.1728"
+    },
+    {
+      "id": "SUP-33df188f81672dd7",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://ergologia.org/wp-content/uploads/2023/02/017-ys_activites_volume4_n2.pdf"
+    },
+    {
+      "id": "SUP-0d06fdf7a8f6fc34",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Même article, édition en ligne d'OpenEdition Journals (texte intégral en accès ouvert, licence CC BY-NC-ND, paragraphes numérotés). Rendu par WebFetch ; curl y est renvoyé sur la page anti-robot Anubis (HTTP 200, 5 281 octets), y compris sur /pdf/1728."
+    },
+    {
+      "id": "SUP-17b50a56ac454a29",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "10.4000/activites.1728"
+    },
+    {
+      "id": "SUP-4aebec412f7b9a51",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://journals.openedition.org/activites/1728"
+    },
+    {
+      "id": "SUP-d09e9cd12f58b4c7",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Notice Crossref du DOI 10.4000/activites.1728 : titre « Un bref aperçu de l'histoire culturelle du concept d'activité », auteur unique Yves Schwartz, revue Activites, volume 04, numéro 2, année 2007, ISSN 1765-2723. Concordante avec la signature et l'en-tête du PDF."
+    },
+    {
+      "id": "SUP-008fbd63a33e923b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.4000/activites.1728"
+    },
+    {
+      "id": "SUP-08b354b08edac464",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.4000/activites.1728"
+    },
+    {
+      "id": "SUP-eb78011026fd398c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Schwartz, Y. (2004). « Raison Pratique et débats de normes ». In M. Bienenstock & A. Tosel (Eds.), La Raison pratique au XXème siècle (p. 261-294). Paris : L'Harmattan. Référence relevée dans la bibliographie de l'article de 2007 lui-même (p. 132-133 du PDF). Volume non ouvert."
+    },
+    {
+      "id": "SUP-a4d121dd3c836bef",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].citation",
+      "access": "metadata-only",
+      "text": "Schwartz, Y. (1987). « Travail et usage de soi ». PDF déposé dans la liste « Contributions d'Yves Schwartz » du site Ergologia (25 pages). Fichier téléchargé (1,5 Mo) mais NON LU : numérisation sans aucune couche texte, et le rendu d'images de PDF est indisponible dans cet environnement (pdftoppm absent). Retenu ici comme indice de l'endroit où vit la formule « usage de soi », pas comme source lue."
+    },
+    {
+      "id": "SUP-1472914cc59bdd5c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[4].url",
+      "access": "metadata-only",
+      "text": "https://ergologia.org/wp-content/uploads/2023/02/005-travail_soi-screen.pdf"
+    },
+    {
+      "id": "SUP-4a9751f766daa67c",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].citation",
+      "access": "full-text",
+      "text": "Liste « Contributions d'Yves Schwartz » du site de l'association Ergologia, qui recense et met en ligne les textes de l'auteur (dont l'article de 2007 retenu ici). Page ouverte et lue."
+    },
+    {
+      "id": "SUP-9f9d06b0833babf3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[5].url",
+      "access": "full-text",
+      "text": "https://ergologia.org/contributions-dyves-schwartz/"
+    },
+    {
+      "id": "SUP-2d122f93a556c5b1",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Dans les termes de Schwartz, sur le texte lu intégralement (p. 122-133). Le point de départ est un constat de flou : « activité » est pour lui « un mot sans contenu conceptuel précis, séjournant à l'état flou, fonctionnant « à l'aveugle » », dont le plus petit dénominateur commun (la consommation d'énergie, ou l'opposition à l'inertie) est trop large pour faire un concept. L'article reconstitue alors deux généalogies distinctes, figurées comme les deux branches d'un schéma. La branche gauche est celle du « Tätigkeit » allemand puis soviétique (Kant, Hegel, Marx, Vygotski, Léontiev) et des ergonomes de l'activité, qui ont établi, selon ses mots, « que l'entière anticipation ou standardisation des processus de travail était impossible : l'activité humaine, en tant qu'obscur processus se développant entre ce qui est anticipé, prévu, et ce qui est vraiment fait, est inévitable, une invitée dans nos vies qu'on ne pourra jamais congédier » (p. 130). C'est l'axe de l'IMPOSSIBLE. La branche droite est philosophique — Bergson, Goldstein, Leroi-Gourhan, Canguilhem — et aboutit à l'axe de l'INVIVABLE : Canguilhem, recensant l'enquête de Friedmann sur les usines taylorisées, conclut « que cette ambition de contrôle total du faire industrieux était, à strictement parler, invivable, insupportable, impossible à vivre » (p. 130) ; « une vie en santé ne peut coexister avec la prédétermination complète des normes de son activité » (figure 2). L'ergologie est présentée comme la jonction des deux : « ce qui est « impossible » se révèle être aussi « invivable » ». D'où la définition centrale, p. 130-131 : « l'activité humaine est le processus dynamique et tendu qui tente d'articuler, toute vie durant, le traitement des limitations de toute forme de normalisation et la saisie des nombreuses opportunités pour vivre, en dépit de toute forme rigide d'hétérodétermination ». Trois caractéristiques en découlent, énoncées p. 131. (a) L'activité est « un concept transgressif, synthétique et non localisable » : parce qu'il « tente de recoudre, de ré-agréger l'unité de l'être humain », il « ne peut pas être la propriété d'une seule discipline scientifique » — ni de la psychologie, ni de la neurologie, ni de l'anthropologie culturelle, dont chaque appropriation exclusive « serait quelque part une mutilation ». (b) L'activité est « un moment de médiation entre l'individuel et le collectif, entre les niveaux macroscopiques et microscopiques de la vie sociale ». Ce qui la met en mouvement est la santé, prise dans un sens plus large que médical : « une tentative pour créer de l'espace social, de l'espace industrieux pour ses propres normes de vie », la vie étant « toujours plus ou moins en train de combattre pour, d'entretenir, de promouvoir ses propres valeurs dans le monde social et historique ». (c) C'est ici que se loge la formule instruite : ce que suggère au niveau microscopique la distinction entre travail prescrit et travail réel, c'est que « des débats de normes ne cessent d'occuper, de saisir l'activité humaine ». Ces débats opposent, dans ses termes, des « normes antécédentes », dont le travail prescrit « peut être l'une d'elles » — le prescrit n'est donc qu'une norme parmi d'autres, et non le pôle unique de l'affrontement — et « des tendances à la renormalisation dont l'existence est attestée au niveau microscopique par le « travail réel » ou « actuel » ». Il ajoute que les valeurs plus larges de la vie sociale « interfèrent dans ces débats », et en tire la conséquence : « l'activité humaine est traversée par des contradictions potentielles et se révèle comme une matrice authentique de l'histoire humaine » — matrice d'histoire qui, précise-t-il aussitôt, ne peut être « réellement comprise, anticipée par une quelconque « théorie », ou système ». Deux choses appartiennent donc à sa définition et sont régulièrement effacées dans la reprise : le débat n'est pas un face-à-face entre la consigne et l'exécutant, mais entre un ensemble de normes antécédentes et une tendance du vivant à renormaliser ; et l'enjeu de ce débat est la santé au sens de Canguilhem, c'est-à-dire la possibilité de faire tenir ses propres normes de vie, non la performance."
+    },
+    {
+      "id": "SUP-9e8f1463614a6582",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "La citation retenue est courte parce que la phrase entière ne se laisse pas couper sans se recomposer, et il faut dire ce que la coupe emporte. La phrase source fait 283 caractères. Trois versions plus complètes ont été composées puis mesurées, et toutes trois dépassent la limite de 150 : « [...] des débats de normes ne cessent d'occuper, de saisir l'activité humaine : débats entre des normes antécédentes [...] et des tendances à la renormalisation [...] » (160 caractères), la même sans les crochets terminaux (155), et une version accrochée à l'incise d'ouverture sur le travail prescrit et le travail réel (159). Pour descendre sous 150 il aurait fallu couper à l'intérieur du doublet « ne cessent d'occuper, de saisir », c'est-à-dire poser une troisième ellipse au milieu d'une même proposition : la phrase aurait alors eu l'allure d'un montage, ce qui est précisément la faute à ne pas commettre sur cet auteur. Le fragment retenu, plus court, est un segment continu, mais il abandonne le mécanisme (normes antécédentes contre renormalisation) et l'ancrage sur le couple prescrit/réel, qui sont l'essentiel de l'argument : ils ne sont donc portés que par definition_de_lauteur, pas par la citation."
+    },
+    {
+      "id": "SUP-38d437ab5d1c9b1f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La formule « usage de soi » n'est pas dans ce texte, et « usage de soi par soi et par les autres » non plus. Recherche faite sur le texte intégral converti (51 467 caractères, césures de fin de ligne recollées) : zéro occurrence de « usage de soi » et de « usages de soi », zéro de « corps-soi », zéro de « dramatique(s) », zéro de « normativité » et de tout mot en « normativ- », zéro de « entités collectives ». « Renormalisation » n'y figure qu'une seule fois, et « débats de normes » deux fois, dont l'une dans la bibliographie. Le vocabulaire ergologique que le repérage donnait pour caractéristique de l'auteur est donc absent de ce texte-ci : c'est un aperçu d'histoire des idées, pas un exposé du lexique ergologique. Les deux formules que la consigne demandait de démêler sont bien distinctes, et ce texte n'en porte qu'une — « débats de normes »."
+    },
+    {
+      "id": "SUP-2b6dddc341933716",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Où vit l'autre formule n'est pas établi par lecture. Le site de l'association Ergologia recense un texte de 1987 intitulé « Travail et usage de soi », dont le titre à lui seul porte la formule. Le PDF a été téléchargé (1,5 Mo, 25 pages) mais N'A PAS ÉTÉ LU : c'est une numérisation sans aucune couche texte, et le rendu d'images de PDF est indisponible dans cet environnement (pdftoppm non installé). Je n'avance donc rien sur le contenu de ce texte, ni sur la date de première formulation de « usage de soi », ni sur l'articulation que l'auteur fait ailleurs entre les deux formules. Le millésime 1987 provient de la liste d'Ergologia, pas d'une page de titre lue."
+    },
+    {
+      "id": "SUP-e301a4c09df4ea39",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "L'antériorité de la formule n'est pas établie. « Raison Pratique et débats de normes » (in La Raison pratique au XXème siècle, L'Harmattan, 2004, p. 261-294) est cité par l'auteur dans sa propre bibliographie, mais n'a pas été ouvert ; Le paradigme ergologique ou un métier de philosophe (Octarès, 2000) et Travail et Ergologie. Entretiens sur l'activité humaine (avec Louis Durrive, Octarès, 2003), également cités par lui, non plus. 2007 est la date du texte que j'ai pu ouvrir où la formule se lit, pas la date de son invention."
+    },
+    {
+      "id": "SUP-956fc31ea9d61618",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Avertissement de méthode sur l'établissement du verbatim, à consigner parce qu'il a failli produire une fausse citation. L'édition en ligne d'OpenEdition rendue par WebFetch donne la phrase sous la forme « Des débats de normes ne cessent d'occuper... », avec majuscule initiale, comme s'il s'agissait du début de la phrase. Le PDF de la revue montre qu'il n'en est rien : la phrase commence par « Comme le suggère au niveau microscopique la distinction entre « travail prescrit » et « travail réel », des débats de normes ne cessent... ». C'est le modèle qui restitue la page qui a normalisé l'attaque. Le texte retenu ici est celui du PDF, et il commence par une coupe explicite pour cette raison. Aucune citation de cet auteur ne devrait être établie sur le seul rendu d'un outil de résumé."
+    },
+    {
+      "id": "SUP-80572373f7a3d170",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Localisation : la pagination imprimée (p. 131) a été vérifiée sur le PDF de la revue, en-tête courant et folio lus page à page. Le numéro de paragraphe de l'édition en ligne, en revanche, n'est pas fiable : interrogée trois fois, la page rendue attribue « § 45 » indifféremment aux trois caractéristiques de l'activité, qui sont trois puces distinctes et portent donc vraisemblablement trois numéros distincts. Le locator ne donne donc le § que comme un voisinage, avec cette réserve."
+    },
+    {
+      "id": "SUP-8e90b040d81bf03f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Le PDF lu est hébergé par le site de l'association Ergologia, pas par l'éditeur. Il porte l'habillage de la revue (en-tête courant « @ctivités, 2007, volume 4 numéro 2 », folios 122-133, bloc « référencement » final renvoyant à http://www.activites.org/v4n2/v4n2.pdf) et concorde avec la notice Crossref sur le titre, l'auteur, le volume, le numéro et l'année. La concordance avec l'édition OpenEdition n'a été contrôlée que sur le passage cité et sur le plan de l'article, pas sur l'ensemble du texte."
+    },
+    {
+      "id": "SUP-2abb448392f65b76",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "OpenEdition n'est pas accessible par curl : la requête est renvoyée sur la page de vérification anti-robot Anubis (HTTP 200, 5 281 octets, identique sur /activites/1728 et sur /activites/pdf/1728, y compris avec un User-Agent de navigateur). C'est un obstacle d'accès, pas une indisponibilité du texte. WebFetch passe, mais refuse de restituer des paragraphes entiers ; c'est le PDF trouvé ailleurs qui a permis la lecture suivie."
+    },
+    {
+      "id": "SUP-2349be38ab8363a2",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Le texte porte lui-même la mention « An English draft translation of this article is available on request to the author » : la version française lue est celle qui a été publiée et c'est elle qui fait foi, mais l'existence d'une version anglaise de travail est signalée par l'auteur, et elle n'a pas été demandée ni vue. Aucune conclusion n'en est tirée sur la langue de rédaction première."
+    },
+    {
+      "id": "SUP-c2be6ca731f7b5e6",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Réception et contestation non instruites. Cairn renvoie HTTP 403 dans cet environnement, ce qui ferme « Activité(s) et usages de soi : quel(s) milieu(x) pour l'humain ? » (Les Études philosophiques, 2020) et « Quel sujet pour quelle expérience ? » (Travail et apprentissages, 2010) ; l'entrée « Actividade » du dictionnaire de Laboreal, signalée par le repérage, est en portugais et n'a pas été ouverte ; le serveur MCP documentary n'était pas exposé et scite n'était pas connecté. Aucun relevé de reprise ni de critique n'a donc pu être fait : ce silence est un silence d'outils."
+    },
+    {
+      "id": "SUP-6c3457e96c17f5f7",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[10]",
+      "access": "n/a",
+      "text": "Sur le test d'enseignabilité que le repérage posait comme condition d'arrêt : le texte s'y prête mieux que son vocabulaire ne le laissait craindre, puisqu'il énonce le débat de normes en l'adossant explicitement au couple travail prescrit / travail réel. Mais c'est un aperçu d'histoire culturelle, sans terrain ni situation de travail décrite : rien dans ce texte ne montre un opérateur en train d'arbitrer. Un dossier qui voudrait cet appui devra l'aller chercher dans un autre texte de l'auteur, non ouvert ici."
+    }
+  ],
+  "estimated_tokens": 15618,
+  "status": "READY"
+}
