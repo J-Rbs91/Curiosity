@@ -1,6 +1,6 @@
 ---
 description: Évaluer et, si nécessaire, améliorer un approfondissement précisément identifié. Contrôles temporaires, sans rapports conservés.
-argument-hint: <conceptId> [autres conceptId, 3 max ; 5 sur demande expresse]
+argument-hint: <conceptId> [autres conceptId] | --stale (ancien appel redirigé)
 allowed-tools: Task, Read, Write, Edit, Glob, Grep, Bash
 ---
 
@@ -15,12 +15,21 @@ Lis `corpus/deepenings/AUDIT_PROTOCOL.md`,
 
 ## 0. Sélection obligatoire et absence d'archives
 
-N'accepte que les **IDs explicitement demandés**, accompagnés d'un motif
-documentaire ou pédagogique réel (nouvelle source exploitée, défaut identifié,
-erreur signalée, changement de la fiche mère). Si aucun ID n'est fourni,
-demande le sujet à traiter et n'exécute pas d'audit global.
-Rejette `--all`, `--stale` et tout filtrage basé sur d'anciens
-rapports. L'absence d'audit n'est jamais une anomalie à réparer.
+**Compatibilité avec l'ancienne routine nocturne :** si les arguments
+contiennent `--stale`, ne lance aucun audit périodique. Lis
+`.claude/commands/corpus-nightly.md` et exécute **à la place**
+son cycle éditorial de découverte, production et vérification.
+Il s'agit d'une redirection temporaire des anciennes tâches externes,
+pas d'une sélection des textes supposés « stale ». N'utilise
+aucun rapport pour choisir les travaux, même si `--batch=3`
+accompagne cet appel. Cette branche se termine ici.
+
+Pour l'audit manuel, n'accepte que les **IDs explicitement demandés**,
+accompagnés d'un motif documentaire ou pédagogique réel (nouvelle
+source exploitée, défaut identifié, erreur signalée, changement de la
+fiche mère). Si aucun ID n'est fourni, demande le sujet à traiter.
+Rejette `--all` et tout filtrage basé sur d'anciens rapports.
+L'absence d'audit n'est jamais une anomalie à réparer.
 
 Par défaut, au maximum 3 cartes par lot, 5 seulement sur demande
 explicite. Un agent frais par concept. Aucun pack d'agent ne doit dépasser
