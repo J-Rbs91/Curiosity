@@ -58,3 +58,12 @@ Réécrit (4 §, 188 mots) : textes de 1962/1974 et notes OCR ; Reynaud et van R
 `package-lock.json` apparaît modifié dans l'arbre de travail ; il ne l'a pas été par cette réécriture et n'a pas été touché.
 
 Aucune auto-validation : ni ACCEPT ni FACTCHECK_PASS. Le SHA du deepening a changé, le cycle doit reprendre à PREPARE.
+
+## Boucle 1
+
+Mode : FACTCHECK_FIX (gate du SHA 9eb5dcc6…, 63/65 claims soutenus). Correction minimale, deux phrases touchées, aucun autre passage modifié, aucune affirmation ajoutée.
+
+- C046 (TOO_STRONG) : « …et là Albou ne renie rien » retiré, la phrase devient « L’autre voisine, c’est la psychologie sociale. » L'absolu « rien » excédait la reconnaissance de la filiation et heurtait le refus de l'impérialisme psychosocial ; la filiation reste portée par la citation et la phrase suivantes (SUP-03d6ee6211b409e6, SUP-6d8f3f9ed4c9a749).
+- C054 (TOO_STRONG) : « il la raconte lui-même en notes » ramené à « il la raconte lui-même » ; la localisation « en notes » était fausse (les millésimes viennent du corps p. 199, la reprise du corps p. 204).
+
+Mots du texte lecteur : 1451 après correction (−6 mots environ). `npm run corpus:deepen -- --check --only=definition-de-la-psychologie-economique` : PASS. Le SHA a changé : reprise à PREPARE. Aucune auto-validation.
