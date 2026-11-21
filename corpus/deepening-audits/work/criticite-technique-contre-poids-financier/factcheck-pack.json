@@ -1,0 +1,686 @@
+{
+  "protocol_version": 2,
+  "concept_id": "criticite-technique-contre-poids-financier",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "5c7f62918c5fb339fa2a631e1a742a70eb7e90df00e0b6cd43cf3fc9e14b7422",
+  "validated_sha256": "173d2dd2067a96f28a56b640ed7c38aae13307b4d058c7c85f8550bb8042496e",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "82ca1724ae8711ec5c62200d0fc845841f02ff787258a8a0266258f4a86a0ce9"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, p. 68-91.",
+        "cles": [
+          "doi:10.3406/reco.1956.407156",
+          "url:persee.fr/doc/reco_0035-2764_1956_num_7_1_407156"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons un atelier dont la chaîne s’arrête. Ce n’est ni la presse principale ni un moteur qui manque : c’est un boulon de quelques centimes, dont le casier est vide. Ce qui dormait dans ce casier ne valait presque rien. Ce que son absence bloque, c’est toute la production qui passe par ce poste."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Celui qui gère ce stock n’a pourtant rien fait d’absurde. Suivre un article de près a un coût, et il serait inopportun de le payer pour des articles qui n’en valent pas la peine : il faut trier, décider où l’on met la rigueur et où l’on se contente d’un suivi plus souple. Reste à choisir sur quoi l’on trie. Une manière de faire est de trier sur l’argent : on classe les articles sur ce qu’ils pèsent dans la valeur du stock. En 1956, Robert Guihéneuf expose cette méthode dans la Revue économique, puis y ajoute une phrase qui la restreint."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "« Un très petit nombre d’articles clés »",
+      "text": "Le tri par la valeur repose sur une observation empirique, et Guihéneuf ne la donne pas pour sienne : « Les experts américains, par exemple, sont arrivés à cette conclusion que la plus grande partie de la valeur du stock se concentre sur un très petit nombre d’articles clés. » Les exemples chiffrés qu’il aligne ensuite sont eux aussi empruntés, à un article d’A. Rambaux paru dans la revue Travail et méthodes en mai 1955, auquel renvoie une note."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "« Un très petit nombre d’articles clés »",
+      "text": "De cette constatation vient la méthode : « C’est à partir de cette constatation que fut élaborée la méthode de management by exception (méthode dite parfois A.B.C.) ». On range les articles selon la valeur totale d’investissement qu’ils représentent, et on les répartit en trois groupes. Dans l’exemple que Guihéneuf donne page 79, le groupe A réunit 8 % des articles pour 75 % de la valeur, le groupe B 23 % des articles pour 21 %, le groupe C 69 % des articles pour 4 %."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "« Un très petit nombre d’articles clés »",
+      "text": "La règle de conduite en découle : « une gestion rigoureuse du groupe A est seule requise puisque de la sorte on contrôle 75 % des stocks investis », tandis que pour les groupes B et C « les méthodes peuvent être plus souples ». En surveillant de près moins d’un article sur dix, on tient les trois quarts de l’argent investi dans le stock. La souplesse accordée aux deux autres groupes n’est donc pas un oubli : c’est la raison d’être de la méthode, qui réserve le coût d’une gestion rigoureuse aux articles qui pèsent le plus."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Une phrase ajoutée contre sa propre source",
+      "text": "L’exposé se referme, page 79, à la fin de la section consacrée au coût de passation des commandes, sur une réserve : « Cependant, il convient d’observer que si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d’une importance stratégique fondamentale : une rupture du stock de boulons d’un certain type peut bloquer toute une chaîne de production. »"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Une phrase ajoutée contre sa propre source",
+      "text": "Dans l’imprimé, deux mots de cette phrase sont en italique : « financièrement » et « techniquement ». On peut y entendre un écho de la page 78, où le tri était introduit par « Si l’on se place du pur point de vue financier », les mots « point de vue financier » étant déjà en italique. Les deux adverbes désignent deux manières de dire qu’un article est important, et rien n’oblige ces deux manières à désigner les mêmes articles. Le classement mesure de l’argent immobilisé ; le boulon manquant menace un flux. Ce sont deux grandeurs distinctes, et l’une ne se déduit pas de l’autre."
+    },
+    {
+      "locator": "sections[1].paragraphs[2]",
+      "section_title": "Une phrase ajoutée contre sa propre source",
+      "text": "Cette objection est de Guihéneuf lui-même. Elle ne porte aucun appel de note et se formule à la première personne éditoriale, « il convient d’observer que » : il l’oppose en son nom propre à la conclusion qu’il vient de tirer de sa source."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Ce que l’argent classe, ce que la fonction classe",
+      "text": "Les deux hiérarchies répondent à deux questions différentes. La première demande : combien d’argent dort dans ce casier ? La seconde demande : qu’est-ce qui s’arrête si ce casier est vide ? Rien n’oblige les deux réponses à suivre le même ordre. Imaginons, à côté du casier de boulons, une pièce coûteuse dont l’absence ne ferait que retarder un montage qu’on peut replanifier : triée sur la valeur, elle passe avant les boulons ; triée sur ce qui s’arrête, elle passe après."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Ce que l’argent classe, ce que la fonction classe",
+      "text": "Cela implique un point plus délicat. La souplesse accordée aux groupes B et C l’a été sur un critère qui ne regarde pas le risque d’arrêt. On a décidé de moins surveiller ces articles parce qu’ils pèsent peu dans la valeur du stock, non parce qu’on avait établi que leur absence ne bloquerait rien. Le risque n’a pas été jugé acceptable : il n’a pas été examiné."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Une restriction, non une méthode de rechange",
+      "text": "Guihéneuf tire lui-même la règle, dans le paragraphe suivant : « Si l’entrepreneur peut se reposer sur certains forfaits, encore convient-il qu’ils aient été rationnellement choisis, en tenant compte de toutes les exigences de la bonne marche de l’affaire, appréciées dans leur juste hiérarchie fonctionnelle. » Les mots « forfaits » et « toutes » sont en italique. On peut comprendre que la conclusion n’est pas de renoncer à simplifier, mais de choisir les simplifications sur un critère qui ne soit pas seulement financier."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Une restriction, non une méthode de rechange",
+      "text": "Il ne va pas plus loin. Il ne propose aucun critère de remplacement, n’indique pas comment on repère à l’avance le boulon qui bloquera la chaîne, ne définit pas cette hiérarchie fonctionnelle, ne construit aucune classification concurrente et ne rapporte aucun cas réel de rupture. Les boulons sont un exemple donné, pas un fait rapporté."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Une restriction, non une méthode de rechange",
+      "text": "Il ne rejette pas davantage la méthode qu’il vient d’exposer : il lui ajoute une restriction. Lire ce passage comme une réfutation serait le durcir ; il nomme un angle mort. Le tri par la valeur reste un moyen de concentrer un effort limité ; il cesse seulement de pouvoir passer pour un tri sur ce qui compte."
+    },
+    {
+      "locator": "sections[3].paragraphs[3]",
+      "section_title": "Une restriction, non une méthode de rechange",
+      "text": "L’objection n’est pas non plus une invitation à mieux chiffrer. Elle ne dit pas que le calcul serait mal fait, ni qu’une pénalité mieux estimée réconcilierait les deux ordres. Elle dit que le critère de tri ne vise pas la bonne grandeur. Entre la valeur d’un article et ce que son absence interrompt, ces pages n’établissent aucune conversion, et elles n’en cherchent pas."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Un exposé de techniques, et une remarque en propre",
+      "text": "L’article où se loge cette phrase est pour moitié une revue de techniques d’autrui : une classification des stocks d’après P. Lebas, la quantité économique de commande exposée sous le titre courant « La méthode de Whitin », les méthodes de valorisation F.I.F.O. et L.I.F.O. d’après G. Bouchet et G. Parenteau. Aucune n’est présentée comme sienne. Qui ira voir ces pages trouvera aussi un imprimé qui porte ses coquilles : page 78, le texte annonce quatre exemples empruntés à Rambaux et n’en donne que trois ; page 81, une formule est composée avec la fraction inversée. Une formule ou un chiffre tirés de cet article demandent d’être vérifiés ailleurs avant d’être repris."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Un exposé de techniques, et une remarque en propre",
+      "text": "Dans une note de la page 79, Guihéneuf écarte explicitement de son propos la recherche technique sur les stocks, et il la nomme : Dvoretzky, Kiefer et Wolfowitz, dans Econometrica d’avril 1952, puis Arrow, Harris et Marschak, « Optimal inventory policy », dans Econometrica de juillet 1951, des noms étant écorchés par l’imprimé. L’objection ne prétend donc pas ouvrir un programme de calcul. Ce que ces travaux auraient à dire d’un article dont l’absence bloque une chaîne, s’ils en disent quelque chose, c’est dans leurs pages qu’il faudra le lire."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-91ed40978c0716b2",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "criticite-technique-contre-poids-financier"
+    },
+    {
+      "id": "SUP-182f71ea09b7beb8",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "criticite-technique-contre-poids-financier"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-33ab675cd4aa0052",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "La valeur d'un article n'est pas sa criticité"
+    },
+    {
+      "id": "SUP-b2204ad04e4170cd",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "produire-et-stocker"
+    },
+    {
+      "id": "SUP-cfabfaab022a76df",
+      "origin": "validated",
+      "path": "$.theme_labels[\"produire-et-stocker\"]",
+      "access": "n/a",
+      "text": "Combien produire, combien en tenir"
+    },
+    {
+      "id": "SUP-a251769aaaeaca70",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Robert Guihéneuf"
+    },
+    {
+      "id": "SUP-ae13c46718b528cb",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Article signé du seul Robert Guihéneuf, dont le nom ne paraît qu'une fois dans l'imprimé, au pied de la page 91. La méthode critiquée n'est pas de lui : il donne la constatation qui la fonde pour un acquis des « experts américains » et l'appuie sur des exemples chiffrés empruntés à A. Rambaux, puis expose la méthode dite A.B.C. comme une pratique reçue. Ce qui lui revient est l'objection qu'il y oppose page 79, sans appel de note et contre la source qu'il vient d'utiliser."
+    },
+    {
+      "id": "SUP-6fb7853eac8ad512",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Trier les articles d'un stock sur leur valeur, est-ce trier sur ce qui compte ?"
+    },
+    {
+      "id": "SUP-b5f7bd73c88be43f",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Une gestion triée sur la valeur laisse en gestion souple des articles négligeables financièrement mais décisifs techniquement : les deux hiérarchies ne coïncident pas."
+    },
+    {
+      "id": "SUP-006bde9a23349ac6",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production"
+    },
+    {
+      "id": "SUP-21325e75fc8026d4",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, numéro thématique « Économie de l'entreprise », p. 68-91."
+    },
+    {
+      "id": "SUP-724fa7bddea32e61",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 79, fin de la section 3°"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-286aefde958bf655",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, vol. 7, n° 1, 1956, p. 68-91.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-f7935075ede75dd2",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 78-79",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8763ad6707bf46a0",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/reco.1956.407156",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-b0f89c253113c768",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-08c4e6c96d833a71",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "La citation ne porte que la moitié du mécanisme, et c'est le résumé qui porte l'autre. La phrase entière fait 302 caractères ; le membre qui porte l'opposition, « si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale », fait 164 caractères, et ramené sous le plafond par une coupe il devient inutilisable pour une autre raison : il parle du groupe A et de certains articles, c'est-à-dire d'une nomenclature que le lecteur de la carte n'a pas sous les yeux. Le membre retenu est verbatim, autonome et immédiatement reconnaissable, mais sans le résumé il dirait seulement qu'une rupture est ennuyeuse, ce qui n'est pas un concept."
+    },
+    {
+      "id": "SUP-eccd3a5c88e02bc5",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Localisateur corrigé au tour de contrôle du 7 septembre 2026, et le motif n'est pas cosmétique. La carte donnait « p. 79, section 4° » ; le titre « 4° Types de techniques de gestion des stocks (21) » ne vient qu'aux deux tiers de la page 79, après le passage cité. Celui-ci appartient à la section ouverte au bas de la page 77, « 3° Le coût de passation des commandes », et l'objection vise la classification A.B.C., exposée en 3° et non en 4°. La formulation établie par le contrôle est : p. 79, section 3° Le coût de passation des commandes, dernier développement, juste avant le titre 4°. Elle est portée ici plutôt qu'à l'écran, le locator affiché devant rester un pointeur ; il en est l'abrégé. La citation elle-même a été relue verbatim et sans coupe par le contrôle, et n'est pas touchée."
+    },
+    {
+      "id": "SUP-fa26c97a88ee1f80",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La citation commence par une minuscule et ce n'est pas une négligence : dans l'imprimé, elle suit un deux-points à l'intérieur de la phrase. Elle ne doit pas être capitalisée à l'affichage, ce serait la faire passer pour une phrase autonome de l'auteur. Les adverbes « financièrement » et « techniquement » sont en italique dans l'imprimé, et c'est là toute la thèse : ils désignent deux ordres de grandeur qui ne se recouvrent pas."
+    },
+    {
+      "id": "SUP-f9c31dd571ecfd35",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Ce que le texte ne dit pas, et qu'un lecteur pressé ajouterait. Guihéneuf ne propose aucun critère de remplacement : il ne dit pas comment on repère à l'avance le boulon qui bloque la chaîne, ne définit pas la hiérarchie fonctionnelle qu'il appelle au paragraphe suivant, ne construit aucune classification concurrente et ne cite aucun cas réel de rupture. L'exemple des boulons est un exemple donné, pas un fait rapporté. Il ne rejette pas non plus la méthode A.B.C. : il l'a exposée sans réserve sur deux pages et il y ajoute une restriction."
+    },
+    {
+      "id": "SUP-68f79274ce2635c6",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Frontière avec penalite-de-rupture, publiée dans le même thème. Cette carte, d'Arrow, Harris et Marschak, énonce que chiffrer la pénalité de rupture rend le stock calculable, et se tient dans l'univers du coût. L'objection de Guihéneuf est d'un autre ordre : la valeur d'un article et sa criticité pour le flux sont deux grandeurs distinctes, et la seconde ne se déduit pas de la première. Ce n'est pas une pénalité mieux chiffrée, c'est un critère de tri qui rate sa cible ; le résumé parle donc de tri et de blocage de chaîne, jamais de coût de rupture."
+    },
+    {
+      "id": "SUP-d570a340ce1d2f99",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Ce qui n'a pas été ouvert, et qui interdit une affirmation d'antériorité : l'article de A. Rambaux dans Travail et méthodes de mai 1955, d'où viennent la constatation et les chiffres, n'a pas été cherché, cette revue professionnelle n'étant pas connue numérisée par le lecteur. On ne peut donc pas dire si l'objection répond à quelque chose que Rambaux disait déjà, ni si la restriction technique figurait dans la littérature américaine sur l'A.B.C. La lacune ne touche pas l'attribution, l'objection étant introduite par une adversative et sans appel de note, mais elle interdit d'écrire que Guihéneuf est le premier à l'avoir formulée."
+    },
+    {
+      "id": "SUP-230867dbb5dd7e44",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Ce que l'article contient et qui n'est pas de Guihéneuf, parce qu'il est pour moitié une revue de techniques d'autrui et qu'aucune carte ne doit lui en attribuer une ligne : la formule de quantité à commander de 1933, page 80, qu'il attribue à G. Béquart d'après P. Lebas ; la quantité économique de commande, pages 80 et 81, exposée sous le titre courant « La méthode de Whitin » ; la formule de série économique et le point de commande, page 82, documenté en note par Bosselut ; la classification des stocks en cinq rubriques, page 76, d'après Lebas ; la méthode dite A.B.C. et ses chiffres, pages 78 et 79, d'après A. Rambaux ; les méthodes de valorisation F.I.F.O., L.I.F.O., prix moyen pondéré et prix forfaitaire, page 87, d'après G. Bouchet et G. Parenteau. En note 21, page 79, il écarte en outre explicitement la recherche technique de son propos et renvoie à Dvoretzky, Kiefer et Wolfowitz, puis à Arrow, Harris et Marschak, dont l'imprimé écorche deux noms."
+    },
+    {
+      "id": "SUP-f03900e94282439a",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "L'imprimé porte ses propres coquilles, relevées sur l'image et non sur l'OCR, et elles ne se recopient pas : page 78, le texte annonce quatre exemples de Rambaux et n'en donne que trois ; page 81, la formule (III) est composée avec la fraction inversée et contredit la phrase qui la suit ; page 87, la description de la méthode F.I.F.O. répète un membre au lieu de l'opposer. Aucune ne touche une phrase citée, mais elles interdisent de reprendre une formule ou un chiffre de cet article sans le vérifier ailleurs. La graphie du nom de la source varie dans l'imprimé lui-même, « Rambaux » page 78 et « Rambeaux » page 83."
+    },
+    {
+      "id": "SUP-c7717183f4d529a6",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "L'OCR de Persée est fautif sur la première page de cet article : la couche texte servie pour la page 68 est celle d'une page de l'article précédent du fascicule, et le même bloc est repris dans l'aperçu de la notice. Les vingt-trois autres pages ont une couche texte conforme à leur folio. Aucune ligne de ce dossier ne repose sur la couche texte : les vingt-quatre pages ont été lues une à une sur l'image, et les passages cités relus sur un agrandissement au double."
+    },
+    {
+      "id": "SUP-0c1155e9e720760d",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Deux points d'accès à reporter. Le PDF complet répond HTTP 403, « This resource is protected by altcha » : c'est un contrôle d'accès, il n'a pas été contourné et il n'a eu aucune conséquence, l'image de page suffisant à établir le verbatim. Et le dérivé d'image _1000 ne fonctionne pas sur ce fascicule, répondant 500 avec un corps vide ; _1200, _1500, _2000 et _3000 rendent le même fichier au format natif, et la lecture a été faite en _1500."
+    },
+    {
+      "id": "SUP-b93227ca3b1ca765",
+      "origin": "validated",
+      "path": "$.notes[10]",
+      "access": "n/a",
+      "text": "Aucune source secondaire n'a été ouverte et la réception de l'article n'a pas été mesurée : l'avertissement du validateur est le compte rendu exact du dossier. La notice Crossref porte is-referenced-by-count 0, ce qui ne dit que l'absence de bibliographie déposée par Persée et non l'absence de citations. La vérification structurée de référence n'a pas pu être faite, le serveur documentary étant en échec de connexion cette nuit ; la référence a été résolue à la main par l'API Crossref et par les notices Persée de l'article et du fascicule, concordantes entre elles et avec l'imprimé."
+    },
+    {
+      "id": "SUP-d2a03be3192b0996",
+      "origin": "validated",
+      "path": "$.notes[11]",
+      "access": "n/a",
+      "text": "Provenance d'un fait affiché, établie hors mandat par le contrôle du 7 septembre 2026 : la mention « numéro thématique Économie de l'entreprise », qui figure dans la référence de la citation, a été vérifiée sur la couverture imprimée du fascicule. Aucune métadonnée de Persée ne la porte. Elle est exacte, et elle vient de la couverture, pas de la notice."
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-21b43745cc2801e4",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-09-07"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-83b3640aed4c8168",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "Images de page lues sur Persée (jamais la couche OCR), motif d'URL relevé sur la notice : _T1_, dérivé _1500 (le _1000 n'a pas été tenté, signalé hors service). Pages ouvertes : https://www.persee.fr/renderPage/reco_0035-2764_1956_num_7_1_407156/reco_0035-2764_1956_num_7_1_T1_0068_0000_1500.jpg (p. 68), ..._T1_0077_0000_1500.jpg, ..._T1_0078_0000_1500.jpg, ..._T1_0079_0000_1500.jpg, ..._T1_0080_0000_1500.jpg, ..._T1_0091_0000_1500.jpg. La p. 79 a été recadrée et agrandie ×2 pour la relecture mot à mot du passage cité."
+    },
+    {
+      "id": "SUP-9a956c93e0059447",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — verbatim. P. 79, dernier paragraphe avant le titre de section, l'imprimé porte : « Cependant, il convient d'observer que si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale : une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production. » La fiche cite la portion après le deux-points, sans coupe interne ni modification ; français d'origine, aucune traduction à déclarer."
+    },
+    {
+      "id": "SUP-57d2a99966f2eea1",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "LOCALISATEUR — la section annoncée est la bonne, établie sur les images. P. 77 : le titre « 2° Le coût des stocks » ouvre en milieu de page, puis « 3° Le coût de passation des commandes » ouvre en bas de la même page. P. 78 : aucun titre de section (le texte de la section 3° court sans interruption, jusqu'aux exemples chiffrés puis à l'exposé de la méthode). P. 79 : la section 3° se poursuit (groupes A, B, C ; « Dans ces conditions... » ; le paragraphe cité ; deux paragraphes de transition) et se clôt sur « ... quelques méthodes actuellement utilisées. » ; le titre suivant, « 4° Types de techniques de gestion des stocks (21) », s'ouvre à environ mi-page. Le passage cité appartient donc bien à la fin de la section 3°, comme l'annonce la fiche."
+    },
+    {
+      "id": "SUP-53a76dd0d27cc9e4",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — confirmée, et la fiche ne prête à Guihéneuf que ce qui est de lui. Vérifié sur l'imprimé : la constatation qui fonde la méthode est donnée pour l'acquis d'autrui, p. 78 — « Les experts américains, par exemple, sont arrivés à cette conclusion que la plus grande partie de la valeur du stock se concentre sur un très petit nombre d'articles clés. A. Rambaux cite quatre exemples relevés dans des firmes différentes (20) », note 20 renvoyant à « A. RAMBAUX, “Aspect psychologique, organisation et méthodes des services d'achat et de gestion des stocks aux U.S.A.”, Travail et méthodes, mai 1955 ». La méthode elle-même est présentée comme reçue : « C'est à partir de cette constatation que fut élaborée la méthode de management by exception (méthode dite parfois A.B.C.) ». L'objection de la p. 79, en revanche, ne porte aucun appel de note et est formulée à la première personne éditoriale (« il convient d'observer que... »), contre la conclusion qu'il vient de tirer de sa source. Signature unique au pied de la p. 91 : « ROBERT GUIHENEUF » (l'imprimé, capitales, ne porte pas l'accent). Aucune trace, dans l'article, d'un tiers auquel cette objection serait rapportée."
+    },
+    {
+      "id": "SUP-b680bee982ecea48",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "SOURCES — la référence résout vers ce qu'elle annonce. DOI 10.3406/reco.1956.407156 interrogé sur api.crossref.org : titre « Remarques sur la gestion des stocks dans l'entreprise », auteur unique Robert Guihéneuf, Revue économique, volume 7, n° 1, 1956, pages 68-91, langue fr — tous les champs de la fiche concordent. L'URL Persée https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156 répond 200 et affiche cette notice, qui mentionne « Fait partie d'un numéro thématique : Economie de l'entreprise » (l'imprimé/Persée écrit « Economie » sans accent, la fiche « Économie » : normalisation orthographique, pas un écart de référence). Le sommaire du fascicule (https://www.persee.fr/issue/reco_0035-2764_1956_num_7_1) confirme la pagination et le thème. Le locator « p. 78-79 » de la source correspond bien à l'exposé de la méthode et à l'objection."
+    },
+    {
+      "id": "SUP-b5dc90df8c9e3c4c",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE — fidèle, contrôlée mot à mot contre la p. 79. « laisse en gestion souple » traduit exactement « Pour les groupes B et C, les méthodes peuvent être plus souples », précédé de « une gestion rigoureuse du groupe A est seule requise ». « négligeables financièrement mais décisifs techniquement » traduit « si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale », adossé au tableau de la même page (groupe C : 69 % des articles pour 4 % de la valeur) et, p. 78, à « Il serait inopportun de les faire apparaître pour des articles qui n'en valent pas la peine ». « les deux hiérarchies ne coïncident pas » ne fait que reprendre l'opposition que l'imprimé souligne lui-même en italiques (financièrement / techniquement). Le hook, interrogatif, n'ajoute rien : le tri est bien fait sur la « valeur totale d'investissement ». Aucun adjectif du résumé n'excède le texte à l'endroit annoncé."
+    },
+    {
+      "id": "SUP-1653667e686476eb",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "Ce que je n'ai pas pu atteindre, avec la tentative : le serveur MCP documentary n'était pas exposé (aucun outil mcp__documentary__*), la vérification du DOI a donc été faite directement sur api.crossref.org, qui a répondu 200. La couche texte de Persée n'a pas été utilisable et n'en avait pas besoin : docAsTxt/reco_0035-2764_1956_num_7_1_407156 répond 404 (dix tentatives, dont trois coupées par le proxy), et le texte OCR incorporé à la notice de l'article sert en réalité l'article voisin de P.W.S. Andrews, « Quelques limites économiques à la dimension et à la croissance des entreprises individuelles », p. 39-67 du même fascicule (on y lit « 54 REVUE ÉCONOMIQUE » et « IV. LE TYPE DE RÉPARTITION DE LA PRODUCTION »). Toutes les conclusions ci-dessus reposent sur les images de page."
+    },
+    {
+      "id": "SUP-2a2c1cdcdd56eb45",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "Hors mandat, sans effet sur le verdict : (1) l'imprimé de la p. 78 annonce « quatre exemples » de Rambaux mais n'en imprime que trois (Premier, Deuxième, Troisième cas) — coquille propre à l'article, à ne pas corriger si le passage devait être transcrit ; (2) l'article renvoie la note 21 à Dvoretzky, Kiefer et Wolfowitz et à « K. Arrow, F. Harris, J. Marschack » (Econometrica, juillet 1951) : le prénom d'Arrow, l'initiale de Harris et la graphie « Marschack » sont fautifs dans l'imprimé, mais aucun de ces noms n'est repris par la fiche."
+    },
+    {
+      "id": "SUP-28ddc2f58f4b494d",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "criticite-technique-contre-poids-financier"
+    },
+    {
+      "id": "SUP-2f419b5eaa312bbf",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Robert Guihéneuf"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-8ac51b893ed9f17d",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Article signé d'un seul nom, et la signature ne se lit qu'à la fin. La page 68 ne porte aucune signature sous le titre, ce que j'ai vérifié en agrandissement ; le nom paraît une seule fois dans l'imprimé, au pied de la page 91, « ROBERT GUIHENEUF », en capitales sans accent aigu, ce qui est l'usage typographique de l'époque pour les capitales. La notice Persée, la table des matières du fascicule et la notice Crossref du DOI 10.3406/reco.1956.407156 donnent toutes trois un auteur unique, « Robert Guihéneuf », pour le volume 7, numéro 1, pages 68-91, année 1956. Sur ce concept précis, l'attribution demande une précaution que le texte impose lui-même, et elle doit être écrite en toutes lettres : la méthode qui est ici critiquée n'est pas de Guihéneuf. La constatation statistique qui la fonde, à savoir que la plus grande partie de la valeur d'un stock se concentre sur un très petit nombre d'articles, est rapportée par lui aux « experts américains » et documentée par quatre exemples qu'il emprunte à A. Rambaux, « Aspect psychologique, organisation et méthodes des services d'achat et de gestion des stocks aux U.S.A. », Travail et méthodes, mai 1955, cité en note 20 de la page 78. La méthode elle-même, qu'il appelle « direction par exception (management by exception) » et « méthode dite parfois A.B.C. », est présentée comme un acquis de la pratique et non comme une proposition de sa part. Ce qui lui revient en propre, et ce qui fait le concept instruit ici, est l'objection qu'il oppose à cette méthode, page 79, introduite par « Cependant, il convient d'observer que » : la hiérarchie financière des articles et leur hiérarchie technique ne coïncident pas. L'objection ne porte aucun appel de note, n'est attribuée à personne, et va contre la source qu'il vient d'utiliser. Elle est de lui."
+    },
+    {
+      "id": "SUP-06f36915c9a738da",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production"
+    },
+    {
+      "id": "SUP-304af634f1bbf032",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Robert Guihéneuf, « Remarques sur la gestion des stocks dans l'entreprise », Revue économique, volume 7, n° 1, 1956, numéro thématique « Économie de l'entreprise », p. 68-91. DOI 10.3406/reco.1956.407156. Identifiant Persée reco_0035-2764_1956_num_7_1_407156. Citation relue sur l'image de la page 79 servie par Persée, puis sur un agrandissement du paragraphe, et non sur la couche texte."
+    },
+    {
+      "id": "SUP-4960ae7ab3175d6f",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 79, deuxième paragraphe de la page, section « 4° Types de techniques de gestion des stocks ». C'est la fin de la phrase qui commence par « Cependant, il convient d'observer que si financièrement le groupe A est le plus important » ; la citation reprend le membre qui suit le deux-points, sans coupe interne, et commence donc par une minuscule comme dans l'imprimé."
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-dcfa617948c78727",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Guihéneuf, R. (1956). « Remarques sur la gestion des stocks dans l'entreprise ». Revue économique, volume 7, n° 1, p. 68-91. C'est la pièce, et elle a été ouverte en entier. Les vingt-quatre pages, 68 à 91 sans exception, ont été lues une à une sur l'image de page, à l'endpoint de rendu de Persée, sous la forme .../renderPage/reco_0035-2764_1956_num_7_1_407156/reco_0035-2764_1956_num_7_1_T1_00<PAGE>_0000_1500.jpg, chacune en HTTP 200, de 267 503 à 372 338 octets, toutes au format natif 1307 pixels de large. Le motif central du nom de page est _T1_ sur ce fascicule ; il a été lu sur la notice de l'article, qui publie les vingt-quatre URL de page, et non présumé. Le passage cité ici a été relu sur un agrandissement au double de la zone haute de la page 79, où se lisent successivement les trois groupes A, B et C, puis l'objection. Aucune page n'a été laissée de côté, aucune n'a été lue en OCR seul."
+    },
+    {
+      "id": "SUP-92af561b8510170f",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/reco.1956.407156"
+    },
+    {
+      "id": "SUP-1545db7cb627e3f6",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156"
+    },
+    {
+      "id": "SUP-17fedb26bbd73790",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "full-text",
+      "text": "Notice Persée de l'article, HTTP 200, 104 542 octets. Elle donne l'auteur « Robert Guihéneuf », le titre, l'année 1956, le tome 7, le numéro 1, la pagination 68-91, la mention « Fait partie d'un numéro thématique : Economie de l'entreprise », le DOI, et la liste des vingt-quatre URL de page qui a permis d'établir le motif _T1_. L'aperçu de texte qu'elle affiche n'est pas celui de cet article mais celui de l'article précédent du fascicule, ce qui est signalé en réserve."
+    },
+    {
+      "id": "SUP-c09fc6cae0eef9d4",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/reco.1956.407156"
+    },
+    {
+      "id": "SUP-6e4b25ff7bdea5d7",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/reco_0035-2764_1956_num_7_1_407156"
+    },
+    {
+      "id": "SUP-56fbb0570c08161b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].citation",
+      "access": "metadata-only",
+      "text": "Notice Crossref du DOI 10.3406/reco.1956.407156, obtenue par requête directe sur api.crossref.org, HTTP 200 : type journal-article, éditeur PERSEE Program, container-title « Revue économique », ISSN 0035-2764, volume 7, issue 1, page 68-91, published-print 1956, langue fr, un seul auteur, given « Robert », family « Guihéneuf », sequence first. Métadonnées seulement. La référence est résolue et concordante avec l'imprimé sur l'auteur, l'année, le volume, le numéro, la pagination et le titre."
+    },
+    {
+      "id": "SUP-06be5e42ad6edf5b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.3406/reco.1956.407156"
+    },
+    {
+      "id": "SUP-abfa22c665f45706",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[2].url",
+      "access": "metadata-only",
+      "text": "https://api.crossref.org/works/10.3406/reco.1956.407156"
+    },
+    {
+      "id": "SUP-050d7030bce1f5b7",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].citation",
+      "access": "metadata-only",
+      "text": "Table des matières du fascicule Persée, Revue économique volume 7 n° 1, 1956, HTTP 200. Elle confirme la pagination de l'article et son voisinage : l'article précédent est celui de P.W.S. Andrews, p. 39-67, ce qui explique l'aperçu fautif de la notice ; le fascicule est bien un numéro thématique d'économie de l'entreprise, ouvert par Jane Aubert-Krier et fermé par une bibliographie d'économie de l'entreprise."
+    },
+    {
+      "id": "SUP-353567641d2c7b6b",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[3].url",
+      "access": "metadata-only",
+      "text": "https://www.persee.fr/issue/reco_0035-2764_1956_num_7_1"
+    },
+    {
+      "id": "SUP-1ed68e823684afe0",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Le concept se lit en trois temps sur deux pages, et le troisième dément le second.\n\nPremier temps, page 78, la raison d'être de la méthode. « La gestion des stocks entraîne des coûts propres qui peuvent être fort élevés. Il serait inopportun de les faire apparaître pour des articles qui n'en valent pas la peine. Si l'on se place du pur point de vue financier, on peut mettre en évidence dans un stock des lots d'articles ayant une importance primordiale. Les experts américains, par exemple, sont arrivés à cette conclusion que la plus grande partie de la valeur du stock se concentre sur un très petit nombre d'articles clés. » Les mots direction par exception et management by exception sont en italique dans l'imprimé, et le point de vue financier aussi. Suivent trois cas chiffrés empruntés à Rambaux : 10 % des articles pour 65 % de la valeur, 15 % pour 90 %, 7 % pour 85 %.\n\nDeuxième temps, page 79, la méthode et sa règle de conduite. « C'est à partir de cette constatation que fut élaborée la méthode de management by exception (méthode dite parfois A.B.C.). On divise le stock en trois groupes, par exemple : Groupe A comprenant 8 % des articles pour 75 % de la valeur totale d'investissement ; Groupe B comprenant 23 % des articles pour 21 % de la valeur totale d'investissement ; Groupe C comprenant 69 % des articles pour 4 % de la valeur totale d'investissement. Dans ces conditions, une gestion rigoureuse du groupe A est seule requise puisque de la sorte on contrôle 75 % des stocks investis. Pour les groupes B et C, les méthodes peuvent être plus souples. »\n\nTroisième temps, page 79, l'objection, et c'est elle le concept. « Cependant, il convient d'observer que si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale : une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production. » Les adverbes financièrement et techniquement sont en italique dans l'imprimé, et c'est là toute la thèse : ils désignent deux ordres de grandeur qui ne se recouvrent pas. Un article peut être négligeable dans l'un et décisif dans l'autre, et la méthode qui trie sur le premier ne voit pas le second.\n\nGuihéneuf en tire immédiatement la règle qui l'intéresse, dans le paragraphe suivant, où le mot forfaits est en italique : « Si l'entrepreneur peut se reposer sur certains forfaits, encore convient-il qu'ils aient été rationnellement choisis, en tenant compte de toutes les exigences de la bonne marche de l'affaire, appréciées dans leur juste hiérarchie fonctionnelle. » Le mot toutes est également en italique. La conclusion n'est donc pas qu'il faille renoncer à simplifier : elle est que le critère de la simplification doit être fonctionnel et non financier, ou du moins pas seulement financier.\n\nCe que le texte ne dit pas, et il faut y insister parce que c'est ce qu'un lecteur pressé ajouterait. Guihéneuf ne propose aucun critère de remplacement : il ne dit pas comment on repère à l'avance le boulon qui bloque la chaîne, il ne définit pas la « hiérarchie fonctionnelle », il ne construit aucune classification concurrente de l'A.B.C., et il ne cite aucun cas réel de rupture. L'exemple des boulons est un exemple donné, pas un fait rapporté. Il ne rejette pas non plus la méthode A.B.C. : il l'a présentée sans réserve sur deux pages, et il ajoute une restriction. Enfin il ne relie pas cette objection à sa propre définition du stock par la disparité des rythmes, alors que le lien est disponible ; la carte ne doit pas le tirer à sa place."
+    },
+    {
+      "id": "SUP-c65a3ed8bc3b37d5",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "CE QUI REVIENT À GUIHÉNEUF ET CE QUI NE LUI REVIENT PAS. Cet article est pour moitié une revue de littérature et une exposition de techniques d'autrui, et une carte qui lui attribuerait l'une de ces techniques serait fausse. Ne sont pas de lui, et il ne les présente jamais comme siennes : la méthode A.B.C. et ses chiffres, pages 78 et 79, note 20 renvoyant à A. Rambaux dans Travail et méthodes de mai 1955 ; la formule de quantité à commander de 1933, page 80, attribuée par lui à G. Béquart et reprise de P. Lebas, La gestion des stocks, Paris, 1952 ; la quantité économique de commande, pages 80 et 81, exposée sous le titre courant « La méthode de Whitin » ; la formule de série économique et le point de commande, page 82 ; la solution intermédiaire des Forges et Ateliers de Meudon, page 82, note 28, Bosselut, Travail et méthodes, juin 1954 ; la classification des stocks en cinq rubriques, page 76, note 16, Lebas ; les méthodes de valorisation F.I.F.O., L.I.F.O., prix moyen pondéré et prix forfaitaire, page 87, notes 34 et 35, G. Bouchet et G. Parenteau. Guihéneuf écarte en outre explicitement la recherche technique de son propos, en note 21 page 79, en renvoyant à Dvoretzky, Kiefer et Wolfowitz (Econometrica, avril 1952) et à « K. Arrow, F. Harris, J. Marschack, Optimal inventory policy, Econometrica, juillet 1951 ». Ce dernier renvoi est la trace directe, dans un texte francophone de 1956, des auteurs déjà instruits sous penalite-de-rupture et regle-de-commande-a-deux-niveaux ; l'imprimé y porte deux coquilles, « F. Harris » pour Theodore Harris et « Marschack » pour Jacob Marschak, qui sont de la Revue économique et qui ne se recopient pas."
+    },
+    {
+      "id": "SUP-15d0d72ece73415e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La citation retenue ne porte que la moitié du mécanisme, et c'est un choix assumé qui contraint la rédaction. La phrase entière fait 302 caractères. Le membre qui porte l'opposition, « si financièrement le groupe A est le plus important, techniquement certains articles des groupes B et C peuvent se révéler d'une importance stratégique fondamentale », fait 164 caractères et dépasse la limite ; ramené sous la limite par une coupe, « si financièrement le groupe A est le plus important, techniquement certains articles […] peuvent se révéler d'une importance stratégique fondamentale » (149 caractères), il devient inutilisable pour une autre raison : il parle du « groupe A » et de « certains articles », c'est-à-dire d'une nomenclature que le lecteur de la carte n'a pas sous les yeux, et il serait obscur hors de la page. J'ai donc retenu le membre suivant le deux-points, « une rupture du stock de boulons d'un certain type peut bloquer toute une chaîne de production » (93 caractères), qui est verbatim, autonome, et immédiatement reconnaissable. Conséquence obligatoire : c'est le résumé de la carte qui doit porter l'autre moitié, à savoir que le boulon en question appartient au groupe qu'une gestion triée sur la valeur laisse en gestion souple. Sans cela, la citation dit seulement qu'une rupture est ennuyeuse, ce qui n'est pas un concept. Les deux formes écartées sont reproduites intégralement dans definition_de_lauteur."
+    },
+    {
+      "id": "SUP-e24ad886135a4a6e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "La citation commence par une minuscule et ce n'est pas une négligence : dans l'imprimé, elle suit un deux-points à l'intérieur de la phrase. Elle ne doit pas être capitalisée à l'affichage, ce serait la faire passer pour une phrase autonome de l'auteur."
+    },
+    {
+      "id": "SUP-57654be4b08e19de",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Ce concept ne redouble aucune des huit cartes du domaine, mais il faut dire pourquoi il ne redouble pas penalite-de-rupture. Cette carte, d'Arrow, Harris et Marschak, énonce que chiffrer la pénalité de rupture rend le stock calculable, et se tient dans l'univers du coût. L'objection de Guihéneuf est d'un autre ordre : elle dit que la valeur d'un article et sa criticité pour le flux sont deux grandeurs distinctes, et que la seconde ne se déduit pas de la première. Ce n'est pas une pénalité mieux chiffrée, c'est un critère de tri qui rate sa cible. La frontière tiendra dans le résumé si celui-ci parle de tri et de blocage de chaîne, et non de coût de rupture."
+    },
+    {
+      "id": "SUP-4119c5027f58c3cd",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "L'imprimé de cet article porte ses propres coquilles, et l'une d'elles touche directement le passage instruit ici. Page 78, le texte annonce « A. Rambaux cite quatre exemples relevés dans des firmes différentes » et n'en donne que trois, « Premier cas », « Deuxième cas », « Troisième cas ». Relevé sur l'image, non sur l'OCR. Un quatrième cas a donc sauté à la composition, ou le nombre est faux ; je ne peux pas trancher sans ouvrir l'article de Rambaux, que je n'ai pas ouvert. Rien de ce que je cite ni de ce que j'affirme ne dépend de ce point, mais aucune carte ne doit écrire « quatre exemples » sur la foi de cette page. D'autres coquilles du même article sont relevées dans le dossier de stock-ne-de-la-disparite-des-rythmes, notamment une fraction inversée dans la formule (III) de la page 81 et une répétition qui rend inintelligible la description de la méthode F.I.F.O. page 87."
+    },
+    {
+      "id": "SUP-edfe1a4da3056b42",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "L'OCR de Persée est fautif sur la première page de cet article. La couche texte servie pour la page 68 contient celle d'une page numérotée 54 qui appartient à l'article précédent du fascicule, P.W.S. Andrews, p. 39-67 ; le même bloc est repris dans l'aperçu de la notice. Les vingt-trois autres pages ont une couche texte qui correspond à leur folio. Aucune ligne de ce dossier ne repose sur la couche texte : elle n'a servi qu'à repérer où regarder, et la citation a été relue sur l'image puis sur un agrandissement."
+    },
+    {
+      "id": "SUP-7c20198da7b1d223",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Le PDF complet de l'article n'a pas été ouvert : https://www.persee.fr/docAsPDF/reco_0035-2764_1956_num_7_1_407156.pdf répond HTTP 403 avec un corps de 296 octets, « This resource is protected by altcha ». C'est un contrôle d'accès, je ne l'ai pas contourné, et il n'a eu aucune conséquence."
+    },
+    {
+      "id": "SUP-45438ad14a976f36",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "Rectification d'une consigne d'accès héritée. Le dérivé d'image _1000 ne fonctionne pas sur ce fascicule : il répond HTTP 500 avec Content-Length 0. Le sondage des tailles sur la page 68 donne _710 à 167 699 octets, _800 en échec, _1000 en 500, et _1200, _1500, _2000 et _3000 rendant le même fichier de 289 893 octets au format natif 1307 sur 2091 pixels. J'ai travaillé en _1500. Les réinitialisations de connexion venaient du relais du proxy d'agent, enregistrées par son point d'état comme « tunnel closed (code 1006) after 11s », et une boucle de relance a obtenu les vingt-quatre pages."
+    },
+    {
+      "id": "SUP-ac04e414eb6e5a0e",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "La vérification structurée de référence n'a pas pu être faite : le serveur documentary est en échec de connexion sur cette session. La référence a été résolue à la main par Crossref et par les notices Persée. Aucune notice Zotero n'a pu être consultée."
+    },
+    {
+      "id": "SUP-06aa41ef5085ce82",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[9]",
+      "access": "n/a",
+      "text": "Je n'ai ouvert aucune des sources que Guihéneuf mobilise ici. L'article de A. Rambaux dans Travail et méthodes de mai 1955, d'où viennent la constatation et les chiffres, n'a pas été cherché : c'est une revue professionnelle française des années cinquante et je ne sais pas si elle est numérisée. Je ne peux donc pas dire si l'objection de Guihéneuf répond à quelque chose que Rambaux disait déjà, ni si la restriction technique figurait dans la littérature américaine sur l'A.B.C. Cette lacune ne touche pas l'attribution, l'objection étant introduite par une adversative et sans appel de note, mais elle interdit d'écrire que Guihéneuf est le premier à l'avoir formulée. Je n'ai pas non plus mesuré la réception de l'article : la notice Crossref porte is-referenced-by-count 0, ce qui ne dit que l'absence de bibliographie déposée par Persée."
+    }
+  ],
+  "estimated_tokens": 16640,
+  "status": "READY"
+}

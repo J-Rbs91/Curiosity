@@ -1,0 +1,681 @@
+{
+  "protocol_version": 2,
+  "concept_id": "critique-de-l-utilite-esperee-subjective",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "4471596c36d5307453b64c73f0589a3cc6f05a35f1f3de81b901d8e770f016ee",
+  "validated_sha256": "7f85162803a4c8f7e12398c1a50d9e377a417c2318db20de7b9a363601aa7291",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "c2f605921a5c2c832f7ff972cab1328300b37b05859450f5040c8092a9a7a58e"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Glenn Shafer, « Savage revisited », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 193-234.",
+        "cles": [
+          "isbn:9780521351492",
+          "url:archive.org/details/decisionmaking"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      },
+      {
+        "chemin": "$.sources[1]",
+        "declare": "metadata-only",
+        "label": "Glenn Shafer, « Savage Revisited », Statistical Science, vol. 1, n° 4, 1986, p. 463-485.",
+        "cles": [
+          "doi:10.1214/ss/1177013518",
+          "isbn:1177013518",
+          "url:doi.org/10.1214/ss/1177013518"
+        ],
+        "dossier": "metadata-only",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 2,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Glenn Shafer, dans un chapitre de 1988 intitulé « Savage revisited », ne dit pas que l’analyse d’un problème de décision par l’utilité espérée subjective est fausse. Il dit ce qu’elle est : un argument par analogie avec le problème d’un joueur qui doit décider comment parier dans un pur jeu de hasard, argument qui convainc parfois, et parfois non."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Le canon que Savage croyait tenir",
+      "text": "La cible est datée dès la première page : « More than three decades have passed since 1954, when L. J. Savage published The Foundations of Statistics ». Savage y énonce des postulats auxquels les préférences d’une personne peuvent se conformer ou non, et Shafer résume ainsi sa position : « Savage believed that a rational person’s preferences should satisfy these postulates ». La conclusion suit : « He concluded that it is normative to make choices that maximize subjective expected utility. To do otherwise is to violate a canon of rationality »."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Le canon que Savage croyait tenir",
+      "text": "Le mot qui porte le poids est normative. Choisir autrement n’est plus alors un autre choix, c’est une faute contre la rationalité."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Le canon que Savage croyait tenir",
+      "text": "Shafer ne conteste pas ce que cette idée a d’abord accompli. Dans les années 1950 et 1960, elle a joué selon lui un rôle progressiste, en affranchissant le jugement de probabilité subjectif de « the strictures of an exaggerated frequent philosophy of probability » (le mot frequent est une coquille du texte imprimé). Puis le rôle s’est inversé : « Increasingly, the idea that subjective expected utility is uniquely normative plays only a regressive role; it obstructs the development and understanding of alternative tools for subjective judgment of probability and value. » Ce qui avait libéré le jugement subjectif bloque désormais les autres outils de ce même jugement."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Le pari pris pour modèle",
+      "text": "Ce que Shafer propose à la place tient dans le dernier paragraphe de son introduction, page 193, et il vaut de le lire d’un trait : « the analysis of a decision problem by subjective expected utility is merely an argument by analogy. It draws an analogy between that decision problem and the problem of a gambler who must decide how to bet in a pure game of chance. Sometimes such arguments are cogent; sometimes they are not. Sometimes other kinds of arguments provide a better basis for choosing among acts. Thus subjective expected utility is just one of several possible tools for constructing a decision. »"
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Le pari pris pour modèle",
+      "text": "Analyser une décision de cette façon, ce n’est donc pas la résoudre : c’est soutenir qu’elle ressemble assez au problème d’un joueur, dans un jeu où seul le hasard tranche, pour être traitée comme lui. Celui qui écarte ce calcul ne commet pas une erreur d’arithmétique : il conteste une ressemblance, et ce transport d’un problème à l’autre peut être bon dans un cas, mauvais dans un autre."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Deux hypothèses sous l’édifice",
+      "text": "Page 195, Shafer nomme deux hypothèses à contenu empirique qui portent selon lui tout l’édifice de Savage : « First, the assumption that a person always has well-defined preferences in those settings where the postulates are applied. Second, the assumption that a setting can be found that permits a disentanglement of belief and value. » La première, des préférences toujours bien définies, est explicite dans le premier postulat, celui de l’existence d’un classement complet des actes. La seconde, la possibilité de démêler ce que l’on croit de ce à quoi l’on tient, soutient les postulats deux, trois et quatre."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Deux hypothèses sous l’édifice",
+      "text": "La critique est interne : elle porte sur l’argument axiomatique lui-même, pas sur ses résultats empiriques. Mais l’interprétation normative, soutient Shafer page 194, ne peut pas être coupée du fait empirique."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Une préférence qui se construit",
+      "text": "Contre la première hypothèse, Shafer pose une exigence de mesure. Pour dire qu’un objet a une propriété, il faut une méthode pour la mesurer, et des résultats qui restent invariants d’une mesure à l’autre. Dans le cas des préférences, cette invariance manque, et c’est selon lui « the most fundamental result of three decades of empirical investigation »."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Une préférence qui se construit",
+      "text": "Son exemple est celui d’un homme qui donne deux réponses différentes selon qu’on lui demande d’ajouter une radio au prix d’une voiture ou d’acheter la radio seule. Savage, selon Shafer, parle d’erreur. Shafer refuse le mot : « The man does not really have a true preference, and he is looking to various arguments (including those provided by the salesman) in an effort to construct one. » La préférence ne se découvre pas, elle se construit, et c’est le sens du mot constructive qui traverse tout le chapitre."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Une préférence qui se construit",
+      "text": "Cela ne dispense pas de choisir. Page 197, à propos de l’acheteur de voiture, Shafer tient la nécessité de trancher pour réelle, mais il lui donne une autre origine : « It results not from logic but from the fact that the car is available with the radio installed and the salesman has asked him whether he wants it that way. » Ce qu’il critique est une norme du choix ; qu’il y ait une décision à prendre, il ne le conteste pas."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Quand un but relie les cas entre eux",
+      "text": "Savage, rappelle Shafer page 218, avait tiré son postulat d’indépendance « from a more intuitive but less precise principle », le principe de la chose sûre. Ce principe dit que si l’on préfère les conséquences d’un acte f à celles d’un acte g sur chaque élément d’une partition des états, alors on doit préférer f à g. Shafer en reconnaît l’attrait : il reflète une stratégie familière, qui découpe la situation en cas mutuellement exclusifs et cherche un acte satisfaisant dans tous."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Quand un but relie les cas entre eux",
+      "text": "Il énumère pourtant les manières dont cette stratégie échoue, et donne page 223 la raison de fond : « our value resides where it is constructed ». Si l’on se fixe des buts dans ces produits de l’imagination que Savage appelait les états d’un petit monde, le principe tient. Si on se les fixe dans la situation réelle, « these goals may tie the states of the small world together as effectively as the goal of a loaf of bread ties butter and flour together »."
+    },
+    {
+      "locator": "sections[4].paragraphs[2]",
+      "section_title": "Quand un but relie les cas entre eux",
+      "text": "L’image est son argument. Entre la farine, les pommes et le beurre, la quantité d’une marchandise modifie les arbitrages entre les autres, parce qu’un but, faire du pain, les relie. Samuelson, rapporte Shafer, s’était rallié au principe en jugeant que les états d’un petit monde ne sont pas comme des marchandises : c’est ce jugement que Shafer refuse, dès lors que les buts se forment dans la situation réelle et non dans les états imaginés."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Une norme rétrogradée en outil",
+      "text": "La conséquence, Shafer l’écrit page 194 en trois phrases qui se suivent : « The sensible way to respond to what we have learned is to make the normative interpretation explicitly and thoroughly constructive. This means repudiating the claim that subjective expected utility provides a uniquely normative way of constructing decisions. It may also mean abandoning the word normative in favor of constructive and other less contentious terms. » C’est l’unicité qui est répudiée, non l’usage du calcul."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Une norme rétrogradée en outil",
+      "text": "Retirer au calcul son monopole n’est pas déclarer que toutes les méthodes se valent. L’utilité espérée subjective devient un outil parmi d’autres, dont l’usage se justifie au cas par cas par la qualité de l’analogie qu’il propose ; ailleurs, d’autres arguments fondent mieux le choix."
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "Une norme rétrogradée en outil",
+      "text": "Les objections à l’utilité espérée subjective ne commencent pas avec ce chapitre, et Shafer ne le dissimule pas : sa bibliographie, pages 233 et 234, nomme Allais (1953) et des études empiriques. Ce qui lui appartient en propre est la relecture de ces réfutations comme argument par analogie, et la thèse constructive qui en découle. Devant chaque décision, la question devient alors : à quelles conditions celle-ci ressemble-t-elle assez à un pari pour être traitée comme tel ?"
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-ba5e19d8ed412c9b",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "critique-de-l-utilite-esperee-subjective"
+    },
+    {
+      "id": "SUP-41db4532586389ec",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "critique-de-l-utilite-esperee-subjective"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-1677ee7aa0f64950",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "La critique de l'utilité espérée subjective"
+    },
+    {
+      "id": "SUP-905dfdcf6a8e0314",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "choisir-sous-risque"
+    },
+    {
+      "id": "SUP-f4b0c87c42633064",
+      "origin": "validated",
+      "path": "$.theme_labels[\"choisir-sous-risque\"]",
+      "access": "n/a",
+      "text": "Choisir quand on ne sait pas"
+    },
+    {
+      "id": "SUP-ad5d52fb45fecb9d",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Glenn Shafer"
+    },
+    {
+      "id": "SUP-dde90523ba3d2664",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Chapitre signé de Glenn Shafer seul ; le recueil est dirigé par David E. Bell, Howard Raiffa et Amos Tversky, ce qui n'est pas une coécriture. Le texte n'est pas inédit : une note de la page 233 le donne pour première publication dans Statistical Science en 1986. Les postulats critiqués sont de L. J. Savage, cités d'après The Foundations of Statistics (1954), ouvrage qui n'a pas été ouvert. À ne pas confondre avec le chapitre 11 du même volume, cosigné par Shafer et Tversky."
+    },
+    {
+      "id": "SUP-ee391bcc884c0af5",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Maximiser l'utilité espérée est-il la seule façon d'être rationnel ?"
+    },
+    {
+      "id": "SUP-d505fcf1dff172a9",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Analyser une décision par l'utilité espérée subjective est un argument par analogie avec le pari : un outil parmi d'autres, non le canon unique de la rationalité."
+    },
+    {
+      "id": "SUP-089835b9625e5cd8",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Ainsi l'utilité espérée subjective n'est que l'un des divers outils possibles pour construire une décision."
+    },
+    {
+      "id": "SUP-c91a6557606f8024",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Glenn Shafer, « Savage revisited », dans David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 193-234."
+    },
+    {
+      "id": "SUP-59810b30eca6fcff",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 193, section 1 « Introduction »"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-c949619ccdb7e398",
+      "origin": "validated",
+      "path": "$.quotation.original_text",
+      "access": "n/a",
+      "text": "Thus subjective expected utility is just one of several possible tools for constructing a decision."
+    },
+    {
+      "id": "SUP-a006aef58d724e59",
+      "origin": "validated",
+      "path": "$.quotation.original_language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-520c61d935611e51",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "in-house"
+    },
+    {
+      "id": "SUP-6d84e8a5eecfb5b3",
+      "origin": "validated",
+      "path": "$.quotation.translation.translator",
+      "access": "n/a",
+      "text": "Traduction interne non publiée (chaîne Curiosity, session du 29 août 2026). Aucune traduction française publiée de ce chapitre n'a été identifiée. « Is just one of » est rendu par « n'est que l'un des » : la restriction est le propos même de la phrase. « Constructing a decision » est rendu littéralement par « construire une décision », et non par « prendre une décision » : Shafer tient la décision pour un objet qu'on bâtit, ce que « prendre » effacerait."
+    },
+    {
+      "id": "SUP-79ee2fcd524831e2",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Glenn Shafer, « Savage revisited », dans D. E. Bell, H. Raiffa et A. Tversky (dir.), Decision Making, Cambridge University Press, 1988, p. 193-234.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-c8ebc6c7a32070f4",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "chap. 10, p. 193-234",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-59872d18f993d0cc",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "9780521351492",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-acb13cf6d103c9d0",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DecisionMaking",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-339a2425e0f49c6a",
+      "origin": "validated",
+      "path": "$.sources[1].label",
+      "access": "metadata-only",
+      "text": "Glenn Shafer, « Savage Revisited », Statistical Science, vol. 1, n° 4, 1986, p. 463-485.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-8a7e56dd8ce49180",
+      "origin": "validated",
+      "path": "$.sources[1].kind",
+      "access": "metadata-only",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-4c604e20832d4a85",
+      "origin": "validated",
+      "path": "$.sources[1].locator",
+      "access": "metadata-only",
+      "text": "p. 463-485",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-2ee0838e0a320ab5",
+      "origin": "validated",
+      "path": "$.sources[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1214/ss/1177013518",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-529e23bfb9b7fae9",
+      "origin": "validated",
+      "path": "$.sources[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1214/ss/1177013518",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-a5be4fa625196cd8",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-23"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-9d6013ac57a34e02",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "OUVERT — texte intégral du livre sur archive.org (item https://archive.org/details/DecisionMaking, métadonnées https://archive.org/metadata/DecisionMaking, OCR téléchargé : https://archive.org/download/DecisionMaking/DecisionMaking_djvu.txt, 631 images, 1,9 Mo de texte). Page de copyright de l'exemplaire numérisé : « T57.95.D394 1988 658.4'03 87-25698 ISBN 0 521 35149 9 » — c'est exactement l'ISBN cité par la fiche (9780521351492). Table des matières : « 10 Glenn Shafer / Savage revisited … 193 », puis « III BELIEFS AND JUDGMENTS ABOUT UNCERTAINTIES … 237 »."
+    },
+    {
+      "id": "SUP-20ce184e50558dab",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "CITATION — verbatim, à l'endroit annoncé. Le chapitre s'ouvre p. 193 sur « 10 / SAVAGE REVISITED / GLENN SHAFER / 1. INTRODUCTION ». La dernière phrase avant le folio « 193 » (le titre courant « Glenn Shafer » qui suit est celui de la p. 194) est : « Thus subjective expected utility is just one of several possible tools for constructing a decision. » Aucun écart de mot, aucune coupe, pas de traduction : la fiche affiche l'anglais et déclare translation.kind = none, ce qui est exact. Contexte immédiat, même page : « the analysis of a decision problem by subjective expected utility is merely an argument by analogy. It draws an analogy between that decision problem and the problem of a gambler who must decide how to bet in a pure game of chance. »"
+    },
+    {
+      "id": "SUP-7e91f625d0b9293e",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — confirmée. Le chapitre 10 est signé du seul Glenn Shafer ; Bell, Raiffa et Tversky ne figurent que comme directeurs du volume (page de titre et notice LC de l'exemplaire numérisé), ce qui n'est pas une coécriture. La distinction faite avec le chapitre 11 est exacte : « 11 / LANGUAGES AND DESIGNS FOR PROBABILITY JUDGMENT / GLENN SHAFER AND AMOS TVERSKY », qui commence p. 237. L'ancrage sur Savage est celui du texte lui-même : « More than three decades have passed since 1954, when L. J. Savage published The Foundations of Statistics » (p. 193). Je n'ai pas ouvert Savage 1954, ce que la note d'attribution déclare d'ailleurs."
+    },
+    {
+      "id": "SUP-b5fcb37c6211c0ae",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "SOURCES — les deux résolvent. (1) ISBN 9780521351492 : OpenLibrary (https://openlibrary.org/api/books?bibkeys=ISBN:9780521351492) rend « Decision making — descriptive, normative, and prescriptive interactions », éd. David E. Bell, Howard Raiffa, Amos Tversky, Cambridge University Press, 1988, x + 623 p., ISBN-10 0521351499, LCCN 87025698 — édition, année, éditeur et directeurs conformes à ce que la fiche annonce. (2) DOI 10.1214/ss/1177013518 : redirection 302 vers https://projecteuclid.org/journals/statistical-science/volume-1/issue-4/Savage-Revisited/10.1214/ss/1177013518.full, qui donne « Savage Revisited », Glenn Shafer, Statistical Science, vol. 1, n° 4 (nov. 1986), p. 463-485 — conforme. Recoupé par le livre lui-même, NOTE de fin de chapitre (p. 233) : « First published in Statistical Science, 1 (1986), 463-485. » La note d'attribution est donc exacte sur ce point."
+    },
+    {
+      "id": "SUP-383c436e02fbe1db",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "PAGINATION — un flottement interne, non bloquant, à harmoniser. La référence de la citation et le label de la source 1 disent « p. 193-234 » ; le champ locator de la même source dit « chap. 10, p. 193-232 ». Dans l'exemplaire : le corps du chapitre se termine p. 232, la NOTE est p. 233, les références courent jusqu'au folio « 234 », après quoi vient la page de partie « III ». Le chapitre entier est donc bien p. 193-234 (certains catalogues en ligne annoncent 193-235, ce que le scan ne confirme pas) ; « 193-232 » ne désigne que le corps sans note ni bibliographie. Les deux pointent dans le bon chapitre du bon livre : je ne compte pas cela comme un défaut de résolution, mais je recommande d'aligner le locator sur 193-234."
+    },
+    {
+      "id": "SUP-59b2b6f7af0e21db",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "PROSE — fidèle. Le hook (« Maximiser l'utilité espérée est-il la seule façon d'être rationnel ? ») reprend la question que Shafer pose explicitement : « Savage believed that a rational person's preferences should satisfy these postulates … He concluded that it is normative to make choices that maximize subjective expected utility. To do otherwise is to violate a canon of rationality » (p. 193), thèse dont il annonce la révision. Le summary (« argument par analogie avec le pari : un outil parmi d'autres, non le canon unique de la rationalité ») est porté mot pour mot par le même paragraphe, y compris le « pari » (« the problem of a gambler who must decide how to bet in a pure game of chance »). Rien n'y déborde les sources ; rien n'y est plus étroit que la citation retenue."
+    },
+    {
+      "id": "SUP-47e77050c7f540a2",
+      "origin": "validated",
+      "path": "$.review.notes[6]",
+      "access": "n/a",
+      "text": "NON ATTEINT — le PDF de l'article de 1986 sur Project Euclid est bloqué par Incapsula (HTTP 200 renvoyant une page anti-robot, incident 1016000042533423607) : je n'ai lu de l'original que la page de notice, pas son texte. Ce n'est pas un silence de la littérature, c'est un accès refusé. La fiche déclare cette source « metadata-only », ce qui correspond exactement à ce que j'ai pu atteindre, et la citation n'est pas rattachée à cette source. Par ailleurs l'outil verify_reference (serveur documentary) n'était pas exposé dans ma session : j'ai résolu l'ISBN et le DOI directement (OpenLibrary, résolveur DOI, Project Euclid), plus la page de copyright du scan."
+    },
+    {
+      "id": "SUP-4a5e0e18afe933f7",
+      "origin": "validated",
+      "path": "$.review.notes[7]",
+      "access": "n/a",
+      "text": "HORS MANDAT, pour information et sans conséquence sur le verdict — le titre de la carte, « La critique de l'utilité espérée subjective », est plus large que ce que Shafer revendique. La critique de l'UES lui préexiste et il la cite (Allais 1953 et les études empiriques figurent dans sa propre bibliographie, p. 233-234) ; ce qui lui appartient en propre ici, c'est la relecture de ces réfutations comme argument par analogie et la thèse constructive qui en découle. Le summary, lui, se tient précisément à cette thèse-là, et la note d'attribution borne correctement le propos : je ne demande donc aucune correction, mais un titre du type « L'utilité espérée subjective comme argument par analogie » serait plus juste si le champ peut encore bouger."
+    },
+    {
+      "id": "SUP-b028addda0432c08",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Cette carte repose sur le même exemplaire numérisé que quatre autres du même lot : le recueil de 1988 dirigé par Bell, Raiffa et Tversky, déposé sur Internet Archive sous l'identifiant DecisionMaking. Aucune contre-lecture sur un second exemplaire n'a été possible, et un défaut de ce scan se propagerait aux cinq fiches sans être détecté ici."
+    },
+    {
+      "id": "SUP-0908c403fcf6eaf4",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Constat matériel sur cet exemplaire : les pages imprimées 204 et 205 sont absentes du scan. Le feuillet 212 s'achève au folio 203 et le suivant s'ouvre en milieu de phrase pour finir au folio 206. Le saut emporte deux sous-sections de la partie 3, dont ni le titre ni le contenu ne sont connus ici. Ni la citation ni aucun passage rapporté n'en dépend."
+    },
+    {
+      "id": "SUP-8d962f4bb7d746d7",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "Shafer critique une norme du choix, celle qui fait de l'utilité espérée subjective le canon unique de la rationalité. Il ne conteste pas le moment décisionnel : il écrit au contraire p. 197, à propos de l'acheteur de voiture, que la nécessité de trancher est réelle mais tient à la situation et non à la logique. Une carte qui lui prêterait cette seconde thèse excéderait sa source."
+    },
+    {
+      "id": "SUP-cc5655cd2845adb5",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "L'article de 1986 paru dans Statistical Science, dont ce chapitre est la reprise, n'a pas été atteint : les deux adresses annoncées ouvertes rendent une page de défi anti-robot, qui n'a pas été contournée. La citation vaut pour la reprise de 1988, et les deux états du texte n'ont pas pu être comparés."
+    },
+    {
+      "id": "SUP-11ec633833ca063d",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Une phrase plus frontale a été écartée par le lecteur primaire, p. 194 : « This means repudiating the claim that subjective expected utility provides a uniquely normative way of constructing decisions. » Son « This » renvoie à la phrase précédente et la laisserait sans antécédent sur la carte."
+    },
+    {
+      "id": "SUP-ad9c771856ad9e57",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Le locator de la source primaire disait « p. 193-232 » quand le libellé et la référence disaient « p. 193-234 » : deux nombres se contredisaient sur la même carte. Le chapitre entier va bien de 193 à 234, le corps s'arrêtant p. 232, la NOTE occupant la p. 233 et les références allant jusqu'à 234. Le locator est aligné sur 234."
+    },
+    {
+      "id": "SUP-cbd6f22c7cdbf483",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "critique-de-l-utilite-esperee-subjective"
+    },
+    {
+      "id": "SUP-79db68bbef6e3290",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Glenn Shafer"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-023acfece9a1ec02",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Le chapitre est signé d'un seul nom, et je l'ai vérifié sur l'image de la page d'ouverture avant toute base tierce : le feuillet 202 du scan porte, centrés et dans cet ordre, le chiffre « 10 », le titre « SAVAGE REVISITED », un filet, puis « GLENN SHAFER » seul, et le folio imprimé « 193 » en pied de page. La table des matières du recueil, lue elle aussi sur l'image, écrit « 10 Glenn Shafer / Savage revisited » : un seul auteur. Le recueil, lui, est un ouvrage collectif dirigé par David E. Bell, Howard Raiffa et Amos Tversky, mais la direction d'ouvrage n'est pas une coécriture de ce chapitre, et rien sur la page d'ouverture ne la présente comme telle. Trois précisions valent d'être écrites, parce qu'elles sont les trois façons de se tromper ici. Premièrement, le texte n'est pas inédit dans ce recueil : la NOTE imprimée en fin de chapitre, page 233, se lit « First published in Statistical Science, 1 (1986), 463-485 », et c'est de cette page imprimée, relue sur l'image, que vient le millésime 1986 écrit ici ; il n'est déduit d'aucune base bibliographique. Le millésime 1988 vient de la page de copyright du recueil, lue sur l'image également : « © Cambridge University Press 1988 » et « First published 1988 ». Deuxièmement, la même NOTE remercie nommément Morris DeGroot, Peter Fishburn, Dennis Lindley, Pamela Townsend et Amos Tversky pour conversations et correspondance, et emploie le singulier « The author benefited » : ce sont des remerciements, pas une cosignature, et il ne faut pas les lire comme une paternité partagée. Troisièmement, le chapitre suivant du même volume, le chapitre 11 « Languages and designs for probability judgement », page 237, est bien cosigné « GLENN SHAFER AND AMOS TVERSKY » : c'est un autre texte, sur un autre objet, et la confusion entre les deux chapitres voisins est le piège le plus facile de ce volume. Enfin, ce que Shafer critique ne lui appartient pas : les postulats et le « sure thing principle » sont de L. J. Savage, qui les publie dans The Foundations of Statistics en 1954, et Shafer les cite d'après cet ouvrage, qu'il pagine dans son propre texte. Je n'ai pas ouvert Savage (voir reserves). L'attribution porte donc sur la critique, formulée par Shafer seul, et non sur la théorie critiquée."
+    },
+    {
+      "id": "SUP-497eb7a1b3cf7942",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Thus subjective expected utility is just one of several possible tools for constructing a decision."
+    },
+    {
+      "id": "SUP-9c687dde8dbd69df",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Glenn Shafer, « Savage revisited », chapitre 10 de David E. Bell, Howard Raiffa et Amos Tversky (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press, 1988, p. 193-232 (notes et références p. 233-234). ISBN imprimé sur la page de copyright et relu sur l'image : « ISBN 0 521 35149 9 », soit 9780521351492. Exemplaire ouvert : Internet Archive, identifiant DecisionMaking, collections millionbooks et universallibrary, 631 images, sans access-restricted-item. Le texte a été repéré dans la couche OCR (DecisionMaking_djvu.xml, découpée feuillet par feuillet) puis relu caractère par caractère sur l'image de page, obtenue en JPEG natif 3296 x 5096 par https://archive.org/download/DecisionMaking/page/n202.jpg. Reprise d'un article antérieur, non atteint : voir reserves."
+    },
+    {
+      "id": "SUP-620f73987c592134",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 193 (folio imprimé, lu sur l'image en pied de page), chapitre 10, section 1 « Introduction », dernière phrase du dernier paragraphe de la page, qui commence par « In this chapter, I shall advocate a revision of Savage's understanding. » La phrase est complète et n'a subi aucune coupe. Repère de navigation dans le scan : feuillet 202 (fichier page/n202.jpg), l'écart entre feuillet et folio imprimé étant de 9 jusqu'au feuillet 212 puis de 7 à partir du feuillet 213, deux pages manquant au scan (voir reserves) ; le chapitre occupe les feuillets 202 à 241."
+    },
+    {
+      "id": "SUP-f5a20cd89af9c844",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "en"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-ff3856b1881e8323",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Shafer, G. (1988). « Savage revisited », chapitre 10, p. 193-234, dans Bell, D. E., Raiffa, H. & Tversky, A. (dir.), Decision Making: Descriptive, Normative, and Prescriptive Interactions, Cambridge University Press. Source de la citation retenue. Lue dans l'exemplaire numérisé de l'Internet Archive (identifiant DecisionMaking), sur deux appuis complémentaires : la couche OCR complète, téléchargée et redécoupée par feuillet à partir de DecisionMaking_djvu.xml (631 feuillets), pour le repérage ; puis les images de page en résolution native (3296 x 5096) pour toute lecture qui engage un verbatim. Les pages relues sur l'image sont : la page de copyright (feuillet 3, ISBN et millésime), la table des matières (feuillet 5, attribution du chapitre), p. 193 (feuillet 202, ouverture du chapitre, signature, folio et citation retenue), p. 194 (feuillet 203, thèse sur l'interprétation normative), p. 218 (feuillet 225, énoncé du sure thing principle), p. 223 (feuillet 230, conclusion de la section 4.3.6), p. 233 (feuillet 240, NOTE et première publication). Le reste du chapitre a été lu dans la couche OCR seule. Le corps du chapitre s'arrête p. 232, la NOTE et les références occupent p. 233-234. Deux pages du chapitre, p. 204 et p. 205, sont absentes de cet exemplaire numérisé (voir reserves)."
+    },
+    {
+      "id": "SUP-28f3321f91d69dc5",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "9780521351492"
+    },
+    {
+      "id": "SUP-975d8b5c7cf20509",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://archive.org/details/DecisionMaking"
+    },
+    {
+      "id": "SUP-5fcaaec280ccd1b4",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].citation",
+      "access": "metadata-only",
+      "text": "Shafer, G. (1986). « Savage Revisited ». Statistical Science, 1(4), p. 463-485. Version d'origine du texte, dont le chapitre de 1988 est la reprise. Je ne l'ai pas ouverte. Ce que j'en sais tient à trois constats faits directement : la NOTE imprimée p. 233 du recueil de 1988, relue sur l'image, en donne la référence exacte, revue, volume, année et pagination ; Unpaywall pour le DOI 10.1214/ss/1177013518 annonce is_oa true, oa_status « bronze », avec une localisation unique, chez l'éditeur, Project Euclid ; OpenAlex donne le même enregistrement, auteur unique Glenn Shafer, année 1986, et any_repository_has_fulltext false, c'est-à-dire aucune copie déposée dans un entrepôt. Les deux requêtes vers Project Euclid, la page .full et le PDF, rendent une page de défi anti-robot Incapsula (HTTP 200, content-type text/html, 1165 et 1163 octets, appel à /_Incapsula_Resource), jamais l'article. Ce défi n'a pas été contourné. Consultation donc limitée aux métadonnées."
+    },
+    {
+      "id": "SUP-e0dc8e7415c2d0af",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].doi_isbn",
+      "access": "metadata-only",
+      "text": "10.1214/ss/1177013518"
+    },
+    {
+      "id": "SUP-4d72568de3ac77de",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[1].url",
+      "access": "metadata-only",
+      "text": "https://doi.org/10.1214/ss/1177013518"
+    },
+    {
+      "id": "SUP-840116895ddca8dd",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Shafer ne conteste pas que l'utilité espérée subjective soit un outil ; il conteste qu'elle soit la norme. Sa thèse tient dans le dernier paragraphe de l'introduction, p. 193, et il l'énonce en trois temps qu'il vaut mieux ne pas séparer : « In this chapter, I shall advocate a revision of Savage's understanding. According to this revision, the analysis of a decision problem by subjective expected utility is merely an argument by analogy. It draws an analogy between that decision problem and the problem of a gambler who must decide how to bet in a pure game of chance. Sometimes such arguments are cogent; sometimes they are not. Sometimes other kinds of arguments provide a better basis for choosing among acts. Thus subjective expected utility is just one of several possible tools for constructing a decision. » L'analogie avec le pari est donc le cœur du dispositif : l'utilité espérée subjective ne décrit pas la rationalité, elle transporte sur un problème de décision quelconque la forme d'un problème de joueur, et ce transport peut être bon ou mauvais selon les cas. Ce qu'il vise est nommé précisément. Savage, écrit Shafer p. 193, « concluded that it is normative to make choices that maximize subjective expected utility. To do otherwise is to violate a canon of rationality. » Contre quoi il diagnostique un retournement historique : dans les années 1950 et 1960 cette idée a joué un rôle progressiste en affranchissant le jugement de probabilité subjectif de ce qu'il appelle « the strictures of an exaggerated frequent philosophy of probability », la coquille sur frequent étant celle du recueil, mais « Increasingly, the idea that subjective expected utility is uniquely normative plays only a regressive role; it obstructs the development and understanding of alternative tools for subjective judgment of probability and value. » La critique est interne, et c'est ce qui en fait le prix : elle porte sur l'argument axiomatique lui-même, pas sur ses résultats empiriques. Shafer soutient p. 194 que l'interprétation normative ne peut pas être coupée du fait empirique, et il en tire la conséquence en toutes lettres, relue sur l'image parce que la couche OCR y est illisible : « The sensible way to respond to what we have learned is to make the normative interpretation explicitly and thoroughly constructive. This means repudiating the claim that subjective expected utility provides a uniquely normative way of constructing decisions. It may also mean abandoning the word normative in favor of constructive and other less contentious terms. » Deux hypothèses à contenu empirique portent selon lui tout l'édifice de Savage, et il les nomme p. 195 : « First, the assumption that a person always has well-defined preferences in those settings where the postulates are applied. Second, the assumption that a setting can be found that permits a disentanglement of belief and value. » La première est explicite dans le premier postulat, celui de l'existence d'un classement complet des actes ; la seconde soutient les postulats deux, trois et quatre. Contre la première, il oppose une exigence de mesure : pour dire qu'un objet a une propriété, il faut une méthode de mesure et une invariance empirique des résultats, et dans le cas des préférences cette invariance manque, ce qui est, dit-il, « the most fundamental result of three decades of empirical investigation ». D'où le mot qu'il refuse à Savage : quand un homme donne deux réponses différentes selon qu'on lui demande d'ajouter une radio au prix d'une voiture ou d'acheter la radio seule, Savage parle d'erreur ; Shafer répond que « The man does not really have a true preference, and he is looking to various arguments (including those provided by the salesman) in an effort to construct one. » La préférence ne se découvre pas, elle se construit, et c'est le sens du mot constructive qui traverse tout le chapitre. Sur le sure thing principle, Shafer commence par le restituer fidèlement, p. 218 : « Savage derived the independence postulate from a more intuitive but less precise principle that he called \"the sure thing principle.\" » Le principe dit que si l'on préfère le motif de conséquences de f à celui de g sur chaque élément d'une partition des états, alors on doit préférer f à g. Shafer en reconnaît l'attrait, parce qu'il reflète une stratégie familière de résolution : découper la situation en cas mutuellement exclusifs et chercher un acte satisfaisant dans tous. Mais il énumère les manières dont cette stratégie échoue, et il donne, à la fin de la section 4.3.6, p. 223, la raison de fond, qui est encore une raison constructive : « The constructive view forces us to recognize, however, that our value resides where it is constructed. If we construct goals within the products of our imagination that Savage called states of a small world, then the sure thing principle will hold. But, if we construct goals in our real situation, then these goals may tie the states of the small world together as effectively as the goal of a loaf of bread ties butter and flour together. » L'image du pain est son argument : entre farine, pommes et beurre, la quantité d'une marchandise modifie les arbitrages entre les autres, parce qu'un but, faire du pain, les relie ; Samuelson s'était rallié au principe en jugeant que les états d'un petit monde ne sont pas comme des marchandises, et c'est ce jugement que Shafer refuse dès lors que les buts se forment dans la situation réelle et non dans les états imaginés. Le chapitre se clôt sur le problème des petits mondes, où il montre que deux méthodes de calcul des probabilités à partir des préférences peuvent diverger selon le niveau de détail retenu, et il en tire, p. 232 : « Thus Savage's version of the problem of small worlds serves as a demonstration of how far his normative approach was from a sensible, constructive approach to decision. » Ce qui reste à la fin n'est donc pas un rejet de l'utilité espérée subjective, mais une rétrogradation : d'un canon unique de la rationalité, elle devient un outil parmi d'autres, dont l'usage se justifie au cas par cas par la qualité de l'analogie qu'il propose."
+    },
+    {
+      "id": "SUP-9eb4635a21ade500",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Cette fiche dépend d'un seul exemplaire, le recueil de 1988 numérisé par l'Internet Archive sous l'identifiant DecisionMaking, et ce recueil pourvoit cinq fiches du même lot. Si cet exemplaire disparaît, change d'identifiant ou passe en accès restreint, ce sont cinq fiches, et non une, qui perdent leur appui. Aucune autre copie ouverte du recueil n'a été cherchée ni trouvée."
+    },
+    {
+      "id": "SUP-6618c4de9ad4d83f",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "La version d'origine du texte, Shafer, G. (1986), « Savage Revisited », Statistical Science, 1(4), 463-485, DOI 10.1214/ss/1177013518, n'a pas été atteinte, et la citation ne se présente pas comme venant d'elle. Unpaywall et OpenAlex la donnent tous deux ouverte, is_oa true, oa_status « bronze », avec une localisation unique chez l'éditeur, Project Euclid, et OpenAlex précise any_repository_has_fulltext false, donc aucune copie déposée ailleurs. Or les deux adresses annoncées, la page .full et le PDF, rendent l'une comme l'autre une page de défi anti-robot Incapsula : HTTP 200, content-type text/html, 1165 et 1163 octets, corps constitué d'un appel à /_Incapsula_Resource et d'un script de vérification. Je n'ai pas résolu ce défi : un texte qu'on ne peut pas ouvrir légitimement est un texte qu'on n'a pas ouvert. Aucune autre voie légitime n'a rendu. La pagination 463-485 et le millésime 1986 écrits dans ce dossier viennent donc de la NOTE imprimée p. 233 du recueil de 1988, relue sur l'image, et non d'une lecture de l'article. Je n'ai par conséquent pas pu comparer les deux états du texte : si la reprise de 1988 diffère de l'article de 1986, même d'un mot, je ne peux pas le savoir, et la citation vaut pour la reprise."
+    },
+    {
+      "id": "SUP-624b4d933e191c09",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Deux pages du chapitre manquent à cet exemplaire numérisé : les pages imprimées 204 et 205. Le constat est direct et vérifié sur le texte lui-même, pas déduit d'un index : le feuillet 212 se termine sur le folio 203 et sur la fin d'un paragraphe consacré à la transitivité de l'indifférence, tandis que le feuillet 213 s'ouvre en milieu de phrase et se termine sur le folio 206. Le saut emporte deux sous-sections de la partie 3, celles qui seraient numérotées 3.2 et 3.3, dont je ne connais donc ni les titres ni le contenu ; le sommaire interne du chapitre ne les annonce pas. Ni la citation retenue, prise p. 193, ni aucun des passages reproduits dans definition_de_lauteur ne dépend de ces deux pages, mais l'examen du premier postulat que Shafer y conduit m'est resté fermé."
+    },
+    {
+      "id": "SUP-527c433e9b230947",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "Portée du texte, et c'est la limite à ne pas franchir : ce chapitre critique une norme du choix, l'idée que maximiser l'utilité espérée subjective serait le canon unique de la rationalité. Il ne conteste pas le concept de moment décisionnel, ni l'existence d'une décision à prendre. Shafer écrit au contraire, à propos de l'acheteur de voiture, p. 197, que la nécessité de trancher est réelle mais contingente : « It results not from logic but from the fact that the car is available with the radio installed and the salesman has asked him whether he wants it that way. » Une carte qui prêterait à ce texte une critique du moment décisionnel lui-même excéderait sa source."
+    },
+    {
+      "id": "SUP-cd7df5df06c3175c",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Je n'ai pas ouvert Savage, L. J. (1954), The Foundations of Statistics, Wiley, dont le chapitre est de bout en bout la discussion. Tout ce que ce dossier en rapporte, y compris les extraits que Shafer en donne et les pages qu'il indique, passe par Shafer et n'a pas été contrôlé sur l'original. Je n'ai pas non plus ouvert les autres textes discutés dans le chapitre, en particulier Allais (1953), Raiffa (1961, 1968), Samuelson (1952) et Fishburn (1981), qui ne sont connus ici que par la bibliographie imprimée p. 233-234."
+    },
+    {
+      "id": "SUP-0370e910ccadca8b",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "Un autre passage avait été retenu d'abord, et je dis pourquoi je l'ai écarté. C'est la phrase de la p. 194, relue sur l'image : « This means repudiating the claim that subjective expected utility provides a uniquely normative way of constructing decisions. » Elle tient en 126 caractères et énonce la critique plus frontalement que celle qui a été retenue. Je ne l'ai pas prise parce qu'elle s'ouvre sur un « This » qui renvoie à la phrase précédente, celle qui dit de rendre l'interprétation normative explicitement constructive : détachée, elle laisse le lecteur sans son antécédent, et la compléter aurait été recomposer. La phrase retenue, p. 193, est autonome, et le « Thus » qui l'ouvre n'est qu'une liaison à l'intérieur d'un paragraphe qu'elle conclut."
+    },
+    {
+      "id": "SUP-492490159f794daa",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Un exemple mesure ce que vaut la relecture sur l'image, et je le consigne parce qu'il aurait pu passer. La couche OCR donne, pour la dernière phrase du corps du chapitre p. 232, « demonstrates just how far his normative viewpoint was from a constructive approach to decision », et cette leçon est fausse : l'image imprime « Thus Savage's version of the problem of small worlds serves as a demonstration of how far his normative approach was from a sensible, constructive approach to decision. » L'OCR avait remplacé approach par viewpoint et supprimé sensible. C'est la version relue sur l'image qui figure dans definition_de_lauteur. Aucun autre écart de ce genre n'a été trouvé sur les pages relues, mais rien ne garantit qu'il n'y en ait pas sur les pages lues en OCR seul."
+    },
+    {
+      "id": "SUP-874f3370964bbdfe",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[7]",
+      "access": "n/a",
+      "text": "La couche OCR de cet exemplaire est bonne sur la majeure partie du chapitre mais franchement défectueuse par endroits, notamment au bas de la p. 194, où plusieurs lignes sont recomposées en charabia, et dans les pages qui portent des formules. Aucun verbatim de ce dossier ne repose sur elle : tout ce qui est cité entre guillemets ici a été relu sur l'image de la page, y compris les passages des p. 195, 197, 218, 223 et 232 reproduits dans definition_de_lauteur. En revanche, ma lecture d'ensemble du chapitre, hors les pages listées dans sources_ouvertes, s'appuie sur l'OCR seul, et ce que je résume des développements techniques des sections 2, 4.3.4, 4.3.5 et 5.2 peut porter des erreurs de détail que je n'ai pas contrôlées."
+    },
+    {
+      "id": "SUP-878fa16382309347",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[8]",
+      "access": "n/a",
+      "text": "Aucune mesure de réception n'a été faite. Le seul chiffre relevé est le compteur d'OpenAlex pour la version de 1986, 112 citations, qui est un décompte de base et non une lecture. Je n'ai ouvert aucun commentaire de ce texte, aucune reprise francophone, et je ne peux donc rien dire de la façon dont la critique de Shafer a été reçue, ni de sa place par rapport aux autres critiques de l'utilité espérée subjective présentes dans le même volume, en particulier le chapitre 4 de Fishburn et le chapitre 9 de Tversky et Kahneman, que je n'ai pas lus."
+    }
+  ],
+  "estimated_tokens": 15959,
+  "status": "READY"
+}
