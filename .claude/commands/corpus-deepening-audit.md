@@ -40,8 +40,10 @@ qu'une prescription d'ajout puisse nommer le support qui la finance.
 - `--batch=N` est accepté uniquement pour `1 <= N <= 5`.
 - Toute valeur supérieure à 5 est refusée, même si le modèle possède une fenêtre plus grande.
 - L'orchestrateur ne recopie jamais les sorties détaillées des agents dans ses prompts suivants.
-- Les sorties détaillées sont écrites dans `corpus/deepening-audits/work/<conceptId>/` ; l'agent ne
-  rend à l'orchestrateur que verdicts, compteurs et chemins.
+- Les sorties détaillées sont écrites **temporairement** dans
+  `corpus/deepening-audits/work/<conceptId>/` ; l'agent ne rend à l'orchestrateur que
+  verdicts, compteurs et chemins. Ces fichiers sont ignorés par Git : ne jamais les
+  ajouter (même avec `git add -f`), les commiter ni les archiver.
 - Aucun pack d'entrée d'un agent ne dépasse **300 000 tokens estimés**. Le seuil est un plafond,
   pas une cible. Un dépassement impose une partition, jamais une troncature.
 
@@ -383,7 +385,13 @@ Après toutes les cartes :
 4. aucun fichier rejeté ne reste modifié ;
 5. chaque rapport final porte les hashes finaux ;
 6. `npm run corpus:deepen` ne projette qu'après ces gates ;
-7. inspecte le diff.
+7. inspecte le diff ;
+8. après avoir tracé les verdicts et terminé la revue, supprime uniquement les répertoires
+   `corpus/deepening-audits/work/<id>/` des concepts traités par **ce** lot, y compris
+   si le contrôle a échoué. N'efface pas un dossier encore utilisé par un autre cycle
+   concurrent. Les résultats utiles doivent déjà être intégrés aux contenus ou au résumé final ;
+9. vérifie que le diff et les fichiers indexés pour le commit ne contiennent aucun
+   artefact de `corpus/deepening-audits/work/`.
 
 Compte rendu final compact :
 

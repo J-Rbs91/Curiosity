@@ -274,9 +274,18 @@ contenu documentaire de plusieurs cartes dans une même invocation.
 Le lot par défaut est de 3 cartes, maximum absolu 5. Le budget maximal d’un pack d’agent est de
 300 000 tokens estimés ; au-delà, le travail est partitionné sans troncature.
 
-Le dernier audit final de chaque concept vit dans `corpus/deepening-audits/<conceptId>.md`.
-Les artefacts détaillés du cycle courant vivent sous
-`corpus/deepening-audits/work/<conceptId>/`. Git porte l’historique.
+Le rapport final succinct de chaque concept vit dans `corpus/deepening-audits/<conceptId>.md`.
+Il demeure provisoirement versionné parce que la sélection `--stale` utilise ses empreintes
+et son verdict. Son remplacement par un mécanisme sans archive d'audits est un chantier distinct.
+
+Les artefacts détaillés créés pendant un cycle sous
+`corpus/deepening-audits/work/<conceptId>/` sont **strictement temporaires** : aucun
+`audit.md`, pack, bundle, mapping, vérification, script de travail ou autre fichier
+de ce répertoire ne doit être ajouté à Git, archivé ou repris dans un commit.
+Les agents les utilisent pendant le cycle puis suppriment uniquement les répertoires
+des concepts de leur lot après les contrôles et la synthèse du résultat.
+Une erreur doit être résumée dans le verdict final, non conservée sous forme de pack massif.
+La suppression des artefacts ne doit jamais effacer le travail concurrent d'un autre agent.
 
 Une carte redevient éligible si :
 
