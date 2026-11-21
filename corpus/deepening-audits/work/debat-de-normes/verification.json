@@ -1,256 +1,276 @@
 {
   "concept_id": "debat-de-normes",
-  "candidate_sha256": "44999f691beb5952a4d7d3f3e18588a9293e7b0ab9b95dbd91d3fe05a6c184db",
+  "candidate_sha256": "373273613e2d3a021b77e19896a82c2b1d23b33400cf3c1bd24da9c79f97db6e",
   "results": [
     {
       "claim_id": "C001",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note et attribution_note : Schwartz signe seul l'article où se lit « débats de normes » ; review.notes[4] : la formule est bien de lui."
+      "reason": "attribution.note et review.notes[4] : formule « débats de normes » de Schwartz, seul signataire ; quotation.text porte la formule."
     },
     {
       "claim_id": "C002",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « normes antécédentes, dont le travail prescrit peut être l'une d'elles » ; summary : le prescrit n'est qu'une norme parmi celles qui précèdent l'activité."
+      "reason": "definition_de_lauteur : « normes antécédentes, dont le travail prescrit peut être l'une d'elles », « le prescrit n'est qu'une norme parmi d'autres » ; summary validé : normes qui précèdent l'activité."
     },
     {
       "claim_id": "C003",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « tendances à la renormalisation », tendance du vivant à renormaliser ; summary : celui qui travaille les renormalise sans cesse ; review.notes[6] justifie « sans cesse ». La glose étymologique n'ajoute pas de contenu."
+      "reason": "definition_de_lauteur : « tendances à la renormalisation », « tendance du vivant à renormaliser » ; summary : celui qui travaille les renormalise."
     },
     {
       "claim_id": "C004",
-      "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : le débat n'est pas un face-à-face entre la consigne et l'exécutant, mais entre un ensemble de normes antécédentes et une tendance à renormaliser."
+      "verdict": "UNSUPPORTED",
+      "reason": "Aucun appui fourni pour ce claim ; la glose étymologique « littéralement, refaire des normes » n'est portée par aucun support résolu pour lui, et le signal est vide."
     },
     {
       "claim_id": "C005",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : l'enjeu du débat est la santé au sens de Canguilhem, non la performance ; summary : c'est sa santé qui se joue dans ce débat. « pas d'abord » est plus prudent que la source."
+      "reason": "summary validé « les renormalise sans cesse », justifié par review.notes[6] sur « ne cessent d'occuper » (p. 131) ; quotation.text porte « ne cessent »."
     },
     {
       "claim_id": "C006",
       "verdict": "SUPPORTED",
-      "reason": "Scène stipulée ; l'application du terme est autorisée : definition_de_lauteur et review.notes[1] font du travail prescrit une norme antécédente, et opposent ce qui est anticipé, prévu, à ce qui est vraiment fait."
+      "reason": "definition_de_lauteur : « le débat n'est pas un face-à-face entre la consigne et l'exécutant, mais entre un ensemble de normes antécédentes et une tendance du vivant à renormaliser »."
     },
     {
       "claim_id": "C007",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : opposition entre ce qui est anticipé, prévu et « ce qui est vraiment fait », travail réel ou actuel ; review.notes[1] cite le couple travail prescrit / travail réel."
+      "reason": "definition_de_lauteur : appartient à sa définition que « l'enjeu de ce débat est la santé ..., non la performance » ; summary : c'est sa santé qui se joue."
     },
     {
       "claim_id": "C008",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : selon Schwartz, les ergonomes ont établi que l'entière anticipation ou standardisation des processus de travail était impossible, l'activité se développant entre l'anticipé et le vraiment fait."
+      "reason": "Les appuis portent la distinction « travail prescrit » / « travail réel » et identifient le prescrit à la consigne ; simple dénomination."
     },
     {
       "claim_id": "C009",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[1] et quotation._verification : « Comme le suggère au niveau microscopique la distinction entre travail prescrit et travail réel, des débats de normes ne cessent d'occuper... l'activité humaine »."
+      "reason": "definition_de_lauteur : travail réel opposé au prévu, « ce qui est vraiment fait » ; détails de la vignette stipulés, non attribués."
     },
     {
       "claim_id": "C010",
       "verdict": "SUPPORTED",
-      "reason": "La phrase citée correspond au verbatim de review.notes[1] et de quotation._verification ; notes[1] et reserves[4] établissent que la phrase commence par « Comme le suggère »."
+      "reason": "definition_de_lauteur : « l'entière anticipation ou standardisation des processus de travail était impossible »."
     },
     {
       "claim_id": "C011",
       "verdict": "SUPPORTED",
-      "reason": "Lecture explicitement marquée comme interprétation ; elle suit de « suggère au niveau microscopique » et « attestée au niveau microscopique » (review.notes[1], definition_de_lauteur)."
+      "reason": "Phrase source : « Comme le suggère au niveau microscopique la distinction ... des débats de normes ne cessent d'occuper ... l'activité humaine »."
     },
     {
       "claim_id": "C012",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de review.notes[1] et quotation._verification : « débats entre des normes antécédentes, dont le travail prescrit peut être l'une d'elles, et des tendances à la renormalisation »."
+      "reason": "Verbatim de la phrase entière dans notes[0], review.notes[1], quotation._verification ; seule la typographie des guillemets internes diffère."
     },
     {
       "claim_id": "C013",
       "verdict": "SUPPORTED",
-      "reason": "Glose de « normes antécédentes » ; summary : normes qui précèdent l'activité. « oriente ce qu'elle doit faire » ne dit rien de plus que le mot norme."
+      "reason": "Lecture explicitement présentée comme interprétation, qui suit de « suggère au niveau microscopique » (definition_de_lauteur, review.notes[1])."
     },
     {
       "claim_id": "C014",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : le prescrit n'est qu'une norme parmi d'autres ; summary et review.notes[6] idem."
+      "reason": "Phrase source : « débats entre des normes antécédentes, dont le “travail prescrit” peut être l'une d'elles, et des tendances à la renormalisation »."
     },
     {
       "claim_id": "C015",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui n'est fourni pour ce claim. Il ne se limite pas à une vignette stipulée : il range l'habitude d'un service et la règle de métier non écrite parmi les normes antécédentes au sens de Schwartz, classification qu'aucun appui fourni pour ce claim n'établit. Signal vide."
+      "verdict": "SUPPORTED",
+      "reason": "« normes antécédentes » / summary « celles qui précèdent l'activité » ; « oriente ce qu'elle doit faire » est la glose minimale de « norme »."
     },
     {
       "claim_id": "C016",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « Il ajoute que les valeurs plus larges de la vie sociale « interfèrent dans ces débats » » ; fragment cité verbatim."
+      "reason": "definition_de_lauteur et summary : le prescrit n'est qu'une norme parmi d'autres normes antécédentes ; review.notes[6] valide cette lecture."
     },
     {
       "claim_id": "C017",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : il en tire la conséquence que « l'activité humaine est traversée par des contradictions potentielles »."
+      "reason": "definition_de_lauteur : « Il ajoute que les valeurs plus larges de la vie sociale « interfèrent dans ces débats »."
     },
     {
       "claim_id": "C018",
       "verdict": "SUPPORTED",
-      "reason": "Interprétation marquée, qui suit de la pluralité des normes antécédentes, de l'interférence des valeurs et des « contradictions potentielles » (definition_de_lauteur) ; « pas forcément » respecte « potentielles »."
+      "reason": "definition_de_lauteur : « en tire la conséquence : l'activité humaine est traversée par des contradictions potentielles »."
     },
     {
       "claim_id": "C019",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur et review.notes[1] : débats entre des normes antécédentes et « des tendances à la renormalisation »."
+      "reason": "Interprétation signalée, qui suit de la pluralité des normes, des valeurs qui interfèrent et des contradictions « potentielles » (« pas forcément »)."
     },
     {
       "claim_id": "C020",
       "verdict": "SUPPORTED",
-      "reason": "Verbatim de definition_de_lauteur et quotation._verification : « dont l'existence est attestée au niveau microscopique par le travail réel ou actuel »."
+      "reason": "Phrase source : normes antécédentes face à « des tendances à la renormalisation »."
     },
     {
       "claim_id": "C021",
       "verdict": "SUPPORTED",
-      "reason": "Lecture marquée d'une illustration (« On peut lire ») ; elle applique la thèse du travail réel attestant la tendance à renormaliser (definition_de_lauteur) sans l'attribuer à l'auteur."
+      "reason": "Phrase source : « dont l'existence est attestée au niveau microscopique par le “travail réel” ou “actuel” »."
     },
     {
       "claim_id": "C022",
       "verdict": "SUPPORTED",
-      "reason": "reserves[1] : « Renormalisation » n'y figure qu'une seule fois dans le texte intégral converti."
+      "reason": "Lecture d'une vignette présentée comme telle (« On peut lire »), conforme à l'attestation de la renormalisation par le travail réel ; rien n'est attribué à l'auteur."
     },
     {
       "claim_id": "C023",
       "verdict": "SUPPORTED",
-      "reason": "reserves[10] : aperçu d'histoire culturelle, sans terrain ni situation de travail décrite."
+      "reason": "reserves[1] : « Renormalisation n'y figure qu'une seule fois »."
     },
     {
       "claim_id": "C024",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : l'article reconstitue deux généalogies distinctes, deux branches d'un schéma, d'où la définition centrale de l'activité."
+      "reason": "reserves[10] : texte sans terrain ni situation de travail décrite, aucun opérateur montré."
     },
     {
       "claim_id": "C025",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : branche gauche incluant les ergonomes de l'activité, citation verbatim « que l'entière anticipation ou standardisation des processus de travail était impossible » (p. 130)."
+      "reason": "definition_de_lauteur : l'article « reconstitue deux généalogies distinctes » d'où « la définition centrale »."
     },
     {
       "claim_id": "C026",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : citation verbatim « une invitée dans nos vies qu'on ne pourra jamais congédier »."
+      "reason": "definition_de_lauteur : branche gauche incluant les ergonomes de l'activité, citation exacte p. 130."
     },
     {
       "claim_id": "C027",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « C'est l'axe de l'IMPOSSIBLE »."
+      "reason": "definition_de_lauteur : l'activité « est inévitable, une invitée dans nos vies qu'on ne pourra jamais congédier »."
     },
     {
       "claim_id": "C028",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : la branche droite est philosophique et inclut Canguilhem ; « passe par » n'exclut pas les autres noms."
+      "reason": "definition_de_lauteur : « C'est l'axe de l'IMPOSSIBLE »."
     },
     {
       "claim_id": "C029",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : recension par Canguilhem, en 1947, de l'enquête de Georges Friedmann sur les usines taylorisées ; definition_de_lauteur idem."
+      "reason": "definition_de_lauteur : branche droite philosophique, Bergson, Goldstein, Leroi-Gourhan, Canguilhem."
     },
     {
       "claim_id": "C030",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : citation verbatim, rapportée comme formulation de Schwartz (p. 130)."
+      "reason": "attribution.note : recension par Canguilhem, en 1947, de l'enquête de Friedmann sur les usines taylorisées (Canguilhem, 1947, pp. 120-136), à laquelle renvoie l'article."
     },
     {
       "claim_id": "C031",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur et attribution.note : axe de l'INVIVABLE, citation verbatim de la figure 2."
+      "reason": "definition_de_lauteur : citation exacte p. 130, rapportée comme les mots de Schwartz."
     },
     {
       "claim_id": "C032",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : l'ergologie est présentée comme la jonction des deux, « ce qui est impossible se révèle être aussi invivable ». Le signal (quotation.locator, terme « approche ») ne vise pas la matière du claim."
+      "reason": "definition_de_lauteur et attribution.note : axe de l'INVIVABLE, citation de la figure 2 exacte."
     },
     {
       "claim_id": "C033",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence conditionnelle non attribuée, qui suit de l'impossibilité d'une entière anticipation (definition_de_lauteur)."
+      "reason": "definition_de_lauteur : « L'ergologie est présentée comme la jonction des deux » ; attribution.note situe Schwartz dans le programme ergologique. Signal ($.quotation.locator, « approche ») sans rapport probable avec la matière du claim."
     },
     {
       "claim_id": "C034",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence dérivée : definition_de_lauteur rapporte que Canguilhem juge invivable « cette ambition de contrôle total du faire industrieux ». Le signal (reserves[10], terme « voudrait ») ne porte pas la matière du claim."
+      "reason": "definition_de_lauteur : « ce qui est « impossible » se révèle être aussi « invivable » »."
     },
     {
       "claim_id": "C035",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : « Le mot débat appliqué à des normes est donc explicitement rapporté par Schwartz à Canguilhem » ; review.notes[5] idem."
+      "reason": "Conséquence conditionnelle dérivée de l'impossibilité d'une entière anticipation et du refus du face-à-face consigne/exécutant ; non attribuée à l'auteur."
     },
     {
       "claim_id": "C036",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : Canguilhem nommé douze fois ; review.notes[7] : 12 occurrences dans le PDF."
+      "reason": "Conséquence dérivée : l'ambition de contrôle total jugée invivable (rapportée par Schwartz, intermédiaire posé au claim précédent) ; signal reserves[10] (« voudrait ») sans rapport avec la matière."
     },
     {
       "claim_id": "C037",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note et review.notes[5] : citation verbatim, segment continu."
+      "reason": "attribution.note : « Le mot « débat » appliqué à des normes est donc explicitement rapporté par Schwartz à Canguilhem »."
     },
     {
       "claim_id": "C038",
       "verdict": "SUPPORTED",
-      "reason": "Lecture marquée ; attribution_note : débat entre des normes venues du milieu et celles que le vivant produit et cherche à promouvoir ; definition_de_lauteur : second pôle = tendance du vivant à renormaliser."
+      "reason": "attribution.note et review.notes[7] : Canguilhem nommé douze fois dans l'article (12 occurrences, notes et bibliographie comprises)."
     },
     {
       "claim_id": "C039",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : « Le concept est de Schwartz ; sa racine est empruntée, et il l'écrit lui-même » ; review.notes[4] et [5]."
+      "reason": "attribution.note et review.notes[5] : citation exacte."
     },
     {
       "claim_id": "C040",
       "verdict": "SUPPORTED",
-      "reason": "summary : c'est sa santé qui se joue dans ce débat ; review.notes[6] et definition_de_lauteur."
+      "reason": "Lecture présentée comme telle, conforme à attribution_note : normes que le vivant produit et cherche à promouvoir face à celles du milieu."
     },
     {
       "claim_id": "C041",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] : citation verbatim « Éviter l'invivable, l'insupportable, signifie une tentative reconduite jour après jour d'assurer sa propre santé »."
+      "reason": "attribution.note : « La formule est donc bien de Schwartz » ; review.notes[4], [5]."
     },
     {
       "claim_id": "C042",
       "verdict": "SUPPORTED",
-      "reason": "review.notes[6] : la citation suit une coupe […], d'où « plus loin » ; verbatim confirmé par definition_de_lauteur."
+      "reason": "attribution.note : « sa racine est empruntée, et il l'écrit lui-même »."
     },
     {
       "claim_id": "C043",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : santé prise dans un sens plus large que médical ; la possibilité de faire tenir ses propres normes de vie."
+      "reason": "summary et review.notes[6] : santé = enjeu du débat (p. 128, p. 131)."
     },
     {
       "claim_id": "C044",
       "verdict": "SUPPORTED",
-      "reason": "Lecture marquée (« On peut comprendre »), cohérente avec l'affirmation que l'activité ne peut être réellement comprise, anticipée par une quelconque théorie ou système (definition_de_lauteur)."
+      "reason": "review.notes[6] : citation exacte p. 131."
     },
     {
       "claim_id": "C045",
       "verdict": "SUPPORTED",
-      "reason": "definition_de_lauteur : « matrice authentique de l'histoire humaine » qui ne peut être « réellement comprise, anticipée par une quelconque théorie, ou système » ; paraphrase fidèle."
+      "reason": "review.notes[6] : la citation suit, après coupe, la précédente ; definition_de_lauteur la porte aussi."
     },
     {
       "claim_id": "C046",
       "verdict": "SUPPORTED",
-      "reason": "Conséquence non attribuée, qui suit de la pluralité des normes antécédentes, de la renormalisation et de l'interférence des valeurs (definition_de_lauteur). Signal : reserves[7] (« suivie ») et review.notes[4] (« reprises », au sens de reprises ergologiques de la formule) ne rendent pas probable un rattachement manquant."
+      "reason": "definition_de_lauteur : santé « prise dans un sens plus large que médical », « la possibilité de faire tenir ses propres normes de vie »."
     },
     {
       "claim_id": "C047",
       "verdict": "SUPPORTED",
-      "reason": "Métadonnée suffisante : la bibliographie de l'article de 2007, lue (attribution.note, sources_ouvertes[3]), porte un titre de 2004 contenant la formule. Le claim n'affirme pas la date d'invention, que reserves[3] et notes[5] disent non établie."
+      "reason": "Interprétation signalée (« On peut comprendre »), cohérente avec l'activité qui ne peut être « réellement comprise, anticipée » par une théorie ou un système."
     },
     {
       "claim_id": "C048",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note : note 1, p. 122, « une présentation compacte, issue d'une série de conférences et de cours donnés depuis 2004 »."
+      "reason": "definition_de_lauteur : « matrice authentique de l'histoire humaine » qui ne peut être « réellement comprise, anticipée par une quelconque « théorie », ou système »."
     },
     {
       "claim_id": "C049",
       "verdict": "SUPPORTED",
-      "reason": "attribution.note et sources_ouvertes[3] : Schwartz, Y. (2004), « Raison Pratique et débats de normes », in Bienenstock & Tosel (Eds.), La Raison pratique au XXème siècle, p. 261-294 ; métadonnées suffisantes pour un chapitre de volume collectif."
+      "reason": "Conséquence dérivée, non attribuée, de la définition : débat entre normes antécédentes et renormalisation, valeurs qui interfèrent ; le signal (« suivie », « reprises ») ne rend pas probable un rattachement manquant."
     },
     {
       "claim_id": "C050",
       "verdict": "SUPPORTED",
-      "reason": "reserves[3], notes[5], sources_ouvertes[3] : le volume de 2004 n'a pas été ouvert ; le claim n'en affirme aucun contenu."
+      "reason": "Notice bibliographique de 2007 : titre de 2004 « Raison Pratique et débats de normes » (metadata-only, le titre est une métadonnée) ; note 1, cours depuis 2004 ; review.notes[4] notice HAL 2004."
+    },
+    {
+      "claim_id": "C051",
+      "verdict": "SUPPORTED",
+      "reason": "attribution.note : note 1 p. 122, « issue d'une série de conférences et de cours donnés depuis 2004 »."
+    },
+    {
+      "claim_id": "C052",
+      "verdict": "SUPPORTED",
+      "reason": "attribution.note, sources_ouvertes[3].citation : autocitation Schwartz 2004, « Raison Pratique et débats de normes » ; métadonnées."
+    },
+    {
+      "claim_id": "C053",
+      "verdict": "SUPPORTED",
+      "reason": "Métadonnées : In Bienenstock & Tosel (Eds.), La Raison pratique au XXème siècle, p. 261-294 — chapitre d'un volume collectif."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "SUPPORTED",
+      "reason": "notes[5], reserves[3], sources_ouvertes[3] : volume non ouvert, contenu non établi ; le claim n'en affirme rien."
     }
   ]
 }

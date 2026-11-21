@@ -90,3 +90,14 @@ Correction factuelle minimale après `FACTCHECK_FAIL` (gate : 62 claims, 59 sout
 - **C041** (`sections[3].paragraphs[0]`) : la traduction rétablit le modal de la citation (« can generate ») en remplaçant « engendre » par « peut engendrer » (SUP-2e288983e03ee9d4).
 
 Mots du texte lecteur : 1522 après correction, contre environ 1528 avant (le lead perd quelques mots, C041 en gagne un). `npm run corpus:deepen -- --check --only=decision-reconnue-d-emblee` passe. Le SHA du candidat a changé : le cycle doit reprendre à `PREPARE`. Je ne valide pas cette version.
+
+## Boucle 2
+
+Correction factuelle minimale après `FACTCHECK_FAIL` (gate : 62 claims, 57 soutenus, 2 `UNSUPPORTED`, 3 `TOO_STRONG`). Seuls C008, C009, C057, C060 et C062 sont touchés. Je n'ai ajouté aucune affirmation et je n'ai modifié aucun autre passage.
+
+- **C008 + C009** (`lead[1]`) : supprimés. L'évaluation (« c'est elle qui rend le modèle intéressant ») et l'énoncé général (« Une conduite qu'on n'a mise en balance avec rien peut être mauvaise ») n'avaient aucun appui. C010 renvoyait à cette objection par « y répond » ; sans elle, il perdait son référent. Il devient donc « Le modèle ne s'arrête pas là : il a un second temps. » Le contenu reste celui de C010, sans renvoi à l'objection disparue : un second temps, à savoir l'évaluation de l'option, appuyé par SUP-8db37978bf1daa45 et SUP-eaff6ecaa1f3e991.
+- **C057** (`sections[5].paragraphs[0]`) : la phrase disait que les traits de la tâche naturaliste étaient « ce qui rapproche ces métiers ». Ce lien est retiré, et la phrase devient « Klein prête par ailleurs à une tâche de décision naturaliste des traits parmi lesquels […] ». Les traits restent attribués à Klein (SUP-aa4d6ad95061fa9f), mais ils ne sont plus rattachés aux cinq métiers.
+- **C060** (`sections[5].paragraphs[1]`) : « n'y pas passer en revue la littérature » devient « n'y pas proposer de revue détaillée de la littérature ». Le mot « detailed » de l'appui est rétabli (« does NOT provide a detailed review », SUP-aa4d6ad95061fa9f).
+- **C062** (`sections[5].paragraphs[1]`) : « ce n'est pas ce qui se passe » devient « on ne compare presque jamais d'options ». La fréquence est ramenée à celle des appuis, « rarely compared any options at all » et « hardly ever compared options » (SUP-8db37978bf1daa45, SUP-f4b1e57cb35e87bc).
+
+Mots du texte lecteur : 1522 avant la boucle 2 selon le compte de la boucle 1, et 1490 après, selon le compteur de `npm run corpus:deepen -- --check --only=decision-reconnue-d-emblee`. Les deux chiffres ne viennent pas du même outil : ils ne se comparent qu'approximativement, et la baisse tient surtout à la suppression de C008 et C009. Le contrôle passe. Le SHA du candidat a changé et le cycle doit reprendre à `PREPARE`. Je ne valide pas cette version. La modification de `package-lock.json` reste hors périmètre et je n'y ai pas touché.
