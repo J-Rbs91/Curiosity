@@ -140,3 +140,20 @@ modifiés dans l'arbre, pas de mon fait). Le compte rendu est écrit sous `rewri
 demandé par l'orchestrateur (le prompt système indiquait `rewrite.md`).
 
 Pas d'auto-validation : la version doit repasser par PREPARE (SHA modifié), fact-check et revue.
+
+## Boucle 1
+
+Mode : FACTCHECK_FIX, sur le gate `FACTCHECK_FAIL` (49/50, seul C015 `UNSUPPORTED`, SHA candidat
+`44999f69…`).
+
+- C015 (`sections[1].paragraphs[0]`) : phrase retirée en entier — « Pour se représenter les autres,
+  on peut penser, à titre d'illustration, à l'habitude prise dans un service ou à une règle de
+  métier que personne n'a jamais écrite. » Aucun support du pack ne range l'habitude d'un service
+  ni la règle de métier non écrite parmi les normes antécédentes ; le marquage « à titre
+  d'illustration » ne suffisait pas, la classification restant affirmée. Ni borner ni réattribuer
+  n'était possible sans matière ; le retrait est la correction minimale. Le paragraphe s'arrête
+  désormais sur « La consigne officielle en est une, sans être la seule. »
+- Aucun autre passage touché, aucune affirmation ajoutée, `limits` inchangé.
+- Mots lecteur : 1418 après correction (−27 environ par rapport à la version soumise).
+- `npm run corpus:deepen -- --check --only=debat-de-normes` : PASS.
+- SHA modifié : la version doit repartir à PREPARE. Pas d'auto-validation.
