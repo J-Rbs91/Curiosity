@@ -1,0 +1,23 @@
+{
+  "protocol_version": 2,
+  "concept_id": "definition-de-la-psychologie-economique",
+  "candidate_sha256": "9eb5dcc64bd8514d958a6c26d9ceaba411469534e85a46bbbdc51dd51d866c01",
+  "verdict": "FACTCHECK_FAIL",
+  "claims": 65,
+  "supported": 63,
+  "failed": 2,
+  "mapping_incomplete": [],
+  "structural_errors": [],
+  "failures": [
+    {
+      "claim_id": "C046",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis etablissent qu'Albou reconnait la filiation ('issue de la psychologie sociale', $.summary, $.review.notes[3]) ; ils ne portent pas qu'il 'ne renie rien' a l'egard de la psychologie sociale, et $.definition_de_lauteur, cite pour ce claim, porte au contraire son refus de l'imperialisme psychosocial. L'absolu 'rien' excede la reconnaissance de l'origine."
+    },
+    {
+      "claim_id": "C054",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis situent cette histoire autant dans le corps du texte que dans les notes : $.reserves[6] dit que les millesimes viennent du corps de la page 199, relu a l'image, et non des notes 8-9, lues seulement sur l'OCR ; $.review.notes[0] porte aussi la reprise dans le corps p. 204 (Conclusions). 'Il la raconte en notes' restreint et deplace la localisation."
+    }
+  ]
+}
