@@ -1,6 +1,6 @@
 ---
-description: Enrichir Curiosity : découvrir et exploiter des sources, publier de nouvelles cartes et améliorer les approfondissements utiles.
-argument-hint: [thème, concept ou priorité facultative]
+description: "Enrichir Curiosity : découvrir et exploiter des sources, publier de nouvelles cartes et améliorer les approfondissements utiles."
+argument-hint: "[thème, concept ou priorité facultative]"
 allowed-tools: Task, Read, Write, Edit, Glob, Grep, Bash
 ---
 
