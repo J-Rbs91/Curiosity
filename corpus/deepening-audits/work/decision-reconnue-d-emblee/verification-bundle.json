@@ -1,19 +1,19 @@
 {
   "protocol_version": 2,
   "concept_id": "decision-reconnue-d-emblee",
-  "candidate_sha256": "baf3ac8f1614c40d5e53fa666e2a2975fb90a4f939980573ea9d05ebd6174297",
-  "map_sha256": "d5bead25da986d8d36dcbb001d60135d85d4389293c69f41767ec45cbd5966cd",
+  "candidate_sha256": "8b240315cb6bd20ec719f3e8432430ce6e2db2f0b621dab2aee960fab6119d2a",
+  "map_sha256": "dc918dc0021d2c80b0ab5ecc5927be6d0cd64ab190ab45d051319ceba85a8bf0",
   "signal_notice": "uncited_support_signal ne nomme que des appuis non cités par le mapping dont le texte porte un terme que le pack ne présente nulle part ailleurs. Ce n'est ni un verdict ni une preuve : le texte de ces appuis n'est volontairement pas fourni, et aucun claim ne peut être crédité par eux. Le seul usage autorisé est le verdict MAPPING_INCOMPLETE, qui renvoie le claim au mapping sans se prononcer sur sa vérité. Un signal vide n'atteste rien : un appui peut autoriser un claim sans partager un seul de ses mots.",
   "signal_lexique": {
     "cartes_mesurees": 136,
     "plafond_cartes_par_terme": 13,
-    "termes_generiques": 783
+    "termes_generiques": 782
   },
   "claims": [
     {
       "claim_id": "C001",
       "locator": "lead[0]",
-      "claim_text": "Il y a une image du choix que tout le monde a en tête : on dresse la liste des possibilités, on les met côte à côte, on pèse, on garde la meilleure.",
+      "claim_text": "Il y a une image du choix à laquelle des chercheurs avaient été formés : décider, ce serait nécessairement comparer des options entre elles.",
       "supports": [
         {
           "id": "SUP-8db37978bf1daa45",
@@ -38,19 +38,19 @@
           "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         },
         {
-          "id": "SUP-154b6ab10ed2ea93",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[3].citation",
-          "access": "metadata-only",
-          "text": "Klein, G. A., Calderwood, R. & Clinton-Cirocco, A. (1986). Rapid decision making on the fire ground. Proceedings of the Human Factors Society Annual Meeting, 30(6), 576-580. Étude fondatrice sur les chefs d'intervention sur incendie, à laquelle renvoie la note 16 du rapport de 1993. Notice relevée, texte non ouvert : Unpaywall répond is_oa false, oa_status closed."
-        },
-        {
           "id": "SUP-331864831e3f9e29",
           "origin": "validated",
           "path": "$.sources[2].label",
           "access": "metadata-only",
           "text": "Gary A. Klein, Roberta Calderwood et Anne Clinton-Cirocco, « Rapid decision making on the fire ground », Proceedings of the Human Factors Society Annual Meeting, vol. 30, n° 6, 1986, p. 576-580. Étude fondatrice, fermée.",
           "access_corroboration": "corrobore"
+        },
+        {
+          "id": "SUP-154b6ab10ed2ea93",
+          "origin": "evidence:lecture.json",
+          "path": "$.sources_ouvertes[3].citation",
+          "access": "metadata-only",
+          "text": "Klein, G. A., Calderwood, R. & Clinton-Cirocco, A. (1986). Rapid decision making on the fire ground. Proceedings of the Human Factors Society Annual Meeting, 30(6), 576-580. Étude fondatrice sur les chefs d'intervention sur incendie, à laquelle renvoie la note 16 du rapport de 1993. Notice relevée, texte non ouvert : Unpaywall répond is_oa false, oa_status closed."
         }
       ],
       "uncited_support_signal": []
@@ -75,18 +75,18 @@
           "text": "Le constat qui ouvre le chapitre 3 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. » Les chefs d'intervention interrogés soutenaient n'avoir jamais cherché à savoir si une option valait mieux qu'une autre."
         },
         {
-          "id": "SUP-9ce8e3faeb7cc3e6",
-          "origin": "evidence:lecture.json",
+          "id": "SUP-fc665f9e6c697905",
+          "origin": "validated",
           "path": "$.quotation.text",
           "access": "n/a",
           "text": "Les premières études portaient sur des chefs d'intervention sur incendie. […] ils soutenaient qu'ils ne comparaient presque jamais d'options."
         },
         {
-          "id": "SUP-6921fe95d302e159",
+          "id": "SUP-9ce8e3faeb7cc3e6",
           "origin": "evidence:lecture.json",
-          "path": "$.quotation.original_text",
+          "path": "$.quotation.text",
           "access": "n/a",
-          "text": "The initial studies were done with fireground commanders. […] they insisted that they hardly ever compared options."
+          "text": "Les premières études portaient sur des chefs d'intervention sur incendie. […] ils soutenaient qu'ils ne comparaient presque jamais d'options."
         }
       ],
       "uncited_support_signal": []
@@ -111,15 +111,15 @@
           "text": "CITATION — vérifiée dans le texte primaire, ouvert par moi. Téléchargement local : curl -L https://archive.org/download/DTIC_ADA492114/DTIC_ADA492114.pdf → HTTP 200, 16 307 558 octets, 192 folios PDF. Le folio PDF 51 porte l'en-tête imprimé « 32 NDM - Implications for Design » : la pagination imprimée annoncée (p. 32) est donc exacte, offset +19 sur le folio du fichier. On y lit l'encadré « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », puis : « The RPD model16 was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong—they insisted that they hardly ever compared options. » L'original_text de la fiche reprend mot pour mot la première et la dernière proposition, et la coupe […] recouvre exactement ce que la note de traduction annonce qu'elle recouvre (les deux phrases intermédiaires plus le tiret cadratin qui suit « We were wrong »). Aucune autre altération."
         },
         {
-          "id": "SUP-c0e7e4db7db8755b",
-          "origin": "evidence:lecture.json",
+          "id": "SUP-03a076fc864ec77f",
+          "origin": "validated",
           "path": "$.quotation.translation.translator",
           "access": "n/a",
           "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 18 août 2026. Aucune traduction française publiée de ce rapport n'a été identifiée. Quatre choix à signaler. Premièrement, la coupe : elle remplace « We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong » et la ponctuation qui suit. Elle ne retourne pas le sens, elle enlève l'attente déçue des chercheurs et garde le constat ; la phrase d'origine complète est dans original_text sous sa forme coupée, et le passage entier figure dans definition_de_lauteur. Deuxièmement, « fireground commanders » est rendu par « chefs d'intervention sur incendie » : « commandant des opérations de secours » est le terme doctrinal français actuel, anachronique et opaque ici, et « pompiers » perdrait la fonction de commandement, qui est tout le sujet du passage. Troisièmement, « they insisted that » est rendu par « ils soutenaient que » et non par « ils insistaient » : chez Klein le verbe marque que les pompiers maintiennent leur version contre l'attente des chercheurs, ce que « soutenir » rend et « insister » affaiblit. Quatrièmement, « The initial studies were done with » est rendu par « Les premières études portaient sur », le passif anglais n'ayant pas d'équivalent naturel en français ici."
         },
         {
-          "id": "SUP-03a076fc864ec77f",
-          "origin": "validated",
+          "id": "SUP-c0e7e4db7db8755b",
+          "origin": "evidence:lecture.json",
           "path": "$.quotation.translation.translator",
           "access": "n/a",
           "text": "Traduction interne non publiée (agent lecteur, chaîne Curiosity), 18 août 2026. Aucune traduction française publiée de ce rapport n'a été identifiée. Quatre choix à signaler. Premièrement, la coupe : elle remplace « We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong » et la ponctuation qui suit. Elle ne retourne pas le sens, elle enlève l'attente déçue des chercheurs et garde le constat ; la phrase d'origine complète est dans original_text sous sa forme coupée, et le passage entier figure dans definition_de_lauteur. Deuxièmement, « fireground commanders » est rendu par « chefs d'intervention sur incendie » : « commandant des opérations de secours » est le terme doctrinal français actuel, anachronique et opaque ici, et « pompiers » perdrait la fonction de commandement, qui est tout le sujet du passage. Troisièmement, « they insisted that » est rendu par « ils soutenaient que » et non par « ils insistaient » : chez Klein le verbe marque que les pompiers maintiennent leur version contre l'attente des chercheurs, ce que « soutenir » rend et « insister » affaiblit. Quatrièmement, « The initial studies were done with » est rendu par « Les premières études portaient sur », le passif anglais n'ayant pas d'équivalent naturel en français ici."
@@ -159,7 +159,7 @@
     {
       "claim_id": "C006",
       "locator": "lead[1]",
-      "claim_text": "Le modèle qu’ils ont tiré de ces entretiens",
+      "claim_text": "Le modèle qu’ils ont tiré de ces entretiens ne dit pas que l’expert compare plus vite, ni qu’il compare mieux, mais qu’il ne compare pas",
       "supports": [
         {
           "id": "SUP-8db37978bf1daa45",
@@ -169,26 +169,11 @@
           "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         },
         {
-          "id": "SUP-404746815dcb574a",
-          "origin": "evidence:lecture.json",
-          "path": "$.attribution.note",
+          "id": "SUP-a3ad097cbcfad0ae",
+          "origin": "validated",
+          "path": "$.summary",
           "access": "n/a",
-          "text": "Le rapport ouvert porte une seule signature, et je l'ai relevée sur le document lui-même, pas sur une notice : la couverture (page 1 du fichier) porte « Gary Klein, PD.D. » sous le titre, coquille de composition pour Ph.D. ; la page de titre (page 3) porte « Gary Klein, Ph.D. / Klein Associates Inc. / Fairborn, OH / April 1993 » ; et le bloc 6 « AUTHOR(S) » du formulaire SF 298 (page 2) ne donne que « Gary Klein, Ph.D. ». Aucun coauteur nulle part. J'ai contrôlé la page de titre en image, pas seulement sur la couche OCR, et le millésime avril 1993 y est imprimé : c'est une date lue sur le document, pas déduite d'une notice. Ce que Klein s'attribue en propre est le modèle RPD, et il l'écrit au « nous » de son équipe, p. 32 : « We derived the RPD model from what they told us. » Ce qu'il rapporte au collectif est d'un autre niveau, et il ne faut pas confondre les deux : le champ de la « naturalistic decision making » est présenté p. 19 et p. 20 comme un mouvement à plusieurs, avec Payne (1976), Beach et Mitchell (1978), Rasmussen (1985), Wohl (1981), Hammond, Shanteau et Phelps (1977), Noble, Boehm-Davis et Grosz (1986), Pennington et Hastie (1981), Beach (1990) et Lipshitz (1989), le renvoi pour le détail étant « (See Klein, Orasanu, Calderwood, & Zsambok, 1993, for more detailed accounts of all this work.) ». Sur ce point je corrige la fiche de repérage : le rapport ne dit nulle part que ces quatre noms ont organisé la conférence fondatrice de 1989. Ils n'apparaissent ensemble que comme les quatre directeurs de l'ouvrage Decision Making in Action: Models and Methods (Ablex, 1993), aux notes 9 et 23 et dans la bibliographie. Ce que le rapport dit de la conférence de 1989 tient en deux endroits distincts : les remerciements (page 9 du fichier) en attribuent le financement à l'U.S. Army Research Institute, et la notice « About the author » (page 10), rédigée à la troisième personne et donc vraisemblablement pas de la main de Klein, écrit que sa société l'a accueillie. Le nom du champ n'est donc la propriété de personne ; la carte porte sur le modèle, pas sur le champ. Deux antériorités, enfin, qu'il ne faut pas effacer derrière le seul nom de Klein. La note 16, appelée par la première phrase de l'exemple 3.2, renvoie à trois textes de lui : Klein (1992), Klein (1989) et Klein, Calderwood et Clinton-Cirocco (1986). Ce dernier est cosigné : c'est l'étude fondatrice sur les chefs d'intervention sur incendie, et son titre, « Rapid decision making on the fire ground », ne porte pas encore le nom du modèle. La plus ancienne occurrence du nom que j'aie pu vérifier sur un document primaire est elle aussi cosignée : Gary A. Klein et Donald MacGregor, Knowledge Elicitation of Recognition-Primed Decision Making, ARI Technical Report 799, juillet 1988, où on lit p. 17, souligné dans le texte : « This model we term Recognition-Primed Decision Making, (RPD). » J'ai lu cette page en image. Le rapport de 1993 ne date lui-même à aucun endroit la première formulation du modèle ni celle du terme : si la carte avance un millésime d'origine, il devra venir d'un texte ouvert, pas de celui-ci."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C007",
-      "locator": "lead[1]",
-      "claim_text": "ne dit pas que l’expert compare plus vite, ni qu’il compare mieux, mais qu’il ne compare pas",
-      "supports": [
-        {
-          "id": "SUP-8db37978bf1daa45",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
+          "text": "L'expert reconnaît la dynamique d'une situation, en tire d'emblée une conduite plausible, puis l'évalue en l'imaginant se dérouler : il ne compare pas deux options."
         },
         {
           "id": "SUP-018064faf6ec991f",
@@ -196,19 +181,12 @@
           "path": "$.review.notes[10]",
           "access": "n/a",
           "text": "PROSE — contrôle du sens inverse (débordement / rétrécissement). Le catégorique « il ne compare pas deux options » et l'accroche « sans jamais comparer deux options » ne durcissent pas Klein : c'est son propre énoncé du modèle, « developed to describe how people can make good decisions without ever comparing options » (p. 32) et « describe how decision makers can settle on a CoA without considering any others » (p. 36). Le report sur « l'expert » est lui aussi le sien : la même p. 32 réserve la comparaison d'options aux novices (« there are times to compare options, particularly for novices »). Symétriquement, le résumé ne rétrécit pas le concept : il reprend la version simple que Klein donne lui-même comme définition du modèle, et l'évaluation par simulation mentale — la part la plus facile à perdre — y est conservée."
-        },
-        {
-          "id": "SUP-54e927d3401bdfa5",
-          "origin": "evidence:lecture.json",
-          "path": "$.reserves[6]",
-          "access": "n/a",
-          "text": "Proximité avec la carte validée sur la rationalité limitée de Simon, signalée par le repérage et vérifiée ici : elle est réelle, et c'est Klein qui l'écrit. P. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) » ; p. 27 : « Simon (1955) was the first to make this distinction ». La conséquence pour la carte est double. Le satisficing n'est pas de Klein et ne doit pas lui être porté au crédit. Et l'objet du modèle RPD n'est pas celui de Simon : Simon dit qu'on s'arrête à une solution suffisante faute de pouvoir tout calculer, Klein dit que l'expert n'a même pas engendré de seconde option à comparer, parce que la reconnaissance de la situation lui a livré directement une conduite plausible. Recouvrir l'objet de la carte de Simon serait la faute la plus facile ici."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C008",
+      "claim_id": "C007",
       "locator": "lead[1]",
       "claim_text": "la reconnaissance de ce qui se passe devant lui lui livre directement une manière de faire.",
       "supports": [
@@ -232,12 +210,33 @@
           "path": "$.notes[6]",
           "access": "n/a",
           "text": "Proximité avec la carte validée sur la rationalité limitée, et faute à ne pas commettre : Simon dit qu'on s'arrête à une solution suffisante faute de pouvoir tout calculer ; Klein dit que l'expert n'a même pas engendré de seconde option à comparer, la reconnaissance de la situation lui ayant livré directement une conduite plausible."
+        },
+        {
+          "id": "SUP-a3ad097cbcfad0ae",
+          "origin": "validated",
+          "path": "$.summary",
+          "access": "n/a",
+          "text": "L'expert reconnaît la dynamique d'une situation, en tire d'emblée une conduite plausible, puis l'évalue en l'imaginant se dérouler : il ne compare pas deux options."
         }
       ],
       "uncited_support_signal": []
     },
     {
+      "claim_id": "C008",
+      "locator": "lead[1]",
+      "claim_text": "Reste une objection immédiate, et c’est elle qui rend le modèle intéressant.",
+      "supports": [],
+      "uncited_support_signal": []
+    },
+    {
       "claim_id": "C009",
+      "locator": "lead[1]",
+      "claim_text": "Une conduite qu’on n’a mise en balance avec rien peut être mauvaise.",
+      "supports": [],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C010",
       "locator": "lead[1]",
       "claim_text": "Le modèle y répond, et sa réponse tient dans un second temps.",
       "supports": [
@@ -259,9 +258,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C010",
+      "claim_id": "C011",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Dans un rapport de synthèse publié en 1993",
+      "claim_text": "Dans un rapport de synthèse publié en 1993, Klein ouvre son chapitre sur la décision en milieu réel par une phrase-bilan",
       "supports": [
         {
           "id": "SUP-83621dd3fc27327d",
@@ -284,15 +283,7 @@
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Le rapport ouvert porte une seule signature, et je l'ai relevée sur le document lui-même, pas sur une notice : la couverture (page 1 du fichier) porte « Gary Klein, PD.D. » sous le titre, coquille de composition pour Ph.D. ; la page de titre (page 3) porte « Gary Klein, Ph.D. / Klein Associates Inc. / Fairborn, OH / April 1993 » ; et le bloc 6 « AUTHOR(S) » du formulaire SF 298 (page 2) ne donne que « Gary Klein, Ph.D. ». Aucun coauteur nulle part. J'ai contrôlé la page de titre en image, pas seulement sur la couche OCR, et le millésime avril 1993 y est imprimé : c'est une date lue sur le document, pas déduite d'une notice. Ce que Klein s'attribue en propre est le modèle RPD, et il l'écrit au « nous » de son équipe, p. 32 : « We derived the RPD model from what they told us. » Ce qu'il rapporte au collectif est d'un autre niveau, et il ne faut pas confondre les deux : le champ de la « naturalistic decision making » est présenté p. 19 et p. 20 comme un mouvement à plusieurs, avec Payne (1976), Beach et Mitchell (1978), Rasmussen (1985), Wohl (1981), Hammond, Shanteau et Phelps (1977), Noble, Boehm-Davis et Grosz (1986), Pennington et Hastie (1981), Beach (1990) et Lipshitz (1989), le renvoi pour le détail étant « (See Klein, Orasanu, Calderwood, & Zsambok, 1993, for more detailed accounts of all this work.) ». Sur ce point je corrige la fiche de repérage : le rapport ne dit nulle part que ces quatre noms ont organisé la conférence fondatrice de 1989. Ils n'apparaissent ensemble que comme les quatre directeurs de l'ouvrage Decision Making in Action: Models and Methods (Ablex, 1993), aux notes 9 et 23 et dans la bibliographie. Ce que le rapport dit de la conférence de 1989 tient en deux endroits distincts : les remerciements (page 9 du fichier) en attribuent le financement à l'U.S. Army Research Institute, et la notice « About the author » (page 10), rédigée à la troisième personne et donc vraisemblablement pas de la main de Klein, écrit que sa société l'a accueillie. Le nom du champ n'est donc la propriété de personne ; la carte porte sur le modèle, pas sur le champ. Deux antériorités, enfin, qu'il ne faut pas effacer derrière le seul nom de Klein. La note 16, appelée par la première phrase de l'exemple 3.2, renvoie à trois textes de lui : Klein (1992), Klein (1989) et Klein, Calderwood et Clinton-Cirocco (1986). Ce dernier est cosigné : c'est l'étude fondatrice sur les chefs d'intervention sur incendie, et son titre, « Rapid decision making on the fire ground », ne porte pas encore le nom du modèle. La plus ancienne occurrence du nom que j'aie pu vérifier sur un document primaire est elle aussi cosignée : Gary A. Klein et Donald MacGregor, Knowledge Elicitation of Recognition-Primed Decision Making, ARI Technical Report 799, juillet 1988, où on lit p. 17, souligné dans le texte : « This model we term Recognition-Primed Decision Making, (RPD). » J'ai lu cette page en image. Le rapport de 1993 ne date lui-même à aucun endroit la première formulation du modèle ni celle du terme : si la carte avance un millésime d'origine, il devra venir d'un texte ouvert, pas de celui-ci."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C011",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Klein ouvre son chapitre sur la décision en milieu réel par une phrase-bilan : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. »",
-      "supports": [
+        },
         {
           "id": "SUP-8db37978bf1daa45",
           "origin": "evidence:lecture.json",
@@ -301,18 +292,18 @@
           "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         },
         {
-          "id": "SUP-f4b1e57cb35e87bc",
-          "origin": "validated",
-          "path": "$.notes[0]",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. » Les chefs d'intervention interrogés soutenaient n'avoir jamais cherché à savoir si une option valait mieux qu'une autre."
-        },
-        {
           "id": "SUP-5865b51f11e42cc7",
           "origin": "validated",
           "path": "$.review.notes[1]",
           "access": "n/a",
           "text": "CITATION — appartenance au chapitre 3 établie par le texte lui-même : folio PDF 33 (p. imprimée 14) annonce « Chapter 2 describes what the NDM approach is, and Chapter 3 covers how people make decisions in operational settings » ; le chapitre « HOW PEOPLE MAKE DECISIONS IN NATURALISTIC SETTINGS » s'ouvre au folio PDF 42 (p. imprimée 23) et sa titraille courante couvre la p. 32. Le locator « Chapitre 3, exemple 3.2, p. 32 » (30 caractères) est donc juste tel qu'il s'affiche."
+        },
+        {
+          "id": "SUP-f4b1e57cb35e87bc",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "Le constat qui ouvre le chapitre 3 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. » Les chefs d'intervention interrogés soutenaient n'avoir jamais cherché à savoir si une option valait mieux qu'une autre."
         }
       ],
       "uncited_support_signal": []
@@ -320,7 +311,7 @@
     {
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Le résultat le plus important de ces recherches, écrit-il, est que dans les cas réels les gens ne comparaient presque jamais d’options.",
+      "claim_text": "« The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. »",
       "supports": [
         {
           "id": "SUP-8db37978bf1daa45",
@@ -342,15 +333,30 @@
     {
       "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "NDM abrège naturalistic decision making, le courant de recherche dont ce rapport dresse l’état.",
+      "claim_text": "Le résultat le plus important de ces recherches, écrit-il, est que dans les cas réels les gens ne comparaient presque jamais d’options.",
       "supports": [
         {
-          "id": "SUP-aa4d6ad95061fa9f",
+          "id": "SUP-8db37978bf1daa45",
           "origin": "evidence:lecture.json",
-          "path": "$.reserves[5]",
+          "path": "$.definition_de_lauteur",
           "access": "n/a",
-          "text": "Périmètre, frontière avec decision-science, testée sur le texte comme demandé et non par analogie. Le rapport pose lui-même la coupure, dans le résumé de direction, page 6 du fichier, sous l'intitulé BOUNDS : « This SOAR does NOT provide a detailed review of the decision-making literature of the past 35 years, since that research literature has focused on laboratory studies that usually control out some of the important variables found in operational settings, e.g., high stakes, changing conditions, time pressure, and highly experienced participants. » Le tableau 2, p. 17, énumère les dix traits d'une tâche de décision naturaliste : pression temporelle, buts mal définis, conditions dynamiques et buts changeants, information inadéquate, apprentissage d'indices, décideurs expérimentés, coordination d'équipe, contexte, procédures mal définies, enjeux élevés. C'est bien la cognition d'un opérateur dans une tâche réelle sous contrainte de temps, donc human-factors, et non la théorie du choix. Deux nuances honnêtes cependant. D'une part, la définition du champ donnée p. 15 déborde le travail : « Naturalistic Decision Making (NDM) is the study of how people make decisions in the workplace and in their personal lives. » D'autre part, le chapitre 5 illustre l'évaluation comparative par des exemples franchement hors périmètre, acheter une voiture, choisir une maison, choisir une université (p. 51 et 52). Or ces exemples sont précisément le repoussoir du modèle RPD, pas son objet : ils relèvent de decision-science et doivent rester en angle mort. La carte ne doit rien en reprendre."
+          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         },
+        {
+          "id": "SUP-f4b1e57cb35e87bc",
+          "origin": "validated",
+          "path": "$.notes[0]",
+          "access": "n/a",
+          "text": "Le constat qui ouvre le chapitre 3 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. » Les chefs d'intervention interrogés soutenaient n'avoir jamais cherché à savoir si une option valait mieux qu'une autre."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C014",
+      "locator": "sections[0].paragraphs[0]",
+      "claim_text": "NDM abrège naturalistic decision making, le courant de recherche dont ce rapport dresse l’état.",
+      "supports": [
         {
           "id": "SUP-83621dd3fc27327d",
           "origin": "validated",
@@ -372,12 +378,19 @@
           "path": "$.attribution.note",
           "access": "n/a",
           "text": "Le rapport ouvert porte une seule signature, et je l'ai relevée sur le document lui-même, pas sur une notice : la couverture (page 1 du fichier) porte « Gary Klein, PD.D. » sous le titre, coquille de composition pour Ph.D. ; la page de titre (page 3) porte « Gary Klein, Ph.D. / Klein Associates Inc. / Fairborn, OH / April 1993 » ; et le bloc 6 « AUTHOR(S) » du formulaire SF 298 (page 2) ne donne que « Gary Klein, Ph.D. ». Aucun coauteur nulle part. J'ai contrôlé la page de titre en image, pas seulement sur la couche OCR, et le millésime avril 1993 y est imprimé : c'est une date lue sur le document, pas déduite d'une notice. Ce que Klein s'attribue en propre est le modèle RPD, et il l'écrit au « nous » de son équipe, p. 32 : « We derived the RPD model from what they told us. » Ce qu'il rapporte au collectif est d'un autre niveau, et il ne faut pas confondre les deux : le champ de la « naturalistic decision making » est présenté p. 19 et p. 20 comme un mouvement à plusieurs, avec Payne (1976), Beach et Mitchell (1978), Rasmussen (1985), Wohl (1981), Hammond, Shanteau et Phelps (1977), Noble, Boehm-Davis et Grosz (1986), Pennington et Hastie (1981), Beach (1990) et Lipshitz (1989), le renvoi pour le détail étant « (See Klein, Orasanu, Calderwood, & Zsambok, 1993, for more detailed accounts of all this work.) ». Sur ce point je corrige la fiche de repérage : le rapport ne dit nulle part que ces quatre noms ont organisé la conférence fondatrice de 1989. Ils n'apparaissent ensemble que comme les quatre directeurs de l'ouvrage Decision Making in Action: Models and Methods (Ablex, 1993), aux notes 9 et 23 et dans la bibliographie. Ce que le rapport dit de la conférence de 1989 tient en deux endroits distincts : les remerciements (page 9 du fichier) en attribuent le financement à l'U.S. Army Research Institute, et la notice « About the author » (page 10), rédigée à la troisième personne et donc vraisemblablement pas de la main de Klein, écrit que sa société l'a accueillie. Le nom du champ n'est donc la propriété de personne ; la carte porte sur le modèle, pas sur le champ. Deux antériorités, enfin, qu'il ne faut pas effacer derrière le seul nom de Klein. La note 16, appelée par la première phrase de l'exemple 3.2, renvoie à trois textes de lui : Klein (1992), Klein (1989) et Klein, Calderwood et Clinton-Cirocco (1986). Ce dernier est cosigné : c'est l'étude fondatrice sur les chefs d'intervention sur incendie, et son titre, « Rapid decision making on the fire ground », ne porte pas encore le nom du modèle. La plus ancienne occurrence du nom que j'aie pu vérifier sur un document primaire est elle aussi cosignée : Gary A. Klein et Donald MacGregor, Knowledge Elicitation of Recognition-Primed Decision Making, ARI Technical Report 799, juillet 1988, où on lit p. 17, souligné dans le texte : « This model we term Recognition-Primed Decision Making, (RPD). » J'ai lu cette page en image. Le rapport de 1993 ne date lui-même à aucun endroit la première formulation du modèle ni celle du terme : si la carte avance un millésime d'origine, il devra venir d'un texte ouvert, pas de celui-ci."
+        },
+        {
+          "id": "SUP-aa4d6ad95061fa9f",
+          "origin": "evidence:lecture.json",
+          "path": "$.reserves[5]",
+          "access": "n/a",
+          "text": "Périmètre, frontière avec decision-science, testée sur le texte comme demandé et non par analogie. Le rapport pose lui-même la coupure, dans le résumé de direction, page 6 du fichier, sous l'intitulé BOUNDS : « This SOAR does NOT provide a detailed review of the decision-making literature of the past 35 years, since that research literature has focused on laboratory studies that usually control out some of the important variables found in operational settings, e.g., high stakes, changing conditions, time pressure, and highly experienced participants. » Le tableau 2, p. 17, énumère les dix traits d'une tâche de décision naturaliste : pression temporelle, buts mal définis, conditions dynamiques et buts changeants, information inadéquate, apprentissage d'indices, décideurs expérimentés, coordination d'équipe, contexte, procédures mal définies, enjeux élevés. C'est bien la cognition d'un opérateur dans une tâche réelle sous contrainte de temps, donc human-factors, et non la théorie du choix. Deux nuances honnêtes cependant. D'une part, la définition du champ donnée p. 15 déborde le travail : « Naturalistic Decision Making (NDM) is the study of how people make decisions in the workplace and in their personal lives. » D'autre part, le chapitre 5 illustre l'évaluation comparative par des exemples franchement hors périmètre, acheter une voiture, choisir une maison, choisir une université (p. 51 et 52). Or ces exemples sont précisément le repoussoir du modèle RPD, pas son objet : ils relèvent de decision-science et doivent rester en angle mort. La carte ne doit rien en reprendre."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C015",
       "locator": "sections[0].paragraphs[0]",
       "claim_text": "Le modèle porte un nom anglais, Recognition-Primed Decision, abrégé RPD : une décision amorcée par la reconnaissance.",
       "supports": [
@@ -389,15 +402,15 @@
           "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         },
         {
-          "id": "SUP-63bffcf2a81ef33d",
-          "origin": "evidence:lecture.json",
+          "id": "SUP-a001b81ef78543be",
+          "origin": "validated",
           "path": "$.quotation.reference",
           "access": "n/a",
           "text": "Gary Klein, Naturalistic Decision Making: Implications for Design, State-of-the-Art Report SOAR CSERIAC 93-01, Crew System Ergonomics Information Analysis Center, avril 1993, chapitre 3, encadré « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32. Rapport DTIC ADA492114, DOI 10.21236/ada492114."
         },
         {
-          "id": "SUP-a001b81ef78543be",
-          "origin": "validated",
+          "id": "SUP-63bffcf2a81ef33d",
+          "origin": "evidence:lecture.json",
           "path": "$.quotation.reference",
           "access": "n/a",
           "text": "Gary Klein, Naturalistic Decision Making: Implications for Design, State-of-the-Art Report SOAR CSERIAC 93-01, Crew System Ergonomics Information Analysis Center, avril 1993, chapitre 3, encadré « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32. Rapport DTIC ADA492114, DOI 10.21236/ada492114."
@@ -406,9 +419,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C016",
       "locator": "sections[0].paragraphs[0]",
-      "claim_text": "Ce nom figure déjà en 1986 dans le résumé de l’étude sur les chefs d’intervention",
+      "claim_text": "Ce nom figure déjà en 1986 dans le résumé de l’étude sur les chefs d’intervention, que Klein cosigne avec Roberta Calderwood et Anne Clinton-Cirocco",
       "supports": [
         {
           "id": "SUP-6bbdb7fa7b7126d2",
@@ -438,50 +451,6 @@
           "path": "$.sources_ouvertes[3].citation",
           "access": "metadata-only",
           "text": "Klein, G. A., Calderwood, R. & Clinton-Cirocco, A. (1986). Rapid decision making on the fire ground. Proceedings of the Human Factors Society Annual Meeting, 30(6), 576-580. Étude fondatrice sur les chefs d'intervention sur incendie, à laquelle renvoie la note 16 du rapport de 1993. Notice relevée, texte non ouvert : Unpaywall répond is_oa false, oa_status closed."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
-      "claim_id": "C016",
-      "locator": "sections[0].paragraphs[0]",
-      "claim_text": "que Klein cosigne avec Roberta Calderwood et Anne Clinton-Cirocco",
-      "supports": [
-        {
-          "id": "SUP-331864831e3f9e29",
-          "origin": "validated",
-          "path": "$.sources[2].label",
-          "access": "metadata-only",
-          "text": "Gary A. Klein, Roberta Calderwood et Anne Clinton-Cirocco, « Rapid decision making on the fire ground », Proceedings of the Human Factors Society Annual Meeting, vol. 30, n° 6, 1986, p. 576-580. Étude fondatrice, fermée.",
-          "access_corroboration": "corrobore"
-        },
-        {
-          "id": "SUP-154b6ab10ed2ea93",
-          "origin": "evidence:lecture.json",
-          "path": "$.sources_ouvertes[3].citation",
-          "access": "metadata-only",
-          "text": "Klein, G. A., Calderwood, R. & Clinton-Cirocco, A. (1986). Rapid decision making on the fire ground. Proceedings of the Human Factors Society Annual Meeting, 30(6), 576-580. Étude fondatrice sur les chefs d'intervention sur incendie, à laquelle renvoie la note 16 du rapport de 1993. Notice relevée, texte non ouvert : Unpaywall répond is_oa false, oa_status closed."
-        },
-        {
-          "id": "SUP-6bbdb7fa7b7126d2",
-          "origin": "validated",
-          "path": "$.attribution_note",
-          "access": "n/a",
-          "text": "Le rapport de 1993 est signé de Gary Klein seul, et il rapporte le modèle au travail de son équipe : « We derived the RPD model from what they told us. » La paternité du modèle n'est pas disputée ; celle de son nom est cosignée, et elle est plus ancienne que ce rapport. Le nom figure déjà dans l'étude sur les chefs d'intervention sur incendie signée avec Roberta Calderwood et Anne Clinton-Cirocco, publiée en 1986, dont le résumé d'éditeur porte « A Recognition Primed Decision (RPD) model is proposed » ; et la mise en forme publiée en 2010 du rapport inédit de 1985, dont cette communication rendait compte, déclare que c'est cette étude qui avait identifié le modèle. Ce constat a sa limite : le corps de l'article de 1986 est fermé et n'a pas été lu, il repose sur ce résumé et sur cette déclaration. Le satisficing, enfin, n'est pas de Klein : il le rapporte à Simon."
-        },
-        {
-          "id": "SUP-d63433b821a334c8",
-          "origin": "validated",
-          "path": "$.review.notes[4]",
-          "access": "n/a",
-          "text": "ATTRIBUTION — le modèle et son nom reviennent bien à Klein, et la fiche ne les lui attribue pas seul en cachette. Appel de note 16 de l'encadré p. 32, résolu au folio PDF 157 (p. imprimée 146) : « 16. Klein, G. (1992); Klein, G.A. (1989); Klein, G.A., Calderwood, R., & Clinton-Cirocco, A. (1986). » Klein rapporte donc lui-même le modèle, entre autres, à l'article cosigné de 1986. La page de titre (folio PDF 1 et 3) et le formulaire SF298 (folio PDF 2) donnent « Gary Klein, Ph.D. » comme auteur unique du rapport de 1993 : la fiche a raison sur ce point."
-        },
-        {
-          "id": "SUP-b25fcf3efd7b171a",
-          "origin": "validated",
-          "path": "$.review.notes[8]",
-          "access": "n/a",
-          "text": "SOURCES — les quatre références résolvent, sans écart. (1) 1993 : SF298 au folio PDF 2 donne « April 1993 », « CSERIAC SOAR 93-1 » (la couverture, folio 1, porte « SOAR CSERIAC 93-01 », forme retenue par la fiche), « NUMBER OF PAGES 182 » — et l'index se termine effectivement à la p. imprimée 182 (folio PDF 192) ; folio PDF 3 : « Crew System Ergonomics Information Analysis Center, Wright-Patterson Air Force Base, Ohio ». verify_reference sur 10.21236/ada492114 : resolved, mismatches []. (2) 1988 : page de titre folio PDF 1 « Technical Report 799 / Knowledge Elicitation of Recognition-Primed Decision Making / Gary A. Klein, Klein Associates, Inc. / Donald MacGregor, MacGregor-Bates, Inc. / July 1988 », SF298 folio PDF 3 « PAGE COUNT 61 » — et le fichier fait 61 folios. verify_reference sur 10.21236/ada199076 : resolved, mismatches []. (3) 1986 : Crossref donne les trois auteurs dans l'ordre affiché, vol. 30, n° 6, p. 576-580, 1986-09, Proceedings of the Human Factors Society Annual Meeting — tout concorde ; « fermée » est exact (403 + Unpaywall closed). (4) 2001 : Crossref donne Lipshitz, Klein, Orasanu, Salas, JBDM 14(5), 331-352, 2001 — concorde. Les deux items Internet Archive sont sans restriction (archive.org/metadata/DTIC_ADA492114 et /DTIC_ADA199076 : « access-restricted-item » absent) et les deux URL de téléchargement rendent HTTP 200."
         }
       ],
       "uncited_support_signal": []
@@ -543,13 +512,6 @@
       "claim_text": "Il ne prétend pas pour autant que personne ne compare jamais.",
       "supports": [
         {
-          "id": "SUP-8db37978bf1daa45",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
-        },
-        {
           "id": "SUP-018064faf6ec991f",
           "origin": "validated",
           "path": "$.review.notes[10]",
@@ -570,13 +532,6 @@
           "path": "$.review.notes[10]",
           "access": "n/a",
           "text": "PROSE — contrôle du sens inverse (débordement / rétrécissement). Le catégorique « il ne compare pas deux options » et l'accroche « sans jamais comparer deux options » ne durcissent pas Klein : c'est son propre énoncé du modèle, « developed to describe how people can make good decisions without ever comparing options » (p. 32) et « describe how decision makers can settle on a CoA without considering any others » (p. 36). Le report sur « l'expert » est lui aussi le sien : la même p. 32 réserve la comparaison d'options aux novices (« there are times to compare options, particularly for novices »). Symétriquement, le résumé ne rétrécit pas le concept : il reprend la version simple que Klein donne lui-même comme définition du modèle, et l'évaluation par simulation mentale — la part la plus facile à perdre — y est conservée."
-        },
-        {
-          "id": "SUP-8db37978bf1daa45",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         }
       ],
       "uncited_support_signal": []
@@ -674,13 +629,6 @@
           "path": "$.reserves[4]",
           "access": "n/a",
           "text": "Traduction : un mot à surveiller si la carte reformule. « Recognize the dynamics of a situation » n'est pas « reconnaître une situation ». Le texte tranche lui-même, p. 33 et p. 37 : ce qui est reconnu, ce sont quatre choses à la fois, les buts réalisables, les indices pertinents, ce qu'il faut attendre de la suite, et la réaction typique. « Reconnaître la dynamique d'une situation » est le rendu juste ; « identifier une situation », « étiqueter une situation » ou « reconnaître un cas déjà vu » perdent l'anticipation, qui est ce qui distingue le modèle d'un simple appariement de formes. La citation retenue n'emploie pas cette expression, mais le résumé de la carte la traversera probablement."
-        },
-        {
-          "id": "SUP-2e288983e03ee9d4",
-          "origin": "validated",
-          "path": "$.review.notes[9]",
-          "access": "n/a",
-          "text": "PROSE — fidèle, contrôlée phrase à phrase contre la p. 32 que j'ai lue. Le résumé décalque l'énoncé de Klein : « The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » — « reconnaît la dynamique d'une situation » / « en tire une conduite plausible » / « l'évalue en l'imaginant se dérouler ». Le « d'emblée » est porté par la p. imprimée 36 (folio PDF 55) : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider »."
         }
       ],
       "uncited_support_signal": []
@@ -754,7 +702,7 @@
     {
       "claim_id": "C028",
       "locator": "sections[1].paragraphs[1]",
-      "claim_text": "Une reconnaissance de ce genre porte donc de quoi se corriger elle-même.",
+      "claim_text": "Une reconnaissance de ce genre porte donc de quoi signaler qu’elle s’est peut-être trompée.",
       "supports": [
         {
           "id": "SUP-8db37978bf1daa45",
@@ -978,7 +926,7 @@
     {
       "claim_id": "C040",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "Klein la rapporte à l’expérience",
+      "claim_text": "Reste à comprendre d’où vient la valeur de cette première conduite.",
       "supports": [
         {
           "id": "SUP-2e288983e03ee9d4",
@@ -986,13 +934,6 @@
           "path": "$.review.notes[9]",
           "access": "n/a",
           "text": "PROSE — fidèle, contrôlée phrase à phrase contre la p. 32 que j'ai lue. Le résumé décalque l'énoncé de Klein : « The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » — « reconnaît la dynamique d'une situation » / « en tire une conduite plausible » / « l'évalue en l'imaginant se dérouler ». Le « d'emblée » est porté par la p. imprimée 36 (folio PDF 55) : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider »."
-        },
-        {
-          "id": "SUP-8db37978bf1daa45",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
         }
       ],
       "uncited_support_signal": []
@@ -1000,7 +941,7 @@
     {
       "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
-      "claim_text": "« the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider », le modèle prévoit qu’un décideur expérimenté engendre une conduite plausible dès la première à laquelle il pense.",
+      "claim_text": "Klein la rapporte à l’expérience : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider »",
       "supports": [
         {
           "id": "SUP-2e288983e03ee9d4",
@@ -1015,6 +956,21 @@
     {
       "claim_id": "C042",
       "locator": "sections[3].paragraphs[0]",
+      "claim_text": "le modèle prévoit qu’un décideur expérimenté peut engendrer une conduite plausible dès la première à laquelle il pense.",
+      "supports": [
+        {
+          "id": "SUP-2e288983e03ee9d4",
+          "origin": "validated",
+          "path": "$.review.notes[9]",
+          "access": "n/a",
+          "text": "PROSE — fidèle, contrôlée phrase à phrase contre la p. 32 que j'ai lue. Le résumé décalque l'énoncé de Klein : « The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » — « reconnaît la dynamique d'une situation » / « en tire une conduite plausible » / « l'évalue en l'imaginant se dérouler ». Le « d'emblée » est porté par la p. imprimée 36 (folio PDF 55) : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider »."
+        }
+      ],
+      "uncited_support_signal": []
+    },
+    {
+      "claim_id": "C043",
+      "locator": "sections[3].paragraphs[0]",
       "claim_text": "CoA abrège course of action, la conduite à tenir.",
       "supports": [
         {
@@ -1023,29 +979,15 @@
           "path": "$.definition_de_lauteur",
           "access": "n/a",
           "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
-        },
-        {
-          "id": "SUP-eaff6ecaa1f3e991",
-          "origin": "validated",
-          "path": "$.notes[1]",
-          "access": "n/a",
-          "text": "Le modèle a deux composantes, appréciation de la situation et évaluation de l'option : « The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » Cette phrase, relevée par la cartographie, fait 199 caractères en anglais : la tronquer aurait fait s'arrêter le modèle à la reconnaissance."
         }
       ],
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[0]",
       "claim_text": "La plausibilité ne vient donc pas d’un tri opéré après coup : elle est déjà dans ce que la reconnaissance a produit.",
       "supports": [
-        {
-          "id": "SUP-8db37978bf1daa45",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
-        },
         {
           "id": "SUP-2e288983e03ee9d4",
           "origin": "validated",
@@ -1054,18 +996,18 @@
           "text": "PROSE — fidèle, contrôlée phrase à phrase contre la p. 32 que j'ai lue. Le résumé décalque l'énoncé de Klein : « The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » — « reconnaît la dynamique d'une situation » / « en tire une conduite plausible » / « l'évalue en l'imaginant se dérouler ». Le « d'emblée » est porté par la p. imprimée 36 (folio PDF 55) : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider »."
         },
         {
+          "id": "SUP-8db37978bf1daa45",
+          "origin": "evidence:lecture.json",
+          "path": "$.definition_de_lauteur",
+          "access": "n/a",
+          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
+        },
+        {
           "id": "SUP-54e927d3401bdfa5",
           "origin": "evidence:lecture.json",
           "path": "$.reserves[6]",
           "access": "n/a",
           "text": "Proximité avec la carte validée sur la rationalité limitée de Simon, signalée par le repérage et vérifiée ici : elle est réelle, et c'est Klein qui l'écrit. P. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) » ; p. 27 : « Simon (1955) was the first to make this distinction ». La conséquence pour la carte est double. Le satisficing n'est pas de Klein et ne doit pas lui être porté au crédit. Et l'objet du modèle RPD n'est pas celui de Simon : Simon dit qu'on s'arrête à une solution suffisante faute de pouvoir tout calculer, Klein dit que l'expert n'a même pas engendré de seconde option à comparer, parce que la reconnaissance de la situation lui a livré directement une conduite plausible. Recouvrir l'objet de la carte de Simon serait la faute la plus facile ici."
-        },
-        {
-          "id": "SUP-e5f63b6669cb46e5",
-          "origin": "validated",
-          "path": "$.notes[6]",
-          "access": "n/a",
-          "text": "Proximité avec la carte validée sur la rationalité limitée, et faute à ne pas commettre : Simon dit qu'on s'arrête à une solution suffisante faute de pouvoir tout calculer ; Klein dit que l'expert n'a même pas engendré de seconde option à comparer, la reconnaissance de la situation lui ayant livré directement une conduite plausible."
         }
       ],
       "uncited_support_signal": [
@@ -1080,7 +1022,7 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "Parmi ce que le modèle permet de décrire, Klein compte aussi la manière dont les décideurs peuvent être « poised to act », prêts à agir, au lieu de devoir attendre d’avoir achevé leurs comparaisons et leurs analyses.",
       "supports": [
@@ -1104,7 +1046,7 @@
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C046",
       "locator": "sections[3].paragraphs[1]",
       "claim_text": "sous forte pression de temps, celui qui n’a pas de comparaison à finir peut déjà donner un ordre quand un autre délibère encore.",
       "supports": [
@@ -1119,7 +1061,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Une confusion guette ici, et elle est facile.",
       "supports": [
@@ -1141,7 +1083,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "S’arrêter à une solution qui fait l’affaire plutôt que de chercher la meilleure porte un nom, satisficing",
       "supports": [
@@ -1165,7 +1107,7 @@
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "et ce nom n’est pas de Klein : il l’attribue lui-même à Simon, « Simon (1955) was the first to make this distinction »",
       "supports": [
@@ -1201,7 +1143,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[0]",
       "claim_text": "Klein range d’ailleurs son propre modèle parmi ces manières de faire qui se contentent d’une conduite viable, et il le dit dans le même rapport.",
       "supports": [
@@ -1216,7 +1158,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "L’objet des deux auteurs n’est pourtant pas le même.",
       "supports": [
@@ -1238,7 +1180,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Chez Simon, on s’arrête à une solution suffisante faute de pouvoir tout calculer.",
       "supports": [
@@ -1260,7 +1202,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[1]",
       "claim_text": "Chez Klein, l’expert n’a même pas engendré de seconde option à comparer, la reconnaissance de la situation lui ayant livré directement une conduite plausible.",
       "supports": [
@@ -1289,9 +1231,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C054",
       "locator": "sections[4].paragraphs[1]",
-      "claim_text": "l’un décrit une recherche qui s’arrête à ce qui suffit, l’autre une mise en concurrence qui n’a jamais commencé.",
+      "claim_text": "que l’un décrit une recherche qui s’arrête à ce qui suffit, l’autre une mise en concurrence qui n’a jamais commencé.",
       "supports": [
         {
           "id": "SUP-54e927d3401bdfa5",
@@ -1311,7 +1253,7 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C055",
       "locator": "sections[5].paragraphs[0]",
       "claim_text": "Le modèle est né du feu, il n’y est pas resté.",
       "supports": [
@@ -1333,31 +1275,9 @@
       "uncited_support_signal": []
     },
     {
-      "claim_id": "C055",
-      "locator": "sections[5].paragraphs[0]",
-      "claim_text": "Klein rapporte qu’il a été vérifié depuis dans d’autres domaines",
-      "supports": [
-        {
-          "id": "SUP-8db37978bf1daa45",
-          "origin": "evidence:lecture.json",
-          "path": "$.definition_de_lauteur",
-          "access": "n/a",
-          "text": "Le constat qui ouvre le chapitre 3, p. 23 : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. For example, Klein, Calderwood, and Clinton-Cirocco (1986) tried to find out how fireground commanders made decisions about how to deploy their crew members during the most difficult urban fires they had faced, but the commanders insisted that they never tried to figure out whether one option was better than another. For researchers trained to expect that decision making necessarily involved comparison between options, this was totally unexpected. How can skilled decision makers select effective courses of action without comparing options? » La réponse générale, même page, sous l'intertitre « SELECTING ACTIONS WITHOUT COMPARING OPTIONS » : « Research in NDM has shown that decision makers can use their experience to size up the situation, recognize it as typical in some ways, and identify the typical way of responding. Therefore, skilled decision makers may never have to consider more than one option. » Le modèle lui-même est posé dans un encadré, « Example 3.2 NDM: The Recognition-Primed Decision (RPD) model », p. 32, et il faut le lire en entier parce qu'il donne la définition et la manière dont elle a été trouvée dans le même souffle : « The RPD model was developed to describe how people can make good decisions without ever comparing options. The initial studies were done with fireground commanders. We expected that they would use their experience to cut down the number of options they compared, maybe just looking at two. We were wrong, they insisted that they hardly ever compared options. In our interviews with them about how they made tough decisions, we kept hearing about the same type of strategy. We derived the RPD model from what they told us. There are two components of the model, situation assessment and option evaluation. The RPD model asserts that decision makers recognize the dynamics of a situation, enabling them to identify a reasonable course of action, and this CoA is evaluated by imagining how it will be implemented. » (la ponctuation d'origine porte un tiret cadratin après « We were wrong », remplacé ici par une virgule ; la citation retenue ne comporte pas ce passage). Suit, même encadré, la définition de la simulation mentale : « One strategy fireground commanders use is to imagine carrying out the action. They run it through in their minds. [...] We have called this process \"mental simulation,\" because they are simulating the course of action in their heads, to see if it will work. » Ce que « recognize the dynamics of a situation » veut dire est explicité p. 33 et p. 37, et ce n'est pas « reconnaître une situation » : « When you recognize the dynamics of a situation, you know several important things. You know what goals make sense, so you don't waste your energy on foolish schemes. You know what cues are relevant, so you don't get overwhelmed by all the information. You know what to expect so you can be prepared, and also so you can notice surprises, which may mean your diagnosis was wrong. You know the typical ways of reacting, so you are poised to respond when necessary. » (p. 33), et « A decision maker who understands the dynamics of a situation knows four things: feasible goals, relevant cues, expectancies, and plausible CoAs. » (p. 37). Ce que le modèle vaut, en cinq points, p. 36 : « The value of the RPD model is to: explain how people can use experience to make decisions; describe how decision makers can use situation assessment to identify a CoA; describe how decision makers can settle on a CoA without considering any others; show how people using mental simulation can strengthen a CoA rather than choosing only from the set of original options; describe how decision makers can be poised to act, rather than having to wait to complete their comparisons and analyses. » Son extension hors du feu, p. 35 et 36 : « Since its development, the RPD model has been verified in domains other than firefighting. It describes the decision strategies used by tank platoon leaders, commanders and Anti-Air Warfare officers of AEGIS cruisers, nurses in Intensive Care Units, commercial pilots, and even design engineers! » Sa place dans la typologie du chapitre 5, p. 51 : « The RPD model, described above, covers all three of these singular evaluation strategies. The model was designed to explain how people can make decisions without contrasting different options, and each of these satisficing strategies accomplishes that function. » Les trois stratégies en question sont listées p. 50 et 51 : vérifier que l'option a les propriétés nécessaires, le raisonnement par analogie, la simulation mentale. Enfin, ce que Klein n'attribue pas à lui-même et qu'une carte ne doit pas lui prêter, p. 49 : « This is a \"satisficing\" (as opposed to an \"optimizing\") approach, so named by Simon (1955) who observed that people in business typically just needed a CoA that would do the job », et p. 27 : « The first claim is that most of the time people try to satisfice and find a workable solution, rather than optimize or find the best solution. Simon (1955) was the first to make this distinction, based on his observations of business decisions. »"
-        },
-        {
-          "id": "SUP-165a07e403589c3a",
-          "origin": "validated",
-          "path": "$.notes[4]",
-          "access": "n/a",
-          "text": "Le modèle a été vérifié hors du feu, selon l'auteur : chefs de peloton de chars, officiers de lutte antiaérienne de croiseurs AEGIS, infirmières de soins intensifs, pilotes de ligne, ingénieurs de conception."
-        }
-      ],
-      "uncited_support_signal": []
-    },
-    {
       "claim_id": "C056",
       "locator": "sections[5].paragraphs[0]",
-      "claim_text": "chez des chefs de peloton de chars, chez les officiers de lutte antiaérienne des croiseurs AEGIS, chez des infirmières de soins intensifs, chez des pilotes de ligne, et jusque chez des ingénieurs de conception.",
+      "claim_text": "Klein rapporte qu’il a été vérifié depuis dans d’autres domaines : chez des chefs de peloton de chars, chez les officiers de lutte antiaérienne des croiseurs AEGIS, chez des infirmières de soins intensifs, chez des pilotes de ligne, et jusque chez des ingénieurs de conception.",
       "supports": [
         {
           "id": "SUP-8db37978bf1daa45",
@@ -1481,6 +1401,6 @@
       "uncited_support_signal": []
     }
   ],
-  "estimated_tokens": 113382,
+  "estimated_tokens": 103385,
   "status": "READY"
 }
