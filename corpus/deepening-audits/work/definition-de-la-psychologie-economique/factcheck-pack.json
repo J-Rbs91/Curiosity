@@ -1,0 +1,596 @@
+{
+  "protocol_version": 2,
+  "concept_id": "definition-de-la-psychologie-economique",
+  "context_budget_tokens": 300000,
+  "token_estimate_method": "JSON characters / 3 (conservative heuristic, not provider tokenization)",
+  "candidate_sha256": "aa1d5b96379d7f4cb38c8078221347b86b619dfaf8713cb2db7a9e4be136bc4d",
+  "validated_sha256": "607d08d8366285a27be8c6b4a77750bb6590cac8c5dca263d70aae327c82aadb",
+  "evidence_files": [
+    {
+      "file": "lecture.json",
+      "sha256": "54ec7841d2d1ea71252b9ceef1d4507b2a09a57bbf5aeec1abb79c4623a66b88"
+    }
+  ],
+  "dossier_declare": {
+    "declare": null,
+    "statut": "non-declare",
+    "motif": null
+  },
+  "access_reconciliation": {
+    "dossier_declare_des_niveaux": true,
+    "declarations": [
+      {
+        "chemin": "$.sources[0]",
+        "declare": "full-text",
+        "label": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+        "cles": [
+          "doi:10.3406/bupsy.1982.12417",
+          "url:persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
+        ],
+        "dossier": "full-text",
+        "statut": "corrobore"
+      }
+    ],
+    "compteurs": {
+      "corrobore": 1,
+      "contredit": 0,
+      "non-declare": 0,
+      "absent": 0,
+      "hors-vocabulaire": 0,
+      "dossier-hors-vocabulaire": 0,
+      "dossier-absent": 0
+    }
+  },
+  "paragraphs": [
+    {
+      "locator": "lead[0]",
+      "text": "Imaginons qu’un prix double du jour au lendemain. Un économiste dira combien d’acheteurs ont renoncé, de combien les ventes ont reculé, au bout de combien de semaines elles sont remontées. Il aura raison, et il n’aura rien dit de ce qui s’est passé chez ceux qui ont renoncé : la crainte que d’autres prix suivent, l’habitude à laquelle on tient, la façon dont on finit par se convaincre que c’était de toute manière superflu."
+    },
+    {
+      "locator": "lead[1]",
+      "text": "Reste à savoir qui s’occupe de cette seconde moitié, et à quel titre. On peut répondre qu’il s’agit d’un éclairage parmi d’autres : le fait économique demeure au centre, on l’observe seulement d’un côté un peu différent. On peut répondre qu’il y a là un objet à part entière, avec ses questions et ses méthodes. Paul Albou, qui signe en 1982 depuis le laboratoire de psychologie économique de l’université René Descartes, tient la seconde réponse, et une bonne partie de son article sert à montrer qu’elle ne va pas de soi."
+    },
+    {
+      "locator": "sections[0].paragraphs[0]",
+      "section_title": "Ce qu’Albou appelle les deux impérialismes",
+      "text": "Il décrit la situation de sa discipline sans ménagement : elle « reste encore aujourd’hui […] ballotée entre deux impérialismes : l’impérialisme économique qui, se réclamant des travaux de l’Ecole autrichienne, n’y voit qu’un point de vue particulier sur le fait économique, et l’impérialisme psychosocial qui réduit la conduite économique à un simple état de contamination intermental »."
+    },
+    {
+      "locator": "sections[0].paragraphs[1]",
+      "section_title": "Ce qu’Albou appelle les deux impérialismes",
+      "text": "Les deux mots visent deux façons de faire disparaître un objet d’étude. Le premier lui refuse un domaine : la psychologie n’apporterait qu’une manière de regarder des faits économiques déjà constitués. Le second lui refuse une consistance propre : la conduite économique se ramènerait à une contagion d’un esprit à l’autre."
+    },
+    {
+      "locator": "sections[0].paragraphs[2]",
+      "section_title": "Ce qu’Albou appelle les deux impérialismes",
+      "text": "Refuser les deux ne suffit pas : il faut dire ce qu’est la discipline, et Albou ne trouve chez ses prédécesseurs aucune définition qui tienne. Tarde, à qui il rapporte l’origine de la psychologie économique, « ne donne nulle part de définition ». Chez Katona, sur sept formulations relevées de 1947 à 1964, « dans tout cela, nulle définition ». Pierre-Louis Reynaud en propose une dans un Précis de 1974, qu’Albou rejette comme ambiguë sur la notion de ressources mentales et incomplète sur le développement de l’homme."
+    },
+    {
+      "locator": "sections[1].paragraphs[0]",
+      "section_title": "Une définition en trois mots",
+      "text": "La sienne s’imprime tout en haut de la page 199 : « Telle est la définition que nous proposons de la Psychologie économique, science des conduites économiques, et cette définition comprend trois aspects : 1. elle caractérise la discipline ; 2. elle est centrée sur les conduites d’agents déterminés ; 3. elle précise la nature des activités économiques. » Sa formule brève, « l’étude scientifique des conduites économiques », tient trois termes ensemble, et Albou explique chacun."
+    },
+    {
+      "locator": "sections[1].paragraphs[1]",
+      "section_title": "Une définition en trois mots",
+      "text": "Scientifique d’abord. La discipline doit être objective, au sens où le résultat ne dépend pas du spécialiste, et systématique, au sens où elle organise ses données de façon cumulative. Elle doit donc élaborer des concepts propres. La recherche empirique sert à imaginer les hypothèses et à les vérifier, sans être en elle-même fondatrice, puisque « la connaissance commence dans l’abstraction du concept »."
+    },
+    {
+      "locator": "sections[2].paragraphs[0]",
+      "section_title": "Une conduite, et ce qui la rend économique",
+      "text": "Conduites ensuite, et non comportements. Le mot anglais behavior recouvre deux idées que le français sépare, et Albou n’en retient qu’une : la conduite est un comportement significatif, inscrit dans une situation et dans un courant continu. Ce qu’il écarte, c’est l’enregistrement behavioriste des faits sans leur signification. Il accepte pourtant, page 205, de dire la discipline en anglais, « the study of economic behavior », avec Katona et van Raaij, mais en refusant l’acception behavioriste du mot. L’accord sur la formule n’est pas un accord sur tout : la position de van Raaij, il la conteste aux pages 199 et 205."
+    },
+    {
+      "locator": "sections[2].paragraphs[1]",
+      "section_title": "Une conduite, et ce qui la rend économique",
+      "text": "Économiques enfin. Ce caractère ne se lit pas sur l’acte isolé, mais sur ses suites observables. Albou le montre par un apologue : une perle ramassée sur une plage relève de l’économie si elle est conservée comme réserve de valeur ou échangée, non si elle est consommée. Le geste de la ramasser est le même dans les deux cas ; c’est ce qui suit qui tranche. La conduite économique, ajoute-t-il, résulte de l’intégration des conduites particulières."
+    },
+    {
+      "locator": "sections[2].paragraphs[2]",
+      "section_title": "Une conduite, et ce qui la rend économique",
+      "text": "Reste à savoir de qui sont ces conduites. Les agents déterminés du deuxième aspect sont les ménages, les entreprises et les administrations, saisis dans les interactions par lesquelles ils aménagent le monde extérieur. Cet aménagement, Albou le dit onéreux, parce qu’il pose les problèmes de la rareté, des choix et des coûts."
+    },
+    {
+      "locator": "sections[3].paragraphs[0]",
+      "section_title": "Expliquer ce que l’économie établit",
+      "text": "Il reste à dire ce que la discipline fait que la science économique ne fait pas. Albou s’en tire par une formule glissée dans une longue parenthèse : la psychologie économique se distingue de la science économique « en ce qu’elle tente d’expliquer ce que l’autre établit ». Elle ne s’en éloigne pas pour autant : elle resserre ses liens avec elle tout en s’en distinguant."
+    },
+    {
+      "locator": "sections[3].paragraphs[1]",
+      "section_title": "Expliquer ce que l’économie établit",
+      "text": "Reprenons le prix qui double. Que les ventes reculent de tant, puis remontent au bout de tant de semaines, cela s’établit : on le mesure, on le date, on le compare. Pourquoi elles remontent, et pourquoi plus vite chez les uns que chez les autres, c’est ce qu’il s’agit d’expliquer."
+    },
+    {
+      "locator": "sections[3].paragraphs[2]",
+      "section_title": "Expliquer ce que l’économie établit",
+      "text": "Sur la méthode, Albou écarte la modélisation, dont il juge l’intérêt seulement pédagogique et non heuristique : elle aide à exposer, pas à découvrir. Un modèle schématise la conduite, en évacue le vécu et fige en synchronie, dans un instant sans durée, ce qui n’a de sens que situé dans le temps."
+    },
+    {
+      "locator": "sections[4].paragraphs[0]",
+      "section_title": "Issue de la psychologie sociale, et pas seulement",
+      "text": "L’autre voisine, c’est la psychologie sociale. Il parle de « l’autonomie de la Psychologie économique (certes, issue de la psychologie sociale, mais qui ne s’y réduit plus…) ». La filiation est reconnue dans la parenthèse même où l’indépendance est réclamée : ce n’est pas contre son origine qu’il argumente, c’est contre l’idée que cette origine suffise à la contenir."
+    },
+    {
+      "locator": "sections[4].paragraphs[1]",
+      "section_title": "Issue de la psychologie sociale, et pas seulement",
+      "text": "Page 199, la formule revient et se déplace : « autonome, elle s’efforce de l’être et par rapport à la psychologie sociale (dont elle est issue) ». Le « et par rapport à » appelle un second terme : l’autonomie se réclame des deux côtés à la fois, vers la psychologie sociale et vers l’économie. Et « s’efforce » dit qu’elle n’est pas un état acquis, mais une chose à faire. Albou juge d’ailleurs rétrospectivement sa propre définition de 1962 trop favorable à la psychologie sociale."
+    },
+    {
+      "locator": "sections[5].paragraphs[0]",
+      "section_title": "Vingt ans pour une phrase",
+      "text": "Cette histoire, il la raconte lui-même. Il renvoie à 1962, année d’un rapport remis au Commissariat Général du Plan et d’un ouvrage d’« Initiation à la Psychologie économique ». Puis à 1974 : c’est dans « La psychologie économique », fascicule X du Traité de Psychologie appliquée publié aux Presses Universitaires de France, page 42, que se fixe la formule brève."
+    },
+    {
+      "locator": "sections[5].paragraphs[1]",
+      "section_title": "Vingt ans pour une phrase",
+      "text": "Il ne présente donc pas une trouvaille. Page 204, il écrit que sa définition « reprend en l’actualisant et en la précisant » celle de 1962, et il ajoute : « Cette première formulation a été, depuis lors, utilisée et commentée (parfois sans mention d’origine) par différents auteurs. »"
+    },
+    {
+      "locator": "sections[5].paragraphs[2]",
+      "section_title": "Vingt ans pour une phrase",
+      "text": "La revendication a un nom en face d’elle, celui de Reynaud. Page 199, Albou rappelle l’ordre des choses : « Comme Reynaud, et avant même qu’il ne se préoccupe de ce problème, nous avions tenté de définir… » ; page 204, il note que des éléments de sa formule se retrouvent chez Reynaud en 1974. Ces pages font ainsi deux choses à la fois : elles proposent une définition et elles en défendent la propriété."
+    },
+    {
+      "locator": "sections[5].paragraphs[3]",
+      "section_title": "Vingt ans pour une phrase",
+      "text": "Un dernier détail change la façon de les lire. Ce n’est pas d’abord un article de revue : c’est une communication, et Albou écrit page 198 qu’il vient d’organiser le colloque où il parle."
+    }
+  ],
+  "supports": [
+    {
+      "id": "SUP-f7d4154d237128c5",
+      "origin": "validated",
+      "path": "$.$schema",
+      "access": "n/a",
+      "text": "../schema/carte.schema.json"
+    },
+    {
+      "id": "SUP-e1f8eefb7d991d86",
+      "origin": "validated",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "definition-de-la-psychologie-economique"
+    },
+    {
+      "id": "SUP-cf2d075563bbc73f",
+      "origin": "validated",
+      "path": "$.slug",
+      "access": "n/a",
+      "text": "definition-de-la-psychologie-economique"
+    },
+    {
+      "id": "SUP-ad89626955b2952c",
+      "origin": "validated",
+      "path": "$.status",
+      "access": "n/a",
+      "text": "VALIDATED"
+    },
+    {
+      "id": "SUP-eb752596788d289e",
+      "origin": "validated",
+      "path": "$.title",
+      "access": "n/a",
+      "text": "Science des conduites économiques"
+    },
+    {
+      "id": "SUP-721dfcf5220da682",
+      "origin": "validated",
+      "path": "$.themes[0]",
+      "access": "n/a",
+      "text": "psychologie-economique"
+    },
+    {
+      "id": "SUP-b0b01bf8221b265b",
+      "origin": "validated",
+      "path": "$.theme_labels[\"psychologie-economique\"]",
+      "access": "n/a",
+      "text": "Psychologie économique"
+    },
+    {
+      "id": "SUP-1e1317d202c81bfa",
+      "origin": "validated",
+      "path": "$.authors[0].name",
+      "access": "n/a",
+      "text": "Paul Albou"
+    },
+    {
+      "id": "SUP-687ff928b7add4f6",
+      "origin": "validated",
+      "path": "$.attribution_note",
+      "access": "n/a",
+      "text": "Article signé du seul Paul Albou. Il présente la formule comme sa propre définition et la date lui-même : une première version en 1962, la formule brève arrêtée en 1974 dans le Traité de psychologie appliquée, et cette reprise actualisée de 1982."
+    },
+    {
+      "id": "SUP-80487c4b7d0f7184",
+      "origin": "validated",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Telle est la définition que nous proposons de la Psychologie économique, science des conduites économiques […]"
+    },
+    {
+      "id": "SUP-be292520c01e0210",
+      "origin": "validated",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205, section B, « Pour une définition de la Psychologie économique »"
+    },
+    {
+      "id": "SUP-edf26b49f36698eb",
+      "origin": "validated",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 199, en tête, avant l'intitulé B"
+    },
+    {
+      "id": "SUP-76d11f542691c5ac",
+      "origin": "validated",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-e51aece0b06c5310",
+      "origin": "validated",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-edb7e808df873a76",
+      "origin": "validated",
+      "path": "$.hook",
+      "access": "n/a",
+      "text": "Étudier les conduites économiques : une discipline, ou un point de vue ?"
+    },
+    {
+      "id": "SUP-6d8f3f9ed4c9a749",
+      "origin": "validated",
+      "path": "$.summary",
+      "access": "n/a",
+      "text": "Albou définit la psychologie économique comme l'étude scientifique des conduites économiques : issue de la psychologie sociale, elle ne s'y réduit plus."
+    },
+    {
+      "id": "SUP-3f764ff8a073c8e3",
+      "origin": "validated",
+      "path": "$.sources[0].label",
+      "access": "full-text",
+      "text": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, p. 195-205.",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ec988b343d66a1a7",
+      "origin": "validated",
+      "path": "$.sources[0].kind",
+      "access": "full-text",
+      "text": "primary",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-be363923a17be82f",
+      "origin": "validated",
+      "path": "$.sources[0].locator",
+      "access": "full-text",
+      "text": "p. 195-205",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-1bad739b65a5a8fd",
+      "origin": "validated",
+      "path": "$.sources[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/bupsy.1982.12417",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-0a62373bf606155c",
+      "origin": "validated",
+      "path": "$.sources[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417",
+      "access_corroboration": "corrobore"
+    },
+    {
+      "id": "SUP-ffc37be1e07d0557",
+      "origin": "validated",
+      "path": "$.review.reviewer",
+      "access": "n/a",
+      "text": "contrôle aveugle"
+    },
+    {
+      "id": "SUP-ce85a7b2a7dae203",
+      "origin": "validated",
+      "path": "$.review.date",
+      "access": "n/a",
+      "text": "2026-08-28"
+    },
+    {
+      "id": "SUP-ab62b4f98906b668",
+      "origin": "validated",
+      "path": "$.review.attribution",
+      "access": "n/a",
+      "text": "confirmee"
+    },
+    {
+      "id": "SUP-427fb1df98a1e120",
+      "origin": "validated",
+      "path": "$.review.quotation",
+      "access": "n/a",
+      "text": "verbatim"
+    },
+    {
+      "id": "SUP-118d16b59e932353",
+      "origin": "validated",
+      "path": "$.review.sources",
+      "access": "n/a",
+      "text": "resolvent"
+    },
+    {
+      "id": "SUP-ed7629ec7b0c3818",
+      "origin": "validated",
+      "path": "$.review.prose",
+      "access": "n/a",
+      "text": "fidele"
+    },
+    {
+      "id": "SUP-e134482677317836",
+      "origin": "validated",
+      "path": "$.review.verdict",
+      "access": "n/a",
+      "text": "PASS"
+    },
+    {
+      "id": "SUP-191d078f1c74fe4a",
+      "origin": "validated",
+      "path": "$.review.notes[0]",
+      "access": "n/a",
+      "text": "ATTRIBUTION — confirmee. Ouvert https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417 et les pages 195 à 205 via l'endpoint page (docAsPDF refusé, non retenté). Signature unique : p. 195, en tête, « Contribution à une définition de la psychologie économique / Paul ALBOU / Laboratoire de Psychologie économique / Université René Descartes (Paris V) » ; Crossref ne donne qu'un auteur, Paul Albou, sequence first. Albou s'attribue la définition et la date lui-même : p. 199, note (8) renvoyant à sa définition de 1962 (Rapport au Commissariat Général du Plan et « Initiation à la Psychologie économique », 1962) et note (9) « La psychologie économique », Traité de Psychologie appliquée, fasc. X, 1974, PUF, p. 42, pour la formule « l'étude scientifique des conduites économiques » ; p. 204, section « Conclusions » : « La définition qui nous proposons ici de la Psychologie économique reprend en l'actualisant et en la précisant, celle que nous avions suggérée dès 1962. Cette première formulation a été, depuis lors, utilisée et commentée (parfois sans mention d'origine) par différents auteurs. » Il revendique aussi l'antériorité sur Reynaud (p. 199 : « Comme Reynaud, et avant même qu'il ne se préoccupe de ce problème, nous avions tenté de définir… »). La carte n'attribue pas à Albou la fondation de la discipline — qu'il rapporte lui-même à Tarde, p. 195 — mais cette définition, ce que le texte porte."
+    },
+    {
+      "id": "SUP-0c9dfe49a0d8965b",
+      "origin": "validated",
+      "path": "$.review.notes[1]",
+      "access": "n/a",
+      "text": "QUOTATION — verbatim, relue sur l'image et non sur l'OCR. Image téléchargée : https://www.persee.fr/renderPage/bupsy_0007-4403_1982_num_36_358_12417/bupsy_0007-4403_1982_num_36_358_T1_0199_0000_1500.jpg (PNG 1426x2131, recadrée et agrandie). Colonne de gauche, tout en haut de la page, sous le titre courant « BULLETIN DE PSYCHOLOGIE 199 » : « Telle est la définition que nous proposons de la Psychologie économique, science des conduites économiques, et cette définition comprend trois aspects : 1. elle caractérise la discipline ; 2. elle est centrée sur les conduites d'agents déterminés ; 3. elle précise la nature des activités économiques. » La citation de la fiche reprend le segment jusqu'à « science des conduites économiques » et signale la coupe par […]. Aucune traduction en jeu (texte français d'origine, translation.kind = none, cohérent). Le locator p. 199 est exact."
+    },
+    {
+      "id": "SUP-238c63603038ba8a",
+      "origin": "validated",
+      "path": "$.review.notes[2]",
+      "access": "n/a",
+      "text": "SOURCES — resolvent. DOI 10.3406/bupsy.1982.12417 résolu par négociation de contenu Crossref (HTTP 200) : titre « Contribution à une définition de la psychologie économique », auteur unique Paul Albou, container-title « Bulletin de psychologie », ISSN 0007-4403, volume 36 (= tome XXXVI), issue 358, published-print 1982, page « 195-205 ». Les métadonnées de la page Persée concordent (citation_firstpage 195, citation_lastpage 205, citation_volume 36, citation_issue 358, citation_year 1982). Les onze pages 0195 à 0205 existent bien sous l'identifiant d'article, ce qui confirme la pagination affichée. L'URL affichée pointe vers cette notice."
+    },
+    {
+      "id": "SUP-ac06fad454e5fd79",
+      "origin": "validated",
+      "path": "$.review.notes[3]",
+      "access": "n/a",
+      "text": "PROSE — fidele. Accroche « Étudier les conduites économiques : une discipline, ou un point de vue ? » : les deux termes de l'alternative sont dans le texte. p. 198 : « la Psychologie économique reste encore aujourd'hui […] ballotée entre deux impérialismes : l'impérialisme économique qui, se réclamant des travaux de l'Ecole autrichienne, n'y voit qu'un point de vue particulier sur le fait économique, et l'impérialisme psychosocial qui réduit la conduite économique à un simple état de contamination intermental » ; p. 199, premier aspect de la définition : « elle caractérise la discipline ». Résumé : « l'étude scientifique des conduites économiques » est la formule exacte citée par Albou p. 199 ; « issue de la psychologie sociale, elle ne s'y réduit plus » décalque p. 198 : « l'autonomie de la Psychologie économique (certes, issue de la psychologie sociale, mais qui ne s'y réduit plus…) », repris p. 199 : « autonome, elle s'efforce de l'être et par rapport à la psychologie sociale (dont elle est issue) ». Aucun adjectif du hook ou du summary n'excède ce que les pages 198-199 portent."
+    },
+    {
+      "id": "SUP-c7fed97c7873216b",
+      "origin": "validated",
+      "path": "$.review.notes[4]",
+      "access": "n/a",
+      "text": "TEST D'ENTRÉE DU DOMAINE — l'article porte une thèse propre et non un état de l'art : il propose une définition, en déduit trois aspects commentés en section B (a, p. 199 ; b, p. 201 ; c/d, p. 202), revendique l'autonomie de la discipline contre deux « impérialismes » (p. 198), réfute nommément les définitions de P.-L. Reynaud (p. 197) et la position de van Raaij (p. 199, p. 205), et conclut p. 205. La section A, historico-critique, est instrumentale à cette thèse, pas son objet."
+    },
+    {
+      "id": "SUP-765517d34c95ebaa",
+      "origin": "validated",
+      "path": "$.review.notes[5]",
+      "access": "n/a",
+      "text": "NON ATTEINT — le PDF complet (docAsPDF) répond 403 et n'a pas été contourné ; je n'ai donc pas de vue continue du fichier, seulement les onze images/pages, ce qui suffit ici. Le serveur MCP documentary n'étant pas connecté, verify_reference n'a pas été appelé : la résolution de source a été faite par Crossref et par les métadonnées Persée. Les sources secondaires citées par Albou (son Traité de 1974, p. 42 ; son texte de 1962) n'ont pas été ouvertes — elles ne figurent pas dans le champ sources de la fiche."
+    },
+    {
+      "id": "SUP-a117b1d6f490dcb1",
+      "origin": "validated",
+      "path": "$.notes[0]",
+      "access": "n/a",
+      "text": "Aucune source secondaire n'a été ouverte sur ce lot, ni par la cartographie ni par la lecture primaire : la carte repose sur sa seule source primaire, et rien n'est établi de la réception de ce texte."
+    },
+    {
+      "id": "SUP-90d2891096eb5f76",
+      "origin": "validated",
+      "path": "$.notes[1]",
+      "access": "n/a",
+      "text": "Le PDF complet servi par Persée à l'adresse docAsPDF répond HTTP 403. La lecture a été faite page par page sur l'endpoint page, les onze pages 195 à 205 ouvertes une à une en HTTP 200, la couche OCR croisée avec les images de page ; aucun bloc manquant n'a été constaté et la citation retenue a été relue sur l'image de la page 199."
+    },
+    {
+      "id": "SUP-9f9d529eac42e54e",
+      "origin": "validated",
+      "path": "$.notes[2]",
+      "access": "n/a",
+      "text": "La couche OCR de Persée porte des fautes qui ne sont pas dans l'imprimé et qui n'ont pas été reprises : « Pierre-Louis Renaud » page 195 pour Reynaud, « septembre-octobre 1981 » page 195 là où le contexte impose 1881, et un doublement de mots page 205."
+    },
+    {
+      "id": "SUP-e516038998569071",
+      "origin": "validated",
+      "path": "$.notes[3]",
+      "access": "n/a",
+      "text": "Le texte est une communication de colloque, Albou écrivant page 198 qu'il vient d'organiser le présent colloque. Le nom et la date de ce colloque ne sont pas imprimés dans l'article et n'ont pas été cherchés hors du texte : la fiche ne les avance pas."
+    },
+    {
+      "id": "SUP-20d5d7d2d70bb8bd",
+      "origin": "validated",
+      "path": "$.notes[4]",
+      "access": "n/a",
+      "text": "Deux passages plus frappants que la citation retenue ont été écartés faute de tenir sous 150 caractères sans coupe qui retourne le sens : page 198, la psychologie économique se distingue de la science économique « en ce qu'elle tente d'expliquer ce que l'autre établit », phrase enchâssée dans une longue parenthèse ; page 205, la reprise de la définition, dont la coupe ferait un énoncé plus étroit qu'il n'est."
+    },
+    {
+      "id": "SUP-f9e82a55d01e0a78",
+      "origin": "validated",
+      "path": "$.notes[5]",
+      "access": "n/a",
+      "text": "Le résumé n'épuise pas l'article : la démarcation d'avec Pierre-Louis Reynaud (discussion de sa définition p. 197, revendication d'antériorité p. 199 et p. 204), le refus des deux impérialismes économique et psychosocial (p. 198) et le rejet de la modélisation (p. 200) ne sont pas portés à la carte."
+    },
+    {
+      "id": "SUP-da2f8677cf1b683e",
+      "origin": "validated",
+      "path": "$.notes[6]",
+      "access": "n/a",
+      "text": "Coquille du tirage, relevée par le contrôle aveugle sur l'image agrandie de la page 199 : l'intitulé imprimé porte « B. Puor une définition de la Psychologie économique. » La fiche donne la forme corrigée « Pour ». La correction est tacite et elle est signalée ici pour quiconque comparera la fiche au fac-similé."
+    },
+    {
+      "id": "SUP-8dff0eff200aa5fa",
+      "origin": "validated",
+      "path": "$.notes[7]",
+      "access": "n/a",
+      "text": "Locator précisé après contrôle : le paragraphe cité est imprimé au-dessus de l'intitulé de la section B, dont trois lignes le séparent, et clôt donc typographiquement la section A. Le rattachement à B, que la référence conserve, reste porté par les trois aspects annoncés, qui sont exactement les sous-sections a, b et c de B."
+    },
+    {
+      "id": "SUP-f41079365ec5c963",
+      "origin": "validated",
+      "path": "$.notes[8]",
+      "access": "n/a",
+      "text": "Remarques hors mandat du contrôle aveugle, reportées au passage suivant et non appliquées ici, chacune demandant de rouvrir le texte : le titre de la carte, « Science des conduites économiques », est verbatim page 205 et cette phrase serait une citation alternative plus autoportante ; page 205, Albou accepte « the study of economic behavior » avec Katona et van Raaij mais refuse l'acception behavioriste du terme massif de comportement ; page 199, l'autonomie qu'il revendique est double, à l'égard de la psychologie sociale et de l'économique, là où le résumé ne porte que la première."
+    },
+    {
+      "id": "SUP-3a5b76803d614a8c",
+      "origin": "validated",
+      "path": "$.notes[9]",
+      "access": "n/a",
+      "text": "Champ domain retiré après déclaration du thème psychologie-economique dans src/content/themes.ts : ce champ n'existe que pour le cas où aucun thème de la fiche n'est connu de l'application, et l'invariant est vérifié par taxonomy.test.ts."
+    },
+    {
+      "id": "SUP-92b490da80cf6675",
+      "origin": "evidence:lecture.json",
+      "path": "$.id",
+      "access": "n/a",
+      "text": "definition-de-la-psychologie-economique"
+    },
+    {
+      "id": "SUP-d258b9dbc8daf8d5",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authors[0].name",
+      "access": "n/a",
+      "text": "Paul Albou"
+    },
+    {
+      "id": "SUP-68eb2797a0e6397a",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.authorship",
+      "access": "n/a",
+      "text": "SOLE_AUTHOR"
+    },
+    {
+      "id": "SUP-685d84bbbe2e2bef",
+      "origin": "evidence:lecture.json",
+      "path": "$.attribution.note",
+      "access": "n/a",
+      "text": "Signature imprimée relevée sur la page 195 : Paul ALBOU, Laboratoire de Psychologie économique, Université René Descartes (Paris V). Albou présente la formule comme la sienne et il en date lui-même les états, sur la page 199 relue à l'image : une première définition de 1962, qu'il juge rétrospectivement trop favorable à la psychologie sociale, puis la formule brève arrêtée en 1974 dans un ouvrage collectif publié par les Presses Universitaires de France, l'étude scientifique des conduites économiques, enfin la reprise commentée de 1982 que porte cet article."
+    },
+    {
+      "id": "SUP-bd42e077a8794705",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.text",
+      "access": "n/a",
+      "text": "Telle est la définition que nous proposons de la Psychologie économique, science des conduites économiques […]"
+    },
+    {
+      "id": "SUP-4c776eb3a725315f",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.reference",
+      "access": "n/a",
+      "text": "Paul Albou, « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, 1982, première phrase de la page 199, juste avant l'intertitre B de l'article"
+    },
+    {
+      "id": "SUP-0b7fe1d8f7d7c019",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.locator",
+      "access": "n/a",
+      "text": "p. 199"
+    },
+    {
+      "id": "SUP-f53d4083d6b3e451",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.language",
+      "access": "n/a",
+      "text": "fr"
+    },
+    {
+      "id": "SUP-52a377add63895a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.quotation.translation.kind",
+      "access": "n/a",
+      "text": "none"
+    },
+    {
+      "id": "SUP-66e74c3fa69db500",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].citation",
+      "access": "full-text",
+      "text": "Albou, Paul (1982), « Contribution à une définition de la psychologie économique », Bulletin de psychologie, tome XXXVI, n° 358, p. 195-205."
+    },
+    {
+      "id": "SUP-462aa421caeae2a9",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].doi_isbn",
+      "access": "full-text",
+      "text": "10.3406/bupsy.1982.12417"
+    },
+    {
+      "id": "SUP-204a7f29da7f5cd3",
+      "origin": "evidence:lecture.json",
+      "path": "$.sources_ouvertes[0].url",
+      "access": "full-text",
+      "text": "https://www.persee.fr/doc/bupsy_0007-4403_1982_num_36_358_12417"
+    },
+    {
+      "id": "SUP-03d6ee6211b409e6",
+      "origin": "evidence:lecture.json",
+      "path": "$.definition_de_lauteur",
+      "access": "n/a",
+      "text": "Albou définit la psychologie économique comme « l'étude scientifique des conduites économiques », et il tient les trois termes ensemble. Scientifique : la discipline est objective, au sens où le résultat ne dépend pas du spécialiste, et systématique, au sens où elle organise ses données de façon cumulative ; elle doit donc élaborer des concepts propres, la recherche empirique servant à imaginer les hypothèses et à les vérifier sans être en elle-même fondatrice, puisque « la connaissance commence dans l'abstraction du concept » (p. 199). Conduites, et non comportements : le mot anglais behavior recouvre deux idées que le français sépare, et Albou n'en retient qu'une, la conduite comme comportement significatif, inscrit dans une situation et dans un courant continu, contre l'enregistrement behavioriste des faits sans leur signification (p. 201). Économiques : ce caractère ne se lit pas sur l'acte isolé mais sur ses suites observables, ce qu'il montre par l'apologue de la perle ramassée sur une plage, économique si elle est conservée comme réserve de valeur ou échangée, non si elle est consommée (p. 202) ; la conduite économique résulte de l'intégration des conduites particulières. L'objet est la conduite d'agents déterminés, ménages, entreprises et administrations, saisie dans les interactions par lesquelles ils aménagent le monde extérieur, aménagement dit onéreux parce qu'il pose les problèmes de la rareté, des choix et des coûts (p. 203-204). De cette définition Albou tire la thèse d'autonomie qui est le nerf de l'article : la psychologie économique est issue de la psychologie sociale mais ne s'y réduit plus, et elle resserre ses liens avec la science économique tout en s'en distinguant « en ce qu'elle tente d'expliquer ce que l'autre établit » (p. 198). Il refuse au passage deux sujétions qu'il nomme impérialismes, l'impérialisme économique de l'École autrichienne qui ne verrait là qu'un point de vue sur le fait économique, et l'impérialisme psychosocial qui réduirait la conduite économique à une contamination intermentale (p. 198). Il écarte enfin la modélisation, dont il juge l'intérêt seulement pédagogique et non heuristique, parce qu'elle schématise la conduite, en évacue le vécu et fige en synchronie ce qui n'a de sens que situé dans le temps (p. 200)."
+    },
+    {
+      "id": "SUP-9ab410c40b8473a6",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[0]",
+      "access": "n/a",
+      "text": "Le test d'entrée du domaine est passé par la seconde branche, la branche étroite : le texte fonde la discipline et porte une thèse propre. La question décisive a été instruite et tranchée sur pièce. Albou ne récapitule pas : la partie A est une revue critique qui conclut à l'absence de définition chez ses trois prédécesseurs, Tarde qui « ne donne nulle part de définition » (p. 195), Katona chez qui, sur sept formulations relevées de 1947 à 1964, « dans tout cela, nulle définition » (p. 196), et Reynaud dont il discute nommément la définition du Précis de 1974 pour la rejeter comme ambiguë sur la notion de ressources mentales et incomplète sur le développement de l'homme (p. 197). La partie B, ouverte page 199, énonce sa propre définition et la commente sur six pages. La démarcation explicite d'avec Reynaud est donc établie, avec sa page : p. 197 pour la discussion de sa définition, p. 199 et p. 204 pour la revendication d'antériorité, Albou rappelant qu'il avait défini la discipline en 1962 avant que Reynaud ne se préoccupe du problème, et notant page 204 que certains éléments de sa formule se retrouvent chez Reynaud en 1974, avec cette incise entre parenthèses dans l'imprimé : parfois sans mention d'origine."
+    },
+    {
+      "id": "SUP-bf6514206bc8fa0d",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[1]",
+      "access": "n/a",
+      "text": "Le texte est une communication de colloque : Albou écrit page 198 « nous venons nous-mêmes de le vérifier en organisant le présent Colloque ». Le nom et la date de ce colloque ne sont pas imprimés dans l'article, et ils n'ont pas été cherchés hors du texte : la fiche ne les avance donc pas."
+    },
+    {
+      "id": "SUP-397cdf09109ccf9a",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[2]",
+      "access": "n/a",
+      "text": "Le PDF complet servi par Persée à l'adresse docAsPDF répond HTTP 403. La lecture a été faite page par page sur l'endpoint page, les onze pages 195 à 205 ouvertes une à une en HTTP 200, et la couche OCR croisée avec les images de page servies par renderPage. Aucun bloc manquant n'a été constaté : le texte s'enchaîne sans rupture d'une page à la suivante, et la conclusion est présente page 204-205."
+    },
+    {
+      "id": "SUP-bde02a239d014192",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[3]",
+      "access": "n/a",
+      "text": "La couche OCR de Persée porte des fautes qui ne sont pas dans l'imprimé et qu'il ne faut pas reprendre : elle donne « Pierre-Louis Renaud » page 195 pour Reynaud, « Revue philosophique, de septembre-octobre 1981 » page 195 là où le contexte impose 1881, et elle double les mots « elle saisit ces saisit ces conduites » page 205. Ces trois passages n'ont pas été cités, et la citation retenue a été relue sur l'image de la page 199."
+    },
+    {
+      "id": "SUP-090893f883a9fc87",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[4]",
+      "access": "n/a",
+      "text": "Deux passages plus frappants que la citation retenue ont été écartés faute de tenir sous 150 caractères sans coupe qui retourne le sens. Le premier, page 198, sur ce que l'économie doit à la psychologie : la psychologie économique se distingue de la science économique « en ce qu'elle tente d'expliquer ce que l'autre établit », mais la proposition est enchâssée dans une parenthèse de plus de deux cents caractères dont le sujet est hors parenthèse. Le second, page 205, sur la portée de la définition : « Science des conduites économiques, elle saisit ces conduites au sein des interactions qui s'établissent entre les agents économiques », mais la phrase se poursuit sur le membre qui la justifie, la lutte pour l'aménagement du monde extérieur, et la couper là en fait un énoncé plus étroit qu'il n'est."
+    },
+    {
+      "id": "SUP-306fa82cc96705e0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[5]",
+      "access": "n/a",
+      "text": "L'intertitre de la seconde partie est imprimé « B. Puor une définition de la Psychologie économique. », avec une coquille de composition sur le mot Pour, constatée sur l'image de la page 199 et silencieusement corrigée par la couche OCR de Persée. La citation retenue est la phrase qui précède immédiatement cet intertitre, et elle n'est pas affectée ; la coquille est signalée pour qui voudra citer le titre de section."
+    },
+    {
+      "id": "SUP-68920332fa2c04f0",
+      "origin": "evidence:lecture.json",
+      "path": "$.reserves[6]",
+      "access": "n/a",
+      "text": "Les notes de bas de page 8, 9 et 10 de la page 199, qui donnent les références exactes des définitions de 1962 et de 1974 ainsi que celle de la Journée d'étude de septembre 1980, n'ont été lues que sur la couche OCR : le bloc de notes n'a pas été retrouvé sur l'image à la position attendue. Les millésimes portés dans la note d'attribution ne viennent donc pas de ces notes mais du corps du texte de la page 199, relu à l'image, qui les donne tous les deux."
+    }
+  ],
+  "estimated_tokens": 11527,
+  "status": "READY"
+}
