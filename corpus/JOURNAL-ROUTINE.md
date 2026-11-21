@@ -2991,3 +2991,12 @@ septième fois.
 - `controle-supervise` : REVISE, réécriture `FACTCHECK_PASS` 65/65 mais `REJECT` à la revue (C060, « la définition sous deux noms » contredit la définition commune aux deux textes ; le gate l'avait laissé passer sur des appuis qui portent eux-mêmes l'incohérence). Texte d'origine restauré par SHA de blob, trace `rewrite_rejected`. Anomalie de dossier : `lecture.json` dit « version abrégée » pour la communication, ce que contredit la note de datation.
 - `court-terme-contre-long-terme` : `BLOCKED_SOURCE`. Aucun dossier de preuve, six attributions à Forrester sans support. Débloque : un dossier de lecture de Forrester D-4468-2 (section VI, p. 12).
 - File restante : 69 cartes jamais auditées. `package-lock.json` modifié avant la routine, volontairement non commité.
+
+## 2026-11-21 : audit de 3 approfondissements jamais audités
+
+- `debat-de-normes` : REVISE, réécrit (≈ −4 %), deux boucles de correction par suppression pure (C015, C004 `UNSUPPORTED`), `FACTCHECK_PASS` 51/51, `ACCEPT`. Régressions de clarté mineures relevées : « renormaliser » non expliqué au lead (la glose a dû être retirée faute de support) ; à reprendre si une formulation passe le gate.
+- `decision-reconnue-d-emblee` : REVISE, réécrit (+0,5 % puis retraits), deux boucles de correction (C001, C028, C041 puis C008, C009, C057, C060, C062), `FACTCHECK_PASS` 60/60, `ACCEPT`. Contradiction de S2.P1 avec la p. 23 de Klein 1993 corrigée. Divergence de dossier : `review.notes[5]` dit avoir ouvert le texte de 2010, `notes[14]` le déclare fermé ; rien de ce texte n'entre dans le texte lecteur.
+- `definition-de-la-psychologie-economique` : REVISE, réécrit (−6,5 %), une boucle de correction (C046, C054 `TOO_STRONG`), `FACTCHECK_PASS` 64/64, `ACCEPT`.
+- Aucun `BLOCKED_SOURCE`. Les trois cartes de la PR #165 (`criticite-technique-contre-poids-financier`, `critique-de-l-utilite-esperee-subjective`, `critique-de-l-homo-oeconomicus`) ont été écartées du lot avant tout travail.
+- File restante : 63 cartes jamais auditées hors PR #165, 31 en protocole 3, 9 refusées.
+- Anomalies : le comptage de mots diffère entre rapports de réécriture et `corpus:deepen --check` ; `package-lock.json` modifié avant la routine, volontairement non commité ; la branche de session imposée est `claude/sleepy-dijkstra-ro2dne`, non `routine/corpus-…` ; les reviewers n'écrivent pas leurs fichiers, `review.md` est consigné par l'orchestrateur.
