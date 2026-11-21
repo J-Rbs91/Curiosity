@@ -157,3 +157,15 @@ Mode : FACTCHECK_FIX, sur le gate `FACTCHECK_FAIL` (49/50, seul C015 `UNSUPPORTE
 - Mots lecteur : 1418 après correction (−27 environ par rapport à la version soumise).
 - `npm run corpus:deepen -- --check --only=debat-de-normes` : PASS.
 - SHA modifié : la version doit repartir à PREPARE. Pas d'auto-validation.
+
+## Boucle 2
+
+- Gate : `FACTCHECK_FAIL`, 53/54 claims soutenus, seul échec C004 (`UNSUPPORTED`) : la glose
+  « c’est-à-dire, littéralement, à en refaire des normes » n'avait aucun appui dans le pack.
+- Correction minimale : glose retirée. La phrase devient « De l’autre, une tendance de celui qui
+  travaille à les renormaliser, et cela sans cesse. » — le reste (« renormaliser », « sans cesse »)
+  restait porté par les supports cités pour C005/C006.
+- Aucun autre passage touché, aucune affirmation ajoutée, `limits` inchangé.
+- Mots lecteur : 1418 → 1411.
+- `npm run corpus:deepen -- --check --only=debat-de-normes` : PASS.
+- SHA modifié : la version doit repartir à PREPARE. Pas d'auto-validation.
