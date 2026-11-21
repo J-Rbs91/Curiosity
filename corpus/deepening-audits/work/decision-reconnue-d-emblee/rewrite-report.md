@@ -80,3 +80,13 @@ Les trois paragraphes sont réécrits. Ils couvrent : l'article de 1986, connu p
 ## Hors périmètre
 
 `git status` montre `package-lock.json` modifié (30 lignes retirées). Cette modification ne vient pas de cette réécriture, et je n'y ai pas touché.
+
+## Boucle 1
+
+Correction factuelle minimale après `FACTCHECK_FAIL` (gate : 62 claims, 59 soutenus, 3 `TOO_STRONG`). Seuls C001, C028 et C041 sont touchés ; aucune affirmation nouvelle, aucun autre passage modifié.
+
+- **C001** (`lead[0]`) : « une image du choix que tout le monde a en tête : on dresse la liste […], on garde la meilleure » devient « une image du choix à laquelle des chercheurs avaient été formés : décider, ce serait nécessairement comparer des options entre elles ». La portée est ramenée au groupe que nomme l'appui (« researchers trained to expect that decision making necessarily involved comparison between options », SUP-8db37978bf1daa45), et « garder la meilleure », que l'appui ne porte pas, disparaît.
+- **C028** (`sections[1].paragraphs[1]`) : « porte donc de quoi se corriger elle-même » devient « porte donc de quoi signaler qu'elle s'est peut-être trompée ». La phrase s'en tient à la détection d'une erreur possible (« surprises […] may signal that the diagnosis was wrong », SUP-8db37978bf1daa45) ; elle ne parle plus de correction.
+- **C041** (`sections[3].paragraphs[0]`) : la traduction rétablit le modal de la citation (« can generate ») en remplaçant « engendre » par « peut engendrer » (SUP-2e288983e03ee9d4).
+
+Mots du texte lecteur : 1522 après correction, contre environ 1528 avant (le lead perd quelques mots, C041 en gagne un). `npm run corpus:deepen -- --check --only=decision-reconnue-d-emblee` passe. Le SHA du candidat a changé : le cycle doit reprendre à `PREPARE`. Je ne valide pas cette version.
