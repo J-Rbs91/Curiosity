@@ -1,0 +1,46 @@
+{
+  "protocol_version": 2,
+  "concept_id": "controle-supervise",
+  "candidate_sha256": "c5a13c60569a19aa8cf473ce0e176f30796e0ce09c101ff620add429c9051b7e",
+  "verdict": "FACTCHECK_INVALID",
+  "claims": 68,
+  "supported": 62,
+  "failed": 5,
+  "mapping_incomplete": [
+    {
+      "claim_id": "C063",
+      "verdict": "MAPPING_INCOMPLETE",
+      "reason": "Il manque l'appui SUP-5cebf763411ae92d (evidence:lecture.json, $.definition_de_lauteur), que le signal nomme par le terme partagé « citer ». Le claim porte sur les textes qui contiennent la définition, donc sur le nom sous lequel la citer, et cet appui est la lecture primaire de cette question : il établit que la définition est identique dans les deux textes. Les appuis fournis (notes[6], reserves[4], attribution.note) rattachent la définition au seul objet signé des trois. Sans cet appui, l'entailment de « citer la définition sous deux noms, c'est confondre deux objets » ne peut pas être jugé."
+    }
+  ],
+  "structural_errors": [
+    "C063: le vérificateur renvoie le claim au mapping (MAPPING_INCOMPLETE)"
+  ],
+  "failures": [
+    {
+      "claim_id": "C006",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis établissent que la définition tient en une phrase et que l'équipement embarqué (calculateur, autonomie locale) distingue le contrôle supervisé de la télécommande (notes[0]) ; mais la même phrase définit aussi le rôle de la personne (télésurveillance, action intermittente). « tout s'y joue sur ce que l'engin embarque » excède ce que portent les appuis fournis pour ce claim."
+    },
+    {
+      "claim_id": "C014",
+      "verdict": "TOO_STRONG",
+      "reason": "L'incise (« aircraft, power plant, etc. ») figure dans les appuis fournis. En revanche, les appuis fournis pour ce claim ne montrent pas de retour aux engins sous-marins après la phrase : definition_de_lauteur place le cadrage « undersea teleoperation » dans la phrase qui la précède, et la phrase de définition se termine sur « by a person ». La partie « avant de revenir aux engins sous-marins » n'est pas établie."
+    },
+    {
+      "claim_id": "C019",
+      "verdict": "CONFLICT",
+      "reason": "sources_ouvertes[1] qualifie la communication de « version abrégée » du rapport, mais reserves[6], fourni pour le même claim, dit que l'on ne peut pas savoir lequel des deux textes a été rédigé le premier et qu'« aucun des deux ne se donne comme tiré de l'autre ». Les deux appuis se contredisent sur la dérivation de la communication à partir du rapport."
+    },
+    {
+      "claim_id": "C022",
+      "verdict": "TOO_STRONG",
+      "reason": "Les appuis fournis établissent que le cinquième rôle est la confiance (« 5. Trust ») ; ils ne qualifient pas ce rôle de « plus inattendu ». L'évaluation ajoutée n'est portée par aucun des appuis fournis pour ce claim."
+    },
+    {
+      "claim_id": "C064",
+      "verdict": "TOO_STRONG",
+      "reason": "reserves[7] et review.notes[7] établissent que « supervisory control » est mis entre guillemets, employé comme reçu, sans référence fondatrice. En revanche, les appuis fournis pour ce claim ne présentent pas ce geste comme une « prudence » que les auteurs « s'imposent à eux-mêmes » : la prudence sur la datation du terme appartient au lecteur du dossier (« Je ne date donc pas l'invention ») et à la fiche, pas aux auteurs. Le claim leur attribue une intention."
+    }
+  ]
+}
