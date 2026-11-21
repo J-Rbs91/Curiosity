@@ -1,38 +1,12 @@
 {
   "protocol_version": 2,
   "concept_id": "decision-reconnue-d-emblee",
-  "candidate_sha256": "8b240315cb6bd20ec719f3e8432430ce6e2db2f0b621dab2aee960fab6119d2a",
-  "verdict": "FACTCHECK_FAIL",
-  "claims": 62,
-  "supported": 57,
-  "failed": 5,
+  "candidate_sha256": "02a5b467bb36afb6821218a8ee026bbd927ba943f2bd1c5062b28ec29245e2de",
+  "verdict": "FACTCHECK_PASS",
+  "claims": 60,
+  "supported": 60,
+  "failed": 0,
   "mapping_incomplete": [],
   "structural_errors": [],
-  "failures": [
-    {
-      "claim_id": "C008",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni pour ce claim ; la phrase porte une évaluation (« c'est elle qui rend le modèle intéressant ») que les appuis fournis n'établissent pas."
-    },
-    {
-      "claim_id": "C009",
-      "verdict": "UNSUPPORTED",
-      "reason": "Aucun appui fourni pour ce claim ; l'assertion générale sur une conduite non mise en balance n'est portée par aucun appui fourni."
-    },
-    {
-      "claim_id": "C057",
-      "verdict": "TOO_STRONG",
-      "reason": "reserves[5] établit les traits de la tâche naturaliste (tableau 2, p. 17) mais les appuis fournis pour ce claim ne relient pas ces traits aux métiers cités ; le claim ajoute que ces traits sont ce qui rapproche ces domaines."
-    },
-    {
-      "claim_id": "C060",
-      "verdict": "TOO_STRONG",
-      "reason": "reserves[5] cite « does NOT provide a detailed review of the decision-making literature of the past 35 years » ; le claim (« n'y pas passer en revue la littérature ») supprime « detailed » et étend la portée du refus de Klein. Le reste (laboratoire, variables neutralisées, quatre exemples) est fidèle."
-    },
-    {
-      "claim_id": "C062",
-      "verdict": "TOO_STRONG",
-      "reason": "Les appuis fournis portent « people rarely compared any options at all » et « they hardly ever compared options » ; « ce n'est pas ce qui se passe » durcit la fréquence (rarement -> jamais) dans un énoncé présenté comme ce que Klein dit des cas réels."
-    }
-  ]
+  "failures": []
 }
