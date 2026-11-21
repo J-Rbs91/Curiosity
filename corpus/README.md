@@ -4,8 +4,11 @@ Ce répertoire est la source de vérité documentaire de Curiosity. L'applicatio
 jamais : elle consomme sa **projection** dans `src/content/generated/`, produite par
 `npm run corpus:build`.
 
-Une fiche est **une carte** : thème, concept, citation, auteur, accroche, résumé, cinq
-sources. Il n'y a rien d'autre à renseigner — voir
+Une fiche validée définit **une carte** : thème, concept, citation, auteur, accroche,
+résumé, jusqu'à cinq sources. Un approfondissement distinct peut compléter cette carte
+dans `corpus/deepenings/` et être révisé quand une amélioration est démontrée.
+Les audits d'approfondissement sont temporaires et ne font pas partie du corpus maître.
+Voir
 [`schema/carte.schema.json`](./schema/carte.schema.json) et
 [`docs/corpus-workflow.md`](../docs/corpus-workflow.md), dont le §1 explique pourquoi le
 format précédent, trente fois plus lourd, n'a jamais publié une seule fiche.

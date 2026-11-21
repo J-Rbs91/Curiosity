@@ -50,6 +50,10 @@ jobs:
           cache: npm
       - run: npm ci
 
+      - name: Refuser le versionnement des audits jetables
+        run: |
+          test -z "$(git ls-files -- corpus/deepening-audits/)"
+
       - name: Vérifier le gate déterministe des approfondissements
         # Le fact-check sémantique est assuré par des agents, mais sa chaîne de confiance
         # (SHA du candidat, locators, offsets, support_ids et budget de contexte) appartient
