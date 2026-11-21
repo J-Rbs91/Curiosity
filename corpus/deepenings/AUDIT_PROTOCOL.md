@@ -1,6 +1,6 @@
 # Protocole d’audit pédagogique des approfondissements
 
-Version : 4
+Version : 5
 
 Ce protocole complète `PROTOCOLE.md`. Le premier protège surtout l’exactitude documentaire,
 la forme et l’entrée progressive dans le concept. Celui-ci répond d’abord à une autre question :
@@ -266,33 +266,34 @@ version et rend :
 
 En cas de `REJECT`, la version précédente est restaurée.
 
-## 8. Contexte et récurrence
+## 8. Audit jetable et déclenchement sur besoin
 
-Chaque agent travaille sur un seul concept dans un contexte frais. Le batch ne partage jamais le
-contenu documentaire de plusieurs cartes dans une même invocation.
+Un audit n'est jamais un livrable. Il sert uniquement à décider si un approfondissement
+doit être corrigé, enrichi ou laissé intact. Le workflow nocturne est décrit dans
+`.claude/commands/corpus-nightly.md`. Le contrôle manuel d'un texte identifié est
+décrit dans `.claude/commands/corpus-deepening-audit.md`.
 
-Le lot par défaut est de 3 cartes, maximum absolu 5. Le budget maximal d’un pack d’agent est de
-300 000 tokens estimés ; au-delà, le travail est partitionné sans troncature.
+Un audit d'un texte existant exige un **motif concret** : nouvelle source consultée,
+affirmation devenue douteuse, lacune pédagogique spécifique, erreur signalée, ou
+modification de sa fiche validée. L'absence d'un rapport historique, le changement
+de version du protocole et le simple écoulement du temps ne sont pas des motifs.
 
-Le rapport final succinct de chaque concept vit dans `corpus/deepening-audits/<conceptId>.md`.
-Il demeure provisoirement versionné parce que la sélection `--stale` utilise ses empreintes
-et son verdict. Son remplacement par un mécanisme sans archive d'audits est un chantier distinct.
+Les fichiers produits pendant une invocation (pack initial, diagnostic, mapping,
+bundle, vérification, gate, revue, versions refusées) vivent sous
+`corpus/deepening-audits/work/<conceptId>/`, sont ignorés par Git et doivent être
+supprimés après la décision, même si la réécriture a été rejetée. Les agents
+travaillent sur un seul concept par contexte ; la limite reste de 3 concepts
+par lot, ou 5 uniquement sur demande explicite. Aucun pack ne dépasse
+300 000 tokens estimés ; un dépassement impose une partition sans perte.
 
-Les artefacts détaillés créés pendant un cycle sous
-`corpus/deepening-audits/work/<conceptId>/` sont **strictement temporaires** : aucun
-`audit.md`, pack, bundle, mapping, vérification, script de travail ou autre fichier
-de ce répertoire ne doit être ajouté à Git, archivé ou repris dans un commit.
-Les agents les utilisent pendant le cycle puis suppriment uniquement les répertoires
-des concepts de leur lot après les contrôles et la synthèse du résultat.
-Une erreur doit être résumée dans le verdict final, non conservée sous forme de pack massif.
-La suppression des artefacts ne doit jamais effacer le travail concurrent d'un autre agent.
+Aucun rapport final ni journal d'audit n'est écrit, commité ou archivé.
+On ne conserve dans Git que les faits nouveaux véritablement exploités
+dans les sources du corpus, le texte final accepté et sa projection applicative.
+Les preuves documentaires *sources* nécessaires à l'exactitude des affirmations
+ne sont pas des audits et restent conservées avec la fiche.
 
-Une carte redevient éligible si :
-
-- aucun rapport n’existe ;
-- son approfondissement a changé ;
-- son enregistrement validé a changé ;
-- la version du protocole a augmenté ;
-- elle est demandée explicitement.
-
-La version courante du workflow est `protocol_version: 4`.
+Les vérifications indépendantes se déroulent **avant** la suppression des fichiers
+temporaires. Une réécriture rejetée restaure la version exacte d'avant le lot.
+La réussite ou l'échec est ensuite synthétisé dans la réponse et, si une PR
+existe pour un changement réel, dans sa description, jamais dans un nouveau
+fichier de suivi.

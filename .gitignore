@@ -47,7 +47,6 @@ next-env.d.ts
 # corpus : dossiers remis au contrôleur aveugle, régénérables (npm run corpus:brief)
 corpus/review/*.brief.json
 
-# corpus : artefacts temporaires d'audit et de fact-check. Ils sont générés à la demande,
-# puis supprimés après contrôle. Aucun rapport intermédiaire ne doit être versionné.
-# Les rapports finaux (hors work/) restent suivis tant que la sélection --stale en dépend.
-/corpus/deepening-audits/work/
+# corpus : aucun audit ni rapport de vérification n'est conservé dans Git.
+# Les agents produisent les preuves de contrôle temporairement puis les détruisent.
+/corpus/deepening-audits/

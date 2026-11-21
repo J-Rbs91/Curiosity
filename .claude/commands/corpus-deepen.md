@@ -19,9 +19,10 @@ dépôt : l'application ne parle à aucun modèle au moment du clic.
 
 **Un approfondissement existant n'est jamais réécrit par cette commande.**
 
-S'il faut évaluer ou améliorer un texte déjà présent, utilise le workflow
-`/corpus-deepening-audit <conceptId>` ou `/corpus-deepening-audit --stale`. Il impose un
-diagnostic, une réécriture uniquement si elle est nécessaire, puis une revue indépendante.
+Pour améliorer un texte déjà présent à partir d'un défaut constaté ou de nouvelles
+sources, utilise `/corpus-deepening-audit <conceptId>`. Il réalise un diagnostic temporaire,
+une réécriture seulement si elle apporte un progrès, puis un contrôle indépendant.
+Il ne sélectionne jamais des textes sur la base d'anciens rapports d'audit.
 Cette séparation empêche qu'un texte déjà bon soit remplacé simplement parce qu'un modèle
 peut produire une autre version.
 
@@ -79,6 +80,6 @@ lot        : n cartes
 écrits     : n, <ids>
 mots       : moyenne n, min n, max n
 refusés    : n, <ids>, motif de la projection
-ignorés    : n textes déjà existants, à envoyer vers corpus-deepening-audit si nécessaire
+ignorés    : n textes déjà existants, à réviser uniquement avec un motif concret
 restants   : n cartes validées sans approfondissement
 ```

@@ -35,12 +35,15 @@ requête explicite. Ce nombre limite surtout l'état de l'orchestrateur ; il ne 
 règle « un concept par contexte d'agent ».
 
 L'orchestrateur ne transporte pas les sorties détaillées entre agents dans son propre contexte.
-Les sorties complètes vivent sous :
+Les sorties complètes vivent **temporairement**, pendant le cycle de vérification, sous :
 
 `corpus/deepening-audits/work/<conceptId>/`
 
-Il ne conserve en mémoire que le verdict, quelques compteurs et le chemin de l'artefact utile à
-l'étape suivante.
+Ces fichiers sont éphémères : ils ne sont ni versionnés ni archivés et sont supprimés
+après le verdict et la décision sur le texte. Le contrôle doit être achevé avant
+la suppression. Les documents primaires réellement exploités restent dans les
+sources documentaires pérennes du corpus, et non dans les traces d'audit.
+L'orchestrateur ne garde en mémoire que les verdicts et chemins nécessaires au cycle.
 
 ## 2. Budget de contexte
 

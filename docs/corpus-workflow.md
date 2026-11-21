@@ -8,10 +8,17 @@ référence : un désaccord sur une fiche se tranche ici.
 
 ## 0. Ce que ce dispositif produit
 
-**Des cartes.** Sept éléments — thème, concept, citation, auteur, accroche, résumé,
-sources — dont chacun soit exact. Le lecteur les emporte ensuite vers l'IA de son choix par
-le bouton « Approfondir » : l'application ne produit rien au-delà de la carte, et ce n'est
-pas une lacune, c'est le produit.
+**Des connaissances publiées : des cartes et leurs approfondissements.**
+Une carte expose sept éléments exacts (thème, concept, citation facultative, auteur,
+accroche, résumé, sources). Un approfondissement, lorsqu'il existe, développe
+le concept dans un texte rédigé et relu à l'avance. Les deux sont construits depuis
+le corpus maître, puis projetés dans l'application. Aucune réponse IA improvisée
+ne remplace ces contenus à la lecture.
+
+La routine éditoriale `/corpus-nightly` cherche de nouvelles sources, produit
+de nouvelles cartes et approfondissements, ou améliore des textes existants
+lorsqu'un gain est démontrable. Les audits utilisés pour décider et vérifier
+ces améliorations sont jetables, sans rapport ni historique à conserver.
 
 Le corpus documentaire n'est pas le livrable : c'est le moyen. Un dossier de preuve qui ne
 devient jamais une carte n'a servi à rien.

@@ -1,8 +1,10 @@
 # Protocole de rédaction d'un approfondissement
 
 Un approfondissement est le texte que l'application affiche lorsqu'on appuie sur
-« Approfondir ». Il est **écrit à l'avance, une fois, et figé dans le dépôt** : l'application
-ne parle à aucun modèle, elle sert un texte qui a été relu.
+« Approfondir ». Il est **écrit et relu à l'avance**, puis peut être révisé lorsqu'une
+nouvelle source ou une faiblesse précise justifie une amélioration vérifiée.
+L'application ne parle à aucun modèle lors du clic : elle sert un texte publié,
+pas un audit ni une génération en direct.
 
 Ce document est le seul cadrage de cette rédaction. Il transpose au texte écrit ce que
 `src/domain/concepts/ai-prompt.ts` fait pour une conversation, et il en garde les exigences
