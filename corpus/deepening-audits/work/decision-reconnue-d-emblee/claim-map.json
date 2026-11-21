@@ -1,6 +1,6 @@
 {
   "concept_id": "decision-reconnue-d-emblee",
-  "candidate_sha256": "8b240315cb6bd20ec719f3e8432430ce6e2db2f0b621dab2aee960fab6119d2a",
+  "candidate_sha256": "02a5b467bb36afb6821218a8ee026bbd927ba943f2bd1c5062b28ec29245e2de",
   "paragraphs": [
     {
       "locator": "lead[0]",
@@ -66,6 +66,7 @@
       "start": 0,
       "end": 140,
       "claim_text": "Il y a une image du choix à laquelle des chercheurs avaient été formés : décider, ce serait nécessairement comparer des options entre elles.",
+      "normalized_claim": "Des chercheurs étaient formés à tenir la décision pour une comparaison d'options.",
       "support_ids": [
         "SUP-8db37978bf1daa45"
       ]
@@ -76,9 +77,9 @@
       "start": 141,
       "end": 339,
       "claim_text": "Dans les années 1980, des chercheurs ont demandé à des chefs d’intervention sur incendie comment ils avaient déployé leurs équipes lors des feux urbains les plus difficiles qu’ils avaient affrontés.",
+      "normalized_claim": "Étude (1986) sur le déploiement des équipes lors des feux urbains les plus difficiles.",
       "support_ids": [
         "SUP-8db37978bf1daa45",
-        "SUP-331864831e3f9e29",
         "SUP-154b6ab10ed2ea93"
       ]
     },
@@ -90,9 +91,7 @@
       "claim_text": "Les chefs ont soutenu n’avoir jamais cherché à savoir si une option valait mieux qu’une autre.",
       "support_ids": [
         "SUP-8db37978bf1daa45",
-        "SUP-f4b1e57cb35e87bc",
-        "SUP-fc665f9e6c697905",
-        "SUP-9ce8e3faeb7cc3e6"
+        "SUP-f4b1e57cb35e87bc"
       ]
     },
     {
@@ -114,149 +113,153 @@
       "start": 560,
       "end": 587,
       "claim_text": "Cette attente n’a pas tenu.",
+      "normalized_claim": "We were wrong.",
       "support_ids": [
         "SUP-8db37978bf1daa45",
-        "SUP-7e4a892877da97ec",
-        "SUP-278225da1b8cb2d8"
+        "SUP-7e4a892877da97ec"
       ]
     },
     {
       "claim_id": "C006",
       "locator": "lead[1]",
       "start": 0,
-      "end": 136,
-      "claim_text": "Le modèle qu’ils ont tiré de ces entretiens ne dit pas que l’expert compare plus vite, ni qu’il compare mieux, mais qu’il ne compare pas",
+      "end": 43,
+      "claim_text": "Le modèle qu’ils ont tiré de ces entretiens",
+      "normalized_claim": "Le modèle a été dérivé des entretiens avec les chefs.",
       "support_ids": [
-        "SUP-8db37978bf1daa45",
-        "SUP-a3ad097cbcfad0ae",
-        "SUP-018064faf6ec991f"
+        "SUP-8db37978bf1daa45"
       ]
     },
     {
       "claim_id": "C007",
       "locator": "lead[1]",
-      "start": 139,
-      "end": 230,
-      "claim_text": "la reconnaissance de ce qui se passe devant lui lui livre directement une manière de faire.",
+      "start": 44,
+      "end": 136,
+      "claim_text": "ne dit pas que l’expert compare plus vite, ni qu’il compare mieux, mais qu’il ne compare pas",
       "support_ids": [
         "SUP-8db37978bf1daa45",
-        "SUP-54e927d3401bdfa5",
-        "SUP-e5f63b6669cb46e5",
+        "SUP-018064faf6ec991f",
         "SUP-a3ad097cbcfad0ae"
       ]
     },
     {
       "claim_id": "C008",
       "locator": "lead[1]",
-      "start": 231,
-      "end": 307,
-      "claim_text": "Reste une objection immédiate, et c’est elle qui rend le modèle intéressant.",
-      "support_ids": []
+      "start": 139,
+      "end": 229,
+      "claim_text": "la reconnaissance de ce qui se passe devant lui lui livre directement une manière de faire",
+      "support_ids": [
+        "SUP-8db37978bf1daa45",
+        "SUP-a3ad097cbcfad0ae",
+        "SUP-54e927d3401bdfa5"
+      ]
     },
     {
       "claim_id": "C009",
       "locator": "lead[1]",
-      "start": 308,
-      "end": 376,
-      "claim_text": "Une conduite qu’on n’a mise en balance avec rien peut être mauvaise.",
-      "support_ids": []
-    },
-    {
-      "claim_id": "C010",
-      "locator": "lead[1]",
-      "start": 377,
-      "end": 438,
-      "claim_text": "Le modèle y répond, et sa réponse tient dans un second temps.",
+      "start": 231,
+      "end": 283,
+      "claim_text": "Le modèle ne s’arrête pas là : il a un second temps.",
+      "normalized_claim": "Le modèle comporte une seconde composante (évaluation).",
       "support_ids": [
         "SUP-8db37978bf1daa45",
         "SUP-eaff6ecaa1f3e991"
       ]
     },
     {
-      "claim_id": "C011",
+      "claim_id": "C010",
       "locator": "sections[0].paragraphs[0]",
       "start": 0,
-      "end": 120,
-      "claim_text": "Dans un rapport de synthèse publié en 1993, Klein ouvre son chapitre sur la décision en milieu réel par une phrase-bilan",
+      "end": 42,
+      "claim_text": "Dans un rapport de synthèse publié en 1993",
+      "normalized_claim": "Le rapport est un état de l'art publié en 1993.",
       "support_ids": [
         "SUP-83621dd3fc27327d",
         "SUP-bbfc797b94200e64",
-        "SUP-404746815dcb574a",
+        "SUP-404746815dcb574a"
+      ]
+    },
+    {
+      "claim_id": "C011",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 44,
+      "end": 254,
+      "claim_text": "Klein ouvre son chapitre sur la décision en milieu réel par une phrase-bilan : « The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. »",
+      "support_ids": [
         "SUP-8db37978bf1daa45",
-        "SUP-5865b51f11e42cc7",
-        "SUP-f4b1e57cb35e87bc"
+        "SUP-f4b1e57cb35e87bc",
+        "SUP-5865b51f11e42cc7"
       ]
     },
     {
       "claim_id": "C012",
       "locator": "sections[0].paragraphs[0]",
-      "start": 123,
-      "end": 254,
-      "claim_text": "« The most important finding that emerged from NDM research was that, in actual cases, people rarely compared any options at all. »",
-      "support_ids": [
-        "SUP-8db37978bf1daa45",
-        "SUP-f4b1e57cb35e87bc"
-      ]
-    },
-    {
-      "claim_id": "C013",
-      "locator": "sections[0].paragraphs[0]",
       "start": 255,
       "end": 390,
       "claim_text": "Le résultat le plus important de ces recherches, écrit-il, est que dans les cas réels les gens ne comparaient presque jamais d’options.",
       "support_ids": [
-        "SUP-8db37978bf1daa45",
-        "SUP-f4b1e57cb35e87bc"
+        "SUP-8db37978bf1daa45"
       ]
     },
     {
-      "claim_id": "C014",
+      "claim_id": "C013",
       "locator": "sections[0].paragraphs[0]",
       "start": 391,
       "end": 486,
       "claim_text": "NDM abrège naturalistic decision making, le courant de recherche dont ce rapport dresse l’état.",
       "support_ids": [
         "SUP-83621dd3fc27327d",
-        "SUP-bbfc797b94200e64",
-        "SUP-404746815dcb574a",
-        "SUP-aa4d6ad95061fa9f"
+        "SUP-aa4d6ad95061fa9f",
+        "SUP-404746815dcb574a"
       ]
     },
     {
-      "claim_id": "C015",
+      "claim_id": "C014",
       "locator": "sections[0].paragraphs[0]",
       "start": 487,
       "end": 604,
       "claim_text": "Le modèle porte un nom anglais, Recognition-Primed Decision, abrégé RPD : une décision amorcée par la reconnaissance.",
       "support_ids": [
         "SUP-8db37978bf1daa45",
-        "SUP-a001b81ef78543be",
-        "SUP-63bffcf2a81ef33d"
+        "SUP-a001b81ef78543be"
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "locator": "sections[0].paragraphs[0]",
+      "start": 605,
+      "end": 686,
+      "claim_text": "Ce nom figure déjà en 1986 dans le résumé de l’étude sur les chefs d’intervention",
+      "support_ids": [
+        "SUP-6bbdb7fa7b7126d2",
+        "SUP-24d3aa1093466146",
+        "SUP-154b6ab10ed2ea93",
+        "SUP-331864831e3f9e29"
       ]
     },
     {
       "claim_id": "C016",
       "locator": "sections[0].paragraphs[0]",
-      "start": 605,
+      "start": 688,
       "end": 753,
-      "claim_text": "Ce nom figure déjà en 1986 dans le résumé de l’étude sur les chefs d’intervention, que Klein cosigne avec Roberta Calderwood et Anne Clinton-Cirocco",
+      "claim_text": "que Klein cosigne avec Roberta Calderwood et Anne Clinton-Cirocco",
       "support_ids": [
-        "SUP-6bbdb7fa7b7126d2",
-        "SUP-24d3aa1093466146",
         "SUP-331864831e3f9e29",
-        "SUP-154b6ab10ed2ea93"
+        "SUP-154b6ab10ed2ea93",
+        "SUP-6bbdb7fa7b7126d2",
+        "SUP-d63433b821a334c8"
       ]
     },
     {
       "claim_id": "C017",
       "locator": "sections[0].paragraphs[0]",
-      "start": 755,
+      "start": 758,
       "end": 843,
-      "claim_text": "et il en parle au nom de l’équipe : « We derived the RPD model from what they told us. »",
+      "claim_text": "il en parle au nom de l’équipe : « We derived the RPD model from what they told us. »",
       "support_ids": [
-        "SUP-8db37978bf1daa45",
         "SUP-6bbdb7fa7b7126d2",
         "SUP-404746815dcb574a",
+        "SUP-8db37978bf1daa45",
         "SUP-87a63525a4d85158"
       ]
     },
@@ -277,7 +280,8 @@
       "end": 210,
       "claim_text": "Il ne prétend pas pour autant que personne ne compare jamais.",
       "support_ids": [
-        "SUP-018064faf6ec991f"
+        "SUP-018064faf6ec991f",
+        "SUP-8db37978bf1daa45"
       ]
     },
     {
@@ -298,7 +302,8 @@
       "claim_text": "Le modèle décrit le décideur expérimenté, pas n’importe qui.",
       "support_ids": [
         "SUP-018064faf6ec991f",
-        "SUP-8db37978bf1daa45"
+        "SUP-8db37978bf1daa45",
+        "SUP-2e288983e03ee9d4"
       ]
     },
     {
@@ -337,9 +342,9 @@
     {
       "claim_id": "C025",
       "locator": "sections[1].paragraphs[0]",
-      "start": 518,
+      "start": 521,
       "end": 732,
-      "claim_text": "et il détaille ce que l’on sait alors : quels buts ont du sens, quels indices méritent l’attention parmi tout ce qui se présente, ce qu’il faut attendre de la suite, et quelles sont les manières typiques de réagir.",
+      "claim_text": "il détaille ce que l’on sait alors : quels buts ont du sens, quels indices méritent l’attention parmi tout ce qui se présente, ce qu’il faut attendre de la suite, et quelles sont les manières typiques de réagir.",
       "support_ids": [
         "SUP-8db37978bf1daa45",
         "SUP-9c4a3566a5ab6978",
@@ -352,6 +357,7 @@
       "start": 0,
       "end": 92,
       "claim_text": "Le troisième de ces points est celui qui sépare le modèle d’un simple appariement de formes.",
+      "normalized_claim": "L'anticipation distingue le modèle d'un appariement de formes.",
       "support_ids": [
         "SUP-9c4a3566a5ab6978",
         "SUP-81d744b4fcfa0201"
@@ -465,9 +471,9 @@
     {
       "claim_id": "C037",
       "locator": "sections[2].paragraphs[1]",
-      "start": 338,
+      "start": 341,
       "end": 382,
-      "claim_text": "et le modèle, écrit Klein, couvre les trois.",
+      "claim_text": "le modèle, écrit Klein, couvre les trois.",
       "support_ids": [
         "SUP-8db37978bf1daa45"
       ]
@@ -495,25 +501,16 @@
     {
       "claim_id": "C040",
       "locator": "sections[3].paragraphs[0]",
-      "start": 0,
-      "end": 67,
-      "claim_text": "Reste à comprendre d’où vient la valeur de cette première conduite.",
-      "support_ids": [
-        "SUP-2e288983e03ee9d4"
-      ]
-    },
-    {
-      "claim_id": "C041",
-      "locator": "sections[3].paragraphs[0]",
       "start": 68,
       "end": 222,
       "claim_text": "Klein la rapporte à l’expérience : « the RPD model predicts that experienced decision makers can generate a plausible CoA as the first one they consider »",
       "support_ids": [
-        "SUP-2e288983e03ee9d4"
+        "SUP-2e288983e03ee9d4",
+        "SUP-8db37978bf1daa45"
       ]
     },
     {
-      "claim_id": "C042",
+      "claim_id": "C041",
       "locator": "sections[3].paragraphs[0]",
       "start": 224,
       "end": 343,
@@ -523,7 +520,7 @@
       ]
     },
     {
-      "claim_id": "C043",
+      "claim_id": "C042",
       "locator": "sections[3].paragraphs[0]",
       "start": 344,
       "end": 393,
@@ -533,7 +530,7 @@
       ]
     },
     {
-      "claim_id": "C044",
+      "claim_id": "C043",
       "locator": "sections[3].paragraphs[0]",
       "start": 394,
       "end": 510,
@@ -541,11 +538,12 @@
       "support_ids": [
         "SUP-2e288983e03ee9d4",
         "SUP-8db37978bf1daa45",
-        "SUP-54e927d3401bdfa5"
+        "SUP-54e927d3401bdfa5",
+        "SUP-e5f63b6669cb46e5"
       ]
     },
     {
-      "claim_id": "C045",
+      "claim_id": "C044",
       "locator": "sections[3].paragraphs[1]",
       "start": 0,
       "end": 216,
@@ -555,42 +553,45 @@
       ]
     },
     {
-      "claim_id": "C046",
+      "claim_id": "C045",
       "locator": "sections[3].paragraphs[1]",
       "start": 252,
       "end": 380,
       "claim_text": "sous forte pression de temps, celui qui n’a pas de comparaison à finir peut déjà donner un ordre quand un autre délibère encore.",
+      "normalized_claim": "Conséquence dérivée par le texte (présentée comme telle).",
       "support_ids": [
         "SUP-8db37978bf1daa45"
       ]
     },
     {
-      "claim_id": "C047",
+      "claim_id": "C046",
       "locator": "sections[4].paragraphs[0]",
       "start": 0,
       "end": 45,
       "claim_text": "Une confusion guette ici, et elle est facile.",
+      "normalized_claim": "Confondre RPD et satisficing de Simon est une faute facile.",
       "support_ids": [
         "SUP-54e927d3401bdfa5",
         "SUP-e5f63b6669cb46e5"
       ]
     },
     {
-      "claim_id": "C048",
+      "claim_id": "C047",
       "locator": "sections[4].paragraphs[0]",
       "start": 46,
       "end": 151,
       "claim_text": "S’arrêter à une solution qui fait l’affaire plutôt que de chercher la meilleure porte un nom, satisficing",
       "support_ids": [
-        "SUP-8db37978bf1daa45"
+        "SUP-8db37978bf1daa45",
+        "SUP-13559f91f3c67da5"
       ]
     },
     {
-      "claim_id": "C049",
+      "claim_id": "C048",
       "locator": "sections[4].paragraphs[0]",
-      "start": 153,
+      "start": 156,
       "end": 271,
-      "claim_text": "et ce nom n’est pas de Klein : il l’attribue lui-même à Simon, « Simon (1955) was the first to make this distinction »",
+      "claim_text": "ce nom n’est pas de Klein : il l’attribue lui-même à Simon, « Simon (1955) was the first to make this distinction »",
       "support_ids": [
         "SUP-8db37978bf1daa45",
         "SUP-13559f91f3c67da5",
@@ -599,17 +600,18 @@
       ]
     },
     {
-      "claim_id": "C050",
+      "claim_id": "C049",
       "locator": "sections[4].paragraphs[0]",
       "start": 273,
       "end": 417,
       "claim_text": "Klein range d’ailleurs son propre modèle parmi ces manières de faire qui se contentent d’une conduite viable, et il le dit dans le même rapport.",
       "support_ids": [
-        "SUP-8db37978bf1daa45"
+        "SUP-8db37978bf1daa45",
+        "SUP-54e927d3401bdfa5"
       ]
     },
     {
-      "claim_id": "C051",
+      "claim_id": "C050",
       "locator": "sections[4].paragraphs[1]",
       "start": 0,
       "end": 52,
@@ -620,7 +622,7 @@
       ]
     },
     {
-      "claim_id": "C052",
+      "claim_id": "C051",
       "locator": "sections[4].paragraphs[1]",
       "start": 53,
       "end": 134,
@@ -631,7 +633,7 @@
       ]
     },
     {
-      "claim_id": "C053",
+      "claim_id": "C052",
       "locator": "sections[4].paragraphs[1]",
       "start": 135,
       "end": 293,
@@ -643,18 +645,18 @@
       ]
     },
     {
-      "claim_id": "C054",
+      "claim_id": "C053",
       "locator": "sections[4].paragraphs[1]",
-      "start": 334,
+      "start": 338,
       "end": 450,
-      "claim_text": "que l’un décrit une recherche qui s’arrête à ce qui suffit, l’autre une mise en concurrence qui n’a jamais commencé.",
+      "claim_text": "l’un décrit une recherche qui s’arrête à ce qui suffit, l’autre une mise en concurrence qui n’a jamais commencé.",
       "support_ids": [
         "SUP-54e927d3401bdfa5",
         "SUP-e5f63b6669cb46e5"
       ]
     },
     {
-      "claim_id": "C055",
+      "claim_id": "C054",
       "locator": "sections[5].paragraphs[0]",
       "start": 0,
       "end": 46,
@@ -665,7 +667,7 @@
       ]
     },
     {
-      "claim_id": "C056",
+      "claim_id": "C055",
       "locator": "sections[5].paragraphs[0]",
       "start": 47,
       "end": 324,
@@ -676,27 +678,17 @@
       ]
     },
     {
-      "claim_id": "C057",
+      "claim_id": "C056",
       "locator": "sections[5].paragraphs[0]",
       "start": 325,
-      "end": 438,
-      "claim_text": "Ce qui rapproche ces métiers, on peut le lire dans les traits que Klein prête à une tâche de décision naturaliste",
+      "end": 546,
+      "claim_text": "Klein prête par ailleurs à une tâche de décision naturaliste des traits parmi lesquels la pression du temps, des buts mal définis ou changeants, une information inadéquate, des décideurs expérimentés et des enjeux élevés.",
       "support_ids": [
         "SUP-aa4d6ad95061fa9f"
       ]
     },
     {
-      "claim_id": "C058",
-      "locator": "sections[5].paragraphs[0]",
-      "start": 440,
-      "end": 589,
-      "claim_text": "parmi lesquels la pression du temps, des buts mal définis ou changeants, une information inadéquate, des décideurs expérimentés et des enjeux élevés.",
-      "support_ids": [
-        "SUP-aa4d6ad95061fa9f"
-      ]
-    },
-    {
-      "claim_id": "C059",
+      "claim_id": "C057",
       "locator": "sections[5].paragraphs[1]",
       "start": 0,
       "end": 73,
@@ -706,31 +698,31 @@
       ]
     },
     {
-      "claim_id": "C060",
+      "claim_id": "C058",
       "locator": "sections[5].paragraphs[1]",
       "start": 74,
-      "end": 435,
-      "claim_text": "Il annonce n’y pas passer en revue la littérature sur la décision des trente-cinq années précédentes, parce qu’elle s’est concentrée sur des études de laboratoire qui neutralisent d’ordinaire certaines variables importantes des situations opérationnelles : les enjeux élevés, les conditions changeantes, la pression du temps, des participants très expérimentés.",
+      "end": 450,
+      "claim_text": "Il annonce n’y pas proposer de revue détaillée de la littérature sur la décision des trente-cinq années précédentes, parce qu’elle s’est concentrée sur des études de laboratoire qui neutralisent d’ordinaire certaines variables importantes des situations opérationnelles : les enjeux élevés, les conditions changeantes, la pression du temps, des participants très expérimentés.",
       "support_ids": [
         "SUP-aa4d6ad95061fa9f"
       ]
     },
     {
-      "claim_id": "C061",
+      "claim_id": "C059",
       "locator": "sections[5].paragraphs[1]",
-      "start": 436,
-      "end": 549,
+      "start": 451,
+      "end": 564,
       "claim_text": "Le modèle ne dit donc pas que comparer est une erreur, puisque Klein garde aux novices des moments pour le faire.",
       "support_ids": [
         "SUP-018064faf6ec991f"
       ]
     },
     {
-      "claim_id": "C062",
+      "claim_id": "C060",
       "locator": "sections[5].paragraphs[1]",
-      "start": 550,
-      "end": 657,
-      "claim_text": "Il dit que, dans les cas réels qu’il décrit et chez ceux qui les connaissent, ce n’est pas ce qui se passe.",
+      "start": 565,
+      "end": 682,
+      "claim_text": "Il dit que, dans les cas réels qu’il décrit et chez ceux qui les connaissent, on ne compare presque jamais d’options.",
       "support_ids": [
         "SUP-8db37978bf1daa45",
         "SUP-f4b1e57cb35e87bc",
