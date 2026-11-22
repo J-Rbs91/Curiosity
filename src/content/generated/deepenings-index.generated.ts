@@ -87,6 +87,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "isomorphisme-institutionnel",
   "le-trouble-vient-des-politiques",
   "ligne-d-approvisionnement-ignoree",
+  "loi-airain-oligarchie",
   "loi-de-campbell",
   "loi-de-la-variete-requise",
   "marge-de-manoeuvre",
