@@ -2619,6 +2619,51 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "loi-airain-oligarchie",
+    "slug": "loi-airain-oligarchie",
+    "title": "Loi d'airain de l'oligarchie",
+    "authorLabel": "Robert Michels",
+    "hookQuestion": "Pourquoi, dans un parti ou un syndicat, les délégués finissent-ils par dominer ?",
+    "shortExplanation": "Tendance que Michels pose en loi sociologique des partis et syndicats : l'organisation rend les chefs techniquement indispensables et fonde la domination des élus.",
+    "authors": [],
+    "themes": [
+      "pouvoir"
+    ],
+    "themeLabel": "Pouvoir",
+    "attributionNote": "Concept et terme sont de Robert Michels, dans un livre qu'il signe seul : Zur Soziologie des Parteiwesens in der modernen Demokratie, Leipzig, Klinkhardt, 1911. L'expression y figure en titre de chapitre, « Die Demokratie und das eherne Gesetz der Oligarchie » (sixième partie, chapitre 2, p. 362), et la traduction française de 1914 la rend par « La démocratie et la loi d'airain de l'oligarchie ». Dans le corps du texte, Michels parle plutôt de « loi sociologique fondamentale ». La formule « Qui dit organisation, dit oligarchie » n'est pas dans l'édition allemande de 1911, qui écrit « tendance à l'oligarchie » : elle apparaît dans les éditions remaniées par l'auteur, française de 1914 et anglaise de 1915.",
+    "quotation": {
+      "text": "[…] l’organisation est la source d’où naît la domination des élus sur les électeurs […]. Qui dit organisation, dit oligarchie.",
+      "reference": "Robert Michels, Les partis politiques. Essai sur les tendances oligarchiques des démocraties, trad. S. Jankélévitch, Paris, Flammarion, 1914 (Internet Archive, lespartispolitiq00michuoft), p. 300, sixième partie, chap. III",
+      "translationNote": "Traduit par S. Jankélévitch (Paris, Ernest Flammarion, Bibliothèque de philosophie scientifique, 1914)"
+    },
+    "sources": [
+      {
+        "label": "Robert Michels, Les partis politiques. Essai sur les tendances oligarchiques des démocraties, trad. S. Jankélévitch, Paris, Ernest Flammarion, 1914 (Bibliothèque de philosophie scientifique).",
+        "kind": "primary",
+        "reference": "p. 15-16, 281, 299-309",
+        "url": "https://archive.org/details/lespartispolitiq00michuoft"
+      },
+      {
+        "label": "Robert Michels, Zur Soziologie des Parteiwesens in der modernen Demokratie. Untersuchungen über die oligarchischen Tendenzen des Gruppenlebens, Leipzig, Werner Klinkhardt, 1911.",
+        "kind": "primary",
+        "reference": "p. 32, 362, 384",
+        "url": "https://archive.org/details/zursoziologiede00michgoog"
+      },
+      {
+        "label": "Robert Michels, Political Parties: A Sociological Study of the Oligarchical Tendencies of Modern Democracy, trad. Eden et Cedar Paul, New York, Hearst's International Library Co., 1915.",
+        "kind": "primary",
+        "reference": "p. 377, 401",
+        "url": "https://archive.org/details/politicalparties00michuoft"
+      },
+      {
+        "label": "Karim Fertikh et Émilien Julliard, « La drôle de guerre froide de Robert Michels », Genèses. Sciences sociales et histoire, n° 116, 2019, p. 153-160.",
+        "kind": "francophone-reception",
+        "reference": "10.3917/gen.116.0153",
+        "url": "https://hal.science/hal-02471237"
+      }
+    ]
+  },
+  {
     "id": "loi-de-campbell",
     "slug": "loi-de-campbell",
     "title": "Loi de Campbell",
