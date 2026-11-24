@@ -479,6 +479,56 @@ export const generatedConcepts: Concept[] = [
     ]
   },
   {
+    "id": "bureaucratie-type-ideal",
+    "slug": "bureaucratie-type-ideal",
+    "title": "Bureaucratie, type idéal de la domination légale",
+    "authorLabel": "Max Weber",
+    "hookQuestion": "À quoi ressemble, sous sa forme la plus pure, une domination fondée sur la légalité ?",
+    "shortExplanation": "Weber construit en type idéal la forme la plus pure de la domination légale : des fonctionnaires nommés et qualifiés, une hiérarchie fixe, des règles et le dossier.",
+    "authors": [],
+    "themes": [
+      "bureaucratie-regles"
+    ],
+    "themeLabel": "Bureaucratie et règles",
+    "attributionNote": "Le texte est de Max Weber seul ; le volume, posthume, a été édité en 1922 par Marianne Weber, Weber étant mort en 1920. Le mot « bureaucratie » est antérieur à Weber : ce qui lui revient est la construction de la bureaucratie comme type pur de la domination légale, qu'il annonce analyser « idealtypisch ». La « cage d'acier » n'a pas été trouvée dans ce volume ; elle est rapportée à L'Éthique protestante (« stahlhartes Gehäuse »).",
+    "quotation": {
+      "text": "Le type le plus pur de la domination légale est celle qui s'exerce au moyen d'une direction administrative bureaucratique.",
+      "reference": "Max Weber, Wirtschaft und Gesellschaft, Tübingen, J. C. B. Mohr (Paul Siebeck), 1922, p. 126, Kap. III, § 4",
+      "translationNote": "Traduit pour cette fiche, traduction non publiée"
+    },
+    "sources": [
+      {
+        "label": "Max Weber, Wirtschaft und Gesellschaft (Grundriss der Sozialökonomik, III. Abteilung), Tübingen, J. C. B. Mohr (Paul Siebeck), 1922.",
+        "kind": "primary",
+        "reference": "chap. III, § 3-5, p. 125-130",
+        "url": "https://archive.org/details/wirtschaftundges00webeuoft"
+      },
+      {
+        "label": "Sung Ho Kim, « Max Weber », Stanford Encyclopedia of Philosophy, 2007, révision 2022.",
+        "kind": "secondary-academic",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      },
+      {
+        "label": "Daniel Benamouzig et Olivier Borraz, « Bureaucratie, organisations et formalisation des savoirs », L'Année sociologique, 66(1), 2016.",
+        "kind": "francophone-reception",
+        "reference": "p. 9-30 · 10.3917/anso.161.0009",
+        "url": "https://doi.org/10.3917/anso.161.0009"
+      },
+      {
+        "label": "Stewart Clegg et Michael Lounsbury, « Weber: Sintering the Iron Cage: Translation, Domination, and Rationality », in Paul S. Adler (dir.), The Oxford Handbook of Sociology and Organization Studies, Oxford University Press, 2009.",
+        "kind": "secondary-academic",
+        "reference": "p. 118-145 · 10.1093/oxfordhb/9780199535231.003.0006",
+        "url": "https://academic.oup.com/edited-volume/34529/chapter/292930404"
+      },
+      {
+        "label": "Paul du Gay, « Max Weber and the Ethics of Office », in Paul S. Adler (dir.), The Oxford Handbook of Sociology and Organization Studies, Oxford University Press, 2009.",
+        "kind": "secondary-academic",
+        "reference": "p. 146-173 · 10.1093/oxfordhb/9780199535231.003.0007",
+        "url": "https://doi.org/10.1093/oxfordhb/9780199535231.003.0007"
+      }
+    ]
+  },
+  {
     "id": "catachrese",
     "slug": "catachrese",
     "title": "Catachrèse",
