@@ -746,6 +746,69 @@ export const generatedDeepenings: Deepening[] = [
     ]
   },
   {
+    "conceptId": "bureaucratie-type-ideal",
+    "lead": [
+      "Un guichet refuse une demande. La personne derrière la vitre ne dit pas qu’elle n’en a pas envie : elle explique que le cas n’entre pas dans ce qu’elle a le droit d’accorder, montre le formulaire, indique le service auquel adresser une réclamation. Son chef, si on le fait venir, tiendra le même langage, car lui aussi applique quelque chose qui ne vient pas de lui. Personne, dans la scène, ne commande en son nom propre, et pourtant chacun obéit.",
+      "Max Weber décrit, trait par trait, l’organisation où l’on obéit ainsi. Il la construit en type idéal, dans sa forme la plus pure, dont les administrations réelles se rapprochent plus ou moins. On peut se servir de ce portrait volontairement net comme d’un étalon, pour voir sur quels points un bureau réel s’en écarte."
+    ],
+    "sections": [
+      {
+        "title": "Un supérieur qui obéit lui aussi",
+        "paragraphs": [
+          "Weber appelle légale la domination dont le droit de commander vient de règles établies, et non de la personne qui commande. Le supérieur, en donnant des ordres, « obéit pour sa part à l’ordre impersonnel sur lequel il règle ses ordres ». Symétriquement, ceux qui exécutent « n’obéissent pas à sa personne mais à ces ordres impersonnels ».",
+          "Il en découle une limite : les subordonnés ne doivent obéissance qu’à l’intérieur de la compétence que les règles assignent au supérieur. Weber la définit par un domaine de tâches découpé par la répartition du travail, les pouvoirs de commandement nécessaires à ce domaine, et une délimitation fixe des moyens de contrainte permis. Cela implique qu’un ordre donné hors de ce périmètre, même par un supérieur, n’oblige personne.",
+          "Deux pièces complètent le dispositif : un travail continu, lié à des règles, et une hiérarchie d’instances fixes de contrôle, avec un droit d’appel ou de plainte vers l’échelon supérieur. Weber retrouve ce fonctionnement dans les grandes entreprises privées, les partis et les armées autant que dans l’État et l’Église, et justifie son attention à l’appareil ainsi : « Car la domination est, au quotidien, primairement : administration. »"
+        ]
+      },
+      {
+        "title": "Dix traits qui dessinent le fonctionnaire",
+        "paragraphs": [
+          "Le type pur se décrit par ceux qui composent l’appareil : des fonctionnaires individuels, personnellement libres, qui n’obéissent qu’à des devoirs de fonction objectifs, dans une hiérarchie fixe, avec des compétences fixes, engagés par contrat sur qualification spécialisée, établie au mieux par examen et diplôme. Ils « sont nommés (et non : élus) ». Ils touchent un traitement fixe en argent, échelonné selon le rang, exercent leur fonction comme métier principal, voient devant eux une carrière dont l’avancement dépend du jugement des supérieurs, ne possèdent pas leur poste et sont soumis à une discipline stricte.",
+          "On peut lire cette liste comme une série de coupures entre la personne et la place. Les fonctionnaires ne possèdent pas les moyens de l’administration : ils les reçoivent et en rendent compte. Le patrimoine de la fonction est séparé du patrimoine privé, et le bureau du logement. Weber relève une apparente exception : quand un droit sur la fonction existe, comme pour les juges, il ne sert normalement pas à leur donner la fonction en propriété, mais à garantir un travail indépendant, lié seulement à des normes.",
+          "Un autre principe tient à l’écrit. Même là où l’on délibère oralement, au moins les requêtes, les discussions préalables et les décisions finales sont fixées par écrit. Les dossiers et le travail continu des fonctionnaires forment ensemble le bureau, « comme le point central de toute action moderne des groupements »."
+        ]
+      },
+      {
+        "title": "Ce que « le plus pur » veut dire",
+        "paragraphs": [
+          "La domination bureaucratique est la plus pure là où règne la nomination. Une hiérarchie d’élus n’atteint jamais la même discipline, puisque le subordonné peut invoquer son élection tout comme son supérieur, et que ses chances ne dépendent pas du jugement de ce dernier.",
+          "L’engagement par contrat est essentiel à la bureaucratie moderne ; là où des fonctionnaires non libres, esclaves ou ministériaux, travaillent dans une hiérarchie avec des compétences délimitées, Weber parle de bureaucratie patrimoniale. La forme peut être bureaucratique sans que le type le soit.",
+          "Au sommet, seul le chef tient sa place par appropriation, élection ou désignation, même si ses pouvoirs sont eux aussi des compétences légales. Ministres et présidents d’État sont les seuls fonctionnaires dont on n’exige aucune qualification spécialisée : ils ne le sont, selon Weber, qu’au sens formel, comme le directeur général d’une grande société par actions. « La domination bureaucratique comporte donc inévitablement à son sommet un élément au moins non purement bureaucratique. » Le type décrit l’appareil, pas la domination légale tout entière.",
+          "À propos du traitement fixe, Weber écrit : « Il n’est nullement essentiel au concept, mais il correspond pourtant le plus purement au type. » Sur ce point, ajoute-t-il, les transitions sont fluides. L’ordre décrit est, en principe, applicable aussi bien dans les entreprises lucratives ou caritatives que dans les groupements politiques, et Weber le dit démontrable historiquement avec une approximation plus ou moins forte du type pur."
+        ]
+      },
+      {
+        "title": "Le savoir, ressort de la puissance administrative",
+        "paragraphs": [
+          "D’après toutes les expériences, écrit Weber, l’administration purement bureaucratique est la forme formellement la plus rationnelle d’exercice de la domination : précise, continue, disciplinée, fiable, elle rend l’action calculable pour le maître comme pour les intéressés. Le besoin d’une administration continue et calculable a été créé historiquement, écrit-il, par le capitalisme, pas par lui seul mais surtout par lui.",
+          "Le cœur de cette supériorité est le savoir : pour l’administration de masse, dit Weber, on n’a le choix qu’entre la bureaucratiser et la livrer à des amateurs. Il y voit son caractère fondamental spécifiquement rationnel : « domination en vertu du savoir ». Au savoir appris s’ajoute le savoir de service, fait des connaissances acquises dans la pratique ou consignées par écrit ; la bureaucratie tend à accroître sa puissance par ce second savoir, d’où provient, selon lui, la notion de secret de fonction.",
+          "L’appareil est lié à son propre fonctionnement : « Il continue normalement tout simplement de fonctionner pour la révolution parvenue au pouvoir et pour l’ennemi occupant comme pour le gouvernement jusque-là légal. » La question devient : « qui domine l’appareil bureaucratique existant ? » À la longue, le conseiller expert l’emporte le plus souvent sur le ministre profane. Les dominés ne peuvent guère se défendre qu’en créant une contre-organisation, elle aussi exposée à la bureaucratisation ; seul l’entrepreneur privé, dans son domaine, dépasse régulièrement la bureaucratie en savoir."
+        ]
+      },
+      {
+        "title": "Ce que la bureaucratie fait à la société",
+        "paragraphs": [
+          "Weber résume ce que la domination bureaucratique signifie socialement en trois points, dont les deux premiers sont donnés comme des tendances. Le nivellement, parce qu’on veut recruter partout parmi les plus qualifiés. La ploutocratisation, dans l’intérêt d’une formation spécialisée aussi longue que possible, qui dure souvent jusqu’à près de la fin de la troisième décennie de la vie. L’impersonnalité formaliste, enfin : sans haine ni passion, donc sans amour ni enthousiasme, l’agent idéal exerce sa fonction sans considération de la personne, de façon égale pour tout intéressé placé dans la même situation de fait.",
+          "Le nivellement et la bureaucratisation s’entretiennent : selon la tendance normale que Weber relève, la bureaucratisation crée du nivellement, et tout nivellement social favorise en retour la bureaucratisation, qu’il appelle l’ombre inéluctable de la démocratie de masse qui progresse.",
+          "L’esprit de la bureaucratie est lui-même partagé. Le formalisme est réclamé par tous ceux qui tiennent à la sécurité de leurs chances de vie, « parce que sinon l’arbitraire s’ensuivrait, et que le formalisme est la ligne du moindre effort ». À l’inverse, les fonctionnaires inclinent à traiter leurs tâches de façon utilitaire, au service du bien-être des administrés ; mais cette inclination s’exprime d’ordinaire par la demande de règlements correspondants, eux-mêmes formels et, dans la masse des cas, traités de façon formaliste."
+        ]
+      },
+      {
+        "title": "Le serviteur à la place du fonctionnaire",
+        "paragraphs": [
+          "Un contraste vient de la domination traditionnelle. Le dominant n’y est pas un supérieur mais un maître personnel, et sa direction administrative n’est pas d’abord faite de fonctionnaires mais de serviteurs. Ce n’est pas le devoir de fonction objectif qui règle leurs relations avec lui, mais la fidélité personnelle. « On n’obéit pas à des statuts, mais à la personne appelée à cet effet par la tradition ou par le dominant déterminé traditionnellement. »",
+          "Imaginons le même guichet sous ce régime : le refus serait la volonté du maître ou la loyauté de son serviteur, et réclamer reviendrait à solliciter une personne plutôt qu’à saisir une instance."
+        ]
+      }
+    ],
+    "limits": [
+      "Seuls les § 3 à 5 et le début du § 6 du chapitre III de Wirtschaft und Gesellschaft (1922, p. 125-130) sont lus en texte intégral : rien n’est dit ici de la domination traditionnelle au-delà de la première page du § 6, ni de la charismatique ou de la collégialité. Volume posthume : chronologie non établie au-delà de la page de titre.",
+      "Traductions de lecture sur l’allemand. Pour savoir si « direction administrative », « autorité administrative » et « domination » sont les termes qui font référence en français, c’est Économie et société (Plon, puis Pocket) qu’il faudra lire.",
+      "Benamouzig et Borraz (2016), Clegg et Lounsbury (2009) et du Gay (2009) : notices seulement, aucune phrase sur leur contenu. La Stanford Encyclopedia ne traite pas le type idéal bureaucratique et ne fonde rien ici. Le stahlhartes Gehäuse, absent de ce volume selon une recherche sur OCR (absence probable, non prouvée), est exclu du texte.",
+      "Effets sociaux donnés par Weber comme tendances : aucun chiffre ni jugement de valeur ne lui est attribuable. L’accès réservé à qui peut attendre et la liste lue comme coupures sont des dérivations marquées."
+    ]
+  },
+  {
     "conceptId": "catachrese",
     "lead": [
       "Une clef employée à frapper à la place d’un marteau : l’outil fait là un travail pour lequel il n’est pas conçu. Faut-il y voir une maladresse, un bricolage qu’on tolère faute de mieux, ou quelque chose de plus intéressant sur la façon dont les gens s’approprient les objets qu’on leur donne ?",

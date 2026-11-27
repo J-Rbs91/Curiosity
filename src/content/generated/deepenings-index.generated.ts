@@ -29,6 +29,7 @@ export const deepenedConceptIds: readonly ConceptId[] = [
   "attention-diffusee-et-selection",
   "automatisation-centree-humain",
   "bruit-comme-principe-d-auto-organisation",
+  "bureaucratie-type-ideal",
   "catachrese",
   "cause-de-hasard-et-cause-assignable",
   "cinq-dimensions-de-l-emploi",
